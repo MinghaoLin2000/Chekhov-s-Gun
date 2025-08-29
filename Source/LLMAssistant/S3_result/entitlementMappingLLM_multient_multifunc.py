@@ -7,7 +7,7 @@ import threading
 import argparse
 import re
 
-# 禁止外泄
+
 usc_api_key = "xxxx"
 
 stream = False
@@ -84,7 +84,7 @@ def combine_multi_function_for_LLM(function_file_path):
             function_list.append(tmp_info)
     return function_list
 
-# 这是处理单个entitlement
+
 def process_entitlement_single(tmp_ent_index, ent_file_path, batch_size, save_map_res_dir, ent_start, ent_end):
     Ent_desc_dir = "./Entitlement_desc_dir_correct/"
     Ent_json_file = Ent_desc_dir + f"{tmp_ent_index}.json"
@@ -94,7 +94,7 @@ def process_entitlement_single(tmp_ent_index, ent_file_path, batch_size, save_ma
         entitlement = ent_json["entitlement"]
         ent_capability = ent_json["capability"]
 
-    #entitlement_description = {"entitlement_name": entitlement, "entitlement_capability": ent_capability}
+    
     entitlement_description={"entitlement_name": entitlement}
     ent_save_filename = f"./Entitlement_map_func_dir/{save_map_res_dir}/{ent_start}_{ent_end}/ent_to_sink_list_{tmp_ent_index}.json"
 
@@ -115,7 +115,7 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
     
 
     然后我会先给entitlement，然后以及函数列表，请你返回那个函数列表中跟entitlement能配合可能产生漏洞的函数列表，也返回一个函数列表出来
-        ### 🔄 Input
+        
         
         **Entitlement:**
         {entitlement_description}
@@ -139,8 +139,8 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
 
         response = openai.chat.completions.create(
             model="google/gemini-2.5-flash",
-            #model="google/gemini-2.5-pro",
-            #model="meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            
+            
             messages=[
                 {"role": "system",
                  "content": "Please make sure the output format is **valid JSON**, no bare newlines are allowed, all newlines should be escaped by `\\n`, and the entire content must be parsable normally by `json.loads()`."},
@@ -160,7 +160,7 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
 
     ent_map_sinkfunc_json = {entitlement: response_function_list}
 
-    # Ensure the directory exists in a thread-safe way
+    
     os.makedirs(os.path.dirname(ent_save_filename), exist_ok=True)
 
     with open(ent_save_filename, "w", encoding="utf-8") as f:
@@ -173,7 +173,7 @@ def combinePrompt(entitlement_list,func_list):
 You are a macOS userland security expert. I will give you a list of entitlements and a list of sensitive function names (without full signatures or summaries). Your task is to determine, **strictly and conservatively**, for each entitlement, which function names are **likely to be used in combination with that entitlement in a real-world vulnerability or abuse scenario**.
 
 Please analyze **each entitlement separately** against the **full list of function names**. Only mark functions that clearly align with the privilege or behavior implied by the entitlement name. Avoid speculation or overly loose matches.
-            ### 🔄 Input
+            
     
             **Entitlement:**
             {entitlement_list}
@@ -184,7 +184,7 @@ Please analyze **each entitlement separately** against the **full list of functi
             ---
             ---
     
-                ### Output format
+                
 Please output an object that strictly complies with the JSON specification:
 - Use double quotes to enclose all keys and string values
 - Each key-value pair is separated by a colon `:`, and items are separated by a comma `,`
@@ -220,7 +220,7 @@ Given:
 Your task is:
 👉 For **each entitlement**, identify which functions **truly require or reflect the usage** of that entitlement at runtime.
 Only output functions that are **meaningfully tied to the purpose and semantics** of the entitlement.
-### Matching Rules:
+
 
 1. ✅ **Keep** functions that:
    - Directly **use privileged system resources** protected by the entitlement
@@ -240,7 +240,7 @@ Only output functions that are **meaningfully tied to the purpose and semantics*
    - You may use function prefixes (e.g., `PH`, `TCC`, `CN`, `NSFileAccess`, `FSEvents`) as weak signals but must verify semantic alignment.
 
 ---  
-            ### 🔄 Input
+            
 
             **Entitlement:**
             {entitlement_list}
@@ -251,7 +251,7 @@ Only output functions that are **meaningfully tied to the purpose and semantics*
             ---
             ---
 
-                ### Output format
+                
 ⚠️ Format constraints:
 The returned content must be standard JSON and cannot contain single quotes ' or illegal escapes such as \';
 
@@ -281,8 +281,8 @@ def requestLLM(entitlement_list,func_list):
 
     response = openai.chat.completions.create(
         model="google/gemini-2.5-flash",
-        # model="google/gemini-2.5-pro",
-        # model="meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        
+        
         messages=[
             {"role": "system",
              "content": "Please make sure the output format is **valid JSON**, no bare newlines are allowed, all newlines should be escaped by `\\n`, and the entire content must be parsable normally by `json.loads()`."},
@@ -294,9 +294,9 @@ def requestLLM(entitlement_list,func_list):
     json_str = response.choices[0].message.content
     return json_str
 
-# 一次处理多个entitlement
+
 def process_entitlement_multi(ent_index_list, ent_file_path, batch_size, save_map_res_dir,ent_start, ent_end):
-    #循环把对应的entitlement
+    
     entitlement_list=[]
     for tmp_ent_index in ent_index_list:
         Ent_desc_dir = "./Entitlement_desc_dir_correct/"
@@ -308,17 +308,17 @@ def process_entitlement_multi(ent_index_list, ent_file_path, batch_size, save_ma
             ent_capability = ent_json["capability"]
             entitlement_list.append(entitlement)
 
-        # entitlement_description = {"entitlement_name": entitlement, "entitlement_capability": ent_capability}
+        
         entitlement_description = {"entitlement_name": entitlement}
 
 
     functions_list = combine_multi_function_for_LLM(ent_file_path)
     response_function_list = []
-    #这里取部分entitlement
+    
     prompt_entitlement_list=entitlement_list[ent_start:ent_end]
 
     for i in range(0, len(functions_list), batch_size):
-        #这里选择先给函数名字就够了，不要给很多
+        
         prompt_func_list = []
         temp_func_list = functions_list[i:i + batch_size]
         ent_save_filename = f"./Entitlement_map_func_dir/{save_map_res_dir}/{ent_start}_{ent_end}/ent_to_sink_list_{i}_{i+batch_size}.json"
@@ -350,21 +350,21 @@ def ent_map_sinkfunction(ent_start, ent_end, ent_file_path, batch_size, max_work
 
     tmp_ent_index_list = [index.strip() for index in ent_index_list]
 
-    # Ensure the output directory exists
-    #os.makedirs(f"./Entitlement_map_func_dir/{save_map_res_dir}/{ent_start}_{ent_end}", exist_ok=True)
-    # 多个entitlement对应多个函数
-    # 函数签名def process_entitlement(tmp_ent_index, ent_file_path, batch_size, save_map_res_dir, ent_start, ent_end):
+    
+    
+    
+    
     process_entitlement_multi(tmp_ent_index_list,ent_file_path,batch_size, save_map_res_dir, ent_start, ent_end)
 
     '''
-    # Use ThreadPoolExecutor for parallel processing
+    
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [
             executor.submit(process_entitlement, tmp_ent_index, ent_file_path, batch_size, save_map_res_dir, ent_start,
                             ent_end)
             for tmp_ent_index in tmp_ent_index_list
         ]
-        # Wait for all threads to complete
+        
         for future in futures:
             future.result()
             
@@ -379,11 +379,11 @@ if __name__ == "__main__":
                         help="Path to the entitlement file (e.g., /file_system_operations.txt)")
     args = parser.parse_args()
     ent_map_sinkfunction(args.ent_start, args.ent_end, args.ent_file_path, 50)
-    #ent_map_sinkfunction(0,100,"file_system_operations.txt",100)
+    
 
 '''
 
- ### 🧠 Self-Reflection Checklist (before returning your answer):
+ 
         - Are you relying only on names instead of summaries/signatures?
         - Are any matches speculative or undocumented?
         - When in doubt, prefer `match: false`.

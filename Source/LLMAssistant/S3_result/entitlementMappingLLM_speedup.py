@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 import threading
 import argparse
 
-# 禁止外泄
+
 usc_api_key = "xxxx"
 
 stream = False
@@ -80,7 +80,7 @@ def process_entitlement(tmp_ent_index, ent_file_path, batch_size, save_map_res_d
         entitlement = ent_json["entitlement"]
         ent_capability = ent_json["capability"]
 
-    #entitlement_description = {"entitlement_name": entitlement, "entitlement_capability": ent_capability}
+    
     entitlement_description={"entitlement_name": entitlement}
     ent_save_filename = f"./Entitlement_map_func_dir/{save_map_res_dir}/{ent_start}_{ent_end}/ent_to_sink_list_{tmp_ent_index}.json"
 
@@ -101,7 +101,7 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
     
 
     然后我会先给entitlement，然后以及函数列表，请你返回那个函数列表中跟entitlement能配合可能产生漏洞的函数列表，也返回一个函数列表出来
-        ### 🔄 Input
+        
         
         **Entitlement:**
         {entitlement_description}
@@ -125,8 +125,8 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
 
         response = openai.chat.completions.create(
             model="google/gemini-2.5-flash",
-            #model="google/gemini-2.5-pro",
-            #model="meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            
+            
             messages=[
                 {"role": "system",
                  "content": "Please make sure the output format is **valid JSON**, no bare newlines are allowed, all newlines should be escaped by `\\n`, and the entire content must be parsable normally by `json.loads()`."},
@@ -146,7 +146,7 @@ Only mark match: true when the function is very clearly related. Otherwise, retu
 
     ent_map_sinkfunc_json = {entitlement: response_function_list}
 
-    # Ensure the directory exists in a thread-safe way
+    
     os.makedirs(os.path.dirname(ent_save_filename), exist_ok=True)
 
     with open(ent_save_filename, "w", encoding="utf-8") as f:
@@ -165,17 +165,17 @@ def ent_map_sinkfunction(ent_start, ent_end, ent_file_path, batch_size, max_work
 
     tmp_ent_index_list = [index.strip() for index in ent_index_list[ent_start:ent_end]]
 
-    # Ensure the output directory exists
+    
     os.makedirs(f"./Entitlement_map_func_dir/{save_map_res_dir}/{ent_start}_{ent_end}", exist_ok=True)
 
-    # Use ThreadPoolExecutor for parallel processing
+    
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [
             executor.submit(process_entitlement, tmp_ent_index, ent_file_path, batch_size, save_map_res_dir, ent_start,
                             ent_end)
             for tmp_ent_index in tmp_ent_index_list
         ]
-        # Wait for all threads to complete
+        
         for future in futures:
             future.result()
 
@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
 '''
 
- ### 🧠 Self-Reflection Checklist (before returning your answer):
+ 
         - Are you relying only on names instead of summaries/signatures?
         - Are any matches speculative or undocumented?
         - When in doubt, prefer `match: false`.

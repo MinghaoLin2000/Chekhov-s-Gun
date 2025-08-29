@@ -44,5 +44,5 @@ def list_all_files(directory):
     print(num)
 
 
-# 示例调用
+
 list_all_files("./S2_result")

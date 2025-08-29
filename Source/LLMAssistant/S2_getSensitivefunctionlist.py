@@ -9,9 +9,9 @@ def get_filter_index():
     filter_number=0
     filter_index_list=[]
     file_index=0
-    #open new_func_pseudocode dirctor
+    
     for file in os.listdir(new_func_pseudocode_dir):
-        #json file parse
+        
         with open(os.path.join(new_func_pseudocode_dir, file), "r") as f:
             data = json.load(f)
             file_index=int(file.split(".")[0])
@@ -27,8 +27,8 @@ def get_filter_index():
                 filter_index_list.append(file_index)
             f.close()
 
-    #print(filter_number)
-    #print(filter_index_list)
+    
+    
     return filter_index_list
 
 example1='''
@@ -162,16 +162,16 @@ bool __cdecl -[DeviceUIServiceViewController performDragOperation:](DeviceUIServ
 }
 '''
 
-# 禁止外泄
+
 usc_api_key = "xx"
-stream = True  # or False
+stream = True  
 
 openai = OpenAI(
     api_key=usc_api_key,
     base_url="https://api.deepinfra.com/v1/openai",
 )
-stream = False  # or False
-# 打开所有输出文件（以追加模式）
+stream = False  
+
 
 save_res_dir="./sensitive_save_res_dir"
 all_func_pse_dir="./new_func_pseudocode"
@@ -299,14 +299,14 @@ for file_index in range(22390):
     ✏️ Your answer:
     
     
-    ### 🧠 Self-Reflection
+    
 - Did you overlook any indicators of sensitivity?
 - Is your verdict well supported by the evidence?
 - Can you improve the explanation or classification?
 
 ✏️ Your reflection:
     
-    ## 🔚 输出格式建议（结构化）：
+    
 
     以 JSON 格式返回，我举一个例子，这样：
     '''
@@ -325,8 +325,8 @@ for file_index in range(22390):
         """
 
         response = openai.chat.completions.create(
-            # model="gpt-4.1",
-            # model="meta-llama/Meta-Llama-3-8B-Instruct",
+            
+            
             model="google/gemini-2.5-flash",
             messages=[
                 {"role": "system",
@@ -336,22 +336,22 @@ for file_index in range(22390):
             response_format={"type": "json_object"}
         )
 
-        # print(response.choices[0].message.content)
+        
         json_str = response.choices[0].message.content
-        # print(type(json_str))
-        # print(json_str)
-        # exit()
+        
+        
+        
         data = json.loads(json_str)
         print(data)
-        # 将函数写入对应文件
+        
         data["function_code"]=file_index
-        # 把这个json数据写入到文件里面
+        
         with open(file_index+"/"+str(file_index)+".json", "w") as f:
             json.dump(data, f)
         
-            # print(f"fn_name:{fn_name}")
-            # print(f"categories:{categories}")
-            # 根据类别写入不同文件；如果是 -1 表示不属于任何敏感类型，则跳过
-            #for cat in categories:
-                #if cat != -1 and cat in file_handles:
-                    #file_handles[cat].write(fn_name + "\n")
+            
+            
+            
+            
+                
+                    

@@ -1,10 +1,10 @@
-# Initialize HeadlessIda
+
 from itertools import count
 from operator import truediv
 from pprint import pprint
 from tempfile import tempdir
 import ida
-#from headless_ida import HeadlessIda
+
 import tempfile
 import shutil
 import os
@@ -16,8 +16,8 @@ from claripy import false
 import ida_funcs
 import ida_graph
 import ida_range
-#headlessida = HeadlessIda("/Applications/IDA Professional 9.0.app/Contents/MacOS", noEnt_path)
-# Import IDA Modules (make sure you have initialized HeadlessIda first)
+
+
 import idautils
 import ida_name
 import idaapi
@@ -33,7 +33,7 @@ from genmc import genmc
 
 from ida_gdl import FlowChart
 
-#initiate environment
+
 Ent_path="/System/Library/PrivateFrameworks/TrialServer.framework/XPCServices/TrialArchivingService.xpc/Contents/MacOS/TrialArchivingService"
 noEnt_path="/System/Library/PrivateFrameworks/MetricMeasurement.framework/Versions/A/XPCServices/MetricMeasurementHelper.xpc/Contents/MacOS/MetricMeasurementHelper"
 nsxpc_num=0
@@ -43,14 +43,14 @@ def handle_other_domain_service():
     xpc_begin = 0
     file_path = "./../state.txt"
     with open(file_path, 'r') as file:
-        # 遍历文件中的每一行
+        
         for line in file:
-            # 去除行首尾的空白字符（例如换行符、空格等）
+            
             line = line.strip()
-            # 判断行是否以 "gui/501/" 开头
+            
             if line.startswith("system/"):
-                # 提取 "gui/501/" 之后的部分
-                key = line[len("system/"):].split(" ")[0]  # 提取key并去除后面的其他内容
+                
+                key = line[len("system/"):].split(" ")[0]  
                 print(f"Extracted key: {key}")
                 xpc_begin = 1
             if xpc_begin == 1 and line.startswith("program ="):
@@ -58,7 +58,7 @@ def handle_other_domain_service():
                 print(f"program_path:{program_path}")
                 outputdir_path = "/Users/yenkoc/Downloads/macSecGui"
                 outputfile_path = os.path.join(outputdir_path, key + ".txt")
-                # 判断文件是否存在
+                
                 if os.path.exists(program_path) and "Google" not in program_path and "Clash" not in program_path:
                     largeScaleDump(program_path, outputfile_path)
                     print(f"The file at {file_path} exists.")
@@ -67,10 +67,10 @@ def handle_other_domain_service():
                 xpc_begin = 0
 def checkfileExist(program_path):
     if os.path.exists(program_path):
-        #print(f"The file at {file_path} exists.")
+        
         return True
     else:
-        #print(f"The file at {file_path} does not exist.")
+        
         return False
 
 def is_fat_binary(file_path):
@@ -81,17 +81,17 @@ def is_fat_binary(file_path):
     """
     try:
         with open(file_path, "rb") as f:
-            # 读取前 4 字节
+            
             magic = f.read(4)
 
-        # FAT_MAGIC 和 FAT_CIGAM 的标识
+        
         FAT_MAGIC = 0xcafebabe
         FAT_CIGAM = 0xbebafeca
 
-        # 将字节转换为整数（大端序）
+        
         magic_number = struct.unpack(">I", magic)[0]
 
-        # 判断是否匹配 FAT_MAGIC 或 FAT_CIGAM
+        
         return magic_number in [FAT_MAGIC, FAT_CIGAM]
 
     except Exception as e:
@@ -106,13 +106,13 @@ def lipo_binary_info(input_file):
     :param output_file: 输出文件路径
     """
     try:
-        # 构造 lipo 命令
+        
         cmd = ["lipo", "-info", input_file]
 
-        # 执行命令
+        
         result = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
-        #print(f"Successfully extracted '{arch}' architecture to: {output_file}")
+        
         if result.stdout:
             print("Command output:", result.stdout)
             return result.stdout
@@ -125,7 +125,7 @@ def lipo_binary_info(input_file):
         print(f"Unexpected error: {e}")
 def init_env(binary_path,isFatBinary):
     tempdir = tempfile.mkdtemp()
-    #shutil.copy(noEnt_path, tempdir)
+    
     if isFatBinary:
         info=lipo_binary_info(binary_path)
         if "arm64e" in info:
@@ -149,46 +149,46 @@ def init_env(binary_path,isFatBinary):
         return ""
     return tempdir
 def close_env(deleteTempDir):
-    # 检查文件夹是否存在
+    
     ida.close_database(True)
     if os.path.exists(deleteTempDir):
         shutil.rmtree(deleteTempDir)
         print(f"Folder '{deleteTempDir}' has been deleted.")
     else:
         print(f"Folder '{deleteTempDir}' does not exist.")
-    #ida.close_database(False)
+    
 def AddIfNSXPC():
     global nsxpc_num
     nsxpc_num+=1
 def checkEntitlement_old(function_name,binary_path):
-    # 增加判断，防止第二个函数也包含shouldxx，虽然可能性不大（
+    
     FirstcheckNSXPC = 0
-    # 获取函数地址
+    
     for func_addr in idautils.Functions():
         funcname=ida_name.get_ea_name(func_addr)
         if function_name in funcname:
             '''
             with open("nsxpc_all_txt", 'a') as file:
-                # 写入字符串并换行
+                
                 file.write(binary_path + '\n')
             '''
             if FirstcheckNSXPC==0:
-                AddIfNSXPC() #判断是否是nsxpc
+                AddIfNSXPC() 
                 FirstcheckNSXPC=1
             print(f"{hex(func_addr)} {ida_name.get_ea_name(func_addr)}")
             func = idaapi.get_func(func_addr)
             start_addr = func.start_ea
             end_addr = func.end_ea
-            #just print for debug
+            
             isFindRet=0
-            # 从函数结束地址开始反向遍历指令
+            
             current_addr = idc.prev_head(end_addr)
             while current_addr >= start_addr:
-                # 获取汇编指令的操作码和操作数
+                
                 mnemonic = idc.print_insn_mnem(current_addr)
                 op1 = idc.print_operand(current_addr, 0)
                 op2 = idc.print_operand(current_addr, 1)
-                # 检查是否是 ret 指令，且操作数涉及 w0 或 x0
+                
                 if mnemonic.lower() == "retab":
                     print(f"retn instruction found at {hex(current_addr)}: {mnemonic} {op1}, {op2}")
                     isFindRet=1
@@ -197,82 +197,82 @@ def checkEntitlement_old(function_name,binary_path):
                             print(f"mov instruction found at {hex(current_addr)}: {mnemonic} {op1}, {op2}")
                             ''' 
                             with open("nsxpc_nocheck_txt", 'a') as file:
-                                # 写入字符串并换行
+                                
                                 file.write(binary_path + '\n')
                             '''
                             return True
                         else:
                             '''
                             with open("nsxpc_check_txt", 'a') as file:
-                                # 写入字符串并换行
+                                
                                 file.write(binary_path + '\n')
                             return False
                             '''
-                # 获取上一条指令地址
+                
                 current_addr = idc.prev_head(current_addr)
-    return False #说明一直没有
+    return False 
 
 def dumpProcotol(input_file,output_file):
-    #利用一个class-dumpc的文件
-    # 构造二进制文件路径
+    
+    
     binary_dir="/Users/yenkoc/Documents/GitHub/macOS_tool/UserSpace/python3/classdumpc/Release"
     binary_name="classdumpc"
     binary_path = os.path.join(binary_dir, binary_name)
 
-    # 检查二进制文件是否存在
+    
     if not os.path.exists(binary_path):
         print(f"Error: Binary file '{binary_path}' not found.")
         return
 
-    # 检查输入文件是否存在
+    
     if not os.path.exists(input_file):
         print(f"Error: Input file '{input_file}' not found.")
         return
 
-    # 使用 subprocess 运行二进制文件
+    
     try:
         print(f"Running binary: {binary_path} with input file: {input_file}")
 
-        # 执行二进制文件，并捕获其输出
+        
         result = subprocess.run(
-            [binary_path, input_file],  # 二进制文件和参数
-            stdout=subprocess.PIPE,  # 捕获标准输出
-            stderr=subprocess.PIPE,  # 捕获错误输出
-            text=True  # 将输出解码为字符串
+            [binary_path, input_file],  
+            stdout=subprocess.PIPE,  
+            stderr=subprocess.PIPE,  
+            text=True  
         )
 
-        # 将结果写入输出文件
+        
         with open(output_file, "w") as f:
             f.write(result.stdout)
         print(f"Output written to: {output_file}")
-        # 打印标准错误输出（如果有）
+        
         if result.stderr:
             print(f"Error output: {result.stderr}")
 
     except Exception as e:
         print(f"Error occurred while processing: {e}")
-    #dump出ent
+    
     safe_file_url = shlex.quote(input_file)
     command = f"codesign -d --entitlements - {safe_file_url}"
 
     try:
-        # 执行 shell 命令
+        
         result = subprocess.run(command, shell=True, text=True, capture_output=True)
 
-        # 检查命令是否成功执行
+        
         if result.returncode == 0:
             output_content = result.stdout
-            #print("Command executed successfully.")
+            
         else:
             output_content = f"Error:\n{result.stderr}"
-            #print("Command failed with error:\n", result.stderr)
+            
 
         with open(output_file, "a") as file:
             file.write("Entitlement ------------\n")
-        # 将输出写入文件
+        
         with open(output_file, "a") as file:
             file.write(output_content)
-        #print(f"Output written to {output_file}")
+        
 
     except Exception as e:
         print(f"An error occurred while running the command: {e}")
@@ -292,29 +292,25 @@ def get_mopt_name(mopt):
     return None
 
 def is_address_in_segment(addr, segment_name):
-    # 获取段的起始地址和结束地址
+    
     seg = idautils.Segments()
     for seg_addr in seg:
         seg_name = idc.get_segm_name(seg_addr)
         if seg_name == segment_name:
             seg_start = idc.get_segm_start(seg_addr)
             seg_end = idc.get_segm_end(seg_addr)
-            # 判断地址是否在段的范围内
+            
             if addr>=seg_start and addr<= seg_end:
                 return True
     return False
-
-# 示例：判断某个地址（例如 0x1000）是否位于 `.text` 段中
-
-#向前的一个污点分析
 class forward_taint_analysis(ida_graph.GraphViewer):
     """Displays the graph view of Hex-Rays microcode."""
 
     def __init__(self):
         title = "Microinstruction: %s - %d.%d (%s)"
         ida_graph.GraphViewer.__init__(self, title, True)
-        #self.mblock = mba.get_mblock(block)
-        #self.minsn = self.get_minsn(serial)
+        
+        
 
     def get_minsn(self, serial):
         curr = self.mblock.head
@@ -328,14 +324,14 @@ class forward_taint_analysis(ida_graph.GraphViewer):
 
         text = get_mopt_name(mop.t) + '\n' + mop._print()
         node_id = self.AddNode(text)
-        #self.AddEdge(parent, node_id)
+        
 
-        if mop.t == hr.mop_d:  # result of another instruction
+        if mop.t == hr.mop_d:  
             dst_id = self._insert_minsn(paths,mblock,mop.d,protocol_list,binary_path)
             if dst_id:
                 self.AddEdge(node_id, dst_id)
-        elif mop.t == hr.mop_f:  # list of arguments
-            #这里判断是不是interfaceWithProtocol函数调用
+        elif mop.t == hr.mop_f:  
+            
             arg_index=0
             getprotocol=-1
             if "SPIHelper" in binary_path:
@@ -346,32 +342,32 @@ class forward_taint_analysis(ida_graph.GraphViewer):
                         protocol_addr = node.a.g
                         protocol_list.append(protocol_addr)
                     if node.t==hr.mop_l:
-                        #说明是局部变量，可以通过这个语句相当于做静态分析的source点了，得反向追一下数据流
+                        
                         while minsn.prev:
                             if minsn.opcode==hr.m_mov:
                                 text = get_mcode_name(minsn.opcode) + '\n' + minsn._print()
                                 print("game over")
                 if arg_index==0:
                     getprotocol+=1
-                #这里会出现不一定是cstr的type，比如spihelper这里就会漏掉
+                
                 if arg_index==1:
                     if node.t==hr.mop_str and node.cstr=="interfaceWithProtocol:":
                         getprotocol+=1
                     if node.t==hr.mop_a:
-                        #函数名字
+                        
                         func_name_addr=node.a.g
                         if func_name_addr!=None:
-                            #interface_addr = idc.get_bytes(func_name_addr, 8)
-                            #interface_addr = struct.unpack('<Q', interface_addr)[0]
+                            
+                            
                             interface_name = idc.get_strlit_contents(func_name_addr)
-                            #interface_name=interface_name.decode("utf-8")
+                            
                             if interface_name==b"interfaceWithProtocol:":
                                 getprotocol+=1
                 arg_index+=1
 
             for arg in mop.f.args:
                 self._insert_mop(paths,mblock,minsn,arg, node_id,protocol_list,binary_path)
-        elif mop.t == hr.mop_a:  # mop_addr_t: address of operand
+        elif mop.t == hr.mop_a:  
             addr=mop.a.g
             segment_name = "__objc_protorefs"
             if addr!=None:
@@ -385,7 +381,7 @@ class forward_taint_analysis(ida_graph.GraphViewer):
                             print(f"Address {hex(addr)} is not in the {segment_name} segment.")
 
             self._insert_mop(paths,mblock,minsn,mop.a, node_id,protocol_list,binary_path)
-        elif mop.t == hr.mop_p:  # operand pair
+        elif mop.t == hr.mop_p:  
             self._insert_mop(paths,mblock,minsn,mop.pair.lop, node_id,protocol_list,binary_path)
             self._insert_mop(paths,mblock,minsn,mop.pair.hop, node_id,protocol_list,binary_path)
         elif mop.t==hr.mop_str:
@@ -421,8 +417,8 @@ class microcode_insnviewer_t(ida_graph.GraphViewer):
     def __init__(self):
         title = "Microinstruction: %s - %d.%d (%s)"
         ida_graph.GraphViewer.__init__(self, title, True)
-        #self.mblock = mba.get_mblock(block)
-        #self.minsn = self.get_minsn(serial)
+        
+        
 
     def get_minsn(self, serial):
         curr = self.mblock.head
@@ -438,12 +434,12 @@ class microcode_insnviewer_t(ida_graph.GraphViewer):
         node_id = self.AddNode(text)
         self.AddEdge(parent, node_id)
 
-        if mop.t == hr.mop_d:  # result of another instruction
+        if mop.t == hr.mop_d:  
             dst_id = self._insert_minsn(paths,mblock,minsn,mop.d,protocol_list,binary_path)
             if dst_id:
                 self.AddEdge(node_id, dst_id)
-        elif mop.t == hr.mop_f:  # list of arguments
-            #这里判断是不是interfaceWithProtocol函数调用
+        elif mop.t == hr.mop_f:  
+            
             arg_index=0
             getprotocol=-1
             if "SPIHelper" in binary_path:
@@ -454,55 +450,55 @@ class microcode_insnviewer_t(ida_graph.GraphViewer):
                         protocol_addr = node.a.g
                         protocol_list.append(protocol_addr)
                     if node.t==hr.mop_l:
-                        #说明是局部变量，可以通过这个语句相当于做静态分析的source点了，得反向追一下数据流
-                        #node taint的节点
+                        
+                        
                         mblock_list=[]
                         tem_insn = mblock.head
-                        #end返回是int类型，所以这里直接用head，然后收集一个list，然后反向的遍历
+                        
                         while tem_insn:
                             text =get_mcode_name(tem_insn.opcode) + '\n' + tem_insn._print()
                             if tem_insn._print()==minsn._print():
                                 break
-                          #  microcode_insnviewer_t()._insert_minsn(paths, mblock, insn, insn, protocol_list,binary_path)
-                            # visit_top_insn(insn)
+                          
+                            
                             mblock_list.append(tem_insn)
                             tem_insn = tem_insn.next
-                        #这里做一个切片，看看是不是m_mov指令
+                        
                         for forward_insn in reversed(mblock_list):
                             if forward_insn.opcode==hr.m_mov:
                                 text = get_mcode_name(forward_insn.opcode) + '\n' + forward_insn._print()
-                                #然后check 右操作数，是我们想要的node，d是目标操作数
+                                
                                 d_op=forward_insn.d
                                 temp_insn=forward_insn.l
                                 test=node.l.var().name
                                 if node.l.var().name == d_op.l.var().name:
-                                    #逮住了，说明在进行赋值，然后找左边的是不是protocol，如果不是还需要继续处理
+                                    
                                     forward_taint_analysis()._insert_mop("","",forward_insn,forward_insn.l,[],protocol_list,[])
 
 
                 if arg_index==0:
                     getprotocol+=1
-                #这里会出现不一定是cstr的type，比如spihelper这里就会漏掉
+                
                 if arg_index==1:
                     if node.t==hr.mop_str and node.cstr=="interfaceWithProtocol:":
                         getprotocol+=1
                     if node.t==hr.mop_a:
-                        #函数名字
+                        
                         func_name_addr=node.a.g
                         if func_name_addr!=None:
-                            #interface_addr = idc.get_bytes(func_name_addr, 8)
-                            #interface_addr = struct.unpack('<Q', interface_addr)[0]
+                            
+                            
                             interface_name = idc.get_strlit_contents(func_name_addr)
-                            #interface_name=interface_name.decode("utf-8")
+                            
                             if interface_name==b"interfaceWithProtocol:":
                                 getprotocol+=1
                 arg_index+=1
 
             for arg in mop.f.args:
                 self._insert_mop(paths,mblock,minsn,arg, node_id,protocol_list,binary_path)
-        elif mop.t == hr.mop_a:  # mop_addr_t: address of operand
+        elif mop.t == hr.mop_a:  
             self._insert_mop(paths,mblock,minsn,mop.a, node_id,protocol_list,binary_path)
-        elif mop.t == hr.mop_p:  # operand pair
+        elif mop.t == hr.mop_p:  
             self._insert_mop(paths,mblock,minsn,mop.pair.lop, node_id,protocol_list,binary_path)
             self._insert_mop(paths,mblock,minsn,mop.pair.hop, node_id,protocol_list,binary_path)
         elif mop.t==hr.mop_str:
@@ -562,13 +558,13 @@ def parseObjc_protocol(addr):
     protocol_name_addr = struct.unpack('<Q', protocol_name_addr)[0]
     protocol_name=idc.get_strlit_contents(protocol_name_addr)
     return protocol_name
-    #判断是不是有继承
+    
     '''
     protocol_list_addr = idc.get_bytes(addr+0x10,8)
     protocol_list_addr = struct.unpack('<Q', protocol_list_addr)[0]
     instance_method_list=[]
     if(protocol_list_addr!=0):
-        #todo 继续往上解析
+        
         print("func")
     instance_methods_addr = idc.get_bytes(addr+0x18, 8)
     instance_methods_addr = struct.unpack('<Q', instance_methods_addr)[0]
@@ -585,32 +581,32 @@ def parseObjc_protocol(addr):
         objc2_meth_addr+=24
     '''
 def classdumpcccc(input_file):
-    # 利用一个class-dumpc的文件
-    # 构造二进制文件路径
+    
+    
     binary_dir = "/Users/yenkoc/Documents/GitHub/macOS_tool/UserSpace/python3/classdumpc/Release"
     binary_name = "classdumpc"
     binary_path = os.path.join(binary_dir, binary_name)
 
-    # 检查二进制文件是否存在
+    
     if not os.path.exists(binary_path):
         print(f"Error: Binary file '{binary_path}' not found.")
         return
 
-    # 检查输入文件是否存在
+    
     if not os.path.exists(input_file):
         print(f"Error: Input file '{input_file}' not found.")
         return
 
-    # 使用 subprocess 运行二进制文件
+    
     try:
         print(f"Running binary: {binary_path} with input file: {input_file}")
 
-        # 执行二进制文件，并捕获其输出
+        
         result = subprocess.run(
-            [binary_path, input_file],  # 二进制文件和参数
-            stdout=subprocess.PIPE,  # 捕获标准输出
-            stderr=subprocess.PIPE,  # 捕获错误输出
-            text=True  # 将输出解码为字符串
+            [binary_path, input_file],  
+            stdout=subprocess.PIPE,  
+            stderr=subprocess.PIPE,  
+            text=True  
         )
         return result.stdout
     except Exception as e:
@@ -625,11 +621,11 @@ def findAllProtocols(classDump_content_lines,protocol_name,protocol_file_content
             protocol_start=i
             if "<" in classDump_content_lines[i] and ">" in classDump_content_lines[i]:
                 pattern = r"<([^>]+)>"
-                # 查找匹配项
+                
                 match = re.search(pattern, classDump_content_lines[i])
 
                 if match:
-                    # 获取 '<' 和 '>' 之间的内容，并以逗号分开
+                    
                     items = match.group(1).split(", ")
                     for next_protocol_name in items:
                         findAllProtocols(classDump_content_lines, next_protocol_name, protocol_file_content)
@@ -637,7 +633,7 @@ def findAllProtocols(classDump_content_lines,protocol_name,protocol_file_content
             for yk in range(protocol_start,i+1):
                 protocol_file_content.append(classDump_content_lines[yk])
             protocol_start=-1
-#搞一个回溯的搜索函数路径
+
 def DFSSearchShouldAccept(ref_addr,judge_result,final_result):
     if "shouldAcceptNewConnection:" in idc.get_func_name(ref_addr):
         tmp=[]
@@ -670,12 +666,12 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
             str=str.decode("utf-8")
             if "interfaceWithProtocol" in str:
                 print(f"String: {str} | Address: {hex(str_addr)}")
-                # 查找引用该字符串的数据引用
+                
                 for ref in idautils.DataRefsTo(str_addr):
                     print(f"Found data reference at: {hex(ref)}")
                     for code_ref in idautils.DataRefsTo(ref):
                         print("code_ref:",code_ref)
-                        #这里需要做一个向上的call graph搜索找到shouldaccept的函数才行
+                        
                         func = idaapi.get_func(code_ref)
                         judge_result=[func.start_ea]
                         final_result=[]
@@ -695,7 +691,7 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                                 if not ida_bytes.is_code(F):
                                     return (False, "The selected range must start with an instruction")
 
-                                # text, mmat, mba_flags = ask_desired_maturity()
+                                
                                 text = hr.MMAT_LVARS
                                 mmat = 8
                                 mba_flags = 0
@@ -713,7 +709,7 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                                 mba = hr.gen_microcode(mbr, hf, ml, hr.DECOMP_WARNINGS, mmat)
                                 if not mba:
                                     return (False, "0x%s: %s" % (addr_fmt % hf.errea, hf.desc()))
-                                # vp = printer_t()
+                                
                                 mba.set_mba_flags(mba.get_mba_flags() | mba_flags)
 
                                 for i in range(1, mba.qty):
@@ -723,7 +719,7 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                                         cur_len=len(protocol_list)
                                         microcode_insnviewer_t()._insert_minsn(paths,mblock, insn,insn, protocol_list, binary_path)
 
-                                        # visit_top_insn(insn)
+                                        
                                         insn = insn.next
                 print(protocol_list)
                 protocol_list=set(protocol_list)
@@ -732,9 +728,9 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                 classDump_content_lines = classDump_content.split("\n")
                 f = open(outputfile_path, 'a')
                 f.write(f"{binary_path}\n")
-                # if "SPIHelper" in binary_path:
-                #    print("debug")
-                # 这里拿到那个协议的地址，然后遍历解析objc的结构
+                
+                
+                
                 for protocol in protocol_list:
                     if protocol==None:
                         continue
@@ -744,36 +740,36 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                         continue
                     protocol_name = protocol_name.decode('utf-8')
                     findAllProtocols(classDump_content_lines, protocol_name, protocol_file_content)
-                    # print(protocol_file_content)
+                    
                     for item in protocol_file_content:
-                        f.write(f"{item}\n")  # 每个元素写入一行
-                    # dump出ent
+                        f.write(f"{item}\n")  
+                    
                 safe_file_url = shlex.quote(binary_path)
                 command = f"codesign -d --entitlements - {safe_file_url}"
 
                 try:
-                    # 执行 shell 命令
+                    
                     result = subprocess.run(command, shell=True, text=True, capture_output=True)
 
-                    # 检查命令是否成功执行
+                    
                     if result.returncode == 0:
                         output_content = result.stdout
-                        # print("Command executed successfully.")
+                        
                     else:
                         output_content = f"Error:\n{result.stderr}"
-                        # print("Command failed with error:\n", result.stderr)
+                        
                     f.write("---------------------------------------\n")
                     f.write("Entitlement:\n")
-                    # 将输出写入文件
+                    
 
                     f.write(output_content)
-                    # print(f"Output written to {output_file}")
+                    
 
                 except Exception as e:
                     print(f"An error occurred while running the command: {e}")
     '''
     function_name="shouldAcceptNewConnection"
-    #protocol_list = []
+    
     for func_addr in idautils.Functions():
         funcname=ida_name.get_ea_name(func_addr)
         if function_name in funcname:
@@ -787,7 +783,7 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
             if not ida_bytes.is_code(F):
                 return (False, "The selected range must start with an instruction")
 
-            #text, mmat, mba_flags = ask_desired_maturity()
+            
             text = hr.MMAT_LVARS
             mmat = 8
             mba_flags = 0
@@ -805,7 +801,7 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
             mba = hr.gen_microcode(mbr, hf, ml, hr.DECOMP_WARNINGS, mmat)
             if not mba:
                 return (False, "0x%s: %s" % (addr_fmt % hf.errea, hf.desc()))
-           # vp = printer_t()
+           
             mba.set_mba_flags(mba.get_mba_flags() | mba_flags)
 
             for i in range(1, mba.qty):
@@ -813,24 +809,24 @@ def dumpProcotol_IDA(binary_path,outputfile_path):
                 insn = mblock.head
                 while insn:
                     microcode_insnviewer_t()._insert_minsn(insn,protocol_list,binary_path)
-                   # visit_top_insn(insn)
+                   
                     insn = insn.next
     print(protocol_list)
     classDump_content=classdumpcccc(binary_path)
     classDump_content_lines=classDump_content.split("\n")
     f=open(outputfile_path, 'a')
     f.write(f"{binary_path}\n")
-    #if "SPIHelper" in binary_path:
-    #    print("debug")
-    #这里拿到那个协议的地址，然后遍历解析objc的结构
+    
+    
+    
     for protocol in protocol_list:
         protocol_name=parseObjc_protocol(protocol)
         protocol_file_content=[]
         protocol_name = protocol_name.decode('utf-8')
         findAllProtocols(classDump_content_lines,protocol_name,protocol_file_content)
-        #print(protocol_file_content)
+        
         for item in protocol_file_content:
-            f.write(f"{item}\n")  # 每个元素写入一行
+            f.write(f"{item}\n")  
     '''
 def get_pseudocode_for_func(func_ea):
     if not hr.init_hexrays_plugin():
@@ -850,11 +846,11 @@ def get_pseudocode_for_func(func_ea):
     except hr.DecompilationFailure:
         print("❌ Failed to decompile function at 0x{:X}".format(func_ea))
         return
-#直接通过字符串来判断是否有
+
 def checkEntitlement_new(function_name,binary_path):
-    # 增加判断，防止第二个函数也包含shouldxx，虽然可能性不大（
+    
     FirstcheckNSXPC = 0
-    # 获取函数地址
+    
     for func_addr in idautils.Functions():
         funcname=ida_name.get_ea_name(func_addr)
         if function_name in funcname:
@@ -879,7 +875,7 @@ def checkEntitlement_new(function_name,binary_path):
                 return ("NSXPC", True)
             '''
 
-    #走到这里说明不是NSXPC了，我们需要通过字符串来进行判断了
+    
     for s in idautils.Strings():
         if "Entitlement" in str(s) and "entitlement" in str(s):
             return ("XPC",True)
@@ -897,24 +893,24 @@ def checkEntitlement_new(function_name,binary_path):
         return ("XPC",True)
 
 
-    return ("XPC",False) #说明一直没有
+    return ("XPC",False) 
 
 
 def largeScaleDump(binary_path,outputfile_path):
-    #if "media" not in binary_path:
-    #    return
+    
+    
     tempdir=init_env(binary_path,is_fat_binary(binary_path))
     if(tempdir==""):
         return
-    #feature_forEntitle
+    
     TargetFunc="shouldAcceptNewConnection"
-    #check
+    
     check_result=checkEntitlement_new(TargetFunc,binary_path)
     Data_dir="LLM4Sec/Data/"
     if check_result[0]=="NSXPC":
-        #这里有两种结果
+        
         if check_result[1]==True:
-            #写入一个数据集文件夹里面吧
+            
             f1=open(Data_dir+"NSXPC_Check.txt","a")
             f1.write(binary_path+"\n")
         else:
@@ -930,14 +926,14 @@ def largeScaleDump(binary_path,outputfile_path):
             f4.write(binary_path+"\n")
 
 
-        #dump protocol and sandbox file
-        #这个是把所有的protocol都dump出来了，用classdumpc
-        #dumpProcotol(binary_path,outputfile_path)
-        #dumpProcotol_IDA(binary_path,outputfile_path)
+        
+        
+        
+        
         print("yenkoc!")
-    #close env and delete dir
-    #else:
-        #print("fxxxk binary_path:",binary_path) #包括了不是nsxpc，以及有ent check的
+    
+    
+        
     close_env(tempdir)
 def checkServiceType(info_plist_file_path):
     f=open(info_plist_file_path,"rb")
@@ -950,31 +946,31 @@ def checkServiceType(info_plist_file_path):
     return False
 
 def find_folder(base_path, target_folder):
-    # 遍历文件夹和子文件夹
-    #yk_fileNum=0
+    
+    
     global yk_fileNum
     for root, dirs, files in os.walk(base_path):
-        # 判断该目录是否包含 Contents/MacOS 子目录
+        
         if 'Contents' in dirs:
             contents_path = os.path.join(root, 'Contents')
             macos_path = os.path.join(contents_path, 'MacOS')
 
-            # 检查 Contents/MacOS 是否存在且是文件夹
+            
             if os.path.isdir(macos_path):
-                # 获取 MacOS 目录下的所有文件
+                
                 for binary in os.listdir(macos_path):
                     binary_path = os.path.join(macos_path, binary)
                     info_plist_path=os.path.join(contents_path,"Info.plist")
-                    if os.path.isfile(binary_path) and "XPCServices" in binary_path and checkServiceType(info_plist_path):  # 确保是文件
+                    if os.path.isfile(binary_path) and "XPCServices" in binary_path and checkServiceType(info_plist_path):  
                         print(f"Found binary: {binary_path}")
                         for item in os.listdir(macos_path):
                             item_path = os.path.join(macos_path, item)
-                            # 如果是文件，则打印文件名
+                            
                             if os.path.isfile(item_path):
                                 print(f"File: {item_path}")
                                 print(f"Yk_fileNum: {yk_fileNum}")
                                 outputdir_path="/Users/yenkoc/Downloads/protocolEnt"
-                                #outputdir_path = "/Users/yenkoc/Downloads/macOSSec"
+                                
                                 outputfile_path = os.path.join(outputdir_path, item + ".txt")
                                 largeScaleDump(item_path, outputfile_path)
                                 yk_fileNum += 1
@@ -988,36 +984,36 @@ def ground_truth_dump_protool():
         largeScaleDump(line_str[:-1], outputfile_path)
 
 
-# 设置起始路径和目标文件夹名称
-#ground_truth_dump_protool()
 
-base_directory = "/System/Library/PrivateFrameworks/"  # 替换为你的根文件夹路径
+
+
+base_directory = "/System/Library/PrivateFrameworks/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Library/Frameworks/"  # 替换为你的根文件夹路径
+base_directory = "/System/Library/Frameworks/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Library/CoreServices/"  # 替换为你的根文件夹路径
+base_directory = "/System/Library/CoreServices/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Library/PreferencePanes/"  # 替换为你的根文件夹路径
+base_directory = "/System/Library/PreferencePanes/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Library/Templates/"  # 替换为你的根文件夹路径
+base_directory = "/System/Library/Templates/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Library/CryptoTokenKit/"  # 替换为你的根文件夹路径
+base_directory = "/System/Library/CryptoTokenKit/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
-base_directory = "/System/Applications/"  # 替换为你的根文件夹路径
+base_directory = "/System/Applications/"  
 target_folder_name = "MacOS"
-# 调用函数
+
 find_folder(base_directory, target_folder_name)
 print("totNSXPCNum:",nsxpc_num)
 print("yk_fileNum:",yk_fileNum)

@@ -14,7 +14,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 
-# 关闭 LangSmith 日志
+
 import langchain
 import re
 
@@ -22,23 +22,23 @@ import re
 langchain.debug = False
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
-# 7. 设置 LLM 模型（使用 DeepInfra 提供的模型，如 LLaMA）
+
 os.environ["DEEPINFRA_API_TOKEN"] = 'xxxx'
 
-# 1. 加载 JSON 数据
+
 with open('./official_data/final_entitlements_result.json', 'r') as f:
     raw_data = json.load(f)
 
-# 2. 转换 JSON 数据为 Document 格式
+
 docs = []
 for key in raw_data.keys():
     content = f"Entitlement: {key}\nDescription: {raw_data[key]}"
     docs.append(Document(page_content=content))
 
 
-#text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-#all_splits = text_splitter.split_documents(docs)
-all_splits = docs  # 每个 entitlement 原本就是独立 Document，无需切分
+
+
+all_splits = docs  
 
 
 embeddings = DeepInfraEmbeddings(
@@ -52,17 +52,17 @@ if os.path.exists("./vector_store/index"):
 else:
     vectorstore = Chroma.from_documents(documents=all_splits, embedding=embeddings, persist_directory="./vector_store")
 retriever = vectorstore.as_retriever()
-#prompt = hub.pull("rlm/rag-prompt")
+
 
 
 
 llm = DeepInfra(model_id="google/gemini-2.5-flash")
-#llm.model_kwargs = {
-#    "temperature": 0.7,
-#    "repetition_penalty": 1.2,
-#    "max_new_tokens": 250,
-#    "top_p": 0.9,
-#}
+
+
+
+
+
+
 
 custom_prompt = PromptTemplate.from_template("""
 You are an expert on Apple entitlements and macOS security. Use the following known entitlement descriptions as reference.
@@ -133,13 +133,13 @@ Context (known entitlements):
 {context}
 
 Only return the JSON. Do not add any additional explanation or commentary outside the JSON block.""")
-# 8. 创建 RetrievalQA 链
+
 qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
     retriever=retriever,
     return_source_documents=False,
     chain_type_kwargs={"prompt": custom_prompt},
-    verbose=False  # 避免额外信息污染输出
+    verbose=False  
 
 )
 
@@ -149,26 +149,26 @@ for ent in all_ents:
     ent_list.append(ent.replace("\n",""))
 
 for i in range(592,len(ent_list)):
-    # 9. 用户提问
+    
     print(f"now we handle {i} element")
     query = ent_list[i]
     result = qa_chain.invoke(query)
 
 
-    # 10. 输出结果
+    
     print("Answer:", result['result'])
     output_json_str = result['result']
 
     try:
-        # 去掉 markdown 包裹符和前后多余空行
+        
         clean_json = output_json_str.strip().removeprefix("```json").removesuffix("```").replace("``` pformat=json","").strip()
         output_dict = json.loads(clean_json)
     except json.JSONDecodeError as e:
         print("JSON decode error:", e)
         print("Raw output was:", clean_json)
         exit(1)
-    #print("\nSource Document:")
-    #print(result['source_documents'][0].page_content)
+    
+    
     with open(f"./Entitlement_desc_dir/{i}.json", "w", encoding="utf-8") as f:
         json.dump(output_dict, f, indent=2, ensure_ascii=False)
 

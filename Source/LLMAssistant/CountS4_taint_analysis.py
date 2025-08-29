@@ -1,13 +1,13 @@
 import os
-#人为看了一遍，然后统计下误报
+
 import json
 original_dir="./S4_taint_analysis/"
 filter_dir="./S4_taint_analysis_filter/"
 
 files = [f for f in os.listdir(original_dir) if os.path.isfile(os.path.join(original_dir, f))]
-#总共的函数
+
 all_func_number=-1
-#过滤之后的函数
+
 all_filter_func_number=-1
 for file in files:
     original_file_path=original_dir+file
@@ -23,7 +23,7 @@ for file in files:
         with open(filter_file_path, 'r', encoding='utf-8') as f2:
             filter_data = json.load(f2)
 
-        # 比较数量
+        
         len_original = len(original_data)
         len_filter = len(filter_data)
         all_func_number+=len_original

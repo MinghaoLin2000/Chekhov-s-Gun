@@ -11,9 +11,9 @@ def get_filter_index():
     filter_number=0
     filter_index_list=[]
     file_index=0
-    #open new_func_pseudocode dirctor
+    
     for file in os.listdir(new_func_pseudocode_dir):
-        #json file parse
+        
         with open(os.path.join(new_func_pseudocode_dir, file), "r") as f:
             data = json.load(f)
             file_index=int(file.split(".")[0])
@@ -29,8 +29,8 @@ def get_filter_index():
                 filter_index_list.append(file_index)
             f.close()
 
-    #print(filter_number)
-    #print(filter_index_list)
+    
+    
     return filter_index_list
 
 def file_exists_in_dir(filename, directory):
@@ -38,8 +38,8 @@ def file_exists_in_dir(filename, directory):
     判断文件是否存在于指定目录中（不递归子目录）
     """
     os.makedirs(directory, exist_ok=True)
-    #print(filename)
-    #print(os.listdir(directory))
+    
+    
     return filename in os.listdir(directory)
 
 
@@ -174,22 +174,22 @@ bool __cdecl -[DeviceUIServiceViewController performDragOperation:](DeviceUIServ
 }
 '''
 
-# 禁止外泄
+
 usc_api_key = "xxx"
-stream = True  # or False
+stream = True  
 
 openai = OpenAI(
     api_key=usc_api_key,
     base_url="https://api.deepinfra.com/v1/openai",
 )
-stream = False  # or False
-# 打开所有输出文件（以追加模式）
+stream = False  
+
 
 save_res_dir="./sensitive_save_res_dir"
 
 filter_index_list=get_filter_index()
 
-# 命令行参数处理
+
 if len(sys.argv) != 3:
     print("Usage: python your_script.py <start_index> <end_index>")
     sys.exit(1)
@@ -205,9 +205,9 @@ print(f"Processing from index {start_index} to {end_index - 1}")
 save_res_dir=f"./S2_result/new_func_pseudocode_{start_index}_{end_index}"
 all_func_pse_dir="./new_func_pseudocode"
 for file_index in range(start_index,end_index):
-    #print(f"file_index:{file_index}")
+    
     check_result=file_exists_in_dir(f"{file_index}.json", save_res_dir)
-    #print(check_result)
+    
     if file_index in filter_index_list or check_result:
         continue
     print(f"file_index:{file_index}")
@@ -331,7 +331,7 @@ for file_index in range(start_index,end_index):
     ✏️ Your answer:
     
     
-    ### 🧠 Self-Reflection
+    
     - Did you overlook any indicators of sensitivity?
     - Is your verdict well supported by the evidence?
     - Can you improve the explanation or classification?
@@ -364,8 +364,8 @@ Please ensure the output is valid JSON that can be parsed using Python's json.lo
         """
 
         response = openai.chat.completions.create(
-            # model="gpt-4.1",
-            # model="meta-llama/Meta-Llama-3-8B-Instruct",
+            
+            
             model="google/gemini-2.5-flash",
             messages=[
                 {"role": "system",
@@ -375,24 +375,24 @@ Please ensure the output is valid JSON that can be parsed using Python's json.lo
             response_format={"type": "json_object"}
         )
 
-        # print(response.choices[0].message.content)
+        
         json_str = response.choices[0].message.content
-        # print(type(json_str))
+        
         print(json_str)
-        # exit()
-        #json_str = json.dumps(json_str, ensure_ascii=False, indent=2)
+        
+        
 
         data = json.loads(json_str)
-        #print(data)
-        # 将函数写入对应文件
+        
+        
         data["function_code"]=file_index
-        # 把这个json数据写入到文件里面
+        
         with open(save_res_dir+"/"+str(file_index)+".json", "w") as f:
             json.dump(data, f)
         
-            # print(f"fn_name:{fn_name}")
-            # print(f"categories:{categories}")
-            # 根据类别写入不同文件；如果是 -1 表示不属于任何敏感类型，则跳过
-            #for cat in categories:
-                #if cat != -1 and cat in file_handles:
-                    #file_handles[cat].write(fn_name + "\n")
+            
+            
+            
+            
+                
+                    
