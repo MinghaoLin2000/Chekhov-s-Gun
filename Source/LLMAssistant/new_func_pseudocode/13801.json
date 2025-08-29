@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_io_get_descriptor",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_io_get_descriptor(dispatch_io_t channel)",
+    "pseudocode": "dispatch_fd_t __cdecl dispatch_io_get_descriptor(dispatch_io_t channel)\n{\n  return _dispatch_io_get_descriptor(channel);\n}"
+}

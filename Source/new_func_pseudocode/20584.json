@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFOperatorTableCreate",
+    "function_argument_number": 0,
+    "function_signature": "_CGPDFOperatorTableCreate()",
+    "pseudocode": "CGPDFOperatorTableRef CGPDFOperatorTableCreate(void)\n{\n  return _CGPDFOperatorTableCreate();\n}"
+}

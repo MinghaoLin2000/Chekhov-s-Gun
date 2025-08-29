@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableString tsu_indentBy:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSMutableString tsu_indentBy:](NSMutableString * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[NSMutableString tsu_indentBy:](NSMutableString *self, SEL a2, unsigned __int64 a3)\n{\n  void *v5; // x0\n  void *v6; // x19\n  NSString *v7; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v5 = objc_msgSend(CFSTR(\"          \"), \"mutableCopy\");\n  v6 = v5;\n  while ( (unsigned __int64)objc_msgSend(v5, \"length\") < a3 )\n  {\n    objc_msgSend(v6, \"appendString:\", v6);\n    v5 = v6;\n  }\n  objc_msgSend(v6, \"deleteCharactersInRange:\", a3, (char *)objc_msgSend(v6, \"length\") - a3);\n  -[NSMutableString insertString:atIndex:](self, \"insertString:atIndex:\", v6, 0LL);\n  v7 = objc_retainAutoreleasedReturnValue(+[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"\\n%@\"), v6));\n  -[NSMutableString replaceOccurrencesOfString:withString:options:range:](\n    self,\n    \"replaceOccurrencesOfString:withString:options:range:\",\n    CFSTR(\"\\n\"),\n    v7,\n    0LL,\n    0LL,\n    -[NSMutableString length](self, \"length\"));\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

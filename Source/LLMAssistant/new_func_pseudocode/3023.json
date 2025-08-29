@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceChooseBackupViewController setBestBackupIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceChooseBackupViewController setBestBackupIndex:](DeviceChooseBackupViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceChooseBackupViewController setBestBackupIndex:](\n        DeviceChooseBackupViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_bestBackupIndex = a3;\n}"
+}

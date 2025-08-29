@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet containsObject:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUMutableLinkedPointerSet containsObject:](int a1, int a2, void * key)",
+    "pseudocode": "bool __cdecl -[TSUMutableLinkedPointerSet containsObject:](TSUMutableLinkedPointerSet *self, SEL a2, id a3)\n{\n  return CFDictionaryContainsKey(self->mDictionary, a3) != 0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NDANFHelper _resourceIDsFromURLs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NDANFHelper _resourceIDsFromURLs:](NDANFHelper * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[NDANFHelper _resourceIDsFromURLs:](NDANFHelper *self, SEL a2, id a3)\n{\n  void *v3; // x0\n  _QWORD v5[5]; // [xsp+8h] [xbp-28h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3221225472LL;\n  v5[2] = sub_100002DE4;\n  v5[3] = &unk_100004178;\n  v5[4] = self;\n  v3 = (void *)objc_claimAutoreleasedReturnValue(objc_msgSend(a3, \"fc_arrayByTransformingWithBlock:\", v5));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

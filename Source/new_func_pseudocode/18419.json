@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO8allCasesSayACGvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO8allCasesSayACGvgZ()",
+    "pseudocode": "_UNKNOWN **static ScreenMirroringAlertOption.allCases.getter()\n{\n  return &off_10008ACA8;\n}"
+}

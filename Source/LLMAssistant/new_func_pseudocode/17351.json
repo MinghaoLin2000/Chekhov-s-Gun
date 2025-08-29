@@ -1,0 +1,6 @@
+{
+    "function_name": "__LSGetCurrentApplicationASN",
+    "function_argument_number": 0,
+    "function_signature": "__LSGetCurrentApplicationASN()",
+    "pseudocode": "__int64 _LSGetCurrentApplicationASN()\n{\n  return __LSGetCurrentApplicationASN();\n}"
+}

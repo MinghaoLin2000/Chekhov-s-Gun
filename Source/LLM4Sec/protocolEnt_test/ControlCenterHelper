@@ -1,0 +1,93 @@
+Service Path:
+/System/Library/CoreServices/ControlCenter.app/Contents/XPCServices/ControlCenterHelper.xpc/Contents/MacOS/ControlCenterHelper
+
+Service Exported Protocols:
+@protocol CWErrorDialogDelegate
+- (void)userDidCancelErrorDialog:(CWErrorDialog *)arg1;
+- (void)userDidOKErrorDialog:(CWErrorDialog *)arg1;
+@end
+@protocol CWManualJoinDialogDelegate
+- (void)manualJoinDialogWillClose:(CWManualJoinDialog_SL *)arg1;
+- (void)userCancelledManualJoinDialog:(CWManualJoinDialog_SL *)arg1;
+- (void)manualJoinDialogSelectedScanResult:(CWManualJoinDialog_SL *)arg1;
+- (void)manualJoinCancelled:(CWManualJoinDialog_SL *)arg1;
+- (void)manualJoinDialogStopScanning:(CWManualJoinDialog_SL *)arg1;
+- (void)manualJoinDialogStartScanning:(CWManualJoinDialog_SL *)arg1;
+- (void)joinHiddenNetwork:(CWManualJoinDialog_SL *)arg1;
+@end
+@protocol CWWiFiUIProxyClientDelegate <NSObject>
+- (void)updatedWiFiConfiguration:(CWConfiguration *)arg1;
+- (void)dismissUIWithUUID:(NSUUID *)arg1;
+- (void)showLockdownModeUIWithScanResult:(CWDisplayedScanResult *)arg1 uuid:(NSUUID *)arg2;
+- (void)showErrorUIWithScanResult:(CWDisplayedScanResult *)arg1 uuid:(NSUUID *)arg2;
+- (void)showInfoUIWithTitle:(NSString *)arg1 description:(NSString *)arg2 uuid:(NSUUID *)arg3;
+- (void)showWPSUIWithScanResult:(CWDisplayedScanResult *)arg1 pin:(NSString *)arg2 uuid:(NSUUID *)arg3;
+- (void)showLimitedNetworkOptionUIForScanResult:(CWDisplayedScanResult *)arg1 candidates:(NSArray *)arg2 uuid:(NSUUID *)arg3;
+- (void)showSecurityMismatchUIWithScanResult:(CWDisplayedScanResult *)arg1 uuid:(NSUUID *)arg2;
+- (void)didReceiveSharedPassword:(NSString *)arg1 uuid:(NSUUID *)arg2;
+- (void)showJoinUIWithScanResult:(CWDisplayedScanResult *)arg1 previousError:(NSError *)arg2 previousPassword:(NSString *)arg3 supportsWiFiPasswordSharing:(_Bool)arg4 remember:(_Bool)arg5 uuid:(NSUUID *)arg6;
+- (void)didUpdateUIState:(unsigned long long)arg1 previous:(unsigned long long)arg2;
+- (void)didFindScanResults:(NSSet *)arg1;
+- (void)didCompleteDiagnostics:(NSArray *)arg1;
+- (void)clientConnectionInvalidated;
+- (void)clientConnectionInterrupted;
+@end
+@protocol OS_dispatch_source <NSObject>
+@end
+@protocol OS_dispatch_source_timer <OS_dispatch_source>
+@end
+@protocol _TtP19ControlCenterHelper27ControlCenterHelperProtocol_ <_TtP19ControlCenterHelper36ControlCenterBluetoothHelperProtocol_, _TtP19ControlCenterHelper43ControlCenterUniversalControlHelperProtocol_, _TtP19ControlCenterHelper43ControlCenterMusicRecognitionHelperProtocol_, _TtP19ControlCenterHelper48ControlCenterBackgroundReplacementHelperProtocol_, _TtP19ControlCenterHelper42ControlCenterScreenMirroringHelperProtocol_, _TtP19ControlCenterHelper31ControlCenterWiFiHelperProtocol_>
+@end
+@protocol _TtP19ControlCenterHelper31ControlCenterWiFiHelperProtocol_
+- (void)joinOtherNetwork;
+- (void)joinNetworkError:(CWDisplayedScanResult *)arg1;
+- (void)createDiagnosticsReport;
+@end
+@protocol _TtP19ControlCenterHelper36ControlCenterBluetoothHelperProtocol_
+- (void)confirmTurnOffBluetoothWithRequest:(NSUUID *)arg1 response:(void (^)(NSUUID *, _Bool))arg2;
+@end
+@protocol _TtP19ControlCenterHelper42ControlCenterScreenMirroringHelperProtocol_
+- (void)dismissAlertWithDisplayID:(unsigned int)arg1;
+- (void)presentScreenMirroringAlertWithDisplayID:(unsigned int)arg1 displayName:(NSString *)arg2 displayIsSpatial:(_Bool)arg3 options:(NSSet *)arg4 response:(void (^)(long long))arg5;
+@end
+@protocol _TtP19ControlCenterHelper43ControlCenterMusicRecognitionHelperProtocol_
+- (void)confirmItemDeletionWithResponse:(void (^)(_Bool))arg1;
+@end
+@protocol _TtP19ControlCenterHelper43ControlCenterUniversalControlHelperProtocol_
+- (void)presentUniversalControlError:(NSError *)arg1;
+@end
+@protocol _TtP19ControlCenterHelper48ControlCenterBackgroundReplacementHelperProtocol_
+- (void)isShowingBackgroundReplacementPickerWithResponse:(void (^)(_Bool))arg1;
+- (void)useVerboseTitle:(_Bool)arg1;
+- (void)closeBackgroundReplacementPickerWithBundleID:(NSString *)arg1;
+- (void)presentBackgroundReplacementPickerWithBundleID:(NSString *)arg1 appName:(NSString *)arg2 cameraID:(NSString *)arg3 onDisplay:(unsigned int)arg4 useVerboseTitle:(_Bool)arg5;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.cmcapture.frame-receiver
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.restricted-application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.portrait.BackgroundReplacement
+	[Key] com.apple.private.tcc.manager.get-identity-for-credential
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.wifi-ui.join-delegate
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.portrait.BackgroundReplacement
+	[Key] com.apple.wifi.priority.id
+	[Value]
+		[String] control_center
+	[Key] com.apple.wifi.priority.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.wifi.user_agent_join
+	[Value]
+		[Bool] true

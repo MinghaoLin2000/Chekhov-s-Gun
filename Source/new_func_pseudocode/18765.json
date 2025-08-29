@@ -1,0 +1,6 @@
+{
+    "function_name": "_AVControlCenterVideoEffectsModuleGetBackgroundReplacementURL",
+    "function_argument_number": 0,
+    "function_signature": "_AVControlCenterVideoEffectsModuleGetBackgroundReplacementURL()",
+    "pseudocode": "__int64 AVControlCenterVideoEffectsModuleGetBackgroundReplacementURL()\n{\n  return _AVControlCenterVideoEffectsModuleGetBackgroundReplacementURL();\n}"
+}

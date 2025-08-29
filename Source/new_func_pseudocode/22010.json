@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZL22compile_thread_handlerPv",
+    "function_argument_number": 1,
+    "function_signature": "__ZL22compile_thread_handlerPv(void * a1)",
+    "pseudocode": "__int64 __fastcall compile_thread_handler(double *a1)\n{\n  std::chrono::duration<long long, std::ratio<1, 1000000000>>::rep rep; // x20\n  __int64 v3; // x21\n  __int64 v4; // x0\n\n  rep = std::chrono::steady_clock::now().__d_.__rep_;\n  v3 = mlc_model_compile((*(_QWORD *)(*(_QWORD *)a1 + 8LL) - **(_QWORD **)a1) >> 3);\n  a1[3] = (double)(std::chrono::steady_clock::now().__d_.__rep_ - rep) / 1000000.0;\n  v4 = *((_QWORD *)a1 + 1);\n  *((_QWORD *)a1 + 1) = v3;\n  if ( v4 )\n    (*((void (**)(void))a1 + 2))();\n  return 0LL;\n}"
+}

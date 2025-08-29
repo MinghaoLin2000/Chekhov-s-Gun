@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction .cxx_destruct](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction .cxx_destruct](AMLoaderServiceAction *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->__variableController, 0LL);\n  objc_storeStrong((id *)&self->__parametersObserver, 0LL);\n  objc_storeStrong((id *)&self->__actionDelegate, 0LL);\n  objc_destroyWeak((id *)&self->__service);\n  objc_storeStrong((id *)&self->__workflowUUID, 0LL);\n  objc_storeStrong((id *)&self->_uuid, 0LL);\n  objc_storeStrong((id *)&self->__amAction, 0LL);\n  objc_destroyWeak((id *)&self->__serviceViewController);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->__execution, 0LL);\n}"
+}

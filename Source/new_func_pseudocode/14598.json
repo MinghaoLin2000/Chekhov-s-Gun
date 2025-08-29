@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$tsu_compressWithAlgorithm:operation:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$tsu_compressWithAlgorithm:operation:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_tsu_compressWithAlgorithm_operation_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"tsu_compressWithAlgorithm:operation:\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_C3DIOCreateCStringFromCFString",
+    "function_argument_number": 0,
+    "function_signature": "_C3DIOCreateCStringFromCFString()",
+    "pseudocode": "__int64 C3DIOCreateCStringFromCFString()\n{\n  return _C3DIOCreateCStringFromCFString();\n}"
+}

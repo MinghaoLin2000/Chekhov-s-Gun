@@ -1,0 +1,9 @@
+Service Path:
+/System/Library/PrivateFrameworks/PowerlogCore.framework/Versions/A/XPCServices/PPSFeatureFlagReader.xpc/Contents/MacOS/PPSFeatureFlagReader
+
+Service Exported Protocols:
+@protocol PPSFeatureFlagReaderProtocol
+- (void)getFeatureFlags:(void (^)(NSArray *))arg1;
+@end
+
+Service Entitlements:

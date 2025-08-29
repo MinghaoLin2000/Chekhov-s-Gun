@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList initWithRange:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSURangeList initWithRange:](TSURangeList * self, SEL a2, _NSRange a3)",
+    "pseudocode": "TSURangeList *__cdecl -[TSURangeList initWithRange:](TSURangeList *self, SEL a2, _NSRange a3)\n{\n  NSUInteger length; // x19\n  NSUInteger location; // x20\n  TSURangeList *v5; // x0\n  TSURangeList *v6; // x21\n  _NSRange *begin; // x8\n\n  length = a3.length;\n  location = a3.location;\n  v5 = -[TSURangeList init](self, \"init\");\n  v6 = v5;\n  if ( v5 )\n  {\n    sub_100151074(&v5->mRangeList, 1LL);\n    begin = v6->mRangeList.__begin_;\n    begin->location = location;\n    begin->length = length;\n  }\n  return v6;\n}"
+}

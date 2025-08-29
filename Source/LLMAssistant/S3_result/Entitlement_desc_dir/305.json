@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.icloud.searchpartyd.securelocations",
+  "capability": "Allows the application or daemon to perform a Mach lookup (connect to) the global Mach service named 'com.apple.icloud.searchpartyd.securelocations'. This grants an exception to standard security policies, enabling communication with this specific service. The service itself is highly likely to be involved in managing or providing access to sensitive location data, potentially related to the 'Find My' network, AirTags, or secure geofencing features.",
+  "reasoning": "The entitlement name segments clearly indicate a 'temporary exception' for a 'mach-lookup' operation targeting a 'global-name' service. The specific service name, 'com.apple.icloud.searchpartyd.securelocations', points to an iCloud-related daemon ('searchpartyd') that handles 'secure locations'. This strongly suggests interaction with sensitive location information, a core component of Apple's 'Find My' ecosystem.",
+  "similar_entitlements": [
+    "com.apple.security.mach-lookup.global-name",
+    "com.apple.security.personal-information.location"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "The capability involves gaining access to a Mach service that, based on its name ('securelocations' from 'searchpartyd'), is responsible for handling or providing sensitive location information. Accessing location data is explicitly listed as a TCC-protected resource (Type 5). The 'temporary-exception' prefix further indicates that this entitlement grants a bypass of standard security mechanisms, potentially including TCC prompts, to access this sensitive data.",
+  "self_reflection": "I am confident in the interpretation of this entitlement. The naming convention is very descriptive, clearly indicating an IPC mechanism (Mach lookup) and the target service's function (secure locations). The 'temporary-exception' further emphasizes its sensitive nature as a deviation from default security. The primary uncertainty lies in the exact *type* of 'secure locations' data (e.g., raw GPS, geofence data, historical data), but its classification under TCC-protected location information remains robust. This entitlement is likely used by core system components that require privileged access to location data without user interaction."
+}

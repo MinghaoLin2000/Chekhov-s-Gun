@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__16vectorIU8__strongP13CGPDFPageImplNS_9allocatorIS3_EEE6resizeEmRU8__strongKS2_",
+    "function_argument_number": 2,
+    "function_signature": "__ZNSt3__16vectorIU8__strongP13CGPDFPageImplNS_9allocatorIS3_EEE6resizeEmRU8__strongKS2_(_QWORD * a1, unsigned __int64 a2)",
+    "pseudocode": "void __fastcall std::vector<CGPDFPageImpl * {__strong}>::resize(_QWORD *a1, unsigned __int64 a2)\n{\n  __int64 v3; // x20\n  unsigned __int64 v4; // x9\n  __int64 v5; // x21\n  void *v6; // t1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = a1[1];\n  v4 = (v3 - *a1) >> 3;\n  if ( a2 <= v4 )\n  {\n    if ( a2 < v4 )\n    {\n      v5 = *a1 + 8 * a2;\n      while ( v3 != v5 )\n      {\n        v6 = *(void **)(v3 - 8);\n        v3 -= 8LL;\n        objc_release(v6);\n      }\n      a1[1] = v5;\n    }\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    std::vector<CGPDFPageImpl * {__strong}>::__append();\n  }\n}"
+}

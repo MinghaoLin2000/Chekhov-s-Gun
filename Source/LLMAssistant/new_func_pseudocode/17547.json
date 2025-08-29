@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFPageImpl rectForBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[CGPDFPageImpl rectForBox:](int a1, int a2, CGPDFBox box)",
+    "pseudocode": "CGRect __cdecl -[CGPDFPageImpl rectForBox:](CGPDFPageImpl *self, SEL a2, int a3)\n{\n  return CGPDFPageGetBoxRect(self->_cgPage, (CGPDFBox)a3);\n}"
+}

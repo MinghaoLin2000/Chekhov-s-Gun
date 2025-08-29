@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKNANEndpoint .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[PKNANEndpoint .cxx_destruct](PKNANEndpoint * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PKNANEndpoint .cxx_destruct](PKNANEndpoint *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_discoveryResult, 0LL);\n}"
+}

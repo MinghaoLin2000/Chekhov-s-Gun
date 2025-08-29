@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15DataMetadataMapD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP15DataMetadataMapD2Ev(TSP::DataMetadataMap * this)",
+    "pseudocode": "void __fastcall TSP::DataMetadataMap::~DataMetadataMap(TSP::DataMetadataMap *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100055268((char *)this + 16);\n}"
+}

@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService36JSAccountPrivacyAcknowledgementStateVMa
+ValueMetadata *type metadata accessor for JSAccountPrivacyAcknowledgementState()
+{
+  return &type metadata for JSAccountPrivacyAcknowledgementState;
+}

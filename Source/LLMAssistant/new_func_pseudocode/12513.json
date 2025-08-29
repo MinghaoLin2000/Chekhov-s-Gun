@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSURL tsu_fileSize]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSURL tsu_fileSize](NSURL * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSURL tsu_fileSize](NSURL *self, SEL a2)\n{\n  unsigned __int64 v3; // [xsp+8h] [xbp-8h] BYREF\n\n  v3 = 0LL;\n  -[NSURL tsu_fileSize:error:](self, \"tsu_fileSize:error:\", &v3, 0LL);\n  return v3;\n}"
+}

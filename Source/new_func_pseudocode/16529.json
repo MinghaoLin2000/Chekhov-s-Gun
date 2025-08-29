@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer restartRequired]",
+    "function_argument_number": 2,
+    "function_signature": "-[iAUPServer restartRequired](iAUPServer * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[iAUPServer restartRequired](iAUPServer *self, SEL a2)\n{\n  return self->_restartRequired;\n}"
+}

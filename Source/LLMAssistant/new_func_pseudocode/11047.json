@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf15DescriptorProtoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf15DescriptorProtoD1Ev(google::protobuf::DescriptorProto * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::DescriptorProto::~DescriptorProto(google::protobuf::DescriptorProto *this)\n{\n  __ZN6google8protobuf15DescriptorProtoD2Ev(this);\n}"
+}

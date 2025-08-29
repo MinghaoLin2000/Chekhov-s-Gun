@@ -1,0 +1,5 @@
+$s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa_0
+__int64 _s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa_0()
+{
+  return objc_opt_self(&OBJC_CLASS____TtCFC19ControlCenterHelper10WiFiHelper14enableScanningFT_P_L_17ScanningAssertion);
+}

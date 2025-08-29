@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSWindowIsOrderedIn",
+    "function_argument_number": 0,
+    "function_signature": "_CGSWindowIsOrderedIn()",
+    "pseudocode": "__int64 CGSWindowIsOrderedIn()\n{\n  return _CGSWindowIsOrderedIn();\n}"
+}

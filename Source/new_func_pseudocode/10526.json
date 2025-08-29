@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14DataAttributes9MergeFromERKS0_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP14DataAttributes9MergeFromERKS0_(TSP::DataAttributes * this, const TSP::DataAttributes * a2)",
+    "pseudocode": "__int64 __fastcall TSP::DataAttributes::MergeFrom(TSP::DataAttributes *this, const TSP::DataAttributes *a2)\n{\n  __int64 result; // x0\n  __int64 v5; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = google::protobuf::internal::ExtensionSet::MergeFrom(\n             (TSP::DataAttributes *)((char *)this + 16),\n             (const TSP::DataAttributes *)((char *)a2 + 16));\n  v5 = *((_QWORD *)a2 + 1);\n  if ( (v5 & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10003A25C((char *)this + 8, (v5 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  }\n  return result;\n}"
+}

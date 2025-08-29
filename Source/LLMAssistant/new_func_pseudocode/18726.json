@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC27BackgroundReplacementHelper10MainWindow initWithContentRect:styleMask:backing:defer:]",
+    "function_argument_number": 6,
+    "function_signature": "-[_TtC27BackgroundReplacementHelper10MainWindow initWithContentRect:styleMask:backing:defer:](_TtC27BackgroundReplacementHelper10MainWindow * self, SEL a2, unsigned __int64 a4, unsigned __int64 a5, bool a6, CGRect a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\n_TtC27BackgroundReplacementHelper10MainWindow *__cdecl __noreturn -[MainWindow initWithContentRect:styleMask:backing:defer:](\n        _TtC27BackgroundReplacementHelper10MainWindow *self,\n        SEL a2,\n        CGRect a3,\n        unsigned __int64 a4,\n        unsigned __int64 a5,\n        bool a6)\n{\n  sub_100051E84(\n    self,\n    a2,\n    0LL,\n    a5,\n    a6,\n    (__n128)a3.origin,\n    *(__n128 *)&a3.origin.y,\n    (__n128)a3.size,\n    *(__n128 *)&a3.size.height);\n}"
+}

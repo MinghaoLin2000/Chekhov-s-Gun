@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup27ScreenAnnotationsController showWindow:]",
+    "function_argument_number": 1,
+    "function_signature": "-[_TtC13DisplayMarkup27ScreenAnnotationsController showWindow:](id a1)",
+    "pseudocode": "void __cdecl -[ScreenAnnotationsController showWindow:](\n        _TtC13DisplayMarkup27ScreenAnnotationsController *self,\n        SEL a2,\n        id a3)\n{\n  _TtC13DisplayMarkup27ScreenAnnotationsController *v5; // x0\n  __int64 v6; // x0\n  _TtC13DisplayMarkup27ScreenAnnotationsController *v7; // x0\n  _OWORD v8[2]; // [xsp+0h] [xbp-30h] BYREF\n\n  if ( a3 )\n  {\n    v5 = objc_retain(self);\n    v6 = swift_unknownObjectRetain(a3);\n    sub_10001CE20(v8, v6);\n    swift_unknownObjectRelease(a3);\n  }\n  else\n  {\n    memset(v8, 0, sizeof(v8));\n    v7 = objc_retain(self);\n  }\n  sub_100005600(v8);\n  objc_release(self);\n  sub_10000AF20(v8, &unk_100029AE8);\n}"
+}

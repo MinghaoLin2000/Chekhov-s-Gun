@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_initWithSqlStatement:columnIndex:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSString tsu_initWithSqlStatement:columnIndex:](int a1, int a2, sqlite3_stmt * a3, int iCol)",
+    "pseudocode": "id __cdecl -[NSString tsu_initWithSqlStatement:columnIndex:](NSString *self, SEL a2, sqlite3_stmt *a3, int a4)\n{\n  const unsigned __int8 *v8; // x2\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( sqlite3_column_type(a3, a4) == 5 )\n  {\n    objc_release(self);\n    return 0LL;\n  }\n  else\n  {\n    v8 = sqlite3_column_text(a3, a4);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return -[NSString initWithUTF8String:](self, \"initWithUTF8String:\", v8);\n  }\n}"
+}

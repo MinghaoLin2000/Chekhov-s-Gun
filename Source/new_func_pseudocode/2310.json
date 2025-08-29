@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController progressViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeFinderViewController progressViewController](DeviceModeFinderViewController * self, SEL a2)",
+    "pseudocode": "ProgressViewController *__cdecl -[DeviceModeFinderViewController progressViewController](\n        DeviceModeFinderViewController *self,\n        SEL a2)\n{\n  ProgressViewController *progressViewController; // x0\n  ProgressViewController *v4; // x0\n  ProgressViewController *v5; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  progressViewController = self->_progressViewController;\n  if ( !progressViewController )\n  {\n    v4 = (ProgressViewController *)objc_opt_new(&OBJC_CLASS___ProgressViewController, a2);\n    v5 = self->_progressViewController;\n    self->_progressViewController = v4;\n    objc_release(v5);\n    progressViewController = self->_progressViewController;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(progressViewController);\n}"
+}

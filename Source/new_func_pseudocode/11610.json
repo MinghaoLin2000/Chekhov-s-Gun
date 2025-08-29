@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12MapFieldBaseD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal12MapFieldBaseD0Ev(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "void __fastcall __noreturn google::protobuf::internal::MapFieldBase::~MapFieldBase(\n        google::protobuf::internal::MapFieldBase *this)\n{\n  __break(1u);\n}"
+}

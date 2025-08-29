@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPPackageConverter newPackageConverterWithURL:error:]",
+    "function_argument_number": 4,
+    "function_signature": "+[TSPPackageConverter newPackageConverterWithURL:error:](id a1, SEL a2, id a3, id * a4)",
+    "pseudocode": "id __cdecl +[TSPPackageConverter newPackageConverterWithURL:error:](id a1, SEL a2, id a3, id *a4)\n{\n  return objc_msgSend(a1, \"newPackageConverterWithURL:preserveExtendedAttributes:error:\", a3, 1LL, a4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper13FittingZStackVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper13FittingZStackVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for FittingZStack()\n{\n  return &type metadata for FittingZStack;\n}"
+}

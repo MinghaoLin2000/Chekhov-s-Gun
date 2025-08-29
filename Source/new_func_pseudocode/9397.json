@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPCGDataConsumer initWithWriteChannel:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPCGDataConsumer initWithWriteChannel:](int a1, int a2, id a3)",
+    "pseudocode": "TSPCGDataConsumer *__cdecl -[TSPCGDataConsumer initWithWriteChannel:](TSPCGDataConsumer *self, SEL a2, id a3)\n{\n  id v5; // x19\n  id v6; // x21\n  dispatch_queue_attr_s *v7; // x22\n  dispatch_queue_t v8; // x0\n  void *v9; // x8\n  objc_super v11; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___TSPCGDataConsumer;\n  v6 = -[TSPCGDataConsumer init](&v11, \"init\");\n  if ( v6 )\n  {\n    v7 = objc_retainAutoreleasedReturnValue(dispatch_queue_attr_make_with_autorelease_frequency(0LL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM));\n    v8 = dispatch_queue_create(\"TSPCGDataConsumer.Write\", v7);\n    v9 = (void *)*((_QWORD *)v6 + 1);\n    *((_QWORD *)v6 + 1) = v8;\n    objc_release(v9);\n    objc_release(v7);\n    dispatch_queue_set_specific(*((dispatch_queue_t *)v6 + 1), off_1001F5750, off_1001F5750, 0LL);\n    objc_storeStrong((id *)v6 + 2, a3);\n  }\n  objc_release(v5);\n  return (TSPCGDataConsumer *)v6;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper0abC8DelegateCACycfc",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper0abC8DelegateCACycfc()",
+    "pseudocode": "id ControlCenterHelperDelegate.init()()\n{\n  void *v0; // x20\n  objc_super v2; // [xsp+0h] [xbp-10h] BYREF\n\n  v2.receiver = v0;\n  v2.super_class = (Class)type metadata accessor for ControlCenterHelperDelegate();\n  return objc_msgSendSuper2(&v2, \"init\");\n}"
+}

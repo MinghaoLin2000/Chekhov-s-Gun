@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_open_v2",
+    "function_argument_number": 4,
+    "function_signature": "_sqlite3_open_v2(const char * filename, sqlite3 ** ppDb, int flags, const char * zVfs)",
+    "pseudocode": "int __cdecl sqlite3_open_v2(const char *filename, sqlite3 **ppDb, int flags, const char *zVfs)\n{\n  return _sqlite3_open_v2(filename, ppDb, flags, zVfs);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLSandboxReleaseHandle",
+    "function_argument_number": 0,
+    "function_signature": "_QLSandboxReleaseHandle()",
+    "pseudocode": "__int64 QLSandboxReleaseHandle()\n{\n  return _QLSandboxReleaseHandle();\n}"
+}

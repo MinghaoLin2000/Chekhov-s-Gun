@@ -1,0 +1,26 @@
+@protocol AMSBagProtocol <NSObject>
+- (AMSBagValue *)dictionaryForKey:(NSString *)arg1;
+- (AMSBagValue *)URLForKey:(NSString *)arg1;
+- (AMSBagValue *)stringForKey:(NSString *)arg1;
+- (AMSBagValue *)integerForKey:(NSString *)arg1;
+- (AMSBagValue *)doubleForKey:(NSString *)arg1;
+- (void)createSnapshotWithCompletion:(void (^)(AMSSnapshotBag *, NSError *))arg1;
+- (AMSBagValue *)boolForKey:(NSString *)arg1;
+- (AMSBagValue *)arrayForKey:(NSString *)arg1;
+- (AMSBagValue *)URLForKey:(NSString *)arg1 account:(ACAccount *)arg2;
+@end
+@protocol ASDAppQueryResultsObserver <NSObject>
+- (void)appQuery:(ASDAppQuery *)arg1 resultsDidChange:(NSArray *)arg2;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicService24ClientConnectionProtocol_
+- (void)handleWithEngagementRequest:(AMSEngagementRequest *)arg1 completion:(void (^)(AMSEngagementResult *, NSError *))arg2;
+- (void)handleWithDialogRequest:(AMSDialogRequest *)arg1 completion:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)handleWithAuthenticateRequest:(AMSAuthenticateRequest *)arg1 completion:(void (^)(AMSAuthenticateResult *, NSError *))arg2;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicService25ServiceConnectionProtocol_
+- (void)updateWithAccount:(ACAccount *)arg1 completion:(void (^)(NSError *))arg2;
+- (void)tearDownWithCompletion:(void (^)(NSError *))arg1;
+- (void)setUpWithCompletion:(void (^)(NSError *))arg1;
+- (void)performWithRequestData:(NSData *)arg1 completion:(void (^)(NSData *, NSError *))arg2;
+- (void)bootstrapWithAccount:(ACAccount *)arg1 bagData:(NSData *)arg2 clientInfo:(AMSProcessInfo *)arg3 mediaClientData:(NSData *)arg4 metricsContextData:(NSData *)arg5 url:(NSURL *)arg6 completion:(void (^)(NSError *))arg7;
+@end

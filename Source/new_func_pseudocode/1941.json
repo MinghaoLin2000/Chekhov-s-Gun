@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController viewWillLayout]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPodcastsViewController viewWillLayout](DeviceSettingsPodcastsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPodcastsViewController viewWillLayout](DeviceSettingsPodcastsViewController *self, SEL a2)\n{\n  double v3; // d0\n  double v4; // d8\n  NSStackView *v5; // x20\n  void *v6; // x21\n  double v7; // d2\n  double v8; // d9\n  objc_super v9; // [xsp+0h] [xbp-40h] BYREF\n\n  -[DeviceSettingsPodcastsViewController autoIncludeStackFittingWidth](self, \"autoIncludeStackFittingWidth\");\n  v4 = v3;\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController autoIncludeStackView](self, \"autoIncludeStackView\"));\n  v6 = objc_retainAutoreleasedReturnValue(-[NSStackView superview](v5, \"superview\"));\n  objc_msgSend(v6, \"frame\");\n  v8 = v7;\n  objc_release(v6);\n  objc_release(v5);\n  -[DeviceSettingsPodcastsViewController setAutoIncludeLayoutOrientation:](\n    self,\n    \"setAutoIncludeLayoutOrientation:\",\n    v8 + -20.0 < v4,\n    v8 + -20.0);\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___DeviceSettingsPodcastsViewController;\n  -[DeviceSettingsPodcastsViewController viewWillLayout](&v9, \"viewWillLayout\");\n}"
+}

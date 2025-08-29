@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryBuildKeySetTicket",
+    "function_argument_number": 4,
+    "function_signature": "_CFDictionaryBuildKeySetTicket(__CFDictionary * a1, const void * a2, const __CFString * a3, const __CFString * a4)",
+    "pseudocode": "void __fastcall CFDictionaryBuildKeySetTicket(\n        __CFDictionary *a1,\n        const void *a2,\n        const __CFString *a3,\n        const __CFString *a4)\n{\n  __CFString *Mutable; // x23\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  Mutable = CFStringCreateMutable(kCFAllocatorDefault, 0LL);\n  CFStringAppend(Mutable, CFSTR(\"@\"));\n  CFStringAppend(Mutable, a3);\n  CFStringAppend(Mutable, CFSTR(\",\"));\n  CFStringAppend(Mutable, a4);\n  CFDictionarySetValue(a1, a2, Mutable);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  CFRelease(Mutable);\n}"
+}

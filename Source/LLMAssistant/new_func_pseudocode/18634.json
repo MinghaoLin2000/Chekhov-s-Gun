@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for NavigationController.NavigationMode()\n{\n  return &type metadata for NavigationController.NavigationMode;\n}"
+}

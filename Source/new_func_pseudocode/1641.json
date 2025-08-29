@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController hasCloudIdentifierForIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderTabContainerViewController hasCloudIdentifierForIdentifier:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[DeviceFinderTabContainerViewController hasCloudIdentifierForIdentifier:](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v3; // x19\n  unsigned __int8 v4; // w20\n\n  v3 = objc_retain(a3);\n  if ( ((unsigned int)objc_msgSend(v3, \"isEqualToString:\", CFSTR(\"Music\")) & 1) != 0\n    || ((unsigned int)objc_msgSend(v3, \"isEqualToString:\", CFSTR(\"Photos\")) & 1) != 0 )\n  {\n    v4 = 1;\n  }\n  else\n  {\n    v4 = (unsigned __int8)objc_msgSend(v3, \"isEqualToString:\", CFSTR(\"Info\"));\n  }\n  objc_release(v3);\n  return v4;\n}"
+}

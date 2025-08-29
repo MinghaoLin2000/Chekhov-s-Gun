@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUFileIOChannel initForReadingURL:error:cleanupHandler:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUFileIOChannel initForReadingURL:error:cleanupHandler:](TSUFileIOChannel * self, SEL a2, id a3, id * a4, id a5)",
+    "pseudocode": "id __cdecl -[TSUFileIOChannel initForReadingURL:error:cleanupHandler:](\n        TSUFileIOChannel *self,\n        SEL a2,\n        id a3,\n        id *a4,\n        id a5)\n{\n  return -[TSUFileIOChannel initWithType:URL:oflag:mode:error:cleanupHandler:](\n           self,\n           \"initWithType:URL:oflag:mode:error:cleanupHandler:\",\n           1LL,\n           a3,\n           0LL,\n           0LL,\n           a4,\n           a5);\n}"
+}

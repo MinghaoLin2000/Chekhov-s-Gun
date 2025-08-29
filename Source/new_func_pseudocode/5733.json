@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSSetUseWritingDirectionKeyBindings",
+    "function_argument_number": 0,
+    "function_signature": "_NSSetUseWritingDirectionKeyBindings()",
+    "pseudocode": "__int64 NSSetUseWritingDirectionKeyBindings()\n{\n  return _NSSetUseWritingDirectionKeyBindings();\n}"
+}

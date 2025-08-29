@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FirmwareBundle loadFirmwareImage]",
+    "function_argument_number": 2,
+    "function_signature": "-[FirmwareBundle loadFirmwareImage](FirmwareBundle * self, SEL a2)",
+    "pseudocode": "void __cdecl -[FirmwareBundle loadFirmwareImage](FirmwareBundle *self, SEL a2)\n{\n  if ( -[NSURL checkResourceIsReachableAndReturnError:](\n         self->_firmwareLocalURL,\n         \"checkResourceIsReachableAndReturnError:\",\n         0LL) )\n  {\n    self->_firmwareImage = (NSData *)objc_msgSend(\n                                       objc_alloc((Class)&OBJC_CLASS___NSData),\n                                       \"initWithContentsOfURL:\",\n                                       self->_firmwareLocalURL);\n  }\n}"
+}

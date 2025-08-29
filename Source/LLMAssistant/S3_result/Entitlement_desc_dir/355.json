@@ -1,0 +1,12 @@
+{
+  "entitlement": "com.apple.developer.kernel.increased-memory-limit",
+  "capability": "Allows an application to request and utilize a higher memory limit than the default allocation for standard applications on supported devices, enabling core features to perform better, especially for memory-intensive tasks.",
+  "reasoning": "The entitlement name 'kernel.increased-memory-limit' directly implies memory allocation and limits. The provided description explicitly states 'A Boolean value that indicates whether core features of your app may perform better with a higher memory limit on supported devices.' This clearly defines the capability.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    3,
+    4
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'Process and Memory Management' (Type 3) because it grants a specific application the ability to consume more memory resources, which is a fundamental aspect of managing a process's memory footprint. It also falls under 'System & Kernel Level Control' (Type 4) because granting an 'increased' memory limit implies a departure from standard resource allocation, requiring a privilege granted by the kernel. This kernel-level decision affects system-wide resource availability and performance, and if abused (e.g., by requesting excessively large amounts of memory without proper system safeguards), it could potentially lead to resource starvation for other processes or overall system instability, thus affecting the behavior of the entire system.",
+  "self_reflection": "I am highly confident in the inferred capability as it is explicitly stated in the provided description. I am also confident in classifying it under 'Process and Memory Management' due to its direct impact on a process's memory allocation. Including 'System & Kernel Level Control' is based on the 'kernel' prefix in the entitlement name, indicating that this is a special privilege granted at the kernel level that affects system-wide resource management, rather than just an application-level setting. The primary risk, if any, would be resource exhaustion or performance degradation for other system components, which is a system-level concern."
+}

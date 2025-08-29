@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition10ClientInfoV15applicationNameSSSgvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition10ClientInfoV15applicationNameSSSgvg()",
+    "pseudocode": "__int64 ClientInfo.applicationName.getter()\n{\n  __int64 v0; // x20\n  __int64 v1; // x0\n\n  v1 = swift_bridgeObjectRetain(*(_QWORD *)(v0 + 40));\n  return sub_100028220(v1);\n}"
+}

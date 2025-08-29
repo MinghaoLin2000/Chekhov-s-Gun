@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$replaceItemAtURL:withItemAtURL:backupItemName:options:resultingItemURL:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$replaceItemAtURL:withItemAtURL:backupItemName:options:resultingItemURL:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_replaceItemAtURL_withItemAtURL_backupItemName_options_resultingItemURL_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"replaceItemAtURL:withItemAtURL:backupItemName:options:resultingItemURL:error:\");\n}"
+}

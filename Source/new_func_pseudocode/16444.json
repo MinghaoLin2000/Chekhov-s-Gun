@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceLegacyAudio dasActivityReceived:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUpdaterServiceLegacyAudio dasActivityReceived:](UARPUpdaterServiceLegacyAudio * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[UARPUpdaterServiceLegacyAudio dasActivityReceived:](UARPUpdaterServiceLegacyAudio *self, SEL a2, id a3)\n{\n  -[LegacyAudioController dasActivityReceived:](self->_controller, \"dasActivityReceived:\", a3);\n}"
+}

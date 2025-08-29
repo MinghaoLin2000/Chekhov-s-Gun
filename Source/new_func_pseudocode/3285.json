@@ -1,0 +1,6 @@
+{
+    "function_name": "_FSEventStreamCreate",
+    "function_argument_number": 7,
+    "function_signature": "_FSEventStreamCreate(CFAllocatorRef allocator, FSEventStreamCallback callback, FSEventStreamContext * context, CFArrayRef pathsToWatch, FSEventStreamEventId sinceWhen, CFTimeInterval latency, FSEventStreamCreateFlags flags)",
+    "pseudocode": "FSEventStreamRef __cdecl FSEventStreamCreate(\n        CFAllocatorRef allocator,\n        FSEventStreamCallback callback,\n        FSEventStreamContext *context,\n        CFArrayRef pathsToWatch,\n        FSEventStreamEventId sinceWhen,\n        CFTimeInterval latency,\n        FSEventStreamCreateFlags flags)\n{\n  return _FSEventStreamCreate(allocator, callback, context, pathsToWatch, sinceWhen, latency, flags);\n}"
+}

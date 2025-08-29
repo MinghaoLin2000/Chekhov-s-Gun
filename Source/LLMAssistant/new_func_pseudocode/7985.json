@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceGetTransform",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceGetTransform()",
+    "pseudocode": "__int64 CGSSpaceGetTransform()\n{\n  return _CGSSpaceGetTransform();\n}"
+}

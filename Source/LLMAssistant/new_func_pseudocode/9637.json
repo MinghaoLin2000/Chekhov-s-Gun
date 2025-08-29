@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP9FieldInfoD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP9FieldInfoD0Ev(TSP::FieldInfo * this)",
+    "pseudocode": "void __fastcall TSP::FieldInfo::~FieldInfo(TSP::FieldInfo *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::FieldInfo::~FieldInfo(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C40F8115D30LL);\n}"
+}

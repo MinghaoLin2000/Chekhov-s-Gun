@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$getHSModelForEngineMajorVersion:minorVersion:numHSModels:modelBuffer:length:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$getHSModelForEngineMajorVersion:minorVersion:numHSModels:modelBuffer:length:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_getHSModelForEngineMajorVersion_minorVersion_numHSModels_modelBuffer_length_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"getHSModelForEngineMajorVersion:minorVersion:numHSModels:modelBuffer:length:\");\n}"
+}

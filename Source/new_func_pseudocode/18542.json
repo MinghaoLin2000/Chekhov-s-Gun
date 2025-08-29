@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper13AuthorizationVwta",
+    "function_argument_number": 3,
+    "function_signature": "$s19ControlCenterHelper13AuthorizationVwta(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall assignWithTake for Authorization(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x9\n  __int64 v7; // x0\n  __int64 v8; // x8\n  __int64 v9; // x19\n  __int64 v10; // x20\n  __int64 v11; // x0\n\n  v6 = *(_QWORD *)(a2 + 8);\n  v7 = *(_QWORD *)(a1 + 8);\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  *(_QWORD *)(a1 + 8) = v6;\n  swift_bridgeObjectRelease(v7);\n  *(_DWORD *)(a1 + 16) = *(_DWORD *)(a2 + 16);\n  v8 = *(int *)(a3 + 24);\n  v9 = a1 + v8;\n  v10 = a2 + v8;\n  v11 = sub_10006EE70(0LL);\n  (*(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)(v11 - 8) + 40LL))(v9, v10, v11);\n  return a1;\n}"
+}

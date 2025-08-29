@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentProperties init](TSPDocumentProperties * self, SEL a2)",
+    "pseudocode": "TSPDocumentProperties *__cdecl -[TSPDocumentProperties init](TSPDocumentProperties *self, SEL a2)\n{\n  TSPDocumentProperties *v2; // x0\n  TSPDocumentProperties *v3; // x19\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___TSPDocumentProperties;\n  v2 = -[TSPDocumentProperties init](&v5, \"init\");\n  v3 = v2;\n  if ( v2 )\n    -[TSPDocumentProperties updateDocumentUUIDAndPreserveShareUUID:preserveStableDocumentUUID:](\n      v2,\n      \"updateDocumentUUIDAndPreserveShareUUID:preserveStableDocumentUUID:\",\n      0LL,\n      1LL);\n  return v3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskC6window33_AB357ACCBFBEE0A928F2B137C80A3246LLSo8NSWindowCSgvpfi",
+    "function_argument_number": 0,
+    "function_signature": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskC6window33_AB357ACCBFBEE0A928F2B137C80A3246LLSo8NSWindowCSgvpfi()",
+    "pseudocode": "__int64 variable initialization expression of ViewPresentationTask.window()\n{\n  return 0LL;\n}"
+}

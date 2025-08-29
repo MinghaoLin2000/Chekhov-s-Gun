@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_connection_send_message_with_reply",
+    "function_argument_number": 4,
+    "function_signature": "_xpc_connection_send_message_with_reply(xpc_connection_t connection, xpc_object_t message, dispatch_queue_t replyq, xpc_handler_t handler)",
+    "pseudocode": "void __cdecl xpc_connection_send_message_with_reply(\n        xpc_connection_t connection,\n        xpc_object_t message,\n        dispatch_queue_t replyq,\n        xpc_handler_t handler)\n{\n  _xpc_connection_send_message_with_reply(connection, message, replyq, handler);\n}"
+}

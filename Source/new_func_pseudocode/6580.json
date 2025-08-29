@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFAutorelease",
+    "function_argument_number": 1,
+    "function_signature": "_CFAutorelease(CFTypeRef arg)",
+    "pseudocode": "CFTypeRef __cdecl CFAutorelease(CFTypeRef arg)\n{\n  return _CFAutorelease(arg);\n}"
+}

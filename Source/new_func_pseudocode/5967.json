@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_makeBoxUnique",
+    "function_argument_number": 0,
+    "function_signature": "_swift_makeBoxUnique()",
+    "pseudocode": "__int64 swift_makeBoxUnique()\n{\n  return _swift_makeBoxUnique();\n}"
+}

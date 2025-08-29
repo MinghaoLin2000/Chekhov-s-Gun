@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlTextReaderRead",
+    "function_argument_number": 1,
+    "function_signature": "_xmlTextReaderRead(xmlTextReaderPtr reader)",
+    "pseudocode": "int __cdecl xmlTextReaderRead(xmlTextReaderPtr reader)\n{\n  return _xmlTextReaderRead(reader);\n}"
+}

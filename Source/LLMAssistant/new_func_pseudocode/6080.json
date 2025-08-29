@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLReference hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceResourceURLReference hash](PAMediaConversionServiceResourceURLReference * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[PAMediaConversionServiceResourceURLReference hash](\n        PAMediaConversionServiceResourceURLReference *self,\n        SEL a2)\n{\n  NSString *v2; // x19\n  NSUInteger v3; // x20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[NSURL path](self->_url, \"path\"));\n  v3 = -[NSString hash](v2, \"hash\");\n  objc_release(v2);\n  return v3;\n}"
+}

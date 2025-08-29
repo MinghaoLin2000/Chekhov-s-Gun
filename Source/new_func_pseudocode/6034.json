@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAMediaConversionServiceSetCaptionImageMetadataPolicy supportsSecureCoding]",
+    "function_argument_number": 2,
+    "function_signature": "+[PAMediaConversionServiceSetCaptionImageMetadataPolicy supportsSecureCoding](id a1, SEL a2)",
+    "pseudocode": "bool __cdecl +[PAMediaConversionServiceSetCaptionImageMetadataPolicy supportsSecureCoding](id a1, SEL a2)\n{\n  return 1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentRevision copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDocumentRevision copyWithZone:](TSPDocumentRevision * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[TSPDocumentRevision copyWithZone:](TSPDocumentRevision *self, SEL a2, _NSZone *a3)\n{\n  void *v4; // x0\n  __int64 sequence; // x2\n  NSUUID *identifier; // x3\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_msgSend((id)objc_opt_class(self), \"allocWithZone:\", a3);\n  sequence = (unsigned int)self->_sequence;\n  identifier = self->_identifier;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(v4, \"initWithSequence:identifier:\", sequence, identifier);\n}"
+}

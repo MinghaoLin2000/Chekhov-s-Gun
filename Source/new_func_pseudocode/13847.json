@@ -1,0 +1,6 @@
+{
+    "function_name": "_setxattr",
+    "function_argument_number": 6,
+    "function_signature": "_setxattr(const char * path, const char * name, const void * value, size_t size, u_int32_t position, int options)",
+    "pseudocode": "int __cdecl setxattr(\n        const char *path,\n        const char *name,\n        const void *value,\n        size_t size,\n        u_int32_t position,\n        int options)\n{\n  return _setxattr(path, name, value, size, position, options);\n}"
+}

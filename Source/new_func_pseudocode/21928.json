@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_get_remote_connection",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_dictionary_get_remote_connection(xpc_object_t xdict)",
+    "pseudocode": "xpc_connection_t __cdecl xpc_dictionary_get_remote_connection(xpc_object_t xdict)\n{\n  return _xpc_dictionary_get_remote_connection(xdict);\n}"
+}

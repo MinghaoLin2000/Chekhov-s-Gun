@@ -1,0 +1,5 @@
+__AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode
+__int64 _AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode()
+{
+  return __AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode();
+}

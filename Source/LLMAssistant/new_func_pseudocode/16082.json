@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDownstreamEndpointAddWithID",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformDownstreamEndpointAddWithID(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDownstreamEndpointAddWithID(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v8; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( !a1 )\n    return 30LL;\n  v8 = uarpPlatformRemoteEndpointAlloc(a1);\n  if ( !v8 )\n    return 11LL;\n  *(_QWORD *)(v8 + 40) = a3;\n  *(_QWORD *)(v8 + 176) = a2;\n  *(_WORD *)(v8 + 136) = a4;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpSendDownstreamEndpointReachable(a1, a2, a4);\n}"
+}

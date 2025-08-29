@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService21DynamicUIFeatureFlagsOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService21DynamicUIFeatureFlagsOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for DynamicUIFeatureFlags()\n{\n  return &type metadata for DynamicUIFeatureFlags;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegate context:canPerformUserActionUsingBlock:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPTemporaryObjectContextDelegate context:canPerformUserActionUsingBlock:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[TSPTemporaryObjectContextDelegate context:canPerformUserActionUsingBlock:](\n        TSPTemporaryObjectContextDelegate *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v4; // x0\n  void *v5; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(a4);\n  v5 = v4;\n  if ( v4 )\n    (*((void (__fastcall **)(id, __int64))v4 + 2))(v4, 1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

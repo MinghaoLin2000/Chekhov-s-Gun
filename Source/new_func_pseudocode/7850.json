@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV5titleSSSgvM",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV5titleSSSgvM(_QWORD * a1, int a2)",
+    "pseudocode": "__int64 (__fastcall *__fastcall CGSWindow.title.modify(_QWORD *a1, int a2))()\n{\n  char *v4; // x21\n  EyeCandyGraphics::CGSConnection *v5; // x22\n\n  v4 = (char *)malloc(0x2CuLL);\n  *a1 = v4;\n  *((_DWORD *)v4 + 10) = a2;\n  v5 = (EyeCandyGraphics::CGSConnection *)CGSConnection.defaultConnection.unsafeMutableAddressor();\n  sub_10001B1D4(v5, v4);\n  *(Swift::String_optional *)(v4 + 24) = CGSWindow.getTitle(connection:)((EyeCandyGraphics::CGSConnection)v5->cid);\n  return sub_10001A3CC;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIResultError copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIResultError copyWithZone:](ModelKeyServerAPIResultError * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[ModelKeyServerAPIResultError copyWithZone:](ModelKeyServerAPIResultError *self, SEL a2, _NSZone *a3)\n{\n  _QWORD *v5; // x21\n  void *v6; // x0\n  void *v7; // x8\n\n  v5 = objc_msgSend(objc_msgSend((id)objc_opt_class(self, a2), \"allocWithZone:\", a3), \"init\");\n  v6 = -[NSString copyWithZone:](self->_message, \"copyWithZone:\", a3);\n  v7 = (void *)v5[1];\n  v5[1] = v6;\n  objc_release(v7);\n  return v5;\n}"
+}

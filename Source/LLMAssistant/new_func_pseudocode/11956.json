@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal16ReadSizeFallbackEPKcj",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal16ReadSizeFallbackEPKcj(google::protobuf::internal * this, const char * a2, unsigned int a3)",
+    "pseudocode": "char *__fastcall google::protobuf::internal::ReadSizeFallback(google::protobuf::internal *this, const char *a2)\n{\n  char *result; // x0\n  __int64 v4; // x9\n  unsigned int v5; // w9\n  char *v6; // x8\n\n  result = (char *)this + 2;\n  v4 = -21LL;\n  while ( 1 )\n  {\n    LODWORD(a2) = (((unsigned __int8)*(result - 1) - 1) << (v4 + 28)) + (_DWORD)a2;\n    if ( (*(result - 1) & 0x80000000) == 0 )\n      break;\n    ++result;\n    v4 += 7LL;\n    if ( !v4 )\n    {\n      v5 = *((unsigned __int8 *)this + 4);\n      v6 = (char *)this + 5;\n      if ( (unsigned int)a2 + (v5 << 28) - 0x10000000 > 0x7FFFFFEF )\n        v6 = 0LL;\n      if ( v5 <= 7 )\n        return v6;\n      else\n        return 0LL;\n    }\n  }\n  return result;\n}"
+}

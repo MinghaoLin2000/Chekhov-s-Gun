@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUCrashHandlerService removeCrashObserver:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AUCrashHandlerService removeCrashObserver:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AUCrashHandlerService removeCrashObserver:](AUCrashHandlerService *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, __int64); // x19\n  void *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (void (__fastcall **)(id, __int64))objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(+[OSADiagnosticMonitor sharedMonitor](&OBJC_CLASS___OSADiagnosticMonitor, \"sharedMonitor\"));\n  objc_msgSend(v5, \"removeEventObserver:\", self);\n  objc_release(v5);\n  v4[2](v4, 1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

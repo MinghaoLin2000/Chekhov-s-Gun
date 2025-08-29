@@ -1,0 +1,6 @@
+{
+    "function_name": "_BiomeLibrary",
+    "function_argument_number": 0,
+    "function_signature": "_BiomeLibrary()",
+    "pseudocode": "__int64 BiomeLibrary()\n{\n  return _BiomeLibrary();\n}"
+}

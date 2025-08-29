@@ -1,0 +1,54 @@
+Service Path:
+/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/XPCServices/ArchiveService.xpc/Contents/MacOS/ArchiveService
+
+Service Exported Protocols:
+@protocol DSArchiveServiceProtocol
+- (NSProgress *)unarchiveItemAtURL:(NSURL *)arg1 passphrases:(NSArray *)arg2 addToKeychain:(_Bool)arg3 destinationFolderURL:(NSURL *)arg4 acceptedFormats:(unsigned long long)arg5 completionHandler:(void (^)(NSURL *, NSError *))arg6;
+- (NSProgress *)unarchiveItemAtURL:(NSURL *)arg1 passphrases:(NSArray *)arg2 destinationFolderURL:(NSURL *)arg3 acceptedFormats:(unsigned long long)arg4 completionHandler:(void (^)(NSURL *, NSError *))arg5;
+- (NSProgress *)unarchiveItemAtURL:(NSURL *)arg1 passphrases:(NSArray *)arg2 destinationFolderURL:(NSURL *)arg3 completionHandler:(void (^)(NSURL *, NSError *))arg4;
+- (NSProgress *)unarchiveItemAtURL:(NSURL *)arg1 passphrase:(NSString *)arg2 destinationFolderURL:(NSURL *)arg3 completionHandler:(void (^)(NSURL *, NSError *))arg4;
+- (NSProgress *)archiveItemsWithURLs:(NSArray *)arg1 passphrase:(NSString *)arg2 addToKeychain:(_Bool)arg3 compressionFormat:(unsigned long long)arg4 destinationFolderURL:(NSURL *)arg5 completionHandler:(void (^)(NSURL *, NSString *, NSError *))arg6;
+- (NSProgress *)archiveItemsWithURLs:(NSArray *)arg1 compressionFormat:(unsigned long long)arg2 destinationFolderURL:(NSURL *)arg3 completionHandler:(void (^)(NSURL *, NSString *, NSError *))arg4;
+- (NSProgress *)unarchiveItemAtURL:(NSURL *)arg1 toURL:(NSURL *)arg2 options:(unsigned long long)arg3 acceptedFormats:(unsigned long long)arg4 passphrases:(NSArray *)arg5 completionHandler:(void (^)(NSURL *, NSError *))arg6;
+- (NSProgress *)archiveItemsAtURLs:(NSArray *)arg1 toURL:(NSURL *)arg2 options:(unsigned long long)arg3 compressionFormat:(unsigned long long)arg4 passphrase:(NSString *)arg5 completionHandler:(void (^)(NSURL *, NSError *))arg6;
+- (void)itemDescriptorsForItemAtURL:(NSURL *)arg1 passphrases:(NSArray *)arg2 completionHandler:(void (^)(NSArray *, NSError *))arg3;
+- (void)itemDescriptorsForItemAtURL:(NSURL *)arg1 passphrase:(NSString *)arg2 completionHandler:(void (^)(NSArray *, NSError *))arg3;
+@end
+@protocol DSArchiveServiceProtocolInternal
+- (NSProgress *)unarchiveItemWithURLWrapper:(FPSandboxingURLWrapper *)arg1 passphrases:(NSArray *)arg2 addToKeychain:(_Bool)arg3 destinationFolderURLWrapper:(NSSecurityScopedURLWrapper *)arg4 acceptedFormats:(unsigned long long)arg5 exportsStreamingReceiver:(_Bool)arg6 usePlaceholder:(_Bool)arg7 completionHandler:(void (^)(NSSecurityScopedURLWrapper *, NSError *))arg8;
+- (NSProgress *)archiveItemsWithURLWrappers:(NSArray *)arg1 passphrase:(NSString *)arg2 addToKeychain:(_Bool)arg3 compressionFormat:(unsigned long long)arg4 destinationFolderURLWrapper:(NSSecurityScopedURLWrapper *)arg5 usePlaceholder:(_Bool)arg6 completionHandler:(void (^)(NSSecurityScopedURLWrapper *, NSString *, NSError *))arg7;
+- (NSProgress *)unarchiveItemWithURLWrapper:(FPSandboxingURLWrapper *)arg1 toURLWrapper:(NSSecurityScopedURLWrapper *)arg2 options:(unsigned long long)arg3 passphrases:(NSArray *)arg4 acceptedFormats:(unsigned long long)arg5 completionHandler:(void (^)(NSURL *, NSError *))arg6;
+- (NSProgress *)archiveItemsWithURLWrappers:(NSArray *)arg1 toURLWrapper:(NSSecurityScopedURLWrapper *)arg2 options:(unsigned long long)arg3 compressionFormat:(unsigned long long)arg4 passphrase:(NSString *)arg5 completionHandler:(void (^)(NSURL *, NSError *))arg6;
+- (void)itemDescriptorsForItemWithURLWrapper:(NSSecurityScopedURLWrapper *)arg1 passphrases:(NSArray *)arg2 completionHandler:(void (^)(NSArray *, NSError *))arg3;
+@end
+@protocol DSArchiveServiceStreamingInternal
+- (void)receiveArchivedItemsDescriptors:(NSArray *)arg1 placeholderName:(NSString *)arg2 placeholderTypeIdentifier:(NSString *)arg3;
+@end
+@protocol QuarantineServiceProtocol
+- (void)applyQuarantineInfo:(NSData *)arg1 toTarget:(NSSecurityScopedURLWrapper *)arg2 withReply:(void (^)(void))arg3;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.desktopservices.ArchiveService
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.desktopservices.ArchiveService
+	[Key] com.apple.fileprovider.fetch-url
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.QuarantineService.XPC
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] ArchiveService
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] com.apple.aea.cli
+	[Key] platform-application
+	[Value]
+		[Bool] true

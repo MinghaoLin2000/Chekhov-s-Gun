@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpProcessingFlagsToString",
+    "function_argument_number": 0,
+    "function_signature": "_uarpProcessingFlagsToString()",
+    "pseudocode": "// attributes: thunk\n__int64 uarpProcessingFlagsToString()\n{\n  return uarpProcessingFlagsReasonToString();\n}"
+}

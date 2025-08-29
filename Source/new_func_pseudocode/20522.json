@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataCreate",
+    "function_argument_number": 3,
+    "function_signature": "_CFDataCreate(CFAllocatorRef allocator, const UInt8 * bytes, CFIndex length)",
+    "pseudocode": "CFDataRef __cdecl CFDataCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex length)\n{\n  return _CFDataCreate(allocator, bytes, length);\n}"
+}

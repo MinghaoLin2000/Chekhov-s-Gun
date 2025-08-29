@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14LargeUUIDArrayD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP14LargeUUIDArrayD1Ev(TSP::LargeUUIDArray * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeUUIDArray::~LargeUUIDArray(TSP::LargeUUIDArray *this)\n{\n  __ZN3TSP14LargeUUIDArrayD2Ev(this);\n}"
+}

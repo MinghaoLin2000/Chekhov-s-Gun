@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf7Message14_InternalParseEPKcPNS0_8internal12ParseContextE",
+    "function_argument_number": 0,
+    "function_signature": "__ZN6google8protobuf7Message14_InternalParseEPKcPNS0_8internal12ParseContextE()",
+    "pseudocode": "// attributes: thunk\n__int64 google::protobuf::Message::_InternalParse()\n{\n  return google::protobuf::internal::WireFormat::_InternalParse();\n}"
+}

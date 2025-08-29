@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController setDidShowLicenseAgreement:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSetupViewController setDidShowLicenseAgreement:](DeviceSetupViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSetupViewController setDidShowLicenseAgreement:](DeviceSetupViewController *self, SEL a2, bool a3)\n{\n  self->_didShowLicenseAgreement = a3;\n}"
+}

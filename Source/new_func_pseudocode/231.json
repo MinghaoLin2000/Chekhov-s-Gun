@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_getForeignTypeMetadata",
+    "function_argument_number": 0,
+    "function_signature": "_swift_getForeignTypeMetadata()",
+    "pseudocode": "__int64 swift_getForeignTypeMetadata()\n{\n  return _swift_getForeignTypeMetadata();\n}"
+}

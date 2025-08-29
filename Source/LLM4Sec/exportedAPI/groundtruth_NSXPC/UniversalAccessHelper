@@ -1,0 +1,3 @@
+@protocol UniversalAccessHelperProtocol
+- (void)getAXKeyboardMacBuddyImageWithWidth:(double)arg1 withReply:(void (^)(NSImage *))arg2;
+@end

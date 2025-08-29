@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPlugInGetBundle",
+    "function_argument_number": 1,
+    "function_signature": "_CFPlugInGetBundle(CFPlugInRef plugIn)",
+    "pseudocode": "CFBundleRef __cdecl CFPlugInGetBundle(CFPlugInRef plugIn)\n{\n  return _CFPlugInGetBundle(plugIn);\n}"
+}

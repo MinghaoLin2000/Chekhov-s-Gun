@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarCategory setCrosshatched:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarCategory setCrosshatched:](AMPCapacityBarCategory * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarCategory setCrosshatched:](AMPCapacityBarCategory *self, SEL a2, bool a3)\n{\n  self->_crosshatched = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSError tsp_isLikelyOSCorruption]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSError tsp_isLikelyOSCorruption](NSError * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[NSError tsp_isLikelyOSCorruption](NSError *self, SEL a2)\n{\n  return -[NSError tsu_isErrorPassingTest:](self, \"tsu_isErrorPassingTest:\", &stru_1001D1C10);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV8getTitle10connectionSSSgAA13CGSConnectionV_tF",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV8getTitle10connectionSSSgAA13CGSConnectionV_tF(EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::String_optional __swiftcall CGSWindow.getTitle(connection:)(EyeCandyGraphics::CGSConnection connection)\n{\n  __int64 v1; // x0\n  int v2; // w0\n  bool v3; // zf\n  void *v4; // x1\n  Swift::String_optional result; // x0\n  _QWORD v6[2]; // [xsp+8h] [xbp-18h] BYREF\n  __int64 v7; // [xsp+18h] [xbp-8h] BYREF\n\n  v1 = ((__int64 (__fastcall *)(__int64, unsigned __int64, _QWORD))CGSWindow.getProperty(forKey:connection:))(\n         0x646E69575347436BLL,\n         0xEF656C746954776FLL,\n         *(_QWORD *)&connection.cid);\n  if ( v1 )\n  {\n    v7 = v1;\n    v2 = swift_dynamicCast(v6, &v7, (char *)&type metadata for Swift.AnyObject + 8, &type metadata for String, 6LL);\n    v3 = v2 == 0;\n    if ( v2 )\n      v1 = v6[0];\n    else\n      v1 = 0LL;\n    if ( v3 )\n      v4 = 0LL;\n    else\n      v4 = (void *)v6[1];\n  }\n  else\n  {\n    v4 = 0LL;\n  }\n  result.value._object = v4;\n  result.value._countAndFlagsBits = v1;\n  return result;\n}"
+}

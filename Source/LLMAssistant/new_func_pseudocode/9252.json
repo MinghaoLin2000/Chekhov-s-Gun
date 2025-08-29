@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegateWithPackageDataForWrite additionalDocumentPropertiesForWrite]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPTemporaryObjectContextDelegateWithPackageDataForWrite additionalDocumentPropertiesForWrite](TSPTemporaryObjectContextDelegateWithPackageDataForWrite * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSPTemporaryObjectContextDelegateWithPackageDataForWrite additionalDocumentPropertiesForWrite](\n        TSPTemporaryObjectContextDelegateWithPackageDataForWrite *self,\n        SEL a2)\n{\n  return objc_retainAutoreleaseReturnValue(self->_additionalDocumentPropertiesForWrite);\n}"
+}

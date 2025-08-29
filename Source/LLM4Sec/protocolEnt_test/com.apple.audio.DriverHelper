@@ -1,0 +1,10 @@
+Service Path:
+/System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.apple.audio.DriverHelper.xpc/Contents/MacOS/com.apple.audio.DriverHelper
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.rootless.storage.AudioSettings
+	[Value]
+		[Bool] true

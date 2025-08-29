@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController _siriMinimumHeight]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController _siriMinimumHeight](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "double __cdecl -[SiriNCAlertViewController _siriMinimumHeight](SiriNCAlertViewController *self, SEL a2)\n{\n  if ( (unsigned int)AFDeviceSupportsSystemAssistantExperience(self) )\n    return SiriUICloseButtonPadding + SiriUIDefaultTextFieldHeight + SiriUISAEFixedPositionBottomPadding;\n  else\n    return dbl_100017A00[+[AFUISiriSession availabilityState](&OBJC_CLASS___AFUISiriSession, \"availabilityState\") == 0LL];\n}"
+}

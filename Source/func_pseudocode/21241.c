@@ -1,0 +1,5 @@
+_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV05hasNobC17AfterRespeakCheckSbvpfi_0
+__int64 _s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV05hasNobC17AfterRespeakCheckSbvpfi_0()
+{
+  return 0LL;
+}

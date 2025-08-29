@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo21OS_dispatch_semaphoreC12EyeCandyCoreE4waity8Dispatch0H13TimeoutResultOSdF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo21OS_dispatch_semaphoreC12EyeCandyCoreE4waity8Dispatch0H13TimeoutResultOSdF(double a1)",
+    "pseudocode": "__int64 __fastcall OS_dispatch_semaphore.wait(_:)(double a1)\n{\n  __int64 v2; // x19\n  __int64 v3; // x0\n  __int64 v4; // x16\n  __int64 v5; // x23\n  __int64 v6; // x0\n  __int64 v7; // x8\n  char *v8; // x21\n  __int64 v9; // x0\n  __int64 v10; // x12\n  char *v11; // x22\n  void (__fastcall *v12)(char *, __int64); // t1\n  __int64 v13; // x20\n  __int64 v15; // [xsp+0h] [xbp-40h] BYREF\n\n  v2 = sub_10001CA00(0LL);\n  v3 = sub_1000044E8(v2);\n  v5 = v4;\n  v6 = __chkstk_darwin(v3);\n  v8 = (char *)&v15 - ((v7 + 15) & 0xFFFFFFFFFFFFFFF0LL);\n  v9 = __chkstk_darwin(v6);\n  v11 = (char *)&v15 - v10;\n  sub_10001C9F0(v9);\n  sub_10001CA30(a1);\n  v12 = *(void (__fastcall **)(char *, __int64))(v5 + 8);\n  v12(v8, v2);\n  v13 = sub_10001CD60(v11) & 1;\n  v12(v11, v2);\n  return v13;\n}"
+}

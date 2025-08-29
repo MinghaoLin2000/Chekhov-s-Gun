@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipFileWriter initWithZipFileArchive:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUZipFileWriter initWithZipFileArchive:error:](TSUZipFileWriter * self, SEL a2, id a3, id * a4)",
+    "pseudocode": "TSUZipFileWriter *__cdecl -[TSUZipFileWriter initWithZipFileArchive:error:](\n        TSUZipFileWriter *self,\n        SEL a2,\n        id a3,\n        id *a4)\n{\n  return -[TSUZipFileWriter initWithZipFileArchive:options:error:](\n           self,\n           \"initWithZipFileArchive:options:error:\",\n           a3,\n           0LL,\n           a4);\n}"
+}

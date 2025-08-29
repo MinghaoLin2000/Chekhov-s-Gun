@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyAssociatedWindows",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyAssociatedWindows()",
+    "pseudocode": "__int64 CGSCopyAssociatedWindows()\n{\n  return _CGSCopyAssociatedWindows();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUAssertionHandler logBacktraceThrottled]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSUAssertionHandler logBacktraceThrottled](id a1, SEL a2)",
+    "pseudocode": "void __cdecl +[TSUAssertionHandler logBacktraceThrottled](id a1, SEL a2)\n{\n  double v3; // d8\n  unsigned __int64 v4; // x20\n  os_log_s *v5; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = CACurrentMediaTime();\n  os_unfair_lock_lock((os_unfair_lock_t)&unk_1001F8098);\n  if ( v3 - *(double *)&qword_1001F73C0 > 1.0 )\n  {\n    qword_1001F73C0 = *(_QWORD *)&v3;\n    qword_1001F8090 = 1LL;\n    os_unfair_lock_unlock((os_unfair_lock_t)&unk_1001F8098);\nLABEL_4:\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_msgSend(a1, \"logFullBacktrace\");\n    return;\n  }\n  v4 = ++qword_1001F8090;\n  os_unfair_lock_unlock((os_unfair_lock_t)&unk_1001F8098);\n  if ( v4 <= 0xA )\n    goto LABEL_4;\n  if ( TSUAssertCat_init_token != -1 )\n    dispatch_once(&TSUAssertCat_init_token, &stru_1001DF6B8);\n  v5 = (os_log_s *)TSUAssertCat_log_t;\n  if ( os_log_type_enabled((os_log_t)TSUAssertCat_log_t, OS_LOG_TYPE_ERROR) )\n    sub_100174A5C(v5);\n}"
+}

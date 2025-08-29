@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUWarning kind]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUWarning kind](TSUWarning * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[TSUWarning kind](TSUWarning *self, SEL a2)\n{\n  return self->_kind;\n}"
+}

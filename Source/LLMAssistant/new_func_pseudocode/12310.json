@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf2io16ArrayInputStream9ByteCountEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf2io16ArrayInputStream9ByteCountEv(google::protobuf::io::ArrayInputStream * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::ArrayInputStream::ByteCount(google::protobuf::io::ArrayInputStream *this)\n{\n  return *((int *)this + 6);\n}"
+}

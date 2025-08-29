@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal20RepeatedPtrFieldBase7ReserveEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal20RepeatedPtrFieldBase7ReserveEi(google::protobuf::internal::RepeatedPtrFieldBase * this, int a2)",
+    "pseudocode": "google::protobuf::internal::RepeatedPtrFieldBase *__fastcall google::protobuf::internal::RepeatedPtrFieldBase::Reserve(\n        google::protobuf::internal::RepeatedPtrFieldBase *this,\n        int a2)\n{\n  int v2; // w8\n  bool v3; // vf\n  int v4; // w1\n\n  v2 = *((_DWORD *)this + 2);\n  v3 = __OFSUB__(a2, v2);\n  v4 = a2 - v2;\n  if ( !((v4 < 0) ^ v3 | (v4 == 0)) )\n    return (google::protobuf::internal::RepeatedPtrFieldBase *)google::protobuf::internal::RepeatedPtrFieldBase::InternalExtend(\n                                                                 this,\n                                                                 v4);\n  return this;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters24_has_OutputModeSupportedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters24_has_OutputModeSupportedEv(Printd_Parameters * this)",
+    "pseudocode": "bool __fastcall Printd_Parameters::_has_OutputModeSupported(id *this)\n{\n  return objc_msgSend(*this, \"_findAttribute0:valueTag:\", CFSTR(\"output-mode-supported\"), 68LL) != 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_attribute_t addNewEmptyValue]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_attribute_t addNewEmptyValue](ipp_attribute_t * self, SEL a2)",
+    "pseudocode": "id __cdecl -[ipp_attribute_t addNewEmptyValue](ipp_attribute_t *self, SEL a2)\n{\n  ipp_value_t *v3; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_opt_new(&OBJC_CLASS___ipp_value_t);\n  -[NSMutableArray addObject:](self->_values, \"addObject:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSFileHandle uarpSeekToOffset:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSFileHandle uarpSeekToOffset:error:](NSFileHandle * self, SEL a2, unsigned __int64 a3, id * a4)",
+    "pseudocode": "// attributes: thunk\nbool __cdecl -[NSFileHandle uarpSeekToOffset:error:](NSFileHandle *self, SEL a2, unsigned __int64 a3, id *a4)\n{\n  return -[NSFileHandle seekToOffset:error:](self, \"seekToOffset:error:\", a3, a4);\n}"
+}

@@ -1,0 +1,5 @@
+_AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath
+__int64 AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath()
+{
+  return _AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath();
+}

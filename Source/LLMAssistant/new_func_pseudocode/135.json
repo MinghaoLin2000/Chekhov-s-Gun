@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper9SPIHelperCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper9SPIHelperCMa()",
+    "pseudocode": "__int64 type metadata accessor for SPIHelper()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC9SPIHelper9SPIHelper);\n}"
+}

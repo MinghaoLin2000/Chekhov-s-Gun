@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup25AnnotationsViewControllerCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s13DisplayMarkup25AnnotationsViewControllerCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for AnnotationsViewController(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100029B48;\n  if ( !qword_100029B48 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for AnnotationsViewController);\n  return result;\n}"
+}

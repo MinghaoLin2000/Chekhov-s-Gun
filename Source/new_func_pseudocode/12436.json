@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSNumber tsu_isAlmostEqual:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSNumber tsu_isAlmostEqual:](NSNumber * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[NSNumber tsu_isAlmostEqual:](NSNumber *self, SEL a2, id a3)\n{\n  double v4; // d0\n  double v5; // d8\n  double v6; // d0\n\n  -[NSNumber doubleValue](self, \"doubleValue\");\n  v5 = v4;\n  objc_msgSend(a3, \"doubleValue\");\n  return vabdd_f64(v5, v6) < 0.01 || v5 == v6;\n}"
+}

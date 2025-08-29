@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10FloatValue8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf10FloatValue8CopyFromERKNS0_7MessageE(google::protobuf::FloatValue * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "float *__fastcall google::protobuf::FloatValue::CopyFrom(float *this, const google::protobuf::Message *lpsrc)\n{\n  __int64 v2; // x30\n  google::protobuf::FloatValue *v4; // x20\n  float *v5; // x0\n  char v6; // t1\n\n  if ( lpsrc != (const google::protobuf::Message *)this )\n  {\n    v4 = (google::protobuf::FloatValue *)this;\n    v6 = *((_BYTE *)this + 8);\n    v5 = this + 2;\n    v5[2] = 0.0;\n    if ( (v6 & 1) != 0 )\n      sub_10003A2A8(v5);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::FloatValue::MergeFrom(v4, lpsrc);\n  }\n  return this;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN10XpcSandboxD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN10XpcSandboxD2Ev(XpcSandbox * this)",
+    "pseudocode": "void __fastcall XpcSandbox::~XpcSandbox(XpcSandbox *this)\n{\n  _QWORD *v2; // x20\n  _QWORD *v3; // x21\n\n  v2 = (_QWORD *)*((_QWORD *)this + 1);\n  v3 = (_QWORD *)*((_QWORD *)this + 2);\n  if ( v2 != v3 )\n  {\n    do\n      sandbox_extension_release(*v2++);\n    while ( v2 != v3 );\n    v2 = (_QWORD *)*((_QWORD *)this + 1);\n  }\n  if ( v2 )\n  {\n    *((_QWORD *)this + 2) = v2;\n    operator delete(v2);\n  }\n}"
+}

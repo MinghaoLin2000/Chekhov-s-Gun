@@ -1,0 +1,5 @@
+$s22localspeechrecognition32GeneralASRAssetDelegateInterfaceCMa
+__int64 type metadata accessor for GeneralASRAssetDelegateInterface()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition32GeneralASRAssetDelegateInterface);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSl16EyeCandyGraphicsAA9CGSWindowV7ElementRtzrlE7cfarraySo10CFArrayRefavg",
+    "function_argument_number": 2,
+    "function_signature": "_$sSl16EyeCandyGraphicsAA9CGSWindowV7ElementRtzrlE7cfarraySo10CFArrayRefavg(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall Collection<>.cfarray.getter(__int64 a1, __int64 a2)\n{\n  __int64 v2; // x20\n  __int64 v3; // x19\n\n  v2 = sub_10000E798(\n         sub_100017484,\n         0LL,\n         a1,\n         &type metadata for UInt32,\n         &type metadata for Never,\n         a2,\n         &protocol witness table for Never);\n  v3 = sub_10001CB60(v2, &type metadata for UInt32);\n  swift_bridgeObjectRelease(v2);\n  return v3;\n}"
+}

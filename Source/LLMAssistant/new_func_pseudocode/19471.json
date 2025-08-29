@@ -1,0 +1,6 @@
+{
+    "function_name": "_connect_timeout_for_device",
+    "function_argument_number": 1,
+    "function_signature": "_connect_timeout_for_device(void * a1)",
+    "pseudocode": "__int64 __fastcall connect_timeout_for_device(void *a1)\n{\n  id v1; // x19\n  const char *v2; // x0\n  char *v3; // x20\n  __int64 v4; // x21\n\n  v1 = objc_retain(a1);\n  if ( (unsigned int)sub_100004FC0(1LL, 10LL, 13LL, 0LL) )\n  {\n    v2 = (const char *)remote_device_copy_product_type(v1);\n    v3 = (char *)v2;\n    if ( v2 && !strcmp(v2, \"iFPGA\") )\n    {\n      v4 = 120LL;\n    }\n    else if ( (unsigned int)remote_device_get_type(v1) == 10 )\n    {\n      v4 = 10LL;\n    }\n    else\n    {\n      v4 = 5LL;\n    }\n  }\n  else\n  {\n    v3 = 0LL;\n    v4 = 5LL;\n  }\n  free(v3);\n  objc_release(v1);\n  return v4;\n}"
+}

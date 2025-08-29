@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_appleEventWithEventClass_eventID_targetDescriptor_returnID_transactionID_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:\");\n}"
+}

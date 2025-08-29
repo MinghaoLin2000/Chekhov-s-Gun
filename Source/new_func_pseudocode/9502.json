@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties updateVersionUUID]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentProperties updateVersionUUID](TSPDocumentProperties * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPDocumentProperties updateVersionUUID](TSPDocumentProperties *self, SEL a2)\n{\n  NSUUID *v3; // x0\n  NSUUID *versionUUID; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSUUID UUID](&OBJC_CLASS___NSUUID, \"UUID\"));\n  versionUUID = self->_versionUUID;\n  self->_versionUUID = v3;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(versionUUID);\n}"
+}

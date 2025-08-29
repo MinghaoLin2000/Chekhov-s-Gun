@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP9FieldPathD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP9FieldPathD2Ev(TSP::FieldPath * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::FieldPath::~FieldPath(TSP::FieldPath *this)\n{\n  __ZN3TSP9FieldPathD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV19backgroundEventMaskAA06SystemfG0Vvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV19backgroundEventMaskAA06SystemfG0Vvg(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGSConnection.backgroundEventMask.getter(__int64 a1)\n{\n  __int64 v1; // x19\n  __int64 v2; // x20\n  __int64 v3; // x0\n  _QWORD *v5; // [xsp+8h] [xbp-28h] BYREF\n  unsigned int v6; // [xsp+10h] [xbp-20h]\n  EyeCandyGraphics::SystemEventMask v7; // [xsp+14h] [xbp-1Ch] BYREF\n\n  v7.rawValue = 0;\n  if ( !(unsigned int)CGSGetBackgroundEventMask(a1, &v7) )\n    return CGPoint.init(_:)(v7);\n  v5 = _swiftEmptyArrayStorage;\n  v1 = sub_100012EBC();\n  v2 = sub_100002BF4(&unk_100029C88);\n  v3 = sub_100012F08();\n  sub_10001CE70(&v5, v2, v3, &type metadata for SystemEventMask, v1);\n  return v6;\n}"
+}

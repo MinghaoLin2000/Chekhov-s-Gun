@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ErrorMessageVwcp",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper12ErrorMessageVwcp()",
+    "pseudocode": "// attributes: thunk\n__int64 initializeWithCopy for ErrorMessage()\n{\n  return _s9SPIHelper12ErrorMessageVwcp_0();\n}"
+}

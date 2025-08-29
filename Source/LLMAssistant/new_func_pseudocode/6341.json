@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionHangDetector setHangDetectionThresholdTimeInterval:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionHangDetector setHangDetectionThresholdTimeInterval:](VideoConversionHangDetector * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[VideoConversionHangDetector setHangDetectionThresholdTimeInterval:](\n        VideoConversionHangDetector *self,\n        SEL a2,\n        double a3)\n{\n  self->_hangDetectionThresholdTimeInterval = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUBufferedInputStream close]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUBufferedInputStream close](SFUBufferedInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUBufferedInputStream close](SFUBufferedInputStream *self, SEL a2)\n{\n  -[SFUInputStream close](self->mStream, \"close\");\n}"
+}

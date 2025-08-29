@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.corespeech.corespeechservices",
+  "capability": "This entitlement grants an application a temporary exception to perform a Mach lookup for the global Mach service named 'com.apple.corespeech.corespeechservices'. This allows the application to directly communicate with Apple's core speech processing backend, bypassing standard security restrictions (likely sandbox limitations). This enables privileged access to speech-related functionalities, including processing microphone input for dictation, Siri, or voice control, and potentially speech synthesis.",
+  "reasoning": "The entitlement name is highly descriptive: 'com.apple.security.temporary-exception' signifies a security bypass or relaxation. 'mach-lookup.global-name' specifies the inter-process communication (IPC) mechanism (Mach services) and its global scope, meaning the service is accessible system-wide. 'com.apple.corespeech.corespeechservices' explicitly names the specific system service responsible for handling speech recognition, synthesis, and related voice functionalities on macOS. Therefore, the entitlement's capability is to allow direct, privileged IPC with this core speech service.",
+  "similar_entitlements": [
+    "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.speech.recognition.SpeechRecognitionService",
+    "com.apple.security.temporary-exception.sb-mach-lookup.global-name:com.apple.speech.speechrecognition",
+    "com.apple.security.temporary-exception.sb-xpc-service-lookup.com.apple.SpeechRecognition.SpeechRecognitionCore"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'Access Transparency Consent and Control (TCC) related functions' (Type 5). The 'com.apple.corespeech.corespeechservices' is the fundamental system service responsible for processing speech, which inherently involves accessing and processing raw microphone input. Granting a 'temporary exception' for Mach lookup to this service strongly implies that an application might be able to bypass or circumvent the standard TCC user consent prompts for microphone access, thereby gaining privileged access to sensitive user audio data without explicit user permission. This poses a significant privacy risk.",
+  "self_reflection": "I am highly confident in this analysis. The entitlement's structured naming convention clearly indicates its function: a security exception for direct Mach IPC with a specific global system service related to speech. The direct link between 'corespeechservices' and microphone input (a TCC-protected resource) makes its classification under Type 5 very strong. The primary area of potential minor ambiguity could be if 'corespeechservices' had other, non-obvious broader system control capabilities that might also qualify it for Type 4, but based on its name, its core function is speech processing, making the TCC implication paramount. The 'temporary-exception' aspect further reinforces the sensitive nature of this bypass."
+}

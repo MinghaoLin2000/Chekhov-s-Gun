@@ -1,0 +1,6 @@
+{
+    "function_name": "j__objc_terminate_1",
+    "function_argument_number": 0,
+    "function_signature": "j__objc_terminate_1()",
+    "pseudocode": "// attributes: thunk\nvoid __noreturn j__objc_terminate_1(void)\n{\n  objc_terminate();\n}"
+}

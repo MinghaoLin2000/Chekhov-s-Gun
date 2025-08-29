@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_getWitnessTable",
+    "function_argument_number": 0,
+    "function_signature": "_swift_getWitnessTable()",
+    "pseudocode": "__int64 swift_getWitnessTable()\n{\n  return _swift_getWitnessTable();\n}"
+}

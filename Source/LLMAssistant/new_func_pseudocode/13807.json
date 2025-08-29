@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_suspend",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_suspend(dispatch_object_t object)",
+    "pseudocode": "void __cdecl dispatch_suspend(dispatch_object_t object)\n{\n  _dispatch_suspend(object);\n}"
+}

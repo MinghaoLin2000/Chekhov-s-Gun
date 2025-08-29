@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10WireFormat11SkipMessageEPNS0_2io16CodedInputStreamEPNS0_15UnknownFieldSetE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal10WireFormat11SkipMessageEPNS0_2io16CodedInputStreamEPNS0_15UnknownFieldSetE(google::protobuf::internal::WireFormat * this, google::protobuf::io::CodedInputStream * a2, google::protobuf::UnknownFieldSet * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::WireFormat::SkipMessage(\n        google::protobuf::internal::WireFormat *this,\n        google::protobuf::io::CodedInputStream *a2,\n        google::protobuf::UnknownFieldSet *a3)\n{\n  google::protobuf::io::CodedInputStream *v5; // x0\n  google::protobuf::UnknownFieldSet *v6; // x3\n  bool v7; // zf\n  __int64 v8; // x21\n\n  do\n  {\n    v5 = (google::protobuf::io::CodedInputStream *)sub_1000C43D8(this);\n    if ( (_DWORD)v5 )\n      v7 = ((unsigned __int8)v5 & 7) == 4;\n    else\n      v7 = 1;\n    v8 = v7;\n  }\n  while ( !v7 && google::protobuf::internal::WireFormat::SkipField(this, v5, a2, v6) );\n  return v8;\n}"
+}

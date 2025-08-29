@@ -1,0 +1,19 @@
+Service Path:
+/System/Library/Frameworks/MediaExtension.framework/Versions/A/XPCServices/com.apple.MEValidationService.xpc/Contents/MacOS/com.apple.MEValidationService
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.amfi.version-restriction
+	[Value]
+		[Int] 1
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyDesktopFolder
+			[String] kTCCServiceSystemPolicyDocumentsFolder
+			[String] kTCCServiceSystemPolicyDownloadsFolder
+			[String] kTCCServicePhotos
+			[String] kTCCServiceSystemPolicyNetworkVolumes
+			[String] kTCCServiceSystemPolicyRemovableVolumes

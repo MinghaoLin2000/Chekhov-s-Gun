@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLThumbnailRequestCallGenerator",
+    "function_argument_number": 0,
+    "function_signature": "__QLThumbnailRequestCallGenerator()",
+    "pseudocode": "__int64 _QLThumbnailRequestCallGenerator()\n{\n  return __QLThumbnailRequestCallGenerator();\n}"
+}

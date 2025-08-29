@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper27CannotTurnOffBluetoothAlertCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper27CannotTurnOffBluetoothAlertCMa()",
+    "pseudocode": "__int64 type metadata accessor for CannotTurnOffBluetoothAlert()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_957CFADE9D3041A4B3214FF76A466F8827CannotTurnOffBluetoothAlert);\n}"
+}

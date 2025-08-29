@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeViewController proxy]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewBridgeViewController proxy](RemoteViewBridgeViewController * self, SEL a2)",
+    "pseudocode": "_RemoteViewBridgeViewControllerProxy *__cdecl -[RemoteViewBridgeViewController proxy](\n        RemoteViewBridgeViewController *self,\n        SEL a2)\n{\n  return self->_proxy;\n}"
+}

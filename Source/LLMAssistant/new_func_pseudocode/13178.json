@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoKey initAes128KeyFromPassphrase:length:iterationCount:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUCryptoKey initAes128KeyFromPassphrase:length:iterationCount:](SFUCryptoKey * self, SEL a2, const char * a3, unsigned int a4, unsigned int a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl -[SFUCryptoKey initAes128KeyFromPassphrase:length:iterationCount:](\n        SFUCryptoKey *self,\n        SEL a2,\n        const char *a3,\n        unsigned int a4,\n        unsigned int a5)\n{\n  return -[SFUCryptoKey initAes128KeyFromPassphrase:length:iterationCount:saltData:](\n           self,\n           \"initAes128KeyFromPassphrase:length:iterationCount:saltData:\",\n           a3,\n           *(_QWORD *)&a4,\n           *(_QWORD *)&a5,\n           0LL);\n}"
+}

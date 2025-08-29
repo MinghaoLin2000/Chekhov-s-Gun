@@ -1,0 +1,6 @@
+{
+    "function_name": "_removexattr",
+    "function_argument_number": 3,
+    "function_signature": "_removexattr(const char * path, const char * name, int options)",
+    "pseudocode": "int __cdecl removexattr(const char *path, const char *name, int options)\n{\n  return _removexattr(path, name, options);\n}"
+}

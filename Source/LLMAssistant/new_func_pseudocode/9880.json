@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP27ObjectSerializationMetadataD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP27ObjectSerializationMetadataD2Ev(TSP::ObjectSerializationMetadata * this)",
+    "pseudocode": "void __fastcall TSP::ObjectSerializationMetadata::~ObjectSerializationMetadata(TSP::ObjectSerializationMetadata *this)\n{\n  __int64 v2; // x0\n  void *v3; // x0\n  __int64 v4; // t1\n  __int64 v5; // x0\n  void *v6; // x0\n  __int64 v7; // t1\n\n  sub_10004DDC4();\n  sub_100037E58((char *)this + 8);\n  if ( *((int *)this + 25) >= 1 )\n  {\n    v2 = *((_QWORD *)this + 13);\n    v4 = *(_QWORD *)(v2 - 8);\n    v3 = (void *)(v2 - 8);\n    if ( !v4 )\n      operator delete(v3);\n  }\n  sub_100054A9C((char *)this + 72);\n  sub_100055068((char *)this + 48);\n  if ( *((int *)this + 7) >= 1 )\n  {\n    v5 = *((_QWORD *)this + 4);\n    v7 = *(_QWORD *)(v5 - 8);\n    v6 = (void *)(v5 - 8);\n    if ( !v7 )\n      operator delete(v6);\n  }\n}"
+}

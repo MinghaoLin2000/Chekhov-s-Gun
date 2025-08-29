@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUCryptoUtils generateRandomSaltWithLength:]",
+    "function_argument_number": 3,
+    "function_signature": "+[SFUCryptoUtils generateRandomSaltWithLength:](int a1, int a2, size_t count)",
+    "pseudocode": "id __cdecl +[SFUCryptoUtils generateRandomSaltWithLength:](id a1, SEL a2, unsigned __int64 a3)\n{\n  void *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = malloc_type_calloc(a3, 1uLL, 0x100004077774924uLL);\n  if ( SecRandomCopyBytes(kSecRandomDefault, a3, v4) )\n  {\n    free(v4);\n    return 0LL;\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return +[NSData dataWithBytesNoCopy:length:freeWhenDone:](\n             &OBJC_CLASS___NSData,\n             \"dataWithBytesNoCopy:length:freeWhenDone:\",\n             v4,\n             a3,\n             1LL);\n  }\n}"
+}

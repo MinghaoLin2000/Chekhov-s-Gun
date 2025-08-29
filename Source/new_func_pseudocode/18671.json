@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore27_NavigationTrackingModifierVwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore27_NavigationTrackingModifierVwxx(__int64 a1)",
+    "pseudocode": "__int64 __fastcall destroy for _NavigationTrackingModifier(__int64 a1)\n{\n  __int64 v2; // x0\n  __int64 v3; // x1\n  __int64 v4; // x2\n  __int64 v5; // x3\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( *(_QWORD *)a1 )\n    swift_release(*(_QWORD *)(a1 + 8));\n  swift_release(*(_QWORD *)(a1 + 24));\n  v2 = *(_QWORD *)(a1 + 40);\n  v3 = *(_QWORD *)(a1 + 48);\n  v4 = *(_QWORD *)(a1 + 56);\n  v5 = *(unsigned __int8 *)(a1 + 64);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_1000451E0(v2, v3, v4, v5);\n}"
+}

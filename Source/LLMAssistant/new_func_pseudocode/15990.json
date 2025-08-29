@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinCompressBuffer",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformDarwinCompressBuffer()",
+    "pseudocode": "__int64 uarpPlatformDarwinCompressBuffer()\n{\n  return 50LL;\n}"
+}

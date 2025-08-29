@@ -1,0 +1,6 @@
+{
+    "function_name": "_XORBlockWithoutKey",
+    "function_argument_number": 2,
+    "function_signature": "_XORBlockWithoutKey(__int64 result, _BYTE * a2)",
+    "pseudocode": "__int64 __fastcall XORBlockWithoutKey(__int64 result, _BYTE *a2)\n{\n  __int64 v2; // x8\n\n  if ( (_DWORD)result )\n  {\n    v2 = (unsigned int)result;\n    do\n    {\n      *a2++ ^= 0xAAu;\n      --v2;\n    }\n    while ( v2 );\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFGetAllocator",
+    "function_argument_number": 1,
+    "function_signature": "_CFGetAllocator(CFTypeRef cf)",
+    "pseudocode": "CFAllocatorRef __cdecl CFGetAllocator(CFTypeRef cf)\n{\n  return _CFGetAllocator(cf);\n}"
+}

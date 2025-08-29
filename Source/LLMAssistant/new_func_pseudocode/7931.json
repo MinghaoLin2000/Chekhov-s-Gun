@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSAddWindowsToSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSAddWindowsToSpaces()",
+    "pseudocode": "__int64 CGSAddWindowsToSpaces()\n{\n  return _CGSAddWindowsToSpaces();\n}"
+}

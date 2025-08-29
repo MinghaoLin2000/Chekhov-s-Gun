@@ -1,0 +1,6 @@
+{
+    "function_name": "_ExtAudioFileDispose",
+    "function_argument_number": 1,
+    "function_signature": "_ExtAudioFileDispose(ExtAudioFileRef inExtAudioFile)",
+    "pseudocode": "OSStatus __cdecl ExtAudioFileDispose(ExtAudioFileRef inExtAudioFile)\n{\n  return _ExtAudioFileDispose(inExtAudioFile);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory setPRxSuperBinaries:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUSBDFUAccessory setPRxSuperBinaries:](UARPUSBDFUAccessory * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[UARPUSBDFUAccessory setPRxSuperBinaries:](UARPUSBDFUAccessory *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 1920LL);\n}"
+}

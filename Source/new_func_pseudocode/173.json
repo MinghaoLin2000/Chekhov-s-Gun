@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12TriStateBoolVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper12TriStateBoolVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for TriStateBool()\n{\n  return &type metadata for TriStateBool;\n}"
+}

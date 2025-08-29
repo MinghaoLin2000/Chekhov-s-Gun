@@ -1,0 +1,6 @@
+{
+    "function_name": "__Exit",
+    "function_argument_number": 1,
+    "function_signature": "__Exit(int a1)",
+    "pseudocode": "void __cdecl __noreturn _Exit(int a1)\n{\n  __Exit(a1);\n}"
+}

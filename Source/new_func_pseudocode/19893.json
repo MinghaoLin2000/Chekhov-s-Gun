@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t updateProgressAndPostNotification:logMsg:]",
+    "function_argument_number": 4,
+    "function_signature": "-[lite_job_t updateProgressAndPostNotification:logMsg:](lite_job_t * self, SEL a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[lite_job_t updateProgressAndPostNotification:logMsg:](lite_job_t *self, SEL a2, int a3, id a4)\n{\n  self->_mediaProgress = a3;\n  -[lite_job_t postGlobalNotification:logMsg:](self, \"postGlobalNotification:logMsg:\", 0x10000LL, a4);\n}"
+}

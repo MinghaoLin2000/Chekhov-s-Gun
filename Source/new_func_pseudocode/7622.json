@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo10CGEventRefa16EyeCandyGraphicsE9targetPSNSo16CPSProcessSerNumVvg",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo10CGEventRefa16EyeCandyGraphicsE9targetPSNSo16CPSProcessSerNumVvg()",
+    "pseudocode": "unsigned __int64 CGEventRef.targetPSN.getter()\n{\n  __CGEvent *v0; // x20\n  unsigned int IntegerValueField; // w19\n\n  IntegerValueField = CGEventGetIntegerValueField(v0, (CGEventField)0x42u);\n  return IntegerValueField | ((unsigned __int64)(unsigned int)CGEventGetIntegerValueField(\n                                                                v0,\n                                                                kCGMouseEventButtonNumber|0x40) << 32);\n}"
+}

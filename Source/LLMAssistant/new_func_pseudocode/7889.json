@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSl16EyeCandyGraphicsAA9CGSWindowV7ElementRtzrlE5reset10connectionyAA13CGSConnectionV_tF",
+    "function_argument_number": 3,
+    "function_signature": "_$sSl16EyeCandyGraphicsAA9CGSWindowV7ElementRtzrlE5reset10connectionyAA13CGSConnectionV_tF(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "void __fastcall Collection<>.reset(connection:)(__int64 a1, __int64 a2, __int64 a3)\n{\n  void *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( (sub_10001CC50(a2, a3) & 1) == 0 )\n  {\n    v6 = (void *)Collection<>.cfarray.getter(a2, a3);\n    CGSResetWindows(a1, v6);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v6);\n  }\n}"
+}

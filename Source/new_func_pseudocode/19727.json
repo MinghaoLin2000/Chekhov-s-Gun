@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_t writeIPPDocumentPayload:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[platform_http_t writeIPPDocumentPayload:length:](platform_http_t * self, SEL a2, const char * a3, unsigned __int64 a4)",
+    "pseudocode": "signed __int64 __cdecl -[platform_http_t writeIPPDocumentPayload:length:](\n        platform_http_t *self,\n        SEL a2,\n        const char *a3,\n        unsigned __int64 a4)\n{\n  IPPSessionTransaction *streamedTask; // x0\n  unsigned __int64 v6; // x19\n  id v7; // x21\n\n  streamedTask = self->_streamedTask;\n  if ( !streamedTask\n    || (v6 = a4,\n        v7 = objc_retainAutoreleasedReturnValue(\n               -[IPPSessionTransaction writeDocumentDataBlocking:length:](\n                 streamedTask,\n                 \"writeDocumentDataBlocking:length:\",\n                 a3)),\n        objc_release(v7),\n        v7) )\n  {\n    -[platform_http_t _teardownTask](self, \"_teardownTask\", a3, a4);\n    return -1LL;\n  }\n  return v6;\n}"
+}

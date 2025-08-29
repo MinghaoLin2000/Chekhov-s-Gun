@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOHIDDeviceSetReport",
+    "function_argument_number": 5,
+    "function_signature": "_IOHIDDeviceSetReport(IOHIDDeviceRef device, IOHIDReportType reportType, CFIndex reportID, const uint8_t * report, CFIndex reportLength)",
+    "pseudocode": "IOReturn __cdecl IOHIDDeviceSetReport(\n        IOHIDDeviceRef device,\n        IOHIDReportType reportType,\n        CFIndex reportID,\n        const uint8_t *report,\n        CFIndex reportLength)\n{\n  return _IOHIDDeviceSetReport(device, reportType, reportID, report, reportLength);\n}"
+}

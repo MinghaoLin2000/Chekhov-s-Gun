@@ -1,0 +1,6 @@
+{
+    "function_name": "_SidecarGetProcessUniqueID",
+    "function_argument_number": 0,
+    "function_signature": "_SidecarGetProcessUniqueID()",
+    "pseudocode": "__int64 SidecarGetProcessUniqueID()\n{\n  return _SidecarGetProcessUniqueID();\n}"
+}

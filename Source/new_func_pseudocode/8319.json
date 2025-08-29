@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController initWithNibName:bundle:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController initWithNibName:bundle:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController *__cdecl -[DummyViewController initWithNibName:bundle:](\n        _TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  __int64 v6; // x21\n  __int64 v7; // x1\n  __int64 v8; // x22\n  id v9; // x0\n  void *v10; // x21\n  id v11; // x0\n  _TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController *v12; // x20\n  objc_super v14; // [xsp+0h] [xbp-30h] BYREF\n\n  if ( a3 )\n  {\n    v6 = sub_10000C420(a3, a2);\n    v8 = v7;\n    v9 = objc_retain(a4);\n    v10 = (void *)sub_10000C410(v6, v8);\n    swift_bridgeObjectRelease(v8);\n  }\n  else\n  {\n    v11 = objc_retain(a4);\n    v10 = 0LL;\n  }\n  v14.receiver = self;\n  v14.super_class = (Class)type metadata accessor for DummyViewController();\n  v12 = -[DummyViewController initWithNibName:bundle:](&v14, \"initWithNibName:bundle:\", v10, a4);\n  objc_release(v10);\n  objc_release(a4);\n  return v12;\n}"
+}

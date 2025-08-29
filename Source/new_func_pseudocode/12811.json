@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUBufferedInputStream seekWithinBufferToOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUBufferedInputStream seekWithinBufferToOffset:](SFUBufferedInputStream * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "bool __cdecl -[SFUBufferedInputStream seekWithinBufferToOffset:](\n        SFUBufferedInputStream *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  signed __int64 mBufferStart; // x8\n  bool v4; // vf\n  signed __int64 v5; // x8\n\n  mBufferStart = self->mBufferStart;\n  v4 = __OFSUB__(a3, mBufferStart);\n  v5 = a3 - mBufferStart;\n  if ( v5 < 0 != v4 || self->mBufferEnd < a3 )\n    return 0;\n  self->mBufferOffset = v5;\n  return 1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater stopReconnectTimer]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater stopReconnectTimer](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater stopReconnectTimer](EAFirmwareUpdater *self, SEL a2)\n{\n  NSTimer *reconnectTimer; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  objc_sync_enter(self);\n  -[EAFirmwareUpdater log:format:](\n    self,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"%s %@\"),\n    \"-[EAFirmwareUpdater stopReconnectTimer]\",\n    objc_autorelease(\n      objc_msgSend(\n        objc_alloc((Class)&OBJC_CLASS___NSString),\n        \"initWithFormat:\",\n        CFSTR(\"_isExpectingReconnect=%d\"),\n        (unsigned int)self->_isExpectingReconnect)));\n  self->_isExpectingReconnect = 0;\n  reconnectTimer = self->_reconnectTimer;\n  if ( reconnectTimer )\n  {\n    -[NSTimer invalidate](reconnectTimer, \"invalidate\");\n    objc_release(self->_reconnectTimer);\n    self->_reconnectTimer = 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_sync_exit(self);\n}"
+}

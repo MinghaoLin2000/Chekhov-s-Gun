@@ -1,0 +1,6 @@
+{
+    "function_name": "_getURLForAssetURLType",
+    "function_argument_number": 1,
+    "function_signature": "_getURLForAssetURLType(unsigned __int64 a1)",
+    "pseudocode": "__CFString *__fastcall getURLForAssetURLType(unsigned __int64 a1)\n{\n  __int64 v1; // x30\n  __CFString *v2; // x0\n\n  if ( a1 <= 6 && ((0x75u >> a1) & 1) != 0 )\n  {\n    v2 = objc_retain(*off_100031860[a1]);\n    if ( ((v1 ^ (2 * v1)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n  }\n  else\n  {\n    v2 = 0LL;\n    if ( ((v1 ^ (2 * v1)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n  }\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionMoveWindowsToManagedSpace",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionMoveWindowsToManagedSpace()",
+    "pseudocode": "__int64 SLSTransactionMoveWindowsToManagedSpace()\n{\n  return _SLSTransactionMoveWindowsToManagedSpace();\n}"
+}

@@ -1,0 +1,21 @@
+@protocol MXMSMachUtilitiesProtocol_Internal <NSObject>
+@end
+@protocol MXMSProxyPerformanceTrace_Internal <NSObject>
+- (void)_stopPerformanceTraceHelper:(void (^)(NSURL *, NSString *, NSError *, NSError *, NSError *, NSError *))arg1;
+- (void)_startPerformanceTraceHelper:(NSDictionary *)arg1 response:(void (^)(NSError *, NSError *, NSError *))arg2;
+@end
+@protocol MXMSProxyProbeProtocol_Internal <NSObject>
+- (void)_sampleWithProxyMetric:(MXMProxyMetric *)arg1 timeout:(double)arg2 response:(void (^)(MXMSampleData *, unsigned long long, NSError *))arg3;
+@end
+@protocol MXMSProxyQuiesceBeforeIteration_Internal <NSObject>
+- (void)_quiesceBeforeIterationHelper:(double)arg1 timeout:(double)arg2 response:(void (^)(_Bool, NSError *))arg3;
+@end
+@protocol MXMSProxyTerminateProcessesBeforeIteration_Internal <NSObject>
+- (void)_terminateProcessesBeforeIterationHelper:(NSArray *)arg1 response:(void (^)(_Bool, NSError *))arg2;
+@end
+@protocol MXMSProxyUncacheBeforeIteration_Internal <NSObject>
+- (void)_uncacheBeforeIterationHelper:(NSArray *)arg1 response:(void (^)(_Bool, NSError *))arg2;
+@end
+@protocol MetricMeasurementHelperProtocol_Internal <MXMSProxyProbeProtocol_Internal, MXMSMachUtilitiesProtocol_Internal, MXMSProxyPerformanceTrace_Internal, MXMSProxyQuiesceBeforeIteration_Internal, MXMSProxyUncacheBeforeIteration_Internal, MXMSProxyTerminateProcessesBeforeIteration_Internal>
+- (void)_wakeWithPhrase:(NSString *)arg1 response:(void (^)(NSString *))arg2;
+@end

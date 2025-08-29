@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionCreateEmptyRegion",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionCreateEmptyRegion()",
+    "pseudocode": "__int64 CGRegionCreateEmptyRegion()\n{\n  return _CGRegionCreateEmptyRegion();\n}"
+}

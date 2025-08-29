@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io9TokenizerC1EPNS1_19ZeroCopyInputStreamEPNS1_14ErrorCollectorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf2io9TokenizerC1EPNS1_19ZeroCopyInputStreamEPNS1_14ErrorCollectorE(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::io::Tokenizer::Tokenizer(__int64 a1, __int64 a2, __int64 a3)\n{\n  return __ZN6google8protobuf2io9TokenizerC2EPNS1_19ZeroCopyInputStreamEPNS1_14ErrorCollectorE(a1, a2, a3);\n}"
+}

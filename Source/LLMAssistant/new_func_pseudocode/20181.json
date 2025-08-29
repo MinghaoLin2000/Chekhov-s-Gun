@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NANBrowse_Entity dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[NANBrowse_Entity dealloc](NANBrowse_Entity * self, SEL a2)",
+    "pseudocode": "void __cdecl -[NANBrowse_Entity dealloc](NANBrowse_Entity *self, SEL a2)\n{\n  os_log_s *v3; // x20\n  PKNANDataSession *dataSession; // x8\n  objc_super v5; // [xsp+10h] [xbp-40h] BYREF\n  uint8_t buf[4]; // [xsp+20h] [xbp-30h] BYREF\n  NANBrowse_Entity *v7; // [xsp+24h] [xbp-2Ch]\n  __int16 v8; // [xsp+2Ch] [xbp-24h]\n  PKNANDataSession *v9; // [xsp+2Eh] [xbp-22h]\n\n  v3 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v3, OS_LOG_TYPE_ERROR) )\n  {\n    dataSession = self->_dataSession;\n    *(_DWORD *)buf = 134218242;\n    v7 = self;\n    v8 = 2112;\n    v9 = dataSession;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v3,\n      OS_LOG_TYPE_ERROR,\n      \"NSNBrowse_Entity<%p> being deallocated - ds %@\",\n      buf,\n      0x16u);\n  }\n  objc_release(v3);\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___NANBrowse_Entity;\n  -[NANBrowse_Entity dealloc](&v5, \"dealloc\");\n}"
+}

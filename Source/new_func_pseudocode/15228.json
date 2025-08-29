@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithNotification:type:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithNotification:type:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithNotification_type_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"initWithNotification:type:\");\n}"
+}

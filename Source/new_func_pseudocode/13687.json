@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringGetSystemEncoding",
+    "function_argument_number": 0,
+    "function_signature": "_CFStringGetSystemEncoding()",
+    "pseudocode": "CFStringEncoding CFStringGetSystemEncoding(void)\n{\n  return _CFStringGetSystemEncoding();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipInflateReadChannel close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipInflateReadChannel close](TSUZipInflateReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUZipInflateReadChannel close](TSUZipInflateReadChannel *self, SEL a2)\n{\n  TSUStreamReadChannel *readChannel; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[TSUStreamReadChannel close](self->_readChannel, \"close\");\n  readChannel = self->_readChannel;\n  self->_readChannel = 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(readChannel);\n}"
+}

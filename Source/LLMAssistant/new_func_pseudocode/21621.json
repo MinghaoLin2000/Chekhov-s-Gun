@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$buildLmWithConfig:root:data:dir:shouldStop:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$buildLmWithConfig:root:data:dir:shouldStop:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_buildLmWithConfig_root_data_dir_shouldStop_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"buildLmWithConfig:root:data:dir:shouldStop:\");\n}"
+}

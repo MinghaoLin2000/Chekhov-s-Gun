@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation initWithPath:sharedFileDescriptor:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUFileDataRepresentation initWithPath:sharedFileDescriptor:](SFUFileDataRepresentation * self, SEL a2, id a3, int a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSFUFileDataRepresentation *__cdecl -[SFUFileDataRepresentation initWithPath:sharedFileDescriptor:](\n        SFUFileDataRepresentation *self,\n        SEL a2,\n        id a3,\n        int a4)\n{\n  return -[SFUFileDataRepresentation initWithPath:sharedFileDescriptor:cryptoKey:dataLength:](\n           self,\n           \"initWithPath:sharedFileDescriptor:cryptoKey:dataLength:\",\n           a3,\n           *(_QWORD *)&a4,\n           0LL,\n           0LL);\n}"
+}

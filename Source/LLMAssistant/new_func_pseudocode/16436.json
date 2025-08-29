@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater name]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater name](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[EAFirmwareUpdater name](EAFirmwareUpdater *self, SEL a2)\n{\n  return self->_name;\n}"
+}

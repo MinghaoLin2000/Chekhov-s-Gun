@@ -1,0 +1,6 @@
+{
+    "function_name": "_getEVSHandle",
+    "function_argument_number": 0,
+    "function_signature": "_getEVSHandle()",
+    "pseudocode": "__int64 getEVSHandle()\n{\n  return _getEVSHandle();\n}"
+}

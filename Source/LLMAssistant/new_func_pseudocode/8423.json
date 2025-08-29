@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_KHSoftwareUpdateControllerContext init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_KHSoftwareUpdateControllerContext init](_KHSoftwareUpdateControllerContext * self, SEL a2)",
+    "pseudocode": "_KHSoftwareUpdateControllerContext *__cdecl -[_KHSoftwareUpdateControllerContext init](\n        _KHSoftwareUpdateControllerContext *self,\n        SEL a2)\n{\n  _KHSoftwareUpdateControllerContext *v2; // x19\n  NSMutableArray *v3; // x0\n  NSMutableArray *completionHandlers; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS____KHSoftwareUpdateControllerContext;\n  v2 = -[_KHSoftwareUpdateControllerContext init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_opt_new(&OBJC_CLASS___NSMutableArray);\n    completionHandlers = v2->_completionHandlers;\n    v2->_completionHandlers = v3;\n    objc_release(completionHandlers);\n  }\n  return v2;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MDRemoteServiceSupport allowedToStartService:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MDRemoteServiceSupport allowedToStartService:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[MDRemoteServiceSupport allowedToStartService:](MDRemoteServiceSupport *self, SEL a2, id a3)\n{\n  id v3; // x19\n  unsigned __int8 v4; // w20\n\n  v3 = objc_retain(a3);\n  if ( ((unsigned int)objc_msgSend(v3, \"isEqual:\", CFSTR(\"com.apple.mobile.lockdown.remote.trusted\")) & 1) != 0\n    || ((unsigned int)objc_msgSend(v3, \"isEqual:\", CFSTR(\"com.apple.mobile.lockdown.remote.untrusted\")) & 1) != 0 )\n  {\n    v4 = 1;\n  }\n  else\n  {\n    v4 = (unsigned __int8)objc_msgSend(v3, \"hasSuffix:\", CFSTR(\".shim.remote\"));\n  }\n  objc_release(v3);\n  return v4;\n}"
+}

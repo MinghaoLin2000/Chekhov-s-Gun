@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContentStreamCreateWithPage",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFContentStreamCreateWithPage(CGPDFPageRef page)",
+    "pseudocode": "CGPDFContentStreamRef __cdecl CGPDFContentStreamCreateWithPage(CGPDFPageRef page)\n{\n  return _CGPDFContentStreamCreateWithPage(page);\n}"
+}

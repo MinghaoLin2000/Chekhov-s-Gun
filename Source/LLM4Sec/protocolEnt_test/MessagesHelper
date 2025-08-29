@@ -1,0 +1,36 @@
+Service Path:
+/System/Library/PrivateFrameworks/StorageManagement.framework/Versions/A/XPCServices/MessagesHelper.xpc/Contents/MacOS/MessagesHelper
+
+Service Exported Protocols:
+@protocol SPMessagesHelper
+- (void)enableCloudKitMessagesWithCompletionHandler:(void (^)(NSError *))arg1;
+- (void)fetchCloudKitMessagesStateWithCompletionHandler:(void (^)(long long, NSError *))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.imagent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+			[String] kTCCServicePhotos
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.addressbook
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.sbpl
+	[Value]
+		[Array]
+			[String] (allow file-read* file-link (home-subpath "/Library/"))
+			[String] (allow iokit-open (iokit-user-client-class "AppleAPFSUserClient"))
+			[String] (allow distributed-notification-post)
+	[Key] com.apple.security.temporary-exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] com.apple.madrid
+			[String] com.apple.Messages

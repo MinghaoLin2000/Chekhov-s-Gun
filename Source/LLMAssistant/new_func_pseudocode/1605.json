@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController previousSecondaryButtonTitle]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController previousSecondaryButtonTitle](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[DeviceFooterViewController previousSecondaryButtonTitle](DeviceFooterViewController *self, SEL a2)\n{\n  return self->_previousSecondaryButtonTitle;\n}"
+}

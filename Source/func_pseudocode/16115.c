@@ -1,0 +1,5 @@
+_IONotificationPortGetRunLoopSource
+CFRunLoopSourceRef __cdecl IONotificationPortGetRunLoopSource(IONotificationPortRef notify)
+{
+  return _IONotificationPortGetRunLoopSource(notify);
+}

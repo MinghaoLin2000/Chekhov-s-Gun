@@ -1,0 +1,6 @@
+{
+    "function_name": "_AECreateDesc",
+    "function_argument_number": 4,
+    "function_signature": "_AECreateDesc(DescType typeCode, const void * dataPtr, Size dataSize, AEDesc * result)",
+    "pseudocode": "OSErr __cdecl AECreateDesc(DescType typeCode, const void *dataPtr, Size dataSize, AEDesc *result)\n{\n  return _AECreateDesc(typeCode, dataPtr, dataSize, result);\n}"
+}

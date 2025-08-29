@@ -1,0 +1,16 @@
+{
+  "entitlement": "com.apple.private.tcc.ifdreader:kTCCServiceBluetoothAlways",
+  "capability": "This entitlement grants an application persistent, elevated, or background access to Bluetooth functionality and data. This includes the ability to scan for devices, connect to them, and read/write Bluetooth data without requiring repeated user consent, potentially bypassing standard TCC user prompts for Bluetooth access. It is likely used by system processes or highly privileged Apple applications that require continuous Bluetooth interaction.",
+  "reasoning": "The entitlement name clearly indicates its purpose: 'com.apple.private' signifies a private, system-level entitlement. 'tcc' points directly to Apple's Transparency, Consent, and Control framework, which manages user privacy. 'kTCCServiceBluetoothAlways' is a specific identifier within TCC, where 'kTCCServiceBluetooth' refers to the Bluetooth service, and 'Always' suggests continuous or elevated access, possibly bypassing typical user consent mechanisms. The 'ifdreader' part is less clear but likely relates to how TCC manages or reads access to these protected resources.",
+  "similar_entitlements": [
+    "com.apple.private.tcc.allow",
+    "kTCCServiceBluetooth",
+    "kTCCServiceCamera",
+    "kTCCServiceMicrophone"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'Access Transparency Consent and Control (TCC) related functions' (Type 5). The description for Type 5 explicitly lists 'Bluetooth: Access Bluetooth device information or data' as a sensitive operation. Given that this entitlement is named 'com.apple.private.tcc.ifdreader:kTCCServiceBluetoothAlways', it unequivocally falls into this category, as it grants direct and potentially persistent access to TCC-protected Bluetooth resources, possibly without explicit user consent.",
+  "self_reflection": "I am highly confident in this analysis. The entitlement's naming convention is very clear, pointing directly to TCC and Bluetooth services with an 'Always' modifier, which aligns perfectly with the definition of TCC-protected sensitive operations. The 'private' prefix further reinforces its sensitive nature, indicating it's not for general app use. The only minor ambiguity is the exact function of 'ifdreader', but it does not alter the core TCC/Bluetooth/Always capability inference. There is very little room for misinterpretation of its primary function and sensitive classification."
+}

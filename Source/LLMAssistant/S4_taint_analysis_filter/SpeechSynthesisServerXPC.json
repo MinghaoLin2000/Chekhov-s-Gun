@@ -1,0 +1,9 @@
+{
+   "-[SpeechSynthesisServerXPC getSpeakingStateWithCompletionHandler:]": 4294979340,
+  "_xpc_connection_resume": 4294981248,
+  "_xpc_connection_send_message": 4294981264,
+  "_objc_msgSend$_sendCommandViaXPCMessageToAXVisualSupportAgent:": 4294981376,
+  "-[SpeechSynthesisServerXPC stopSpeakingSelectionWithCompletionHandler:]": 4294979132,
+  "_xpc_connection_create_mach_service": 4294981232,
+  "-[SpeechSynthesisServerXPC _sendCommandViaXPCMessageToAXVisualSupportAgent:]": 4294979764
+}

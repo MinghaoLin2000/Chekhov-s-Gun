@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC12PerformErrorOMa
+ValueMetadata *type metadata accessor for ServiceConnectionExportedObject.PerformError()
+{
+  return &type metadata for ServiceConnectionExportedObject.PerformError;
+}

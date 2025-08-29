@@ -1,0 +1,4 @@
+@protocol AudioInfoHelperProtocol
+- (void)validateComponent:(NSDictionary *)arg1 parameters:(NSDictionary *)arg2 reply:(void (^)(NSError *, unsigned int, NSDictionary *))arg3;
+- (void)getConfigurationInfo:(NSDictionary *)arg1 reply:(void (^)(NSError *, NSDictionary *))arg2;
+@end

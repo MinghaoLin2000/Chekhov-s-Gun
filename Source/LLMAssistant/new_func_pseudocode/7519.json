@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSl16EyeCandyGraphicsAA8CGSSpaceV7ElementRtzrlE6spacesSo10CFArrayRefavg",
+    "function_argument_number": 2,
+    "function_signature": "_$sSl16EyeCandyGraphicsAA8CGSSpaceV7ElementRtzrlE6spacesSo10CFArrayRefavg(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall Collection<>.spaces.getter(__int64 a1, __int64 a2)\n{\n  __int64 v2; // x20\n  __int64 v5; // x22\n  __int64 v6; // x0\n  __int64 v7; // x0\n\n  v5 = sub_100011930(0LL);\n  v6 = sub_10000E798(sub_100010C6C, 0LL, a1, v5, &type metadata for Never, a2, &protocol witness table for Never);\n  v7 = sub_10001CB60(v6, v5);\n  sub_10001231C(v7);\n  return v2;\n}"
+}

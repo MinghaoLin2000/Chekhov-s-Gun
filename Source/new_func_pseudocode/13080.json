@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveFileDataRepresentation inputStream]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipArchiveFileDataRepresentation inputStream](SFUZipArchiveFileDataRepresentation * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SFUZipArchiveFileDataRepresentation inputStream](SFUZipArchiveFileDataRepresentation *self, SEL a2)\n{\n  return -[SFUFileDataRepresentation inputStream](self->mFileRepresentation, \"inputStream\");\n}"
+}

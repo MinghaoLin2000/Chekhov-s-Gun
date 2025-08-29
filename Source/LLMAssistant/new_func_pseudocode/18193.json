@@ -1,0 +1,6 @@
+{
+    "function_name": "_strncmp",
+    "function_argument_number": 3,
+    "function_signature": "_strncmp(const char * __s1, const char * __s2, size_t __n)",
+    "pseudocode": "int __cdecl strncmp(const char *__s1, const char *__s2, size_t __n)\n{\n  return _strncmp(__s1, __s2, __n);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageDestinationCreateWithData",
+    "function_argument_number": 4,
+    "function_signature": "_CGImageDestinationCreateWithData(CFMutableDataRef data, CFStringRef type, size_t count, CFDictionaryRef options)",
+    "pseudocode": "CGImageDestinationRef __cdecl CGImageDestinationCreateWithData(\n        CFMutableDataRef data,\n        CFStringRef type,\n        size_t count,\n        CFDictionaryRef options)\n{\n  return _CGImageDestinationCreateWithData(data, type, count, options);\n}"
+}

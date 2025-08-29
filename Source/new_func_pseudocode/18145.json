@@ -1,0 +1,6 @@
+{
+    "function_name": "_DADiskUnmount",
+    "function_argument_number": 4,
+    "function_signature": "_DADiskUnmount(DADiskRef disk, DADiskUnmountOptions options, DADiskUnmountCallback callback, void * context)",
+    "pseudocode": "void __cdecl DADiskUnmount(DADiskRef disk, DADiskUnmountOptions options, DADiskUnmountCallback callback, void *context)\n{\n  _DADiskUnmount(disk, options, callback, context);\n}"
+}

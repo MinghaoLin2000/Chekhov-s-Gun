@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BonjourBrowse_Entity displayName]",
+    "function_argument_number": 2,
+    "function_signature": "-[BonjourBrowse_Entity displayName](BonjourBrowse_Entity * self, SEL a2)",
+    "pseudocode": "id __cdecl -[BonjourBrowse_Entity displayName](BonjourBrowse_Entity *self, SEL a2)\n{\n  const char *bonjour_service_name; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  bonjour_service_name = nw_endpoint_get_bonjour_service_name(self->_endpoint);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return +[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", bonjour_service_name);\n}"
+}

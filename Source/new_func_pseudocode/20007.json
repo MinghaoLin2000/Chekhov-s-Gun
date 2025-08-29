@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalProxyConnection _receiveFromHTTP:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LocalProxyConnection _receiveFromHTTP:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LocalProxyConnection _receiveFromHTTP:](LocalProxyConnection *self, SEL a2, id a3)\n{\n  dispatch_data_s *v4; // x19\n  OS_dispatch_data *dataToSendToSocket; // x0\n  OS_dispatch_data *concat; // x0\n  OS_dispatch_data *v7; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (dispatch_data_s *)objc_retain(a3);\n  dataToSendToSocket = self->_dataToSendToSocket;\n  if ( dataToSendToSocket )\n    concat = (OS_dispatch_data *)dispatch_data_create_concat((dispatch_data_t)dataToSendToSocket, v4);\n  else\n    concat = objc_retain(v4);\n  v7 = self->_dataToSendToSocket;\n  self->_dataToSendToSocket = concat;\n  objc_release(v7);\n  -[LocalProxyConnection _checkWrite](self, \"_checkWrite\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

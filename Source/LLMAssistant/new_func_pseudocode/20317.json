@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z17_liteNotifyCancelP8NSString",
+    "function_argument_number": 1,
+    "function_signature": "__Z17_liteNotifyCancelP8NSString(NSString * a1)",
+    "pseudocode": "void __fastcall _liteNotifyCancel(NSString *a1)\n{\n  NSString *v1; // x19\n\n  v1 = objc_retainAutoreleasedReturnValue(\n         +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"%s/%@\"),\n           \"_liteNotifyCancel\",\n           a1));\n  PKCancelAlert(v1);\n  objc_release(v1);\n  dword_1000C3F30 = 0;\n}"
+}

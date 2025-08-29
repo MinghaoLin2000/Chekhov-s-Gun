@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinHashFinal",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformDarwinHashFinal(int a1, int a2, unsigned __int8 * md)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDarwinHashFinal(__int64 result, CC_SHA512_CTX *a2, unsigned __int8 *md, int a4)\n{\n  if ( (_DWORD)result == 2 )\n  {\n    if ( a4 == 48 )\n      return CC_SHA384_Final(md, a2);\n  }\n  else if ( (_DWORD)result == 1 )\n  {\n    if ( a4 == 32 )\n      return CC_SHA256_Final(md, (CC_SHA256_CTX *)a2);\n  }\n  else if ( (_DWORD)result == 3 && a4 == 64 )\n  {\n    return CC_SHA512_Final(md, a2);\n  }\n  return result;\n}"
+}

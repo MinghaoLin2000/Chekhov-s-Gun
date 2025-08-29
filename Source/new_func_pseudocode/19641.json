@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z23PKAllowNonTLSConnectionP8NSString",
+    "function_argument_number": 1,
+    "function_signature": "__Z23PKAllowNonTLSConnectionP8NSString(NSString * a1)",
+    "pseudocode": "__int64 __fastcall PKAllowNonTLSConnection(NSString *a1)\n{\n  return 1LL;\n}"
+}

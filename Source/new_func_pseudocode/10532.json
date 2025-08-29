@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP17LargeArraySegmentD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP17LargeArraySegmentD1Ev(TSP::LargeArraySegment * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeArraySegment::~LargeArraySegment(TSP::LargeArraySegment *this)\n{\n  __ZN3TSP17LargeArraySegmentD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIRawKey copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIRawKey copyWithZone:](ModelKeyServerAPIRawKey * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[ModelKeyServerAPIRawKey copyWithZone:](ModelKeyServerAPIRawKey *self, SEL a2, _NSZone *a3)\n{\n  _QWORD *v5; // x21\n  void *v6; // x0\n  void *v7; // x8\n  void *v8; // x0\n  void *v9; // x8\n\n  v5 = objc_msgSend(objc_msgSend((id)objc_opt_class(self, a2), \"allocWithZone:\", a3), \"init\");\n  v6 = -[NSData copyWithZone:](self->_encryptionKey, \"copyWithZone:\", a3);\n  v7 = (void *)v5[2];\n  v5[2] = v6;\n  objc_release(v7);\n  v8 = -[NSData copyWithZone:](self->_encryptionIv, \"copyWithZone:\", a3);\n  v9 = (void *)v5[1];\n  v5[1] = v8;\n  objc_release(v9);\n  return v5;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IsExtensionEnabled setRequestingProcessIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IsExtensionEnabled setRequestingProcessIdentifier:](IsExtensionEnabled * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[IsExtensionEnabled setRequestingProcessIdentifier:](IsExtensionEnabled *self, SEL a2, int a3)\n{\n  self->_requestingProcessIdentifier = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController setDeviceInfo:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceViewController setDeviceInfo:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceViewController setDeviceInfo:](DeviceViewController *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_deviceInfo, a3);\n}"
+}

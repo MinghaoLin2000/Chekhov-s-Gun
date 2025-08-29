@@ -1,0 +1,12 @@
+-[DeviceSettingsPhotosViewController clickIncludeVideosCheckBox:]
+// attributes: thunk
+void __cdecl -[DeviceSettingsPhotosViewController clickIncludeVideosCheckBox:](
+        DeviceSettingsPhotosViewController *self,
+        SEL a2,
+        id a3)
+{
+  -[DeviceViewController postDeviceViewDirtinessChangeNotification](
+    self,
+    "postDeviceViewDirtinessChangeNotification",
+    a3);
+}

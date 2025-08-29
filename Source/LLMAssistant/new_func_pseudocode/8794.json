@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService22EngagementMessageEventVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService22EngagementMessageEventVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for EngagementMessageEvent()\n{\n  return &type metadata for EngagementMessageEvent;\n}"
+}

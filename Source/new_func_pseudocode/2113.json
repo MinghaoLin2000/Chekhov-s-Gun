@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPPHMediaObject .cxx_destruct](AMPPHMediaObject * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject .cxx_destruct](AMPPHMediaObject *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_userDescription, 0LL);\n  objc_storeStrong((id *)&self->_modificationDate, 0LL);\n  objc_storeStrong((id *)&self->_creationDate, 0LL);\n  objc_storeStrong((id *)&self->_videoComplementURL, 0LL);\n  objc_storeStrong((id *)&self->_thumbURL, 0LL);\n  objc_storeStrong((id *)&self->_originalURL, 0LL);\n  objc_storeStrong((id *)&self->_currentVersionURL, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_identifier, 0LL);\n}"
+}

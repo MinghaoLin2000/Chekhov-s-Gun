@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z12getNamedAttrIU8__strongP7NSArrayIP8NSNumberEET_P5ipp_tP8NSString",
+    "function_argument_number": 2,
+    "function_signature": "__Z12getNamedAttrIU8__strongP7NSArrayIP8NSNumberEET_P5ipp_tP8NSString(int a1, int a2)",
+    "pseudocode": "id __fastcall getNamedAttr<NSArray<NSNumber *> * {__strong}>(int a1, int a2)\n{\n  id v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue((id)sub_100032324(a1, a2, &stru_10009E4A8));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

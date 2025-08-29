@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16MenuFlashStepperV5StateOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore16MenuFlashStepperV5StateOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MenuFlashStepper.State()\n{\n  return &type metadata for MenuFlashStepper.State;\n}"
+}

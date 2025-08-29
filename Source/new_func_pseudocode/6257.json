@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setColorspaceMode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setColorspaceMode:](PAMediaConversionServiceImageConversionJob * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setColorspaceMode:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_colorspaceMode = a3;\n}"
+}

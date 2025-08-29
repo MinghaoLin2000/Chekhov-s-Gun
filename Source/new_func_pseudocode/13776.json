@@ -1,0 +1,6 @@
+{
+    "function_name": "___maskrune",
+    "function_argument_number": 0,
+    "function_signature": "___maskrune()",
+    "pseudocode": "__int64 __maskrune()\n{\n  return ___maskrune();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV24animationStartTimeOffsetSdvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV24animationStartTimeOffsetSdvg(__int64 a1)",
+    "pseudocode": "void __fastcall CGDisplay.animationStartTimeOffset.getter(__int64 a1)\n{\n  unsigned __int64 v1[3]; // [xsp+0h] [xbp-60h] BYREF\n\n  SLSDisplayGetTiming(v1, 0LL, a1);\n  if ( (double)v1[0] * 0.000000001 > 0.0 )\n    CACurrentMediaTime();\n}"
+}

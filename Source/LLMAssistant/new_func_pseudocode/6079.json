@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLReference getFileSize:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[PAMediaConversionServiceResourceURLReference getFileSize:error:](PAMediaConversionServiceResourceURLReference * self, SEL a2, unsigned __int64 * a3, id * a4)",
+    "pseudocode": "bool __cdecl -[PAMediaConversionServiceResourceURLReference getFileSize:error:](\n        PAMediaConversionServiceResourceURLReference *self,\n        SEL a2,\n        unsigned __int64 *a3,\n        id *a4)\n{\n  NSURL *url; // x0\n  unsigned int v6; // w0\n  bool v7; // w20\n  id v9; // [xsp+8h] [xbp-18h] BYREF\n\n  url = self->_url;\n  v9 = 0LL;\n  v6 = -[NSURL getResourceValue:forKey:error:](url, \"getResourceValue:forKey:error:\", &v9, NSURLFileSizeKey, a4);\n  v7 = v6;\n  if ( a3 && v6 )\n    *a3 = (unsigned __int64)objc_msgSend(v9, \"unsignedLongLongValue\");\n  return v7;\n}"
+}

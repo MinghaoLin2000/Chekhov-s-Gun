@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties writeToPropertiesURL:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDocumentProperties writeToPropertiesURL:error:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSPDocumentProperties writeToPropertiesURL:error:](TSPDocumentProperties *self, SEL a2, id a3, id *a4)\n{\n  id v6; // x19\n  id v7; // x0\n  void *v8; // x20\n  unsigned __int8 v9; // w21\n\n  v6 = objc_retain(a3);\n  v7 = objc_retainAutoreleasedReturnValue(-[TSPDocumentProperties encodedPropertyListWithError:](self, \"encodedPropertyListWithError:\", a4));\n  v8 = v7;\n  if ( v7 )\n    v9 = (unsigned __int8)objc_msgSend(v7, \"writeToURL:options:error:\", v6, 0LL, a4);\n  else\n    v9 = 0;\n  objc_release(v8);\n  objc_release(v6);\n  return v9;\n}"
+}

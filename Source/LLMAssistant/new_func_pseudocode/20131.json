@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters28_get_JobMediaSheetsCompletedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters28_get_JobMediaSheetsCompletedEv(Printd_Parameters * this)",
+    "pseudocode": "__int64 __fastcall Printd_Parameters::_get_JobMediaSheetsCompleted(Printd_Parameters *this)\n{\n  return sub_10003208C(*(_QWORD *)this, (int)CFSTR(\"job-media-sheets-completed\"), &stru_10009E3D8);\n}"
+}

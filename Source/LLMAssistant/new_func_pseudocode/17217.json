@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction _execution]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction _execution](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "AMRemoteActionExecution *__cdecl -[AMLoaderServiceAction _execution](AMLoaderServiceAction *self, SEL a2)\n{\n  AMRemoteActionExecution *execution; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  os_unfair_lock_assert_owner(&self->__executionLock);\n  execution = self->__execution;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(execution);\n}"
+}

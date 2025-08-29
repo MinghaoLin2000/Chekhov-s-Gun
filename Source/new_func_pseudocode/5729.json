@@ -1,0 +1,6 @@
+{
+    "function_name": "_DFRPresentationModeSetDefault",
+    "function_argument_number": 0,
+    "function_signature": "_DFRPresentationModeSetDefault()",
+    "pseudocode": "__int64 DFRPresentationModeSetDefault()\n{\n  return _DFRPresentationModeSetDefault();\n}"
+}

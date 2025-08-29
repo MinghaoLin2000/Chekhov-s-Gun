@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendERKS5_mm",
+    "function_argument_number": 4,
+    "function_signature": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendERKS5_mm(std::string * this, const std::string * __str, std::string::size_type __pos, std::string::size_type __n)",
+    "pseudocode": "std::string *__cdecl std::string::append(\n        std::string *this,\n        const std::string *__str,\n        std::string::size_type __pos,\n        std::string::size_type __n)\n{\n  return std::string::append(this, __str, __pos, __n);\n}"
+}

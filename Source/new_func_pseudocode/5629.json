@@ -1,0 +1,6 @@
+{
+    "function_name": "_SODictationHotKeyFromKeyMenuEntries",
+    "function_argument_number": 1,
+    "function_signature": "_SODictationHotKeyFromKeyMenuEntries(int a1)",
+    "pseudocode": "id __fastcall SODictationHotKeyFromKeyMenuEntries(int a1)\n{\n  unsigned int v1; // w20\n  id v2; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = a1 - 2;\n  if ( (unsigned int)(a1 - 2) >= 5 )\n  {\n    if ( a1 )\n    {\n      v2 = 0LL;\n    }\n    else\n    {\n      v2 = objc_alloc_init((Class)&OBJC_CLASS___SODictationHotKey);\n      objc_msgSend(v2, \"setIsDoubleTap:\", 0LL);\n      objc_msgSend(v2, \"setKeyChar:\", 0xFFFFLL);\n      objc_msgSend(v2, \"setVirtualKey:\", 0xFFFFLL);\n    }\n  }\n  else\n  {\n    v2 = objc_alloc_init((Class)&OBJC_CLASS___SODictationHotKey);\n    objc_msgSend(v2, \"setIsDoubleTap:\", 1LL);\n    if ( v1 <= 4 )\n      objc_msgSend(v2, \"setModifiers:\", qword_100009888[v1]);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

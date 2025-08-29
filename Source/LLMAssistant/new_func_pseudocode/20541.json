@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceCreateDeviceRGB",
+    "function_argument_number": 0,
+    "function_signature": "_CGColorSpaceCreateDeviceRGB()",
+    "pseudocode": "CGColorSpaceRef CGColorSpaceCreateDeviceRGB(void)\n{\n  return _CGColorSpaceCreateDeviceRGB();\n}"
+}

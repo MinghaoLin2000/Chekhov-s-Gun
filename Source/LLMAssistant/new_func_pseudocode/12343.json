@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStream20ReadVarint64FallbackEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStream20ReadVarint64FallbackEv(google::protobuf::io::CodedInputStream * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::CodedInputStream::ReadVarint64Fallback(\n        google::protobuf::io::CodedInputStream *this)\n{\n  unsigned __int64 v2; // x0\n  unsigned __int64 v3; // x8\n  __int64 v5; // x1\n  char v6; // w9\n  __int64 result; // x0\n  unsigned __int64 v8; // [xsp+8h] [xbp-18h] BYREF\n\n  v2 = *(_QWORD *)this;\n  v3 = *((_QWORD *)this + 1);\n  if ( (int)v3 - (int)v2 <= 9 && (v3 <= v2 || *(char *)(v3 - 1) < 0) )\n  {\n    v8 = 0LL;\n    google::protobuf::io::CodedInputStream::ReadVarint64Slow(this, &v8);\n    return v8;\n  }\n  else\n  {\n    v8 = 0LL;\n    v6 = sub_100118C50();\n    result = 0LL;\n    if ( (v6 & 1) != 0 )\n    {\n      *(_QWORD *)this = v5;\n      return v8;\n    }\n  }\n  return result;\n}"
+}

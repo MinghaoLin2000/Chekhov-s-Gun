@@ -1,0 +1,6 @@
+{
+    "function_name": "_SetSystemLibraryLoadToBeInProcess",
+    "function_argument_number": 0,
+    "function_signature": "_SetSystemLibraryLoadToBeInProcess()",
+    "pseudocode": "void SetSystemLibraryLoadToBeInProcess()\n{\n  qword_100018DE0 = qword_100018DE0 & 0xFFFFFFFFFFFFFFFCLL | 2;\n}"
+}

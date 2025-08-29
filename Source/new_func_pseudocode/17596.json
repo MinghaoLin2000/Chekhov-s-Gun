@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFDocumentImpl .cxx_construct]",
+    "function_argument_number": 2,
+    "function_signature": "-[CGPDFDocumentImpl .cxx_construct](id self, SEL a2)",
+    "pseudocode": "id __cdecl -[CGPDFDocumentImpl .cxx_construct](id self, SEL a2)\n{\n  *(_OWORD *)((char *)self + 40) = 0u;\n  *(_OWORD *)((char *)self + 24) = 0u;\n  return self;\n}"
+}

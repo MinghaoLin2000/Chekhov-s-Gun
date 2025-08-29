@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetDisplaysWithUUID",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetDisplaysWithUUID()",
+    "pseudocode": "__int64 CGSGetDisplaysWithUUID()\n{\n  return _CGSGetDisplaysWithUUID();\n}"
+}

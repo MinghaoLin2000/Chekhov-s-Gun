@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetBoardID",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetBoardID()",
+    "pseudocode": "__int64 AMRestorableDeviceGetBoardID()\n{\n  return _AMRestorableDeviceGetBoardID();\n}"
+}

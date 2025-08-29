@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSCopyURLForRemountingVolumeURL",
+    "function_argument_number": 1,
+    "function_signature": "_NetFSCopyURLForRemountingVolumeURL(const __CFURL * a1)",
+    "pseudocode": "CFURLRef __fastcall NetFSCopyURLForRemountingVolumeURL(const __CFURL *a1)\n{\n  CFStringRef v1; // x0\n  CFStringRef v2; // x19\n  CFURLRef v3; // x20\n  const __CFString *Value; // x0\n  CFDictionaryRef theDict; // [xsp+8h] [xbp-18h] BYREF\n\n  theDict = 0LL;\n  v1 = CFURLCopyFileSystemPath(a1, kCFURLPOSIXPathStyle);\n  if ( !v1 )\n    return 0LL;\n  v2 = v1;\n  v3 = 0LL;\n  if ( !(unsigned int)NetFSGetMountInfo(v1, &theDict) && theDict )\n  {\n    Value = (const __CFString *)CFDictionaryGetValue(theDict, CFSTR(\"MountedURL\"));\n    if ( Value )\n      v3 = CFURLCreateWithString(0LL, Value, 0LL);\n    else\n      v3 = 0LL;\n    CFRelease(theDict);\n  }\n  CFRelease(v2);\n  return v3;\n}"
+}

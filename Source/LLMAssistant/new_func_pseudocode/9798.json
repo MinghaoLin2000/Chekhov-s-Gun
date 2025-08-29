@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP8DataInfo13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP8DataInfo13IsInitializedEv(TSP::DataInfo * this)",
+    "pseudocode": "__int64 __fastcall TSP::DataInfo::IsInitialized(TSP::DataInfo *this)\n{\n  int v1; // w8\n  __int64 result; // x0\n  __int64 v4; // x10\n  __int64 v5; // x9\n  __int64 v6; // x10\n  __int64 v7; // x11\n\n  v1 = *((_DWORD *)this + 4);\n  if ( (~v1 & 0x803) != 0 )\n    return 0LL;\n  if ( (v1 & 0x100) != 0 )\n  {\n    result = TSP::DataAttributes::IsInitialized(*((TSP::DataAttributes **)this + 11));\n    if ( !(_DWORD)result )\n      return result;\n    v1 = *((_DWORD *)this + 4);\n  }\n  if ( (v1 & 0x200) != 0 )\n  {\n    v4 = *((_QWORD *)this + 12);\n    v5 = *(unsigned int *)(v4 + 32);\n    v6 = *(_QWORD *)(v4 + 40);\n    while ( (int)v5 >= 1 )\n    {\n      v7 = *(_QWORD *)(v6 + 8 * v5--);\n      if ( (*(_BYTE *)(v7 + 16) & 1) == 0 )\n        return 0LL;\n    }\n  }\n  if ( (v1 & 0x400) == 0 )\n    return 1LL;\n  result = TSP::IndexSet::IsInitialized(*((TSP::IndexSet **)this + 13));\n  if ( (_DWORD)result )\n    return 1LL;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_variant_has_internal_ui",
+    "function_argument_number": 0,
+    "function_signature": "_os_variant_has_internal_ui()",
+    "pseudocode": "__int64 os_variant_has_internal_ui()\n{\n  return _os_variant_has_internal_ui();\n}"
+}

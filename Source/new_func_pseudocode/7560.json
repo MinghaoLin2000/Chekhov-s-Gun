@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionVMa",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CGSConnection()\n{\n  return &type metadata for CGSConnection;\n}"
+}

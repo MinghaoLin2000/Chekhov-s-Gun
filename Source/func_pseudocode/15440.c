@@ -1,0 +1,5 @@
+_AMRestorableDeviceUnregisterForNotifications
+__int64 AMRestorableDeviceUnregisterForNotifications()
+{
+  return _AMRestorableDeviceUnregisterForNotifications();
+}

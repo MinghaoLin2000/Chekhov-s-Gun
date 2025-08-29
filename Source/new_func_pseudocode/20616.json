@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_browse_result_copy_txt_record_object",
+    "function_argument_number": 1,
+    "function_signature": "_nw_browse_result_copy_txt_record_object(nw_browse_result_t result)",
+    "pseudocode": "nw_txt_record_t __cdecl nw_browse_result_copy_txt_record_object(nw_browse_result_t result)\n{\n  return _nw_browse_result_copy_txt_record_object(result);\n}"
+}

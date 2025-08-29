@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf13FloatToBufferEfPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf13FloatToBufferEfPc(google::protobuf * this, float a2, char * a3)",
+    "pseudocode": "google::protobuf *__fastcall google::protobuf::FloatToBuffer(google::protobuf *this, float a2, char *a3)\n{\n  int v5; // w8\n  float *v7; // x2\n  char *v8; // x1\n  char v9[4]; // [xsp+1Ch] [xbp-24h] BYREF\n\n  if ( a2 == INFINITY )\n  {\n    v5 = 6712937;\nLABEL_5:\n    *(_DWORD *)this = v5;\n    return this;\n  }\n  if ( a2 == -INFINITY )\n  {\n    *((_BYTE *)this + 4) = 0;\n    v5 = 1718511917;\n    goto LABEL_5;\n  }\n  snprintf((char *)this, 0x18uLL, \"%.*g\", 6, a2);\n  *(float *)v9 = 0.0;\n  if ( !(unsigned int)google::protobuf::safe_strtof(this, v9, v7) || *(float *)v9 != a2 )\n    snprintf((char *)this, 0x18uLL, \"%.*g\", 9, a2);\n  google::protobuf::DelocalizeRadix(this, v8);\n  return this;\n}"
+}

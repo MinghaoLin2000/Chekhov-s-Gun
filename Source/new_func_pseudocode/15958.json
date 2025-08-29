@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpApplyFlagsToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpApplyFlagsToString(int a1)",
+    "pseudocode": "const char *__fastcall uarpApplyFlagsToString(int a1)\n{\n  if ( (unsigned int)(a1 - 1) > 5 )\n    return \"<unknown>\";\n  else\n    return (&off_1000246A8)[a1 - 1];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater setDelegate:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAAccessoryUpdater setDelegate:](EAAccessoryUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EAAccessoryUpdater setDelegate:](EAAccessoryUpdater *self, SEL a2, id a3)\n{\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater setDelegate:]\",\n    334LL);\n  self->delegate = (FudPluginDelegate *)a3;\n}"
+}

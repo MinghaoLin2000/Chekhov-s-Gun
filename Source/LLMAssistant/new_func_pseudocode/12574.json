@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoOutputStream initForEncryptionWithOutputStream:key:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUCryptoOutputStream initForEncryptionWithOutputStream:key:](SFUCryptoOutputStream * self, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl -[SFUCryptoOutputStream initForEncryptionWithOutputStream:key:](\n        SFUCryptoOutputStream *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  return -[SFUCryptoOutputStream initForEncryptionWithOutputStream:key:computeCrc32:](\n           self,\n           \"initForEncryptionWithOutputStream:key:computeCrc32:\",\n           a3,\n           a4,\n           0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZnamSt19__type_descriptor_t",
+    "function_argument_number": 0,
+    "function_signature": "__ZnamSt19__type_descriptor_t()",
+    "pseudocode": "void __noreturn operator new[]()\n{\n  while ( 1 )\n    ;\n}"
+}

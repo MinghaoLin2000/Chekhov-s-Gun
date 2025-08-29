@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP4RectD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP4RectD2Ev(TSP::Rect * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::Rect::~Rect(TSP::Rect *this)\n{\n  __ZN3TSP4RectD2Ev(this);\n}"
+}

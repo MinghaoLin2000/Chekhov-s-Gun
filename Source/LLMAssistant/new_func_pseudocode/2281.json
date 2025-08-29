@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsViewController setWarnedAboutShouldPromptToDeleteExistingCalendars:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsCalendarsViewController setWarnedAboutShouldPromptToDeleteExistingCalendars:](DeviceSettingsCalendarsViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCalendarsViewController setWarnedAboutShouldPromptToDeleteExistingCalendars:](\n        DeviceSettingsCalendarsViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_warnedAboutShouldPromptToDeleteExistingCalendars = a3;\n}"
+}

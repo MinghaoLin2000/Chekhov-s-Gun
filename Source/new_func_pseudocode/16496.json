@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer resetParser]",
+    "function_argument_number": 2,
+    "function_signature": "-[iAUPServer resetParser](iAUPServer * self, SEL a2)",
+    "pseudocode": "void __cdecl -[iAUPServer resetParser](iAUPServer *self, SEL a2)\n{\n  __int64 v3; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  self->_escapeInProgress = 0;\n  -[NSMutableData setLength:](self->_telegramDataIn, \"setLength:\", 0LL);\n  if ( self->_byteEscape )\n    v3 = 4294967294LL;\n  else\n    v3 = 0xFFFFFFFFLL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[iAUPServer setParserState:](self, \"setParserState:\", v3);\n}"
+}

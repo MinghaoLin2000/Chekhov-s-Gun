@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionTransaction transactionCompletedCallback]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSessionTransaction transactionCompletedCallback](IPPSessionTransaction * self, SEL a2)",
+    "pseudocode": "id __cdecl -[IPPSessionTransaction transactionCompletedCallback](IPPSessionTransaction *self, SEL a2)\n{\n  return objc_getProperty(self, a2, 144LL, 1);\n}"
+}

@@ -1,0 +1,13 @@
+Service Path:
+/System/Library/Frameworks/QuickLook.framework/Versions/A/XPCServices/QuickLookSatellite.xpc/Contents/MacOS/QuickLookSatellite
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+			[String] kTCCServiceCalendar
+			[String] kTCCServiceMediaLibrary

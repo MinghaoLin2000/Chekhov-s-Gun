@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP27ObjectSerializationMetadataD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP27ObjectSerializationMetadataD1Ev(TSP::ObjectSerializationMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ObjectSerializationMetadata::~ObjectSerializationMetadata(TSP::ObjectSerializationMetadata *this)\n{\n  __ZN3TSP27ObjectSerializationMetadataD2Ev(this);\n}"
+}

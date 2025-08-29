@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVwca",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVwca(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithCopy for AppQueryRequest(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x21\n  __int64 v5; // x0\n  __int64 v6; // x21\n  __int64 v7; // x0\n\n  v4 = *a1;\n  v5 = *a2;\n  *a1 = *a2;\n  swift_bridgeObjectRetain(v5);\n  swift_bridgeObjectRelease(v4);\n  v6 = a1[1];\n  v7 = a2[1];\n  a1[1] = v7;\n  swift_bridgeObjectRetain(v7);\n  swift_bridgeObjectRelease(v6);\n  return a1;\n}"
+}

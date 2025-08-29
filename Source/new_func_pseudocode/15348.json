@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo restoreOpsQueue]",
+    "function_argument_number": 2,
+    "function_signature": "-[restoreInfo restoreOpsQueue](restoreInfo * self, SEL a2)",
+    "pseudocode": "OS_dispatch_queue *__cdecl -[restoreInfo restoreOpsQueue](restoreInfo *self, SEL a2)\n{\n  return (OS_dispatch_queue *)objc_getProperty(self, a2, 48LL, 1);\n}"
+}

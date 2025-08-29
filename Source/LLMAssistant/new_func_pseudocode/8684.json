@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_date_get_value",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_date_get_value(xpc_object_t xdate)",
+    "pseudocode": "int64_t __cdecl xpc_date_get_value(xpc_object_t xdate)\n{\n  return _xpc_date_get_value(xdate);\n}"
+}

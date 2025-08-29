@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSSetCursorRegionLock",
+    "function_argument_number": 0,
+    "function_signature": "_SLSSetCursorRegionLock()",
+    "pseudocode": "__int64 __fastcall SLSSetCursorRegionLock()\n{\n  return _SLSSetCursorRegionLock();\n}"
+}

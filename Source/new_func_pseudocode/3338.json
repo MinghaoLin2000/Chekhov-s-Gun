@@ -1,0 +1,6 @@
+{
+    "function_name": "_qos_class_self",
+    "function_argument_number": 0,
+    "function_signature": "_qos_class_self()",
+    "pseudocode": "qos_class_t qos_class_self(void)\n{\n  return _qos_class_self();\n}"
+}

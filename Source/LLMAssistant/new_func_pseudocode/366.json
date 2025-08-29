@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AskUserAlert otherButton]",
+    "function_argument_number": 2,
+    "function_signature": "-[AskUserAlert otherButton](AskUserAlert * self, SEL a2)",
+    "pseudocode": "NSButton *__cdecl -[AskUserAlert otherButton](AskUserAlert *self, SEL a2)\n{\n  return self->_otherButton;\n}"
+}

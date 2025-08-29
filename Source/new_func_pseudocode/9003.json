@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderC9LoadErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderC9LoadErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for RemoteJavaScriptLoader.LoadError()\n{\n  return &type metadata for RemoteJavaScriptLoader.LoadError;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP36DataMetadataMap_DataMetadataMapEntry5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP36DataMetadataMap_DataMetadataMapEntry5ClearEv(TSP::DataMetadataMap_DataMetadataMapEntry * this)",
+    "pseudocode": "__int64 __fastcall TSP::DataMetadataMap_DataMetadataMapEntry::Clear(__int64 this)\n{\n  __int64 v1; // x19\n  __int64 v2; // x19\n  char v3; // t1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = this;\n  if ( (*(_BYTE *)(this + 16) & 1) != 0 )\n    this = TSP::Reference::Clear(*(TSP::Reference **)(this + 24));\n  v3 = *(_BYTE *)(v1 + 8);\n  v2 = v1 + 8;\n  *(_QWORD *)(v2 + 24) = 0LL;\n  *(_DWORD *)(v2 + 8) = 0;\n  if ( (v3 & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10003A2A8(v2);\n  }\n  return this;\n}"
+}

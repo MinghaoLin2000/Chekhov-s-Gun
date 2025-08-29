@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14LazyDescriptor10OnceStaticEPS2_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal14LazyDescriptor10OnceStaticEPS2_(google::protobuf::internal::LazyDescriptor * this, google::protobuf::internal::LazyDescriptor * a2)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::internal::LazyDescriptor::OnceStatic(\n        google::protobuf::internal::LazyDescriptor *this,\n        google::protobuf::internal::LazyDescriptor *a2)\n{\n  return google::protobuf::internal::LazyDescriptor::OnceInternal(this);\n}"
+}

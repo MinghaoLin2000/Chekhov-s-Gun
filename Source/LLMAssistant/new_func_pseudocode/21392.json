@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition10ClientInfoV10identifier15applicationName6source11inputOriginACSS_S3StcfC",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition10ClientInfoV10identifier15applicationName6source11inputOriginACSS_S3StcfC()",
+    "pseudocode": "__int64 ClientInfo.init(identifier:applicationName:source:inputOrigin:)()\n{\n  __int64 v0; // x0\n\n  v0 = sub_10002B048();\n  return sub_10002AFE4(v0);\n}"
+}

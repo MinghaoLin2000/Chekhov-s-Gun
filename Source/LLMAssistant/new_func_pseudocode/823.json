@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController setTopViewEnabled:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsViewController setTopViewEnabled:](DeviceSettingsViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController setTopViewEnabled:](DeviceSettingsViewController *self, SEL a2, bool a3)\n{\n  ;\n}"
+}

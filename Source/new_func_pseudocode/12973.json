@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUIOUtils newCGDataProviderForReadChannel:length:]",
+    "function_argument_number": 4,
+    "function_signature": "+[TSUIOUtils newCGDataProviderForReadChannel:length:](id a1, SEL a2, id a3, unsigned __int64 a4)",
+    "pseudocode": "CGDataProvider *__cdecl +[TSUIOUtils newCGDataProviderForReadChannel:length:](\n        id a1,\n        SEL a2,\n        id a3,\n        unsigned __int64 a4)\n{\n  return (CGDataProvider *)_objc_msgSend(\n                             a1,\n                             \"newCGDataProviderForReadChannel:length:outInfo:outCallbacks:\",\n                             a3,\n                             a4,\n                             0LL,\n                             0LL);\n}"
+}

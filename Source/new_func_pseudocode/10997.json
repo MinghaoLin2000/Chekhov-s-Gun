@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf19FileDescriptorProtoC2EPNS0_5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf19FileDescriptorProtoC2EPNS0_5ArenaE(google::protobuf::FileDescriptorProto * this, google::protobuf::Arena * a2)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::FileDescriptorProto::FileDescriptorProto(_QWORD *a1, __int64 a2)\n{\n  *a1 = off_1001D8210;\n  a1[1] = a2;\n  a1[2] = 0LL;\n  a1[3] = a2;\n  a1[4] = 0LL;\n  a1[5] = 0LL;\n  a1[6] = a2;\n  a1[9] = a2;\n  a1[7] = 0LL;\n  a1[8] = 0LL;\n  a1[10] = 0LL;\n  a1[11] = 0LL;\n  a1[12] = a2;\n  a1[13] = 0LL;\n  a1[14] = 0LL;\n  a1[15] = a2;\n  a1[16] = 0LL;\n  a1[17] = 0LL;\n  a1[18] = 0LL;\n  a1[21] = a2;\n  a1[19] = a2;\n  a1[20] = 0LL;\n  if ( atomic_load_explicit(scc_info_FileDescriptorProto_google_2fprotobuf_2fdescriptor_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_FileDescriptorProto_google_2fprotobuf_2fdescriptor_2eproto);\n  a1[22] = &google::protobuf::internal::fixed_address_empty_string;\n  a1[23] = &google::protobuf::internal::fixed_address_empty_string;\n  a1[25] = 0LL;\n  a1[26] = 0LL;\n  a1[24] = &google::protobuf::internal::fixed_address_empty_string;\n  return a1;\n}"
+}

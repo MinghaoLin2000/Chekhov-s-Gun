@@ -1,0 +1,6 @@
+{
+    "function_name": "_GetCurrentProcess",
+    "function_argument_number": 1,
+    "function_signature": "_GetCurrentProcess(ProcessSerialNumber * pPSN)",
+    "pseudocode": "OSErr __cdecl GetCurrentProcess(ProcessSerialNumber *pPSN)\n{\n  return _GetCurrentProcess(pPSN);\n}"
+}

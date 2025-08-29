@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoInputStream readToBuffer:size:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUCryptoInputStream readToBuffer:size:](SFUCryptoInputStream * self, SEL a2, char * a3, unsigned __int64 a4)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUCryptoInputStream readToBuffer:size:](\n        SFUCryptoInputStream *self,\n        SEL a2,\n        char *a3,\n        unsigned __int64 a4)\n{\n  void *v5; // x22\n  unsigned __int64 result; // x0\n  unsigned __int64 v7; // [xsp+10h] [xbp-30h] BYREF\n  id v8; // [xsp+18h] [xbp-28h] BYREF\n\n  v7 = 0LL;\n  v8 = 0LL;\n  if ( !-[SFUCryptor cryptDataFromStream:toBuffer:length:bytesRead:error:](\n          self->mCryptor,\n          \"cryptDataFromStream:toBuffer:length:bytesRead:error:\",\n          self->mBaseStream,\n          a3,\n          a4,\n          &v7,\n          &v8) )\n  {\n    v5 = objc_msgSend(v8, \"localizedDescription\");\n    +[NSException raise:format:](\n      &OBJC_CLASS___NSException,\n      \"raise:format:\",\n      NSGenericException,\n      CFSTR(\"SFUCryptor failed. %@: %@\"),\n      v5,\n      objc_msgSend(v8, \"localizedFailureReason\"));\n  }\n  result = v7;\n  self->mOffset += v7;\n  return result;\n}"
+}

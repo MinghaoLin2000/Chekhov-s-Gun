@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextGetColorSpace",
+    "function_argument_number": 1,
+    "function_signature": "_CGBitmapContextGetColorSpace(CGContextRef context)",
+    "pseudocode": "CGColorSpaceRef __cdecl CGBitmapContextGetColorSpace(CGContextRef context)\n{\n  return _CGBitmapContextGetColorSpace(context);\n}"
+}

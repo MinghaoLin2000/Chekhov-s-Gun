@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttribute initWithName:value:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUExtendedAttribute initWithName:value:](int a1, int a2, id a3)",
+    "pseudocode": "TSUExtendedAttribute *__cdecl -[TSUExtendedAttribute initWithName:value:](\n        TSUExtendedAttribute *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x20\n  TSUExtendedAttribute *v8; // x21\n  NSString *v9; // x0\n  NSString *name; // x8\n  NSData *v11; // x0\n  NSData *value; // x8\n  objc_super v14; // [xsp+0h] [xbp-30h] BYREF\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v14.receiver = self;\n  v14.super_class = (Class)&OBJC_CLASS___TSUExtendedAttribute;\n  v8 = -[TSUExtendedAttribute init](&v14, \"init\");\n  if ( v8 )\n  {\n    v9 = (NSString *)objc_msgSend(v6, \"copy\");\n    name = v8->_name;\n    v8->_name = v9;\n    objc_release(name);\n    v11 = (NSData *)objc_msgSend(v7, \"copy\");\n    value = v8->_value;\n    v8->_value = v11;\n    objc_release(value);\n  }\n  objc_release(v7);\n  objc_release(v6);\n  return v8;\n}"
+}

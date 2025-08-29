@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper13EmptyGridItemVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper13EmptyGridItemVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for EmptyGridItem()\n{\n  return &type metadata for EmptyGridItem;\n}"
+}

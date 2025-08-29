@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDictionaryGetName",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFDictionaryGetName(CGPDFDictionaryRef dict, const char * key, const char ** value)",
+    "pseudocode": "bool __cdecl CGPDFDictionaryGetName(CGPDFDictionaryRef dict, const char *key, const char **value)\n{\n  return _CGPDFDictionaryGetName(dict, key, value);\n}"
+}

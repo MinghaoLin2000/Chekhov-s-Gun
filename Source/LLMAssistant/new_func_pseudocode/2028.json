@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceEULAViewController setDeviceType:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceEULAViewController setDeviceType:](DeviceEULAViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceEULAViewController setDeviceType:](DeviceEULAViewController *self, SEL a2, unsigned __int64 a3)\n{\n  self->_deviceType = a3;\n}"
+}

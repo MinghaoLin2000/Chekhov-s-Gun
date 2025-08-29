@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAnalyticsAssetChannelTypeToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAnalyticsAssetChannelTypeToString()",
+    "pseudocode": "__int64 UARPAnalyticsAssetChannelTypeToString()\n{\n  return _UARPAnalyticsAssetChannelTypeToString();\n}"
+}

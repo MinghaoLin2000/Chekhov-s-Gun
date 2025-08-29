@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGRectV16EyeCandyGraphicsE7roundedAByF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo6CGRectV16EyeCandyGraphicsE7roundedAByF()",
+    "pseudocode": "double CGRect.rounded()()\n{\n  __int64 v0; // x19\n  __int64 v1; // x0\n  __int64 v2; // x16\n  __int64 v3; // x21\n  __int64 v4; // x8\n  char *v5; // x20\n  __int64 v6; // x0\n  double v7; // d8\n  __int64 v9; // [xsp+0h] [xbp-40h] BYREF\n\n  sub_1000140C8();\n  v0 = sub_10001D0C0(0LL);\n  v1 = sub_1000044E8(v0);\n  v3 = v2;\n  __chkstk_darwin(v1);\n  v5 = (char *)&v9 - ((v4 + 15) & 0xFFFFFFFFFFFFFFF0LL);\n  (*(void (__fastcall **)(char *, _QWORD, __int64))(v3 + 104))(\n    v5,\n    enum case for FloatingPointRoundingRule.toNearestOrAwayFromZero(_:),\n    v0);\n  v6 = sub_1000140F0(v5);\n  v7 = CGRect.rounded(_:)(v6);\n  (*(void (__fastcall **)(char *, __int64))(v3 + 8))(v5, v0);\n  return v7;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z19lite_print_pdfimagePU31objcproto20JobLikeThingProtocol8NSObject",
+    "function_argument_number": 1,
+    "function_signature": "__Z19lite_print_pdfimagePU31objcproto20JobLikeThingProtocol8NSObject(void * a1)",
+    "pseudocode": "__int64 __fastcall lite_print_pdfimage(void *a1)\n{\n  id v1; // x19\n  _QWORD v3[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v4; // [xsp+28h] [xbp-18h]\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3254779904LL;\n  v3[2] = sub_100026DCC;\n  v3[3] = &unk_10009DFA8;\n  v4 = objc_retain(a1);\n  v1 = objc_retain(v4);\n  objc_msgSend(v1, \"_withActivity:\", v3);\n  objc_release(v4);\n  objc_release(v1);\n  return 0LL;\n}"
+}

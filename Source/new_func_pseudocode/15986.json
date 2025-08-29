@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpNtohl",
+    "function_argument_number": 1,
+    "function_signature": "_uarpNtohl(unsigned int a1)",
+    "pseudocode": "__int64 __fastcall uarpNtohl(unsigned int a1)\n{\n  return bswap32(a1);\n}"
+}

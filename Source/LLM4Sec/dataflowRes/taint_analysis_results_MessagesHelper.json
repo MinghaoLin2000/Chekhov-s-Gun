@@ -1,0 +1,6 @@
+{
+    "/System/Library/PrivateFrameworks/StorageManagement.framework/Versions/A/XPCServices/MessagesHelper.xpc/Contents/MacOS/MessagesHelper": [
+        "-[SPMessagesHelper enableCloudKitMessagesWithCompletionHandler:]",
+        "-[SPMessagesHelper fetchCloudKitMessagesStateWithCompletionHandler:]"
+    ]
+}

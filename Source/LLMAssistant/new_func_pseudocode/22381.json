@@ -1,0 +1,6 @@
+{
+    "function_name": "_OSAGetHandler",
+    "function_argument_number": 5,
+    "function_signature": "_OSAGetHandler(ComponentInstance scriptingComponent, SInt32 modeFlags, OSAID contextID, const AEDesc * handlerName, OSAID * resultingCompiledScriptID)",
+    "pseudocode": "OSAError __cdecl OSAGetHandler(\n        ComponentInstance scriptingComponent,\n        SInt32 modeFlags,\n        OSAID contextID,\n        const AEDesc *handlerName,\n        OSAID *resultingCompiledScriptID)\n{\n  return _OSAGetHandler(scriptingComponent, modeFlags, contextID, handlerName, resultingCompiledScriptID);\n}"
+}

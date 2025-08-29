@@ -1,0 +1,6 @@
+{
+    "function_name": "_LoadHomeKit",
+    "function_argument_number": 0,
+    "function_signature": "_LoadHomeKit()",
+    "pseudocode": "__int64 LoadHomeKit()\n{\n  dispatch_block_t block; // [xsp+0h] [xbp-10h] BYREF\n  dispatch_once_t *predicate; // [xsp+8h] [xbp-8h]\n\n  predicate = (dispatch_once_t *)&LoadHomeKit_loadPredicate;\n  block = 0LL;\n  objc_storeStrong(&block, &__block_literal_global);\n  if ( *predicate != -1 )\n    dispatch_once(predicate, block);\n  objc_storeStrong(&block, 0LL);\n  return LoadHomeKit_frameworkLibrary;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2AssetProcessingNotificationAck",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2AssetProcessingNotificationAck(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2AssetProcessingNotificationAck(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 (__fastcall *v3)(_QWORD, _QWORD, _QWORD); // x4\n\n  v3 = *(__int64 (__fastcall **)(_QWORD, _QWORD, _QWORD))(a3 + 232);\n  if ( v3 )\n    return v3(*(_QWORD *)(a1 + 544), *(_QWORD *)(a2 + 40), *(_QWORD *)(a3 + 704));\n  else\n    return 14LL;\n}"
+}

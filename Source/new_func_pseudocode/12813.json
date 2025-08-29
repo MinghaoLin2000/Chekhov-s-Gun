@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUBufferedInputStream seekToOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUBufferedInputStream seekToOffset:](SFUBufferedInputStream * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SFUBufferedInputStream seekToOffset:](SFUBufferedInputStream *self, SEL a2, signed __int64 a3)\n{\n  signed __int64 mBufferStart; // x8\n  bool v6; // vf\n  signed __int64 v7; // x8\n  __int64 v8; // x9\n\n  if ( !-[SFUBufferedInputStream canSeek](self, \"canSeek\") )\n    +[NSException raise:format:](\n      &OBJC_CLASS___NSException,\n      \"raise:format:\",\n      CFSTR(\"SFUBufferedInputStreamError\"),\n      CFSTR(\"Can't seek\"));\n  mBufferStart = self->mBufferStart;\n  v6 = __OFSUB__(a3, mBufferStart);\n  v7 = a3 - mBufferStart;\n  if ( v7 < 0 != v6 || self->mBufferEnd < a3 )\n  {\n    self->mBufferOffset = 0LL;\n    self->mBufferStart = a3;\n    v8 = 48LL;\n  }\n  else\n  {\n    v8 = 32LL;\n    a3 = v7;\n  }\n  *(Class *)((char *)&self->super.isa + v8) = (Class)a3;\n}"
+}

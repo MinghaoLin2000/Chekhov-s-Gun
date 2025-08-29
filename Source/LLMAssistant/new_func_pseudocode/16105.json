@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFRunLoopAddSource",
+    "function_argument_number": 3,
+    "function_signature": "_CFRunLoopAddSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode)",
+    "pseudocode": "void __cdecl CFRunLoopAddSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode)\n{\n  _CFRunLoopAddSource(rl, source, mode);\n}"
+}

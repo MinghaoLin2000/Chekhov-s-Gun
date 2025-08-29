@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_end_catch",
+    "function_argument_number": 0,
+    "function_signature": "___cxa_end_catch()",
+    "pseudocode": "void __cxa_end_catch(void)\n{\n  ___cxa_end_catch();\n}"
+}

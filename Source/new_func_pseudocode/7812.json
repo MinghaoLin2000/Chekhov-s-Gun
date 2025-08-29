@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV8_flatMap9transformSayxGxSgACXE_tlFZ",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV8_flatMap9transformSayxGxSgACXE_tlFZ(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall static CGDisplay._flatMap<A>(transform:)(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x0\n  __int64 v8; // x22\n  __int64 v9; // x0\n  _QWORD v10[4]; // [xsp-40h] [xbp-90h] BYREF\n  int v11; // [xsp-20h] [xbp-70h]\n  __int64 v12; // [xsp-18h] [xbp-68h]\n  __int64 v13; // [xsp-10h] [xbp-60h]\n  __int64 v14; // [xsp+8h] [xbp-48h] BYREF\n  uint32_t displayCount; // [xsp+14h] [xbp-3Ch] BYREF\n\n  displayCount = 0;\n  v6 = CGGetActiveDisplayList(1u, 0LL, &displayCount);\n  if ( (_DWORD)v6 || !displayCount )\n    return sub_10001CBC0(0LL, a3);\n  v8 = displayCount + 5;\n  if ( displayCount >= 0xFFFFFFFB )\n    __break(1u);\n  __chkstk_darwin(v6);\n  v10[2] = a3;\n  v10[3] = &displayCount;\n  v11 = v8;\n  v12 = a1;\n  v13 = a2;\n  v9 = sub_10001CBF0(0LL, a3);\n  static UnsafeMutablePointer.with<A>(_:_:)(&v14, v8, sub_100019054, v10, &type metadata for UInt32, v9);\n  return v14;\n}"
+}

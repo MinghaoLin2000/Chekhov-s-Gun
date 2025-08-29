@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFSetCreateMutable",
+    "function_argument_number": 3,
+    "function_signature": "_CFSetCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFSetCallBacks * callBacks)",
+    "pseudocode": "CFMutableSetRef __cdecl CFSetCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFSetCallBacks *callBacks)\n{\n  return _CFSetCreateMutable(allocator, capacity, callBacks);\n}"
+}

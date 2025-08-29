@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsIPodViewController clickEnableVoiceOverCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceOptionsIPodViewController clickEnableVoiceOverCheckBox:](DeviceOptionsIPodViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceOptionsIPodViewController clickEnableVoiceOverCheckBox:](\n        DeviceOptionsIPodViewController *self,\n        SEL a2,\n        id a3)\n{\n  NSButton *v4; // x20\n  _BOOL8 v5; // x21\n  NSButton *v6; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceOptionsIPodViewController enableVoiceOverCheckBox](self, \"enableVoiceOverCheckBox\", a3));\n  v5 = (void *)-[NSButton state](v4, \"state\") == (void *)1;\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceOptionsIPodViewController useSystemVoiceCheckBox](self, \"useSystemVoiceCheckBox\"));\n  -[NSButton setEnabled:](v6, \"setEnabled:\", v5);\n  objc_release(v6);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceViewController postDeviceViewDirtinessChangeNotification](self, \"postDeviceViewDirtinessChangeNotification\");\n}"
+}

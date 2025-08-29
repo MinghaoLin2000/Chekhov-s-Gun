@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker setTransaction:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionRequestTracker setTransaction:](MediaConversionRequestTracker * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[MediaConversionRequestTracker setTransaction:](MediaConversionRequestTracker *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 184LL);\n}"
+}

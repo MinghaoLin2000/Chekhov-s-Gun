@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NotesImporter evernoteContentParser]",
+    "function_argument_number": 2,
+    "function_signature": "-[NotesImporter evernoteContentParser](NotesImporter * self, SEL a2)",
+    "pseudocode": "ICEvernoteContentParser *__cdecl -[NotesImporter evernoteContentParser](NotesImporter *self, SEL a2)\n{\n  return self->_evernoteContentParser;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceGetStatus",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageSourceGetStatus(CGImageSourceRef isrc)",
+    "pseudocode": "CGImageSourceStatus __cdecl CGImageSourceGetStatus(CGImageSourceRef isrc)\n{\n  return _CGImageSourceGetStatus(isrc);\n}"
+}

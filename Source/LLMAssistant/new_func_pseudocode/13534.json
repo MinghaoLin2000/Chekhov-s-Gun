@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringWithFirstStrongIsolation]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringWithFirstStrongIsolation](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringWithFirstStrongIsolation](NSString *self, SEL a2)\n{\n  return +[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"\u2068%@\u2069\"), self);\n}"
+}

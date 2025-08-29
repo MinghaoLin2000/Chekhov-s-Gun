@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore8VibrancyOwst",
+    "function_argument_number": 3,
+    "function_signature": "$s17ControlCenterCore8VibrancyOwst(__int64 result, unsigned int a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for Vibrancy(__int64 result, unsigned int a2, unsigned int a3)\n{\n  __int64 v3; // x9\n\n  if ( a2 > 0x7D )\n  {\n    *(_QWORD *)result = a2 - 126;\n    if ( a3 >= 0x7E )\n      *(_BYTE *)(result + 8) = 1;\n  }\n  else\n  {\n    if ( a3 >= 0x7E )\n      *(_BYTE *)(result + 8) = 0;\n    if ( a2 )\n    {\n      v3 = (-a2 >> 2) & 0x1F | (32 * (-a2 & 0x7F));\n      *(_QWORD *)result = (v3 | (v3 << 57)) & 0xF000000000000007LL;\n    }\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_MGCopyAnswer",
+    "function_argument_number": 0,
+    "function_signature": "_MGCopyAnswer()",
+    "pseudocode": "__int64 MGCopyAnswer()\n{\n  return _MGCopyAnswer();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceCopyProperties",
+    "function_argument_number": 2,
+    "function_signature": "_CGImageSourceCopyProperties(CGImageSourceRef isrc, CFDictionaryRef options)",
+    "pseudocode": "CFDictionaryRef __cdecl CGImageSourceCopyProperties(CGImageSourceRef isrc, CFDictionaryRef options)\n{\n  return _CGImageSourceCopyProperties(isrc, options);\n}"
+}

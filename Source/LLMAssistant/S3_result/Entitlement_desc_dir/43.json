@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.private.biome.read-only:Device.ScreenLocked",
+  "capability": "Allows an application to read the current screen lock status of the device (i.e., whether the screen is locked or unlocked). This information is likely accessed or processed via Apple's internal Biome framework.",
+  "reasoning": "The entitlement name is highly descriptive: 'Device.ScreenLocked' explicitly indicates the state being accessed, and 'read-only' specifies the type of access. The 'com.apple.private.biome' prefix suggests this is an internal Apple entitlement, likely used by system processes or frameworks (such as Biome, which collects and processes user-related data) to monitor device state for internal operations, analytics, or feature implementation.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "While this is a private Apple entitlement and not typically exposed to third-party developers to trigger TCC prompts, the information it accesses ('Device.ScreenLocked' status) relates to user activity and presence on the device. Accessing such device state, even in a read-only fashion, can have privacy implications by allowing an understanding of user engagement or inactivity patterns. Apple's TCC framework is designed to protect access to various user-related data and device capabilities that could compromise privacy (e.g., location, screen recording, input monitoring). Therefore, even for internal system components, access to such data is often gated by specific entitlements, aligning with the principles of TCC-protected resources.",
+  "self_reflection": "I am confident in the inferred capability due to the explicit naming of the entitlement. My confidence in assigning it to sensitive type 5 (TCC-related functions) is high because accessing device state that reflects user activity or presence is generally treated as sensitive information by Apple, even if this specific private entitlement doesn't directly trigger a TCC user prompt. The lack of semantically similar entitlements in the provided context means I could not list any, relying instead on the general principles of Apple's security architecture and TCC."
+}

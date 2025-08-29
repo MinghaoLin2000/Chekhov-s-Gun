@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentGetNumberOfPages",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentGetNumberOfPages(CGPDFDocumentRef document)",
+    "pseudocode": "size_t __cdecl CGPDFDocumentGetNumberOfPages(CGPDFDocumentRef document)\n{\n  return _CGPDFDocumentGetNumberOfPages(document);\n}"
+}

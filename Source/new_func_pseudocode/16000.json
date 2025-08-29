@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinLogError",
+    "function_argument_number": 9,
+    "function_signature": "_uarpPlatformDarwinLogError(__int64 a2, const char * a3, __int64 a1, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8, char a9)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDarwinLogError(\n        __int64 a1,\n        __int64 a2,\n        const char *a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        char a9)\n{\n  os_log_s *v10; // x19\n  __int64 result; // x0\n\n  vsnprintf(byte_10002B5A0, 0x200uLL, a3, &a9);\n  v10 = (os_log_s *)sub_100013DA0(a2);\n  result = os_log_type_enabled(v10, OS_LOG_TYPE_ERROR);\n  if ( (_DWORD)result )\n    return sub_100019660(v10);\n  return result;\n}"
+}

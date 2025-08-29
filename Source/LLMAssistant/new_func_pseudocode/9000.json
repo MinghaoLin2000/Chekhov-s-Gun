@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService11ObjectGraphCMa",
+    "function_argument_number": 1,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService11ObjectGraphCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for ObjectGraph(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005DA88;\n  if ( !qword_10005DA88 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for ObjectGraph);\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__114__split_bufferINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERNS4_IS6_EEED2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__114__split_bufferINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERNS4_IS6_EEED2Ev(std::__split_buffer<std::string> * this)",
+    "pseudocode": "void __cdecl std::__split_buffer<std::string>::~__split_buffer(std::__split_buffer<std::string> *this)\n{\n  std::__split_buffer<std::string>::__destruct_at_end[abi:ne180100](this, this->__begin_);\n  if ( this->__first_ )\n    operator delete(this->__first_);\n}"
+}

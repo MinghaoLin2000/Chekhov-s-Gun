@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService setIsTransferring:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService setIsTransferring:](SiriNCService * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[SiriNCService setIsTransferring:](SiriNCService *self, SEL a2, bool a3)\n{\n  self->_isTransferring = a3;\n}"
+}

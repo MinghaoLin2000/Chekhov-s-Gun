@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecStaticCodeCheckValidity",
+    "function_argument_number": 3,
+    "function_signature": "_SecStaticCodeCheckValidity(SecStaticCodeRef staticCode, SecCSFlags flags, SecRequirementRef requirement)",
+    "pseudocode": "OSStatus __cdecl SecStaticCodeCheckValidity(\n        SecStaticCodeRef staticCode,\n        SecCSFlags flags,\n        SecRequirementRef requirement)\n{\n  return _SecStaticCodeCheckValidity(staticCode, flags, requirement);\n}"
+}

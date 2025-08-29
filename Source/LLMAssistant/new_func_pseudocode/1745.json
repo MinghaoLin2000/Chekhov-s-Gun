@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentViewController playlistImage]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTabContentViewController playlistImage](DeviceSettingsTabContentViewController * self, SEL a2)",
+    "pseudocode": "NSImage *__cdecl -[DeviceSettingsTabContentViewController playlistImage](\n        DeviceSettingsTabContentViewController *self,\n        SEL a2)\n{\n  return self->_playlistImage;\n}"
+}

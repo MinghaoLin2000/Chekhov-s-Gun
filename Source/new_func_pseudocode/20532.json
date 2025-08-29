@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGAffineTransformEqualToTransform",
+    "function_argument_number": 2,
+    "function_signature": "_CGAffineTransformEqualToTransform(CGAffineTransform * t1, CGAffineTransform * t2)",
+    "pseudocode": "bool __cdecl CGAffineTransformEqualToTransform(CGAffineTransform *t1, CGAffineTransform *t2)\n{\n  return _CGAffineTransformEqualToTransform(t1, t2);\n}"
+}

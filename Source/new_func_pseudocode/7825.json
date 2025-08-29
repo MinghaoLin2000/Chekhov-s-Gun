@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV8setTitle_10connectionySS_AA13CGSConnectionVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV8setTitle_10connectionySS_AA13CGSConnectionVtF(Swift::String _, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall CGSWindow.setTitle(_:connection:)(Swift::String _, EyeCandyGraphics::CGSConnection connection)\n{\n  __int64 v2; // x3\n  __int64 v3; // x19\n  __int64 v4; // x20\n  void *object; // x21\n  __int64 countAndFlagsBits; // x22\n  __int64 v7; // x0\n  void *v8; // x23\n  __int64 v9; // x22\n  _QWORD v10[2]; // [xsp+0h] [xbp-40h] BYREF\n\n  v3 = v2;\n  v4 = *(_QWORD *)&connection.cid;\n  object = _._object;\n  countAndFlagsBits = _._countAndFlagsBits;\n  v7 = swift_bridgeObjectRetain(_._object);\n  v8 = (void *)sub_10001B1EC(v7);\n  v10[0] = countAndFlagsBits;\n  v10[1] = object;\n  swift_bridgeObjectRetain(object);\n  v9 = sub_10001D0F0(v10, &type metadata for String);\n  CGSSetWindowProperty(v4, v3, v8, v9);\n  swift_bridgeObjectRelease(object);\n  objc_release(v8);\n  swift_unknownObjectRelease(v9);\n}"
+}

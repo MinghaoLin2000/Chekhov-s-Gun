@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV9eventMaskAA011SystemEventF0VvM",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV9eventMaskAA011SystemEventF0VvM(EyeCandyGraphics::SystemEventMask ** a1, Swift::UInt32 a2)",
+    "pseudocode": "__int64 (__fastcall *__fastcall CGSWindow.eventMask.modify(EyeCandyGraphics::SystemEventMask **a1, Swift::UInt32 a2))()\n{\n  EyeCandyGraphics::SystemEventMask *v4; // x19\n  int *v5; // x22\n  __int64 v6; // x0\n\n  v4 = (EyeCandyGraphics::SystemEventMask *)malloc(0x58uLL);\n  *a1 = v4;\n  v4[21].rawValue = a2;\n  v5 = CGSConnection.defaultConnection.unsafeMutableAddressor();\n  *(_QWORD *)&v4[18].rawValue = v5;\n  sub_10001B1D4(v5, v4);\n  v6 = (unsigned int)*v5;\n  v4[6].rawValue = 0;\n  CGSGetWindowEventMask(v6);\n  v4[20].rawValue = UInt32.init(_:)(v4[6]);\n  return sub_10001A868;\n}"
+}

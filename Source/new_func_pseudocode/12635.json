@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSProgress tsu_pendingUnitCountForIncompleteProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSProgress tsu_pendingUnitCountForIncompleteProgress:](NSProgress * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "signed __int64 __cdecl -[NSProgress tsu_pendingUnitCountForIncompleteProgress:](\n        NSProgress *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  int64_t v5; // x21\n  int64_t v6; // x0\n  signed __int64 v7; // x8\n  signed __int64 v8; // x9\n\n  v5 = -[NSProgress totalUnitCount](self, \"totalUnitCount\");\n  v6 = -[NSProgress completedUnitCount](self, \"completedUnitCount\");\n  v7 = v5 - v6;\n  if ( v5 - v6 < 0 )\n    v7 = v6 - v5;\n  v8 = (unsigned __int64)v7 >> 1;\n  if ( v7 > a3 )\n    v8 = a3;\n  if ( (unsigned __int64)v7 < 2 && v7 < a3 )\n    return 0LL;\n  else\n    return v8;\n}"
+}

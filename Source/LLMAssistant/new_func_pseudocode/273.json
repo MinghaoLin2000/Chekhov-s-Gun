@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_willThrow",
+    "function_argument_number": 0,
+    "function_signature": "_swift_willThrow()",
+    "pseudocode": "__int64 swift_willThrow()\n{\n  return _swift_willThrow();\n}"
+}

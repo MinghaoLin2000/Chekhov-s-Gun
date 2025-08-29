@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf13RepeatedFieldIdEC1ERKS2_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf13RepeatedFieldIdEC1ERKS2_(_QWORD * a1, unsigned int * a2)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::RepeatedField<double>::RepeatedField(_QWORD *a1, unsigned int *a2)\n{\n  __int64 v4; // x1\n  void *v5; // x0\n\n  *a1 = 0LL;\n  a1[1] = 0LL;\n  v4 = *a2;\n  if ( (_DWORD)v4 )\n  {\n    google::protobuf::RepeatedField<double>::Reserve(a1, v4);\n    v5 = (void *)a1[1];\n    *(_DWORD *)a1 += *a2;\n    memcpy(v5, *((const void **)a2 + 1), 8LL * (int)*a2);\n  }\n  return a1;\n}"
+}

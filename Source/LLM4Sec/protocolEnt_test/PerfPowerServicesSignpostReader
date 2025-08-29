@@ -1,0 +1,52 @@
+Service Path:
+/System/Library/PrivateFrameworks/PowerlogCore.framework/Versions/A/XPCServices/PerfPowerServicesSignpostReader.xpc/Contents/MacOS/PerfPowerServicesSignpostReader
+
+Service Exported Protocols:
+@protocol XPCSignpostReaderProtocol
+- (void)generateMSSReportForTasking:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)generateMSSReportForRAPID:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)readRawSignpostData:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)submitSignpostDataWithConfig:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)aggregateSignpostData:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)summarizeSignpostMetrics:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.PerfPowerServicesSignpostReader
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.PerfPowerServicesSignpostReader
+	[Key] com.apple.developer.icloud-container-environment
+	[Value]
+		[String] Production
+	[Key] com.apple.developer.icloud-services
+	[Value]
+		[Array]
+			[String] CloudKit
+	[Key] com.apple.private.biome.read-only
+	[Value]
+		[Array]
+			[String] GenerativeModels.GenerativeFunctions.Instrumentation
+			[String] GenerativeModels.GenerativeFunctions.SystemInstrumenetation
+	[Key] com.apple.private.kernel.override-cpumon
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.logging.diagnostic
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.biome.access.user
+			[String] com.apple.biome.access.system
+	[Key] com.apple.security.system-groups
+	[Value]
+		[Array]
+			[String] systemgroup.com.apple.osanalytics
+	[Key] com.apple.trial.status.deployment-environment.allow
+	[Value]
+		[Array]
+			[Int] 0

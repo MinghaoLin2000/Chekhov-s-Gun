@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_last_insert_rowid",
+    "function_argument_number": 1,
+    "function_signature": "_sqlite3_last_insert_rowid(sqlite3 * a1)",
+    "pseudocode": "sqlite3_int64 __cdecl sqlite3_last_insert_rowid(sqlite3 *a1)\n{\n  return _sqlite3_last_insert_rowid(a1);\n}"
+}

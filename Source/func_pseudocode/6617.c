@@ -1,0 +1,5 @@
+_PFFigGetImageSourceImageIndexForContainerItemID
+__int64 PFFigGetImageSourceImageIndexForContainerItemID()
+{
+  return _PFFigGetImageSourceImageIndexForContainerItemID();
+}

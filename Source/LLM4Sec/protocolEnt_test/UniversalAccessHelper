@@ -1,0 +1,9 @@
+Service Path:
+/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/XPCServices/UniversalAccessHelper.xpc/Contents/MacOS/UniversalAccessHelper
+
+Service Exported Protocols:
+@protocol UniversalAccessHelperProtocol
+- (void)getAXKeyboardMacBuddyImageWithWidth:(double)arg1 withReply:(void (^)(NSImage *))arg2;
+@end
+
+Service Entitlements:

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf30DescriptorProto_ExtensionRangeD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf30DescriptorProto_ExtensionRangeD2Ev(google::protobuf::DescriptorProto_ExtensionRange * this)",
+    "pseudocode": "void __fastcall google::protobuf::DescriptorProto_ExtensionRange::~DescriptorProto_ExtensionRange(\n        google::protobuf::DescriptorProto_ExtensionRange *this)\n{\n  google::protobuf::ExtensionRangeOptions *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (google::protobuf::DescriptorProto_ExtensionRange *)&google::protobuf::_DescriptorProto_ExtensionRange_default_instance_ )\n  {\n    v2 = (google::protobuf::ExtensionRangeOptions *)*((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      google::protobuf::ExtensionRangeOptions::~ExtensionRangeOptions(v2);\n      operator delete(v3, 0x10A1C4075D007F8LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

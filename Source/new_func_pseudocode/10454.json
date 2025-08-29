@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP25SparseUUIDPathArray_Entry30RequiredFieldsByteSizeFallbackEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP25SparseUUIDPathArray_Entry30RequiredFieldsByteSizeFallbackEv(TSP::SparseUUIDPathArray_Entry * this)",
+    "pseudocode": "__int64 __fastcall TSP::SparseUUIDPathArray_Entry::RequiredFieldsByteSizeFallback(TSP::SparseUUIDPathArray_Entry *this)\n{\n  int v2; // w8\n  __int64 result; // x0\n  __int64 v4; // x0\n\n  v2 = *((_DWORD *)this + 4);\n  if ( (v2 & 1) != 0 )\n  {\n    v4 = TSP::UUIDPath::ByteSizeLong(*((TSP::UUIDPath **)this + 3));\n    result = v4 + ((9 * (__clz(v4 | 1) ^ 0x1F) + 73) >> 6) + 1;\n    if ( (*((_DWORD *)this + 4) & 2) == 0 )\n      return result;\n    goto LABEL_5;\n  }\n  result = 0LL;\n  if ( (v2 & 2) != 0 )\nLABEL_5:\n    result += ((9 * (__clz(*((_DWORD *)this + 8) | 1) ^ 0x1F) + 73) >> 6) + 1;\n  return result;\n}"
+}

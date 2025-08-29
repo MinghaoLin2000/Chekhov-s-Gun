@@ -1,0 +1,6 @@
+{
+    "function_name": "_class_getInstanceMethod",
+    "function_argument_number": 2,
+    "function_signature": "_class_getInstanceMethod(Class cls, SEL name)",
+    "pseudocode": "Method __cdecl class_getInstanceMethod(Class cls, SEL name)\n{\n  return _class_getInstanceMethod(cls, name);\n}"
+}

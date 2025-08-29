@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z12getNamedAttrIU8__strongP7NSArrayIP16ipp_collection_tEET_P5ipp_tP8NSString",
+    "function_argument_number": 2,
+    "function_signature": "__Z12getNamedAttrIU8__strongP7NSArrayIP16ipp_collection_tEET_P5ipp_tP8NSString(void * a1, void * a2)",
+    "pseudocode": "id __fastcall getNamedAttr<NSArray<ipp_collection_t *> * {__strong}>(void *a1, void *a2)\n{\n  id v3; // x20\n  id v4; // x20\n  id v5; // x19\n  id v6; // x21\n  _QWORD v8[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v9; // [xsp+20h] [xbp-30h]\n  id v10; // [xsp+28h] [xbp-28h]\n  __int64 vars8; // [xsp+58h] [xbp+8h]\n\n  v3 = objc_retain(a1);\n  v8[0] = _NSConcreteStackBlock;\n  v8[1] = 3254779904LL;\n  v8[2] = sub_100032AB0;\n  v8[3] = &unk_10009E4F8;\n  v9 = objc_retain(a2);\n  v10 = v3;\n  v4 = objc_retain(v3);\n  v5 = objc_retain(v9);\n  v6 = objc_retainAutoreleasedReturnValue((id)sub_100032324((int)v4, (int)v5, v8));\n  objc_release(v10);\n  objc_release(v9);\n  objc_release(v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

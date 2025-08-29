@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSClassFromString",
+    "function_argument_number": 1,
+    "function_signature": "_NSClassFromString(NSString * aClassName)",
+    "pseudocode": "Class __cdecl NSClassFromString(NSString *aClassName)\n{\n  return _NSClassFromString(aClassName);\n}"
+}

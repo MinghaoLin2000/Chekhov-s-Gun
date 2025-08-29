@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN25SandboxExtensionContainer12ResetSandboxEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN25SandboxExtensionContainer12ResetSandboxEv(SandboxExtensionContainer * this)",
+    "pseudocode": "__int64 __fastcall SandboxExtensionContainer::ResetSandbox(SandboxExtensionContainer *this)\n{\n  __int64 *v2; // x20\n  __int64 *v3; // x21\n  __int64 v4; // t1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = (__int64 *)*((_QWORD *)this + 3);\n  v3 = (__int64 *)*((_QWORD *)this + 4);\n  if ( v2 != v3 )\n  {\n    do\n    {\n      v4 = *v2++;\n      sandbox_extension_release(v4);\n    }\n    while ( v2 != v3 );\n    v2 = (__int64 *)*((_QWORD *)this + 3);\n  }\n  *((_QWORD *)this + 4) = v2;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return std::vector<std::string>::__clear[abi:ne180100](this);\n}"
+}

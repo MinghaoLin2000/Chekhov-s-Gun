@@ -1,0 +1,6 @@
+{
+    "function_name": "-[XPCSignpostReader sigterm_source]",
+    "function_argument_number": 2,
+    "function_signature": "-[XPCSignpostReader sigterm_source](XPCSignpostReader * self, SEL a2)",
+    "pseudocode": "OS_dispatch_source *__cdecl -[XPCSignpostReader sigterm_source](XPCSignpostReader *self, SEL a2)\n{\n  return (OS_dispatch_source *)objc_getProperty(self, a2, 112LL, 1);\n}"
+}

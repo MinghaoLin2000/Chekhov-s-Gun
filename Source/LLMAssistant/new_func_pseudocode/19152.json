@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$addObserver:selector:name:object:suspensionBehavior:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$addObserver:selector:name:object:suspensionBehavior:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_addObserver_selector_name_object_suspensionBehavior_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"addObserver:selector:name:object:suspensionBehavior:\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2RequestBuffer",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2RequestBuffer(__int64 a1, __int64 * a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2RequestBuffer(__int64 a1, __int64 *a2, unsigned int a3)\n{\n  __int64 (__fastcall *v4)(__int64); // x3\n  __int64 v5; // x0\n  __int64 v7; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = *(__int64 (__fastcall **)(__int64))(a1 + 48);\n  if ( v4 )\n  {\n    v5 = *(_QWORD *)(a1 + 544);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v4(v5);\n  }\n  else\n  {\n    v7 = uarpZalloc(a3);\n    *a2 = v7;\n    if ( v7 )\n      return 0LL;\n    else\n      return 11LL;\n  }\n}"
+}

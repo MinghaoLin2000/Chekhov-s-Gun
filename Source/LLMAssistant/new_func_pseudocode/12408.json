@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr12SetAllocatedEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPS9_PNS0_5ArenaE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr12SetAllocatedEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPS9_PNS0_5ArenaE(_QWORD * result, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::internal::ArenaStringPtr::SetAllocated(\n        _QWORD *result,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4)\n{\n  _QWORD *v6; // x20\n  __int64 v7; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = result;\n  if ( !a4 )\n  {\n    v7 = *result;\n    if ( *result != a2 )\n    {\n      if ( *(char *)(v7 + 23) < 0 )\n        operator delete(*(void **)v7);\n      result = (_QWORD *)operator delete(v7, 0x1012C40EC159624LL);\n    }\n    if ( a3 )\n    {\n      *v6 = a3;\n      return result;\n    }\n    goto LABEL_12;\n  }\n  if ( !a3 )\n  {\nLABEL_12:\n    *v6 = a2;\n    return result;\n  }\n  *result = a3;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (_QWORD *)sub_1000E82B0(a4, a3);\n}"
+}

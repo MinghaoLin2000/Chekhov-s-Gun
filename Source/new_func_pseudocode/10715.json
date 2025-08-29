@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12FieldOptions8CopyFromERKN6google8protobuf7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP12FieldOptions8CopyFromERKN6google8protobuf7MessageE(TSP::FieldOptions * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "TSP::FieldOptions *__fastcall TSP::FieldOptions::CopyFrom(\n        TSP::FieldOptions *this,\n        const google::protobuf::Message *lpsrc)\n{\n  __int64 v2; // x30\n  TSP::FieldOptions *v4; // x20\n  _BYTE *v5; // x0\n  char v6; // t1\n\n  if ( lpsrc != this )\n  {\n    v4 = this;\n    v6 = *((_BYTE *)this + 8);\n    v5 = (char *)this + 8;\n    *((_DWORD *)v5 + 4) = 0;\n    *((_DWORD *)v5 + 2) = 0;\n    if ( (v6 & 1) != 0 )\n      sub_10003A2A8(v5);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (TSP::FieldOptions *)TSP::FieldOptions::MergeFrom(v4, lpsrc);\n  }\n  return this;\n}"
+}

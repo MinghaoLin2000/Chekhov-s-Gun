@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceCanCreateTile",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceCanCreateTile()",
+    "pseudocode": "__int64 CGSSpaceCanCreateTile()\n{\n  return _CGSSpaceCanCreateTile();\n}"
+}

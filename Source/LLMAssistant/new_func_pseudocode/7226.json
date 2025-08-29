@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$singlePassExportItemForAssetAtFileURL:destinationURL:targetFileSize:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$singlePassExportItemForAssetAtFileURL:destinationURL:targetFileSize:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_singlePassExportItemForAssetAtFileURL_destinationURL_targetFileSize_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"singlePassExportItemForAssetAtFileURL:destinationURL:targetFileSize:error:\");\n}"
+}

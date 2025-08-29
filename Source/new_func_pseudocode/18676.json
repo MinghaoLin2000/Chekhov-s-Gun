@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore27_NavigationTrackingModifierVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore27_NavigationTrackingModifierVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for _NavigationTrackingModifier()\n{\n  return &type metadata for _NavigationTrackingModifier;\n}"
+}

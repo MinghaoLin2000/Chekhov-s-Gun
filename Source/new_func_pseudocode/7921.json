@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionCreateDifferenceWithRegion",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionCreateDifferenceWithRegion()",
+    "pseudocode": "__int64 CGRegionCreateDifferenceWithRegion()\n{\n  return _CGRegionCreateDifferenceWithRegion();\n}"
+}

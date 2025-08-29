@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesBaseView wantsLayer]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSoftwareUpdatesBaseView wantsLayer](DeviceSoftwareUpdatesBaseView * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSoftwareUpdatesBaseView wantsLayer](DeviceSoftwareUpdatesBaseView *self, SEL a2)\n{\n  return 1;\n}"
+}

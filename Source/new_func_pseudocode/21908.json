@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd()",
+    "pseudocode": "__int64 std::istream::operator>>()\n{\n  return std::istream::operator>>();\n}"
+}

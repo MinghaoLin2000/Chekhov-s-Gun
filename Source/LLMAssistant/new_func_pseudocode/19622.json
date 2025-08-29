@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z9ippReadIOPvPFlS_PhmEP5ipp_t",
+    "function_argument_number": 3,
+    "function_signature": "__Z9ippReadIOPvPFlS_PhmEP5ipp_t(void * a1, __int64 (__fastcall *)(void *, unsigned __int8 *, unsigned __int64) a2, id a3)",
+    "pseudocode": "__int64 __fastcall ippReadIO(void *a1, __int64 (__fastcall *a2)(void *, unsigned __int8 *, unsigned __int64), id a3)\n{\n  id v5; // x0\n  void *v6; // x19\n  __int64 v7; // x20\n  int v9; // [xsp+8h] [xbp-68h] BYREF\n  int v10; // [xsp+Ch] [xbp-64h] BYREF\n  _BYTE v11[24]; // [xsp+10h] [xbp-60h] BYREF\n  id v12; // [xsp+28h] [xbp-48h]\n\n  v5 = objc_retain(a3);\n  v6 = v5;\n  v7 = 0xFFFFFFFFLL;\n  if ( a1 && v5 )\n  {\n    sub_100005314(v11, a2, a1);\n    v9 = 0;\n    v10 = 19;\n    sub_100003C98(v11, &v9, &v10, 0LL, v6);\n    v7 = 3LL;\n    objc_release(v12);\n  }\n  objc_release(v6);\n  return v7;\n}"
+}

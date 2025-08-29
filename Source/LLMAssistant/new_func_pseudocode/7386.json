@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$setShouldUseEmbeddedImageAsSource:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$setShouldUseEmbeddedImageAsSource:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_setShouldUseEmbeddedImageAsSource_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"setShouldUseEmbeddedImageAsSource:\");\n}"
+}

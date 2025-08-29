@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEEENS_16reverse_iteratorIPS6_EEEclB8ne180100Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEEENS_16reverse_iteratorIPS6_EEEclB8ne180100Ev(__int64 a1)",
+    "pseudocode": "void __fastcall std::_AllocatorDestroyRangeReverse<std::allocator<std::string>,std::reverse_iterator<std::string*>>::operator()[abi:ne180100](\n        __int64 a1)\n{\n  __int64 v1; // x19\n  __int64 v2; // x20\n\n  v1 = *(_QWORD *)(*(_QWORD *)(a1 + 16) + 8LL);\n  v2 = *(_QWORD *)(*(_QWORD *)(a1 + 8) + 8LL);\n  while ( v1 != v2 )\n  {\n    if ( *(char *)(v1 + 23) < 0 )\n      operator delete(*(void **)v1);\n    v1 += 24LL;\n  }\n}"
+}

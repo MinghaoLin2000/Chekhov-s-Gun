@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest setNcpus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMSysmonRequest setNcpus:](MXMSysmonRequest * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[MXMSysmonRequest setNcpus:](MXMSysmonRequest *self, SEL a2, double a3)\n{\n  self->_ncpus = a3;\n}"
+}

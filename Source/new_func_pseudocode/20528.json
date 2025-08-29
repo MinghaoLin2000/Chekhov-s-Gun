@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLAuthChallengeGetFailureResponse",
+    "function_argument_number": 0,
+    "function_signature": "_CFURLAuthChallengeGetFailureResponse()",
+    "pseudocode": "__int64 CFURLAuthChallengeGetFailureResponse()\n{\n  return _CFURLAuthChallengeGetFailureResponse();\n}"
+}

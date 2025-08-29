@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleGetInfoDictionary",
+    "function_argument_number": 1,
+    "function_signature": "_CFBundleGetInfoDictionary(CFBundleRef bundle)",
+    "pseudocode": "CFDictionaryRef __cdecl CFBundleGetInfoDictionary(CFBundleRef bundle)\n{\n  return _CFBundleGetInfoDictionary(bundle);\n}"
+}

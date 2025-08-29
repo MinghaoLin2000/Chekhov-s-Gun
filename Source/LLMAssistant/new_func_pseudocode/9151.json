@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsp_userInfoWithUserInfo:additionalUserInfo:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSError tsp_userInfoWithUserInfo:additionalUserInfo:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl +[NSError tsp_userInfoWithUserInfo:additionalUserInfo:](id a1, SEL a2, id a3, id a4)\n{\n  id v5; // x19\n  id v6; // x20\n  void *v7; // x0\n  void *v8; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  v6 = objc_retain(a4);\n  v7 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___NSMutableDictionary),\n         \"initWithCapacity:\",\n         (char *)objc_msgSend(v6, \"count\") + (_QWORD)objc_msgSend(v5, \"count\") + 1);\n  v8 = v7;\n  if ( v5 )\n    objc_msgSend(v7, \"addEntriesFromDictionary:\", v5);\n  if ( v6 )\n    objc_msgSend(v8, \"addEntriesFromDictionary:\", v6);\n  objc_msgSend(v8, \"setObject:forKeyedSubscript:\", &__kCFBooleanTrue, CFSTR(\"TSPErrorIsTSPError\"));\n  objc_release(v6);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v8);\n}"
+}

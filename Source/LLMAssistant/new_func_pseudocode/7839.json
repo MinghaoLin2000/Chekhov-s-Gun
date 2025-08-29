@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV25screenRectIncludingShadowSo6CGRectVvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV25screenRectIncludingShadowSo6CGRectVvg(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGSWindow.screenRectIncludingShadow.getter(__int64 a1)\n{\n  int *v2; // x20\n  __int64 v3; // x0\n  __int64 v4; // x0\n\n  v2 = CGSConnection.defaultConnection.unsafeMutableAddressor();\n  sub_1000120F4();\n  v3 = CGSWindow.getSpecifiedWindowShape(_:connection:)(3LL, (unsigned int)*v2, a1);\n  if ( v3 )\n  {\n    v4 = CGRegionRef.boundingBox.getter();\n    v3 = sub_10001B25C(v4);\n  }\n  return sub_10000B2B0(v3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21liteGetiCloudPrintersv",
+    "function_argument_number": 0,
+    "function_signature": "__Z21liteGetiCloudPrintersv()",
+    "pseudocode": "void *liteGetiCloudPrinters(void)\n{\n  return objc_msgSend((id)iCloudDataController, \"getiCloudPrintersList\");\n}"
+}

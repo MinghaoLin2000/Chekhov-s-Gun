@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.exception.mach-lookup.global-name:com.apple.mobileactivationd",
+  "capability": "Allows the process holding this entitlement to perform a Mach IPC lookup for the `com.apple.mobileactivationd` service, enabling communication with the `mobileactivationd` daemon. This acts as an exception to general security policies that might otherwise prevent such a lookup.",
+  "reasoning": "The entitlement name clearly indicates its purpose: `mach-lookup` refers to the ability to find and connect to Mach services via Inter-Process Communication (IPC). `global-name` specifies that the lookup is for a globally registered Mach service. `com.apple.mobileactivationd` is the specific daemon service targeted. The `exception` prefix suggests this is a granted deviation from a stricter security rule, allowing this specific communication.",
+  "similar_entitlements": [
+    "com.apple.security.mach-lookup.<service-name>",
+    "com.apple.security.exception.mach-lookup.<service-name>"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'System & Kernel Level Control' (Type 4) because `mobileactivationd` is a critical system daemon responsible for device activation, provisioning, and related core system functionalities. Gaining the ability to communicate with this daemon via Mach IPC, even if it's just for lookup, provides a pathway to interact with a fundamental system component. If an attacker were to exploit vulnerabilities in `mobileactivationd` or misuse this communication channel, they could potentially interfere with or manipulate the device's activation state, which profoundly affects the behavior and functionality of the entire system. While it's not direct kernel control, it enables interaction with a high-privilege system service that can influence system-wide behavior.",
+  "self_reflection": "I am highly confident in the inferred capability, as the entitlement name is very descriptive and aligns with known macOS security patterns for Mach IPC. I am moderately confident in classifying it under 'System & Kernel Level Control'. While it's not direct kernel manipulation, the `mobileactivationd` daemon is so fundamental to the system's operational state that controlling or interfering with it via IPC could have significant system-level implications. The main uncertainty lies in the exact extent of control or information leakage possible through mere 'mach-lookup' vs. actual communication, but the potential for abuse of a critical system daemon makes it sensitive. My prediction could be wrong if `mobileactivationd`'s IPC interface is extremely limited and provides no sensitive functionality, or if 'mach-lookup' itself is considered a very low-privilege operation, but historically, access to such daemons is tightly controlled."
+}

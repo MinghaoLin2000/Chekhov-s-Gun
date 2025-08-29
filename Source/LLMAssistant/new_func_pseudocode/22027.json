@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3mlc16xpc_auto_reply_tD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3mlc16xpc_auto_reply_tD1Ev(mlc::xpc_auto_reply_t * this)",
+    "pseudocode": "void __fastcall mlc::xpc_auto_reply_t::~xpc_auto_reply_t(void **this)\n{\n  void *v1; // x0\n\n  v1 = *this;\n  if ( v1 )\n    xpc_release(v1);\n}"
+}

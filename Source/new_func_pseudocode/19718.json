@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_t debugLogIPP:ipp:]",
+    "function_argument_number": 4,
+    "function_signature": "-[platform_http_t debugLogIPP:ipp:](platform_http_t * self, SEL a2, const char * a3, id a4)",
+    "pseudocode": "void __cdecl -[platform_http_t debugLogIPP:ipp:](platform_http_t *self, SEL a2, const char *a3, id a4)\n{\n  ;\n}"
+}

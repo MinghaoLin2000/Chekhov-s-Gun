@@ -1,0 +1,11 @@
+@protocol IPXLibraryChooserClientProtocol <NSObject>
+- (void)didRemoveLibrariesAtPaths:(NSArray *)arg1;
+- (void)didChangeLibrariesAtPaths:(NSArray *)arg1 to:(NSArray *)arg2;
+- (void)didAddLibraries:(NSArray *)arg1;
+- (void)didFinishInitialResultGatheringPhase;
+- (void)didStartInitialResultGatheringPhase;
+@end
+@protocol IPXLibraryChooserServiceProtocol <NSObject>
+- (void)stop;
+- (void)start;
+@end

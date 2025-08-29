@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageDestinationAddImage",
+    "function_argument_number": 3,
+    "function_signature": "_CGImageDestinationAddImage(CGImageDestinationRef idst, CGImageRef image, CFDictionaryRef properties)",
+    "pseudocode": "void __cdecl CGImageDestinationAddImage(CGImageDestinationRef idst, CGImageRef image, CFDictionaryRef properties)\n{\n  _CGImageDestinationAddImage(idst, image, properties);\n}"
+}

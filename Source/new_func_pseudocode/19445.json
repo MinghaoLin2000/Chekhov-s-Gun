@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MDRemoteServiceSupport startService:forUUID:withReply:]",
+    "function_argument_number": 5,
+    "function_signature": "-[MDRemoteServiceSupport startService:forUUID:withReply:](MDRemoteServiceSupport * self, SEL a2, id a3, id a4, id a5)",
+    "pseudocode": "void __cdecl -[MDRemoteServiceSupport startService:forUUID:withReply:](\n        MDRemoteServiceSupport *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  -[MDRemoteServiceSupport startService:forUUID:type:withReply:](\n    self,\n    \"startService:forUUID:type:withReply:\",\n    a3,\n    a4,\n    0LL,\n    a5);\n}"
+}

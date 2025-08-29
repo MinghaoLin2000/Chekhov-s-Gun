@@ -1,0 +1,6 @@
+{
+    "function_name": "_strtol",
+    "function_argument_number": 3,
+    "function_signature": "_strtol(const char * __str, char ** __endptr, int __base)",
+    "pseudocode": "__int64 __cdecl strtol(const char *__str, char **__endptr, int __base)\n{\n  return _strtol(__str, __endptr, __base);\n}"
+}

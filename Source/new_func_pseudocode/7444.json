@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17OS_dispatch_queueC12EyeCandyCoreE15defaultPriorityABvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo17OS_dispatch_queueC12EyeCandyCoreE15defaultPriorityABvgZ()",
+    "pseudocode": "id static OS_dispatch_queue.defaultPriority.getter()\n{\n  void *v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_10002A0F0 != -1 )\n    swift_once(&qword_10002A0F0, sub_10000C84C);\n  v0 = (void *)static OS_dispatch_queue.defaultPriority;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retain(v0);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFMachPortInvalidate",
+    "function_argument_number": 1,
+    "function_signature": "_CFMachPortInvalidate(CFMachPortRef port)",
+    "pseudocode": "void __cdecl CFMachPortInvalidate(CFMachPortRef port)\n{\n  _CFMachPortInvalidate(port);\n}"
+}

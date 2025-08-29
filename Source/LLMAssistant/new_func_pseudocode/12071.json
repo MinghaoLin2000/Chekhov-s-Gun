@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5FieldD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf5FieldD2Ev(google::protobuf::Field * this)",
+    "pseudocode": "void __fastcall google::protobuf::Field::~Field(google::protobuf::Field *this)\n{\n  sub_1000F3EB4();\n  sub_100037E58((char *)this + 8);\n  sub_1000CC1C0((char *)this + 16);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE10differenceyA2BF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE10differenceyA2BF(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGRegionRef.difference(_:)(__int64 a1)\n{\n  __int64 v1; // x20\n\n  return CGRegionCreateDifferenceWithRegion(v1, a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io9TokenizerD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io9TokenizerD2Ev(google::protobuf::io::Tokenizer * this)",
+    "pseudocode": "void __fastcall google::protobuf::io::Tokenizer::~Tokenizer(google::protobuf::io::Tokenizer *this)\n{\n  int v2; // w8\n  int v3; // w9\n\n  v2 = *((_DWORD *)this + 32);\n  v3 = *((_DWORD *)this + 33);\n  if ( v2 > v3 )\n    (*(void (__fastcall **)(_QWORD, _QWORD))(**((_QWORD **)this + 12) + 24LL))(\n      *((_QWORD *)this + 12),\n      (unsigned int)(v2 - v3));\n  if ( *((char *)this + 79) < 0 )\n    operator delete(*((void **)this + 7));\n  if ( *((char *)this + 31) < 0 )\n    operator delete(*((void **)this + 1));\n}"
+}

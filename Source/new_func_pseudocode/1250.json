@@ -1,0 +1,6 @@
+{
+    "function_name": "+[DeviceViewController stringValueForDeviceType:]",
+    "function_argument_number": 3,
+    "function_signature": "+[DeviceViewController stringValueForDeviceType:](id a1, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "id __cdecl +[DeviceViewController stringValueForDeviceType:](id a1, SEL a2, unsigned __int64 a3)\n{\n  if ( a3 - 3 > 6 )\n    return CFSTR(\"iPod\");\n  else\n    return off_1000B93E8[a3 - 3];\n}"
+}

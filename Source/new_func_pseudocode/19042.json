@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController _ttsQueueDidEmpty:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController _ttsQueueDidEmpty:](SiriNCAlertViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController _ttsQueueDidEmpty:](SiriNCAlertViewController *self, SEL a2, id a3)\n{\n  void *v4; // x20\n  double v5; // d0\n  dispatch_time_t v6; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[SRFUserDefaultsController sharedUserDefaultsController](\n           &OBJC_CLASS___SRFUserDefaultsController,\n           \"sharedUserDefaultsController\",\n           a3));\n  objc_msgSend(v4, \"autoDismissTextToSpeechTimeout\");\n  v6 = dispatch_time(0LL, (__int64)(v5 * 1000000000.0));\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_1000115F0;\n  block[3] = &unk_100020670;\n  block[4] = self;\n  dispatch_after(v6, &_dispatch_main_q, block);\n  objc_release(v4);\n}"
+}

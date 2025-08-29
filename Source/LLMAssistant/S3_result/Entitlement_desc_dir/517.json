@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.bluetooth.system",
+  "capability": "Grants an application system-level control and configuration over the Bluetooth module and its services. This includes capabilities beyond mere interaction with Bluetooth devices, such as managing the global Bluetooth state (e.g., turning Bluetooth on/off system-wide), controlling discoverability, or accessing low-level Bluetooth functions that are typically reserved for system daemons. It may also imply the ability to bypass standard user consent (TCC) for certain Bluetooth operations.",
+  "reasoning": "The 'system' suffix in the entitlement name strongly suggests a higher privilege level compared to 'com.apple.security.device.bluetooth', which is explicitly for device interaction and is TCC-protected. Apple's security model often uses 'system' to denote entitlements that allow privileged operations, system-wide configuration changes, or bypasses of user-level consent mechanisms for critical functions. Bluetooth, being a core system component, would require such a privileged entitlement for system-level management.",
+  "similar_entitlements": [
+    "com.apple.security.device.bluetooth"
+  ],
+  "sensitive_type": [
+    4,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under Type 4 (System & Kernel Level Control) because it allows modification of system-level configuration related to Bluetooth (e.g., turning Bluetooth on/off, managing its state globally). It also falls under Type 5 (Access Transparency Consent and Control (TCC) related functions) because it likely grants access to Bluetooth resources or control over its state at a level that bypasses or operates above the standard user consent mechanisms (TCC) that protect 'com.apple.security.device.bluetooth'. The ability to manage Bluetooth system-wide without explicit user interaction for each state change or access is a significant privilege.",
+  "self_reflection": "I am confident in this analysis. The naming convention 'com.apple.<service>.system' is a strong indicator of elevated privileges and system-level control within Apple's security framework. The distinction from the known `com.apple.security.device.bluetooth` (which is TCC-protected for user-level interaction) supports the inference that 'system' implies deeper, more privileged access, likely involving system configuration and potentially TCC bypass. The main uncertainty could be the exact scope of 'low-level Bluetooth functions' vs. 'system state management', but both point to high sensitivity."
+}

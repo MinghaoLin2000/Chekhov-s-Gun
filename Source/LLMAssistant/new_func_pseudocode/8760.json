@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService9JSAccountVwxx_0",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService9JSAccountVwxx_0(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall _s34AppleMediaServicesUIDynamicService9JSAccountVwxx_0(_QWORD *a1)\n{\n  __int64 v1; // x16\n\n  v1 = *(_QWORD *)(a1[3] - 8LL);\n  if ( (*(_BYTE *)(v1 + 82) & 2) != 0 )\n    return swift_release(*a1);\n  else\n    return (*(__int64 (**)(void))(v1 + 8))();\n}"
+}

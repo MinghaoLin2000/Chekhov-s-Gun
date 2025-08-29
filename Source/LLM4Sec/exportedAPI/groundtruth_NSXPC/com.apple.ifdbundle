@@ -1,0 +1,18 @@
+@protocol IFDBundleProtocol
+- (void)deinit:(void (^)(void))arg1;
+- (void)closeChannel:(unsigned int)arg1 reply:(void (^)(void))arg2;
+- (void)setAttrib:(unsigned int)arg1 code:(unsigned int)arg2 data:(NSData *)arg3 reply:(void (^)(_Bool, _Bool))arg4;
+- (void)getAttrib:(unsigned int)arg1 code:(unsigned int)arg2 reply:(void (^)(NSData *, long long))arg3;
+- (void)control:(unsigned int)arg1 code:(id)arg2 data:(NSData *)arg3 expectedLength:(unsigned int)arg4 reply:(void (^)(NSData *))arg5;
+- (void)transmit:(unsigned int)arg1 protocol:(unsigned int)arg2 data:(NSData *)arg3 reply:(void (^)(NSData *))arg4;
+- (void)setProtocol:(unsigned int)arg1 protocol:(unsigned int)arg2 reply:(void (^)(int))arg3;
+- (void)power:(unsigned int)arg1 action:(int)arg2 reply:(void (^)(NSData *))arg3;
+- (void)maxInputSize:(unsigned int)arg1 reply:(void (^)(unsigned int))arg2;
+- (void)hasCard:(unsigned int)arg1 reply:(void (^)(_Bool))arg2;
+- (void)slotCount:(unsigned int)arg1 reply:(void (^)(int))arg2;
+- (void)synchronizationLevel:(unsigned int)arg1 reply:(void (^)(int))arg2;
+- (void)createChannel:(unsigned int)arg1 name:(NSString *)arg2 channel:(unsigned int)arg3 reply:(void (^)(_Bool))arg4;
+- (void)deallocateLun:(NSNumber *)arg1 name:(NSString *)arg2 reply:(void (^)(void))arg3;
+- (void)allocateLun:(NSString *)arg1 reply:(void (^)(NSNumber *))arg2;
+- (void)initWithPath:(NSString *)arg1 reply:(void (^)(_Bool))arg2;
+@end

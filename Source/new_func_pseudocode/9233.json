@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegate init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPTemporaryObjectContextDelegate init](TSPTemporaryObjectContextDelegate * self, SEL a2)",
+    "pseudocode": "TSPTemporaryObjectContextDelegate *__cdecl -[TSPTemporaryObjectContextDelegate init](\n        TSPTemporaryObjectContextDelegate *self,\n        SEL a2)\n{\n  TSPTemporaryObjectContextDelegate *v2; // x19\n  NSMutableSet *v3; // x0\n  NSMutableSet *persistenceWarnings; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___TSPTemporaryObjectContextDelegate;\n  v2 = -[TSPTemporaryObjectContextDelegate init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = (NSMutableSet *)objc_alloc_init((Class)&OBJC_CLASS___NSMutableSet);\n    persistenceWarnings = v2->_persistenceWarnings;\n    v2->_persistenceWarnings = v3;\n    objc_release(persistenceWarnings);\n    v2->_ignoreDocumentSupport = 1;\n  }\n  return v2;\n}"
+}

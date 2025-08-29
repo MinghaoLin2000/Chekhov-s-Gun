@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue setTotal:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMTargetQueue setTotal:](MXMTargetQueue * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[MXMTargetQueue setTotal:](MXMTargetQueue *self, SEL a2, signed __int64 a3)\n{\n  self->_total = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition9LSRAssetsCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s22localspeechrecognition9LSRAssetsCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for LSRAssets(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100063E70;\n  if ( !qword_100063E70 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for LSRAssets);\n  return result;\n}"
+}

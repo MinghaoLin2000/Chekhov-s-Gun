@@ -1,0 +1,8 @@
+{
+  "_objc_msgSend$updateFirmwareWithOptions:": 4294978976,
+  "_realpath$DARWIN_EXTSN": 4294978000,
+  "_objc_msgSend$createFWAssetInfo": 4294978240,
+  "_objc_msgSend$initWithRegistryEntryID:fwAssetDirectory:": 4294978368,
+  "-[UARPUpdaterServiceAFU ioKitRuleMatched:]": 4294972448,
+  "_AUSandboxPlatformInit": 4294976056
+}

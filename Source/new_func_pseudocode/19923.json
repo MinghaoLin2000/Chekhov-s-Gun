@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t closeDriver:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t closeDriver:](int a1, int a2, lite_driver_s * a3)",
+    "pseudocode": "int __cdecl -[lite_job_t closeDriver:](lite_job_t *self, SEL a2, lite_driver_s *a3)\n{\n  return liteCloseDriver(self, a3);\n}"
+}

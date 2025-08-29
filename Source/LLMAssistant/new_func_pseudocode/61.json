@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper18CloudKitOperationsCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper18CloudKitOperationsCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for CloudKitOperations(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CA9D8;\n  if ( !qword_1000CA9D8 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for CloudKitOperations);\n  return result;\n}"
+}

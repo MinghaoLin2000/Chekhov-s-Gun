@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipEntry CRC]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipEntry CRC](TSUZipEntry * self, SEL a2)",
+    "pseudocode": "unsigned int __cdecl -[TSUZipEntry CRC](TSUZipEntry *self, SEL a2)\n{\n  return self->_CRC;\n}"
+}

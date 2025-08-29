@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateMutable",
+    "function_argument_number": 2,
+    "function_signature": "_CFStringCreateMutable(CFAllocatorRef alloc, CFIndex maxLength)",
+    "pseudocode": "CFMutableStringRef __cdecl CFStringCreateMutable(CFAllocatorRef alloc, CFIndex maxLength)\n{\n  return _CFStringCreateMutable(alloc, maxLength);\n}"
+}

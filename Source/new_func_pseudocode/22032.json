@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__125__throw_bad_function_callB8ne180100Ev",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__125__throw_bad_function_callB8ne180100Ev()",
+    "pseudocode": "void __noreturn std::__throw_bad_function_call[abi:ne180100]()\n{\n  _QWORD *exception; // x0\n\n  exception = __cxa_allocate_exception(8uLL);\n  *exception = &`vtable for'std::bad_function_call.~bad_function_call;\n  __cxa_throw(\n    exception,\n    (struct type_info *)&`typeinfo for'std::bad_function_call,\n    (void (__fastcall *)(void *))std::bad_function_call::~bad_function_call);\n}"
+}

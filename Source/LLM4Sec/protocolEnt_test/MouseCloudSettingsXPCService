@@ -1,0 +1,18 @@
+Service Path:
+/System/Library/PrivateFrameworks/CloudSettings.framework/Versions/A/XPCServices/MouseCloudSettingsXPCService.xpc/Contents/MacOS/MouseCloudSettingsXPCService
+
+Service Exported Protocols:
+@protocol CloudSettingsServiceProtocol
+- (void)writeToCloudSettings:(NSArray *)arg1 forStore:(NSString *)arg2;
+- (void)applyCloudSettingsToDevice:(NSArray *)arg1 forStore:(NSString *)arg2;
+- (void)applySettingsToDevice:(NSDictionary *)arg1;
+- (NSDictionary *)deviceSettings;
+- (void)performFirstTimeSetupForStore:(NSString *)arg1 newDevice:(_Bool)arg2;
+- (void)performFirstTimeSetupForStore:(NSString *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.developer.ubiquity-kvstore-identifier
+	[Value]
+		[String] com.apple.cloudsettings.mouse

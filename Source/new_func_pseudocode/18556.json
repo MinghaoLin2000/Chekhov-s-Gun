@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore10UnfairLockCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore10UnfairLockCMa()",
+    "pseudocode": "__int64 type metadata accessor for UnfairLock()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC17ControlCenterCore10UnfairLock);\n}"
+}

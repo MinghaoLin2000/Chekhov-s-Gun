@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceGetCount",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageSourceGetCount(CGImageSourceRef isrc)",
+    "pseudocode": "size_t __cdecl CGImageSourceGetCount(CGImageSourceRef isrc)\n{\n  return _CGImageSourceGetCount(isrc);\n}"
+}

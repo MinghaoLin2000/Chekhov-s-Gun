@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTerminateProcessConfiguration .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTerminateProcessConfiguration .cxx_destruct](MXMTerminateProcessConfiguration * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MXMTerminateProcessConfiguration .cxx_destruct](MXMTerminateProcessConfiguration *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_processName, 0LL);\n}"
+}

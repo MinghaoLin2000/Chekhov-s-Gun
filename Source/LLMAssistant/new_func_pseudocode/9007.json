@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService20XPCServiceConnection listener:shouldAcceptNewConnection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService20XPCServiceConnection listener:shouldAcceptNewConnection:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[XPCServiceConnection listener:shouldAcceptNewConnection:](\n        _TtC34AppleMediaServicesUIDynamicService20XPCServiceConnection *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x21\n  id v7; // x19\n  _TtC34AppleMediaServicesUIDynamicService20XPCServiceConnection *v8; // x20\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = objc_retain(self);\n  sub_10003BD20();\n  objc_release(v6);\n  objc_release(v7);\n  objc_release(v8);\n  return 1;\n}"
+}

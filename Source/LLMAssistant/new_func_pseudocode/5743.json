@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSMCopyTextInputGlobalProperty",
+    "function_argument_number": 0,
+    "function_signature": "_TSMCopyTextInputGlobalProperty()",
+    "pseudocode": "__int64 TSMCopyTextInputGlobalProperty()\n{\n  return _TSMCopyTextInputGlobalProperty();\n}"
+}

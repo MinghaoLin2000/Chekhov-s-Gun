@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13IngestService14InternalLoggerVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s13IngestService14InternalLoggerVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for InternalLogger(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10000C928;\n  if ( !qword_10000C928 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for InternalLogger);\n  return result;\n}"
+}

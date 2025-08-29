@@ -1,0 +1,6 @@
+{
+    "function_name": "_CPSGetWindowOwner",
+    "function_argument_number": 0,
+    "function_signature": "_CPSGetWindowOwner()",
+    "pseudocode": "__int64 CPSGetWindowOwner()\n{\n  return _CPSGetWindowOwner();\n}"
+}

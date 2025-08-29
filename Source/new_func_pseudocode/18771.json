@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectEqualToRect",
+    "function_argument_number": 2,
+    "function_signature": "_CGRectEqualToRect(CGRect rect1, CGRect rect2)",
+    "pseudocode": "bool __cdecl CGRectEqualToRect(CGRect rect1, CGRect rect2)\n{\n  return _CGRectEqualToRect(rect1, rect2);\n}"
+}

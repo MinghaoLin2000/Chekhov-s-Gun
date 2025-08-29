@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFEntitledAssetStatusIsInstalled",
+    "function_argument_number": 0,
+    "function_signature": "_SFEntitledAssetStatusIsInstalled()",
+    "pseudocode": "__int64 SFEntitledAssetStatusIsInstalled()\n{\n  return _SFEntitledAssetStatusIsInstalled();\n}"
+}

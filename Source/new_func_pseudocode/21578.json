@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFLogInitIfNeeded",
+    "function_argument_number": 0,
+    "function_signature": "_SFLogInitIfNeeded()",
+    "pseudocode": "__int64 SFLogInitIfNeeded()\n{\n  return _SFLogInitIfNeeded();\n}"
+}

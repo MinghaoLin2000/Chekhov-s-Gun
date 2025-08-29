@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker clientProcessIdentifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker clientProcessIdentifier](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "int __cdecl -[MediaConversionRequestTracker clientProcessIdentifier](MediaConversionRequestTracker *self, SEL a2)\n{\n  return self->_clientProcessIdentifier;\n}"
+}

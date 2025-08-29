@@ -1,0 +1,6 @@
+{
+    "function_name": "_TISIsRomanSwitchEnabled",
+    "function_argument_number": 0,
+    "function_signature": "_TISIsRomanSwitchEnabled()",
+    "pseudocode": "__int64 TISIsRomanSwitchEnabled()\n{\n  return _TISIsRomanSwitchEnabled();\n}"
+}

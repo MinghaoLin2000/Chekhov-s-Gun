@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ColorInfo dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[ColorInfo dealloc](ColorInfo * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ColorInfo dealloc](ColorInfo *self, SEL a2)\n{\n  objc_super v3; // [xsp+10h] [xbp-20h] BYREF\n\n  -[ColorInfo setGstateStack:](self, \"setGstateStack:\", 0LL);\n  -[ColorInfo setStrokeColorspace:](self, \"setStrokeColorspace:\", 0LL);\n  -[ColorInfo setNonStrokeColorspace:](self, \"setNonStrokeColorspace:\", 0LL);\n  -[ColorInfo setColorReason:](self, \"setColorReason:\", 0LL);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___ColorInfo;\n  -[ColorInfo dealloc](&v3, \"dealloc\");\n}"
+}

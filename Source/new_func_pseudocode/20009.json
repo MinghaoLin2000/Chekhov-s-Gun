@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalProxyConnection _httpReceive]",
+    "function_argument_number": 1,
+    "function_signature": "-[LocalProxyConnection _httpReceive](id val)",
+    "pseudocode": "void __cdecl -[LocalProxyConnection _httpReceive](LocalProxyConnection *self, SEL a2)\n{\n  OS_nw_connection *conn; // x20\n  _QWORD v4[4]; // [xsp+0h] [xbp-40h] BYREF\n  id v5; // [xsp+20h] [xbp-20h] BYREF\n  id location; // [xsp+28h] [xbp-18h] BYREF\n\n  objc_initWeak(&location, self);\n  conn = self->_conn;\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_10002957C;\n  v4[3] = &unk_10009E118;\n  objc_copyWeak(&v5, &location);\n  nw_connection_receive(conn, 1u, 0x4000u, v4);\n  objc_destroyWeak(&v5);\n  objc_destroyWeak(&location);\n}"
+}

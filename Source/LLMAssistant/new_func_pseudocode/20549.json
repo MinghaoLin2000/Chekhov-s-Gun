@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextDrawPDFPageWithAnnotations",
+    "function_argument_number": 0,
+    "function_signature": "_CGContextDrawPDFPageWithAnnotations()",
+    "pseudocode": "__int64 CGContextDrawPDFPageWithAnnotations()\n{\n  return _CGContextDrawPDFPageWithAnnotations();\n}"
+}

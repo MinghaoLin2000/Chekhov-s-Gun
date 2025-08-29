@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent transport]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent transport](UARPActiveFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[UARPActiveFirmwareAnalyticsEvent transport](UARPActiveFirmwareAnalyticsEvent *self, SEL a2)\n{\n  return self->_transport;\n}"
+}

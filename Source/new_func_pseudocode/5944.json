@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s33SiriSuggestionsBookkeepingService07DefaultB13LoggerFactoryCfd",
+    "function_argument_number": 0,
+    "function_signature": "_$s33SiriSuggestionsBookkeepingService07DefaultB13LoggerFactoryCfd()",
+    "pseudocode": "__int64 DefaultSuggestionsLoggerFactory.deinit()\n{\n  __int64 v0; // x20\n\n  sub_1000050E4(v0 + 16);\n  swift_release(*(_QWORD *)(v0 + 56));\n  return v0;\n}"
+}

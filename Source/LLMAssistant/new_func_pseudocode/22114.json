@@ -1,0 +1,6 @@
+{
+    "function_name": "_compileRequestMain",
+    "function_argument_number": 1,
+    "function_signature": "_compileRequestMain(unsigned int * a1)",
+    "pseudocode": "__int64 __fastcall compileRequestMain(unsigned int *a1)\n{\n  (*(void (__fastcall **)(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD))(**((_QWORD **)a1 + 4) + 24LL))(\n    *(_QWORD *)(*((_QWORD *)a1 + 4) + 8LL),\n    *a1,\n    a1[1],\n    *((_QWORD *)a1 + 1),\n    *((_QWORD *)a1 + 2),\n    *((_QWORD *)a1 + 3));\n  return 0LL;\n}"
+}

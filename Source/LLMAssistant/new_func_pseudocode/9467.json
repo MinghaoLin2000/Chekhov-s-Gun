@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPIOHandlerWriteChannelAdapter initWithHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPIOHandlerWriteChannelAdapter initWithHandler:](int a1, int a2, id a3)",
+    "pseudocode": "TSPIOHandlerWriteChannelAdapter *__cdecl -[TSPIOHandlerWriteChannelAdapter initWithHandler:](\n        TSPIOHandlerWriteChannelAdapter *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x19\n  TSPIOHandlerWriteChannelAdapter *v5; // x20\n  id v6; // x0\n  id handler; // x8\n  objc_super v9; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = objc_retain(a3);\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___TSPIOHandlerWriteChannelAdapter;\n  v5 = -[TSPIOHandlerWriteChannelAdapter init](&v9, \"init\");\n  if ( v5 )\n  {\n    v6 = objc_retainBlock(v4);\n    handler = v5->_handler;\n    v5->_handler = v6;\n    objc_release(handler);\n  }\n  objc_release(v4);\n  return v5;\n}"
+}

@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService20JSLocalizationObjectCMa
+__int64 type metadata accessor for JSLocalizationObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject);
+}

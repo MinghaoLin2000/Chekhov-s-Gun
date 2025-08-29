@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper22ControlCenterHelperAppCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper22ControlCenterHelperAppCMa()",
+    "pseudocode": "__int64 type metadata accessor for ControlCenterHelperApp()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelper22ControlCenterHelperApp);\n}"
+}

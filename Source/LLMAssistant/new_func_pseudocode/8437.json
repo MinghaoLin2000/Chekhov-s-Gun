@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_KHSoftwareUpdateControllerContext setState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_KHSoftwareUpdateControllerContext setState:](_KHSoftwareUpdateControllerContext * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[_KHSoftwareUpdateControllerContext setState:](\n        _KHSoftwareUpdateControllerContext *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_state = a3;\n}"
+}

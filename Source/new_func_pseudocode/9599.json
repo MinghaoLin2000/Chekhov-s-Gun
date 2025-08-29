@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12SnappySource6OffsetEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12SnappySource6OffsetEv(TSP::SnappySource * this)",
+    "pseudocode": "__int64 __fastcall TSP::SnappySource::Offset(TSP::SnappySource *this)\n{\n  return *((_QWORD *)this + 3);\n}"
+}

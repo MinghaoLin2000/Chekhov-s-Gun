@@ -1,0 +1,6 @@
+{
+    "function_name": "_pc_session_set_procpid",
+    "function_argument_number": 0,
+    "function_signature": "_pc_session_set_procpid()",
+    "pseudocode": "__int64 pc_session_set_procpid()\n{\n  return _pc_session_set_procpid();\n}"
+}

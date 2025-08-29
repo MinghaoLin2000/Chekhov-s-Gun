@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFNotificationCenterPostNotification",
+    "function_argument_number": 5,
+    "function_signature": "_CFNotificationCenterPostNotification(CFNotificationCenterRef center, CFNotificationName name, const void * object, CFDictionaryRef userInfo, Boolean deliverImmediately)",
+    "pseudocode": "void __cdecl CFNotificationCenterPostNotification(\n        CFNotificationCenterRef center,\n        CFNotificationName name,\n        const void *object,\n        CFDictionaryRef userInfo,\n        Boolean deliverImmediately)\n{\n  _CFNotificationCenterPostNotification(center, name, object, userInfo, deliverImmediately);\n}"
+}

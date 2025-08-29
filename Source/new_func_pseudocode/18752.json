@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper15GridButtonStyleVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper15GridButtonStyleVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for GridButtonStyle()\n{\n  return &type metadata for GridButtonStyle;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_release",
+    "function_argument_number": 1,
+    "function_signature": "_objc_release(id a1)",
+    "pseudocode": "void __cdecl objc_release(id a1)\n{\n  _objc_release(a1);\n}"
+}

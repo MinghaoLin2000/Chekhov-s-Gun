@@ -1,0 +1,6 @@
+{
+    "function_name": "_pthread_attr_init",
+    "function_argument_number": 1,
+    "function_signature": "_pthread_attr_init(pthread_attr_t * a1)",
+    "pseudocode": "int __cdecl pthread_attr_init(pthread_attr_t *a1)\n{\n  return _pthread_attr_init(a1);\n}"
+}

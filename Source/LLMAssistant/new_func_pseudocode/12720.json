@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttribute shouldPreserveForIntent:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUExtendedAttribute shouldPreserveForIntent:](TSUExtendedAttribute * self, SEL a2, unsigned int a3)",
+    "pseudocode": "bool __cdecl -[TSUExtendedAttribute shouldPreserveForIntent:](TSUExtendedAttribute *self, SEL a2, unsigned int a3)\n{\n  const char *v4; // x0\n\n  v4 = -[NSString UTF8String](self->_name, \"UTF8String\");\n  if ( v4 )\n    LOBYTE(v4) = xattr_preserve_for_intent(v4, a3) != 0;\n  return (char)v4;\n}"
+}

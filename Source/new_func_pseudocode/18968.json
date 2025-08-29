@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_RemoteViewBridgeViewControllerProxy hostPositionWindowForGlobalContentFrame:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_RemoteViewBridgeViewControllerProxy hostPositionWindowForGlobalContentFrame:](_RemoteViewBridgeViewControllerProxy * self, SEL a2, CGRect a3)",
+    "pseudocode": "void __cdecl -[_RemoteViewBridgeViewControllerProxy hostPositionWindowForGlobalContentFrame:](\n        _RemoteViewBridgeViewControllerProxy *self,\n        SEL a2,\n        CGRect a3)\n{\n  double height; // d8\n  double width; // d9\n  double y; // d10\n  double x; // d11\n  RemoteViewBridgeHostProtocol *v7; // x19\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  height = a3.size.height;\n  width = a3.size.width;\n  y = a3.origin.y;\n  x = a3.origin.x;\n  v7 = objc_retainAutoreleasedReturnValue(-[_RemoteViewBridgeViewControllerProxy delegate](self, \"delegate\"));\n  -[RemoteViewBridgeHostProtocol hostPositionWindowForGlobalContentFrame:](\n    v7,\n    \"hostPositionWindowForGlobalContentFrame:\",\n    x,\n    y,\n    width,\n    height);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

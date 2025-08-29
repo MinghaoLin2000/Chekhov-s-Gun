@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryCreateMutableCopy",
+    "function_argument_number": 3,
+    "function_signature": "_CFDictionaryCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFDictionaryRef theDict)",
+    "pseudocode": "CFMutableDictionaryRef __cdecl CFDictionaryCreateMutableCopy(\n        CFAllocatorRef allocator,\n        CFIndex capacity,\n        CFDictionaryRef theDict)\n{\n  return _CFDictionaryCreateMutableCopy(allocator, capacity, theDict);\n}"
+}

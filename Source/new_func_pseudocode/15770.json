@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset appendPayloadData:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[USBAudioAsset appendPayloadData:length:](USBAudioAsset * self, SEL a2, char * a3, unsigned int a4)",
+    "pseudocode": "void __cdecl -[USBAudioAsset appendPayloadData:length:](USBAudioAsset *self, SEL a2, char *a3, unsigned int a4)\n{\n  -[NSMutableData appendBytes:length:](self->_payload, \"appendBytes:length:\", a3);\n}"
+}

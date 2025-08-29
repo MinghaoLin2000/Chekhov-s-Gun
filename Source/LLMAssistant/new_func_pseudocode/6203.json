@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueue setQueueStateLock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueue setQueueStateLock:](MediaConversionQueue * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[MediaConversionQueue setQueueStateLock:](MediaConversionQueue *self, SEL a2, os_unfair_lock_s a3)\n{\n  self->_queueStateLock = a3;\n}"
+}

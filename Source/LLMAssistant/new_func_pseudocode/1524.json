@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setHiddenSecondaryButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setHiddenSecondaryButton:](DeviceFooterViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setHiddenSecondaryButton:](DeviceFooterViewController *self, SEL a2, bool a3)\n{\n  self->_hiddenSecondaryButton = a3;\n  -[DeviceFooterViewController updateButtonsState](self, \"updateButtonsState\");\n}"
+}

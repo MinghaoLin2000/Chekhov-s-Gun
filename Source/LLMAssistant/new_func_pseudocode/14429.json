@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$readZip64EndOfCentralDirectoryFromInputStream:eocdOffset:",
+    "function_argument_number": 1,
+    "function_signature": "_objc_msgSend$readZip64EndOfCentralDirectoryFromInputStream:eocdOffset:(void * a1)",
+    "pseudocode": "id objc_msgSend_readZip64EndOfCentralDirectoryFromInputStream_eocdOffset_(void *a1, ...)\n{\n  return _objc_msgSend(a1, \"readZip64EndOfCentralDirectoryFromInputStream:eocdOffset:\");\n}"
+}

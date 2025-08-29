@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12MapFieldBase20IsRepeatedFieldValidEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf8internal12MapFieldBase20IsRepeatedFieldValidEv(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "bool __fastcall google::protobuf::internal::MapFieldBase::IsRepeatedFieldValid(atomic_uint *this)\n{\n  return atomic_load_explicit(this + 22, memory_order_acquire) != 0;\n}"
+}

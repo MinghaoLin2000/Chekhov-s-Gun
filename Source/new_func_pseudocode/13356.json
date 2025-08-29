@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter writeData:queue:completion:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUZipWriter writeData:queue:completion:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[TSUZipWriter writeData:queue:completion:](TSUZipWriter *self, SEL a2, id a3, id a4, id a5)\n{\n  id v8; // x22\n  id v9; // x19\n  size_t size; // x23\n  signed __int64 writtenOffset; // x24\n  id v12; // x22\n  id v13; // x19\n  _QWORD v14[4]; // [xsp+0h] [xbp-60h] BYREF\n  id v15; // [xsp+20h] [xbp-40h]\n  id v16; // [xsp+28h] [xbp-38h]\n\n  v8 = objc_retain(a4);\n  v9 = objc_retain(a5);\n  size = dispatch_data_get_size((dispatch_data_t)a3);\n  self->_currentOffset += size;\n  writtenOffset = self->_writtenOffset;\n  v14[0] = _NSConcreteStackBlock;\n  v14[1] = 3254779904LL;\n  v14[2] = sub_1001559DC;\n  v14[3] = &unk_1001DEE38;\n  v15 = v8;\n  v16 = v9;\n  v12 = objc_retain(v8);\n  v13 = objc_retain(v9);\n  -[TSUZipWriter p_writeData:offset:completion:](self, \"p_writeData:offset:completion:\", a3, writtenOffset, v14);\n  self->_writtenOffset += size;\n  objc_release(v15);\n  objc_release(v16);\n  objc_release(v12);\n  objc_release(v13);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_retain",
+    "function_argument_number": 0,
+    "function_signature": "_swift_retain()",
+    "pseudocode": "__int64 swift_retain()\n{\n  return _swift_retain();\n}"
+}

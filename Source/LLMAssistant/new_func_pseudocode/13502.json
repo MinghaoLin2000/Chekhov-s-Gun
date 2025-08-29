@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSString tsu_stringWithHexFromBytes:length:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSString tsu_stringWithHexFromBytes:length:](id a1, SEL a2, const char * a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl +[NSString tsu_stringWithHexFromBytes:length:](id a1, SEL a2, const char *a3, unsigned __int64 a4)\n{\n  unsigned __int64 v4; // x21\n  unsigned __int64 v6; // x19\n  _BYTE *v7; // x0\n  _BYTE *v8; // x9\n  unsigned int v9; // t1\n  void *v10; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = a4;\n  v6 = 2 * a4;\n  v7 = malloc_type_malloc(2 * a4, 0x9F79277AuLL);\n  if ( v4 )\n  {\n    v8 = v7;\n    do\n    {\n      v9 = *(unsigned __int8 *)a3++;\n      *v8 = a0123456789abcd_0[(unsigned __int64)v9 >> 4];\n      v8[1] = a0123456789abcd_0[v9 & 0xF];\n      v8 += 2;\n      --v4;\n    }\n    while ( v4 );\n  }\n  v10 = objc_msgSend(\n          objc_alloc((Class)&OBJC_CLASS___NSString),\n          \"initWithBytesNoCopy:length:encoding:freeWhenDone:\",\n          v7,\n          v6,\n          1LL,\n          1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v10);\n}"
+}

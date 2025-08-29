@@ -1,0 +1,5 @@
+_uarpPlatformCancelRxDynamicAssets
+void uarpPlatformCancelRxDynamicAssets()
+{
+  ;
+}

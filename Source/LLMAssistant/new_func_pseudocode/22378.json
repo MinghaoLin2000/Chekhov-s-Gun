@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetWindowBounds",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetWindowBounds()",
+    "pseudocode": "__int64 CGSGetWindowBounds()\n{\n  return _CGSGetWindowBounds();\n}"
+}

@@ -1,0 +1,38 @@
+@protocol AUHelperServiceProtocol <NSObject>
+- (void)userPreferenceObjectForSuite:(unsigned long long)arg1 withKey:(NSString *)arg2 withReply:(void (^)(id))arg3;
+- (void)userPreferenceSetObject:(id)arg1 forSuite:(unsigned long long)arg2 withKey:(NSString *)arg3;
+@end
+@protocol FudPersonalizationPlugin
+- (void)personalizationResponse:(FudPersonalizationRequest *)arg1 response:(NSData *)arg2 status:(NSError *)arg3;
+@end
+@protocol FudPlugin <NSObject, NSCoding>
+- (void)finishWithOptions:(NSDictionary *)arg1;
+- (void)applyFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)prepareFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)downloadFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)findFirmwareWithOptions:(NSDictionary *)arg1 remote:(_Bool)arg2;
+- (void)bootstrapWithOptions:(NSDictionary *)arg1;
+- (void)setDelegate:(id <FudPluginDelegate>)arg1;
+- (id)initWithDeviceClass:(NSString *)arg1 delegate:(id <FudPluginDelegate>)arg2 info:(id *)arg3 options:(NSDictionary *)arg4;
+- (_Bool)shouldUpdateBeSilent:(NSDictionary *)arg1;
+@end
+@protocol NSCopying
+- (id)copyWithZone:(struct _NSZone *)arg1;
+@end
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BackgroundAssetConsentViewController loadView]",
+    "function_argument_number": 2,
+    "function_signature": "-[BackgroundAssetConsentViewController loadView](BackgroundAssetConsentViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[BackgroundAssetConsentViewController loadView](BackgroundAssetConsentViewController *self, SEL a2)\n{\n  void *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___NSView),\n         \"initWithFrame:\",\n         NSZeroRect.origin.x,\n         NSZeroRect.origin.y,\n         NSZeroRect.size.width,\n         NSZeroRect.size.height);\n  -[BackgroundAssetConsentViewController setView:](self, \"setView:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

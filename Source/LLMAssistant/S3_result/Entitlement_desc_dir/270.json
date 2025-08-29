@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.files.home-relative-path.read-write:/Library/Containers/com.apple.Stickies/Data/Library/Stickies/",
+  "capability": "Allows the application to perform read and write operations on files and directories within the specified path: /Library/Containers/com.apple.Stickies/Data/Library/Stickies/. The 'temporary-exception' prefix indicates this is a specific, targeted grant of access that might otherwise be restricted by standard sandboxing rules for this particular file system location.",
+  "reasoning": "The entitlement name is highly descriptive. 'com.apple.security.temporary-exception' suggests a specific bypass or allowance. 'files' indicates file system operations. 'home-relative-path' specifies the path is relative to the user's home directory. 'read-write' explicitly defines the type of access granted. The appended path '/Library/Containers/com.apple.Stickies/Data/Library/Stickies/' is the exact target location within the Stickies application's sandboxed container.",
+  "similar_entitlements": [
+    "com.apple.security.files.downloads.read-write"
+  ],
+  "sensitive_type": [
+    1
+  ],
+  "sensitive_reasoning": "This entitlement directly grants 'read-write' access to a specific file system path. This falls under '1. File and File System Operations' because it enables 'Performing read, write/delete operations' on files. While the path is within the application's own sandboxed container, the explicit granting of read-write access to a specific location is a fundamental file system operation that can impact data integrity.",
+  "self_reflection": "High confidence. The entitlement's name clearly describes its function (file access, read-write, specific path). The 'temporary-exception' aspect suggests a deliberate security carve-out, but the core capability remains file system interaction. It does not directly relate to networking, process management, kernel control, or general TCC-protected user directories like Downloads/Desktop, making 'File and File System Operations' the most appropriate sensitive type."
+}

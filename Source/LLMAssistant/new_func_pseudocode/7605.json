@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo10CGEventRefa16EyeCandyGraphicsE4whenSdvg",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo10CGEventRefa16EyeCandyGraphicsE4whenSdvg()",
+    "pseudocode": "double CGEventRef.when.getter()\n{\n  __CGEvent *v0; // x20\n\n  return (double)CGEventGetTimestamp(v0) / 1000000000.0;\n}"
+}

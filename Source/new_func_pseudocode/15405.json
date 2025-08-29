@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate restoreDevice:withOptions:]",
+    "function_argument_number": 4,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate restoreDevice:withOptions:](UARPUpdaterDisplayControllerDelegate * self, SEL a2, __AMRestorableDevice * a3, __CFDictionary * a4)",
+    "pseudocode": "void __cdecl -[UARPUpdaterDisplayControllerDelegate restoreDevice:withOptions:](\n        UARPUpdaterDisplayControllerDelegate *self,\n        SEL a2,\n        __AMRestorableDevice *a3,\n        __CFDictionary *a4)\n{\n  dispatch_queue_global_s *v7; // x22\n  _QWORD block[7]; // [xsp+8h] [xbp-58h] BYREF\n\n  v7 = objc_retainAutoreleasedReturnValue(dispatch_get_global_queue(0LL, 0LL));\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100010698;\n  block[3] = &unk_1000208E0;\n  block[5] = a3;\n  block[6] = a4;\n  block[4] = self;\n  dispatch_async(v7, block);\n  objc_release(v7);\n}"
+}

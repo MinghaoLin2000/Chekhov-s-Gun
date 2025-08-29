@@ -1,0 +1,6 @@
+{
+    "function_name": "+[ATEnforcementService bagSubProfileVersion]",
+    "function_argument_number": 2,
+    "function_signature": "+[ATEnforcementService bagSubProfileVersion](id a1, SEL a2)",
+    "pseudocode": "NSString *__cdecl +[ATEnforcementService bagSubProfileVersion](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100008E08 != -1 )\n    dispatch_once(&qword_100008E08, &stru_100004260);\n  v2 = (void *)qword_100008E10;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSString *)objc_retainAutoreleaseReturnValue(v2);\n}"
+}

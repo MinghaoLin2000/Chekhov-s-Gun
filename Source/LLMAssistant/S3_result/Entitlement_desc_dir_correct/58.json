@@ -1,0 +1,12 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.airportd",
+  "capability": "Allows the application to establish a Mach inter-process communication (IPC) connection with the `com.apple.airportd` system daemon. This grants the application the ability to interact with macOS Wi-Fi management services, bypassing standard sandbox restrictions for Mach lookups to this specific global service. The 'temporary-exception' prefix indicates this is a specific, limited bypass.",
+  "reasoning": "The entitlement name clearly breaks down into `temporary-exception` (a bypass), `mach-lookup` (IPC mechanism), `global-name` (accessing a system-wide service by name), and `com.apple.airportd` (the specific system daemon responsible for Wi-Fi management). In macOS's security model, sandboxed applications are typically restricted from arbitrary Mach lookups to global system services. This entitlement grants a specific exception to communicate with the Wi-Fi daemon.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    2,
+    4,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement belongs to multiple sensitive types due to the capabilities of the `airportd` daemon:\n\n*   **2. Privileged Networking:** `airportd` is directly responsible for managing Wi-Fi interfaces, scanning for networks, joining/leaving networks, and configuring network settings. Gaining access to this daemon allows an application to control core networking functionalities that are typically considered privileged, such as enabling/disabling Wi-Fi or manipulating network connections.\n\n*   **4. System & Kernel Level Control:** Modifying Wi-Fi settings or controlling network interfaces through `airportd` constitutes altering system-level configurations that affect the entire system's network behavior. This level of control over a fundamental system service is akin to system-level configuration changes.\n\n*   **5. Access Transparency Consent and Control (TCC) related functions:** Interaction with `airportd` can involve Wi-Fi scanning, which is a primary method for determining a user's location. Accessing this information or performing Wi-Fi operations that could reveal location without explicit user consent (e.g., through Location Services TCC prompts) would bypass TCC protections. Furthermore, controlling network connections can have significant privacy implications regarding what networks the device connects to."
+}

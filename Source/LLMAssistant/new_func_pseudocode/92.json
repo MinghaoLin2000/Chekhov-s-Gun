@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ErrorMessageVwst",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper12ErrorMessageVwst()",
+    "pseudocode": "// attributes: thunk\n__int64 storeEnumTagSinglePayload for ErrorMessage()\n{\n  return sub_10005D8E0();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionTransaction finishedWriting]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSessionTransaction finishedWriting](IPPSessionTransaction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[IPPSessionTransaction finishedWriting](IPPSessionTransaction *self, SEL a2)\n{\n  dispatch_queue_s *taskQueue; // x8\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  taskQueue = (dispatch_queue_s *)self->_taskQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100008D94;\n  block[3] = &unk_100091078;\n  block[4] = self;\n  dispatch_async(taskQueue, block);\n}"
+}

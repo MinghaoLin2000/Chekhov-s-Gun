@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpCopyDefaultInfoString",
+    "function_argument_number": 2,
+    "function_signature": "_uarpCopyDefaultInfoString(_DWORD * a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpCopyDefaultInfoString(_DWORD *a1, __int64 a2)\n{\n  if ( (unsigned int)a2 < 7 )\n    return 0LL;\n  *(_DWORD *)((char *)a1 + 3) = 1314344782;\n  *a1 = 1313558101;\n  return a2;\n}"
+}

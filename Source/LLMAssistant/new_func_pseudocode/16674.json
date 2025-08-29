@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater encodeWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAAccessoryUpdater encodeWithCoder:](EAAccessoryUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EAAccessoryUpdater encodeWithCoder:](EAAccessoryUpdater *self, SEL a2, id a3)\n{\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater encodeWithCoder:]\",\n    1434LL);\n  objc_msgSend(a3, \"encodeObject:forKey:\", self->deviceClass, CFSTR(\"DeviceClass\"));\n  objc_msgSend(a3, \"encodeObject:forKey:\", self->mobileAssetType, self->mobileAssetType);\n  if ( self->initOptions )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_msgSend(a3, \"encodeObject:forKey:\");\n  }\n}"
+}

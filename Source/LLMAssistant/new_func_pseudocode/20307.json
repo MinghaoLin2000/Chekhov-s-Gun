@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z15ippAddSeparatorP5ipp_t",
+    "function_argument_number": 1,
+    "function_signature": "__Z15ippAddSeparatorP5ipp_t(ipp_t * a1)",
+    "pseudocode": "void __fastcall ippAddSeparator(ipp_t *a1)\n{\n  ipp_t *v1; // x0\n  ipp_t *v2; // x19\n  id v3; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = objc_retain(a1);\n  v2 = v1;\n  if ( v1 )\n    v3 = objc_unsafeClaimAutoreleasedReturnValue(\n           -[ipp_t addNewEmptyAttribute:groupTag:valueTag:](\n             v1,\n             \"addNewEmptyAttribute:groupTag:valueTag:\",\n             0LL,\n             0LL,\n             0LL));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

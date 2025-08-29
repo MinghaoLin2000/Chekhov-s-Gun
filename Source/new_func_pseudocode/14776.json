@@ -1,0 +1,6 @@
+{
+    "function_name": "_TCCAccessCopyInformationForBundleId",
+    "function_argument_number": 0,
+    "function_signature": "_TCCAccessCopyInformationForBundleId()",
+    "pseudocode": "__int64 TCCAccessCopyInformationForBundleId()\n{\n  return _TCCAccessCopyInformationForBundleId();\n}"
+}

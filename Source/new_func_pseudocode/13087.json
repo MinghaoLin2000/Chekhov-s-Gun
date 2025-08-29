@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULogHelper throttleCount]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSULogHelper throttleCount](TSULogHelper * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSULogHelper throttleCount](TSULogHelper *self, SEL a2)\n{\n  return self->_throttleCount;\n}"
+}

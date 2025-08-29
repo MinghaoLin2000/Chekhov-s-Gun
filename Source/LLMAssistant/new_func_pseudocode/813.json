@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController removeMesssageTextFormat]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsViewController removeMesssageTextFormat](DeviceSettingsViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsViewController removeMesssageTextFormat](DeviceSettingsViewController *self, SEL a2)\n{\n  return &stru_1000BA220;\n}"
+}

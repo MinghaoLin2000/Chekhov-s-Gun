@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t notifyJobHeldPinRequired:logMessage:]",
+    "function_argument_number": 4,
+    "function_signature": "-[lite_job_t notifyJobHeldPinRequired:logMessage:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[lite_job_t notifyJobHeldPinRequired:logMessage:](lite_job_t *self, SEL a2, bool a3, id a4)\n{\n  _BOOL4 v4; // w21\n  id v6; // x19\n  lite_printer_t *v7; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = a3;\n  v6 = objc_retain(a4);\n  pthread_mutex_lock(&stru_1000C3AA0);\n  -[lite_job_t setLocalJobState:](self, \"setLocalJobState:\", 4LL);\n  self->release_wait = 1;\n  v7 = objc_retainAutoreleasedReturnValue(-[lite_job_t printer](self, \"printer\"));\n  -[lite_printer_t setCurrentJob:](v7, \"setCurrentJob:\", 0LL);\n  objc_release(v7);\n  -[lite_job_t postGlobalNotification:logMsg:](self, \"postGlobalNotification:logMsg:\", 2048LL, v6);\n  if ( v4 )\n    liteNotifyPINRequired(self);\n  pthread_mutex_unlock(&stru_1000C3AA0);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULogCatThreadSafeMutableSet containsObject:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSULogCatThreadSafeMutableSet containsObject:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSULogCatThreadSafeMutableSet containsObject:](TSULogCatThreadSafeMutableSet *self, SEL a2, id a3)\n{\n  id v4; // x0\n  dispatch_queue_s *logCatQueue; // x20\n  id v6; // x19\n  _QWORD block[5]; // [xsp+8h] [xbp-68h] BYREF\n  id v9; // [xsp+30h] [xbp-40h]\n  __int64 *v10; // [xsp+38h] [xbp-38h]\n  __int64 v11; // [xsp+40h] [xbp-30h] BYREF\n  __int64 *v12; // [xsp+48h] [xbp-28h]\n  __int64 v13; // [xsp+50h] [xbp-20h]\n  char v14; // [xsp+58h] [xbp-18h]\n\n  v4 = objc_retain(a3);\n  v11 = 0LL;\n  v12 = &v11;\n  v13 = 0x2020000000LL;\n  v14 = 0;\n  logCatQueue = (dispatch_queue_s *)self->_logCatQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100138CEC;\n  block[3] = &unk_1001DD750;\n  v9 = v4;\n  v10 = &v11;\n  block[4] = self;\n  v6 = objc_retain(v4);\n  dispatch_sync(logCatQueue, block);\n  LOBYTE(logCatQueue) = *((_BYTE *)v12 + 24);\n  objc_release(v9);\n  objc_release(v6);\n  _Block_object_dispose(&v11, 8);\n  return (char)logCatQueue;\n}"
+}

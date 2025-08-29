@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlXPathFreeObject",
+    "function_argument_number": 1,
+    "function_signature": "_xmlXPathFreeObject(xmlXPathObjectPtr obj)",
+    "pseudocode": "void __cdecl xmlXPathFreeObject(xmlXPathObjectPtr obj)\n{\n  _xmlXPathFreeObject(obj);\n}"
+}

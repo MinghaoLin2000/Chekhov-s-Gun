@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z47usernameFromPreviouslyAuthedPrinterOrJustMobileP14lite_printer_t",
+    "function_argument_number": 1,
+    "function_signature": "__Z47usernameFromPreviouslyAuthedPrinterOrJustMobileP14lite_printer_t(lite_printer_t * a1)",
+    "pseudocode": "__CFString *__fastcall usernameFromPreviouslyAuthedPrinterOrJustMobile(lite_printer_t *a1)\n{\n  lite_printer_t *v1; // x19\n  NSURLCredential *v2; // x20\n  NSURLCredential *v3; // x20\n  __CFString *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v1 = objc_retain(a1);\n  v2 = objc_retainAutoreleasedReturnValue(-[lite_printer_t defaultCredentialForPrinter](v1, \"defaultCredentialForPrinter\"));\n  objc_release(v2);\n  if ( v2 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(-[lite_printer_t defaultCredentialForPrinter](v1, \"defaultCredentialForPrinter\"));\n    v4 = objc_retainAutoreleasedReturnValue(-[NSURLCredential user](v3, \"user\"));\n    objc_release(v3);\n  }\n  else\n  {\n    v4 = CFSTR(\"mobile\");\n  }\n  objc_release(v1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

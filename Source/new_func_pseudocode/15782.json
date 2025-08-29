@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset setPayloaLength:]",
+    "function_argument_number": 3,
+    "function_signature": "-[USBAudioAsset setPayloaLength:](USBAudioAsset * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[USBAudioAsset setPayloaLength:](USBAudioAsset *self, SEL a2, unsigned int a3)\n{\n  self->_payloaLength = a3;\n}"
+}

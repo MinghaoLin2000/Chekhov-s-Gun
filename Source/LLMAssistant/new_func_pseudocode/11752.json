@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal25RegisterFileLevelMetadataEPKNS1_15DescriptorTableE",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal25RegisterFileLevelMetadataEPKNS1_15DescriptorTableE(__int64 a1)",
+    "pseudocode": "void __fastcall google::protobuf::internal::RegisterFileLevelMetadata(__int64 a1)\n{\n  const google::protobuf::Message *v2; // x2\n  __int64 v3; // x20\n  __int64 v4; // x19\n\n  google::protobuf::internal::AssignDescriptors(a1, 0);\n  v3 = *(unsigned int *)(a1 + 96);\n  if ( (int)v3 >= 1 )\n  {\n    v4 = *(_QWORD *)(a1 + 88) + 8LL;\n    do\n    {\n      google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(\n        *(google::protobuf::MessageFactory **)(v4 - 8),\n        *(const google::protobuf::Descriptor **)(*(_QWORD *)v4 + 8LL),\n        v2);\n      v4 += 16LL;\n      --v3;\n    }\n    while ( v3 );\n  }\n}"
+}

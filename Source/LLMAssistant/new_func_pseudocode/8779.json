@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwxx(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall destroy for EngagementMessagePlacementInfo(_QWORD *a1)\n{\n  __int64 v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  swift_bridgeObjectRelease(*a1);\n  v2 = a1[2];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return swift_bridgeObjectRelease(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NotesImporter init]",
+    "function_argument_number": 2,
+    "function_signature": "-[NotesImporter init](NotesImporter * self, SEL a2)",
+    "pseudocode": "NotesImporter *__cdecl -[NotesImporter init](NotesImporter *self, SEL a2)\n{\n  NotesImporter *v2; // x19\n  ICEvernoteNoteParser *v3; // x0\n  ICEvernoteNoteParser *evernoteNoteParser; // x8\n  ICEvernoteContentParser *v5; // x0\n  ICEvernoteContentParser *evernoteContentParser; // x8\n  objc_super v8; // [xsp+0h] [xbp-20h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___NotesImporter;\n  v2 = -[NotesImporter init](&v8, \"init\");\n  if ( v2 )\n  {\n    v3 = (ICEvernoteNoteParser *)objc_alloc_init((Class)&OBJC_CLASS___ICEvernoteNoteParser);\n    evernoteNoteParser = v2->_evernoteNoteParser;\n    v2->_evernoteNoteParser = v3;\n    objc_release(evernoteNoteParser);\n    v5 = (ICEvernoteContentParser *)objc_alloc_init((Class)&OBJC_CLASS___ICEvernoteContentParser);\n    evernoteContentParser = v2->_evernoteContentParser;\n    v2->_evernoteContentParser = v5;\n    objc_release(evernoteContentParser);\n  }\n  return v2;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[AMRemoteActionServiceViewController exportedInterface]",
+    "function_argument_number": 2,
+    "function_signature": "+[AMRemoteActionServiceViewController exportedInterface](id a1, SEL a2)",
+    "pseudocode": "// attributes: thunk\nid __cdecl +[AMRemoteActionServiceViewController exportedInterface](id a1, SEL a2)\n{\n  return (id)_AMRemoteActionViewControllerServiceXPCInterface(a1, a2);\n}"
+}

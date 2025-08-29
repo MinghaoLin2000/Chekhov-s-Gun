@@ -1,0 +1,6 @@
+{
+    "function_name": "_ATXDetailedActionLoggingEnabled",
+    "function_argument_number": 0,
+    "function_signature": "_ATXDetailedActionLoggingEnabled()",
+    "pseudocode": "__int64 ATXDetailedActionLoggingEnabled()\n{\n  return _ATXDetailedActionLoggingEnabled();\n}"
+}

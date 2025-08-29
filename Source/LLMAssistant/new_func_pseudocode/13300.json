@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList initWithRangeList:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSURangeList initWithRangeList:](TSURangeList * self, SEL a2, id a3)",
+    "pseudocode": "TSURangeList *__cdecl -[TSURangeList initWithRangeList:](TSURangeList *self, SEL a2, id a3)\n{\n  TSURangeList *v4; // x0\n  TSURangeList *v5; // x20\n  vector<_NSRange, std::allocator<_NSRange>> *p_mRangeList; // x21\n  __int64 v7; // x23\n  unsigned __int64 v8; // x22\n  void *v9; // x0\n  _NSRange *v10; // x8\n  NSUInteger v11; // x1\n\n  v4 = -[TSURangeList init](self, \"init\");\n  v5 = v4;\n  if ( v4 )\n  {\n    p_mRangeList = &v4->mRangeList;\n    sub_100151074(&v4->mRangeList, objc_msgSend(a3, \"count\"));\n    if ( objc_msgSend(a3, \"count\") )\n    {\n      v7 = 0LL;\n      v8 = 0LL;\n      do\n      {\n        v9 = objc_msgSend(a3, \"rangeAtIndex:\", v8);\n        v10 = &p_mRangeList->__begin_[v7];\n        v10->location = (NSUInteger)v9;\n        v10->length = v11;\n        ++v8;\n        ++v7;\n      }\n      while ( v8 < (unsigned __int64)objc_msgSend(a3, \"count\") );\n    }\n  }\n  return v5;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueue currentlyProcessingRequestQueueEntry]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionQueue currentlyProcessingRequestQueueEntry](MediaConversionQueue * self, SEL a2)",
+    "pseudocode": "MediaConversionQueueEntry *__cdecl -[MediaConversionQueue currentlyProcessingRequestQueueEntry](\n        MediaConversionQueue *self,\n        SEL a2)\n{\n  return (MediaConversionQueueEntry *)objc_getProperty(self, a2, 56LL, 1);\n}"
+}

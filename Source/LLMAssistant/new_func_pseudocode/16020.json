@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryAppendPayloadMetaDataBlob",
+    "function_argument_number": 1,
+    "function_signature": "_UARPSuperBinaryAppendPayloadMetaDataBlob(int a1)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryAppendPayloadMetaDataBlob(\n        __int64 a1,\n        __int64 a2,\n        int a3,\n        const void *a4,\n        unsigned int a5)\n{\n  unsigned int v5; // w8\n  __int64 v6; // x23\n  bool v7; // zf\n  unsigned int v12; // w9\n  __int64 result; // x0\n\n  v5 = *(_DWORD *)(a2 + 448);\n  v6 = *(_QWORD *)(a2 + 632);\n  if ( v5 )\n    v7 = v6 == 0;\n  else\n    v7 = 1;\n  if ( v7 )\n    return 11LL;\n  v12 = 1;\n  result = 11LL;\n  while ( *(_DWORD *)(v6 + 124) != a3 )\n  {\n    if ( v12 < v5 )\n    {\n      v6 = *(_QWORD *)(v6 + 176);\n      ++v12;\n      if ( v6 )\n        continue;\n    }\n    return result;\n  }\n  if ( *(_QWORD *)(v6 + 152) )\n    return 27LL;\n  UARPLayer2ReturnBuffer(a1, 0LL);\n  *(_QWORD *)(v6 + 152) = 0LL;\n  *(_DWORD *)(v6 + 160) = 0;\n  UARPLayer2RequestBuffer(a1, 0LL, a5);\n  memcpy(*(void **)(v6 + 152), a4, a5);\n  result = 0LL;\n  *(_DWORD *)(v6 + 160) = a5;\n  *(_DWORD *)(v6 + 28) += a5;\n  *(_DWORD *)(a2 + 8) += a5;\n  *(_DWORD *)(a2 + 684) += a5;\n  *(_WORD *)(a2 + 46) |= 8u;\n  return result;\n}"
+}

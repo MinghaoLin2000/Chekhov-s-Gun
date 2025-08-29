@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask progressUpdateTimerSource]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoConversionTask progressUpdateTimerSource](VideoConversionTask * self, SEL a2)",
+    "pseudocode": "OS_dispatch_source *__cdecl -[VideoConversionTask progressUpdateTimerSource](VideoConversionTask *self, SEL a2)\n{\n  return (OS_dispatch_source *)objc_getProperty(self, a2, 72LL, 1);\n}"
+}

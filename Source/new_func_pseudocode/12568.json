@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_uniqueObjects]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSArray tsu_uniqueObjects](NSArray * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSArray tsu_uniqueObjects](NSArray *self, SEL a2)\n{\n  return +[NSSet setWithArray:](&OBJC_CLASS___NSSet, \"setWithArray:\", self);\n}"
+}

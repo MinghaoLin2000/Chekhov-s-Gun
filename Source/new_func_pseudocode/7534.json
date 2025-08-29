@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV4nullACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV4nullACvgZ()",
+    "pseudocode": "__int64 static CGSConnection.null.getter()\n{\n  return 0LL;\n}"
+}

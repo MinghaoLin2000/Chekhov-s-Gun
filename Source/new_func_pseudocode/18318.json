@@ -1,0 +1,6 @@
+{
+    "function_name": "_mkdir",
+    "function_argument_number": 2,
+    "function_signature": "_mkdir(const char * a1, mode_t a2)",
+    "pseudocode": "int __cdecl mkdir(const char *a1, mode_t a2)\n{\n  return _mkdir(a1, a2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwxx(__int64 a1)",
+    "pseudocode": "unsigned __int64 __fastcall destroy for BundleIdentifier.Symbol(__int64 a1)\n{\n  unsigned __int64 result; // x0\n\n  result = *(_QWORD *)(a1 + 8);\n  if ( result >= 0xFFFFFFFF )\n    return swift_bridgeObjectRelease(result);\n  return result;\n}"
+}

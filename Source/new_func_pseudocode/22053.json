@@ -1,0 +1,6 @@
+{
+    "function_name": "_AEPutAttributePtr",
+    "function_argument_number": 5,
+    "function_signature": "_AEPutAttributePtr(AppleEvent * theAppleEvent, AEKeyword theAEKeyword, DescType typeCode, const void * dataPtr, Size dataSize)",
+    "pseudocode": "OSErr __cdecl AEPutAttributePtr(\n        AppleEvent *theAppleEvent,\n        AEKeyword theAEKeyword,\n        DescType typeCode,\n        const void *dataPtr,\n        Size dataSize)\n{\n  return _AEPutAttributePtr(theAppleEvent, theAEKeyword, typeCode, dataPtr, dataSize);\n}"
+}

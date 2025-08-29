@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceClientListenerDelegate listener]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceClientListenerDelegate listener](DeviceClientListenerDelegate * self, SEL a2)",
+    "pseudocode": "NSXPCListener *__cdecl -[DeviceClientListenerDelegate listener](DeviceClientListenerDelegate *self, SEL a2)\n{\n  return self->_listener;\n}"
+}

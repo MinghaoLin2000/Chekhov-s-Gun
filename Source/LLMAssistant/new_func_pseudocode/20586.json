@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFOperatorTableSetCallback",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFOperatorTableSetCallback(CGPDFOperatorTableRef table, const char * name, CGPDFOperatorCallback callback)",
+    "pseudocode": "void __cdecl CGPDFOperatorTableSetCallback(\n        CGPDFOperatorTableRef table,\n        const char *name,\n        CGPDFOperatorCallback callback)\n{\n  _CGPDFOperatorTableSetCallback(table, name, callback);\n}"
+}

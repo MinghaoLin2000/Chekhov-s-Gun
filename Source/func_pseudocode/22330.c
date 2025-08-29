@@ -1,0 +1,5 @@
+_CTFontDescriptorCreateWithAttributes
+CTFontDescriptorRef __cdecl CTFontDescriptorCreateWithAttributes(CFDictionaryRef attributes)
+{
+  return _CTFontDescriptorCreateWithAttributes(attributes);
+}

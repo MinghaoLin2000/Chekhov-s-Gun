@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DocumentCompressor finalChunkCompletionHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DocumentCompressor finalChunkCompletionHandler:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[DocumentCompressor finalChunkCompletionHandler:](DocumentCompressor *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, unsigned __int8 *, __int64); // x19\n  z_stream_s *stream; // x8\n  z_stream_s *v6; // x0\n  int v7; // w0\n  _BOOL4 v8; // w22\n\n  v4 = (void (__fastcall **)(id, unsigned __int8 *, __int64))objc_retain(a3);\n  stream = self->_stream;\n  if ( stream )\n  {\n    stream->next_in = (Bytef *)\"\";\n    self->_stream->avail_in = 0;\n    do\n    {\n      self->_stream->next_out = self->_buffer;\n      v6 = self->_stream;\n      v6->avail_out = 0x2000;\n      v7 = deflate(v6, 4);\n      v8 = 0;\n      if ( v7 != -5 && v7 != 0 )\n      {\n        if ( v7 != 1 )\n          goto LABEL_11;\n        v8 = 1;\n      }\n      v4[2](v4, self->_buffer, 0x2000LL - self->_stream->avail_out);\n    }\n    while ( !v8 );\n  }\n  LOBYTE(v8) = 1;\nLABEL_11:\n  objc_release(v4);\n  return v8;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf7Message13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf7Message13IsInitializedEv(google::protobuf::Message * this)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::Message::IsInitialized(\n        google::protobuf::Message *this,\n        const google::protobuf::Message *a2)\n{\n  return google::protobuf::internal::ReflectionOps::IsInitialized(this, a2);\n}"
+}

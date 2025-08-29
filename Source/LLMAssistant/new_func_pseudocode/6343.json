@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionHangDetector setProgressUnchangedTimeInterval:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionHangDetector setProgressUnchangedTimeInterval:](VideoConversionHangDetector * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[VideoConversionHangDetector setProgressUnchangedTimeInterval:](\n        VideoConversionHangDetector *self,\n        SEL a2,\n        double a3)\n{\n  self->_progressUnchangedTimeInterval = a3;\n}"
+}

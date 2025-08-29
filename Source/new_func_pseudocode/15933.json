@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpOuiAppleGenericFeatures",
+    "function_argument_number": 0,
+    "function_signature": "_uarpOuiAppleGenericFeatures()",
+    "pseudocode": "__int16 *uarpOuiAppleGenericFeatures()\n{\n  __int16 *result; // x0\n\n  result = &word_10002AC90;\n  word_10002AC90 = 2492;\n  byte_10002AC92 = 99;\n  return result;\n}"
+}

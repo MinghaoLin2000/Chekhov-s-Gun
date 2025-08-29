@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction remoteActionSetDisabled:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceAction remoteActionSetDisabled:](AMLoaderServiceAction * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction remoteActionSetDisabled:](AMLoaderServiceAction *self, SEL a2, bool a3)\n{\n  _QWORD v3[4]; // [xsp+8h] [xbp-28h] BYREF\n  bool v4; // [xsp+28h] [xbp-8h]\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3221225472LL;\n  v3[2] = sub_10000C420;\n  v3[3] = &unk_10001C848;\n  v4 = a3;\n  -[AMLoaderServiceAction _executeSynchronouslyWithLoadedActionOnMainThread:](\n    self,\n    \"_executeSynchronouslyWithLoadedActionOnMainThread:\",\n    v3);\n}"
+}

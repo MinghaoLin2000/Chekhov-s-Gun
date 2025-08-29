@@ -1,0 +1,5 @@
+$s19ControlCenterHelper26UniversalControlErrorAlertCMa
+__int64 type metadata accessor for UniversalControlErrorAlert()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_D5B5BE4DFF05BA1A8E1C2B6A4E21258D26UniversalControlErrorAlert);
+}

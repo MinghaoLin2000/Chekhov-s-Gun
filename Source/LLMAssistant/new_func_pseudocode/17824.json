@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBReaderReadString",
+    "function_argument_number": 0,
+    "function_signature": "_PBReaderReadString()",
+    "pseudocode": "__int64 PBReaderReadString()\n{\n  return _PBReaderReadString();\n}"
+}

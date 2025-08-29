@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV12cursorUpdateACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV12cursorUpdateACvgZ()",
+    "pseudocode": "__int64 static SystemEventMask.cursorUpdate.getter()\n{\n  return sub_1000173E0(&qword_10002A650, &static SystemEventMask.cursorUpdate, sub_100015E44);\n}"
+}

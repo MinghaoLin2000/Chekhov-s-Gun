@@ -1,0 +1,20 @@
+Service Path:
+/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService
+
+Service Exported Protocols:
+@protocol PlugInLibraryServiceProtocol
+- (void)mount:(NSString *)arg1 shareURL:(NSURL *)arg2 mountOnPath:(NSString *)arg3 mountOptions:(NSDictionary *)arg4 withReply:(void (^)(NSError *, NSDictionary *))arg5;
+- (void)enumarateShares:(NSString *)arg1 options:(NSDictionary *)arg2 withReply:(void (^)(NSError *, NSDictionary *))arg3;
+- (void)getServerInfo:(NSURL *)arg1 handle:(NSString *)arg2 options:(NSDictionary *)arg3 withReply:(void (^)(NSError *, NSDictionary *))arg4;
+- (void)closeSession:(NSString *)arg1 withReply:(void (^)(NSError *))arg2;
+- (void)cancel:(NSString *)arg1 withReply:(void (^)(NSError *))arg2;
+- (void)openSession:(NSURL *)arg1 handle:(NSString *)arg2 sessionOptions:(NSDictionary *)arg3 withReply:(void (^)(NSError *, NSDictionary *))arg4;
+- (void)createSessionRef:(NSString *)arg1 withReply:(void (^)(NSError *, NSString *))arg2;
+- (void)parseURL:(NSURL *)arg1 withReply:(void (^)(NSError *, NSDictionary *))arg2;
+- (void)createURL:(NSDictionary *)arg1 withReply:(void (^)(NSError *, NSURL *))arg2;
+- (void)getMountInfo:(NSString *)arg1 withReply:(void (^)(NSError *, NSDictionary *))arg2;
+- (void)getLibraryEntryInfo:(NSString *)arg1 withReply:(void (^)(NSError *, NSDictionary *))arg2;
+- (void)startUp:(NSDictionary *)arg1 withReply:(void (^)(NSError *, NSArray *))arg2;
+@end
+
+Service Entitlements:

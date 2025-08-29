@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMSError",
+    "function_argument_number": 0,
+    "function_signature": "_AMSError()",
+    "pseudocode": "__int64 AMSError()\n{\n  return _AMSError();\n}"
+}

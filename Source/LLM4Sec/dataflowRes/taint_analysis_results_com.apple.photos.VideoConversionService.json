@@ -1,0 +1,8 @@
+{
+    "/System/Library/PrivateFrameworks/MediaConversionService.framework/Versions/A/XPCServices/com.apple.photos.VideoConversionService.xpc/Contents/MacOS/com.apple.photos.VideoConversionService": [
+        "-[VideoConversionService extractStillImageFromVideoAtSourceBookmarkDictionary:toDestinationBookmarkDictionary:options:replyHandler:]",
+        "-[VideoConversionService convertVideoAtSourceBookmarkDictionary:toDestinationBookmarkDictionary:options:replyHandler:]",
+        "-[VideoConversionService singlePassConvertVideoAtSourceBookmarkDictionary:toDestinationBookmarkDictionary:options:replyHandler:]",
+        "-[VideoConversionService generateGIFForVideoAtSourceBookmarkDictionary:toDestinationBookmarkDictionary:options:replyHandler:]"
+    ]
+}

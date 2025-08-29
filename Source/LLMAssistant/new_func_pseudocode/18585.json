@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore23CapsuleSliderAppearanceVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore23CapsuleSliderAppearanceVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for CapsuleSliderAppearance(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100095C40;\n  if ( !qword_100095C40 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for CapsuleSliderAppearance);\n  return result;\n}"
+}

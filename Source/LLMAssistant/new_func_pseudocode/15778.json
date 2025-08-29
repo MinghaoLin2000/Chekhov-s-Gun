@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset setTransferCompleted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[USBAudioAsset setTransferCompleted:](USBAudioAsset * self, SEL a2, unsigned __int8 a3)",
+    "pseudocode": "void __cdecl -[USBAudioAsset setTransferCompleted:](USBAudioAsset *self, SEL a2, unsigned __int8 a3)\n{\n  self->_transferCompleted = a3;\n}"
+}

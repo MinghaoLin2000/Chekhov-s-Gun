@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService15JSServiceObject init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService15JSServiceObject init](_TtC34AppleMediaServicesUIDynamicService15JSServiceObject * self, SEL a2)",
+    "pseudocode": "_TtC34AppleMediaServicesUIDynamicService15JSServiceObject *__cdecl __noreturn -[JSServiceObject init](\n        _TtC34AppleMediaServicesUIDynamicService15JSServiceObject *self,\n        SEL a2)\n{\n  sub_100025DD0(self, a2);\n}"
+}

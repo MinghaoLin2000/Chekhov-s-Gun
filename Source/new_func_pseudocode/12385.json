@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy22UncheckedByteArraySink15GetAppendBufferEmPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6snappy22UncheckedByteArraySink15GetAppendBufferEmPc(snappy::UncheckedByteArraySink * this, unsigned __int64 a2, char * a3)",
+    "pseudocode": "__int64 __fastcall snappy::UncheckedByteArraySink::GetAppendBuffer(\n        snappy::UncheckedByteArraySink *this,\n        unsigned __int64 a2,\n        char *a3)\n{\n  return *((_QWORD *)this + 1);\n}"
+}

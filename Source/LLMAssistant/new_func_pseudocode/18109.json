@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_utf8_to_utf16",
+    "function_argument_number": 3,
+    "function_signature": "_piston_utf8_to_utf16(__int64 a1, unsigned __int64 a2, size_t * a3)",
+    "pseudocode": "_BYTE *__fastcall piston_utf8_to_utf16(__int64 a1, unsigned __int64 a2, size_t *a3)\n{\n  size_t v5; // x0\n  _BYTE *v6; // x0\n  _BYTE *v7; // x19\n  __int64 v8; // x9\n  unsigned int v9; // w8\n\n  v5 = 2 * a2 + 2;\n  *a3 = v5;\n  v6 = malloc_type_malloc(v5, 0x313F31B4uLL);\n  v7 = v6;\n  if ( v6 )\n  {\n    if ( a2 )\n    {\n      v8 = 0LL;\n      v9 = 0;\n      do\n      {\n        v6[v9] = *(_BYTE *)(a1 + v8);\n        v6[v9 + 1] = 0;\n        v9 += 2;\n        ++v8;\n      }\n      while ( a2 > (unsigned int)v8 );\n    }\n    else\n    {\n      v9 = 0;\n    }\n    v6[v9 | 1LL] = 0;\n    v6[v9] = 0;\n  }\n  else if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n  {\n    sub_100010458();\n  }\n  return v7;\n}"
+}

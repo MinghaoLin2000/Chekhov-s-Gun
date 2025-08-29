@@ -1,0 +1,6 @@
+{
+    "function_name": "_getpid",
+    "function_argument_number": 0,
+    "function_signature": "_getpid()",
+    "pseudocode": "pid_t getpid(void)\n{\n  return _getpid();\n}"
+}

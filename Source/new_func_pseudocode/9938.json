@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16DataPropertiesV1D1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16DataPropertiesV1D1Ev(TSP::DataPropertiesV1 * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataPropertiesV1::~DataPropertiesV1(TSP::DataPropertiesV1 *this)\n{\n  __ZN3TSP16DataPropertiesV1D2Ev(this);\n}"
+}

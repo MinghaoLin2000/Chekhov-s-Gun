@@ -1,0 +1,6 @@
+{
+    "function_name": "_main.cold.2",
+    "function_argument_number": 0,
+    "function_signature": "_main.cold.2()",
+    "pseudocode": "void main_cold_2()\n{\n  int *v0; // x0\n  char *v1; // x0\n  uint8_t v2[24]; // [xsp+0h] [xbp-30h] BYREF\n\n  __error();\n  v0 = __error();\n  v1 = strerror(*v0);\n  OUTLINED_FUNCTION_0(v1, COERCE_DOUBLE(67109378LL));\n  _os_log_error_impl(\n    (void *)&_mh_execute_header,\n    (os_log_t)&_os_log_default,\n    OS_LOG_TYPE_ERROR,\n    \"failed to resolve temporary directory (%d): %s\",\n    v2,\n    0x12u);\n}"
+}

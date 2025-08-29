@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUZipFileWriter zipDirectoryAtURL:toURL:queue:completion:]",
+    "function_argument_number": 6,
+    "function_signature": "+[TSUZipFileWriter zipDirectoryAtURL:toURL:queue:completion:](int a1, int a2, int a3, int a4, int a5, id a6)",
+    "pseudocode": "void __cdecl +[TSUZipFileWriter zipDirectoryAtURL:toURL:queue:completion:](id a1, SEL a2, id a3, id a4, id a5, id a6)\n{\n  id v10; // x23\n  _QWORD v11[4]; // [xsp+8h] [xbp-58h] BYREF\n  id v12; // [xsp+28h] [xbp-38h]\n\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_10012CCFC;\n  v11[3] = &unk_1001DCD48;\n  v12 = objc_retain(a6);\n  v10 = objc_retain(v12);\n  objc_msgSend(a1, \"zipDirectoryAtURL:customDirectoryFilename:toURL:queue:progressHandler:\", a3, 0LL, a4, a5, v11);\n  objc_release(v12);\n  objc_release(v10);\n}"
+}

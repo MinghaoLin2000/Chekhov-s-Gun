@@ -1,0 +1,21 @@
+@protocol SiriNCClientProtocol
+- (void)hostAppActivate;
+- (void)hostDragStartedAtMouseDownPoint:(struct CGPoint)arg1;
+- (void)hostCompleteViewTransfer:(void (^)(void))arg1;
+- (void)hostPrepareViewTransferWithGlobalRect:(struct CGRect)arg1 completion:(void (^)(NSString *))arg2;
+- (void)hostPrepareForRemoteViewController;
+- (void)closeSiriInvokedViaEitherCmdTwiceDialog;
+- (void)dismissSiriNCAlertViewControllerWithCompletion:(void (^)(_Bool))arg1;
+- (void)presentSiriNCAlertViewController:(SiriNCAlertViewController *)arg1 launchOptions:(SiriUILaunchOptions *)arg2;
+- (void)serviceUIWasDismissedWithDismissalOptions:(SiriUIDismissalOptions *)arg1;
+- (void)serviceUIWillAppear;
+- (void)addViewsCommandStashed:(SAUIAddViews *)arg1 forCardWithTitle:(NSString *)arg2 imagePath:(NSString *)arg3 canBeShortened:(_Bool)arg4;
+@end
+@protocol SiriNCServiceProtocol
+- (void)didFinishDraggingWindow;
+- (void)siriApplicationFocusChanged:(_Bool)arg1;
+- (void)updateBridgeOSInterstitialsWithCompletion:(void (^)(void))arg1;
+- (void)isSiriListening:(void (^)(_Bool))arg1;
+- (void)setPluginDirectory:(NSString *)arg1;
+- (void)invokeService:(long long)arg1 fromEventSource:(long long)arg2 eventTime:(unsigned long long)arg3 requestInfo:(AFRequestInfo *)arg4 speechRequestOptions:(AFSpeechRequestOptions *)arg5 launchOptions:(SiriUILaunchOptions *)arg6 dismissalOptions:(SiriUIDismissalOptions *)arg7;
+@end

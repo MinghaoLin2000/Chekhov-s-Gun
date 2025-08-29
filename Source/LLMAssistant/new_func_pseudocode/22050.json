@@ -1,0 +1,6 @@
+{
+    "function_name": "_AECreateAppleEvent",
+    "function_argument_number": 6,
+    "function_signature": "_AECreateAppleEvent(AEEventClass theAEEventClass, AEEventID theAEEventID, const AEAddressDesc * target, AEReturnID returnID, AETransactionID transactionID, AppleEvent * result)",
+    "pseudocode": "OSErr __cdecl AECreateAppleEvent(\n        AEEventClass theAEEventClass,\n        AEEventID theAEEventID,\n        const AEAddressDesc *target,\n        AEReturnID returnID,\n        AETransactionID transactionID,\n        AppleEvent *result)\n{\n  return _AECreateAppleEvent(theAEEventClass, theAEEventID, target, returnID, transactionID, result);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ServiceDelegate init]",
+    "function_argument_number": 2,
+    "function_signature": "-[ServiceDelegate init](ServiceDelegate * self, SEL a2)",
+    "pseudocode": "ServiceDelegate *__cdecl -[ServiceDelegate init](ServiceDelegate *self, SEL a2)\n{\n  ServiceDelegate *v2; // x19\n  dispatch_queue_attr_s *v3; // x20\n  dispatch_queue_t v4; // x0\n  OS_dispatch_queue *queue; // x8\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___ServiceDelegate;\n  v2 = -[ServiceDelegate init](&v7, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(dispatch_queue_attr_make_with_autorelease_frequency(0LL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM));\n    v4 = dispatch_queue_create(\"com.apple.AppPredictionIntentsHelperService\", v3);\n    queue = v2->_queue;\n    v2->_queue = (OS_dispatch_queue *)v4;\n    objc_release(queue);\n    objc_release(v3);\n  }\n  return v2;\n}"
+}

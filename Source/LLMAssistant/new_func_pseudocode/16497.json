@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer setServerState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer setServerState:](iAUPServer * self, SEL a2, int a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[iAUPServer setServerState:](iAUPServer *self, SEL a2, int a3)\n{\n  NSLog(\n    &CFSTR(\"[iAUPv2 State]: %s -> %s\").isa,\n    -[iAUPServer serverStateString:](self, \"serverStateString:\", (unsigned int)self->_serverState),\n    -[iAUPServer serverStateString:](self, \"serverStateString:\", *(_QWORD *)&a3));\n  self->_serverState = a3;\n}"
+}

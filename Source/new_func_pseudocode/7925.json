@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionEnumeratorCreate",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionEnumeratorCreate()",
+    "pseudocode": "__int64 CGRegionEnumeratorCreate()\n{\n  return _CGRegionEnumeratorCreate();\n}"
+}

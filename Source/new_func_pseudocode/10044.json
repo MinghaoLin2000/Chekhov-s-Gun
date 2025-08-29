@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP43SupportMetadata_DataCollaborationPropertiesD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP43SupportMetadata_DataCollaborationPropertiesD2Ev(TSP::SupportMetadata_DataCollaborationProperties * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::SupportMetadata_DataCollaborationProperties::~SupportMetadata_DataCollaborationProperties(\n        TSP::SupportMetadata_DataCollaborationProperties *this)\n{\n  __ZN3TSP43SupportMetadata_DataCollaborationPropertiesD2Ev(this);\n}"
+}

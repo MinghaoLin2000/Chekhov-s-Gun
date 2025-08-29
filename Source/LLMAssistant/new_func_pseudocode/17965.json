@@ -1,0 +1,6 @@
+{
+    "function_name": "___47-[WACEAService reconfigureAccessory:withReply:]_block_invoke.7",
+    "function_argument_number": 1,
+    "function_signature": "___47-[WACEAService reconfigureAccessory:withReply:]_block_invoke.7(__int64 a1)",
+    "pseudocode": "void *__fastcall __47__WACEAService_reconfigureAccessory_withReply___block_invoke_7(__int64 a1)\n{\n  void *result; // x0\n\n  do\n    result = objc_msgSend(*(id *)(a1 + 32), \"accessoryReprovisionState\");\n  while ( result );\n  return result;\n}"
+}

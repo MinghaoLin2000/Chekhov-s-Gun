@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRAudioDump discard]",
+    "function_argument_number": 2,
+    "function_signature": "-[LSRAudioDump discard](LSRAudioDump * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LSRAudioDump discard](LSRAudioDump *self, SEL a2)\n{\n  NSFileManager *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[LSRAudioDump close](self, \"close\");\n  v3 = objc_retainAutoreleasedReturnValue(+[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"));\n  -[NSFileManager removeItemAtURL:error:](v3, \"removeItemAtURL:error:\", self->_url, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

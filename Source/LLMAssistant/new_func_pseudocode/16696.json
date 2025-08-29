@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallSetSigningServerURL",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallSetSigningServerURL()",
+    "pseudocode": "__int64 AMAuthInstallSetSigningServerURL()\n{\n  return _AMAuthInstallSetSigningServerURL();\n}"
+}

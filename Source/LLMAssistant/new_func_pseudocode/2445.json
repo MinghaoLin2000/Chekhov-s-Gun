@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesViewController setIsOSStringLoaded:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSoftwareUpdatesViewController setIsOSStringLoaded:](DeviceSoftwareUpdatesViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSoftwareUpdatesViewController setIsOSStringLoaded:](\n        DeviceSoftwareUpdatesViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_isOSStringLoaded = a3;\n}"
+}

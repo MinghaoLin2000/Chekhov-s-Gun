@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBlueButton drawRect:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceBlueButton drawRect:](DeviceBlueButton * self, SEL a2, CGRect a3)",
+    "pseudocode": "void __cdecl -[DeviceBlueButton drawRect:](DeviceBlueButton *self, SEL a2, CGRect a3)\n{\n  double height; // d8\n  double width; // d9\n  double y; // d10\n  double x; // d11\n  NSBezierPath *v8; // x20\n  id v9; // x21\n  objc_super v10; // [xsp+0h] [xbp-50h] BYREF\n\n  height = a3.size.height;\n  width = a3.size.width;\n  y = a3.origin.y;\n  x = a3.origin.x;\n  -[DeviceBlueButton bounds](self, \"bounds\");\n  v8 = objc_retainAutoreleasedReturnValue(\n         +[NSBezierPath bezierPathWithRoundedRect:xRadius:yRadius:](\n           &OBJC_CLASS___NSBezierPath,\n           \"bezierPathWithRoundedRect:xRadius:yRadius:\"));\n  v9 = objc_retainAutoreleasedReturnValue(-[DeviceBlueButton currentFillColor](self, \"currentFillColor\"));\n  objc_msgSend(v9, \"setFill\");\n  objc_release(v9);\n  -[NSBezierPath fill](v8, \"fill\");\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___DeviceBlueButton;\n  -[DeviceBlueButton drawRect:](&v10, \"drawRect:\", x, y, width, height);\n  objc_release(v8);\n}"
+}

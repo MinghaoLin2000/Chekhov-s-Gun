@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService17JSMarketingObject init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService17JSMarketingObject init](_TtC34AppleMediaServicesUIDynamicService17JSMarketingObject * self, SEL a2)",
+    "pseudocode": "_TtC34AppleMediaServicesUIDynamicService17JSMarketingObject *__cdecl __noreturn -[JSMarketingObject init](\n        _TtC34AppleMediaServicesUIDynamicService17JSMarketingObject *self,\n        SEL a2)\n{\n  sub_10001C458(self, a2);\n}"
+}

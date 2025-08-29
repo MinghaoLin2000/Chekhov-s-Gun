@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10WireFormat22MessageSetItemByteSizeEPKNS0_15FieldDescriptorERKNS0_7MessageE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal10WireFormat22MessageSetItemByteSizeEPKNS0_15FieldDescriptorERKNS0_7MessageE(google::protobuf::internal::WireFormat * this, const google::protobuf::FieldDescriptor * a2, const google::protobuf::Message * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::WireFormat::MessageSetItemByteSize(\n        google::protobuf::internal::WireFormat *this,\n        const google::protobuf::FieldDescriptor *a2,\n        const google::protobuf::Message *a3)\n{\n  __int64 v5; // x21\n  google::protobuf::Reflection *v6; // x1\n  __int64 Message; // x0\n  __int64 v8; // x0\n\n  (*(void (__fastcall **)(const google::protobuf::FieldDescriptor *))(*(_QWORD *)a2 + 152LL))(a2);\n  v5 = ((9 * (__clz(*((_DWORD *)this + 17) | 1) ^ 0x1F) + 73) >> 6) + 4LL;\n  Message = google::protobuf::Reflection::GetMessage(v6, a2, this, 0LL);\n  v8 = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)Message + 72LL))(Message);\n  return v5 + v8 + ((9 * (__clz(v8 | 1) ^ 0x1F) + 73) >> 6);\n}"
+}

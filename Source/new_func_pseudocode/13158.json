@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUWarning setAffectedObjects:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUWarning setAffectedObjects:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUWarning setAffectedObjects:](TSUWarning *self, SEL a2, id a3)\n{\n  NSDictionary *userInfo; // x21\n  id v6; // x0\n  void *v7; // x0\n  void *v8; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  userInfo = self->_userInfo;\n  v6 = objc_retain(a3);\n  if ( userInfo )\n    v7 = -[NSDictionary mutableCopy](userInfo, \"mutableCopy\");\n  else\n    v7 = objc_retainAutoreleasedReturnValue(+[NSMutableDictionary dictionary](&OBJC_CLASS___NSMutableDictionary, \"dictionary\"));\n  v8 = v7;\n  objc_msgSend(v7, \"setObject:forKeyedSubscript:\", a3, CFSTR(\"TSUWarningUserInfoAffectedObjectsKey\"));\n  objc_release(a3);\n  -[TSUWarning setUserInfo:](self, \"setUserInfo:\", v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

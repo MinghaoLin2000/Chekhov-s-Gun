@@ -1,0 +1,5 @@
+_SLSTransactionSetManagedDisplayCurrentSpace
+__int64 SLSTransactionSetManagedDisplayCurrentSpace()
+{
+  return _SLSTransactionSetManagedDisplayCurrentSpace();
+}

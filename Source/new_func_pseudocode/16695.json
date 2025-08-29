@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallLogSetHandler",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallLogSetHandler()",
+    "pseudocode": "__int64 AMAuthInstallLogSetHandler()\n{\n  return _AMAuthInstallLogSetHandler();\n}"
+}

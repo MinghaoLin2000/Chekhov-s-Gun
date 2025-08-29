@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate localizedStringForKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate localizedStringForKey:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[UARPUpdaterDisplayControllerDelegate localizedStringForKey:](\n        UARPUpdaterDisplayControllerDelegate *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x21\n  NSBundle *v5; // x19\n  NSString *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(+[NSBundle bundleForClass:](&OBJC_CLASS___NSBundle, \"bundleForClass:\", objc_opt_class(self)));\n  v6 = objc_retainAutoreleasedReturnValue(\n         -[NSBundle localizedStringForKey:value:table:](\n           v5,\n           \"localizedStringForKey:value:table:\",\n           v4,\n           v4,\n           CFSTR(\"Localizable\")));\n  objc_release(v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

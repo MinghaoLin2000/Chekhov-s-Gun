@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter10PrintBytesERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_17BaseTextGeneratorE",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter10PrintBytesERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_17BaseTextGeneratorE(__int64 a1)",
+    "pseudocode": "__int64 __fastcall google::protobuf::TextFormat::FastFieldValuePrinter::PrintBytes(__int64 a1)\n{\n  return (*(__int64 (**)(void))(*(_QWORD *)a1 + 72LL))();\n}"
+}

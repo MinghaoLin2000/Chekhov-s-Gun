@@ -1,0 +1,5 @@
+__Z17validateComponent25AudioComponentDescriptionjPK14__CFDictionaryU13block_pointerFv30AudioComponentValidationResultS2_E
+__int64 validateComponent()
+{
+  return validateComponent();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter setEntryInsertionOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipWriter setEntryInsertionOffset:](TSUZipWriter * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[TSUZipWriter setEntryInsertionOffset:](TSUZipWriter *self, SEL a2, signed __int64 a3)\n{\n  dispatch_queue_s *writeQueue; // x8\n  _QWORD v4[6]; // [xsp+0h] [xbp-30h] BYREF\n\n  writeQueue = (dispatch_queue_s *)self->_writeQueue;\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_100154414;\n  v4[3] = &unk_1001DD780;\n  v4[4] = self;\n  v4[5] = a3;\n  dispatch_sync(writeQueue, v4);\n}"
+}

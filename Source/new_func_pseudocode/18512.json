@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate didUpdateUIState:previous:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate didUpdateUIState:previous:](_TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate * self, SEL a2, unsigned __int64 a3, unsigned __int64 a4)",
+    "pseudocode": "void __cdecl -[WiFiHelperClientDelegate didUpdateUIState:previous:](\n        _TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate *self,\n        SEL a2,\n        unsigned __int64 a3,\n        unsigned __int64 a4)\n{\n  _TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(self);\n  sub_1000199C4(a3, a4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

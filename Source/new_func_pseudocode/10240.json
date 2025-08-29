@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP5ColorD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP5ColorD1Ev(TSP::Color * this)",
+    "pseudocode": "void __fastcall TSP::Color::~Color(TSP::Color *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

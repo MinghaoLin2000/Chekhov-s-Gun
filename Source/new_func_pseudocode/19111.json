@@ -1,0 +1,6 @@
+{
+    "function_name": "_kdebug_trace",
+    "function_argument_number": 0,
+    "function_signature": "_kdebug_trace()",
+    "pseudocode": "__int64 kdebug_trace()\n{\n  return _kdebug_trace();\n}"
+}

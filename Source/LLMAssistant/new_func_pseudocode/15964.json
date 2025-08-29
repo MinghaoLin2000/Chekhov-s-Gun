@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpLoggingCategoryToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpLoggingCategoryToString(unsigned int a1)",
+    "pseudocode": "const char *__fastcall uarpLoggingCategoryToString(unsigned int a1)\n{\n  if ( a1 > 8 )\n    return \"<unknown>\";\n  else\n    return (&off_100024778)[a1];\n}"
+}

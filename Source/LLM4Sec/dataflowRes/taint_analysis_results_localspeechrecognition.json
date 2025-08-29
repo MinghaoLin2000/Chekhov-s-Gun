@@ -1,0 +1,6 @@
+{
+    "/System/Library/Frameworks/Speech.framework/Versions/A/XPCServices/localspeechrecognition.xpc/Contents/MacOS/localspeechrecognition": [
+        "-[LSRConnection downloadAssetsForConfig:clientID:detailedProgress:]",
+        "-[LSRConnection supportedLanguagesForAssetType:completion:]"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriterEntry setSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipWriterEntry setSize:](TSUZipWriterEntry * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSUZipWriterEntry setSize:](TSUZipWriterEntry *self, SEL a2, unsigned __int64 a3)\n{\n  self->_size = a3;\n}"
+}

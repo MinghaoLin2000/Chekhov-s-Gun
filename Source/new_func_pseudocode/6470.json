@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoStillImageExtractionTask .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoStillImageExtractionTask .cxx_destruct](VideoStillImageExtractionTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[VideoStillImageExtractionTask .cxx_destruct](VideoStillImageExtractionTask *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_imageData, 0LL);\n}"
+}

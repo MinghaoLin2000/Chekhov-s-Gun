@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGEventGetTimestamp",
+    "function_argument_number": 1,
+    "function_signature": "_CGEventGetTimestamp(CGEventRef event)",
+    "pseudocode": "CGEventTimestamp __cdecl CGEventGetTimestamp(CGEventRef event)\n{\n  return _CGEventGetTimestamp(event);\n}"
+}

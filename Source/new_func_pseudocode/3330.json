@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_opt_respondsToSelector",
+    "function_argument_number": 0,
+    "function_signature": "_objc_opt_respondsToSelector()",
+    "pseudocode": "__int64 objc_opt_respondsToSelector()\n{\n  return _objc_opt_respondsToSelector();\n}"
+}

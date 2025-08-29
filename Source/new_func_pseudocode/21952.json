@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAUbiquityController ubiquitousPassHashForFilename:]",
+    "function_argument_number": 3,
+    "function_signature": "+[PAUbiquityController ubiquitousPassHashForFilename:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl +[PAUbiquityController ubiquitousPassHashForFilename:](id a1, SEL a2, id a3)\n{\n  id v4; // x20\n  void *v5; // x19\n  NSFileManager *v6; // x20\n  void *v7; // x21\n  unsigned int v8; // w22\n  id v9; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend((id)objc_opt_class(a1), \"_ubiquitousURLForFilename:\", v4));\n  objc_release(v4);\n  v6 = objc_retainAutoreleasedReturnValue(+[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"));\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v5, \"path\"));\n  v8 = -[NSFileManager fileExistsAtPath:](v6, \"fileExistsAtPath:\", v7);\n  objc_release(v7);\n  objc_release(v6);\n  if ( v8 )\n    v9 = objc_retainAutoreleasedReturnValue((id)PKManifestHash(v5));\n  else\n    v9 = 0LL;\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v9);\n}"
+}

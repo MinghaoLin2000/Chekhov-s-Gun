@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionRunner set_stateLock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMRemoteActionRunner set_stateLock:](AMRemoteActionRunner * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[AMRemoteActionRunner set_stateLock:](AMRemoteActionRunner *self, SEL a2, os_unfair_lock_s a3)\n{\n  self->__stateLock = a3;\n}"
+}

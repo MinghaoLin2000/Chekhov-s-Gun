@@ -1,0 +1,6 @@
+{
+    "function_name": "$s3__C19SFEntitledAssetTypeOMa",
+    "function_argument_number": 1,
+    "function_signature": "$s3__C19SFEntitledAssetTypeOMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for SFEntitledAssetType(__int64 a1)\n{\n  return sub_1000052E0(a1, &unk_100062BF0, &unk_1000594A0);\n}"
+}

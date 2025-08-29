@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGRectV16EyeCandyGraphicsE15rectByCenteringyA2BF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo6CGRectV16EyeCandyGraphicsE15rectByCenteringyA2BF()",
+    "pseudocode": "double CGRect.rectByCentering(_:)()\n{\n  double v0; // d9\n  double MidX; // d14\n  CGRect v3; // 0:d0.8,8:d1.8,16:d2.8,24:d3.8\n\n  v3.origin.x = sub_100014144();\n  MidX = CGRectGetMidX(v3);\n  sub_100014104();\n  return MidX - v0 * 0.5;\n}"
+}

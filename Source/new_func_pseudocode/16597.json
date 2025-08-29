@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent send]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent send](UARPActiveFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPActiveFirmwareAnalyticsEvent send](UARPActiveFirmwareAnalyticsEvent *self, SEL a2)\n{\n  _QWORD v2[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  v2[0] = _NSConcreteStackBlock;\n  v2[1] = 3254779904LL;\n  v2[2] = sub_10001624C;\n  v2[3] = &unk_100031A48;\n  v2[4] = self;\n  AnalyticsSendEventLazy(CFSTR(\"com.apple.aud.uarp.ActiveFirmware\"), v2);\n}"
+}

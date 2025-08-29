@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSGetWindowFrameBounds",
+    "function_argument_number": 0,
+    "function_signature": "_SLSGetWindowFrameBounds()",
+    "pseudocode": "__int64 SLSGetWindowFrameBounds()\n{\n  return _SLSGetWindowFrameBounds();\n}"
+}

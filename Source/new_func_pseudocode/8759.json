@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for AppQueryRequest()\n{\n  return &type metadata for AppQueryRequest;\n}"
+}

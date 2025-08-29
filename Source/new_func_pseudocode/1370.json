@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesBaseView wantsLayer]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesBaseView wantsLayer](DeviceSettingsMoviesBaseView * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsMoviesBaseView wantsLayer](DeviceSettingsMoviesBaseView *self, SEL a2)\n{\n  return 1;\n}"
+}

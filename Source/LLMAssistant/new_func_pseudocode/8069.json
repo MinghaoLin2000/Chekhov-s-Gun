@@ -1,0 +1,6 @@
+{
+    "function_name": "_INIntentCreate",
+    "function_argument_number": 0,
+    "function_signature": "_INIntentCreate()",
+    "pseudocode": "__int64 INIntentCreate()\n{\n  return _INIntentCreate();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController deviceSummaryViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFinderTabContainerViewController deviceSummaryViewController](DeviceFinderTabContainerViewController * self, SEL a2)",
+    "pseudocode": "DeviceViewController *__cdecl -[DeviceFinderTabContainerViewController deviceSummaryViewController](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2)\n{\n  DeviceViewController *deviceSummaryViewController; // x0\n  DeviceViewController *v4; // x0\n  DeviceViewController *v5; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  deviceSummaryViewController = self->_deviceSummaryViewController;\n  if ( !deviceSummaryViewController )\n  {\n    v4 = (DeviceViewController *)objc_opt_new(&OBJC_CLASS___DeviceSummaryViewController, a2);\n    v5 = self->_deviceSummaryViewController;\n    self->_deviceSummaryViewController = v4;\n    objc_release(v5);\n    deviceSummaryViewController = self->_deviceSummaryViewController;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(deviceSummaryViewController);\n}"
+}

@@ -1,0 +1,33 @@
+Service Path:
+/System/Library/PrivateFrameworks/SocialUI.framework/Versions/A/XPCServices/com.apple.messages.MapRenderingService.xpc/Contents/MacOS/com.apple.messages.MapRenderingService
+
+Service Exported Protocols:
+@protocol MapRenderingServiceProtocol <NSObject>
+- (void)renderMapFile:(NSURL *)arg1 completionBlock:(void (^)(NSData *, NSURL *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.developer.maps
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Messages
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.addressbook
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /

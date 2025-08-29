@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSUUID tsu_compare:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSUUID tsu_compare:](int a1, int a2, id a3)",
+    "pseudocode": "signed __int64 __cdecl -[NSUUID tsu_compare:](NSUUID *self, SEL a2, id a3)\n{\n  id v4; // x20\n  unsigned __int64 v5; // x8\n  unsigned __int64 v6; // x9\n  int v7; // w8\n  bool v8; // zf\n  bool v9; // nf\n  signed __int64 v10; // x8\n  unsigned __int64 v12; // [xsp+8h] [xbp-38h] BYREF\n  unsigned __int64 v13; // [xsp+10h] [xbp-30h]\n  unsigned __int64 v14; // [xsp+18h] [xbp-28h] BYREF\n  unsigned __int64 v15; // [xsp+20h] [xbp-20h]\n\n  v14 = 0LL;\n  v15 = 0LL;\n  v12 = 0LL;\n  v13 = 0LL;\n  v4 = objc_retain(a3);\n  -[NSUUID getUUIDBytes:](self, \"getUUIDBytes:\", &v14);\n  objc_msgSend(v4, \"getUUIDBytes:\", &v12);\n  objc_release(v4);\n  v5 = bswap64(v14);\n  v6 = bswap64(v12);\n  if ( v5 == v6 && (v5 = bswap64(v15), v6 = bswap64(v13), v5 == v6) )\n  {\n    v7 = 0;\n  }\n  else if ( v5 < v6 )\n  {\n    v7 = -1;\n  }\n  else\n  {\n    v7 = 1;\n  }\n  v8 = v7 == 0;\n  v9 = v7 < 0;\n  v10 = -1LL;\n  if ( !v9 )\n    v10 = 1LL;\n  if ( v8 )\n    return 0LL;\n  else\n    return v10;\n}"
+}

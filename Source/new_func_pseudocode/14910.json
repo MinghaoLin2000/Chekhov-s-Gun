@@ -1,0 +1,6 @@
+{
+    "function_name": "_fpfs_set_vfs_ignore_permissions_iopolicy",
+    "function_argument_number": 0,
+    "function_signature": "_fpfs_set_vfs_ignore_permissions_iopolicy()",
+    "pseudocode": "__int64 fpfs_set_vfs_ignore_permissions_iopolicy()\n{\n  return _fpfs_set_vfs_ignore_permissions_iopolicy();\n}"
+}

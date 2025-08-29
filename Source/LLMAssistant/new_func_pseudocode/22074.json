@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FMMFileLogger serialQueue]",
+    "function_argument_number": 2,
+    "function_signature": "-[FMMFileLogger serialQueue](FMMFileLogger * self, SEL a2)",
+    "pseudocode": "OS_dispatch_queue *__cdecl -[FMMFileLogger serialQueue](FMMFileLogger *self, SEL a2)\n{\n  return self->_serialQueue;\n}"
+}

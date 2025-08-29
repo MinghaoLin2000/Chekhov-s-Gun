@@ -1,0 +1,5 @@
+__swift_stdlib_reportUnimplementedInitializer
+__int64 _swift_stdlib_reportUnimplementedInitializer()
+{
+  return __swift_stdlib_reportUnimplementedInitializer();
+}

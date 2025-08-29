@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKNANEndpoint name]",
+    "function_argument_number": 2,
+    "function_signature": "-[PKNANEndpoint name](PKNANEndpoint * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[PKNANEndpoint name](PKNANEndpoint *self, SEL a2)\n{\n  WiFiAwareDiscoveryResult *v2; // x19\n  void *v3; // x20\n  void *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[PKNANEndpoint discoveryResult](self, \"discoveryResult\"));\n  v3 = objc_retainAutoreleasedReturnValue(-[WiFiAwareDiscoveryResult serviceSpecificInfo](v2, \"serviceSpecificInfo\"));\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(v3, \"instanceName\"));\n  objc_release(v3);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSString *)objc_autoreleaseReturnValue(v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer processPersonalizationInfo:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[iAUPServer processPersonalizationInfo:length:](iAUPServer * self, SEL a2, char * a3, unsigned int a4)",
+    "pseudocode": "void __cdecl -[iAUPServer processPersonalizationInfo:length:](iAUPServer *self, SEL a2, char *a3, unsigned int a4)\n{\n  id v5; // x2\n  iAUPServerDelegate *delegate; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( a3 && a4 )\n  {\n    if ( (*a3 & 0xF) == 1 )\n    {\n      v5 = -[iAUPServer processManifestProperties:length:](self, \"processManifestProperties:length:\");\n      goto LABEL_7;\n    }\n    NSLog(&CFSTR(\"[processPersonalizationInfo] Unsupported infoType = %d\\n\").isa, a2, (unsigned __int8)*a3);\n  }\n  else\n  {\n    NSLog(&CFSTR(\"[processPersonalizationInfo] Invalid payload length=%d\\n\").isa, a2, a4);\n  }\n  v5 = 0LL;\nLABEL_7:\n  delegate = self->_delegate;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[iAUPServerDelegate processPersonalizationInfoFromAccessory:](\n    delegate,\n    \"processPersonalizationInfoFromAccessory:\",\n    v5);\n}"
+}

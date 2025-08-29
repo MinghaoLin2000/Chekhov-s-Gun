@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULogHelper setThrottleCount:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSULogHelper setThrottleCount:](TSULogHelper * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSULogHelper setThrottleCount:](TSULogHelper *self, SEL a2, unsigned __int64 a3)\n{\n  self->_throttleCount = a3;\n}"
+}

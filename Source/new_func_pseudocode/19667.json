@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSession debugDescription]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSession debugDescription](IPPSession * self, SEL a2)",
+    "pseudocode": "id __cdecl -[IPPSession debugDescription](IPPSession *self, SEL a2)\n{\n  id v3; // x19\n  NSURLSessionConfiguration *v4; // x20\n  NSDictionary *v5; // x22\n  NSString *v6; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[IPPSession getLogLeader](self, \"getLogLeader\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[NSURLSession configuration](self->_URLSession, \"configuration\"));\n  v5 = objc_retainAutoreleasedReturnValue(-[NSURLSessionConfiguration HTTPAdditionalHeaders](v4, \"HTTPAdditionalHeaders\"));\n  v6 = objc_retainAutoreleasedReturnValue(\n         +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"%@ - http headers: %@\"),\n           v3,\n           v5));\n  objc_release(v5);\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

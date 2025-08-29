@@ -1,0 +1,6 @@
+{
+    "function_name": "_PKURLWithUTF8String",
+    "function_argument_number": 1,
+    "function_signature": "_PKURLWithUTF8String(__int64 a1)",
+    "pseudocode": "NSURL *__fastcall PKURLWithUTF8String(__int64 a1)\n{\n  NSString *v1; // x19\n  NSURL *v2; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( a1 )\n  {\n    v1 = objc_retainAutoreleasedReturnValue(+[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", a1));\n    v2 = objc_retainAutoreleasedReturnValue(PKURLWithString(v1));\n    objc_release(v1);\n  }\n  else\n  {\n    v2 = 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

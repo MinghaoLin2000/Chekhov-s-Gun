@@ -1,0 +1,23 @@
+Service Path:
+/System/Library/PrivateFrameworks/ProfileValidatedAppIdentity.framework/Versions/A/XPCServices/ProfileValidatedAppIdentityService.xpc/Contents/MacOS/ProfileValidatedAppIdentityService
+
+Service Exported Protocols:
+@protocol PVAppIdentityServiceProtocol
+- (void)generateDigest:(NSURL *)arg1 ppqAppId:(NSData *)arg2 withReply:(void (^)(PVAppIdentityDigest *))arg3;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.security.exception.sysctl.read-write
+	[Value]
+		[Array]
+			[String] kern.grade_cputype
+	[Key] com.apple.security.ts.read-any-bundle
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true

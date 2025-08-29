@@ -1,0 +1,5 @@
+_$s22localspeechrecognition17RequestEndMetricsC8pmOutputSSSgvpfi_0
+__int64 _s22localspeechrecognition17RequestEndMetricsC8pmOutputSSSgvpfi_0()
+{
+  return 0LL;
+}

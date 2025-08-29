@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromTSPVersion",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromTSPVersion(unsigned __int64 a1)",
+    "pseudocode": "NSString *__fastcall NSStringFromTSPVersion(unsigned __int64 a1)\n{\n  return +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"%u.%u.%u\"),\n           HIWORD(a1),\n           WORD2(a1),\n           a1);\n}"
+}

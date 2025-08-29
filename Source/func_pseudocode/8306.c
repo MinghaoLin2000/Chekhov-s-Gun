@@ -1,0 +1,5 @@
+_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskC6window33_AB357ACCBFBEE0A928F2B137C80A3246LLSo8NSWindowCSgvpfi
+__int64 variable initialization expression of ViewPresentationTask.window()
+{
+  return 0LL;
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP43SupportMetadata_DataCollaborationProperties13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP43SupportMetadata_DataCollaborationProperties13IsInitializedEv(TSP::SupportMetadata_DataCollaborationProperties * this)",
+    "pseudocode": "__int64 __fastcall TSP::SupportMetadata_DataCollaborationProperties::IsInitialized(\n        TSP::SupportMetadata_DataCollaborationProperties *this)\n{\n  return *((_DWORD *)this + 4) & 1;\n}"
+}

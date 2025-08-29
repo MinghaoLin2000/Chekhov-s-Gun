@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LoginUserService _authenticationAuthorityForUserWithUID:onNode:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LoginUserService _authenticationAuthorityForUserWithUID:onNode:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl -[LoginUserService _authenticationAuthorityForUserWithUID:onNode:](\n        LoginUserService *self,\n        SEL a2,\n        unsigned int a3,\n        id a4)\n{\n  __int64 v4; // x20\n  id v6; // x19\n  id v7; // x20\n  id v8; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = *(_QWORD *)&a3;\n  v6 = objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(-[LoginUserService _userRecordForUserWithUID:onNode:](self, \"_userRecordForUserWithUID:onNode:\", v4, v6));\n  if ( v7 )\n    v8 = objc_retainAutoreleasedReturnValue(\n           -[LoginUserService _authenticationAuthorityForUserRecord:](\n             self,\n             \"_authenticationAuthorityForUserRecord:\",\n             v7));\n  else\n    v8 = 0LL;\n  objc_release(v7);\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v8);\n}"
+}

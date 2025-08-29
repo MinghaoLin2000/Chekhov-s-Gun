@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOObjectConformsTo",
+    "function_argument_number": 2,
+    "function_signature": "_IOObjectConformsTo(io_object_t object, const char *__attribute__((__org_typedef(io_name_t))) className)",
+    "pseudocode": "boolean_t __cdecl IOObjectConformsTo(io_object_t object, const io_name_t className)\n{\n  return _IOObjectConformsTo(object, className);\n}"
+}

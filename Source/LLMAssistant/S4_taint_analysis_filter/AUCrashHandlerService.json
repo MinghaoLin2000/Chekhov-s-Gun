@@ -1,0 +1,6 @@
+{
+  "-[AUCrashHandlerService notifyCrash:withCrashInfo:]": 4294980168,
+  "_objc_msgSend$notifyCrash:withCrashInfo:": 4294990464,
+  "-[AUCrashHandlerService didReceiveDiagnosticLog:ofType:details:]": 4294980324,
+  "-[AUCrashHandlerService addCrashObserverForXPCEndpoint:withReply:]": 4294983304
+}

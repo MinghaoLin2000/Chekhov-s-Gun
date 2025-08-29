@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBReaderSkipValueWithTag",
+    "function_argument_number": 0,
+    "function_signature": "_PBReaderSkipValueWithTag()",
+    "pseudocode": "__int64 PBReaderSkipValueWithTag()\n{\n  return _PBReaderSkipValueWithTag();\n}"
+}

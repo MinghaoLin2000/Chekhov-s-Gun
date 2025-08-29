@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18EpsCopyInputStream12SkipFallbackEPKci",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal18EpsCopyInputStream12SkipFallbackEPKci(google::protobuf::internal::EpsCopyInputStream * this, const char * a2, int a3)",
+    "pseudocode": "google::protobuf::internal::EpsCopyInputStream *__fastcall google::protobuf::internal::EpsCopyInputStream::SkipFallback(\n        google::protobuf::internal::EpsCopyInputStream *this,\n        const char *a2,\n        int a3)\n{\n  int v5; // w21\n  google::protobuf::internal::EpsCopyInputStream *result; // x0\n\n  v5 = *((_DWORD *)this + 2) - (_DWORD)a2 + 16;\n  while ( *((_QWORD *)this + 2) && *((int *)this + 7) >= 17 )\n  {\n    result = google::protobuf::internal::EpsCopyInputStream::Next(this);\n    if ( !result )\n      return result;\n    a3 -= v5;\n    v5 = *((_DWORD *)this + 2) - (_DWORD)result;\n    if ( a3 <= v5 )\n      return (google::protobuf::internal::EpsCopyInputStream *)((char *)result + a3 + 16);\n  }\n  return 0LL;\n}"
+}

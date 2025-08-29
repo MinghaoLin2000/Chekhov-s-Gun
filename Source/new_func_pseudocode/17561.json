@@ -1,0 +1,6 @@
+{
+    "function_name": "j____clang_call_terminate_0",
+    "function_argument_number": 1,
+    "function_signature": "j____clang_call_terminate_0(void * a1)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall __noreturn j____clang_call_terminate_0(void *a1)\n{\n  __clang_call_terminate(a1);\n}"
+}

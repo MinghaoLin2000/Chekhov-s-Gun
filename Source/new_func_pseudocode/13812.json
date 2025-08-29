@@ -1,0 +1,6 @@
+{
+    "function_name": "_fclose",
+    "function_argument_number": 1,
+    "function_signature": "_fclose(FILE * a1)",
+    "pseudocode": "int __cdecl fclose(FILE *a1)\n{\n  return _fclose(a1);\n}"
+}

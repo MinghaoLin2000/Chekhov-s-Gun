@@ -1,0 +1,5 @@
+_uarpPlatformCancelPendingTxMessages
+void uarpPlatformCancelPendingTxMessages()
+{
+  ;
+}

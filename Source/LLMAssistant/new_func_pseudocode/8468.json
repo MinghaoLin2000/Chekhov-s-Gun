@@ -1,0 +1,6 @@
+{
+    "function_name": "_AuthorizationCreate",
+    "function_argument_number": 4,
+    "function_signature": "_AuthorizationCreate(const AuthorizationRights * rights, const AuthorizationEnvironment * environment, AuthorizationFlags flags, AuthorizationRef * authorization)",
+    "pseudocode": "OSStatus __cdecl AuthorizationCreate(\n        const AuthorizationRights *rights,\n        const AuthorizationEnvironment *environment,\n        AuthorizationFlags flags,\n        AuthorizationRef *authorization)\n{\n  return _AuthorizationCreate(rights, environment, flags, authorization);\n}"
+}

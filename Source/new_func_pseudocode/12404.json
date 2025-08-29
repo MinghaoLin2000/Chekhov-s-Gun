@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr3SetEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEOS9_PNS0_5ArenaE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr3SetEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEOS9_PNS0_5ArenaE(__int64 * a1, __int64 a2, __int128 * a3, __int64 a4)",
+    "pseudocode": "void __fastcall google::protobuf::internal::ArenaStringPtr::Set(__int64 *a1, __int64 a2, __int128 *a3, __int64 a4)\n{\n  __int64 v5; // x21\n  __int128 v6; // q0\n  __int64 v8; // x0\n\n  v5 = *a1;\n  if ( *a1 == a2 )\n  {\n    if ( a4 )\n    {\n      v8 = sub_1000EFAB8(a4, a3);\n    }\n    else\n    {\n      v8 = operator new(24LL, 0x1012C40EC159624LL);\n      *(_OWORD *)v8 = *a3;\n      *(_QWORD *)(v8 + 16) = *((_QWORD *)a3 + 2);\n      *(_QWORD *)a3 = 0LL;\n      *((_QWORD *)a3 + 1) = 0LL;\n      *((_QWORD *)a3 + 2) = 0LL;\n    }\n    *a1 = v8;\n  }\n  else\n  {\n    if ( *(char *)(v5 + 23) < 0 )\n      operator delete(*(void **)v5);\n    v6 = *a3;\n    *(_QWORD *)(v5 + 16) = *((_QWORD *)a3 + 2);\n    *(_OWORD *)v5 = v6;\n    *((_BYTE *)a3 + 23) = 0;\n    *(_BYTE *)a3 = 0;\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_HMHomeManagerFunction",
+    "function_argument_number": 0,
+    "function_signature": "_HMHomeManagerFunction()",
+    "pseudocode": "id HMHomeManagerFunction()\n{\n  return objc_retainAutoreleaseReturnValue((id)classHMHomeManager);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLSandboxSetProfile",
+    "function_argument_number": 0,
+    "function_signature": "_QLSandboxSetProfile()",
+    "pseudocode": "__int64 QLSandboxSetProfile()\n{\n  return _QLSandboxSetProfile();\n}"
+}

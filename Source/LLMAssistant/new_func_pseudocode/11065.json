@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21ExtensionRangeOptionsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf21ExtensionRangeOptionsD1Ev(google::protobuf::ExtensionRangeOptions * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::ExtensionRangeOptions::~ExtensionRangeOptions(\n        google::protobuf::ExtensionRangeOptions *this)\n{\n  __ZN6google8protobuf21ExtensionRangeOptionsD2Ev(this);\n}"
+}

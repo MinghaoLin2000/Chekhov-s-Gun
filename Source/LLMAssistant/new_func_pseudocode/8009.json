@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionSetSpaceTransform",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionSetSpaceTransform()",
+    "pseudocode": "__int64 SLSTransactionSetSpaceTransform()\n{\n  return _SLSTransactionSetSpaceTransform();\n}"
+}

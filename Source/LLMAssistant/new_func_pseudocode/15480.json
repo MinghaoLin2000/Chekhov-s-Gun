@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_connection_set_target_uid",
+    "function_argument_number": 0,
+    "function_signature": "_xpc_connection_set_target_uid()",
+    "pseudocode": "__int64 xpc_connection_set_target_uid()\n{\n  return _xpc_connection_set_target_uid();\n}"
+}

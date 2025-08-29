@@ -1,0 +1,6 @@
+{
+    "function_name": "___stack_chk_fail",
+    "function_argument_number": 0,
+    "function_signature": "___stack_chk_fail()",
+    "pseudocode": "void __noreturn __stack_chk_fail()\n{\n  ___stack_chk_fail();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t printer]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t printer](lite_job_t * self, SEL a2)",
+    "pseudocode": "lite_printer_t *__cdecl -[lite_job_t printer](lite_job_t *self, SEL a2)\n{\n  return (lite_printer_t *)objc_getProperty(self, a2, 200LL, 1);\n}"
+}

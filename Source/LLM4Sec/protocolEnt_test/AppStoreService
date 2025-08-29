@@ -1,0 +1,22 @@
+Service Path:
+/System/Library/PrivateFrameworks/FileProviderDaemon.framework/XPCServices/AppStoreService.xpc/Contents/MacOS/AppStoreService
+
+Service Exported Protocols:
+@protocol AppStoreServiceProtocol
+- (void)startOperation:(id <FPOperationClient>)arg1 toFetchAppStoreIconsForAppBundleIDs:(NSArray *)arg2 desiredSizeToScale:(struct CGSize)arg3 completionHandler:(void (^)(void))arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.FileProviderDaemon.AppStoreService
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.FileProviderDaemon.AppStoreService
+	[Key] com.apple.private.applemediaservices
+	[Value]
+		[Bool] true
+	[Key] fairplay-client
+	[Value]
+		[String] 511712240

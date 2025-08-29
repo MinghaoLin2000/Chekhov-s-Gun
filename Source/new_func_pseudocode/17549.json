@@ -1,0 +1,6 @@
+{
+    "function_name": "___31-[CGPDFPageImpl getIdentifier:]_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___31-[CGPDFPageImpl getIdentifier:]_block_invoke(__int64 a1)",
+    "pseudocode": "__int64 __fastcall __31__CGPDFPageImpl_getIdentifier___block_invoke(__int64 a1)\n{\n  return (*(__int64 (__fastcall **)(_QWORD, _QWORD))(*(_QWORD *)(a1 + 40) + 16LL))(\n           *(_QWORD *)(a1 + 40),\n           *(_QWORD *)(*(_QWORD *)(a1 + 32) + 16LL));\n}"
+}

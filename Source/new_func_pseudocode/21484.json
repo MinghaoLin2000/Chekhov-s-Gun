@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[LSRConnection .cxx_destruct](LSRConnection * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LSRConnection .cxx_destruct](LSRConnection *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_euclidInstance, 0LL);\n  objc_storeStrong((id *)&self->_generalASRAssetDelegateInterface, 0LL);\n  objc_storeStrong((id *)&self->_assistantAssetDelegateInterface, 0LL);\n  objc_storeStrong((id *)&self->_earInterface, 0LL);\n  objc_storeStrong((id *)&self->_lsrLanguageModel, 0LL);\n  objc_storeStrong((id *)&self->sigterm_source, 0LL);\n  objc_storeStrong((id *)&self->sigterm_queue, 0LL);\n  objc_storeStrong((id *)&self->_modelRoot, 0LL);\n  objc_storeStrong((id *)&self->_audioDump, 0LL);\n  objc_storeStrong((id *)&self->_requestParameters, 0LL);\n  objc_storeStrong((id *)&self->_consumedSandboxExtensions, 0LL);\n  objc_storeStrong((id *)&self->_lastRecognitionResult, 0LL);\n  objc_storeStrong((id *)&self->_bufferedAudioPackets, 0LL);\n  objc_storeStrong((id *)&self->_connection, 0LL);\n  objc_storeStrong((id *)&self->_audioBuffer, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_recognizer);\n}"
+}

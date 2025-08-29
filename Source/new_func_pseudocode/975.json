@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAudiobooksViewController setAudiobookNodes:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsAudiobooksViewController setAudiobookNodes:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsAudiobooksViewController setAudiobookNodes:](\n        DeviceSettingsAudiobooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_audiobookNodes, a3);\n}"
+}

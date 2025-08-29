@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSData tsp_dataWithEncryptionKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSData tsp_dataWithEncryptionKey:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[NSData tsp_dataWithEncryptionKey:](NSData *self, SEL a2, id a3)\n{\n  id v4; // x19\n  TSPMemoryReadChannel *v5; // x20\n  TSPCryptoTranscodeReadChannel *v6; // x22\n  id v7; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = -[TSPMemoryReadChannel initWithNSData:](objc_alloc(&OBJC_CLASS___TSPMemoryReadChannel), \"initWithNSData:\", self);\n  if ( v5 )\n  {\n    v6 = -[TSPCryptoTranscodeReadChannel initWithReadChannel:decryptionInfo:encryptionInfo:](\n           objc_alloc(&OBJC_CLASS___TSPCryptoTranscodeReadChannel),\n           \"initWithReadChannel:decryptionInfo:encryptionInfo:\",\n           v5,\n           0LL,\n           v4);\n    v7 = objc_retainAutoreleasedReturnValue(+[NSData tsp_dataWithTranscoder:](&OBJC_CLASS___NSData, \"tsp_dataWithTranscoder:\", v6));\n    objc_release(v6);\n  }\n  else\n  {\n    v7 = 0LL;\n  }\n  objc_release(v5);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v7);\n}"
+}

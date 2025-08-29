@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionEnumeratorGetNextRect",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionEnumeratorGetNextRect()",
+    "pseudocode": "__int64 CGRegionEnumeratorGetNextRect()\n{\n  return _CGRegionEnumeratorGetNextRect();\n}"
+}

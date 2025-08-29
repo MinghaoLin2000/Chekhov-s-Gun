@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize10PointCloud9serializeERNS_10SerializerE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN9serialize10PointCloud9serializeERNS_10SerializerE(serialize::PointCloud * this, serialize::Serializer * a2)",
+    "pseudocode": "void __fastcall serialize::PointCloud::serialize(serialize::PointCloud *this, serialize::Serializer *a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  serialize::Prim::serialize(this, a2);\n  serialize::Serializer::sync((__int64)a2, \"vertices\", (__int64)this + 64);\n  serialize::Serializer::sync((__int64)a2, \"colors\", (__int64)this + 88);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  serialize::Serializer::sync((unsigned __int8 *)a2, \"materialPath\", (std::string *)((char *)this + 112));\n}"
+}

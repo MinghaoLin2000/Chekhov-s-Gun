@@ -1,0 +1,6 @@
+{
+    "function_name": "+[UARPUpdaterDisplayControllerDelegate hostIsInternal]",
+    "function_argument_number": 2,
+    "function_signature": "+[UARPUpdaterDisplayControllerDelegate hostIsInternal](id a1, SEL a2)",
+    "pseudocode": "bool __cdecl +[UARPUpdaterDisplayControllerDelegate hostIsInternal](id a1, SEL a2)\n{\n  if ( qword_100026C40 != -1 )\n    dispatch_once(&qword_100026C40, &stru_1000206E0);\n  return byte_100026C38;\n}"
+}

@@ -1,0 +1,10 @@
+Service Path:
+/System/Library/PrivateFrameworks/Mangrove.framework/Versions/A/XPCServices/com.apple.CGXPCServicesAgent.xpc/Contents/MacOS/com.apple.CGXPCServicesAgent
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.airplay.windowserver.communicator
+	[Value]
+		[Bool] true

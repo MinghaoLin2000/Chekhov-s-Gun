@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory identifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUSBDFUAccessory identifier](UARPUSBDFUAccessory * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[UARPUSBDFUAccessory identifier](UARPUSBDFUAccessory *self, SEL a2)\n{\n  return objc_retainAutoreleaseReturnValue(self->_identifier);\n}"
+}

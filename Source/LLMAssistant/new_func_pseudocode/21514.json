@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection addSentenceToNgramCounts:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection addSentenceToNgramCounts:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LSRConnection addSentenceToNgramCounts:](LSRConnection *self, SEL a2, id a3)\n{\n  id v4; // x19\n  os_log_s *v5; // x21\n  int v6; // [xsp+0h] [xbp-40h] BYREF\n  const char *v7; // [xsp+4h] [xbp-3Ch]\n  __int16 v8; // [xsp+Ch] [xbp-34h]\n  id v9; // [xsp+Eh] [xbp-32h]\n\n  v4 = objc_retain(a3);\n  v5 = (os_log_s *)SFLogConnection;\n  if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_DEBUG) )\n  {\n    v6 = 136315394;\n    v7 = \"-[LSRConnection addSentenceToNgramCounts:]\";\n    v8 = 2112;\n    v9 = v4;\n    _os_log_debug_impl(\n      (void *)&_mh_execute_header,\n      v5,\n      OS_LOG_TYPE_DEBUG,\n      \"%s Adding sentence=%@\",\n      (uint8_t *)&v6,\n      0x16u);\n  }\n  -[LSRLanguageModel addSentenceToNgramCounts:](self->_lsrLanguageModel, \"addSentenceToNgramCounts:\", v4);\n  objc_release(v4);\n}"
+}

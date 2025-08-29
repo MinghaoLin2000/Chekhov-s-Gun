@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionGetFencingContext",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionGetFencingContext()",
+    "pseudocode": "__int64 SLSTransactionGetFencingContext()\n{\n  return _SLSTransactionGetFencingContext();\n}"
+}

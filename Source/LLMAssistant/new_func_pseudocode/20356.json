@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z30liteAddPrinterToiCloudWithInfoP12NSDictionary",
+    "function_argument_number": 1,
+    "function_signature": "__Z30liteAddPrinterToiCloudWithInfoP12NSDictionary(NSDictionary * a1)",
+    "pseudocode": "id __fastcall liteAddPrinterToiCloudWithInfo(NSDictionary *a1)\n{\n  return objc_msgSend((id)iCloudDataController, \"addPrinterToiCloudWithInfo:\", a1);\n}"
+}

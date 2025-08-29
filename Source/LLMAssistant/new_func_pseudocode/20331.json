@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z16PKPromptAuthInfoP8NSStringS0_bU13block_pointerFvP15NSURLCredentialE",
+    "function_argument_number": 4,
+    "function_signature": "__Z16PKPromptAuthInfoP8NSStringS0_bU13block_pointerFvP15NSURLCredentialE(void * a1, void * a2, char a3, void * a4)",
+    "pseudocode": "void __fastcall PKPromptAuthInfo(void *a1, void *a2, char a3, void *a4)\n{\n  id v7; // x22\n  id v8; // x21\n  id v9; // x19\n  dispatch_queue_global_s *v10; // x23\n  id v11; // x19\n  id v12; // x20\n  id v13; // x21\n  _QWORD v14[4]; // [xsp+0h] [xbp-70h] BYREF\n  id v15; // [xsp+20h] [xbp-50h]\n  id v16; // [xsp+28h] [xbp-48h]\n  id v17; // [xsp+30h] [xbp-40h]\n  char v18; // [xsp+38h] [xbp-38h]\n\n  v7 = objc_retain(a1);\n  v8 = objc_retain(a2);\n  v9 = objc_retain(a4);\n  v10 = objc_retainAutoreleasedReturnValue(dispatch_get_global_queue(0LL, 0LL));\n  v14[0] = _NSConcreteStackBlock;\n  v14[1] = 3254779904LL;\n  v14[2] = sub_100043ED4;\n  v14[3] = &unk_10009EE20;\n  v15 = v7;\n  v16 = v8;\n  v18 = a3;\n  v17 = v9;\n  v11 = objc_retain(v9);\n  v12 = objc_retain(v8);\n  v13 = objc_retain(v7);\n  dispatch_async(v10, v14);\n  objc_release(v10);\n  objc_release(v17);\n  objc_release(v16);\n  objc_release(v15);\n  objc_release(v11);\n  objc_release(v12);\n  objc_release(v13);\n}"
+}

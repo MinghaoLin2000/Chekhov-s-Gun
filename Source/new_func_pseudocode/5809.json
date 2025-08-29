@@ -1,0 +1,6 @@
+{
+    "function_name": "-[InternationalCloudMediator registerKeys]",
+    "function_argument_number": 2,
+    "function_signature": "-[InternationalCloudMediator registerKeys](InternationalCloudMediator * self, SEL a2)",
+    "pseudocode": "void __cdecl -[InternationalCloudMediator registerKeys](InternationalCloudMediator *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[InternationalCloudMediator registerKey:getter:setter:](\n    self,\n    \"registerKey:getter:setter:\",\n    CFSTR(\"IP_Locale\"),\n    \"locale\",\n    \"setLocale:\");\n  -[InternationalCloudMediator registerKey:getter:setter:](\n    self,\n    \"registerKey:getter:setter:\",\n    CFSTR(\"IP_LiveText\"),\n    \"liveText\",\n    \"setLiveText:\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[InternationalCloudMediator registerKey:getter:setter:](\n    self,\n    \"registerKey:getter:setter:\",\n    CFSTR(\"IP_Infection\"),\n    \"inflection\",\n    \"setInflection:\");\n}"
+}

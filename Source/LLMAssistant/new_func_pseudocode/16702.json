@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCDigestInit",
+    "function_argument_number": 0,
+    "function_signature": "_CCDigestInit()",
+    "pseudocode": "__int64 CCDigestInit()\n{\n  return _CCDigestInit();\n}"
+}

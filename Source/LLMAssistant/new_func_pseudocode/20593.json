@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFScannerScan",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFScannerScan(CGPDFScannerRef scanner)",
+    "pseudocode": "bool __cdecl CGPDFScannerScan(CGPDFScannerRef scanner)\n{\n  return _CGPDFScannerScan(scanner);\n}"
+}

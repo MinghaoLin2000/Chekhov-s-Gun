@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController heightAnchor]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceUIServiceViewController heightAnchor](DeviceUIServiceViewController * self, SEL a2)",
+    "pseudocode": "NSLayoutConstraint *__cdecl -[DeviceUIServiceViewController heightAnchor](DeviceUIServiceViewController *self, SEL a2)\n{\n  id WeakRetained; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  WeakRetained = objc_loadWeakRetained((id *)&self->_heightAnchor);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSLayoutConstraint *)objc_autoreleaseReturnValue(WeakRetained);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringWithNormalizedSpaces]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringWithNormalizedSpaces](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringWithNormalizedSpaces](NSString *self, SEL a2)\n{\n  NSCharacterSet *v3; // x20\n  id v4; // x19\n  void *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSCharacterSet whitespaceCharacterSet](&OBJC_CLASS___NSCharacterSet, \"whitespaceCharacterSet\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[NSString tsu_stringWithoutNonbreakingSpaces](self, \"tsu_stringWithoutNonbreakingSpaces\"));\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"tsu_stringByReplacingInstancesOfCharactersInSet:withString:\", v3, CFSTR(\" \")));\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

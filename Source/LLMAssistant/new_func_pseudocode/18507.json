@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper04WiFiC0CfD",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper04WiFiC0CfD()",
+    "pseudocode": "__int64 WiFiHelper.__deallocating_deinit()\n{\n  __int64 v0; // x20\n  __int64 v1; // x1\n  __int64 v2; // x2\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  WiFiHelper.deinit();\n  v1 = *(unsigned int *)(*(_QWORD *)v0 + 48LL);\n  v2 = *(unsigned __int16 *)(*(_QWORD *)v0 + 52LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return _swift_deallocClassInstance(v0, v1, v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController control:textView:doCommandBySelector:]",
+    "function_argument_number": 5,
+    "function_signature": "-[DeviceHeaderViewController control:textView:doCommandBySelector:](DeviceHeaderViewController * self, SEL a2, id a3, id a4, SEL a5)",
+    "pseudocode": "bool __cdecl -[DeviceHeaderViewController control:textView:doCommandBySelector:](\n        DeviceHeaderViewController *self,\n        SEL a2,\n        id a3,\n        id a4,\n        SEL a5)\n{\n  NSTextField *v8; // x19\n  void *v9; // x20\n\n  if ( \"insertNewline:\" == a5 || \"insertTab:\" == a5 || \"insertBacktab:\" == a5 || \"cancelOperation:\" == a5 )\n  {\n    v8 = objc_retainAutoreleasedReturnValue(-[DeviceHeaderViewController deviceNameLabel](self, \"deviceNameLabel\", a3, a4));\n    v9 = objc_retainAutoreleasedReturnValue(-[NSTextField window](v8, \"window\"));\n    objc_msgSend(v9, \"makeFirstResponder:\", 0LL);\n    objc_release(v9);\n    objc_release(v8);\n  }\n  return 0;\n}"
+}

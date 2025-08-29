@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsShuffleViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceOptionsShuffleViewController .cxx_destruct](DeviceOptionsShuffleViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceOptionsShuffleViewController .cxx_destruct](DeviceOptionsShuffleViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_destroyWeak((id *)&self->_preventLimitVolumeChangesCheckBox);\n  objc_destroyWeak((id *)&self->_limitVolumeSlider);\n  objc_destroyWeak((id *)&self->_limitVolumeCheckBox);\n  objc_destroyWeak((id *)&self->_voiceOverLanguageExplanationText);\n  objc_destroyWeak((id *)&self->_voiceOverLanguagePopUpButton);\n  objc_destroyWeak((id *)&self->_voiceOverLanguageLabelText);\n  objc_destroyWeak((id *)&self->_enableVoiceOverCheckBox);\n  objc_destroyWeak((id *)&self->_enableDiskUseCheckBox);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_enableSoundCheckCheckBox);\n}"
+}

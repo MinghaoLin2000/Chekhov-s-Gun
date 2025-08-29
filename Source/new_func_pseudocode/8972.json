@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MarketingItemRequest()\n{\n  return &type metadata for MarketingItemRequest;\n}"
+}

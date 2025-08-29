@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSPCryptoInfoNeedsTranscodingToKey",
+    "function_argument_number": 3,
+    "function_signature": "_TSPCryptoInfoNeedsTranscodingToKey(void * a1, void * a2, void * a3)",
+    "pseudocode": "bool __fastcall UnsafePointer(void *a1, void *a2, void *a3)\n{\n  unsigned __int64 v5; // x19\n  unsigned __int64 v6; // x20\n  _BOOL8 v7; // x21\n  void *v8; // x22\n\n  v5 = objc_retain(a1);\n  v6 = objc_retain(a2);\n  if ( v5 | v6 )\n  {\n    v8 = objc_retainAutoreleasedReturnValue(objc_msgSend((id)v5, \"cryptoKey\"));\n    if ( (unsigned int)SFUEqualCryptoKeys(v8, v6) )\n      v7 = objc_msgSend((id)v5, \"preferredBlockSize\") != a3;\n    else\n      v7 = 1LL;\n    objc_release(v8);\n  }\n  else\n  {\n    v7 = 0LL;\n  }\n  objc_release((id)v6);\n  objc_release((id)v5);\n  return v7;\n}"
+}

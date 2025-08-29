@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalProxyConnection start]",
+    "function_argument_number": 1,
+    "function_signature": "-[LocalProxyConnection start](id val)",
+    "pseudocode": "void __cdecl -[LocalProxyConnection start](LocalProxyConnection *self, SEL a2)\n{\n  dispatch_queue_s *queue; // x19\n  _QWORD v4[4]; // [xsp+0h] [xbp-40h] BYREF\n  id v5; // [xsp+20h] [xbp-20h] BYREF\n  id location; // [xsp+28h] [xbp-18h] BYREF\n\n  objc_initWeak(&location, self);\n  queue = (dispatch_queue_s *)self->_queue;\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_1000291BC;\n  v4[3] = &unk_10009E0B8;\n  objc_copyWeak(&v5, &location);\n  dispatch_async(queue, v4);\n  objc_destroyWeak(&v5);\n  objc_destroyWeak(&location);\n}"
+}

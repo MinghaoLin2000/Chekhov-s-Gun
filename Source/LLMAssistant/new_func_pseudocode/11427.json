@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf11FileOptionsD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN6google8protobuf11FileOptionsD2Ev(google::protobuf::FileOptions * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::FileOptions::~FileOptions(google::protobuf::FileOptions *this)\n{\n  __ZN6google8protobuf11FileOptionsD2Ev(this);\n}"
+}

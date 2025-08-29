@@ -1,0 +1,6 @@
+{
+    "function_name": "j_$s17ControlCenterCore16HoverCoordinatorC5EntryVwxx",
+    "function_argument_number": 1,
+    "function_signature": "j_$s17ControlCenterCore16HoverCoordinatorC5EntryVwxx(__int64 a1)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall j__s17ControlCenterCore16HoverCoordinatorC5EntryVwxx(__int64 a1)\n{\n  return destroy for HoverCoordinator.Entry(a1);\n}"
+}

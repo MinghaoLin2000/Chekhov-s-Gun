@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetInterpolationQuality",
+    "function_argument_number": 2,
+    "function_signature": "_CGContextSetInterpolationQuality(CGContextRef c, CGInterpolationQuality quality)",
+    "pseudocode": "void __cdecl CGContextSetInterpolationQuality(CGContextRef c, CGInterpolationQuality quality)\n{\n  _CGContextSetInterpolationQuality(c, quality);\n}"
+}

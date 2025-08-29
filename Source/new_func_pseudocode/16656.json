@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater assetLocationForCustomBasejumperTrain:build:]",
+    "function_argument_number": 4,
+    "function_signature": "-[EAAccessoryUpdater assetLocationForCustomBasejumperTrain:build:](EAAccessoryUpdater * self, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl -[EAAccessoryUpdater assetLocationForCustomBasejumperTrain:build:](\n        EAAccessoryUpdater *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  return +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"%@/%@/%@%@\"),\n           getURLForAssetURLType(4uLL),\n           a3,\n           a3,\n           a4);\n}"
+}

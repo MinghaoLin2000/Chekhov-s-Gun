@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSValue CGPointValue]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSValue CGPointValue](NSValue * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nCGPoint __cdecl -[NSValue CGPointValue](NSValue *self, SEL a2)\n{\n  double v2; // d0\n  double v3; // d1\n  CGPoint result; // 0:d0.8,8:d1.8\n\n  -[NSValue pointValue](self, \"pointValue\");\n  result.y = v3;\n  result.x = v2;\n  return result;\n}"
+}

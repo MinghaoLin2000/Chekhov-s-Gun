@@ -1,0 +1,5 @@
+_os_variant_allows_internal_security_policies
+__int64 os_variant_allows_internal_security_policies()
+{
+  return _os_variant_allows_internal_security_policies();
+}

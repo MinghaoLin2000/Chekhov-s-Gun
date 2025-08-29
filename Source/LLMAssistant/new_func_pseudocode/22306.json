@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate keyEvent]",
+    "function_argument_number": 2,
+    "function_signature": "-[ECTIHelperDelegate keyEvent](ECTIHelperDelegate * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate keyEvent](ECTIHelperDelegate *self, SEL a2)\n{\n  unsigned int v3; // w0\n  bool v4; // w20\n  xpc_object_t v5; // x0\n  void *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( self->_peer )\n  {\n    v3 = (unsigned int)objc_msgSend(\n                         -[NSTextInputContext client](\n                           +[NSTextInputContext currentInputContext](\n                             &OBJC_CLASS___NSTextInputContext,\n                             \"currentInputContext\"),\n                           \"client\"),\n                         \"hasMarkedText\");\n    if ( self->_hasMarkedText != v3 )\n    {\n      v4 = v3;\n      self->_hasMarkedText = v3;\n      v5 = xpc_dictionary_create(0LL, 0LL, 0LL);\n      if ( v5 )\n      {\n        v6 = v5;\n        xpc_dictionary_set_string(v5, \"message\", \"hasMarked\");\n        xpc_dictionary_set_bool(v6, \"hasMarked\", v4);\n        xpc_connection_send_message(self->_peer, v6);\n        if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n          __break(0xC471u);\n        xpc_release(v6);\n      }\n    }\n  }\n}"
+}

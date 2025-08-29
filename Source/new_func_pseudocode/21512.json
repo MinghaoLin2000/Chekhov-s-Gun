@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection oovWordsAndFrequenciesWithCompletion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection oovWordsAndFrequenciesWithCompletion:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LSRConnection oovWordsAndFrequenciesWithCompletion:](LSRConnection *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, id); // x19\n  os_log_s *v5; // x21\n  id v6; // x20\n  int v7; // [xsp+0h] [xbp-40h] BYREF\n  const char *v8; // [xsp+4h] [xbp-3Ch]\n\n  v4 = (void (__fastcall **)(id, id))objc_retain(a3);\n  v5 = (os_log_s *)SFLogConnection;\n  if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_DEBUG) )\n  {\n    v7 = 136315138;\n    v8 = \"-[LSRConnection oovWordsAndFrequenciesWithCompletion:]\";\n    _os_log_debug_impl(\n      (void *)&_mh_execute_header,\n      v5,\n      OS_LOG_TYPE_DEBUG,\n      \"%s oovs words and frequencies\",\n      (uint8_t *)&v7,\n      0xCu);\n    if ( !v4 )\n      goto LABEL_4;\n    goto LABEL_3;\n  }\n  if ( v4 )\n  {\nLABEL_3:\n    v6 = objc_retainAutoreleasedReturnValue(\n           -[LSRLanguageModel oovWordsAndFrequenciesInNgramCount](\n             self->_lsrLanguageModel,\n             \"oovWordsAndFrequenciesInNgramCount\"));\n    v4[2](v4, v6);\n    objc_release(v6);\n  }\nLABEL_4:\n  objc_release(v4);\n}"
+}

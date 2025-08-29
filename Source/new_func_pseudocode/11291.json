@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf13MethodOptionsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf13MethodOptionsD1Ev(google::protobuf::MethodOptions * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::MethodOptions::~MethodOptions(google::protobuf::MethodOptions *this)\n{\n  __ZN6google8protobuf13MethodOptionsD2Ev(this);\n}"
+}

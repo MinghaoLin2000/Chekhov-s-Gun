@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$addNewEmptyAttribute:groupTag:valueTag:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$addNewEmptyAttribute:groupTag:valueTag:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_addNewEmptyAttribute_groupTag_valueTag_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"addNewEmptyAttribute:groupTag:valueTag:\");\n}"
+}

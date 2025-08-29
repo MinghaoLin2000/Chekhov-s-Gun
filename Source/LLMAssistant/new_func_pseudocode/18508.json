@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper04WiFiC0CMa",
+    "function_argument_number": 1,
+    "function_signature": "_$s19ControlCenterHelper04WiFiC0CMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for WiFiHelper(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100094990;\n  if ( !qword_100094990 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for WiFiHelper);\n  return result;\n}"
+}

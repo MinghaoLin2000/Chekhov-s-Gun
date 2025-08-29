@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob status]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob status](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[PAMediaConversionServiceImageConversionJob status](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  return self->_status;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_memset_pattern16",
+    "function_argument_number": 3,
+    "function_signature": "_memset_pattern16(void * __b, const void * __pattern16, size_t __len)",
+    "pseudocode": "void __cdecl memset_pattern16(void *__b, const void *__pattern16, size_t __len)\n{\n  _memset_pattern16(__b, __pattern16, __len);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12ExtensionSet9SetDoubleEihdPKNS0_15FieldDescriptorE",
+    "function_argument_number": 5,
+    "function_signature": "__ZN6google8protobuf8internal12ExtensionSet9SetDoubleEihdPKNS0_15FieldDescriptorE(google::protobuf::internal::ExtensionSet * this, int a2, unsigned __int8 a3, double a4, const google::protobuf::FieldDescriptor * a5)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::ExtensionSet::SetDouble(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2,\n        char a3,\n        double a4,\n        const google::protobuf::FieldDescriptor *a5)\n{\n  __int64 result; // x0\n  char v9; // w1\n\n  result = google::protobuf::internal::ExtensionSet::Insert(this, a2);\n  *(_QWORD *)(result + 16) = a5;\n  if ( v9 )\n  {\n    *(_BYTE *)(result + 8) = a3;\n    *(_BYTE *)(result + 9) = 0;\n  }\n  *(_BYTE *)(result + 10) &= 0xF0u;\n  *(double *)result = a4;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14ServiceOptions16default_instanceEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14ServiceOptions16default_instanceEv(google::protobuf::ServiceOptions * this)",
+    "pseudocode": "void *__fastcall google::protobuf::ServiceOptions::default_instance(google::protobuf::ServiceOptions *this)\n{\n  if ( atomic_load_explicit(scc_info_ServiceOptions_google_2fprotobuf_2fdescriptor_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_ServiceOptions_google_2fprotobuf_2fdescriptor_2eproto);\n  return &google::protobuf::_ServiceOptions_default_instance_;\n}"
+}

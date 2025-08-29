@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_uint64_get_value",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_uint64_get_value(xpc_object_t xuint)",
+    "pseudocode": "uint64_t __cdecl xpc_uint64_get_value(xpc_object_t xuint)\n{\n  return _xpc_uint64_get_value(xuint);\n}"
+}

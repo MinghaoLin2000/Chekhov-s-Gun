@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10LogMessagelsERKNS0_11StringPieceE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal10LogMessagelsERKNS0_11StringPieceE(std::string * a1, __int64 a2)",
+    "pseudocode": "std::string *__fastcall google::protobuf::internal::LogMessage::operator<<(std::string *a1, __int64 a2)\n{\n  void **v3; // x1\n  std::string::size_type v4; // x2\n  void *__p[2]; // [xsp+8h] [xbp-28h] BYREF\n  unsigned __int8 v7; // [xsp+1Fh] [xbp-11h]\n\n  sub_1000967C4(__p, a2);\n  if ( (v7 & 0x80u) == 0 )\n    v3 = __p;\n  else\n    v3 = (void **)__p[0];\n  if ( (v7 & 0x80u) == 0 )\n    v4 = v7;\n  else\n    v4 = (std::string::size_type)__p[1];\n  std::string::append(a1 + 1, (const std::string::value_type *)v3, v4);\n  if ( (char)v7 < 0 )\n    operator delete(__p[0]);\n  return a1;\n}"
+}

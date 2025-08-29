@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeViewController serviceViewControllerInterface]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewBridgeViewController serviceViewControllerInterface](RemoteViewBridgeViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[RemoteViewBridgeViewController serviceViewControllerInterface](\n        RemoteViewBridgeViewController *self,\n        SEL a2)\n{\n  return +[NSXPCInterface interfaceWithProtocol:](\n           &OBJC_CLASS___NSXPCInterface,\n           \"interfaceWithProtocol:\",\n           &OBJC_PROTOCOL___RemoteViewBridgeServiceProtocol);\n}"
+}

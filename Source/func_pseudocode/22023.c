@@ -1,0 +1,7 @@
+__ZNSt3__110__function6__funcIZN3mlc14xpc_dispatch_t3addIRFvNS2_16xpc_auto_reply_tENS_6vectorIPKcNS_9allocatorIS8_EEEEEEEvNS2_15function_kind_tEOT_EUlOS5_PvE_NS9_ISJ_EEFbSH_SI_EE18destroy_deallocateEv
+// attributes: thunk
+void __cdecl std::__function::__func<void mlc::xpc_dispatch_t::add<void (&)(mlc::xpc_auto_reply_t,std::vector<char const*>)>(mlc::function_kind_t,void (&)(mlc::xpc_auto_reply_t,std::vector<char const*>) &&)::{lambda(mlc::xpc_auto_reply_t&&,void *)#1},std::allocator<mlc::xpc_auto_reply_t&&>,bool ()(void (&)(mlc::xpc_auto_reply_t,std::vector<char const*>) &&,mlc::xpc_auto_reply_t&)>::destroy_deallocate(
+        void *__p)
+{
+  operator delete(__p);
+}

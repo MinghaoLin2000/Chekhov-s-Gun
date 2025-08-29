@@ -1,0 +1,6 @@
+{
+    "function_name": "__CFPrefsSetReadOnly",
+    "function_argument_number": 0,
+    "function_signature": "__CFPrefsSetReadOnly()",
+    "pseudocode": "__int64 _CFPrefsSetReadOnly()\n{\n  return __CFPrefsSetReadOnly();\n}"
+}

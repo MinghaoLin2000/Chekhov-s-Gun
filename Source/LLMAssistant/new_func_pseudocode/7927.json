@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionEnumeratorRelease",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionEnumeratorRelease()",
+    "pseudocode": "__int64 CGRegionEnumeratorRelease()\n{\n  return _CGRegionEnumeratorRelease();\n}"
+}

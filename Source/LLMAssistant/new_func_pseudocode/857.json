@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController setFolderImage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsViewController setFolderImage:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController setFolderImage:](DeviceSettingsViewController *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_folderImage, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN17Printd_Parameters17_set_PrintQualityE13ipp_quality_e",
+    "function_argument_number": 2,
+    "function_signature": "__ZN17Printd_Parameters17_set_PrintQualityE13ipp_quality_e(Printd_Parameters * this, ipp_quality_e a2)",
+    "pseudocode": "void *__fastcall Printd_Parameters::_set_PrintQuality(void **this, ipp_quality_e a2)\n{\n  void *v2; // x0\n  _QWORD v4[4]; // [xsp+8h] [xbp-28h] BYREF\n  ipp_quality_e v5; // [xsp+28h] [xbp-8h]\n\n  v2 = *this;\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3221225472LL;\n  v4[2] = sub_100033F18;\n  v4[3] = &unk_10009E578;\n  v5 = a2;\n  return objc_msgSend(v2, \"_withGroupingBehavior:\", v4);\n}"
+}

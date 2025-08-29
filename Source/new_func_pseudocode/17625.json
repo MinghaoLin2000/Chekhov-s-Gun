@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentCreateWithProvider",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentCreateWithProvider(CGDataProviderRef provider)",
+    "pseudocode": "CGPDFDocumentRef __cdecl CGPDFDocumentCreateWithProvider(CGDataProviderRef provider)\n{\n  return _CGPDFDocumentCreateWithProvider(provider);\n}"
+}

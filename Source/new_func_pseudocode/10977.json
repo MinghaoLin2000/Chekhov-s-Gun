@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZZN6google8protobuf8internal16OnShutdownDeleteINS0_20FileDescriptorTablesEEEPT_S5_ENUlPKvE_8__invokeES7_",
+    "function_argument_number": 1,
+    "function_signature": "__ZZN6google8protobuf8internal16OnShutdownDeleteINS0_20FileDescriptorTablesEEEPT_S5_ENUlPKvE_8__invokeES7_(std::mutex * result)",
+    "pseudocode": "std::mutex *__fastcall google::protobuf::internal::OnShutdownDelete<google::protobuf::FileDescriptorTables>(google::protobuf::FileDescriptorTables *)::{lambda(void const*)#1}::__invoke(\n        std::mutex *result)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( result )\n  {\n    google::protobuf::FileDescriptorTables::~FileDescriptorTables(result);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (std::mutex *)operator delete(v1, 0x10A0C40C644375CLL);\n  }\n  return result;\n}"
+}

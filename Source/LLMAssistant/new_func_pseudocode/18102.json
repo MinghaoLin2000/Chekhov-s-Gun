@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_close_sock",
+    "function_argument_number": 1,
+    "function_signature": "_piston_close_sock(_DWORD * a1)",
+    "pseudocode": "__int64 __fastcall piston_close_sock(_DWORD *a1)\n{\n  __int64 result; // x0\n\n  result = (unsigned int)*a1;\n  if ( (int)result >= 1 )\n    result = close(result);\n  *a1 = -1;\n  return result;\n}"
+}

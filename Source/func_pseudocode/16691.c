@@ -1,0 +1,5 @@
+_AMAuthInstallApCreatePersonalizedResponse
+__int64 AMAuthInstallApCreatePersonalizedResponse()
+{
+  return _AMAuthInstallApCreatePersonalizedResponse();
+}

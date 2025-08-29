@@ -1,0 +1,6 @@
+{
+    "function_name": "_PKOpenURL",
+    "function_argument_number": 0,
+    "function_signature": "_PKOpenURL()",
+    "pseudocode": "__int64 PKOpenURL()\n{\n  return 0LL;\n}"
+}

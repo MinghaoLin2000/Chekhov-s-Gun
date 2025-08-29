@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKcm",
+    "function_argument_number": 5,
+    "function_signature": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKcm(std::string * this, std::string::size_type __pos, std::string::size_type __n1, const std::string::value_type * __s, std::string::size_type __n2)",
+    "pseudocode": "std::string *__cdecl std::string::replace(\n        std::string *this,\n        std::string::size_type __pos,\n        std::string::size_type __n1,\n        const std::string::value_type *__s,\n        std::string::size_type __n2)\n{\n  return std::string::replace(this, __pos, __n1, __s, __n2);\n}"
+}

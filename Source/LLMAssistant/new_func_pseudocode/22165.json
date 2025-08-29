@@ -1,0 +1,6 @@
+{
+    "function_name": "_malloc_get_zone_name",
+    "function_argument_number": 1,
+    "function_signature": "_malloc_get_zone_name(malloc_zone_t * zone)",
+    "pseudocode": "const char *__cdecl malloc_get_zone_name(malloc_zone_t *zone)\n{\n  return _malloc_get_zone_name(zone);\n}"
+}

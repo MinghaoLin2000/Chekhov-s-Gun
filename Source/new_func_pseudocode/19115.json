@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_copy_description",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_copy_description(xpc_object_t object)",
+    "pseudocode": "char *__cdecl xpc_copy_description(xpc_object_t object)\n{\n  return _xpc_copy_description(object);\n}"
+}

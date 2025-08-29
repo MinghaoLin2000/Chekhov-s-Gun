@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintdRPCService _realPathForTmpReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PrintdRPCService _realPathForTmpReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PrintdRPCService _realPathForTmpReply:](PrintdRPCService *self, SEL a2, id a3)\n{\n  void (__fastcall **v3)(id, NSURL *); // x19\n  NSString *v4; // x20\n  NSURL *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = (void (__fastcall **)(id, NSURL *))objc_retain(a3);\n  v4 = objc_retainAutoreleasedReturnValue(NSTemporaryDirectory());\n  v5 = objc_retainAutoreleasedReturnValue(+[NSURL fileURLWithPath:](&OBJC_CLASS___NSURL, \"fileURLWithPath:\", v4));\n  v3[2](v3, v5);\n  objc_release(v5);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

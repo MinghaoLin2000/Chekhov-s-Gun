@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecRequirementCreateWithString",
+    "function_argument_number": 3,
+    "function_signature": "_SecRequirementCreateWithString(CFStringRef text, SecCSFlags flags, SecRequirementRef * requirement)",
+    "pseudocode": "OSStatus __cdecl SecRequirementCreateWithString(CFStringRef text, SecCSFlags flags, SecRequirementRef *requirement)\n{\n  return _SecRequirementCreateWithString(text, flags, requirement);\n}"
+}

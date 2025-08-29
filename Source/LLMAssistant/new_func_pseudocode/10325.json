@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP13CFUUIDArchive13SetCachedSizeEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK3TSP13CFUUIDArchive13SetCachedSizeEi(TSP::CFUUIDArchive * this, int a2)",
+    "pseudocode": "__int64 __fastcall TSP::CFUUIDArchive::SetCachedSize(__int64 this, int a2)\n{\n  *(_DWORD *)(this + 20) = a2;\n  return this;\n}"
+}

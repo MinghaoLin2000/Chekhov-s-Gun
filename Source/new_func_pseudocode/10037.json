@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP17ViewStateMetadataD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP17ViewStateMetadataD2Ev(TSP::ViewStateMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ViewStateMetadata::~ViewStateMetadata(TSP::ViewStateMetadata *this)\n{\n  __ZN3TSP17ViewStateMetadataD2Ev(this);\n}"
+}

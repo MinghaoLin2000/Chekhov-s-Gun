@@ -1,0 +1,6 @@
+{
+    "function_name": "_IIOProcessEvent",
+    "function_argument_number": 0,
+    "function_signature": "_IIOProcessEvent()",
+    "pseudocode": "__int64 IIOProcessEvent()\n{\n  return _IIOProcessEvent();\n}"
+}

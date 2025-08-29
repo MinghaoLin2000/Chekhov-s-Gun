@@ -1,0 +1,10 @@
+Service Path:
+/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/XPCServices/QuarantineService.xpc/Contents/MacOS/QuarantineService
+
+Service Exported Protocols:
+@protocol QuarantineServiceProtocol
+- (void)applyQuarantineInfo:(NSData *)arg1 toTarget:(NSSecurityScopedURLWrapper *)arg2 withReply:(void (^)(void))arg3;
+@end
+
+Service Entitlements:
+[Dict]

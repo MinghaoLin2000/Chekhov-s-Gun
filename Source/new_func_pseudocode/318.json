@@ -1,0 +1,6 @@
+{
+    "function_name": "_sandbox_extension_release",
+    "function_argument_number": 0,
+    "function_signature": "_sandbox_extension_release()",
+    "pseudocode": "__int64 sandbox_extension_release()\n{\n  return _sandbox_extension_release();\n}"
+}

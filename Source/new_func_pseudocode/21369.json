@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer packetArrivalTimestampFromAudioTimestamp:reply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer packetArrivalTimestampFromAudioTimestamp:reply:](int a1, int a2, void * aBlock)",
+    "pseudocode": "void __cdecl -[EARSpeechRecognitionAudioBuffer packetArrivalTimestampFromAudioTimestamp:reply:](\n        _TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer *self,\n        SEL a2,\n        float a3,\n        id a4)\n{\n  void *v6; // x20\n  __int64 v7; // x21\n  _TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer *v8; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v6 = _Block_copy(a4);\n  v7 = swift_allocObject(&unk_100059850, 40LL, 7LL);\n  *(float *)(v7 + 16) = a3;\n  *(_QWORD *)(v7 + 24) = v6;\n  *(_QWORD *)(v7 + 32) = self;\n  v8 = objc_retain(self);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  sub_100022078(&unk_1000640E0, v7);\n}"
+}

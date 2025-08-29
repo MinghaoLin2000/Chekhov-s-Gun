@@ -1,0 +1,7 @@
+{
+    "/System/Library/CoreServices/Siri.app/Contents/XPCServices/SiriNCService.xpc/Contents/MacOS/SiriNCService": [
+        "_objc_msgSend$siriApplicationFocusChanged:",
+        "_objc_msgSend$invokeService:fromEventSource:eventTime:requestInfo:speechRequestOptions:launchOptions:dismissalOptions:",
+        "-[SiriNCService invokeService:fromEventSource:eventTime:requestInfo:speechRequestOptions:launchOptions:dismissalOptions:]"
+    ]
+}

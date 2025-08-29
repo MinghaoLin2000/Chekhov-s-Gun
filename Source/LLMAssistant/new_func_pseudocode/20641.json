@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_listener_create",
+    "function_argument_number": 1,
+    "function_signature": "_nw_listener_create(nw_parameters_t parameters)",
+    "pseudocode": "nw_listener_t __cdecl nw_listener_create(nw_parameters_t parameters)\n{\n  return _nw_listener_create(parameters);\n}"
+}

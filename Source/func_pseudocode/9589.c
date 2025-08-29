@@ -1,0 +1,6 @@
+j___ZN3TSP19DatabaseDataArchiveD2Ev
+// attributes: thunk
+void __fastcall TSP::DatabaseDataArchive::~DatabaseDataArchive(TSP::DatabaseDataArchive *this)
+{
+  __ZN3TSP19DatabaseDataArchiveD2Ev(this);
+}

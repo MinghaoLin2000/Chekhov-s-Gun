@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsButton setNode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsButton setNode:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsButton setNode:](DeviceSettingsButton *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_node, a3);\n}"
+}

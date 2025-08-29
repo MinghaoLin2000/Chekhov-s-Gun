@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_arrayInitWithTakeBackToFront",
+    "function_argument_number": 0,
+    "function_signature": "_swift_arrayInitWithTakeBackToFront()",
+    "pseudocode": "__int64 swift_arrayInitWithTakeBackToFront()\n{\n  return _swift_arrayInitWithTakeBackToFront();\n}"
+}

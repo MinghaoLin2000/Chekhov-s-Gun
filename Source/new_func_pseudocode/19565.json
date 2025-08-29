@@ -1,0 +1,6 @@
+{
+    "function_name": "-[StickiesMigration .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[StickiesMigration .cxx_destruct](StickiesMigration * self, SEL a2)",
+    "pseudocode": "void __cdecl -[StickiesMigration .cxx_destruct](StickiesMigration *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_connection, 0LL);\n}"
+}

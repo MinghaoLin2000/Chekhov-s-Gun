@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelperAAC016presentUniversalA5Erroryys0F0_pF",
+    "function_argument_number": 1,
+    "function_signature": "_$s19ControlCenterHelperAAC016presentUniversalA5Erroryys0F0_pF(__int64 a1)",
+    "pseudocode": "__int64 __fastcall ControlCenterHelper.presentUniversalControlError(_:)(__int64 a1)\n{\n  if ( qword_1000939D0 != -1 )\n    swift_once(&qword_1000939D0, sub_1000151D0);\n  return sub_100014EE4(a1);\n}"
+}

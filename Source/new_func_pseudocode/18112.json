@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFArrayApplyFunction",
+    "function_argument_number": 4,
+    "function_signature": "_CFArrayApplyFunction(CFArrayRef theArray, CFArrayApplierFunction applier, void * context, CFRange range)",
+    "pseudocode": "void __cdecl CFArrayApplyFunction(CFArrayRef theArray, CFRange range, CFArrayApplierFunction applier, void *context)\n{\n  _CFArrayApplyFunction(theArray, range, applier, context);\n}"
+}

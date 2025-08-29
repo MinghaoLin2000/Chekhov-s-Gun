@@ -1,0 +1,6 @@
+{
+    "function_name": "_SRUIFInvokeOnMainQueue",
+    "function_argument_number": 0,
+    "function_signature": "_SRUIFInvokeOnMainQueue()",
+    "pseudocode": "__int64 SRUIFInvokeOnMainQueue()\n{\n  return _SRUIFInvokeOnMainQueue();\n}"
+}

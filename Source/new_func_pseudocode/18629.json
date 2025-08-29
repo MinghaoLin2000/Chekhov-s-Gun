@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwca",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwca(void ** a1, void ** a2)",
+    "pseudocode": "void **__fastcall assignWithCopy for NavigationController.NavigationMode(void **a1, void **a2)\n{\n  void *v3; // x0\n  void *v4; // x20\n  id v5; // x0\n\n  v3 = *a2;\n  v4 = *a1;\n  *a1 = *a2;\n  v5 = objc_retain(v3);\n  objc_release(v4);\n  return a1;\n}"
+}

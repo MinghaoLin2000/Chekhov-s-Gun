@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP39LargeStringArraySegment_OptionalElementD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP39LargeStringArraySegment_OptionalElementD0Ev(TSP::LargeStringArraySegment_OptionalElement * this)",
+    "pseudocode": "void __fastcall TSP::LargeStringArraySegment_OptionalElement::~LargeStringArraySegment_OptionalElement(\n        TSP::LargeStringArraySegment_OptionalElement *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::LargeStringArraySegment_OptionalElement::~LargeStringArraySegment_OptionalElement(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x1081C4072235B19LL);\n}"
+}

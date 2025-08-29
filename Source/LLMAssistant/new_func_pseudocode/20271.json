@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t addNewEmptyAttribute:groupTag:valueTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_t addNewEmptyAttribute:groupTag:valueTag:](int a1, int a2, id a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl -[ipp_t addNewEmptyAttribute:groupTag:valueTag:](ipp_t *self, SEL a2, id a3, int a4, int a5)\n{\n  __int64 v5; // x21\n  __int64 v6; // x22\n  id v8; // x19\n  ipp_attribute_t *v9; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = *(_QWORD *)&a5;\n  v6 = *(_QWORD *)&a4;\n  v8 = objc_retain(a3);\n  v9 = -[ipp_attribute_t initWithName:group:value:](\n         objc_alloc(&OBJC_CLASS___ipp_attribute_t),\n         \"initWithName:group:value:\",\n         v8,\n         v6,\n         v5);\n  if ( self->_addAttributesInAppropriateGroups )\n    -[ipp_t _addAttrToAppropriateGroup:](self, \"_addAttrToAppropriateGroup:\", v9);\n  else\n    -[NSMutableArray addObject:](self->_attrs, \"addObject:\", v9);\n  objc_release(v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v9);\n}"
+}

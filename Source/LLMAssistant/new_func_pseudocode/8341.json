@@ -1,0 +1,6 @@
+{
+    "function_name": "-[StoreUIService presentViewRequest:withResultHandler:]",
+    "function_argument_number": 4,
+    "function_signature": "-[StoreUIService presentViewRequest:withResultHandler:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[StoreUIService presentViewRequest:withResultHandler:](StoreUIService *self, SEL a2, id a3, id a4)\n{\n  id v5; // x20\n  id v6; // x19\n  _TtC39com_apple_AppStoreDaemon_StoreUIService20ViewPresentationTask *v7; // x21\n  id v8; // x19\n  _TtC39com_apple_AppStoreDaemon_StoreUIService20ViewPresentationTask *v9; // x20\n  _QWORD v10[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v11; // [xsp+20h] [xbp-30h]\n  id v12; // [xsp+28h] [xbp-28h]\n\n  v5 = objc_retain(a4);\n  v6 = objc_retain(a3);\n  v7 = -[ViewPresentationTask initWithRequest:](\n         objc_alloc(&OBJC_CLASS____TtC39com_apple_AppStoreDaemon_StoreUIService20ViewPresentationTask),\n         \"initWithRequest:\",\n         v6);\n  objc_release(v6);\n  v10[0] = _NSConcreteStackBlock;\n  v10[1] = 3254779904LL;\n  v10[2] = sub_10000B758;\n  v10[3] = &unk_100010958;\n  v11 = v7;\n  v12 = v5;\n  v8 = objc_retain(v5);\n  v9 = objc_retain(v7);\n  dispatch_async(&_dispatch_main_q, v10);\n  objc_release(v12);\n  objc_release(v11);\n  objc_release(v8);\n  objc_release(v9);\n}"
+}

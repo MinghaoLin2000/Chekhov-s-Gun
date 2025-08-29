@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService36JSAccountPrivacyAcknowledgementStateVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService36JSAccountPrivacyAcknowledgementStateVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JSAccountPrivacyAcknowledgementState()\n{\n  return &type metadata for JSAccountPrivacyAcknowledgementState;\n}"
+}

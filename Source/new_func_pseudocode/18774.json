@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectGetMinX",
+    "function_argument_number": 1,
+    "function_signature": "_CGRectGetMinX(CGRect rect)",
+    "pseudocode": "CGFloat __cdecl CGRectGetMinX(CGRect rect)\n{\n  return _CGRectGetMinX(rect);\n}"
+}

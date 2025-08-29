@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf13MethodOptions11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf13MethodOptions11GetMetadataEv(google::protobuf::MethodOptions * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::MethodOptions::GetMetadata(google::protobuf::MethodOptions *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_google_2fprotobuf_2fdescriptor_2eproto, 0LL);\n  return off_1001F6798[40];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPlugInCreate",
+    "function_argument_number": 2,
+    "function_signature": "_CFPlugInCreate(CFAllocatorRef allocator, CFURLRef plugInURL)",
+    "pseudocode": "CFPlugInRef __cdecl CFPlugInCreate(CFAllocatorRef allocator, CFURLRef plugInURL)\n{\n  return _CFPlugInCreate(allocator, plugInURL);\n}"
+}

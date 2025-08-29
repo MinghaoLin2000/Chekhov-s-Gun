@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_t _teardownTask]",
+    "function_argument_number": 2,
+    "function_signature": "-[platform_http_t _teardownTask](platform_http_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[platform_http_t _teardownTask](platform_http_t *self, SEL a2)\n{\n  IPPSessionTransaction *streamedTask; // x0\n  OS_dispatch_semaphore *streamedTaskFinishedSemaphore; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  streamedTask = self->_streamedTask;\n  self->_streamedTask = 0LL;\n  objc_release(streamedTask);\n  -[IPPSessionTransaction setTransactionCompletedCallback:](\n    self->_streamedTask,\n    \"setTransactionCompletedCallback:\",\n    0LL);\n  streamedTaskFinishedSemaphore = self->_streamedTaskFinishedSemaphore;\n  self->_streamedTaskFinishedSemaphore = 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(streamedTaskFinishedSemaphore);\n}"
+}

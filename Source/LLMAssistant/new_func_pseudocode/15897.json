@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpCallbackUpdateInformationTLV",
+    "function_argument_number": 3,
+    "function_signature": "_uarpCallbackUpdateInformationTLV(__int64 a1, __int64 a2, unsigned int * a3)",
+    "pseudocode": "__int64 __fastcall uarpCallbackUpdateInformationTLV(__int64 a1, __int64 a2, unsigned int *a3)\n{\n  __int64 v5; // x1\n  int v6; // w8\n  __int64 result; // x0\n  int v8; // [xsp+Ch] [xbp-14h]\n\n  v5 = *a3;\n  v8 = a3[1];\n  if ( (_DWORD)v5 != 7 )\n  {\n    result = uarpPlatformQueryAccessoryInfo(a1, v5, a3 + 2);\n    if ( (_DWORD)result )\n      return result;\n    v6 = v8;\n    goto LABEL_6;\n  }\n  if ( a3[1] >= 0x10 )\n  {\n    a3[2] = uarpHtonl(*(unsigned int *)(a2 + 62));\n    a3[3] = uarpHtonl(*(unsigned int *)(a2 + 66));\n    a3[4] = uarpHtonl(*(unsigned int *)(a2 + 70));\n    a3[5] = uarpHtonl(*(unsigned int *)(a2 + 74));\n    v6 = 16;\nLABEL_6:\n    result = 0LL;\n    a3[1] = v6;\n    return result;\n  }\n  return 39LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetTagStructChdr",
+    "function_argument_number": 0,
+    "function_signature": "_uarpAssetTagStructChdr()",
+    "pseudocode": "int *uarpAssetTagStructChdr()\n{\n  int *result; // x0\n\n  aChdr[4] = 0;\n  result = &dword_10002AC94;\n  dword_10002AC94 = *(_DWORD *)aChdr;\n  return result;\n}"
+}

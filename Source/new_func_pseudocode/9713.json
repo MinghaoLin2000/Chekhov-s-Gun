@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP18ObjectUUIDMapEntryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP18ObjectUUIDMapEntryD2Ev(TSP::ObjectUUIDMapEntry * this)",
+    "pseudocode": "void __fastcall TSP::ObjectUUIDMapEntry::~ObjectUUIDMapEntry(TSP::ObjectUUIDMapEntry *this)\n{\n  TSP::UUID *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (TSP::ObjectUUIDMapEntry *)&TSP::_ObjectUUIDMapEntry_default_instance_ )\n  {\n    v2 = (TSP::UUID *)*((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      TSP::UUID::~UUID(v2);\n      operator delete(v3, 0x1081C40825B58B5LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

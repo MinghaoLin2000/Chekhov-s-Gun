@@ -1,0 +1,6 @@
+{
+    "function_name": "_PFFigCopyImageFileWithPropertiesToData",
+    "function_argument_number": 0,
+    "function_signature": "_PFFigCopyImageFileWithPropertiesToData()",
+    "pseudocode": "__int64 PFFigCopyImageFileWithPropertiesToData()\n{\n  return _PFFigCopyImageFileWithPropertiesToData();\n}"
+}

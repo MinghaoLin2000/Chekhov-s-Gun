@@ -1,0 +1,12 @@
+{
+  "_objc_msgSend$resume": 4294980064,
+  "_objc_msgSend$initWithMachServiceName:": 4294979744,
+  "_objc_msgSend$_loadFromHTMLWithOptions:contentLoader:completionHandler:": 4294979520,
+  "_dlsym": 4294979136,
+  "_objc_msgSend$loadFromHTMLWithData:options:completionHandler:": 4294979904,
+  "-[_NSAttributedStringAgent renderHTML:options:extensionTokens:withReply:]": 4294974628,
+  "-[_NSAttributedStringAgent readFromData:orFileURL:options:extensionTokens:withReply:]": 4294976472,
+  "_objc_msgSend$setExportedInterface:": 4294980160,
+  "_objc_msgSend$fileSystemRepresentation": 4294979712,
+  "_objc_msgSend$setExportedObject:": 4294980192
+}

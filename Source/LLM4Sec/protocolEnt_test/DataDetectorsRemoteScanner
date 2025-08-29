@@ -1,0 +1,26 @@
+Service Path:
+/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/XPCServices/DataDetectorsRemoteScanner.xpc/Contents/MacOS/DataDetectorsRemoteScanner
+
+Service Exported Protocols:
+@protocol DataDetectorsRemoteScannerProtocol
+- (void)scanString:(NSString *)arg1 range:(struct _NSRange)arg2 configuration:(DDScannerServiceConfiguration *)arg3 withReply:(void (^)(NSArray *))arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.DataDetectorsRemoteScanner
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.CloudSubscriptionFeatures.datadetectors
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.naturallanguaged
+			[String] com.apple.ind.cloudfeatures
+			[String] com.apple.csfd

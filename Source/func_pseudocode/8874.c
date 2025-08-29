@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService18JSEngagementObjectCMa
+__int64 type metadata accessor for JSEngagementObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService18JSEngagementObject);
+}

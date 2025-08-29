@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIDismissalReasonToSISchemaDismissalReason",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIDismissalReasonToSISchemaDismissalReason()",
+    "pseudocode": "__int64 SiriUIDismissalReasonToSISchemaDismissalReason()\n{\n  return _SiriUIDismissalReasonToSISchemaDismissalReason();\n}"
+}

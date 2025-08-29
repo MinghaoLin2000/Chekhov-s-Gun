@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant:\");\n}"
+}

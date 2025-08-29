@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP21DataPropertiesEntryV1D2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP21DataPropertiesEntryV1D2Ev(TSP::DataPropertiesEntryV1 * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataPropertiesEntryV1::~DataPropertiesEntryV1(TSP::DataPropertiesEntryV1 *this)\n{\n  __ZN3TSP21DataPropertiesEntryV1D2Ev(this);\n}"
+}

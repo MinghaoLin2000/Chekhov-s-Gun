@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf20FieldDescriptorProto11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf20FieldDescriptorProto11GetMetadataEv(google::protobuf::FieldDescriptorProto * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::FieldDescriptorProto::GetMetadata(google::protobuf::FieldDescriptorProto *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_google_2fprotobuf_2fdescriptor_2eproto, 0LL);\n  return off_1001F6798[12];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition19EARSpeechRecognizerCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s22localspeechrecognition19EARSpeechRecognizerCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for EARSpeechRecognizer(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100064028;\n  if ( !qword_100064028 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for EARSpeechRecognizer);\n  return result;\n}"
+}

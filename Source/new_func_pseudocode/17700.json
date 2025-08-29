@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResponse mergeFrom:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResponse mergeFrom:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyResponse mergeFrom:](ModelKeyServerAPIFetchKeyResponse *self, SEL a2, id a3)\n{\n  id v4; // x0\n  _QWORD *v5; // x19\n  ModelKeyServerAPIFetchKeyResult *success; // x0\n  __int64 v7; // x2\n  ModelKeyServerAPIResultError *error; // x0\n  __int64 v9; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = v4;\n  if ( (*((_BYTE *)v4 + 32) & 1) != 0 )\n  {\n    self->_result = *((_DWORD *)v4 + 4);\n    *(_BYTE *)&self->_has |= 1u;\n  }\n  success = self->_success;\n  v7 = v5[3];\n  if ( success )\n  {\n    if ( v7 )\n      -[ModelKeyServerAPIFetchKeyResult mergeFrom:](success, \"mergeFrom:\");\n  }\n  else if ( v7 )\n  {\n    -[ModelKeyServerAPIFetchKeyResponse setSuccess:](self, \"setSuccess:\");\n  }\n  error = self->_error;\n  v9 = v5[1];\n  if ( error )\n  {\n    if ( v9 )\n      -[ModelKeyServerAPIResultError mergeFrom:](error, \"mergeFrom:\");\n  }\n  else if ( v9 )\n  {\n    -[ModelKeyServerAPIFetchKeyResponse setError:](self, \"setError:\");\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_attribute_t setNSName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_attribute_t setNSName:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ipp_attribute_t setNSName:](ipp_attribute_t *self, SEL a2, id a3)\n{\n  NSString *v4; // x0\n  NSString *v5; // x19\n  NSString *v6; // x8\n  NSString *x_name; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (NSString *)objc_retain(a3);\n  v5 = v4;\n  if ( v4 )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(internString(v4));\n    x_name = self->x_name;\n    self->x_name = v6;\n  }\n  else\n  {\n    x_name = self->x_name;\n    self->x_name = 0LL;\n  }\n  objc_release(x_name);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

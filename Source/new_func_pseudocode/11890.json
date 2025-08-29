@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal9ArenaImpl18AddCleanupFallbackEPvPFvS3_E",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal9ArenaImpl18AddCleanupFallbackEPvPFvS3_E(google::protobuf::internal::ArenaImpl * this, void * a2, void (__fastcall *)(void *) a3)",
+    "pseudocode": "__int64 *__fastcall google::protobuf::internal::ArenaImpl::AddCleanupFallback(\n        google::protobuf::internal::ArenaImpl *this,\n        __int64 a2,\n        void (__fastcall *a3)(void *))\n{\n  void *v5; // x0\n  google::protobuf::internal::ArenaImpl *v6; // x8\n  __int64 *result; // x0\n  __int64 *v8; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  google::protobuf::internal::ArenaImpl::thread_cache_();\n  result = (__int64 *)google::protobuf::internal::ArenaImpl::GetSerialArenaFallback(v6, v5);\n  v8 = (__int64 *)result[7];\n  if ( v8 == (__int64 *)result[8] )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::SerialArena::AddCleanupFallback(\n             (google::protobuf::internal::SerialArena *)result,\n             a2,\n             a3);\n  }\n  else\n  {\n    *v8 = a2;\n    v8[1] = (__int64)a3;\n    result[7] = (__int64)(v8 + 2);\n  }\n  return result;\n}"
+}

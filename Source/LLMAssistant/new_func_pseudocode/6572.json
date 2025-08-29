@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker sourceURLFilenameOnlySummary]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker sourceURLFilenameOnlySummary](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[MediaConversionRequestTracker sourceURLFilenameOnlySummary](\n        MediaConversionRequestTracker *self,\n        SEL a2)\n{\n  NSString *cachedSourceURLFilenameOnlySummary; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  cachedSourceURLFilenameOnlySummary = self->_cachedSourceURLFilenameOnlySummary;\n  if ( !cachedSourceURLFilenameOnlySummary )\n  {\n    -[MediaConversionRequestTracker cacheSourceBookmarkCollectionSignatureAndFilename](\n      self,\n      \"cacheSourceBookmarkCollectionSignatureAndFilename\");\n    cachedSourceURLFilenameOnlySummary = self->_cachedSourceURLFilenameOnlySummary;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(cachedSourceURLFilenameOnlySummary);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAUbiquityController presentedItemURL]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAUbiquityController presentedItemURL](PAUbiquityController * self, SEL a2)",
+    "pseudocode": "NSURL *__cdecl -[PAUbiquityController presentedItemURL](PAUbiquityController *self, SEL a2)\n{\n  NSURL *localURL; // x0\n  NSURL *v3; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  localURL = self->_localURL;\n  if ( localURL )\n    v3 = objc_retain(localURL);\n  else\n    v3 = (NSURL *)objc_retainAutoreleasedReturnValue(\n                    +[PAUbiquityController _ubiquitousCardsURL](\n                      &OBJC_CLASS___PAUbiquityController,\n                      \"_ubiquitousCardsURL\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

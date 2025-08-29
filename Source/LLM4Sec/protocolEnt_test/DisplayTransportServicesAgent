@@ -1,0 +1,57 @@
+Service Path:
+/System/Library/PrivateFrameworks/DisplayTransportServices.framework/Versions/A/XPCServices/DisplayTransportServicesAgent.xpc/Contents/MacOS/DisplayTransportServicesAgent
+
+Service Exported Protocols:
+@protocol DTSDeviceDescription
+- (id <DTSDisplayPortDeviceInfo>)info;
+- (unsigned int)framebufferIndex;
+- (unsigned int)port;
+- (unsigned long long)registryEntryID;
+@end
+@protocol DTSDisplayPortDeviceInfo <NSObject>
+@end
+@protocol DTSGPUWrangler <NSObject>
+- (NSArray *)gpus;
+@end
+@protocol DTSGPUWranglerGPU <NSObject>
+- (unsigned long long)framebufferCount;
+- (unsigned long long)agdcRegistryID;
+- (id <DTSIOService>)agdcService;
+@end
+@protocol DTSIOConnect <NSObject>
+- (int)callStructMethod:(unsigned int)arg1 inputStruct:(const void *)arg2 inputStructCount:(unsigned long long)arg3 outputStruct:(void *)arg4 outputStructCount:(unsigned long long *)arg5;
+- (int)callMethod:(unsigned int)arg1 input:(const unsigned long long *)arg2 inputCount:(unsigned int)arg3 inputStruct:(const void *)arg4 inputStructCount:(unsigned long long)arg5 output:(unsigned long long *)arg6 outputCount:(unsigned int *)arg7 outputStruct:(void *)arg8 outputStructCount:(unsigned long long *)arg9;
+@end
+@protocol DTSIOKitLib <NSObject>
+- (id <DTSIOPMAssertion>)PMAssertionWithType:(struct __CFString *)arg1 level:(unsigned int)arg2 name:(struct __CFString *)arg3 error:(int *)arg4;
+- (id <DTSIOService>)serviceForPort:(unsigned int)arg1 matchingDictionary:(NSDictionary *)arg2;
+- (NSMutableDictionary *)matchingDictionaryForRegistryEntryID:(unsigned long long)arg1;
+- (NSMutableDictionary *)matchingDictionaryForClass:(const char *)arg1;
+- (id <DTSIOService>)makeServiceForService:(unsigned int)arg1;
+@end
+@protocol DTSIOPMAssertion <NSObject>
+@end
+@protocol DTSIOService <NSObject>
+- (id <DTSIOConnect>)openWithTask:(unsigned int)arg1 connectionType:(unsigned int)arg2 error:(int *)arg3;
+@end
+@protocol DisplayTransportServicesAgentProtocol
+- (void)getDeviceInfoForPort:(unsigned int)arg1 registryID:(unsigned long long)arg2 withReply:(void (^)(id <DTSDisplayPortDeviceInfo>, NSError *))arg3;
+- (void)setLockState:(unsigned int)arg1 forPort:(unsigned int)arg2 registryID:(unsigned long long)arg3 withReply:(void (^)(NSError *))arg4;
+- (void)probePort:(unsigned int)arg1 registryID:(unsigned long long)arg2 withReply:(void (^)(NSError *))arg3;
+- (void)setState:(unsigned int)arg1 forFramebuffer:(unsigned int)arg2 registryID:(unsigned long long)arg3 withReply:(void (^)(NSError *))arg4;
+- (void)i2cWriteReadAtAddress:(long long)arg1 data:(NSData *)arg2 length:(long long)arg3 port:(unsigned int)arg4 registryID:(unsigned long long)arg5 withReply:(void (^)(NSData *, NSError *))arg6;
+- (void)i2cWriteAtAddress:(long long)arg1 data:(NSData *)arg2 port:(unsigned int)arg3 registryID:(unsigned long long)arg4 withReply:(void (^)(NSError *))arg5;
+- (void)i2cReadAtAddress:(long long)arg1 length:(long long)arg2 port:(unsigned int)arg3 registryID:(unsigned long long)arg4 withReply:(void (^)(NSData *, NSError *))arg5;
+- (void)nativeWriteAtAddress:(long long)arg1 data:(NSData *)arg2 port:(unsigned int)arg3 registryID:(unsigned long long)arg4 withReply:(void (^)(NSError *))arg5;
+- (void)nativeReadAtAddress:(long long)arg1 length:(long long)arg2 port:(unsigned int)arg3 registryID:(unsigned long long)arg4 withReply:(void (^)(NSData *, NSError *))arg5;
+- (void)scanGPUPortsWithReply:(void (^)(NSArray *))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.gpuwrangler
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] false

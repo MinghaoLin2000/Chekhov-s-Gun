@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_getTupleTypeMetadata3",
+    "function_argument_number": 0,
+    "function_signature": "_swift_getTupleTypeMetadata3()",
+    "pseudocode": "__int64 swift_getTupleTypeMetadata3()\n{\n  return _swift_getTupleTypeMetadata3();\n}"
+}

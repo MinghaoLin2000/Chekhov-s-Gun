@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MouseCloudSettingsMediator setGestureEngine:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MouseCloudSettingsMediator setGestureEngine:](MouseCloudSettingsMediator * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[MouseCloudSettingsMediator setGestureEngine:](MouseCloudSettingsMediator *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 8LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController playlistNodes]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPodcastsViewController playlistNodes](DeviceSettingsPodcastsViewController * self, SEL a2)",
+    "pseudocode": "NSMutableArray *__cdecl -[DeviceSettingsPodcastsViewController playlistNodes](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2)\n{\n  return self->_playlistNodes;\n}"
+}

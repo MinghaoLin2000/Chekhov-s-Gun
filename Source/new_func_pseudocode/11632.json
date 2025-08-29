@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal15DynamicMapField14DeleteMapValueERKNS0_6MapKeyE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal15DynamicMapField14DeleteMapValueERKNS0_6MapKeyE(__int64 a1, __int64 a2)",
+    "pseudocode": "bool __fastcall google::protobuf::internal::DynamicMapField::DeleteMapValue(__int64 a1, __int64 a2)\n{\n  __int128 v4; // q0\n  __int64 v5; // x21\n  __int64 v6; // x22\n  __int128 v8; // [xsp+0h] [xbp-70h]\n  __int128 v9; // [xsp+10h] [xbp-60h] BYREF\n  __int64 v10; // [xsp+20h] [xbp-50h]\n  __int128 v11; // [xsp+30h] [xbp-40h] BYREF\n  __int64 v12; // [xsp+40h] [xbp-30h]\n\n  google::protobuf::internal::MapFieldBase::SyncMapWithRepeatedField((google::protobuf::internal::MapFieldBase *)a1);\n  sub_1000D15A4(&v11, a1 + 96, a2, 0LL);\n  v4 = v11;\n  v5 = v11;\n  if ( (_QWORD)v11 )\n  {\n    v6 = v12;\n    *(_DWORD *)(a1 + 88) = 0;\n    if ( !*(_QWORD *)(a1 + 8) )\n    {\n      v8 = v4;\n      sub_1000CD248(v5 + 32);\n      v4 = v8;\n    }\n    v9 = v4;\n    v10 = v6;\n    v11 = v4;\n    v12 = v6;\n    sub_1000D1430(&v9);\n    sub_1000D2E08(a1 + 96, &v11);\n  }\n  return v5 != 0;\n}"
+}

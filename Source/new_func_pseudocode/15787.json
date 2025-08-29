@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointStreamingRecvDeinit",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformEndpointStreamingRecvDeinit(int a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointStreamingRecvDeinit(__int64 result, __int64 a2)\n{\n  void **v3; // x1\n  int v4; // w20\n\n  if ( result )\n  {\n    if ( a2 )\n    {\n      v3 = *(void ***)(a2 + 88);\n      if ( v3 )\n      {\n        v4 = result;\n        if ( *v3 )\n        {\n          UARPLayer2ReturnBuffer(result, *v3);\n          v3 = *(void ***)(a2 + 88);\n          *v3 = 0LL;\n        }\n        result = UARPLayer2ReturnBuffer(v4, v3);\n        *(_QWORD *)(a2 + 88) = 0LL;\n      }\n    }\n  }\n  return result;\n}"
+}

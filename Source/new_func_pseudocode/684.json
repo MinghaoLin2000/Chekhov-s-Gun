@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFileSharingViewController outlineView:draggingSession:endedAtPoint:operation:]",
+    "function_argument_number": 6,
+    "function_signature": "-[DeviceFileSharingViewController outlineView:draggingSession:endedAtPoint:operation:](DeviceFileSharingViewController * self, SEL a2, id a3, id a4, unsigned __int64 a6, CGPoint a5)",
+    "pseudocode": "void __cdecl -[DeviceFileSharingViewController outlineView:draggingSession:endedAtPoint:operation:](\n        DeviceFileSharingViewController *self,\n        SEL a2,\n        id a3,\n        id a4,\n        CGPoint a5,\n        unsigned __int64 a6)\n{\n  NSArray *v7; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( a6 == 32 )\n  {\n    v7 = objc_retainAutoreleasedReturnValue(-[DeviceFileSharingViewController draggedItems](self, \"draggedItems\", a3, a4, a5.x, a5.y));\n    -[DeviceFileSharingViewController deleteItems:](self, \"deleteItems:\", v7);\n    objc_release(v7);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceFileSharingViewController setDraggedItems:](self, \"setDraggedItems:\", 0LL);\n}"
+}

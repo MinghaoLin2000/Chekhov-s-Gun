@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC07accountH00I0AC9JetEngine8UnstableO0G0C_So9ACAccountCSgtcfC",
+    "function_argument_number": 2,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC07accountH00I0AC9JetEngine8UnstableO0G0C_So9ACAccountCSgtcfC(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall DynamicAccountsStore.__allocating_init(accountStore:account:)(__int64 a1, __int64 a2)\n{\n  __int64 v2; // x20\n  __int64 v5; // x20\n\n  v5 = swift_allocObject(v2, 40LL, 7LL);\n  DynamicAccountsStore.init(accountStore:account:)(a1, a2);\n  return v5;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSession initWithBundleIdentifier:clientID:]",
+    "function_argument_number": 4,
+    "function_signature": "-[IPPSession initWithBundleIdentifier:clientID:](IPPSession * self, SEL a2, id a3, int a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nIPPSession *__cdecl -[IPPSession initWithBundleIdentifier:clientID:](IPPSession *self, SEL a2, id a3, int a4)\n{\n  return (IPPSession *)-[IPPSession _initWithBundleIdentifier:clientID:completeConfiguraton:](\n                         self,\n                         \"_initWithBundleIdentifier:clientID:completeConfiguraton:\",\n                         a3,\n                         *(_QWORD *)&a4,\n                         0LL);\n}"
+}

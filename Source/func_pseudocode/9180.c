@@ -1,0 +1,29 @@
+-[NSError tsp_dataIdentifier]
+signed __int64 __cdecl -[NSError tsp_dataIdentifier](NSError *self, SEL a2)
+{
+  void *v2; // x19
+  _QWORD v4[5]; // [xsp+8h] [xbp-68h] BYREF
+  __int64 v5; // [xsp+30h] [xbp-40h] BYREF
+  __int64 *v6; // [xsp+38h] [xbp-38h]
+  __int64 v7; // [xsp+40h] [xbp-30h]
+  __int64 (__fastcall *v8)(); // [xsp+48h] [xbp-28h]
+  __int64 (__fastcall *v9)(); // [xsp+50h] [xbp-20h]
+  id v10; // [xsp+58h] [xbp-18h]
+
+  v5 = 0LL;
+  v6 = &v5;
+  v7 = 0x3032000000LL;
+  v8 = sub_100012D2C;
+  v9 = sub_100012D3C;
+  v10 = 0LL;
+  v4[0] = _NSConcreteStackBlock;
+  v4[1] = 3254779904LL;
+  v4[2] = sub_100013748;
+  v4[3] = &unk_1001D1BA0;
+  v4[4] = &v5;
+  -[NSError tsu_enumerateErrorUsingBlock:](self, "tsu_enumerateErrorUsingBlock:", v4);
+  v2 = objc_msgSend((id)v6[5], "longLongValue");
+  _Block_object_dispose(&v5, 8);
+  objc_release(v10);
+  return (signed __int64)v2;
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_ql_dispatch_async",
+    "function_argument_number": 0,
+    "function_signature": "_ql_dispatch_async()",
+    "pseudocode": "__int64 ql_dispatch_async()\n{\n  return _ql_dispatch_async();\n}"
+}

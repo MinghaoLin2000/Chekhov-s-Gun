@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_guard_acquire",
+    "function_argument_number": 1,
+    "function_signature": "___cxa_guard_acquire(__guard * a1)",
+    "pseudocode": "int __fastcall __cxa_guard_acquire(__guard *a1)\n{\n  return ___cxa_guard_acquire((uint64_t *)a1);\n}"
+}

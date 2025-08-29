@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$internalRunService:pboard:requestingApp:flags:cancelledHint:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$internalRunService:pboard:requestingApp:flags:cancelledHint:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_internalRunService_pboard_requestingApp_flags_cancelledHint_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"internalRunService:pboard:requestingApp:flags:cancelledHint:\");\n}"
+}

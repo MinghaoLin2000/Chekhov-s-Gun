@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController movieUpdateCountFromTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsMoviesViewController movieUpdateCountFromTag:](DeviceSettingsMoviesViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "signed __int64 __cdecl -[DeviceSettingsMoviesViewController movieUpdateCountFromTag:](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  __int64 v3; // x8\n  __int64 v4; // x9\n  signed __int64 v5; // x8\n\n  v3 = 100LL;\n  if ( a3 > -100 )\n    v3 = 0LL;\n  v4 = -100LL;\n  if ( a3 < 100 )\n    v4 = 0LL;\n  if ( a3 >= 0 )\n    v3 = v4;\n  v5 = v3 + a3;\n  if ( a3 == 100 )\n    v5 = 0LL;\n  if ( a3 )\n    return v5;\n  else\n    return 0LL;\n}"
+}

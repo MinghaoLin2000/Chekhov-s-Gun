@@ -1,0 +1,6 @@
+{
+    "function_name": "_closedir",
+    "function_argument_number": 1,
+    "function_signature": "_closedir(DIR * a1)",
+    "pseudocode": "int __cdecl closedir(DIR *a1)\n{\n  return _closedir(a1);\n}"
+}

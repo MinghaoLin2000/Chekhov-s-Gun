@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ExportSessionVideoTranscodingTask startExportSession:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ExportSessionVideoTranscodingTask startExportSession:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ExportSessionVideoTranscodingTask startExportSession:](\n        ExportSessionVideoTranscodingTask *self,\n        SEL a2,\n        id a3)\n{\n  id v3; // x20\n  _QWORD v4[4]; // [xsp+0h] [xbp-40h] BYREF\n  ExportSessionVideoTranscodingTask *v5; // [xsp+20h] [xbp-20h]\n  id v6; // [xsp+28h] [xbp-18h]\n\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_10001E318;\n  v4[3] = &unk_100041680;\n  v5 = self;\n  v6 = objc_retain(a3);\n  v3 = objc_retain(v6);\n  -[VideoTranscodingTask transitionToRunningStateAndConditionallyRunBlock:](\n    v5,\n    \"transitionToRunningStateAndConditionallyRunBlock:\",\n    v4);\n  objc_release(v6);\n  objc_release(v3);\n}"
+}

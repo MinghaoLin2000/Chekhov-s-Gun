@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipFileWriter truncateToOffsetImpl:completion:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUZipFileWriter truncateToOffsetImpl:completion:](TSUZipFileWriter * self, SEL a2, signed __int64 a3, id a4)",
+    "pseudocode": "void __cdecl -[TSUZipFileWriter truncateToOffsetImpl:completion:](\n        TSUZipFileWriter *self,\n        SEL a2,\n        signed __int64 a3,\n        id a4)\n{\n  -[TSURandomWriteChannel truncateToLength:completion:](self->_writeChannel, \"truncateToLength:completion:\", a3, a4);\n}"
+}

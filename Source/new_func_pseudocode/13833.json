@@ -1,0 +1,6 @@
+{
+    "function_name": "_memchr",
+    "function_argument_number": 3,
+    "function_signature": "_memchr(void * __s, int __c, size_t __n)",
+    "pseudocode": "void *__cdecl memchr(void *__s, int __c, size_t __n)\n{\n  return _memchr(__s, __c, __n);\n}"
+}

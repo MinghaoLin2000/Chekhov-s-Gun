@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMParametersObserver check]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMParametersObserver check](AMParametersObserver * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMParametersObserver check](AMParametersObserver *self, SEL a2)\n{\n  os_unfair_lock_s *p_lock; // x19\n  NSAssertionHandler *v5; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  p_lock = &self->__lock;\n  os_unfair_lock_lock(&self->__lock);\n  if ( !+[NSThread isMainThread](&OBJC_CLASS___NSThread, \"isMainThread\") )\n  {\n    v5 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v5,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"AMParametersObserver.m\"),\n      137LL,\n      CFSTR(\"Should be on main thread!\"));\n    objc_release(v5);\n  }\n  -[AMParametersObserver _parametersChangeObserved](self, \"_parametersChangeObserved\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  os_unfair_lock_unlock(p_lock);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService isSiriListening:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService isSiriListening:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[SiriNCService isSiriListening:](SiriNCService *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, void *); // x19\n  os_log_s *v5; // x21\n  SiriNCAlertViewController *v6; // x20\n  int v7; // [xsp+0h] [xbp-40h] BYREF\n  const char *v8; // [xsp+4h] [xbp-3Ch]\n\n  v4 = (void (__fastcall **)(id, void *))objc_retain(a3);\n  v5 = (os_log_s *)AFSiriLogContextConnection;\n  if ( os_log_type_enabled(AFSiriLogContextConnection, OS_LOG_TYPE_DEFAULT) )\n  {\n    v7 = 136315138;\n    v8 = \"-[SiriNCService isSiriListening:]\";\n    _os_log_impl((void *)&_mh_execute_header, v5, OS_LOG_TYPE_DEFAULT, \"%s \", (uint8_t *)&v7, 0xCu);\n  }\n  v6 = objc_retainAutoreleasedReturnValue(-[SiriNCService alertViewController](self, \"alertViewController\"));\n  v4[2](v4, (void *)-[SiriNCAlertViewController isSiriListening](v6, \"isSiriListening\"));\n  objc_release(v6);\n  objc_release(v4);\n}"
+}

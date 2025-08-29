@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BackgroundAssetConsentTask requestConsentWithCompletion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BackgroundAssetConsentTask requestConsentWithCompletion:](BackgroundAssetConsentTask * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[BackgroundAssetConsentTask requestConsentWithCompletion:](\n        BackgroundAssetConsentTask *self,\n        SEL a2,\n        id a3)\n{\n  void *v4; // x20\n  _QWORD block[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  v4 = objc_msgSend(a3, \"copy\");\n  -[BackgroundAssetConsentTask setCompletionBlock:](self, \"setCompletionBlock:\", v4);\n  objc_release(v4);\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100009268;\n  block[3] = &unk_1000108C8;\n  block[4] = self;\n  dispatch_async(&_dispatch_main_q, block);\n}"
+}

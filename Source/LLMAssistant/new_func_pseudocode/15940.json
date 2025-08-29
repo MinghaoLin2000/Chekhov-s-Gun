@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetTagChdr4cc",
+    "function_argument_number": 0,
+    "function_signature": "_uarpAssetTagChdr4cc()",
+    "pseudocode": "char *uarpAssetTagChdr4cc()\n{\n  char *result; // x0\n\n  result = aChdr;\n  aChdr[4] = 0;\n  return result;\n}"
+}

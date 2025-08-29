@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextDrawPDFPageWithOptions",
+    "function_argument_number": 0,
+    "function_signature": "_CGContextDrawPDFPageWithOptions()",
+    "pseudocode": "__int64 CGContextDrawPDFPageWithOptions()\n{\n  return _CGContextDrawPDFPageWithOptions();\n}"
+}

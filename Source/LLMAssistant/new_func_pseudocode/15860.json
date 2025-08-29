@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2AssetMetaDataProcessingError",
+    "function_argument_number": 2,
+    "function_signature": "_UARPLayer2AssetMetaDataProcessingError(__int64 result, __int64 a2)",
+    "pseudocode": "__int64 __fastcall UARPLayer2AssetMetaDataProcessingError(__int64 result, __int64 a2)\n{\n  __int64 (__fastcall *v2)(_QWORD, _QWORD); // x3\n\n  v2 = *(__int64 (__fastcall **)(_QWORD, _QWORD))(a2 + 104);\n  if ( v2 )\n    return v2(*(_QWORD *)(result + 544), *(_QWORD *)(a2 + 704));\n  return result;\n}"
+}

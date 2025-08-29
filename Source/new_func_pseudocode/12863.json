@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDatabase executeUpdateWithSql:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUDatabase executeUpdateWithSql:error:](TSUDatabase * self, SEL a2, const char * a3, id * a4)",
+    "pseudocode": "bool __cdecl -[TSUDatabase executeUpdateWithSql:error:](TSUDatabase *self, SEL a2, const char *a3, id *a4)\n{\n  _BOOL4 v6; // w0\n  __int64 v8; // [xsp+8h] [xbp-18h] BYREF\n\n  v8 = 0LL;\n  v6 = -[TSUDatabase prepareStatement:sql:error:](self, \"prepareStatement:sql:error:\", &v8, a3, a4);\n  if ( v6 )\n    LOBYTE(v6) = -[TSUDatabase executeUpdate:shouldFinalize:error:](\n                   self,\n                   \"executeUpdate:shouldFinalize:error:\",\n                   v8,\n                   1LL,\n                   a4);\n  return v6;\n}"
+}

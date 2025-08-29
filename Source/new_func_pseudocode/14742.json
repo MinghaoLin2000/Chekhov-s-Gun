@@ -1,0 +1,6 @@
+{
+    "function_name": "+[UINSSystemPreferencesSettingsManager sharedManager]",
+    "function_argument_number": 2,
+    "function_signature": "+[UINSSystemPreferencesSettingsManager sharedManager](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[UINSSystemPreferencesSettingsManager sharedManager](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100011BB0 != -1 )\n    dispatch_once(&qword_100011BB0, &stru_10000C290);\n  v2 = (void *)qword_100011BA8;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

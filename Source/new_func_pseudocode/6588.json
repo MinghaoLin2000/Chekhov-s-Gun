@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextDrawImage",
+    "function_argument_number": 3,
+    "function_signature": "_CGContextDrawImage(CGContextRef c, CGImageRef image, CGRect rect)",
+    "pseudocode": "void __cdecl CGContextDrawImage(CGContextRef c, CGRect rect, CGImageRef image)\n{\n  _CGContextDrawImage(c, rect, image);\n}"
+}

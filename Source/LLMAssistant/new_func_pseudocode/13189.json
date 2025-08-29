@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFUEqualCryptoKeys",
+    "function_argument_number": 2,
+    "function_signature": "_SFUEqualCryptoKeys(unsigned __int64 a1, unsigned __int64 a2)",
+    "pseudocode": "bool __fastcall SFUEqualCryptoKeys(unsigned __int64 a1, unsigned __int64 a2)\n{\n  _BOOL8 result; // x0\n  bool v5; // w9\n  _BOOL4 v6; // w8\n  void *v7; // x21\n\n  if ( !(a1 | a2) )\n    return 1LL;\n  result = 0LL;\n  v5 = a1 != 0;\n  if ( a2 )\n    v6 = a1 != 0;\n  else\n    v6 = 1;\n  if ( a2 )\n    v5 = 0;\n  if ( !v5 && v6 )\n  {\n    v7 = objc_msgSend((id)a1, \"keyLength\");\n    return v7 == objc_msgSend((id)a2, \"keyLength\")\n        && memcmp(objc_msgSend((id)a1, \"keyData\"), objc_msgSend((id)a2, \"keyData\"), (size_t)v7) == 0;\n  }\n  return result;\n}"
+}

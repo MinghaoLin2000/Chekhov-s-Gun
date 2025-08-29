@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCheckBox hitTestOnlyOnImage]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCheckBox hitTestOnlyOnImage](DeviceSettingsCheckBox * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsCheckBox hitTestOnlyOnImage](DeviceSettingsCheckBox *self, SEL a2)\n{\n  return self->_hitTestOnlyOnImage;\n}"
+}

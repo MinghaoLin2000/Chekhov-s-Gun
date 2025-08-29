@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition15InstrumentationC15CompletionStateOwxx",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition15InstrumentationC15CompletionStateOwxx()",
+    "pseudocode": "void destroy for Instrumentation.CompletionState()\n{\n  ;\n}"
+}

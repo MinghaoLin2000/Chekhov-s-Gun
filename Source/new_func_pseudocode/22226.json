@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLRequestDispatchBlock",
+    "function_argument_number": 0,
+    "function_signature": "_QLRequestDispatchBlock()",
+    "pseudocode": "__int64 QLRequestDispatchBlock()\n{\n  return _QLRequestDispatchBlock();\n}"
+}

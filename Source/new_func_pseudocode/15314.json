@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MobileAssetUpdater .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[MobileAssetUpdater .cxx_destruct](MobileAssetUpdater * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MobileAssetUpdater .cxx_destruct](MobileAssetUpdater *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_assetLocation, 0LL);\n  objc_storeStrong((id *)&self->_lock, 0LL);\n  objc_storeStrong((id *)&self->_log, 0LL);\n  objc_storeStrong((id *)&self->_assetType, 0LL);\n  objc_storeStrong((id *)&self->_query, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_asset, 0LL);\n}"
+}

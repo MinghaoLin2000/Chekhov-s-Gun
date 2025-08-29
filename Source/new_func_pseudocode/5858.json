@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GCSettingsMediator setCopilotFusedControllers:]",
+    "function_argument_number": 3,
+    "function_signature": "-[GCSettingsMediator setCopilotFusedControllers:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[GCSettingsMediator setCopilotFusedControllers:](GCSettingsMediator *self, SEL a2, id a3)\n{\n  id v3; // x19\n  __int64 v4; // x1\n  os_log_s *v5; // x20\n  id v6; // x20\n  int v7; // [xsp+0h] [xbp-30h] BYREF\n  id v8; // [xsp+4h] [xbp-2Ch]\n\n  v3 = objc_retain(a3);\n  v5 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)getGCSLogger(v3, v4));\n  if ( os_log_type_enabled(v5, OS_LOG_TYPE_INFO) )\n  {\n    v7 = 138412290;\n    v8 = v3;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v5,\n      OS_LOG_TYPE_INFO,\n      \"GCSettingsMediator::setCopilotFusedControllers %@\",\n      (uint8_t *)&v7,\n      0xCu);\n  }\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue((id)sub_100003C08());\n  objc_msgSend(v6, \"setObject:forKey:\", v3, CFSTR(\"copilotFusedControllers\"));\n  objc_release(v6);\n  objc_release(v3);\n}"
+}

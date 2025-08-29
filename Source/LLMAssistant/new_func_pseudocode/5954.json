@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService updateIndexForAppInstallWithBundleIds:with:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService updateIndexForAppInstallWithBundleIds:with:](_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[SiriSuggestionsBookkeepingService updateIndexForAppInstallWithBundleIds:with:](\n        _TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  sub_100007A34((int)self, (int)a2, (int)a3, a4);\n}"
+}

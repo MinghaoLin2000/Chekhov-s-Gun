@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18GenericTypeHandlerINS0_7MessageEE16NewFromPrototypeEPKS3_PNS0_5ArenaE",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal18GenericTypeHandlerINS0_7MessageEE16NewFromPrototypeEPKS3_PNS0_5ArenaE(__int64 a1)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::GenericTypeHandler<google::protobuf::Message>::NewFromPrototype(\n        __int64 a1)\n{\n  return (*(__int64 (**)(void))(*(_QWORD *)a1 + 32LL))();\n}"
+}

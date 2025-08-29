@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringWithTrimmedWhitespace]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringWithTrimmedWhitespace](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringWithTrimmedWhitespace](NSString *self, SEL a2)\n{\n  NSCharacterSet *v3; // x20\n  NSArray *v4; // x19\n  NSString *v5; // x21\n  NSString *v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(\n         +[NSCharacterSet whitespaceAndNewlineCharacterSet](\n           &OBJC_CLASS___NSCharacterSet,\n           \"whitespaceAndNewlineCharacterSet\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[NSString componentsSeparatedByCharactersInSet:](self, \"componentsSeparatedByCharactersInSet:\", v3));\n  v5 = objc_retainAutoreleasedReturnValue(-[NSArray componentsJoinedByString:](v4, \"componentsJoinedByString:\", CFSTR(\" \")));\n  objc_release(v4);\n  v6 = objc_retainAutoreleasedReturnValue(-[NSString stringByTrimmingCharactersInSet:](v5, \"stringByTrimmingCharactersInSet:\", v3));\n  objc_release(v5);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

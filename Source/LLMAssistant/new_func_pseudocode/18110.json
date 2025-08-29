@@ -1,0 +1,6 @@
+{
+    "function_name": "_parse_utf16_str",
+    "function_argument_number": 2,
+    "function_signature": "_parse_utf16_str(int a1, size_t size)",
+    "pseudocode": "_BYTE *__fastcall parse_utf16_str(__int64 a1, size_t size, size_t *a3)\n{\n  _BYTE *v6; // x0\n  _BYTE *v7; // x19\n  size_t v8; // x8\n  _BYTE *i; // x9\n  int v10; // w10\n\n  *a3 = 0LL;\n  v6 = malloc_type_malloc(size, 0x1E154BD8uLL);\n  v7 = v6;\n  if ( v6 )\n  {\n    bzero(v6, size);\n    if ( size )\n    {\n      v8 = 0LL;\n      for ( i = v7; ; ++i )\n      {\n        v10 = *(unsigned __int8 *)(a1 + v8);\n        *i = v10;\n        v8 += 2LL;\n        if ( !v10 )\n          break;\n        if ( v8 >= size )\n          return v7;\n      }\n      *a3 = v8;\n    }\n  }\n  else if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n  {\n    sub_1000104D4();\n  }\n  return v7;\n}"
+}

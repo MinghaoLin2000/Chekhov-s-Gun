@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP12Path_ElementD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP12Path_ElementD2Ev(TSP::Path_Element * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::Path_Element::~Path_Element(TSP::Path_Element *this)\n{\n  __ZN3TSP12Path_ElementD2Ev(this);\n}"
+}

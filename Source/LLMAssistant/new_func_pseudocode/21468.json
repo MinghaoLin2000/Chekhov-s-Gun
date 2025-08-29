@@ -1,0 +1,6 @@
+{
+    "function_name": "+[LSRSpeechAssets sharedInstance]",
+    "function_argument_number": 2,
+    "function_signature": "+[LSRSpeechAssets sharedInstance](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[LSRSpeechAssets sharedInstance](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100065410 != -1 )\n    dispatch_once(&qword_100065410, &stru_100059B00);\n  v2 = (void *)qword_100065408;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

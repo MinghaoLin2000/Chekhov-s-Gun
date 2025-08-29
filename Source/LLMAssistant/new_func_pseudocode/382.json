@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController setCurrentController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceUIServiceViewController setCurrentController:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceUIServiceViewController setCurrentController:](DeviceUIServiceViewController *self, SEL a2, id a3)\n{\n  DeviceViewController *v4; // x20\n  void *v5; // x21\n  DeviceViewController *currentController; // x21\n  DeviceViewController *v7; // x20\n  void *v8; // x21\n  void *v9; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (DeviceViewController *)objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceViewController view](self->_currentController, \"view\"));\n  objc_msgSend(v5, \"removeFromSuperview\");\n  objc_release(v5);\n  currentController = self->_currentController;\n  self->_currentController = v4;\n  v7 = objc_retain(v4);\n  objc_release(currentController);\n  v8 = objc_retainAutoreleasedReturnValue(-[DeviceViewController view](self->_currentController, \"view\"));\n  objc_release(v7);\n  v9 = objc_retainAutoreleasedReturnValue(-[DeviceUIServiceViewController view](self, \"view\"));\n  sub_10002ABA4((int)v8, v9);\n  objc_release(v9);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsDetailsTabContentViewController shouldHitTestOnlyOnImageForOutlineView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsDetailsTabContentViewController shouldHitTestOnlyOnImageForOutlineView:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsDetailsTabContentViewController shouldHitTestOnlyOnImageForOutlineView:](\n        DeviceSettingsDetailsTabContentViewController *self,\n        SEL a2,\n        id a3)\n{\n  DeviceSettingsTabContentOutlineView *v4; // x20\n  DeviceSettingsTabContentOutlineView *v5; // x19\n\n  v4 = (DeviceSettingsTabContentOutlineView *)objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsTabContentViewController outlineView](self, \"outlineView\"));\n  objc_release(v4);\n  objc_release(v5);\n  return v5 == v4;\n}"
+}

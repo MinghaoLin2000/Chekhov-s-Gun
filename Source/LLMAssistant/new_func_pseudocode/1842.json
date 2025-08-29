@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController deviceBatteryInfo]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceHeaderViewController deviceBatteryInfo](DeviceHeaderViewController * self, SEL a2)",
+    "pseudocode": "AMPDeviceBatteryInfo *__cdecl -[DeviceHeaderViewController deviceBatteryInfo](DeviceHeaderViewController *self, SEL a2)\n{\n  return self->_deviceBatteryInfo;\n}"
+}

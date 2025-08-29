@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController prepareForLaunchWithInputMode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController prepareForLaunchWithInputMode:](SiriNCAlertViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController prepareForLaunchWithInputMode:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  id v5; // x0\n  AFUISiriViewController *v6; // x20\n  void *v7; // x21\n  void *v8; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_unsafeClaimAutoreleasedReturnValue(-[SiriNCAlertViewController view](self, \"view\"));\n  v6 = objc_retainAutoreleasedReturnValue(-[SiriNCAlertViewController siriViewController](self, \"siriViewController\"));\n  v7 = objc_retainAutoreleasedReturnValue(-[AFUISiriViewController view](v6, \"view\"));\n  v8 = objc_retainAutoreleasedReturnValue(objc_msgSend(v7, \"statusView\"));\n  objc_msgSend(v8, \"prepareForLaunchWithInputMode:\", a3);\n  objc_release(v8);\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15UUIDRectArchiveD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP15UUIDRectArchiveD1Ev(TSP::UUIDRectArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::UUIDRectArchive::~UUIDRectArchive(TSP::UUIDRectArchive *this)\n{\n  __ZN3TSP15UUIDRectArchiveD2Ev(this);\n}"
+}

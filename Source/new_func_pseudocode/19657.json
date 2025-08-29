@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionDelegate initWithClientID:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IPPSessionDelegate initWithClientID:](IPPSessionDelegate * self, SEL a2, int a3)",
+    "pseudocode": "IPPSessionDelegate *__cdecl -[IPPSessionDelegate initWithClientID:](IPPSessionDelegate *self, SEL a2, int a3)\n{\n  IPPSessionDelegate *result; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___IPPSessionDelegate;\n  result = -[IPPSessionDelegate init](&v5, \"init\");\n  if ( result )\n    result->_clientID = a3;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeFinderViewController .cxx_destruct](DeviceModeFinderViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceModeFinderViewController .cxx_destruct](DeviceModeFinderViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_deviceDragHandler, 0LL);\n  objc_storeStrong((id *)&self->_originalSyncPrefs, 0LL);\n  objc_storeStrong((id *)&self->_dirtyViewControllers, 0LL);\n  objc_storeStrong((id *)&self->_contentView, 0LL);\n  objc_storeStrong((id *)&self->_progressViewController, 0LL);\n  objc_storeStrong((id *)&self->_loadingViewController, 0LL);\n  objc_storeStrong((id *)&self->_footerViewController, 0LL);\n  objc_storeStrong((id *)&self->_finderTabContainerViewController, 0LL);\n  objc_storeStrong((id *)&self->_headerViewController, 0LL);\n  objc_storeStrong((id *)&self->_setupViewController, 0LL);\n  objc_destroyWeak((id *)&self->_footerViewContainer);\n  objc_destroyWeak((id *)&self->_contentViewContainer);\n  objc_destroyWeak((id *)&self->_deviceInfoContainer);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_headerViewContainer);\n}"
+}

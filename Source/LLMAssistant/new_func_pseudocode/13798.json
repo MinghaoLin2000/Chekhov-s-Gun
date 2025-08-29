@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_io_barrier",
+    "function_argument_number": 2,
+    "function_signature": "_dispatch_io_barrier(dispatch_io_t channel, dispatch_block_t barrier)",
+    "pseudocode": "void __cdecl dispatch_io_barrier(dispatch_io_t channel, dispatch_block_t barrier)\n{\n  _dispatch_io_barrier(channel, barrier);\n}"
+}

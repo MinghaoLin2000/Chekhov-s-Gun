@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetSetPayloadIndex",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointAssetSetPayloadIndex(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetSetPayloadIndex(__int64 a1, __int64 a2, __int64 a3)\n{\n  return uarpPlatformEndpointAssetSetPayloadIndex2(a1, a2, a3, 0LL);\n}"
+}

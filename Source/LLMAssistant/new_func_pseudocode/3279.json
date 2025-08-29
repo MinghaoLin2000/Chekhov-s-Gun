@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceAutofillSettingsViewController autofillPrefs]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceAutofillSettingsViewController autofillPrefs](DeviceAutofillSettingsViewController * self, SEL a2)",
+    "pseudocode": "AMPDeviceAutoFillPrefs *__cdecl -[DeviceAutofillSettingsViewController autofillPrefs](\n        DeviceAutofillSettingsViewController *self,\n        SEL a2)\n{\n  return self->_autofillPrefs;\n}"
+}

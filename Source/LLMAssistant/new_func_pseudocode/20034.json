@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Browse_Bonjour cancel]",
+    "function_argument_number": 2,
+    "function_signature": "-[Browse_Bonjour cancel](Browse_Bonjour * self, SEL a2)",
+    "pseudocode": "void __cdecl -[Browse_Bonjour cancel](Browse_Bonjour *self, SEL a2)\n{\n  void *v3; // x20\n  NSMutableDictionary *serviceBrowsers; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[NSMutableDictionary allValues](self->_serviceBrowsers, \"allValues\"));\n  objc_msgSend(v3, \"enumerateObjectsUsingBlock:\", &stru_10009E2D8);\n  objc_release(v3);\n  serviceBrowsers = self->_serviceBrowsers;\n  self->_serviceBrowsers = 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(serviceBrowsers);\n}"
+}

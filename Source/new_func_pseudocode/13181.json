@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoKey initAes128Key:length:iterationCount:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUCryptoKey initAes128Key:length:iterationCount:](SFUCryptoKey * self, SEL a2, const char * a3, unsigned int a4, unsigned int a5)",
+    "pseudocode": "id __cdecl -[SFUCryptoKey initAes128Key:length:iterationCount:](\n        SFUCryptoKey *self,\n        SEL a2,\n        const char *a3,\n        unsigned int a4,\n        unsigned int a5)\n{\n  SFUCryptoKey *v7; // x0\n  SFUCryptoKey *v8; // x20\n  objc_super v10; // [xsp+0h] [xbp-30h] BYREF\n\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___SFUCryptoKey;\n  v7 = -[SFUCryptoKey init](&v10, \"init\");\n  v8 = v7;\n  if ( v7 )\n  {\n    v7->mIterationCount = a5;\n    v7->mKeyLength = 16LL;\n    if ( a4 == 16 )\n    {\n      v7->mKey = (char *)malloc_type_calloc(1uLL, 0x10uLL, 0x769E0DEBuLL);\n      __memcpy_chk();\n    }\n    else\n    {\n      objc_release(v7);\n      return 0LL;\n    }\n  }\n  return v8;\n}"
+}

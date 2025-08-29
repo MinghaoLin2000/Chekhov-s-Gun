@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlXPathFreeContext",
+    "function_argument_number": 1,
+    "function_signature": "_xmlXPathFreeContext(xmlXPathContextPtr ctxt)",
+    "pseudocode": "void __cdecl xmlXPathFreeContext(xmlXPathContextPtr ctxt)\n{\n  _xmlXPathFreeContext(ctxt);\n}"
+}

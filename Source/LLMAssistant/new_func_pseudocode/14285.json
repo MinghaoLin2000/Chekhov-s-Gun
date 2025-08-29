@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$linkItemAtURL:toURL:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$linkItemAtURL:toURL:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_linkItemAtURL_toURL_error_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"linkItemAtURL:toURL:error:\");\n}"
+}

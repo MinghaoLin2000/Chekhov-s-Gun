@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController nodesDidChangeNotification:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPodcastsViewController nodesDidChangeNotification:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPodcastsViewController nodesDidChangeNotification:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = objc_retain(a3);\n  -[DeviceSettingsPodcastsViewController updateTabView](self, \"updateTabView\");\n  -[DeviceSettingsViewController updatePanelUIState](self, \"updatePanelUIState\");\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceSettingsPodcastsViewController;\n  -[DeviceSettingsViewController nodesDidChangeNotification:](&v5, \"nodesDidChangeNotification:\", v4);\n  objc_release(v4);\n}"
+}

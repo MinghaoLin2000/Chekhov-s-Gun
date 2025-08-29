@@ -1,0 +1,6 @@
+{
+    "function_name": "+[DeviceSettingsNode defaultNodeComparator]",
+    "function_argument_number": 2,
+    "function_signature": "+[DeviceSettingsNode defaultNodeComparator](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[DeviceSettingsNode defaultNodeComparator](id a1, SEL a2)\n{\n  return &stru_1000B9DD8;\n}"
+}

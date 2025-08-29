@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN38JobRequestAttributes_FromRequestParamsD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN38JobRequestAttributes_FromRequestParamsD2Ev(JobRequestAttributes_FromRequestParams * this)",
+    "pseudocode": "void __fastcall JobRequestAttributes_FromRequestParams::~JobRequestAttributes_FromRequestParams(\n        JobRequestAttributes_FromRequestParams *this)\n{\n  void *v2; // x0\n  void *v3; // x0\n\n  *(_QWORD *)this = off_10009C378;\n  v2 = (void *)*((_QWORD *)this + 21);\n  *((_QWORD *)this + 21) = 0LL;\n  objc_release(v2);\n  v3 = (void *)*((_QWORD *)this + 22);\n  *((_QWORD *)this + 22) = 0LL;\n  objc_release(v3);\n  objc_release(*((id *)this + 22));\n  objc_release(*((id *)this + 21));\n  objc_release(*((id *)this + 20));\n  objc_release(*((id *)this + 19));\n  objc_release(*((id *)this + 18));\n  objc_release(*((id *)this + 17));\n  objc_release(*((id *)this + 15));\n  objc_release(*((id *)this + 14));\n  objc_release(*((id *)this + 13));\n  objc_release(*((id *)this + 12));\n  objc_release(*((id *)this + 11));\n  objc_release(*((id *)this + 9));\n  objc_release(*((id *)this + 7));\n  objc_release(*((id *)this + 6));\n  objc_release(*((id *)this + 5));\n  objc_release(*((id *)this + 4));\n  objc_release(*((id *)this + 2));\n}"
+}

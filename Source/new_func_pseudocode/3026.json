@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceChooseBackupViewController backupPassword]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceChooseBackupViewController backupPassword](DeviceChooseBackupViewController * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[DeviceChooseBackupViewController backupPassword](DeviceChooseBackupViewController *self, SEL a2)\n{\n  return self->_backupPassword;\n}"
+}

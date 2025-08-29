@@ -1,0 +1,6 @@
+{
+    "function_name": "_MAGetPallasAudience",
+    "function_argument_number": 0,
+    "function_signature": "_MAGetPallasAudience()",
+    "pseudocode": "__int64 MAGetPallasAudience()\n{\n  return _MAGetPallasAudience();\n}"
+}

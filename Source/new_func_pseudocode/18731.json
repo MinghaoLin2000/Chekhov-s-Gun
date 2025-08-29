@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper21BackgroundStylePickerVwca",
+    "function_argument_number": 2,
+    "function_signature": "$s27BackgroundReplacementHelper21BackgroundStylePickerVwca(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithCopy for BackgroundStylePicker(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x21\n  __int64 v7; // x0\n  __int64 v8; // x0\n  __int64 v9; // x21\n\n  v4 = *a2;\n  v5 = *a1;\n  *a1 = *a2;\n  swift_bridgeObjectRetain(v4);\n  swift_bridgeObjectRelease(v5);\n  v6 = a1[1];\n  v7 = a2[1];\n  a1[1] = v7;\n  swift_retain(v7);\n  swift_release(v6);\n  v8 = a2[2];\n  v9 = a1[2];\n  a1[2] = v8;\n  swift_retain(v8);\n  swift_release(v9);\n  *((_BYTE *)a1 + 24) = *((_BYTE *)a2 + 24);\n  return a1;\n}"
+}

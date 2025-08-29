@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$outlineView:child:ofItem:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$outlineView:child:ofItem:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_outlineView_child_ofItem_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"outlineView:child:ofItem:\");\n}"
+}

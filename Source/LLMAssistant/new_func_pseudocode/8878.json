@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService20JSLocalizationObjectCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService20JSLocalizationObjectCMa()",
+    "pseudocode": "__int64 type metadata accessor for JSLocalizationObject()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _refreshAtTimestamp:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv _refreshAtTimestamp:](ATXHeuristicJSEnv * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv _refreshAtTimestamp:](ATXHeuristicJSEnv *self, SEL a2, double a3)\n{\n  double v5; // d0\n  id v6; // x20\n  NSDate *v7; // x21\n  void *v8; // x20\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  +[NSDate timeIntervalSinceReferenceDate](&OBJC_CLASS___NSDate, \"timeIntervalSinceReferenceDate\");\n  if ( v5 < a3 )\n  {\n    v6 = objc_alloc((Class)&OBJC_CLASS___ATXInformationHeuristicRefreshTimeTrigger);\n    v7 = objc_retainAutoreleasedReturnValue(\n           +[NSDate dateWithTimeIntervalSinceReferenceDate:](\n             &OBJC_CLASS___NSDate,\n             \"dateWithTimeIntervalSinceReferenceDate:\",\n             a3));\n    v8 = objc_msgSend(v6, \"initWithFireDate:\", v7);\n    objc_release(v7);\n    -[NSMutableSet addObject:](self->_currentRefreshTriggerBuffer, \"addObject:\", v8);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v8);\n  }\n}"
+}

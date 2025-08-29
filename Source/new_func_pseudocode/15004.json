@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _expireCacheAfterTime:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv _expireCacheAfterTime:](ATXHeuristicJSEnv * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv _expireCacheAfterTime:](ATXHeuristicJSEnv *self, SEL a2, double a3)\n{\n  __int64 v3; // x30\n  id v6; // x20\n  NSDate *v7; // x21\n  NSDate *v8; // x22\n  void *v9; // x20\n\n  if ( a3 > 0.0 )\n  {\n    v6 = objc_alloc((Class)&OBJC_CLASS___ATXHeuristicCacheTimeExpirer);\n    v7 = objc_retainAutoreleasedReturnValue(-[ATXHeuristicJSEnv now](self, \"now\"));\n    v8 = objc_retainAutoreleasedReturnValue(-[NSDate dateByAddingTimeInterval:](v7, \"dateByAddingTimeInterval:\", a3));\n    v9 = objc_msgSend(v6, \"initWithFireDate:\", v8);\n    objc_release(v8);\n    objc_release(v7);\n    -[NSMutableSet addObject:](self->_currentExpirersBuffer, \"addObject:\", v9);\n    if ( ((v3 ^ (2 * v3)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v9);\n  }\n}"
+}

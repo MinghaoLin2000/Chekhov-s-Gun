@@ -1,0 +1,6 @@
+{
+    "function_name": "_readdir",
+    "function_argument_number": 1,
+    "function_signature": "_readdir(DIR * a1)",
+    "pseudocode": "dirent *__cdecl readdir(DIR *a1)\n{\n  return _readdir(a1);\n}"
+}

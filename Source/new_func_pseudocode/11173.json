@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21MethodDescriptorProtoC2EPNS0_5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf21MethodDescriptorProtoC2EPNS0_5ArenaE(google::protobuf::MethodDescriptorProto * this, google::protobuf::Arena * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::MethodDescriptorProto::MethodDescriptorProto(__int64 a1, __int64 a2)\n{\n  *(_QWORD *)a1 = off_1001D89A0;\n  *(_QWORD *)(a1 + 8) = a2;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  if ( atomic_load_explicit(scc_info_MethodDescriptorProto_google_2fprotobuf_2fdescriptor_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_MethodDescriptorProto_google_2fprotobuf_2fdescriptor_2eproto);\n  *(_QWORD *)(a1 + 24) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_QWORD *)(a1 + 32) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_QWORD *)(a1 + 40) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_QWORD *)(a1 + 48) = 0LL;\n  *(_WORD *)(a1 + 56) = 0;\n  return a1;\n}"
+}

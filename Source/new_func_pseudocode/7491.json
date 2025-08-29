@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV8setValue_6forKey10connectionyyXl_SSAA13CGSConnectionVtF",
+    "function_argument_number": 5,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV8setValue_6forKey10connectionyyXl_SSAA13CGSConnectionVtF(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)",
+    "pseudocode": "void __fastcall CGSSpace.setValue(_:forKey:connection:)(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)\n{\n  __int64 v10; // x0\n  __int64 inited; // x24\n  __int64 v12; // x0\n  void *v13; // x21\n  _BYTE v14[56]; // [xsp+8h] [xbp-68h] BYREF\n\n  v10 = sub_100002BF4(&unk_100029BD8);\n  inited = swift_initStackObject(v10, v14);\n  *(_OWORD *)(inited + 16) = xmmword_10001FC20;\n  *(_QWORD *)(inited + 32) = a2;\n  *(_QWORD *)(inited + 40) = a3;\n  *(_QWORD *)(inited + 48) = a1;\n  swift_bridgeObjectRetain(a3);\n  swift_unknownObjectRetain(a1);\n  v12 = sub_10001CA80(\n          inited,\n          &type metadata for String,\n          (char *)&type metadata for Swift.AnyObject + 8,\n          &protocol witness table for String);\n  v13 = (void *)sub_1000122E8(v12);\n  swift_bridgeObjectRelease(inited);\n  CGSSpaceSetValues(a4, a5, v13);\n  objc_release(v13);\n}"
+}

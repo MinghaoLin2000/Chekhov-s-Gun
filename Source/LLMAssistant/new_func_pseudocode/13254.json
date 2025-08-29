@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUFileIOChannel initForReadingDescriptor:cleanupHandler:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUFileIOChannel initForReadingDescriptor:cleanupHandler:](TSUFileIOChannel * self, SEL a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl -[TSUFileIOChannel initForReadingDescriptor:cleanupHandler:](TSUFileIOChannel *self, SEL a2, int a3, id a4)\n{\n  return -[TSUFileIOChannel initWithType:descriptor:cleanupHandler:](\n           self,\n           \"initWithType:descriptor:cleanupHandler:\",\n           1LL,\n           *(_QWORD *)&a3,\n           a4);\n}"
+}

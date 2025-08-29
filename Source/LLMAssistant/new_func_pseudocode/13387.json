@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileInputStream p_configureWithFileDescriptor:offset:length:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUFileInputStream p_configureWithFileDescriptor:offset:length:](SFUFileInputStream * self, SEL a2, int a3, signed __int64 a4, signed __int64 a5)",
+    "pseudocode": "bool __cdecl -[SFUFileInputStream p_configureWithFileDescriptor:offset:length:](\n        SFUFileInputStream *self,\n        SEL a2,\n        int a3,\n        signed __int64 a4,\n        signed __int64 a5)\n{\n  bool v5; // cc\n  bool v6; // w19\n\n  v5 = (a5 | a4) < 0 || (a5 ^ 0x7FFFFFFFFFFFFFFFLL) < a4;\n  v6 = !v5;\n  if ( v5 )\n  {\n    +[NSException raise:format:](\n      &OBJC_CLASS___NSException,\n      \"raise:format:\",\n      NSInvalidArgumentException,\n      CFSTR(\"Offset and/or length invalid.\"));\n  }\n  else\n  {\n    self->mFd = a3;\n    self->mStartOffset = a4;\n    self->mCurrentOffset = a4;\n    self->mEndOffset = a5 + a4;\n  }\n  return v6;\n}"
+}

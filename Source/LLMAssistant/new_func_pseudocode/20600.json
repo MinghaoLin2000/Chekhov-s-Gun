@@ -1,0 +1,6 @@
+{
+    "function_name": "_atexit_b",
+    "function_argument_number": 1,
+    "function_signature": "_atexit_b(void * a1)",
+    "pseudocode": "int __cdecl atexit_b(void *a1)\n{\n  return _atexit_b(a1);\n}"
+}

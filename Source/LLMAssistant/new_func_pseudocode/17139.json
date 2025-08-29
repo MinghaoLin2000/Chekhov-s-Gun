@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceListener set_xpcServicesLock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMActionLoaderServiceListener set_xpcServicesLock:](AMActionLoaderServiceListener * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[AMActionLoaderServiceListener set_xpcServicesLock:](\n        AMActionLoaderServiceListener *self,\n        SEL a2,\n        os_unfair_lock_s a3)\n{\n  self->__xpcServicesLock = a3;\n}"
+}

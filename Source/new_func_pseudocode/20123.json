@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters13_get_JobStateEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters13_get_JobStateEv(Printd_Parameters * this)",
+    "pseudocode": "__int64 __fastcall Printd_Parameters::_get_JobState(void **this)\n{\n  return getNamedAttr<PKJobState>(*this, CFSTR(\"job-state\"));\n}"
+}

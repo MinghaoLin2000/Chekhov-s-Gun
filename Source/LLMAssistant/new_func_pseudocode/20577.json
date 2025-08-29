@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDictionaryPrint",
+    "function_argument_number": 0,
+    "function_signature": "_CGPDFDictionaryPrint()",
+    "pseudocode": "__int64 CGPDFDictionaryPrint()\n{\n  return _CGPDFDictionaryPrint();\n}"
+}

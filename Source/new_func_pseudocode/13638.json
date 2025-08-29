@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUDataRepresentation readIntoData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUDataRepresentation readIntoData:](SFUDataRepresentation * self, SEL a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUDataRepresentation readIntoData:](SFUDataRepresentation *self, SEL a2, id a3)\n{\n  _BYTE *v5; // x20\n  id v6; // x21\n  void *v7; // x3\n  __int64 i; // [xsp+8h] [xbp-48h] BYREF\n\n  v5 = objc_msgSend(a3, \"length\");\n  v6 = -[SFUDataRepresentation bufferedInputStream](self, \"bufferedInputStream\");\n  for ( i = 0LL; ; objc_msgSend(a3, \"appendBytes:length:\", i, v7) )\n  {\n    v7 = objc_msgSend(v6, \"readToOwnBuffer:size:\", &i, -1LL);\n    if ( !v7 )\n      break;\n  }\n  objc_msgSend(v6, \"close\");\n  return (_BYTE *)objc_msgSend(a3, \"length\") - v5;\n}"
+}

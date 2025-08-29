@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPCryptoReadChannel _resetCryptor]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPCryptoReadChannel _resetCryptor](TSPCryptoReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPCryptoReadChannel _resetCryptor](TSPCryptoReadChannel *self, SEL a2)\n{\n  OS_dispatch_data *holdData; // x0\n  _CCCryptor *cryptor; // x0\n\n  holdData = self->_holdData;\n  self->_holdData = 0LL;\n  objc_release(holdData);\n  self->_ivRead = 0LL;\n  self->_initialBytesIgnored = 0LL;\n  cryptor = self->_cryptor;\n  if ( cryptor )\n  {\n    CCCryptorRelease(cryptor);\n    self->_cryptor = 0LL;\n  }\n}"
+}

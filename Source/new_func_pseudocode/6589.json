@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGContextRelease(CGContextRef c)",
+    "pseudocode": "void __cdecl CGContextRelease(CGContextRef c)\n{\n  _CGContextRelease(c);\n}"
+}

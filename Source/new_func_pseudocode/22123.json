@@ -1,0 +1,6 @@
+{
+    "function_name": "___destroy_helper_block_e8_32o",
+    "function_argument_number": 1,
+    "function_signature": "___destroy_helper_block_e8_32o(__int64 a1)",
+    "pseudocode": "void __fastcall __destroy_helper_block_e8_32o(__int64 a1)\n{\n  _Block_object_dispose(*(const void **)(a1 + 32), 3);\n}"
+}

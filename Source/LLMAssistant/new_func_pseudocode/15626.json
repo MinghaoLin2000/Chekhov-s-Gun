@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$startCatalogDownload:options:then:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$startCatalogDownload:options:then:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_startCatalogDownload_options_then_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"startCatalogDownload:options:then:\");\n}"
+}

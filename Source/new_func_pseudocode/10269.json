@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4PathD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP4PathD0Ev(TSP::Path * this)",
+    "pseudocode": "void __fastcall TSP::Path::~Path(TSP::Path *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::Path::~Path(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C40290C9B23LL);\n}"
+}

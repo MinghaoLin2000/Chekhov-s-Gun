@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionExecution runner]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMRemoteActionExecution runner](AMRemoteActionExecution * self, SEL a2)",
+    "pseudocode": "AMRemoteActionRunner *__cdecl -[AMRemoteActionExecution runner](AMRemoteActionExecution *self, SEL a2)\n{\n  return self->_runner;\n}"
+}

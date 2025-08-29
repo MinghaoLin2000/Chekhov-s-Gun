@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegate setIgnoreDocumentSupport:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPTemporaryObjectContextDelegate setIgnoreDocumentSupport:](TSPTemporaryObjectContextDelegate * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[TSPTemporaryObjectContextDelegate setIgnoreDocumentSupport:](\n        TSPTemporaryObjectContextDelegate *self,\n        SEL a2,\n        bool a3)\n{\n  self->_ignoreDocumentSupport = a3;\n}"
+}

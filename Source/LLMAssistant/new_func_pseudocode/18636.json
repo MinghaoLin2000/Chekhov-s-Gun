@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16HoverCoordinatorC5EntryVwcp",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore16HoverCoordinatorC5EntryVwcp(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall initializeWithCopy for HoverCoordinator.Entry(__int64 a1, __int64 a2)\n{\n  __int64 v3; // x0\n\n  v3 = *(_QWORD *)(a2 + 8);\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  *(_QWORD *)(a1 + 8) = v3;\n  *(_QWORD *)(a1 + 16) = *(_QWORD *)(a2 + 16);\n  *(_OWORD *)(a1 + 24) = *(_OWORD *)(a2 + 24);\n  *(_OWORD *)(a1 + 40) = *(_OWORD *)(a2 + 40);\n  swift_bridgeObjectRetain(v3);\n  return a1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription initWithObject:class:header:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUDescription initWithObject:class:header:](int a1, int a2, id a3)",
+    "pseudocode": "TSUDescription *__cdecl -[TSUDescription initWithObject:class:header:](\n        TSUDescription *self,\n        SEL a2,\n        id a3,\n        Class a4,\n        id a5)\n{\n  id v8; // x19\n  id v9; // x20\n  TSUDescription *v10; // x0\n  TSUDescription *v11; // x22\n  NSString *v12; // x0\n  NSString *header; // x8\n  objc_super v15; // [xsp+0h] [xbp-30h] BYREF\n\n  v8 = objc_retain(a3);\n  v9 = objc_retain(a5);\n  +[TSUDescription pushDescriptionDepth](&OBJC_CLASS___TSUDescription, \"pushDescriptionDepth\");\n  v15.receiver = self;\n  v15.super_class = (Class)&OBJC_CLASS___TSUDescription;\n  v10 = -[TSUDescription init](&v15, \"init\");\n  v11 = v10;\n  if ( v10 )\n  {\n    objc_storeWeak((id *)&v10->_object, v8);\n    v11->_class = a4;\n    v12 = (NSString *)objc_msgSend(v9, \"copy\");\n    header = v11->_header;\n    v11->_header = v12;\n    objc_release(header);\n  }\n  objc_release(v9);\n  objc_release(v8);\n  return v11;\n}"
+}

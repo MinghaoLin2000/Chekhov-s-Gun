@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStream7ReadRawEPvi",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStream7ReadRawEPvi(google::protobuf::io::CodedInputStream * this, void * __dst, int a3)",
+    "pseudocode": "bool __fastcall google::protobuf::io::CodedInputStream::ReadRaw(\n        google::protobuf::io::CodedInputStream *this,\n        char *__dst,\n        int a3)\n{\n  int v6; // w22\n  const void *v7; // x1\n  __int64 v8; // x23\n  bool v9; // vf\n\n  while ( 1 )\n  {\n    v6 = a3;\n    v7 = *(const void **)this;\n    v8 = *((_QWORD *)this + 1) - *(_QWORD *)this;\n    v9 = __OFSUB__(a3, (_DWORD)v8);\n    a3 -= v8;\n    if ( (a3 < 0) ^ v9 | (a3 == 0) )\n      break;\n    memcpy(__dst, v7, (int)v8);\n    __dst += (int)v8;\n    *(_QWORD *)this += (int)v8;\n    if ( (google::protobuf::io::CodedInputStream::Refresh(this) & 1) == 0 )\n      return v6 <= (int)v8;\n  }\n  memcpy(__dst, v7, v6);\n  *(_QWORD *)this += v6;\n  return v6 <= (int)v8;\n}"
+}

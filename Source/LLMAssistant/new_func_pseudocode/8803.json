@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOwCP()",
+    "pseudocode": "void initializeBufferWithCopyOfBuffer for JetpackMetadata.CodingKeys()\n{\n  ;\n}"
+}

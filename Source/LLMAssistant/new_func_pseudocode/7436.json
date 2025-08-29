@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup25AnnotationsViewController newContentSnapshotPDFDataIncludingAdornments:atScale:inRect:onOverlayAtPageIndex:forAnnotationController:]",
+    "function_argument_number": 7,
+    "function_signature": "-[_TtC13DisplayMarkup25AnnotationsViewController newContentSnapshotPDFDataIncludingAdornments:atScale:inRect:onOverlayAtPageIndex:forAnnotationController:](_TtC13DisplayMarkup25AnnotationsViewController * self, SEL a2, bool a3, double a4, signed __int64 a6, id a7, CGRect a5)",
+    "pseudocode": "id __cdecl -[AnnotationsViewController newContentSnapshotPDFDataIncludingAdornments:atScale:inRect:onOverlayAtPageIndex:forAnnotationController:](\n        _TtC13DisplayMarkup25AnnotationsViewController *self,\n        SEL a2,\n        bool a3,\n        double a4,\n        CGRect a5,\n        signed __int64 a6,\n        id a7)\n{\n  return 0LL;\n}"
+}

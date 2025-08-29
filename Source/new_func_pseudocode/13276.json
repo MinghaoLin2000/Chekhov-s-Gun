@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUFileIOChannel isValid]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUFileIOChannel isValid](TSUFileIOChannel * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSUFileIOChannel isValid](TSUFileIOChannel *self, SEL a2)\n{\n  unsigned __int8 v2; // w8\n  dispatch_fd_t descriptor; // w0\n  char v5; // [xsp+Fh] [xbp-1h] BYREF\n\n  v2 = atomic_load((unsigned __int8 *)&self->_isClosed);\n  if ( (v2 & 1) != 0 )\n    return 0;\n  descriptor = dispatch_io_get_descriptor((dispatch_io_t)self->_channel);\n  v5 = 0;\n  return read(descriptor, &v5, 0LL) == 0;\n}"
+}

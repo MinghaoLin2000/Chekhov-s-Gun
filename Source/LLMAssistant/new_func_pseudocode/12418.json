@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy13RawUncompressEPNS_6SourceEPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6snappy13RawUncompressEPNS_6SourceEPc(snappy * this, snappy::Source * a2, char * a3)",
+    "pseudocode": "bool __fastcall snappy::RawUncompress(snappy *this, snappy::Source *a2, char *a3)\n{\n  _BOOL8 v5; // x19\n  snappy::Source *v8; // [xsp+18h] [xbp-58h]\n  unsigned int v9; // [xsp+2Ch] [xbp-44h] BYREF\n  _QWORD v10[4]; // [xsp+30h] [xbp-40h] BYREF\n  unsigned int v11; // [xsp+50h] [xbp-20h]\n  char v12; // [xsp+54h] [xbp-1Ch]\n\n  v11 = 0;\n  v12 = 0;\n  v10[1] = 0LL;\n  v10[2] = 0LL;\n  v10[0] = this;\n  v9 = 0;\n  v5 = (sub_10011BB5C(v10, &v9, a3) & 1) != 0\n    && ((*(void (__fastcall **)(snappy *))(*(_QWORD *)this + 16LL))(this),\n        v8 = (snappy::Source *)((char *)a2 + v9),\n        sub_10011C484((snappy::SnappyDecompressor *)v10),\n        v12)\n    && a2 == v8;\n  (*(void (__fastcall **)(_QWORD, _QWORD))(*(_QWORD *)v10[0] + 32LL))(v10[0], v11);\n  return v5;\n}"
+}

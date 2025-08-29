@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.private.tcc.allow:kTCCServiceSystemPolicyDocumentsFolder",
+  "capability": "This entitlement allows an application to access the user's 'Documents' folder without requiring explicit user consent through a Transparency, Consent, and Control (TCC) prompt. It effectively bypasses the standard TCC mechanism for this specific directory, granting read, write, and delete access to files within it.",
+  "reasoning": "The entitlement name clearly indicates its function: 'com.apple.private' suggests it's an internal Apple entitlement, 'tcc.allow' points to granting TCC permissions, and 'kTCCServiceSystemPolicyDocumentsFolder' specifically identifies the TCC service for the 'Documents' folder, implying a system policy bypass for access. This aligns with Apple's TCC framework, where `kTCCServiceSystemPolicy` entitlements grant programmatic access to user directories that would otherwise require user approval.",
+  "similar_entitlements": [
+    "com.apple.security.files.all"
+  ],
+  "sensitive_type": [
+    1,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'File and File System Operations' (Type 1) because it grants direct access (read, write, delete) to a user's private directory, the 'Documents' folder, which contains sensitive user data. It also directly falls under 'Access Transparency Consent and Control (TCC) related functions' (Type 5) because it explicitly grants access to a TCC-protected file system directory (the Documents folder) using a `SystemPolicy*` series entitlement, bypassing the user consent mechanism.",
+  "self_reflection": "I am highly confident in this analysis. The entitlement's naming convention is very explicit and directly maps to known Apple security and privacy frameworks, particularly TCC. The `private` prefix, `tcc.allow` component, and the `kTCCServiceSystemPolicyDocumentsFolder` identifier leave little ambiguity about its purpose. The mapping to sensitive types 1 and 5 is direct and well-supported by the definitions provided."
+}

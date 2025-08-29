@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalSocketProxy dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[LocalSocketProxy dealloc](LocalSocketProxy * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LocalSocketProxy dealloc](LocalSocketProxy *self, SEL a2)\n{\n  os_log_s *v3; // x20\n  objc_super v4; // [xsp+10h] [xbp-30h] BYREF\n  uint8_t buf[16]; // [xsp+20h] [xbp-20h] BYREF\n\n  v3 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)_PKLogCategory(PKLogCategoryNetwork[0]));\n  if ( os_log_type_enabled(v3, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_WORD *)buf = 0;\n    _os_log_impl((void *)&_mh_execute_header, v3, OS_LOG_TYPE_DEFAULT, \"LocalSocketProxy: Dealloc\", buf, 2u);\n  }\n  objc_release(v3);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___LocalSocketProxy;\n  -[LocalSocketProxy dealloc](&v4, \"dealloc\");\n}"
+}

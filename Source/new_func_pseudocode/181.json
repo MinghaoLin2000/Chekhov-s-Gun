@@ -1,0 +1,6 @@
+{
+    "function_name": "__Block_object_assign",
+    "function_argument_number": 3,
+    "function_signature": "__Block_object_assign(void * a1, const void * a2, const int a3)",
+    "pseudocode": "void __cdecl _Block_object_assign(void *a1, const void *a2, const int a3)\n{\n  __Block_object_assign(a1, a2, a3);\n}"
+}

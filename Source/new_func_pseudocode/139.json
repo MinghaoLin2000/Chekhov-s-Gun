@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper16FolderShareStageOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper16FolderShareStageOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for FolderShareStage()\n{\n  return &type metadata for FolderShareStage;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io19EpsCopyOutputStream16WriteRawFallbackEPKviPh",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf2io19EpsCopyOutputStream16WriteRawFallbackEPKviPh(google::protobuf::io::EpsCopyOutputStream * this, const void * __src, int a3, unsigned __int8 * __dst)",
+    "pseudocode": "unsigned __int8 *__fastcall google::protobuf::io::EpsCopyOutputStream::WriteRawFallback(\n        google::protobuf::io::EpsCopyOutputStream *this,\n        char *__src,\n        int a3,\n        unsigned __int8 *__dst)\n{\n  unsigned __int8 *v4; // x21\n  int v5; // w19\n  int v7; // w23\n\n  v4 = __dst;\n  v5 = a3;\n  v7 = *(_DWORD *)this - (_DWORD)__dst + 16;\n  if ( v7 < a3 )\n  {\n    do\n    {\n      memcpy(v4, __src, v7);\n      v5 -= v7;\n      __src += v7;\n      v4 = (unsigned __int8 *)google::protobuf::io::EpsCopyOutputStream::EnsureSpaceFallback(this, &v4[v7]);\n      v7 = *(_DWORD *)this - (_DWORD)v4 + 16;\n    }\n    while ( v5 > v7 );\n  }\n  memcpy(v4, __src, v5);\n  return &v4[v5];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$ss6UInt64V16EyeCandyGraphicsEyAbC15SystemEventMaskVcfC",
+    "function_argument_number": 1,
+    "function_signature": "_$ss6UInt64V16EyeCandyGraphicsEyAbC15SystemEventMaskVcfC(EyeCandyGraphics::SystemEventMask a1)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::UInt64 __swiftcall UInt64.init(_:)(EyeCandyGraphics::SystemEventMask a1)\n{\n  Swift::UInt64 result; // x0\n\n  *(_QWORD *)&a1.rawValue = a1.rawValue;\n  LODWORD(result) = a1;\n  return result;\n}"
+}

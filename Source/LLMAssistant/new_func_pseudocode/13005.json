@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUCompressionReadChannel close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUCompressionReadChannel close](TSUCompressionReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUCompressionReadChannel close](TSUCompressionReadChannel *self, SEL a2)\n{\n  TSUStreamReadChannel *readChannel; // x0\n  TSUStreamCompression *compressor; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[TSUStreamReadChannel close](self->_readChannel, \"close\");\n  readChannel = self->_readChannel;\n  self->_readChannel = 0LL;\n  objc_release(readChannel);\n  compressor = self->_compressor;\n  self->_compressor = 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(compressor);\n}"
+}

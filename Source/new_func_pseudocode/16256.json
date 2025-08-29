@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPStringSupplementalAssetsFilepath",
+    "function_argument_number": 0,
+    "function_signature": "_UARPStringSupplementalAssetsFilepath()",
+    "pseudocode": "id UARPStringSupplementalAssetsFilepath()\n{\n  void *v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100041E08 != -1 )\n    dispatch_once(&qword_100041E08, &stru_100030E80);\n  v0 = (void *)qword_100041E00;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v0);\n}"
+}

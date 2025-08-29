@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z17liteNotifyRunningi",
+    "function_argument_number": 1,
+    "function_signature": "__Z17liteNotifyRunningi(int a1)",
+    "pseudocode": "__int64 __fastcall liteNotifyRunning(int a1)\n{\n  int v2; // w0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = dword_1000C3D0C;\n  if ( dword_1000C3D0C < 0 )\n  {\n    notify_register_check(\"com.apple.printd.running\", &dword_1000C3D0C);\n    v2 = dword_1000C3D0C;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return notify_set_state(v2, a1 != 0);\n}"
+}

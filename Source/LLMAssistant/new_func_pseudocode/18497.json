@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper19ControlCenterHelper createDiagnosticsReport]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC19ControlCenterHelper19ControlCenterHelper createDiagnosticsReport](_TtC19ControlCenterHelper19ControlCenterHelper * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ControlCenterHelper createDiagnosticsReport](\n        _TtC19ControlCenterHelper19ControlCenterHelper *self,\n        SEL a2)\n{\n  sub_100015FEC(self, a2, ControlCenterHelper.createDiagnosticsReport());\n}"
+}

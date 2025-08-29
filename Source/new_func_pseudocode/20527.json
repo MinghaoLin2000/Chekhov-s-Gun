@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateStringWithValidatedFormat",
+    "function_argument_number": 5,
+    "function_signature": "_CFStringCreateStringWithValidatedFormat(CFAllocatorRef alloc, CFDictionaryRef formatOptions, CFStringRef validFormatSpecifiers, CFStringRef format, CFErrorRef * errorPtr)",
+    "pseudocode": "CFStringRef CFStringCreateStringWithValidatedFormat(\n        CFAllocatorRef alloc,\n        CFDictionaryRef formatOptions,\n        CFStringRef validFormatSpecifiers,\n        CFStringRef format,\n        CFErrorRef *errorPtr,\n        ...)\n{\n  return _CFStringCreateStringWithValidatedFormat(alloc, formatOptions, validFormatSpecifiers, format, errorPtr);\n}"
+}

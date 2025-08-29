@@ -1,0 +1,6 @@
+{
+    "function_name": "_fpfs_enable_vnode_rapid_aging",
+    "function_argument_number": 0,
+    "function_signature": "_fpfs_enable_vnode_rapid_aging()",
+    "pseudocode": "__int64 fpfs_enable_vnode_rapid_aging()\n{\n  return _fpfs_enable_vnode_rapid_aging();\n}"
+}

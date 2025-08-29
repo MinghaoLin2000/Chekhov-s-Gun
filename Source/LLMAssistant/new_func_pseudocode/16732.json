@@ -1,0 +1,6 @@
+{
+    "function_name": "_ccsha256_di",
+    "function_argument_number": 0,
+    "function_signature": "_ccsha256_di()",
+    "pseudocode": "__int64 ccsha256_di()\n{\n  return _ccsha256_di();\n}"
+}

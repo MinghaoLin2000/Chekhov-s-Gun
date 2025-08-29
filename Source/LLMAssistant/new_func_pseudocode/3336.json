@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_unsafeClaimAutoreleasedReturnValue",
+    "function_argument_number": 1,
+    "function_signature": "_objc_unsafeClaimAutoreleasedReturnValue(id a1)",
+    "pseudocode": "id __cdecl objc_unsafeClaimAutoreleasedReturnValue(id a1)\n{\n  return _objc_unsafeClaimAutoreleasedReturnValue(a1);\n}"
+}

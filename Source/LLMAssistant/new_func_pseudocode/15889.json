@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetIsKnown",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformAssetIsKnown(__int64 a1, __int64 a3, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetIsKnown(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v3; // x8\n\n  v3 = *(_QWORD *)(a1 + 568);\n  if ( !v3 )\n    return 0LL;\n  while ( v3 != a3 )\n  {\n    v3 = *(_QWORD *)(v3 + 712);\n    if ( !v3 )\n      return 0LL;\n  }\n  return 1LL;\n}"
+}

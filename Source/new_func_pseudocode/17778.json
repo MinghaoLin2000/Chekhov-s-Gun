@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIResultError message]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIResultError message](ModelKeyServerAPIResultError * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[ModelKeyServerAPIResultError message](ModelKeyServerAPIResultError *self, SEL a2)\n{\n  return self->_message;\n}"
+}

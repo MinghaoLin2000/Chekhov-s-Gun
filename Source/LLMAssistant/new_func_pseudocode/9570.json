@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP19DatabaseDataArchive11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP19DatabaseDataArchive11GetMetadataEv(TSP::DatabaseDataArchive * this)",
+    "pseudocode": "__int64 __fastcall TSP::DatabaseDataArchive::GetMetadata(TSP::DatabaseDataArchive *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_TSPDatabaseMessages_2eproto, 0LL);\n  return off_1001F58D0[2];\n}"
+}

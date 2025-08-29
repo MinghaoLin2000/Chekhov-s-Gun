@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataCreateWithBytesNoCopy",
+    "function_argument_number": 4,
+    "function_signature": "_CFDataCreateWithBytesNoCopy(CFAllocatorRef allocator, const UInt8 * bytes, CFIndex length, CFAllocatorRef bytesDeallocator)",
+    "pseudocode": "CFDataRef __cdecl CFDataCreateWithBytesNoCopy(\n        CFAllocatorRef allocator,\n        const UInt8 *bytes,\n        CFIndex length,\n        CFAllocatorRef bytesDeallocator)\n{\n  return _CFDataCreateWithBytesNoCopy(allocator, bytes, length, bytesDeallocator);\n}"
+}

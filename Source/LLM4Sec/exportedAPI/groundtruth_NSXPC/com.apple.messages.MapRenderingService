@@ -1,0 +1,3 @@
+@protocol MapRenderingServiceProtocol <NSObject>
+- (void)renderMapFile:(NSURL *)arg1 completionBlock:(void (^)(NSData *, NSURL *))arg2;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN38JobRequestAttributes_FromRequestParamsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN38JobRequestAttributes_FromRequestParamsD1Ev(JobRequestAttributes_FromRequestParams * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall JobRequestAttributes_FromRequestParams::~JobRequestAttributes_FromRequestParams(\n        JobRequestAttributes_FromRequestParams *this)\n{\n  __ZN38JobRequestAttributes_FromRequestParamsD2Ev(this);\n}"
+}

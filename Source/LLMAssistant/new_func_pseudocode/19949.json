@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t setPayloadSent:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t setPayloadSent:](lite_job_t * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[lite_job_t setPayloadSent:](lite_job_t *self, SEL a2, unsigned __int64 a3)\n{\n  self->_payloadSent = a3;\n}"
+}

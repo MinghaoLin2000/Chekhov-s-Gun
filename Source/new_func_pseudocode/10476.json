@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16PasteboardObjectD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16PasteboardObjectD2Ev(TSP::PasteboardObject * this)",
+    "pseudocode": "void __fastcall TSP::PasteboardObject::~PasteboardObject(TSP::PasteboardObject *this)\n{\n  sub_10006AA84();\n  sub_100037E58((char *)this + 8);\n  sub_100076AD0((char *)this + 120);\n  sub_10007729C((char *)this + 96);\n  sub_10007729C((char *)this + 72);\n  sub_10007729C((char *)this + 48);\n  sub_10007729C((char *)this + 24);\n}"
+}

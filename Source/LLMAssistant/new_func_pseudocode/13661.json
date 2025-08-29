@@ -1,0 +1,6 @@
+{
+    "function_name": "_CC_MD5_Update",
+    "function_argument_number": 3,
+    "function_signature": "_CC_MD5_Update(CC_MD5_CTX * c, const void * data, CC_LONG len)",
+    "pseudocode": "int __cdecl CC_MD5_Update(CC_MD5_CTX *c, const void *data, CC_LONG len)\n{\n  return _CC_MD5_Update(c, data, len);\n}"
+}

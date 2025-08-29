@@ -1,0 +1,14 @@
+Service Path:
+/System/Library/Frameworks/OSLog.framework/Versions/A/XPCServices/OSLogService.xpc/Contents/MacOS/OSLogService
+
+Service Exported Protocols:
+@protocol OSLogServiceProtocol
+- (void)getNextOSLogEntryWithReply:(void (^)(OSLogEntry *))arg1;
+- (void)setUpWithPredicate:(NSPredicate *)arg1 reply:(void (^)(NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.logging.diagnostic
+	[Value]
+		[Bool] true

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformTransmitQueueLogEntry",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformTransmitQueueLogEntry()",
+    "pseudocode": "void uarpPlatformTransmitQueueLogEntry()\n{\n  ;\n}"
+}

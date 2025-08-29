@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16DocumentRevisionD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16DocumentRevisionD2Ev(TSP::DocumentRevision * this)",
+    "pseudocode": "void __fastcall TSP::DocumentRevision::~DocumentRevision(TSP::DocumentRevision *this)\n{\n  __int64 v2; // x20\n\n  v2 = *((_QWORD *)this + 3);\n  if ( (__int64 *)v2 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v2 + 23) < 0 )\n      operator delete(*(void **)v2);\n    operator delete(v2, 0x1012C40EC159624LL);\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

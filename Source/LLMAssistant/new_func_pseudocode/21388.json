@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition10ClientInfoV10identifierACSS_tcfC",
+    "function_argument_number": 3,
+    "function_signature": "_$s22localspeechrecognition10ClientInfoV10identifierACSS_tcfC(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "double __usercall ClientInfo.init(identifier:)@<D0>(__int64 a1@<X0>, __int64 a2@<X1>, __int64 a3@<X8>)\n{\n  __int64 v6; // x22\n  __int64 v7; // x0\n  double result; // d0\n\n  v6 = a3 + *(int *)(type metadata accessor for ClientInfo(0LL) + 32);\n  v7 = type metadata accessor for ClientInfo.LoggingInfo(0LL);\n  sub_1000075A8(v6, 1LL, 1LL, v7);\n  *(_QWORD *)a3 = a1;\n  *(_QWORD *)(a3 + 8) = a2;\n  result = 0.0;\n  *(_QWORD *)(a3 + 16) = 0LL;\n  *(_QWORD *)(a3 + 24) = 0xE000000000000000LL;\n  *(_OWORD *)(a3 + 32) = xmmword_100046350;\n  *(_OWORD *)(a3 + 48) = xmmword_100046350;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf8internal13MergeFromImplILb0EEEbNS0_11StringPieceEPNS0_11MessageLiteENS4_10ParseFlagsE",
+    "function_argument_number": 4,
+    "function_signature": "j___ZN6google8protobuf8internal13MergeFromImplILb0EEEbNS0_11StringPieceEPNS0_11MessageLiteENS4_10ParseFlagsE(void * __src, size_t __n, google::protobuf::MessageLite * a3, char a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::MergeFromImpl<false>(\n        void *__src,\n        size_t __n,\n        google::protobuf::MessageLite *a3,\n        char a4)\n{\n  return google::protobuf::internal::MergeFromImpl<false>(__src, __n, a3, a4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUDeveloperSettingsDatabase .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[AUDeveloperSettingsDatabase .cxx_destruct](AUDeveloperSettingsDatabase * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AUDeveloperSettingsDatabase .cxx_destruct](AUDeveloperSettingsDatabase *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_log, 0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_get URLSession:dataTask:didReceiveData:]",
+    "function_argument_number": 5,
+    "function_signature": "-[platform_http_get URLSession:dataTask:didReceiveData:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "void __cdecl -[platform_http_get URLSession:dataTask:didReceiveData:](\n        platform_http_get *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  id v6; // x19\n  NSUInteger v7; // x21\n  NSMutableData *data; // x0\n  NSMutableData *v9; // x0\n  NSMutableData *v10; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(a5);\n  v7 = -[NSMutableData length](self->_data, \"length\");\n  if ( (unsigned __int64)objc_msgSend(v6, \"length\") + v7 <= 0x100000 )\n  {\n    data = self->_data;\n    if ( data )\n    {\n      -[NSMutableData appendData:](data, \"appendData:\", v6);\n    }\n    else\n    {\n      v9 = (NSMutableData *)objc_msgSend(v6, \"mutableCopy\");\n      v10 = self->_data;\n      self->_data = v9;\n      objc_release(v10);\n    }\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController setCurrentPhotoSyncSource:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController setCurrentPhotoSyncSource:](DeviceSettingsPhotosViewController * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController setCurrentPhotoSyncSource:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        int a3)\n{\n  self->_currentPhotoSyncSource = a3;\n}"
+}

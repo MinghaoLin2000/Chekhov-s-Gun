@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMediaUploadWarning initWithKind:message:isFromUploader:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUMediaUploadWarning initWithKind:message:isFromUploader:](TSUMediaUploadWarning * self, SEL a2, signed __int64 a3, id a4, bool a5)",
+    "pseudocode": "TSUMediaUploadWarning *__cdecl -[TSUMediaUploadWarning initWithKind:message:isFromUploader:](\n        TSUMediaUploadWarning *self,\n        SEL a2,\n        signed __int64 a3,\n        id a4,\n        bool a5)\n{\n  TSUMediaUploadWarning *result; // x0\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___TSUMediaUploadWarning;\n  result = -[TSUWarning initWithKind:message:](&v7, \"initWithKind:message:\", a3, a4);\n  if ( result )\n    result->_isFromUploader = a5;\n  return result;\n}"
+}

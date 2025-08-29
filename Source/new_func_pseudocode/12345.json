@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStream11ReadTagSlowEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStream11ReadTagSlowEv(google::protobuf::io::CodedInputStream * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::CodedInputStream::ReadTagSlow(google::protobuf::io::CodedInputStream *this)\n{\n  char *v2; // x8\n  unsigned __int64 v3; // x9\n  __int64 result; // x0\n  char v5; // w1\n  int v6; // w8\n  bool v7; // w8\n\n  v2 = *(char **)this;\n  v3 = *((_QWORD *)this + 1);\n  if ( *(_QWORD *)this != v3 )\n  {\nLABEL_4:\n    if ( (unsigned __int64)v2 >= v3 || *v2 < 0 )\n    {\n      result = google::protobuf::io::CodedInputStream::ReadVarint64Fallback(this);\n      if ( (v5 & 1) == 0 )\n        return 0LL;\n    }\n    else\n    {\n      result = (unsigned __int8)*v2;\n      *(_QWORD *)this = v2 + 1;\n    }\n    return result;\n  }\n  if ( (unsigned int)google::protobuf::io::CodedInputStream::Refresh(this) )\n  {\n    v2 = *(char **)this;\n    v3 = *((_QWORD *)this + 1);\n    goto LABEL_4;\n  }\n  v6 = *((_DWORD *)this + 12);\n  result = 0LL;\n  v7 = *((_DWORD *)this + 6) - *((_DWORD *)this + 11) < v6 || *((_DWORD *)this + 10) == v6;\n  *((_BYTE *)this + 36) = v7;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV5levels5Int32VSgvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV5levels5Int32VSgvg()",
+    "pseudocode": "__int64 CGSWindow.level.getter()\n{\n  __int64 v0; // x0\n  EyeCandyGraphics::CGSConnection v1; // w0\n  unsigned __int64 v2; // x0\n\n  CGSConnection.defaultConnection.unsafeMutableAddressor();\n  v0 = sub_1000120F4();\n  v1.cid = sub_10001B21C(v0);\n  *(Swift::Int32_optional *)&v2 = CGSWindow.getLevel(connection:)(v1);\n  return (unsigned int)v2 | ((HIDWORD(v2) & 1) << 32);\n}"
+}

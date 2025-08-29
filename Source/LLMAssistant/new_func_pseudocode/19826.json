@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z20internUTF8ByteStringPKcm",
+    "function_argument_number": 2,
+    "function_signature": "__Z20internUTF8ByteStringPKcm(const char * a1, unsigned __int64 a2)",
+    "pseudocode": "id __fastcall internUTF8ByteString(const char *a1, __int64 a2)\n{\n  id *Value; // x0\n  id v5; // x21\n  id v7; // x0\n  id v8; // x19\n  const char *v9; // [xsp+0h] [xbp-40h] BYREF\n  __int64 v10; // [xsp+8h] [xbp-38h]\n  __int64 v11; // [xsp+10h] [xbp-30h]\n  __int64 v12; // [xsp+18h] [xbp-28h]\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v9 = a1;\n  v10 = a2;\n  v11 = sub_100014958(a1, a2);\n  v12 = 0LL;\n  if ( qword_1000C3ED0 != -1 )\n    dispatch_once(&qword_1000C3ED0, &stru_100091AC0);\n  Value = (id *)CFDictionaryGetValue((CFDictionaryRef)qword_1000C3ED8, &v9);\n  if ( Value )\n  {\n    v5 = objc_retain(Value[3]);\n  }\n  else\n  {\n    v7 = objc_alloc((Class)&OBJC_CLASS___NSString);\n    v5 = objc_msgSend(v7, \"initWithBytes:length:encoding:\", a1, a2, 4LL, v9, v10, v11, v12);\n    if ( v5 && (unsigned int)sub_1000149A0(a1, a2) )\n    {\n      v8 = objc_retainAutoreleasedReturnValue((id)sub_100014A14(v5));\n      objc_release(v5);\n      v5 = v8;\n    }\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

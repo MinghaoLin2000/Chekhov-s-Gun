@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE6withCA10connection_yAC13CGSConnectionV_yABXEtFZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE6withCA10connection_yAC13CGSConnectionV_yABXEtFZ()",
+    "pseudocode": "void static SLSTransactionRef.withCA(connection:_:)()\n{\n  void (*v0)(void); // x19\n  void *v1; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v1 = (void *)sub_100014D6C();\n  v0();\n  SLSTransactionCommitUsingMethod(v1, 3LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v1);\n}"
+}

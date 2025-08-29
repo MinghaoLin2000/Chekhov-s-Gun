@@ -1,0 +1,8 @@
+@protocol TBXPCServiceProtocol
+- (void)forceFetch3BarsNetworkMatchingBSSID:(NSString *)arg1 completionHandler:(void (^)(WiFi3BarsResponse *, NSError *))arg2;
+- (void)prune3BarsNetworks:(unsigned long long)arg1;
+- (void)fetch3BarsNetworksForLocation:(CLLocation *)arg1;
+- (void)cancelMaintenanceTask;
+- (void)fetchTileFromVisitedCallback:(unsigned long long)arg1 cacheAge:(NSDate *)arg2;
+- (void)maintenanceTask:(unsigned long long)arg1 location:(CLLocation *)arg2 predictedForDuration:(double)arg3 maxPredictedLocations:(unsigned long long)arg4 completionHandler:(void (^)(void))arg5;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction setServiceViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceAction setServiceViewController:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction setServiceViewController:](AMLoaderServiceAction *self, SEL a2, id a3)\n{\n  id v5; // x20\n  NSAssertionHandler *v6; // x22\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  if ( !+[NSThread isMainThread](&OBJC_CLASS___NSThread, \"isMainThread\") )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v6,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"AMLoaderServiceAction.m\"),\n      927LL,\n      CFSTR(\"Invalid parameter not satisfying: %@\"),\n      CFSTR(\"NSThread.isMainThread\"));\n    objc_release(v6);\n  }\n  -[AMLoaderServiceAction _setServiceViewController:](self, \"_setServiceViewController:\", v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

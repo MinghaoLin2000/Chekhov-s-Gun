@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_request_t _setupNewRequest]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_request_t _setupNewRequest](ipp_request_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ipp_request_t _setupNewRequest](ipp_request_t *self, SEL a2)\n{\n  NSLocale *v3; // x21\n  id v4; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  self->super._request_id = atomic_fetch_add(&dword_1000C3D08, 1u);\n  -[ipp_t _addString:valueTag:name:lang:value:](\n    self,\n    \"_addString:valueTag:name:lang:value:\",\n    1LL,\n    71LL,\n    CFSTR(\"attributes-charset\"),\n    0LL,\n    CFSTR(\"utf-8\"));\n  v3 = objc_retainAutoreleasedReturnValue(+[NSLocale currentLocale](&OBJC_CLASS___NSLocale, \"currentLocale\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[NSLocale objectForKey:](v3, \"objectForKey:\", NSLocaleLanguageCode));\n  objc_release(v3);\n  -[ipp_t _addString:valueTag:name:lang:value:](\n    self,\n    \"_addString:valueTag:name:lang:value:\",\n    1LL,\n    72LL,\n    CFSTR(\"attributes-natural-language\"),\n    0LL,\n    v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

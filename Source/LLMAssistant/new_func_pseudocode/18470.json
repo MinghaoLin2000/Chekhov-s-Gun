@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper31ScreenMirroringAlertButtonStyleVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper31ScreenMirroringAlertButtonStyleVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ScreenMirroringAlertButtonStyle()\n{\n  return &type metadata for ScreenMirroringAlertButtonStyle;\n}"
+}

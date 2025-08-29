@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Document windowColor]",
+    "function_argument_number": 2,
+    "function_signature": "-[Document windowColor](Document * self, SEL a2)",
+    "pseudocode": "int __cdecl -[Document windowColor](Document *self, SEL a2)\n{\n  return self->mWindowColor;\n}"
+}

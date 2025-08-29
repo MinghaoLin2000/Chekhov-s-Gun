@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDownstreamEndpointRemove",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformDownstreamEndpointRemove(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDownstreamEndpointRemove(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v5; // x0\n  __int64 v6; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = UARPPlatformDownstreamEndpointByDelegate(a1, a2, a3);\n  if ( !v5 )\n    return 58LL;\n  v6 = *(unsigned __int16 *)(v5 + 136);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpSendDownstreamEndpointUnreachable(a1, a2, v6);\n}"
+}

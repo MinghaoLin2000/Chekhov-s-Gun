@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_copy_service_names",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_copy_service_names()",
+    "pseudocode": "__int64 remote_device_copy_service_names()\n{\n  return _remote_device_copy_service_names();\n}"
+}

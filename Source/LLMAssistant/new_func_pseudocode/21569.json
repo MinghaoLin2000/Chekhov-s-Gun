@@ -1,0 +1,6 @@
+{
+    "function_name": "_ExtAudioFileWriteAsync",
+    "function_argument_number": 3,
+    "function_signature": "_ExtAudioFileWriteAsync(ExtAudioFileRef inExtAudioFile, UInt32 inNumberFrames, const AudioBufferList * ioData)",
+    "pseudocode": "OSStatus __cdecl ExtAudioFileWriteAsync(\n        ExtAudioFileRef inExtAudioFile,\n        UInt32 inNumberFrames,\n        const AudioBufferList *ioData)\n{\n  return _ExtAudioFileWriteAsync(inExtAudioFile, inNumberFrames, ioData);\n}"
+}

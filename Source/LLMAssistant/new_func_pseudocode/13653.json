@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCryptorRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CCCryptorRelease(CCCryptorRef cryptorRef)",
+    "pseudocode": "CCCryptorStatus __cdecl CCCryptorRelease(CCCryptorRef cryptorRef)\n{\n  return _CCCryptorRelease(cryptorRef);\n}"
+}

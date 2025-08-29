@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipEntry initWithDataRepresentation:compressionMethod:compressedSize:uncompressedSize:offset:crc:]",
+    "function_argument_number": 8,
+    "function_signature": "-[SFUZipEntry initWithDataRepresentation:compressionMethod:compressedSize:uncompressedSize:offset:crc:](SFUZipEntry * self, SEL a2, id a3, int a4, unsigned __int64 a5, unsigned __int64 a6, unsigned __int64 a7, unsigned int a8)",
+    "pseudocode": "SFUZipEntry *__cdecl -[SFUZipEntry initWithDataRepresentation:compressionMethod:compressedSize:uncompressedSize:offset:crc:](\n        SFUZipEntry *self,\n        SEL a2,\n        id a3,\n        int a4,\n        unsigned __int64 a5,\n        unsigned __int64 a6,\n        unsigned __int64 a7,\n        unsigned int a8)\n{\n  SFUZipEntry *v14; // x22\n\n  v14 = -[SFUZipEntry init](self, \"init\");\n  if ( v14 )\n  {\n    v14->mArchiveDataRepresentation = (SFUZipArchiveDataRepresentation *)objc_retain(a3);\n    v14->mCompressionMethod = a4;\n    v14->mCompressedSize = a5;\n    v14->mUncompressedSize = a6;\n    v14->mOffset = a7;\n    v14->mCrc = a8;\n  }\n  return v14;\n}"
+}

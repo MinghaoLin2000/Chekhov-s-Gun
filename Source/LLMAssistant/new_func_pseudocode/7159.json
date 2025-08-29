@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$setHangDetector:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$setHangDetector:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_setHangDetector_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"setHangDetector:\");\n}"
+}

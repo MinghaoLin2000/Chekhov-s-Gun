@@ -1,0 +1,5 @@
+_$s22localspeechrecognition17RequestEndMetricsC34cpuInstructionsInMillionsPerSeconds6UInt64Vvpfi_0
+__int64 _s22localspeechrecognition17RequestEndMetricsC34cpuInstructionsInMillionsPerSeconds6UInt64Vvpfi_0()
+{
+  return 0LL;
+}

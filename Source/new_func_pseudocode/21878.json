@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK15fileFormatUtils8Material8hasInputEN9serialize12MapInputNameE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK15fileFormatUtils8Material8hasInputEN9serialize12MapInputNameE(__int64 a1, int a2)",
+    "pseudocode": "bool __fastcall fileFormatUtils::Material::hasInput(__int64 a1, int a2)\n{\n  __int64 v2; // x0\n  __int64 v3; // x9\n  __int64 v4; // t1\n  __int64 v5; // x8\n  int v6; // w10\n  bool v7; // cc\n  __int64 *v8; // x10\n\n  v4 = *(_QWORD *)(a1 + 8);\n  v2 = a1 + 8;\n  v3 = v4;\n  if ( !v4 )\n    goto LABEL_11;\n  v5 = v2;\n  do\n  {\n    v6 = *(_DWORD *)(v3 + 32);\n    v7 = v6 < a2;\n    if ( v6 >= a2 )\n      v8 = (__int64 *)v3;\n    else\n      v8 = (__int64 *)(v3 + 8);\n    if ( !v7 )\n      v5 = v3;\n    v3 = *v8;\n  }\n  while ( *v8 );\n  if ( v5 == v2 || *(_DWORD *)(v5 + 32) > a2 )\nLABEL_11:\n    v5 = v2;\n  return v5 != v2;\n}"
+}

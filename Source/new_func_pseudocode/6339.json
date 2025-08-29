@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionHangDetector setLastProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionHangDetector setLastProgress:](VideoConversionHangDetector * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[VideoConversionHangDetector setLastProgress:](VideoConversionHangDetector *self, SEL a2, double a3)\n{\n  self->_lastProgress = a3;\n}"
+}

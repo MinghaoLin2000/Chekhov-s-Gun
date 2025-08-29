@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_once",
+    "function_argument_number": 2,
+    "function_signature": "_dispatch_once(dispatch_once_t * predicate, dispatch_block_t block)",
+    "pseudocode": "void __cdecl dispatch_once(dispatch_once_t *predicate, dispatch_block_t block)\n{\n  _dispatch_once(predicate, block);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextEndPage",
+    "function_argument_number": 1,
+    "function_signature": "_CGContextEndPage(CGContextRef c)",
+    "pseudocode": "void __cdecl CGContextEndPage(CGContextRef c)\n{\n  _CGContextEndPage(c);\n}"
+}

@@ -1,0 +1,5 @@
+_SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions
+__int64 SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions()
+{
+  return _SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPFilePackage prepareForDocumentReplacementWithSuccess:forSafeSave:originalURL:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSPFilePackage prepareForDocumentReplacementWithSuccess:forSafeSave:originalURL:](TSPFilePackage * self, SEL a2, bool a3, bool a4, id a5)",
+    "pseudocode": "void __cdecl -[TSPFilePackage prepareForDocumentReplacementWithSuccess:forSafeSave:originalURL:](\n        TSPFilePackage *self,\n        SEL a2,\n        bool a3,\n        bool a4,\n        id a5)\n{\n  ;\n}"
+}

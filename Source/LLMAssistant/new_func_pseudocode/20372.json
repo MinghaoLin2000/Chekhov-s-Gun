@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NameAndPrinters setPrinters:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NameAndPrinters setPrinters:](NameAndPrinters * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[NameAndPrinters setPrinters:](NameAndPrinters *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 16LL);\n}"
+}

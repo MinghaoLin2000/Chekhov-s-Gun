@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextTranslateCTM",
+    "function_argument_number": 3,
+    "function_signature": "_CGContextTranslateCTM(CGContextRef c, CGFloat tx, CGFloat ty)",
+    "pseudocode": "void __cdecl CGContextTranslateCTM(CGContextRef c, CGFloat tx, CGFloat ty)\n{\n  _CGContextTranslateCTM(c, tx, ty);\n}"
+}

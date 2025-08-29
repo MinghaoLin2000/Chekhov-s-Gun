@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf19FileDescriptorProto8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf19FileDescriptorProto8CopyFromERKNS0_7MessageE(google::protobuf::FileDescriptorProto * this, const google::protobuf::Message * a2)",
+    "pseudocode": "google::protobuf::FileDescriptorProto *__fastcall google::protobuf::FileDescriptorProto::CopyFrom(\n        google::protobuf::FileDescriptorProto *this,\n        const google::protobuf::Message *a2)\n{\n  __int64 v2; // x30\n  google::protobuf::FileDescriptorProto *v4; // x20\n\n  if ( a2 != this )\n  {\n    v4 = this;\n    google::protobuf::FileDescriptorProto::Clear(this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (google::protobuf::FileDescriptorProto *)google::protobuf::FileDescriptorProto::MergeFrom(v4, a2);\n  }\n  return this;\n}"
+}

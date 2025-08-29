@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV15gestureActivityACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV15gestureActivityACvgZ()",
+    "pseudocode": "__int64 static SystemEventMask.gestureActivity.getter()\n{\n  return sub_1000173E0(&qword_10002A678, &static SystemEventMask.gestureActivity, sub_100016F4C);\n}"
+}

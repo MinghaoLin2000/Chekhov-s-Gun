@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_autorelease",
+    "function_argument_number": 1,
+    "function_signature": "_objc_autorelease(id a1)",
+    "pseudocode": "id __cdecl objc_autorelease(id a1)\n{\n  return _objc_autorelease(a1);\n}"
+}

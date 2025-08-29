@@ -1,0 +1,16 @@
+{
+  "-[SPCloudStorageHelper underlyingServiceIdentifierForServiceIdentifier:]": 4294978872,
+  "-[SPCloudStorageHelper fetchCloudStoragePlanDetailsWithCompletionHandler:]": 4294973476,
+  "_objc_msgSend$aa_primaryAppleAccount": 4294979648,
+  "-[SPCloudStorageHelper exposedServiceIdentifierForServiceIdentifier:]": 4294978620,
+  "_objc_msgSend$acAccount": 4294979680,
+  "-[SPCloudStorageHelper preflightEnableServicesWithIdentifiers:completionHandler:]": 4294974600,
+  "-[SPCloudStorageHelperListenerDelegate listener:shouldAcceptNewConnection:]": 4294972876,
+  "-[SPCloudStorageHelper optimizeServicesWithIdentifiers:completionHandler:]": 4294977612,
+  "-[SPCloudStorageHelper fetchStatesForServicesWithIdentifiers:completionHandler:]": 4294973696,
+  "-[SPCloudStorageHelper enableServicesWithIdentifiers:completionHandler:]": 4294976256,
+  "_objc_msgSend$isEnabledForDataclass:": 4294980128,
+  "_objc_msgSend$currentiCloudAccount": 4294979872,
+  "_objc_msgSend$setExportedInterface:": 4294980416,
+  "_objc_msgSend$setExportedObject:": 4294980448
+}

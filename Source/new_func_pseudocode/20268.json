@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_t copyWithZone:](ipp_t * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[ipp_t copyWithZone:](ipp_t *self, SEL a2, _NSZone *a3)\n{\n  id v4; // x19\n  __int64 v5; // x1\n  void *v6; // x20\n\n  v4 = objc_retainAutoreleasedReturnValue(-[ipp_t dataRepresentation](self, \"dataRepresentation\", a3));\n  v6 = objc_msgSend(objc_alloc((Class)objc_opt_class(self, v5)), \"initWithData:\", v4);\n  objc_release(v4);\n  return v6;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker transaction]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker transaction](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "OS_os_transaction *__cdecl -[MediaConversionRequestTracker transaction](MediaConversionRequestTracker *self, SEL a2)\n{\n  return (OS_os_transaction *)objc_getProperty(self, a2, 184LL, 1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV11bestDisplayyACSgSo7CGPointVFZ",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV11bestDisplayyACSgSo7CGPointVFZ(double a1, double a2)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\n__int64 __fastcall static CGDisplay.bestDisplay(_:)(double a1, double a2)\n{\n  __int64 v2; // x0\n  __int64 v3; // x8\n  __int64 v4; // x9\n  CGDirectDisplayID displays[2]; // [xsp+0h] [xbp-10h] BYREF\n\n  *(_QWORD *)displays = 0LL;\n  v2 = CGGetDisplaysWithPoint(*(CGPoint *)&a1, 1u, &displays[1], displays);\n  sub_100019294(v2);\n  return v3 | (v4 << 32);\n}"
+}

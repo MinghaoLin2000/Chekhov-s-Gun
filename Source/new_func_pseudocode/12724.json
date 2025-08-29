@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttribute hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUExtendedAttribute hash](TSUExtendedAttribute * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUExtendedAttribute hash](TSUExtendedAttribute *self, SEL a2)\n{\n  NSUInteger v3; // x20\n\n  v3 = -[NSString hash](self->_name, \"hash\");\n  return (unsigned __int64)-[NSData hash](self->_value, \"hash\") ^ v3;\n}"
+}

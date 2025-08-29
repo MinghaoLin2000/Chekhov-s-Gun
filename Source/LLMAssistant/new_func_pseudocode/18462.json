@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper24ScreenMirroringAlertViewVwta",
+    "function_argument_number": 2,
+    "function_signature": "$s19ControlCenterHelper24ScreenMirroringAlertViewVwta(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall assignWithTake for ScreenMirroringAlertView(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x9\n  __int64 v5; // x0\n  __int64 v6; // x8\n  __int64 v7; // x0\n  __int64 v8; // x0\n  __int64 v9; // x9\n  __int64 v10; // x0\n\n  v4 = *(_QWORD *)(a2 + 8);\n  v5 = *(_QWORD *)(a1 + 8);\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  *(_QWORD *)(a1 + 8) = v4;\n  swift_bridgeObjectRelease(v5);\n  *(_BYTE *)(a1 + 16) = *(_BYTE *)(a2 + 16);\n  swift_bridgeObjectRelease(*(_QWORD *)(a1 + 24));\n  v6 = *(_QWORD *)(a2 + 40);\n  *(_OWORD *)(a1 + 24) = *(_OWORD *)(a2 + 24);\n  v7 = *(_QWORD *)(a1 + 40);\n  *(_QWORD *)(a1 + 40) = v6;\n  swift_release(v7);\n  v8 = *(_QWORD *)(a1 + 56);\n  v9 = *(_QWORD *)(a2 + 56);\n  *(_QWORD *)(a1 + 48) = *(_QWORD *)(a2 + 48);\n  *(_QWORD *)(a1 + 56) = v9;\n  swift_release(v8);\n  *(_BYTE *)(a1 + 64) = *(_BYTE *)(a2 + 64);\n  v10 = *(_QWORD *)(a1 + 72);\n  *(_QWORD *)(a1 + 72) = *(_QWORD *)(a2 + 72);\n  swift_release(v10);\n  return a1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition9EAREuclid init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC22localspeechrecognition9EAREuclid init](_TtC22localspeechrecognition9EAREuclid * self, SEL a2)",
+    "pseudocode": "_TtC22localspeechrecognition9EAREuclid *__cdecl __noreturn -[EAREuclid init](\n        _TtC22localspeechrecognition9EAREuclid *self,\n        SEL a2)\n{\n  sub_10000F734(self, a2);\n}"
+}

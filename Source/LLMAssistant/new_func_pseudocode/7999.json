@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSNewWindowWithOpaqueShapeAndContext",
+    "function_argument_number": 0,
+    "function_signature": "_SLSNewWindowWithOpaqueShapeAndContext()",
+    "pseudocode": "__int64 SLSNewWindowWithOpaqueShapeAndContext()\n{\n  return _SLSNewWindowWithOpaqueShapeAndContext();\n}"
+}

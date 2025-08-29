@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECAPHelperDelegate _handleClosePanelMessage:forPeer:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ECAPHelperDelegate _handleClosePanelMessage:forPeer:](ECAPHelperDelegate * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[ECAPHelperDelegate _handleClosePanelMessage:forPeer:](ECAPHelperDelegate *self, SEL a2, id a3, id a4)\n{\n  xpc_object_t reply; // x0\n  void *v7; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[NSPopover close](-[ECAPHelperDelegate popover](self, \"popover\"), \"close\");\n  reply = xpc_dictionary_create_reply(a3);\n  if ( reply )\n  {\n    v7 = reply;\n    xpc_connection_send_message((xpc_connection_t)a4, reply);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    xpc_release(v7);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal24InlineGreedyStringParserEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcPNS1_12ParseContextE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal24InlineGreedyStringParserEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcPNS1_12ParseContextE(std::string * this, google::protobuf::internal * a2, int a3)",
+    "pseudocode": "char *__fastcall google::protobuf::internal::InlineGreedyStringParser(\n        std::string *this,\n        std::string::value_type *a2,\n        int a3)\n{\n  int v5; // w2\n  std::string::value_type *v6; // x8\n  char *result; // x0\n  int v8; // w1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = (unsigned __int8)*a2;\n  if ( *a2 < 0 )\n  {\n    result = google::protobuf::internal::ReadSizeFallback(\n               (google::protobuf::internal *)a2,\n               (const char *)(unsigned __int8)*a2);\n    if ( !result )\n      return result;\n    v6 = result;\n    v5 = v8;\n  }\n  else\n  {\n    v6 = a2 + 1;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (char *)sub_1000C8A00(a3, v6, v5, this);\n}"
+}

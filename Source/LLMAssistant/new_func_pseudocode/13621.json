@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSUCrashBreakpoint",
+    "function_argument_number": 0,
+    "function_signature": "_TSUCrashBreakpoint()",
+    "pseudocode": "void TSUCrashBreakpoint()\n{\n  ;\n}"
+}

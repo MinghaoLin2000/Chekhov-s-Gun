@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwet",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwet(__int64 a1, unsigned int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for BundleIdentifier.Symbol(__int64 a1, unsigned int a2)\n{\n  unsigned __int64 v3; // x8\n  unsigned int v4; // w9\n  unsigned int v5; // w8\n\n  if ( !a2 )\n    return 0LL;\n  if ( a2 > 0x7FFFFFFA && *(_BYTE *)(a1 + 16) )\n    return (unsigned int)(*(_DWORD *)a1 + 2147483643);\n  v3 = *(_QWORD *)(a1 + 8);\n  if ( v3 >= 0xFFFFFFFF )\n    LODWORD(v3) = -1;\n  v4 = v3 + 1;\n  v5 = v3 - 4;\n  if ( v4 >= 6 )\n    return v5;\n  else\n    return 0LL;\n}"
+}

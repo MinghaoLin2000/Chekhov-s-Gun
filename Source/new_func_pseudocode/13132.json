@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSValue valueWithCGRect:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSValue valueWithCGRect:](id a1, SEL a2, CGRect a3)",
+    "pseudocode": "NSValue *__cdecl +[NSValue valueWithCGRect:](id a1, SEL a2, CGRect a3)\n{\n  CGRect v4; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = a3;\n  return (NSValue *)objc_msgSend(a1, \"valueWithBytes:objCType:\", &v4, \"{CGRect={CGPoint=dd}{CGSize=dd}}\");\n}"
+}

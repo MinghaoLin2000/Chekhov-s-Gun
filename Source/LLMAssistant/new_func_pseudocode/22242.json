@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLThumbnailRequestCleanupAfterException",
+    "function_argument_number": 0,
+    "function_signature": "__QLThumbnailRequestCleanupAfterException()",
+    "pseudocode": "__int64 _QLThumbnailRequestCleanupAfterException()\n{\n  return __QLThumbnailRequestCleanupAfterException();\n}"
+}

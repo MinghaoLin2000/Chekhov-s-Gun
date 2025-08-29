@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleLoadExecutableAndReturnError",
+    "function_argument_number": 2,
+    "function_signature": "_CFBundleLoadExecutableAndReturnError(CFBundleRef bundle, CFErrorRef * error)",
+    "pseudocode": "Boolean __cdecl CFBundleLoadExecutableAndReturnError(CFBundleRef bundle, CFErrorRef *error)\n{\n  return _CFBundleLoadExecutableAndReturnError(bundle, error);\n}"
+}

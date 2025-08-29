@@ -1,0 +1,7 @@
+@protocol LoginUserServiceProtocol
+- (void)userHasAuthAuthority:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)userCanLoginWithAuthAuthority:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsShadowHash:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsDisabled:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsBasic:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+@end

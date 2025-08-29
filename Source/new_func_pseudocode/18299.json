@@ -1,0 +1,6 @@
+{
+    "function_name": "_AudioComponentEnableNonSystemPlugIns",
+    "function_argument_number": 0,
+    "function_signature": "_AudioComponentEnableNonSystemPlugIns()",
+    "pseudocode": "__int64 AudioComponentEnableNonSystemPlugIns()\n{\n  return _AudioComponentEnableNonSystemPlugIns();\n}"
+}

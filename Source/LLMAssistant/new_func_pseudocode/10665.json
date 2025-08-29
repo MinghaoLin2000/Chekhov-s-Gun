@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP16LargeStringArray13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP16LargeStringArray13IsInitializedEv(TSP::LargeStringArray * this)",
+    "pseudocode": "bool __fastcall TSP::LargeStringArray::IsInitialized(TSP::LargeStringArray *this)\n{\n  _BOOL8 result; // x0\n\n  if ( (*((_BYTE *)this + 16) & 1) == 0 )\n    return 1LL;\n  result = TSP::LargeArray::IsInitialized(*((TSP::LargeArray **)this + 3));\n  if ( result )\n    return 1LL;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20NavigationControllerCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore20NavigationControllerCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for NavigationController(__int64 a1)\n{\n  return sub_100045210(a1, &unk_100096070, &nominal type descriptor for NavigationController);\n}"
+}

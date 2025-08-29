@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService15JSAccountObjectCMa
+__int64 type metadata accessor for JSAccountObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService15JSAccountObject);
+}

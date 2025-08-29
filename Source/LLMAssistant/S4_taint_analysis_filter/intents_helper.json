@@ -1,0 +1,18 @@
+{
+  "_objc_msgSend$initWithURL:readonly:": 4294993856,
+  "_objc_msgSend$storeUserContext:forBundleIdentifier:": 4294994688,
+  "_objc_msgSend$setClass:forSelector:argumentIndex:ofReply:": 4294994368,
+  "_objc_msgSend$intentDefinitionURLsForBundleID:": 4294993920,
+  "_objc_msgSend$_checkServiceAccessWithError:": 4294993056,
+  "_objc_msgSend$bundleRecordWithBundleIdentifier:allowPlaceholder:error:": 4294993440,
+  "-[INHService storeUserContext:forBundleIdentifier:]": 4294985604,
+  "-[INHService loadBundleURLsForBundleIdentifiers:completion:]": 4294987832,
+  "_objc_msgSend$loadSchemaURLsForBundleIdentifiers:completion:": 4294994048,
+  "_objc_msgSend$allBundleIdentifiers": 4294993216,
+  "_objc_msgSend$bundleProxyWithAuditToken:error:": 4294993408,
+  "_objc_msgSend$loadImageDataFromImage:accessSpecifier:completion:": 4294994016,
+  "-[INHService fetchShareExtensionIntentForExtensionContextUUID:completion:]": 4294986212,
+  "-[INHService loadSchemaURLsWithCompletion:]": 4294988460,
+  "_objc_msgSend$purgeImageWithIdentifier:completion:": 4294994208,
+  "-[INHService storeImage:scaled:qualityOfService:storeType:completion:]": 4294992028
+}

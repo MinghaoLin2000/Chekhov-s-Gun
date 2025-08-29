@@ -1,0 +1,6 @@
+{
+    "function_name": "_SaveStringPropertyAsData",
+    "function_argument_number": 2,
+    "function_signature": "_SaveStringPropertyAsData(int a1, CFStringRef theString)",
+    "pseudocode": "__int64 __fastcall SaveStringPropertyAsData(const __CFString *a1, CFStringRef theString)\n{\n  os_log_s *v4; // x21\n  CFDataRef ExternalRepresentation; // x0\n  CFDataRef v6; // x20\n  io_registry_entry_t v7; // w0\n  io_object_t v8; // w21\n  __int64 v9; // x19\n\n  if ( !a1 || !theString )\n  {\n    v4 = (os_log_s *)LogCategory_Unspecified();\n    if ( os_log_type_enabled(v4, OS_LOG_TYPE_ERROR) )\n      sub_1000064FC(v4);\n  }\n  ExternalRepresentation = CFStringCreateExternalRepresentation(kCFAllocatorDefault, theString, 0x8000100u, 0);\n  if ( !ExternalRepresentation )\n    return 0LL;\n  v6 = ExternalRepresentation;\n  v7 = sub_10000420C();\n  if ( v7 )\n  {\n    v8 = v7;\n    v9 = IORegistryEntrySetCFProperty(v7, a1, v6);\n    IOObjectRelease(v8);\n  }\n  else\n  {\n    v9 = 0LL;\n  }\n  CFRelease(v6);\n  return v9;\n}"
+}

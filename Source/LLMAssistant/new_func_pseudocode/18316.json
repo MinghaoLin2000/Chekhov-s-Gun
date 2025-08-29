@@ -1,0 +1,6 @@
+{
+    "function_name": "_ConfigureAUAudioUnitXPCInterface",
+    "function_argument_number": 0,
+    "function_signature": "_ConfigureAUAudioUnitXPCInterface()",
+    "pseudocode": "__int64 ConfigureAUAudioUnitXPCInterface()\n{\n  return _ConfigureAUAudioUnitXPCInterface();\n}"
+}

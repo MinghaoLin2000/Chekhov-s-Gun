@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKiCloudDataController ubiquitousKeyValueStore]",
+    "function_argument_number": 2,
+    "function_signature": "-[PKiCloudDataController ubiquitousKeyValueStore](PKiCloudDataController * self, SEL a2)",
+    "pseudocode": "NSUbiquitousKeyValueStore *__cdecl -[PKiCloudDataController ubiquitousKeyValueStore](\n        PKiCloudDataController *self,\n        SEL a2)\n{\n  return self->_ubiquitousKeyValueStore;\n}"
+}

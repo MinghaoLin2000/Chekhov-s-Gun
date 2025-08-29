@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUNoCopyDictionary removeObjectForKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUNoCopyDictionary removeObjectForKey:](int a1, int a2, void * key)",
+    "pseudocode": "void __cdecl -[TSUNoCopyDictionary removeObjectForKey:](TSUNoCopyDictionary *self, SEL a2, id a3)\n{\n  CFDictionaryRemoveValue(self->mDictionary, a3);\n}"
+}

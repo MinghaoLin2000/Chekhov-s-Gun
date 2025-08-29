@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV3pids5Int32Vvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV3pids5Int32Vvg()",
+    "pseudocode": "__int64 CGSWindow.pid.getter()\n{\n  __int64 v0; // x0\n  EyeCandyGraphics::CGSConnection v1; // w0\n  __int64 v2; // x21\n\n  CGSConnection.defaultConnection.unsafeMutableAddressor();\n  v0 = sub_1000120F4();\n  v1.cid = sub_10001B21C(v0);\n  CGSWindow.getOwner(connection:)(v1);\n  if ( !v2 )\n    return CGSConnection.pid.getter();\n  swift_errorRelease(v2);\n  return 0LL;\n}"
+}

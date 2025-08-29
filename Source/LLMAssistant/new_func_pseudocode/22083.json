@@ -1,0 +1,6 @@
+{
+    "function_name": "_SaveDataToNvram",
+    "function_argument_number": 2,
+    "function_signature": "_SaveDataToNvram(const __CFString * a1, const void * a2)",
+    "pseudocode": "__int64 __fastcall SaveDataToNvram(const __CFString *a1, const void *a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x19\n  os_log_s *v6; // x20\n  io_registry_entry_t v7; // w0\n  io_object_t v8; // w22\n  os_log_s *v9; // x19\n  mach_port_t mainPort; // [xsp+Ch] [xbp-24h] BYREF\n\n  mainPort = 0;\n  v4 = IOMasterPort(bootstrap_port, &mainPort);\n  if ( (_DWORD)v4 )\n  {\n    v5 = v4;\n    v6 = (os_log_s *)LogCategory_Unspecified();\n    if ( os_log_type_enabled(v6, OS_LOG_TYPE_ERROR) )\n      sub_100006888(v5, v6);\n  }\n  else\n  {\n    v7 = IORegistryEntryFromPath(mainPort, \"IODeviceTree:/options\");\n    if ( v7 )\n    {\n      v8 = v7;\n      v5 = IORegistryEntrySetCFProperty(v7, a1, a2);\n      IOObjectRelease(v8);\n    }\n    else\n    {\n      v9 = (os_log_s *)LogCategory_Unspecified();\n      if ( os_log_type_enabled(v9, OS_LOG_TYPE_ERROR) )\n        sub_100006844(v9);\n      return 0LL;\n    }\n  }\n  return v5;\n}"
+}

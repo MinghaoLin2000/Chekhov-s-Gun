@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_NSAttributedStringAgentService start]",
+    "function_argument_number": 2,
+    "function_signature": "-[_NSAttributedStringAgentService start](_NSAttributedStringAgentService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[_NSAttributedStringAgentService start](_NSAttributedStringAgentService *self, SEL a2)\n{\n  -[NSXPCListener resume](self->_listener, \"resume\");\n}"
+}

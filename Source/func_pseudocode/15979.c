@@ -1,0 +1,5 @@
+_uarpPlatformTransmitQueueLogEntry
+void uarpPlatformTransmitQueueLogEntry()
+{
+  ;
+}

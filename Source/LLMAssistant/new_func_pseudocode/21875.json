@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN15fileFormatUtils8Material23updateSerializeMaterialEPN9serialize3MatEPNS1_5StageE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN15fileFormatUtils8Material23updateSerializeMaterialEPN9serialize3MatEPNS1_5StageE(fileFormatUtils::Material * this, serialize::Mat * a2, serialize::Stage * a3)",
+    "pseudocode": "__int64 __fastcall fileFormatUtils::Material::updateSerializeMaterial(\n        fileFormatUtils::Material *this,\n        serialize::Mat *a2,\n        serialize::Stage *a3)\n{\n  __int64 v6; // x22\n  __int64 result; // x0\n\n  fileFormatUtils::Material::_makeTextureShaderNames(this);\n  v6 = 0LL;\n  do\n  {\n    result = fileFormatUtils::Material::_addMapToSerializeMaterial(this, v6, a2, a3);\n    v6 = (unsigned int)(v6 + 1);\n  }\n  while ( (_DWORD)v6 != 7 );\n  return result;\n}"
+}

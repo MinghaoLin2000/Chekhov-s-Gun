@@ -1,0 +1,6 @@
+{
+    "function_name": "_fpfs_allow_operation",
+    "function_argument_number": 0,
+    "function_signature": "_fpfs_allow_operation()",
+    "pseudocode": "__int64 fpfs_allow_operation()\n{\n  return _fpfs_allow_operation();\n}"
+}

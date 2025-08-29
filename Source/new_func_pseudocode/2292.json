@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderOverallView setDragHighlighted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderOverallView setDragHighlighted:](DeviceFinderOverallView * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceFinderOverallView setDragHighlighted:](DeviceFinderOverallView *self, SEL a2, bool a3)\n{\n  if ( self->_dragHighlighted != a3 )\n  {\n    self->_dragHighlighted = a3;\n    -[DeviceFinderOverallView setNeedsDisplay:](self, \"setNeedsDisplay:\", 1LL);\n  }\n}"
+}

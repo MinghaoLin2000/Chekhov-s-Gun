@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal15DynamicMapFieldC1EPKNS0_7MessageEPNS0_5ArenaE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal15DynamicMapFieldC1EPKNS0_7MessageEPNS0_5ArenaE(google::protobuf::internal::DynamicMapField * this, const google::protobuf::Message * a2, google::protobuf::Arena * a3)",
+    "pseudocode": "double __fastcall google::protobuf::internal::DynamicMapField::DynamicMapField(\n        google::protobuf::internal::DynamicMapField *this,\n        const google::protobuf::Message *a2,\n        google::protobuf::Arena *a3)\n{\n  __int64 v5; // x0\n  double result; // d0\n\n  v5 = sub_1000D1324(this, a3);\n  *(_QWORD *)v5 = off_1001D9D50;\n  result = 0.0;\n  *(_OWORD *)(v5 + 96) = xmmword_10018BDB0;\n  *(_OWORD *)(v5 + 112) = xmmword_10018BDB0;\n  *(_QWORD *)(v5 + 128) = &google::protobuf::internal::kGlobalEmptyTable;\n  *(_QWORD *)(v5 + 136) = a3;\n  *(_QWORD *)(v5 + 144) = a2;\n  return result;\n}"
+}

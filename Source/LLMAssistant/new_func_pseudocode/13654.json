@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCryptorUpdate",
+    "function_argument_number": 6,
+    "function_signature": "_CCCryptorUpdate(CCCryptorRef cryptorRef, const void * dataIn, size_t dataInLength, void * dataOut, size_t dataOutAvailable, size_t * dataOutMoved)",
+    "pseudocode": "CCCryptorStatus __cdecl CCCryptorUpdate(\n        CCCryptorRef cryptorRef,\n        const void *dataIn,\n        size_t dataInLength,\n        void *dataOut,\n        size_t dataOutAvailable,\n        size_t *dataOutMoved)\n{\n  return _CCCryptorUpdate(cryptorRef, dataIn, dataInLength, dataOut, dataOutAvailable, dataOutMoved);\n}"
+}

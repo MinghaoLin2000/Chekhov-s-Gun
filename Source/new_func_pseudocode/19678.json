@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSession URLSession]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSession URLSession](IPPSession * self, SEL a2)",
+    "pseudocode": "NSURLSession *__cdecl -[IPPSession URLSession](IPPSession *self, SEL a2)\n{\n  return (NSURLSession *)objc_getProperty(self, a2, 56LL, 1);\n}"
+}

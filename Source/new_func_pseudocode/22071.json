@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FMMFileLogger logMessage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FMMFileLogger logMessage:](FMMFileLogger * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[FMMFileLogger logMessage:](FMMFileLogger *self, SEL a2, id a3)\n{\n  void *v5; // x20\n  __int64 v6; // [xsp+30h] [xbp+10h] BYREF\n\n  if ( -[NSDictionary objectForKeyedSubscript:](\n         -[NSProcessInfo environment](\n           +[NSProcessInfo processInfo](&OBJC_CLASS___NSProcessInfo, \"processInfo\"),\n           \"environment\"),\n         \"objectForKeyedSubscript:\",\n         CFSTR(\"__OSINSTALL_ENVIRONMENT\")) )\n  {\n    v5 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithFormat:arguments:\", a3, &v6);\n    -[FMMFileLogger logString:](self, \"logString:\", v5);\n    objc_release(v5);\n  }\n}"
+}

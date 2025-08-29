@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo asset]",
+    "function_argument_number": 2,
+    "function_signature": "-[restoreInfo asset](restoreInfo * self, SEL a2)",
+    "pseudocode": "MAAsset *__cdecl -[restoreInfo asset](restoreInfo *self, SEL a2)\n{\n  return (MAAsset *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

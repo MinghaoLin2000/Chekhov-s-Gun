@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BrowseService addEntity:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BrowseService addEntity:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[BrowseService addEntity:](BrowseService *self, SEL a2, id a3)\n{\n  id v4; // x19\n  PrintInfoSet *browseInfos; // x21\n  PrintInfoSet *v6; // x0\n  PrintInfoSet *v7; // x8\n  void *v8; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  if ( ((unsigned int)-[NSMutableSet containsObject:](self->_entities, \"containsObject:\", v4) & 1) == 0 )\n  {\n    -[NSMutableSet addObject:](self->_entities, \"addObject:\", v4);\n    browseInfos = self->_browseInfos;\n    if ( !browseInfos )\n    {\n      v6 = objc_opt_new(&OBJC_CLASS___PrintInfoSet);\n      v7 = self->_browseInfos;\n      self->_browseInfos = v6;\n      objc_release(v7);\n      browseInfos = self->_browseInfos;\n    }\n    v8 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"browseInfo\"));\n    -[PrintInfoSet addInfo:](browseInfos, \"addInfo:\", v8);\n    objc_release(v8);\n    -[BrowseService _checkSync](self, \"_checkSync\");\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

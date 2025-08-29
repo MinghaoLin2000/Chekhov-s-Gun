@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceMediaPickerViewController tableView:heightOfRow:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceMediaPickerViewController tableView:heightOfRow:](DeviceMediaPickerViewController * self, SEL a2, id a3, signed __int64 a4)",
+    "pseudocode": "double __cdecl -[DeviceMediaPickerViewController tableView:heightOfRow:](\n        DeviceMediaPickerViewController *self,\n        SEL a2,\n        id a3,\n        signed __int64 a4)\n{\n  return 30.0;\n}"
+}

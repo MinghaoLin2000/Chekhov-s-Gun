@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOCreatePlugInInterfaceForService",
+    "function_argument_number": 5,
+    "function_signature": "_IOCreatePlugInInterfaceForService(io_service_t service, CFUUIDRef pluginType, CFUUIDRef interfaceType, IOCFPlugInInterface *** theInterface, SInt32 * theScore)",
+    "pseudocode": "kern_return_t __cdecl IOCreatePlugInInterfaceForService(\n        io_service_t service,\n        CFUUIDRef pluginType,\n        CFUUIDRef interfaceType,\n        IOCFPlugInInterface ***theInterface,\n        SInt32 *theScore)\n{\n  return _IOCreatePlugInInterfaceForService(service, pluginType, interfaceType, theInterface, theScore);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZSt28__throw_bad_array_new_lengthB8ne180100v",
+    "function_argument_number": 0,
+    "function_signature": "__ZSt28__throw_bad_array_new_lengthB8ne180100v()",
+    "pseudocode": "void __noreturn std::__throw_bad_array_new_length[abi:ne180100]()\n{\n  std::bad_array_new_length *exception; // x0\n  std::bad_array_new_length *v1; // x0\n\n  exception = (std::bad_array_new_length *)__cxa_allocate_exception(8uLL);\n  v1 = std::bad_array_new_length::bad_array_new_length(exception);\n  __cxa_throw(\n    v1,\n    (struct type_info *)&`typeinfo for'std::bad_array_new_length,\n    (void (__fastcall *)(void *))&std::bad_array_new_length::~bad_array_new_length);\n}"
+}

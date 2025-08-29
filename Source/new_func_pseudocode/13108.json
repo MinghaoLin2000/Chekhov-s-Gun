@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation isReadable]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileDataRepresentation isReadable](SFUFileDataRepresentation * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SFUFileDataRepresentation isReadable](SFUFileDataRepresentation *self, SEL a2)\n{\n  return -[SFUFileDataRepresentation path](self, \"path\") != 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_column_int",
+    "function_argument_number": 2,
+    "function_signature": "_sqlite3_column_int(sqlite3_stmt * a1, int iCol)",
+    "pseudocode": "int __cdecl sqlite3_column_int(sqlite3_stmt *a1, int iCol)\n{\n  return _sqlite3_column_int(a1, iCol);\n}"
+}

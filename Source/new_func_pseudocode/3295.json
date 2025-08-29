@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSLog",
+    "function_argument_number": 1,
+    "function_signature": "_NSLog(NSString * format)",
+    "pseudocode": "void NSLog(NSString *format, ...)\n{\n  _NSLog(format);\n}"
+}

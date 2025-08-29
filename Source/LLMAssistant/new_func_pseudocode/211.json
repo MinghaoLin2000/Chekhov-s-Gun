@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_arrayDestroy",
+    "function_argument_number": 0,
+    "function_signature": "_swift_arrayDestroy()",
+    "pseudocode": "__int64 swift_arrayDestroy()\n{\n  return _swift_arrayDestroy();\n}"
+}

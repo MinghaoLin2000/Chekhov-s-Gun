@@ -1,0 +1,6 @@
+{
+    "function_name": "+[DeviceSettingsNode mostRecentTVShowEpisodeNodeComparator]",
+    "function_argument_number": 2,
+    "function_signature": "+[DeviceSettingsNode mostRecentTVShowEpisodeNodeComparator](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[DeviceSettingsNode mostRecentTVShowEpisodeNodeComparator](id a1, SEL a2)\n{\n  id v2; // x19\n  _QWORD *v3; // x20\n  _QWORD v5[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v6; // [xsp+28h] [xbp-18h]\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_10006511C;\n  v5[3] = &unk_1000B9E38;\n  v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"mostRecentMovieNodeComparator\"));\n  v2 = objc_retain(v6);\n  v3 = objc_retainBlock(v5);\n  objc_release(v6);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

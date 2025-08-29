@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_listener_get_port",
+    "function_argument_number": 1,
+    "function_signature": "_nw_listener_get_port(nw_listener_t listener)",
+    "pseudocode": "uint16_t __cdecl nw_listener_get_port(nw_listener_t listener)\n{\n  return _nw_listener_get_port(listener);\n}"
+}

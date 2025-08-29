@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup16AnnotationWindow setContentSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC13DisplayMarkup16AnnotationWindow setContentSize:](_TtC13DisplayMarkup16AnnotationWindow * self, SEL a2, CGSize a3)",
+    "pseudocode": "void __cdecl -[AnnotationWindow setContentSize:](_TtC13DisplayMarkup16AnnotationWindow *self, SEL a2, CGSize a3)\n{\n  double height; // d8\n  double width; // d9\n  _TtC13DisplayMarkup16AnnotationWindow *v5; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  height = a3.height;\n  width = a3.width;\n  v5 = objc_retain(self);\n  sub_100007BE8(width, height);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

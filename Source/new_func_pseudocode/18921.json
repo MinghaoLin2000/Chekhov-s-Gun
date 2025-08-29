@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService alertState]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService alertState](SiriNCService * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[SiriNCService alertState](SiriNCService *self, SEL a2)\n{\n  return self->_alertState;\n}"
+}

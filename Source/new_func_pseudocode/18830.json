@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewController setPreferredContentSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewController setPreferredContentSize:](RemoteViewController * self, SEL a2, CGSize a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[RemoteViewController setPreferredContentSize:](RemoteViewController *self, SEL a2, CGSize a3)\n{\n  -[RemoteViewController _remotePreferredSizeChanged:](self, \"_remotePreferredSizeChanged:\", a3.width, a3.height);\n}"
+}

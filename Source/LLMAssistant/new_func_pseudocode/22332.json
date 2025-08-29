@@ -1,0 +1,6 @@
+{
+    "function_name": "__TSMRegisterRemoteViewClient",
+    "function_argument_number": 0,
+    "function_signature": "__TSMRegisterRemoteViewClient()",
+    "pseudocode": "__int64 _TSMRegisterRemoteViewClient()\n{\n  return __TSMRegisterRemoteViewClient();\n}"
+}

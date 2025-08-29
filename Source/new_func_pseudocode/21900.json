@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__113basic_filebufIcNS_11char_traitsIcEEEC1Ev",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__113basic_filebufIcNS_11char_traitsIcEEEC1Ev()",
+    "pseudocode": "__int64 std::filebuf::basic_filebuf()\n{\n  return std::filebuf::basic_filebuf();\n}"
+}

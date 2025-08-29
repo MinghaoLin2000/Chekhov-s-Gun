@@ -1,0 +1,6 @@
+{
+    "function_name": "_ftell",
+    "function_argument_number": 1,
+    "function_signature": "_ftell(FILE * a1)",
+    "pseudocode": "__int64 __cdecl ftell(FILE *a1)\n{\n  return _ftell(a1);\n}"
+}

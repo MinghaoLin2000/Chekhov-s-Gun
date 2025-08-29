@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SUContainedSoftwareUpdateController requestStatusForSession:statusHandler:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SUContainedSoftwareUpdateController requestStatusForSession:statusHandler:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[SUContainedSoftwareUpdateController requestStatusForSession:statusHandler:](\n        SUContainedSoftwareUpdateController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x21\n  dispatch_queue_s *queue; // x20\n  id v9; // x21\n  _QWORD v10[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v11; // [xsp+20h] [xbp-30h]\n  id v12; // [xsp+28h] [xbp-28h]\n\n  v6 = objc_retain(a4);\n  if ( a3 )\n  {\n    v7 = objc_retainAutoreleasedReturnValue(\n           -[SUContainedSoftwareUpdateController _contextForSessionIdentifier:](\n             self,\n             \"_contextForSessionIdentifier:\",\n             a3));\n    queue = (dispatch_queue_s *)self->_queue;\n    v10[0] = _NSConcreteStackBlock;\n    v10[1] = 3254779904LL;\n    v10[2] = sub_1000043E8;\n    v10[3] = &unk_1000081E0;\n    v11 = v7;\n    v12 = objc_retain(v6);\n    v9 = objc_retain(v7);\n    dispatch_async(queue, v10);\n    objc_release(v11);\n    objc_release(v12);\n    objc_release(v9);\n  }\n  objc_release(v6);\n}"
+}

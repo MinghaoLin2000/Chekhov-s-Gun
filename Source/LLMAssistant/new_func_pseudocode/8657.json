@@ -1,0 +1,6 @@
+{
+    "function_name": "_getenv",
+    "function_argument_number": 1,
+    "function_signature": "_getenv(const char * a1)",
+    "pseudocode": "char *__cdecl getenv(const char *a1)\n{\n  return _getenv(a1);\n}"
+}

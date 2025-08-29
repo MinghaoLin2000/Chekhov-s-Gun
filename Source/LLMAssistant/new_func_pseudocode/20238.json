@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z12ippTagString9ipp_tag_e",
+    "function_argument_number": 1,
+    "function_signature": "__Z12ippTagString9ipp_tag_e(ipp_tag_e a1)",
+    "pseudocode": "const char *__fastcall ippTagString(int a1)\n{\n  __int64 v1; // x30\n  __CFString *v2; // x0\n\n  if ( a1 > 74 )\n    return \"UNKNOWN\";\n  v2 = objc_retainAutorelease(off_10009EB98[a1]);\n  if ( ((v1 ^ (2 * v1)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (const char *)-[__CFString UTF8String](v2, \"UTF8String\");\n}"
+}

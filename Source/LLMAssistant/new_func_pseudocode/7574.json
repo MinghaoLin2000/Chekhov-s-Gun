@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGRectV16EyeCandyGraphicsE1soiyA2B_AbCE9DimensionOtFZ",
+    "function_argument_number": 3,
+    "function_signature": "_$sSo6CGRectV16EyeCandyGraphicsE1soiyA2B_AbCE9DimensionOtFZ(__int64 a1, char a2, double result)",
+    "pseudocode": "double __fastcall static CGRect.- infix(_:_:)(__int64 a1, char a2, double result)\n{\n  switch ( a2 )\n  {\n    case 1:\n    case 2:\n    case 3:\n      return result;\n    default:\n      result = result - *(double *)&a1;\n      break;\n  }\n  return result;\n}"
+}

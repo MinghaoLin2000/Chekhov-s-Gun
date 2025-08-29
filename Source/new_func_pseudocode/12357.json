@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io17CodedOutputStreamC1EPNS1_20ZeroCopyOutputStreamEb",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf2io17CodedOutputStreamC1EPNS1_20ZeroCopyOutputStreamEb(google::protobuf::io::CodedOutputStream * this, google::protobuf::io::ZeroCopyOutputStream * a2, bool a3)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::io::CodedOutputStream::CodedOutputStream(__int64 this, __int64 a2, int a3)\n{\n  return __ZN6google8protobuf2io17CodedOutputStreamC2EPNS1_20ZeroCopyOutputStreamEb(this, a2, a3);\n}"
+}

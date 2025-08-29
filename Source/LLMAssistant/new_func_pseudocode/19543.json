@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleCopyBundleURL",
+    "function_argument_number": 1,
+    "function_signature": "_CFBundleCopyBundleURL(CFBundleRef bundle)",
+    "pseudocode": "CFURLRef __cdecl CFBundleCopyBundleURL(CFBundleRef bundle)\n{\n  return _CFBundleCopyBundleURL(bundle);\n}"
+}

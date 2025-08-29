@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf12UnknownField8DeepCopyERKS1_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf12UnknownField8DeepCopyERKS1_(google::protobuf::UnknownField * this, const google::protobuf::UnknownField * a2)",
+    "pseudocode": "void **__fastcall google::protobuf::UnknownField::DeepCopy(void **this, const google::protobuf::UnknownField *a2)\n{\n  void **v2; // x19\n  int v3; // w8\n  void **v4; // x20\n  void **v5; // x8\n  __int128 v6; // q0\n\n  v2 = this;\n  v3 = *((_DWORD *)this + 1);\n  if ( v3 == 4 )\n  {\n    v4 = (void **)operator new(24LL, 0x20C40960023A9LL);\n    v4[1] = 0LL;\n    v4[2] = 0LL;\n    *v4 = 0LL;\n    this = google::protobuf::UnknownFieldSet::InternalMergeFrom(v4, (const google::protobuf::UnknownFieldSet *)v2[1]);\n  }\n  else\n  {\n    if ( v3 != 3 )\n      return this;\n    this = (void **)operator new(24LL, 0x1012C40EC159624LL);\n    v4 = this;\n    v5 = (void **)v2[1];\n    if ( *((char *)v5 + 23) < 0 )\n    {\n      this = (void **)sub_10007A474(this, *v5);\n    }\n    else\n    {\n      v6 = *(_OWORD *)v5;\n      this[2] = v5[2];\n      *(_OWORD *)this = v6;\n    }\n  }\n  v2[1] = v4;\n  return this;\n}"
+}

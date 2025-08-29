@@ -1,0 +1,6 @@
+{
+    "function_name": "_MGGetBoolAnswer",
+    "function_argument_number": 0,
+    "function_signature": "_MGGetBoolAnswer()",
+    "pseudocode": "__int64 MGGetBoolAnswer()\n{\n  return _MGGetBoolAnswer();\n}"
+}

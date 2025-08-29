@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformFindPreparedAsset",
+    "function_argument_number": 5,
+    "function_signature": "_uarpPlatformFindPreparedAsset(__int64 a1, __int64 a2, char a4, unsigned __int8 * a5, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformFindPreparedAsset(__int64 a1, __int64 a2, __int64 a3, char a4, unsigned __int8 *a5)\n{\n  __int64 result; // x0\n\n  if ( (a4 & 2) == 0 )\n    return 0LL;\n  for ( result = *(_QWORD *)(a1 + 568); result; result = *(_QWORD *)(result + 712) )\n  {\n    if ( !*(_DWORD *)(result + 304)\n      && *(_QWORD *)(result + 696) == a2\n      && !*(_WORD *)(result + 44)\n      && *(unsigned __int8 *)(result + 48) == *a5\n      && *(unsigned __int8 *)(result + 49) == a5[1]\n      && *(unsigned __int8 *)(result + 50) == a5[2]\n      && *(unsigned __int8 *)(result + 51) == a5[3] )\n    {\n      break;\n    }\n  }\n  return result;\n}"
+}

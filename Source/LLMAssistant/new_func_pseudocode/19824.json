@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t .cxx_destruct](lite_printer_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[lite_printer_t .cxx_destruct](lite_printer_t *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_printerDescription, 0LL);\n  objc_storeStrong((id *)&self->_printerStateReasons, 0LL);\n  objc_storeStrong((id *)&self->_printerStateMessage, 0LL);\n  objc_storeStrong((id *)&self->_defaultCredentialForPrinter, 0LL);\n  objc_storeStrong((id *)&self->_currentJob, 0LL);\n  objc_storeStrong((id *)&self->_printerOperationQueue, 0LL);\n  objc_storeStrong((id *)&self->_printerDescriptionTime, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_browseInfo, 0LL);\n}"
+}

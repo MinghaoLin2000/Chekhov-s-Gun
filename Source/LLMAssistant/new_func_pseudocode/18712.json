@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore8VibrancyOwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore8VibrancyOwxx(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall destroy for Vibrancy(_QWORD *a1)\n{\n  return sub_10004C284(*a1);\n}"
+}

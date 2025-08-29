@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMDCopyErrorText",
+    "function_argument_number": 0,
+    "function_signature": "_AMDCopyErrorText()",
+    "pseudocode": "__int64 AMDCopyErrorText()\n{\n  return _AMDCopyErrorText();\n}"
+}

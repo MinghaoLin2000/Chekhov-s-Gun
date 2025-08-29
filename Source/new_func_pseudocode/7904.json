@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextFlush",
+    "function_argument_number": 1,
+    "function_signature": "_CGContextFlush(CGContextRef c)",
+    "pseudocode": "void __cdecl CGContextFlush(CGContextRef c)\n{\n  _CGContextFlush(c);\n}"
+}

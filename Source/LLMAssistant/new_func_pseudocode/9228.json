@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPCryptoComponentWriteChannel writeData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPCryptoComponentWriteChannel writeData:](TSPCryptoComponentWriteChannel * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[TSPCryptoComponentWriteChannel writeData:](TSPCryptoComponentWriteChannel *self, SEL a2, id a3)\n{\n  -[TSPCryptoComponentWriteChannel _writeData:isDecryptedData:](self, \"_writeData:isDecryptedData:\", a3, 1LL);\n}"
+}

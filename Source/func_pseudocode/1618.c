@@ -1,0 +1,5 @@
+-[BarChoice setTitle:]
+void __cdecl -[BarChoice setTitle:](BarChoice *self, SEL a2, id a3)
+{
+  objc_storeStrong((id *)&self->_title, a3);
+}

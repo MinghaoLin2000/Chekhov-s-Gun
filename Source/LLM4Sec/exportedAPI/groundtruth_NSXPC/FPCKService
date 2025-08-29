@@ -1,0 +1,9 @@
+@protocol FPCKServiceProtocol
+- (void)runFPCKWithPauseHandler:(id <FPCKUpdateReceiving>)arg1 completionHandler:(void (^)(NSString *, FPCKStats *, NSDictionary *, NSError *))arg2;
+- (void)prepareFPCKForDomain:(NSString *)arg1 domainUserInfo:(NSDictionary *)arg2 domainRootURL:(FPSandboxingURLWrapper *)arg3 databaseBackupPath:(FPSandboxingURLWrapper *)arg4 accessingPaths:(NSArray *)arg5 urls:(NSArray *)arg6 volumeRole:(unsigned int)arg7 options:(unsigned long long)arg8 reason:(unsigned long long)arg9 fpfs:(_Bool)arg10 iCDPackageDetection:(_Bool)arg11 completionHandler:(void (^)(NSError *))arg12;
+@end
+@protocol FPCKUpdateReceiving
+- (void)sendDiagnosticsForItemIDs:(NSData *)arg1;
+- (void)shouldPauseWithCompletion:(void (^)(_Bool, NSError *))arg1;
+- (void)saveCheckpointWithReport:(FPCKTelemetryUpdate *)arg1;
+@end

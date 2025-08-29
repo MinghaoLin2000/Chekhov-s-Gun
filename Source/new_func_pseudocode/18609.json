@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24ScrollGesturePreferencesC15ScrollDirectionOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24ScrollGesturePreferencesC15ScrollDirectionOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ScrollGesturePreferences.ScrollDirection()\n{\n  return &type metadata for ScrollGesturePreferences.ScrollDirection;\n}"
+}

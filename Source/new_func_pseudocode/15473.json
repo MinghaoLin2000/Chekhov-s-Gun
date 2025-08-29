@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_set_connected_callback",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_set_connected_callback()",
+    "pseudocode": "__int64 remote_device_set_connected_callback()\n{\n  return _remote_device_set_connected_callback();\n}"
+}

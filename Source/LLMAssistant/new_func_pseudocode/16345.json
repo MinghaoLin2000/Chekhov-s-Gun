@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setManifestIDs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setManifestIDs:](EAFirmwareUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setManifestIDs:](EAFirmwareUpdater *self, SEL a2, id a3)\n{\n  NSDictionary *v4; // x0\n\n  v4 = (NSDictionary *)objc_msgSend(a3, \"copy\");\n  self->_manifestIDs = v4;\n  self->_manifestList = objc_retain(-[NSDictionary allKeys](v4, \"allKeys\"));\n  self->_manifestIndex = 0;\n}"
+}

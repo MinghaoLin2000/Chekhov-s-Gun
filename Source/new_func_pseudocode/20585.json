@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFOperatorTableRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFOperatorTableRelease(CGPDFOperatorTableRef table)",
+    "pseudocode": "void __cdecl CGPDFOperatorTableRelease(CGPDFOperatorTableRef table)\n{\n  _CGPDFOperatorTableRelease(table);\n}"
+}

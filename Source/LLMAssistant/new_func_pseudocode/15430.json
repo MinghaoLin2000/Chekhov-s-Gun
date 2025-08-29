@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceCopyMDRemoteServiceDevice",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceCopyMDRemoteServiceDevice()",
+    "pseudocode": "__int64 AMRestorableDeviceCopyMDRemoteServiceDevice()\n{\n  return _AMRestorableDeviceCopyMDRemoteServiceDevice();\n}"
+}

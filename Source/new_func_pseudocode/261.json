@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_unexpectedError",
+    "function_argument_number": 0,
+    "function_signature": "_swift_unexpectedError()",
+    "pseudocode": "__int64 swift_unexpectedError()\n{\n  return _swift_unexpectedError();\n}"
+}

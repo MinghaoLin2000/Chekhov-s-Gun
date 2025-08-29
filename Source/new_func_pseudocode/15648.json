@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater initCurrentState]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBDFUUpdater initCurrentState](USBDFUUpdater * self, SEL a2)",
+    "pseudocode": "int __cdecl -[USBDFUUpdater initCurrentState](USBDFUUpdater *self, SEL a2)\n{\n  int result; // w0\n  int v4; // w20\n\n  result = -[USBDFUUpdater openDfuDevice](self, \"openDfuDevice\");\n  if ( !result )\n  {\n    v4 = -[USBDFUUpdater dfuGetStateCmd:](self, \"dfuGetStateCmd:\", &self->_currentStatus.bState);\n    -[USBDFUUpdater closeDfuDevice](self, \"closeDfuDevice\");\n    return v4;\n  }\n  return result;\n}"
+}

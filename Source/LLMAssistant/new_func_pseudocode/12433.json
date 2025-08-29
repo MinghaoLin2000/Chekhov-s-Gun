@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSNumber numberWithCGFloat:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSNumber numberWithCGFloat:](id a1, SEL a2, double a3)",
+    "pseudocode": "NSNumber *__cdecl +[NSNumber numberWithCGFloat:](id a1, SEL a2, double a3)\n{\n  return +[NSNumber numberWithDouble:](&OBJC_CLASS___NSNumber, \"numberWithDouble:\", a3);\n}"
+}

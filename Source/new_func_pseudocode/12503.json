@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSScanner tsu_scanCGFloat:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSScanner tsu_scanCGFloat:](NSScanner * self, SEL a2, double * a3)",
+    "pseudocode": "bool __cdecl -[NSScanner tsu_scanCGFloat:](NSScanner *self, SEL a2, double *a3)\n{\n  bool result; // w0\n  __int64 v5; // [xsp+8h] [xbp-18h] BYREF\n\n  v5 = 0LL;\n  result = -[NSScanner scanDouble:](self, \"scanDouble:\", &v5);\n  *(_QWORD *)a3 = v5;\n  return result;\n}"
+}

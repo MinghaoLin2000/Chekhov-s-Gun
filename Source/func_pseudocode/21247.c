@@ -1,0 +1,5 @@
+_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC18InExhaustiveParsesSbvg
+__int64 __fastcall VoiceCommandDebugInfoAggregated.hasVoiceCommandInExhaustiveParses.getter(char a1)
+{
+  return a1 & 1;
+}

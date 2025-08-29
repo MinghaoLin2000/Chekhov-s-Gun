@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSHomeDirectory",
+    "function_argument_number": 0,
+    "function_signature": "_NSHomeDirectory()",
+    "pseudocode": "NSString *NSHomeDirectory(void)\n{\n  return _NSHomeDirectory();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SockAddrToString",
+    "function_argument_number": 0,
+    "function_signature": "_SockAddrToString()",
+    "pseudocode": "__int64 SockAddrToString()\n{\n  return _SockAddrToString();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14FatalExceptionD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14FatalExceptionD1Ev(google::protobuf::FatalException * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::FatalException::~FatalException(std::exception *this)\n{\n  __ZN6google8protobuf14FatalExceptionD2Ev(this);\n}"
+}

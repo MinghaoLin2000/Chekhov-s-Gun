@@ -1,0 +1,6 @@
+{
+    "function_name": "+[UARPDFUUpdater matchingDictionaryForIdentifier:serialNumber:]",
+    "function_argument_number": 4,
+    "function_signature": "+[UARPDFUUpdater matchingDictionaryForIdentifier:serialNumber:](id a1, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl +[UARPDFUUpdater matchingDictionaryForIdentifier:serialNumber:](id a1, SEL a2, id a3, id a4)\n{\n  id v4; // x19\n  void *v5; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[UARPUSBDFUAccessory matchingDictionaryForIdentifier:serialNumber:](\n           &OBJC_CLASS___UARPUSBDFUAccessory,\n           \"matchingDictionaryForIdentifier:serialNumber:\",\n           a3,\n           a4));\n  v5 = objc_msgSend(v4, \"mutableCopy\");\n  objc_release(v4);\n  objc_msgSend(v5, \"setObject:forKeyedSubscript:\", &__kCFBooleanTrue, CFSTR(\"IOMatchLaunchStream\"));\n  objc_msgSend(v5, \"setObject:forKeyedSubscript:\", &__kCFBooleanTrue, CFSTR(\"IOMatchAll\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

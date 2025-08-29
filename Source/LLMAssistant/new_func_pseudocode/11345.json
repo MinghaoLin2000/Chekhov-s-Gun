@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf23SourceCodeInfo_Location11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf23SourceCodeInfo_Location11GetMetadataEv(google::protobuf::SourceCodeInfo_Location * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::SourceCodeInfo_Location::GetMetadata(\n        google::protobuf::SourceCodeInfo_Location *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_google_2fprotobuf_2fdescriptor_2eproto, 0LL);\n  return off_1001F6798[46];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[QLSatellite setConnection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[QLSatellite setConnection:](QLSatellite * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[QLSatellite setConnection:](QLSatellite *self, SEL a2, id a3)\n{\n  self->_connection = (OS_xpc_object *)a3;\n}"
+}

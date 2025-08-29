@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPDFUUpdater releasePowerAssertionForAccessory]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPDFUUpdater releasePowerAssertionForAccessory](UARPDFUUpdater * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPDFUUpdater releasePowerAssertionForAccessory](UARPDFUUpdater *self, SEL a2)\n{\n  __int64 powerAssertionID; // x0\n  OS_os_log *log; // x20\n  OS_os_log *v5; // x20\n  OS_os_log *v6; // x19\n  int v7; // [xsp+0h] [xbp-30h] BYREF\n  const char *v8; // [xsp+4h] [xbp-2Ch]\n\n  powerAssertionID = self->_powerAssertionID;\n  if ( (_DWORD)powerAssertionID )\n  {\n    if ( (releasePowerAssertion(powerAssertionID, a2) & 1) == 0 )\n    {\n      log = self->_log;\n      if ( os_log_type_enabled(log, OS_LOG_TYPE_ERROR) )\n        sub_100017FE4(log);\n    }\n    v5 = self->_log;\n    if ( os_log_type_enabled(v5, OS_LOG_TYPE_INFO) )\n    {\n      v7 = 136315138;\n      v8 = \"-[UARPDFUUpdater releasePowerAssertionForAccessory]\";\n      _os_log_impl(\n        (void *)&_mh_execute_header,\n        v5,\n        OS_LOG_TYPE_INFO,\n        \"%s: Power assertion released for USBDFU\",\n        (uint8_t *)&v7,\n        0xCu);\n    }\n    self->_powerAssertionID = 0;\n  }\n  else\n  {\n    v6 = self->_log;\n    if ( os_log_type_enabled(v6, OS_LOG_TYPE_ERROR) )\n      sub_100017F60(v6);\n  }\n}"
+}

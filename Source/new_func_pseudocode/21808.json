@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN10XpcSandboxD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN10XpcSandboxD1Ev(XpcSandbox * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall XpcSandbox::~XpcSandbox(XpcSandbox *this)\n{\n  __ZN10XpcSandboxD2Ev(this);\n}"
+}

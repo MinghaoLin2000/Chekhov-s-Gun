@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipInflateInputStream disableSystemCaching]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipInflateInputStream disableSystemCaching](SFUZipInflateInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUZipInflateInputStream disableSystemCaching](SFUZipInflateInputStream *self, SEL a2)\n{\n  -[SFUBufferedInputStream disableSystemCaching](self->mInput, \"disableSystemCaching\");\n}"
+}

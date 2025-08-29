@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController setAutoIncludeStackView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPodcastsViewController setAutoIncludeStackView:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPodcastsViewController setAutoIncludeStackView:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeWeak((id *)&self->_autoIncludeStackView, a3);\n}"
+}

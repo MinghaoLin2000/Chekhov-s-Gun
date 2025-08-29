@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlTextReaderPreservePattern",
+    "function_argument_number": 3,
+    "function_signature": "_xmlTextReaderPreservePattern(xmlTextReaderPtr reader, const xmlChar * pattern, const xmlChar ** namespaces)",
+    "pseudocode": "int __cdecl xmlTextReaderPreservePattern(xmlTextReaderPtr reader, const xmlChar *pattern, const xmlChar **namespaces)\n{\n  return _xmlTextReaderPreservePattern(reader, pattern, namespaces);\n}"
+}

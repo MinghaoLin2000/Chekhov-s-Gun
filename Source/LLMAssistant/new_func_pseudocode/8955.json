@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService20JSSourceUrlOverriderC16OverrideURLErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService20JSSourceUrlOverriderC16OverrideURLErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JSSourceUrlOverrider.OverrideURLError()\n{\n  return &type metadata for JSSourceUrlOverrider.OverrideURLError;\n}"
+}

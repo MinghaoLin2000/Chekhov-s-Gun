@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11DoubleValue13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf11DoubleValue13IsInitializedEv(google::protobuf::DoubleValue * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DoubleValue::IsInitialized(google::protobuf::DoubleValue *this)\n{\n  return 1LL;\n}"
+}

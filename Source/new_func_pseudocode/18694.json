@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVwta",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVwta(__int64 a1, __int64 * a2)",
+    "pseudocode": "__int64 __fastcall assignWithTake for NavigationAnchorKey.Entry(__int64 a1, __int64 *a2)\n{\n  __int64 v4; // x8\n  __int64 v5; // x9\n  __int64 v6; // x0\n  __int64 v7; // x9\n  __int64 v8; // x0\n\n  v4 = *a2;\n  if ( !*(_QWORD *)a1 )\n  {\n    if ( v4 )\n    {\n      v7 = a2[1];\n      *(_QWORD *)a1 = v4;\n      *(_QWORD *)(a1 + 8) = v7;\n      goto LABEL_8;\n    }\nLABEL_7:\n    *(_OWORD *)a1 = *(_OWORD *)a2;\n    goto LABEL_8;\n  }\n  if ( !v4 )\n  {\n    swift_release(*(_QWORD *)(a1 + 8));\n    goto LABEL_7;\n  }\n  v5 = a2[1];\n  v6 = *(_QWORD *)(a1 + 8);\n  *(_QWORD *)a1 = v4;\n  *(_QWORD *)(a1 + 8) = v5;\n  swift_release(v6);\nLABEL_8:\n  v8 = *(_QWORD *)(a1 + 16);\n  *(_QWORD *)(a1 + 16) = a2[2];\n  swift_release(v8);\n  *(_BYTE *)(a1 + 24) = *((_BYTE *)a2 + 24);\n  return a1;\n}"
+}

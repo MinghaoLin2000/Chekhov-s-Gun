@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_extended_result_codes",
+    "function_argument_number": 2,
+    "function_signature": "_sqlite3_extended_result_codes(sqlite3 * a1, int onoff)",
+    "pseudocode": "int __cdecl sqlite3_extended_result_codes(sqlite3 *a1, int onoff)\n{\n  return _sqlite3_extended_result_codes(a1, onoff);\n}"
+}

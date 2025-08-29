@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBooleanGetValue",
+    "function_argument_number": 1,
+    "function_signature": "_CFBooleanGetValue(CFBooleanRef boolean)",
+    "pseudocode": "Boolean __cdecl CFBooleanGetValue(CFBooleanRef boolean)\n{\n  return _CFBooleanGetValue(boolean);\n}"
+}

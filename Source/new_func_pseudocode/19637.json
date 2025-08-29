@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKSecTrustWrapper initWithTrust:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PKSecTrustWrapper initWithTrust:](PKSecTrustWrapper * self, SEL a2, __SecTrust * a3)",
+    "pseudocode": "PKSecTrustWrapper *__cdecl -[PKSecTrustWrapper initWithTrust:](PKSecTrustWrapper *self, SEL a2, __SecTrust *a3)\n{\n  PKSecTrustWrapper *v4; // x0\n  PKSecTrustWrapper *v5; // x21\n  objc_super v7; // [xsp+0h] [xbp-30h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___PKSecTrustWrapper;\n  v4 = -[PKSecTrustWrapper init](&v7, \"init\");\n  v5 = v4;\n  if ( v4 )\n  {\n    v4->_trustRef = a3;\n    CFRetain(a3);\n  }\n  return v5;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21liteSetThreadPriority15lite_priority_e",
+    "function_argument_number": 1,
+    "function_signature": "__Z21liteSetThreadPriority15lite_priority_e(unsigned int a1)",
+    "pseudocode": "__int64 __fastcall liteSetThreadPriority(unsigned int a1)\n{\n  qos_class_t v1; // w0\n\n  if ( a1 > 5 )\n    v1 = QOS_CLASS_UNSPECIFIED;\n  else\n    v1 = dword_10006D440[a1];\n  return pthread_set_qos_class_self_np(v1, 0);\n}"
+}

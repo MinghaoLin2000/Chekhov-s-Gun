@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_unfair_lock_lock",
+    "function_argument_number": 1,
+    "function_signature": "_os_unfair_lock_lock(os_unfair_lock_t lock)",
+    "pseudocode": "void __cdecl os_unfair_lock_lock(os_unfair_lock_t lock)\n{\n  _os_unfair_lock_lock(lock);\n}"
+}

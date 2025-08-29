@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters21_get_DestinationJobIDEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters21_get_DestinationJobIDEv(Printd_Parameters * this)",
+    "pseudocode": "__int64 __fastcall Printd_Parameters::_get_DestinationJobID(Printd_Parameters *this)\n{\n  return sub_10003208C(*(_QWORD *)this, (int)CFSTR(\"job-id\"), &stru_10009E3D8);\n}"
+}

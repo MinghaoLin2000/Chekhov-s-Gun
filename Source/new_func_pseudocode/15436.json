@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetRestoreOperationsQueue",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetRestoreOperationsQueue()",
+    "pseudocode": "__int64 AMRestorableDeviceGetRestoreOperationsQueue()\n{\n  return _AMRestorableDeviceGetRestoreOperationsQueue();\n}"
+}

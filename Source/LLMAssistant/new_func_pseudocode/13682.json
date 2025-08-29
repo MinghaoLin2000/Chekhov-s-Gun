@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringAppendCharacters",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringAppendCharacters(CFMutableStringRef theString, const UniChar * chars, CFIndex numChars)",
+    "pseudocode": "void __cdecl CFStringAppendCharacters(CFMutableStringRef theString, const UniChar *chars, CFIndex numChars)\n{\n  _CFStringAppendCharacters(theString, chars, numChars);\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.security.exception.shared-preference.read-only:com.apple.UnifiedAssetFramework",
+  "capability": "Allows an application to read shared preference data specifically associated with the `com.apple.UnifiedAssetFramework`. This entitlement grants an exception to standard sandbox restrictions, enabling read-only access to these preference files, which are typically stored on the file system.",
+  "reasoning": "The entitlement name is structured to reveal its purpose: `com.apple.security.exception` indicates a bypass or privilege grant, `shared-preference` refers to system or application preference data (commonly stored in .plist files), `read-only` specifies the access type, and `com.apple.UnifiedAssetFramework` identifies the specific domain or framework whose preferences are being accessed. Therefore, it grants the ability to read preference data related to the Unified Asset Framework, circumventing normal security boundaries.",
+  "similar_entitlements": [
+    "com.apple.security.files.downloads.read-only"
+  ],
+  "sensitive_type": [
+    1
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'File and File System Operations' (Type 1). Shared preference data is typically stored as files (e.g., .plist files) within system or user Library/Preferences directories. By granting 'read-only' access to these preferences, especially with an 'exception' prefix, it allows the application to 'Perform read operations on system or other users' files' that might otherwise be restricted by the sandbox. Although the data itself is preferences, the underlying mechanism involves reading specific files on the file system.",
+  "self_reflection": "I am confident in the interpretation of this entitlement's capability and its classification as a 'File and File System Operation'. The components of the entitlement name (exception, shared-preference, read-only, specific framework) strongly point to its function. The primary potential area for misinterpretation would be if 'shared-preference' referred to a purely in-memory IPC mechanism rather than file-backed storage, but macOS preferences are fundamentally file-based. The 'read-only' nature significantly limits the risk compared to write access."
+}

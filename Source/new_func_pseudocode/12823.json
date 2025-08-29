@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUSystemInfo hwModel]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSUSystemInfo hwModel](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[TSUSystemInfo hwModel](id a1, SEL a2)\n{\n  if ( qword_1001F7FB0 != -1 )\n    dispatch_once(&qword_1001F7FB0, &stru_1001DD570);\n  return (id)qword_1001F7FA8;\n}"
+}

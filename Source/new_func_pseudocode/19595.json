@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPXLibraryChooserService query]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPXLibraryChooserService query](IPXLibraryChooserService * self, SEL a2)",
+    "pseudocode": "NSMetadataQuery *__cdecl -[IPXLibraryChooserService query](IPXLibraryChooserService *self, SEL a2)\n{\n  return (NSMetadataQuery *)objc_getProperty(self, a2, 24LL, 1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionSetManagedDisplayIsAnimating",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionSetManagedDisplayIsAnimating()",
+    "pseudocode": "__int64 SLSTransactionSetManagedDisplayIsAnimating()\n{\n  return _SLSTransactionSetManagedDisplayIsAnimating();\n}"
+}

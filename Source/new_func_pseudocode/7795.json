@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV10connection6windowACSgAA13CGSConnectionV_AA9CGSWindowVtcfC",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV10connection6windowACSgAA13CGSConnectionV_AA9CGSWindowVtcfC(EyeCandyGraphics::CGSConnection connection, EyeCandyGraphics::CGSWindow window)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nEyeCandyGraphics::CGDisplay_optional __swiftcall CGDisplay.init(connection:window:)(\n        EyeCandyGraphics::CGSConnection connection,\n        EyeCandyGraphics::CGSWindow window)\n{\n  __int64 v2; // x0\n  __int64 v3; // x1\n  void *v4; // x20\n  Swift::String v5; // x0\n  __int64 v6; // x0\n  __int64 v7; // x19\n  unsigned __int8 v8; // w8\n\n  v2 = CGSCopyManagedDisplayForWindow(*(_QWORD *)&connection.cid, *(_QWORD *)&window.wid);\n  if ( !v2\n    || (v4 = (void *)v2,\n        v5._countAndFlagsBits = sub_10001CAD0(v2, v3),\n        *(EyeCandyGraphics::CGDisplay_optional *)&v6 = CGDisplay.init(uuidString:)(v5),\n        v7 = v6,\n        objc_release(v4),\n        (v7 & 0x100000000LL) != 0) )\n  {\n    LODWORD(v7) = 0;\n    v8 = 1;\n  }\n  else\n  {\n    v8 = 0;\n  }\n  return (EyeCandyGraphics::CGDisplay_optional)((unsigned int)v7 | ((unsigned __int64)v8 << 32));\n}"
+}

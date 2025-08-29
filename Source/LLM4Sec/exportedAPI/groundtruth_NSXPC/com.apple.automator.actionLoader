@@ -1,0 +1,61 @@
+@protocol AMActionLoaderServiceXPCProtocol <AMEnvironmentXPCProtocol>
+- (void)remoteActionServiceActionForDefinition:(NSDictionary *)arg1 workflowUUID:(NSString *)arg2 actionDelegate:(id <AMRemoteActionDelegateXPCProtocol>)arg3 variableDelegate:(id <AMRemoteActionVariableDelegateXPCProtocol>)arg4 variables:(NSArray *)arg5 completionHandler:(void (^)(NSUUID *, id <AMRemoteActionXPCProtocol>, id <AMRemoteActionVariableControllerXPCProtocol>, NSError *))arg6;
+- (void)remoteActionServiceSetDisplayName:(NSString *)arg1;
+@end
+@protocol AMActionRunnerProtocol <NSObject, AMRunnerState>
+- (void)loopWorkflowFromAction:(AMAction *)arg1 withInput:(id)arg2;
+- (void)stopWithError:(NSError *)arg1;
+- (void)logMessage:(NSString *)arg1 withLevel:(unsigned long long)arg2 fromAction:(AMAction *)arg3;
+- (void)actionDidRun:(AMAction *)arg1 error:(NSError *)arg2;
+- (void)runAction:(AMAction *)arg1;
+@end
+@protocol AMEnvironmentXPCProtocol <NSObject>
+- (void)transferAutomatorEnvironment:(NSDictionary *)arg1;
+@end
+@protocol AMRemoteActionVariableControllerXPCProtocol
+- (void)remoteActionVariablesUpdated:(NSArray *)arg1;
+- (void)remoteActionVariableChanged:(AMVariable *)arg1;
+- (void)remoteActionVariableRemoved:(NSString *)arg1;
+- (void)remoteActionVariableAdded:(AMVariable *)arg1;
+@end
+@protocol AMRemoteActionXPCProtocol
+- (void)remoteActionGetShowWhenRunItems:(void (^)(_Bool, NSArray *))arg1;
+- (void)remoteActionGetViewInfo:(void (^)(AMRemoteActionViewInfo *))arg1;
+- (void)remoteActionInvalidate;
+- (void)remoteActionParametersUpdated:(NSDictionary *)arg1 parameterProperties:(NSDictionary *)arg2 completionHandler:(void (^)(void))arg3;
+- (void)remoteActionUpdateParameters:(void (^)(NSDictionary *, NSDictionary *))arg1;
+- (void)remoteActionClosed;
+- (void)remoteActionActivated;
+- (void)remoteActionOpened;
+- (void)remoteActionSetShowSelectedItemsWhenRun:(_Bool)arg1 selectedShowWhenRunItemNames:(NSArray *)arg2;
+- (void)remoteActionSetShowWhenRun:(_Bool)arg1;
+- (void)remoteActionSetComment:(NSString *)arg1;
+- (void)remoteActionSetIgnoresInput:(_Bool)arg1;
+- (void)remoteActionSetCollapsed:(_Bool)arg1;
+- (void)remoteActionSetDisabled:(_Bool)arg1;
+- (void)remoteActionWillFinishRunning;
+- (void)remoteActionStop;
+- (void)remoteActionReset;
+- (void)remoteActionResume;
+- (void)remoteActionPause;
+- (void)remoteActionRunAsynchronouslyWithInput:(id)arg1 runtimeParameters:(NSDictionary *)arg2 currentRunUUID:(NSString *)arg3;
+- (void)remoteActionRunSynchronouslyWithInput:(id)arg1 fromAction:(AMAction *)arg2 runtimeParameters:(NSDictionary *)arg3 currentRunUUID:(NSString *)arg4 completionHandler:(void (^)(id, _Bool, NSError *))arg5;
+- (void)remoteActionHasOverrideForSelector:(SEL)arg1 completionHandler:(void (^)(_Bool))arg2;
+- (void)remoteActionMostRecentlyOverriddenOfSelectorStrings:(NSArray *)arg1 completionHandler:(void (^)(NSString *))arg2;
+@end
+@protocol AMRunnerState <NSObject>
+@end
+@protocol AMVariableControllerProtocol <NSObject>
+- (void)updateControl:(id)arg1 clickedPoint:(NSValue *)arg2 frame:(NSValue *)arg3 isTokenField:(NSNumber *)arg4;
+- (void)editVariable:(AMVariable *)arg1 withControl:(id)arg2;
+- (void)updateValueOfVariable:(AMVariable *)arg1 value:(id)arg2;
+- (void)renameVariable:(AMVariable *)arg1 name:(NSString *)arg2;
+- (AMVariable *)addVariable:(AMVariable *)arg1;
+- (_Bool)containsVariable:(AMVariable *)arg1;
+- (NSString *)variableNameForUUID:(NSString *)arg1;
+- (AMVariable *)variableWithName:(NSString *)arg1;
+- (AMVariable *)variableWithUUID:(NSString *)arg1;
+@end
+@protocol NSCopying
+- (id)copyWithZone:(struct _NSZone *)arg1;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14FileDescriptor20DependenciesOnceInitEPKS1_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf14FileDescriptor20DependenciesOnceInitEPKS1_(google::protobuf::FileDescriptor * this, const google::protobuf::FileDescriptor * a2)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::FileDescriptor::DependenciesOnceInit(\n        google::protobuf::FileDescriptor *this,\n        const google::protobuf::FileDescriptor *a2)\n{\n  google::protobuf::FileDescriptor::InternalDependenciesOnceInit(this);\n}"
+}

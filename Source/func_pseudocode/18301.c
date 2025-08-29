@@ -1,0 +1,5 @@
+__Z20getConfigurationInfoRK25AudioComponentDescriptionjU13block_pointerFvPK14__CFDictionaryE
+__int64 getConfigurationInfo()
+{
+  return getConfigurationInfo();
+}

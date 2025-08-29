@@ -1,0 +1,6 @@
+{
+    "function_name": "_localtime",
+    "function_argument_number": 1,
+    "function_signature": "_localtime(const time_t * a1)",
+    "pseudocode": "tm *__cdecl localtime(const time_t *a1)\n{\n  return _localtime(a1);\n}"
+}

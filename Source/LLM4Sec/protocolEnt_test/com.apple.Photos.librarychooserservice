@@ -1,0 +1,32 @@
+Service Path:
+/System/Applications/Photos.app/Contents/XPCServices/com.apple.Photos.librarychooserservice.xpc/Contents/MacOS/com.apple.Photos.librarychooserservice
+
+Service Exported Protocols:
+@protocol IPXLibraryChooserClientProtocol <NSObject>
+- (void)didRemoveLibrariesAtPaths:(NSArray *)arg1;
+- (void)didChangeLibrariesAtPaths:(NSArray *)arg1 to:(NSArray *)arg2;
+- (void)didAddLibraries:(NSArray *)arg1;
+- (void)didFinishInitialResultGatheringPhase;
+- (void)didStartInitialResultGatheringPhase;
+@end
+@protocol IPXLibraryChooserServiceProtocol <NSObject>
+- (void)stop;
+- (void)start;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] F9L2L89K5X.com.apple.Photos.librarychooserservice
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyRemovableVolumes
+			[String] kTCCServiceSystemPolicyNetworkVolumes
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.yasb
+	[Value]
+		[Bool] true

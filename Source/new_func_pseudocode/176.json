@@ -1,0 +1,6 @@
+{
+    "function_name": "_BRSharingCreateShareForItemAtURL",
+    "function_argument_number": 0,
+    "function_signature": "_BRSharingCreateShareForItemAtURL()",
+    "pseudocode": "__int64 BRSharingCreateShareForItemAtURL()\n{\n  return _BRSharingCreateShareForItemAtURL();\n}"
+}

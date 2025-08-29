@@ -1,0 +1,5 @@
+_fpfs_set_vfs_ignore_permissions_iopolicy
+__int64 fpfs_set_vfs_ignore_permissions_iopolicy()
+{
+  return _fpfs_set_vfs_ignore_permissions_iopolicy();
+}

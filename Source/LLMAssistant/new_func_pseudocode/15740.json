@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory disconnectUarpController]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUSBDFUAccessory disconnectUarpController](UARPUSBDFUAccessory * self, SEL a2)",
+    "pseudocode": "unsigned int __cdecl -[UARPUSBDFUAccessory disconnectUarpController](UARPUSBDFUAccessory *self, SEL a2)\n{\n  unsigned int v3; // w19\n  OS_os_log *log; // x20\n\n  v3 = uarpPlatformRemoteEndpointRemove(&self->_localEP, &self->_remoteEP);\n  if ( v3 )\n  {\n    log = self->_log;\n    if ( os_log_type_enabled(log, OS_LOG_TYPE_ERROR) )\n      sub_100018FD4(log);\n  }\n  return v3;\n}"
+}

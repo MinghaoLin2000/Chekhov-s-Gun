@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_blob_open",
+    "function_argument_number": 7,
+    "function_signature": "_sqlite3_blob_open(sqlite3 * a1, const char * zDb, const char * zTable, const char * zColumn, sqlite3_int64 iRow, int flags, sqlite3_blob ** ppBlob)",
+    "pseudocode": "int __cdecl sqlite3_blob_open(\n        sqlite3 *a1,\n        const char *zDb,\n        const char *zTable,\n        const char *zColumn,\n        sqlite3_int64 iRow,\n        int flags,\n        sqlite3_blob **ppBlob)\n{\n  return _sqlite3_blob_open(a1, zDb, zTable, zColumn, iRow, flags, ppBlob);\n}"
+}

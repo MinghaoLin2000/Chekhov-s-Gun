@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setState:](DeviceSettingsNode * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setState:](DeviceSettingsNode *self, SEL a2, signed __int64 a3)\n{\n  self->_state = a3;\n}"
+}

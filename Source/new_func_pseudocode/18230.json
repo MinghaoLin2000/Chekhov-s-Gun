@@ -1,0 +1,6 @@
+{
+    "function_name": "_convertEventProxyToEntry",
+    "function_argument_number": 0,
+    "function_signature": "_convertEventProxyToEntry()",
+    "pseudocode": "__int64 convertEventProxyToEntry()\n{\n  return _convertEventProxyToEntry();\n}"
+}

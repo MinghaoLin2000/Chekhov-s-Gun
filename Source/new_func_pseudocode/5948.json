@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s33SiriSuggestionsBookkeepingService014DefaultFeatureD7FactoryC22accountDetailsProviderAC0aB12Intelligence09SSAccountiJ0_p_tcfc",
+    "function_argument_number": 1,
+    "function_signature": "_$s33SiriSuggestionsBookkeepingService014DefaultFeatureD7FactoryC22accountDetailsProviderAC0aB12Intelligence09SSAccountiJ0_p_tcfc(__int64 a1)",
+    "pseudocode": "__int64 __fastcall DefaultFeatureServiceFactory.init(accountDetailsProvider:)(__int64 a1)\n{\n  __int64 v1; // x20\n\n  sub_10000514C(a1, v1 + 16);\n  return v1;\n}"
+}

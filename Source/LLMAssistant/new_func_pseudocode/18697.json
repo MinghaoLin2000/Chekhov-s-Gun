@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for NavigationAnchorKey.Entry()\n{\n  return &type metadata for NavigationAnchorKey.Entry;\n}"
+}

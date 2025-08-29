@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStream26ReadLittleEndian32FallbackEPj",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStream26ReadLittleEndian32FallbackEPj(google::protobuf::io::CodedInputStream * this, unsigned int * a2)",
+    "pseudocode": "bool __fastcall google::protobuf::io::CodedInputStream::ReadLittleEndian32Fallback(\n        unsigned int **this,\n        unsigned int *a2)\n{\n  unsigned int *v3; // x20\n  _BOOL8 result; // x0\n  char __dst[4]; // [xsp+Ch] [xbp-14h] BYREF\n\n  v3 = *this;\n  if ( ((*((_DWORD *)this + 2) - (unsigned int)*this) & 0xFFFFFFFC) != 0 )\n  {\n    *this = v3 + 1;\n  }\n  else\n  {\n    v3 = (unsigned int *)__dst;\n    result = google::protobuf::io::CodedInputStream::ReadRaw((google::protobuf::io::CodedInputStream *)this, __dst, 4);\n    if ( !result )\n      return result;\n  }\n  *a2 = *v3;\n  return 1LL;\n}"
+}

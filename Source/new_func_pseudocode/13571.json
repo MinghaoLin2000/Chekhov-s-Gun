@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet addObject:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUMutableLinkedPointerSet addObject:](int a1, int a2, void * key)",
+    "pseudocode": "void __cdecl -[TSUMutableLinkedPointerSet addObject:](TSUMutableLinkedPointerSet *self, SEL a2, id a3)\n{\n  TSULinkedPointerSetEntry *v5; // x0\n  TSULinkedPointerSetEntry *v6; // x21\n  TSULinkedPointerSetEntry *mTail; // x8\n  TSULinkedPointerSetEntry **p_mNext; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( !CFDictionaryContainsKey(self->mDictionary, a3) )\n  {\n    v5 = -[TSULinkedPointerSetEntry initWithObject:previousEntry:](\n           objc_alloc(&OBJC_CLASS___TSULinkedPointerSetEntry),\n           \"initWithObject:previousEntry:\",\n           a3,\n           self->mTail);\n    v6 = v5;\n    mTail = self->mTail;\n    if ( mTail )\n      p_mNext = &mTail->mNext;\n    else\n      p_mNext = &self->mHead;\n    *p_mNext = v5;\n    self->mTail = v5;\n    CFDictionarySetValue(self->mDictionary, a3, v5);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v6);\n  }\n}"
+}

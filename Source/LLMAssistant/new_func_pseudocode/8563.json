@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13IngestService15ServiceDelegate init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC13IngestService15ServiceDelegate init](_TtC13IngestService15ServiceDelegate * self, SEL a2)",
+    "pseudocode": "_TtC13IngestService15ServiceDelegate *__cdecl -[ServiceDelegate init](\n        _TtC13IngestService15ServiceDelegate *self,\n        SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)type metadata accessor for ServiceDelegate();\n  return -[ServiceDelegate init](&v3, \"init\");\n}"
+}

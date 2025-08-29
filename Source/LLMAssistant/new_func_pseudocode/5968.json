@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DataDetectorsRemoteScanner scanString:range:configuration:withReply:]",
+    "function_argument_number": 7,
+    "function_signature": "-[DataDetectorsRemoteScanner scanString:range:configuration:withReply:](int a1, int a2, int a3, int a4, int a5, int a6, id a7)",
+    "pseudocode": "void __cdecl -[DataDetectorsRemoteScanner scanString:range:configuration:withReply:](\n        DataDetectorsRemoteScanner *self,\n        SEL a2,\n        id a3,\n        _NSRange a4,\n        id a5,\n        id a6)\n{\n  NSUInteger length; // x20\n  NSUInteger location; // x21\n  id v10; // x24\n  _QWORD v11[4]; // [xsp+8h] [xbp-58h] BYREF\n  id v12; // [xsp+28h] [xbp-38h]\n\n  length = a4.length;\n  location = a4.location;\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_1000039A8;\n  v11[3] = &unk_100004050;\n  v12 = objc_retain(a6);\n  v10 = objc_retain(v12);\n  +[DDScannerService scanString:range:configuration:completionBlock:](\n    &OBJC_CLASS___DDScannerService,\n    \"scanString:range:configuration:completionBlock:\",\n    a3,\n    location,\n    length,\n    a5,\n    v11);\n  objc_release(v12);\n  objc_release(v10);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCloudViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCloudViewController .cxx_destruct](DeviceSettingsCloudViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCloudViewController .cxx_destruct](DeviceSettingsCloudViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_destroyWeak((id *)&self->_icloudSyncMessage2TextField);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_icloudSyncMessage1TextField);\n}"
+}

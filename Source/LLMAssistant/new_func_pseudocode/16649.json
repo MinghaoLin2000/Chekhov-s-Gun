@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAAccessoryUpdater dealloc](EAAccessoryUpdater * self, SEL a2)",
+    "pseudocode": "void __cdecl -[EAAccessoryUpdater dealloc](EAAccessoryUpdater *self, SEL a2)\n{\n  objc_super v3; // [xsp+10h] [xbp-20h] BYREF\n\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater dealloc]\",\n    316LL);\n  objc_release(self->mobileAssetType);\n  objc_release(self->initOptions);\n  objc_release(self->deviceClass);\n  objc_release(self->firmwareUpdater);\n  objc_release(self->localFilePath);\n  objc_release(self->seedLocations);\n  objc_release(self->dropboxPath);\n  objc_release(self->deviceOptions);\n  objc_release(self->_accessoryFusingType);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___EAAccessoryUpdater;\n  -[EAAccessoryUpdater dealloc](&v3, \"dealloc\");\n}"
+}

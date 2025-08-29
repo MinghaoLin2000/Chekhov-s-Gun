@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceGetModel",
+    "function_argument_number": 1,
+    "function_signature": "_CGColorSpaceGetModel(CGColorSpaceRef space)",
+    "pseudocode": "CGColorSpaceModel __cdecl CGColorSpaceGetModel(CGColorSpaceRef space)\n{\n  return _CGColorSpaceGetModel(space);\n}"
+}

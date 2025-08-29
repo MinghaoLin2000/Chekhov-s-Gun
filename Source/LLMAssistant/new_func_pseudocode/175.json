@@ -1,0 +1,6 @@
+{
+    "function_name": "_BRSharingCopyCurrentUserNameAndDisplayHandleForURL",
+    "function_argument_number": 0,
+    "function_signature": "_BRSharingCopyCurrentUserNameAndDisplayHandleForURL()",
+    "pseudocode": "__int64 BRSharingCopyCurrentUserNameAndDisplayHandleForURL()\n{\n  return _BRSharingCopyCurrentUserNameAndDisplayHandleForURL();\n}"
+}

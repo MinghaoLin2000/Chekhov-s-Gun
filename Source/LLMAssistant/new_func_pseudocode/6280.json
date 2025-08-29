@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob dealloc](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob dealloc](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  CGImageSource *imageSource; // x0\n  CGImageDestination *imageDestination; // x0\n  CGImage *sourceImageRef; // x0\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  imageSource = self->_imageSource;\n  if ( imageSource )\n    CFRelease(imageSource);\n  imageDestination = self->_imageDestination;\n  if ( imageDestination )\n    CFRelease(imageDestination);\n  sourceImageRef = self->_sourceImageRef;\n  if ( sourceImageRef )\n    CGImageRelease(sourceImageRef);\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___PAMediaConversionServiceImageConversionJob;\n  -[PAMediaConversionServiceImageConversionJob dealloc](&v6, \"dealloc\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15SupportMetadataD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP15SupportMetadataD2Ev(TSP::SupportMetadata * this)",
+    "pseudocode": "void __fastcall TSP::SupportMetadata::~SupportMetadata(TSP::SupportMetadata *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100055774((char *)this + 24);\n}"
+}

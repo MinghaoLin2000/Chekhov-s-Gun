@@ -1,0 +1,6 @@
+{
+    "function_name": "+[ATXHeuristicJSEnv defaultHeuristicBundlePath]",
+    "function_argument_number": 2,
+    "function_signature": "+[ATXHeuristicJSEnv defaultHeuristicBundlePath](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[ATXHeuristicJSEnv defaultHeuristicBundlePath](id a1, SEL a2)\n{\n  void *v2; // x0\n  void *v3; // x19\n  id v4; // x0\n  os_log_s *v5; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(\n         +[ATXAssets2 pathForResource:ofType:isDirectory:](\n           &OBJC_CLASS___ATXAssets2,\n           \"pathForResource:ofType:isDirectory:\",\n           CFSTR(\"Heuristics\"),\n           &stru_100029D80,\n           1LL));\n  v3 = v2;\n  if ( v2 )\n  {\n    v4 = objc_retain(v2);\n  }\n  else\n  {\n    v5 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_1000050DC());\n    if ( os_log_type_enabled(v5, OS_LOG_TYPE_ERROR) )\n      sub_10001BC18(v5);\n    objc_release(v5);\n  }\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

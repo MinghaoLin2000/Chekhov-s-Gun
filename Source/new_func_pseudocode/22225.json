@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLInitLogging",
+    "function_argument_number": 0,
+    "function_signature": "_QLInitLogging()",
+    "pseudocode": "__int64 QLInitLogging()\n{\n  return _QLInitLogging();\n}"
+}

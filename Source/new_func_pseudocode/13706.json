@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecRandomCopyBytes",
+    "function_argument_number": 3,
+    "function_signature": "_SecRandomCopyBytes(SecRandomRef rnd, size_t count, void * bytes)",
+    "pseudocode": "int __cdecl SecRandomCopyBytes(SecRandomRef rnd, size_t count, void *bytes)\n{\n  return _SecRandomCopyBytes(rnd, count, bytes);\n}"
+}

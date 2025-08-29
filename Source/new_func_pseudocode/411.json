@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController setScrollView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceUIServiceViewController setScrollView:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceUIServiceViewController setScrollView:](DeviceUIServiceViewController *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_scrollView, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsDetailsTabContentViewController setLeadingCheckBoxesNeverMixed:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsDetailsTabContentViewController setLeadingCheckBoxesNeverMixed:](DeviceSettingsDetailsTabContentViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsDetailsTabContentViewController setLeadingCheckBoxesNeverMixed:](\n        DeviceSettingsDetailsTabContentViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_leadingCheckBoxesNeverMixed = a3;\n}"
+}

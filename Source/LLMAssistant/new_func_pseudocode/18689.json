@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24_NavigationFocusModifierVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24_NavigationFocusModifierVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for _NavigationFocusModifier()\n{\n  return &type metadata for _NavigationFocusModifier;\n}"
+}

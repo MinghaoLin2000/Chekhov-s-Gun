@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZNSt9exceptionD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZNSt9exceptionD2Ev(std::exception * this)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl std::exception::~exception(std::exception *this)\n{\n  __ZNSt9exceptionD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10TextFormat6Parser15ParseFromStringERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS0_7MessageE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf10TextFormat6Parser15ParseFromStringERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS0_7MessageE(__int64 a1, const void ** a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::TextFormat::Parser::ParseFromString(__int64 a1, const void **a2, __int64 a3)\n{\n  __int64 result; // x0\n  int v7; // w8\n  int v8; // w2\n  const void *v9; // x1\n  _BYTE v10[32]; // [xsp+0h] [xbp-50h] BYREF\n  _QWORD v11[2]; // [xsp+20h] [xbp-30h] BYREF\n\n  sub_10007A644(v11, a2);\n  result = sub_1000F8844(v11[0], (google::protobuf *)v11[1]);\n  if ( (_DWORD)result )\n  {\n    v7 = *((char *)a2 + 23);\n    if ( v7 >= 0 )\n      v8 = *((unsigned __int8 *)a2 + 23);\n    else\n      v8 = *((_DWORD *)a2 + 2);\n    if ( v7 >= 0 )\n      v9 = a2;\n    else\n      v9 = *a2;\n    google::protobuf::io::ArrayInputStream::ArrayInputStream((google::protobuf::io::ArrayInputStream *)v10, v9, v8, -1);\n    return google::protobuf::TextFormat::Parser::Parse(a1, (__int64)v10, a3);\n  }\n  return result;\n}"
+}

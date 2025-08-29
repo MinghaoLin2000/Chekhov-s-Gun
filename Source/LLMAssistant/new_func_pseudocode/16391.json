@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater bootloaderProtocol]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater bootloaderProtocol](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[EAFirmwareUpdater bootloaderProtocol](EAFirmwareUpdater *self, SEL a2)\n{\n  return self->_bootloaderProtocol;\n}"
+}

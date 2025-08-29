@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21DynamicMessageFactoryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf21DynamicMessageFactoryD2Ev(google::protobuf::DynamicMessageFactory * this)",
+    "pseudocode": "void __fastcall google::protobuf::DynamicMessageFactory::~DynamicMessageFactory(\n        google::protobuf::DynamicMessageFactory *this,\n        const google::protobuf::Descriptor *a2,\n        const unsigned int *a3,\n        const void *a4)\n{\n  char *v5; // x20\n  _QWORD *i; // x21\n  __int64 v7; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  *(_QWORD *)this = off_1001D9798;\n  v5 = (char *)this + 24;\n  for ( i = *(_QWORD **)(*((_QWORD *)this + 3) + 16LL); i; i = (_QWORD *)*i )\n  {\n    google::protobuf::DynamicMessageFactory::DeleteDefaultOneofInstance(\n      *(google::protobuf::DynamicMessageFactory **)(i[3] + 32LL),\n      a2,\n      a3,\n      a4);\n    if ( i[3] )\n    {\n      v7 = sub_1000C08F0();\n      operator delete(v7, 0x1070C40B706855ELL);\n    }\n  }\n  std::mutex::~mutex((std::mutex *)((char *)this + 32));\n  sub_1000C0A2C(v5, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  google::protobuf::MessageFactory::~MessageFactory(this);\n}"
+}

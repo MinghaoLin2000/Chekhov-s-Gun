@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBDataWriterWriteDataField",
+    "function_argument_number": 0,
+    "function_signature": "_PBDataWriterWriteDataField()",
+    "pseudocode": "__int64 PBDataWriterWriteDataField()\n{\n  return _PBDataWriterWriteDataField();\n}"
+}

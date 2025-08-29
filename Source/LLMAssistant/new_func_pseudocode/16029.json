@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointRequestInfoProperty",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointRequestInfoProperty(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointRequestInfoProperty(__int64 a1, __int64 a2, __int64 a3)\n{\n  if ( a1 && a2 && (unsigned int)(a3 - 10) >= 0xFFFFFFF7 )\n    return uarpSendInformationRequest(a1, a2, a3);\n  else\n    return 30LL;\n}"
+}

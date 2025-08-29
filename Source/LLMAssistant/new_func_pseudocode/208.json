@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_allocError",
+    "function_argument_number": 0,
+    "function_signature": "_swift_allocError()",
+    "pseudocode": "__int64 swift_allocError()\n{\n  return _swift_allocError();\n}"
+}

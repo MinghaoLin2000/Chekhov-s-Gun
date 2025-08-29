@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_connection_receive",
+    "function_argument_number": 4,
+    "function_signature": "_nw_connection_receive(nw_connection_t connection, uint32_t minimum_incomplete_length, uint32_t maximum_length, nw_connection_receive_completion_t completion)",
+    "pseudocode": "void __cdecl nw_connection_receive(\n        nw_connection_t connection,\n        uint32_t minimum_incomplete_length,\n        uint32_t maximum_length,\n        nw_connection_receive_completion_t completion)\n{\n  _nw_connection_receive(connection, minimum_incomplete_length, maximum_length, completion);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$remoteActionRunner:didReceiveExceptionError:fromAsynchronousAction:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$remoteActionRunner:didReceiveExceptionError:fromAsynchronousAction:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_remoteActionRunner_didReceiveExceptionError_fromAsynchronousAction_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"remoteActionRunner:didReceiveExceptionError:fromAsynchronousAction:\");\n}"
+}

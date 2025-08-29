@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2WatchdogCancel",
+    "function_argument_number": 2,
+    "function_signature": "_UARPLayer2WatchdogCancel(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall UARPLayer2WatchdogCancel(__int64 a1, __int64 a2)\n{\n  __int64 (__fastcall *v2)(_QWORD, _QWORD); // x2\n\n  v2 = *(__int64 (__fastcall **)(_QWORD, _QWORD))(a1 + 304);\n  if ( !v2 )\n    return 14LL;\n  *(_BYTE *)(a2 + 50) = 0;\n  return v2(*(_QWORD *)(a1 + 544), *(_QWORD *)(a2 + 40));\n}"
+}

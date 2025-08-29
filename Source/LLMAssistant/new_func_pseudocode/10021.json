@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP11ArchiveInfoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP11ArchiveInfoD2Ev(TSP::ArchiveInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ArchiveInfo::~ArchiveInfo(TSP::ArchiveInfo *this)\n{\n  __ZN3TSP11ArchiveInfoD2Ev(this);\n}"
+}

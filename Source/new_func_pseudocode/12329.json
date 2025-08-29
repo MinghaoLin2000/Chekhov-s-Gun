@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14FatalExceptionD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14FatalExceptionD2Ev(std::exception * this)",
+    "pseudocode": "void __fastcall google::protobuf::FatalException::~FatalException(std::exception *this)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  this->__vftable = (std::exception_vtbl *)off_1001DBFA8;\n  if ( SHIBYTE(this[5].__vftable) < 0 )\n    operator delete(this[3].__vftable);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  std::exception::~exception(this);\n}"
+}

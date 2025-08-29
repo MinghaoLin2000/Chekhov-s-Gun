@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_value_t boolean]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_value_t boolean](ipp_value_t * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[ipp_value_t boolean](ipp_value_t *self, SEL a2)\n{\n  NSObject *x_payload; // x20\n  __int64 v4; // x0\n  NSObject *v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  x_payload = self->x_payload;\n  v4 = objc_opt_class(&OBJC_CLASS___NSNumber, a2);\n  if ( (objc_opt_isKindOfClass(x_payload, v4) & 1) == 0 )\n    return 0;\n  v5 = self->x_payload;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (unsigned __int8)-[NSObject boolValue](v5, \"boolValue\");\n}"
+}

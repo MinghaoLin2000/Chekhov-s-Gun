@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFPageCopyString",
+    "function_argument_number": 0,
+    "function_signature": "_CGPDFPageCopyString()",
+    "pseudocode": "__int64 CGPDFPageCopyString()\n{\n  return _CGPDFPageCopyString();\n}"
+}

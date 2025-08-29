@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UINSSystemPreferencesServiceViewController numberOfRowsInTableView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UINSSystemPreferencesServiceViewController numberOfRowsInTableView:](UINSSystemPreferencesServiceViewController * self, SEL a2, id a3)",
+    "pseudocode": "signed __int64 __cdecl -[UINSSystemPreferencesServiceViewController numberOfRowsInTableView:](\n        UINSSystemPreferencesServiceViewController *self,\n        SEL a2,\n        id a3)\n{\n  return -[NSArray count](self->_settings, \"count\", a3);\n}"
+}

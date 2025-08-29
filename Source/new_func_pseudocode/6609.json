@@ -1,0 +1,6 @@
+{
+    "function_name": "_CMTimeGetSeconds",
+    "function_argument_number": 1,
+    "function_signature": "_CMTimeGetSeconds(CMTime * time)",
+    "pseudocode": "Float64 __cdecl CMTimeGetSeconds(CMTime *time)\n{\n  return _CMTimeGetSeconds(time);\n}"
+}

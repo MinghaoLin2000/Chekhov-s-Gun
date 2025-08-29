@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf24EnumValueDescriptorProto13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf24EnumValueDescriptorProto13IsInitializedEv(google::protobuf::EnumValueDescriptorProto * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EnumValueDescriptorProto::IsInitialized(\n        google::protobuf::EnumValueDescriptorProto *this)\n{\n  __int64 v1; // x19\n  __int64 result; // x0\n\n  if ( (*((_BYTE *)this + 16) & 2) == 0 )\n    return 1LL;\n  v1 = *((_QWORD *)this + 4);\n  result = google::protobuf::internal::ExtensionSet::IsInitialized((google::protobuf::internal::ExtensionSet *)(v1 + 16));\n  if ( (_DWORD)result )\n  {\n    result = sub_1000A7B4C(v1 + 48);\n    if ( (_DWORD)result )\n      return 1LL;\n  }\n  return result;\n}"
+}

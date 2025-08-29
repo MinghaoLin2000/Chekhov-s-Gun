@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper21BackgroundStylePickerVwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s27BackgroundReplacementHelper21BackgroundStylePickerVwxx(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall destroy for BackgroundStylePicker(_QWORD *a1)\n{\n  __int64 v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  swift_bridgeObjectRelease(*a1);\n  swift_release(a1[1]);\n  v2 = a1[2];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return swift_release(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z20getConfigurationInfoRK25AudioComponentDescriptionjU13block_pointerFvPK14__CFDictionaryE",
+    "function_argument_number": 0,
+    "function_signature": "__Z20getConfigurationInfoRK25AudioComponentDescriptionjU13block_pointerFvPK14__CFDictionaryE()",
+    "pseudocode": "__int64 getConfigurationInfo()\n{\n  return getConfigurationInfo();\n}"
+}

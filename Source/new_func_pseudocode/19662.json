@@ -1,0 +1,6 @@
+{
+    "function_name": "+[IPPSession globalSession]",
+    "function_argument_number": 2,
+    "function_signature": "+[IPPSession globalSession](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[IPPSession globalSession](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_1000C3E98 != -1 )\n    dispatch_once(&qword_1000C3E98, &stru_100090FE8);\n  v2 = (void *)qword_1000C3E90;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

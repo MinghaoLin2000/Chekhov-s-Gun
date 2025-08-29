@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3mlc14xpc_dispatch_t15handle_xpc_callEPv",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK3mlc14xpc_dispatch_t15handle_xpc_callEPv(mlc::xpc_dispatch_t * this, xpc_object_t object)",
+    "pseudocode": "void __usercall mlc::xpc_dispatch_t::handle_xpc_call(os_log_s **this@<X0>, xpc_object_t object@<X1>, __int64 a3@<X8>)\n{\n  char *v6; // x19\n  xpc_type_t type; // x23\n  os_log_s *v8; // x22\n  _BOOL4 v9; // w0\n  uint64_t uint64; // x22\n  xpc_object_t array; // x0\n  xpc_object_t v12; // x21\n\n  v6 = xpc_copy_description(object);\n  type = xpc_get_type(object);\n  v8 = *this;\n  v9 = os_log_type_enabled(v8, OS_LOG_TYPE_DEBUG);\n  if ( type != (xpc_type_t)&_xpc_type_dictionary )\n  {\n    if ( v9 )\n      mlc::xpc_dispatch_t::handle_xpc_call(v6, v8);\n    goto LABEL_4;\n  }\n  if ( v9 )\n    mlc::xpc_dispatch_t::handle_xpc_call(v6, v8);\n  uint64 = xpc_dictionary_get_uint64(object, \"fc\");\n  array = xpc_dictionary_get_array(object, \"args\");\n  if ( !uint64 || (v12 = array, xpc_get_type(array) != (xpc_type_t)&_xpc_type_array) )\n  {\nLABEL_4:\n    *(_BYTE *)a3 = 0;\n    *(_BYTE *)(a3 + 16) = 0;\n    if ( !v6 )\n      return;\n    goto LABEL_5;\n  }\n  *(_QWORD *)a3 = uint64;\n  *(_QWORD *)(a3 + 8) = v12;\n  *(_BYTE *)(a3 + 16) = 1;\n  if ( !v6 )\n    return;\nLABEL_5:\n  free(v6);\n}"
+}

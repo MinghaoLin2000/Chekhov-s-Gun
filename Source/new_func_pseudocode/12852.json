@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDatabase compactWithError:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUDatabase compactWithError:](TSUDatabase * self, SEL a2, id * a3)",
+    "pseudocode": "bool __cdecl -[TSUDatabase compactWithError:](TSUDatabase *self, SEL a2, id *a3)\n{\n  return -[TSUDatabase executeUpdateWithSql:error:](self, \"executeUpdateWithSql:error:\", \"vacuum\", a3);\n}"
+}

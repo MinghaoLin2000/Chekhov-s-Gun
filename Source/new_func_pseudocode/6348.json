@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionHangDetector updateCurrentProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionHangDetector updateCurrentProgress:](VideoConversionHangDetector * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[VideoConversionHangDetector updateCurrentProgress:](\n        VideoConversionHangDetector *self,\n        SEL a2,\n        double a3)\n{\n  NSDate *v5; // x0\n  NSDate *v6; // x20\n  NSDate *lastProgressTimestamp; // x2\n  double v8; // d0\n\n  v5 = objc_retainAutoreleasedReturnValue(+[NSDate date](&OBJC_CLASS___NSDate, \"date\"));\n  v6 = v5;\n  lastProgressTimestamp = self->_lastProgressTimestamp;\n  if ( lastProgressTimestamp && self->_lastProgress >= a3 )\n  {\n    -[NSDate timeIntervalSinceDate:](v5, \"timeIntervalSinceDate:\");\n    self->_progressUnchangedTimeInterval = v8 + self->_progressUnchangedTimeInterval;\n    lastProgressTimestamp = self->_lastProgressTimestamp;\n  }\n  else\n  {\n    self->_progressUnchangedTimeInterval = 0.0;\n  }\n  self->_lastProgressTimestamp = v6;\n  objc_release(lastProgressTimestamp);\n  self->_lastProgress = a3;\n}"
+}

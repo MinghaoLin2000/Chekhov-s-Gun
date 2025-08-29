@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResult clearOneofValuesForKey]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResult clearOneofValuesForKey](ModelKeyServerAPIFetchKeyResult * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyResult clearOneofValuesForKey](ModelKeyServerAPIFetchKeyResult *self, SEL a2)\n{\n  ModelKeyServerAPISignedKey *signedKey; // x0\n  ModelKeyServerAPIRawKey *rawKey; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  *(_BYTE *)&self->_has &= ~1u;\n  self->_key = 0;\n  signedKey = self->_signedKey;\n  self->_signedKey = 0LL;\n  objc_release(signedKey);\n  rawKey = self->_rawKey;\n  self->_rawKey = 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(rawKey);\n}"
+}

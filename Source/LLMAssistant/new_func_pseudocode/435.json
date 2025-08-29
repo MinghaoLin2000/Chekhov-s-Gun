@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileEventObserver path]",
+    "function_argument_number": 2,
+    "function_signature": "-[FileEventObserver path](FileEventObserver * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[FileEventObserver path](FileEventObserver *self, SEL a2)\n{\n  return self->_path;\n}"
+}

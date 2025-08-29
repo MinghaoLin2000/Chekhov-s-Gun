@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$auditToken",
+    "function_argument_number": 1,
+    "function_signature": "_objc_msgSend$auditToken(void * a1)",
+    "pseudocode": "id objc_msgSend_auditToken(void *a1, ...)\n{\n  return objc_msgSend(a1, \"auditToken\");\n}"
+}

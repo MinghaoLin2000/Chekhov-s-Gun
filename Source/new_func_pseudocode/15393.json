@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate stopUpdates]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate stopUpdates](UARPUpdaterDisplayControllerDelegate * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPUpdaterDisplayControllerDelegate stopUpdates](UARPUpdaterDisplayControllerDelegate *self, SEL a2)\n{\n  OS_os_log *log; // x20\n  int v4; // [xsp+0h] [xbp-30h] BYREF\n  const char *v5; // [xsp+4h] [xbp-2Ch]\n\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEFAULT) )\n  {\n    v4 = 136315138;\n    v5 = \"-[UARPUpdaterDisplayControllerDelegate stopUpdates]\";\n    _os_log_impl((void *)&_mh_execute_header, log, OS_LOG_TYPE_DEFAULT, \"%s\", (uint8_t *)&v4, 0xCu);\n  }\n  if ( self->_consentStage == 1 )\n    self->_stopUpdate = 1;\n  -[DisplayMobileAssetUpdater abortDownloadAsset](self->_mobileAssetInternalUpdater, \"abortDownloadAsset\");\n  -[DisplayMobileAssetUpdater abortDownloadAsset](self->_mobileAssetCustomerUpdater, \"abortDownloadAsset\");\n}"
+}

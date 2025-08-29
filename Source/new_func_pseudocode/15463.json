@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_path_get_status",
+    "function_argument_number": 1,
+    "function_signature": "_nw_path_get_status(nw_path_t path)",
+    "pseudocode": "nw_path_status_t __cdecl nw_path_get_status(nw_path_t path)\n{\n  return _nw_path_get_status(path);\n}"
+}

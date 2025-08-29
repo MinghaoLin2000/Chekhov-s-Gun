@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_data_get_size",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_data_get_size(dispatch_data_t data)",
+    "pseudocode": "size_t __cdecl dispatch_data_get_size(dispatch_data_t data)\n{\n  return _dispatch_data_get_size(data);\n}"
+}

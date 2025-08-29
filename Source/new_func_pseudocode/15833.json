@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2RescindAllAssetsAck",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2RescindAllAssetsAck(__int64 result, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2RescindAllAssetsAck(__int64 result, __int64 a2, __int64 a3)\n{\n  __int64 (__fastcall *v3)(_QWORD, _QWORD, __int64); // x3\n\n  v3 = *(__int64 (__fastcall **)(_QWORD, _QWORD, __int64))(result + 288);\n  if ( v3 )\n  {\n    if ( a3 )\n      a3 = *(_QWORD *)(a3 + 704);\n    return v3(*(_QWORD *)(result + 544), *(_QWORD *)(a2 + 40), a3);\n  }\n  return result;\n}"
+}

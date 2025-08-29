@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z18liteUnlockPrintersv",
+    "function_argument_number": 0,
+    "function_signature": "__Z18liteUnlockPrintersv()",
+    "pseudocode": "__int64 liteUnlockPrinters(void)\n{\n  return pthread_mutex_unlock(&stru_1000C0FD0);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8DurationD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8DurationD1Ev(google::protobuf::Duration * this)",
+    "pseudocode": "void __fastcall google::protobuf::Duration::~Duration(google::protobuf::Duration *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

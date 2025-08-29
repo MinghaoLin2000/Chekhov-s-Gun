@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties stableDocumentUUID]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentProperties stableDocumentUUID](TSPDocumentProperties * self, SEL a2)",
+    "pseudocode": "NSUUID *__cdecl -[TSPDocumentProperties stableDocumentUUID](TSPDocumentProperties *self, SEL a2)\n{\n  NSUUID **p_stableDocumentUUID; // x0\n  NSUUID *v4; // x8\n  NSUUID *stableDocumentUUID; // t1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  stableDocumentUUID = self->_stableDocumentUUID;\n  p_stableDocumentUUID = &self->_stableDocumentUUID;\n  v4 = stableDocumentUUID;\n  if ( !stableDocumentUUID )\n  {\n    objc_storeStrong((id *)p_stableDocumentUUID, self->_documentUUID);\n    v4 = self->_stableDocumentUUID;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUCryptoUtils hashForPassphrase:withSalt:]",
+    "function_argument_number": 4,
+    "function_signature": "+[SFUCryptoUtils hashForPassphrase:withSalt:](id a1, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl +[SFUCryptoUtils hashForPassphrase:withSalt:](id a1, SEL a2, id a3, id a4)\n{\n  NSMutableData *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( !a3 || !a4 )\n    return 0LL;\n  v6 = +[NSMutableData dataWithData:](&OBJC_CLASS___NSMutableData, \"dataWithData:\", a4);\n  -[NSMutableData appendData:](v6, \"appendData:\", objc_msgSend(a3, \"dataUsingEncoding:\", 4LL));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return _objc_msgSend(a1, \"sha256HashFromData:\", v6);\n}"
+}

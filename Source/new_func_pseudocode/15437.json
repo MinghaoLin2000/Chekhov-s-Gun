@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetState",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetState()",
+    "pseudocode": "__int64 AMRestorableDeviceGetState()\n{\n  return _AMRestorableDeviceGetState();\n}"
+}

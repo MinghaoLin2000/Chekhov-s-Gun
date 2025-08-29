@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSManagedDisplaySetIsAnimating",
+    "function_argument_number": 0,
+    "function_signature": "_CGSManagedDisplaySetIsAnimating()",
+    "pseudocode": "__int64 CGSManagedDisplaySetIsAnimating()\n{\n  return _CGSManagedDisplaySetIsAnimating();\n}"
+}

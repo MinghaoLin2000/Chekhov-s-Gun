@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabaseObject initWithIdentifier:classType:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPDatabaseObject initWithIdentifier:classType:](TSPDatabaseObject * self, SEL a2, signed __int64 a3, int a4)",
+    "pseudocode": "TSPDatabaseObject *__cdecl -[TSPDatabaseObject initWithIdentifier:classType:](\n        TSPDatabaseObject *self,\n        SEL a2,\n        signed __int64 a3,\n        int a4)\n{\n  TSPDatabaseObject *result; // x0\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___TSPDatabaseObject;\n  result = -[TSPDatabaseObject init](&v7, \"init\");\n  if ( result )\n  {\n    result->_identifier = a3;\n    result->_classType = a4;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$fetchBackupsForDevice:includingIncompatibleBackups:includingAllCompatibleBackups:withReply:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$fetchBackupsForDevice:includingIncompatibleBackups:includingAllCompatibleBackups:withReply:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_fetchBackupsForDevice_includingIncompatibleBackups_includingAllCompatibleBackups_withReply_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"fetchBackupsForDevice:includingIncompatibleBackups:includingAllCompatibleBackups:withReply:\");\n}"
+}

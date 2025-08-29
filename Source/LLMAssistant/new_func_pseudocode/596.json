@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsCloudViewController nibName]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCalendarsCloudViewController nibName](DeviceSettingsCalendarsCloudViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsCalendarsCloudViewController nibName](\n        DeviceSettingsCalendarsCloudViewController *self,\n        SEL a2)\n{\n  return CFSTR(\"DeviceSettingsCalendarsiCloud\");\n}"
+}

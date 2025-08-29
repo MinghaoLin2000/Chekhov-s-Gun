@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabase openDataStateBlobWithIdentifier:willWrite:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPDatabase openDataStateBlobWithIdentifier:willWrite:error:](int a1, int a2, sqlite3_int64 iRow, int flags)",
+    "pseudocode": "sqlite3_blob *__cdecl -[TSPDatabase openDataStateBlobWithIdentifier:willWrite:error:](\n        TSPDatabase *self,\n        SEL a2,\n        signed __int64 a3,\n        bool a4,\n        id *a5)\n{\n  __int64 v8; // x0\n  int v9; // w20\n  sqlite3_blob *ppBlob; // [xsp+8h] [xbp-28h] BYREF\n\n  ppBlob = 0LL;\n  v8 = sqlite3_blob_open(self->super._db, \"main\", \"dataStates\", \"state\", a3, a4, &ppBlob);\n  v9 = TSUHandleSqlite(v8, a5, 1LL, self, a2, 568LL, CFSTR(\"Opening database blob\"));\n  if ( (v9 & 1) == 0 )\n    sub_100027CD4(a5);\n  if ( v9 )\n    return ppBlob;\n  else\n    return 0LL;\n}"
+}

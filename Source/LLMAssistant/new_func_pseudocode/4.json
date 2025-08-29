@@ -1,0 +1,6 @@
+{
+    "function_name": "+[MacOSSharingExtensionContext _allowedErrorClasses]",
+    "function_argument_number": 2,
+    "function_signature": "+[MacOSSharingExtensionContext _allowedErrorClasses](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[MacOSSharingExtensionContext _allowedErrorClasses](id a1, SEL a2)\n{\n  id v2; // x19\n  void *v3; // x0\n  void *v4; // x20\n  id v5; // x0\n  void *v6; // x21\n  objc_super v8; // [xsp+0h] [xbp-30h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v8.receiver = a1;\n  v8.super_class = (Class)&OBJC_METACLASS___MacOSSharingExtensionContext;\n  v2 = objc_retainAutoreleasedReturnValue(objc_msgSendSuper2(&v8, \"_allowedErrorClasses\"));\n  v3 = objc_retainAutoreleasedReturnValue(+[NSSharingService _cloudSharingErrorClasses](&OBJC_CLASS___NSSharingService, \"_cloudSharingErrorClasses\"));\n  v4 = v3;\n  if ( v2 )\n    v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v2, \"setByAddingObjectsFromSet:\", v3));\n  else\n    v5 = objc_retain(v3);\n  v6 = v5;\n  objc_release(v4);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

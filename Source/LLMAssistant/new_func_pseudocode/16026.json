@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointInit",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformEndpointInit(void * a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointInit(\n        char *a1,\n        __int64 a2,\n        unsigned int a3,\n        __int128 *a4,\n        const void *a5,\n        __int64 a6,\n        __int64 a7)\n{\n  __int64 result; // x0\n  __int128 v15; // q0\n  __int128 v16; // q1\n\n  result = 30LL;\n  if ( a3 <= 2 && a2 && a1 && a4 && a5 )\n  {\n    uarpZero(a1, 0x260uLL);\n    memcpy(a1 + 48, a5, 0x1F0uLL);\n    *((_QWORD *)a1 + 68) = a2;\n    *((_QWORD *)a1 + 5) = a6;\n    *((_DWORD *)a1 + 144) = 1;\n    *((_QWORD *)a1 + 74) = a7;\n    v16 = *a4;\n    v15 = a4[1];\n    *((_DWORD *)a1 + 8) = *((_DWORD *)a4 + 8);\n    *(_OWORD *)a1 = v16;\n    *((_OWORD *)a1 + 1) = v15;\n    if ( !*((_WORD *)a1 + 6) )\n      *((_WORD *)a1 + 6) = 4;\n    result = 0LL;\n    *((_DWORD *)a1 + 138) = a3;\n    a1[580] = 0;\n    *((_DWORD *)a1 + 146) = 1;\n    *((_WORD *)a1 + 300) = 1;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,5 @@
+$s19ControlCenterHelper24ConfirmItemDeletionAlertCMa
+__int64 type metadata accessor for ConfirmItemDeletionAlert()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_415C50F5F6FA87CDDCDBBCB90382E2B524ConfirmItemDeletionAlert);
+}

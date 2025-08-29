@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev()",
+    "pseudocode": "__int64 std::ios::~ios()\n{\n  return std::ios::~ios();\n}"
+}

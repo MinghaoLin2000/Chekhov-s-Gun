@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSString tsu_stringWithSqlStatement:columnIndex:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSString tsu_stringWithSqlStatement:columnIndex:](int a1, int a2, sqlite3_stmt * a3, int iCol)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl +[NSString tsu_stringWithSqlStatement:columnIndex:](id a1, SEL a2, sqlite3_stmt *a3, int a4)\n{\n  __int64 v4; // x19\n  id result; // x0\n  void *v7; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = *(_QWORD *)&a4;\n  result = (id)sqlite3_column_text(a3, a4);\n  if ( result )\n  {\n    v7 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"tsu_initWithSqlStatement:columnIndex:\", a3, v4);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return objc_autorelease(v7);\n  }\n  return result;\n}"
+}

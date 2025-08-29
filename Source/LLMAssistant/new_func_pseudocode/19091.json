@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSInputModifierKeyState",
+    "function_argument_number": 0,
+    "function_signature": "_CGSInputModifierKeyState()",
+    "pseudocode": "__int64 CGSInputModifierKeyState()\n{\n  return _CGSInputModifierKeyState();\n}"
+}

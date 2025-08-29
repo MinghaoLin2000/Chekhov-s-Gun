@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12FieldOptionsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12FieldOptionsD1Ev(TSP::FieldOptions * this)",
+    "pseudocode": "void __fastcall TSP::FieldOptions::~FieldOptions(TSP::FieldOptions *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

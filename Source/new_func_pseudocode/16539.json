@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer setCurrentAsset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer setCurrentAsset:](iAUPServer * self, SEL a2, unsigned __int8 a3)",
+    "pseudocode": "void __cdecl -[iAUPServer setCurrentAsset:](iAUPServer *self, SEL a2, unsigned __int8 a3)\n{\n  self->_currentAsset = a3;\n}"
+}

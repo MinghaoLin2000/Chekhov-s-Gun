@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters24_get_JobAuthorizationURIEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters24_get_JobAuthorizationURIEv(Printd_Parameters * this)",
+    "pseudocode": "id __fastcall Printd_Parameters::_get_JobAuthorizationURI(Printd_Parameters *this)\n{\n  id v1; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v1 = objc_retainAutoreleasedReturnValue(getNamedAttr<NSString * {__strong}>(*(_QWORD *)this, (int)CFSTR(\"job-authorization-uri\")));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ErrorMessageVwta",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper12ErrorMessageVwta()",
+    "pseudocode": "// attributes: thunk\n__int64 assignWithTake for ErrorMessage()\n{\n  return _s9SPIHelper12ErrorMessageVwta_0();\n}"
+}

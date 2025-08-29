@@ -1,0 +1,5 @@
+_$s33SiriSuggestionsBookkeepingService0aB8SignpostO28bookkeepingXPCServiceStartups12StaticStringVvgZ
+const char *static SiriSuggestionsSignpost.bookkeepingXPCServiceStartup.getter()
+{
+  return "BookkeepingXPCServicesStartup";
+}

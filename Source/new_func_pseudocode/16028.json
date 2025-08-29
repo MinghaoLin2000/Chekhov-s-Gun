@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformRemoteEndpointRemove",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformRemoteEndpointRemove(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformRemoteEndpointRemove(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  __int64 v5; // x9\n  __int64 v6; // x8\n  __int64 v7; // x9\n  __int64 v8; // x10\n\n  result = 30LL;\n  if ( a1 && a2 )\n  {\n    uarpTransmitQueuesCleanup(a1, a2);\n    uarpPlatformCleanupAssetsForRemoteEndpoint(a1, a2, 1);\n    v5 = *(unsigned int *)(a1 + 556);\n    if ( (_DWORD)v5 )\n    {\n      v6 = 0LL;\n      v7 = 8 * v5;\n      do\n      {\n        v8 = *(_QWORD *)(a1 + 560);\n        if ( *(_QWORD *)(v8 + v6) == a2 )\n          *(_QWORD *)(v8 + v6) = 0LL;\n        v6 += 8LL;\n      }\n      while ( v7 != v6 );\n    }\n    uarpPlatformEndpointStreamingRecvDeinit(a1, a2);\n    UARPLayer2ReturnBuffer(a1, *(void **)(a2 + 80));\n    result = 0LL;\n    *(_QWORD *)(a2 + 80) = 0LL;\n  }\n  return result;\n}"
+}

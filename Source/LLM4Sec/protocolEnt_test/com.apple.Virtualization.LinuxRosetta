@@ -1,0 +1,20 @@
+Service Path:
+/System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.LinuxRosetta.xpc/Contents/MacOS/com.apple.Virtualization.LinuxRosetta
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.AuthorizationServices
+	[Value]
+		[Array]
+			[String] system.install.apple-software
+	[Key] com.apple.private.OAHSoftwareUpdate
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.message-filter
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.system_installd.connection
+	[Value]
+		[Bool] true

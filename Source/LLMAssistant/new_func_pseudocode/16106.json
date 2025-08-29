@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUUIDGetConstantUUIDWithBytes",
+    "function_argument_number": 17,
+    "function_signature": "_CFUUIDGetConstantUUIDWithBytes(CFAllocatorRef alloc, UInt8 byte0, UInt8 byte1, UInt8 byte2, UInt8 byte3, UInt8 byte4, UInt8 byte5, UInt8 byte6, UInt8 byte7, UInt8 byte8, UInt8 byte9, UInt8 byte10, UInt8 byte11, UInt8 byte12, UInt8 byte13, UInt8 byte14, UInt8 byte15)",
+    "pseudocode": "CFUUIDRef __cdecl CFUUIDGetConstantUUIDWithBytes(\n        CFAllocatorRef alloc,\n        UInt8 byte0,\n        UInt8 byte1,\n        UInt8 byte2,\n        UInt8 byte3,\n        UInt8 byte4,\n        UInt8 byte5,\n        UInt8 byte6,\n        UInt8 byte7,\n        UInt8 byte8,\n        UInt8 byte9,\n        UInt8 byte10,\n        UInt8 byte11,\n        UInt8 byte12,\n        UInt8 byte13,\n        UInt8 byte14,\n        UInt8 byte15)\n{\n  return _CFUUIDGetConstantUUIDWithBytes(\n           alloc,\n           byte0,\n           byte1,\n           byte2,\n           byte3,\n           byte4,\n           byte5,\n           byte6,\n           byte7,\n           byte8,\n           byte9,\n           byte10,\n           byte11,\n           byte12,\n           byte13,\n           byte14,\n           byte15);\n}"
+}

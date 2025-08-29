@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundleService setAttrib:code:data:reply:]",
+    "function_argument_number": 6,
+    "function_signature": "-[IFDBundleService setAttrib:code:data:reply:](int a1, int a2, int a3, int a4, int a5, id a6)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[IFDBundleService setAttrib:code:data:reply:](\n        IFDBundleService *self,\n        SEL a2,\n        unsigned int a3,\n        unsigned int a4,\n        id a5,\n        id a6)\n{\n  __int64 v8; // x21\n  __int64 v9; // x22\n  IFDBundle *bundle; // x23\n  id v11; // x24\n  _BOOL8 v12; // x0\n  unsigned __int8 v13; // [xsp+Fh] [xbp-31h] BYREF\n\n  v8 = *(_QWORD *)&a4;\n  v9 = *(_QWORD *)&a3;\n  v13 = 0;\n  bundle = self->_bundle;\n  v11 = objc_retain(a6);\n  v12 = -[IFDBundle setAttrib:code:data:attribNotSupported:](\n          bundle,\n          \"setAttrib:code:data:attribNotSupported:\",\n          v9,\n          v8,\n          a5,\n          &v13);\n  (*((void (__fastcall **)(id, _BOOL8, _QWORD))a6 + 2))(v11, v12, v13);\n  objc_release(v11);\n}"
+}

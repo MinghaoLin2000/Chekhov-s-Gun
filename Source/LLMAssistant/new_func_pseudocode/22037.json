@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__16chrono12steady_clock3nowEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__16chrono12steady_clock3nowEv(std::chrono::steady_clock * this)",
+    "pseudocode": "std::chrono::steady_clock::time_point std::chrono::steady_clock::now(void)\n{\n  return std::chrono::steady_clock::now();\n}"
+}

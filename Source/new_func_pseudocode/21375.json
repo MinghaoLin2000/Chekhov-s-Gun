@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition32EARSpeechRecognitionResultStreamCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s22localspeechrecognition32EARSpeechRecognitionResultStreamCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for EARSpeechRecognitionResultStream(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000642B0;\n  if ( !qword_1000642B0 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for EARSpeechRecognitionResultStream);\n  return result;\n}"
+}

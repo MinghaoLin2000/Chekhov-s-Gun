@@ -1,0 +1,46 @@
+Service Path:
+/System/Library/PrivateFrameworks/PassKitServices.framework/Versions/A/XPCServices/PassKitServicesXPCService.xpc/Contents/MacOS/PassKitServicesXPCService
+
+Service Exported Protocols:
+@protocol PassKitServicesXPCServiceProtocol
+- (void)imageDataForRecurringPaymentMemo:(PKPeerPaymentRecurringPaymentMemo *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+- (void)imageDataForPassUniqueIdentifier:(NSString *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+- (void)imageDataForTransaction:(PKPaymentTransaction *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.cards.all-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.kernel.increased-memory-limit
+	[Value]
+		[Bool] true
+	[Key] com.apple.nfcd.hwmanager
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.nfcd.hwmanager
+			[String] com.apple.passd.peer-payment
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.UIKit
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.framebuffer-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.geoservices
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] container

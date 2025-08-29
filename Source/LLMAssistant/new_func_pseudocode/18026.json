@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSLogToMessageTracer",
+    "function_argument_number": 0,
+    "function_signature": "_NetFSLogToMessageTracer()",
+    "pseudocode": "void NetFSLogToMessageTracer()\n{\n  ;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLGlobalQuickLookPreferencesBooleanValueForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLGlobalQuickLookPreferencesBooleanValueForKey()",
+    "pseudocode": "__int64 _QLGlobalQuickLookPreferencesBooleanValueForKey()\n{\n  return __QLGlobalQuickLookPreferencesBooleanValueForKey();\n}"
+}

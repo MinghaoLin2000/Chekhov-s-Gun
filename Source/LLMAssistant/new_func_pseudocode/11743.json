@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Reflection28MutableRepeatedFieldInternalIdEEPNS0_13RepeatedFieldIT_EEPNS0_7MessageEPKNS0_15FieldDescriptorE",
+    "function_argument_number": 5,
+    "function_signature": "__ZNK6google8protobuf10Reflection28MutableRepeatedFieldInternalIdEEPNS0_13RepeatedFieldIT_EEPNS0_7MessageEPKNS0_15FieldDescriptorE(_QWORD * a1, __int64 a2, google::protobuf::FieldDescriptor * a3, __int64 a5, __int64 a4)",
+    "pseudocode": "atomic_uint *__fastcall google::protobuf::Reflection::MutableRepeatedFieldInternal<double>(\n        _QWORD *a1,\n        __int64 a2,\n        google::protobuf::FieldDescriptor *a3,\n        __int64 a4,\n        __int64 a5)\n{\n  return google::protobuf::Reflection::MutableRawRepeatedField(a1, a2, a3, 5LL, a5, 0LL);\n}"
+}

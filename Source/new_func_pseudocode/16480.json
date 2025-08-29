@@ -1,0 +1,6 @@
+{
+    "function_name": "_AUDeveloperSettingsURLTypeToString",
+    "function_argument_number": 1,
+    "function_signature": "_AUDeveloperSettingsURLTypeToString(unsigned __int64 a1)",
+    "pseudocode": "const char *__fastcall AUDeveloperSettingsURLTypeToString(unsigned __int64 a1)\n{\n  if ( a1 > 6 )\n    return \"unrecognized\";\n  else\n    return off_100031828[a1];\n}"
+}

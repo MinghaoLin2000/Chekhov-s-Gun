@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12ExtensionSet3HasEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf8internal12ExtensionSet3HasEi(google::protobuf::internal::ExtensionSet * this, int a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::ExtensionSet::Has(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2)\n{\n  __int64 result; // x0\n\n  result = google::protobuf::internal::ExtensionSet::FindOrNull(this, a2);\n  if ( result )\n    return (*(_BYTE *)(result + 10) & 1) == 0;\n  return result;\n}"
+}

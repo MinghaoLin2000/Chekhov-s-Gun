@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUBacktrace new]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSUBacktrace new](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[TSUBacktrace new](id a1, SEL a2)\n{\n  id v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v2 = objc_alloc((Class)a1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(v2, \"initWithAdjustment:\", 2LL);\n}"
+}

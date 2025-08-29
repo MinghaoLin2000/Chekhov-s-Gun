@@ -1,0 +1,6 @@
+{
+    "function_name": "___strlcpy_chk",
+    "function_argument_number": 0,
+    "function_signature": "___strlcpy_chk()",
+    "pseudocode": "__int64 __strlcpy_chk()\n{\n  return ___strlcpy_chk();\n}"
+}

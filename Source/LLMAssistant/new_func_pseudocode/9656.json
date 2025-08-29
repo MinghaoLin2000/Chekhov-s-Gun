@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP9FieldPath8CopyFromERKN6google8protobuf7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP9FieldPath8CopyFromERKN6google8protobuf7MessageE(TSP::FieldPath * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "char *__fastcall TSP::FieldPath::CopyFrom(char *this, const google::protobuf::Message *lpsrc)\n{\n  __int64 v2; // x30\n  TSP::FieldPath *v4; // x20\n  char *v5; // x0\n  char v6; // t1\n\n  if ( lpsrc != (const google::protobuf::Message *)this )\n  {\n    v4 = (TSP::FieldPath *)this;\n    v6 = this[8];\n    v5 = this + 8;\n    *((_DWORD *)v5 + 2) = 0;\n    if ( (v6 & 1) != 0 )\n      sub_10003A2A8(v5);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return TSP::FieldPath::MergeFrom(v4, lpsrc);\n  }\n  return this;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup23MarkupDisplayMessageKeyOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s13DisplayMarkup23MarkupDisplayMessageKeyOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MarkupDisplayMessageKey()\n{\n  return &type metadata for MarkupDisplayMessageKey;\n}"
+}

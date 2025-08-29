@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker setClientProcessIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionRequestTracker setClientProcessIdentifier:](MediaConversionRequestTracker * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[MediaConversionRequestTracker setClientProcessIdentifier:](\n        MediaConversionRequestTracker *self,\n        SEL a2,\n        int a3)\n{\n  self->_clientProcessIdentifier = a3;\n}"
+}

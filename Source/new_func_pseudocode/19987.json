@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z16pwgCanonicalNameP8NSString",
+    "function_argument_number": 1,
+    "function_signature": "__Z16pwgCanonicalNameP8NSString(NSString * a1)",
+    "pseudocode": "NSString *__fastcall pwgCanonicalName(NSString *a1)\n{\n  NSString *v1; // x19\n  _QWORD *v2; // x0\n  NSString *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = objc_retainAutorelease(objc_retain(a1));\n  v2 = (_QWORD *)sub_100020F30(-[NSString UTF8String](v1, \"UTF8String\"), &stru_10009DF28);\n  if ( v2 )\n    v3 = objc_retainAutoreleasedReturnValue(+[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", *v2));\n  else\n    v3 = 0LL;\n  objc_release(v1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

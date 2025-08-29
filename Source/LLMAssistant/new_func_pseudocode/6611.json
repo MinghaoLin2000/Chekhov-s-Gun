@@ -1,0 +1,6 @@
+{
+    "function_name": "_IPAOrientationMakeTransformWithSize",
+    "function_argument_number": 0,
+    "function_signature": "_IPAOrientationMakeTransformWithSize()",
+    "pseudocode": "__int64 IPAOrientationMakeTransformWithSize()\n{\n  return _IPAOrientationMakeTransformWithSize();\n}"
+}

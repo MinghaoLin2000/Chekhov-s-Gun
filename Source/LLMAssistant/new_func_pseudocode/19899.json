@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t getLogCategory]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t getLogCategory](lite_job_t * self, SEL a2)",
+    "pseudocode": "id __cdecl -[lite_job_t getLogCategory](lite_job_t *self, SEL a2)\n{\n  return objc_retainAutoreleaseReturnValue(PKLogCategoryProgress[0]);\n}"
+}

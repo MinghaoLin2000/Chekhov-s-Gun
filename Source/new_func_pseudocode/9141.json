@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPMemoryReadChannel addBarrier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPMemoryReadChannel addBarrier:](int a1, int a2, dispatch_block_t block)",
+    "pseudocode": "void __cdecl -[TSPMemoryReadChannel addBarrier:](TSPMemoryReadChannel *self, SEL a2, id a3)\n{\n  dispatch_async((dispatch_queue_t)self->_readQueue, a3);\n}"
+}

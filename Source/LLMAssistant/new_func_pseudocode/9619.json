@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP11MessageInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP11MessageInfoD1Ev(TSP::MessageInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::MessageInfo::~MessageInfo(TSP::MessageInfo *this)\n{\n  __ZN3TSP11MessageInfoD2Ev(this);\n}"
+}

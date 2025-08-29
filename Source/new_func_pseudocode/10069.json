@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPComponentWriteChannelAdapter close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPComponentWriteChannelAdapter close](TSPComponentWriteChannelAdapter * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPComponentWriteChannelAdapter close](TSPComponentWriteChannelAdapter *self, SEL a2)\n{\n  void *v3; // x20\n  dispatch_queue_s *queue; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-38h] BYREF\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v3 = off_1001F5D88;\n  if ( dispatch_get_specific(off_1001F5D88) == v3 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[TSPComponentWriteChannelAdapter _close](self, \"_close\");\n  }\n  else\n  {\n    queue = (dispatch_queue_s *)self->_queue;\n    block[0] = _NSConcreteStackBlock;\n    block[1] = 3254779904LL;\n    block[2] = sub_100059588;\n    block[3] = &unk_1001D1698;\n    block[4] = self;\n    dispatch_sync(queue, block);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecTaskCreateWithAuditToken",
+    "function_argument_number": 2,
+    "function_signature": "_SecTaskCreateWithAuditToken(CFAllocatorRef allocator, audit_token_t * token)",
+    "pseudocode": "SecTaskRef __cdecl SecTaskCreateWithAuditToken(CFAllocatorRef allocator, audit_token_t *token)\n{\n  return _SecTaskCreateWithAuditToken(allocator, token);\n}"
+}

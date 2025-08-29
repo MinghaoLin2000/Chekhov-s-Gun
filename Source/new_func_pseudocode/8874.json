@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService18JSEngagementObjectCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService18JSEngagementObjectCMa()",
+    "pseudocode": "__int64 type metadata accessor for JSEngagementObject()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService18JSEngagementObject);\n}"
+}

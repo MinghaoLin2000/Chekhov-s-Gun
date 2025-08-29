@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController sharingCompletion]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController sharingCompletion](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsPhotosViewController sharingCompletion](DeviceSettingsPhotosViewController *self, SEL a2)\n{\n  return self->_sharingCompletion;\n}"
+}

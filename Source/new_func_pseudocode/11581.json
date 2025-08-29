@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Mixin5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf5Mixin5ClearEv(google::protobuf::Mixin * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Mixin::Clear(google::protobuf::Mixin *this)\n{\n  __int64 result; // x0\n  char *v3; // x19\n  char v4; // t1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  google::protobuf::internal::ArenaStringPtr::ClearToEmpty((google::protobuf::Mixin *)((char *)this + 16));\n  result = google::protobuf::internal::ArenaStringPtr::ClearToEmpty((google::protobuf::Mixin *)((char *)this + 24));\n  v4 = *((_BYTE *)this + 8);\n  v3 = (char *)this + 8;\n  if ( (v4 & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10003A2A8(v3);\n  }\n  return result;\n}"
+}

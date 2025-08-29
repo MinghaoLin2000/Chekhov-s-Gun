@@ -1,0 +1,6 @@
+{
+    "function_name": "__fullProcessNameForPid",
+    "function_argument_number": 0,
+    "function_signature": "__fullProcessNameForPid()",
+    "pseudocode": "NSString *_fullProcessNameForPid()\n{\n  int v0; // w0\n  int v1; // w19\n  NSString *v2; // x0\n  char buffer[4096]; // [xsp+8h] [xbp-1018h] BYREF\n  __int64 vars8; // [xsp+1028h] [xbp+8h]\n\n  v0 = __chkstk_darwin();\n  if ( v0 < 1 || (v1 = v0, bzero(buffer, 0x1000uLL), proc_pidpath(v1, buffer, 0x1000u) < 1) )\n  {\n    v2 = 0LL;\n  }\n  else\n  {\n    buffer[4095] = 0;\n    v2 = objc_retainAutoreleasedReturnValue(+[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", basename(buffer)));\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

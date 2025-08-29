@@ -1,0 +1,6 @@
+{
+    "function_name": "_sandbox_consume_fs_extension",
+    "function_argument_number": 0,
+    "function_signature": "_sandbox_consume_fs_extension()",
+    "pseudocode": "__int64 sandbox_consume_fs_extension()\n{\n  return _sandbox_consume_fs_extension();\n}"
+}

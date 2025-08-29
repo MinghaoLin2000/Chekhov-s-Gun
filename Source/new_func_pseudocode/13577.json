@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULinkedPointerSetEntry initWithObject:previousEntry:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSULinkedPointerSetEntry initWithObject:previousEntry:](TSULinkedPointerSetEntry * self, SEL a2, id a3, id a4)",
+    "pseudocode": "TSULinkedPointerSetEntry *__cdecl -[TSULinkedPointerSetEntry initWithObject:previousEntry:](\n        TSULinkedPointerSetEntry *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  TSULinkedPointerSetEntry *v6; // x21\n  objc_super v8; // [xsp+0h] [xbp-30h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___TSULinkedPointerSetEntry;\n  v6 = -[TSULinkedPointerSetEntry init](&v8, \"init\");\n  if ( v6 )\n  {\n    v6->mObject = objc_retain(a3);\n    v6->mPrevious = (TSULinkedPointerSetEntry *)a4;\n    v6->mNext = 0LL;\n  }\n  return v6;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLEnumeratorGetNextURL",
+    "function_argument_number": 3,
+    "function_signature": "_CFURLEnumeratorGetNextURL(CFURLEnumeratorRef enumerator, CFURLRef * url, CFErrorRef * error)",
+    "pseudocode": "CFURLEnumeratorResult __cdecl CFURLEnumeratorGetNextURL(\n        CFURLEnumeratorRef enumerator,\n        CFURLRef *url,\n        CFErrorRef *error)\n{\n  return _CFURLEnumeratorGetNextURL(enumerator, url, error);\n}"
+}

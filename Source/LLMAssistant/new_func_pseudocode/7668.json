@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE12destorySpaceyyAC8CGSSpaceVF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE12destorySpaceyyAC8CGSSpaceVF(EyeCandyGraphics::CGSSpace a1)",
+    "pseudocode": "Swift::Void __swiftcall SLSTransactionRef.destorySpace(_:)(EyeCandyGraphics::CGSSpace a1)\n{\n  __int64 v1; // x20\n\n  _SLSTransactionDestroySpace(v1, a1.spid);\n}"
+}

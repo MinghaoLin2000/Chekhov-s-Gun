@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController remoteViewSizeChanged:transaction:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceUIServiceViewController remoteViewSizeChanged:transaction:](DeviceUIServiceViewController * self, SEL a2, id a4, CGSize a3)",
+    "pseudocode": "bool __cdecl -[DeviceUIServiceViewController remoteViewSizeChanged:transaction:](\n        DeviceUIServiceViewController *self,\n        SEL a2,\n        CGSize a3,\n        id a4)\n{\n  double height; // d8\n  double width; // d9\n  id WeakRetained; // x20\n  id v8; // x19\n  objc_super v10; // [xsp+0h] [xbp-40h] BYREF\n\n  height = a3.height;\n  width = a3.width;\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___DeviceUIServiceViewController;\n  -[DeviceUIServiceViewController remoteViewSizeChanged:transaction:](&v10, \"remoteViewSizeChanged:transaction:\", a4);\n  WeakRetained = objc_loadWeakRetained((id *)&self->_widthAnchor);\n  objc_msgSend(WeakRetained, \"setConstant:\", width);\n  objc_release(WeakRetained);\n  v8 = objc_loadWeakRetained((id *)&self->_heightAnchor);\n  objc_msgSend(v8, \"setConstant:\", height);\n  objc_release(v8);\n  return 1;\n}"
+}

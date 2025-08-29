@@ -1,0 +1,6 @@
+{
+    "function_name": "_sysctl",
+    "function_argument_number": 6,
+    "function_signature": "_sysctl(int * a1, u_int a2, void * a3, size_t * a4, void * a5, size_t a6)",
+    "pseudocode": "int __cdecl sysctl(int *a1, u_int a2, void *a3, size_t *a4, void *a5, size_t a6)\n{\n  return _sysctl(a1, a2, a3, a4, a5, a6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14DescriptorPoolC2EPNS0_18DescriptorDatabaseEPNS1_14ErrorCollectorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf14DescriptorPoolC2EPNS0_18DescriptorDatabaseEPNS1_14ErrorCollectorE(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorPool::DescriptorPool(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x0\n  google::protobuf::DescriptorPool::Tables *v7; // x20\n\n  v6 = operator new(64LL, 0x1000C40FA0F61DDLL);\n  *(_QWORD *)v6 = 850045863LL;\n  *(_OWORD *)(v6 + 8) = 0u;\n  *(_OWORD *)(v6 + 24) = 0u;\n  *(_OWORD *)(v6 + 40) = 0u;\n  *(_QWORD *)(v6 + 56) = 0LL;\n  *(_QWORD *)a1 = v6;\n  *(_QWORD *)(a1 + 8) = a2;\n  *(_QWORD *)(a1 + 16) = a3;\n  *(_QWORD *)(a1 + 24) = 0LL;\n  v7 = (google::protobuf::DescriptorPool::Tables *)operator new(504LL, 0x10A0C40292B2256LL);\n  google::protobuf::DescriptorPool::Tables::Tables(v7);\n  *(_QWORD *)(a1 + 32) = v7;\n  *(_BYTE *)(a1 + 40) = 1;\n  *(_QWORD *)(a1 + 64) = 0LL;\n  *(_QWORD *)(a1 + 56) = 0LL;\n  *(_DWORD *)(a1 + 41) = 0;\n  *(_QWORD *)(a1 + 48) = a1 + 56;\n  return a1;\n}"
+}

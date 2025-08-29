@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10Int64Value9MergeFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf10Int64Value9MergeFromERKNS0_7MessageE(google::protobuf::Int64Value * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::Int64Value::MergeFrom(\n        google::protobuf::Int64Value *this,\n        const google::protobuf::Message *lpsrc)\n{\n  _QWORD *result; // x0\n  google::protobuf::Message *v5; // x2\n  _QWORD *v6; // x21\n  __int64 v7; // x8\n  __int64 v8; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  result = __dynamic_cast(\n             lpsrc,\n             (const struct __class_type_info *)&`typeinfo for'google::protobuf::Message,\n             (const struct __class_type_info *)&`typeinfo for'google::protobuf::Int64Value,\n             0LL);\n  if ( result )\n  {\n    v6 = result;\n    v7 = result[1];\n    if ( (v7 & 1) != 0 )\n      result = (_QWORD *)sub_10003A25C((char *)this + 8, (v7 & 0xFFFFFFFFFFFFFFFELL) + 8);\n    v8 = v6[2];\n    if ( v8 )\n      *((_QWORD *)this + 2) = v8;\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (_QWORD *)google::protobuf::internal::ReflectionOps::Merge(lpsrc, this, v5);\n  }\n  return result;\n}"
+}

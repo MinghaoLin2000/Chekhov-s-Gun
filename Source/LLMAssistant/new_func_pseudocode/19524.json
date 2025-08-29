@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundle dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[IFDBundle dealloc](IFDBundle * self, SEL a2)",
+    "pseudocode": "void __cdecl -[IFDBundle dealloc](IFDBundle *self, SEL a2)\n{\n  __CFBundle *bundle; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  bundle = self->_bundle;\n  if ( bundle )\n    CFRelease(bundle);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___IFDBundle;\n  -[IFDBundle dealloc](&v4, \"dealloc\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSInterface_AddRef",
+    "function_argument_number": 1,
+    "function_signature": "_NetFSInterface_AddRef(void * a1)",
+    "pseudocode": "ULONG __cdecl NetFSInterface_AddRef(void *a1)\n{\n  ULONG v1; // w8\n\n  v1 = *((_DWORD *)a1 + 4) + 1;\n  *((_DWORD *)a1 + 4) = v1;\n  return v1;\n}"
+}

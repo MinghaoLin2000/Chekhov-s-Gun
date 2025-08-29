@@ -1,0 +1,6 @@
+{
+    "function_name": "_getgrnam",
+    "function_argument_number": 1,
+    "function_signature": "_getgrnam(const char * a1)",
+    "pseudocode": "group *__cdecl getgrnam(const char *a1)\n{\n  return _getgrnam(a1);\n}"
+}

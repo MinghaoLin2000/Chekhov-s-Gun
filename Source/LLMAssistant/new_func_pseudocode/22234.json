@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLAppPreferencesIntValueForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLAppPreferencesIntValueForKey()",
+    "pseudocode": "__int64 _QLAppPreferencesIntValueForKey()\n{\n  return __QLAppPreferencesIntValueForKey();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGDataProviderCreateSequential",
+    "function_argument_number": 2,
+    "function_signature": "_CGDataProviderCreateSequential(void * info, const CGDataProviderSequentialCallbacks * callbacks)",
+    "pseudocode": "CGDataProviderRef __cdecl CGDataProviderCreateSequential(\n        void *info,\n        const CGDataProviderSequentialCallbacks *callbacks)\n{\n  return _CGDataProviderCreateSequential(info, callbacks);\n}"
+}

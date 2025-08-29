@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentCreateWithURL",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentCreateWithURL(CFURLRef url)",
+    "pseudocode": "CGPDFDocumentRef __cdecl CGPDFDocumentCreateWithURL(CFURLRef url)\n{\n  return _CGPDFDocumentCreateWithURL(url);\n}"
+}

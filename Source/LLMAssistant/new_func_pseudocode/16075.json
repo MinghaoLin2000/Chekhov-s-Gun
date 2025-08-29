@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointApplyStagedAssets",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformEndpointApplyStagedAssets(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointApplyStagedAssets(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  __int64 v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = 30LL;\n  if ( a1 && a2 )\n  {\n    v5 = uarpAllocPrepareTransmitBuffer2(a1, a2, 10LL, 6u, 1);\n    if ( v5 )\n    {\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return uarpTransmitBuffer2(a1, a2, v5);\n    }\n    else\n    {\n      return 11LL;\n    }\n  }\n  return result;\n}"
+}

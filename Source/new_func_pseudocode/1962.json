@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController episodeActionFromTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPodcastsViewController episodeActionFromTag:](DeviceSettingsPodcastsViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceSettingsPodcastsViewController episodeActionFromTag:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  if ( -[DeviceSettingsPodcastsViewController isUnplayedTag:](self, \"isUnplayedTag:\") )\n    return 4LL;\n  if ( -[DeviceSettingsPodcastsViewController isNewTag:](self, \"isNewTag:\", a3) )\n    return 3LL;\n  return 0LL;\n}"
+}

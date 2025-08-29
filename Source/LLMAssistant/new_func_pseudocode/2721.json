@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString stringByTrimmingLeadingSpaces]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString stringByTrimmingLeadingSpaces](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString stringByTrimmingLeadingSpaces](NSString *self, SEL a2)\n{\n  NSUInteger v3; // x0\n  NSUInteger v4; // x21\n  NSUInteger v5; // x20\n  NSString *v6; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = -[NSString length](self, \"length\");\n  if ( !v3 )\n    goto LABEL_8;\n  v4 = v3;\n  v5 = 0LL;\n  while ( (unsigned int)-[NSString characterAtIndex:](self, \"characterAtIndex:\", v5) <= 0x20 )\n  {\n    if ( v4 == ++v5 )\n    {\n      v5 = v4;\n      break;\n    }\n  }\n  if ( v5 )\n    v6 = objc_retainAutoreleasedReturnValue(-[NSString substringFromIndex:](self, \"substringFromIndex:\", v5));\n  else\nLABEL_8:\n    v6 = objc_retain(self);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

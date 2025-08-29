@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController setAutoDismissMask:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController setAutoDismissMask:](SiriNCAlertViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController setAutoDismissMask:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  self->_autoDismissMask = a3;\n}"
+}

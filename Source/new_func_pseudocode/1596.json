@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setSecondaryProgressWasPrimary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setSecondaryProgressWasPrimary:](DeviceFooterViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setSecondaryProgressWasPrimary:](\n        DeviceFooterViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_secondaryProgressWasPrimary = a3;\n}"
+}

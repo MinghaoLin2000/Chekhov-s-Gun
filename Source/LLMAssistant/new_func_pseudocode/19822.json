@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t browseInfo]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t browseInfo](lite_printer_t * self, SEL a2)",
+    "pseudocode": "PKPrinterBrowseInfo *__cdecl -[lite_printer_t browseInfo](lite_printer_t *self, SEL a2)\n{\n  return (PKPrinterBrowseInfo *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

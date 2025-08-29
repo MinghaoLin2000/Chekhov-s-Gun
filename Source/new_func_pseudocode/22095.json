@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCalibratePBKDF",
+    "function_argument_number": 6,
+    "function_signature": "_CCCalibratePBKDF(CCPBKDFAlgorithm algorithm, size_t passwordLen, size_t saltLen, CCPseudoRandomAlgorithm prf, size_t derivedKeyLen, uint32_t msec)",
+    "pseudocode": "unsigned int __cdecl CCCalibratePBKDF(\n        CCPBKDFAlgorithm algorithm,\n        size_t passwordLen,\n        size_t saltLen,\n        CCPseudoRandomAlgorithm prf,\n        size_t derivedKeyLen,\n        uint32_t msec)\n{\n  return _CCCalibratePBKDF(algorithm, passwordLen, saltLen, prf, derivedKeyLen, msec);\n}"
+}

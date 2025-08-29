@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFStreamGetDictionary",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFStreamGetDictionary(CGPDFStreamRef stream)",
+    "pseudocode": "CGPDFDictionaryRef __cdecl CGPDFStreamGetDictionary(CGPDFStreamRef stream)\n{\n  return _CGPDFStreamGetDictionary(stream);\n}"
+}

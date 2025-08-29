@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject .cxx_destruct](_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject * self, SEL a2)",
+    "pseudocode": "void __cdecl -[JSLocalizationObject .cxx_destruct](\n        _TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject *self,\n        SEL a2)\n{\n  swift_bridgeObjectRelease(*(Class *)((char *)&self->super.isa\n                                     + OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject_localizations));\n}"
+}

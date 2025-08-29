@@ -1,0 +1,6 @@
+{
+    "function_name": "_updateSuperBinaryPayload",
+    "function_argument_number": 0,
+    "function_signature": "_updateSuperBinaryPayload()",
+    "pseudocode": "__int64 updateSuperBinaryPayload()\n{\n  return _updateSuperBinaryPayload();\n}"
+}

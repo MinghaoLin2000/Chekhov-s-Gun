@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_allocObject",
+    "function_argument_number": 0,
+    "function_signature": "_swift_allocObject()",
+    "pseudocode": "__int64 swift_allocObject()\n{\n  return _swift_allocObject();\n}"
+}

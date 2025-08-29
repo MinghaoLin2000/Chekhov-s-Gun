@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSGetSystemUIHasRTLDirectionLegacy",
+    "function_argument_number": 0,
+    "function_signature": "_SLSGetSystemUIHasRTLDirectionLegacy()",
+    "pseudocode": "__int64 SLSGetSystemUIHasRTLDirectionLegacy()\n{\n  return _SLSGetSystemUIHasRTLDirectionLegacy();\n}"
+}

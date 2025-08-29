@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController loadDeviceDetailsMenu]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceHeaderViewController loadDeviceDetailsMenu](DeviceHeaderViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceHeaderViewController loadDeviceDetailsMenu](DeviceHeaderViewController *self, SEL a2)\n{\n  id v3; // x20\n  DeviceAccessibleTextField *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_alloc_init((Class)&OBJC_CLASS___NSMenu);\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceHeaderViewController deviceDetailsLabel](self, \"deviceDetailsLabel\"));\n  -[DeviceAccessibleTextField setMenu:](v4, \"setMenu:\", v3);\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceHeaderViewController updateDeviceDetailsMenu](self, \"updateDeviceDetailsMenu\");\n}"
+}

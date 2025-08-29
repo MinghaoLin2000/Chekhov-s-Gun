@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore21ModuleNavigationStyleOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore21ModuleNavigationStyleOMa()",
+    "pseudocode": "__int64 type metadata accessor for ModuleNavigationStyle()\n{\n  return sub_100048F34(&unk_10008CA68);\n}"
+}

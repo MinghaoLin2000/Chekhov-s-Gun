@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContentStreamGetResource",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFContentStreamGetResource(CGPDFContentStreamRef cs, const char * category, const char * name)",
+    "pseudocode": "CGPDFObjectRef __cdecl CGPDFContentStreamGetResource(CGPDFContentStreamRef cs, const char *category, const char *name)\n{\n  return _CGPDFContentStreamGetResource(cs, category, name);\n}"
+}

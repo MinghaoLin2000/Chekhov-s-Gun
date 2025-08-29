@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService _handleEvent:type:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService _handleEvent:type:](int a1, int a2, CGEventRef inEvent)",
+    "pseudocode": "bool __cdecl -[SiriNCService _handleEvent:type:](SiriNCService *self, SEL a2, __CGEvent *a3, unsigned int a4)\n{\n  int v8; // w22\n  EventRef event; // [xsp+0h] [xbp-50h] BYREF\n  _QWORD block[5]; // [xsp+8h] [xbp-48h] BYREF\n\n  if ( a4 < 0xFFFFFFFE )\n  {\n    event = 0LL;\n    if ( !CreateEventWithCGEvent(kCFAllocatorDefault, a3, 0, &event) )\n    {\n      v8 = IsUserCancelEventRef(event);\n      ReleaseEvent(event);\n      if ( v8 )\n        return -[SiriNCService _handleUserCancel](self, \"_handleUserCancel\");\n    }\n    if ( a4 == 10 && (unsigned __int16)CGEventGetIntegerValueField(a3, kCGKeyboardEventKeycode) == 49LL )\n      return -[SiriNCService _handleSpace](self, \"_handleSpace\");\n  }\n  else\n  {\n    block[0] = _NSConcreteStackBlock;\n    block[1] = 3254779904LL;\n    block[2] = sub_100009028;\n    block[3] = &unk_100020670;\n    block[4] = self;\n    dispatch_async(&_dispatch_main_q, block);\n  }\n  return 0;\n}"
+}

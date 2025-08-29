@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileDataRepresentation dealloc](SFUFileDataRepresentation * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUFileDataRepresentation dealloc](SFUFileDataRepresentation *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  if ( self->mDeleteFileWhenDone && self->mPath )\n    -[NSFileManager removeItemAtPath:error:](\n      +[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"),\n      \"removeItemAtPath:error:\",\n      self->mPath,\n      0LL);\n  objc_release(self->mPath);\n  objc_release(self->mInputStream);\n  objc_release(self->mCryptoKey);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___SFUFileDataRepresentation;\n  -[SFUFileDataRepresentation dealloc](&v3, \"dealloc\");\n}"
+}

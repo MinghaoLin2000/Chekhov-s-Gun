@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAMediaConversionServiceSharedUtilitiesServiceSide scalePolicyForScaleFactor:maximumPixelCount:]",
+    "function_argument_number": 4,
+    "function_signature": "+[PAMediaConversionServiceSharedUtilitiesServiceSide scalePolicyForScaleFactor:maximumPixelCount:](id a1, SEL a2, double a3, signed __int64 a4)",
+    "pseudocode": "id __cdecl +[PAMediaConversionServiceSharedUtilitiesServiceSide scalePolicyForScaleFactor:maximumPixelCount:](\n        id a1,\n        SEL a2,\n        double a3,\n        signed __int64 a4)\n{\n  void *v4; // x0\n  id v6; // x19\n  __int64 v7; // x0\n  __int64 v8; // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( a4 )\n  {\n    v4 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NUPixelCountScalePolicy), \"initWithTargetPixelCount:\", a4);\n  }\n  else if ( a3 == 1.0 )\n  {\n    v4 = 0LL;\n  }\n  else\n  {\n    v6 = objc_alloc((Class)&OBJC_CLASS___NUFixedScalePolicy);\n    v7 = NUScaleFromDouble(a3);\n    v4 = objc_msgSend(v6, \"initWithScale:\", v7, v8);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

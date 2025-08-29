@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ProgressViewController progress]",
+    "function_argument_number": 2,
+    "function_signature": "-[ProgressViewController progress](ProgressViewController * self, SEL a2)",
+    "pseudocode": "NSProgress *__cdecl -[ProgressViewController progress](ProgressViewController *self, SEL a2)\n{\n  return self->_progress;\n}"
+}

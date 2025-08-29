@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21liteSetiCloudPrintersP7NSArray",
+    "function_argument_number": 1,
+    "function_signature": "__Z21liteSetiCloudPrintersP7NSArray(NSArray * a1)",
+    "pseudocode": "void *__fastcall liteSetiCloudPrinters(NSArray *a1)\n{\n  return objc_msgSend((id)iCloudDataController, \"setiCloudPrintersList:\", a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPropertyListCreateWithData",
+    "function_argument_number": 5,
+    "function_signature": "_CFPropertyListCreateWithData(CFAllocatorRef allocator, CFDataRef data, CFOptionFlags options, CFPropertyListFormat * format, CFErrorRef * error)",
+    "pseudocode": "CFPropertyListRef __cdecl CFPropertyListCreateWithData(\n        CFAllocatorRef allocator,\n        CFDataRef data,\n        CFOptionFlags options,\n        CFPropertyListFormat *format,\n        CFErrorRef *error)\n{\n  return _CFPropertyListCreateWithData(allocator, data, options, format, error);\n}"
+}

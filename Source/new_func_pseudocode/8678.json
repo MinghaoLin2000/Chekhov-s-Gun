@@ -1,0 +1,6 @@
+{
+    "function_name": "_sysmon_request_set_interval",
+    "function_argument_number": 0,
+    "function_signature": "_sysmon_request_set_interval()",
+    "pseudocode": "__int64 sysmon_request_set_interval()\n{\n  return _sysmon_request_set_interval();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_pthread_join",
+    "function_argument_number": 2,
+    "function_signature": "_pthread_join(pthread_t a1, void ** a2)",
+    "pseudocode": "int __cdecl pthread_join(pthread_t a1, void **a2)\n{\n  return _pthread_join(a1, a2);\n}"
+}

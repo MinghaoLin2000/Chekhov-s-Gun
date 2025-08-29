@@ -1,0 +1,6 @@
+{
+    "function_name": "___fpclassifyd",
+    "function_argument_number": 1,
+    "function_signature": "___fpclassifyd(double a1)",
+    "pseudocode": "int __cdecl __fpclassifyd(double a1)\n{\n  return ___fpclassifyd(a1);\n}"
+}

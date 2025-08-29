@@ -1,0 +1,61 @@
+__ZNK3TSP12FieldOptions18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE
+unsigned __int8 *__fastcall TSP::FieldOptions::_InternalSerialize(
+        TSP::FieldOptions *this,
+        unsigned __int8 *a2,
+        google::protobuf::io::EpsCopyOutputStream *a3,
+        google::protobuf::io::EpsCopyOutputStream *a4)
+{
+  unsigned __int64 v6; // x9
+  unsigned __int64 v7; // x8
+  unsigned __int64 v8; // x9
+  unsigned __int64 v9; // x10
+  __int64 v10; // x8
+  __int64 vars8; // [xsp+18h] [xbp+8h]
+
+  if ( (*((_BYTE *)this + 16) & 1) != 0 )
+  {
+    if ( *(_QWORD *)a3 <= (unsigned __int64)a2 )
+      a2 = (unsigned __int8 *)google::protobuf::io::EpsCopyOutputStream::EnsureSpaceFallback(a3, a2);
+    v6 = *((int *)this + 6);
+    *a2 = 8;
+    if ( (unsigned int)v6 > 0x7F )
+    {
+      a2[1] = v6 | 0x80;
+      v7 = v6 >> 7;
+      if ( (unsigned int)v6 >> 14 )
+      {
+        a2 += 3;
+        do
+        {
+          *(a2 - 1) = v7 | 0x80;
+          v8 = v7 >> 7;
+          ++a2;
+          v9 = v7 >> 14;
+          v7 >>= 7;
+        }
+        while ( v9 );
+        *(a2 - 1) = v8;
+      }
+      else
+      {
+        a2[2] = v7;
+        a2 += 3;
+      }
+    }
+    else
+    {
+      a2[1] = v6;
+      a2 += 2;
+    }
+  }
+  v10 = *((_QWORD *)this + 1);
+  if ( (v10 & 1) == 0 )
+    return a2;
+  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )
+    __break(0xC471u);
+  return (unsigned __int8 *)google::protobuf::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+                              (google::protobuf::internal::WireFormat *)((v10 & 0xFFFFFFFFFFFFFFFELL) + 8),
+                              (const google::protobuf::UnknownFieldSet *)a2,
+                              (unsigned __int8 *)a3,
+                              a4);
+}

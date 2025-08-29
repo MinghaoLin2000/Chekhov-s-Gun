@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_claimAutoreleasedReturnValue",
+    "function_argument_number": 0,
+    "function_signature": "_objc_claimAutoreleasedReturnValue()",
+    "pseudocode": "__int64 objc_claimAutoreleasedReturnValue()\n{\n  return _objc_claimAutoreleasedReturnValue();\n}"
+}

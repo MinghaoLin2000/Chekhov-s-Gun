@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStream28BackUpInputToCurrentPositionEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStream28BackUpInputToCurrentPositionEv(google::protobuf::io::CodedInputStream * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::CodedInputStream::BackUpInputToCurrentPosition(__int64 this)\n{\n  __int64 v1; // x19\n  unsigned int v2; // w8\n\n  if ( *(_DWORD *)(this + 28) + *(_DWORD *)(this + 44) + *(_DWORD *)(this + 8) - *(_DWORD *)this >= 1 )\n  {\n    v1 = this;\n    this = (*(__int64 (__fastcall **)(_QWORD))(**(_QWORD **)(this + 16) + 24LL))(*(_QWORD *)(this + 16));\n    v2 = *(_DWORD *)(v1 + 24) - *(_DWORD *)(v1 + 44) + *(_QWORD *)v1 - *(_DWORD *)(v1 + 8);\n    *(_QWORD *)(v1 + 8) = *(_QWORD *)v1;\n    *(_DWORD *)(v1 + 44) = 0;\n    *(_QWORD *)(v1 + 24) = v2;\n  }\n  return this;\n}"
+}

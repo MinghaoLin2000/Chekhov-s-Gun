@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_browser_cancel",
+    "function_argument_number": 1,
+    "function_signature": "_nw_browser_cancel(nw_browser_t browser)",
+    "pseudocode": "void __cdecl nw_browser_cancel(nw_browser_t browser)\n{\n  _nw_browser_cancel(browser);\n}"
+}

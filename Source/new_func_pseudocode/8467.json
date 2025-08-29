@@ -1,0 +1,6 @@
+{
+    "function_name": "_AuthorizationCopyRights",
+    "function_argument_number": 5,
+    "function_signature": "_AuthorizationCopyRights(AuthorizationRef authorization, const AuthorizationRights * rights, const AuthorizationEnvironment * environment, AuthorizationFlags flags, AuthorizationRights ** authorizedRights)",
+    "pseudocode": "OSStatus __cdecl AuthorizationCopyRights(\n        AuthorizationRef authorization,\n        const AuthorizationRights *rights,\n        const AuthorizationEnvironment *environment,\n        AuthorizationFlags flags,\n        AuthorizationRights **authorizedRights)\n{\n  return _AuthorizationCopyRights(authorization, rights, environment, flags, authorizedRights);\n}"
+}

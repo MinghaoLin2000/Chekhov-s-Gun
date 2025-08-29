@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DocumentCompressor compressChunk:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DocumentCompressor compressChunk:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[DocumentCompressor compressChunk:](DocumentCompressor *self, SEL a2, id a3)\n{\n  id v4; // x19\n  NSMutableData *v5; // x20\n  _QWORD v7[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v8; // [xsp+28h] [xbp-28h]\n  __int64 vars8; // [xsp+58h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v7[0] = _NSConcreteStackBlock;\n  v7[1] = 3254779904LL;\n  v7[2] = sub_100005B10;\n  v7[3] = &unk_100090F38;\n  v5 = objc_retain(objc_opt_new(&OBJC_CLASS___NSMutableData));\n  v8 = v5;\n  if ( !-[DocumentCompressor compressChunk:completionHandler:](self, \"compressChunk:completionHandler:\", v4, v7) )\n  {\n    objc_release(v5);\n    v5 = 0LL;\n  }\n  objc_release(v8);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

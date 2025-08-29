@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FudPersonalizer dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[FudPersonalizer dealloc](FudPersonalizer * self, SEL a2)",
+    "pseudocode": "void __cdecl -[FudPersonalizer dealloc](FudPersonalizer *self, SEL a2)\n{\n  dispatch_object_s *personalizationQueue; // x0\n  __CFString *serverURL; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  personalizationQueue = (dispatch_object_s *)self->_personalizationQueue;\n  if ( personalizationQueue )\n    dispatch_release(personalizationQueue);\n  -[FudPersonalizer freePersonalizationData](self, \"freePersonalizationData\");\n  serverURL = self->_serverURL;\n  if ( serverURL )\n  {\n    CFRelease(serverURL);\n    self->_serverURL = 0LL;\n  }\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___FudPersonalizer;\n  -[FudPersonalizer dealloc](&v5, \"dealloc\");\n}"
+}

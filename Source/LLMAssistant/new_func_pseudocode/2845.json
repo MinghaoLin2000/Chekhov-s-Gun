@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsViewController save]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceOptionsViewController save](DeviceOptionsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceOptionsViewController save](DeviceOptionsViewController *self, SEL a2)\n{\n  AMPDeviceSyncPrefs *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  -[DeviceOptionsViewController saveToDeviceSyncPrefs:](self, \"saveToDeviceSyncPrefs:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

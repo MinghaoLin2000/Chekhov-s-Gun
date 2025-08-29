@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo deviceMutex]",
+    "function_argument_number": 2,
+    "function_signature": "-[restoreInfo deviceMutex](restoreInfo * self, SEL a2)",
+    "pseudocode": "OS_dispatch_semaphore *__cdecl -[restoreInfo deviceMutex](restoreInfo *self, SEL a2)\n{\n  return (OS_dispatch_semaphore *)objc_getProperty(self, a2, 32LL, 1);\n}"
+}

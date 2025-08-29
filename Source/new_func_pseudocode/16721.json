@@ -1,0 +1,6 @@
+{
+    "function_name": "_FudLog",
+    "function_argument_number": 0,
+    "function_signature": "_FudLog()",
+    "pseudocode": "__int64 FudLog()\n{\n  return _FudLog();\n}"
+}

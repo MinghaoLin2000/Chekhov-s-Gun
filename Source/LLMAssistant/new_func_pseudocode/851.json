@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController setPlaylistImage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsViewController setPlaylistImage:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController setPlaylistImage:](DeviceSettingsViewController *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_playlistImage, a3);\n}"
+}

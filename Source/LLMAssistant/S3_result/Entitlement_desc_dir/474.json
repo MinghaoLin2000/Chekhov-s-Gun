@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.iokit-user-client-class",
+  "capability": "Allows the application to open connections to specific IOKit User Client classes, enabling direct communication with kernel-space IOKit drivers and hardware. This grants the ability to interact with low-level system services and hardware components managed by IOKit.",
+  "reasoning": "The entitlement name contains 'iokit' and 'user-client-class'. IOKit is Apple's framework for interacting with hardware and kernel drivers. 'User Client' is the standard mechanism for user-space applications to communicate with kernel-space IOKit drivers. The 'security' prefix indicates this is a controlled, sensitive capability. Therefore, it grants permission to establish these low-level communication channels.",
+  "similar_entitlements": [
+    "com.apple.security.sysctl",
+    "com.apple.security.iokit.usb",
+    "com.apple.security.iokit.hid"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'System & Kernel Level Control' (Type 4). IOKit User Clients provide a direct interface to kernel-space drivers. Abusing or misusing this access can lead to kernel panics, privilege escalation (LPE), or arbitrary code execution within the kernel, thereby affecting the behavior and integrity of the entire system. While it doesn't directly load KEXTs, it enables the user-space interaction that is often leveraged in kernel exploits.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement name is very descriptive of its function within the macOS kernel and security architecture. IOKit User Clients are a well-known mechanism for low-level system interaction. The primary sensitivity lies in the ability to interact directly with kernel drivers, which falls squarely under 'System & Kernel Level Control'. The only potential ambiguity is whether the entitlement value specifies a list of allowed classes or if its mere presence grants broader access, but the fundamental capability remains the same: privileged access to IOKit."
+}

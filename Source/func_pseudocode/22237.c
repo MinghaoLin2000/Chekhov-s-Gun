@@ -1,0 +1,5 @@
+__QLGlobalQuickLookPreferencesBooleanValueForKey
+__int64 _QLGlobalQuickLookPreferencesBooleanValueForKey()
+{
+  return __QLGlobalQuickLookPreferencesBooleanValueForKey();
+}

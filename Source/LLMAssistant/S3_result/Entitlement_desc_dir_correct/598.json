@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.private.security.storage.universalaccess",
+  "capability": "Grants highly privileged, universal access to all persistent storage on the system. This includes the ability to read, write, and delete files and data across all user accounts, system partitions, and potentially secure volumes, bypassing standard file system permissions, sandboxing, and macOS security mechanisms (including TCC) that normally restrict access to user data and system files.",
+  "reasoning": "The 'private' prefix indicates it's an internal Apple entitlement, suggesting high privilege. 'Security.storage' points to security mechanisms related to data persistence. The key term 'universalaccess' in this context strongly implies the ability to bypass normal access controls and gain unrestricted access to all storage, similar to how 'files.all' grants broad file access, but likely at a deeper, more pervasive level, potentially extending beyond what standard file entitlements cover (e.g., encrypted volumes, secure enclave data, or system-critical hidden partitions).",
+  "similar_entitlements": [
+    "com.apple.security.files.all"
+  ],
+  "sensitive_type": [
+    1,
+    4,
+    5
+  ],
+  "sensitive_reasoning": "1. File and File System Operations: 'Universal access' to 'storage' directly implies the ability to perform read, write, and delete operations on any file or data on the system, including those belonging to other users or critical system files. This inherently includes modifying permissions or ownership.\n4. System & Kernel Level Control: The ability to access and modify any part of the system's persistent storage provides a foundational level of control over the entire system's state and configuration. While not direct kernel interaction, it allows for tampering with system-level settings, libraries, and potentially even boot processes, which can lead to complete system compromise.\n5. Access Transparency Consent and Control (TCC) related functions: 'Universal access' to 'storage' would inherently bypass TCC protections for all file-based privacy domains (e.g., Photos, Downloads, Desktop, Documents, Contacts backups, etc.), as these resources are ultimately stored on disk and this entitlement grants unrestricted access to that underlying storage.",
+  "self_reflection": "I am highly confident in this assessment. The combination of 'private', 'security', 'storage', and especially 'universalaccess' leaves little ambiguity about the broad and powerful nature of this entitlement. Its implications for bypassing access controls are clear, directly linking it to file system operations, system-level control through data manipulation, and TCC bypasses. The only potential unknown is the exact scope of 'storage' (e.g., does it include secure enclave direct access or just file system level data), but even with that ambiguity, the overall capability remains exceptionally sensitive."
+}

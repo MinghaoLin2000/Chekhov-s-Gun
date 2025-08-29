@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveMemoryDataRepresentation inputStreamWithOffset:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUZipArchiveMemoryDataRepresentation inputStreamWithOffset:length:](SFUZipArchiveMemoryDataRepresentation * self, SEL a2, signed __int64 a3, signed __int64 a4)",
+    "pseudocode": "// attributes: thunk\nid __cdecl -[SFUZipArchiveMemoryDataRepresentation inputStreamWithOffset:length:](\n        SFUZipArchiveMemoryDataRepresentation *self,\n        SEL a2,\n        signed __int64 a3,\n        signed __int64 a4)\n{\n  return -[SFUZipArchiveMemoryDataRepresentation bufferedInputStreamWithOffset:length:](\n           self,\n           \"bufferedInputStreamWithOffset:length:\",\n           a3,\n           a4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateWithSubstring",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringCreateWithSubstring(CFAllocatorRef alloc, CFStringRef str, CFRange range)",
+    "pseudocode": "CFStringRef __cdecl CFStringCreateWithSubstring(CFAllocatorRef alloc, CFStringRef str, CFRange range)\n{\n  return _CFStringCreateWithSubstring(alloc, str, range);\n}"
+}

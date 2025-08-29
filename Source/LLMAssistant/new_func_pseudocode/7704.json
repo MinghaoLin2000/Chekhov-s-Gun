@@ -1,0 +1,6 @@
+{
+    "function_name": "$s16CGRegionIteratorCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s16CGRegionIteratorCMa()",
+    "pseudocode": "__int64 _s16CGRegionIteratorCMa()\n{\n  return objc_opt_self(&OBJC_CLASS____TtCE16EyeCandyGraphicsaSo11CGRegionRefP33_E25F4199FE41BDF67B45AA15EB701DE616CGRegionIterator);\n}"
+}

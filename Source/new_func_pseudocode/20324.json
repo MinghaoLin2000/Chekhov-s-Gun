@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z13PKCancelAlertP8NSString",
+    "function_argument_number": 1,
+    "function_signature": "__Z13PKCancelAlertP8NSString(NSString * a1)",
+    "pseudocode": "__int64 __fastcall PKCancelAlert(NSString *a1)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  pthread_mutex_lock(&stru_1000C3D10);\n  if ( qword_1000C3F38 )\n  {\n    CFUserNotificationCancel((CFUserNotificationRef)qword_1000C3F38);\n    qword_1000C3F38 = 0LL;\n    dword_1000C3F40 = 0;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return pthread_mutex_unlock(&stru_1000C3D10);\n}"
+}

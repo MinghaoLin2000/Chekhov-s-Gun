@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringGetCharactersPtr",
+    "function_argument_number": 1,
+    "function_signature": "_CFStringGetCharactersPtr(CFStringRef theString)",
+    "pseudocode": "const UniChar *__cdecl CFStringGetCharactersPtr(CFStringRef theString)\n{\n  return _CFStringGetCharactersPtr(theString);\n}"
+}

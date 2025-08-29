@@ -1,0 +1,17 @@
+Service Path:
+/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ColorPickerImageLoader.xpc/Contents/MacOS/ColorPickerImageLoader
+
+Service Exported Protocols:
+@protocol ColorPickerImageLoaderProtocol
+- (void)loadImagesWithReply:(void (^)(NSDictionary *))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] ~/Library/Colors

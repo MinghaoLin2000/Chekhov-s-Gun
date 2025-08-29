@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.wifi.events",
+  "capability": "Allows an application to subscribe to and receive system-level notifications and data related to Wi-Fi network activity and status changes. This may include events such as connection and disconnection from Wi-Fi networks (SSID, BSSID), changes in Wi-Fi signal strength, availability of nearby Wi-Fi networks (including SSIDs and BSSIDs), and changes in the Wi-Fi interface state. This capability primarily enables passive monitoring of the Wi-Fi environment.",
+  "reasoning": "The entitlement name 'com.apple.wifi.events' clearly indicates a focus on Wi-Fi related 'events' or notifications, implying an ability to observe changes or occurrences within the Wi-Fi subsystem rather than controlling or configuring it. This aligns with typical system event subscription patterns, providing an app with real-time updates on the Wi-Fi environment.",
+  "similar_entitlements": [
+    "com.apple.developer.networking.HotspotConfiguration"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "Access to Wi-Fi events, particularly those detailing connected networks (SSID, BSSID) or available networks (BSSIDs of nearby access points), can be directly used to infer a user's precise location. This information is a fundamental component of Wi-Fi-based location services. Granting an app access to these events without explicit user consent would bypass the Transparency Consent and Control (TCC) mechanism for location services ('Location: Get GPS or WiFi location information'). Therefore, it falls under TCC-related functions due to its privacy implications regarding user location.",
+  "self_reflection": "Confidence in the inferred capability is high, as the entitlement name is quite descriptive. The classification under sensitive type 5 (TCC related) is also strong, given that Wi-Fi data is a primary source for location tracking and is explicitly mentioned in TCC's location category. The exact granularity of the 'events' (e.g., whether it provides raw BSSIDs for all visible networks or just high-level connection status) could slightly alter the degree of sensitivity, but any access to Wi-Fi network identifiers (SSID/BSSID) carries location privacy implications. It does not directly fit the examples for 'Privileged Networking' (Type 2) which are more about active network manipulation, but the information leakage aspect is significant."
+}

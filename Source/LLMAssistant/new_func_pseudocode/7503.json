@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV10addWindows_10connectionySayAA9CGSWindowVG_AA13CGSConnectionVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV10addWindows_10connectionySayAA9CGSWindowVG_AA13CGSConnectionVtF(Swift::OpaquePointer _, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall CGSSpace.addWindows(_:connection:)(\n        Swift::OpaquePointer _,\n        EyeCandyGraphics::CGSConnection connection)\n{\n  __int64 v2; // x19\n  __int64 v3; // x0\n  __int64 inited; // x22\n  __int64 v5; // x21\n  __int64 v6; // x0\n  void *v7; // x20\n  void *v8; // x21\n  _BYTE v9[40]; // [xsp+8h] [xbp-48h] BYREF\n\n  if ( *((_QWORD *)_._rawValue + 2) )\n  {\n    v2 = *(_QWORD *)&connection.cid;\n    v3 = sub_100002BF4(&unk_100029A70);\n    inited = swift_initStackObject(v3, v9);\n    sub_100012334((__n128)xmmword_10001FC20);\n    v5 = sub_100002BF4(&unk_100029BE0);\n    v6 = sub_100011A98(v5);\n    v7 = (void *)Collection<>.cfarray.getter(v5, v6);\n    v8 = (void *)sub_10000A704(inited);\n    CGSAddWindowsToSpaces(v2, v7, v8);\n    objc_release(v7);\n    objc_release(v8);\n    swift_setDeallocating(inited);\n  }\n}"
+}

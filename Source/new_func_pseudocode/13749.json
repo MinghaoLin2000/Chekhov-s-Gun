@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc",
+    "function_argument_number": 3,
+    "function_signature": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc(std::string * this, std::string::size_type __pos, const std::string::value_type * __s)",
+    "pseudocode": "std::string *__cdecl std::string::insert(\n        std::string *this,\n        std::string::size_type __pos,\n        const std::string::value_type *__s)\n{\n  return std::string::insert(this, __pos, __s);\n}"
+}

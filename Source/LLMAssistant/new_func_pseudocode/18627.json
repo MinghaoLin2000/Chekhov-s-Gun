@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwCP(void ** a1, void ** a2)",
+    "pseudocode": "void **__fastcall initializeBufferWithCopyOfBuffer for NavigationController.NavigationMode(void **a1, void **a2)\n{\n  void *v3; // x0\n  id v4; // x0\n\n  v3 = *a2;\n  *a1 = *a2;\n  v4 = objc_retain(v3);\n  return a1;\n}"
+}

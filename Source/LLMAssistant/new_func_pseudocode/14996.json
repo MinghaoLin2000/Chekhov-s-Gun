@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _refreshAfterDarwinNotification:coalescingInterval:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv _refreshAfterDarwinNotification:coalescingInterval:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv _refreshAfterDarwinNotification:coalescingInterval:](\n        ATXHeuristicJSEnv *self,\n        SEL a2,\n        id a3,\n        double a4)\n{\n  id v6; // x21\n  void *v7; // x20\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___ATXInformationHeuristicRefreshNotitifcationTrigger),\n         \"initWithNotification:type:coalescingInterval:\",\n         v6,\n         1LL,\n         a4);\n  objc_release(v6);\n  -[NSMutableSet addObject:](self->_currentRefreshTriggerBuffer, \"addObject:\", v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

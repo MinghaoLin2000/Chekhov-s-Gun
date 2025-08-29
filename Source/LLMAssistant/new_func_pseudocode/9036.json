@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_projectBox",
+    "function_argument_number": 0,
+    "function_signature": "_swift_projectBox()",
+    "pseudocode": "__int64 swift_projectBox()\n{\n  return _swift_projectBox();\n}"
+}

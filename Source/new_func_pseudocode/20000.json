@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalSocketProxy withPort:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LocalSocketProxy withPort:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LocalSocketProxy withPort:](LocalSocketProxy *self, SEL a2, id a3)\n{\n  id v4; // x20\n  dispatch_queue_s *queue; // x19\n  id v6; // x20\n  _QWORD block[4]; // [xsp+8h] [xbp-58h] BYREF\n  id v8; // [xsp+28h] [xbp-38h]\n  id v9; // [xsp+30h] [xbp-30h] BYREF\n  id location; // [xsp+38h] [xbp-28h] BYREF\n\n  v4 = objc_retain(a3);\n  objc_initWeak(&location, self);\n  queue = (dispatch_queue_s *)self->_queue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100028C34;\n  block[3] = &unk_10009E088;\n  objc_copyWeak(&v9, &location);\n  v8 = v4;\n  v6 = objc_retain(v4);\n  dispatch_async(queue, block);\n  objc_release(v8);\n  objc_release(v6);\n  objc_destroyWeak(&v9);\n  objc_destroyWeak(&location);\n}"
+}

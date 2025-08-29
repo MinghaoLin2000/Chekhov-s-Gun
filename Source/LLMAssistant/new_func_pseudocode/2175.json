@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TrackListTableView performDragOperation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TrackListTableView performDragOperation:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TrackListTableView performDragOperation:](TrackListTableView *self, SEL a2, id a3)\n{\n  id v4; // x20\n  DeviceDragHandler *v5; // x19\n  unsigned __int8 v6; // w21\n\n  v4 = objc_retain(a3);\n  -[TrackListTableView setDragHighlighted:](self, \"setDragHighlighted:\", 0LL);\n  v5 = objc_retainAutoreleasedReturnValue(-[TrackListTableView deviceDragHandler](self, \"deviceDragHandler\"));\n  v6 = -[DeviceDragHandler performDragOperation:](v5, \"performDragOperation:\", v4);\n  objc_release(v4);\n  objc_release(v5);\n  return v6;\n}"
+}

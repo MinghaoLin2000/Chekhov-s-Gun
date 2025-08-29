@@ -1,0 +1,4 @@
+@protocol IsExtensionEnabledProtocol
+- (void)askUserForPermissionAndEnableFinderExtensionsWithReply:(void (^)(_Bool))arg1;
+- (void)isExtensionEnabledWithReply:(void (^)(_Bool))arg1;
+@end

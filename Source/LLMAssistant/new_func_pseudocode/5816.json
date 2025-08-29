@@ -1,0 +1,6 @@
+{
+    "function_name": "__CFLocaleCopyAsIfCurrentWithOverrides",
+    "function_argument_number": 0,
+    "function_signature": "__CFLocaleCopyAsIfCurrentWithOverrides()",
+    "pseudocode": "__int64 _CFLocaleCopyAsIfCurrentWithOverrides()\n{\n  return __CFLocaleCopyAsIfCurrentWithOverrides();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__LSSetApplicationInformationItem",
+    "function_argument_number": 0,
+    "function_signature": "__LSSetApplicationInformationItem()",
+    "pseudocode": "__int64 _LSSetApplicationInformationItem()\n{\n  return __LSSetApplicationInformationItem();\n}"
+}

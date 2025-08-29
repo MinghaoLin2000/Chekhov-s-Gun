@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setDiscCount:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setDiscCount:](DeviceSettingsNode * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setDiscCount:](DeviceSettingsNode *self, SEL a2, unsigned __int64 a3)\n{\n  self->_discCount = a3;\n}"
+}

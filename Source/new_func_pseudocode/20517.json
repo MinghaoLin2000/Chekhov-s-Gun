@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BrowseService stopBrowsing]",
+    "function_argument_number": 2,
+    "function_signature": "-[BrowseService stopBrowsing](BrowseService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[BrowseService stopBrowsing](BrowseService *self, SEL a2)\n{\n  BrowseService *v2; // x0\n  dispatch_queue_s *queue; // x19\n  BrowseService *v4; // x20\n  _QWORD v5[5]; // [xsp+0h] [xbp-40h] BYREF\n  id v6; // [xsp+28h] [xbp-18h]\n\n  v2 = objc_retain(self);\n  queue = (dispatch_queue_s *)v2->_queue;\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_100063198;\n  v5[3] = &unk_100091520;\n  v5[4] = v2;\n  v6 = v2;\n  v4 = objc_retain(v2);\n  dispatch_async(queue, v5);\n  objc_release(v6);\n  objc_release(v4);\n}"
+}

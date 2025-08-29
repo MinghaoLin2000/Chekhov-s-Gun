@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKNANSubscriber subscriberStarted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PKNANSubscriber subscriberStarted:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PKNANSubscriber subscriberStarted:](PKNANSubscriber *self, SEL a2, id a3)\n{\n  id v5; // x19\n  NSString *v6; // x20\n  id v7; // x20\n  id activateHandler; // x0\n  dispatch_queue_s *v9; // x21\n  _QWORD block[4]; // [xsp+18h] [xbp-48h] BYREF\n  id v11; // [xsp+38h] [xbp-28h]\n\n  v5 = objc_retain(a3);\n  v6 = objc_retainAutoreleasedReturnValue(NSStringFromSelector(a2));\n  NSLog(&CFSTR(\"%@: %@ %@\").isa, self, v6, v5);\n  objc_release(v6);\n  v7 = objc_retainBlock(self->_activateHandler);\n  activateHandler = self->_activateHandler;\n  self->_activateHandler = 0LL;\n  objc_release(activateHandler);\n  if ( v7 )\n  {\n    v9 = (dispatch_queue_s *)objc_retainAutoreleasedReturnValue(-[PKNANSubscriber queue](self, \"queue\"));\n    block[0] = _NSConcreteStackBlock;\n    block[1] = 3254779904LL;\n    block[2] = sub_100031468;\n    block[3] = &unk_1000915B0;\n    v11 = objc_retain(v7);\n    dispatch_async(v9, block);\n    objc_release(v9);\n    objc_release(v11);\n  }\n  objc_release(v7);\n  objc_release(v5);\n}"
+}

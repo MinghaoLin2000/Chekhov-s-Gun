@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeSendRight dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewBridgeSendRight dealloc](RemoteViewBridgeSendRight * self, SEL a2)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeSendRight dealloc](RemoteViewBridgeSendRight *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  -[RemoteViewBridgeSendRight invalidate](self, \"invalidate\");\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___RemoteViewBridgeSendRight;\n  -[RemoteViewBridgeSendRight dealloc](&v3, \"dealloc\");\n}"
+}

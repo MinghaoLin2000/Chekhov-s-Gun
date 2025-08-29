@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentViewController identifyingObjectToNodeMap]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTabContentViewController identifyingObjectToNodeMap](DeviceSettingsTabContentViewController * self, SEL a2)",
+    "pseudocode": "NSMutableDictionary *__cdecl -[DeviceSettingsTabContentViewController identifyingObjectToNodeMap](\n        DeviceSettingsTabContentViewController *self,\n        SEL a2)\n{\n  return self->_identifyingObjectToNodeMap;\n}"
+}

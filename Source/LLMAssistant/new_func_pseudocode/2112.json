@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject setFileSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPHMediaObject setFileSize:](AMPPHMediaObject * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject setFileSize:](AMPPHMediaObject *self, SEL a2, unsigned __int64 a3)\n{\n  self->_fileSize = a3;\n}"
+}

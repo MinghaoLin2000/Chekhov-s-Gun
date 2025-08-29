@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSValue valueWithCGAffineTransform:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSValue valueWithCGAffineTransform:](id a1, SEL a2, CGAffineTransform * a3)",
+    "pseudocode": "NSValue *__cdecl +[NSValue valueWithCGAffineTransform:](id a1, SEL a2, CGAffineTransform *a3)\n{\n  return (NSValue *)objc_msgSend(a1, \"valueWithBytes:objCType:\", a3, \"{CGAffineTransform=dddddd}\");\n}"
+}

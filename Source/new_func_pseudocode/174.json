@@ -1,0 +1,6 @@
+{
+    "function_name": "_AnalyticsSendEventLazy",
+    "function_argument_number": 0,
+    "function_signature": "_AnalyticsSendEventLazy()",
+    "pseudocode": "__int64 AnalyticsSendEventLazy()\n{\n  return _AnalyticsSendEventLazy();\n}"
+}

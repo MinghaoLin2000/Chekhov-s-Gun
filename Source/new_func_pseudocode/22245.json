@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLXPCCopyStringForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLXPCCopyStringForKey()",
+    "pseudocode": "__int64 _QLXPCCopyStringForKey()\n{\n  return __QLXPCCopyStringForKey();\n}"
+}

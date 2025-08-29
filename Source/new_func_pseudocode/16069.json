@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointProvideAssetPayloadWindow",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformEndpointProvideAssetPayloadWindow(int a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointProvideAssetPayloadWindow(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  __int64 result; // x0\n  void *v9; // x1\n\n  result = 30LL;\n  if ( a3 && a4 )\n  {\n    v9 = *(void **)(a2 + 640);\n    if ( v9 )\n    {\n      if ( !*(_BYTE *)(a2 + 652) )\n        UARPLayer2ReturnBuffer(a1, v9);\n    }\n    result = 0LL;\n    *(_QWORD *)(a2 + 640) = a3;\n    *(_DWORD *)(a2 + 648) = a4;\n    *(_BYTE *)(a2 + 652) = 1;\n  }\n  return result;\n}"
+}

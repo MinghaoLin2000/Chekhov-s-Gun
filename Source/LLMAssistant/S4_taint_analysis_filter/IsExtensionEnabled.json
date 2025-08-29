@@ -1,0 +1,9 @@
+{
+  "_objc_msgSend$containingUrl": 4294978496,
+  "_objc_msgSend$getResourceValue:forKey:error:": 4294978784,
+  "__Z49AnyEnabledFileProviderDomainsInSameAppAsExtensionP11NSExtension": 4294973032,
+  "-[IsExtensionEnabled askUserForPermissionAndEnableFinderExtensionsWithReply:]": 4294975748,
+  "_objc_msgSend$fileProviderDomainsByIDToEnable": 4294978752,
+  "_objc_msgSend$iconForFile:": 4294978848,
+  "__Z42AnyFileProviderDomainsInSameAppAsExtensionP11NSExtensionP12NSDictionaryIP8NSStringP16FPProviderDomainEb": 4294972348
+}

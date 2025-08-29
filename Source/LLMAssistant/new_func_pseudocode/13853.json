@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_bind_zeroblob",
+    "function_argument_number": 3,
+    "function_signature": "_sqlite3_bind_zeroblob(sqlite3_stmt * a1, int a2, int n)",
+    "pseudocode": "int __cdecl sqlite3_bind_zeroblob(sqlite3_stmt *a1, int a2, int n)\n{\n  return _sqlite3_bind_zeroblob(a1, a2, n);\n}"
+}

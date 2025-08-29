@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIDismissalString",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIDismissalString()",
+    "pseudocode": "__int64 SiriUIDismissalString()\n{\n  return _SiriUIDismissalString();\n}"
+}

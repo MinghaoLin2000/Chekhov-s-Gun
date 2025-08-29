@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZSt9terminatev",
+    "function_argument_number": 0,
+    "function_signature": "__ZSt9terminatev()",
+    "pseudocode": "void __noreturn std::terminate(void)\n{\n  std::terminate();\n}"
+}

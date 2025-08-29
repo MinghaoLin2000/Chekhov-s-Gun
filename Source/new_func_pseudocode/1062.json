@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarViewController setCapacity:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarViewController setCapacity:](AMPCapacityBarViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarViewController setCapacity:](\n        AMPCapacityBarViewController *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  AMPCapacityBarView *v5; // x21\n  AMPCapacityBarView *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  self->_capacity = a3;\n  v5 = objc_retainAutoreleasedReturnValue(-[AMPCapacityBarViewController capacityBar](self, \"capacityBar\"));\n  -[AMPCapacityBarView setCapacity:](v5, \"setCapacity:\", a3);\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue(-[AMPCapacityBarViewController overlayBar](self, \"overlayBar\"));\n  -[AMPCapacityBarView setCapacity:](v6, \"setCapacity:\", a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

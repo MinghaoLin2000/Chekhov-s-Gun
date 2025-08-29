@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2VendorSpecificRecvMessage",
+    "function_argument_number": 2,
+    "function_signature": "_UARPLayer2VendorSpecificRecvMessage(_QWORD * a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall UARPLayer2VendorSpecificRecvMessage(_QWORD *a1, __int64 a2)\n{\n  __int64 (__fastcall *v2)(_QWORD, _QWORD); // x6\n  __int64 (*v4)(void); // x6\n\n  v2 = (__int64 (__fastcall *)(_QWORD, _QWORD))a1[60];\n  if ( v2 )\n    return v2(a1[68], *(_QWORD *)(a2 + 40));\n  v4 = (__int64 (*)(void))a1[74];\n  if ( v4 )\n    return v4();\n  else\n    return 14LL;\n}"
+}

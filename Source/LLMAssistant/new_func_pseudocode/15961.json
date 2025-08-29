@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpProcessingStatusToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpProcessingStatusToString(int a1)",
+    "pseudocode": "const char *__fastcall uarpProcessingStatusToString(int a1)\n{\n  if ( (unsigned int)(a1 - 1) > 4 )\n    return \"<unknown>\";\n  else\n    return (&off_100024750)[(__int16)(a1 - 1)];\n}"
+}

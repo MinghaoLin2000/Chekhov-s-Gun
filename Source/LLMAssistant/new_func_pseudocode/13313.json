@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList stringValue]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSURangeList stringValue](TSURangeList * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSURangeList stringValue](TSURangeList *self, SEL a2)\n{\n  return +[TSURangeList stringValueForRangeVector:](\n           &OBJC_CLASS___TSURangeList,\n           \"stringValueForRangeVector:\",\n           &self->mRangeList);\n}"
+}

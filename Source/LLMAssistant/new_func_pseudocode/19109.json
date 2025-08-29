@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIWindowWidth",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIWindowWidth()",
+    "pseudocode": "__int64 SiriUIWindowWidth()\n{\n  return _SiriUIWindowWidth();\n}"
+}

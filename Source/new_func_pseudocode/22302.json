@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlXPathNewContext",
+    "function_argument_number": 1,
+    "function_signature": "_xmlXPathNewContext(xmlDocPtr doc)",
+    "pseudocode": "xmlXPathContextPtr __cdecl xmlXPathNewContext(xmlDocPtr doc)\n{\n  return _xmlXPathNewContext(doc);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_column_text",
+    "function_argument_number": 2,
+    "function_signature": "_sqlite3_column_text(sqlite3_stmt * a1, int iCol)",
+    "pseudocode": "const unsigned __int8 *__cdecl sqlite3_column_text(sqlite3_stmt *a1, int iCol)\n{\n  return _sqlite3_column_text(a1, iCol);\n}"
+}

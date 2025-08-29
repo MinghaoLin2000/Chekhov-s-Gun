@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_signpost_id_generate",
+    "function_argument_number": 1,
+    "function_signature": "_os_signpost_id_generate(os_log_t log)",
+    "pseudocode": "os_signpost_id_t __cdecl os_signpost_id_generate(os_log_t log)\n{\n  return _os_signpost_id_generate(log);\n}"
+}

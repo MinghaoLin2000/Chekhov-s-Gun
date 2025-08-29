@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater dfuGetStateCmd:]",
+    "function_argument_number": 3,
+    "function_signature": "-[USBDFUUpdater dfuGetStateCmd:](USBDFUUpdater * self, SEL a2, char * a3)",
+    "pseudocode": "int __cdecl -[USBDFUUpdater dfuGetStateCmd:](USBDFUUpdater *self, SEL a2, char *a3)\n{\n  __int16 v4; // [xsp+0h] [xbp-20h] BYREF\n  int v5; // [xsp+2h] [xbp-1Eh]\n  __int16 v6; // [xsp+6h] [xbp-1Ah]\n  char *v7; // [xsp+8h] [xbp-18h]\n  int v8; // [xsp+10h] [xbp-10h]\n  __int64 v9; // [xsp+14h] [xbp-Ch]\n  int v10; // [xsp+1Ch] [xbp-4h]\n\n  if ( !self->_dev )\n    return -536870195;\n  *a3 = 11;\n  v8 = 0;\n  v10 = 0;\n  v4 = 1441;\n  v5 = 0;\n  v6 = 1;\n  v7 = a3;\n  v9 = 0x3E800001388LL;\n  return ((__int64 (__fastcall *)(IOUSBDeviceStruct942 **, __int16 *))(*self->_dev)->DeviceRequestTO)(self->_dev, &v4);\n}"
+}

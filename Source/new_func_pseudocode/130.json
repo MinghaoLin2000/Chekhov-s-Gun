@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC9SPIHelper9SPIHelper existingShareForFile:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC9SPIHelper9SPIHelper existingShareForFile:withReply:](_TtC9SPIHelper9SPIHelper * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[SPIHelper existingShareForFile:withReply:](_TtC9SPIHelper9SPIHelper *self, SEL a2, id a3, id a4)\n{\n  __int64 v7; // x22\n  __int64 v8; // x24\n  __int64 v9; // x8\n  char *v10; // x23\n  void *v11; // x19\n  _TtC9SPIHelper9SPIHelper *v12; // x20\n  __int64 v13; // [xsp+0h] [xbp-30h] BYREF\n\n  v7 = sub_1000A44B0(0LL);\n  v8 = *(_QWORD *)(v7 - 8);\n  __chkstk_darwin(v7);\n  v10 = (char *)&v13 - ((v9 + 15) & 0xFFFFFFFFFFFFFFF0LL);\n  v11 = _Block_copy(a4);\n  sub_1000A4470(a3);\n  _Block_copy(v11);\n  v12 = objc_retain(self);\n  sub_10009AC20(v10, v11);\n  _Block_release(v11);\n  _Block_release(v11);\n  objc_release(v12);\n  (*(void (__fastcall **)(char *, __int64))(v8 + 8))(v10, v7);\n}"
+}

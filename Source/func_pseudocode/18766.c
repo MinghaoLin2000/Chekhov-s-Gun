@@ -1,0 +1,5 @@
+_AVControlCenterVideoEffectsModuleRemovedBackgroundReplacementURL
+__int64 AVControlCenterVideoEffectsModuleRemovedBackgroundReplacementURL()
+{
+  return _AVControlCenterVideoEffectsModuleRemovedBackgroundReplacementURL();
+}

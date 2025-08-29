@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection makeLSRAssetsForLocale:taskName:clientID:modelOverrideURL:isSpelling:reply:]",
+    "function_argument_number": 8,
+    "function_signature": "-[LSRConnection makeLSRAssetsForLocale:taskName:clientID:modelOverrideURL:isSpelling:reply:](LSRConnection * self, SEL a2, id a3, id a4, id a5, id a6, bool a7, id a8)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[LSRConnection makeLSRAssetsForLocale:taskName:clientID:modelOverrideURL:isSpelling:reply:](\n        LSRConnection *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5,\n        id a6,\n        bool a7,\n        id a8)\n{\n  -[EARInterface makeLSRAssetsForLocale:taskName:clientID:modelOverrideURL:isSpelling:reply:](\n    self->_earInterface,\n    \"makeLSRAssetsForLocale:taskName:clientID:modelOverrideURL:isSpelling:reply:\",\n    a3,\n    a4,\n    a5,\n    a6,\n    a7,\n    a8);\n}"
+}

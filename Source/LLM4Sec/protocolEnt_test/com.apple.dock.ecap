@@ -1,0 +1,108 @@
+Service Path:
+/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.ecap.xpc/Contents/MacOS/com.apple.dock.ecap
+
+Service Exported Protocols:
+@protocol NSApplicationDelegate <NSObject>
+- (void)applicationProtectedDataDidBecomeAvailable:(NSNotification *)arg1;
+- (void)applicationProtectedDataWillBecomeUnavailable:(NSNotification *)arg1;
+- (void)applicationDidChangeOcclusionState:(NSNotification *)arg1;
+- (void)applicationDidChangeScreenParameters:(NSNotification *)arg1;
+- (void)applicationWillTerminate:(NSNotification *)arg1;
+- (void)applicationDidUpdate:(NSNotification *)arg1;
+- (void)applicationWillUpdate:(NSNotification *)arg1;
+- (void)applicationDidResignActive:(NSNotification *)arg1;
+- (void)applicationWillResignActive:(NSNotification *)arg1;
+- (void)applicationDidBecomeActive:(NSNotification *)arg1;
+- (void)applicationWillBecomeActive:(NSNotification *)arg1;
+- (void)applicationDidUnhide:(NSNotification *)arg1;
+- (void)applicationWillUnhide:(NSNotification *)arg1;
+- (void)applicationDidHide:(NSNotification *)arg1;
+- (void)applicationWillHide:(NSNotification *)arg1;
+- (void)applicationDidFinishLaunching:(NSNotification *)arg1;
+- (void)applicationWillFinishLaunching:(NSNotification *)arg1;
+- (_Bool)applicationShouldAutomaticallyLocalizeKeyEquivalents:(NSApplication *)arg1;
+- (_Bool)application:(NSApplication *)arg1 delegateHandlesKey:(NSString *)arg2;
+- (void)application:(NSApplication *)arg1 userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *)arg2;
+- (void)application:(NSApplication *)arg1 didUpdateUserActivity:(NSUserActivity *)arg2;
+- (void)application:(NSApplication *)arg1 didFailToContinueUserActivityWithType:(NSString *)arg2 error:(NSError *)arg3;
+- (_Bool)application:(NSApplication *)arg1 continueUserActivity:(NSUserActivity *)arg2 restorationHandler:(void (^)(NSArray *))arg3;
+- (_Bool)application:(NSApplication *)arg1 willContinueUserActivityWithType:(NSString *)arg2;
+- (void)application:(NSApplication *)arg1 didDecodeRestorableState:(NSCoder *)arg2;
+- (void)application:(NSApplication *)arg1 willEncodeRestorableState:(NSCoder *)arg2;
+- (id)application:(NSApplication *)arg1 handlerForIntent:(INIntent *)arg2;
+- (_Bool)applicationSupportsSecureRestorableState:(NSApplication *)arg1;
+- (void)application:(NSApplication *)arg1 didReceiveRemoteNotification:(NSDictionary *)arg2;
+- (void)application:(NSApplication *)arg1 didFailToRegisterForRemoteNotificationsWithError:(NSError *)arg2;
+- (void)application:(NSApplication *)arg1 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)arg2;
+- (NSError *)application:(NSApplication *)arg1 willPresentError:(NSError *)arg2;
+- (NSMenu *)applicationDockMenu:(NSApplication *)arg1;
+- (_Bool)applicationShouldHandleReopen:(NSApplication *)arg1 hasVisibleWindows:(_Bool)arg2;
+- (_Bool)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)arg1;
+- (unsigned long long)application:(NSApplication *)arg1 printFiles:(NSArray *)arg2 withSettings:(NSDictionary *)arg3 showPrintPanels:(_Bool)arg4;
+- (_Bool)application:(NSApplication *)arg1 printFile:(NSString *)arg2;
+- (_Bool)application:(id)arg1 openFileWithoutUI:(NSString *)arg2;
+- (_Bool)applicationOpenUntitledFile:(NSApplication *)arg1;
+- (_Bool)applicationShouldOpenUntitledFile:(NSApplication *)arg1;
+- (_Bool)application:(NSApplication *)arg1 openTempFile:(NSString *)arg2;
+- (void)application:(NSApplication *)arg1 openFiles:(NSArray *)arg2;
+- (_Bool)application:(NSApplication *)arg1 openFile:(NSString *)arg2;
+- (void)application:(NSApplication *)arg1 openURLs:(NSArray *)arg2;
+- (unsigned long long)applicationShouldTerminate:(NSApplication *)arg1;
+@end
+@protocol NSWindowDelegate <NSObject>
+- (void)windowDidChangeOcclusionState:(NSNotification *)arg1;
+- (void)windowDidExitVersionBrowser:(NSNotification *)arg1;
+- (void)windowWillExitVersionBrowser:(NSNotification *)arg1;
+- (void)windowDidEnterVersionBrowser:(NSNotification *)arg1;
+- (void)windowWillEnterVersionBrowser:(NSNotification *)arg1;
+- (void)windowDidExitFullScreen:(NSNotification *)arg1;
+- (void)windowWillExitFullScreen:(NSNotification *)arg1;
+- (void)windowDidEnterFullScreen:(NSNotification *)arg1;
+- (void)windowWillEnterFullScreen:(NSNotification *)arg1;
+- (void)windowDidEndLiveResize:(NSNotification *)arg1;
+- (void)windowWillStartLiveResize:(NSNotification *)arg1;
+- (void)windowDidEndSheet:(NSNotification *)arg1;
+- (void)windowWillBeginSheet:(NSNotification *)arg1;
+- (void)windowDidChangeBackingProperties:(NSNotification *)arg1;
+- (void)windowDidChangeScreenProfile:(NSNotification *)arg1;
+- (void)windowDidChangeScreen:(NSNotification *)arg1;
+- (void)windowDidUpdate:(NSNotification *)arg1;
+- (void)windowDidDeminiaturize:(NSNotification *)arg1;
+- (void)windowDidMiniaturize:(NSNotification *)arg1;
+- (void)windowWillMiniaturize:(NSNotification *)arg1;
+- (void)windowWillClose:(NSNotification *)arg1;
+- (void)windowDidResignMain:(NSNotification *)arg1;
+- (void)windowDidBecomeMain:(NSNotification *)arg1;
+- (void)windowDidResignKey:(NSNotification *)arg1;
+- (void)windowDidBecomeKey:(NSNotification *)arg1;
+- (void)windowDidMove:(NSNotification *)arg1;
+- (void)windowWillMove:(NSNotification *)arg1;
+- (void)windowDidExpose:(NSNotification *)arg1;
+- (void)windowDidResize:(NSNotification *)arg1;
+- (NSWindow *)windowForSharingRequestFromWindow:(NSWindow *)arg1;
+- (NSArray *)previewRepresentableActivityItemsForWindow:(NSWindow *)arg1;
+- (void)window:(NSWindow *)arg1 didDecodeRestorableState:(NSCoder *)arg2;
+- (void)window:(NSWindow *)arg1 willEncodeRestorableState:(NSCoder *)arg2;
+- (struct CGSize)window:(NSWindow *)arg1 willResizeForVersionBrowserWithMaxPreferredSize:(struct CGSize)arg2 maxAllowedSize:(struct CGSize)arg3;
+- (void)windowDidFailToExitFullScreen:(NSWindow *)arg1;
+- (void)window:(NSWindow *)arg1 startCustomAnimationToEnterFullScreenOnScreen:(NSScreen *)arg2 withDuration:(double)arg3;
+- (NSArray *)customWindowsToEnterFullScreenForWindow:(NSWindow *)arg1 onScreen:(NSScreen *)arg2;
+- (void)window:(NSWindow *)arg1 startCustomAnimationToExitFullScreenWithDuration:(double)arg2;
+- (NSArray *)customWindowsToExitFullScreenForWindow:(NSWindow *)arg1;
+- (void)windowDidFailToEnterFullScreen:(NSWindow *)arg1;
+- (void)window:(NSWindow *)arg1 startCustomAnimationToEnterFullScreenWithDuration:(double)arg2;
+- (NSArray *)customWindowsToEnterFullScreenForWindow:(NSWindow *)arg1;
+- (unsigned long long)window:(NSWindow *)arg1 willUseFullScreenPresentationOptions:(unsigned long long)arg2;
+- (struct CGSize)window:(NSWindow *)arg1 willUseFullScreenContentSize:(struct CGSize)arg2;
+- (_Bool)window:(NSWindow *)arg1 shouldDragDocumentWithEvent:(NSEvent *)arg2 from:(struct CGPoint)arg3 withPasteboard:(NSPasteboard *)arg4;
+- (_Bool)window:(NSWindow *)arg1 shouldPopUpDocumentPathMenu:(NSMenu *)arg2;
+- (struct CGRect)window:(NSWindow *)arg1 willPositionSheet:(NSWindow *)arg2 usingRect:(struct CGRect)arg3;
+- (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)arg1;
+- (_Bool)windowShouldZoom:(NSWindow *)arg1 toFrame:(struct CGRect)arg2;
+- (struct CGRect)windowWillUseStandardFrame:(NSWindow *)arg1 defaultFrame:(struct CGRect)arg2;
+- (struct CGSize)windowWillResize:(NSWindow *)arg1 toSize:(struct CGSize)arg2;
+- (id)windowWillReturnFieldEditor:(NSWindow *)arg1 toObject:(id)arg2;
+- (_Bool)windowShouldClose:(NSWindow *)arg1;
+@end
+
+Service Entitlements:

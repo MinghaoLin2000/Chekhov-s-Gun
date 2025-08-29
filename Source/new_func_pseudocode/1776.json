@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsIOSViewController clickShowOnWiFiCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceOptionsIOSViewController clickShowOnWiFiCheckBox:](DeviceOptionsIOSViewController * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceOptionsIOSViewController clickShowOnWiFiCheckBox:](\n        DeviceOptionsIOSViewController *self,\n        SEL a2,\n        id a3)\n{\n  -[DeviceViewController postDeviceViewDirtinessChangeNotification](\n    self,\n    \"postDeviceViewDirtinessChangeNotification\",\n    a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_autoreleasePoolPop",
+    "function_argument_number": 1,
+    "function_signature": "_objc_autoreleasePoolPop(void * context)",
+    "pseudocode": "void __cdecl objc_autoreleasePoolPop(void *context)\n{\n  _objc_autoreleasePoolPop(context);\n}"
+}

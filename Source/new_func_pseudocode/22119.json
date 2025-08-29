@@ -1,0 +1,6 @@
+{
+    "function_name": "____ZL12serial_queuev_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "____ZL12serial_queuev_block_invoke(id a1)",
+    "pseudocode": "void __cdecl ___ZL12serial_queuev_block_invoke(id a1)\n{\n  serial_queue(void)::_serial_queue = (__int64)dispatch_queue_create(0LL, 0LL);\n}"
+}

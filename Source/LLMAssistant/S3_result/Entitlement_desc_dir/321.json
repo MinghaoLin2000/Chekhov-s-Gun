@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.security.files.user-selected.read-only",
+  "capability": "Allows an application to obtain read-only access to files explicitly chosen by the user through standard macOS Open or Save dialogs. This typically grants a temporary sandbox extension for the selected file, enabling the app to read its contents.",
+  "reasoning": "The entitlement name clearly indicates its function: 'files' refers to file system operations, 'user-selected' implies user interaction via a file dialog, and 'read-only' specifies the type of access. The provided context description confirms this interpretation: 'A Boolean value that indicates whether the app may have read-only access to files the user has selected using an Open or Save dialog.'",
+  "similar_entitlements": [
+    "com.apple.security.files.bookmarks.app-scope"
+  ],
+  "sensitive_type": [
+    1
+  ],
+  "sensitive_reasoning": "This entitlement directly grants the ability to perform 'read' operations on files, which falls under 'Performing read, write/delete operations on system or other users' files' as described in Sensitive Operation Type 1 (File and File System Operations). While the access is contingent on user selection, the core capability is interacting with the file system to retrieve data.",
+  "self_reflection": "High confidence. The entitlement's name is highly descriptive, and its exact capability is explicitly stated in the provided context. The mapping to sensitive operation type 1 is clear due to its direct involvement with file reading. It does not fall under TCC-related functions (Type 5) as it relies on explicit user consent rather than bypassing it."
+}

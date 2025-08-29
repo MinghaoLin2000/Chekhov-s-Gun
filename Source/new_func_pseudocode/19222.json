@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$handleAction:fromEventSource:atTime:requestInfo:speechRequestOptions:launchOptions:dismissalOptions:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$handleAction:fromEventSource:atTime:requestInfo:speechRequestOptions:launchOptions:dismissalOptions:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_handleAction_fromEventSource_atTime_requestInfo_speechRequestOptions_launchOptions_dismissalOptions_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"handleAction:fromEventSource:atTime:requestInfo:speechRequestOptions:launchOptions:dismissalOptions:\");\n}"
+}

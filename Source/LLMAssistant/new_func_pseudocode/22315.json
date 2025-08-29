@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate _handleSetStringValue:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ECTIHelperDelegate _handleSetStringValue:](int a1, int a2, xpc_object_t xdict)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate _handleSetStringValue:](ECTIHelperDelegate *self, SEL a2, id a3)\n{\n  const char *string; // x0\n  NSTextField *textField; // x20\n  const __CFString *v6; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  string = xpc_dictionary_get_string(a3, \"stringValue\");\n  textField = self->_textField;\n  if ( string )\n    v6 = +[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", string);\n  else\n    v6 = &stru_100008218;\n  -[NSTextField setStringValue:](textField, \"setStringValue:\", v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[ECTIHelperDelegate resizeTextFieldToText](self, \"resizeTextFieldToText\");\n}"
+}

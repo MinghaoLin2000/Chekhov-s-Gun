@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleGetBundleWithIdentifier",
+    "function_argument_number": 1,
+    "function_signature": "_CFBundleGetBundleWithIdentifier(CFStringRef bundleID)",
+    "pseudocode": "CFBundleRef __cdecl CFBundleGetBundleWithIdentifier(CFStringRef bundleID)\n{\n  return _CFBundleGetBundleWithIdentifier(bundleID);\n}"
+}

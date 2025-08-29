@@ -1,0 +1,3 @@
+@protocol DistributionHelperProtocol
+- (void)fileAtPathExistsOnGraft:(NSString *)arg1 reply:(void (^)(_Bool, _Bool, NSError *))arg2;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MapRenderingService setConnectionCounter:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MapRenderingService setConnectionCounter:](MapRenderingService * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[MapRenderingService setConnectionCounter:](MapRenderingService *self, SEL a2, signed __int64 a3)\n{\n  self->_connectionCounter = a3;\n}"
+}

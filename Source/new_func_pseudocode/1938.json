@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController viewDidLoad]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPodcastsViewController viewDidLoad](DeviceSettingsPodcastsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPodcastsViewController viewDidLoad](DeviceSettingsPodcastsViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsPodcastsViewController;\n  -[DeviceSettingsViewController viewDidLoad](&v3, \"viewDidLoad\");\n  -[DeviceSettingsPodcastsViewController loadOutlinesColumnHeaderTitle](self, \"loadOutlinesColumnHeaderTitle\");\n  -[DeviceSettingsPodcastsViewController loadUIFromPrefs](self, \"loadUIFromPrefs\");\n}"
+}

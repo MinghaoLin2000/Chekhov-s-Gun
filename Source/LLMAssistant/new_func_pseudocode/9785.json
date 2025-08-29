@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP8DataInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP8DataInfoD1Ev(TSP::DataInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataInfo::~DataInfo(TSP::DataInfo *this)\n{\n  __ZN3TSP8DataInfoD2Ev(this);\n}"
+}

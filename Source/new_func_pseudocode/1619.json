@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BarChoice buttonRepresentation]",
+    "function_argument_number": 2,
+    "function_signature": "-[BarChoice buttonRepresentation](BarChoice * self, SEL a2)",
+    "pseudocode": "NSButton *__cdecl -[BarChoice buttonRepresentation](BarChoice *self, SEL a2)\n{\n  return self->_buttonRepresentation;\n}"
+}

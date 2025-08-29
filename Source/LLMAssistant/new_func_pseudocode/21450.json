@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRLanguageModel deserializeNgramCountsData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRLanguageModel deserializeNgramCountsData:](LSRLanguageModel * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[LSRLanguageModel deserializeNgramCountsData:](LSRLanguageModel *self, SEL a2, id a3)\n{\n  return +[_EARLmModel2 deserializeModelData:](&OBJC_CLASS____EARLmModel2, \"deserializeModelData:\", a3);\n}"
+}

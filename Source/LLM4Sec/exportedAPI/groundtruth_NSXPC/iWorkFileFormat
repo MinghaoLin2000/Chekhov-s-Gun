@@ -1,0 +1,96 @@
+@protocol NSCopying
+- (id)copyWithZone:(struct _NSZone *)arg1;
+@end
+@protocol NSFastEnumeration
+- (unsigned long long)countByEnumeratingWithState:(CDStruct_70511ce9 *)arg1 objects:(id *)arg2 count:(unsigned long long)arg3;
+@end
+@protocol SFUBufferedInputStream <SFUInputStream>
+- (_Bool)seekWithinBufferToOffset:(long long)arg1;
+- (unsigned long long)readToOwnBuffer:(const char **)arg1 size:(unsigned long long)arg2;
+@end
+@protocol SFUInputStream <NSObject>
+- (id <SFUInputStream>)closeLocalStream;
+- (void)close;
+- (void)enableSystemCaching;
+- (void)disableSystemCaching;
+- (void)seekToOffset:(long long)arg1;
+- (_Bool)canSeek;
+- (unsigned long long)readToBuffer:(char *)arg1 size:(unsigned long long)arg2;
+- (long long)offset;
+@end
+@protocol SFUOutputStream <SFUSimpleOutputStream>
+- (id <SFUOutputStream>)closeLocalStream;
+- (void)close;
+- (id <SFUInputStream>)inputStream;
+- (_Bool)canCreateInputStream;
+- (long long)offset;
+- (void)seekToOffset:(long long)arg1 whence:(int)arg2;
+- (_Bool)canSeek;
+@end
+@protocol SFUSimpleOutputStream <NSObject>
+- (void)writeBuffer:(const char *)arg1 size:(unsigned long long)arg2;
+@end
+@protocol SFUZipArchiveDataRepresentation <NSObject>
+- (id <SFUBufferedInputStream>)bufferedInputStreamWithOffset:(long long)arg1 length:(long long)arg2;
+- (id <SFUInputStream>)inputStreamWithOffset:(long long)arg1 length:(long long)arg2;
+@end
+@protocol TSPComponentWriteChannel <NSObject>
+- (void)close;
+- (void)writeData:(NSObject<OS_dispatch_data> *)arg1;
+@end
+@protocol TSPCryptoInfo <NSObject>
+- (id <TSPMutableCryptoInfo>)mutableCryptoInfoCopy;
+@end
+@protocol TSPDataCopyInputSteamProvider <TSPDataCopyProvider>
+- (NSInputStream *)inputStreamForRange:(struct _NSRange)arg1;
+@end
+@protocol TSPDataCopyProvider <NSObject>
+- (void)cleanUp;
+@end
+@protocol TSPDataCopyReadChannelProvider <TSPDataCopyProvider>
+@end
+@protocol TSPDataCopyURLProvider <TSPDataCopyProvider>
+@end
+@protocol TSPMutableCryptoInfo <TSPCryptoInfo>
+- (void)incrementDecodedLengthBy:(unsigned long long)arg1;
+- (void)addBlockInfo:(id <TSUEncodedBlockInfo>)arg1;
+- (void)reset;
+@end
+@protocol TSPPackageDataWriter <NSObject>
+- (_Bool)flushPendingWritesReturningError:(id *)arg1;
+- (struct CGDataConsumer *)newCGDataConsumerAtRelativePath:(NSString *)arg1;
+- (_Bool)writeData:(NSData *)arg1 toRelativePath:(NSString *)arg2 allowEncryption:(_Bool)arg3 error:(id *)arg4;
+@end
+@protocol TSPSplitableData
+- (void)tsp_splitDataWithMaxSize:(unsigned long long)arg1 subdataHandlerBlock:(void (^)(NSData *, unsigned long long, _Bool *))arg2;
+@end
+@protocol TSUEncodedBlockInfo <NSObject>
+@end
+@protocol TSUIOChannel <NSObject>
+- (void)addBarrier:(void (^)(void))arg1;
+- (void)setLowWater:(unsigned long long)arg1;
+- (void)close;
+@end
+@protocol TSULogContext <NSObject>
+@end
+@protocol TSURandomWriteChannel <TSUIOChannel>
+- (void)truncateToLength:(long long)arg1 completion:(void (^)(NSError *))arg2;
+- (void)flushWithCompletion:(void (^)(NSError *))arg1;
+- (void)writeData:(NSObject<OS_dispatch_data> *)arg1 offset:(long long)arg2 handler:(void (^)(_Bool, unsigned long long, NSError *))arg3;
+@end
+@protocol TSUReadChannel <TSUIOChannel, TSUStreamReadChannel>
+- (void)readFromOffsetAndWait:(long long)arg1 length:(unsigned long long)arg2 handler:(void (^)(_Bool, NSObject<OS_dispatch_data> *, NSError *))arg3;
+- (void)readFromOffset:(long long)arg1 length:(unsigned long long)arg2 handler:(void (^)(_Bool, NSObject<OS_dispatch_data> *, NSError *))arg3;
+@end
+@protocol TSUStreamReadChannel <NSObject>
+- (void)close;
+- (void)readWithHandlerAndWait:(void (^)(_Bool, NSObject<OS_dispatch_data> *, NSError *))arg1;
+- (void)readWithHandler:(void (^)(_Bool, NSObject<OS_dispatch_data> *, NSError *))arg1;
+@end
+@protocol TSUStreamWriteChannel <TSUIOChannel>
+- (void)flushWithCompletion:(void (^)(NSError *))arg1;
+- (void)writeData:(NSObject<OS_dispatch_data> *)arg1 handler:(void (^)(_Bool, unsigned long long, NSError *))arg2;
+@end
+@protocol iWorkFileFormatProtocol
+- (NSProgress *)prepareFileForUploadingAtURL:(NSURL *)arg1 originalURLExtension:(NSData *)arg2 inDirectory:(NSURL *)arg3 destinationSandboxExtension:(NSData *)arg4 completionHandler:(void (^)(NSURL *, NSError *))arg5;
+@end

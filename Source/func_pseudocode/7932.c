@@ -1,0 +1,5 @@
+_CGSCaptureWindowsContentsToRectWithOptions
+__int64 CGSCaptureWindowsContentsToRectWithOptions()
+{
+  return _CGSCaptureWindowsContentsToRectWithOptions();
+}

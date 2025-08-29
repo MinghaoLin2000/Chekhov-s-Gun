@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter9PrintBoolEbPNS1_17BaseTextGeneratorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter9PrintBoolEbPNS1_17BaseTextGeneratorE(int a2, __int64 a3, __int64 a1)",
+    "pseudocode": "__int64 __fastcall google::protobuf::TextFormat::FastFieldValuePrinter::PrintBool(__int64 a1, int a2, __int64 a3)\n{\n  __int64 (__fastcall *v3)(__int64, const char *, __int64); // x3\n\n  v3 = *(__int64 (__fastcall **)(__int64, const char *, __int64))(*(_QWORD *)a3 + 40LL);\n  if ( a2 )\n    return v3(a3, \"true\", 4LL);\n  else\n    return v3(a3, \"false\", 5LL);\n}"
+}

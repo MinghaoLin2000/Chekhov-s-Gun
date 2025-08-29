@@ -1,0 +1,13 @@
+{
+  "-[_TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject performWithRequestData:completion:]": 4295232428,
+  "_$s34AppleMediaServicesUIDynamicService16JSServiceRequestV4fromACs7Decoder_p_tKcfC": 4295125968,
+  "_$s34AppleMediaServicesUIDynamicService16JSServiceRequestV8fragment7options3urlACSSSg_SDys11AnyHashableVypGSg10Foundation3URLVSgtcfC": 4295122848,
+  "-[_TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject startSignInSession:]": 4295138868,
+  "-[_TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject bootstrapWithAccount:bagData:clientInfo:mediaClientData:metricsContextData:url:completion:]": 4295228644,
+  "-[_TtC34AppleMediaServicesUIDynamicService15JSNetworkObject fetch:]": 4295110336,
+  "-[_TtC34AppleMediaServicesUIDynamicService16JSAppQueryObject queryBundleIds:]": 4295045776,
+  "-[_TtC34AppleMediaServicesUIDynamicService17URLSessionHandler AMSURLSession:task:handleDialogRequest:completion:]": 4295249240,
+  "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC7accountSo9ACAccountCSgvM": 4294994632,
+  "-[_TtC34AppleMediaServicesUIDynamicService17URLSessionHandler AMSURLSession:task:handleEngagementRequest:completion:]": 4295249808,
+  "-[_TtC34AppleMediaServicesUIDynamicService18JSEngagementObject fetchMessages:]": 4295072876
+}

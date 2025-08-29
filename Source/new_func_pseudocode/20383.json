@@ -1,0 +1,6 @@
+{
+    "function_name": "-[http_ipp_response_t ippResponse]",
+    "function_argument_number": 2,
+    "function_signature": "-[http_ipp_response_t ippResponse](http_ipp_response_t * self, SEL a2)",
+    "pseudocode": "ipp_response_t *__cdecl -[http_ipp_response_t ippResponse](http_ipp_response_t *self, SEL a2)\n{\n  return (ipp_response_t *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

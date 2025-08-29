@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDScannerCreate",
+    "function_argument_number": 0,
+    "function_signature": "_DDScannerCreate()",
+    "pseudocode": "__int64 DDScannerCreate()\n{\n  return _DDScannerCreate();\n}"
+}

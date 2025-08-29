@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FPCKService .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[FPCKService .cxx_destruct](FPCKService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[FPCKService .cxx_destruct](FPCKService *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_accessingPaths, 0LL);\n  objc_storeStrong((id *)&self->_urls, 0LL);\n  objc_storeStrong((id *)&self->_databaseBackupPath, 0LL);\n  objc_storeStrong((id *)&self->_domainRootURL, 0LL);\n  objc_storeStrong((id *)&self->_domainUserInfo, 0LL);\n  objc_storeStrong((id *)&self->_domainID, 0LL);\n  objc_storeStrong((id *)&self->_runQueue, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_semaphore, 0LL);\n}"
+}

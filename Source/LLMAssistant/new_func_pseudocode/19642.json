@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z35PKStoreCredentialsInKeychainAllowedv",
+    "function_argument_number": 0,
+    "function_signature": "__Z35PKStoreCredentialsInKeychainAllowedv()",
+    "pseudocode": "__int64 PKStoreCredentialsInKeychainAllowed(void)\n{\n  return 1LL;\n}"
+}

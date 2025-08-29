@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2StagedFirmwareVersion2",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2StagedFirmwareVersion2(_QWORD * a1, __int64 a2, _QWORD * a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2StagedFirmwareVersion2(_QWORD *a1, __int64 a2, _QWORD *a3)\n{\n  __int64 (__fastcall *v5)(__int64); // x3\n  __int64 v6; // x0\n  __int64 (__fastcall *v8)(__int64, __int64, _QWORD *); // x3\n  __int64 v9; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = (__int64 (__fastcall *)(__int64))a1[29];\n  if ( v5 )\n  {\n    v6 = a1[68];\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v5(v6);\n  }\n  else\n  {\n    v8 = (__int64 (__fastcall *)(__int64, __int64, _QWORD *))a1[65];\n    if ( v8 )\n    {\n      if ( a2 )\n      {\n        a2 = uarpTagStructPack32(a2);\n        v8 = (__int64 (__fastcall *)(__int64, __int64, _QWORD *))a1[65];\n      }\n      v9 = a1[68];\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return v8(v9, a2, a3);\n    }\n    else\n    {\n      *a3 = -1LL;\n      a3[1] = -1LL;\n      return 0LL;\n    }\n  }\n}"
+}

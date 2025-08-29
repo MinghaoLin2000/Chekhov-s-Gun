@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetOrphan",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformAssetOrphan(__int64 result, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetOrphan(__int64 result, __int64 a2)\n{\n  *(_QWORD *)(a2 + 696) = 0LL;\n  return UARPLayer2AssetOrphaned(result, a2);\n}"
+}

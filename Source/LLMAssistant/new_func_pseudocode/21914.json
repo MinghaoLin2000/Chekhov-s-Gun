@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev()",
+    "pseudocode": "__int64 std::streambuf::~streambuf()\n{\n  return std::streambuf::~streambuf();\n}"
+}

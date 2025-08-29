@@ -1,0 +1,6 @@
+{
+    "function_name": "__os_feature_enabled_impl",
+    "function_argument_number": 0,
+    "function_signature": "__os_feature_enabled_impl()",
+    "pseudocode": "__int64 _os_feature_enabled_impl()\n{\n  return __os_feature_enabled_impl();\n}"
+}

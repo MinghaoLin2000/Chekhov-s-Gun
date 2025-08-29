@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$createSpeechProfileFromOovs:customProns:language:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$createSpeechProfileFromOovs:customProns:language:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_createSpeechProfileFromOovs_customProns_language_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"createSpeechProfileFromOovs:customProns:language:\");\n}"
+}

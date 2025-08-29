@@ -1,0 +1,6 @@
+{
+    "function_name": "_mach_absolute_time",
+    "function_argument_number": 0,
+    "function_signature": "_mach_absolute_time()",
+    "pseudocode": "uint64_t mach_absolute_time(void)\n{\n  return _mach_absolute_time();\n}"
+}

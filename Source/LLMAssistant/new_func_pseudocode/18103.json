@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_write_n",
+    "function_argument_number": 3,
+    "function_signature": "_piston_write_n(int a1, void * __buf, size_t __nbyte)",
+    "pseudocode": "__int64 __fastcall piston_write_n(int *a1, char *__buf, size_t __nbyte)\n{\n  size_t v3; // x19\n  size_t v6; // x20\n  ssize_t v7; // x0\n  ssize_t v8; // x23\n  __int64 v9; // x21\n\n  if ( !__nbyte )\n    return 0LL;\n  v3 = __nbyte;\n  v6 = __nbyte;\n  while ( 1 )\n  {\n    v7 = write(*a1, __buf, v3);\n    v8 = v7;\n    if ( v7 <= 0 )\n      break;\n    __buf += v7;\n    v6 -= v7;\n    v3 -= v7;\n    if ( !v3 )\n      return 0LL;\n  }\n  v9 = (unsigned int)*__error();\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n    sub_1000101BC(v8, v3, v6);\n  return v9;\n}"
+}

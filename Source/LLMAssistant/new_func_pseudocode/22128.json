@@ -1,0 +1,6 @@
+{
+    "function_name": "____ZL24isProbGuardMallocEnabledv_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "____ZL24isProbGuardMallocEnabledv_block_invoke(id a1)",
+    "pseudocode": "void __cdecl ___ZL24isProbGuardMallocEnabledv_block_invoke(id a1)\n{\n  __int64 v1; // x21\n  const char *zone_name; // x0\n\n  if ( malloc_num_zones >= 1 )\n  {\n    v1 = 0LL;\n    while ( 1 )\n    {\n      zone_name = malloc_get_zone_name(*(malloc_zone_t **)(malloc_zones + 8 * v1));\n      if ( !strncmp(zone_name, \"ProbGuardMallocZone\", 0x14uLL) )\n        break;\n      if ( ++v1 >= malloc_num_zones )\n        return;\n    }\n    isProbGuardMallocEnabled(void)::result = 1;\n  }\n}"
+}

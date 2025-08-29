@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize4PrimD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN9serialize4PrimD1Ev(serialize::Prim * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall serialize::Prim::~Prim(serialize::Prim *this)\n{\n  __ZN9serialize4PrimD2Ev(this);\n}"
+}

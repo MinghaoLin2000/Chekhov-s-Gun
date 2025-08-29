@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesViewController setDevicesClient:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSoftwareUpdatesViewController setDevicesClient:](DeviceSoftwareUpdatesViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSoftwareUpdatesViewController setDevicesClient:](\n        DeviceSoftwareUpdatesViewController *self,\n        SEL a2,\n        id a3)\n{\n  AMPDevicesClient *v4; // x20\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceSoftwareUpdatesViewController;\n  -[DeviceViewController setDevicesClient:](&v5, \"setDevicesClient:\", a3);\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController devicesClient](self, \"devicesClient\"));\n  -[AMPDevicesClient addListener:](v4, \"addListener:\", self);\n  objc_release(v4);\n  -[DeviceSoftwareUpdatesViewController fetchDeviceSoftwareInfo](self, \"fetchDeviceSoftwareInfo\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipFileDescriptorWrapper fileDescriptor]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipFileDescriptorWrapper fileDescriptor](TSUZipFileDescriptorWrapper * self, SEL a2)",
+    "pseudocode": "int __cdecl -[TSUZipFileDescriptorWrapper fileDescriptor](TSUZipFileDescriptorWrapper *self, SEL a2)\n{\n  return self->_fileDescriptor;\n}"
+}

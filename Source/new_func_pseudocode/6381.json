@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask sourceURLCollection]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoConversionTask sourceURLCollection](VideoConversionTask * self, SEL a2)",
+    "pseudocode": "PAMediaConversionServiceResourceURLCollection *__cdecl -[VideoConversionTask sourceURLCollection](\n        VideoConversionTask *self,\n        SEL a2)\n{\n  return (PAMediaConversionServiceResourceURLCollection *)objc_getProperty(self, a2, 32LL, 1);\n}"
+}

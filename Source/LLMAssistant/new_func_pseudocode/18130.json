@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateWithFormat",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringCreateWithFormat(CFAllocatorRef alloc, CFDictionaryRef formatOptions, CFStringRef format)",
+    "pseudocode": "CFStringRef CFStringCreateWithFormat(CFAllocatorRef alloc, CFDictionaryRef formatOptions, CFStringRef format, ...)\n{\n  return _CFStringCreateWithFormat(alloc, formatOptions, format);\n}"
+}

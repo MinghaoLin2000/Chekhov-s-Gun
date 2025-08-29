@@ -1,0 +1,6 @@
+{
+    "function_name": "_TISSetRomanSwitchState",
+    "function_argument_number": 0,
+    "function_signature": "_TISSetRomanSwitchState()",
+    "pseudocode": "__int64 String.__ivar_initializer()\n{\n  return String.__ivar_initializer();\n}"
+}

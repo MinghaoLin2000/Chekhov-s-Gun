@@ -1,0 +1,5 @@
+_uarpPlatformDarwinHashLog
+void uarpPlatformDarwinHashLog()
+{
+  ;
+}

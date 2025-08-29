@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesErrorViewController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesErrorViewController init](DeviceSettingsMoviesErrorViewController * self, SEL a2)",
+    "pseudocode": "DeviceSettingsMoviesErrorViewController *__cdecl -[DeviceSettingsMoviesErrorViewController init](\n        DeviceSettingsMoviesErrorViewController *self,\n        SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsMoviesErrorViewController;\n  return -[DeviceSettingsErrorViewController initWithMediaDomain:](&v3, \"initWithMediaDomain:\", 2LL);\n}"
+}

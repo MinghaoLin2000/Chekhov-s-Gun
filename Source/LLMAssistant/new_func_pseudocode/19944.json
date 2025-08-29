@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t jobHoldUntil]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t jobHoldUntil](lite_job_t * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[lite_job_t jobHoldUntil](lite_job_t *self, SEL a2)\n{\n  return (NSString *)objc_getProperty(self, a2, 216LL, 1);\n}"
+}

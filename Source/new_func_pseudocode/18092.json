@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_smb2_free_hdr",
+    "function_argument_number": 1,
+    "function_signature": "_piston_smb2_free_hdr(void * a1)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl piston_smb2_free_hdr(void *a1)\n{\n  free(a1);\n}"
+}

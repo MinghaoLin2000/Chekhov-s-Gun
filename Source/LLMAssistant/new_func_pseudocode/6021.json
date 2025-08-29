@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceAddPFMetadataPolicy encodeWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceAddPFMetadataPolicy encodeWithCoder:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceAddPFMetadataPolicy encodeWithCoder:](\n        PAMediaConversionServiceAddPFMetadataPolicy *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  NSString *v5; // x21\n  id v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[PAMediaConversionServiceAddPFMetadataPolicy key](self, \"key\"));\n  objc_msgSend(v4, \"encodeObject:forKey:\", v5, CFSTR(\"mediaMetadataType\"));\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue(-[PAMediaConversionServiceAddPFMetadataPolicy value](self, \"value\"));\n  objc_msgSend(v4, \"encodeObject:forKey:\", v6, CFSTR(\"mediaMetadataValue\"));\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

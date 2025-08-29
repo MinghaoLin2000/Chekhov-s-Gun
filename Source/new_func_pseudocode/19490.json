@@ -1,0 +1,6 @@
+{
+    "function_name": "_rewind",
+    "function_argument_number": 1,
+    "function_signature": "_rewind(FILE * a1)",
+    "pseudocode": "void __cdecl rewind(FILE *a1)\n{\n  _rewind(a1);\n}"
+}

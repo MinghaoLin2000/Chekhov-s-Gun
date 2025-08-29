@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LoadingViewController dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[LoadingViewController dealloc](LoadingViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LoadingViewController dealloc](LoadingViewController *self, SEL a2)\n{\n  objc_super v2; // [xsp+0h] [xbp-10h] BYREF\n\n  v2.receiver = self;\n  v2.super_class = (Class)&OBJC_CLASS___LoadingViewController;\n  -[LoadingViewController dealloc](&v2, \"dealloc\");\n}"
+}

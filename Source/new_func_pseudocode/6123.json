@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLCollection isBlastDoorAccessRequired]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceResourceURLCollection isBlastDoorAccessRequired](PAMediaConversionServiceResourceURLCollection * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[PAMediaConversionServiceResourceURLCollection isBlastDoorAccessRequired](\n        PAMediaConversionServiceResourceURLCollection *self,\n        SEL a2)\n{\n  PAMediaConversionServiceResourceURLCollectionAccessProvider *v2; // x19\n  unsigned __int8 v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[PAMediaConversionServiceResourceURLCollection accessProviderDelegate](self, \"accessProviderDelegate\"));\n  v3 = -[PAMediaConversionServiceResourceURLCollectionAccessProvider isBlastDoorAccessRequired](\n         v2,\n         \"isBlastDoorAccessRequired\");\n  objc_release(v2);\n  return v3;\n}"
+}

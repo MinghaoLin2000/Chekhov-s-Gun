@@ -1,0 +1,6 @@
+{
+    "function_name": "_NUScaleFromDouble",
+    "function_argument_number": 0,
+    "function_signature": "_NUScaleFromDouble()",
+    "pseudocode": "__int64 NUScaleFromDouble()\n{\n  return _NUScaleFromDouble();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFDocumentImpl getPageAtIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[CGPDFDocumentImpl getPageAtIndex:](CGPDFDocumentImpl * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "id __cdecl -[CGPDFDocumentImpl getPageAtIndex:](CGPDFDocumentImpl *self, SEL a2, signed __int64 a3)\n{\n  __end_ **begin; // x8\n  CGPDFPageImpl *Page; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  if ( a3 < 0 || (begin = self->_pages.__begin_, a3 >= self->_pages.var0 - begin) )\n  {\n    NSLog(&CFSTR(\"Out of bounds page index\").isa, a2);\n    Page = 0LL;\n  }\n  else\n  {\n    Page = objc_retain(begin[a3]);\n    if ( !Page )\n    {\n      Page = (CGPDFPageImpl *)CGPDFDocumentGetPage(self->_cgDocument.mCFObject, a3 + 1);\n      if ( Page )\n      {\n        Page = -[CGPDFPageImpl initWithCGPDFPage:requestQueue:](\n                 objc_alloc(&OBJC_CLASS___CGPDFPageImpl),\n                 \"initWithCGPDFPage:requestQueue:\",\n                 Page,\n                 self->_requestQueue);\n        objc_storeStrong((id *)&self->_pages.__begin_[a3], Page);\n      }\n      else\n      {\n        NSLog(&CFSTR(\"Failed to create page at index: (%ld)\").isa, a3);\n      }\n    }\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(Page);\n}"
+}

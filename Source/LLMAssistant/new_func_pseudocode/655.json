@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileSharingListItem setIsApp:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileSharingListItem setIsApp:](FileSharingListItem * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[FileSharingListItem setIsApp:](FileSharingListItem *self, SEL a2, bool a3)\n{\n  self->_isApp = a3;\n}"
+}

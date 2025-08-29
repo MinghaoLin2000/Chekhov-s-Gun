@@ -1,0 +1,6 @@
+{
+    "function_name": "_freeaddrinfo",
+    "function_argument_number": 1,
+    "function_signature": "_freeaddrinfo(addrinfo * a1)",
+    "pseudocode": "void __cdecl freeaddrinfo(addrinfo *a1)\n{\n  _freeaddrinfo(a1);\n}"
+}

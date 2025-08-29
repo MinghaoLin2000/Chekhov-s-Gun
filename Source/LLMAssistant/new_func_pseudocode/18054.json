@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSMountURLCancel",
+    "function_argument_number": 1,
+    "function_signature": "_NetFSMountURLCancel(AsyncRequestID requestID)",
+    "pseudocode": "// attributes: thunk\nint __cdecl NetFSMountURLCancel(AsyncRequestID requestID)\n{\n  return _NAConnectToServerCancel(requestID);\n}"
+}

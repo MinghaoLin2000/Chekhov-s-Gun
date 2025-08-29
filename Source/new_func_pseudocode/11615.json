@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12MapFieldBase28SpaceUsedExcludingSelfNoLockEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf8internal12MapFieldBase28SpaceUsedExcludingSelfNoLockEv(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::MapFieldBase::SpaceUsedExcludingSelfNoLock(\n        google::protobuf::internal::MapFieldBase *this)\n{\n  __int64 v1; // x20\n  __int64 v2; // x19\n  int *v3; // x8\n  __int64 v4; // x21\n\n  v1 = *((_QWORD *)this + 2);\n  if ( !v1 )\n    return 0LL;\n  v2 = 8LL * *(int *)(v1 + 12);\n  v3 = *(int **)(v1 + 16);\n  if ( v3 )\n  {\n    if ( *v3 >= 1 )\n    {\n      v4 = 0LL;\n      do\n      {\n        v2 += (*(__int64 (__fastcall **)(_QWORD))(**(_QWORD **)&v3[2 * v4 + 2] + 136LL))(*(_QWORD *)&v3[2 * v4 + 2]);\n        ++v4;\n        v3 = *(int **)(v1 + 16);\n      }\n      while ( v4 < *v3 );\n    }\n    v2 += 8LL;\n  }\n  return v2;\n}"
+}

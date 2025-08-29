@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper24ScreenMirroringAlertViewVwcp",
+    "function_argument_number": 2,
+    "function_signature": "$s19ControlCenterHelper24ScreenMirroringAlertViewVwcp(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall initializeWithCopy for ScreenMirroringAlertView(__int64 a1, __int64 a2)\n{\n  __int64 v3; // x0\n  __int64 v4; // x8\n  __int64 v5; // x20\n  __int64 v6; // x21\n  __int64 v7; // x22\n  __int128 v9; // [xsp+0h] [xbp-30h]\n\n  v3 = *(_QWORD *)(a2 + 8);\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  *(_QWORD *)(a1 + 8) = v3;\n  *(_BYTE *)(a1 + 16) = *(_BYTE *)(a2 + 16);\n  v9 = *(_OWORD *)(a2 + 24);\n  *(_OWORD *)(a1 + 24) = v9;\n  v5 = *(_QWORD *)(a2 + 40);\n  v4 = *(_QWORD *)(a2 + 48);\n  *(_QWORD *)(a1 + 40) = v5;\n  *(_QWORD *)(a1 + 48) = v4;\n  v6 = *(_QWORD *)(a2 + 56);\n  *(_QWORD *)(a1 + 56) = v6;\n  *(_BYTE *)(a1 + 64) = *(_BYTE *)(a2 + 64);\n  v7 = *(_QWORD *)(a2 + 72);\n  *(_QWORD *)(a1 + 72) = v7;\n  swift_bridgeObjectRetain(v3);\n  swift_bridgeObjectRetain(v9);\n  swift_retain(v5);\n  swift_retain(v6);\n  swift_retain(v7);\n  return a1;\n}"
+}

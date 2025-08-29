@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset setPayloadData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[USBAudioAsset setPayloadData:](USBAudioAsset * self, SEL a2, char * a3)",
+    "pseudocode": "void __cdecl -[USBAudioAsset setPayloadData:](USBAudioAsset *self, SEL a2, char *a3)\n{\n  self->_payloadData = a3;\n}"
+}

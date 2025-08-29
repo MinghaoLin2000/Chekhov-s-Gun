@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpHtonll",
+    "function_argument_number": 1,
+    "function_signature": "_uarpHtonll(unsigned __int64 a1)",
+    "pseudocode": "unsigned __int64 __fastcall uarpHtonll(unsigned __int64 a1)\n{\n  return bswap64(a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_set_bool",
+    "function_argument_number": 3,
+    "function_signature": "_xpc_dictionary_set_bool(xpc_object_t xdict, const char * key, bool value)",
+    "pseudocode": "void __cdecl xpc_dictionary_set_bool(xpc_object_t xdict, const char *key, bool value)\n{\n  _xpc_dictionary_set_bool(xdict, key, value);\n}"
+}

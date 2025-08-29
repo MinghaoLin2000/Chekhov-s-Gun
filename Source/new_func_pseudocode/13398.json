@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z14p_sortFunction8_NSRangeS_",
+    "function_argument_number": 2,
+    "function_signature": "__Z14p_sortFunction8_NSRangeS_(_NSRange a1, _NSRange a2)",
+    "pseudocode": "bool __fastcall p_sortFunction(_NSRange a1, _NSRange a2)\n{\n  if ( a1.location == a2.location )\n    return a2.location + a2.length < a1.location + a1.length;\n  else\n    return a1.location < a2.location;\n}"
+}

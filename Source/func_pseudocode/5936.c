@@ -1,0 +1,5 @@
+_$s33SiriSuggestionsBookkeepingService0aB8SignpostO28bookkeepingXPCServiceStartups12StaticStringVvau
+char **SiriSuggestionsSignpost.bookkeepingXPCServiceStartup.unsafeMutableAddressor()
+{
+  return &static SiriSuggestionsSignpost.bookkeepingXPCServiceStartup;
+}

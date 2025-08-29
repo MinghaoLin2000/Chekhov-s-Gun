@@ -1,0 +1,6 @@
+{
+    "function_name": "___error",
+    "function_argument_number": 0,
+    "function_signature": "___error()",
+    "pseudocode": "int *__error(void)\n{\n  return ___error();\n}"
+}

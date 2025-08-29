@@ -1,0 +1,62 @@
+Service Path:
+/System/Library/PrivateFrameworks/StorageManagement.framework/Versions/A/XPCServices/CloudStorageHelper.xpc/Contents/MacOS/CloudStorageHelper
+
+Service Exported Protocols:
+@protocol SPCloudStorageHelper
+- (void)optimizeServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSError *))arg2;
+- (void)enableServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSError *))arg2;
+- (void)preflightEnableServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)fetchStatesForServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)fetchCloudStoragePlanDetailsWithCompletionHandler:(void (^)(NSDictionary *, NSError *))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.storage-management
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.icloud-account-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+			[String] kTCCServicePhotos
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.addressbook
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/Preferences/com.apple.networkd.plist
+			[String] /private/var/db/nsurlstoraged/dafsaData.bin
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.remoted
+			[String] com.apple.icloud.findmydeviced
+			[String] com.apple.ind.cloudfeatures
+			[String] com.apple.networkserviceproxy
+			[String] com.apple.usymptomsd
+			[String] com.apple.AppSSO.service-xpc
+	[Key] com.apple.security.temporary-exception.sbpl
+	[Value]
+		[Array]
+			[String] (allow file-read* (home-subpath "/"))
+			[String] (allow iokit-open (iokit-user-client-class "AppleAPFSUserClient"))
+			[String] (allow distributed-notification-post)
+	[Key] com.apple.security.temporary-exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.networkd
+	[Key] com.apple.security.temporary-exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] MobileMeAccounts

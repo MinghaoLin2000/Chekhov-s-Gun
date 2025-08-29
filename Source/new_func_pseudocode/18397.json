@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOConnectCallStructMethod",
+    "function_argument_number": 6,
+    "function_signature": "_IOConnectCallStructMethod(mach_port_t connection, uint32_t selector, const void * inputStruct, size_t inputStructCnt, void * outputStruct, size_t * outputStructCnt)",
+    "pseudocode": "kern_return_t __cdecl IOConnectCallStructMethod(\n        mach_port_t connection,\n        uint32_t selector,\n        const void *inputStruct,\n        size_t inputStructCnt,\n        void *outputStruct,\n        size_t *outputStructCnt)\n{\n  return _IOConnectCallStructMethod(connection, selector, inputStruct, inputStructCnt, outputStruct, outputStructCnt);\n}"
+}

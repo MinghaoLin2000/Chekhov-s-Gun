@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP18ObjectUUIDMapEntry13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP18ObjectUUIDMapEntry13IsInitializedEv(TSP::ObjectUUIDMapEntry * this)",
+    "pseudocode": "__int64 __fastcall TSP::ObjectUUIDMapEntry::IsInitialized(TSP::ObjectUUIDMapEntry *this)\n{\n  int v1; // w8\n  __int64 result; // x0\n\n  v1 = *((_DWORD *)this + 4);\n  if ( (~v1 & 3) != 0 )\n    return 0LL;\n  if ( (v1 & 1) == 0 )\n    return 1LL;\n  result = TSP::UUID::IsInitialized(*((TSP::UUID **)this + 3));\n  if ( (_DWORD)result )\n    return 1LL;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService _actionRequiresPresentation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService _actionRequiresPresentation:](SiriNCService * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "bool __cdecl -[SiriNCService _actionRequiresPresentation:](SiriNCService *self, SEL a2, signed __int64 a3)\n{\n  return ((unsigned __int64)a3 < 0x15) & (0x1397E7u >> a3);\n}"
+}

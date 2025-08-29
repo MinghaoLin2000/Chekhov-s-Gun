@@ -1,0 +1,5 @@
+$s19ControlCenterHelper19ResourceBundleClassCMa
+__int64 type metadata accessor for ResourceBundleClass()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_5E6FB1DAF5A6812F47FFF73458E34B7919ResourceBundleClass);
+}

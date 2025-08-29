@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject strings]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject strings](_TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject * self, SEL a2)",
+    "pseudocode": "NSDictionary *__cdecl -[JSLocalizationObject strings](\n        _TtC34AppleMediaServicesUIDynamicService20JSLocalizationObject *self,\n        SEL a2)\n{\n  __int64 v2; // x19\n  void *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = sub_10001A368();\n  v3 = (void *)sub_1000460E8(\n                 v2,\n                 &type metadata for String,\n                 (char *)&type metadata for Any + 8,\n                 &protocol witness table for String);\n  swift_bridgeObjectRelease(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSDictionary *)objc_autoreleaseReturnValue(v3);\n}"
+}

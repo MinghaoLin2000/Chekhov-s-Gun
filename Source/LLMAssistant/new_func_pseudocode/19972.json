@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN38JobRequestAttributes_FromRequestParamsC2EPU40objcproto29PrintJobRequestParamsProtocol8NSObject",
+    "function_argument_number": 2,
+    "function_signature": "__ZN38JobRequestAttributes_FromRequestParamsC2EPU40objcproto29PrintJobRequestParamsProtocol8NSObject(int a1, id a2)",
+    "pseudocode": "__int64 __fastcall JobRequestAttributes_FromRequestParams::JobRequestAttributes_FromRequestParams(__int64 a1, id a2)\n{\n  id v4; // x20\n  NSMutableSet *v5; // x0\n  void *v6; // x8\n\n  v4 = objc_retain(a2);\n  *(_QWORD *)a1 = off_10009C378;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  *(_QWORD *)(a1 + 72) = 0LL;\n  *(_OWORD *)(a1 + 32) = 0u;\n  *(_OWORD *)(a1 + 48) = 0u;\n  *(_OWORD *)(a1 + 88) = 0u;\n  *(_OWORD *)(a1 + 104) = 0u;\n  *(_QWORD *)(a1 + 120) = 0LL;\n  *(_OWORD *)(a1 + 136) = 0u;\n  *(_OWORD *)(a1 + 152) = 0u;\n  *(_OWORD *)(a1 + 168) = 0u;\n  objc_storeStrong((id *)(a1 + 168), a2);\n  v5 = objc_opt_new(&OBJC_CLASS___NSMutableSet);\n  v6 = *(void **)(a1 + 176);\n  *(_QWORD *)(a1 + 176) = v5;\n  objc_release(v6);\n  objc_release(v4);\n  return a1;\n}"
+}

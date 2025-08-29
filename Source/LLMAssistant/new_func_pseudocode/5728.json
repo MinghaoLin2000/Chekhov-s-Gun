@@ -1,0 +1,6 @@
+{
+    "function_name": "_DFRPresentationModeGetFNBehavior",
+    "function_argument_number": 0,
+    "function_signature": "_DFRPresentationModeGetFNBehavior()",
+    "pseudocode": "__int64 DFRPresentationModeGetFNBehavior()\n{\n  return _DFRPresentationModeGetFNBehavior();\n}"
+}

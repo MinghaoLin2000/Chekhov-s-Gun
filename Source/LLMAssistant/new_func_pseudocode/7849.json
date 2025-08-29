@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV5titleSSSgvs",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV5titleSSSgvs(__int64 a1, unsigned __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall CGSWindow.title.setter(__int64 a1, unsigned __int64 a2, __int64 a3)\n{\n  __int64 v4; // x23\n  unsigned __int64 v5; // x20\n  int *v6; // x21\n  __int64 v7; // x21\n  __int64 v8; // x0\n  void *v9; // x22\n  __int64 v10; // x23\n  _QWORD v12[2]; // [xsp+8h] [xbp-58h] BYREF\n  _BYTE v13[24]; // [xsp+18h] [xbp-48h] BYREF\n\n  if ( a2 )\n    v4 = a1;\n  else\n    v4 = 0LL;\n  if ( a2 )\n    v5 = a2;\n  else\n    v5 = 0xE000000000000000LL;\n  v6 = CGSConnection.defaultConnection.unsafeMutableAddressor();\n  sub_10001B1D4(v6, v13);\n  v7 = (unsigned int)*v6;\n  v8 = swift_bridgeObjectRetain(v5);\n  v9 = (void *)sub_10001B1EC(v8);\n  v12[0] = v4;\n  v12[1] = v5;\n  swift_bridgeObjectRetain(v5);\n  v10 = sub_10001D0F0(v12, &type metadata for String);\n  CGSSetWindowProperty(v7, a3, v9, v10);\n  swift_bridgeObjectRelease_n(v5, 2LL);\n  objc_release(v9);\n  return swift_unknownObjectRelease(v10);\n}"
+}

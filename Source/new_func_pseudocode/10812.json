@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPExpandedDirectoryPackage newRawReadChannelForComponentLocator:isStoredOutsideObjectArchive:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPExpandedDirectoryPackage newRawReadChannelForComponentLocator:isStoredOutsideObjectArchive:error:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[TSPExpandedDirectoryPackage newRawReadChannelForComponentLocator:isStoredOutsideObjectArchive:error:](\n        TSPExpandedDirectoryPackage *self,\n        SEL a2,\n        id a3,\n        bool a4,\n        id *a5)\n{\n  id v8; // x19\n  void *v9; // x22\n  id v10; // x20\n  objc_super v12; // [xsp+0h] [xbp-30h] BYREF\n\n  v8 = objc_retain(a3);\n  if ( !a4 )\n  {\n    v9 = objc_retainAutoreleasedReturnValue(objc_msgSend(CFSTR(\"Index\"), \"stringByAppendingPathComponent:\", v8));\n    objc_release(v8);\n    v8 = v9;\n  }\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSPExpandedDirectoryPackage;\n  v10 = -[TSPDirectoryPackage newRawReadChannelForComponentLocator:isStoredOutsideObjectArchive:error:](\n          &v12,\n          \"newRawReadChannelForComponentLocator:isStoredOutsideObjectArchive:error:\",\n          v8,\n          1LL,\n          a5);\n  objc_release(v8);\n  return v10;\n}"
+}

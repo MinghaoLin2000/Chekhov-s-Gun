@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask setDidCallCompletionHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionTask setDidCallCompletionHandler:](VideoConversionTask * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[VideoConversionTask setDidCallCompletionHandler:](VideoConversionTask *self, SEL a2, bool a3)\n{\n  self->_didCallCompletionHandler = a3;\n}"
+}

@@ -1,0 +1,302 @@
+Service Path:
+/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/XPCServices/com.apple.amp.devicesui.xpc/Contents/MacOS/com.apple.amp.devicesui
+
+Service Exported Protocols:
+@protocol AMPDeviceUIServiceProtocol
+- (void)setDevice:(AMPDevice *)arg1 andMode:(NSString *)arg2;
+@end
+@protocol AMPDevicesClientEventsProtocol
+- (void)openPanelWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long, NSArray *))arg2;
+- (void)showErrorReportWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long))arg2;
+- (void)showReportWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long))arg2;
+- (void)promptForPasswordWithParameters:(NSDictionary *)arg1 inParentWindow:(NSWindow *)arg2 withReply:(void (^)(long long, NSString *, NSString *, _Bool))arg3;
+- (void)askUserWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long, _Bool))arg2;
+- (void)canShowUserInteractionForDeviceWithIdentifier:(NSString *)arg1 withReply:(void (^)(_Bool, _Bool))arg2;
+- (void)updateAvailableWithSoftwareInfo:(AMPDeviceSoftwareInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didRemoveDeviceWithIdentifier:(NSString *)arg1 hasRecoveryDevice:(_Bool)arg2;
+- (void)didHideDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeFileSharingApps:(NSArray *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didCompleteSoftwareUpdateRestoreForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSoftwareUpdateRestoreForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteSoftwareDownloadForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSoftwareDownloadForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteManualSoftwareUpdateCheckForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartManualSoftwareUpdateCheckForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSoftwareInfoForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteRestoreFromBackupForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartRestoreFromBackupForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteEraseForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartEraseForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteBackupForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartBackupForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSyncErrorState:(_Bool)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didCompleteSyncForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSyncForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSyncAllowedState:(_Bool)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeBackupInfoForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeDeviceTotals:(NSDictionary *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceSyncPrefs:(AMPDeviceSyncPrefs *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceInfo:(AMPDeviceInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceName:(NSString *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeBatteryInfo:(AMPDeviceBatteryInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)requestCompleteWithActivationInfo:(NSDictionary *)arg1 forDeviceWithIdentifier:(NSString *)arg2 withError:(NSError *)arg3;
+- (void)didChangeDevicesClientConnectionState:(unsigned long long)arg1;
+@end
+@protocol DeviceClientProtocol
+- (void)pairDeviceWithIdentifier:(NSString *)arg1 withReply:(void (^)(NSError *))arg2;
+@end
+@protocol DeviceServiceSideProtocol
+- (void)start;
+@end
+@protocol FileEventObserverDelegate
+- (void)fileEventObserver:(FileEventObserver *)arg1 didProcessEvent:(FileEventObserverEvent *)arg2;
+@end
+@protocol NSAccessibilityElement <NSObject>
+- (id)accessibilityParent;
+- (struct CGRect)accessibilityFrame;
+- (NSString *)accessibilityIdentifier;
+- (_Bool)isAccessibilityFocused;
+@end
+@protocol NSAccessibilityGroup <NSAccessibilityElement>
+@end
+@protocol NSControlTextEditingDelegate <NSObject>
+- (NSArray *)control:(NSControl *)arg1 textView:(NSTextView *)arg2 completions:(NSArray *)arg3 forPartialWordRange:(struct _NSRange)arg4 indexOfSelectedItem:(long long *)arg5;
+- (_Bool)control:(NSControl *)arg1 textView:(NSTextView *)arg2 doCommandBySelector:(SEL)arg3;
+- (_Bool)control:(NSControl *)arg1 isValidObject:(id)arg2;
+- (void)control:(NSControl *)arg1 didFailToValidatePartialString:(NSString *)arg2 errorDescription:(NSString *)arg3;
+- (_Bool)control:(NSControl *)arg1 didFailToFormatString:(NSString *)arg2 errorDescription:(NSString *)arg3;
+- (_Bool)control:(NSControl *)arg1 textShouldEndEditing:(NSText *)arg2;
+- (_Bool)control:(NSControl *)arg1 textShouldBeginEditing:(NSText *)arg2;
+- (void)controlTextDidChange:(NSNotification *)arg1;
+- (void)controlTextDidEndEditing:(NSNotification *)arg1;
+- (void)controlTextDidBeginEditing:(NSNotification *)arg1;
+@end
+@protocol NSDraggingDestination <NSObject>
+- (void)updateDraggingItemsForDrag:(id <NSDraggingInfo>)arg1;
+- (_Bool)wantsPeriodicDraggingUpdates;
+- (void)draggingEnded:(id <NSDraggingInfo>)arg1;
+- (void)concludeDragOperation:(id <NSDraggingInfo>)arg1;
+- (_Bool)performDragOperation:(id <NSDraggingInfo>)arg1;
+- (_Bool)prepareForDragOperation:(id <NSDraggingInfo>)arg1;
+- (void)draggingExited:(id <NSDraggingInfo>)arg1;
+- (unsigned long long)draggingUpdated:(id <NSDraggingInfo>)arg1;
+- (unsigned long long)draggingEntered:(id <NSDraggingInfo>)arg1;
+@end
+@protocol NSFilePromiseProviderDelegate <NSObject>
+- (void)filePromiseProvider:(NSFilePromiseProvider *)arg1 writePromiseToURL:(NSURL *)arg2 completionHandler:(void (^)(NSError *))arg3;
+- (NSString *)filePromiseProvider:(NSFilePromiseProvider *)arg1 fileNameForType:(NSString *)arg2;
+- (NSOperationQueue *)operationQueueForFilePromiseProvider:(NSFilePromiseProvider *)arg1;
+@end
+@protocol NSMenuDelegate <NSObject>
+- (struct CGRect)confinementRectForMenu:(NSMenu *)arg1 onScreen:(NSScreen *)arg2;
+- (void)menu:(NSMenu *)arg1 willHighlightItem:(NSMenuItem *)arg2;
+- (void)menuDidClose:(NSMenu *)arg1;
+- (void)menuWillOpen:(NSMenu *)arg1;
+- (_Bool)menuHasKeyEquivalent:(NSMenu *)arg1 forEvent:(NSEvent *)arg2 target:(id *)arg3 action:(SEL *)arg4;
+- (_Bool)menu:(NSMenu *)arg1 updateItem:(NSMenuItem *)arg2 atIndex:(long long)arg3 shouldCancel:(_Bool)arg4;
+- (long long)numberOfItemsInMenu:(NSMenu *)arg1;
+- (void)menuNeedsUpdate:(NSMenu *)arg1;
+@end
+@protocol NSOutlineViewDataSource <NSObject>
+- (NSArray *)outlineView:(NSOutlineView *)arg1 namesOfPromisedFilesDroppedAtDestination:(NSURL *)arg2 forDraggedItems:(NSArray *)arg3;
+- (_Bool)outlineView:(NSOutlineView *)arg1 acceptDrop:(id <NSDraggingInfo>)arg2 item:(id)arg3 childIndex:(long long)arg4;
+- (unsigned long long)outlineView:(NSOutlineView *)arg1 validateDrop:(id <NSDraggingInfo>)arg2 proposedItem:(id)arg3 proposedChildIndex:(long long)arg4;
+- (void)outlineView:(NSOutlineView *)arg1 updateDraggingItemsForDrag:(id <NSDraggingInfo>)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 writeItems:(NSArray *)arg2 toPasteboard:(NSPasteboard *)arg3;
+- (void)outlineView:(NSOutlineView *)arg1 draggingSession:(NSDraggingSession *)arg2 endedAtPoint:(struct CGPoint)arg3 operation:(unsigned long long)arg4;
+- (void)outlineView:(NSOutlineView *)arg1 draggingSession:(NSDraggingSession *)arg2 willBeginAtPoint:(struct CGPoint)arg3 forItems:(NSArray *)arg4;
+- (id <NSPasteboardWriting>)outlineView:(NSOutlineView *)arg1 pasteboardWriterForItem:(id)arg2;
+- (void)outlineView:(NSOutlineView *)arg1 sortDescriptorsDidChange:(NSArray *)arg2;
+- (id)outlineView:(NSOutlineView *)arg1 persistentObjectForItem:(id)arg2;
+- (id)outlineView:(NSOutlineView *)arg1 itemForPersistentObject:(id)arg2;
+- (void)outlineView:(NSOutlineView *)arg1 setObjectValue:(id)arg2 forTableColumn:(NSTableColumn *)arg3 byItem:(id)arg4;
+- (id)outlineView:(NSOutlineView *)arg1 objectValueForTableColumn:(NSTableColumn *)arg2 byItem:(id)arg3;
+- (_Bool)outlineView:(NSOutlineView *)arg1 isItemExpandable:(id)arg2;
+- (id)outlineView:(NSOutlineView *)arg1 child:(long long)arg2 ofItem:(id)arg3;
+- (long long)outlineView:(NSOutlineView *)arg1 numberOfChildrenOfItem:(id)arg2;
+@end
+@protocol NSOutlineViewDelegate <NSControlTextEditingDelegate>
+- (void)outlineViewItemDidCollapse:(NSNotification *)arg1;
+- (void)outlineViewItemWillCollapse:(NSNotification *)arg1;
+- (void)outlineViewItemDidExpand:(NSNotification *)arg1;
+- (void)outlineViewItemWillExpand:(NSNotification *)arg1;
+- (void)outlineViewSelectionIsChanging:(NSNotification *)arg1;
+- (void)outlineViewColumnDidResize:(NSNotification *)arg1;
+- (void)outlineViewColumnDidMove:(NSNotification *)arg1;
+- (void)outlineViewSelectionDidChange:(NSNotification *)arg1;
+- (void)outlineView:(NSOutlineView *)arg1 userDidChangeVisibilityOfTableColumns:(NSArray *)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 userCanChangeVisibilityOfTableColumn:(NSTableColumn *)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldShowOutlineCellForItem:(id)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldReorderColumn:(long long)arg2 toColumn:(long long)arg3;
+- (double)outlineView:(NSOutlineView *)arg1 sizeToFitWidthOfColumn:(long long)arg2;
+- (void)outlineView:(NSOutlineView *)arg1 willDisplayOutlineCell:(id)arg2 forTableColumn:(NSTableColumn *)arg3 item:(id)arg4;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldCollapseItem:(id)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldExpandItem:(id)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 isGroupItem:(id)arg2;
+- (NSCell *)outlineView:(NSOutlineView *)arg1 dataCellForTableColumn:(NSTableColumn *)arg2 item:(id)arg3;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldTrackCell:(NSCell *)arg2 forTableColumn:(NSTableColumn *)arg3 item:(id)arg4;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldShowCellExpansionForTableColumn:(NSTableColumn *)arg2 item:(id)arg3;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldTypeSelectForEvent:(NSEvent *)arg2 withCurrentSearchString:(NSString *)arg3;
+- (id)outlineView:(NSOutlineView *)arg1 nextTypeSelectMatchFromItem:(id)arg2 toItem:(id)arg3 forString:(NSString *)arg4;
+- (NSString *)outlineView:(NSOutlineView *)arg1 typeSelectStringForTableColumn:(NSTableColumn *)arg2 item:(id)arg3;
+- (NSTintConfiguration *)outlineView:(NSOutlineView *)arg1 tintConfigurationForItem:(id)arg2;
+- (double)outlineView:(NSOutlineView *)arg1 heightOfRowByItem:(id)arg2;
+- (NSString *)outlineView:(NSOutlineView *)arg1 toolTipForCell:(NSCell *)arg2 rect:(struct CGRect *)arg3 tableColumn:(NSTableColumn *)arg4 item:(id)arg5 mouseLocation:(struct CGPoint)arg6;
+- (void)outlineView:(NSOutlineView *)arg1 didDragTableColumn:(NSTableColumn *)arg2;
+- (void)outlineView:(NSOutlineView *)arg1 didClickTableColumn:(NSTableColumn *)arg2;
+- (void)outlineView:(NSOutlineView *)arg1 mouseDownInHeaderOfTableColumn:(NSTableColumn *)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldSelectTableColumn:(NSTableColumn *)arg2;
+- (NSIndexSet *)outlineView:(NSOutlineView *)arg1 selectionIndexesForProposedSelection:(NSIndexSet *)arg2;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldSelectItem:(id)arg2;
+- (_Bool)selectionShouldChangeInOutlineView:(NSOutlineView *)arg1;
+- (_Bool)outlineView:(NSOutlineView *)arg1 shouldEditTableColumn:(NSTableColumn *)arg2 item:(id)arg3;
+- (void)outlineView:(NSOutlineView *)arg1 willDisplayCell:(id)arg2 forTableColumn:(NSTableColumn *)arg3 item:(id)arg4;
+- (void)outlineView:(NSOutlineView *)arg1 didRemoveRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (void)outlineView:(NSOutlineView *)arg1 didAddRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (NSTableRowView *)outlineView:(NSOutlineView *)arg1 rowViewForItem:(id)arg2;
+- (NSView *)outlineView:(NSOutlineView *)arg1 viewForTableColumn:(NSTableColumn *)arg2 item:(id)arg3;
+@end
+@protocol NSStackViewDelegate <NSObject>
+- (void)stackView:(NSStackView *)arg1 didReattachViews:(NSArray *)arg2;
+- (void)stackView:(NSStackView *)arg1 willDetachViews:(NSArray *)arg2;
+@end
+@protocol NSTabViewDelegate <NSObject>
+- (void)tabViewDidChangeNumberOfTabViewItems:(NSTabView *)arg1;
+- (void)tabView:(NSTabView *)arg1 didSelectTabViewItem:(NSTabViewItem *)arg2;
+- (void)tabView:(NSTabView *)arg1 willSelectTabViewItem:(NSTabViewItem *)arg2;
+- (_Bool)tabView:(NSTabView *)arg1 shouldSelectTabViewItem:(NSTabViewItem *)arg2;
+@end
+@protocol NSTableViewDataSource <NSObject>
+- (NSArray *)tableView:(NSTableView *)arg1 namesOfPromisedFilesDroppedAtDestination:(NSURL *)arg2 forDraggedRowsWithIndexes:(NSIndexSet *)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 acceptDrop:(id <NSDraggingInfo>)arg2 row:(long long)arg3 dropOperation:(unsigned long long)arg4;
+- (unsigned long long)tableView:(NSTableView *)arg1 validateDrop:(id <NSDraggingInfo>)arg2 proposedRow:(long long)arg3 proposedDropOperation:(unsigned long long)arg4;
+- (_Bool)tableView:(NSTableView *)arg1 writeRowsWithIndexes:(NSIndexSet *)arg2 toPasteboard:(NSPasteboard *)arg3;
+- (void)tableView:(NSTableView *)arg1 updateDraggingItemsForDrag:(id <NSDraggingInfo>)arg2;
+- (void)tableView:(NSTableView *)arg1 draggingSession:(NSDraggingSession *)arg2 endedAtPoint:(struct CGPoint)arg3 operation:(unsigned long long)arg4;
+- (void)tableView:(NSTableView *)arg1 draggingSession:(NSDraggingSession *)arg2 willBeginAtPoint:(struct CGPoint)arg3 forRowIndexes:(NSIndexSet *)arg4;
+- (id <NSPasteboardWriting>)tableView:(NSTableView *)arg1 pasteboardWriterForRow:(long long)arg2;
+- (void)tableView:(NSTableView *)arg1 sortDescriptorsDidChange:(NSArray *)arg2;
+- (void)tableView:(NSTableView *)arg1 setObjectValue:(id)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (id)tableView:(NSTableView *)arg1 objectValueForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (long long)numberOfRowsInTableView:(NSTableView *)arg1;
+@end
+@protocol NSTableViewDelegate <NSControlTextEditingDelegate>
+- (void)tableViewSelectionIsChanging:(NSNotification *)arg1;
+- (void)tableViewColumnDidResize:(NSNotification *)arg1;
+- (void)tableViewColumnDidMove:(NSNotification *)arg1;
+- (void)tableViewSelectionDidChange:(NSNotification *)arg1;
+- (void)tableView:(NSTableView *)arg1 userDidChangeVisibilityOfTableColumns:(NSArray *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 userCanChangeVisibilityOfTableColumn:(NSTableColumn *)arg2;
+- (NSArray *)tableView:(NSTableView *)arg1 rowActionsForRow:(long long)arg2 edge:(long long)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 shouldReorderColumn:(long long)arg2 toColumn:(long long)arg3;
+- (double)tableView:(NSTableView *)arg1 sizeToFitWidthOfColumn:(long long)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 isGroupRow:(long long)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldTypeSelectForEvent:(NSEvent *)arg2 withCurrentSearchString:(NSString *)arg3;
+- (long long)tableView:(NSTableView *)arg1 nextTypeSelectMatchFromRow:(long long)arg2 toRow:(long long)arg3 forString:(NSString *)arg4;
+- (NSString *)tableView:(NSTableView *)arg1 typeSelectStringForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (double)tableView:(NSTableView *)arg1 heightOfRow:(long long)arg2;
+- (void)tableView:(NSTableView *)arg1 didDragTableColumn:(NSTableColumn *)arg2;
+- (void)tableView:(NSTableView *)arg1 didClickTableColumn:(NSTableColumn *)arg2;
+- (void)tableView:(NSTableView *)arg1 mouseDownInHeaderOfTableColumn:(NSTableColumn *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldSelectTableColumn:(NSTableColumn *)arg2;
+- (NSIndexSet *)tableView:(NSTableView *)arg1 selectionIndexesForProposedSelection:(NSIndexSet *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldSelectRow:(long long)arg2;
+- (_Bool)selectionShouldChangeInTableView:(NSTableView *)arg1;
+- (NSCell *)tableView:(NSTableView *)arg1 dataCellForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 shouldTrackCell:(NSCell *)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (_Bool)tableView:(NSTableView *)arg1 shouldShowCellExpansionForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (NSString *)tableView:(NSTableView *)arg1 toolTipForCell:(NSCell *)arg2 rect:(struct CGRect *)arg3 tableColumn:(NSTableColumn *)arg4 row:(long long)arg5 mouseLocation:(struct CGPoint)arg6;
+- (_Bool)tableView:(NSTableView *)arg1 shouldEditTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (void)tableView:(NSTableView *)arg1 willDisplayCell:(id)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (void)tableView:(NSTableView *)arg1 didRemoveRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (void)tableView:(NSTableView *)arg1 didAddRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (NSTableRowView *)tableView:(NSTableView *)arg1 rowViewForRow:(long long)arg2;
+- (NSView *)tableView:(NSTableView *)arg1 viewForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+@end
+@protocol NSTextFieldDelegate <NSControlTextEditingDelegate>
+- (_Bool)textField:(NSTextField *)arg1 textView:(NSTextView *)arg2 shouldSelectCandidateAtIndex:(unsigned long long)arg3;
+- (NSArray *)textField:(NSTextField *)arg1 textView:(NSTextView *)arg2 candidates:(NSArray *)arg3 forSelectedRange:(struct _NSRange)arg4;
+- (NSArray *)textField:(NSTextField *)arg1 textView:(NSTextView *)arg2 candidatesForSelectedRange:(struct _NSRange)arg3;
+@end
+@protocol PHPhotoLibraryChangeObserver <NSObject>
+- (void)photoLibraryDidChange:(PHChange *)arg1;
+@end
+@protocol WKNavigationDelegate <NSObject>
+- (void)webView:(WKWebView *)arg1 navigationResponse:(WKNavigationResponse *)arg2 didBecomeDownload:(WKDownload *)arg3;
+- (void)webView:(WKWebView *)arg1 navigationAction:(WKNavigationAction *)arg2 didBecomeDownload:(WKDownload *)arg3;
+- (void)webView:(WKWebView *)arg1 authenticationChallenge:(NSURLAuthenticationChallenge *)arg2 shouldAllowDeprecatedTLS:(void (^)(_Bool))arg3;
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)arg1;
+- (void)webView:(WKWebView *)arg1 didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)arg2 completionHandler:(void (^)(long long, NSURLCredential *))arg3;
+- (void)webView:(WKWebView *)arg1 didFailNavigation:(WKNavigation *)arg2 withError:(NSError *)arg3;
+- (void)webView:(WKWebView *)arg1 didFinishNavigation:(WKNavigation *)arg2;
+- (void)webView:(WKWebView *)arg1 didCommitNavigation:(WKNavigation *)arg2;
+- (void)webView:(WKWebView *)arg1 didFailProvisionalNavigation:(WKNavigation *)arg2 withError:(NSError *)arg3;
+- (void)webView:(WKWebView *)arg1 didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)arg2;
+- (void)webView:(WKWebView *)arg1 didStartProvisionalNavigation:(WKNavigation *)arg2;
+- (void)webView:(WKWebView *)arg1 decidePolicyForNavigationResponse:(WKNavigationResponse *)arg2 decisionHandler:(void (^)(long long))arg3;
+- (void)webView:(WKWebView *)arg1 decidePolicyForNavigationAction:(WKNavigationAction *)arg2 preferences:(WKWebpagePreferences *)arg3 decisionHandler:(void (^)(long long, WKWebpagePreferences *))arg4;
+- (void)webView:(WKWebView *)arg1 decidePolicyForNavigationAction:(WKNavigationAction *)arg2 decisionHandler:(void (^)(long long))arg3;
+@end
+@protocol WKScriptMessageHandler <NSObject>
+- (void)userContentController:(WKUserContentController *)arg1 didReceiveScriptMessage:(WKScriptMessage *)arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.amp.devices.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.amp.devices.client.ui
+	[Value]
+		[Bool] true
+	[Key] com.apple.amp.library.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.avfoundation.allow-system-wide-context
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.photos.service.internal.cloud
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServicePhotos
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.assets.movies.read-only
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.assets.music.read-only
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.assets.pictures.read-only
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.files.user-selected.read-only
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.files.user-selected.read-write
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.server
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.amp.devicesd
+			[String] com.apple.amp.library.devicecontents
+			[String] com.apple.amp.library.framework
+			[String] com.apple.amp.artworkd
+	[Key] com.apple.security.temporary-exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.photos.shareddefaults

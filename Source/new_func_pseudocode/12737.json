@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttributeCollection allAttributes]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUExtendedAttributeCollection allAttributes](TSUExtendedAttributeCollection * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUExtendedAttributeCollection allAttributes](TSUExtendedAttributeCollection *self, SEL a2)\n{\n  return -[NSMutableDictionary allValues](self->_attributes, \"allValues\");\n}"
+}

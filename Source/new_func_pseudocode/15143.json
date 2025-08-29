@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$_travelTimeForEventWithID:latitude:longitude:expectedArrivalDate:transportType:localOnlyAfterFirstUpdate:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$_travelTimeForEventWithID:latitude:longitude:expectedArrivalDate:transportType:localOnlyAfterFirstUpdate:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend__travelTimeForEventWithID_latitude_longitude_expectedArrivalDate_transportType_localOnlyAfterFirstUpdate_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"_travelTimeForEventWithID:latitude:longitude:expectedArrivalDate:transportType:localOnlyAfterFirstUpdate:\");\n}"
+}

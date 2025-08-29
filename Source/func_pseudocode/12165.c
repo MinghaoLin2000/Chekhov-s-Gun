@@ -1,0 +1,5 @@
+__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter19PrintMessageContentERKNS0_7MessageEiibPNS1_17BaseTextGeneratorE
+__int64 google::protobuf::TextFormat::FastFieldValuePrinter::PrintMessageContent()
+{
+  return 0LL;
+}

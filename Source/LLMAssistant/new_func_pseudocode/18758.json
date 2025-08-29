@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper14MainWindowViewVwst",
+    "function_argument_number": 3,
+    "function_signature": "$s27BackgroundReplacementHelper14MainWindowViewVwst(__int64 result, unsigned int a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for MainWindowView(__int64 result, unsigned int a2, unsigned int a3)\n{\n  if ( a2 > 0xFE )\n  {\n    *(_BYTE *)(result + 8) = 0;\n    *(_QWORD *)result = a2 - 255;\n    if ( a3 >= 0xFF )\n      *(_BYTE *)(result + 9) = 1;\n  }\n  else\n  {\n    if ( a3 >= 0xFF )\n      *(_BYTE *)(result + 9) = 0;\n    if ( a2 )\n      *(_BYTE *)(result + 8) = -(char)a2;\n  }\n  return result;\n}"
+}

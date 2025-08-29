@@ -1,0 +1,6 @@
+{
+    "function_name": "_pthread_attr_setstacksize",
+    "function_argument_number": 2,
+    "function_signature": "_pthread_attr_setstacksize(pthread_attr_t * a1, size_t a2)",
+    "pseudocode": "int __cdecl pthread_attr_setstacksize(pthread_attr_t *a1, size_t a2)\n{\n  return _pthread_attr_setstacksize(a1, a2);\n}"
+}

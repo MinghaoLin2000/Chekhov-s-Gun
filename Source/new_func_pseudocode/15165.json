@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$atx_sendMessageActionWithTitle:subtitle:recipientName:recipientHandle:text:contactIdentifier:conversationIdentifier:eventIdentifier:heuristicName:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$atx_sendMessageActionWithTitle:subtitle:recipientName:recipientHandle:text:contactIdentifier:conversationIdentifier:eventIdentifier:heuristicName:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_atx_sendMessageActionWithTitle_subtitle_recipientName_recipientHandle_text_contactIdentifier_conversationIdentifier_eventIdentifier_heuristicName_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"atx_sendMessageActionWithTitle:subtitle:recipientName:recipientHandle:text:contactIdentifier:conversationIden\"\n           \"tifier:eventIdentifier:heuristicName:\");\n}"
+}

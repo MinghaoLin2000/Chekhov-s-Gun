@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringTokenizerGoToTokenAtIndex",
+    "function_argument_number": 2,
+    "function_signature": "_CFStringTokenizerGoToTokenAtIndex(CFStringTokenizerRef tokenizer, CFIndex index)",
+    "pseudocode": "CFStringTokenizerTokenType __cdecl CFStringTokenizerGoToTokenAtIndex(CFStringTokenizerRef tokenizer, CFIndex index)\n{\n  return _CFStringTokenizerGoToTokenAtIndex(tokenizer, index);\n}"
+}

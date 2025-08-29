@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE7__clearB8ne180100Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE7__clearB8ne180100Ev(__int64 * a1)",
+    "pseudocode": "void __fastcall std::vector<std::string>::__clear[abi:ne180100](__int64 *a1)\n{\n  __int64 v2; // x20\n  __int64 i; // x21\n\n  v2 = *a1;\n  for ( i = a1[1]; i != v2; i -= 24LL )\n  {\n    if ( *(char *)(i - 1) < 0 )\n      operator delete(*(void **)(i - 24));\n  }\n  a1[1] = v2;\n}"
+}

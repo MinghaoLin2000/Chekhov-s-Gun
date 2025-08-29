@@ -1,0 +1,6 @@
+{
+    "function_name": "_MASetPallasAudienceForType",
+    "function_argument_number": 0,
+    "function_signature": "_MASetPallasAudienceForType()",
+    "pseudocode": "__int64 MASetPallasAudienceForType()\n{\n  return _MASetPallasAudienceForType();\n}"
+}

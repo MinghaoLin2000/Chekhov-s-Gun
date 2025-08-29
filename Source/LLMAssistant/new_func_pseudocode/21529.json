@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection logCoreAnalyticsEvent:withAnalytics:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LSRConnection logCoreAnalyticsEvent:withAnalytics:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[LSRConnection logCoreAnalyticsEvent:withAnalytics:](LSRConnection *self, SEL a2, id a3, id a4)\n{\n  id v5; // x20\n  _QWORD v6[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v7; // [xsp+28h] [xbp-18h]\n\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_10003AED4;\n  v6[3] = &unk_100059CB8;\n  v7 = objc_retain(a4);\n  v5 = objc_retain(v7);\n  AnalyticsSendEventLazy(a3, v6);\n  objc_release(v7);\n  objc_release(v5);\n}"
+}

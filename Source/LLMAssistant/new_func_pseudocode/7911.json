@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGGetDisplaysWithPoint",
+    "function_argument_number": 4,
+    "function_signature": "_CGGetDisplaysWithPoint(uint32_t maxDisplays, CGDirectDisplayID * displays, uint32_t * matchingDisplayCount, CGPoint point)",
+    "pseudocode": "CGError __cdecl CGGetDisplaysWithPoint(\n        CGPoint point,\n        uint32_t maxDisplays,\n        CGDirectDisplayID *displays,\n        uint32_t *matchingDisplayCount)\n{\n  return _CGGetDisplaysWithPoint(point, maxDisplays, displays, matchingDisplayCount);\n}"
+}

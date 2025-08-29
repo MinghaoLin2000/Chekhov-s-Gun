@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilder18ValidateProto3EnumEPNS0_14EnumDescriptorERKNS0_19EnumDescriptorProtoE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilder18ValidateProto3EnumEPNS0_14EnumDescriptorERKNS0_19EnumDescriptorProtoE(google::protobuf::DescriptorBuilder * this, google::protobuf::EnumDescriptor * a2, const google::protobuf::EnumDescriptorProto * a3)",
+    "pseudocode": "void __fastcall google::protobuf::DescriptorBuilder::ValidateProto3Enum(\n        google::protobuf::DescriptorBuilder *this,\n        google::protobuf::EnumDescriptor *a2,\n        const google::protobuf::EnumDescriptorProto *a3)\n{\n  if ( *((int *)a2 + 11) >= 1 )\n  {\n    if ( *(_DWORD *)(*((_QWORD *)a2 + 6) + 16LL) )\n      google::protobuf::DescriptorBuilder::AddError(\n        (__int64)this,\n        *((_QWORD *)a2 + 1),\n        *(_QWORD *)(*((_QWORD *)a3 + 5) + 8LL),\n        1LL,\n        \"The first enum value must be zero in proto3.\");\n  }\n}"
+}

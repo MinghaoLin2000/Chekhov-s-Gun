@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryGetInternalPayloadMetaData",
+    "function_argument_number": 3,
+    "function_signature": "_UARPSuperBinaryGetInternalPayloadMetaData(int a1, int a2, void * __dst)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryGetInternalPayloadMetaData(\n        int a1,\n        __int64 a2,\n        void *__dst,\n        unsigned int a4,\n        unsigned int a5,\n        unsigned __int16 *a6)\n{\n  __int64 v7; // x8\n  int v8; // w10\n  unsigned int v9; // w9\n  unsigned int v10; // w11\n  bool v11; // cf\n  __int64 v12; // x9\n  unsigned __int16 v14; // w20\n  __int64 result; // x0\n  unsigned __int16 v16; // w10\n\n  v7 = *(_QWORD *)(a2 + 632);\n  if ( !v7 )\n  {\nLABEL_9:\n    v14 = 0;\n    result = 40LL;\n    goto LABEL_14;\n  }\n  while ( 1 )\n  {\n    v8 = *(_DWORD *)(v7 + 28);\n    if ( v8 )\n      break;\nLABEL_8:\n    if ( !v7 )\n      goto LABEL_9;\n  }\n  v9 = *(_DWORD *)(v7 + 24);\n  v10 = v8 + v9;\n  v11 = a5 >= v9;\n  v12 = a5 - v9;\n  if ( !v11 || v10 <= a5 )\n  {\n    v7 = *(_QWORD *)(v7 + 176);\n    goto LABEL_8;\n  }\n  v16 = v8 - v12;\n  if ( a4 >= v16 )\n    v14 = v16;\n  else\n    v14 = a4;\n  memcpy(__dst, (const void *)(*(_QWORD *)(v7 + 152) + v12), v14);\n  result = 0LL;\nLABEL_14:\n  *a6 = v14;\n  return result;\n}"
+}

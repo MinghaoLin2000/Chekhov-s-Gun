@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AppPredictionIntentsHelperService eligibleForWidgetsForIntent:withReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AppPredictionIntentsHelperService eligibleForWidgetsForIntent:withReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AppPredictionIntentsHelperService eligibleForWidgetsForIntent:withReply:](\n        AppPredictionIntentsHelperService *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v5; // x19\n  void (__fastcall **v6)(id, void *, _QWORD); // x20\n  void *v7; // x22\n  void *v8; // x21\n  os_log_s *v9; // x22\n\n  v5 = objc_retain(a3);\n  v6 = (void (__fastcall **)(id, void *, _QWORD))objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v5, \"_codableDescription\"));\n  v8 = objc_msgSend(v7, \"isEligibleForWidgets\");\n  objc_release(v7);\n  v9 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100005E98());\n  if ( os_log_type_enabled(v9, OS_LOG_TYPE_DEBUG) )\n    sub_100006E80(v8, v5, v9);\n  objc_release(v9);\n  v6[2](v6, v8, 0LL);\n  objc_release(v6);\n  objc_release(v5);\n}"
+}

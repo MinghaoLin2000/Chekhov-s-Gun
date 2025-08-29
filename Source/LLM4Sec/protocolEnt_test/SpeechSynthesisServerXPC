@@ -1,0 +1,23 @@
+Service Path:
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/XPCServices/SpeechSynthesisServerXPC.xpc/Contents/MacOS/SpeechSynthesisServerXPC
+
+Service Exported Protocols:
+@protocol SpeechSynthesisServerXPCProtocol
+- (void)getSpeakingStateWithCompletionHandler:(void (^)(_Bool))arg1;
+- (void)stopSpeakingSelectionWithCompletionHandler:(void (^)(void))arg1;
+- (void)startSpeakingSelectionWithFallback:(NSString *)arg1 completionHandler:(void (^)(void))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] Ubiquity Container Identifiers
+	[Value]
+		[String] 
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.speech.synthesis.SpeakingHotKeyPort
+			[String] com.apple.accessibility.AXVisualSupportAgent

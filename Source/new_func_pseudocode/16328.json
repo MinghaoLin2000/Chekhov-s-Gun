@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory logv:format:arguments:]",
+    "function_argument_number": 5,
+    "function_signature": "-[LegacyAudioAccessory logv:format:arguments:](LegacyAudioAccessory * self, SEL a2, int a3, id a4, char * a5)",
+    "pseudocode": "void __cdecl -[LegacyAudioAccessory logv:format:arguments:](\n        LegacyAudioAccessory *self,\n        SEL a2,\n        int a3,\n        id a4,\n        char *a5)\n{\n  ;\n}"
+}

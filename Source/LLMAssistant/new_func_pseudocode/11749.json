@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Reflection10GetMapDataERKNS0_7MessageEPKNS0_15FieldDescriptorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf10Reflection10GetMapDataERKNS0_7MessageEPKNS0_15FieldDescriptorE(google::protobuf::Reflection * this, const google::protobuf::Message * a2, const google::protobuf::FieldDescriptor * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Reflection::GetMapData(\n        google::protobuf::Reflection *this,\n        const google::protobuf::Message *a2,\n        const google::protobuf::FieldDescriptor *a3)\n{\n  if ( (sub_1000BF2A4(a3) & 1) == 0 )\n    sub_1000D8734(*(_QWORD *)this, a3, \"\\\"GetMapData\\\"\", \"Field is not a map field.\");\n  return (__int64)a2 + (unsigned int)sub_1000DF774((char *)this + 8, a3);\n}"
+}

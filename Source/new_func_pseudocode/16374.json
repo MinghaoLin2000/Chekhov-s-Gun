@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater updateProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater updateProgress:](EAFirmwareUpdater * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater updateProgress:](EAFirmwareUpdater *self, SEL a2, double a3)\n{\n  void (__fastcall **progressHandler)(double); // x0\n\n  progressHandler = (void (__fastcall **)(double))self->_progressHandler;\n  if ( progressHandler )\n    progressHandler[2](a3);\n}"
+}

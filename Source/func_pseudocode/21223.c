@@ -1,0 +1,6 @@
+_$s22localspeechrecognition17RequestEndMetricsC34cpuInstructionsInMillionsPerSeconds6UInt64Vvpfi
+// attributes: thunk
+__int64 variable initialization expression of RequestEndMetrics.cpuInstructionsInMillionsPerSecond()
+{
+  return _s22localspeechrecognition17RequestEndMetricsC34cpuInstructionsInMillionsPerSeconds6UInt64Vvpfi_0();
+}

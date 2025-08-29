@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpApplePlatformMessageCheckExpectedResponse",
+    "function_argument_number": 6,
+    "function_signature": "_uarpApplePlatformMessageCheckExpectedResponse(__int64 a3, __int64 a5, unsigned int a6, __int64 a1, __int64 a2, __int64 a4)",
+    "pseudocode": "bool __fastcall uarpApplePlatformMessageCheckExpectedResponse(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        unsigned int a6)\n{\n  _BOOL8 result; // x0\n  bool v10; // zf\n  int v12; // w8\n\n  if ( a6 < 0xB )\n    return 0LL;\n  if ( *(unsigned __int16 *)(a5 + 6) != *(unsigned __int16 *)(a3 + 6)\n    || *(unsigned __int8 *)(a5 + 8) != *(unsigned __int8 *)(a3 + 8) )\n  {\n    return 0LL;\n  }\n  word_10002AC90 = 2492;\n  byte_10002AC92 = 99;\n  v10 = *(_WORD *)(a5 + 6) == 2492 && *(_BYTE *)(a5 + 8) == 99;\n  if ( !v10 || (unsigned int)uarpNtohs(*(unsigned __int16 *)(a5 + 9)) != 33 )\n    return 0LL;\n  v12 = uarpNtohs(*(unsigned __int16 *)(a3 + 9));\n  result = 0LL;\n  if ( a6 >= 0x17 && v12 == 32 )\n    return *(_DWORD *)(a5 + 15) == *(_DWORD *)(a3 + 11);\n  return result;\n}"
+}

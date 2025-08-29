@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV14getConstraints10connectionSo6CGSizeV3min_AG3maxAG9preferredtAA13CGSConnectionV_tF",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV14getConstraints10connectionSo6CGSizeV3min_AG3maxAG9preferredtAA13CGSConnectionV_tF(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__n128 __usercall CGSWindow.getConstraints(connection:)@<Q0>(__int64 a1@<X0>, __int64 a2@<X1>, __int64 a3@<X8>)\n{\n  __n128 result; // q0\n  __int128 v5; // q1\n  __n128 v6; // [xsp+0h] [xbp-50h] BYREF\n  __int128 v7; // [xsp+10h] [xbp-40h] BYREF\n  __int128 v8; // [xsp+20h] [xbp-30h] BYREF\n\n  v8 = 0uLL;\n  v7 = 0uLL;\n  v6 = 0uLL;\n  CGSPackagesGetWindowConstraints(a1, a2, &v8, &v7, &v6);\n  result = v6;\n  v5 = v7;\n  *(_OWORD *)a3 = v8;\n  *(_OWORD *)(a3 + 16) = v5;\n  *(__n128 *)(a3 + 32) = result;\n  return result;\n}"
+}

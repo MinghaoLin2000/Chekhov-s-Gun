@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetWindowEventMask",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetWindowEventMask()",
+    "pseudocode": "__int64 CGSGetWindowEventMask()\n{\n  return _CGSGetWindowEventMask();\n}"
+}

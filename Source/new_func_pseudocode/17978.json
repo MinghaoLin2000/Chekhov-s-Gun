@@ -1,0 +1,6 @@
+{
+    "function_name": "___LoadHomeKit_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___LoadHomeKit_block_invoke(id a1)",
+    "pseudocode": "void __cdecl __LoadHomeKit_block_invoke(id a1)\n{\n  LoadHomeKit_frameworkLibrary = (__int64)dlopen(\"/System/Library/Framework/HomeKit.framework/HomeKit\", 2);\n  if ( !LoadHomeKit_frameworkLibrary )\n    NSLog(&CFSTR(\"### Failed to Soft Linked: /System/Library/Framework/HomeKit.framework/HomeKit\").isa, a1, a1);\n}"
+}

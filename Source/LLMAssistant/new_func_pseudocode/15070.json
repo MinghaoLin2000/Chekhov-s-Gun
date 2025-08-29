@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFRunLoopRunInMode",
+    "function_argument_number": 3,
+    "function_signature": "_CFRunLoopRunInMode(CFRunLoopMode mode, CFTimeInterval seconds, Boolean returnAfterSourceHandled)",
+    "pseudocode": "CFRunLoopRunResult __cdecl CFRunLoopRunInMode(\n        CFRunLoopMode mode,\n        CFTimeInterval seconds,\n        Boolean returnAfterSourceHandled)\n{\n  return _CFRunLoopRunInMode(mode, seconds, returnAfterSourceHandled);\n}"
+}

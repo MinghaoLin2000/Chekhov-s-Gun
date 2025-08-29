@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore28CaptureFrameReceiverObserverCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore28CaptureFrameReceiverObserverCMa()",
+    "pseudocode": "__int64 type metadata accessor for CaptureFrameReceiverObserver()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver);\n}"
+}

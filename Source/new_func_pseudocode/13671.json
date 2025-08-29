@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryCreateMutable",
+    "function_argument_number": 4,
+    "function_signature": "_CFDictionaryCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFDictionaryKeyCallBacks * keyCallBacks, const CFDictionaryValueCallBacks * valueCallBacks)",
+    "pseudocode": "CFMutableDictionaryRef __cdecl CFDictionaryCreateMutable(\n        CFAllocatorRef allocator,\n        CFIndex capacity,\n        const CFDictionaryKeyCallBacks *keyCallBacks,\n        const CFDictionaryValueCallBacks *valueCallBacks)\n{\n  return _CFDictionaryCreateMutable(allocator, capacity, keyCallBacks, valueCallBacks);\n}"
+}

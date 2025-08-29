@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCryptorCreate",
+    "function_argument_number": 7,
+    "function_signature": "_CCCryptorCreate(CCOperation op, CCAlgorithm alg, CCOptions options, const void * key, size_t keyLength, const void * iv, CCCryptorRef * cryptorRef)",
+    "pseudocode": "CCCryptorStatus __cdecl CCCryptorCreate(\n        CCOperation op,\n        CCAlgorithm alg,\n        CCOptions options,\n        const void *key,\n        size_t keyLength,\n        const void *iv,\n        CCCryptorRef *cryptorRef)\n{\n  return _CCCryptorCreate(op, alg, options, key, keyLength, iv, cryptorRef);\n}"
+}

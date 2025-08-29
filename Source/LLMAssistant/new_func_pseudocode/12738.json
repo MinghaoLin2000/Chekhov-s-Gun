@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttributeCollection extendedAttributeForName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUExtendedAttributeCollection extendedAttributeForName:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[TSUExtendedAttributeCollection extendedAttributeForName:](\n        TSUExtendedAttributeCollection *self,\n        SEL a2,\n        id a3)\n{\n  const char *v4; // x0\n  char *v5; // x20\n  NSMutableDictionary *attributes; // x19\n  void *v7; // x21\n  void *v8; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (const char *)objc_msgSend(objc_retainAutorelease(a3), \"UTF8String\");\n  if ( v4 )\n  {\n    v5 = xattr_name_without_flags(v4);\n    attributes = self->_attributes;\n    v7 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithUTF8String:\", v5);\n    v8 = objc_retainAutoreleasedReturnValue(-[NSMutableDictionary objectForKeyedSubscript:](attributes, \"objectForKeyedSubscript:\", v7));\n    objc_release(v7);\n    free(v5);\n  }\n  else\n  {\n    v8 = 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v8);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRLocalizedCopyStringForAMROperation",
+    "function_argument_number": 0,
+    "function_signature": "_AMRLocalizedCopyStringForAMROperation()",
+    "pseudocode": "__int64 AMRLocalizedCopyStringForAMROperation()\n{\n  return _AMRLocalizedCopyStringForAMROperation();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAMediaConversionServiceSetCreationDateImageMetadataPolicy policyWithCreationDate:inTimeZone:]",
+    "function_argument_number": 4,
+    "function_signature": "+[PAMediaConversionServiceSetCreationDateImageMetadataPolicy policyWithCreationDate:inTimeZone:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "id __cdecl +[PAMediaConversionServiceSetCreationDateImageMetadataPolicy policyWithCreationDate:inTimeZone:](\n        id a1,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x22\n  __int64 v8; // x1\n  void *v9; // x20\n  NSTimeZone *v10; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(a4);\n  v7 = objc_retain(a3);\n  v9 = (void *)objc_opt_new(a1, v8);\n  objc_msgSend(v9, \"setCreationDate:\", v7);\n  objc_release(v7);\n  if ( v6 )\n  {\n    objc_msgSend(v9, \"setTimeZone:\", v6);\n  }\n  else\n  {\n    v10 = objc_retainAutoreleasedReturnValue(+[NSTimeZone defaultTimeZone](&OBJC_CLASS___NSTimeZone, \"defaultTimeZone\"));\n    objc_msgSend(v9, \"setTimeZone:\", v10);\n    objc_release(v10);\n  }\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v9);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Arena18CreateMaybeMessageINS0_29DescriptorProto_ReservedRangeEJEEEPT_PS1_DpOT0_",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf5Arena18CreateMaybeMessageINS0_29DescriptorProto_ReservedRangeEJEEEPT_PS1_DpOT0_(google::protobuf::Arena * a1)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::Arena::CreateMaybeMessage<google::protobuf::DescriptorProto_ReservedRange>(\n        google::protobuf::Arena *a1)\n{\n  return sub_1000B79FC(a1);\n}"
+}

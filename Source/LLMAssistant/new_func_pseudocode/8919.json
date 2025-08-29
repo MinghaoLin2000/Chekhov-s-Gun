@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestVwcp",
+    "function_argument_number": 3,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestVwcp(_QWORD * a1, _QWORD * a2, __int64 a3)",
+    "pseudocode": "_QWORD *__fastcall initializeWithCopy for JSServiceRequest(_QWORD *a1, _QWORD *a2, __int64 a3)\n{\n  __int64 v4; // x23\n  __int64 v5; // x24\n  __int64 v6; // x8\n  char *v7; // x20\n  char *v8; // x21\n  __int64 v9; // x22\n  __int64 v10; // x0\n\n  v4 = a2[1];\n  *a1 = *a2;\n  a1[1] = v4;\n  v5 = a2[2];\n  a1[2] = v5;\n  v6 = *(int *)(a3 + 24);\n  v7 = (char *)a1 + v6;\n  v8 = (char *)a2 + v6;\n  v9 = sub_100045608(0LL);\n  swift_bridgeObjectRetain(v4);\n  swift_bridgeObjectRetain(v5);\n  if ( (unsigned int)sub_100004D58(v8, 1LL, v9) )\n  {\n    v10 = sub_100003D44(&unk_10005C648);\n    memcpy(v7, v8, *(_QWORD *)(*(_QWORD *)(v10 - 8) + 64LL));\n  }\n  else\n  {\n    (*(void (__fastcall **)(char *, char *, __int64))(*(_QWORD *)(v9 - 8) + 16LL))(v7, v8, v9);\n    sub_100004CC8(v7, 0LL, 1LL, v9);\n  }\n  return a1;\n}"
+}

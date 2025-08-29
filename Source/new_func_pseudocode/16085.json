@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformNoFirmwareUpdateAvailable",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformNoFirmwareUpdateAvailable(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformNoFirmwareUpdateAvailable(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = uarpAllocPrepareTransmitBuffer2(a1, a2, 29LL, 6u, 1);\n  if ( !v4 )\n    return 11LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpTransmitBuffer2(a1, a2, v4);\n}"
+}

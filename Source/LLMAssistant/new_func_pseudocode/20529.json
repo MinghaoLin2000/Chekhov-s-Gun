@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUserNotificationCancel",
+    "function_argument_number": 1,
+    "function_signature": "_CFUserNotificationCancel(CFUserNotificationRef userNotification)",
+    "pseudocode": "SInt32 __cdecl CFUserNotificationCancel(CFUserNotificationRef userNotification)\n{\n  return _CFUserNotificationCancel(userNotification);\n}"
+}

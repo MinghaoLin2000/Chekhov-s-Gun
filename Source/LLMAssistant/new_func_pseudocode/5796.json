@@ -1,0 +1,6 @@
+{
+    "function_name": "+[IPLocaleCoder localePreferenceKeysAndClasses]",
+    "function_argument_number": 2,
+    "function_signature": "+[IPLocaleCoder localePreferenceKeysAndClasses](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[IPLocaleCoder localePreferenceKeysAndClasses](id a1, SEL a2)\n{\n  void *v2; // x0\n  NSDictionary *v3; // x0\n  void *v4; // x8\n  const __CFString *v6; // [xsp+8h] [xbp-28h] BYREF\n  __int64 v7; // [xsp+10h] [xbp-20h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v2 = (void *)qword_100008AB0;\n  if ( !qword_100008AB0 )\n  {\n    v6 = CFSTR(\"AppleLocale\");\n    v7 = objc_opt_class(&OBJC_CLASS___NSString, a2);\n    v3 = objc_retainAutoreleasedReturnValue(\n           +[NSDictionary dictionaryWithObjects:forKeys:count:](\n             &OBJC_CLASS___NSDictionary,\n             \"dictionaryWithObjects:forKeys:count:\",\n             &v7,\n             &v6,\n             1LL));\n    v4 = (void *)qword_100008AB0;\n    qword_100008AB0 = (__int64)v3;\n    objc_release(v4);\n    v2 = (void *)qword_100008AB0;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

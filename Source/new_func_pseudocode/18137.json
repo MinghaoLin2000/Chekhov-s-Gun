@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCopyResourcePropertyForKey",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLCopyResourcePropertyForKey(CFURLRef url, CFStringRef key, void * propertyValueTypeRefPtr, CFErrorRef * error)",
+    "pseudocode": "Boolean __cdecl CFURLCopyResourcePropertyForKey(\n        CFURLRef url,\n        CFStringRef key,\n        void *propertyValueTypeRefPtr,\n        CFErrorRef *error)\n{\n  return _CFURLCopyResourcePropertyForKey(url, key, propertyValueTypeRefPtr, error);\n}"
+}

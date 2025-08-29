@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceEULAViewController deviceType]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceEULAViewController deviceType](DeviceEULAViewController * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceEULAViewController deviceType](DeviceEULAViewController *self, SEL a2)\n{\n  unsigned __int64 result; // x0\n  AMPDevice *v4; // x20\n\n  result = self->_deviceType;\n  if ( !result )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController device](self, \"device\"));\n    self->_deviceType = (unsigned __int64)-[AMPDevice deviceType](v4, \"deviceType\");\n    objc_release(v4);\n    return self->_deviceType;\n  }\n  return result;\n}"
+}

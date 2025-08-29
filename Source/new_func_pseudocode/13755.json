@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_mmRKS4_",
+    "function_argument_number": 5,
+    "function_signature": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_mmRKS4_(std::string * this, const std::string * __str, std::string::size_type __pos, std::string::size_type __n, std::allocator<char> * __a)",
+    "pseudocode": "std::string *__cdecl std::string::basic_string(\n        std::string *this,\n        const std::string *__str,\n        std::string::size_type __pos,\n        std::string::size_type __n,\n        std::allocator<char> *__a)\n{\n  return std::string::basic_string(this, __str, __pos, __n, __a);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper14NetworkMonitorCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper14NetworkMonitorCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for NetworkMonitor(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CBE88;\n  if ( !qword_1000CBE88 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for NetworkMonitor);\n  return result;\n}"
+}

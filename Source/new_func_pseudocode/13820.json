@@ -1,0 +1,6 @@
+{
+    "function_name": "_fwrite",
+    "function_argument_number": 4,
+    "function_signature": "_fwrite(const void * __ptr, size_t __size, size_t __nitems, FILE * __stream)",
+    "pseudocode": "size_t __cdecl fwrite(const void *__ptr, size_t __size, size_t __nitems, FILE *__stream)\n{\n  return _fwrite(__ptr, __size, __nitems, __stream);\n}"
+}

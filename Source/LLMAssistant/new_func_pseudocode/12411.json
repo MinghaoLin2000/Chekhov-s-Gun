@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr12ClearToEmptyEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr12ClearToEmptyEv(google::protobuf::internal::ArenaStringPtr * this)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::internal::ArenaStringPtr::ClearToEmpty(_QWORD *this)\n{\n  unsigned __int64 v1; // x8\n\n  if ( (__int64 *)*this != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    v1 = *this & 0xFFFFFFFFFFFFFFFELL;\n    if ( *(char *)(v1 + 23) < 0 )\n    {\n      **(_BYTE **)v1 = 0;\n      *(_QWORD *)(v1 + 8) = 0LL;\n    }\n    else\n    {\n      *(_BYTE *)v1 = 0;\n      *(_BYTE *)(v1 + 23) = 0;\n    }\n  }\n  return this;\n}"
+}

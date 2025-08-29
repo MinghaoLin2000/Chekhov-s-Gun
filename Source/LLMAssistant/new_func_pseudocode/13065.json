@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUNoCopyDictionary getObjects:andKeys:count:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUNoCopyDictionary getObjects:andKeys:count:](TSUNoCopyDictionary * self, SEL a2, id * a3, id * a4, unsigned __int64 a5)",
+    "pseudocode": "void __cdecl -[TSUNoCopyDictionary getObjects:andKeys:count:](\n        TSUNoCopyDictionary *self,\n        SEL a2,\n        id *a3,\n        id *a4,\n        unsigned __int64 a5)\n{\n  unsigned __int64 Count; // x0\n  unsigned __int64 v10; // x8\n  bool v11; // zf\n  __CFDictionary *mDictionary; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  Count = CFDictionaryGetCount(self->mDictionary);\n  if ( Count >= a5 )\n    v10 = a5;\n  else\n    v10 = Count;\n  if ( v10 )\n    v11 = ((unsigned __int64)a3 | (unsigned __int64)a4) == 0;\n  else\n    v11 = 1;\n  if ( !v11 )\n  {\n    mDictionary = self->mDictionary;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    CFDictionaryGetKeysAndValues(mDictionary, (const void **)a4, (const void **)a3);\n  }\n}"
+}

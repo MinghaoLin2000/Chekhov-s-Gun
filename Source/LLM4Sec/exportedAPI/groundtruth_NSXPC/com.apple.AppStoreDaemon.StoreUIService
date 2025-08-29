@@ -1,0 +1,9 @@
+@protocol StoreUIServiceProtocol
+- (void)presentViewRequest:(ASDViewPresentationRequest *)arg1 withResultHandler:(void (^)(ASDViewPresentationResult *, NSError *))arg2;
+- (void)presentBackgroundAssetsTransparencyWithLogKey:(LogKey *)arg1 completion:(void (^)(NSError *))arg2;
+- (void)presentEngagementRequest:(AMSEngagementRequest *)arg1 withResultHandler:(void (^)(AMSEngagementResult *, NSError *))arg2;
+- (void)presentDialogRequest:(AMSDialogRequest *)arg1 withResultHandler:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)presentAuthenticateRequest:(AMSAuthenticateRequest *)arg1 withResultHandler:(void (^)(AMSAuthenticateResult *, NSError *))arg2;
+- (void)presentAlertStyledDialogRequest:(AMSDialogRequest *)arg1 withResultHandler:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)presentAlertRequest:(ASDAlertPresentationRequest *)arg1 withResultHandler:(void (^)(ASDAlertPresentationResult *, NSError *))arg2;
+@end

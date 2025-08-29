@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper19ControlCenterHelper closeBackgroundReplacementPickerWithBundleID:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC19ControlCenterHelper19ControlCenterHelper closeBackgroundReplacementPickerWithBundleID:](_TtC19ControlCenterHelper19ControlCenterHelper * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[ControlCenterHelper closeBackgroundReplacementPickerWithBundleID:](\n        _TtC19ControlCenterHelper19ControlCenterHelper *self,\n        SEL a2,\n        id a3)\n{\n  __int64 v4; // x20\n  void *v5; // x1\n  void *v6; // x21\n  Swift::String v7; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = sub_1000700D0(a3, a2);\n  v6 = v5;\n  swift_retain(self);\n  v7._countAndFlagsBits = v4;\n  v7._object = v6;\n  ControlCenterHelper.closeBackgroundReplacementPicker(bundleID:)(v7);\n  swift_release(self);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_bridgeObjectRelease(v6);\n}"
+}

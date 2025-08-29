@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal11SerialArena23AllocateAlignedFallbackEm",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal11SerialArena23AllocateAlignedFallbackEm(google::protobuf::internal::SerialArena * this, unsigned __int64 a2)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::internal::SerialArena::AllocateAlignedFallback(\n        google::protobuf::internal::SerialArena *this,\n        unsigned __int64 a2)\n{\n  _QWORD *v4; // x22\n  __int64 v5; // x1\n  _QWORD *result; // x0\n  char *v7; // x9\n  char *v8; // t2\n  _QWORD *v9; // x8\n\n  v4 = (_QWORD *)*((_QWORD *)this + 2);\n  v5 = v4[2];\n  v8 = (char *)this + 40;\n  result = (_QWORD *)*((_QWORD *)this + 5);\n  v7 = (char *)*((_QWORD *)v8 + 1);\n  do\n  {\n    v4[1] = (char *)result + v5 - (_QWORD)v7;\n    v9 = google::protobuf::internal::ArenaImpl::NewBuffer(*(google::protobuf::internal::ArenaImpl **)this, v5, a2);\n    *v9 = v4;\n    v9[1] = 24LL;\n    v9[2] = v5;\n    *((_QWORD *)this + 2) = v9;\n    result = v9 + 3;\n    v7 = (char *)v9 + v5;\n    *((_QWORD *)this + 5) = v9 + 3;\n    *((_QWORD *)this + 6) = (char *)v9 + v5;\n    v4 = v9;\n  }\n  while ( v5 - 24 < a2 );\n  *((_QWORD *)this + 5) = (char *)result + a2;\n  return result;\n}"
+}

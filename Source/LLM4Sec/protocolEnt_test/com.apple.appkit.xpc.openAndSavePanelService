@@ -1,0 +1,163 @@
+Service Path:
+/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/com.apple.appkit.xpc.openAndSavePanelService.xpc/Contents/MacOS/com.apple.appkit.xpc.openAndSavePanelService
+
+Service Exported Protocols:
+@protocol NSOSPHostExportedToServiceProtocol
+- (void)delegateValidateURLs:(NSArray *)arg1 withReply:(void (^)(_Bool))arg2;
+- (void)delegateCustomActionInvoked:(NSString *)arg1 forURLs:(NSArray *)arg2;
+- (void)delegateShouldCreateNewDocumentAtURL:(NSURL *)arg1;
+- (void)delegateRequestNewDocumentNameWithReply:(void (^)(NSString *))arg1;
+- (void)requestAppEnabledStateForItems:(NSArray *)arg1 replyBlock:(void (^)(NSArray *))arg2;
+- (void)_serviceDidChangeContentType:(UTType *)arg1;
+- (void)_documentWindowFrameForPanelRunningAsASheetInService:(void (^)(struct CGRect))arg1;
+@end
+@protocol NSOSPServiceExportedToHostProtocol
+- (void)cancel;
+- (void)retryAfterPresentingError;
+- (void)spi_setCustomActions:(NSArray *)arg1;
+- (void)setRemoteAccessoryViewDesiredSize:(struct CGSize)arg1;
+- (void)setCurrentContentType:(UTType *)arg1;
+- (void)validateVisibleColumns;
+@end
+@protocol NSOpenSavePanelProxyProtocol
+- (void)_getRemoteHostProxyAndCall:(void (^)(id <NSOSPHostExportedToServiceProtocol>))arg1 onError:(void (^)(NSError *))arg2;
+- (void)requestAppEnabledStateForItems:(NSArray *)arg1 completionHandler:(void (^)(NSArray *))arg2;
+- (struct CGRect)_documentWindowFrameForPanelRunningAsASheet:(NSWindow *)arg1;
+- (void)sendMethodInvocation:(NSDictionary *)arg1 key:(NSString *)arg2 expectReply:(_Bool)arg3;
+@end
+@protocol NSOpenSaveServicePanelProtocol
+@end
+@protocol OpenAndSaveMarshal
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.appkit.xpc.openAndSavePanelService
+	[Key] com.apple.authkit.client.private
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.group-session
+	[Value]
+		[Bool] true
+	[Key] com.apple.fileprovider.extension-host
+	[Value]
+		[Bool] true
+	[Key] com.apple.imdpersistence.IMDPersistenceAgent-Syndication
+	[Value]
+		[Bool] true
+	[Key] com.apple.mobile.keybagd.UserManager.sync
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.MobileContainerManager.allowed
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.MobileContainerManager.lookup
+	[Value]
+		[Dict]
+			[Key] appData
+			[Value]
+				[Bool] true
+			[Key] pluginData
+			[Value]
+				[Bool] true
+	[Key] com.apple.private.MobileContainerManager.otherIdLookup
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.MobileContainerManager.unrestrictedPersona
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.apfs.get-graft-info
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.can-infer-session-from-url
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canaccessanysharedfilelist
+	[Value]
+		[String] read-write
+	[Key] com.apple.private.dmd.policy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.ind.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.interstellar.data-access
+	[Value]
+		[String] collaborations
+	[Key] com.apple.private.librarian.container-proxy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.metadata.exattrs
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.personas.propagate
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.photolibraryd.read-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.pluginkit.persona
+	[Value]
+		[String] System
+	[Key] com.apple.private.screen-time
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.sandbox-manager
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sociallayer.highlights
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.spotlight.search.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyAllFiles
+			[String] kTCCServiceAddressBook
+			[String] kTCCServiceAppleEvents
+			[String] kTCCServiceMediaLibrary
+			[String] kTCCServicePhotos
+			[String] kTCCServiceListenEvent
+	[Key] com.apple.private.tcc.manager.access.delete
+	[Value]
+		[Array]
+			[String] kTCCServiceUbiquity
+	[Key] com.apple.private.tcc.manager.access.modify
+	[Value]
+		[Array]
+			[String] kTCCServiceUbiquity
+	[Key] com.apple.private.tcc.manager.access.read
+	[Value]
+		[Array]
+			[String] kTCCServiceAll
+	[Key] com.apple.private.tcc.manager.check-by-audit-token
+	[Value]
+		[Array]
+			[String] kTCCServiceUbiquity
+	[Key] com.apple.private.viewbridge.service.forward-keyboard-events.accessory-view
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.viewbridge.window.child.transparent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.viewbridge.window.level
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.imdpersistence.IMDPersistenceAgent
+			[String] com.apple.spotlight.CSExattrCryptoService
+	[Key] com.apple.spotlight.entitledattributes
+	[Value]
+		[Bool] true
+	[Key] com.apple.usermanagerd.persona.fetch
+	[Value]
+		[Bool] true

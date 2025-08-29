@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12MapFieldBase24SyncMapWithRepeatedFieldEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf8internal12MapFieldBase24SyncMapWithRepeatedFieldEv(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::MapFieldBase::SyncMapWithRepeatedField(\n        google::protobuf::internal::MapFieldBase *this)\n{\n  std::mutex *v2; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( atomic_load_explicit((atomic_uint *volatile)this + 22, memory_order_acquire) == 1 )\n  {\n    v2 = (std::mutex *)((char *)this + 24);\n    std::mutex::lock((std::mutex *)((char *)this + 24));\n    if ( *((_DWORD *)this + 22) == 1 )\n    {\n      (*(void (__fastcall **)(google::protobuf::internal::MapFieldBase *))(*(_QWORD *)this + 120LL))(this);\n      atomic_store(2u, (unsigned int *)this + 22);\n    }\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    std::mutex::unlock(v2);\n  }\n}"
+}

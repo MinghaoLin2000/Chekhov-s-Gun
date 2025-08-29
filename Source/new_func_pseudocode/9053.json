@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackageWriter originalPackage]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPPackageWriter originalPackage](TSPPackageWriter * self, SEL a2)",
+    "pseudocode": "TSPPackage *__cdecl -[TSPPackageWriter originalPackage](TSPPackageWriter *self, SEL a2)\n{\n  unsigned int v3; // w0\n  __int64 v4; // x8\n  id v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = -[TSPPackage packageIdentifier](self->_writtenPackage, \"packageIdentifier\");\n  if ( v3 == 1 )\n  {\n    v4 = 16LL;\n    goto LABEL_5;\n  }\n  if ( v3 == 2 )\n  {\n    v4 = 24LL;\nLABEL_5:\n    v5 = objc_retain(*(id *)((char *)&self->super.isa + v4));\n    goto LABEL_7;\n  }\n  v5 = 0LL;\nLABEL_7:\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (TSPPackage *)objc_autoreleaseReturnValue(v5);\n}"
+}

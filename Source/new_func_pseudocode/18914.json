@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService alert]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService alert](SiriNCService * self, SEL a2)",
+    "pseudocode": "NCCustomAlert *__cdecl -[SiriNCService alert](SiriNCService *self, SEL a2)\n{\n  return (NCCustomAlert *)objc_getProperty(self, a2, 56LL, 1);\n}"
+}

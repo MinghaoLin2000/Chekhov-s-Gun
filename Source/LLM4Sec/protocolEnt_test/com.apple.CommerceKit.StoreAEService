@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/XPCServices/com.apple.CommerceKit.StoreAEService.xpc/Contents/MacOS/com.apple.CommerceKit.StoreAEService
+
+Service Exported Protocols:
+
+Service Entitlements:

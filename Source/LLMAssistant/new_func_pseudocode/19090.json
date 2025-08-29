@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGEventTapEnable",
+    "function_argument_number": 2,
+    "function_signature": "_CGEventTapEnable(CFMachPortRef tap, bool enable)",
+    "pseudocode": "void __cdecl CGEventTapEnable(CFMachPortRef tap, bool enable)\n{\n  _CGEventTapEnable(tap, enable);\n}"
+}

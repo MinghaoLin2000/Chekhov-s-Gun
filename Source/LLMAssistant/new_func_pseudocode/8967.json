@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVwca",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVwca(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithCopy for MarketingItemRequest(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x21\n  __int64 v5; // x0\n  __int64 v6; // x0\n  __int64 v7; // x21\n  __int64 v8; // x0\n  __int64 v9; // x21\n  __int64 v10; // x0\n  __int64 v11; // x21\n  __int64 v12; // x0\n  __int64 v13; // x20\n\n  v4 = *a1;\n  v5 = *a2;\n  *a1 = *a2;\n  swift_bridgeObjectRetain(v5);\n  swift_bridgeObjectRelease(v4);\n  a1[1] = a2[1];\n  v6 = a2[2];\n  v7 = a1[2];\n  a1[2] = v6;\n  swift_bridgeObjectRetain(v6);\n  swift_bridgeObjectRelease(v7);\n  a1[3] = a2[3];\n  v8 = a2[4];\n  v9 = a1[4];\n  a1[4] = v8;\n  swift_bridgeObjectRetain(v8);\n  swift_bridgeObjectRelease(v9);\n  a1[5] = a2[5];\n  v10 = a2[6];\n  v11 = a1[6];\n  a1[6] = v10;\n  swift_bridgeObjectRetain(v10);\n  swift_bridgeObjectRelease(v11);\n  a1[7] = a2[7];\n  v12 = a2[8];\n  v13 = a1[8];\n  a1[8] = v12;\n  swift_bridgeObjectRetain(v12);\n  swift_bridgeObjectRelease(v13);\n  return a1;\n}"
+}

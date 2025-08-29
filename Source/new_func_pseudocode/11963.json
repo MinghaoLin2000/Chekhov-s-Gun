@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18PackedSInt32ParserEPvPKcPNS1_12ParseContextE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal18PackedSInt32ParserEPvPKcPNS1_12ParseContextE(google::protobuf::internal * this, void * a2, const char * a3, google::protobuf::internal::ParseContext * a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::PackedSInt32Parser(int a1, google::protobuf::internal *a2, int a3)\n{\n  return sub_1000EB808(a3, a2);\n}"
+}

@@ -1,0 +1,5 @@
+_CGColorSpaceCreateWithPropertyList
+CGColorSpaceRef __cdecl CGColorSpaceCreateWithPropertyList(CFPropertyListRef plist)
+{
+  return _CGColorSpaceCreateWithPropertyList(plist);
+}

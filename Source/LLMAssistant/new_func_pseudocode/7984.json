@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceGetSizeForProposedTile",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceGetSizeForProposedTile()",
+    "pseudocode": "__int64 CGSSpaceGetSizeForProposedTile()\n{\n  return _CGSSpaceGetSizeForProposedTile();\n}"
+}

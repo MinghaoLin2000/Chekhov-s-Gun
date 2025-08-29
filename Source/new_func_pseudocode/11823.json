@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf9BoolValue5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf9BoolValue5ClearEv(google::protobuf::BoolValue * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::BoolValue::Clear(google::protobuf::BoolValue *this)\n{\n  __int64 result; // x0\n  char v2; // t1\n\n  v2 = *((_BYTE *)this + 8);\n  result = (__int64)this + 8;\n  *(_BYTE *)(result + 8) = 0;\n  if ( (v2 & 1) != 0 )\n    return sub_10003A2A8(result);\n  return result;\n}"
+}

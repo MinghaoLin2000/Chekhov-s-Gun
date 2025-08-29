@@ -1,0 +1,5 @@
+_nw_browse_descriptor_set_include_txt_record
+void __cdecl nw_browse_descriptor_set_include_txt_record(nw_browse_descriptor_t descriptor, bool include_txt_record)
+{
+  _nw_browse_descriptor_set_include_txt_record(descriptor, include_txt_record);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_AudioFileCreateWithURL",
+    "function_argument_number": 5,
+    "function_signature": "_AudioFileCreateWithURL(CFURLRef inFileRef, AudioFileTypeID inFileType, const AudioStreamBasicDescription * inFormat, AudioFileFlags inFlags, AudioFileID * outAudioFile)",
+    "pseudocode": "OSStatus __cdecl AudioFileCreateWithURL(\n        CFURLRef inFileRef,\n        AudioFileTypeID inFileType,\n        const AudioStreamBasicDescription *inFormat,\n        AudioFileFlags inFlags,\n        AudioFileID *outAudioFile)\n{\n  return _AudioFileCreateWithURL(inFileRef, inFileType, inFormat, inFlags, outAudioFile);\n}"
+}

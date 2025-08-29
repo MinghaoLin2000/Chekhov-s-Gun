@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_negotiate_easy",
+    "function_argument_number": 1,
+    "function_signature": "_piston_negotiate_easy(int * a1)",
+    "pseudocode": "__int64 __fastcall piston_negotiate_easy(int *a1)\n{\n  int v1; // w19\n  _DWORD v3[2]; // [xsp+0h] [xbp-20h] BYREF\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v1 = *a1;\n  if ( (unsigned int)(*a1 - 1) >= 2 )\n  {\n    if ( v1 )\n    {\n      if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_INFO) )\n      {\n        v3[0] = 67109120;\n        v3[1] = v1;\n        _os_log_impl(\n          (void *)&_mh_execute_header,\n          (os_log_t)&_os_log_default,\n          OS_LOG_TYPE_INFO,\n          \"SMB Protocol %d not supported\\n\",\n          (uint8_t *)v3,\n          8u);\n      }\n      return 22LL;\n    }\n    else\n    {\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return piston_smb1_negotiate_easy();\n    }\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return piston_smb2_negotiate_easy();\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_t sendSingleIPPRequest:completionHandler:]",
+    "function_argument_number": 4,
+    "function_signature": "-[platform_http_t sendSingleIPPRequest:completionHandler:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[platform_http_t sendSingleIPPRequest:completionHandler:](\n        platform_http_t *self,\n        SEL a2,\n        const Real_IPP_Message *a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x20\n  id v8; // x23\n  void **v9; // [xsp+0h] [xbp-60h] BYREF\n  __int64 v10; // [xsp+8h] [xbp-58h]\n  __int64 (__fastcall *v11)(); // [xsp+10h] [xbp-50h]\n  void *v12; // [xsp+18h] [xbp-48h]\n  platform_http_t *v13; // [xsp+20h] [xbp-40h]\n  id v14; // [xsp+28h] [xbp-38h]\n\n  v6 = objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(-[platform_http_t makeTask:forRequest:](self, \"makeTask:forRequest:\", CFSTR(\"single\"), a3));\n  v9 = _NSConcreteStackBlock;\n  v10 = 3254779904LL;\n  v11 = sub_10000B298;\n  v12 = &unk_100091258;\n  v13 = self;\n  v8 = objc_retain(v6);\n  v14 = v8;\n  objc_msgSend(v7, \"setTransactionCompletedCallback:\", &v9);\n  -[platform_http_t debugLogIPP:ipp:](self, \"debugLogIPP:ipp:\", \"SEND_IPP\", a3->var1, v9, v10, v11, v12, v13);\n  objc_msgSend(v7, \"start\");\n  objc_release(v14);\n  objc_release(v7);\n  objc_release(v8);\n}"
+}

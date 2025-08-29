@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob valid]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob valid](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[PAMediaConversionServiceImageConversionJob valid](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  unsigned __int64 validationState; // x8\n  NSAssertionHandler *v6; // x21\n\n  validationState = self->_validationState;\n  if ( !validationState )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v6,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"PAMediaConversionServiceSharedUtilitiesServiceSide.m\"),\n      1117LL,\n      CFSTR(\"Call validateSourceAndOptions on job before calling valid\"));\n    objc_release(v6);\n    validationState = self->_validationState;\n  }\n  return validationState == 2;\n}"
+}

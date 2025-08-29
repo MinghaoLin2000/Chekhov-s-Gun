@@ -1,0 +1,6 @@
+{
+    "function_name": "_isSkipReconnectBundleInfoPlist",
+    "function_argument_number": 1,
+    "function_signature": "_isSkipReconnectBundleInfoPlist(void * result)",
+    "pseudocode": "void *__fastcall isSkipReconnectBundleInfoPlist(void *result)\n{\n  void *v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( result )\n  {\n    v1 = objc_msgSend(result, \"objectForKey:\", CFSTR(\"skipReconnect\"));\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return objc_msgSend(v1, \"boolValue\");\n  }\n  return result;\n}"
+}

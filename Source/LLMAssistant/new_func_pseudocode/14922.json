@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSCalendar atx_timestampWithHour:minute:atDayOfTimestamp:]",
+    "function_argument_number": 5,
+    "function_signature": "-[NSCalendar atx_timestampWithHour:minute:atDayOfTimestamp:](NSCalendar * self, SEL a2, unsigned __int64 a3, unsigned __int64 a4, id a5)",
+    "pseudocode": "double __cdecl -[NSCalendar atx_timestampWithHour:minute:atDayOfTimestamp:](\n        NSCalendar *self,\n        SEL a2,\n        unsigned __int64 a3,\n        unsigned __int64 a4,\n        id a5)\n{\n  NSDateComponents *v8; // x22\n  NSDate *v9; // x19\n  double v10; // d0\n  double v11; // d8\n\n  v8 = objc_retainAutoreleasedReturnValue(-[NSCalendar components:fromDate:](self, \"components:fromDate:\", 28LL, a5));\n  -[NSDateComponents setHour:](v8, \"setHour:\", a3);\n  -[NSDateComponents setMinute:](v8, \"setMinute:\", a4);\n  v9 = objc_retainAutoreleasedReturnValue(-[NSCalendar dateFromComponents:](self, \"dateFromComponents:\", v8));\n  -[NSDate timeIntervalSinceReferenceDate](v9, \"timeIntervalSinceReferenceDate\");\n  v11 = v10;\n  objc_release(v9);\n  objc_release(v8);\n  return v11;\n}"
+}

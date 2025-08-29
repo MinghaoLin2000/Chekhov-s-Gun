@@ -1,0 +1,6 @@
+{
+    "function_name": "_CC_SHA512_Init",
+    "function_argument_number": 1,
+    "function_signature": "_CC_SHA512_Init(CC_SHA512_CTX * c)",
+    "pseudocode": "int __cdecl CC_SHA512_Init(CC_SHA512_CTX *c)\n{\n  return _CC_SHA512_Init(c);\n}"
+}

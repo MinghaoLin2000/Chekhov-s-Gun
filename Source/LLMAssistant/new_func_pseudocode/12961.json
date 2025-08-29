@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBufferedReadChannel isValid]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUBufferedReadChannel isValid](TSUBufferedReadChannel * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSUBufferedReadChannel isValid](TSUBufferedReadChannel *self, SEL a2)\n{\n  return (unsigned __int8)-[TSUReadChannel isValid](self->_sourceReadChannel, \"isValid\");\n}"
+}

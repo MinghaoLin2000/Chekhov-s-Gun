@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlReaderForFile",
+    "function_argument_number": 3,
+    "function_signature": "_xmlReaderForFile(const char * filename, const char * encoding, int options)",
+    "pseudocode": "xmlTextReaderPtr __cdecl xmlReaderForFile(const char *filename, const char *encoding, int options)\n{\n  return _xmlReaderForFile(filename, encoding, options);\n}"
+}

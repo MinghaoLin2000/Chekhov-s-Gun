@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintInfoSet init]",
+    "function_argument_number": 2,
+    "function_signature": "-[PrintInfoSet init](PrintInfoSet * self, SEL a2)",
+    "pseudocode": "PrintInfoSet *__cdecl -[PrintInfoSet init](PrintInfoSet *self, SEL a2)\n{\n  PrintInfoSet *v2; // x19\n  NSMutableDictionary *v3; // x0\n  NSMutableDictionary *uuidToPrinters; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___PrintInfoSet;\n  v2 = -[PrintInfoSet init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_opt_new(&OBJC_CLASS___NSMutableDictionary);\n    uuidToPrinters = v2->_uuidToPrinters;\n    v2->_uuidToPrinters = v3;\n    objc_release(uuidToPrinters);\n  }\n  return v2;\n}"
+}

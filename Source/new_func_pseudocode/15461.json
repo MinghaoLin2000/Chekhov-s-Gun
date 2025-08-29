@@ -1,0 +1,6 @@
+{
+    "function_name": "_MGGetStringAnswer",
+    "function_argument_number": 0,
+    "function_signature": "_MGGetStringAnswer()",
+    "pseudocode": "__int64 MGGetStringAnswer()\n{\n  return _MGGetStringAnswer();\n}"
+}

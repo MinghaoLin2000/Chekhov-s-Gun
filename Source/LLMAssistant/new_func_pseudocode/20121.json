@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN17Printd_Parameters15_set_FinishingsEP7NSArrayIP8NSNumberE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN17Printd_Parameters15_set_FinishingsEP7NSArrayIP8NSNumberE(int a1, id a2)",
+    "pseudocode": "void __fastcall Printd_Parameters::_set_Finishings(void **a1, id a2)\n{\n  id v3; // x0\n  void *v4; // x20\n  id v5; // x19\n  _QWORD v6[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v7; // [xsp+28h] [xbp-18h]\n\n  v3 = objc_retain(a2);\n  v4 = *a1;\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_100033B80;\n  v6[3] = &unk_10009E528;\n  v7 = v3;\n  v5 = objc_retain(v3);\n  objc_msgSend(v4, \"_withGroupingBehavior:\", v6);\n  objc_release(v7);\n  objc_release(v5);\n}"
+}

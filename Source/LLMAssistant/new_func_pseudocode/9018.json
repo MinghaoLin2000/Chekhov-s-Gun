@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC14BootstrapErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC14BootstrapErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ServiceConnectionExportedObject.BootstrapError()\n{\n  return &type metadata for ServiceConnectionExportedObject.BootstrapError;\n}"
+}

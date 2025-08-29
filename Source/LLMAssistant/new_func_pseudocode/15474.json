@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_start_browsing",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_start_browsing()",
+    "pseudocode": "__int64 remote_device_start_browsing()\n{\n  return _remote_device_start_browsing();\n}"
+}

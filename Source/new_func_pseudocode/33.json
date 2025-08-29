@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper17SPIAnalyticsEventOMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper17SPIAnalyticsEventOMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for SPIAnalyticsEvent(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CA7E0;\n  if ( !qword_1000CA7E0 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for SPIAnalyticsEvent);\n  return result;\n}"
+}

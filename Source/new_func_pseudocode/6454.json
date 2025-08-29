@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SinglePassVideoTranscodingTask .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[SinglePassVideoTranscodingTask .cxx_destruct](SinglePassVideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SinglePassVideoTranscodingTask .cxx_destruct](SinglePassVideoTranscodingTask *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_singlePassExportItem, 0LL);\n}"
+}

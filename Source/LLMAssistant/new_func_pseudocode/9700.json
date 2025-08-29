@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP22ComponentDataReferenceD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP22ComponentDataReferenceD2Ev(TSP::ComponentDataReference * this)",
+    "pseudocode": "void __fastcall TSP::ComponentDataReference::~ComponentDataReference(TSP::ComponentDataReference *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100054E9C((char *)this + 24);\n}"
+}

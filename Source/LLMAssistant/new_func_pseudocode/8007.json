@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionSetManagedDisplayCurrentSpace",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionSetManagedDisplayCurrentSpace()",
+    "pseudocode": "__int64 SLSTransactionSetManagedDisplayCurrentSpace()\n{\n  return _SLSTransactionSetManagedDisplayCurrentSpace();\n}"
+}

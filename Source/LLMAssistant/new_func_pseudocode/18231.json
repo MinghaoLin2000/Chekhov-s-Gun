@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_connection_get_audit_token",
+    "function_argument_number": 0,
+    "function_signature": "_xpc_connection_get_audit_token()",
+    "pseudocode": "__int64 xpc_connection_get_audit_token()\n{\n  return _xpc_connection_get_audit_token();\n}"
+}

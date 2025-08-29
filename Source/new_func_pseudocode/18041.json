@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_CancelAsyncMount",
+    "function_argument_number": 1,
+    "function_signature": "_netfs_CancelAsyncMount(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall netfs_CancelAsyncMount(_QWORD *a1)\n{\n  __int64 v2; // x20\n\n  v2 = NACancelConnectToServerAsync(*a1);\n  if ( !(_DWORD)v2 )\n  {\n    ((void (__fastcall *)(_QWORD, _QWORD, __int64))a1[1])(a1[2], 0LL, 89LL);\n    free(a1);\n  }\n  return v2;\n}"
+}

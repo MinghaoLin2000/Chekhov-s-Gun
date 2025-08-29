@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP16PasteboardObjectD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP16PasteboardObjectD2Ev(TSP::PasteboardObject * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::PasteboardObject::~PasteboardObject(TSP::PasteboardObject *this)\n{\n  __ZN3TSP16PasteboardObjectD2Ev(this);\n}"
+}

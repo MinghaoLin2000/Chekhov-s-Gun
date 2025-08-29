@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService siriApplicationFocusChanged:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService siriApplicationFocusChanged:](SiriNCService * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[SiriNCService siriApplicationFocusChanged:](SiriNCService *self, SEL a2, bool a3)\n{\n  _QWORD v3[5]; // [xsp+0h] [xbp-30h] BYREF\n  bool v4; // [xsp+28h] [xbp-8h]\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3254779904LL;\n  v3[2] = sub_100006BD8;\n  v3[3] = &unk_1000207C0;\n  v4 = a3;\n  v3[4] = self;\n  SiriUIInvokeOnMainQueue(v3, a2);\n}"
+}

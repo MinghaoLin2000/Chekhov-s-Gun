@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUAssertionHandler performBlockIgnoringAssertions:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUAssertionHandler performBlockIgnoringAssertions:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[TSUAssertionHandler performBlockIgnoringAssertions:](id a1, SEL a2, id a3)\n{\n  void *v3; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v3 = objc_msgSend(a1, \"p_performBlockIgnoringAssertions:onlyFatal:\", a3, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(v3, \"lastObject\");\n}"
+}

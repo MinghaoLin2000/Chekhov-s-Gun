@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetRescind",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformAssetRescind(__int64 result, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetRescind(__int64 result, __int64 a2, __int64 a3)\n{\n  __int64 v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( result )\n  {\n    v5 = result;\n    if ( a3 )\n    {\n      uarpTransmitQueueAssetRescinded(result, a2, a3);\n      *(_BYTE *)(a3 + 392) = 0;\n      *(_BYTE *)(a3 + 72) = 1;\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return UARPLayer2AssetRescinded(v5, a2, a3);\n    }\n    else\n    {\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return UARPLayer2RescindAllAssets(result, a2, 0LL);\n    }\n  }\n  return result;\n}"
+}

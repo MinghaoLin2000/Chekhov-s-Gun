@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setIsFolder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setIsFolder:](DeviceSettingsNode * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setIsFolder:](DeviceSettingsNode *self, SEL a2, bool a3)\n{\n  self->_isFolder = a3;\n}"
+}

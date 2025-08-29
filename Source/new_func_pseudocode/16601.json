@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent setManufacturerName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent setManufacturerName:](UARPActiveFirmwareAnalyticsEvent * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[UARPActiveFirmwareAnalyticsEvent setManufacturerName:](\n        UARPActiveFirmwareAnalyticsEvent *self,\n        SEL a2,\n        id a3)\n{\n  objc_setProperty_atomic_copy(self, a2, a3, 16LL);\n}"
+}

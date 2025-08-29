@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabase queryFirstObjectWithStatement:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDatabase queryFirstObjectWithStatement:error:](int a1, int a2, sqlite3_stmt * a3)",
+    "pseudocode": "id __cdecl -[TSPDatabase queryFirstObjectWithStatement:error:](TSPDatabase *self, SEL a2, sqlite3_stmt *a3, id *a4)\n{\n  __int64 v8; // x0\n  __int64 v9; // x22\n  id v10; // x0\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v8 = sqlite3_step(a3);\n  if ( (_DWORD)v8 != 101 )\n  {\n    v9 = v8;\n    if ( (_DWORD)v8 == 100 )\n    {\n      v10 = objc_retainAutoreleasedReturnValue(-[TSPDatabase objectFromStatement:](self, \"objectFromStatement:\", a3));\n      goto LABEL_6;\n    }\n    sqlite3_sql(a3);\n    TSUHandleSqlite(v9, a4, 1LL, self, a2, 287LL, CFSTR(\"Executing query \\\"%s\\\"\"));\n  }\n  v10 = 0LL;\nLABEL_6:\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v10);\n}"
+}

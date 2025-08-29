@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper20ScreenMirroringAlert canBecomeKeyWindow]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC19ControlCenterHelper20ScreenMirroringAlert canBecomeKeyWindow](_TtC19ControlCenterHelper20ScreenMirroringAlert * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[ScreenMirroringAlert canBecomeKeyWindow](_TtC19ControlCenterHelper20ScreenMirroringAlert *self, SEL a2)\n{\n  return 1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBReaderRecallMark",
+    "function_argument_number": 0,
+    "function_signature": "_PBReaderRecallMark()",
+    "pseudocode": "__int64 PBReaderRecallMark()\n{\n  return _PBReaderRecallMark();\n}"
+}

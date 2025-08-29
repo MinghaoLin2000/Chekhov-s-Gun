@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZL15idle_timer_initv.cold.1",
+    "function_argument_number": 0,
+    "function_signature": "__ZL15idle_timer_initv.cold.1()",
+    "pseudocode": "void idle_timer_init()\n{\n  int v0; // [xsp+0h] [xbp-20h] BYREF\n  const char *v1; // [xsp+4h] [xbp-1Ch]\n\n  v0 = 136446210;\n  v1 = \"EV\";\n  _os_log_error_impl(\n    (void *)&_mh_execute_header,\n    (os_log_t)&_os_log_default,\n    OS_LOG_TYPE_ERROR,\n    \"Unable to create idle timer, idle exit %{public}s is disabled.\",\n    (uint8_t *)&v0,\n    0xCu);\n}"
+}

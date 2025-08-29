@@ -1,0 +1,6 @@
+{
+    "function_name": "_IORegistryEntryGetRegistryEntryID",
+    "function_argument_number": 2,
+    "function_signature": "_IORegistryEntryGetRegistryEntryID(io_registry_entry_t entry, uint64_t * entryID)",
+    "pseudocode": "kern_return_t __cdecl IORegistryEntryGetRegistryEntryID(io_registry_entry_t entry, uint64_t *entryID)\n{\n  return _IORegistryEntryGetRegistryEntryID(entry, entryID);\n}"
+}

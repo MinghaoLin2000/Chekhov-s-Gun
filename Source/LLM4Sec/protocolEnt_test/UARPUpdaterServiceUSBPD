@@ -1,0 +1,129 @@
+Service Path:
+/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceUSBPD.xpc/Contents/MacOS/UARPUpdaterServiceUSBPD
+
+Service Exported Protocols:
+@protocol UARPControllerDelegateProtocol <NSObject>
+- (_Bool)sendMessageToAccessory:(UARPAccessory *)arg1 uarpMsg:(NSData *)arg2 error:(id *)arg3;
+- (void)assetAvailablityUpdateForAccessoryID:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsDownloaded:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsPreInstalled:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)firmwareUpdateComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareUpdateProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)assetStagingResume:(UARPAccessory *)arg1;
+- (void)assetStagingPause:(UARPAccessory *)arg1;
+- (void)assetAvailablityUpdateForAccessory:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)accessoryTransportNeeded:(UARPAccessory *)arg1 isNeeded:(_Bool)arg2;
+- (void)attestationCertificates:(NSDictionary *)arg1 forSubjectKeyIdentifier:(NSString *)arg2;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2 isComplete:(_Bool)arg3;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2;
+- (UARPUploader *)newUploader;
+- (void)assetSolicitationComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)assetSolicitationProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesReceived:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)stagedFirmwareRescindComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)stagedFirmwareApplicationComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 friendlyName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hwFusingType:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 appleModelNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 serialNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hardwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stats:(UARPStats *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stagedFirmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 firmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 modelName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 manufacturer:(NSString *)arg2 error:(NSError *)arg3;
+- (void)firmwareStagingComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareStagingProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)firmwareUpdateResult:(UARPAccessory *)arg1 vendorSpecificStatus:(unsigned int)arg2 error:(NSError *)arg3;
+@end
+@protocol UARPHPMProtocol <NSObject>
+- (int)authenticationStatus;
+- (_Bool)isAuthenticated;
+- (_Bool)requiresAuthentication;
+- (unsigned long long)productID;
+- (unsigned long long)vendorID;
+- (unsigned long long)routerID;
+- (_Bool)isActive;
+- (_Bool)isConnected;
+@end
+@protocol UARPServiceMonitorProtocol <NSObject>
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)matchingService:(unsigned int)arg1 identifier:(NSString *)arg2;
+- (NSArray *)getBSDNotificationsList;
+- (NSArray *)getMatchingServicesList;
+@end
+@protocol UARPUSBPDAccessoryDelegateProtocol <NSObject>
+- (_Bool)recvUarpMsgFromAccessory:(UARPUSBPDAccessory *)arg1 uarpMsg:(NSData *)arg2 error:(id *)arg3;
+@end
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end
+@protocol VUARPAccessoryDelegateProtocol <NSObject>
+- (_Bool)vuarpFirmwarePayloadComplete:(UARPAssetTag *)arg1;
+- (_Bool)vuarpFirmwarePayloadData:(UARPAssetTag *)arg1 data:(NSData *)arg2 offset:(unsigned long long)arg3;
+- (_Bool)vuarpFirmwarePayloadReady:(UARPAssetTag *)arg1;
+- (_Bool)vuarpRescindStagedAssets;
+- (_Bool)vuarpHasStagedAssets;
+- (unsigned short)vuarpApplyStagedAssets;
+- (_Bool)vuarpAssetFullyStaged:(UARPAssetVersion *)arg1;
+- (_Bool)vuarpStageAllowed;
+- (_Bool)vuarpAssetOffered;
+- (NSString *)vuarpHwFusingType;
+- (NSString *)vuarpAppleModelNumber;
+- (_Bool)vuarpLastError:(unsigned int *)arg1 lastAction:(unsigned int *)arg2;
+- (UARPAssetVersion *)vuarpStagedFirmwareVersion;
+- (UARPAssetVersion *)vuarpActiveFirmwareVersion;
+- (NSString *)vuarpHardwareVersion;
+- (NSString *)vuarpSerialNumber;
+- (NSString *)vuarpModelName;
+- (NSString *)vuarpManufacturerName;
+- (_Bool)vuarpSendMessage:(NSData *)arg1 error:(id *)arg2;
+- (_Bool)vuarpDynamicAssetSolicited:(VUARPAsset *)arg1;
+@end
+@protocol VUARPProtocol <NSObject>
+- (_Bool)solicitAnalytics:(NSURL *)arg1 error:(out id *)arg2;
+- (_Bool)solicitLogs:(NSURL *)arg1 error:(out id *)arg2;
+- (_Bool)firmwareRescind:(out id *)arg1;
+- (_Bool)firmwareHasStagedAssets:(out id *)arg1;
+- (_Bool)firmwareApply:(out id *)arg1;
+- (_Bool)firmwareUpdateCleanup:(out id *)arg1;
+- (_Bool)firmwareVerifyStagedAsset:(out id *)arg1;
+- (_Bool)firmwareUpdateWriteData:(NSData *)arg1 offset:(unsigned long long)arg2 error:(out id *)arg3;
+- (_Bool)firmwareUpdateInitialize:(out id *)arg1;
+- (_Bool)firmwareUpdateAllowed:(out id *)arg1;
+- (unsigned long long)uarpPayloadWindowSize;
+- (unsigned long long)uarpMaxPayloadSize;
+- (NSString *)modelName;
+- (NSString *)serialNumber;
+- (UARPAssetVersion *)stagedFwVersion;
+- (UARPAssetVersion *)activeFwVersion;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.USBCEntitlement
+	[Value]
+		[Bool] true
+	[Key] com.apple.accessoryupdater.uarp
+	[Value]
+		[Bool] true
+	[Key] com.apple.iokit.IOPort.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AppleHPMUserClient

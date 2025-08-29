@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf30DescriptorProto_ExtensionRange5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf30DescriptorProto_ExtensionRange5ClearEv(google::protobuf::DescriptorProto_ExtensionRange * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorProto_ExtensionRange::Clear(__int64 this)\n{\n  __int64 v1; // x19\n  int v2; // w20\n  __int64 v3; // x19\n  char v4; // t1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = this;\n  v2 = *(_DWORD *)(this + 16);\n  if ( (v2 & 1) != 0 )\n    this = google::protobuf::ExtensionRangeOptions::Clear(*(google::protobuf::ExtensionRangeOptions **)(this + 24));\n  if ( (v2 & 6) != 0 )\n    *(_QWORD *)(v1 + 32) = 0LL;\n  v4 = *(_BYTE *)(v1 + 8);\n  v3 = v1 + 8;\n  *(_DWORD *)(v3 + 8) = 0;\n  if ( (v4 & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10003A2A8(v3);\n  }\n  return this;\n}"
+}

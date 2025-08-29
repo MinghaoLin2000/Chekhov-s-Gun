@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsBooksViewController clickSyncOntoCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsBooksViewController clickSyncOntoCheckBox:](DeviceSettingsBooksViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsBooksViewController clickSyncOntoCheckBox:](\n        DeviceSettingsBooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsBooksViewController;\n  -[DeviceSettingsViewController clickSyncOntoCheckBox:](&v3, \"clickSyncOntoCheckBox:\", a3);\n}"
+}

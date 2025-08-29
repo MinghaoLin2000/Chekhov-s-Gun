@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDatabase beginTransactionWithError:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUDatabase beginTransactionWithError:](TSUDatabase * self, SEL a2, id * a3)",
+    "pseudocode": "bool __cdecl -[TSUDatabase beginTransactionWithError:](TSUDatabase *self, SEL a2, id *a3)\n{\n  _BOOL4 v5; // w0\n  sqlite3_stmt *beginTransactionStatement; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = -[TSUDatabase prepareStatement:sql:error:](\n         self,\n         \"prepareStatement:sql:error:\",\n         &self->_beginTransactionStatement,\n         \"begin exclusive\",\n         a3);\n  if ( v5 )\n  {\n    beginTransactionStatement = self->_beginTransactionStatement;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    LOBYTE(v5) = -[TSUDatabase executeUpdate:shouldFinalize:error:](\n                   self,\n                   \"executeUpdate:shouldFinalize:error:\",\n                   beginTransactionStatement,\n                   0LL,\n                   a3);\n  }\n  return v5;\n}"
+}

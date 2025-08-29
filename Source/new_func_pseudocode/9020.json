@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC12PerformErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC12PerformErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ServiceConnectionExportedObject.PerformError()\n{\n  return &type metadata for ServiceConnectionExportedObject.PerformError;\n}"
+}

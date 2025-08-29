@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDictionaryGetInteger",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFDictionaryGetInteger(CGPDFDictionaryRef dict, const char * key, CGPDFInteger * value)",
+    "pseudocode": "bool __cdecl CGPDFDictionaryGetInteger(CGPDFDictionaryRef dict, const char *key, CGPDFInteger *value)\n{\n  return _CGPDFDictionaryGetInteger(dict, key, value);\n}"
+}

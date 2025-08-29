@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE21setWindowLockedBounds_6boundsyAC9CGSWindowV_So6CGRectVtF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE21setWindowLockedBounds_6boundsyAC9CGSWindowV_So6CGRectVtF(__int64 a1)",
+    "pseudocode": "__int64 __fastcall SLSTransactionRef.setWindowLockedBounds(_:bounds:)(__int64 a1)\n{\n  __int64 v1; // x20\n\n  return _SLSTransactionSetWindowLockedBounds(v1, a1);\n}"
+}

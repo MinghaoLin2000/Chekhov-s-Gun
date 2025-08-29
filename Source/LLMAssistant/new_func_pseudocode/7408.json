@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s13DisplayMarkup0B8DelegateC5startyyys6UInt64VcF",
+    "function_argument_number": 1,
+    "function_signature": "_$s13DisplayMarkup0B8DelegateC5startyyys6UInt64VcF(__int64 (__fastcall *)(__int64) a1)",
+    "pseudocode": "__int64 __fastcall MarkupDelegate.start(_:)(__int64 (__fastcall *a1)(__int64))\n{\n  __int64 ProcessUniqueID; // x0\n\n  ProcessUniqueID = SidecarGetProcessUniqueID();\n  return a1(ProcessUniqueID);\n}"
+}

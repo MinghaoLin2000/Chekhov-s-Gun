@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15SupportMetadataD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP15SupportMetadataD1Ev(TSP::SupportMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::SupportMetadata::~SupportMetadata(TSP::SupportMetadata *this)\n{\n  __ZN3TSP15SupportMetadataD2Ev(this);\n}"
+}

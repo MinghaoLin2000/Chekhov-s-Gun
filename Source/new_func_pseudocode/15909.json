@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformCreateRxAsset",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformCreateRxAsset(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformCreateRxAsset(__int64 a1, __int64 a2)\n{\n  int v4; // w8\n  __int64 result; // x0\n  __int64 v6; // [xsp+8h] [xbp-18h] BYREF\n\n  v6 = 0LL;\n  v4 = UARPLayer2RequestBuffer(a1, &v6, 0x2D8u);\n  result = 0LL;\n  if ( !v4 )\n  {\n    result = v6;\n    if ( v6 )\n    {\n      *(_QWORD *)(v6 + 696) = a2;\n      *(_DWORD *)(result + 304) = 0;\n      *(_QWORD *)(result + 712) = *(_QWORD *)(a1 + 568);\n      *(_QWORD *)(a1 + 568) = result;\n    }\n  }\n  return result;\n}"
+}

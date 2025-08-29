@@ -1,0 +1,5 @@
+-[DeviceSummaryViewController setOptionsContainerView:]
+void __cdecl -[DeviceSummaryViewController setOptionsContainerView:](DeviceSummaryViewController *self, SEL a2, id a3)
+{
+  objc_storeWeak((id *)&self->_optionsContainerView, a3);
+}

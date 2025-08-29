@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeTestViewController testRTFDataForFileBase:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeTestViewController testRTFDataForFileBase:](DeviceModeTestViewController * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[DeviceModeTestViewController testRTFDataForFileBase:](DeviceModeTestViewController *self, SEL a2, id a3)\n{\n  id v3; // x19\n  void *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[DeviceModeTestViewController testContentsStringForFileBase:ofType:](\n           self,\n           \"testContentsStringForFileBase:ofType:\",\n           a3,\n           CFSTR(\"rtf\")));\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(v3, \"dataUsingEncoding:\", 4LL));\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

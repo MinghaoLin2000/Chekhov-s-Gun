@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC10EditIntentSbvs",
+    "function_argument_number": 1,
+    "function_signature": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC10EditIntentSbvs(__int64 result)",
+    "pseudocode": "__int64 __fastcall VoiceCommandDebugInfoAggregated.hasVoiceCommandEditIntent.setter(__int64 result)\n{\n  __int64 v1; // x20\n\n  *(_BYTE *)(v1 + 2) = result;\n  return result;\n}"
+}

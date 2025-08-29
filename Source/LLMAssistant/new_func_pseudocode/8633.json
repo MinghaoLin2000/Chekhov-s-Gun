@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue average]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTargetQueue average](MXMTargetQueue * self, SEL a2)",
+    "pseudocode": "double __cdecl -[MXMTargetQueue average](MXMTargetQueue *self, SEL a2)\n{\n  double v3; // d8\n  NSMutableArray *v4; // x19\n  double v5; // d8\n\n  v3 = (double)-[MXMTargetQueue total](self, \"total\");\n  v4 = objc_retainAutoreleasedReturnValue(-[MXMTargetQueue queue](self, \"queue\"));\n  v5 = v3 / (double)(unsigned __int64)-[NSMutableArray count](v4, \"count\");\n  objc_release(v4);\n  return v5;\n}"
+}

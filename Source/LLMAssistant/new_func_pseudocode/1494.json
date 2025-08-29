@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LoadingViewController hideProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LoadingViewController hideProgress:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LoadingViewController hideProgress:](LoadingViewController *self, SEL a2, id a3)\n{\n  id v4; // x19\n  NSTimer *autoShowTimer; // x0\n  NSTextField *v6; // x21\n  NSProgressIndicator *v7; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  autoShowTimer = self->_autoShowTimer;\n  if ( autoShowTimer )\n  {\n    -[NSTimer invalidate](autoShowTimer, \"invalidate\");\n    -[LoadingViewController setAutoShowTimer:](self, \"setAutoShowTimer:\", 0LL);\n  }\n  v6 = objc_retainAutoreleasedReturnValue(-[LoadingViewController label](self, \"label\"));\n  -[NSTextField setHidden:](v6, \"setHidden:\", 1LL);\n  objc_release(v6);\n  v7 = objc_retainAutoreleasedReturnValue(-[LoadingViewController spinner](self, \"spinner\"));\n  -[NSProgressIndicator stopAnimation:](v7, \"stopAnimation:\", v4);\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

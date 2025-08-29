@@ -1,0 +1,6 @@
+{
+    "function_name": "__os_log_impl",
+    "function_argument_number": 6,
+    "function_signature": "__os_log_impl(void * dso, os_log_t log, os_log_type_t type, const char * format, uint8_t * buf, uint32_t size)",
+    "pseudocode": "void __cdecl _os_log_impl(void *dso, os_log_t log, os_log_type_t type, const char *format, uint8_t *buf, uint32_t size)\n{\n  __os_log_impl(dso, log, type, format, buf, size);\n}"
+}

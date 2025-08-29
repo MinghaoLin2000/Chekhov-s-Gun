@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList rangeVector]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSURangeList rangeVector](TSURangeList * self, SEL a2)",
+    "pseudocode": "const void *__cdecl -[TSURangeList rangeVector](TSURangeList *self, SEL a2)\n{\n  return &self->mRangeList;\n}"
+}

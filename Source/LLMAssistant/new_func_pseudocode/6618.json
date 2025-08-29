@@ -1,0 +1,6 @@
+{
+    "function_name": "_PFImageMetricComputeSSIMForCIImage",
+    "function_argument_number": 0,
+    "function_signature": "_PFImageMetricComputeSSIMForCIImage()",
+    "pseudocode": "__int64 PFImageMetricComputeSSIMForCIImage()\n{\n  return _PFImageMetricComputeSSIMForCIImage();\n}"
+}

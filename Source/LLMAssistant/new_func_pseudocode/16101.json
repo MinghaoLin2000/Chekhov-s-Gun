@@ -1,0 +1,6 @@
+{
+    "function_name": "_CC_SHA384_Update",
+    "function_argument_number": 3,
+    "function_signature": "_CC_SHA384_Update(CC_SHA512_CTX * c, const void * data, CC_LONG len)",
+    "pseudocode": "int __cdecl CC_SHA384_Update(CC_SHA512_CTX *c, const void *data, CC_LONG len)\n{\n  return _CC_SHA384_Update(c, data, len);\n}"
+}

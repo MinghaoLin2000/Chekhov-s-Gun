@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentGetVersion",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFDocumentGetVersion(CGPDFDocumentRef document, int * majorVersion, int * minorVersion)",
+    "pseudocode": "void __cdecl CGPDFDocumentGetVersion(CGPDFDocumentRef document, int *majorVersion, int *minorVersion)\n{\n  _CGPDFDocumentGetVersion(document, majorVersion, minorVersion);\n}"
+}

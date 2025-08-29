@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV4nameSSSgvs",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV4nameSSSgvs(__int64 a1, unsigned __int64 a2)",
+    "pseudocode": "void __fastcall CGSSpace.name.setter(__int64 a1, unsigned __int64 a2)\n{\n  __int64 v2; // x20\n  unsigned __int64 v3; // x21\n  unsigned int *v4; // x22\n  __int64 v5; // x22\n  void *v6; // x20\n\n  if ( a2 )\n    v2 = a1;\n  else\n    v2 = 0LL;\n  if ( a2 )\n    v3 = a2;\n  else\n    v3 = 0xE000000000000000LL;\n  v4 = (unsigned int *)CGSConnection.defaultConnection.unsafeMutableAddressor();\n  sub_1000120F4();\n  v5 = *v4;\n  v6 = (void *)sub_10001CAC0(v2, v3);\n  CGSSpaceSetName(v5);\n  swift_bridgeObjectRelease(v3);\n  objc_release(v6);\n}"
+}

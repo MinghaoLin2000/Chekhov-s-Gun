@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUContainedZipArchive initWithEntry:zipArchive:options:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUContainedZipArchive initWithEntry:zipArchive:options:](int a1, int a2, id a3)",
+    "pseudocode": "TSUContainedZipArchive *__cdecl -[TSUContainedZipArchive initWithEntry:zipArchive:options:](\n        TSUContainedZipArchive *self,\n        SEL a2,\n        id a3,\n        id a4,\n        unsigned __int64 a5)\n{\n  id v9; // x19\n  id v10; // x0\n  void *v11; // x20\n  TSUContainedZipArchive *v12; // x25\n  TSUContainedZipArchive *v13; // x0\n  id *p_isa; // x23\n  objc_super v16; // [xsp+0h] [xbp-50h] BYREF\n\n  v9 = objc_retain(a3);\n  v10 = objc_retain(a4);\n  v11 = v10;\n  v12 = 0LL;\n  if ( v9 && v10 )\n  {\n    v16.receiver = self;\n    v16.super_class = (Class)&OBJC_CLASS___TSUContainedZipArchive;\n    v13 = -[TSUZipArchive initWithOptions:](&v16, \"initWithOptions:\", a5);\n    p_isa = (id *)&v13->super.super.isa;\n    if ( v13 )\n    {\n      objc_storeStrong((id *)&v13->_zipArchive, a4);\n      objc_storeStrong(p_isa + 6, a3);\n    }\n    self = objc_retain(p_isa);\n    v12 = self;\n  }\n  objc_release(v11);\n  objc_release(v9);\n  objc_release(self);\n  return v12;\n}"
+}

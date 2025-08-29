@@ -1,0 +1,6 @@
+{
+    "function_name": "-[preflightInfo init]",
+    "function_argument_number": 2,
+    "function_signature": "-[preflightInfo init](preflightInfo * self, SEL a2)",
+    "pseudocode": "preflightInfo *__cdecl -[preflightInfo init](preflightInfo *self, SEL a2)\n{\n  preflightInfo *v2; // x0\n  preflightInfo *v3; // x19\n  dispatch_semaphore_t v4; // x0\n  OS_dispatch_semaphore *preflightDeviceMutex; // x8\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___preflightInfo;\n  v2 = -[preflightInfo init](&v7, \"init\");\n  v3 = v2;\n  if ( v2 )\n  {\n    v2->preflightDevice = 0LL;\n    v4 = dispatch_semaphore_create(0LL);\n    preflightDeviceMutex = v3->preflightDeviceMutex;\n    v3->preflightDeviceMutex = (OS_dispatch_semaphore *)v4;\n    objc_release(preflightDeviceMutex);\n  }\n  return v3;\n}"
+}

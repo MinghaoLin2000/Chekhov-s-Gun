@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17FastInt64ToBufferExPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf17FastInt64ToBufferExPc(google::protobuf * this, __int64 a2, char * a3)",
+    "pseudocode": "_BYTE *__fastcall google::protobuf::FastInt64ToBuffer(unsigned __int64 this, _BYTE *a2, char *a3)\n{\n  unsigned __int64 v3; // x8\n  _BYTE *result; // x0\n  bool v5; // cf\n  char v6; // w8\n  unsigned __int64 v7; // x10\n  unsigned __int64 v8; // x10\n  bool v9; // cc\n\n  v3 = this;\n  a2[21] = 0;\n  if ( (this & 0x8000000000000000LL) != 0 )\n  {\n    if ( this < 0xFFFFFFFFFFFFFFF7LL )\n    {\n      v7 = -10LL - this;\n      result = a2 + 19;\n      a2[20] = (v7 % 0xA) | 0x30;\n      v8 = v7 / 0xA + 1;\n      do\n      {\n        *result-- = (v8 % 0xA) | 0x30;\n        v9 = v8 > 9;\n        v8 /= 0xAuLL;\n      }\n      while ( v9 );\n    }\n    else\n    {\n      v6 = 48 - this;\n      result = a2 + 19;\n      a2[20] = v6;\n    }\n    *result = 45;\n  }\n  else\n  {\n    result = a2 + 21;\n    do\n    {\n      *--result = (v3 % 0xA) | 0x30;\n      v5 = v3 >= 0xA;\n      v3 /= 0xAuLL;\n    }\n    while ( v5 );\n  }\n  return result;\n}"
+}

@@ -1,0 +1,5 @@
+___destroy_helper_block_e8_32b
+void __fastcall __destroy_helper_block_e8_32b(__int64 a1)
+{
+  _Block_object_dispose(*(const void **)(a1 + 32), 7);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpDownstreamEndpointGetID",
+    "function_argument_number": 2,
+    "function_signature": "_uarpDownstreamEndpointGetID(__int64 a1, _WORD * a2)",
+    "pseudocode": "__int64 __fastcall uarpDownstreamEndpointGetID(__int64 a1, _WORD *a2)\n{\n  __int64 result; // x0\n\n  result = 30LL;\n  if ( a1 )\n  {\n    if ( a2 )\n    {\n      result = 0LL;\n      *a2 = *(_WORD *)(a1 + 136);\n    }\n  }\n  return result;\n}"
+}

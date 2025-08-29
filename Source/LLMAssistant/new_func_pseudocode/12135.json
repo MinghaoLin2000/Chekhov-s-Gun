@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10TextFormat7PrinterC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf10TextFormat7PrinterC1Ev(google::protobuf::TextFormat::Printer * this)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::TextFormat::Printer::Printer(google::protobuf::TextFormat::Printer *this)\n{\n  return __ZN6google8protobuf10TextFormat7PrinterC2Ev(this);\n}"
+}

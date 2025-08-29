@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSViewServiceApplicationMain",
+    "function_argument_number": 0,
+    "function_signature": "_NSViewServiceApplicationMain()",
+    "pseudocode": "__int64 NSViewServiceApplicationMain()\n{\n  return _NSViewServiceApplicationMain();\n}"
+}

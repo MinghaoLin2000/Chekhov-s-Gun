@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FirmwareBundle dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[FirmwareBundle dealloc](FirmwareBundle * self, SEL a2)",
+    "pseudocode": "void __cdecl -[FirmwareBundle dealloc](FirmwareBundle *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  objc_release(self->_firmwareImage);\n  objc_release(self->_buildManifest);\n  objc_release(self->_hash);\n  objc_release(self->_signature);\n  objc_release(self->_certificate);\n  objc_release(self->_bundleDescription);\n  objc_release(self->_firmwareLocalURL);\n  -[NSFileHandle uarpCloseAndReturnError:](self->_firmwareFilehandle, \"uarpCloseAndReturnError:\", 0LL);\n  objc_release(self->_firmwareFilehandle);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___FirmwareBundle;\n  -[FirmwareBundle dealloc](&v3, \"dealloc\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController siriViewController:willStartRequestWithOptions:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController siriViewController:willStartRequestWithOptions:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "id __cdecl -[SiriNCAlertViewController siriViewController:willStartRequestWithOptions:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v4; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v4 = objc_retain(a4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController viewWillDisappear]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSetupViewController viewWillDisappear](DeviceSetupViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSetupViewController viewWillDisappear](DeviceSetupViewController *self, SEL a2)\n{\n  WKWebView *v2; // x19\n  WKWebViewConfiguration *v3; // x20\n  WKUserContentController *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[DeviceSetupViewController activationWebView](self, \"activationWebView\"));\n  v3 = objc_retainAutoreleasedReturnValue(-[WKWebView configuration](v2, \"configuration\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[WKWebViewConfiguration userContentController](v3, \"userContentController\"));\n  -[WKUserContentController removeScriptMessageHandlerForName:](\n    v4,\n    \"removeScriptMessageHandlerForName:\",\n    CFSTR(\"iTunes_addProtocol\"));\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

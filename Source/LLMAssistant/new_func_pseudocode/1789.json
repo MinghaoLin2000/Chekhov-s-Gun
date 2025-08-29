@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceAccessibleTextField accessibilityPerformPress]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceAccessibleTextField accessibilityPerformPress](DeviceAccessibleTextField * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceAccessibleTextField accessibilityPerformPress](DeviceAccessibleTextField *self, SEL a2)\n{\n  void *v3; // x0\n  void *v4; // x20\n  void *v5; // x21\n  void *v6; // x20\n  objc_super v8; // [xsp+0h] [xbp-30h] BYREF\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceAccessibleTextField target](self, \"target\"));\n  if ( v3 && (v4 = v3, v5 = -[DeviceAccessibleTextField action](self, \"action\"), objc_release(v4), v5) )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(-[DeviceAccessibleTextField target](self, \"target\"));\n    objc_msgSend(\n      v6,\n      \"performSelector:withObject:afterDelay:\",\n      -[DeviceAccessibleTextField action](self, \"action\"),\n      self,\n      0.0);\n    objc_release(v6);\n    return 1;\n  }\n  else\n  {\n    v8.receiver = self;\n    v8.super_class = (Class)&OBJC_CLASS___DeviceAccessibleTextField;\n    return -[DeviceAccessibleTextField accessibilityPerformPress](&v8, \"accessibilityPerformPress\");\n  }\n}"
+}

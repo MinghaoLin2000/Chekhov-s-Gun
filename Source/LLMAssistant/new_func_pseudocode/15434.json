@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetECID",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetECID()",
+    "pseudocode": "__int64 AMRestorableDeviceGetECID()\n{\n  return _AMRestorableDeviceGetECID();\n}"
+}

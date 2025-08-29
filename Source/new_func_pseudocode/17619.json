@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextCreateWithShareableMappedData",
+    "function_argument_number": 0,
+    "function_signature": "_CGBitmapContextCreateWithShareableMappedData()",
+    "pseudocode": "__int64 CGBitmapContextCreateWithShareableMappedData()\n{\n  return _CGBitmapContextCreateWithShareableMappedData();\n}"
+}

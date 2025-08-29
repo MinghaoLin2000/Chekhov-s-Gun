@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_log_create",
+    "function_argument_number": 2,
+    "function_signature": "_os_log_create(const char * subsystem, const char * category)",
+    "pseudocode": "os_log_t __cdecl os_log_create(const char *subsystem, const char *category)\n{\n  return _os_log_create(subsystem, category);\n}"
+}

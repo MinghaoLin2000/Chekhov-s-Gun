@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction _selectedInputTypeChanged]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction _selectedInputTypeChanged](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction _selectedInputTypeChanged](AMLoaderServiceAction *self, SEL a2)\n{\n  AMRemoteActionDelegateXPCProtocol *v3; // x20\n  AMAction *v4; // x19\n  NSString *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[AMLoaderServiceAction _actionDelegate](self, \"_actionDelegate\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[AMLoaderServiceAction _amAction](self, \"_amAction\"));\n  v5 = objc_retainAutoreleasedReturnValue(-[AMAction selectedInputType](v4, \"selectedInputType\"));\n  -[AMRemoteActionDelegateXPCProtocol remoteActionSelectedInputTypeDidChange:](\n    v3,\n    \"remoteActionSelectedInputTypeDidChange:\",\n    v5);\n  objc_release(v5);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

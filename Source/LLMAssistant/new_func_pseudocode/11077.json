@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf20FieldDescriptorProtoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf20FieldDescriptorProtoD2Ev(google::protobuf::FieldDescriptorProto * this)",
+    "pseudocode": "void __fastcall google::protobuf::FieldDescriptorProto::~FieldDescriptorProto(\n        google::protobuf::FieldDescriptorProto *this)\n{\n  sub_1000A7CA4();\n  sub_100037E58((char *)this + 8);\n}"
+}

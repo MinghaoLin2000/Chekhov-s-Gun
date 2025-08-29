@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMSLogKey",
+    "function_argument_number": 0,
+    "function_signature": "_AMSLogKey()",
+    "pseudocode": "__int64 AMSLogKey()\n{\n  return _AMSLogKey();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUNoCopyDictionary getObjects:andKeys:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUNoCopyDictionary getObjects:andKeys:](TSUNoCopyDictionary * self, SEL a2, id * a3, id * a4)",
+    "pseudocode": "void __cdecl -[TSUNoCopyDictionary getObjects:andKeys:](TSUNoCopyDictionary *self, SEL a2, id *a3, id *a4)\n{\n  -[TSUNoCopyDictionary getObjects:andKeys:count:](self, \"getObjects:andKeys:count:\", a3, a4, -1LL);\n}"
+}

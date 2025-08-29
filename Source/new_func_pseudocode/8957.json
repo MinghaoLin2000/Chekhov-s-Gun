@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService17JSSourceUrlParserVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService17JSSourceUrlParserVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for JSSourceUrlParser(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005D710;\n  if ( !qword_10005D710 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for JSSourceUrlParser);\n  return result;\n}"
+}

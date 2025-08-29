@@ -1,0 +1,6 @@
+{
+    "function_name": "_AFLogInitIfNeeded",
+    "function_argument_number": 0,
+    "function_signature": "_AFLogInitIfNeeded()",
+    "pseudocode": "__int64 AFLogInitIfNeeded()\n{\n  return _AFLogInitIfNeeded();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLPreviewRequestCallGenerator",
+    "function_argument_number": 0,
+    "function_signature": "__QLPreviewRequestCallGenerator()",
+    "pseudocode": "__int64 _QLPreviewRequestCallGenerator()\n{\n  return __QLPreviewRequestCallGenerator();\n}"
+}

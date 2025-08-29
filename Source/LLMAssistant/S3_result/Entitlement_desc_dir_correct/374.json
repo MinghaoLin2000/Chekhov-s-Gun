@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.coreduetd.context",
+  "capability": "This entitlement allows a process to interact with the Core Duet daemon (`coreduetd`) to provide or access rich contextual information about the user and device state. This context is aggregated from various sources, including user activity, app usage, location, time, and other sensor data, which Core Duet uses for proactive suggestions, intelligent system behavior, and predictive features.",
+  "reasoning": "The entitlement name `com.apple.coreduetd.context` strongly points to Apple's Core Duet framework. 'coreduetd' likely refers to the Core Duet daemon, which is responsible for collecting and processing user context. The 'context' suffix directly indicates the type of data involved – contextual information about the user's activities, environment, and device state, which is the core function of Core Duet.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "The 'context' managed by Core Duet inherently includes highly sensitive personal information such as location data, app usage patterns, and inferred user behavior. Accessing or contributing to this context, especially from a system-level daemon or a privileged process, can involve bypassing typical user consent mechanisms for individual data sources (like location, calendar events, app usage analytics) that are often protected by Transparency, Consent, and Control (TCC). Therefore, this entitlement falls under 'Access Transparency Consent and Control (TCC) related functions' due to its direct relevance to privacy-sensitive user data aggregation.",
+  "self_reflection": "I am confident in this analysis. The naming convention `coreduetd.context` is very indicative of its purpose, linking directly to the Core Duet framework's known function of collecting and utilizing user context. The sensitive type classification is based on the inherent privacy implications of accessing aggregated user behavioral and environmental data, which often originates from TCC-protected sources. The main uncertainty is the exact *mechanism* of interaction (e.g., providing context vs. querying context), but the overall capability and sensitivity remain consistent."
+}

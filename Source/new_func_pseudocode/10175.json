@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4RectD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP4RectD2Ev(TSP::Rect * this)",
+    "pseudocode": "void __fastcall TSP::Rect::~Rect(TSP::Rect *this)\n{\n  __int64 v2; // x20\n  __int64 v3; // x20\n\n  if ( this != (TSP::Rect *)&TSP::_Rect_default_instance_ )\n  {\n    v2 = *((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      sub_100037E58(v2 + 8);\n      operator delete(v2, 0x1081C404FE48876LL);\n    }\n    v3 = *((_QWORD *)this + 4);\n    if ( v3 )\n    {\n      sub_100037E58(v3 + 8);\n      operator delete(v3, 0x1081C404FE48876LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

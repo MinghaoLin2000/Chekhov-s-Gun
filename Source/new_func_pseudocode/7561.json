@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGRectV16EyeCandyGraphicsEyABSo6CGSizeVcfC",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo6CGRectV16EyeCandyGraphicsEyABSo6CGSizeVcfC()",
+    "pseudocode": "double CGRect.init(_:)()\n{\n  return 0.0;\n}"
+}

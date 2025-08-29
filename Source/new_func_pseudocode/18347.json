@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecItemDelete",
+    "function_argument_number": 1,
+    "function_signature": "_SecItemDelete(CFDictionaryRef query)",
+    "pseudocode": "OSStatus __cdecl SecItemDelete(CFDictionaryRef query)\n{\n  return _SecItemDelete(query);\n}"
+}

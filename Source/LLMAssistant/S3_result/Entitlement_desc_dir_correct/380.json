@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.sbpl:(allow file-read* (home-subpath \"/\"))",
+  "capability": "Allows an application to read any file within the current user's home directory, including all subdirectories and hidden files, as a temporary exception to the macOS sandbox. This grants broad access to potentially sensitive user private data.",
+  "reasoning": "The entitlement name `com.apple.security.temporary-exception.sbpl` indicates that it's a temporary exception defined using the Sandbox Profile Language (SBPL). The SBPL rule `(allow file-read* (home-subpath \"/\"))` explicitly grants permission (`allow`) for all types of file read operations (`file-read*`) within the user's home directory (`home-subpath \"/\"`). This means the application can access documents, downloads, desktop, application support files, caches, and other private data stored within the user's home folder.",
+  "similar_entitlements": [
+    "com.apple.security.files.downloads.read-only"
+  ],
+  "sensitive_type": [
+    1,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement belongs to two sensitive operation types:\n\n1.  **File and File System Operations (Type 1):** The entitlement grants `file-read*` access to the entire user's home directory (`home-subpath \"/\"`). This includes all user-generated content, application data, and configuration files, directly falling under 'Performing read... operations on system or other users' files' and posing a significant risk of privacy leakage if abused.\n\n2.  **Access Transparency Consent and Control (TCC) related functions (Type 5):** The user's home directory contains numerous sensitive subdirectories (e.g., Desktop, Documents, Downloads, Pictures, Library/Application Support) that are typically protected by TCC or contain data that TCC aims to safeguard. Granting broad `file-read*` access to `home-subpath \"/\"` effectively bypasses granular TCC controls for these directories, allowing access to private user data without specific user consent for each category. The `temporary-exception` prefix further suggests a deviation from standard security mechanisms designed to protect user privacy.",
+  "self_reflection": "I am confident in the interpretation of the entitlement's capability and its classification into sensitive types. The structure of the SBPL rule is clear, indicating broad file read access within the user's home directory. The `temporary-exception` part highlights that this is a bypass of standard sandbox restrictions, making it particularly sensitive. The classification into Type 1 is direct, while Type 5 is justified by the broad access to user private data that would otherwise be subject to TCC-like protections. The limited context of similar entitlements means the provided example is the closest match, even though its scope is much narrower."
+}

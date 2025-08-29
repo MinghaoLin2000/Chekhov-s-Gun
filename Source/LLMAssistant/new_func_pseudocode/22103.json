@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateWithBytes",
+    "function_argument_number": 5,
+    "function_signature": "_CFStringCreateWithBytes(CFAllocatorRef alloc, const UInt8 * bytes, CFIndex numBytes, CFStringEncoding encoding, Boolean isExternalRepresentation)",
+    "pseudocode": "CFStringRef __cdecl CFStringCreateWithBytes(\n        CFAllocatorRef alloc,\n        const UInt8 *bytes,\n        CFIndex numBytes,\n        CFStringEncoding encoding,\n        Boolean isExternalRepresentation)\n{\n  return _CFStringCreateWithBytes(alloc, bytes, numBytes, encoding, isExternalRepresentation);\n}"
+}

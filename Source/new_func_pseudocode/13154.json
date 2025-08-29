@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUWarning hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUWarning hash](TSUWarning * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUWarning hash](TSUWarning *self, SEL a2)\n{\n  return -[NSString hash](self->_message, \"hash\");\n}"
+}

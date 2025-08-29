@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode totalTime]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode totalTime](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSNumber *__cdecl -[DeviceSettingsNode totalTime](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_totalTime;\n}"
+}

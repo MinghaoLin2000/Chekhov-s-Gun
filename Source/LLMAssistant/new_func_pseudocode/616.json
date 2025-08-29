@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsBooksViewController shouldTabViewBeEnabled]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsBooksViewController shouldTabViewBeEnabled](DeviceSettingsBooksViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsBooksViewController shouldTabViewBeEnabled](\n        DeviceSettingsBooksViewController *self,\n        SEL a2)\n{\n  NSButton *v2; // x19\n  bool v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsBooksViewController allRadioButton](self, \"allRadioButton\"));\n  v3 = (void *)-[NSButton state](v2, \"state\") != (void *)1;\n  objc_release(v2);\n  return v3;\n}"
+}

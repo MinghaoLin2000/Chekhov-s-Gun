@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController dismissSiriViewController:dismissalOptions:completion:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SiriNCAlertViewController dismissSiriViewController:dismissalOptions:completion:](SiriNCAlertViewController * self, SEL a2, id a3, id a4, id a5)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController dismissSiriViewController:dismissalOptions:completion:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  -[SiriNCAlertViewController dismissController:dismissalOptions:completion:](\n    self,\n    \"dismissController:dismissalOptions:completion:\",\n    self,\n    a4,\n    a5);\n}"
+}

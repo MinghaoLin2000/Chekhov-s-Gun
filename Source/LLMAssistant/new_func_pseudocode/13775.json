@@ -1,0 +1,6 @@
+{
+    "function_name": "___dynamic_cast",
+    "function_argument_number": 4,
+    "function_signature": "___dynamic_cast(const void * lpsrc, const struct __class_type_info * lpstype, const struct __class_type_info * lpdtype, ptrdiff_t s2d)",
+    "pseudocode": "void *__fastcall __dynamic_cast(\n        const void *lpsrc,\n        const struct __class_type_info *lpstype,\n        const struct __class_type_info *lpdtype,\n        ptrdiff_t s2d)\n{\n  return (void *)___dynamic_cast(lpsrc, lpstype, lpdtype, s2d);\n}"
+}

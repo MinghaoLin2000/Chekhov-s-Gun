@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPProgressBarView accessibilityAttributeValue:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPProgressBarView accessibilityAttributeValue:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[AMPProgressBarView accessibilityAttributeValue:](AMPProgressBarView *self, SEL a2, id a3)\n{\n  NSAccessibilityRole v4; // x0\n  NSAccessibilityRole v5; // x19\n  NSString *v6; // x0\n  NSString *v7; // x20\n  objc_super v9; // [xsp+0h] [xbp-20h] BYREF\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (NSAccessibilityRole)objc_retain(a3);\n  v5 = v4;\n  if ( NSAccessibilityProgressIndicatorRole == v4 )\n  {\n    v6 = objc_retain(v4);\n  }\n  else\n  {\n    v9.receiver = self;\n    v9.super_class = (Class)&OBJC_CLASS___AMPProgressBarView;\n    v6 = (NSString *)objc_retainAutoreleasedReturnValue(-[AMPProgressBarView accessibilityAttributeValue:](&v9, \"accessibilityAttributeValue:\", v4));\n  }\n  v7 = v6;\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v7);\n}"
+}

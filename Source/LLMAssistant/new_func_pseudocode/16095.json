@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformSetMaxTxPayloadLength",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformSetMaxTxPayloadLength(__int64 a1, _DWORD * a2, int a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformSetMaxTxPayloadLength(__int64 a1, _DWORD *a2, int a3)\n{\n  __int64 result; // x0\n\n  result = 30LL;\n  if ( a1 )\n  {\n    if ( a2 )\n    {\n      result = 0LL;\n      *a2 = a3;\n    }\n  }\n  return result;\n}"
+}

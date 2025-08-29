@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryBuildKeySetInt32",
+    "function_argument_number": 3,
+    "function_signature": "_CFDictionaryBuildKeySetInt32(__CFDictionary * a1, const void * a2, int a3)",
+    "pseudocode": "void __fastcall CFDictionaryBuildKeySetInt32(__CFDictionary *a1, const void *a2, int a3)\n{\n  CFNumberRef v5; // x21\n  int valuePtr; // [xsp+Ch] [xbp-24h] BYREF\n\n  valuePtr = a3;\n  v5 = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &valuePtr);\n  CFDictionarySetValue(a1, a2, v5);\n  CFRelease(v5);\n}"
+}

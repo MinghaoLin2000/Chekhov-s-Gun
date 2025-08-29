@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceStorageManagementViewController clickDeleteButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceStorageManagementViewController clickDeleteButton:](DeviceStorageManagementViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceStorageManagementViewController clickDeleteButton:](\n        DeviceStorageManagementViewController *self,\n        SEL a2,\n        id a3)\n{\n  _QWORD v3[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3254779904LL;\n  v3[2] = sub_100020164;\n  v3[3] = &unk_1000B8FB0;\n  v3[4] = self;\n  -[DeviceStorageManagementViewController promptForRemoveWithCompletionHandler:](\n    self,\n    \"promptForRemoveWithCompletionHandler:\",\n    v3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BrowseService _checkSync]",
+    "function_argument_number": 2,
+    "function_signature": "-[BrowseService _checkSync](BrowseService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[BrowseService _checkSync](BrowseService *self, SEL a2)\n{\n  unsigned __int64 syncTimerSuspendedCount; // x8\n  dispatch_object_s *syncTimer; // x0\n\n  syncTimerSuspendedCount = self->_syncTimerSuspendedCount;\n  self->_syncTimerSuspendedCount = syncTimerSuspendedCount + 1;\n  if ( !syncTimerSuspendedCount )\n  {\n    syncTimer = (dispatch_object_s *)self->_syncTimer;\n    if ( syncTimer )\n      dispatch_resume(syncTimer);\n  }\n}"
+}

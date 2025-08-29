@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE22setSpaceOrderingWeight_6weightyAC8CGSSpaceV_s5Int32VtF",
+    "function_argument_number": 2,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE22setSpaceOrderingWeight_6weightyAC8CGSSpaceV_s5Int32VtF(EyeCandyGraphics::CGSSpace _, Swift::Int32 weight)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall SLSTransactionRef.setSpaceOrderingWeight(_:weight:)(\n        EyeCandyGraphics::CGSSpace _,\n        Swift::Int32 weight)\n{\n  __int64 v2; // x20\n\n  _SLSTransactionSetSpaceOrderingWeight(v2, _.spid, *(_QWORD *)&weight);\n}"
+}

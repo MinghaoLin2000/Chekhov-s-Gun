@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_activity_apply",
+    "function_argument_number": 2,
+    "function_signature": "_os_activity_apply(os_activity_t activity, os_block_t block)",
+    "pseudocode": "void __cdecl os_activity_apply(os_activity_t activity, os_block_t block)\n{\n  _os_activity_apply(activity, block);\n}"
+}

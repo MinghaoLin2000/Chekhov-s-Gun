@@ -1,0 +1,6 @@
+{
+    "function_name": "_sandbox_free_error",
+    "function_argument_number": 1,
+    "function_signature": "_sandbox_free_error(char * errorbuf)",
+    "pseudocode": "void __cdecl sandbox_free_error(char *errorbuf)\n{\n  _sandbox_free_error(errorbuf);\n}"
+}

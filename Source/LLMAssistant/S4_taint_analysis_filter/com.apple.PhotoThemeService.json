@@ -1,0 +1,20 @@
+{
+  "_objc_msgSend$_softwareUpdateControllerForSessionIdentifier:": 4294992032,
+  "-[SUContainedSoftwareUpdateController startUpdateWithTags:metadata:completionHandler:]": 4294982152,
+  "-[SUContainedSoftwareUpdateController _softwareUpdateControllerForSessionIdentifier:]": 4294984784,
+  "-[AuthorizationController _attemptNonInteractiveAuthorization]": 4294978316,
+  "-[AuthorizationController _attemptNonInteractiveAuthorizationForNonAdminUser]": 4294978552,
+  "-[SUContainedSoftwareUpdateController requestStatusForSession:statusHandler:]": 4294984448,
+  "_objc_msgSend$setAuthorization:": 4294993312,
+  "-[SUContainedSoftwareUpdateController _utilizeExistingContextForUpdateWithTags:metadata:completionHandler:]": 4294980776,
+  "-[AuthorizationController _attemptInteractiveAuthorization]": 4294978764,
+  "-[SUContainedSoftwareUpdateController softwareUpdateDidBegin:]": 4294986316,
+  "_objc_msgSend$_attemptNonInteractiveAuthorizationForNonAdminUser": 4294991680,
+  "_AuthorizationCopyRights": 4294991040,
+  "_objc_msgSend$sharedUpdateController": 4294993824,
+  "_objc_msgSend$_allowSoftwareInstallForNonAdminUser": 4294991584,
+  "-[SUContainedSoftwareUpdateController softwareUpdateDidFinish:]": 4294986600,
+  "-[SUContainedSoftwareUpdateController _contextForSessionIdentifier:]": 4294985648,
+  "-[SUContainedSoftwareUpdateController cancelUpdateWithSession:]": 4294984048,
+  "_AuthorizationCreate": 4294991056
+}

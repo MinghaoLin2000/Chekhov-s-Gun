@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeSendRight setSendRight:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeSendRight setSendRight:](RemoteViewBridgeSendRight * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeSendRight setSendRight:](RemoteViewBridgeSendRight *self, SEL a2, unsigned int a3)\n{\n  self->_sendRight = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyManagedDisplaySpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyManagedDisplaySpaces()",
+    "pseudocode": "__int64 CGSCopyManagedDisplaySpaces()\n{\n  return _CGSCopyManagedDisplaySpaces();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList removeRangeAtIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSURangeList removeRangeAtIndex:](TSURangeList * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSURangeList removeRangeAtIndex:](TSURangeList *self, SEL a2, unsigned __int64 a3)\n{\n  _NSRange *begin; // x8\n  _NSRange *end; // x9\n  _NSRange *v6; // x20\n  char *v7; // x21\n\n  begin = self->mRangeList.__begin_;\n  end = self->mRangeList.__end_;\n  v6 = &begin[a3];\n  v7 = (char *)((char *)end - (char *)&v6[1]);\n  if ( end != &v6[1] )\n    memmove(&begin[a3], &v6[1], (char *)end - (char *)&v6[1]);\n  self->mRangeList.__end_ = (_NSRange *)&v7[(_QWORD)v6];\n}"
+}

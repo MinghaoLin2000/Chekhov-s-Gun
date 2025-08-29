@@ -1,0 +1,5 @@
+_$s33SiriSuggestionsBookkeepingService014DefaultFeatureD7FactoryCMa
+__int64 type metadata accessor for DefaultFeatureServiceFactory()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC33SiriSuggestionsBookkeepingService28DefaultFeatureServiceFactory);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[KeyboardSettingsMediator setDoubleQuoteOption:]",
+    "function_argument_number": 3,
+    "function_signature": "-[KeyboardSettingsMediator setDoubleQuoteOption:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[KeyboardSettingsMediator setDoubleQuoteOption:](KeyboardSettingsMediator *self, SEL a2, id a3)\n{\n  id v3; // x19\n  NSSpellChecker *v4; // x20\n  uint8_t v5[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  v3 = objc_retain(a3);\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_WORD *)v5 = 0;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_DEFAULT,\n      \"XPCSERVICE - Duble Quote option\",\n      v5,\n      2u);\n  }\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_DEBUG) )\n  {\n    sub_100007B80(v3);\n    if ( !v3 )\n      goto LABEL_6;\n    goto LABEL_5;\n  }\n  if ( v3 )\n  {\nLABEL_5:\n    v4 = objc_retainAutoreleasedReturnValue(+[NSSpellChecker sharedSpellChecker](&OBJC_CLASS___NSSpellChecker, \"sharedSpellChecker\"));\n    -[NSSpellChecker _setDoubleQuoteString:](v4, \"_setDoubleQuoteString:\", v3);\n    objc_release(v4);\n  }\nLABEL_6:\n  objc_release(v3);\n}"
+}

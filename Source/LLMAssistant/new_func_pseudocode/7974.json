@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetWindowTransformAtPlacement",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetWindowTransformAtPlacement()",
+    "pseudocode": "__int64 CGSSetWindowTransformAtPlacement()\n{\n  return _CGSSetWindowTransformAtPlacement();\n}"
+}

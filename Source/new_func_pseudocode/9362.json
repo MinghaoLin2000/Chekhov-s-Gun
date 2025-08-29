@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabase initReadonlyWithPath:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDatabase initReadonlyWithPath:error:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[TSPDatabase initReadonlyWithPath:error:](TSPDatabase *self, SEL a2, id a3, id *a4)\n{\n  id v6; // x19\n  void *v7; // x23\n  _QWORD *v8; // x20\n  void *v9; // x0\n  void *v10; // x8\n  objc_super v12; // [xsp+0h] [xbp-40h] BYREF\n\n  v6 = objc_retain(a3);\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"stringByAppendingPathComponent:\", CFSTR(\"index.db\")));\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSPDatabase;\n  v8 = -[TSUDatabase initReadonlyWithPath:error:](&v12, \"initReadonlyWithPath:error:\", v7, a4);\n  objc_release(v7);\n  if ( v8 )\n  {\n    v9 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSURL), \"initFileURLWithPath:\", v6);\n    v10 = (void *)v8[6];\n    v8[6] = v9;\n    objc_release(v10);\n    *((_BYTE *)v8 + 56) = 1;\n  }\n  else\n  {\n    sub_100027CD4(a4);\n  }\n  objc_release(v6);\n  return v8;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$setGeniusPlaylistImage:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$setGeniusPlaylistImage:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_setGeniusPlaylistImage_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"setGeniusPlaylistImage:\");\n}"
+}

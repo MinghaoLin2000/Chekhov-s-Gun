@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV13setCursorLockyySo6CGRectVF",
+    "function_argument_number": 5,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV13setCursorLockyySo6CGRectVF(__int64 a1, double a2, double a3, double a4, double a5)",
+    "pseudocode": "void __fastcall CGSConnection.setCursorLock(_:)(__int64 a1, double a2, double a3, double a4, double a5)\n{\n  void *v10; // x20\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  type metadata accessor for CGRegion(0LL);\n  v10 = (void *)static CGRegionRef.new(_:)(a2, a3, a4, a5);\n  SLSSetCursorRegionLock(a1, v10);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v10);\n}"
+}

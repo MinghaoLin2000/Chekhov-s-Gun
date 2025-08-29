@@ -1,0 +1,6 @@
+{
+    "function_name": "_UpdateRunningInXPCService",
+    "function_argument_number": 0,
+    "function_signature": "_UpdateRunningInXPCService()",
+    "pseudocode": "__int64 UpdateRunningInXPCService()\n{\n  return _UpdateRunningInXPCService();\n}"
+}

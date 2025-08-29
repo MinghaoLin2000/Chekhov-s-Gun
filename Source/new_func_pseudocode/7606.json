@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo10CGEventRefa16EyeCandyGraphicsE7keyDatas6UInt16Vvg",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo10CGEventRefa16EyeCandyGraphicsE7keyDatas6UInt16Vvg()",
+    "pseudocode": "int64_t CGEventRef.keyData.getter()\n{\n  __CGEvent *v0; // x20\n\n  return CGEventGetIntegerValueField(v0, kCGScrollWheelEventInstantMouser|0x40);\n}"
+}

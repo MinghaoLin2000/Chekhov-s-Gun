@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14DescriptorPool14generated_poolEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14DescriptorPool14generated_poolEv(google::protobuf::DescriptorPool * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorPool::generated_pool(google::protobuf::DescriptorPool *this)\n{\n  __int64 v1; // x19\n\n  v1 = google::protobuf::DescriptorPool::internal_generated_pool(this);\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_google_2fprotobuf_2fdescriptor_2eproto, 0LL);\n  return v1;\n}"
+}

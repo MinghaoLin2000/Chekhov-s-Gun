@@ -1,0 +1,6 @@
+{
+    "function_name": "_readdir_r",
+    "function_argument_number": 3,
+    "function_signature": "_readdir_r(DIR * a1, dirent * a2, dirent ** a3)",
+    "pseudocode": "int __cdecl readdir_r(DIR *a1, dirent *a2, dirent **a3)\n{\n  return _readdir_r(a1, a2, a3);\n}"
+}

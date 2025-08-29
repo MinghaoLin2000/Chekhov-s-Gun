@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GCSettingsMediator init]",
+    "function_argument_number": 2,
+    "function_signature": "-[GCSettingsMediator init](GCSettingsMediator * self, SEL a2)",
+    "pseudocode": "GCSettingsMediator *__cdecl -[GCSettingsMediator init](GCSettingsMediator *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___GCSettingsMediator;\n  return -[GCSettingsMediator init](&v3, \"init\");\n}"
+}

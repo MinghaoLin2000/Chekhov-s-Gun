@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSNewConnection",
+    "function_argument_number": 0,
+    "function_signature": "_CGSNewConnection()",
+    "pseudocode": "__int64 CGSNewConnection()\n{\n  return _CGSNewConnection();\n}"
+}

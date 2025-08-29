@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpStatusCodeToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpStatusCodeToString(unsigned int a1)",
+    "pseudocode": "const char *__fastcall uarpStatusCodeToString(unsigned int a1)\n{\n  if ( a1 > 0x3E )\n    return \"<unknown>\";\n  else\n    return (&off_1000244B0)[a1];\n}"
+}

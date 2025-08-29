@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask sourceMainResourceURL]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoConversionTask sourceMainResourceURL](VideoConversionTask * self, SEL a2)",
+    "pseudocode": "NSURL *__cdecl -[VideoConversionTask sourceMainResourceURL](VideoConversionTask *self, SEL a2)\n{\n  PAMediaConversionServiceResourceURLCollection *v2; // x19\n  id v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[VideoConversionTask sourceURLCollection](self, \"sourceURLCollection\"));\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[PAMediaConversionServiceResourceURLCollection resourceURLForRole:](\n           v2,\n           \"resourceURLForRole:\",\n           CFSTR(\"PAMediaConversionResourceRoleMainResource\")));\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSURL *)objc_autoreleaseReturnValue(v3);\n}"
+}

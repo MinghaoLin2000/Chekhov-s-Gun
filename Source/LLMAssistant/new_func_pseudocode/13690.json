@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringTokenizerGetCurrentTokenRange",
+    "function_argument_number": 1,
+    "function_signature": "_CFStringTokenizerGetCurrentTokenRange(CFStringTokenizerRef tokenizer)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nCFRange __cdecl CFStringTokenizerGetCurrentTokenRange(CFStringTokenizerRef tokenizer)\n{\n  CFIndex location; // x0\n  CFIndex length; // x1\n  CFRange CurrentTokenRange; // kr00_16\n  CFRange result; // 0:x0.16\n\n  CurrentTokenRange = _CFStringTokenizerGetCurrentTokenRange(tokenizer);\n  length = CurrentTokenRange.length;\n  location = CurrentTokenRange.location;\n  result.length = length;\n  result.location = location;\n  return result;\n}"
+}

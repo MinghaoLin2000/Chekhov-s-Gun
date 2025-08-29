@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15JetpackV2LoaderC9LoadErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15JetpackV2LoaderC9LoadErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JetpackV2Loader.LoadError()\n{\n  return &type metadata for JetpackV2Loader.LoadError;\n}"
+}

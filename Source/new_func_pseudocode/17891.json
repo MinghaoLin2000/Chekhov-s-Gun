@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z49AnyEnabledFileProviderDomainsInSameAppAsExtensionP11NSExtension",
+    "function_argument_number": 1,
+    "function_signature": "__Z49AnyEnabledFileProviderDomainsInSameAppAsExtensionP11NSExtension(void * a1)",
+    "pseudocode": "__int64 __fastcall AnyEnabledFileProviderDomainsInSameAppAsExtension(void *a1)\n{\n  id v1; // x19\n  id v2; // x20\n  __int64 v3; // x21\n\n  v1 = objc_retain(a1);\n  v2 = objc_retainAutoreleasedReturnValue(FileProvidersByIDSync());\n  v3 = AnyFileProviderDomainsInSameAppAsExtension(v1, v2, 1);\n  objc_release(v2);\n  objc_release(v1);\n  return v3;\n}"
+}

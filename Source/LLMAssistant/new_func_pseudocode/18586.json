@@ -1,0 +1,6 @@
+{
+    "function_name": "j__mach_absolute_time",
+    "function_argument_number": 0,
+    "function_signature": "j__mach_absolute_time()",
+    "pseudocode": "// attributes: thunk\nuint64_t j__mach_absolute_time(void)\n{\n  return mach_absolute_time();\n}"
+}

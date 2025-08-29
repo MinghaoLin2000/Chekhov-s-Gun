@@ -1,0 +1,6 @@
+{
+    "function_name": "-[device_http_t .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[device_http_t .cxx_destruct](device_http_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[device_http_t .cxx_destruct](device_http_t *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong(&self->_performAuthenticationForDeviceHTTP, 0LL);\n  objc_storeStrong(&self->_serverCertificateCheckForDeviceHTTP, 0LL);\n  objc_storeStrong((id *)&self->_contentEncoding, 0LL);\n  objc_storeStrong((id *)&self->_printerDisplayName, 0LL);\n  objc_storeStrong((id *)&self->_printerURL, 0LL);\n  objc_storeStrong((id *)&self->_session, 0LL);\n  objc_storeStrong((id *)&self->_streamedPrinterEndpoint, 0LL);\n  objc_storeStrong((id *)&self->_defaultCredential, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_credentialFromPrompt, 0LL);\n}"
+}

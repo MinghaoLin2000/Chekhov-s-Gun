@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV27allDisplaysIncludingMirrorsSayACGvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV27allDisplaysIncludingMirrorsSayACGvgZ()",
+    "pseudocode": "__int64 static CGDisplay.allDisplaysIncludingMirrors.getter()\n{\n  __int64 v0; // x0\n  __int64 v1; // x19\n  __int64 v2; // x0\n\n  v0 = sub_100018420();\n  v1 = v0;\n  if ( !*(_QWORD *)(v0 + 16) )\n  {\n    swift_bridgeObjectRelease(v0);\n    v2 = sub_100002BF4(&unk_100029DF0);\n    v1 = swift_allocObject(v2, 36LL, 7LL);\n    *(_OWORD *)(v1 + 16) = xmmword_10001FC20;\n    *(_DWORD *)(v1 + 32) = CGSMainDisplayID();\n  }\n  return v1;\n}"
+}

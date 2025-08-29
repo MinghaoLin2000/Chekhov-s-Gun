@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFGetTypeID",
+    "function_argument_number": 1,
+    "function_signature": "_CFGetTypeID(CFTypeRef cf)",
+    "pseudocode": "CFTypeID __cdecl CFGetTypeID(CFTypeRef cf)\n{\n  return _CFGetTypeID(cf);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf3ApiD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf3ApiD1Ev(google::protobuf::Api * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::Api::~Api(google::protobuf::Api *this)\n{\n  __ZN6google8protobuf3ApiD2Ev(this);\n}"
+}

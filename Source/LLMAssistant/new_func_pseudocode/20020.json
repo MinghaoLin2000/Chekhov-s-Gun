@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BonjourBrowse_Entity initWithBrowseResult:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BonjourBrowse_Entity initWithBrowseResult:](int a1, int a2, id a3)",
+    "pseudocode": "BonjourBrowse_Entity *__cdecl -[BonjourBrowse_Entity initWithBrowseResult:](BonjourBrowse_Entity *self, SEL a2, id a3)\n{\n  nw_browse_result *v5; // x19\n  BonjourBrowse_Entity *v6; // x21\n  nw_endpoint_t v7; // x0\n  OS_nw_endpoint *endpoint; // x8\n  objc_super v10; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = (nw_browse_result *)objc_retain(a3);\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___BonjourBrowse_Entity;\n  v6 = -[BonjourBrowse_Entity init](&v10, \"init\");\n  if ( v6 )\n  {\n    v7 = nw_browse_result_copy_endpoint(v5);\n    endpoint = v6->_endpoint;\n    v6->_endpoint = v7;\n    objc_release(endpoint);\n    objc_storeStrong((id *)&v6->_browseResult, a3);\n  }\n  objc_release(v5);\n  return v6;\n}"
+}

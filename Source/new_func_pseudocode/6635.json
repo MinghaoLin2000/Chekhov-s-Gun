@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_source_set_timer",
+    "function_argument_number": 4,
+    "function_signature": "_dispatch_source_set_timer(dispatch_source_t source, dispatch_time_t start, uint64_t interval, uint64_t leeway)",
+    "pseudocode": "void __cdecl dispatch_source_set_timer(\n        dispatch_source_t source,\n        dispatch_time_t start,\n        uint64_t interval,\n        uint64_t leeway)\n{\n  _dispatch_source_set_timer(source, start, interval, leeway);\n}"
+}

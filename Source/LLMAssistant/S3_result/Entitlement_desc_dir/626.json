@@ -1,0 +1,17 @@
+{
+  "entitlement": "com.apple.private.tcc.allow:kTCCServiceCalendar",
+  "capability": "Allows the application to access user calendar data (including reading and writing events, reminders, etc.) without requiring explicit user consent through the Transparency, Consent, and Control (TCC) system. This bypasses the standard privacy prompt that would normally appear for applications requesting calendar access.",
+  "reasoning": "The entitlement name 'com.apple.private.tcc.allow:kTCCServiceCalendar' directly points to Apple's Transparency, Consent, and Control (TCC) framework. The 'tcc.allow' prefix indicates that this entitlement grants an exception or bypass for TCC. The suffix 'kTCCServiceCalendar' specifies the exact TCC service that this allowance applies to, which is the Calendar service. Therefore, it allows an application to interact with user calendars without triggering the usual TCC privacy prompts.",
+  "similar_entitlements": [
+    "com.apple.private.tcc.allow:kTCCServicePhotos",
+    "com.apple.private.tcc.allow:kTCCServiceContacts",
+    "com.apple.private.tcc.allow:kTCCServiceMicrophone",
+    "com.apple.private.tcc.allow:kTCCServiceCamera",
+    "com.apple.private.tcc.allow:kTCCServiceLocation"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "The entitlement directly relates to bypassing user consent mechanisms provided by the Transparency, Consent, and Control (TCC) system for accessing sensitive user data. This falls precisely under Sensitive Operation Type 5, which is defined as 'Access Transparency Consent and Control (TCC) related functions' and explicitly lists 'Calendars / Reminders: Read or write user schedules' as an example of such a sensitive operation.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement name is very specific and clearly indicates its function within the macOS security architecture, particularly the TCC framework. The mapping to Sensitive Operation Type 5 is direct and unambiguous, as the type explicitly covers TCC-protected resources, including Calendars. The 'private' prefix further reinforces its sensitive nature, indicating it's not for general third-party use and likely reserved for Apple's own privileged processes or specific system components. The only minor nuance could be if 'allow' implies only read vs. read/write, but for TCC services, 'access' generally implies the full scope of what the service provides, which for calendars includes both reading and writing."
+}

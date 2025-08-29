@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsViewController nodeDidChangeNotification:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsContactsViewController nodeDidChangeNotification:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsContactsViewController nodeDidChangeNotification:](\n        DeviceSettingsContactsViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = objc_retain(a3);\n  -[DeviceSettingsContactsViewController updateDefaultContactGroupUI](self, \"updateDefaultContactGroupUI\");\n  -[DeviceSettingsContactsViewController updateTabView](self, \"updateTabView\");\n  -[DeviceSettingsViewController updatePanelUIState](self, \"updatePanelUIState\");\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceSettingsContactsViewController;\n  -[DeviceSettingsViewController nodeDidChangeNotification:](&v5, \"nodeDidChangeNotification:\", v4);\n  objc_release(v4);\n}"
+}

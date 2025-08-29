@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t make_progress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t make_progress:](lite_job_t * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[lite_job_t make_progress:](lite_job_t *self, SEL a2, signed __int64 a3)\n{\n  lite_job_t *v3; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retain(self);\n  objc_sync_enter(v3);\n  (*((void (**)(void))v3->zmake_progress + 2))();\n  objc_sync_exit(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

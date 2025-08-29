@@ -1,0 +1,6 @@
+{
+    "function_name": "_FSEventStreamStop",
+    "function_argument_number": 1,
+    "function_signature": "_FSEventStreamStop(FSEventStreamRef streamRef)",
+    "pseudocode": "void __cdecl FSEventStreamStop(FSEventStreamRef streamRef)\n{\n  _FSEventStreamStop(streamRef);\n}"
+}

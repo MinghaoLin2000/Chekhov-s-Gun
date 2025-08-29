@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection init]",
+    "function_argument_number": 2,
+    "function_signature": "-[LSRConnection init](LSRConnection * self, SEL a2)",
+    "pseudocode": "LSRConnection *__cdecl -[LSRConnection init](LSRConnection *self, SEL a2)\n{\n  objc_release(self);\n  return 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilderC2EPKNS0_14DescriptorPoolEPNS2_6TablesEPNS2_14ErrorCollectorE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilderC2EPKNS0_14DescriptorPoolEPNS2_6TablesEPNS2_14ErrorCollectorE(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorBuilder::DescriptorBuilder(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4)\n{\n  *(_QWORD *)a1 = a2;\n  *(_QWORD *)(a1 + 8) = a3;\n  *(_QWORD *)(a1 + 24) = 0LL;\n  *(_QWORD *)(a1 + 56) = 0LL;\n  *(_QWORD *)(a1 + 16) = a4;\n  *(_QWORD *)(a1 + 64) = 0LL;\n  *(_QWORD *)(a1 + 72) = 0LL;\n  *(_QWORD *)(a1 + 104) = 0LL;\n  *(_QWORD *)(a1 + 96) = a1 + 104;\n  *(_QWORD *)(a1 + 112) = 0LL;\n  *(_QWORD *)(a1 + 32) = 0LL;\n  *(_QWORD *)(a1 + 40) = 0LL;\n  *(_QWORD *)(a1 + 128) = 0LL;\n  *(_QWORD *)(a1 + 120) = a1 + 128;\n  *(_BYTE *)(a1 + 48) = 0;\n  *(_QWORD *)(a1 + 136) = 0LL;\n  *(_OWORD *)(a1 + 144) = 0u;\n  *(_OWORD *)(a1 + 160) = 0u;\n  sub_10007A754(a1 + 176, \"\");\n  return a1;\n}"
+}

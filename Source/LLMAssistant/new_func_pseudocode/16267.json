@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPStringSysdiagnoseDirectoryFilePath",
+    "function_argument_number": 0,
+    "function_signature": "_UARPStringSysdiagnoseDirectoryFilePath()",
+    "pseudocode": "id UARPStringSysdiagnoseDirectoryFilePath()\n{\n  void *v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100041EA8 != -1 )\n    dispatch_once(&qword_100041EA8, &stru_100031208);\n  v0 = (void *)qword_100041EA0;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v0);\n}"
+}

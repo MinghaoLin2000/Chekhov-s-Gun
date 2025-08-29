@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryAddPayload",
+    "function_argument_number": 4,
+    "function_signature": "_UARPSuperBinaryAddPayload(__int64 a1, __int64 a2, __int64 a3, unsigned int a4)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryAddPayload(__int64 a1, __int64 a2, __int64 a3, unsigned int a4)\n{\n  UARPSuperBinaryAddPayload2(a1, a2, a3, a4);\n  return 0LL;\n}"
+}

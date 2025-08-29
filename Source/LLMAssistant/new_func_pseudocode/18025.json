@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_log_message_tracer_automounted",
+    "function_argument_number": 0,
+    "function_signature": "_netfs_log_message_tracer_automounted()",
+    "pseudocode": "void netfs_log_message_tracer_automounted()\n{\n  ;\n}"
+}

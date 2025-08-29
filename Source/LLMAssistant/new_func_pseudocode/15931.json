@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpTransmitBufferUpstream",
+    "function_argument_number": 5,
+    "function_signature": "_uarpTransmitBufferUpstream(__int64 a1, __int64 a2, __int64 a3, const void * a4, unsigned int a5)",
+    "pseudocode": "__int64 __fastcall uarpTransmitBufferUpstream(__int64 a1, __int64 a2, __int64 a3, const void *a4, unsigned int a5)\n{\n  __int64 v10; // x0\n  __int64 v11; // x23\n  __int64 v12; // x25\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v10 = uarpAllocPrepareTransmitBuffer2(a1, a2, 27LL, (unsigned __int16)(a5 + 8), 1LL);\n  if ( !v10 )\n    return 11LL;\n  v11 = v10;\n  v12 = *(_QWORD *)(v10 + 16);\n  *(_WORD *)(v12 + 6) = uarpHtons(a3);\n  memcpy((void *)(v12 + 8), a4, a5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpTransmitBuffer2(a1, a2, v11);\n}"
+}

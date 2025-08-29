@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPFirmwareStagingCompletionStatusToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPFirmwareStagingCompletionStatusToString()",
+    "pseudocode": "__int64 UARPFirmwareStagingCompletionStatusToString()\n{\n  return _UARPFirmwareStagingCompletionStatusToString();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPMemoryReadChannel initWithNSData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPMemoryReadChannel initWithNSData:](TSPMemoryReadChannel * self, SEL a2, id a3)",
+    "pseudocode": "TSPMemoryReadChannel *__cdecl -[TSPMemoryReadChannel initWithNSData:](TSPMemoryReadChannel *self, SEL a2, id a3)\n{\n  void *v4; // x20\n  TSPMemoryReadChannel *v5; // x19\n\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(a3, \"tsp_dispatchData\"));\n  v5 = -[TSPMemoryReadChannel initWithDispatchData:](self, \"initWithDispatchData:\", v4);\n  objc_release(v4);\n  return v5;\n}"
+}

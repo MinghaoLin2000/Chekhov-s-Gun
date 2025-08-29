@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFMachPortCreateRunLoopSource",
+    "function_argument_number": 3,
+    "function_signature": "_CFMachPortCreateRunLoopSource(CFAllocatorRef allocator, CFMachPortRef port, CFIndex order)",
+    "pseudocode": "CFRunLoopSourceRef __cdecl CFMachPortCreateRunLoopSource(CFAllocatorRef allocator, CFMachPortRef port, CFIndex order)\n{\n  return _CFMachPortCreateRunLoopSource(allocator, port, order);\n}"
+}

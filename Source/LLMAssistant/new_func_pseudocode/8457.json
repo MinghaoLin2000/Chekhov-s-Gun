@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SUContainedSoftwareUpdateController _notifyContextOfQueryStatus:status:state:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SUContainedSoftwareUpdateController _notifyContextOfQueryStatus:status:state:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[SUContainedSoftwareUpdateController _notifyContextOfQueryStatus:status:state:](\n        SUContainedSoftwareUpdateController *self,\n        SEL a2,\n        id a3,\n        double a4,\n        signed __int64 a5)\n{\n  id v8; // x0\n  dispatch_queue_s *contextQueue; // x20\n  id v10; // x19\n  _QWORD block[4]; // [xsp+8h] [xbp-58h] BYREF\n  id v12; // [xsp+28h] [xbp-38h]\n  double v13; // [xsp+30h] [xbp-30h]\n  signed __int64 v14; // [xsp+38h] [xbp-28h]\n\n  v8 = objc_retain(a3);\n  contextQueue = (dispatch_queue_s *)self->_contextQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100005254;\n  block[3] = &unk_100008330;\n  v12 = v8;\n  v13 = a4;\n  v14 = a5;\n  v10 = objc_retain(v8);\n  dispatch_async(contextQueue, block);\n  objc_release(v12);\n  objc_release(v10);\n}"
+}

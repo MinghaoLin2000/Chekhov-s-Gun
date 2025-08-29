@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$installedAssetWithConfig:regionId:shouldSubscribe:subscriberId:expiration:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$installedAssetWithConfig:regionId:shouldSubscribe:subscriberId:expiration:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_installedAssetWithConfig_regionId_shouldSubscribe_subscriberId_expiration_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"installedAssetWithConfig:regionId:shouldSubscribe:subscriberId:expiration:\");\n}"
+}

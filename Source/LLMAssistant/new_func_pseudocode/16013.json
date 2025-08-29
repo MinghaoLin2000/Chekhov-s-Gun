@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPayloadHeader2EndianSwap",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPayloadHeader2EndianSwap(unsigned int * a1, _DWORD * a2)",
+    "pseudocode": "__int64 __fastcall uarpPayloadHeader2EndianSwap(unsigned int *a1, _DWORD *a2)\n{\n  __int64 result; // x0\n\n  *a2 = uarpHtonl(*a1);\n  uarpVersionEndianSwap(a1 + 2, a2 + 2);\n  a2[6] = uarpHtonl(a1[6]);\n  a2[7] = uarpHtonl(a1[7]);\n  a2[8] = uarpHtonl(a1[8]);\n  result = uarpHtonl(a1[9]);\n  a2[9] = result;\n  return result;\n}"
+}

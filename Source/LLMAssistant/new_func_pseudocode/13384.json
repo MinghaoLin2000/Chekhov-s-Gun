@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileInputStream initWithFileDescriptor:offset:length:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUFileInputStream initWithFileDescriptor:offset:length:](SFUFileInputStream * self, SEL a2, int a3, signed __int64 a4, signed __int64 a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSFUFileInputStream *__cdecl -[SFUFileInputStream initWithFileDescriptor:offset:length:](\n        SFUFileInputStream *self,\n        SEL a2,\n        int a3,\n        signed __int64 a4,\n        signed __int64 a5)\n{\n  __int64 v7; // x22\n  SFUFileInputStream *v8; // x0\n  SFUFileInputStream *v9; // x19\n\n  v7 = *(_QWORD *)&a3;\n  v8 = -[SFUFileInputStream p_init](self, \"p_init\");\n  v9 = v8;\n  if ( v8\n    && !-[SFUFileInputStream p_configureWithFileDescriptor:offset:length:](\n          v8,\n          \"p_configureWithFileDescriptor:offset:length:\",\n          v7,\n          a4,\n          a5) )\n  {\n    objc_release(v9);\n    return 0LL;\n  }\n  return v9;\n}"
+}

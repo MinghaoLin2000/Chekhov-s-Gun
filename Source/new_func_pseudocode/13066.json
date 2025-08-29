@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUNoCopyDictionary objectForKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUNoCopyDictionary objectForKey:](int a1, int a2, void * key)",
+    "pseudocode": "id __cdecl -[TSUNoCopyDictionary objectForKey:](TSUNoCopyDictionary *self, SEL a2, id a3)\n{\n  if ( a3 )\n    return (id)CFDictionaryGetValue(self->mDictionary, a3);\n  else\n    return 0LL;\n}"
+}

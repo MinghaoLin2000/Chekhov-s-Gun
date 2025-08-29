@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV12getEventMask10connectionAA06SystemfG0VAA13CGSConnectionV_tF",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV12getEventMask10connectionAA06SystemfG0VAA13CGSConnectionV_tF(EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nEyeCandyGraphics::SystemEventMask __swiftcall CGSWindow.getEventMask(connection:)(\n        EyeCandyGraphics::CGSConnection connection)\n{\n  EyeCandyGraphics::SystemEventMask v2; // [xsp+4h] [xbp-Ch]\n\n  v2.rawValue = 0;\n  CGSGetWindowEventMask(*(_QWORD *)&connection.cid);\n  return (EyeCandyGraphics::SystemEventMask)UInt32.init(_:)(v2);\n}"
+}

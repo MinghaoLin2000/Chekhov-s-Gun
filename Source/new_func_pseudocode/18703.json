@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16MenuFlashStepperVwet",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore16MenuFlashStepperVwet(__int64 a1, unsigned int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for MenuFlashStepper(__int64 a1, unsigned int a2)\n{\n  int v2; // w8\n  unsigned int v3; // w8\n  bool v4; // cf\n\n  if ( a2 )\n  {\n    if ( a2 >= 0xFD && *(_BYTE *)(a1 + 17) )\n    {\n      v2 = *(_DWORD *)a1 + 252;\n    }\n    else\n    {\n      v3 = *(unsigned __int8 *)(a1 + 16);\n      v4 = v3 >= 4;\n      v2 = v3 - 4;\n      if ( !v4 )\n        v2 = -1;\n    }\n  }\n  else\n  {\n    v2 = -1;\n  }\n  return (unsigned int)(v2 + 1);\n}"
+}

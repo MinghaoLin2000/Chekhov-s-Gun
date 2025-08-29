@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDatabase startSingleResultQuery:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUDatabase startSingleResultQuery:error:](TSUDatabase * self, SEL a2, sqlite3_stmt * a3, id * a4)",
+    "pseudocode": "bool __cdecl -[TSUDatabase startSingleResultQuery:error:](TSUDatabase *self, SEL a2, sqlite3_stmt *a3, id *a4)\n{\n  return -[TSUDatabase startSingleResultQuery:shouldLogErrors:error:](\n           self,\n           \"startSingleResultQuery:shouldLogErrors:error:\",\n           a3,\n           1LL,\n           a4);\n}"
+}

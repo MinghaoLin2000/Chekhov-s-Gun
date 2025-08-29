@@ -1,0 +1,13 @@
+{
+  "_objc_msgSend$resume": 4294976800,
+  "_objc_msgSend$setCurrentHome:": 4294976864,
+  "_dlopen": 4294976272,
+  "_objc_msgSend$currentHome": 4294976544,
+  "_objc_msgSend$deviceIdentifier": 4294976576,
+  "-[ServiceDelegate listener:shouldAcceptNewConnection:]": 4294970860,
+  "_objc_msgSend$setHomeManager:": 4294976992,
+  "_objc_msgSend$reprovisionAccessory:completionHandler:": 4294976768,
+  "___21-[WACEAService setup]_block_invoke": 4294971504,
+  "_objc_msgSend$setExportedInterface:": 4294976928,
+  "_objc_msgSend$setExportedObject:": 4294976960
+}

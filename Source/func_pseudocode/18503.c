@@ -1,0 +1,5 @@
+$s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa
+__int64 type metadata accessor for WiFiHelper.ScanningAssertion()
+{
+  return objc_opt_self(&OBJC_CLASS____TtCFC19ControlCenterHelper10WiFiHelper16enableMonitoringFT_P_L_17ScanningAssertion);
+}

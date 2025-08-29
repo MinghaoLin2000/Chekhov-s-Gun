@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService11MediaClientVwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService11MediaClientVwxx(__int64 a1)",
+    "pseudocode": "__int64 __fastcall destroy for MediaClient(__int64 a1)\n{\n  return swift_bridgeObjectRelease(*(_QWORD *)(a1 + 8));\n}"
+}

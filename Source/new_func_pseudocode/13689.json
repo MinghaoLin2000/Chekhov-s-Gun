@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringTokenizerCreate",
+    "function_argument_number": 5,
+    "function_signature": "_CFStringTokenizerCreate(CFAllocatorRef alloc, CFStringRef string, CFOptionFlags options, CFLocaleRef locale, CFRange range)",
+    "pseudocode": "CFStringTokenizerRef __cdecl CFStringTokenizerCreate(\n        CFAllocatorRef alloc,\n        CFStringRef string,\n        CFRange range,\n        CFOptionFlags options,\n        CFLocaleRef locale)\n{\n  return _CFStringTokenizerCreate(alloc, string, range, options, locale);\n}"
+}

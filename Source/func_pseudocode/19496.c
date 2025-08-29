@@ -1,0 +1,5 @@
+_xpc_remote_connection_get_failsafe_version_flags
+__int64 xpc_remote_connection_get_failsafe_version_flags()
+{
+  return _xpc_remote_connection_get_failsafe_version_flags();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGDataProviderCreateWithCFData",
+    "function_argument_number": 1,
+    "function_signature": "_CGDataProviderCreateWithCFData(CFDataRef data)",
+    "pseudocode": "CGDataProviderRef __cdecl CGDataProviderCreateWithCFData(CFDataRef data)\n{\n  return _CGDataProviderCreateWithCFData(data);\n}"
+}

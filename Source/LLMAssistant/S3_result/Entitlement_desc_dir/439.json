@@ -1,0 +1,12 @@
+{
+  "entitlement": "com.apple.security.iokit-user-client-class:AppleUSBHostDeviceUserClient",
+  "capability": "Allows the application to instantiate and communicate with the `AppleUSBHostDeviceUserClient` I/O Kit kernel object. This grants low-level, direct control and access to USB host controllers and connected USB devices, bypassing higher-level macOS frameworks and potentially security mechanisms.",
+  "reasoning": "The entitlement name clearly indicates an 'iokit-user-client-class' specifically for 'AppleUSBHostDeviceUserClient'. I/O Kit user clients provide user-space applications with direct interfaces to kernel drivers and hardware. 'USBHostDevice' refers to the USB host controller and connected peripherals, implying direct interaction with the USB hardware stack.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    4,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement grants direct access to a kernel-level I/O Kit user client, which inherently falls under 'System & Kernel Level Control' (Type 4) as it allows low-level interaction with hardware and kernel drivers, potentially affecting system stability, security, or enabling kernel exploits. Furthermore, by allowing direct access to raw data streams and control over USB devices (e.g., cameras, microphones, keyboards), it can bypass TCC (Type 5) for resources like Camera, Microphone, and Input Monitoring, as it provides access to the underlying hardware data without user consent checks that normally apply to those device types.",
+  "self_reflection": "I am confident in the interpretation of the entitlement's capability based on the clear naming convention of I/O Kit user clients. The classification into sensitive types 4 and 5 is also strong because direct kernel interaction (Type 4) and the ability to access raw hardware data from devices that are typically TCC-protected (Type 5) are direct consequences of this low-level access. The main uncertainty might be the *extent* of TCC bypass without further specific documentation, but the potential is clearly there."
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSFileCoordinator tsp_coordinateWritingItemAtURL:options:writingItemAtURL:options:filePresenter:error:byAccessor:]",
+    "function_argument_number": 9,
+    "function_signature": "+[NSFileCoordinator tsp_coordinateWritingItemAtURL:options:writingItemAtURL:options:filePresenter:error:byAccessor:](int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, id a9)",
+    "pseudocode": "bool __cdecl +[NSFileCoordinator tsp_coordinateWritingItemAtURL:options:writingItemAtURL:options:filePresenter:error:byAccessor:](\n        id a1,\n        SEL a2,\n        id a3,\n        unsigned __int64 a4,\n        id a5,\n        unsigned __int64 a6,\n        id a7,\n        id *a8,\n        id a9)\n{\n  (*((void (__fastcall **)(id, _QWORD, id, id))a9 + 2))(a9, 0LL, a3, a5);\n  return 1;\n}"
+}

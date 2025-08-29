@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP36DataMetadataMap_DataMetadataMapEntryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP36DataMetadataMap_DataMetadataMapEntryD2Ev(TSP::DataMetadataMap_DataMetadataMapEntry * this)",
+    "pseudocode": "void __fastcall TSP::DataMetadataMap_DataMetadataMapEntry::~DataMetadataMap_DataMetadataMapEntry(\n        TSP::DataMetadataMap_DataMetadataMapEntry *this)\n{\n  TSP::Reference *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (TSP::DataMetadataMap_DataMetadataMapEntry *)&TSP::_DataMetadataMap_DataMetadataMapEntry_default_instance_ )\n  {\n    v2 = (TSP::Reference *)*((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      TSP::Reference::~Reference(v2);\n      operator delete(v3, 0x1081C407D3F2757LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

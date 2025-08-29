@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12StlConverter8parseStlERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN12StlConverter8parseStlERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEE(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall StlConverter::parseStl(__int64 a1, __int64 a2)\n{\n  _OWORD v5[8]; // [xsp+0h] [xbp-140h] BYREF\n  __int64 v6; // [xsp+80h] [xbp-C0h]\n  _QWORD v7[17]; // [xsp+90h] [xbp-B0h] BYREF\n\n  std::istream::seekg(a2, 0LL, 2LL);\n  std::istream::tellg(v7, a2);\n  *(_QWORD *)(a1 + 64) = v7[16];\n  memset(v5, 0, sizeof(v5));\n  v6 = 0LL;\n  std::istream::seekg(a2, v5);\n  if ( (unsigned int)StlConverter::isBinary(a1, a2) )\n    return StlConverter::parseStlBinary(a1, a2);\n  else\n    return StlConverter::parseStlAscii(a1, a2);\n}"
+}

@@ -1,0 +1,110 @@
+Service Path:
+/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceLegacyAudio.xpc/Contents/MacOS/UARPUpdaterServiceLegacyAudio
+
+Service Exported Protocols:
+@protocol AUHelperServiceProtocol <NSObject>
+- (void)userPreferenceObjectForSuite:(unsigned long long)arg1 withKey:(NSString *)arg2 withReply:(void (^)(id))arg3;
+- (void)userPreferenceSetObject:(id)arg1 forSuite:(unsigned long long)arg2 withKey:(NSString *)arg3;
+@end
+@protocol FudPersonalizationPlugin
+- (void)personalizationResponse:(FudPersonalizationRequest *)arg1 response:(NSData *)arg2 status:(NSError *)arg3;
+@end
+@protocol FudPersonalizerDelegate <NSObject>
+- (_Bool)showPersonalizationRequiredDialogAndGetResponse;
+- (void)personalizationDone:(FudPersonalizationRequest *)arg1 response:(NSData *)arg2 error:(NSError *)arg3;
+@end
+@protocol FudPlugin <NSObject, NSCoding>
+- (void)finishWithOptions:(NSDictionary *)arg1;
+- (void)applyFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)prepareFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)downloadFirmwareWithOptions:(NSDictionary *)arg1;
+- (void)findFirmwareWithOptions:(NSDictionary *)arg1 remote:(_Bool)arg2;
+- (void)bootstrapWithOptions:(NSDictionary *)arg1;
+- (void)setDelegate:(id <FudPluginDelegate>)arg1;
+- (id)initWithDeviceClass:(NSString *)arg1 delegate:(id <FudPluginDelegate>)arg2 info:(id *)arg3 options:(NSDictionary *)arg4;
+- (_Bool)shouldUpdateBeSilent:(NSDictionary *)arg1;
+@end
+@protocol FudPluginDelegate <NSObject>
+- (void)issueNotification:(AUNotificationRequest *)arg1;
+- (void)personalizationRequest:(FudPersonalizationRequest *)arg1;
+- (void)accessoryDisconnected:(NSError *)arg1;
+- (void)logv:(int)arg1 format:(NSString *)arg2 arguments:(char *)arg3;
+- (void)log:(int)arg1 format:(NSString *)arg2;
+- (void)progress:(double)arg1;
+- (void)reportAnalytics:(NSString *)arg1 info:(NSDictionary *)arg2;
+- (void)didFinish:(_Bool)arg1 info:(NSDictionary *)arg2 error:(NSError *)arg3;
+- (void)didApply:(_Bool)arg1 info:(NSDictionary *)arg2 error:(NSError *)arg3;
+- (void)didPrepare:(_Bool)arg1 info:(NSDictionary *)arg2 error:(NSError *)arg3;
+- (void)didDownload:(_Bool)arg1 info:(NSDictionary *)arg2 error:(NSError *)arg3;
+- (void)didFind:(_Bool)arg1 info:(NSDictionary *)arg2 updateAvailable:(_Bool)arg3 needsDownload:(_Bool)arg4 error:(NSError *)arg5;
+- (void)didBootstrap:(_Bool)arg1 info:(NSDictionary *)arg2 error:(NSError *)arg3;
+- (void)didFind:(_Bool)arg1 info:(NSDictionary *)arg2 updateAvailable:(_Bool)arg3 error:(NSError *)arg4;
+@end
+@protocol HSModelDelegate
+- (void)setHSModel:(CSVoiceTriggerRTModel *)arg1 fallbackModel:(CSVoiceTriggerRTModel *)arg2 error:(NSError *)arg3;
+@end
+@protocol LegacyAudioAccessoryDelegate
+- (void)updateCompleteForAccessory:(LegacyAudioAccessory *)arg1;
+@end
+@protocol NSStreamDelegate <NSObject>
+- (void)stream:(NSStream *)arg1 handleEvent:(unsigned long long)arg2;
+@end
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end
+@protocol iAUPServerDelegate
+- (unsigned int)getWhitelistedPersonalizationFields;
+- (NSString *)getDeviceClassName;
+- (unsigned char)getPersonalizationID;
+- (void)handleSessionError:(unsigned int)arg1 message:(NSString *)arg2;
+- (_Bool)updateRequiresPersonalization;
+- (void)processPersonalizationInfoFromAccessory:(NSDictionary *)arg1;
+- (void)updateProgress:(double)arg1;
+- (void)firmwareUpdateComplete:(NSDictionary *)arg1 error:(NSError *)arg2;
+- (void)handleFirmwareUpdateStatus:(NSDictionary *)arg1;
+- (NSError *)writeData:(NSData *)arg1;
+- (void)logStatusString:(NSString *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.CommCenter.fine-grained
+	[Value]
+		[Array]
+			[String] spi
+			[String] cellular-plan
+			[String] public-cellular-plan
+	[Key] com.apple.private.IASInstallerAuthAgent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.MobileAccessoryUpdate.*
+	[Key] com.apple.private.corespeech.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.externalaccessory.showallaccessories
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceListenEvent
+	[Key] com.apple.private.xpc.launchd.per-user-lookup
+	[Value]
+		[Bool] true

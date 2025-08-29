@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE13setWindowWarp_1w1h4meshyAC9CGSWindowV_s6UInt32VAKSPySfGtF",
+    "function_argument_number": 4,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE13setWindowWarp_1w1h4meshyAC9CGSWindowV_s6UInt32VAKSPySfGtF(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall SLSTransactionRef.setWindowWarp(_:w:h:mesh:)(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v4; // x20\n\n  return _SLSTransactionSetWindowWarp(v4, a1, a2, a3, a4);\n}"
+}

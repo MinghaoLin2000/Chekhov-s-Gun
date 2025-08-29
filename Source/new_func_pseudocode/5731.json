@@ -1,0 +1,6 @@
+{
+    "function_name": "_InstallInputSourceMgrHandlers",
+    "function_argument_number": 0,
+    "function_signature": "_InstallInputSourceMgrHandlers()",
+    "pseudocode": "__int64 InstallInputSourceMgrHandlers()\n{\n  return _InstallInputSourceMgrHandlers();\n}"
+}

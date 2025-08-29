@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate _handleHasFocus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ECTIHelperDelegate _handleHasFocus:](int a1, int a2, xpc_object_t xdict)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate _handleHasFocus:](ECTIHelperDelegate *self, SEL a2, id a3)\n{\n  _BOOL4 v4; // w0\n  __int64 v5; // x2\n  NSTextField *textField; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = xpc_dictionary_get_bool(a3, \"hasFocus\");\n  self->_hasFocus = v4;\n  if ( v4 )\n  {\n    if ( self->_isSearchField )\n      v5 = 4LL;\n    else\n      v5 = 1LL;\n    textField = self->_textField;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[NSTextField setAlignment:](textField, \"setAlignment:\", v5);\n  }\n}"
+}

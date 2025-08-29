@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr3SetEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEERSA_PNS0_5ArenaE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr3SetEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEERSA_PNS0_5ArenaE(std::string ** a1, std::string * a2, __int64 a3, __int64 a4)",
+    "pseudocode": "std::string *__fastcall google::protobuf::internal::ArenaStringPtr::Set(\n        std::string **a1,\n        std::string *a2,\n        __int64 a3,\n        __int64 a4)\n{\n  std::string *v5; // x0\n  int v6; // w9\n  const std::string::value_type *v7; // x1\n  std::string::size_type v8; // x2\n  std::string *result; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = *a1;\n  if ( v5 == a2 )\n  {\n    result = (std::string *)sub_10011B048(a4, a3);\n    *a1 = result;\n  }\n  else\n  {\n    v6 = *(char *)(a3 + 23);\n    if ( v6 >= 0 )\n      v7 = (const std::string::value_type *)a3;\n    else\n      v7 = *(const std::string::value_type **)a3;\n    if ( v6 >= 0 )\n      v8 = *(unsigned __int8 *)(a3 + 23);\n    else\n      v8 = *(_QWORD *)(a3 + 8);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return std::string::assign(v5, v7, v8);\n  }\n  return result;\n}"
+}

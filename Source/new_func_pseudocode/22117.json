@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZL15idle_timer_exitPv",
+    "function_argument_number": 1,
+    "function_signature": "__ZL15idle_timer_exitPv(void * a1)",
+    "pseudocode": "void __fastcall __noreturn idle_timer_exit(void *a1)\n{\n  int v1; // [xsp+0h] [xbp-20h] BYREF\n  __int64 v2; // [xsp+4h] [xbp-1Ch]\n  __int16 v3; // [xsp+Ch] [xbp-14h]\n  __int64 v4; // [xsp+Eh] [xbp-12h]\n\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_DEFAULT) )\n  {\n    v1 = 134349314;\n    v2 = g_idle_timer_seconds;\n    v3 = 2082;\n    v4 = g_idle_timer_reason;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_DEFAULT,\n      \"Idle exit MTLCompilerService after %{public}lld seconds (reason: %{public}s).\",\n      (uint8_t *)&v1,\n      0x16u);\n  }\n  _Exit(0);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegateCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegateCMa()",
+    "pseudocode": "__int64 type metadata accessor for BookkeepingServiceDelegate()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate);\n}"
+}

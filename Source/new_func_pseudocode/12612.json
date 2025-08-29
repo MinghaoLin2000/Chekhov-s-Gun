@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDPath copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUUUIDPath copyWithZone:](TSUUUIDPath * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "// attributes: thunk\nid __cdecl -[TSUUUIDPath copyWithZone:](TSUUUIDPath *self, SEL a2, _NSZone *a3)\n{\n  return objc_retain(self);\n}"
+}

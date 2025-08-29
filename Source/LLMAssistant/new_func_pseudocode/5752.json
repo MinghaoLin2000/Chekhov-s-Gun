@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$enableAutoBrightness:forKeyboard:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$enableAutoBrightness:forKeyboard:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_enableAutoBrightness_forKeyboard_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"enableAutoBrightness:forKeyboard:\");\n}"
+}

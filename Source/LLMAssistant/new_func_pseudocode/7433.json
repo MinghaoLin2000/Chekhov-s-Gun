@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup25AnnotationsViewController convertPoint:fromOverlayToModelWithPageIndex:forAnnotationController:]",
+    "function_argument_number": 5,
+    "function_signature": "-[_TtC13DisplayMarkup25AnnotationsViewController convertPoint:fromOverlayToModelWithPageIndex:forAnnotationController:](_TtC13DisplayMarkup25AnnotationsViewController * self, SEL a2, signed __int64 a4, id a5, CGPoint a3)",
+    "pseudocode": "CGPoint __cdecl -[AnnotationsViewController convertPoint:fromOverlayToModelWithPageIndex:forAnnotationController:](\n        _TtC13DisplayMarkup25AnnotationsViewController *self,\n        SEL a2,\n        CGPoint a3,\n        signed __int64 a4,\n        id a5)\n{\n  double v5; // d0\n  double v6; // d1\n  CGPoint result; // 0:d0.8,8:d1.8\n\n  sub_10000BF14((int)self, (int)a2, a4, a5);\n  result.y = v6;\n  result.x = v5;\n  return result;\n}"
+}

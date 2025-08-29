@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer setParserState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer setParserState:](iAUPServer * self, SEL a2, int a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[iAUPServer setParserState:](iAUPServer *self, SEL a2, int a3)\n{\n  __int64 v3; // x19\n  int v5; // w0\n\n  v3 = *(_QWORD *)&a3;\n  v5 = -[iAUPServer parserState](self, \"parserState\");\n  if ( (int)v3 < 1 || v5 <= 0 )\n    NSLog(\n      &CFSTR(\"[Parser State]: %s -> %s\").isa,\n      -[iAUPServer parserStateString:](self, \"parserStateString:\", (unsigned int)self->_parserState),\n      -[iAUPServer parserStateString:](self, \"parserStateString:\", v3));\n  self->_parserState = v3;\n}"
+}

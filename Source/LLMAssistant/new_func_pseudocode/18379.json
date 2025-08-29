@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTAMDPMService setControlMode:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[GTAMDPMService setControlMode:withReply:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[GTAMDPMService setControlMode:withReply:](GTAMDPMService *self, SEL a2, int a3, id a4)\n{\n  void (__fastcall **v5)(id, _BOOL8); // x19\n  _BOOL8 v6; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = (void (__fastcall **)(id, _BOOL8))objc_retain(a4);\n  v6 = self->_canUpdateState && -[GTAMDPMService _setToDefault](self, \"_setToDefault\");\n  v5[2](v5, v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

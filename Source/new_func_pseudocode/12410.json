@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr7DestroyENS2_12EmptyDefaultEPNS0_5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr7DestroyENS2_12EmptyDefaultEPNS0_5ArenaE(__int64 * a1, __int64 a2)",
+    "pseudocode": "__int64 *__fastcall google::protobuf::internal::ArenaStringPtr::Destroy(__int64 *a1, __int64 a2)\n{\n  return google::protobuf::internal::ArenaStringPtr::Destroy(\n           a1,\n           (__int64)&google::protobuf::internal::fixed_address_empty_string,\n           a2);\n}"
+}

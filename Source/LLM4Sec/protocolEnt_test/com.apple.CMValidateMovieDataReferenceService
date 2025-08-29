@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/Frameworks/CoreMedia.framework/Versions/A/XPCServices/com.apple.CMValidateMovieDataReferenceService.xpc/Contents/MacOS/com.apple.CMValidateMovieDataReferenceService
+
+Service Exported Protocols:
+
+Service Entitlements:

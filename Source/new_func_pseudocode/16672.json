@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater isRoamingEnabled]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAAccessoryUpdater isRoamingEnabled](EAAccessoryUpdater * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[EAAccessoryUpdater isRoamingEnabled](EAAccessoryUpdater *self, SEL a2)\n{\n  id v3; // x0\n  void *v4; // x21\n  unsigned int v5; // w20\n  __int64 v7; // [xsp+8h] [xbp-28h] BYREF\n\n  v7 = 0LL;\n  v3 = objc_alloc_init((Class)&OBJC_CLASS___CoreTelephonyClient);\n  if ( v3 )\n  {\n    v4 = v3;\n    v5 = (unsigned int)objc_msgSend(v3, \"getInternationalDataAccessStatusSync:\", &v7);\n    if ( v7 )\n      -[FudPluginDelegate log:format:](self->delegate, \"log:format:\", 7LL, CFSTR(\"error = %@\"), v7);\n    objc_release(v4);\n  }\n  else\n  {\n    v5 = 1;\n  }\n  -[FudPluginDelegate log:format:](self->delegate, \"log:format:\", 7LL, CFSTR(\"isRoamingEnabled = %d\"), v5);\n  return v5;\n}"
+}

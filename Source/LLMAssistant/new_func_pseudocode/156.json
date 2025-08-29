@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ShareAddressOwst",
+    "function_argument_number": 3,
+    "function_signature": "$s9SPIHelper12ShareAddressOwst(__int64 result, unsigned int a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for ShareAddress(__int64 result, unsigned int a2, unsigned int a3)\n{\n  if ( a2 > 0xFE )\n  {\n    *(_BYTE *)(result + 16) = 0;\n    *(_QWORD *)result = a2 - 255;\n    *(_QWORD *)(result + 8) = 0LL;\n    if ( a3 >= 0xFF )\n      *(_BYTE *)(result + 17) = 1;\n  }\n  else\n  {\n    if ( a3 >= 0xFF )\n      *(_BYTE *)(result + 17) = 0;\n    if ( a2 )\n      *(_BYTE *)(result + 16) = -(char)a2;\n  }\n  return result;\n}"
+}

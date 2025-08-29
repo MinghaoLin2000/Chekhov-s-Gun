@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResult hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResult hash](ModelKeyServerAPIFetchKeyResult * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[ModelKeyServerAPIFetchKeyResult hash](ModelKeyServerAPIFetchKeyResult *self, SEL a2)\n{\n  __int64 v3; // x20\n  unsigned __int64 v4; // x21\n  NSUInteger v5; // x20\n  unsigned __int64 v6; // x21\n  unsigned __int64 v7; // x20\n\n  if ( (*(_BYTE *)&self->_has & 1) != 0 )\n    v3 = 2654435761LL * self->_key;\n  else\n    v3 = 0LL;\n  v4 = -[NSString hash](self->_keyId, \"hash\") ^ v3;\n  v5 = -[NSString hash](self->_modelName, \"hash\");\n  v6 = v4 ^ v5 ^ -[NSString hash](self->_teamId, \"hash\");\n  v7 = -[ModelKeyServerAPISignedKey hash](self->_signedKey, \"hash\");\n  return v6 ^ v7 ^ -[ModelKeyServerAPIRawKey hash](self->_rawKey, \"hash\");\n}"
+}

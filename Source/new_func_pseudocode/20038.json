@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Browse_Bonjour _browserForServiceType:changedFrom:to:done:]",
+    "function_argument_number": 4,
+    "function_signature": "-[Browse_Bonjour _browserForServiceType:changedFrom:to:done:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[Browse_Bonjour _browserForServiceType:changedFrom:to:done:](\n        Browse_Bonjour *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5,\n        bool a6)\n{\n  nw_browse_result *v8; // x19\n  nw_browse_result *v9; // x20\n  char changes; // w0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v8 = (nw_browse_result *)objc_retain(a4);\n  v9 = (nw_browse_result *)objc_retain(a5);\n  dispatch_assert_queue_V2((dispatch_queue_t)self->_queue);\n  changes = nw_browse_result_get_changes(v8, v9);\n  if ( (changes & 1) == 0 )\n  {\n    if ( (changes & 2) != 0 )\n    {\nLABEL_5:\n      -[Browse_Bonjour addResult:](self, \"addResult:\", v9);\n      goto LABEL_7;\n    }\n    if ( (changes & 4) == 0 )\n    {\n      -[Browse_Bonjour removeResult:](self, \"removeResult:\", v8);\n      goto LABEL_5;\n    }\n    -[Browse_Bonjour removeResult:](self, \"removeResult:\", v8);\n  }\nLABEL_7:\n  objc_release(v9);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

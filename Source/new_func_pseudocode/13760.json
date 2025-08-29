@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_()",
+    "pseudocode": "__int64 std::operator+<char>()\n{\n  return std::operator+<char>();\n}"
+}

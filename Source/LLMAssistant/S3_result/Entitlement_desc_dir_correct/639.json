@@ -1,0 +1,16 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.files.home-relative-path.read-write:/Library/Images/",
+  "capability": "This entitlement grants an application read and write access to the /Library/Images/ directory relative to the user's home directory. This directory typically contains user-modifiable system resources such as custom icons, wallpapers, or shared image assets used by the system or third-party apps. It bypasses standard sandbox restrictions, allowing the app to persistently access or modify files in this location without explicit user prompts.",
+  "reasoning": "'temporary-exception.files.home-relative-path.read-write' entitlements are used to grant fine-grained file system access to specific subpaths under the user's home directory. In this case, the '/Library/Images/' path, while not as sensitive as '~/Library/Mobile Documents', still represents a system-facing user-writable directory that could influence UI appearance or resource injection. Since sandboxed apps are typically restricted from writing to arbitrary home-relative paths, this entitlement reflects an exception allowing that behavior.",
+  "similar_entitlements": [
+    "com.apple.security.files.user-selected.read-write",
+    "com.apple.security.files.downloads.read-write",
+    "com.apple.security.temporary-exception.files.home-relative-path.read-only:/Library/Preferences/"
+  ],
+  "sensitive_type": [
+    1,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under sensitive operation type 1 (File and File System Operations) because it grants direct write access to a normally protected area in the user’s home directory. It also falls under type 5 (TCC-related functions) due to its role in bypassing the user consent mechanism typical of sandbox enforcement. While not as sensitive as access to private documents or cloud data, any entitlement that allows unprompted read-write file system access to a Library subdirectory poses risks in terms of persistent state manipulation or indirect data leakage.",
+  "self_reflection": "I am moderately confident in this assessment. While '/Library/Images/' is not as well-known or clearly sensitive as 'Mobile Documents', its presence within the '~/Library' structure and its write access permission suggest that the entitlement bypasses standard sandbox file access restrictions. The reasoning around its classification into file system and TCC-related operations is sound based on the naming pattern and historical Apple sandbox behavior. The primary uncertainty lies in the exact system usage of this path across macOS versions, though it is consistently treated as a writable image resource path."
+}

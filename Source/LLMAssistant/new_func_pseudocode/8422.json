@@ -1,0 +1,6 @@
+{
+    "function_name": "_mapAndClampValueFromWithinRangeOntoRange",
+    "function_argument_number": 5,
+    "function_signature": "_mapAndClampValueFromWithinRangeOntoRange(double a1, double a2, double a3, double a4, double a5)",
+    "pseudocode": "double __fastcall mapAndClampValueFromWithinRangeOntoRange(double a1, double a2, double a3, double a4, double a5)\n{\n  double result; // d0\n\n  result = (a1 - a2) * (a5 - a4) / (a3 - a2) + a4;\n  if ( result > a5 )\n    result = a5;\n  if ( result < a4 )\n    return a4;\n  return result;\n}"
+}

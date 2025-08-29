@@ -1,0 +1,6 @@
+{
+    "function_name": "__DArmdir",
+    "function_argument_number": 0,
+    "function_signature": "__DArmdir()",
+    "pseudocode": "__int64 _DArmdir()\n{\n  return __DArmdir();\n}"
+}

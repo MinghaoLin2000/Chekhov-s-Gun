@@ -1,0 +1,9 @@
+Service Path:
+/System/Library/PrivateFrameworks/TextInputTestingKit.framework/Versions/A/XPCServices/TextInputTestService.xpc/Contents/MacOS/TextInputTestService
+
+Service Exported Protocols:
+@protocol TextInputTestServiceProtocol
+- (void)ackWithReply:(void (^)(void))arg1;
+@end
+
+Service Entitlements:

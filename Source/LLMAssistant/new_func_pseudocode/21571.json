@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFAnalyticsEventTypeGetName",
+    "function_argument_number": 0,
+    "function_signature": "_SFAnalyticsEventTypeGetName()",
+    "pseudocode": "__int64 SFAnalyticsEventTypeGetName()\n{\n  return _SFAnalyticsEventTypeGetName();\n}"
+}

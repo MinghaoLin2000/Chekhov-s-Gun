@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSCoder tsu_encodeColorSpace:forKey:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSCoder tsu_encodeColorSpace:forKey:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[NSCoder tsu_encodeColorSpace:forKey:](NSCoder *self, SEL a2, CGColorSpace *a3, id a4)\n{\n  id v6; // x21\n  void *v7; // x19\n  NSData *v8; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(a4);\n  v7 = (void *)CGColorSpaceCopyPropertyList(a3);\n  v8 = objc_retainAutoreleasedReturnValue(\n         +[NSPropertyListSerialization dataWithPropertyList:format:options:error:](\n           &OBJC_CLASS___NSPropertyListSerialization,\n           \"dataWithPropertyList:format:options:error:\",\n           v7,\n           200LL,\n           0LL,\n           0LL));\n  -[NSCoder encodeObject:forKey:](self, \"encodeObject:forKey:\", v8, v6);\n  objc_release(v6);\n  objc_release(v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

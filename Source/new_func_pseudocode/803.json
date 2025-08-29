@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController isDirty]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsViewController isDirty](DeviceSettingsViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsViewController isDirty](DeviceSettingsViewController *self, SEL a2)\n{\n  AMPDeviceSyncPrefs *v3; // x20\n  void *v4; // x21\n  AMPDeviceSyncPrefs *v5; // x19\n  char v6; // w19\n\n  if ( !(unsigned int)-[DeviceSettingsViewController isViewLoaded](self, \"isViewLoaded\") )\n    return 0;\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  v4 = -[AMPDeviceSyncPrefs copy](v3, \"copy\");\n  objc_release(v3);\n  -[DeviceSettingsViewController saveToDeviceSyncPrefs:](self, \"saveToDeviceSyncPrefs:\", v4);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  LOBYTE(v3) = (unsigned __int8)objc_msgSend(v4, \"isEqual:\", v5);\n  objc_release(v5);\n  v6 = (unsigned __int8)v3 ^ 1;\n  objc_release(v4);\n  return v6;\n}"
+}

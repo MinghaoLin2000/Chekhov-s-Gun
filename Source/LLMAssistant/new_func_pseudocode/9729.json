@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP11FeatureInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP11FeatureInfoD1Ev(TSP::FeatureInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::FeatureInfo::~FeatureInfo(TSP::FeatureInfo *this)\n{\n  __ZN3TSP11FeatureInfoD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ProgressViewController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[ProgressViewController init](ProgressViewController * self, SEL a2)",
+    "pseudocode": "ProgressViewController *__cdecl -[ProgressViewController init](ProgressViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___ProgressViewController;\n  return -[ProgressViewController init](&v3, \"init\");\n}"
+}

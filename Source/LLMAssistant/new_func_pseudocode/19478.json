@@ -1,0 +1,6 @@
+{
+    "function_name": "_fseek",
+    "function_argument_number": 3,
+    "function_signature": "_fseek(FILE * a1, __int64 a2, int a3)",
+    "pseudocode": "int __cdecl fseek(FILE *a1, __int64 a2, int a3)\n{\n  return _fseek(a1, a2, a3);\n}"
+}

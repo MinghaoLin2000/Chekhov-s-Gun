@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GIFExportVideoTranscodingTask progress]",
+    "function_argument_number": 2,
+    "function_signature": "-[GIFExportVideoTranscodingTask progress](GIFExportVideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "NSProgress *__cdecl -[GIFExportVideoTranscodingTask progress](GIFExportVideoTranscodingTask *self, SEL a2)\n{\n  return (NSProgress *)objc_getProperty(self, a2, 152LL, 1);\n}"
+}

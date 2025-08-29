@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallApCreatePersonalizedResponse",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallApCreatePersonalizedResponse()",
+    "pseudocode": "__int64 AMAuthInstallApCreatePersonalizedResponse()\n{\n  return _AMAuthInstallApCreatePersonalizedResponse();\n}"
+}

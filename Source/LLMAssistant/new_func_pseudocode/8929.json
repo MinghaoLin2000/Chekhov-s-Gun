@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject startSignInSession:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject startSignInSession:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[JSSessionAuthenticatorObject startSignInSession:](\n        _TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  _TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject *v5; // x19\n  void *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retain(self);\n  v6 = (void *)sub_10002988C(v4);\n  objc_release(v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryGetKeysAndValues",
+    "function_argument_number": 3,
+    "function_signature": "_CFDictionaryGetKeysAndValues(CFDictionaryRef theDict, const void ** keys, const void ** values)",
+    "pseudocode": "void __cdecl CFDictionaryGetKeysAndValues(CFDictionaryRef theDict, const void **keys, const void **values)\n{\n  _CFDictionaryGetKeysAndValues(theDict, keys, values);\n}"
+}

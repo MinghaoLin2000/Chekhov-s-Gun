@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService16JSMediaAPIObjectCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService16JSMediaAPIObjectCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for JSMediaAPIObject(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005CDC8;\n  if ( !qword_10005CDC8 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for JSMediaAPIObject);\n  return result;\n}"
+}

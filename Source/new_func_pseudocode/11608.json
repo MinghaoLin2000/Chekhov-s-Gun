@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12MapFieldBaseD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal12MapFieldBaseD2Ev(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::MapFieldBase::~MapFieldBase(google::protobuf::internal::MapFieldBase *this)\n{\n  __int64 v2; // x20\n\n  *(_QWORD *)this = off_1001D9CA0;\n  v2 = *((_QWORD *)this + 2);\n  if ( v2 && !*((_QWORD *)this + 1) )\n  {\n    sub_1000C09A0(*((_QWORD *)this + 2));\n    operator delete(v2, 0x1020C4014030ADELL);\n  }\n  std::mutex::~mutex((std::mutex *)((char *)this + 24));\n}"
+}

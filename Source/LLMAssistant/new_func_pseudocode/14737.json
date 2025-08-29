@@ -1,0 +1,6 @@
+{
+    "function_name": "+[UINSSystemPreferencesTCCSetting _supportedSettings]",
+    "function_argument_number": 2,
+    "function_signature": "+[UINSSystemPreferencesTCCSetting _supportedSettings](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[UINSSystemPreferencesTCCSetting _supportedSettings](id a1, SEL a2)\n{\n  void *v2; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3221225472LL;\n  block[2] = sub_100004550;\n  block[3] = &unk_10000C220;\n  block[4] = a1;\n  if ( qword_100011BA0 != -1 )\n    dispatch_once(&qword_100011BA0, block);\n  v2 = (void *)qword_100011B98;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSPackagesGetWindowConstraints",
+    "function_argument_number": 0,
+    "function_signature": "_CGSPackagesGetWindowConstraints()",
+    "pseudocode": "__int64 CGSPackagesGetWindowConstraints()\n{\n  return _CGSPackagesGetWindowConstraints();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService13BaseBootstrapVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService13BaseBootstrapVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for BaseBootstrap(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005C4B0;\n  if ( !qword_10005C4B0 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for BaseBootstrap);\n  return result;\n}"
+}

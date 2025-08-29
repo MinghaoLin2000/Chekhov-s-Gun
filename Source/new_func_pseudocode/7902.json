@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUUIDCreateFromUUIDBytes",
+    "function_argument_number": 2,
+    "function_signature": "_CFUUIDCreateFromUUIDBytes(CFAllocatorRef alloc, CFUUIDBytes bytes)",
+    "pseudocode": "CFUUIDRef __cdecl CFUUIDCreateFromUUIDBytes(CFAllocatorRef alloc, CFUUIDBytes bytes)\n{\n  return _CFUUIDCreateFromUUIDBytes(alloc, bytes);\n}"
+}

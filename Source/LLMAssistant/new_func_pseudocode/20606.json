@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_source_testcancel",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_source_testcancel(dispatch_source_t source)",
+    "pseudocode": "intptr_t __cdecl dispatch_source_testcancel(dispatch_source_t source)\n{\n  return _dispatch_source_testcancel(source);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController setWarnedAutomaticUpdate:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsViewController setWarnedAutomaticUpdate:](DeviceSettingsViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController setWarnedAutomaticUpdate:](\n        DeviceSettingsViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_warnedAutomaticUpdate = a3;\n}"
+}

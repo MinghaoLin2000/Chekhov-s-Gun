@@ -1,0 +1,6 @@
+{
+    "function_name": "_SaveBooleanProperty",
+    "function_argument_number": 2,
+    "function_signature": "_SaveBooleanProperty(const __CFString * a1, int a2)",
+    "pseudocode": "__int64 __fastcall SaveBooleanProperty(const __CFString *a1, int a2)\n{\n  os_log_s *v4; // x21\n  io_registry_entry_t v5; // w0\n  io_object_t v6; // w21\n  const __CFString *v7; // x2\n  __int64 v8; // x19\n\n  if ( !a1 )\n  {\n    v4 = (os_log_s *)LogCategory_Unspecified();\n    if ( os_log_type_enabled(v4, OS_LOG_TYPE_ERROR) )\n      sub_100006530(v4);\n  }\n  v5 = sub_10000420C();\n  if ( !v5 )\n    return 0LL;\n  v6 = v5;\n  if ( a2 == 1 )\n    v7 = CFSTR(\"1\");\n  else\n    v7 = CFSTR(\"0\");\n  v8 = IORegistryEntrySetCFProperty(v5, a1, v7);\n  IOObjectRelease(v6);\n  return v8;\n}"
+}

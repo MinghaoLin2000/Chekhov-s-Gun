@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_semaphore_signal",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_semaphore_signal(dispatch_semaphore_t dsema)",
+    "pseudocode": "intptr_t __cdecl dispatch_semaphore_signal(dispatch_semaphore_t dsema)\n{\n  return _dispatch_semaphore_signal(dsema);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRAudioDump close]",
+    "function_argument_number": 2,
+    "function_signature": "-[LSRAudioDump close](LSRAudioDump * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LSRAudioDump close](LSRAudioDump *self, SEL a2)\n{\n  OpaqueExtAudioFile *extendedFile; // x0\n  OpaqueAudioFileID *fileID; // x0\n  os_log_s *v5; // x20\n  NSURL *url; // x8\n  int v7; // [xsp+0h] [xbp-30h] BYREF\n  const char *v8; // [xsp+4h] [xbp-2Ch]\n  __int16 v9; // [xsp+Ch] [xbp-24h]\n  NSURL *v10; // [xsp+Eh] [xbp-22h]\n\n  extendedFile = self->_extendedFile;\n  if ( extendedFile )\n    ExtAudioFileDispose(extendedFile);\n  fileID = self->_fileID;\n  if ( fileID )\n    AudioFileClose(fileID);\n  v5 = (os_log_s *)SFLogConnection;\n  if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_INFO) )\n  {\n    url = self->_url;\n    v7 = 136315394;\n    v8 = \"-[LSRAudioDump close]\";\n    v9 = 2112;\n    v10 = url;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v5,\n      OS_LOG_TYPE_INFO,\n      \"%s Closed audio dump file at: %@\",\n      (uint8_t *)&v7,\n      0x16u);\n  }\n}"
+}

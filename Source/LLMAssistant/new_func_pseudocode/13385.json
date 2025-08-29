@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileInputStream initWithPath:offset:length:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUFileInputStream initWithPath:offset:length:](SFUFileInputStream * self, SEL a2, id a3, signed __int64 a4, signed __int64 a5)",
+    "pseudocode": "SFUFileInputStream *__cdecl -[SFUFileInputStream initWithPath:offset:length:](\n        SFUFileInputStream *self,\n        SEL a2,\n        id a3,\n        signed __int64 a4,\n        signed __int64 a5)\n{\n  SFUFileInputStream *v8; // x0\n  SFUFileInputStream *v9; // x19\n\n  v8 = -[SFUFileInputStream p_init](self, \"p_init\");\n  v9 = v8;\n  if ( v8\n    && !-[SFUFileInputStream p_configureWithPath:offset:length:](v8, \"p_configureWithPath:offset:length:\", a3, a4, a5) )\n  {\n    objc_release(v9);\n    return 0LL;\n  }\n  return v9;\n}"
+}

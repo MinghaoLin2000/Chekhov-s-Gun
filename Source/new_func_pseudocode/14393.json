@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$rangeOfCharacterFromSet:options:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$rangeOfCharacterFromSet:options:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_rangeOfCharacterFromSet_options_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"rangeOfCharacterFromSet:options:\");\n}"
+}

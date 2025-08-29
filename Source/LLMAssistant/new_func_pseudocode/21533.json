@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection updateAudioDuration:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection updateAudioDuration:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LSRConnection updateAudioDuration:](LSRConnection *self, SEL a2, id a3)\n{\n  dispatch_queue_s *v4; // x20\n  id v5; // x21\n  unsigned __int64 v6; // x22\n  double v7; // d1\n\n  v4 = (dispatch_queue_s *)qword_100065418;\n  v5 = objc_retain(a3);\n  dispatch_assert_queue_V2(v4);\n  LODWORD(v4) = (unsigned int)-[SFRequestParameters narrowband](self->_requestParameters, \"narrowband\");\n  v6 = (unsigned __int64)objc_msgSend(v5, \"length\");\n  objc_release(v5);\n  v7 = 16000.0;\n  if ( (_DWORD)v4 )\n    v7 = 8000.0;\n  self->_audioDuration = self->_audioDuration + (double)(v6 >> 1) / v7;\n}"
+}

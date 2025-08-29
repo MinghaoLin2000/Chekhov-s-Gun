@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo setRestoreWasSuccessful:]",
+    "function_argument_number": 3,
+    "function_signature": "-[restoreInfo setRestoreWasSuccessful:](restoreInfo * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[restoreInfo setRestoreWasSuccessful:](restoreInfo *self, SEL a2, bool a3)\n{\n  self->restoreWasSuccessful = a3;\n}"
+}

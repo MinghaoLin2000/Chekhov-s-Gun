@@ -1,0 +1,6 @@
+{
+    "function_name": "-[QLSatellite .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[QLSatellite .cxx_destruct](QLSatellite * self, SEL a2)",
+    "pseudocode": "void __cdecl -[QLSatellite .cxx_destruct](QLSatellite *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_processSpecifier, 0LL);\n  objc_storeStrong((id *)&self->_processIdentifier, 0LL);\n  objc_storeStrong((id *)&self->_watchdogTimer, 0LL);\n  objc_storeStrong((id *)&self->_requests, 0LL);\n  objc_storeStrong((id *)&self->_queue, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_uuid, 0LL);\n}"
+}

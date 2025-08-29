@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset next]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBAudioAsset next](USBAudioAsset * self, SEL a2)",
+    "pseudocode": "USBAudioAsset *__cdecl -[USBAudioAsset next](USBAudioAsset *self, SEL a2)\n{\n  return (USBAudioAsset *)objc_getProperty(self, a2, 288LL, 1);\n}"
+}

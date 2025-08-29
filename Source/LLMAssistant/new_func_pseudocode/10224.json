@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP4Date13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP4Date13IsInitializedEv(TSP::Date * this)",
+    "pseudocode": "__int64 __fastcall TSP::Date::IsInitialized(TSP::Date *this)\n{\n  return *((_DWORD *)this + 4) & 1;\n}"
+}

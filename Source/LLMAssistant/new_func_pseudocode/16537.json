@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer setIAUPVersion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer setIAUPVersion:](iAUPServer * self, SEL a2, unsigned __int8 a3)",
+    "pseudocode": "void __cdecl -[iAUPServer setIAUPVersion:](iAUPServer *self, SEL a2, unsigned __int8 a3)\n{\n  self->_iAUPVersion = a3;\n}"
+}

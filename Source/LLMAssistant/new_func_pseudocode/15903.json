@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetRescinded",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformAssetRescinded(__int64 result, __int64 a2, int a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetRescinded(__int64 result, __int64 a2, int a3)\n{\n  __int64 v4; // x2\n  __int64 v5; // x10\n\n  v4 = *(_QWORD *)(result + 568);\n  if ( a3 == 0xFFFF )\n  {\n    if ( !v4 )\n      return uarpPlatformAssetRescind(result, a2, v4);\n    v5 = *(_QWORD *)(result + 568);\n    do\n    {\n      if ( !*(_DWORD *)(v5 + 304) && *(_QWORD *)(v5 + 696) == a2 )\n        *(_BYTE *)(v5 + 72) = 1;\n      v5 = *(_QWORD *)(v5 + 712);\n    }\n    while ( v5 );\n  }\n  if ( v4 )\n  {\n    while ( *(_DWORD *)(v4 + 304) || *(_QWORD *)(v4 + 696) != a2 || *(unsigned __int16 *)(v4 + 44) != a3 )\n    {\n      v4 = *(_QWORD *)(v4 + 712);\n      if ( !v4 )\n        goto LABEL_13;\n    }\n  }\n  else\n  {\nLABEL_13:\n    if ( a3 != 0xFFFF )\n      return result;\n    v4 = 0LL;\n  }\n  return uarpPlatformAssetRescind(result, a2, v4);\n}"
+}

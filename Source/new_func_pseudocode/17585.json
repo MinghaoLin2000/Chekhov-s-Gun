@@ -1,0 +1,6 @@
+{
+    "function_name": "___32-[CGPDFDocumentImpl getVersion:]_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___32-[CGPDFDocumentImpl getVersion:]_block_invoke(__int64 a1)",
+    "pseudocode": "__int64 __fastcall __32__CGPDFDocumentImpl_getVersion___block_invoke(__int64 a1)\n{\n  int minorVersion[2]; // [xsp+8h] [xbp-18h] BYREF\n\n  *(_QWORD *)minorVersion = 0LL;\n  CGPDFDocumentGetVersion(*(CGPDFDocumentRef *)(*(_QWORD *)(a1 + 32) + 24LL), &minorVersion[1], minorVersion);\n  return (*(__int64 (**)(void))(*(_QWORD *)(a1 + 40) + 16LL))();\n}"
+}

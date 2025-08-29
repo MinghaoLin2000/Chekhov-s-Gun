@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12StlConverterD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN12StlConverterD1Ev(StlConverter * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall StlConverter::~StlConverter(StlConverter *this)\n{\n  __ZN12StlConverterD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextCreate",
+    "function_argument_number": 7,
+    "function_signature": "_CGBitmapContextCreate(void * data, size_t width, size_t height, size_t bitsPerComponent, size_t bytesPerRow, CGColorSpaceRef space, uint32_t bitmapInfo)",
+    "pseudocode": "CGContextRef __cdecl CGBitmapContextCreate(\n        void *data,\n        size_t width,\n        size_t height,\n        size_t bitsPerComponent,\n        size_t bytesPerRow,\n        CGColorSpaceRef space,\n        uint32_t bitmapInfo)\n{\n  return _CGBitmapContextCreate(data, width, height, bitsPerComponent, bytesPerRow, space, bitmapInfo);\n}"
+}

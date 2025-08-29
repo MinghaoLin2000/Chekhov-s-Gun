@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSUSetCrashReporterInfo",
+    "function_argument_number": 1,
+    "function_signature": "_TSUSetCrashReporterInfo(const char * a1)",
+    "pseudocode": "void TSUSetCrashReporterInfo(const char *a1, ...)\n{\n  va_list va; // [xsp+20h] [xbp+10h] BYREF\n\n  va_start(va, a1);\n  TSUSetCrashReporterInfov((__int64)a1, va);\n}"
+}

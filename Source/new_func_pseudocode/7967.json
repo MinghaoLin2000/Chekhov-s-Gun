@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSResetWindows",
+    "function_argument_number": 0,
+    "function_signature": "_CGSResetWindows()",
+    "pseudocode": "__int64 CGSResetWindows()\n{\n  return _CGSResetWindows();\n}"
+}

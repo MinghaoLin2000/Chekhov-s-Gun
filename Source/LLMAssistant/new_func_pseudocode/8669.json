@@ -1,0 +1,6 @@
+{
+    "function_name": "_proc_pidpath",
+    "function_argument_number": 3,
+    "function_signature": "_proc_pidpath(int pid, void * buffer, uint32_t buffersize)",
+    "pseudocode": "int __cdecl proc_pidpath(int pid, void *buffer, uint32_t buffersize)\n{\n  return _proc_pidpath(pid, buffer, buffersize);\n}"
+}

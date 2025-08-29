@@ -1,0 +1,5 @@
+$s39com_apple_AppStoreDaemon_StoreUIService19ResourceBundleClassCMa
+__int64 type metadata accessor for ResourceBundleClass()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC39com_apple_AppStoreDaemon_StoreUIServiceP33_6EC768303E3E243A8A361EC68627521619ResourceBundleClass);
+}

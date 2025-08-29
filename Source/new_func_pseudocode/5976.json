@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceDefaultImageMetadataPolicy setLossyCompressionQuality:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceDefaultImageMetadataPolicy setLossyCompressionQuality:](PAMediaConversionServiceDefaultImageMetadataPolicy * self, SEL a2, float a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceDefaultImageMetadataPolicy setLossyCompressionQuality:](\n        PAMediaConversionServiceDefaultImageMetadataPolicy *self,\n        SEL a2,\n        float a3)\n{\n  self->_lossyCompressionQuality = a3;\n}"
+}

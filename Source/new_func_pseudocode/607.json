@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsBooksViewController loadViewControllerForTabViewItem:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsBooksViewController loadViewControllerForTabViewItem:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsBooksViewController loadViewControllerForTabViewItem:](\n        DeviceSettingsBooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x21\n  DeviceSettingsTabContentViewController *v5; // x20\n  NSBundle *v6; // x19\n  DeviceSettingsTabContentViewController *v7; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_alloc(&OBJC_CLASS___DeviceSettingsTabContentViewController);\n  v6 = objc_retainAutoreleasedReturnValue(+[NSBundle bundleForClass:](&OBJC_CLASS___NSBundle, \"bundleForClass:\", objc_opt_class(self)));\n  v7 = -[DeviceSettingsTabContentViewController initWithNibName:bundle:](\n         v5,\n         \"initWithNibName:bundle:\",\n         CFSTR(\"DeviceSettingsBooksTabContent\"),\n         v6);\n  objc_release(v6);\n  objc_msgSend(v4, \"setViewController:\", v7);\n  -[DeviceSettingsTabContentViewController setTabViewItem:](v7, \"setTabViewItem:\", v4);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController progressBarViewTrailingConstraint]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController progressBarViewTrailingConstraint](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "NSLayoutConstraint *__cdecl -[DeviceFooterViewController progressBarViewTrailingConstraint](\n        DeviceFooterViewController *self,\n        SEL a2)\n{\n  return self->_progressBarViewTrailingConstraint;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf25EncodedDescriptorDatabase27FindFileContainingExtensionERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEiPNS0_19FileDescriptorProtoE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf25EncodedDescriptorDatabase27FindFileContainingExtensionERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEiPNS0_19FileDescriptorProtoE(__int64 a1, __int64 a2, __int64 a3, google::protobuf::MessageLite * a4)",
+    "pseudocode": "const void *__fastcall google::protobuf::EncodedDescriptorDatabase::FindFileContainingExtension(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        google::protobuf::MessageLite *a4)\n{\n  __int64 v6; // x21\n  const void *result; // x0\n  int v8; // w1\n  _QWORD v9[2]; // [xsp+0h] [xbp-30h] BYREF\n\n  v6 = *(_QWORD *)(a1 + 8);\n  sub_10007A644(v9, a2);\n  result = (const void *)google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FindExtension(\n                           v6,\n                           v9[0],\n                           v9[1],\n                           a3);\n  if ( result )\n    return (const void *)google::protobuf::MessageLite::ParseFromArray(a4, result, v8);\n  return result;\n}"
+}

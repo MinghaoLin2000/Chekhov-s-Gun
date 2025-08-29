@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AuthorizationController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[AuthorizationController init](AuthorizationController * self, SEL a2)",
+    "pseudocode": "AuthorizationController *__cdecl -[AuthorizationController init](AuthorizationController *self, SEL a2)\n{\n  AuthorizationController *result; // x0\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___AuthorizationController;\n  result = -[AuthorizationController init](&v3, \"init\");\n  result->_authorization = 0LL;\n  return result;\n}"
+}

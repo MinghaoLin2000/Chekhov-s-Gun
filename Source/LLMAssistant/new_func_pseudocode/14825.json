@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TBXPCService cancelMaintenanceTask]",
+    "function_argument_number": 2,
+    "function_signature": "-[TBXPCService cancelMaintenanceTask](TBXPCService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TBXPCService cancelMaintenanceTask](TBXPCService *self, SEL a2)\n{\n  NSLog(&CFSTR(\"%s: _isCancelled = %d\").isa, a2, \"-[TBXPCService cancelMaintenanceTask]\", self->_isCancelled);\n  self->_isCancelled = 1;\n}"
+}

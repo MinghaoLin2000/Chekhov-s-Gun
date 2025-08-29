@@ -1,0 +1,3 @@
+@protocol DataDetectorsRemoteScannerProtocol
+- (void)scanString:(NSString *)arg1 range:(struct _NSRange)arg2 configuration:(DDScannerServiceConfiguration *)arg3 withReply:(void (^)(NSArray *))arg4;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "_time",
+    "function_argument_number": 1,
+    "function_signature": "_time(time_t * a1)",
+    "pseudocode": "time_t __cdecl time(time_t *a1)\n{\n  return _time(a1);\n}"
+}

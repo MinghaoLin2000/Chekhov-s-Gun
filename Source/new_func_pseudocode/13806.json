@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_queue_set_specific",
+    "function_argument_number": 4,
+    "function_signature": "_dispatch_queue_set_specific(dispatch_queue_t queue, const void * key, void * context, dispatch_function_t destructor)",
+    "pseudocode": "void __cdecl dispatch_queue_set_specific(\n        dispatch_queue_t queue,\n        const void *key,\n        void *context,\n        dispatch_function_t destructor)\n{\n  _dispatch_queue_set_specific(queue, key, context, destructor);\n}"
+}

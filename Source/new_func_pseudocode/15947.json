@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpTagStructPack32",
+    "function_argument_number": 1,
+    "function_signature": "_uarpTagStructPack32(unsigned int * a1)",
+    "pseudocode": "__int64 __fastcall uarpTagStructPack32(unsigned int *a1)\n{\n  return *a1;\n}"
+}

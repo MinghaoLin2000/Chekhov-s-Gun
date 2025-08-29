@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService15AccountsWrapperC7accountSo9ACAccountCSgvs",
+    "function_argument_number": 1,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService15AccountsWrapperC7accountSo9ACAccountCSgvs(void * a1)",
+    "pseudocode": "void __fastcall AccountsWrapper.account.setter(void *a1)\n{\n  __int64 v1; // x20\n  void *v3; // x21\n  void *v4; // x22\n  id v5; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = *(void **)(v1 + 16);\n  objc_msgSend(v3, \"lock\");\n  v4 = *(void **)(v1 + 24);\n  *(_QWORD *)(v1 + 24) = a1;\n  v5 = objc_retain(a1);\n  objc_release(v4);\n  objc_msgSend(v3, \"unlock\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV13getScreenRect10connectionSo6CGRectVAA13CGSConnectionV_tF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV13getScreenRect10connectionSo6CGRectVAA13CGSConnectionV_tF(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall CGSWindow.getScreenRect(connection:)(__int64 a1, __int64 a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_100019BC0(a1, a2, &CGSGetScreenRectForWindow);\n}"
+}

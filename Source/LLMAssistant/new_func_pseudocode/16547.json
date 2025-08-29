@@ -1,0 +1,6 @@
+{
+    "function_name": "_MapPreferenceSuiteToString",
+    "function_argument_number": 1,
+    "function_signature": "_MapPreferenceSuiteToString(__int64 a1)",
+    "pseudocode": "const __CFString *__fastcall MapPreferenceSuiteToString(__int64 a1)\n{\n  const __CFString *v1; // x8\n\n  v1 = CFSTR(\"com.apple.accessoryupdaterd\");\n  if ( a1 )\n    v1 = 0LL;\n  if ( a1 == 1 )\n    return CFSTR(\"com.apple.AUDeveloperSettings\");\n  else\n    return v1;\n}"
+}

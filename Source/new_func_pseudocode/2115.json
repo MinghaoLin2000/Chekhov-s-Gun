@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaGroup identifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPPHMediaGroup identifier](AMPPHMediaGroup * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[AMPPHMediaGroup identifier](AMPPHMediaGroup *self, SEL a2)\n{\n  return self->_identifier;\n}"
+}

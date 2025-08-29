@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentRevision sequence]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentRevision sequence](TSPDocumentRevision * self, SEL a2)",
+    "pseudocode": "int __cdecl -[TSPDocumentRevision sequence](TSPDocumentRevision *self, SEL a2)\n{\n  return self->_sequence;\n}"
+}

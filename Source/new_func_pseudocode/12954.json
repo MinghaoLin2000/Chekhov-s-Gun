@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBufferedReadChannel readFromOffsetAndWait:length:handler:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUBufferedReadChannel readFromOffsetAndWait:length:handler:](TSUBufferedReadChannel * self, SEL a2, signed __int64 a3, unsigned __int64 a4, id a5)",
+    "pseudocode": "void __cdecl -[TSUBufferedReadChannel readFromOffsetAndWait:length:handler:](\n        TSUBufferedReadChannel *self,\n        SEL a2,\n        signed __int64 a3,\n        unsigned __int64 a4,\n        id a5)\n{\n  +[TSUIOUtils readFromOffsetAndWait:offset:length:handler:](\n    &OBJC_CLASS___TSUIOUtils,\n    \"readFromOffsetAndWait:offset:length:handler:\",\n    self,\n    a3,\n    a4,\n    a5);\n}"
+}

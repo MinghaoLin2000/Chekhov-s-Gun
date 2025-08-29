@@ -1,0 +1,5 @@
+_nw_parameters_set_attributed_bundle_identifier
+__int64 nw_parameters_set_attributed_bundle_identifier()
+{
+  return _nw_parameters_set_attributed_bundle_identifier();
+}

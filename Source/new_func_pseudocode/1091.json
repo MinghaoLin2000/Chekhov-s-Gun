@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController setPhotosAppSyncAllFaces:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController setPhotosAppSyncAllFaces:](DeviceSettingsPhotosViewController * self, SEL a2, bool a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[DeviceSettingsPhotosViewController setPhotosAppSyncAllFaces:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        bool a3)\n{\n  _BOOL8 v3; // x19\n  id v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = a3;\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPhotosViewController allPeopleViewController](self, \"allPeopleViewController\"));\n  objc_msgSend(v4, \"setAllCheckBoxChecked:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

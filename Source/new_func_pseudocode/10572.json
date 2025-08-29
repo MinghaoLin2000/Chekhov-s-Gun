@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP23LargeStringArraySegmentD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP23LargeStringArraySegmentD2Ev(TSP::LargeStringArraySegment * this)",
+    "pseudocode": "void __fastcall TSP::LargeStringArraySegment::~LargeStringArraySegment(TSP::LargeStringArraySegment *this)\n{\n  TSP::LargeArraySegment *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (TSP::LargeStringArraySegment *)&TSP::_LargeStringArraySegment_default_instance_ )\n  {\n    v2 = (TSP::LargeArraySegment *)*((_QWORD *)this + 6);\n    if ( v2 )\n    {\n      TSP::LargeArraySegment::~LargeArraySegment(v2);\n      operator delete(v3, 0x1081C4010071FB2LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n  sub_1000773E8((char *)this + 24);\n}"
+}

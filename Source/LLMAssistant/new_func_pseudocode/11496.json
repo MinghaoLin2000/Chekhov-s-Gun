@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12ExtensionSet8GetInt64Eix",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf8internal12ExtensionSet8GetInt64Eix(google::protobuf::internal::ExtensionSet * this, int a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::ExtensionSet::GetInt64(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2,\n        __int64 a3)\n{\n  _BYTE *v4; // x0\n\n  v4 = google::protobuf::internal::ExtensionSet::FindOrNull(this, a2);\n  if ( v4 && (v4[10] & 1) == 0 )\n    return *(_QWORD *)v4;\n  return a3;\n}"
+}

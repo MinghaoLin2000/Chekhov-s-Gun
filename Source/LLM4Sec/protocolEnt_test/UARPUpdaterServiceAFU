@@ -1,0 +1,50 @@
+Service Path:
+/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceAFU.xpc/Contents/MacOS/UARPUpdaterServiceAFU
+
+Service Exported Protocols:
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.afu.userclientaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.keystore.sik.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.ZhuGeSupport.CopyValue
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.MobileAccessoryUpdate.*
+	[Key] com.apple.security.exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /private/preboot/
+			[String] /private/var/hardware/FactoryData/
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AppleFirmwareUpdateUserClient
+	[Key] com.apple.security.ts.system-info
+	[Value]
+		[Array]
+			[String] net.link.addr

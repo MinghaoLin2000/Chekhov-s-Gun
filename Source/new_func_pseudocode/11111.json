@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRangeD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRangeD0Ev(google::protobuf::EnumDescriptorProto_EnumReservedRange * this)",
+    "pseudocode": "void __fastcall google::protobuf::EnumDescriptorProto_EnumReservedRange::~EnumDescriptorProto_EnumReservedRange(\n        google::protobuf::EnumDescriptorProto_EnumReservedRange *this)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  sub_100037E58((char *)this + 8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(this, 0x1081C404FE48876LL);\n}"
+}

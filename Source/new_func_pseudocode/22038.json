@@ -1,0 +1,6 @@
+{
+    "function_name": "_mlc_model_compile",
+    "function_argument_number": 0,
+    "function_signature": "_mlc_model_compile()",
+    "pseudocode": "__int64 mlc_model_compile()\n{\n  return _mlc_model_compile();\n}"
+}

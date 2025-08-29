@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.mobile.lockdown.remote.trusted",
+  "capability": "Allows an application to establish a highly privileged and trusted communication channel with Apple mobile devices (e.g., iPhone, iPad, Apple TV, Apple Watch) or other macOS devices acting as managed clients, via the lockdownd protocol. This trust can bypass standard pairing and user consent prompts, enabling advanced device management, deep diagnostics, access to sensitive user data (including TCC-protected resources), and system-level operations on the connected device.",
+  "reasoning": "The 'lockdown' component strongly refers to Apple's `lockdownd` daemon, which is central to managing communication, pairing, and trust with iOS/iPadOS/tvOS/watchOS devices. It handles device activation, diagnostics, software updates, and general device management. 'remote' indicates interaction with a separate device, and 'trusted' implies a heightened level of authorization, allowing operations typically reserved for paired and authorized hosts (like Xcode, iTunes, or Apple Configurator). This level of trust often allows the host application to bypass typical user consent mechanisms on the managed device.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "sensitive_reasoning": "1. File and File System Operations: A trusted lockdown connection can provide extensive access to the remote device's file system (e.g., via Apple File Conduit - AFC), allowing read, write, and delete operations on sensitive files and directories within the device's scope.\n3. Process and Memory Management: This capability enables the host application to perform actions such as installing/uninstalling applications, viewing running processes, initiating reboots, and potentially debugging processes on the remote device.\n4. System & Kernel Level Control: It grants significant control over the remote device's operating system, including initiating device restores, bypassing activation locks, and performing deep system-level diagnostics and configuration changes, which are analogous to system-level control.\n5. Access Transparency Consent and Control (TCC) related functions: A primary function of such a trusted connection is to allow the host application to access TCC-protected resources (e.g., Photos, Contacts, Location, Camera, Microphone, Screen Recording) on the remote device without requiring explicit user consent prompts on the device for each access, as the host application itself is deemed 'trusted' by the device."
+}

@@ -1,0 +1,59 @@
+Service Path:
+/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/XPCServices/nsattributedstringagent.xpc/Contents/MacOS/nsattributedstringagent
+
+Service Exported Protocols:
+@protocol _NSAttributedStringAgentProtocol
+- (void)readFromData:(NSData *)arg1 orFileURL:(NSURL *)arg2 options:(NSDictionary *)arg3 extensionTokens:(NSArray *)arg4 withReply:(void (^)(NSAttributedString *, NSDictionary *, NSError *))arg5;
+- (void)renderHTML:(NSData *)arg1 options:(NSDictionary *)arg2 extensionTokens:(NSArray *)arg3 withReply:(void (^)(NSDictionary *, NSAttributedString *, NSError *))arg4;
+- (void)startWithReply:(void (^)(void))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.security.exception.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AGXDeviceUserClient
+			[String] IOSurfaceRootUserClient
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.accessibility.mediaaccessibilityd
+			[String] com.apple.ak.authorizationservices
+			[String] com.apple.analyticsd
+			[String] com.apple.AppSSO.service-xpc
+			[String] com.apple.backboard.display.services
+			[String] com.apple.backboard.hid-services.xpc
+			[String] com.apple.backboard.hid.services
+			[String] com.apple.CARenderServer
+			[String] com.apple.containermanagerd
+			[String] com.apple.coreduetd.context
+			[String] com.apple.fontservicesd
+			[String] com.apple.frontboard.systemappservices
+			[String] com.apple.iconservices
+			[String] com.apple.iohideventsystem
+			[String] com.apple.lsd.open
+			[String] com.apple.usymptomsd
+	[Key] com.apple.security.exception.managed-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.webcontentfilter
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.keyboard.preferences
+			[String] com.apple.networkd
+			[String] com.apple.UIKit
+			[String] com.apple.webinspectord
+	[Key] com.apple.security.ts.power-assertions
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.webkit-client
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true

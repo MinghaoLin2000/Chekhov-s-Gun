@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset pAsset]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBAudioAsset pAsset](USBAudioAsset * self, SEL a2)",
+    "pseudocode": "uarpPlatformAsset *__cdecl -[USBAudioAsset pAsset](USBAudioAsset *self, SEL a2)\n{\n  return self->_pAsset;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBacktrace backtraceString]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUBacktrace backtraceString](TSUBacktrace * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUBacktrace backtraceString](TSUBacktrace *self, SEL a2)\n{\n  __int64 initAdjustment; // x9\n  __int64 v3; // x19\n  char **v4; // x20\n  NSMutableString *v5; // x21\n  char **v6; // x23\n  __int64 v7; // t1\n\n  initAdjustment = self->_initAdjustment;\n  v3 = (unsigned int)(self->_frames - initAdjustment);\n  v4 = backtrace_symbols(&self->_callstack[initAdjustment], v3);\n  v5 = +[NSMutableString stringWithString:](&OBJC_CLASS___NSMutableString, \"stringWithString:\", CFSTR(\"Backtrace:\\n\"));\n  if ( (int)v3 >= 1 )\n  {\n    v6 = v4;\n    do\n    {\n      v7 = (__int64)*v6++;\n      -[NSMutableString appendFormat:](v5, \"appendFormat:\", CFSTR(\"\\t%s\\n\"), v7);\n      --v3;\n    }\n    while ( v3 );\n  }\n  free(v4);\n  return v5;\n}"
+}

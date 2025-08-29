@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addResolution:name:unit:xres:yres:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ipp_t _addResolution:name:unit:xres:yres:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addResolution:name:unit:xres:yres:](ipp_t *self, SEL a2, int a3, id a4, int a5, int a6, int a7)\n{\n  __int64 v10; // x20\n  id v12; // x19\n  _QWORD v13[4]; // [xsp+0h] [xbp-60h] BYREF\n  int v14; // [xsp+20h] [xbp-40h]\n  int v15; // [xsp+24h] [xbp-3Ch]\n  int v16; // [xsp+28h] [xbp-38h]\n\n  v10 = *(_QWORD *)&a3;\n  v12 = objc_retain(a4);\n  if ( v12\n    && (unsigned int)v10 <= 5\n    && (_DWORD)v10 != 3\n    && ((a7 | a6) & 0x80000000) == 0\n    && (unsigned int)(a5 - 5) >= 0xFFFFFFFE )\n  {\n    v13[0] = _NSConcreteStackBlock;\n    v13[1] = 3221225472LL;\n    v13[2] = sub_10003DF14;\n    v13[3] = &unk_10009EAB8;\n    v14 = a6;\n    v15 = a7;\n    v16 = a5;\n    -[ipp_t withNewAttr:groupTag:valueTag:apply:](self, \"withNewAttr:groupTag:valueTag:apply:\", v12, v10, 50LL, v13);\n  }\n  objc_release(v12);\n}"
+}

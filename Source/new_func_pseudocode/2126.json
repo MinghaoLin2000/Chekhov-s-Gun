@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPhotoKitImporter photoLibraryDidChange:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPhotoKitImporter photoLibraryDidChange:](AMPPhotoKitImporter * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[AMPPhotoKitImporter photoLibraryDidChange:](AMPPhotoKitImporter *self, SEL a2, id a3)\n{\n  if ( qword_1000DAA08 )\n    (*(void (**)(void))(qword_1000DAA08 + 16))();\n}"
+}

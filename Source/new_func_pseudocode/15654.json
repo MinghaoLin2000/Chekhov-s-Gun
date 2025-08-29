@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater dfuDnLoadCmd:data:length:]",
+    "function_argument_number": 5,
+    "function_signature": "-[USBDFUUpdater dfuDnLoadCmd:data:length:](USBDFUUpdater * self, SEL a2, unsigned __int16 a3, void * a4, unsigned __int16 a5)",
+    "pseudocode": "int __cdecl -[USBDFUUpdater dfuDnLoadCmd:data:length:](\n        USBDFUUpdater *self,\n        SEL a2,\n        unsigned __int16 a3,\n        void *a4,\n        unsigned __int16 a5)\n{\n  IOUSBDeviceStruct942 **dev; // x0\n  _WORD v7[4]; // [xsp+0h] [xbp-20h] BYREF\n  void *v8; // [xsp+8h] [xbp-18h]\n  int v9; // [xsp+10h] [xbp-10h]\n  __int64 v10; // [xsp+14h] [xbp-Ch]\n  int v11; // [xsp+1Ch] [xbp-4h]\n\n  dev = self->_dev;\n  if ( !dev )\n    return -536870195;\n  v9 = 0;\n  v11 = 0;\n  v7[0] = 289;\n  v7[1] = a3;\n  v7[2] = 0;\n  v7[3] = a5;\n  v8 = a4;\n  v10 = 0x3E800001388LL;\n  if ( !a5 )\n    v8 = 0LL;\n  return ((__int64 (__fastcall *)(IOUSBDeviceStruct942 **, _WORD *))(*dev)->DeviceRequestTO)(dev, v7);\n}"
+}

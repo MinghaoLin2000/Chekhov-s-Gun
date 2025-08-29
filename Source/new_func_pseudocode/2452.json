@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAdvancedViewController saveToDeviceSyncPrefs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsAdvancedViewController saveToDeviceSyncPrefs:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsAdvancedViewController saveToDeviceSyncPrefs:](\n        DeviceSettingsAdvancedViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  NSButton *v5; // x21\n  NSButton *v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsAdvancedViewController overwriteContactsCheckBox](self, \"overwriteContactsCheckBox\"));\n  objc_msgSend(v4, \"setResetContacts:\", (void *)-[NSButton state](v5, \"state\") == (void *)1);\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsAdvancedViewController overwriteCalendarsCheckBox](self, \"overwriteCalendarsCheckBox\"));\n  objc_msgSend(v4, \"setResetCalendars:\", (void *)-[NSButton state](v6, \"state\") == (void *)1);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

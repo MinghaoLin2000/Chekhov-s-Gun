@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV22nonTabletMouseMovementACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV22nonTabletMouseMovementACvgZ()",
+    "pseudocode": "__int64 static SystemEventMask.nonTabletMouseMovement.getter()\n{\n  return sub_1000173E0(&qword_10002A9C8, &static SystemEventMask.nonTabletMouseMovement, sub_1000169DC);\n}"
+}

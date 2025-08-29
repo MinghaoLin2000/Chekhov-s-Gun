@@ -1,0 +1,90 @@
+Service Path:
+/System/Library/Frameworks/CoreML.framework/Versions/A/XPCServices/CoreMLModelSecurityService.xpc/Contents/MacOS/CoreMLModelSecurityService
+
+Service Exported Protocols:
+@protocol CKCodeOperationMessageMutation <NSObject>
+- (void)substituteRecordTransports:(NSArray *)arg1;
+- (NSArray *)extractRecordTransports;
+@end
+@protocol CoreMLModelSecurityProtocol
+- (void)extractTeamIdentifierWithReply:(void (^)(NSString *, NSError *))arg1;
+- (void)stopDecryptionOfModelAtPath:(NSString *)arg1 completionBlock:(void (^)(NSError *))arg2;
+- (void)startDecryptionOfModelAtPath:(NSString *)arg1 usingKeyBlob:(NSData *)arg2 usesCodeSigningIdentityForEncryption:(_Bool)arg3 completionBlock:(void (^)(NSError *))arg4;
+- (void)createPersistentKeyBlobForKeyID:(NSString *)arg1 usesCodeSigningIdentityForEncryption:(_Bool)arg2 completionBlock:(void (^)(NSData *, NSError *))arg3;
+- (void)secureModelMLFeatureDescription:(MLFeatureDescription *)arg1 withReply:(void (^)(MLFeatureDescription *, NSString *))arg2;
+- (void)secureModelMLModelDescription:(MLModelDescription *)arg1 withReply:(void (^)(MLModelDescription *, NSString *))arg2;
+- (void)secureModelMLDictionaryFeatureProvider:(MLDictionaryFeatureProvider *)arg1 withReply:(void (^)(MLDictionaryFeatureProvider *, NSString *))arg2;
+- (void)secureModelMLFeatureValue:(MLFeatureValue *)arg1 withReply:(void (^)(MLFeatureValue *, NSString *))arg2;
+- (void)secureParameterValueForKey:(MLKey *)arg1 withReply:(void (^)(id, NSError *))arg2;
+- (void)securePredictionFromLazyBatch:(NSArray *)arg1 options:(MLPredictionOptions *)arg2 withReply:(void (^)(MLArrayDictionaryFeatureProvider *, NSError *))arg3;
+- (void)securePredictionFromLazyFeatures:(NSNumber *)arg1 options:(MLPredictionOptions *)arg2 withReply:(void (^)(MLDictionaryFeatureProvider *, NSError *))arg3;
+- (void)secureModelWithContentsOfURL:(NSURL *)arg1 sandboxExtensionToken:(NSString *)arg2 configuration:(MLModelConfiguration *)arg3 decryptCredential:(MLSecureModelDecryptCredential *)arg4 withReply:(void (^)(MLSecureModel *, NSError *))arg5;
+@end
+@protocol CoreMLModelSecurityServiceToClientProtocol
+- (void)clientFeatureNames:(NSNumber *)arg1 withReply:(void (^)(NSSet *, NSError *))arg2;
+- (void)clientFeatureValueForName:(NSString *)arg1 uniqueKeyForProvider:(NSNumber *)arg2 withReply:(void (^)(MLFeatureValue *, NSError *))arg3;
+@end
+@protocol MLFeatureProvider
+- (MLFeatureValue *)featureValueForName:(NSString *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.CoreMLModelSecurityService
+	[Key] aps-environment
+	[Value]
+		[String] development
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.CoreMLModelSecurityService
+	[Key] com.apple.developer.applesignin
+	[Value]
+		[Array]
+			[String] 
+	[Key] com.apple.developer.icloud-container-identifiers
+	[Value]
+		[Array]
+			[String] com.apple.appleneuralengine
+			[String] com.apple.coreml.modelkeystore
+			[String] com.apple.fairplayd.versioned
+			[String] com.apple.developer.icloud-services
+	[Key] com.apple.developer.icloud-services
+	[Value]
+		[Array]
+			[String] CloudKit
+			[String] CKException
+	[Key] com.apple.private.coreml.decrypt_allowed
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.fpsd.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.appleneuralengine
+			[String] com.apple.fairplayd.versioned
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AGXCommandQueue
+			[String] AGXDevice
+			[String] AGXDeviceUserClient
+			[String] AGXSharedUserClient
+			[String] H11ANEInDirectPathClient
+			[String] IOAccelContext
+			[String] IOAccelContext2
+			[String] IOAccelDevice
+			[String] IOAccelDevice2
+			[String] IOAccelSharedUserClient
+			[String] IOAccelSharedUserClient2
+			[String] IOAccelSubmitter2
+			[String] IOSurfaceRootUserClient
+	[Key] fairplay-client
+	[Value]
+		[String] 703697
+	[Key] platform-application
+	[Value]
+		[Bool] true

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdateFirmwareAnalyticsEvent dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdateFirmwareAnalyticsEvent dealloc](UARPUpdateFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPUpdateFirmwareAnalyticsEvent dealloc](UARPUpdateFirmwareAnalyticsEvent *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  objc_release(self->_manufacturerName);\n  objc_release(self->_modelName);\n  objc_release(self->_activeFirmwareVersion);\n  objc_release(self->_countryCode);\n  objc_release(self->_postedFirmwareVersion);\n  objc_release(self->_downloadURL);\n  objc_release(self->_downloadConsentDuration);\n  objc_release(self->_downloadUserInitiated);\n  objc_release(self->_stagingUserInitiated);\n  objc_release(self->_stagingDuration);\n  objc_release(self->_stagingIterations);\n  objc_release(self->_stagingVendorError);\n  objc_release(self->_applyUserInitiated);\n  objc_release(self->_applyDuration);\n  objc_release(self->_applyVendorError);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___UARPUpdateFirmwareAnalyticsEvent;\n  -[UARPUpdateFirmwareAnalyticsEvent dealloc](&v3, \"dealloc\");\n}"
+}

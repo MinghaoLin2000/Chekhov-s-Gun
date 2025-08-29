@@ -1,0 +1,71 @@
+@protocol AMPDeviceUIServiceProtocol
+- (void)setDevice:(AMPDevice *)arg1 andMode:(NSString *)arg2;
+@end
+@protocol AMPDevicesClientEventsProtocol
+- (void)openPanelWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long, NSArray *))arg2;
+- (void)showErrorReportWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long))arg2;
+- (void)showReportWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long))arg2;
+- (void)promptForPasswordWithParameters:(NSDictionary *)arg1 inParentWindow:(NSWindow *)arg2 withReply:(void (^)(long long, NSString *, NSString *, _Bool))arg3;
+- (void)askUserWithParameters:(NSDictionary *)arg1 withReply:(void (^)(long long, _Bool))arg2;
+- (void)canShowUserInteractionForDeviceWithIdentifier:(NSString *)arg1 withReply:(void (^)(_Bool, _Bool))arg2;
+- (void)updateAvailableWithSoftwareInfo:(AMPDeviceSoftwareInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didRemoveDeviceWithIdentifier:(NSString *)arg1 hasRecoveryDevice:(_Bool)arg2;
+- (void)didHideDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeFileSharingApps:(NSArray *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didCompleteSoftwareUpdateRestoreForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSoftwareUpdateRestoreForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteSoftwareDownloadForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSoftwareDownloadForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteManualSoftwareUpdateCheckForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartManualSoftwareUpdateCheckForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSoftwareInfoForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteRestoreFromBackupForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartRestoreFromBackupForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteEraseForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartEraseForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didCompleteBackupForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartBackupForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSyncErrorState:(_Bool)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didCompleteSyncForDeviceWithIdentifier:(NSString *)arg1 withError:(NSError *)arg2;
+- (void)didStartSyncForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeSyncAllowedState:(_Bool)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeBackupInfoForDeviceWithIdentifier:(NSString *)arg1;
+- (void)didChangeDeviceTotals:(NSDictionary *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceSyncPrefs:(AMPDeviceSyncPrefs *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceInfo:(AMPDeviceInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeDeviceName:(NSString *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)didChangeBatteryInfo:(AMPDeviceBatteryInfo *)arg1 forDeviceWithIdentifier:(NSString *)arg2;
+- (void)requestCompleteWithActivationInfo:(NSDictionary *)arg1 forDeviceWithIdentifier:(NSString *)arg2 withError:(NSError *)arg3;
+- (void)didChangeDevicesClientConnectionState:(unsigned long long)arg1;
+@end
+@protocol DeviceClientProtocol
+- (void)pairDeviceWithIdentifier:(NSString *)arg1 withReply:(void (^)(NSError *))arg2;
+@end
+@protocol DeviceServiceSideProtocol
+- (void)start;
+@end
+@protocol NSAccessibilityElement <NSObject>
+- (id)accessibilityParent;
+- (struct CGRect)accessibilityFrame;
+- (NSString *)accessibilityIdentifier;
+- (_Bool)isAccessibilityFocused;
+@end
+@protocol NSAccessibilityGroup <NSAccessibilityElement>
+@end
+@protocol NSDraggingDestination <NSObject>
+- (void)updateDraggingItemsForDrag:(id <NSDraggingInfo>)arg1;
+- (_Bool)wantsPeriodicDraggingUpdates;
+- (void)draggingEnded:(id <NSDraggingInfo>)arg1;
+- (void)concludeDragOperation:(id <NSDraggingInfo>)arg1;
+- (_Bool)performDragOperation:(id <NSDraggingInfo>)arg1;
+- (_Bool)prepareForDragOperation:(id <NSDraggingInfo>)arg1;
+- (void)draggingExited:(id <NSDraggingInfo>)arg1;
+- (unsigned long long)draggingUpdated:(id <NSDraggingInfo>)arg1;
+- (unsigned long long)draggingEntered:(id <NSDraggingInfo>)arg1;
+@end
+@protocol PHPhotoLibraryChangeObserver <NSObject>
+- (void)photoLibraryDidChange:(PHChange *)arg1;
+@end
+@protocol WKScriptMessageHandler <NSObject>
+- (void)userContentController:(WKUserContentController *)arg1 didReceiveScriptMessage:(WKScriptMessage *)arg2;
+@end

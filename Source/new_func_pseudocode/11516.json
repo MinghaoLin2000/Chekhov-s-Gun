@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12ExtensionSet7GetBoolEib",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf8internal12ExtensionSet7GetBoolEib(google::protobuf::internal::ExtensionSet * this, int a2, bool a3)",
+    "pseudocode": "bool __fastcall google::protobuf::internal::ExtensionSet::GetBool(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2,\n        __int64 a3)\n{\n  _BYTE *v4; // x0\n\n  v4 = google::protobuf::internal::ExtensionSet::FindOrNull(this, a2);\n  if ( v4 && (v4[10] & 1) == 0 )\n    return *v4 != 0;\n  return a3;\n}"
+}

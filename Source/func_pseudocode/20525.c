@@ -1,0 +1,5 @@
+_CFNotificationCenterGetDarwinNotifyCenter
+CFNotificationCenterRef CFNotificationCenterGetDarwinNotifyCenter(void)
+{
+  return _CFNotificationCenterGetDarwinNotifyCenter();
+}

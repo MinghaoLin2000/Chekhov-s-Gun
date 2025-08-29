@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPreferencesAppSynchronize",
+    "function_argument_number": 1,
+    "function_signature": "_CFPreferencesAppSynchronize(CFStringRef applicationID)",
+    "pseudocode": "Boolean __cdecl CFPreferencesAppSynchronize(CFStringRef applicationID)\n{\n  return _CFPreferencesAppSynchronize(applicationID);\n}"
+}

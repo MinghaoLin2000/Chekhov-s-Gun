@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFRunLoopRemoveSource",
+    "function_argument_number": 3,
+    "function_signature": "_CFRunLoopRemoveSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode)",
+    "pseudocode": "void __cdecl CFRunLoopRemoveSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode)\n{\n  _CFRunLoopRemoveSource(rl, source, mode);\n}"
+}

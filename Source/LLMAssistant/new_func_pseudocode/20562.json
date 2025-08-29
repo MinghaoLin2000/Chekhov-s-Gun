@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFArrayGetCount",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFArrayGetCount(CGPDFArrayRef array)",
+    "pseudocode": "size_t __cdecl CGPDFArrayGetCount(CGPDFArrayRef array)\n{\n  return _CGPDFArrayGetCount(array);\n}"
+}

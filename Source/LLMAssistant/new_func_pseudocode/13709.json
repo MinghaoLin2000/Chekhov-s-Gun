@@ -1,0 +1,6 @@
+{
+    "function_name": "_UTTypeCreateAllIdentifiersForTag",
+    "function_argument_number": 3,
+    "function_signature": "_UTTypeCreateAllIdentifiersForTag(CFStringRef inTagClass, CFStringRef inTag, CFStringRef inConformingToUTI)",
+    "pseudocode": "CFArrayRef __cdecl UTTypeCreateAllIdentifiersForTag(\n        CFStringRef inTagClass,\n        CFStringRef inTag,\n        CFStringRef inConformingToUTI)\n{\n  return _UTTypeCreateAllIdentifiersForTag(inTagClass, inTag, inConformingToUTI);\n}"
+}

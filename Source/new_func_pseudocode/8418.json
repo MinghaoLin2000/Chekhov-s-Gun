@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AuthorizationController interactiveAuthRequiredForSoftwareInstall]",
+    "function_argument_number": 2,
+    "function_signature": "-[AuthorizationController interactiveAuthRequiredForSoftwareInstall](AuthorizationController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[AuthorizationController interactiveAuthRequiredForSoftwareInstall](\n        AuthorizationController *self,\n        SEL a2)\n{\n  if ( self->_noninteractiveAuthFailed )\n    return 1;\n  else\n    return !-[AuthorizationController _attemptNonInteractiveAuthorization](self, \"_attemptNonInteractiveAuthorization\");\n}"
+}

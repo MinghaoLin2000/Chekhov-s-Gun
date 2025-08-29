@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarPopover categoryField]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPCapacityBarPopover categoryField](AMPCapacityBarPopover * self, SEL a2)",
+    "pseudocode": "NSTextField *__cdecl -[AMPCapacityBarPopover categoryField](AMPCapacityBarPopover *self, SEL a2)\n{\n  return self->_categoryField;\n}"
+}

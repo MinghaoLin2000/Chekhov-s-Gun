@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPPayloadHashAlgorithmStringToValue",
+    "function_argument_number": 1,
+    "function_signature": "_UARPPayloadHashAlgorithmStringToValue(void * a1)",
+    "pseudocode": "NSNumber *__fastcall UARPPayloadHashAlgorithmStringToValue(void *a1)\n{\n  id v1; // x19\n  __int64 v2; // x2\n  NSNumber *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = objc_retain(a1);\n  if ( objc_msgSend(v1, \"caseInsensitiveCompare:\", CFSTR(\"SHA-256\")) )\n  {\n    if ( objc_msgSend(v1, \"caseInsensitiveCompare:\", CFSTR(\"SHA-384\")) )\n    {\n      if ( objc_msgSend(v1, \"caseInsensitiveCompare:\", CFSTR(\"SHA-512\")) )\n        v2 = 0LL;\n      else\n        v2 = 3LL;\n    }\n    else\n    {\n      v2 = 2LL;\n    }\n  }\n  else\n  {\n    v2 = 1LL;\n  }\n  v3 = objc_retainAutoreleasedReturnValue(+[NSNumber numberWithUnsignedShort:](&OBJC_CLASS___NSNumber, \"numberWithUnsignedShort:\", v2));\n  objc_release(v1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_release",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_release(dispatch_object_t object)",
+    "pseudocode": "void __cdecl dispatch_release(dispatch_object_t object)\n{\n  _dispatch_release(object);\n}"
+}

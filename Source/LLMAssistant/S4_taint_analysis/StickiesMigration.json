@@ -1,0 +1,16 @@
+{
+  "-[StickiesMigration migrateStickiesColorDictRepArray:reply:]": 4294973532,
+  "_objc_msgSend$generateUniqueUUIDAtPath:": 4294978688,
+  "_objc_msgSend$moveItemAtPath:toPath:error:": 4294978944,
+  "_objc_msgSend$setAttributes:ofItemAtPath:error:": 4294979136,
+  "_objc_msgSend$creationDate": 4294978272,
+  "_objc_msgSend$modificationDate": 4294978912,
+  "_objc_msgSend$writeToFile:atomically:": 4294979872,
+  "_objc_msgSend$writeToURL:options:originalContentsURL:error:": 4294979904,
+  "_objc_msgSend$arrayWithContentsOfFile:": 4294978144,
+  "_objc_msgSend$dataWithContentsOfFile:": 4294978304,
+  "-[Document encodeWithCoder:]": 4294977168,
+  "-[StickiesMigration generateUniqueUUIDAtPath:]": 4294976216,
+  "-[Document initWithCoder:]": 4294976860,
+  "_objc_msgSend$fileExistsAtPath:": 4294978592
+}

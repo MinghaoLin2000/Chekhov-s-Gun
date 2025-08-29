@@ -1,0 +1,5 @@
+$s17ControlCenterCore16HoverCoordinatorCMa
+__int64 type metadata accessor for HoverCoordinator()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC17ControlCenterCoreP33_CCF3461277FB84346344DA6D9BA0FC5B16HoverCoordinator);
+}

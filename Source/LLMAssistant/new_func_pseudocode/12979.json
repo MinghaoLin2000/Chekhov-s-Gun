@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription initWithCFType:header:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUDescription initWithCFType:header:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "TSUDescription *__cdecl -[TSUDescription initWithCFType:header:](TSUDescription *self, SEL a2, void *a3, id a4)\n{\n  id v6; // x19\n  TSUDescription *v7; // x0\n  TSUDescription *v8; // x21\n  NSString *v9; // x0\n  NSString *header; // x8\n  objc_super v12; // [xsp+0h] [xbp-30h] BYREF\n\n  v6 = objc_retain(a4);\n  +[TSUDescription pushDescriptionDepth](&OBJC_CLASS___TSUDescription, \"pushDescriptionDepth\");\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSUDescription;\n  v7 = -[TSUDescription init](&v12, \"init\");\n  v8 = v7;\n  if ( v7 )\n  {\n    v7->_cfType = a3;\n    v9 = (NSString *)objc_msgSend(v6, \"copy\");\n    header = v8->_header;\n    v8->_header = v9;\n    objc_release(header);\n  }\n  objc_release(v6);\n  return v8;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUStreamDataCompression initWithAlgorithm:operation:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUStreamDataCompression initWithAlgorithm:operation:](TSUStreamDataCompression * self, SEL a2, int a3, int a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nTSUStreamDataCompression *__cdecl -[TSUStreamDataCompression initWithAlgorithm:operation:](\n        TSUStreamDataCompression *self,\n        SEL a2,\n        int a3,\n        int a4)\n{\n  TSUStreamDataCompression *v4; // x0\n  TSUStreamDataCompression *v5; // x19\n  objc_super v7; // [xsp+0h] [xbp-30h] BYREF\n  objc_super v8; // [xsp+10h] [xbp-20h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___TSUStreamDataCompression;\n  v4 = -[TSUStreamCompression initWithAlgorithm:operation:](\n         &v8,\n         \"initWithAlgorithm:operation:\",\n         *(_QWORD *)&a3,\n         *(_QWORD *)&a4);\n  v5 = v4;\n  if ( v4 )\n  {\n    objc_storeStrong((id *)&v4->_outputData, &_dispatch_data_empty);\n    v7.receiver = v5;\n    v7.super_class = (Class)&OBJC_CLASS___TSUStreamDataCompression;\n    -[TSUStreamCompression setHandler:](&v7, \"setHandler:\", &stru_1001DF218);\n  }\n  return v5;\n}"
+}

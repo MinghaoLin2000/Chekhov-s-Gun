@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceInstance _activatingWindowHandler]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMActionLoaderServiceInstance _activatingWindowHandler](AMActionLoaderServiceInstance * self, SEL a2)",
+    "pseudocode": "AMActivatingWindowHandler *__cdecl -[AMActionLoaderServiceInstance _activatingWindowHandler](\n        AMActionLoaderServiceInstance *self,\n        SEL a2)\n{\n  return (AMActivatingWindowHandler *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

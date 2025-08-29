@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$hasCloudIdentifierForIdentifier:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$hasCloudIdentifierForIdentifier:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_hasCloudIdentifierForIdentifier_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"hasCloudIdentifierForIdentifier:\");\n}"
+}

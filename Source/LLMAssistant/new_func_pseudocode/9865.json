@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP17ViewStateMetadataC2EPN6google8protobuf5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP17ViewStateMetadataC2EPN6google8protobuf5ArenaE(TSP::ViewStateMetadata * this, google::protobuf::Arena * a2)",
+    "pseudocode": "_QWORD *__fastcall TSP::ViewStateMetadata::ViewStateMetadata(_QWORD *a1, __int64 a2)\n{\n  *a1 = off_1001D49F8;\n  a1[1] = a2;\n  a1[4] = a2;\n  a1[2] = 0LL;\n  a1[3] = 0LL;\n  a1[6] = a2;\n  a1[10] = a2;\n  a1[8] = 0LL;\n  a1[9] = 0LL;\n  a1[7] = 0LL;\n  if ( atomic_load_explicit(scc_info_ViewStateMetadata_TSPArchiveMessages_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_ViewStateMetadata_TSPArchiveMessages_2eproto);\n  a1[12] = 0LL;\n  a1[13] = 0LL;\n  return a1;\n}"
+}

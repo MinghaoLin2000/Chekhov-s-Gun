@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDataTransferResume",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformDataTransferResume(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDataTransferResume(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x21\n  __int64 result; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = *(_QWORD *)(a1 + 568);\n  if ( v4 )\n  {\n    while ( 1 )\n    {\n      if ( !*(_DWORD *)(v4 + 304) && *(_QWORD *)(v4 + 696) == a2 )\n      {\n        result = uarpPlatformAssetRequestData(a1, v4, v4 + 312);\n        if ( (_DWORD)result )\n          break;\n      }\n      v4 = *(_QWORD *)(v4 + 712);\n      if ( !v4 )\n        goto LABEL_6;\n    }\n  }\n  else\n  {\nLABEL_6:\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return UARPLayer2DataTransferResume(a1, a2);\n  }\n  return result;\n}"
+}

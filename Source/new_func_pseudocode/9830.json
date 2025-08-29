@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12DataMetadataD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12DataMetadataD1Ev(TSP::DataMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataMetadata::~DataMetadata(TSP::DataMetadata *this)\n{\n  __ZN3TSP12DataMetadataD2Ev(this);\n}"
+}

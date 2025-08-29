@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer serverStateString:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer serverStateString:](iAUPServer * self, SEL a2, int a3)",
+    "pseudocode": "char *__cdecl -[iAUPServer serverStateString:](iAUPServer *self, SEL a2, int a3)\n{\n  if ( (unsigned int)a3 > 7 )\n    return \"Unknown\";\n  else\n    return off_1000318E0[a3];\n}"
+}

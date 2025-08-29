@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUDeveloperSettingsDatabase setAccessoriesDictionary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AUDeveloperSettingsDatabase setAccessoriesDictionary:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AUDeveloperSettingsDatabase setAccessoriesDictionary:](AUDeveloperSettingsDatabase *self, SEL a2, id a3)\n{\n  id v4; // x19\n  OS_os_log *log; // x20\n\n  v4 = objc_retain(a3);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEBUG) )\n    sub_10001ADA0(v4, log);\n  +[NSUserDefaults AUDeveloperSettingsSetObject:withKey:](\n    &OBJC_CLASS___NSUserDefaults,\n    \"AUDeveloperSettingsSetObject:withKey:\",\n    v4,\n    CFSTR(\"accessories\"));\n  objc_release(v4);\n}"
+}

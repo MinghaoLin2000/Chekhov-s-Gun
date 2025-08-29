@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12PlyConverterC2ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN12PlyConverterC2ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEE(__int64 a1, __int64 a2, __int128 * a3)",
+    "pseudocode": "__int64 __fastcall PlyConverter::PlyConverter(__int64 a1, __int64 a2, __int128 *a3)\n{\n  __int128 v5; // q0\n\n  *(_QWORD *)a1 = 0LL;\n  *(_QWORD *)(a1 + 8) = 0LL;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  if ( *((char *)a3 + 23) < 0 )\n  {\n    sub_100006E68((void *)(a1 + 24), *(void **)a3);\n  }\n  else\n  {\n    v5 = *a3;\n    *(_QWORD *)(a1 + 40) = *((_QWORD *)a3 + 2);\n    *(_OWORD *)(a1 + 24) = v5;\n  }\n  *(_OWORD *)(a1 + 48) = 0u;\n  *(_QWORD *)(a1 + 160) = 0LL;\n  *(_OWORD *)(a1 + 128) = 0u;\n  *(_OWORD *)(a1 + 144) = 0u;\n  *(_OWORD *)(a1 + 96) = 0u;\n  *(_OWORD *)(a1 + 112) = 0u;\n  *(_OWORD *)(a1 + 64) = 0u;\n  *(_OWORD *)(a1 + 80) = 0u;\n  *(_BYTE *)(a1 + 168) = PlyConverter::parsePly(a1, a2);\n  return a1;\n}"
+}

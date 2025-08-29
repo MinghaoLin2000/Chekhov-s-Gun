@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipReadChannel isValid]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipReadChannel isValid](TSUZipReadChannel * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSUZipReadChannel isValid](TSUZipReadChannel *self, SEL a2)\n{\n  return (unsigned __int8)-[TSUReadChannel isValid](self->_archiveReadChannel, \"isValid\");\n}"
+}

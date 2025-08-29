@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTPMService setControlMode:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[GTPMService setControlMode:withReply:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[GTPMService setControlMode:withReply:](GTPMService *self, SEL a2, int a3, id a4)\n{\n  __int64 v4; // x20\n  void (__fastcall **v6)(id, _QWORD); // x19\n  NSString *v7; // x22\n  __int64 v8; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v4 = *(_QWORD *)&a3;\n  v6 = (void (__fastcall **)(id, _QWORD))objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(+[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"Control Mode %d\"), v4));\n  NSLog(&CFSTR(\"%@\").isa, v7);\n  objc_release(v7);\n  if ( !self->_igpm.bConnectionValid )\n    v6[2](v6, 0LL);\n  v8 = sub_100003040(&self->_igpm, v4);\n  v6[2](v6, v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

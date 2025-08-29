@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP43SupportMetadata_DataCollaborationPropertiesC2EPN6google8protobuf5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP43SupportMetadata_DataCollaborationPropertiesC2EPN6google8protobuf5ArenaE(TSP::SupportMetadata_DataCollaborationProperties * this, google::protobuf::Arena * a2)",
+    "pseudocode": "_QWORD *__fastcall TSP::SupportMetadata_DataCollaborationProperties::SupportMetadata_DataCollaborationProperties(\n        _QWORD *a1,\n        __int64 a2)\n{\n  *a1 = off_1001D4EC8;\n  a1[1] = a2;\n  a1[2] = 0LL;\n  if ( atomic_load_explicit(\n         scc_info_SupportMetadata_DataCollaborationProperties_TSPArchiveMessages_2eproto,\n         memory_order_acquire) )\n  {\n    google::protobuf::internal::InitSCCImpl(scc_info_SupportMetadata_DataCollaborationProperties_TSPArchiveMessages_2eproto);\n  }\n  a1[4] = 0LL;\n  a1[5] = 0LL;\n  a1[3] = &google::protobuf::internal::fixed_address_empty_string;\n  return a1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_attribute_t values]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_attribute_t values](ipp_attribute_t * self, SEL a2)",
+    "pseudocode": "NSMutableArray *__cdecl -[ipp_attribute_t values](ipp_attribute_t *self, SEL a2)\n{\n  return (NSMutableArray *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

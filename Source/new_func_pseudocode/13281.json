@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUContainedZipArchive streamReadChannelForEntry:validateCRC:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUContainedZipArchive streamReadChannelForEntry:validateCRC:](TSUContainedZipArchive * self, SEL a2, id a3, bool a4)",
+    "pseudocode": "id __cdecl -[TSUContainedZipArchive streamReadChannelForEntry:validateCRC:](\n        TSUContainedZipArchive *self,\n        SEL a2,\n        id a3,\n        bool a4)\n{\n  id v4; // x0\n  objc_super v6; // [xsp+0h] [xbp-10h] BYREF\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___TSUContainedZipArchive;\n  v4 = objc_retainAutoreleasedReturnValue(-[TSUZipArchive streamReadChannelForEntry:validateCRC:](&v6, \"streamReadChannelForEntry:validateCRC:\", a3, 0LL));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

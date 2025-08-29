@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV14otherMouseDownACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV14otherMouseDownACvgZ()",
+    "pseudocode": "__int64 static SystemEventMask.otherMouseDown.getter()\n{\n  return sub_1000173E0(&qword_10002A978, &static SystemEventMask.otherMouseDown, sub_1000161C4);\n}"
+}

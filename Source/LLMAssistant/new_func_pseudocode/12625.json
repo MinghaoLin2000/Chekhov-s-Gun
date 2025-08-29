@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUOffsetInputStream close]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUOffsetInputStream close](SFUOffsetInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUOffsetInputStream close](SFUOffsetInputStream *self, SEL a2)\n{\n  -[SFUInputStream close](self->mInputStream, \"close\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackageEntryInfo CRC]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPPackageEntryInfo CRC](TSPPackageEntryInfo * self, SEL a2)",
+    "pseudocode": "unsigned int __cdecl -[TSPPackageEntryInfo CRC](TSPPackageEntryInfo *self, SEL a2)\n{\n  return self->_CRC;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService _updateAndSignpostAlertStateChange:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService _updateAndSignpostAlertStateChange:](SiriNCService * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SiriNCService _updateAndSignpostAlertStateChange:](SiriNCService *self, SEL a2, signed __int64 a3)\n{\n  const __CFString *v5; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( (unsigned __int64)a3 > 3 )\n    v5 = CFSTR(\"SiriAlertStateIsPresenting\");\n  else\n    v5 = *(&off_100020B10 + a3);\n  +[SRFSignpostLog SRFAlertStateDidChange:](&OBJC_CLASS___SRFSignpostLog, \"SRFAlertStateDidChange:\", v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[SiriNCService setAlertState:](self, \"setAlertState:\", a3);\n}"
+}

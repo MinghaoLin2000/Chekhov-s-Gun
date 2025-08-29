@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUTemporaryDirectory URL]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUTemporaryDirectory URL](TSUTemporaryDirectory * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUTemporaryDirectory URL](TSUTemporaryDirectory *self, SEL a2)\n{\n  id v2; // x20\n  NSURL *v3; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[TSUTemporaryDirectory path](self, \"path\"));\n  v3 = objc_retainAutoreleasedReturnValue(+[NSURL fileURLWithPath:isDirectory:](&OBJC_CLASS___NSURL, \"fileURLWithPath:isDirectory:\", v2, 1LL));\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

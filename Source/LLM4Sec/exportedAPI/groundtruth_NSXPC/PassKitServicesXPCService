@@ -1,0 +1,5 @@
+@protocol PassKitServicesXPCServiceProtocol
+- (void)imageDataForRecurringPaymentMemo:(PKPeerPaymentRecurringPaymentMemo *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+- (void)imageDataForPassUniqueIdentifier:(NSString *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+- (void)imageDataForTransaction:(PKPaymentTransaction *)arg1 size:(struct CGSize)arg2 completion:(void (^)(NSData *))arg3;
+@end

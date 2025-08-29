@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUBufferedInputStream disableSystemCaching]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUBufferedInputStream disableSystemCaching](SFUBufferedInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUBufferedInputStream disableSystemCaching](SFUBufferedInputStream *self, SEL a2)\n{\n  -[SFUInputStream disableSystemCaching](self->mStream, \"disableSystemCaching\");\n}"
+}

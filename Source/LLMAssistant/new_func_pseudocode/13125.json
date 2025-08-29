@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBacktrace callerAtIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUBacktrace callerAtIndex:](TSUBacktrace * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "id __cdecl -[TSUBacktrace callerAtIndex:](TSUBacktrace *self, SEL a2, signed __int64 a3)\n{\n  Dl_info v6; // [xsp+10h] [xbp-30h] BYREF\n\n  memset(&v6, 0, sizeof(v6));\n  if ( dladdr(*((const void **)&self->_callstack[self->_initAdjustment] + a3), &v6) )\n    return +[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", v6.dli_sname);\n  else\n    return +[NSString stringWithFormat:](\n             &OBJC_CLASS___NSString,\n             \"stringWithFormat:\",\n             CFSTR(\"(%s @ %p)\"),\n             v6.dli_fname,\n             *((_QWORD *)&self->_callstack[self->_initAdjustment] + a3));\n}"
+}

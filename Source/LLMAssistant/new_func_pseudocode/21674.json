@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithTokenName:start:end:silenceStart:confidence:hasSpaceAfter:hasSpaceBefore:phoneSequence:ipaPhoneSequence:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithTokenName:start:end:silenceStart:confidence:hasSpaceAfter:hasSpaceBefore:phoneSequence:ipaPhoneSequence:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithTokenName_start_end_silenceStart_confidence_hasSpaceAfter_hasSpaceBefore_phoneSequence_ipaPhoneSequence_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(\n           a1,\n           \"initWithTokenName:start:end:silenceStart:confidence:hasSpaceAfter:hasSpaceBefore:phoneSequence:ipaPhoneSequence:\");\n}"
+}

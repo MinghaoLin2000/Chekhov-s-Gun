@@ -1,0 +1,18 @@
+@protocol CGRemotePDFDocumentProtocol <NSObject>
+- (void)getPageAtIndex:(long long)arg1 completion:(void (^)(id <CGRemotePDFPageProtocol>))arg2;
+- (void)getPageCount:(void (^)(long long))arg1;
+- (void)getIsEncrypted:(void (^)(_Bool))arg1;
+- (void)getIsUnlocked:(void (^)(_Bool))arg1;
+- (void)getVersion:(void (^)(long long, long long))arg1;
+- (void)getInfo:(void (^)(NSDictionary *))arg1;
+@end
+@protocol CGRemotePDFPageProtocol <NSObject>
+- (void)getPageText:(void (^)(NSString *))arg1;
+- (void)drawWithBox:(int)arg1 size:(struct CGSize)arg2 colorSpace:(id)arg3 options:(NSDictionary *)arg4 completion:(void (^)(CGBitmapFormat *, NSData *))arg5;
+- (void)getBoxRect:(int)arg1 completion:(void (^)(struct CGRect))arg2;
+- (void)getRotation:(void (^)(long long))arg1;
+- (void)getIdentifier:(void (^)(NSUUID *))arg1;
+@end
+@protocol CGRemotePDFServiceProtocol <NSObject>
+- (void)newPDFDocumentWithData:(NSData *)arg1 withReply:(void (^)(id <CGRemotePDFDocumentProtocol>))arg2;
+@end

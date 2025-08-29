@@ -1,0 +1,6 @@
+{
+    "function_name": "_PKManifestHash",
+    "function_argument_number": 0,
+    "function_signature": "_PKManifestHash()",
+    "pseudocode": "__int64 PKManifestHash()\n{\n  return _PKManifestHash();\n}"
+}

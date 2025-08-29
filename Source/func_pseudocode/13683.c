@@ -1,0 +1,5 @@
+_CFStringConvertEncodingToNSStringEncoding
+unsigned __int64 __cdecl CFStringConvertEncodingToNSStringEncoding(CFStringEncoding encoding)
+{
+  return _CFStringConvertEncodingToNSStringEncoding(encoding);
+}

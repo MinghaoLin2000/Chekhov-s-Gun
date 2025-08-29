@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV15setEventCapture4mask5flagsyAA06SystemF4MaskV_So08CGSEventG5FlagsVtF",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV15setEventCapture4mask5flagsyAA06SystemF4MaskV_So08CGSEventG5FlagsVtF(EyeCandyGraphics::SystemEventMask a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall CGSConnection.setEventCapture(mask:flags:)(\n        EyeCandyGraphics::SystemEventMask a1,\n        __int64 a2,\n        __int64 a3)\n{\n  __int64 v5; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = UInt32.init(_:)(a1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return _CGSSetEventCapture(a3, 0LL, v5, a2);\n}"
+}

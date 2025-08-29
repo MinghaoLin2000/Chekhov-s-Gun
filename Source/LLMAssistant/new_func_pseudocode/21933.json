@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_set_uint64",
+    "function_argument_number": 3,
+    "function_signature": "_xpc_dictionary_set_uint64(xpc_object_t xdict, const char * key, uint64_t value)",
+    "pseudocode": "void __cdecl xpc_dictionary_set_uint64(xpc_object_t xdict, const char *key, uint64_t value)\n{\n  _xpc_dictionary_set_uint64(xdict, key, value);\n}"
+}

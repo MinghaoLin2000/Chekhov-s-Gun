@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGAffineTransformConcat",
+    "function_argument_number": 3,
+    "function_signature": "_CGAffineTransformConcat(CGAffineTransform * retstr, CGAffineTransform * t1, CGAffineTransform * t2)",
+    "pseudocode": "CGAffineTransform *__cdecl CGAffineTransformConcat(\n        CGAffineTransform *__return_ptr retstr,\n        CGAffineTransform *t1,\n        CGAffineTransform *t2)\n{\n  return _CGAffineTransformConcat(retstr, t1, t2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_IORegistryEntrySetCFProperty",
+    "function_argument_number": 3,
+    "function_signature": "_IORegistryEntrySetCFProperty(io_registry_entry_t entry, CFStringRef propertyName, CFTypeRef property)",
+    "pseudocode": "kern_return_t __cdecl IORegistryEntrySetCFProperty(\n        io_registry_entry_t entry,\n        CFStringRef propertyName,\n        CFTypeRef property)\n{\n  return _IORegistryEntrySetCFProperty(entry, propertyName, property);\n}"
+}

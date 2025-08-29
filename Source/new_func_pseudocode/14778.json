@@ -1,0 +1,6 @@
+{
+    "function_name": "__os_crash_msg",
+    "function_argument_number": 0,
+    "function_signature": "__os_crash_msg()",
+    "pseudocode": "__int64 _os_crash_msg()\n{\n  return __os_crash_msg();\n}"
+}

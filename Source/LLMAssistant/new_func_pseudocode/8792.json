@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService22EngagementMessageEventVwet",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService22EngagementMessageEventVwet(__int64 a1, int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for EngagementMessageEvent(__int64 a1, int a2)\n{\n  unsigned __int64 v2; // x8\n\n  if ( a2 )\n  {\n    if ( a2 < 0 && *(_BYTE *)(a1 + 24) )\n    {\n      LODWORD(v2) = *(_DWORD *)a1 + 0x7FFFFFFF;\n    }\n    else\n    {\n      v2 = *(_QWORD *)(a1 + 8);\n      if ( v2 >= 0xFFFFFFFF )\n        LODWORD(v2) = -1;\n    }\n  }\n  else\n  {\n    LODWORD(v2) = -1;\n  }\n  return (unsigned int)(v2 + 1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFService init]",
+    "function_argument_number": 2,
+    "function_signature": "-[CGPDFService init](CGPDFService * self, SEL a2)",
+    "pseudocode": "CGPDFService *__cdecl -[CGPDFService init](CGPDFService *self, SEL a2)\n{\n  CGPDFService *v2; // x19\n  NSOperationQueue *v3; // x0\n  NSOperationQueue *requestQueue; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___CGPDFService;\n  v2 = -[CGPDFService init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = (NSOperationQueue *)objc_alloc_init((Class)&OBJC_CLASS___NSOperationQueue);\n    requestQueue = v2->_requestQueue;\n    v2->_requestQueue = v3;\n    objc_release(requestQueue);\n    -[NSOperationQueue setMaxConcurrentOperationCount:](v2->_requestQueue, \"setMaxConcurrentOperationCount:\", 4LL);\n  }\n  return v2;\n}"
+}

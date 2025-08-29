@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController isHiddenPrimaryButton]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController isHiddenPrimaryButton](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceFooterViewController isHiddenPrimaryButton](DeviceFooterViewController *self, SEL a2)\n{\n  return self->_hiddenPrimaryButton;\n}"
+}

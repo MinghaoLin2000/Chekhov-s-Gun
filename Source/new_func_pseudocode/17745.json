@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPISignedKey hasData]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPISignedKey hasData](ModelKeyServerAPISignedKey * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[ModelKeyServerAPISignedKey hasData](ModelKeyServerAPISignedKey *self, SEL a2)\n{\n  return self->_data != 0LL;\n}"
+}

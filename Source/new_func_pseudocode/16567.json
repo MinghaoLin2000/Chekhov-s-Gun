@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdateFirmwareAnalyticsEvent channelType]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdateFirmwareAnalyticsEvent channelType](UARPUpdateFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[UARPUpdateFirmwareAnalyticsEvent channelType](UARPUpdateFirmwareAnalyticsEvent *self, SEL a2)\n{\n  return self->_channelType;\n}"
+}

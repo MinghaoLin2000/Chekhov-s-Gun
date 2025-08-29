@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm",
+    "function_argument_number": 7,
+    "function_signature": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm(std::string * this, std::string::size_type __old_cap, std::string::size_type __delta_cap, std::string::size_type __old_sz, std::string::size_type __n_copy, std::string::size_type __n_del, std::string::size_type __n_add)",
+    "pseudocode": "void __cdecl std::string::__grow_by(\n        std::string *this,\n        std::string::size_type __old_cap,\n        std::string::size_type __delta_cap,\n        std::string::size_type __old_sz,\n        std::string::size_type __n_copy,\n        std::string::size_type __n_del,\n        std::string::size_type __n_add)\n{\n  std::string::__grow_by(this, __old_cap, __delta_cap, __old_sz, __n_copy, __n_del, __n_add);\n}"
+}

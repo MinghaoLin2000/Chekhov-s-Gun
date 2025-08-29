@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackageEntryInfo initWithEncodedLength:lastModificationDate:CRC:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPPackageEntryInfo initWithEncodedLength:lastModificationDate:CRC:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "TSPPackageEntryInfo *__cdecl -[TSPPackageEntryInfo initWithEncodedLength:lastModificationDate:CRC:](\n        TSPPackageEntryInfo *self,\n        SEL a2,\n        unsigned __int64 a3,\n        id a4,\n        unsigned int a5)\n{\n  id v8; // x19\n  TSPPackageEntryInfo *v9; // x0\n  TSPPackageEntryInfo *v10; // x21\n  NSDate *v11; // x0\n  NSDate *lastModificationDate; // x8\n  objc_super v14; // [xsp+0h] [xbp-40h] BYREF\n\n  v8 = objc_retain(a4);\n  v14.receiver = self;\n  v14.super_class = (Class)&OBJC_CLASS___TSPPackageEntryInfo;\n  v9 = -[TSPPackageEntryInfo init](&v14, \"init\");\n  v10 = v9;\n  if ( v9 )\n  {\n    v9->_encodedLength = a3;\n    v11 = (NSDate *)objc_msgSend(v8, \"copy\");\n    lastModificationDate = v10->_lastModificationDate;\n    v10->_lastModificationDate = v11;\n    objc_release(lastModificationDate);\n    v10->_CRC = a5;\n  }\n  objc_release(v8);\n  return v10;\n}"
+}

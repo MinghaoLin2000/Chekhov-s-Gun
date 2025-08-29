@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_get_array",
+    "function_argument_number": 2,
+    "function_signature": "_xpc_dictionary_get_array(xpc_object_t xdict, const char * key)",
+    "pseudocode": "xpc_object_t __cdecl xpc_dictionary_get_array(xpc_object_t xdict, const char *key)\n{\n  return _xpc_dictionary_get_array(xdict, key);\n}"
+}

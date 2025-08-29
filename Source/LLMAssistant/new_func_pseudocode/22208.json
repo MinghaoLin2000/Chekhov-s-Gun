@@ -1,0 +1,6 @@
+{
+    "function_name": "+[QLSatellite satellite]",
+    "function_argument_number": 2,
+    "function_signature": "+[QLSatellite satellite](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[QLSatellite satellite](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_10000C460 != -1 )\n    dispatch_once(&qword_10000C460, &stru_1000083D0);\n  v2 = (void *)qword_10000C468;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

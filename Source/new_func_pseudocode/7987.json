@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceSetName",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceSetName()",
+    "pseudocode": "__int64 CGSSpaceSetName()\n{\n  return _CGSSpaceSetName();\n}"
+}

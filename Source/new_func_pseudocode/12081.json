@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Field8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf5Field8CopyFromERKNS0_7MessageE(google::protobuf::Field * this, const google::protobuf::Message * a2)",
+    "pseudocode": "void __fastcall google::protobuf::Field::CopyFrom(google::protobuf::Field *this, const google::protobuf::Message *a2)\n{\n  __int64 v2; // x30\n\n  if ( a2 != this )\n  {\n    google::protobuf::Field::Clear(this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    google::protobuf::Field::MergeFrom(this, a2);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpVersionCompare",
+    "function_argument_number": 2,
+    "function_signature": "_uarpVersionCompare(_DWORD * a1, _DWORD * a2)",
+    "pseudocode": "__int64 __fastcall uarpVersionCompare(_DWORD *a1, _DWORD *a2)\n{\n  unsigned int v2; // w8\n  unsigned int v3; // w9\n  unsigned int v4; // w8\n  unsigned int v5; // w9\n  unsigned int v7; // w8\n  unsigned int v8; // w9\n  bool v9; // cf\n  bool v10; // zf\n  _BOOL4 v11; // w8\n\n  if ( *a1 > *a2 )\n    return 2LL;\n  if ( *a1 < *a2 )\n    return 1LL;\n  v2 = a1[1];\n  v3 = a2[1];\n  if ( v2 > v3 )\n    return 2LL;\n  if ( v2 < v3 )\n    return 1LL;\n  v4 = a1[2];\n  v5 = a2[2];\n  if ( v4 > v5 )\n    return 2LL;\n  if ( v4 < v5 )\n    return 1LL;\n  v7 = a1[3];\n  v8 = a2[3];\n  v9 = v7 >= v8;\n  v10 = v7 == v8;\n  v11 = v7 < v8;\n  if ( !v10 && v9 )\n    return 2LL;\n  else\n    return v11;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceIsICCCompatible",
+    "function_argument_number": 0,
+    "function_signature": "_CGColorSpaceIsICCCompatible()",
+    "pseudocode": "__int64 CGColorSpaceIsICCCompatible()\n{\n  return _CGColorSpaceIsICCCompatible();\n}"
+}

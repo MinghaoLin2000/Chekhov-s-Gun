@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUReadChannelNSInputStreamAdaptor streamStatus]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUReadChannelNSInputStreamAdaptor streamStatus](SFUReadChannelNSInputStreamAdaptor * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUReadChannelNSInputStreamAdaptor streamStatus](\n        SFUReadChannelNSInputStreamAdaptor *self,\n        SEL a2)\n{\n  return atomic_load(&self->_status);\n}"
+}

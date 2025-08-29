@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipEntry isBackedByFile]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipEntry isBackedByFile](SFUZipEntry * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SFUZipEntry isBackedByFile](SFUZipEntry *self, SEL a2)\n{\n  SFUZipArchiveDataRepresentation *mArchiveDataRepresentation; // x19\n  __int64 v3; // x0\n\n  mArchiveDataRepresentation = self->mArchiveDataRepresentation;\n  v3 = objc_opt_class(&OBJC_CLASS___SFUZipArchiveFileDataRepresentation);\n  return objc_opt_isKindOfClass(mArchiveDataRepresentation, v3) & 1;\n}"
+}

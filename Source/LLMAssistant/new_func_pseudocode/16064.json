@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointPrepareSuperBinary",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformEndpointPrepareSuperBinary(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointPrepareSuperBinary(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  return uarpPlatformPrepareAsset(a1, a2, a3, 0LL, a4, 1);\n}"
+}

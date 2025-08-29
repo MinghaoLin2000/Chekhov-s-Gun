@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDResultGetValue",
+    "function_argument_number": 0,
+    "function_signature": "_DDResultGetValue()",
+    "pseudocode": "__int64 DDResultGetValue()\n{\n  return _DDResultGetValue();\n}"
+}

@@ -1,0 +1,6 @@
+@protocol PhotoThemeService <NSObject>
+- (void)requestStatusForSession:(NSString *)arg1 statusHandler:(void (^)(_Bool, long long, double))arg2;
+- (void)cancelUpdateWithSession:(NSString *)arg1;
+- (void)queryCacheWithTags:(NSArray *)arg1 metadata:(NSDictionary *)arg2 completionHandler:(void (^)(NSArray *, _Bool))arg3;
+- (void)startUpdateWithTags:(NSArray *)arg1 metadata:(NSDictionary *)arg2 completionHandler:(void (^)(NSError *))arg3;
+@end

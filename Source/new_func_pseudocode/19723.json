@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z8toString13http_status_t",
+    "function_argument_number": 1,
+    "function_signature": "__Z8toString13http_status_t(http_status_t a1)",
+    "pseudocode": "__CFString *__fastcall toString(__int64 a1)\n{\n  __CFString *v1; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( (unsigned int)a1 >= 7 )\n    v1 = objc_retainAutoreleasedReturnValue(\n           +[NSString stringWithFormat:](\n             &OBJC_CLASS___NSString,\n             \"stringWithFormat:\",\n             CFSTR(\"Unknown http status %d\"),\n             a1));\n  else\n    v1 = off_100091438[(int)a1];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v1);\n}"
+}

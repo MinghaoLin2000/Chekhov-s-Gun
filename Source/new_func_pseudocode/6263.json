@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setScaleFactor:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setScaleFactor:](PAMediaConversionServiceImageConversionJob * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setScaleFactor:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        double a3)\n{\n  self->_scaleFactor = a3;\n}"
+}

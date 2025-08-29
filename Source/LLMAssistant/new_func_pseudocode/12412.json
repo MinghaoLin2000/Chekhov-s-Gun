@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy19MaxCompressedLengthEm",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6snappy19MaxCompressedLengthEm(snappy * this, unsigned __int64 a2)",
+    "pseudocode": "unsigned __int64 __fastcall snappy::MaxCompressedLength(unsigned __int64 this)\n{\n  return this + this / 6 + 32;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFErrorGetCode",
+    "function_argument_number": 1,
+    "function_signature": "_CFErrorGetCode(CFErrorRef err)",
+    "pseudocode": "CFIndex __cdecl CFErrorGetCode(CFErrorRef err)\n{\n  return _CFErrorGetCode(err);\n}"
+}

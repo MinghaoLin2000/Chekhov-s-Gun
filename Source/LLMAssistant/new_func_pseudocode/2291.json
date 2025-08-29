@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderOverallView drawRect:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderOverallView drawRect:](DeviceFinderOverallView * self, SEL a2, CGRect a3)",
+    "pseudocode": "void __cdecl -[DeviceFinderOverallView drawRect:](DeviceFinderOverallView *self, SEL a2, CGRect a3)\n{\n  NSColor *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( -[DeviceFinderOverallView dragHighlighted](\n         self,\n         \"dragHighlighted\",\n         a3.origin.x,\n         a3.origin.y,\n         a3.size.width,\n         a3.size.height) )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(+[NSColor keyboardFocusIndicatorColor](&OBJC_CLASS___NSColor, \"keyboardFocusIndicatorColor\"));\n    -[NSColor set](v4, \"set\");\n    objc_release(v4);\n    +[NSBezierPath setDefaultLineWidth:](&OBJC_CLASS___NSBezierPath, \"setDefaultLineWidth:\", 5.0);\n    -[DeviceFinderOverallView bounds](self, \"bounds\");\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    +[NSBezierPath strokeRect:](&OBJC_CLASS___NSBezierPath, \"strokeRect:\");\n  }\n}"
+}

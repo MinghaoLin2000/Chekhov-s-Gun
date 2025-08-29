@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_get initWithSession:url:callback:]",
+    "function_argument_number": 3,
+    "function_signature": "-[platform_http_get initWithSession:url:callback:](int a1, int a2, id a3)",
+    "pseudocode": "platform_http_get *__cdecl -[platform_http_get initWithSession:url:callback:](\n        platform_http_get *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  id v9; // x19\n  id v10; // x20\n  id v11; // x21\n  platform_http_get *v12; // x0\n  platform_http_get *v13; // x23\n  id v14; // x0\n  id cb; // x8\n  objc_super v17; // [xsp+0h] [xbp-40h] BYREF\n\n  v9 = objc_retain(a3);\n  v10 = objc_retain(a4);\n  v11 = objc_retain(a5);\n  v17.receiver = self;\n  v17.super_class = (Class)&OBJC_CLASS___platform_http_get;\n  v12 = -[platform_http_get init](&v17, \"init\");\n  v13 = v12;\n  if ( v12 )\n  {\n    objc_storeStrong((id *)&v12->_session, a3);\n    objc_storeStrong((id *)&v13->_url, a4);\n    v14 = objc_retainBlock(v11);\n    cb = v13->_cb;\n    v13->_cb = v14;\n    objc_release(cb);\n  }\n  objc_release(v11);\n  objc_release(v10);\n  objc_release(v9);\n  return v13;\n}"
+}

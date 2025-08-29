@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter entriesCountImpl]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipWriter entriesCountImpl](TSUZipWriter * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUZipWriter entriesCountImpl](TSUZipWriter *self, SEL a2)\n{\n  return (unsigned __int64)-[NSMutableDictionary count](self->_entriesMap, \"count\");\n}"
+}

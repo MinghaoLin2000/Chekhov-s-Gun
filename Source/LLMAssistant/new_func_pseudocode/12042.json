@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14DoubleToBufferEdPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf14DoubleToBufferEdPc(google::protobuf * this, double a2, char * a3)",
+    "pseudocode": "google::protobuf *__fastcall google::protobuf::DoubleToBuffer(google::protobuf *this, double a2, char *a3)\n{\n  int v5; // w8\n  char **v7; // x2\n  char *v8; // x1\n  double v9; // d0\n\n  if ( a2 == INFINITY )\n  {\n    v5 = 6712937;\nLABEL_5:\n    *(_DWORD *)this = v5;\n    return this;\n  }\n  if ( a2 == -INFINITY )\n  {\n    *((_BYTE *)this + 4) = 0;\n    v5 = 1718511917;\n    goto LABEL_5;\n  }\n  snprintf((char *)this, 0x20uLL, \"%.*g\", 15, a2);\n  google::protobuf::internal::NoLocaleStrtod(this, 0LL, v7);\n  if ( v9 != a2 )\n    snprintf((char *)this, 0x20uLL, \"%.*g\", 17, a2);\n  google::protobuf::DelocalizeRadix(this, v8);\n  return this;\n}"
+}

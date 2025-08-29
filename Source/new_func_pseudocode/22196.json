@@ -1,0 +1,6 @@
+{
+    "function_name": "_IIOInitDebugFlags",
+    "function_argument_number": 0,
+    "function_signature": "_IIOInitDebugFlags()",
+    "pseudocode": "__int64 IIOInitDebugFlags()\n{\n  return _IIOInitDebugFlags();\n}"
+}

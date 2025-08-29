@@ -1,0 +1,6 @@
+{
+    "function_name": "_NAConnectToServerSync",
+    "function_argument_number": 0,
+    "function_signature": "_NAConnectToServerSync()",
+    "pseudocode": "__int64 NAConnectToServerSync()\n{\n  return _NAConnectToServerSync();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceVariableController _variablesLock]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceVariableController _variablesLock](AMLoaderServiceVariableController * self, SEL a2)",
+    "pseudocode": "os_unfair_lock_s __cdecl -[AMLoaderServiceVariableController _variablesLock](\n        AMLoaderServiceVariableController *self,\n        SEL a2)\n{\n  return self->__variablesLock;\n}"
+}

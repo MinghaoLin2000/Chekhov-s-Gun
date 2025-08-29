@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2PayloadMetaDataTLV",
+    "function_argument_number": 5,
+    "function_signature": "_UARPLayer2PayloadMetaDataTLV(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)",
+    "pseudocode": "__int64 __fastcall UARPLayer2PayloadMetaDataTLV(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)\n{\n  __int64 result; // x0\n  __int64 (__fastcall *v11)(__int64, __int64, __int64, __int64, __int64); // x5\n  __int64 v12; // x0\n  __int64 v13; // x1\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  result = uarpProcessPayloadTLVInternal(a1, a2, a2 + 464, a3, a4, a5);\n  v11 = *(__int64 (__fastcall **)(__int64, __int64, __int64, __int64, __int64))(a2 + 120);\n  if ( v11 )\n  {\n    v12 = *(_QWORD *)(a1 + 544);\n    v13 = *(_QWORD *)(a2 + 704);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v11(v12, v13, a3, a4, a5);\n  }\n  return result;\n}"
+}

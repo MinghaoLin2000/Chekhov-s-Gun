@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAudiobooksViewController libraryChangedNotification:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsAudiobooksViewController libraryChangedNotification:](DeviceSettingsAudiobooksViewController * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsAudiobooksViewController libraryChangedNotification:](\n        DeviceSettingsAudiobooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  -[DeviceSettingsViewController reloadModelAndUpdateUIAsync](self, \"reloadModelAndUpdateUIAsync\", a3);\n}"
+}

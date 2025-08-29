@@ -1,0 +1,6 @@
+{
+    "function_name": "_AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath",
+    "function_argument_number": 0,
+    "function_signature": "_AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath()",
+    "pseudocode": "__int64 AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath()\n{\n  return _AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath();\n}"
+}

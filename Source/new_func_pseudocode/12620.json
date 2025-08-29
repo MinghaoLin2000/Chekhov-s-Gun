@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUOffsetInputStream readToBuffer:size:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUOffsetInputStream readToBuffer:size:](SFUOffsetInputStream * self, SEL a2, char * a3, unsigned __int64 a4)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUOffsetInputStream readToBuffer:size:](\n        SFUOffsetInputStream *self,\n        SEL a2,\n        char *a3,\n        unsigned __int64 a4)\n{\n  return (unsigned __int64)-[SFUInputStream readToBuffer:size:](self->mInputStream, \"readToBuffer:size:\", a3, a4);\n}"
+}

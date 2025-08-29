@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory setRequiresPowerAssertion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUSBDFUAccessory setRequiresPowerAssertion:](UARPUSBDFUAccessory * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[UARPUSBDFUAccessory setRequiresPowerAssertion:](UARPUSBDFUAccessory *self, SEL a2, bool a3)\n{\n  self->_requiresPowerAssertion = a3;\n}"
+}

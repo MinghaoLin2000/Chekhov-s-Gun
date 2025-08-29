@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController configureForRawDeviceMode]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFinderTabContainerViewController configureForRawDeviceMode](DeviceFinderTabContainerViewController * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceFinderTabContainerViewController configureForRawDeviceMode](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2)\n{\n  -[DeviceFinderTabContainerViewController hideButtonBar](self, \"hideButtonBar\");\n}"
+}

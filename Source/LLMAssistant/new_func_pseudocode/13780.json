@@ -1,0 +1,6 @@
+{
+    "function_name": "_backtrace_symbols",
+    "function_argument_number": 2,
+    "function_signature": "_backtrace_symbols(void *const * a1, int a2)",
+    "pseudocode": "char **__cdecl backtrace_symbols(void *const *a1, int a2)\n{\n  return _backtrace_symbols(a1, a2);\n}"
+}

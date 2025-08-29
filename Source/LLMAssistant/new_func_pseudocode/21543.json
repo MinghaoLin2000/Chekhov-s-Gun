@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection _auditToken]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection _auditToken]($115C4C562B26FF47E01F9F4EA65B5887 * retstr, LSRConnection * self, SEL a3)",
+    "pseudocode": "$115C4C562B26FF47E01F9F4EA65B5887 *__cdecl -[LSRConnection _auditToken](\n        $115C4C562B26FF47E01F9F4EA65B5887 *__return_ptr retstr,\n        LSRConnection *self,\n        SEL a3)\n{\n  $115C4C562B26FF47E01F9F4EA65B5887 *result; // x0\n\n  result = ($115C4C562B26FF47E01F9F4EA65B5887 *)self->_connection;\n  if ( result )\n    return ($115C4C562B26FF47E01F9F4EA65B5887 *)-[$115C4C562B26FF47E01F9F4EA65B5887 auditToken](result, \"auditToken\");\n  *(_OWORD *)retstr->var0 = 0u;\n  *(_OWORD *)&retstr->var0[4] = 0u;\n  return result;\n}"
+}

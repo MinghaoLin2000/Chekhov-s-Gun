@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction _setExecution:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceAction _setExecution:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction _setExecution:](AMLoaderServiceAction *self, SEL a2, id a3)\n{\n  AMRemoteActionExecution *v5; // x20\n  AMRemoteActionExecution **p_execution; // x21\n  AMRemoteActionExecution *execution; // t1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = (AMRemoteActionExecution *)objc_retain(a3);\n  os_unfair_lock_assert_owner(&self->__executionLock);\n  execution = self->__execution;\n  p_execution = &self->__execution;\n  if ( execution != v5 )\n    objc_storeStrong((id *)p_execution, a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

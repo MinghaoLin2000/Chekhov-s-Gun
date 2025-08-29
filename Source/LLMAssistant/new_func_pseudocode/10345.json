@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14UUIDSetArchive9MergeFromERKS0_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP14UUIDSetArchive9MergeFromERKS0_(TSP::UUIDSetArchive * this, const TSP::UUIDSetArchive * a2)",
+    "pseudocode": "__int64 __fastcall TSP::UUIDSetArchive::MergeFrom(__int64 this, const TSP::UUIDSetArchive *a2)\n{\n  __int64 v3; // x19\n  __int64 v4; // x8\n  __int64 v5; // x20\n  __int64 v6; // x21\n  __int64 v7; // x0\n  int *v8; // x8\n  int v9; // w10\n  int v10; // w9\n\n  v3 = this;\n  v4 = *((_QWORD *)a2 + 1);\n  if ( (v4 & 1) != 0 )\n    this = sub_10003A25C(this + 8, (v4 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  v5 = *((unsigned int *)a2 + 6);\n  if ( (_DWORD)v5 )\n  {\n    v6 = *((_QWORD *)a2 + 4) + 8LL;\n    v7 = google::protobuf::internal::RepeatedPtrFieldBase::InternalExtend(\n           (google::protobuf::internal::RepeatedPtrFieldBase *)(v3 + 16),\n           v5);\n    this = sub_100076F5C(v3 + 16, v7, v6, v5, (unsigned int)(**(_DWORD **)(v3 + 32) - *(_DWORD *)(v3 + 24)));\n    v8 = *(int **)(v3 + 32);\n    v9 = *v8;\n    v10 = *(_DWORD *)(v3 + 24) + v5;\n    *(_DWORD *)(v3 + 24) = v10;\n    if ( v9 < v10 )\n      *v8 = v10;\n  }\n  return this;\n}"
+}

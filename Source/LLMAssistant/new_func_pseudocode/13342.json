@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter writeEntryWithName:force32BitSize:fromReadChannel:completion:]",
+    "function_argument_number": 6,
+    "function_signature": "-[TSUZipWriter writeEntryWithName:force32BitSize:fromReadChannel:completion:](TSUZipWriter * self, SEL a2, id a3, bool a4, id a5, id a6)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[TSUZipWriter writeEntryWithName:force32BitSize:fromReadChannel:completion:](\n        TSUZipWriter *self,\n        SEL a2,\n        id a3,\n        bool a4,\n        id a5,\n        id a6)\n{\n  -[TSUZipWriter writeEntryWithName:force32BitSize:lastModificationDate:size:CRC:fromReadChannel:completion:](\n    self,\n    \"writeEntryWithName:force32BitSize:lastModificationDate:size:CRC:fromReadChannel:completion:\",\n    a3,\n    a4,\n    0LL,\n    0LL,\n    0LL,\n    a5,\n    a6);\n}"
+}

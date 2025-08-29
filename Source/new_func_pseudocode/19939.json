@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t setNumberOfSheetsPerCopy:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t setNumberOfSheetsPerCopy:](lite_job_t * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[lite_job_t setNumberOfSheetsPerCopy:](lite_job_t *self, SEL a2, int a3)\n{\n  self->_numberOfSheetsPerCopy = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalProxyConnection _canWriteToSocket]",
+    "function_argument_number": 2,
+    "function_signature": "-[LocalProxyConnection _canWriteToSocket](LocalProxyConnection * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LocalProxyConnection _canWriteToSocket](LocalProxyConnection *self, SEL a2)\n{\n  self->_writeOK = 1;\n  -[LocalProxyConnection _checkWrite](self, \"_checkWrite\");\n}"
+}

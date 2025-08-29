@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.private.tcc.allow:kTCCServiceReminders",
+  "capability": "Allows an application to access, read, or write user data associated with the Reminders application (e.g., tasks, lists, and their properties) without requiring explicit user consent via the standard macOS Transparency, Consent, and Control (TCC) prompt.",
+  "reasoning": "The entitlement name `com.apple.private.tcc.allow:kTCCServiceReminders` directly indicates its function: `com.apple.private` signifies a private Apple entitlement, `tcc.allow` means it grants permission to bypass TCC, and `kTCCServiceReminders` specifies the particular TCC-protected service, which corresponds to the Reminders application's data.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly falls under 'Access Transparency Consent and Control (TCC) related functions' (Type 5). The description for Type 5 explicitly lists 'Calendars / Reminders: Read or write user schedules' as a TCC-protected resource. This entitlement grants access to the Reminders service without user consent, which is the core characteristic of this sensitive operation type.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement's naming convention is very clear and directly maps to the definitions provided, particularly the explicit mention of 'Reminders' within the TCC sensitive operation type. There is little ambiguity in interpreting `com.apple.private.tcc.allow:kTCCServiceReminders` given the context of Apple's TCC framework."
+}

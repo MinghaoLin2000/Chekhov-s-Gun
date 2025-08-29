@@ -1,0 +1,6 @@
+{
+    "function_name": "-[KeyboardSettingsMediator setJIMAutocorrection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[KeyboardSettingsMediator setJIMAutocorrection:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[KeyboardSettingsMediator setJIMAutocorrection:](KeyboardSettingsMediator *self, SEL a2, id a3)\n{\n  id v3; // x19\n  void *v4; // x20\n  void *v5; // x0\n  uint8_t v6[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  v3 = objc_retain(a3);\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_WORD *)v6 = 0;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_DEFAULT,\n      \"XPCSERVICE - JapaneseIM Autocorrection\",\n      v6,\n      2u);\n  }\n  if ( v3 )\n  {\n    if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_DEBUG) )\n      sub_100007DB0(v3);\n    v4 = objc_retainAutoreleasedReturnValue(+[JIMPreferences sharedPreferences](&OBJC_CLASS___JIMPreferences, \"sharedPreferences\"));\n    v5 = objc_msgSend(v3, \"boolValue\");\n    objc_msgSend(v4, \"setBool:forKey:\", v5, JIMPrefAutocorrectionKey);\n    objc_release(v4);\n  }\n  objc_release(v3);\n}"
+}

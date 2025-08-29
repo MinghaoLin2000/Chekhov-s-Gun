@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$modelRootWithLanguage:assetType:clientID:modelOverrideURL:isSpelling:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$modelRootWithLanguage:assetType:clientID:modelOverrideURL:isSpelling:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_modelRootWithLanguage_assetType_clientID_modelOverrideURL_isSpelling_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"modelRootWithLanguage:assetType:clientID:modelOverrideURL:isSpelling:error:\");\n}"
+}

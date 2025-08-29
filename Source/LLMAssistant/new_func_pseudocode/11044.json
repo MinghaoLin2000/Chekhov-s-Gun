@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf29DescriptorProto_ReservedRange11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf29DescriptorProto_ReservedRange11GetMetadataEv(google::protobuf::DescriptorProto_ReservedRange * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorProto_ReservedRange::GetMetadata(\n        google::protobuf::DescriptorProto_ReservedRange *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_google_2fprotobuf_2fdescriptor_2eproto, 0LL);\n  return off_1001F6798[6];\n}"
+}

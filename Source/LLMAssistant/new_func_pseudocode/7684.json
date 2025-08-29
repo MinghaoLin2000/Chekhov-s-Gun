@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE5emptyABvau",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE5emptyABvau()",
+    "pseudocode": "__int64 *CGRegionRef.empty.unsafeMutableAddressor()\n{\n  if ( qword_10002A510 != -1 )\n    swift_once(&qword_10002A510, sub_100014D84);\n  return &static CGRegionRef.empty;\n}"
+}

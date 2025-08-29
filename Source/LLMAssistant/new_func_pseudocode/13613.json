@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUAssertionHandler _logBacktraceWithCallStackSymbols:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUAssertionHandler _logBacktraceWithCallStackSymbols:](id a1, SEL a2, id a3)",
+    "pseudocode": "void __cdecl +[TSUAssertionHandler _logBacktraceWithCallStackSymbols:](id a1, SEL a2, id a3)\n{\n  void *v5; // x21\n\n  if ( TSUAssertCat_init_token != -1 )\n    dispatch_once(&TSUAssertCat_init_token, &stru_1001DF6D8);\n  v5 = TSUAssertCat_log_t;\n  if ( os_log_type_enabled((os_log_t)TSUAssertCat_log_t, OS_LOG_TYPE_ERROR) )\n    sub_100174AA0(a3, v5);\n  objc_msgSend(a1, \"simulateCrashWithMessage:\", CFSTR(\"+[TSUAssert logBacktrace]\"));\n}"
+}

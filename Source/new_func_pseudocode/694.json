@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFileSharingViewController loadFileSharingApps]",
+    "function_argument_number": 1,
+    "function_signature": "-[DeviceFileSharingViewController loadFileSharingApps](id val)",
+    "pseudocode": "void __cdecl -[DeviceFileSharingViewController loadFileSharingApps](DeviceFileSharingViewController *self, SEL a2)\n{\n  AMPDevicesClient *v3; // x19\n  AMPDevice *v4; // x20\n  _QWORD v5[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v6; // [xsp+20h] [xbp-30h] BYREF\n  id location; // [xsp+28h] [xbp-28h] BYREF\n\n  objc_initWeak(&location, self);\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceViewController devicesClient](self, \"devicesClient\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController device](self, \"device\"));\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_1000111F8;\n  v5[3] = &unk_1000B8DC8;\n  objc_copyWeak(&v6, &location);\n  -[AMPDevicesClient fetchFileSharingAppsForDevice:withReply:](v3, \"fetchFileSharingAppsForDevice:withReply:\", v4, v5);\n  objc_release(v4);\n  objc_release(v3);\n  objc_destroyWeak(&v6);\n  objc_destroyWeak(&location);\n}"
+}

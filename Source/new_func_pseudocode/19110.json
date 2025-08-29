@@ -1,0 +1,6 @@
+{
+    "function_name": "__CFLocaleResetCurrent",
+    "function_argument_number": 0,
+    "function_signature": "__CFLocaleResetCurrent()",
+    "pseudocode": "__int64 _CFLocaleResetCurrent()\n{\n  return __CFLocaleResetCurrent();\n}"
+}

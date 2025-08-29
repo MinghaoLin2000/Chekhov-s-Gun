@@ -1,0 +1,6 @@
+{
+    "function_name": "___user_local_dirname",
+    "function_argument_number": 0,
+    "function_signature": "___user_local_dirname()",
+    "pseudocode": "__int64 __user_local_dirname()\n{\n  return ___user_local_dirname();\n}"
+}

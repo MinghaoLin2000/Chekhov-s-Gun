@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionTransaction invalidate]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSessionTransaction invalidate](IPPSessionTransaction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[IPPSessionTransaction invalidate](IPPSessionTransaction *self, SEL a2)\n{\n  id WeakRetained; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  WeakRetained = objc_loadWeakRetained((id *)&self->_task);\n  objc_msgSend(WeakRetained, \"setDelegate:\", 0LL);\n  objc_release(WeakRetained);\n  -[IPPSessionTransaction setTrust_callback:](self, \"setTrust_callback:\", 0LL);\n  -[IPPSessionTransaction setPass_callback:](self, \"setPass_callback:\", 0LL);\n  -[IPPSessionTransaction setBoundInterfaceSet_callback:](self, \"setBoundInterfaceSet_callback:\", 0LL);\n  -[IPPSessionTransaction setInitialPayloadSentCallback:](self, \"setInitialPayloadSentCallback:\", 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[IPPSessionTransaction setTransactionCompletedCallback:](self, \"setTransactionCompletedCallback:\", 0LL);\n}"
+}

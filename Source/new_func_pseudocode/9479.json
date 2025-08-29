@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties initWithDocumentURL:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPDocumentProperties initWithDocumentURL:error:](TSPDocumentProperties * self, SEL a2, id a3, id * a4)",
+    "pseudocode": "TSPDocumentProperties *__cdecl -[TSPDocumentProperties initWithDocumentURL:error:](\n        TSPDocumentProperties *self,\n        SEL a2,\n        id a3,\n        id *a4)\n{\n  return -[TSPDocumentProperties initWithDocumentURL:allowMissingPropertyList:error:](\n           self,\n           \"initWithDocumentURL:allowMissingPropertyList:error:\",\n           a3,\n           1LL,\n           a4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_EnterSandbox.cold.8",
+    "function_argument_number": 0,
+    "function_signature": "_EnterSandbox.cold.8()",
+    "pseudocode": "void EnterSandbox_cold_8()\n{\n  uint8_t v0[16]; // [xsp+0h] [xbp-10h] BYREF\n\n  *(_WORD *)v0 = 0;\n  _os_log_debug_impl(\n    (void *)&_mh_execute_header,\n    (os_log_t)&_os_log_default,\n    OS_LOG_TYPE_DEBUG,\n    \"$HOME not set, falling back to using getpwuid\",\n    v0,\n    2u);\n}"
+}

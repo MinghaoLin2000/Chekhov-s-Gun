@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$dataRequest",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$dataRequest(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_dataRequest(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"dataRequest\");\n}"
+}

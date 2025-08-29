@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeServiceContainer setInSetFrame:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeServiceContainer setInSetFrame:](RemoteViewBridgeServiceContainer * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeServiceContainer setInSetFrame:](\n        RemoteViewBridgeServiceContainer *self,\n        SEL a2,\n        bool a3)\n{\n  self->_inSetFrame = a3;\n}"
+}

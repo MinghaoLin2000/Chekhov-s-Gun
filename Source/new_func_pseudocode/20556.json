@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetCTM",
+    "function_argument_number": 0,
+    "function_signature": "_CGContextSetCTM()",
+    "pseudocode": "__int64 CGContextSetCTM()\n{\n  return _CGContextSetCTM();\n}"
+}

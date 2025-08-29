@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService20XPCServiceConnectionCMa
+__int64 type metadata accessor for XPCServiceConnection()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService20XPCServiceConnection);
+}

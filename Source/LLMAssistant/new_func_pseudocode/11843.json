@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11StringValue11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf11StringValue11GetMetadataEv(google::protobuf::StringValue * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::StringValue::GetMetadata(google::protobuf::StringValue *this)\n{\n  google::protobuf::internal::AssignDescriptors((__int64)&descriptor_table_google_2fprotobuf_2fwrappers_2eproto, 0);\n  return off_1001F6AA0[14];\n}"
+}

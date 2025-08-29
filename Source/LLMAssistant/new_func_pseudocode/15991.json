@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinHashInfo",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformDarwinHashInfo(__int64 result, _DWORD * a2, int * a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDarwinHashInfo(__int64 result, _DWORD *a2, int *a3)\n{\n  int v3; // w9\n  int v4; // w8\n  int v5; // w9\n\n  v3 = result - 1;\n  if ( (unsigned int)(result - 1) > 2 )\n  {\n    v4 = 0;\n    v5 = 0;\n  }\n  else\n  {\n    v4 = *(_DWORD *)&aH[4 * v3];\n    v5 = 16 * v3 + 32;\n  }\n  *a2 = v4;\n  *a3 = v5;\n  return result;\n}"
+}

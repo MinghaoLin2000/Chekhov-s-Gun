@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController initWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController initWithCoder:](_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController * self, SEL a2, id a3)",
+    "pseudocode": "_TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController *__cdecl -[DummyViewController initWithCoder:](\n        _TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)type metadata accessor for DummyViewController();\n  return -[DummyViewController initWithCoder:](&v5, \"initWithCoder:\", a3);\n}"
+}

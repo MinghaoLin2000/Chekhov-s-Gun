@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUFileIOChannel setShouldFullFsyncOnClose:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUFileIOChannel setShouldFullFsyncOnClose:](id a1, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl +[TSUFileIOChannel setShouldFullFsyncOnClose:](id a1, SEL a2, bool a3)\n{\n  atomic_store(a3, byte_1001F7FE0);\n}"
+}

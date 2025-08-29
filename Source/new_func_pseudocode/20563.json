@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFArrayGetName",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFArrayGetName(CGPDFArrayRef array, size_t index, const char ** value)",
+    "pseudocode": "bool __cdecl CGPDFArrayGetName(CGPDFArrayRef array, size_t index, const char **value)\n{\n  return _CGPDFArrayGetName(array, index, value);\n}"
+}

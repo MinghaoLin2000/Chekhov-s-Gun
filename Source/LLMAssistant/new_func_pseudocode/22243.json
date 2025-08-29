@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLThumbnailRequestFillXPCRepresentation",
+    "function_argument_number": 0,
+    "function_signature": "__QLThumbnailRequestFillXPCRepresentation()",
+    "pseudocode": "__int64 _QLThumbnailRequestFillXPCRepresentation()\n{\n  return __QLThumbnailRequestFillXPCRepresentation();\n}"
+}

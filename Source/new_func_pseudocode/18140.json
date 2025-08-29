@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateFromFileSystemRepresentation",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLCreateFromFileSystemRepresentation(CFAllocatorRef allocator, const UInt8 * buffer, CFIndex bufLen, Boolean isDirectory)",
+    "pseudocode": "CFURLRef __cdecl CFURLCreateFromFileSystemRepresentation(\n        CFAllocatorRef allocator,\n        const UInt8 *buffer,\n        CFIndex bufLen,\n        Boolean isDirectory)\n{\n  return _CFURLCreateFromFileSystemRepresentation(allocator, buffer, bufLen, isDirectory);\n}"
+}

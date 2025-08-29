@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptor cryptDataFromBuffer:length:toStream:finished:error:]",
+    "function_argument_number": 7,
+    "function_signature": "-[SFUCryptor cryptDataFromBuffer:length:toStream:finished:error:](SFUCryptor * self, SEL a2, const char * a3, unsigned __int64 a4, id a5, bool a6, id * a7)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nbool __cdecl -[SFUCryptor cryptDataFromBuffer:length:toStream:finished:error:](\n        SFUCryptor *self,\n        SEL a2,\n        const char *a3,\n        unsigned __int64 a4,\n        id a5,\n        bool a6,\n        id *a7)\n{\n  return -[SFUCryptor cryptDataFromBuffer:length:toStream:finished:crc32:error:](\n           self,\n           \"cryptDataFromBuffer:length:toStream:finished:crc32:error:\",\n           a3,\n           a4,\n           a5,\n           a6,\n           0LL,\n           a7);\n}"
+}

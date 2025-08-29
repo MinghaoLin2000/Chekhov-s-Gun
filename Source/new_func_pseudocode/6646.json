@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_transaction_create",
+    "function_argument_number": 0,
+    "function_signature": "_os_transaction_create()",
+    "pseudocode": "__int64 os_transaction_create()\n{\n  return _os_transaction_create();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf3AnyD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf3AnyD2Ev(google::protobuf::Any * this)",
+    "pseudocode": "void __fastcall google::protobuf::Any::~Any(google::protobuf::Any *this)\n{\n  __int64 v2; // x20\n  __int64 v3; // x20\n\n  v2 = *((_QWORD *)this + 2);\n  if ( (__int64 *)v2 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v2 + 23) < 0 )\n      operator delete(*(void **)v2);\n    operator delete(v2, 0x1012C40EC159624LL);\n  }\n  v3 = *((_QWORD *)this + 3);\n  if ( (__int64 *)v3 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v3 + 23) < 0 )\n      operator delete(*(void **)v3);\n    operator delete(v3, 0x1012C40EC159624LL);\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

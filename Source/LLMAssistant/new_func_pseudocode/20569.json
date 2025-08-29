@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContentStreamRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFContentStreamRelease(CGPDFContentStreamRef cs)",
+    "pseudocode": "void __cdecl CGPDFContentStreamRelease(CGPDFContentStreamRef cs)\n{\n  _CGPDFContentStreamRelease(cs);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4Date9MergeFromERKS0_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP4Date9MergeFromERKS0_(TSP::Date * this, const TSP::Date * a2)",
+    "pseudocode": "double __fastcall TSP::Date::MergeFrom(TSP::Date *this, const TSP::Date *a2)\n{\n  __int64 v4; // x8\n  double result; // d0\n\n  v4 = *((_QWORD *)a2 + 1);\n  if ( (v4 & 1) != 0 )\n    sub_10003A25C((char *)this + 8, (v4 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  if ( (*((_BYTE *)a2 + 16) & 1) != 0 )\n  {\n    result = *((double *)a2 + 3);\n    *((_DWORD *)this + 4) |= 1u;\n    *((double *)this + 3) = result;\n  }\n  return result;\n}"
+}

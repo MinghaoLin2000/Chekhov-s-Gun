@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV13tabletPointerACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV13tabletPointerACvau()",
+    "pseudocode": "int *SystemEventMask.tabletPointer.unsafeMutableAddressor()\n{\n  if ( qword_10002A968 != -1 )\n    swift_once(&qword_10002A968, sub_1000160C4);\n  return &static SystemEventMask.tabletPointer;\n}"
+}

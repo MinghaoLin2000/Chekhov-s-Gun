@@ -1,0 +1,6 @@
+{
+    "function_name": "_atoll",
+    "function_argument_number": 1,
+    "function_signature": "_atoll(const char * a1)",
+    "pseudocode": "__int64 __cdecl atoll(const char *a1)\n{\n  return _atoll(a1);\n}"
+}

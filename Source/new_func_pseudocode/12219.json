@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf15UnknownFieldSet20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf15UnknownFieldSet20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE(google::protobuf::UnknownFieldSet * this, google::protobuf::io::CodedInputStream * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::UnknownFieldSet::ParseFromCodedStream(\n        google::protobuf::UnknownFieldSet *this,\n        google::protobuf::io::CodedInputStream *a2,\n        google::protobuf::UnknownFieldSet *a3)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( *(_QWORD *)this != *((_QWORD *)this + 1) )\n    google::protobuf::UnknownFieldSet::ClearFallback(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return google::protobuf::UnknownFieldSet::MergeFromCodedStream(this, a2, a3);\n}"
+}

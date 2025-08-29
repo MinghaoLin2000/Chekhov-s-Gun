@@ -1,0 +1,6 @@
+{
+    "function_name": "_geteuid",
+    "function_argument_number": 0,
+    "function_signature": "_geteuid()",
+    "pseudocode": "uid_t geteuid(void)\n{\n  return _geteuid();\n}"
+}

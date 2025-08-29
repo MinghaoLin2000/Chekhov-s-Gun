@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFLSRDelegateGetInterface",
+    "function_argument_number": 0,
+    "function_signature": "_SFLSRDelegateGetInterface()",
+    "pseudocode": "__int64 SFLSRDelegateGetInterface()\n{\n  return _SFLSRDelegateGetInterface();\n}"
+}

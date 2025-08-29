@@ -1,0 +1,6 @@
+{
+    "function_name": "___strncpy_chk",
+    "function_argument_number": 0,
+    "function_signature": "___strncpy_chk()",
+    "pseudocode": "__int64 __strncpy_chk()\n{\n  return ___strncpy_chk();\n}"
+}

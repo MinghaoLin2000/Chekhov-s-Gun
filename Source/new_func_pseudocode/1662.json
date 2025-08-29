@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController fileSharingViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFinderTabContainerViewController fileSharingViewController](DeviceFinderTabContainerViewController * self, SEL a2)",
+    "pseudocode": "DeviceFileSharingViewController *__cdecl -[DeviceFinderTabContainerViewController fileSharingViewController](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2)\n{\n  DeviceFileSharingViewController *fileSharingViewController; // x0\n  DeviceFileSharingViewController *v4; // x0\n  DeviceFileSharingViewController *v5; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  fileSharingViewController = self->_fileSharingViewController;\n  if ( !fileSharingViewController )\n  {\n    v4 = (DeviceFileSharingViewController *)objc_opt_new(&OBJC_CLASS___DeviceFileSharingViewController, a2);\n    v5 = self->_fileSharingViewController;\n    self->_fileSharingViewController = v4;\n    objc_release(v5);\n    fileSharingViewController = self->_fileSharingViewController;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(fileSharingViewController);\n}"
+}

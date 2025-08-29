@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater accessory]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater accessory](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "EAAccessory *__cdecl -[EAFirmwareUpdater accessory](EAFirmwareUpdater *self, SEL a2)\n{\n  return self->_accessory;\n}"
+}

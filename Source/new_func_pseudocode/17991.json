@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PlugInLibraryService initWithToken:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PlugInLibraryService initWithToken:](PlugInLibraryService * self, SEL a2, $115C4C562B26FF47E01F9F4EA65B5887 * a3)",
+    "pseudocode": "PlugInLibraryService *__cdecl -[PlugInLibraryService initWithToken:](\n        PlugInLibraryService *self,\n        SEL a2,\n        $115C4C562B26FF47E01F9F4EA65B5887 *a3)\n{\n  PlugInLibraryService *result; // x0\n  __int128 v5; // q0\n\n  result = -[PlugInLibraryService init](self, \"init\");\n  if ( result )\n  {\n    v5 = *(_OWORD *)a3->var0;\n    *(_OWORD *)&result->_xpcConnectionAuditToken.val[4] = *(_OWORD *)&a3->var0[4];\n    *(_OWORD *)result->_xpcConnectionAuditToken.val = v5;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableArray tsu_push:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSMutableArray tsu_push:](NSMutableArray * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[NSMutableArray tsu_push:](NSMutableArray *self, SEL a2, id a3)\n{\n  -[NSMutableArray addObject:](self, \"addObject:\", a3);\n}"
+}

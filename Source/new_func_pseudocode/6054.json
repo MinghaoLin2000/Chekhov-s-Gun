@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLCollectionAccessProvider collection]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceResourceURLCollectionAccessProvider collection](PAMediaConversionServiceResourceURLCollectionAccessProvider * self, SEL a2)",
+    "pseudocode": "PAMediaConversionServiceResourceURLCollection *__cdecl -[PAMediaConversionServiceResourceURLCollectionAccessProvider collection](\n        PAMediaConversionServiceResourceURLCollectionAccessProvider *self,\n        SEL a2)\n{\n  return (PAMediaConversionServiceResourceURLCollection *)objc_getProperty(self, a2, 56LL, 1);\n}"
+}

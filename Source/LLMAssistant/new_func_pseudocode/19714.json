@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionTransaction setDocumentCompressor:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IPPSessionTransaction setDocumentCompressor:](IPPSessionTransaction * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[IPPSessionTransaction setDocumentCompressor:](IPPSessionTransaction *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 160LL);\n}"
+}

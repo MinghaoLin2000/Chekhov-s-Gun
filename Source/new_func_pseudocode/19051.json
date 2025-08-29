@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController _notificationWindowTransferred]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController _notificationWindowTransferred](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SiriNCAlertViewController _notificationWindowTransferred](SiriNCAlertViewController *self, SEL a2)\n{\n  int v3; // w0\n\n  v3 = AFDeviceSupportsSystemAssistantExperience(self);\n  if ( v3 )\n    LOBYTE(v3) = (_os_feature_enabled_impl(\"SiriUI\", \"windowed_launch\") & 1) == 0 && self->_ncBreakOutState == 2;\n  return v3;\n}"
+}

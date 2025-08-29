@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController setModelLoaded:forSource:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceSettingsPhotosViewController setModelLoaded:forSource:](DeviceSettingsPhotosViewController * self, SEL a2, bool a3, int a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[DeviceSettingsPhotosViewController setModelLoaded:forSource:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        bool a3,\n        int a4)\n{\n  if ( a4 == 6 )\n    -[DeviceSettingsPhotosViewController setPhotosModelIsLoaded:](self, \"setPhotosModelIsLoaded:\", a3);\n  else\n    -[DeviceSettingsPhotosViewController setFolderModelIsLoaded:](self, \"setFolderModelIsLoaded:\", a3);\n}"
+}

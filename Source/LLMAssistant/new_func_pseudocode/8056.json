@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SPMessagesHelper enableCloudKitMessagesWithCompletionHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SPMessagesHelper enableCloudKitMessagesWithCompletionHandler:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[SPMessagesHelper enableCloudKitMessagesWithCompletionHandler:](SPMessagesHelper *self, SEL a2, id a3)\n{\n  id v3; // x19\n  dispatch_queue_global_s *v4; // x20\n  id v5; // x19\n  _QWORD block[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v7; // [xsp+28h] [xbp-18h]\n\n  v3 = objc_retain(a3);\n  v4 = objc_retainAutoreleasedReturnValue(dispatch_get_global_queue(17LL, 0LL));\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100003864;\n  block[3] = &unk_1000040A0;\n  v7 = v3;\n  v5 = objc_retain(v3);\n  dispatch_async(v4, block);\n  objc_release(v4);\n  objc_release(v7);\n  objc_release(v5);\n}"
+}

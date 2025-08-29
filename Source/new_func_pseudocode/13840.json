@@ -1,0 +1,6 @@
+{
+    "function_name": "_object_getClass",
+    "function_argument_number": 1,
+    "function_signature": "_object_getClass(id a1)",
+    "pseudocode": "Class __cdecl object_getClass(id a1)\n{\n  return _object_getClass(a1);\n}"
+}

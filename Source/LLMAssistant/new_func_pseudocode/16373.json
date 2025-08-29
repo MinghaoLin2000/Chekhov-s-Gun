@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater logStatusString:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater logStatusString:](EAFirmwareUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater logStatusString:](EAFirmwareUpdater *self, SEL a2, id a3)\n{\n  -[EAFirmwareUpdater log:format:](\n    self,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"%s %@\"),\n    \"-[EAFirmwareUpdater logStatusString:]\",\n    objc_autorelease(objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithFormat:\", CFSTR(\"STATUS: %@\"), a3)));\n}"
+}

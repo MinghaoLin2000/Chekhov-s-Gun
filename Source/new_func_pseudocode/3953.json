@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$getCString:maxLength:encoding:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$getCString:maxLength:encoding:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_getCString_maxLength_encoding_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"getCString:maxLength:encoding:\");\n}"
+}

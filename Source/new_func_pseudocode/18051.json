@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_CloseSession",
+    "function_argument_number": 1,
+    "function_signature": "_netfs_CloseSession(_QWORD * a1)",
+    "pseudocode": "__int64 __fastcall netfs_CloseSession(_QWORD *a1)\n{\n  __int64 v2; // x0\n  __int64 result; // x0\n\n  v2 = sub_100007BE8(*a1);\n  if ( !v2 )\n    return 45LL;\n  result = (*(__int64 (__fastcall **)(_QWORD))(*(_QWORD *)v2 + 96LL))(a1[1]);\n  if ( !(_DWORD)result )\n  {\n    free(a1);\n    return 0LL;\n  }\n  return result;\n}"
+}

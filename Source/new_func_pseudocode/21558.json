@@ -1,0 +1,6 @@
+{
+    "function_name": "+[LSRConnection captureProcessStartTime]",
+    "function_argument_number": 2,
+    "function_signature": "+[LSRConnection captureProcessStartTime](id a1, SEL a2)",
+    "pseudocode": "void __cdecl +[LSRConnection captureProcessStartTime](id a1, SEL a2)\n{\n  if ( qword_100065428 != -1 )\n    dispatch_once(&qword_100065428, &stru_100059C00);\n}"
+}

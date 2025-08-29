@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16MenuFlashStepperVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore16MenuFlashStepperVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MenuFlashStepper()\n{\n  return &type metadata for MenuFlashStepper;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv doubleByEvaluatingJavaScript:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv doubleByEvaluatingJavaScript:](ATXHeuristicJSEnv * self, SEL a2, id a3)",
+    "pseudocode": "double __cdecl -[ATXHeuristicJSEnv doubleByEvaluatingJavaScript:](ATXHeuristicJSEnv *self, SEL a2, id a3)\n{\n  JSValue *v3; // x19\n  double v4; // d0\n  double v5; // d8\n\n  v3 = objc_retainAutoreleasedReturnValue(-[JSContext evaluateScript:](self->_jsContext, \"evaluateScript:\", a3));\n  -[JSValue toDouble](v3, \"toDouble\");\n  v5 = v4;\n  objc_release(v3);\n  return v5;\n}"
+}

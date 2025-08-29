@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectGetMidX",
+    "function_argument_number": 1,
+    "function_signature": "_CGRectGetMidX(CGRect rect)",
+    "pseudocode": "CGFloat __cdecl CGRectGetMidX(CGRect rect)\n{\n  return _CGRectGetMidX(rect);\n}"
+}

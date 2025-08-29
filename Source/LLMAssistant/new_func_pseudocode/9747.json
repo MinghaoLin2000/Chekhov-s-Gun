@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16DocumentRevision5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16DocumentRevision5ClearEv(TSP::DocumentRevision * this)",
+    "pseudocode": "__int64 __fastcall TSP::DocumentRevision::Clear(TSP::DocumentRevision *this)\n{\n  int v1; // w8\n  unsigned __int64 v2; // x9\n  __int64 result; // x0\n  char v4; // t1\n\n  v1 = *((_DWORD *)this + 4);\n  if ( (v1 & 1) != 0 )\n  {\n    v2 = *((_QWORD *)this + 3) & 0xFFFFFFFFFFFFFFFELL;\n    if ( *(char *)(v2 + 23) < 0 )\n    {\n      **(_BYTE **)v2 = 0;\n      *(_QWORD *)(v2 + 8) = 0LL;\n    }\n    else\n    {\n      *(_BYTE *)v2 = 0;\n      *(_BYTE *)(v2 + 23) = 0;\n    }\n  }\n  if ( (v1 & 6) != 0 )\n  {\n    *((_DWORD *)this + 10) = 0;\n    *((_QWORD *)this + 4) = 0LL;\n  }\n  v4 = *((_BYTE *)this + 8);\n  result = (__int64)this + 8;\n  *(_DWORD *)(result + 8) = 0;\n  if ( (v4 & 1) != 0 )\n    return sub_10003A2A8(result);\n  return result;\n}"
+}

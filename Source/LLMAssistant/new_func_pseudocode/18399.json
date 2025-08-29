@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOServiceOpen",
+    "function_argument_number": 4,
+    "function_signature": "_IOServiceOpen(io_service_t service, task_port_t owningTask, uint32_t type, io_connect_t * connect)",
+    "pseudocode": "kern_return_t __cdecl IOServiceOpen(io_service_t service, task_port_t owningTask, uint32_t type, io_connect_t *connect)\n{\n  return _IOServiceOpen(service, owningTask, type, connect);\n}"
+}

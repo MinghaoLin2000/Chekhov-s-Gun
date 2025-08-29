@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper25GlobalPermissionViewModelCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper25GlobalPermissionViewModelCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for GlobalPermissionViewModel(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CBA80;\n  if ( !qword_1000CBA80 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for GlobalPermissionViewModel);\n  return result;\n}"
+}

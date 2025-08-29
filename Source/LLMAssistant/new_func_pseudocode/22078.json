@@ -1,0 +1,6 @@
+{
+    "function_name": "_CompareGuid",
+    "function_argument_number": 2,
+    "function_signature": "_CompareGuid(int32x4_t * a1, int32x4_t * a2)",
+    "pseudocode": "bool __fastcall CompareGuid(int32x4_t *a1, int32x4_t *a2)\n{\n  int8x16_t v2; // q0\n\n  v2 = (int8x16_t)vsubq_s32(*a1, *a2);\n  return vorr_s8(*(int8x8_t *)v2.i8, (int8x8_t)*(_OWORD *)&vextq_s8(v2, v2, 8uLL)) == 0LL;\n}"
+}

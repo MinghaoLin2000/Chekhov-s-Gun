@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14MessageOptionsD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14MessageOptionsD2Ev(google::protobuf::MessageOptions * this)",
+    "pseudocode": "void __fastcall google::protobuf::MessageOptions::~MessageOptions(google::protobuf::MessageOptions *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_1000B93A0((char *)this + 48);\n  google::protobuf::internal::ExtensionSet::~ExtensionSet((google::protobuf::MessageOptions *)((char *)this + 16));\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$downloadAvailableFirmwareUpdate:assetID:withUserIntent:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$downloadAvailableFirmwareUpdate:assetID:withUserIntent:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_downloadAvailableFirmwareUpdate_assetID_withUserIntent_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"downloadAvailableFirmwareUpdate:assetID:withUserIntent:\");\n}"
+}

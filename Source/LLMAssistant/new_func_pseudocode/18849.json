@@ -1,0 +1,6 @@
+{
+    "function_name": "+[RemoteViewBridgeSendRight wrapSendRight:transferOwnership:]",
+    "function_argument_number": 4,
+    "function_signature": "+[RemoteViewBridgeSendRight wrapSendRight:transferOwnership:](id a1, SEL a2, unsigned int a3, bool a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl +[RemoteViewBridgeSendRight wrapSendRight:transferOwnership:](id a1, SEL a2, unsigned int a3, bool a4)\n{\n  __int64 v5; // x19\n  RemoteViewBridgeSendRight *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( a3 - 1 > 0xFFFFFFFD )\n  {\n    v6 = 0LL;\n  }\n  else\n  {\n    v5 = *(_QWORD *)&a3;\n    v6 = objc_opt_new(&OBJC_CLASS___RemoteViewBridgeSendRight);\n    if ( v6 )\n    {\n      if ( a4 || !mach_port_mod_refs(mach_task_self_, v5, 0, 1) )\n        -[RemoteViewBridgeSendRight setSendRight:](v6, \"setSendRight:\", v5);\n    }\n    else\n    {\n      mach_port_deallocate(mach_task_self_, v5);\n    }\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

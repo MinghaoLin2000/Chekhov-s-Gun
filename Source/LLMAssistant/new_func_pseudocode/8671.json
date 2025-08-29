@@ -1,0 +1,6 @@
+{
+    "function_name": "_snprintf",
+    "function_argument_number": 3,
+    "function_signature": "_snprintf(char * __str, size_t __size, const char * __format)",
+    "pseudocode": "int snprintf(char *__str, size_t __size, const char *__format, ...)\n{\n  return _snprintf(__str, __size, __format);\n}"
+}

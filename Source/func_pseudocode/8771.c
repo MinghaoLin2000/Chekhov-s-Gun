@@ -1,0 +1,5 @@
+_$s34AppleMediaServicesUIDynamicService15AccountsWrapperCMa
+__int64 type metadata accessor for AccountsWrapper()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService15AccountsWrapper);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE21setSpaceAbsoluteLevel_5levelyAC8CGSSpaceV_s5Int32VtF",
+    "function_argument_number": 2,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE21setSpaceAbsoluteLevel_5levelyAC8CGSSpaceV_s5Int32VtF(EyeCandyGraphics::CGSSpace _, Swift::Int32 level)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall SLSTransactionRef.setSpaceAbsoluteLevel(_:level:)(\n        EyeCandyGraphics::CGSSpace _,\n        Swift::Int32 level)\n{\n  __int64 v2; // x20\n\n  _SLSTransactionSetSpaceAbsoluteLevel(v2, _.spid, *(_QWORD *)&level);\n}"
+}

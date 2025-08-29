@@ -1,0 +1,131 @@
+Service Path:
+/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceHID.xpc/Contents/MacOS/UARPUpdaterServiceHID
+
+Service Exported Protocols:
+@protocol GoldRestoreUARPStatusDelegate <NSObject>
+- (void)accessoryTransportNeeded:(UARPAccessoryID *)arg1 isNeeded:(_Bool)arg2;
+- (void)assetAvailablityUpdateForAccessoryID:(UARPAccessoryID *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)stagedFirmwareRescindComplete:(UARPAccessoryID *)arg1 withStatus:(unsigned long long)arg2;
+- (void)stagedFirmwareApplicationComplete:(UARPAccessoryID *)arg1 withStatus:(unsigned long long)arg2;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 suffixNeedsLUN:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 prefixNeedsLUN:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 liveNonce:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 enableMixMatch:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 epoch:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 productionMode:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 securityMode:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 securityDomain:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 ecid:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 chipRevision:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 chipID:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 boardID:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 manifestPrefix:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 friendlyName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 hwFusingType:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 appleModelNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 serialNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 hardwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 stats:(UARPStats *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 stagedFirmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 firmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 modelName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessoryID:(UARPAccessoryID *)arg1 manufacturer:(NSString *)arg2 error:(NSError *)arg3;
+- (void)assetSolicitationComplete:(UARPAccessoryID *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)assetSolicitationComplete:(UARPAccessoryID *)arg1 withStatus:(unsigned long long)arg2;
+- (void)assetSolicitationProgress:(UARPAccessoryID *)arg1 assetID:(UARPAssetID *)arg2 bytesReceived:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)assetSolicitationProgress:(UARPAccessoryID *)arg1 bytesReceived:(unsigned long long)arg2 bytesTotal:(unsigned long long)arg3;
+- (void)firmwareStagingComplete:(UARPAccessoryID *)arg1 withStatus:(unsigned long long)arg2;
+- (void)firmwareStagingProgress:(UARPAccessoryID *)arg1 bytesSent:(unsigned long long)arg2 bytesTotal:(unsigned long long)arg3;
+@end
+@protocol UARPControllerChipInfoDelegate <NSObject>
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 suffixNeedsLUN:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 prefixNeedsLUN:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 liveNonce:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 enableMixMatch:(_Bool)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 epoch:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 productionMode:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 securityMode:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 securityDomain:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 ecid:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 chipRevision:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 chipID:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 boardID:(unsigned long long)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 manifestPrefix:(NSString *)arg2 error:(NSError *)arg3;
+@end
+@protocol UARPControllerDelegateProtocol <NSObject>
+- (_Bool)sendMessageToAccessory:(UARPAccessory *)arg1 uarpMsg:(NSData *)arg2 error:(id *)arg3;
+- (void)assetAvailablityUpdateForAccessoryID:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsDownloaded:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsPreInstalled:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)firmwareUpdateComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareUpdateProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)assetStagingResume:(UARPAccessory *)arg1;
+- (void)assetStagingPause:(UARPAccessory *)arg1;
+- (void)assetAvailablityUpdateForAccessory:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)accessoryTransportNeeded:(UARPAccessory *)arg1 isNeeded:(_Bool)arg2;
+- (void)attestationCertificates:(NSDictionary *)arg1 forSubjectKeyIdentifier:(NSString *)arg2;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2 isComplete:(_Bool)arg3;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2;
+- (UARPUploader *)newUploader;
+- (void)assetSolicitationComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)assetSolicitationProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesReceived:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)stagedFirmwareRescindComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)stagedFirmwareApplicationComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 friendlyName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hwFusingType:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 appleModelNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 serialNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hardwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stats:(UARPStats *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stagedFirmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 firmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 modelName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 manufacturer:(NSString *)arg2 error:(NSError *)arg3;
+- (void)firmwareStagingComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareStagingProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)firmwareUpdateResult:(UARPAccessory *)arg1 vendorSpecificStatus:(unsigned int)arg2 error:(NSError *)arg3;
+@end
+@protocol UARPServiceMonitorProtocol <NSObject>
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)matchingService:(unsigned int)arg1 identifier:(NSString *)arg2;
+- (NSArray *)getBSDNotificationsList;
+- (NSArray *)getMatchingServicesList;
+@end
+@protocol UARPStandaloneCommandRequestor <NSObject>
+- (void)dynamicAssetSolicitationComplete:(NSArray *)arg1;
+- (void)dynamicAssetSolicitationComplete:(NSArray *)arg1 modelNumber:(NSString *)arg2;
+@end
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.accessoryupdater.uarp
+	[Value]
+		[Bool] true
+	[Key] com.apple.hid.manager.user-access-privileged
+	[Value]
+		[Bool] true
+	[Key] com.apple.powerlog.plxpclogger.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] IOHIDLibUserClient
+			[String] AppleHPMUserClient

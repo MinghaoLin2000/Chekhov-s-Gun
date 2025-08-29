@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SPCloudStorageHelper init]",
+    "function_argument_number": 2,
+    "function_signature": "-[SPCloudStorageHelper init](SPCloudStorageHelper * self, SEL a2)",
+    "pseudocode": "SPCloudStorageHelper *__cdecl -[SPCloudStorageHelper init](SPCloudStorageHelper *self, SEL a2)\n{\n  SPCloudStorageHelper *v2; // x19\n  ACAccountStore *v3; // x0\n  ACAccountStore *acStore; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___SPCloudStorageHelper;\n  v2 = -[SPCloudStorageHelper init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = (ACAccountStore *)objc_alloc_init((Class)&OBJC_CLASS___ACAccountStore);\n    acStore = v2->_acStore;\n    v2->_acStore = v3;\n    objc_release(acStore);\n  }\n  return v2;\n}"
+}

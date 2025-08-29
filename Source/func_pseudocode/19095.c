@@ -1,0 +1,5 @@
+_LSCopyApplicationURLsForBundleIdentifier
+CFArrayRef __cdecl LSCopyApplicationURLsForBundleIdentifier(CFStringRef inBundleIdentifier, CFErrorRef *outError)
+{
+  return _LSCopyApplicationURLsForBundleIdentifier(inBundleIdentifier, outError);
+}

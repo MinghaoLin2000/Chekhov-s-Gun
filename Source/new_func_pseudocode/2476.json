@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBackUpSettingsViewController deviceSyncPrefsDidChange]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceBackUpSettingsViewController deviceSyncPrefsDidChange](DeviceBackUpSettingsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceBackUpSettingsViewController deviceSyncPrefsDidChange](\n        DeviceBackUpSettingsViewController *self,\n        SEL a2)\n{\n  AMPDeviceSyncPrefs *v3; // x20\n  unsigned int v4; // w21\n  NSButton *v5; // x22\n  NSButton *v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  v4 = (unsigned int)-[AMPDeviceSyncPrefs backupToCloud](v3, \"backupToCloud\");\n  objc_release(v3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceBackUpSettingsViewController backUpToCloudRadio](self, \"backUpToCloudRadio\"));\n  -[NSButton setState:](v5, \"setState:\", v4);\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceBackUpSettingsViewController backUpToComputerRadio](self, \"backUpToComputerRadio\"));\n  -[NSButton setState:](v6, \"setState:\", v4 ^ 1);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

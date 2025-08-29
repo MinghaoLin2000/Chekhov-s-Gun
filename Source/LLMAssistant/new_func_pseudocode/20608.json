@@ -1,0 +1,6 @@
+{
+    "function_name": "_notify_post",
+    "function_argument_number": 1,
+    "function_signature": "_notify_post(const char * name)",
+    "pseudocode": "uint32_t __cdecl notify_post(const char *name)\n{\n  return _notify_post(name);\n}"
+}

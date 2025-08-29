@@ -1,0 +1,6 @@
+{
+    "function_name": "_OSAGetScriptInfo",
+    "function_argument_number": 4,
+    "function_signature": "_OSAGetScriptInfo(ComponentInstance scriptingComponent, OSAID scriptID, OSType selector, __int64 * result)",
+    "pseudocode": "OSAError __cdecl OSAGetScriptInfo(\n        ComponentInstance scriptingComponent,\n        OSAID scriptID,\n        OSType selector,\n        __int64 *result)\n{\n  return _OSAGetScriptInfo(scriptingComponent, scriptID, selector, result);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NotesImporter archiveEvernoteNotesFromBookmarkData:completionBlock:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NotesImporter archiveEvernoteNotesFromBookmarkData:completionBlock:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[NotesImporter archiveEvernoteNotesFromBookmarkData:completionBlock:](\n        NotesImporter *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void (__fastcall **v6)(id, void *, id); // x19\n  id v7; // x22\n  ICEvernoteNoteParser *v8; // x23\n  void *v9; // x20\n  id v10; // x21\n  id v11; // [xsp+8h] [xbp-38h] BYREF\n\n  v6 = (void (__fastcall **)(id, void *, id))objc_retain(a4);\n  v7 = objc_retain(a3);\n  v8 = objc_retainAutoreleasedReturnValue(-[NotesImporter evernoteNoteParser](self, \"evernoteNoteParser\"));\n  v11 = 0LL;\n  v9 = objc_retainAutoreleasedReturnValue(\n         -[ICEvernoteNoteParser archiveItemsFromBookmarkData:error:](\n           v8,\n           \"archiveItemsFromBookmarkData:error:\",\n           v7,\n           &v11));\n  objc_release(v7);\n  v10 = objc_retain(v11);\n  objc_release(v8);\n  if ( v6 )\n    v6[2](v6, v9, v10);\n  objc_release(v9);\n  objc_release(v10);\n  objc_release(v6);\n}"
+}

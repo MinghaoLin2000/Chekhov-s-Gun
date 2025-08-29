@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup25AnnotationsViewController maxPageRectWithPageIndex:forAnnotationController:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC13DisplayMarkup25AnnotationsViewController maxPageRectWithPageIndex:forAnnotationController:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "CGRect __cdecl -[AnnotationsViewController maxPageRectWithPageIndex:forAnnotationController:](\n        _TtC13DisplayMarkup25AnnotationsViewController *self,\n        SEL a2,\n        signed __int64 a3,\n        id a4)\n{\n  id v5; // x21\n  _TtC13DisplayMarkup25AnnotationsViewController *v6; // x20\n  double v7; // d8\n  double v8; // d1\n  double v9; // d9\n  double v10; // d2\n  double v11; // d10\n  double v12; // d3\n  double v13; // d11\n  double v14; // d0\n  double v15; // d1\n  double v16; // d2\n  double v17; // d3\n  CGRect result; // 0:d0.8,8:d1.8,16:d2.8,24:d3.8\n\n  v5 = objc_retain(a4);\n  v6 = objc_retain(self);\n  v7 = sub_10000BFA4();\n  v9 = v8;\n  v11 = v10;\n  v13 = v12;\n  objc_release(v5);\n  objc_release(v6);\n  v14 = v7;\n  v15 = v9;\n  v16 = v11;\n  v17 = v13;\n  result.size.height = v17;\n  result.size.width = v16;\n  result.origin.y = v15;\n  result.origin.x = v14;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSummaryViewController supportsBackup]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSummaryViewController supportsBackup](DeviceSummaryViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSummaryViewController supportsBackup](DeviceSummaryViewController *self, SEL a2)\n{\n  AMPDevice *v2; // x19\n  bool v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[DeviceViewController device](self, \"device\"));\n  v3 = -[AMPDevice deviceType](v2, \"deviceType\") != (void *)1;\n  objc_release(v2);\n  return v3;\n}"
+}

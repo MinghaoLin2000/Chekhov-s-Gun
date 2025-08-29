@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextGetData",
+    "function_argument_number": 1,
+    "function_signature": "_CGBitmapContextGetData(CGContextRef context)",
+    "pseudocode": "void *__cdecl CGBitmapContextGetData(CGContextRef context)\n{\n  return _CGBitmapContextGetData(context);\n}"
+}

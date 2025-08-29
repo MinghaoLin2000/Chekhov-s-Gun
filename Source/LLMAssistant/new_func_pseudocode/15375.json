@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate getDefaultBool:defaultValue:]",
+    "function_argument_number": 4,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate getDefaultBool:defaultValue:](UARPUpdaterDisplayControllerDelegate * self, SEL a2, __CFString * a3, bool a4)",
+    "pseudocode": "bool __cdecl -[UARPUpdaterDisplayControllerDelegate getDefaultBool:defaultValue:](\n        UARPUpdaterDisplayControllerDelegate *self,\n        SEL a2,\n        __CFString *a3,\n        bool a4)\n{\n  int AppBooleanValue; // w0\n  Boolean keyExistsAndHasValidFormat; // [xsp+Fh] [xbp-11h] BYREF\n\n  if ( +[UARPUpdaterDisplayControllerDelegate hostIsInternal](\n         &OBJC_CLASS___UARPUpdaterDisplayControllerDelegate,\n         \"hostIsInternal\") )\n  {\n    keyExistsAndHasValidFormat = 0;\n    AppBooleanValue = CFPreferencesGetAppBooleanValue(\n                        a3,\n                        CFSTR(\"com.apple.DarwinAccessoryUpdate.A2525\"),\n                        &keyExistsAndHasValidFormat);\n    if ( keyExistsAndHasValidFormat )\n      return AppBooleanValue != 0;\n  }\n  return a4;\n}"
+}

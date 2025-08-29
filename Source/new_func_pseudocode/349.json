@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsRentalsTabContentViewController selectionShouldChangeInOutlineView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsRentalsTabContentViewController selectionShouldChangeInOutlineView:](DeviceSettingsRentalsTabContentViewController * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsRentalsTabContentViewController selectionShouldChangeInOutlineView:](\n        DeviceSettingsRentalsTabContentViewController *self,\n        SEL a2,\n        id a3)\n{\n  return 0;\n}"
+}

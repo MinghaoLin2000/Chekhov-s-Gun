@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setExcludeUniqueAccessoryCheck:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setExcludeUniqueAccessoryCheck:](EAFirmwareUpdater * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setExcludeUniqueAccessoryCheck:](EAFirmwareUpdater *self, SEL a2, bool a3)\n{\n  self->_excludeUniqueAccessoryCheck = a3;\n}"
+}

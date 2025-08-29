@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUReadChannelNSInputStreamAdaptor getBuffer:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUReadChannelNSInputStreamAdaptor getBuffer:length:](SFUReadChannelNSInputStreamAdaptor * self, SEL a2, char ** a3, unsigned __int64 * a4)",
+    "pseudocode": "bool __cdecl -[SFUReadChannelNSInputStreamAdaptor getBuffer:length:](\n        SFUReadChannelNSInputStreamAdaptor *self,\n        SEL a2,\n        char **a3,\n        unsigned __int64 *a4)\n{\n  return 0;\n}"
+}

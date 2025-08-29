@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_numberOfKeysInKeyPath]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_numberOfKeysInKeyPath](NSString * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSString tsu_numberOfKeysInKeyPath](NSString *self, SEL a2)\n{\n  NSUInteger v3; // x21\n  char *v4; // x4\n  unsigned __int64 v5; // x20\n  NSUInteger v6; // x5\n  char *v7; // x0\n  __int64 v8; // x1\n\n  v3 = -[NSString length](self, \"length\");\n  v4 = 0LL;\n  v5 = 0LL;\n  v6 = v3;\n  do\n  {\n    v7 = (char *)-[NSString rangeOfString:options:range:](self, \"rangeOfString:options:range:\", CFSTR(\".\"), 2LL, v4, v6);\n    ++v5;\n    v4 = &v7[v8];\n    v6 = v3 - (_QWORD)&v7[v8];\n  }\n  while ( &v7[v8] != (char *)0x7FFFFFFFFFFFFFFFLL );\n  return v5;\n}"
+}

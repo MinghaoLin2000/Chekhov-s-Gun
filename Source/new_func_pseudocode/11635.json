@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal15DynamicMapField19SetMapIteratorValueEPNS0_11MapIteratorE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf8internal15DynamicMapField19SetMapIteratorValueEPNS0_11MapIteratorE(__int64 ** a2, __int64 a1)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::DynamicMapField::SetMapIteratorValue(__int64 a1, __int64 **a2)\n{\n  __int64 v2; // x20\n  __int64 result; // x0\n\n  v2 = **a2;\n  if ( v2 )\n  {\n    result = sub_1000CDA48(a2 + 2, **a2);\n    *((_DWORD *)a2 + 14) = *(_DWORD *)(v2 + 40);\n    a2[6] = *(__int64 **)(v2 + 32);\n  }\n  return result;\n}"
+}

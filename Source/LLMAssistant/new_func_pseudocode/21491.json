@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection makeEuclidInstanceWithLocale:clientID:encoderType:initFlag:reply:]",
+    "function_argument_number": 7,
+    "function_signature": "-[LSRConnection makeEuclidInstanceWithLocale:clientID:encoderType:initFlag:reply:](LSRConnection * self, SEL a2, id a3, id a4, signed __int64 a5, signed __int64 a6, id a7)",
+    "pseudocode": "void __cdecl -[LSRConnection makeEuclidInstanceWithLocale:clientID:encoderType:initFlag:reply:](\n        LSRConnection *self,\n        SEL a2,\n        id a3,\n        id a4,\n        signed __int64 a5,\n        signed __int64 a6,\n        id a7)\n{\n  -[EARInterface makeEuclidInstanceWithLocale:clientID:encoderType:initFlag:reply:](\n    self->_earInterface,\n    \"makeEuclidInstanceWithLocale:clientID:encoderType:initFlag:reply:\",\n    a3,\n    a4,\n    a5,\n    a6,\n    a7);\n}"
+}

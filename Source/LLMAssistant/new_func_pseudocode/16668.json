@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater shouldUpdateBeSilent:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAAccessoryUpdater shouldUpdateBeSilent:](EAAccessoryUpdater * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[EAAccessoryUpdater shouldUpdateBeSilent:](EAAccessoryUpdater *self, SEL a2, id a3)\n{\n  EAFirmwareUpdater *firmwareUpdater; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater shouldUpdateBeSilent:]\",\n    1268LL);\n  firmwareUpdater = self->firmwareUpdater;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[EAFirmwareUpdater forceSilentUpdate](firmwareUpdater, \"forceSilentUpdate\");\n}"
+}

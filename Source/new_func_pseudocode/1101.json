@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController loadModelForPhotos]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController loadModelForPhotos](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController loadModelForPhotos](DeviceSettingsPhotosViewController *self, SEL a2)\n{\n  NSProgressIndicator *v3; // x20\n  FileEventObserver *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( !-[DeviceSettingsPhotosViewController photosIsLoading](self, \"photosIsLoading\") )\n  {\n    -[DeviceSettingsPhotosViewController setPhotosIsLoading:](self, \"setPhotosIsLoading:\", 1LL);\n    v3 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPhotosViewController progressIndicator](self, \"progressIndicator\"));\n    -[NSProgressIndicator setHidden:](v3, \"setHidden:\", 0LL);\n    objc_release(v3);\n    v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPhotosViewController fileEventObserver](self, \"fileEventObserver\"));\n    -[FileEventObserver setPath:](v4, \"setPath:\", 0LL);\n    objc_release(v4);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[DeviceSettingsPhotosViewController loadPhotoKit](self, \"loadPhotoKit\");\n  }\n}"
+}

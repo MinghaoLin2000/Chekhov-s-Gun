@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper19ControlCenterHelper useVerboseTitle:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC19ControlCenterHelper19ControlCenterHelper useVerboseTitle:](_TtC19ControlCenterHelper19ControlCenterHelper * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[ControlCenterHelper useVerboseTitle:](\n        _TtC19ControlCenterHelper19ControlCenterHelper *self,\n        SEL a2,\n        bool a3)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  swift_retain(self);\n  ControlCenterHelper.useVerboseTitle(_:)(a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_release(self);\n}"
+}

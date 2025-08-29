@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipInflateReadChannel handleFailureWithHandler:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipInflateReadChannel handleFailureWithHandler:error:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUZipInflateReadChannel handleFailureWithHandler:error:](\n        TSUZipInflateReadChannel *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void (*v5)(void); // x23\n  id v6; // x19\n  id v7; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  if ( a4 )\n  {\n    v5 = (void (*)(void))*((_QWORD *)a3 + 2);\n    v6 = objc_retain(a3);\n    v5();\n  }\n  else\n  {\n    v7 = objc_retain(a3);\n    v6 = objc_retainAutoreleasedReturnValue(\n           +[NSError tsu_fileReadUnknownErrorWithUserInfo:](\n             &OBJC_CLASS___NSError,\n             \"tsu_fileReadUnknownErrorWithUserInfo:\",\n             0LL));\n    (*((void (__fastcall **)(id, __int64, _QWORD, id))a3 + 2))(v7, 1LL, 0LL, v6);\n    objc_release(v7);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

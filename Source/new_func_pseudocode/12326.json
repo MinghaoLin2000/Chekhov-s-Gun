@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10LogMessage6FinishEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal10LogMessage6FinishEv(google::protobuf::internal::LogMessage * this)",
+    "pseudocode": "const char **__fastcall google::protobuf::internal::LogMessage::Finish(const char **this)\n{\n  const char **v1; // x19\n  __int64 v2; // x0\n  int v3; // w8\n  void *exception; // x20\n\n  v1 = this;\n  if ( *(_DWORD *)this == 3 )\n  {\n    v2 = 3LL;\n  }\n  else\n  {\n    v3 = atomic_load((unsigned int *)&unk_1001F7F40);\n    if ( v3 > 0 )\n      goto LABEL_6;\n    v2 = *(unsigned int *)this;\n  }\n  this = (const char **)off_1001F6E88(v2, v1[1], *((_DWORD *)v1 + 4), (__int64)(v1 + 3));\nLABEL_6:\n  if ( *(_DWORD *)v1 == 3 )\n  {\n    exception = __cxa_allocate_exception(0x30uLL);\n    sub_1001181F4(exception, v1[1], *((unsigned int *)v1 + 4), v1 + 3);\n    __cxa_throw(\n      exception,\n      (struct type_info *)&`typeinfo for'google::protobuf::FatalException,\n      (void (__fastcall *)(void *))google::protobuf::FatalException::~FatalException);\n  }\n  return this;\n}"
+}

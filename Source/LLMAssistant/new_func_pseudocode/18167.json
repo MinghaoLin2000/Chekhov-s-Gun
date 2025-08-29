@@ -1,0 +1,6 @@
+{
+    "function_name": "_gai_strerror",
+    "function_argument_number": 1,
+    "function_signature": "_gai_strerror(int a1)",
+    "pseudocode": "const char *__cdecl gai_strerror(int a1)\n{\n  return _gai_strerror(a1);\n}"
+}

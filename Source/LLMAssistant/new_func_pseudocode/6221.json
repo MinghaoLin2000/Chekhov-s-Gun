@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueue anyDestinationURLCollectionForQueueEntry:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueue anyDestinationURLCollectionForQueueEntry:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[MediaConversionQueue anyDestinationURLCollectionForQueueEntry:](MediaConversionQueue *self, SEL a2, id a3)\n{\n  os_unfair_lock_s *p_queueStateLock; // x19\n  id v4; // x20\n  void *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  p_queueStateLock = &self->_queueStateLock;\n  v4 = objc_retain(a3);\n  os_unfair_lock_lock(p_queueStateLock);\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"anyDestinationURLCollection\"));\n  objc_release(v4);\n  os_unfair_lock_unlock(p_queueStateLock);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

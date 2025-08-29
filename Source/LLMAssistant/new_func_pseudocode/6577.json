@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker setupCoreImageGraphDumpCapture]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker setupCoreImageGraphDumpCapture](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MediaConversionRequestTracker setupCoreImageGraphDumpCapture](\n        MediaConversionRequestTracker *self,\n        SEL a2)\n{\n  NSSet *v3; // x0\n  NSSet *coreImageGraphDumpURLsAtStart; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( -[MediaConversionRequestTracker shouldDump](self, \"shouldDump\") )\n  {\n    setenv(\"CI_PRINT_TREE\", \"4 pdf\", 1);\n    v3 = (NSSet *)objc_retainAutoreleasedReturnValue(\n                    -[MediaConversionRequestTracker graphDumpURLsForCurrentProcessIdentifier](\n                      self,\n                      \"graphDumpURLsForCurrentProcessIdentifier\"));\n    coreImageGraphDumpURLsAtStart = self->_coreImageGraphDumpURLsAtStart;\n    self->_coreImageGraphDumpURLsAtStart = v3;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(coreImageGraphDumpURLsAtStart);\n  }\n}"
+}

@@ -1,0 +1,5 @@
+{
+    "/System/Library/PrivateFrameworks/MediaConversionService.framework/Versions/A/XPCServices/com.apple.photos.ImageConversionService.xpc/Contents/MacOS/com.apple.photos.ImageConversionService": [
+        "-[ImageConversionService convertImageWithOptions:reply:]"
+    ]
+}

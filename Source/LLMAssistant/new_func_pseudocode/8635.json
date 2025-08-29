@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue majorityHalfTargetsHit]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTargetQueue majorityHalfTargetsHit](MXMTargetQueue * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[MXMTargetQueue majorityHalfTargetsHit](MXMTargetQueue *self, SEL a2)\n{\n  double v3; // d8\n\n  v3 = (double)-[MXMTargetQueue halfTargetHits](self, \"halfTargetHits\");\n  return (double)-[MXMTargetQueue size](self, \"size\") * 0.25 <= v3;\n}"
+}

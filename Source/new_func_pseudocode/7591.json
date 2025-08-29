@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGSizeV16EyeCandyGraphicsE1moiyA2B_ABtFZ",
+    "function_argument_number": 3,
+    "function_signature": "_$sSo6CGSizeV16EyeCandyGraphicsE1moiyA2B_ABtFZ(double a1, double a3, double a2)",
+    "pseudocode": "double __fastcall static CGSize.* infix(_:_:)(double a1, double a2, double a3)\n{\n  return a1 * a3;\n}"
+}

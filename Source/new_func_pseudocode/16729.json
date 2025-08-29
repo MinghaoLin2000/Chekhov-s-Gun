@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAnalyticsStagingStatusToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAnalyticsStagingStatusToString()",
+    "pseudocode": "__int64 UARPAnalyticsStagingStatusToString()\n{\n  return _UARPAnalyticsStagingStatusToString();\n}"
+}

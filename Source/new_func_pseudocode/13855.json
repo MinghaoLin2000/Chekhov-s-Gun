@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_changes",
+    "function_argument_number": 1,
+    "function_signature": "_sqlite3_changes(sqlite3 * a1)",
+    "pseudocode": "int __cdecl sqlite3_changes(sqlite3 *a1)\n{\n  return _sqlite3_changes(a1);\n}"
+}

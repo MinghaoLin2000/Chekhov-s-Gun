@@ -1,0 +1,6 @@
+{
+    "function_name": "_abort",
+    "function_argument_number": 0,
+    "function_signature": "_abort()",
+    "pseudocode": "void __noreturn abort(void)\n{\n  _abort();\n}"
+}

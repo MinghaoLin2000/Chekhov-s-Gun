@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15PackageMetadataD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP15PackageMetadataD1Ev(TSP::PackageMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::PackageMetadata::~PackageMetadata(TSP::PackageMetadata *this)\n{\n  __ZN3TSP15PackageMetadataD2Ev(this);\n}"
+}

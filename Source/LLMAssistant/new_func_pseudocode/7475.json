@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV11getTileRect10connectionSo6CGRectVAA13CGSConnectionV_tF",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV11getTileRect10connectionSo6CGRectVAA13CGSConnectionV_tF()",
+    "pseudocode": "// attributes: thunk\n__int64 CGSSpace.getTileRect(connection:)()\n{\n  return _CGSSpaceGetRect();\n}"
+}

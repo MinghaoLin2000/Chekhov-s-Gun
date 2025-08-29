@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper19ControlCenterHelper confirmTurnOffBluetoothWithRequest:response:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC19ControlCenterHelper19ControlCenterHelper confirmTurnOffBluetoothWithRequest:response:](_TtC19ControlCenterHelper19ControlCenterHelper * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[ControlCenterHelper confirmTurnOffBluetoothWithRequest:response:](\n        _TtC19ControlCenterHelper19ControlCenterHelper *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  __int64 v7; // x19\n  __int64 v8; // x24\n  __int64 v9; // x8\n  char *v10; // x23\n  void *v11; // x21\n  __int64 v12; // x22\n  __int64 v13; // [xsp+0h] [xbp-30h] BYREF\n\n  v7 = sub_10006ED20(0LL, a2);\n  v8 = *(_QWORD *)(v7 - 8);\n  __chkstk_darwin();\n  v10 = (char *)&v13 - ((v9 + 15) & 0xFFFFFFFFFFFFFFF0LL);\n  v11 = _Block_copy(a4);\n  sub_10006ED10(a3);\n  v12 = swift_allocObject(&unk_10008AE58, 24LL, 7LL);\n  *(_QWORD *)(v12 + 16) = v11;\n  swift_retain(self);\n  ControlCenterHelper.confirmTurnOffBluetooth(request:response:)((__int64)v10, (__int64)sub_100009E74, v12);\n  swift_release(self);\n  swift_release(v12);\n  (*(void (__fastcall **)(char *, __int64))(v8 + 8))(v10, v7);\n}"
+}

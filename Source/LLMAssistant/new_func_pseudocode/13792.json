@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_data_create",
+    "function_argument_number": 4,
+    "function_signature": "_dispatch_data_create(const void * buffer, size_t size, dispatch_queue_t queue, dispatch_block_t destructor)",
+    "pseudocode": "dispatch_data_t __cdecl dispatch_data_create(\n        const void *buffer,\n        size_t size,\n        dispatch_queue_t queue,\n        dispatch_block_t destructor)\n{\n  return _dispatch_data_create(buffer, size, queue, destructor);\n}"
+}

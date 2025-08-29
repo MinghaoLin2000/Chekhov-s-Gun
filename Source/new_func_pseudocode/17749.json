@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPISignedKey readFrom:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPISignedKey readFrom:](ModelKeyServerAPISignedKey * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[ModelKeyServerAPISignedKey readFrom:](ModelKeyServerAPISignedKey *self, SEL a2, id a3)\n{\n  return ModelKeyServerAPISignedKeyReadFrom((__int64)self, (__int64)a3);\n}"
+}

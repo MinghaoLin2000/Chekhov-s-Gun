@@ -1,0 +1,6 @@
+{
+    "function_name": "+[LSRConnection _cooldownTimerFired]",
+    "function_argument_number": 2,
+    "function_signature": "+[LSRConnection _cooldownTimerFired](id a1, SEL a2)",
+    "pseudocode": "void __cdecl +[LSRConnection _cooldownTimerFired](id a1, SEL a2)\n{\n  os_log_s *v3; // x20\n  int v4; // [xsp+0h] [xbp-30h] BYREF\n  const char *v5; // [xsp+4h] [xbp-2Ch]\n\n  dispatch_assert_queue_V2((dispatch_queue_t)qword_100065418);\n  v3 = (os_log_s *)SFLogConnection;\n  if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_DEBUG) )\n  {\n    v4 = 136315138;\n    v5 = \"+[LSRConnection _cooldownTimerFired]\";\n    _os_log_debug_impl(\n      (void *)&_mh_execute_header,\n      v3,\n      OS_LOG_TYPE_DEBUG,\n      \"%s _cooldownTimerFired\",\n      (uint8_t *)&v4,\n      0xCu);\n  }\n  +[LSRConnection _cachedRecognizerCleanUp](&OBJC_CLASS___LSRConnection, \"_cachedRecognizerCleanUp\");\n  objc_msgSend(a1, \"_cancelCooldownTimer\");\n}"
+}

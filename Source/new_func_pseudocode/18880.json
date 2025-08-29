@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService windowedPosition]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService windowedPosition](SiriNCService * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SiriNCService windowedPosition](SiriNCService *self, SEL a2)\n{\n  return -[SiriNCService windowedLaunch](self, \"windowedLaunch\")\n      || (void *)-[SiriNCService breakoutState](self, \"breakoutState\") == (void *)2;\n}"
+}

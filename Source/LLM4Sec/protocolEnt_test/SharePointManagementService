@@ -1,0 +1,23 @@
+Service Path:
+/System/Library/PrivateFrameworks/SharePointManagement.framework/XPCServices/SharePointManagementService.xpc/Contents/MacOS/SharePointManagementService
+
+Service Exported Protocols:
+@protocol SharePointManagerServiceProtocol
+- (void)updateSharePoint:(NSString *)arg1 fileSecurity:(NSFileSecurity *)arg2 properties:(NSDictionary *)arg3 authenticationToken:(NSData *)arg4 withReply:(void (^)(NSError *))arg5;
+- (void)removeSharePointNamed:(NSString *)arg1 authenticationToken:(NSData *)arg2 withReply:(void (^)(NSError *))arg3;
+- (void)addSharePointNamed:(NSString *)arg1 properties:(NSDictionary *)arg2 authenticationToken:(NSData *)arg3 withReply:(void (^)(NSError *))arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.AuthorizationServices
+	[Value]
+		[Array]
+			[String] system.services.directory.configure
+	[Key] com.apple.private.opendirectoryd.sharepoints
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyAllFiles

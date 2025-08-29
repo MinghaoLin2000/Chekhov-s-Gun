@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ProgressViewController viewDidAppear]",
+    "function_argument_number": 2,
+    "function_signature": "-[ProgressViewController viewDidAppear](ProgressViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ProgressViewController viewDidAppear](ProgressViewController *self, SEL a2)\n{\n  NSProgressIndicator *v3; // x20\n  unsigned int v4; // w21\n  NSProgressIndicator *v5; // x19\n  objc_super v6; // [xsp+0h] [xbp-30h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___ProgressViewController;\n  -[ProgressViewController viewDidAppear](&v6, \"viewDidAppear\");\n  v3 = objc_retainAutoreleasedReturnValue(-[ProgressViewController progressBar](self, \"progressBar\"));\n  v4 = -[NSProgressIndicator isIndeterminate](v3, \"isIndeterminate\");\n  objc_release(v3);\n  if ( v4 )\n  {\n    v5 = objc_retainAutoreleasedReturnValue(-[ProgressViewController progressBar](self, \"progressBar\"));\n    -[NSProgressIndicator startAnimation:](v5, \"startAnimation:\", 0LL);\n    objc_release(v5);\n  }\n}"
+}

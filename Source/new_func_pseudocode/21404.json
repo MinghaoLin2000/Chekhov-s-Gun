@@ -1,0 +1,6 @@
+{
+    "function_name": "j__$s22localspeechrecognition10ClientInfoV07LoggingC0V23__derived_struct_equalsySbAE_AEtFZ",
+    "function_argument_number": 2,
+    "function_signature": "j__$s22localspeechrecognition10ClientInfoV07LoggingC0V23__derived_struct_equalsySbAE_AEtFZ(__int64 a1, __int64 a2)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall j___s22localspeechrecognition10ClientInfoV07LoggingC0V23__derived_struct_equalsySbAE_AEtFZ(\n        __int64 a1,\n        __int64 a2)\n{\n  return static ClientInfo.LoggingInfo.__derived_struct_equals(_:_:)(a1, a2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateCopyAppendingPathComponent",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLCreateCopyAppendingPathComponent(CFAllocatorRef allocator, CFURLRef url, CFStringRef pathComponent, Boolean isDirectory)",
+    "pseudocode": "CFURLRef __cdecl CFURLCreateCopyAppendingPathComponent(\n        CFAllocatorRef allocator,\n        CFURLRef url,\n        CFStringRef pathComponent,\n        Boolean isDirectory)\n{\n  return _CFURLCreateCopyAppendingPathComponent(allocator, url, pathComponent, isDirectory);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters16_get_PrinterKindEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters16_get_PrinterKindEv(Printd_Parameters * this)",
+    "pseudocode": "id __fastcall Printd_Parameters::_get_PrinterKind(Printd_Parameters *this)\n{\n  id v1; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v1 = objc_retainAutoreleasedReturnValue(getNamedAttr<NSArray<NSString *> * {__strong}>(*(_QWORD *)this, (int)CFSTR(\"printer-kind\")));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v1);\n}"
+}

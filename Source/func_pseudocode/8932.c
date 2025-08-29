@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObjectCMa
+__int64 type metadata accessor for JSSessionAuthenticatorObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService28JSSessionAuthenticatorObject);
+}

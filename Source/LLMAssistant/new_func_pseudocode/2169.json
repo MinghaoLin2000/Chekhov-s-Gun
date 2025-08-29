@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPProgressBarView setIndeterminateBarberOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPProgressBarView setIndeterminateBarberOffset:](AMPProgressBarView * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[AMPProgressBarView setIndeterminateBarberOffset:](AMPProgressBarView *self, SEL a2, double a3)\n{\n  self->_indeterminateBarberOffset = a3;\n}"
+}

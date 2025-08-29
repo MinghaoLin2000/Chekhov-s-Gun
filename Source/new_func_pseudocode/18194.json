@@ -1,0 +1,6 @@
+{
+    "function_name": "_strncpy",
+    "function_argument_number": 3,
+    "function_signature": "_strncpy(char * __dst, const char * __src, size_t __n)",
+    "pseudocode": "char *__cdecl strncpy(char *__dst, const char *__src, size_t __n)\n{\n  return _strncpy(__dst, __src, __n);\n}"
+}

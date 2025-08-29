@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringByMakingFirstCharacterLowercase]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringByMakingFirstCharacterLowercase](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringByMakingFirstCharacterLowercase](NSString *self, SEL a2)\n{\n  NSString *v2; // x19\n  NSString *v3; // x20\n  NSString *v4; // x21\n  NSString *v5; // x22\n  NSString *v6; // x23\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v2 = objc_retain(self);\n  if ( -[NSString length](v2, \"length\") )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(-[NSString substringToIndex:](v2, \"substringToIndex:\", 1LL));\n    v4 = objc_retainAutoreleasedReturnValue(-[NSString lowercaseString](v3, \"lowercaseString\"));\n    if ( !-[NSString isEqualToString:](v3, \"isEqualToString:\", v4) )\n    {\n      v5 = objc_retainAutoreleasedReturnValue(-[NSString substringFromIndex:](v2, \"substringFromIndex:\", 1LL));\n      v6 = objc_retainAutoreleasedReturnValue(-[NSString stringByAppendingString:](v4, \"stringByAppendingString:\", v5));\n      objc_release(v2);\n      objc_release(v5);\n      v2 = v6;\n    }\n    objc_release(v4);\n    objc_release(v3);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

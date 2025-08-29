@@ -1,0 +1,6 @@
+{
+    "function_name": "-[OSLogService init]",
+    "function_argument_number": 2,
+    "function_signature": "-[OSLogService init](OSLogService * self, SEL a2)",
+    "pseudocode": "OSLogService *__cdecl -[OSLogService init](OSLogService *self, SEL a2)\n{\n  OSLogService *v2; // x19\n  __int64 v3; // x0\n  OS_os_transaction *transaction; // x8\n  dispatch_queue_attr_s *v5; // x20\n  dispatch_queue_t v6; // x0\n  OS_dispatch_queue *serial_queue; // x8\n  objc_super v9; // [xsp+0h] [xbp-20h] BYREF\n\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___OSLogService;\n  v2 = -[OSLogService init](&v9, \"init\");\n  if ( v2 )\n  {\n    v3 = os_transaction_create(\"com.apple.OSLogService\");\n    transaction = v2->_transaction;\n    v2->_transaction = (OS_os_transaction *)v3;\n    objc_release(transaction);\n    v5 = objc_retainAutoreleasedReturnValue(dispatch_queue_attr_make_with_autorelease_frequency(0LL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM));\n    v6 = dispatch_queue_create(\"com.apple.OSLogService.serial_queue\", v5);\n    serial_queue = v2->_serial_queue;\n    v2->_serial_queue = (OS_dispatch_queue *)v6;\n    objc_release(serial_queue);\n    objc_release(v5);\n    v2->_done = 0;\n  }\n  return v2;\n}"
+}

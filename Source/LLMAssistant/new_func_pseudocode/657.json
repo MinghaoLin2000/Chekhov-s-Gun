@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileSharingListItem setIsFolder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileSharingListItem setIsFolder:](FileSharingListItem * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[FileSharingListItem setIsFolder:](FileSharingListItem *self, SEL a2, bool a3)\n{\n  self->_isFolder = a3;\n}"
+}

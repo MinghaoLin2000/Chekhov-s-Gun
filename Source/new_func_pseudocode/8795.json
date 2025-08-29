@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService23EngagementMessageActionVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService23EngagementMessageActionVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for EngagementMessageAction()\n{\n  return &type metadata for EngagementMessageAction;\n}"
+}

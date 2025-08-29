@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFScannerCreate",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFScannerCreate(CGPDFContentStreamRef cs, CGPDFOperatorTableRef table, void * info)",
+    "pseudocode": "CGPDFScannerRef __cdecl CGPDFScannerCreate(CGPDFContentStreamRef cs, CGPDFOperatorTableRef table, void *info)\n{\n  return _CGPDFScannerCreate(cs, table, info);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper16DebugPreferencesCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s27BackgroundReplacementHelper16DebugPreferencesCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for DebugPreferences(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100096898;\n  if ( !qword_100096898 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for DebugPreferences);\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaPickerNode distinguishedPlaylistKind]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaPickerNode distinguishedPlaylistKind](MediaPickerNode * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[MediaPickerNode distinguishedPlaylistKind](MediaPickerNode *self, SEL a2)\n{\n  return self->_distinguishedPlaylistKind;\n}"
+}

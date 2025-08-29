@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSValue valueWithCGSize:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSValue valueWithCGSize:](id a1, SEL a2, CGSize a3)",
+    "pseudocode": "NSValue *__cdecl +[NSValue valueWithCGSize:](id a1, SEL a2, CGSize a3)\n{\n  CGSize v4; // [xsp+0h] [xbp-10h] BYREF\n\n  v4 = a3;\n  return (NSValue *)objc_msgSend(a1, \"valueWithBytes:objCType:\", &v4, \"{CGSize=dd}\");\n}"
+}

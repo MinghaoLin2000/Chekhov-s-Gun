@@ -1,0 +1,5 @@
+_AMRestorableDeviceCopyDefaultRestoreOptions
+__int64 AMRestorableDeviceCopyDefaultRestoreOptions()
+{
+  return _AMRestorableDeviceCopyDefaultRestoreOptions();
+}

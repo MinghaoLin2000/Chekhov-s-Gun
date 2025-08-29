@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPZipFileWriteChannel initWithArchiveWriter:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPZipFileWriteChannel initWithArchiveWriter:](int a1, int a2, id a3)",
+    "pseudocode": "TSPZipFileWriteChannel *__cdecl -[TSPZipFileWriteChannel initWithArchiveWriter:](\n        TSPZipFileWriteChannel *self,\n        SEL a2,\n        id a3)\n{\n  id v5; // x19\n  TSPZipFileWriteChannel *v6; // x0\n  TSPZipFileWriteChannel *v7; // x20\n  dispatch_queue_attr_s *v8; // x21\n  dispatch_queue_t v9; // x0\n  OS_dispatch_queue *writerQueue; // x8\n  objc_super v12; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSPZipFileWriteChannel;\n  v6 = -[TSPZipFileWriteChannel init](&v12, \"init\");\n  v7 = v6;\n  if ( v6 )\n  {\n    objc_storeStrong((id *)&v6->_archiveWriter, a3);\n    v8 = objc_retainAutoreleasedReturnValue(dispatch_queue_attr_make_with_autorelease_frequency(0LL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM));\n    v9 = dispatch_queue_create(\"TSPZipFileWriteChannel.Writer\", v8);\n    writerQueue = v7->_writerQueue;\n    v7->_writerQueue = (OS_dispatch_queue *)v9;\n    objc_release(writerQueue);\n    objc_release(v8);\n  }\n  objc_release(v5);\n  return v7;\n}"
+}

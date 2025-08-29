@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSGetMountInfoByFSID",
+    "function_argument_number": 2,
+    "function_signature": "_NetFSGetMountInfoByFSID(__int64 a1, void * a2)",
+    "pseudocode": "__int64 __fastcall NetFSGetMountInfoByFSID(__int64 a1, void *a2)\n{\n  int v4; // w0\n  unsigned int v5; // w22\n  int v6; // w23\n  statfs *v7; // x0\n  statfs *v8; // x20\n  __int64 v9; // x0\n  char *v10; // x9\n  __int64 v11; // x10\n  __int64 v12; // x23\n\n  v4 = getfsstat(0LL, 0, 2);\n  if ( v4 < 1 )\n    return 0xFFFFFFFFLL;\n  v5 = v4;\n  v6 = 2168 * v4;\n  v7 = (statfs *)malloc_type_malloc(2168 * v4, 0xFB7EB85AuLL);\n  if ( !v7 )\n    return 0xFFFFFFFFLL;\n  v8 = v7;\n  v9 = getfsstat(v7, v6, 2);\n  if ( (int)v9 < 1 )\n  {\n    v12 = v9;\n  }\n  else\n  {\n    v10 = (char *)&v8->f_fsid + 4;\n    v11 = v5;\n    do\n    {\n      if ( *(_QWORD *)(v10 - 4) == a1 )\n      {\n        memcpy(a2, v10 - 52, 0x878uLL);\n        v12 = 0LL;\n        goto LABEL_11;\n      }\n      v10 += 2168;\n      --v11;\n    }\n    while ( v11 );\n    v12 = 0xFFFFFFFFLL;\n  }\nLABEL_11:\n  free(v8);\n  return v12;\n}"
+}

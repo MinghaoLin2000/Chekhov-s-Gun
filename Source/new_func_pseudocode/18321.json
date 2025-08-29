@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$_getAuditTokenFromEndpoint:",
+    "function_argument_number": 1,
+    "function_signature": "_objc_msgSend$_getAuditTokenFromEndpoint:(void * a1)",
+    "pseudocode": "id objc_msgSend__getAuditTokenFromEndpoint_(void *a1, ...)\n{\n  return objc_msgSend(a1, \"_getAuditTokenFromEndpoint:\");\n}"
+}

@@ -1,0 +1,160 @@
+Service Path:
+/System/Library/PrivateFrameworks/CloudSharing.framework/Versions/A/XPCServices/SPIHelper.xpc/Contents/MacOS/SPIHelper
+
+Service Exported Protocols:
+@protocol CKRecordValue <NSObject>
+@end
+@protocol NSSharingExtensionContextSessionCompletionDelegate <NSObject>
+- (void)resumeSessionTeardownByCallingContinuationBlock:(void (^)(void))arg1;
+@end
+@protocol _TtP9SPIHelper17SPIHelperProtocol_
+- (void)forciblyShareFolder:(NSURL *)arg1 emailAddresses:(NSArray *)arg2 phoneNumbers:(NSArray *)arg3 accessType:(long long)arg4 permissionType:(long long)arg5 allowOthersToInvite:(_Bool)arg6 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg7;
+- (void)userNameAndEmail:(NSURL *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 withReply:(void (^)(NSString *, NSString *, NSError *))arg3;
+- (void)existingShareForFile:(NSURL *)arg1 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg2;
+- (void)addParticipantsToShare:(CKShare *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 emailAddresses:(NSArray *)arg3 phoneNumbers:(NSArray *)arg4 permissionType:(long long)arg5 allowOthersToInvite:(_Bool)arg6 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg7;
+- (void)addParticipantsToShareWithURLWrapper:(FPSandboxingURLWrapper *)arg1 share:(CKShare *)arg2 emailAddresses:(NSArray *)arg3 phoneNumbers:(NSArray *)arg4 permissionType:(long long)arg5 allowOthersToInvite:(_Bool)arg6 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg7;
+- (void)addParticipantsToShare:(CKShare *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 emailAddresses:(NSArray *)arg3 phoneNumbers:(NSArray *)arg4 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg5;
+- (void)currentUserSharingStatusFor:(CKShare *)arg1 withReply:(void (^)(long long, NSError *))arg2;
+- (void)updateShare:(CKShare *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg3;
+- (void)getMetadataFromShareFromSharingURL:(NSURL *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 withReply:(void (^)(CKShareMetadata *, NSError *))arg3;
+- (void)mailContentFromSharingURL:(NSURL *)arg1 share:(CKShare *)arg2 fileURL:(NSURL *)arg3 appName:(NSString *)arg4 appIconData:(NSData *)arg5 withReply:(void (^)(NSString *, NSString *, NSError *))arg6;
+- (void)removeFromShareForFileURL:(NSURL *)arg1 withReply:(void (^)(_Bool, NSError *))arg2;
+- (void)removeFromShare:(CKShare *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 withReply:(void (^)(_Bool, NSError *))arg3;
+- (void)removeFromShareFromSharingURL:(NSURL *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 withReply:(void (^)(_Bool, NSError *))arg3;
+- (void)addToShareFromSharingURL:(NSURL *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 emailAddresses:(NSArray *)arg3 phoneNumbers:(NSArray *)arg4 accessType:(long long)arg5 permissionType:(long long)arg6 allowOthersToInvite:(_Bool)arg7 withReply:(void (^)(_Bool, CKShare *, NSError *))arg8;
+- (void)addToCloudKitSharing:(CKShare *)arg1 containerSetupInfo:(CKContainerSetupInfo *)arg2 emailAddresses:(NSArray *)arg3 phoneNumbers:(NSArray *)arg4 accessType:(long long)arg5 permissionType:(long long)arg6 allowOthersToInvite:(_Bool)arg7 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg8;
+- (void)startFileSharing:(NSURL *)arg1 emailAddresses:(NSArray *)arg2 phoneNumbers:(NSArray *)arg3 accessType:(long long)arg4 permissionType:(long long)arg5 allowOthersToInvite:(_Bool)arg6 withReply:(void (^)(NSURL *, CKShare *, NSError *))arg7;
+- (void)sharingStatusFor:(NSURL *)arg1 withReply:(void (^)(long long, NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.CloudSharing.SPIHelper
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.CloudSharing.SPIHelper
+	[Key] com.apple.coreduetd.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.coreduetd.people
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.aps-environment
+	[Value]
+		[String] development
+	[Key] com.apple.developer.auto-elect-plugin
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.icloud-services
+	[Value]
+		[Array]
+			[String] CloudDocuments
+			[String] CloudKit
+	[Key] com.apple.fileprovider.enumerate
+	[Value]
+		[Bool] true
+	[Key] com.apple.fileprovider.fetch-url
+	[Value]
+		[Bool] true
+	[Key] com.apple.locationd.effective_bundle
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.accounts.allaccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.can-publish-iwork-document
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.folder-sharing-proxy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.sharing-proxy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.clouddocs.sharing.private-interface
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.customAccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.masquerade
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.oopui
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.setEnvironment
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.spi
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.cloudkit.systemService
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.contactsui
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corerecents
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.pluginkit.persona
+	[Value]
+		[String] system
+	[Key] com.apple.private.security.storage.MobileDocuments
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+	[Key] com.apple.private.viewbridge.window.child.transparent
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.files.user-selected.read-write
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.addressbook
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Mobile Documents/
+			[String] /Desktop/
+			[String] /Documents/
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.FileProvider
+			[String] com.apple.mtmd.xpc
+			[String] com.apple.coreservices.appleid.authentication
+			[String] com.apple.sharingd
+			[String] com.apple.CoreLocation.agent
+			[String] com.apple.mobile.keybagd.UserManager.xpc
+			[String] com.apple.mobile.keybagd.xpc
+			[String] com.apple.mobile.usermanagerd.xpc
+			[String] com.apple.coreduetd.people
+	[Key] com.apple.security.temporary-exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] MobileMeAccounts
+			[String] com.apple.finder
+	[Key] com.apple.usermanagerd.persona.fetch
+	[Value]
+		[Bool] true
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] com.apple.coreservices.appleidauthentication.keychainaccessgroup

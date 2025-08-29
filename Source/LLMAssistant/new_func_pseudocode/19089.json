@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGEventTapCreate",
+    "function_argument_number": 6,
+    "function_signature": "_CGEventTapCreate(CGEventTapLocation tap, CGEventTapPlacement place, CGEventTapOptions options, CGEventMask eventsOfInterest, CGEventTapCallBack callback, void * userInfo)",
+    "pseudocode": "CFMachPortRef __cdecl CGEventTapCreate(\n        CGEventTapLocation tap,\n        CGEventTapPlacement place,\n        CGEventTapOptions options,\n        CGEventMask eventsOfInterest,\n        CGEventTapCallBack callback,\n        void *userInfo)\n{\n  return _CGEventTapCreate(tap, place, options, eventsOfInterest, callback, userInfo);\n}"
+}

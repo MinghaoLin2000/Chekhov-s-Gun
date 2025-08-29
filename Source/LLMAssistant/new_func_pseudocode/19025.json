@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController siriViewController:recordingDidCancelForSiriSession:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController siriViewController:recordingDidCancelForSiriSession:](SiriNCAlertViewController * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController siriViewController:recordingDidCancelForSiriSession:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  +[SiriUIMediaPauser setFanDuckingEnabled:](&OBJC_CLASS___SiriUIMediaPauser, \"setFanDuckingEnabled:\", 0LL, a4);\n}"
+}

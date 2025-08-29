@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate .cxx_destruct](UARPUpdaterDisplayControllerDelegate * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPUpdaterDisplayControllerDelegate .cxx_destruct](UARPUpdaterDisplayControllerDelegate *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_trmRegistryEntryIDs, 0LL);\n  objc_storeStrong((id *)&self->_restoreProgress, 0LL);\n  objc_storeStrong((id *)&self->_restoreInfo, 0LL);\n  objc_storeStrong((id *)&self->_consentInfo, 0LL);\n  objc_storeStrong((id *)&self->_preflightInfo, 0LL);\n  objc_storeStrong((id *)&self->_checkInfo, 0LL);\n  objc_storeStrong((id *)&self->_updateController, 0LL);\n  objc_storeStrong((id *)&self->_mobileAssetCustomerUpdater, 0LL);\n  objc_storeStrong((id *)&self->_mobileAssetInternalUpdater, 0LL);\n  objc_storeStrong((id *)&self->_transaction, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_log, 0LL);\n}"
+}

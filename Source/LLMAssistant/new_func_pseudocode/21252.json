@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC6ParsesSbvM",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC6ParsesSbvM()",
+    "pseudocode": "__int64 (__fastcall *VoiceCommandDebugInfoAggregated.hasVoiceCommandParses.modify())()\n{\n  return nullsub_2;\n}"
+}

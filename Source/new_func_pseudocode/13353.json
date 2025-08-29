@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter writeZip64EndOfCentralDirectoryWithOffset:size:entryCount:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUZipWriter writeZip64EndOfCentralDirectoryWithOffset:size:entryCount:](TSUZipWriter * self, SEL a2, signed __int64 a3, signed __int64 a4, unsigned __int64 a5)",
+    "pseudocode": "void __cdecl -[TSUZipWriter writeZip64EndOfCentralDirectoryWithOffset:size:entryCount:](\n        TSUZipWriter *self,\n        SEL a2,\n        signed __int64 a3,\n        signed __int64 a4,\n        unsigned __int64 a5)\n{\n  _QWORD *v9; // x0\n  dispatch_data_t v10; // x19\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v9 = malloc_type_malloc(0x38uLL, 0xF650BC62uLL);\n  *(_DWORD *)v9 = 101075792;\n  *(_QWORD *)((char *)v9 + 4) = 44LL;\n  v9[2] = 0LL;\n  v9[3] = a5;\n  *((_DWORD *)v9 + 3) = 1310782;\n  v9[4] = a5;\n  v9[5] = a4;\n  v9[6] = a3;\n  v10 = dispatch_data_create(v9, 0x38uLL, 0LL, _dispatch_data_destructor_free);\n  -[TSUZipWriter writeData:](self, \"writeData:\", v10);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v10);\n}"
+}

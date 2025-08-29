@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.private.xpc.launchd.per-user-lookup",
+  "capability": "Allows an application to query `launchd` for information about per-user agents and their associated XPC services, enabling discovery of user-level background processes, their status, and their communication endpoints.",
+  "reasoning": "The entitlement name contains 'private' (indicating an internal Apple entitlement), 'xpc' (interprocess communication), and 'launchd' (macOS process manager). 'per-user-lookup' strongly suggests the ability to inspect or discover components managed by `launchd` that are specific to a user's session, such as user agents and their XPC services. This grants insight into the running processes and communication architecture of a user's environment.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    3
+  ],
+  "sensitive_reasoning": "This entitlement falls under '3. Process and Memory Management'. The ability to 'lookup' or discover per-user `launchd` agents and their XPC services provides sensitive process information. This includes details about what background processes are running for a user, their properties, and how they communicate via XPC. Such information is critical for understanding the system's runtime state, identifying potential targets for exploitation, or bypassing intended security boundaries by interacting with internal XPC services. While not directly creating or terminating processes, obtaining this level of process insight is a fundamental step in many process-related attacks.",
+  "self_reflection": "I am highly confident in the inferred capability and its classification as a sensitive operation. The components of the entitlement name ('private', 'xpc', 'launchd', 'per-user-lookup') strongly align with process management and interprocess communication. The primary uncertainty lies in the exact depth and breadth of 'lookup' – whether it provides minimal or extensive details about the `launchd` items. However, even minimal lookup in this context is sensitive due to `launchd`'s critical role. A wrong prediction could occur if 'per-user-lookup' refers to a very narrow, non-sensitive, or highly restricted type of lookup that doesn't reveal actionable process information, which is unlikely given the 'private' prefix and the nature of `launchd`."
+}

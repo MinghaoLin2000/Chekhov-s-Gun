@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintdRPCService _removeKeychainItem:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PrintdRPCService _removeKeychainItem:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PrintdRPCService _removeKeychainItem:](PrintdRPCService *self, SEL a2, id a3)\n{\n  id v3; // x19\n  os_log_s *v4; // x20\n  lite_printer_t *v5; // x0\n  lite_printer_t *v6; // x20\n  int v7; // [xsp+0h] [xbp-30h] BYREF\n  id v8; // [xsp+4h] [xbp-2Ch]\n\n  v3 = objc_retain(a3);\n  v4 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v4, OS_LOG_TYPE_DEFAULT) )\n  {\n    v7 = 138543362;\n    v8 = v3;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v4,\n      OS_LOG_TYPE_DEFAULT,\n      \"_removeKeychainItem: %{public}@\",\n      (uint8_t *)&v7,\n      0xCu);\n  }\n  objc_release(v4);\n  v5 = (lite_printer_t *)objc_retainAutoreleasedReturnValue(\n                           +[lite_printer_t existingPrinterWithEndpoint:](\n                             &OBJC_CLASS___lite_printer_t,\n                             \"existingPrinterWithEndpoint:\",\n                             v3));\n  v6 = v5;\n  if ( v5 )\n    liteNotifyClearPassword(v5);\n  objc_release(v6);\n  objc_release(v3);\n}"
+}

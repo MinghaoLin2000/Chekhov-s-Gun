@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGSizeV16EyeCandyGraphicsE3maxABvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo6CGSizeV16EyeCandyGraphicsE3maxABvgZ()",
+    "pseudocode": "double static CGSize.max.getter()\n{\n  return 1.79769313e308;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointCleanupAssets",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformEndpointCleanupAssets(__int64 result)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointCleanupAssets(__int64 result)\n{\n  if ( result )\n    return uarpPlatformCleanupAssetsForRemoteEndpoint(result, 0LL, 0);\n  return result;\n}"
+}

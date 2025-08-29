@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService36JSAccountPrivacyAcknowledgementStateVwcp",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService36JSAccountPrivacyAcknowledgementStateVwcp(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall initializeWithCopy for JSAccountPrivacyAcknowledgementState(__int64 a1, __int64 a2)\n{\n  __int128 v4; // q0\n  __int64 v5; // x0\n\n  v4 = *(_OWORD *)(a2 + 24);\n  *(_OWORD *)(a1 + 24) = v4;\n  (**(void (***)(void))(v4 - 8))();\n  v5 = *(_QWORD *)(a2 + 48);\n  *(_QWORD *)(a1 + 40) = *(_QWORD *)(a2 + 40);\n  *(_QWORD *)(a1 + 48) = v5;\n  *(_QWORD *)(a1 + 56) = *(_QWORD *)(a2 + 56);\n  *(_WORD *)(a1 + 64) = *(_WORD *)(a2 + 64);\n  swift_bridgeObjectRetain(v5);\n  return a1;\n}"
+}

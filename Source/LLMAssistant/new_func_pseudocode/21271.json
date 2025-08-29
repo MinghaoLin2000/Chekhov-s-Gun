@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition19EARLanguageDetector supportedLocalesWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC22localspeechrecognition19EARLanguageDetector supportedLocalesWithReply:](_TtC22localspeechrecognition19EARLanguageDetector * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EARLanguageDetector supportedLocalesWithReply:](\n        _TtC22localspeechrecognition19EARLanguageDetector *self,\n        SEL a2,\n        id a3)\n{\n  sub_1000087FC((int)self, (int)a2, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceAddPFMetadataPolicy metadataNeedsProcessing:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceAddPFMetadataPolicy metadataNeedsProcessing:](PAMediaConversionServiceAddPFMetadataPolicy * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[PAMediaConversionServiceAddPFMetadataPolicy metadataNeedsProcessing:](\n        PAMediaConversionServiceAddPFMetadataPolicy *self,\n        SEL a2,\n        id a3)\n{\n  return 1;\n}"
+}

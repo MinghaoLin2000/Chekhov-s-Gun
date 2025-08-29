@@ -1,0 +1,6 @@
+{
+    "function_name": "_CTFontDescriptorCreateWithAttributes",
+    "function_argument_number": 1,
+    "function_signature": "_CTFontDescriptorCreateWithAttributes(CFDictionaryRef attributes)",
+    "pseudocode": "CTFontDescriptorRef __cdecl CTFontDescriptorCreateWithAttributes(CFDictionaryRef attributes)\n{\n  return _CTFontDescriptorCreateWithAttributes(attributes);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf25EncodedDescriptorDatabase23FindAllExtensionNumbersERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPNS2_6vectorIiNS6_IiEEEE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf25EncodedDescriptorDatabase23FindAllExtensionNumbersERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPNS2_6vectorIiNS6_IiEEEE(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EncodedDescriptorDatabase::FindAllExtensionNumbers(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3)\n{\n  __int64 v4; // x20\n  _QWORD v6[2]; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = *(_QWORD *)(a1 + 8);\n  sub_10007A644(v6, a2);\n  return google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FindAllExtensionNumbers(v4, v6[0], v6[1], a3);\n}"
+}

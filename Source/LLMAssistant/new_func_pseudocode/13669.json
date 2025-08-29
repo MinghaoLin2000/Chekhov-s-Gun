@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFCopyTypeIDDescription",
+    "function_argument_number": 1,
+    "function_signature": "_CFCopyTypeIDDescription(CFTypeID type_id)",
+    "pseudocode": "CFStringRef __cdecl CFCopyTypeIDDescription(CFTypeID type_id)\n{\n  return _CFCopyTypeIDDescription(type_id);\n}"
+}

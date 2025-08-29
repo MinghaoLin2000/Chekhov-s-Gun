@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundleService getAttrib:code:reply:]",
+    "function_argument_number": 5,
+    "function_signature": "-[IFDBundleService getAttrib:code:reply:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[IFDBundleService getAttrib:code:reply:](\n        IFDBundleService *self,\n        SEL a2,\n        unsigned int a3,\n        unsigned int a4,\n        id a5)\n{\n  __int64 v6; // x20\n  __int64 v7; // x21\n  IFDBundle *bundle; // x22\n  NSMutableData *outputBuffer; // x23\n  id v10; // x24\n  id v11; // x20\n  __int64 v12; // [xsp+8h] [xbp-38h] BYREF\n\n  v6 = *(_QWORD *)&a4;\n  v7 = *(_QWORD *)&a3;\n  v12 = 0LL;\n  bundle = self->_bundle;\n  outputBuffer = self->_outputBuffer;\n  v10 = objc_retain(a5);\n  v11 = objc_retainAutoreleasedReturnValue(-[IFDBundle getAttrib:code:buffer:error:](bundle, \"getAttrib:code:buffer:error:\", v7, v6, outputBuffer, &v12));\n  (*((void (__fastcall **)(id, id, __int64))a5 + 2))(v10, v11, v12);\n  objc_release(v10);\n  objc_release(v11);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18EpsCopyInputStream12DoneFallbackEii",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal18EpsCopyInputStream12DoneFallbackEii(google::protobuf::internal::EpsCopyInputStream * this, int a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::EpsCopyInputStream::DoneFallback(\n        google::protobuf::internal::EpsCopyInputStream *this,\n        __int64 a2,\n        __int64 a3)\n{\n  __int64 v4; // x21\n  __int64 v6; // x0\n  __int64 v7; // x8\n  int v8; // w9\n  __int64 result; // x0\n\n  if ( *((_DWORD *)this + 7) < (int)a2 )\n    return 0LL;\n  v4 = a2;\n  while ( 1 )\n  {\n    v6 = sub_1000EA0E8(this, v4, a3);\n    if ( !v6 )\n      break;\n    v7 = *((_QWORD *)this + 1);\n    v8 = *((_DWORD *)this + 7) + v6 - v7;\n    *((_DWORD *)this + 7) = v8;\n    result = v6 + (int)v4;\n    v4 = (unsigned int)(result - v7);\n    if ( (int)result - (int)v7 < 0 )\n    {\n      *(_QWORD *)this = v7 + (v8 & (v8 >> 31));\n      return result;\n    }\n  }\n  if ( (_DWORD)v4 )\n    return 0LL;\n  result = *((_QWORD *)this + 1);\n  *(_QWORD *)this = result;\n  *((_DWORD *)this + 20) = 1;\n  return result;\n}"
+}

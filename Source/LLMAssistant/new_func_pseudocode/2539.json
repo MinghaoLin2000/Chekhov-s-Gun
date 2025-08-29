@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBackUpSettingsViewController cachedHasLocalBackups]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceBackUpSettingsViewController cachedHasLocalBackups](DeviceBackUpSettingsViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceBackUpSettingsViewController cachedHasLocalBackups](\n        DeviceBackUpSettingsViewController *self,\n        SEL a2)\n{\n  return self->_cachedHasLocalBackups;\n}"
+}

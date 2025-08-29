@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFEqual",
+    "function_argument_number": 2,
+    "function_signature": "_CFEqual(CFTypeRef cf1, CFTypeRef cf2)",
+    "pseudocode": "Boolean __cdecl CFEqual(CFTypeRef cf1, CFTypeRef cf2)\n{\n  return _CFEqual(cf1, cf2);\n}"
+}

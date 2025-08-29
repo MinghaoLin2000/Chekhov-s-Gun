@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_source_create",
+    "function_argument_number": 4,
+    "function_signature": "_dispatch_source_create(dispatch_source_type_t type, uintptr_t handle, uintptr_t mask, dispatch_queue_t queue)",
+    "pseudocode": "dispatch_source_t __cdecl dispatch_source_create(\n        dispatch_source_type_t type,\n        uintptr_t handle,\n        uintptr_t mask,\n        dispatch_queue_t queue)\n{\n  return _dispatch_source_create(type, handle, mask, queue);\n}"
+}

@@ -1,0 +1,6 @@
+j__$s19ControlCenterHelper04WiFiC0C13currentDialog33_F14D4C22208E7A416F4CC2A655BC16A0LLSo18NSWindowControllerCSgvpfi
+// attributes: thunk
+__int64 j___s19ControlCenterHelper04WiFiC0C13currentDialog33_F14D4C22208E7A416F4CC2A655BC16A0LLSo18NSWindowControllerCSgvpfi()
+{
+  return variable initialization expression of WiFiHelper.currentDialog();
+}

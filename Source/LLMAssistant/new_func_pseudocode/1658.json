@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController updateOverflowVisibility]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFinderTabContainerViewController updateOverflowVisibility](DeviceFinderTabContainerViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceFinderTabContainerViewController updateOverflowVisibility](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2)\n{\n  NSPopUpButton *v3; // x20\n  _BOOL8 v4; // x21\n  NSPopUpButton *v5; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceFinderTabContainerViewController overflowPulldown](self, \"overflowPulldown\"));\n  v4 = -[NSPopUpButton numberOfItems](v3, \"numberOfItems\") < 2;\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceFinderTabContainerViewController overflowPulldown](self, \"overflowPulldown\"));\n  -[NSPopUpButton setHidden:](v5, \"setHidden:\", v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

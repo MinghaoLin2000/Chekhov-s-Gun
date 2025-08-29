@@ -1,0 +1,50 @@
+Service Path:
+/System/Library/PrivateFrameworks/SiriTTSService.framework/Versions/A/XPCServices/com.apple.SiriTTSService.TrialProxy.xpc/Contents/MacOS/com.apple.SiriTTSService.TrialProxy
+
+Service Exported Protocols:
+@protocol OS_xpc_object <NSObject>
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.SiriTTSService.TrialProxy
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.SiriTTSService.TrialProxy
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.Trial.Siri.SiriTextToSpeech
+	[Key] com.apple.private.assets.bypass-asset-types-check
+	[Value]
+		[Bool] true
+	[Key] com.apple.proactive.eventtracker
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /private/var/mobile/Library/Trial/
+			[String] /private/var/MobileAsset/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.triald.namespace-management
+			[String] com.apple.mobileasset.autoasset
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.voiceservices
+	[Key] com.apple.trial.client
+	[Value]
+		[Array]
+			[String] 406
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] temporary-sandbox

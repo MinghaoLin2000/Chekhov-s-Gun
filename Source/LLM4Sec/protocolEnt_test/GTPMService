@@ -1,0 +1,13 @@
+Service Path:
+/System/Library/CoreServices/MTLReplayer.app/Contents/XPCServices/GTPMService.xpc/Contents/MacOS/GTPMService
+
+Service Exported Protocols:
+@protocol GTPMServiceProtocol
+- (void)getOccupancyWithReply:(void (^)(_Bool, double))arg1;
+- (void)clearOccupancyWithReply:(void (^)(_Bool))arg1;
+- (void)setState:(int)arg1 withReply:(void (^)(_Bool))arg2;
+- (void)setControlMode:(int)arg1 withReply:(void (^)(_Bool))arg2;
+- (void)initGPU:(NSString *)arg1 withReply:(void (^)(_Bool, NSString *))arg2;
+@end
+
+Service Entitlements:

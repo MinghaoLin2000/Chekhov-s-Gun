@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper04WiFiC0C6__lock33_F14D4C22208E7A416F4CC2A655BC16A0LLAA10UnfairLockCvpfi",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper04WiFiC0C6__lock33_F14D4C22208E7A416F4CC2A655BC16A0LLAA10UnfairLockCvpfi()",
+    "pseudocode": "__int64 variable initialization expression of WiFiHelper.__lock()\n{\n  __int64 v0; // x0\n  __int64 v1; // x19\n  _DWORD *v2; // x0\n\n  v0 = type metadata accessor for UnfairLock(0LL);\n  v1 = swift_allocObject(v0, 24LL, 7LL);\n  v2 = (_DWORD *)swift_slowAlloc(4LL, -1LL);\n  *v2 = 0;\n  *(_QWORD *)(v1 + 16) = v2;\n  return v1;\n}"
+}

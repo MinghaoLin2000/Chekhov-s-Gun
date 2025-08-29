@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP13DataReferenceD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP13DataReferenceD1Ev(TSP::DataReference * this)",
+    "pseudocode": "void __fastcall TSP::DataReference::~DataReference(TSP::DataReference *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

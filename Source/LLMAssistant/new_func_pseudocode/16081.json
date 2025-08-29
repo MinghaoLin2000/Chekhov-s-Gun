@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDownstreamEndpointAdd",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformDownstreamEndpointAdd(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDownstreamEndpointAdd(__int64 a1, __int64 a2, __int64 a3)\n{\n  unsigned __int16 v6; // w8\n  __int64 v7; // x0\n  int v8; // w3\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( !a1 )\n    return 30LL;\n  v6 = *(_WORD *)(a1 + 600);\n  do\n  {\n    if ( !v6 )\n    {\n      *(_WORD *)(a1 + 600) = 1;\n      return 11LL;\n    }\n    v7 = UARPPlatformDownstreamEndpointByID(a1, a2, v6);\n    v8 = *(unsigned __int16 *)(a1 + 600);\n    v6 = v8 + 1;\n    *(_WORD *)(a1 + 600) = v8 + 1;\n  }\n  while ( !v7 || !v8 );\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpPlatformDownstreamEndpointAddWithID(a1, a2, a3);\n}"
+}

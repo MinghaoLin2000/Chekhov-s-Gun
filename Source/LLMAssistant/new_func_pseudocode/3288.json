@@ -1,0 +1,6 @@
+{
+    "function_name": "_FSEventStreamScheduleWithRunLoop",
+    "function_argument_number": 3,
+    "function_signature": "_FSEventStreamScheduleWithRunLoop(FSEventStreamRef streamRef, CFRunLoopRef runLoop, CFStringRef runLoopMode)",
+    "pseudocode": "void __cdecl FSEventStreamScheduleWithRunLoop(\n        FSEventStreamRef streamRef,\n        CFRunLoopRef runLoop,\n        CFStringRef runLoopMode)\n{\n  _FSEventStreamScheduleWithRunLoop(streamRef, runLoop, runLoopMode);\n}"
+}

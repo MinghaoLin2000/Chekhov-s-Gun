@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setIsBookMediaKind:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setIsBookMediaKind:](DeviceSettingsNode * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setIsBookMediaKind:](DeviceSettingsNode *self, SEL a2, bool a3)\n{\n  self->_isBookMediaKind = a3;\n}"
+}

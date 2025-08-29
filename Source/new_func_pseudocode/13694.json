@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceCreateWithPropertyList",
+    "function_argument_number": 1,
+    "function_signature": "_CGColorSpaceCreateWithPropertyList(CFPropertyListRef plist)",
+    "pseudocode": "CGColorSpaceRef __cdecl CGColorSpaceCreateWithPropertyList(CFPropertyListRef plist)\n{\n  return _CGColorSpaceCreateWithPropertyList(plist);\n}"
+}

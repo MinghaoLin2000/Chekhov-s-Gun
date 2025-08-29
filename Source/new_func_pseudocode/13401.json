@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSUProtocolCast",
+    "function_argument_number": 9,
+    "function_signature": "_TSUProtocolCast(void * a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8, __int64 a9)",
+    "pseudocode": "void *__fastcall TSUProtocolCast(\n        void *a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        __int64 a9)\n{\n  void *v9; // x19\n  __int64 v10; // x20\n  __int64 *v11; // x8\n  __int64 *v13; // [xsp+0h] [xbp-20h]\n  __int64 *v14; // [xsp+8h] [xbp-18h]\n\n  v9 = a1;\n  v13 = &a9;\n  v14 = &a9;\n  if ( a1 )\n  {\n    v10 = a2;\n    if ( a2 )\n    {\n      while ( 1 )\n      {\n        v11 = v14++;\n        if ( ((unsigned int)objc_msgSend(v9, \"conformsToProtocol:\", *v11, v13) & 1) == 0 )\n          break;\n        if ( !--v10 )\n          return v9;\n      }\n      return 0LL;\n    }\n  }\n  return v9;\n}"
+}

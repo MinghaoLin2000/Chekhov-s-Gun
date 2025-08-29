@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper21ScreenMirroringHelperCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper21ScreenMirroringHelperCMa()",
+    "pseudocode": "__int64 type metadata accessor for ScreenMirroringHelper()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_CC8ADCDBFC37C36DA9E4202D6E1B509C21ScreenMirroringHelper);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12ObjConverterC1ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEESB_P10XpcSandbox",
+    "function_argument_number": 5,
+    "function_signature": "__ZN12ObjConverterC1ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEESB_P10XpcSandbox(__int64 a1, __int64 a2, __int64 a3, __int128 * a4, __int64 a5)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall ObjConverter::ObjConverter(__int64 a1, __int64 a2, __int64 a3, __int128 *a4, __int64 a5)\n{\n  return __ZN12ObjConverterC2ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEESB_P10XpcSandbox(\n           a1,\n           a2,\n           a3,\n           a4,\n           a5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setShouldUseEmbeddedImageAsSource:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setShouldUseEmbeddedImageAsSource:](PAMediaConversionServiceImageConversionJob * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setShouldUseEmbeddedImageAsSource:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        bool a3)\n{\n  self->_shouldUseEmbeddedImageAsSource = a3;\n}"
+}

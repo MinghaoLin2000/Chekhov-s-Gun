@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FPCKService isInvalidated]",
+    "function_argument_number": 2,
+    "function_signature": "-[FPCKService isInvalidated](FPCKService * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[FPCKService isInvalidated](FPCKService *self, SEL a2)\n{\n  FPCKService *v2; // x19\n  bool invalidated; // w20\n\n  v2 = objc_retain(self);\n  objc_sync_enter(v2);\n  invalidated = v2->_invalidated;\n  objc_sync_exit(v2);\n  objc_release(v2);\n  return invalidated;\n}"
+}

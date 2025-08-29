@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsViewController warnedAboutShouldPromptToDeleteExistingContacts]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsContactsViewController warnedAboutShouldPromptToDeleteExistingContacts](DeviceSettingsContactsViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsContactsViewController warnedAboutShouldPromptToDeleteExistingContacts](\n        DeviceSettingsContactsViewController *self,\n        SEL a2)\n{\n  return self->_warnedAboutShouldPromptToDeleteExistingContacts;\n}"
+}

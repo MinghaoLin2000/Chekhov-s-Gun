@@ -1,0 +1,5 @@
+$s39com_apple_AppStoreDaemon_StoreUIService19DummyViewControllerCMa
+__int64 type metadata accessor for DummyViewController()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController);
+}

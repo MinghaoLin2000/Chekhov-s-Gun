@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.intents.extension.discovery",
+  "capability": "Allows an Intents extension to register itself with the system and be discovered by system services (such as Siri, Shortcuts, or Spotlight) for invocation. This enables the system to recognize and utilize the actions and functionalities provided by the Intents extension.",
+  "reasoning": "The entitlement name clearly breaks down into 'com.apple' (standard Apple prefix), 'intents' (referring to Apple's Intents framework, used for exposing app functionalities to the system), 'extension' (indicating it applies to an app extension), and 'discovery' (implying the ability for the system to find and recognize this extension's capabilities). This is a foundational entitlement for Intents extensions to be functional and integrated into the macOS/iOS ecosystem.",
+  "similar_entitlements": [
+    "com.apple.developer.accessory-setup-discovery-extension"
+  ],
+  "sensitive_type": [],
+  "sensitive_reasoning": "This entitlement primarily facilitates the system's ability to find and integrate an Intents extension. It does not directly grant access to sensitive file system locations, perform privileged network operations, allow arbitrary process or memory manipulation, provide system/kernel-level control, or bypass TCC consent. While an Intents extension, once discovered and invoked, *could* potentially perform sensitive operations (e.g., accessing Contacts if the Intent involves them), such actions would require *separate* entitlements and would still be subject to TCC prompts and user consent. This specific 'discovery' entitlement itself does not confer any direct sensitive access or control.",
+  "self_reflection": "I am confident in the inferred capability, as the entitlement name is quite descriptive and aligns well with the purpose of Intents extensions within Apple's ecosystem. I am also confident in the assessment of sensitive types. This entitlement is an enabler for system integration, not a direct grant of sensitive access. The risk lies in what the *discovered* extension *does* (which would require other, more specific entitlements and TCC), not in the discovery mechanism itself."
+}

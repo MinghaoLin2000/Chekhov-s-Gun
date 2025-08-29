@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsu_fileReadUnknownErrorWithUserInfo:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSError tsu_fileReadUnknownErrorWithUserInfo:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[NSError tsu_fileReadUnknownErrorWithUserInfo:](id a1, SEL a2, id a3)\n{\n  void *v3; // x21\n  NSError *v4; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"tsu_userInfoWithErrorType:userInfo:\", 1LL, a3));\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[NSError errorWithDomain:code:userInfo:](\n           &OBJC_CLASS___NSError,\n           \"errorWithDomain:code:userInfo:\",\n           NSCocoaErrorDomain,\n           256LL,\n           v3));\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

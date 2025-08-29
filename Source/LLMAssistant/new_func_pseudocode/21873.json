@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN15fileFormatUtils5Asset9initStageEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN15fileFormatUtils5Asset9initStageEv(fileFormatUtils::Asset * this)",
+    "pseudocode": "__int64 __fastcall fileFormatUtils::Asset::initStage(fileFormatUtils::Asset *this)\n{\n  char *v2; // x20\n\n  v2 = (char *)operator new(0x68uLL);\n  sub_1000099D8();\n  *(_QWORD *)this = v2;\n  std::string::operator=((std::string *)(v2 + 64), (const std::string *)((char *)this + 8));\n  return *(_QWORD *)this;\n}"
+}

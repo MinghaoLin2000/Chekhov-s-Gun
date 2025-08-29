@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController initWithNibName:bundle:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController initWithNibName:bundle:](SiriNCAlertViewController * self, SEL a2, id a3, id a4)",
+    "pseudocode": "SiriNCAlertViewController *__cdecl -[SiriNCAlertViewController initWithNibName:bundle:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  SiriNCAlertViewController *v4; // x0\n  SiriNCAlertViewController *v5; // x19\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___SiriNCAlertViewController;\n  v4 = -[SiriNCAlertViewController initWithNibName:bundle:](&v7, \"initWithNibName:bundle:\", a3, a4);\n  v5 = v4;\n  if ( v4 )\n    -[SiriNCAlertViewController commonInit](v4, \"commonInit\");\n  return v5;\n}"
+}

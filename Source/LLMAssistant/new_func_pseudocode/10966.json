@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf10TextFormat6FinderD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN6google8protobuf10TextFormat6FinderD2Ev(google::protobuf::TextFormat::Finder * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::TextFormat::Finder::~Finder(google::protobuf::TextFormat::Finder *this)\n{\n  __ZN6google8protobuf10TextFormat6FinderD2Ev(this);\n}"
+}

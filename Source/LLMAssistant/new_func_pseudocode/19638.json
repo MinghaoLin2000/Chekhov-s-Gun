@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKSecTrustWrapper dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[PKSecTrustWrapper dealloc](PKSecTrustWrapper * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PKSecTrustWrapper dealloc](PKSecTrustWrapper *self, SEL a2)\n{\n  objc_super v3; // [xsp+10h] [xbp-20h] BYREF\n\n  CFRelease(self->_trustRef);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___PKSecTrustWrapper;\n  -[PKSecTrustWrapper dealloc](&v3, \"dealloc\");\n}"
+}

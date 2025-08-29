@@ -1,0 +1,6 @@
+{
+    "function_name": "_LogCategory_Unspecified",
+    "function_argument_number": 0,
+    "function_signature": "_LogCategory_Unspecified()",
+    "pseudocode": "__int64 LogCategory_Unspecified()\n{\n  if ( qword_10000C2E0 != -1 )\n    dispatch_once(&qword_10000C2E0, &stru_1000082D0);\n  return qword_10000C2E8;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s23NavigationControllerKeyVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s23NavigationControllerKeyVMa()",
+    "pseudocode": "ValueMetadata *_s23NavigationControllerKeyVMa()\n{\n  return &_s23NavigationControllerKeyVN;\n}"
+}

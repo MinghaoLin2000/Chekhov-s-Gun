@@ -1,0 +1,6 @@
+{
+    "function_name": "-[preflightInfo setPreflightDevice:]",
+    "function_argument_number": 3,
+    "function_signature": "-[preflightInfo setPreflightDevice:](preflightInfo * self, SEL a2, __AMRestorableDevice * a3)",
+    "pseudocode": "void __cdecl -[preflightInfo setPreflightDevice:](preflightInfo *self, SEL a2, __AMRestorableDevice *a3)\n{\n  self->preflightDevice = a3;\n}"
+}

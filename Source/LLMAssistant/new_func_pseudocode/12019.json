@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf9FieldMask12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf9FieldMask12ByteSizeLongEv(google::protobuf::FieldMask * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::FieldMask::ByteSizeLong(google::protobuf::FieldMask *this)\n{\n  __int64 v1; // x8\n  __int64 *v2; // x9\n  __int64 v3; // x1\n  __int64 v4; // t1\n  __int64 v5; // x11\n  __int64 v6; // x10\n\n  v1 = *((unsigned int *)this + 6);\n  if ( (int)v1 < 1 )\n  {\n    v3 = *((unsigned int *)this + 6);\n  }\n  else\n  {\n    v2 = (__int64 *)(*((_QWORD *)this + 4) + 8LL);\n    v3 = *((unsigned int *)this + 6);\n    do\n    {\n      v4 = *v2++;\n      v5 = *(unsigned __int8 *)(v4 + 23);\n      v6 = *(_QWORD *)(v4 + 8);\n      if ( (v5 & 0x80u) == 0LL )\n        v6 = v5;\n      v3 += v6 + ((9 * (__clz(v6 | 1) ^ 0x1F) + 73) >> 6);\n      --v1;\n    }\n    while ( v1 );\n  }\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v3, (char *)this + 40);\n  *((_DWORD *)this + 10) = v3;\n  return v3;\n}"
+}

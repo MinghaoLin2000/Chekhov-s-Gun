@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGDisplayBounds",
+    "function_argument_number": 1,
+    "function_signature": "_CGDisplayBounds(CGDirectDisplayID display)",
+    "pseudocode": "CGRect __cdecl CGDisplayBounds(CGDirectDisplayID display)\n{\n  return _CGDisplayBounds(display);\n}"
+}

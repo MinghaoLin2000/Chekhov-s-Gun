@@ -1,0 +1,6 @@
+{
+    "function_name": "+[UARPUpdaterServiceAFUPreferences sharedInstance]",
+    "function_argument_number": 2,
+    "function_signature": "+[UARPUpdaterServiceAFUPreferences sharedInstance](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[UARPUpdaterServiceAFUPreferences sharedInstance](id a1, SEL a2)\n{\n  void *v2; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3221225472LL;\n  block[2] = sub_100001A90;\n  block[3] = &unk_100004250;\n  block[4] = a1;\n  if ( qword_100008B90 != -1 )\n    dispatch_once(&qword_100008B90, block);\n  v2 = (void *)qword_100008B88;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

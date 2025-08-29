@@ -1,0 +1,694 @@
+Service Path:
+/System/Library/CoreServices/Dock.app/Contents/XPCServices/DockHelper.xpc/Contents/MacOS/DockHelper
+
+Service Exported Protocols:
+@protocol AXIncreaseContrastMonitor <NSObject>
+- (void)removeObserver:(id <AXIncreaseContrastObserver>)arg1;
+- (void)addObserver:(id <AXIncreaseContrastObserver>)arg1;
+- (void)activate;
+@end
+@protocol AXIncreaseContrastObserver <NSObject>
+- (void)increaseContrastDidChange:(id <AXIncreaseContrastMonitor>)arg1;
+@end
+@protocol AXReduceMotionMonitor <NSObject>
+- (void)removeObserver:(id <AXReduceMotionObserver>)arg1;
+- (void)addObserver:(id <AXReduceMotionObserver>)arg1;
+- (void)activate;
+@end
+@protocol AXReduceMotionObserver <NSObject>
+- (void)reduceMotionDidChange:(id <AXReduceMotionMonitor>)arg1;
+@end
+@protocol AXReduceTransparencyMonitor <NSObject>
+- (void)removeObserver:(id <AXReduceTransparencyObserver>)arg1;
+- (void)addObserver:(id <AXReduceTransparencyObserver>)arg1;
+- (void)activate;
+@end
+@protocol AXReduceTransparencyObserver <NSObject>
+- (void)reduceTransparencyDidChange:(id <AXReduceTransparencyMonitor>)arg1;
+@end
+@protocol AppearanceMonitor <NSObject>
+- (void)removeObserver:(id <AppearanceObserver>)arg1;
+- (void)addObserver:(id <AppearanceObserver>)arg1;
+- (void)activate;
+@end
+@protocol AppearanceObserver <NSObject>
+- (void)appearanceDidChange:(id <AppearanceMonitor>)arg1;
+@end
+@protocol ApplicationHangMonitor <NSObject>
+- (void)removeObserver:(id <ApplicationHangObserver>)arg1;
+- (void)addObserver:(id <ApplicationHangObserver>)arg1;
+- (void)activate;
+@end
+@protocol ApplicationHangObserver <NSObject>
+- (void)appDidStopBeingUnresponsive:(id <ApplicationHangMonitor>)arg1 psn:(struct CPSProcessSerNum)arg2;
+- (void)appDidBecomeUnresponsive:(id <ApplicationHangMonitor>)arg1 psn:(struct CPSProcessSerNum)arg2;
+@end
+@protocol ApplicationRegistrationMonitor <NSObject>
+- (void)removeObserver:(id <ApplicationRegistrationObserver>)arg1;
+- (void)addObserver:(id <ApplicationRegistrationObserver>)arg1;
+- (void)activate;
+@end
+@protocol ApplicationRegistrationObserver <NSObject>
+- (void)applicationsRegistered:(NSArray *)arg1 withMonitor:(id <ApplicationRegistrationMonitor>)arg2;
+@end
+@protocol ApplicationStateMonitor <NSObject>
+- (void)removeObserver:(id <ApplicationStateObserver>)arg1;
+- (void)addObserver:(id <ApplicationStateObserver>)arg1;
+- (void)activate;
+@end
+@protocol ApplicationStateObserver <NSObject>
+- (void)handleNotificationsTerminatedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleTerminatedByTALChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationProgressChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationWantsAttentionChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationTypeChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationPresentationModeChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handlePresentationModeChangedBecauseFrontApplicationChangedNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationDeathNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationLaunchFailureNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationShownNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationHiddenNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationCreationNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationReadyNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+- (void)handleApplicationLaunchNotification:(int)arg1 time:(double)arg2 data:(id)arg3 asn:(id)arg4;
+@end
+@protocol ApplicationUninstaller <NSObject>
+- (void)uninstallBundleAtURL:(NSURL *)arg1 handler:(void (^)(_Bool))arg2;
+- (int)uninstallabilityOfFileAtURL:(NSURL *)arg1;
+@end
+@protocol BTMListObserver <NSObject>
+- (void)listDidChange:(BTMList *)arg1;
+@end
+@protocol BezelIconList <NSObject>
+- (_Bool)bezelIconList:(BezelIconList *)arg1 itemDroppedAtIndex:(unsigned long long)arg2 forDrag:(struct OpaqueCoreDrag *)arg3;
+- (_Bool)bezelIconList:(BezelIconList *)arg1 itemSelectedAtIndex:(unsigned long long)arg2 forDrag:(struct OpaqueCoreDrag *)arg3;
+- (void)bezelIconList:(BezelIconList *)arg1 itemSelectedAtIndex:(unsigned long long)arg2;
+- (void)bezelIconList:(BezelIconList *)arg1 handleKeyboardEvent:(ECEvent *)arg2;
+- (void)bezelIconListCancel:(BezelIconList *)arg1;
+- (void)bezelIconList:(BezelIconList *)arg1 performActionAtIndex:(unsigned long long)arg2;
+@end
+@protocol BezelIconListLayerActions <NSObject>
+- (unsigned int)windowForBezelIconListLayer:(BezelIconListLayer *)arg1;
+- (struct CGRect)bezelIconListLayer:(BezelIconListLayer *)arg1 convertRectToGlobal:(struct CGRect)arg2;
+- (_Bool)bezeIconListLayer:(BezelIconListLayer *)arg1 itemDroppedAtIndex:(unsigned long long)arg2 forDrag:(struct OpaqueCoreDrag *)arg3;
+- (void)bezeIconListLayer:(BezelIconListLayer *)arg1 itemAtIndexSelected:(unsigned long long)arg2 forDrag:(struct OpaqueCoreDrag *)arg3;
+- (void)bezeIconListLayer:(BezelIconListLayer *)arg1 itemAtIndexSelected:(unsigned long long)arg2;
+- (void)bezeIconListLayer:(BezelIconListLayer *)arg1 itemAtIndexClicked:(unsigned long long)arg2;
+@end
+@protocol CAAnimationDelegate <NSObject>
+- (void)animationDidStop:(CAAnimation *)arg1 finished:(_Bool)arg2;
+- (void)animationDidStart:(CAAnimation *)arg1;
+@end
+@protocol CALayerDelegate <NSObject>
+- (id <CAAction>)actionForLayer:(CALayer *)arg1 forKey:(NSString *)arg2;
+- (void)layoutSublayersOfLayer:(CALayer *)arg1;
+- (void)layerWillDraw:(CALayer *)arg1;
+- (void)drawLayer:(CALayer *)arg1 inContext:(struct CGContext *)arg2;
+- (void)displayLayer:(CALayer *)arg1;
+@end
+@protocol DOCKDownloadProgressHandler <NSObject>
+- (struct CGRect)dockDownloadFlyToRect;
+- (void)dockDownloadFile:(NSString *)arg1 replacedWithFile:(NSString *)arg2;
+- (void)dockDownloadProgress:(float)arg1 cancelable:(_Bool)arg2 forFile:(NSString *)arg3;
+- (void)dockDownloadProgress:(float)arg1;
+@end
+@protocol DOCKExtraDelegate <NSObject>
+- (void)dockExtraSetCustomIconImage:(id)arg1 withContext:(id)arg2;
+- (void)dockExtraSetBadgeLabel:(ECStatusLabelDescription *)arg1 withContext:(id)arg2;
+@end
+@protocol DOCKGestureHandler <NSObject>
+- (_Bool)isFluidGesturing;
+- (void)fluidGestureEnd:(DOCKGestureEvent *)arg1;
+- (void)fluidGestureProgress:(DOCKGestureEvent *)arg1;
+- (_Bool)fluidGestureStart:(DOCKGestureEvent *)arg1;
+@end
+@protocol DOCKStackActionHandling <NSObject>
+- (_Bool)performStackActionAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id <DOCKStackActionSender>)arg3;
+- (void)showStackAsMenu:(_Bool)arg1;
+- (void)stackDidClose;
+- (_Bool)prepareForStackDrag:(struct OpaqueCoreDrag *)arg1 atIndex:(unsigned long long)arg2 sender:(id <DOCKStackActionSender>)arg3;
+- (void)endStackTypeAhead;
+- (unsigned long long)indexForStackTypeAhead:(NSString *)arg1;
+- (void)beginStackTypeAhead:(id <DOCKStackActionSender>)arg1;
+@end
+@protocol DOCKStackActionSender <NSObject>
+@end
+@protocol DOCKStackCollapsedDataSource <NSObject>
+- (id)collapsedStackValueForKey:(NSString *)arg1 atIndex:(unsigned long long)arg2;
+- (unsigned long long)numberOfCollapsedStackItems;
+@end
+@protocol DOCKStackDataSourceClient <NSObject>
+- (NSIndexSet *)indexSetForVisibleExpandedItems;
+- (void)setCollapsedStackValue:(id)arg1 forKey:(NSString *)arg2 atIndex:(unsigned long long)arg3;
+- (void)setExpandedStackValue:(id)arg1 forKey:(NSString *)arg2 atIndex:(unsigned long long)arg3 withDataSource:(id)arg4;
+- (void)stackDataSourceInvalidatedForRange:(struct _NSRange)arg1 withDataSource:(id)arg2;
+- (void)stackDataSourceInvalidated:(id)arg1;
+@end
+@protocol DOCKStackExpandedDataSource <NSObject>
+- (id)expandedStackValueForKey:(NSString *)arg1 withInfo:(NSDictionary *)arg2;
+- (id)expandedStackValueForKey:(NSString *)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3 maximumViewableItems:(unsigned long long)arg4;
+- (unsigned long long)numberOfExpandedStackItems;
+- (void)invalidateExpandedStackCache;
+@end
+@protocol DOCKStackItem <NSObject>
+- (void)setContentFromDataSource:(id)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3 maximumViewableItems:(unsigned long long)arg4;
+@end
+@protocol DPDesktopPictureManagerProtocol <NSObject>
+- (void)setDesktopPictureDictionary:(NSDictionary *)arg1 forDisplay:(unsigned int)arg2 andSpace:(NSString *)arg3;
+- (NSDictionary *)desktopPictureDictionaryForDisplay:(unsigned int)arg1 andSpace:(NSString *)arg2;
+- (id <DPDesktopWindow>)createDesktopProxyForFSSpace:(FullscreenSpace *)arg1 onSpace:(ECCGSSpace *)arg2 onDisplay:(unsigned int)arg3;
+- (CALayer *)layerForSpace:(ManagedSpace *)arg1 andDisplay:(unsigned int)arg2;
+- (void)moveSpace:(ManagedSpace *)arg1 toDisplay:(unsigned int)arg2 displayUUID:(NSString *)arg3;
+- (CALayer *)miniLayerForSpace:(ManagedSpace *)arg1 andDisplay:(unsigned int)arg2;
+- (id <DPDesktopWindow>)desktopWindowForSpace:(ManagedSpace *)arg1 andDisplay:(unsigned int)arg2;
+- (void)displayReconfiguration;
+- (void)spaceBecameFirst:(NSString *)arg1 onDisplay:(NSString *)arg2;
+- (void)removeSpace:(ManagedSpace *)arg1;
+- (void)addFullscreenSpace:(ManagedSpace *)arg1 forDisplayUUID:(NSString *)arg2;
+- (void)addSpace:(ManagedSpace *)arg1 forDisplayUUID:(NSString *)arg2;
+@end
+@protocol DPDesktopWindow <NSObject>
+- (void)removeRemoteConnection:(DPRemoteConnection *)arg1;
+- (void)addRemoteConnection:(DPRemoteConnection *)arg1 completion:(void (^)(unsigned int))arg2;
+- (void)setDarkenedValueImmediate:(double)arg1;
+@end
+@protocol DisplayCaptureMonitor <NSObject>
+- (void)removeObserver:(id <DisplayCaptureObserver>)arg1;
+- (void)addObserver:(id <DisplayCaptureObserver>)arg1;
+- (void)activate;
+@end
+@protocol DisplayCaptureObserver <NSObject>
+- (void)displayCaptureMonitorDidObserverDisplayRelease:(id <DisplayCaptureMonitor>)arg1;
+- (void)displayCaptureMonitorDidObserverDisplayCapture:(id <DisplayCaptureMonitor>)arg1;
+@end
+@protocol DisplaySleepMonitor <NSObject>
+- (void)removeObserver:(id <DisplaySleepObserver>)arg1;
+- (void)addObserver:(id <DisplaySleepObserver>)arg1;
+- (void)activate;
+@end
+@protocol DisplaySleepObserver <NSObject>
+- (void)displaysDidStopSleeping:(id <DisplaySleepMonitor>)arg1;
+- (void)displaysWillStartSleeping:(id <DisplaySleepMonitor>)arg1;
+@end
+@protocol DockAnimationThreadDelegate <NSObject>
+- (CDStruct_869f9c67)animationThreadPostDockRectChangeIfNecessaryWithContext:(CDStruct_06d3d77b)arg1 oldMetrics:(CDStruct_869f9c67)arg2 withinAnimationLoop:(_Bool)arg3;
+- (CDStruct_869f9c67)animationThreadCurrentDockRectMetrics;
+- (_Bool)animationThreadShutdownUpdateAtTime:(double)arg1;
+- (void)animationThreadShutdownAnimationPrepare;
+- (_Bool)animationThreadShutdownAnimationNeeded;
+- (_Bool)animationThreadUpdateAtTime:(double)arg1 withContext:(CDStruct_06d3d77b *)arg2;
+- (_Bool)animationThreadShouldThrottle;
+- (_Bool)animationThreadDisabled;
+@end
+@protocol DockEventQueueDelegate <NSObject>
+- (void)handleDockEventHideContinuityTile:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventShowContinuityTile:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventAddBounce:(Tile *)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventAppNeedsAttention:(Tile *)arg1 needsAttention:(_Bool)arg2 duration:(double)arg3 context:(CDStruct_06d3d77b *)arg4;
+- (void)handleDockEventRecentFileTileRemoved:(DOCKFileTile *)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventTileRemoved:(Tile *)arg1 animate:(_Bool)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventOrientationChanged:(long long)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventDisplayChanged:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventAutohideEnabled:(_Bool)arg1 setRect:(_Bool)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventWindowSetTitle:(unsigned int)arg1 title:(NSString *)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventWindowUnregistered:(unsigned int)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventUpdateMinimizeWindow:(unsigned int)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventMaximizeWindows:(unsigned int *)arg1 orderList:(unsigned int *)arg2 opList:(int *)arg3 count:(unsigned int)arg4 transactionID:(unsigned int)arg5 animateWindows:(_Bool)arg6 context:(CDStruct_06d3d77b *)arg7;
+- (void)handleDockEventMaximizeWindowWithOrder:(unsigned int)arg1 orderWindow:(unsigned int)arg2 op:(int)arg3 transactionID:(unsigned int)arg4 animateWindow:(_Bool)arg5 context:(CDStruct_06d3d77b *)arg6;
+- (void)handleDockEventMaximizeWindow:(unsigned int)arg1 transactionID:(unsigned int)arg2 animateWindow:(_Bool)arg3 context:(CDStruct_06d3d77b *)arg4;
+- (void)handleDockEventMinimizeWindows:(NSArray *)arg1 animate:(_Bool)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventMinimizeWindow:(DOCKWindowTile *)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventDropInternal:(struct FloatRect)arg1 tile:(Tile *)arg2 oldPos:(unsigned int)arg3 context:(CDStruct_06d3d77b *)arg4;
+- (void)handleDockEventDragDrop:(struct CGPoint)arg1 tileList:(NSArray *)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventDragLeave:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventDragEnter:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventAppHideReveal:(struct CPSProcessSerNum)arg1 hide:(_Bool)arg2 context:(CDStruct_06d3d77b *)arg3;
+- (void)handleDockEventRemoveWindows:(struct CPSProcessSerNum)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventAppDeath:(Tile *)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventAppLaunchComplete:(struct CPSProcessSerNum)arg1 context:(CDStruct_06d3d77b *)arg2;
+- (void)handleDockEventAppLaunch:(Tile *)arg1 alreadyExists:(_Bool)arg2 appLaunch:(_Bool)arg3 context:(CDStruct_06d3d77b *)arg4;
+- (void)handleDockEventMouseLeave:(CDStruct_06d3d77b *)arg1;
+- (void)handleDockEventMouseEnter:(CDStruct_06d3d77b *)arg1;
+@end
+@protocol DockExtra <NSObject>
+@end
+@protocol DockImmutabilityPreferencesMonitor <NSObject>
+- (void)removeObserver:(id <DockImmutabilityPreferencesObserver>)arg1;
+- (void)addObserver:(id <DockImmutabilityPreferencesObserver>)arg1;
+- (void)activate;
+@end
+@protocol DockImmutabilityPreferencesObserver <NSObject>
+- (void)dockImmutabilityPreferencesDidChange:(id <DockImmutabilityPreferencesMonitor>)arg1 hasStaticApps:(_Bool)arg2 hasStaticOthers:(_Bool)arg3;
+@end
+@protocol DownloadFileMonitor <NSObject>
+- (void)removeObserver:(id <DownloadFileObserver>)arg1;
+- (void)addObserver:(id <DownloadFileObserver>)arg1;
+- (void)activate;
+@end
+@protocol DownloadFileObserver <NSObject>
+- (void)downloadFileDidFinish:(id <DownloadFileMonitor>)arg1 path:(NSString *)arg2;
+- (void)downloadFileDidChange:(id <DownloadFileMonitor>)arg1 path:(NSString *)arg2;
+@end
+@protocol ECAlertPanelDelegate <NSObject>
+- (CALayer *)layerForCenteringOfAlertPanel:(ECAlertPanel *)arg1;
+- (void)alertPanel:(ECAlertPanel *)arg1 didDismissWithButtonIndex:(long long)arg2;
+- (void)alertPanel:(ECAlertPanel *)arg1 willDismissWithButtonIndex:(long long)arg2;
+- (void)didPresentAlertPanel:(ECAlertPanel *)arg1;
+- (void)willPresentAlertPanel:(ECAlertPanel *)arg1;
+- (void)alertPanelCancel:(ECAlertPanel *)arg1;
+- (void)alertPanel:(ECAlertPanel *)arg1 clickedButtonIndex:(long long)arg2;
+@end
+@protocol ECBackdropLayerProtocol
+@end
+@protocol ECCALayerControllableObjC
+- (void)layout;
+@end
+@protocol ECEventHandling <NSObject>
+- (_Bool)dragSpring:(ECEvent *)arg1;
+- (_Bool)dragDropped:(ECEvent *)arg1;
+- (_Bool)dragMoved:(ECEvent *)arg1;
+- (_Bool)dragExited:(ECEvent *)arg1;
+- (_Bool)dragEntered:(ECEvent *)arg1;
+- (void)lostKeyFocus:(ECEvent *)arg1;
+- (_Bool)deepPress:(ECEvent *)arg1;
+- (_Bool)gesture:(ECEvent *)arg1;
+- (_Bool)flagsChanged:(ECEvent *)arg1;
+- (_Bool)keyUp:(ECEvent *)arg1;
+- (_Bool)keyDown:(ECEvent *)arg1;
+- (_Bool)mouseExited:(ECEvent *)arg1;
+- (_Bool)mouseMoved:(ECEvent *)arg1;
+- (_Bool)mouseEntered:(ECEvent *)arg1;
+- (_Bool)scrollWheel:(ECEvent *)arg1;
+- (_Bool)rightMouseUp:(ECEvent *)arg1;
+- (_Bool)rightMouseDragged:(ECEvent *)arg1;
+- (_Bool)rightMouseDown:(ECEvent *)arg1;
+- (_Bool)leftMouseDraggedExited:(ECEvent *)arg1;
+- (_Bool)leftMouseDraggedEntered:(ECEvent *)arg1;
+- (_Bool)leftMouseDragged:(ECEvent *)arg1;
+- (_Bool)leftMouseUp:(ECEvent *)arg1;
+- (_Bool)leftMouseDown:(ECEvent *)arg1;
+@end
+@protocol ECEventHandlingDelegate <NSObject>
+- (_Bool)dragSpring:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)dragDropped:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)dragMoved:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)dragExited:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)dragEntered:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (void)lostKeyFocus:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)deepPress:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)gesture:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)flagsChanged:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)keyUp:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)keyDown:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)mouseExited:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)mouseMoved:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)mouseEntered:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)scrollWheel:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)rightMouseUp:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)rightMouseDragged:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)rightMouseDown:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)leftMouseDraggedExited:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)leftMouseDragged:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)leftMouseDraggedEntered:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)leftMouseUp:(ECEvent *)arg1 in:(CALayer *)arg2;
+- (_Bool)leftMouseDown:(ECEvent *)arg1 in:(CALayer *)arg2;
+@end
+@protocol ECItemListActionHandling
+- (void)performItemListActionAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (void)itemListDidScroll:(id)arg1;
+- (void)itemListWillScroll:(id)arg1;
+- (void)itemListItemSelectedAtIndex:(unsigned long long)arg1 sender:(id)arg2;
+@end
+@protocol ECItemListDataSource <NSObject>
+- (id)itemListValueForKey:(NSString *)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3;
+- (unsigned long long)numberOfItemListItems;
+@end
+@protocol ECItemListItem
+- (void)setContentFromDataSource:(id)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3;
+@end
+@protocol ECKeyboardNavigating <NSObject>
+- (_Bool)navigate:(long long)arg1 withEvent:(ECEvent *)arg2;
+@end
+@protocol ECLayerSource <NSObject>
+- (void)setContentInLayers:(NSArray *)arg1 withDataRange:(struct _NSRange)arg2 forLayer:(CALayer *)arg3 usingScaleFactor:(float)arg4;
+- (unsigned long long)numberOfItemsForLayer:(CALayer *)arg1;
+- (CALayer *)makeLayerForLayer:(CALayer *)arg1 atIndex:(unsigned long long)arg2;
+- (CALayer *)makeLayerForLayer:(CALayer *)arg1;
+@end
+@protocol ECLayerSourceClient <NSObject>
+- (void)layerSourceInvalidated:(id <ECLayerSource>)arg1;
+- (void)layerSourceInvalidated:(id <ECLayerSource>)arg1 forRange:(struct _NSRange)arg2;
+@end
+@protocol ECModalEventHandler <NSObject>
+- (_Bool)handlesModalDragEvents;
+- (void)modalEventProcessed;
+@end
+@protocol ECPagerSource <NSObject>
+- (NSArray *)pageItemsForPager:(ECPager *)arg1;
+- (ECPage *)makePageForPager:(ECPager *)arg1 atIndex:(unsigned long long)arg2;
+- (unsigned long long)numberOfPagesForPager:(ECPager *)arg1;
+- (void)didChangeToPageIndex:(unsigned long long)arg1;
+- (void)willChangeToPageIndex:(unsigned long long)arg1;
+- (void)removePage:(ECPage *)arg1 forPager:(ECPager *)arg2;
+- (void)addPageForPager:(ECPager *)arg1;
+- (void)layoutPage:(ECPage *)arg1 forPager:(ECPager *)arg2;
+@end
+@protocol ECSBActionHandling <NSObject>
+- (void)performRemoveActionForItem:(id)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (void)performActionForItem:(id)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (_Bool)performDropForItem:(id)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (_Bool)canAcceptDropForItem:(id)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (void)cancelActionWithEvent:(ECEvent *)arg1 sender:(id)arg2;
+@end
+@protocol ECSBDataSource <NSObject>
+- (void)setValue:(id)arg1 forKey:(NSString *)arg2 ofItem:(id)arg3;
+- (id)valueForKey:(NSString *)arg1 ofItem:(id)arg2 withInfo:(NSDictionary *)arg3;
+@end
+@protocol ECSBDataSourceClient <NSObject>
+- (struct CGRect)globalBoundsOfIconForItem:(id)arg1;
+- (void)confirmRemoveItem:(id)arg1;
+- (void)replaceItem:(id)arg1 withItem:(id)arg2 refetchingContents:(_Bool)arg3;
+- (void)removeItem:(id)arg1 animating:(_Bool)arg2;
+- (void)insertItem:(id)arg1 atIndex:(unsigned long long)arg2 ofParentItem:(id)arg3;
+- (void)addItem:(id)arg1 toParentItem:(id)arg2;
+- (void)setValue:(id)arg1 forKey:(NSString *)arg2 ofItem:(id)arg3;
+@end
+@protocol ECSBDelegate <NSObject>
+- (void)removePage:(id)arg1 fromGroup:(id)arg2;
+- (id)addPageToGroup:(id)arg1;
+- (void)removePage:(id)arg1;
+- (id)addPage;
+- (void)removeItem:(id)arg1 onPage:(id)arg2;
+- (void)moveItem:(id)arg1 toIndex:(unsigned long long)arg2 onPage:(id)arg3;
+- (void)zoomFactorChanged:(double)arg1;
+- (void)selectionDidChangeFromItem:(id)arg1 toItem:(id)arg2 inPager:(ECSBPager *)arg3;
+- (void)selectionWillChangeFromItem:(id)arg1 toItem:(id)arg2 inPager:(ECSBPager *)arg3;
+- (void)searchTextCleared;
+- (void)searchTextChanged:(NSString *)arg1;
+- (void)didEndDeleting;
+- (void)didBeginDeleting;
+- (void)didEndEditing;
+- (void)didBeginEditing;
+- (void)didChangeToPage:(id)arg1;
+- (void)willChangeToPage:(id)arg1;
+- (NSDictionary *)alertPanelInfoForAction:(NSString *)arg1 ofItem:(id)arg2;
+- (_Bool)shouldPresentAlertPanelForAction:(NSString *)arg1 ofItem:(id)arg2 withEvent:(ECEvent *)arg3;
+- (CALayer *)rootLayerForAlertPanel;
+- (WALayerKitWindow *)containerWindow;
+- (void)cancelDragOfItem:(id)arg1 andLayer:(CALayer *)arg2;
+- (void)dragOfItemCompleted;
+- (void)didEndDragOfItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (_Bool)willEndDragOfItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (_Bool)didDragItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (void)didBeginDragOfItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (void)endDragOfItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (void)beginDragOfItem:(id)arg1 withEvent:(ECEvent *)arg2 andLayer:(CALayer *)arg3;
+- (CALayer *)rootLayerForDragging;
+- (void)groupHiddenForItem:(id)arg1 atIndex:(unsigned long long)arg2;
+- (void)groupShownForItem:(id)arg1 atIndex:(unsigned long long)arg2;
+- (NSString *)nameForGroupUsingItem:(id)arg1 withItem:(id)arg2;
+- (_Bool)canMakeGroupUsingItem:(id)arg1 withItem:(id)arg2;
+- (void)performChanges:(void (^)(void))arg1;
+- (CALayer *)rootLayerForGroups;
+- (NSArray *)pagesOfGroup:(id)arg1;
+- (id)makeGroupUsingItem:(id)arg1 withItem:(id)arg2 atIndex:(unsigned long long)arg3 onPage:(id)arg4;
+- (void)removeItem:(id)arg1 ofGroup:(id)arg2 onPage:(id)arg3;
+- (void)moveItem:(id)arg1 toIndex:(unsigned long long)arg2 ofGroup:(id)arg3 onPage:(id)arg4;
+@end
+@protocol ECSBGridActionHandling <NSObject>
+- (void)performGridActionAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (_Bool)performDropAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (_Bool)canAcceptDropAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3;
+- (void)hideGroup:(ECSBGroup *)arg1 sender:(id)arg2;
+- (void)showGroup:(ECSBGroup *)arg1 sender:(id)arg2;
+- (void)gridItemSelectedAtIndex:(unsigned long long)arg1 sender:(id)arg2;
+- (void)cancelGridActionWithEvent:(ECEvent *)arg1 sender:(id)arg2;
+@end
+@protocol ECSBGridDataSource <NSObject>
+- (id)gridValueForKey:(NSString *)arg1 withInfo:(NSDictionary *)arg2;
+- (id)gridValueForKey:(NSString *)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3;
+- (unsigned long long)numberOfGridItems;
+- (void)invalidateGridCache;
+@end
+@protocol ECSBGridDataSourceClient <NSObject>
+- (void)setGridValue:(id)arg1 forKey:(NSString *)arg2 atIndex:(unsigned long long)arg3;
+- (void)gridDataSourceInvalidatedAtRange:(struct _NSRange)arg1;
+- (void)gridDataSourceInvalidated;
+@end
+@protocol ECSBGridItemSource <NSObject>
+- (_Bool)isGroupItem;
+- (void)setContentFromDataSource:(id)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3;
+@end
+@protocol ECSBGridPagerSource <ECPagerSource>
+- (void)replacePageItem:(ECSBPageItem *)arg1 withPageItem:(ECSBPageItem *)arg2;
+- (NSString *)removeEditLayerInsideLayer:(CALayer *)arg1 forPager:(ECSBPager *)arg2;
+- (void)insertEditLayerInsideLayer:(CALayer *)arg1 ofLabelLayer:(ECSBLabelLayer *)arg2 withString:(NSString *)arg3 forPager:(ECSBPager *)arg4 completionBlock:(void (^)(void))arg5;
+@end
+@protocol ECSBGridPagerSourceClient <NSObject>
+- (void)setGridValue:(id)arg1 forKey:(NSString *)arg2 atIndex:(unsigned long long)arg3 forPageAtIndex:(unsigned long long)arg4;
+- (void)gridDataSourceInvalidatedAtRange:(struct _NSRange)arg1 forPageAtIndex:(unsigned long long)arg2;
+- (void)gridDataSourceInvalidatedForPageAtIndex:(unsigned long long)arg1;
+@end
+@protocol ECScrollbarHandler <NSObject>
+- (void)endDragScroll:(id)arg1;
+- (void)scrollToValue:(double)arg1 sender:(id)arg2;
+- (void)beginDragScroll:(id)arg1;
+- (void)scrollDownPage:(id)arg1;
+- (void)scrollUpPage:(id)arg1;
+- (void)scrollDown:(id)arg1;
+- (void)scrollUp:(id)arg1;
+@end
+@protocol Expose <NSObject>
+- (void)changeMode:(long long)arg1 shouldCloseNotificationCenter:(_Bool)arg2;
+- (void)maximizeWindow:(unsigned int)arg1 orderOp:(int)arg2 otherWindow:(unsigned int)arg3 completion:(void (^)(void))arg4;
+- (void)preflightForMaximizationWithMinimizedWindow:(unsigned int)arg1 op:(int)arg2 otherWindow:(unsigned int)arg3;
+- (void)setRecentsValue:(id)arg1 forKey:(NSString *)arg2 atIndex:(unsigned long long)arg3 withDataSource:(id <WVRecentsDataSource>)arg4;
+- (void)showForTile:(Tile *)arg1 allowSlow:(_Bool)arg2;
+- (void)update:(NSArray *)arg1 forSpace:(ManagedSpace *)arg2;
+- (void)switchMissionControlToPreviousSpace:(unsigned int)arg1;
+- (void)switchMissionControlToNextSpace:(unsigned int)arg1;
+- (void)switchMissionControlToSpace:(ManagedSpace *)arg1;
+- (void)switchMissionControlSpace:(long long)arg1 onDisplay:(unsigned int)arg2;
+- (_Bool)handleEvent:(struct __CGEvent *)arg1;
+- (void)recaptureEventsIfNecessary:(struct __CGEvent *)arg1;
+- (void)handleCoreDragEnded;
+- (void)handleCoreDragStart;
+- (void)handleWithDragEnded:(unsigned int)arg1;
+- (void)handleWithDragWillEnd:(unsigned int)arg1;
+- (void)handleWithDragStarted:(unsigned int)arg1 origin:(struct CGPoint)arg2 tags:(unsigned long long)arg3 isTabWindow:(_Bool)arg4;
+- (int)handleDragEvent:(struct OpaqueCoreDrag *)arg1 type:(long long)arg2;
+- (_Bool)handleClickWhenInShowDesktop:(struct __CGEvent *)arg1;
+- (void)displayChanged;
+- (double)cancel:(_Bool)arg1;
+- (void)changeMode:(long long)arg1;
+- (void)exitAndLockWindowsMode:(void (^)(void))arg1;
+- (void)exitAndDoWork:(void (^)(void))arg1;
+- (void)exit;
+@end
+@protocol ExternalMenuMonitor <NSObject>
+- (void)removeObserver:(id <ExternalMenuObserver>)arg1;
+- (void)addObserver:(id <ExternalMenuObserver>)arg1;
+- (void)activate;
+@end
+@protocol ExternalMenuObserver <NSObject>
+- (void)externalMenuDidEnd:(id <ExternalMenuMonitor>)arg1;
+- (void)externalMenuDidBegin:(id <ExternalMenuMonitor>)arg1;
+@end
+@protocol GMAvailabilityListenerDelegate <NSObject>
+- (void)gmsAvailabilityDidUpdate:(_Bool)arg1;
+@end
+@protocol LPItemContainer <NSObject>
+@end
+@protocol LPItemProgress <NSObject>
+@end
+@protocol LPLayoutItem <NSObject>
+@end
+@protocol LPStorageStorable <NSObject>
+@end
+@protocol LocaleMonitor <NSObject>
+- (void)removeObserver:(id <LocaleObserver>)arg1;
+- (void)addObserver:(id <LocaleObserver>)arg1;
+- (void)activate;
+@end
+@protocol LocaleObserver <NSObject>
+- (void)localeDidChange:(id <LocaleMonitor>)arg1;
+@end
+@protocol MenuBarAutohideMonitor <NSObject>
+- (void)removeObserver:(id <MenuBarAutohideObserver>)arg1;
+- (void)addObserver:(id <MenuBarAutohideObserver>)arg1;
+- (void)activate;
+@end
+@protocol MenuBarAutohideObserver <NSObject>
+- (void)menuBarDidStopAutohiding:(id <MenuBarAutohideMonitor>)arg1;
+- (void)menuBarDidStartAutohiding:(id <MenuBarAutohideMonitor>)arg1;
+@end
+@protocol NSCacheDelegate <NSObject>
+- (void)cache:(NSCache *)arg1 willEvictObject:(id)arg2;
+@end
+@protocol NSMenuDelegate <NSObject>
+- (struct CGRect)confinementRectForMenu:(NSMenu *)arg1 onScreen:(NSScreen *)arg2;
+- (void)menu:(NSMenu *)arg1 willHighlightItem:(NSMenuItem *)arg2;
+- (void)menuDidClose:(NSMenu *)arg1;
+- (void)menuWillOpen:(NSMenu *)arg1;
+- (_Bool)menuHasKeyEquivalent:(NSMenu *)arg1 forEvent:(NSEvent *)arg2 target:(id *)arg3 action:(SEL *)arg4;
+- (_Bool)menu:(NSMenu *)arg1 updateItem:(NSMenuItem *)arg2 atIndex:(long long)arg3 shouldCancel:(_Bool)arg4;
+- (long long)numberOfItemsInMenu:(NSMenu *)arg1;
+- (void)menuNeedsUpdate:(NSMenu *)arg1;
+@end
+@protocol OS_dispatch_source <NSObject>
+@end
+@protocol OS_dispatch_source_data_or <OS_dispatch_source>
+@end
+@protocol OS_dispatch_source_data_replace <OS_dispatch_source>
+@end
+@protocol OS_dispatch_source_mach_recv <OS_dispatch_source>
+@end
+@protocol OS_dispatch_source_signal <OS_dispatch_source>
+@end
+@protocol OS_dispatch_source_timer <OS_dispatch_source>
+@end
+@protocol OS_xpc_object <NSObject>
+@end
+@protocol ProcessUIModeChangeObserver <NSObject>
+- (void)modeChangedFromHiddenToSuppressed;
+- (void)modeChangedFromHiddenToNormal;
+- (void)modeChangedFromSuppressedToNormal;
+- (void)modeChangedFromNormalToSuppressed;
+- (void)modeChangedFromNormalOrSuppressedToHidden;
+@end
+@protocol ReduceDesktopTintingMonitor <NSObject>
+- (void)removeObserver:(id <ReduceDesktopTintingObserver>)arg1;
+- (void)addObserver:(id <ReduceDesktopTintingObserver>)arg1;
+- (void)activate;
+@end
+@protocol ReduceDesktopTintingObserver <NSObject>
+- (void)reduceDesktopTintingDidChange:(id <ReduceDesktopTintingMonitor>)arg1;
+@end
+@protocol ScreenLockMonitor <NSObject>
+- (void)removeObserver:(id <ScreenLockObserver>)arg1;
+- (void)addObserver:(id <ScreenLockObserver>)arg1;
+- (void)activate;
+@end
+@protocol ScreenLockObserver <NSObject>
+- (void)screenDidUnlock:(id <ScreenLockMonitor>)arg1;
+- (void)screenDidLock:(id <ScreenLockMonitor>)arg1;
+@end
+@protocol ScreenSharingModelProtocol <NSObject>
+- (void)resolveAndOpen;
+@end
+@protocol ScrollbarPagingPreferencesMonitor <NSObject>
+- (void)removeObserver:(id <ScrollbarPagingPreferencesObserver>)arg1;
+- (void)addObserver:(id <ScrollbarPagingPreferencesObserver>)arg1;
+- (void)activate;
+@end
+@protocol ScrollbarPagingPreferencesObserver <NSObject>
+- (void)scrollbarPagingDidChange:(id <ScrollbarPagingPreferencesMonitor>)arg1;
+@end
+@protocol ScrollbarVisibilityPreferencesMonitor <NSObject>
+- (void)removeObserver:(id <ScrollbarVisibilityPreferencesObserver>)arg1;
+- (void)addObserver:(id <ScrollbarVisibilityPreferencesObserver>)arg1;
+- (void)activate;
+@end
+@protocol ScrollbarVisibilityPreferencesObserver <NSObject>
+- (void)scrollbarVisibilityDidChange:(id <ScrollbarVisibilityPreferencesMonitor>)arg1;
+@end
+@protocol SessionConsoleMonitor <NSObject>
+- (void)removeObserver:(id <SessionConsoleObserver>)arg1;
+- (void)addObserver:(id <SessionConsoleObserver>)arg1;
+- (void)activate;
+@end
+@protocol SessionConsoleObserver <NSObject>
+- (void)sessionConsoleDidDisconnect:(id <SessionConsoleMonitor>)arg1;
+- (void)sessionConsoleDidConnect:(id <SessionConsoleMonitor>)arg1;
+@end
+@protocol SessionRemoteConnectionMonitor <NSObject>
+- (void)removeObserver:(id <SessionRemoteConnectionObserver>)arg1;
+- (void)addObserver:(id <SessionRemoteConnectionObserver>)arg1;
+- (void)activate;
+@end
+@protocol SessionRemoteConnectionObserver <NSObject>
+- (void)sessionRemoteConnectionDidDisconnect:(id <SessionRemoteConnectionMonitor>)arg1;
+- (void)sessionRemoteConnectionDidConnect:(id <SessionRemoteConnectionMonitor>)arg1;
+@end
+@protocol SpacesDelegate
+- (void)setDockVisibleOnSpace:(ManagedSpace *)arg1 alreadyLocked:(_Bool)arg2;
+- (void)setDockVisibleOnCurrentSpaceForDisplay:(DisplayDescriptor *)arg1 alreadyLocked:(_Bool)arg2;
+@end
+@protocol SpringingPreferencesMonitor <NSObject>
+- (void)removeObserver:(id <SpringingPreferencesObserver>)arg1;
+- (void)addObserver:(id <SpringingPreferencesObserver>)arg1;
+- (void)activate;
+@end
+@protocol SpringingPreferencesObserver <NSObject>
+- (void)springingPreferencesDidChange:(id <SpringingPreferencesMonitor>)arg1;
+@end
+@protocol TouchbarMonitor <NSObject>
+- (void)removeObserver:(id <TouchbarObserver>)arg1;
+- (void)addObserver:(id <TouchbarObserver>)arg1;
+- (void)activate;
+@end
+@protocol TouchbarObserver <NSObject>
+- (void)touchbarStateDidChange:(id <TouchbarMonitor>)arg1;
+@end
+@protocol UNUninstallClientDelegate <NSObject>
+- (void)uninstallRequest:(UNUninstallClientRequest *)arg1 didFailWithError:(NSError *)arg2;
+- (void)uninstallRequestDidFinish:(UNUninstallClientRequest *)arg1;
+- (void)uninstallRequest:(UNUninstallClientRequest *)arg1 didMakeProgress:(int)arg2;
+- (void)uninstallRequestDidBegin:(UNUninstallClientRequest *)arg1;
+- (void)uninstallRequestCannotBeAborted:(UNUninstallClientRequest *)arg1;
+@end
+@protocol WVRecentsDataSource <NSObject>
+- (void)performRecentsActionAtIndex:(unsigned long long)arg1 withEvent:(ECEvent *)arg2 sender:(id)arg3 changeMode:(_Bool)arg4;
+- (id)recentsValueForKey:(NSString *)arg1 atIndex:(unsigned long long)arg2 withItemInfo:(NSDictionary *)arg3;
+- (unsigned long long)numberOfRecentsItems;
+@end
+@protocol WorkspacesMonitor <NSObject>
+- (void)removeObserver:(id <WorkspacesObserver>)arg1;
+- (void)addObserver:(id <WorkspacesObserver>)arg1;
+- (void)activate;
+@end
+@protocol WorkspacesObserver <NSObject>
+- (void)handleWorkspacesTileEvicted:(unsigned long long)arg1 inSpace:(unsigned long long)arg2;
+- (void)handleWorkspacesTileOwnerChanged:(unsigned long long)arg1 inSpace:(unsigned long long)arg2 oldOwner:(int)arg3 newOwner:(int)arg4;
+- (void)handleWorkspacesTileReorderDidEndInSpace:(unsigned long long)arg1;
+- (void)handleWorkspacesTileReorderDidStartInSpace:(unsigned long long)arg1;
+- (void)handleWorkspacesTileOrderChangedInSpace:(unsigned long long)arg1;
+- (void)handleWorkspacesShowSpaceForProcessWithRecord:(CDStruct_1e94be47)arg1;
+- (void)handleWorkspacesWindowDragWillEndWithData:(CDStruct_ba075c79)arg1;
+- (void)handleWorkspacesWindowDragDidEndWithData:(CDStruct_ba075c79)arg1;
+- (void)handleWorkspacesWindowDragDidStartWithData:(CDStruct_ba075c79)arg1;
+@end
+@protocol WritingDirectionMonitor <NSObject>
+- (void)removeObserver:(id <WritingDirectionObserver>)arg1;
+- (void)addObserver:(id <WritingDirectionObserver>)arg1;
+- (void)activate;
+@end
+@protocol WritingDirectionObserver <NSObject>
+- (void)writingDirectionDidChange:(id <WritingDirectionMonitor>)arg1;
+@end
+@protocol _TtP8DockCore16GameHomeProtocol_
+- (void)rightThumbstickChangedWithXValue:(float)arg1 yValue:(float)arg2;
+- (void)leftThumbstickChangedWithXValue:(float)arg1 yValue:(float)arg2;
+- (void)dpadChangedWithXValue:(float)arg1 yValue:(float)arg2;
+- (void)rightShoulderChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)leftShoulderChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)buttonHomeChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)buttonOptionsChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)buttonMenuChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)buttonBChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+- (void)buttonAChangedWithValue:(float)arg1 pressed:(_Bool)arg2;
+@end
+@protocol _TtP8DockCore18DockHelperProtocol_
+- (void)cancelCurrentMenuByUser:(_Bool)arg1;
+- (void)popupWithMenu:(NSData *)arg1 direction:(long long)arg2 rect:(struct FloatRect)arg3 dark:(_Bool)arg4 orientation:(long long)arg5 fromKeyboard:(_Bool)arg6 accessibilityContainer:(NSData *)arg7 withReply:(void (^)(NSData *))arg8;
+@end
+@protocol _TtP8DockCore24MenuHelperClientProtocol_
+- (void)menuDidClose;
+- (void)menuWillPopUp;
+- (void)parentAccessibilityElementWithIdentifier:(unsigned int)arg1 withReply:(void (^)(NSData *))arg2;
+- (void)keyboardWithCommand:(long long)arg1;
+- (void)submenuActionWithIdentifier:(unsigned int)arg1 withReply:(void (^)(NSData *))arg2;
+- (void)menuActionWithIdentifier:(unsigned int)arg1 modifiers:(unsigned int)arg2;
+@end
+
+Service Entitlements:

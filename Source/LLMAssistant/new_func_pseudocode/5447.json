@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$syncPhotos",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$syncPhotos(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_syncPhotos(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"syncPhotos\");\n}"
+}

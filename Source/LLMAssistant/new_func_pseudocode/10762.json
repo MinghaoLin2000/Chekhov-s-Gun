@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Arena18CreateMaybeMessageIN3TSP14LargeUUIDArrayEJEEEPT_PS1_DpOT0_",
+    "function_argument_number": 0,
+    "function_signature": "__ZN6google8protobuf5Arena18CreateMaybeMessageIN3TSP14LargeUUIDArrayEJEEEPT_PS1_DpOT0_()",
+    "pseudocode": "// attributes: thunk\n__int64 google::protobuf::Arena::CreateMaybeMessage<TSP::LargeUUIDArray>()\n{\n  return sub_100076570();\n}"
+}

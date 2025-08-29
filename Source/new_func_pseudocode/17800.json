@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CoreMLModelSecurity secureModelMLModelDescription:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[CoreMLModelSecurity secureModelMLModelDescription:withReply:](CoreMLModelSecurity * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[CoreMLModelSecurity secureModelMLModelDescription:withReply:](\n        CoreMLModelSecurity *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  (*((void (__fastcall **)(id, id, const __CFString *))a4 + 2))(a4, a3, CFSTR(\"Placeholder\"));\n}"
+}

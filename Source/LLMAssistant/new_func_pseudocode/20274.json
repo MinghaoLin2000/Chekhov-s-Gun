@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addBoolean:name:value:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ipp_t _addBoolean:name:value:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addBoolean:name:value:](ipp_t *self, SEL a2, int a3, id a4, bool a5)\n{\n  __int64 v6; // x20\n  id v8; // x19\n  _QWORD v9[4]; // [xsp+8h] [xbp-48h] BYREF\n  bool v10; // [xsp+28h] [xbp-28h]\n\n  v6 = *(_QWORD *)&a3;\n  v8 = objc_retain(a4);\n  if ( v8 && (unsigned int)v6 <= 5 && (_DWORD)v6 != 3 )\n  {\n    v9[0] = _NSConcreteStackBlock;\n    v9[1] = 3221225472LL;\n    v9[2] = sub_10003D3A0;\n    v9[3] = &unk_10009E9A8;\n    v10 = a5;\n    -[ipp_t withNewAttr:groupTag:valueTag:apply:](self, \"withNewAttr:groupTag:valueTag:apply:\", v8, v6, 34LL, v9);\n  }\n  objc_release(v8);\n}"
+}

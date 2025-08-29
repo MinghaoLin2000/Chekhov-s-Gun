@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDLogContext privateString]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUUUIDLogContext privateString](TSUUUIDLogContext * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[TSUUUIDLogContext privateString](TSUUUIDLogContext *self, SEL a2)\n{\n  return (NSString *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

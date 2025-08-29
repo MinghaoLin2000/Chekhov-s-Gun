@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater sendHIDReport:reportID:report:length:]",
+    "function_argument_number": 3,
+    "function_signature": "-[USBDFUUpdater sendHIDReport:reportID:report:length:](int a1, int a2, io_service_t service)",
+    "pseudocode": "int __cdecl -[USBDFUUpdater sendHIDReport:reportID:report:length:](\n        USBDFUUpdater *self,\n        SEL a2,\n        unsigned int a3,\n        int a4,\n        char *a5,\n        int a6)\n{\n  __IOHIDDevice *v9; // x0\n  __IOHIDDevice *v10; // x19\n  IOReturn v11; // w22\n\n  v9 = IOHIDDeviceCreate(kCFAllocatorDefault, a3);\n  if ( !v9 )\n    return -536870212;\n  v10 = v9;\n  v11 = IOHIDDeviceOpen(v9, 0);\n  if ( !v11 )\n  {\n    v11 = IOHIDDeviceSetReport(v10, kIOHIDReportTypeFeature, a4, (const uint8_t *)a5, a6);\n    IOHIDDeviceClose(v10, 0);\n  }\n  CFRelease(v10);\n  return v11;\n}"
+}

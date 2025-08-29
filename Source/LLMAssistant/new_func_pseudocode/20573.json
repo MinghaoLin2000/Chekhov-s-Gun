@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDictionaryGetBoolean",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFDictionaryGetBoolean(CGPDFDictionaryRef dict, const char * key, CGPDFBoolean * value)",
+    "pseudocode": "bool __cdecl CGPDFDictionaryGetBoolean(CGPDFDictionaryRef dict, const char *key, CGPDFBoolean *value)\n{\n  return _CGPDFDictionaryGetBoolean(dict, key, value);\n}"
+}

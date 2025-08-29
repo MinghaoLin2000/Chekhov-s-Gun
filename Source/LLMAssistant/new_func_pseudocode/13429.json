@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveMemoryDataRepresentation initWithData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipArchiveMemoryDataRepresentation initWithData:](SFUZipArchiveMemoryDataRepresentation * self, SEL a2, id a3)",
+    "pseudocode": "SFUZipArchiveMemoryDataRepresentation *__cdecl -[SFUZipArchiveMemoryDataRepresentation initWithData:](\n        SFUZipArchiveMemoryDataRepresentation *self,\n        SEL a2,\n        id a3)\n{\n  SFUZipArchiveMemoryDataRepresentation *v4; // x20\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___SFUZipArchiveMemoryDataRepresentation;\n  v4 = -[SFUZipArchiveMemoryDataRepresentation init](&v6, \"init\");\n  if ( v4 )\n    v4->mData = (NSData *)objc_msgSend(a3, \"copy\");\n  return v4;\n}"
+}

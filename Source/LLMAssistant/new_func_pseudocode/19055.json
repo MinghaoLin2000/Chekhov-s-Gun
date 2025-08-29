@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController hostViewService]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController hostViewService](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "RemoteViewBridgeServiceViewService *__cdecl -[SiriNCAlertViewController hostViewService](\n        SiriNCAlertViewController *self,\n        SEL a2)\n{\n  id WeakRetained; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  WeakRetained = objc_loadWeakRetained((id *)&self->_hostViewService);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (RemoteViewBridgeServiceViewService *)objc_autoreleaseReturnValue(WeakRetained);\n}"
+}

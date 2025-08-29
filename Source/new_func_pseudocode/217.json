@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_bridgeObjectRetain",
+    "function_argument_number": 0,
+    "function_signature": "_swift_bridgeObjectRetain()",
+    "pseudocode": "__int64 swift_bridgeObjectRetain()\n{\n  return _swift_bridgeObjectRetain();\n}"
+}

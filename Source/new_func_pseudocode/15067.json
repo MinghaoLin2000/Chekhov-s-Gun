@@ -1,0 +1,6 @@
+{
+    "function_name": "_ATXHeuristicDataSourcesInterface",
+    "function_argument_number": 0,
+    "function_signature": "_ATXHeuristicDataSourcesInterface()",
+    "pseudocode": "__int64 ATXHeuristicDataSourcesInterface()\n{\n  return _ATXHeuristicDataSourcesInterface();\n}"
+}

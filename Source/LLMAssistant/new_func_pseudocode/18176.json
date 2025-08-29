@@ -1,0 +1,6 @@
+{
+    "function_name": "_issetugid",
+    "function_argument_number": 0,
+    "function_signature": "_issetugid()",
+    "pseudocode": "int issetugid(void)\n{\n  return _issetugid();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup27ScreenAnnotationsController initWithWindow:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC13DisplayMarkup27ScreenAnnotationsController initWithWindow:](int a1, int a2, id a3)",
+    "pseudocode": "_TtC13DisplayMarkup27ScreenAnnotationsController *__cdecl __noreturn -[ScreenAnnotationsController initWithWindow:](\n        _TtC13DisplayMarkup27ScreenAnnotationsController *self,\n        SEL a2,\n        id a3)\n{\n  sub_100006400(objc_retain(a3));\n}"
+}

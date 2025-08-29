@@ -1,0 +1,6 @@
+{
+    "function_name": "_usleep",
+    "function_argument_number": 1,
+    "function_signature": "_usleep(useconds_t a1)",
+    "pseudocode": "int __cdecl usleep(useconds_t a1)\n{\n  return _usleep(a1);\n}"
+}

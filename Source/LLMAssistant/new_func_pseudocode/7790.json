@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo7CGErrorV16EyeCandyGraphicsE14_nsErrorDomainSSvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo7CGErrorV16EyeCandyGraphicsE14_nsErrorDomainSSvgZ()",
+    "pseudocode": "unsigned __int64 static CGError._nsErrorDomain.getter()\n{\n  return 0xD000000000000014LL;\n}"
+}

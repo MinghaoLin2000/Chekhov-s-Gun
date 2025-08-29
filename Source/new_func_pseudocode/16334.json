@@ -1,0 +1,6 @@
+{
+    "function_name": "+[EAFirmwareUpdater bootloaderProtocolStringWithEAID:]",
+    "function_argument_number": 3,
+    "function_signature": "+[EAFirmwareUpdater bootloaderProtocolStringWithEAID:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[EAFirmwareUpdater bootloaderProtocolStringWithEAID:](id a1, SEL a2, id a3)\n{\n  return +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"%@.%@.%@\"),\n           CFSTR(\"com.apple.accessory.updater\"),\n           CFSTR(\"dfu\"),\n           a3);\n}"
+}

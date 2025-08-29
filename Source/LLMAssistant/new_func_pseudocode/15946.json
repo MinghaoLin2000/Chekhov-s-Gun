@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPayloadTagStructUnpack",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPayloadTagStructUnpack(_BYTE * result, _BYTE * a2)",
+    "pseudocode": "_BYTE *__fastcall uarpPayloadTagStructUnpack(_BYTE *result, _BYTE *a2)\n{\n  *a2 = *result;\n  a2[1] = result[1];\n  a2[2] = result[2];\n  a2[3] = result[3];\n  return result;\n}"
+}

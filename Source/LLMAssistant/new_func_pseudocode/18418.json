@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO11descriptionSSvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO11descriptionSSvg(__int64 a1)",
+    "pseudocode": "unsigned __int64 __fastcall ScreenMirroringAlertOption.description.getter(__int64 a1)\n{\n  __int64 v1; // x29\n  __int64 v2; // x30\n  unsigned __int64 result; // x0\n  _QWORD v6[3]; // [xsp+8h] [xbp-18h] BYREF\n\n  result = 0xD000000000000016LL;\n  switch ( a1 )\n  {\n    case 0LL:\n    case 2LL:\n      return result;\n    case 1LL:\n      result = 0xD000000000000010LL;\n      break;\n    case 3LL:\n      result = 0x44726F7272696D2ELL;\n      break;\n    case 4LL:\n      result = 0xD000000000000012LL;\n      break;\n    default:\n      v6[1] = v1;\n      v6[2] = v2;\n      v6[0] = a1;\n      sub_100070740(\n        &type metadata for ScreenMirroringAlertOption,\n        v6,\n        &type metadata for ScreenMirroringAlertOption,\n        &type metadata for Int);\n      __break(1u);\n      JUMPOUT(0x100007410LL);\n  }\n  return result;\n}"
+}

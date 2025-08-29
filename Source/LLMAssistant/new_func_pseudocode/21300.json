@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition9EAREuclid hello]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC22localspeechrecognition9EAREuclid hello](_TtC22localspeechrecognition9EAREuclid * self, SEL a2)",
+    "pseudocode": "void __cdecl -[EAREuclid hello](_TtC22localspeechrecognition9EAREuclid *self, SEL a2)\n{\n  ;\n}"
+}

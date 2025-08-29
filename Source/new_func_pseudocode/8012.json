@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionWillSwitchSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionWillSwitchSpaces()",
+    "pseudocode": "__int64 SLSTransactionWillSwitchSpaces()\n{\n  return _SLSTransactionWillSwitchSpaces();\n}"
+}

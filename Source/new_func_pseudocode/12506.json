@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSThread tsu_stringForQualityOfService:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSThread tsu_stringForQualityOfService:](id a1, SEL a2, signed __int64 a3)",
+    "pseudocode": "id __cdecl +[NSThread tsu_stringForQualityOfService:](id a1, SEL a2, signed __int64 a3)\n{\n  const __CFString *v3; // x8\n  const __CFString *v4; // x9\n  const __CFString *v5; // x10\n  const __CFString *v6; // x9\n  const __CFString *v7; // x10\n\n  v3 = CFSTR(\"NSQualityOfServiceUtility\");\n  v4 = CFSTR(\"NSQualityOfServiceUserInitiated\");\n  v5 = CFSTR(\"NSQualityOfServiceUserInteractive\");\n  if ( a3 != 33 )\n    v5 = 0LL;\n  if ( a3 != 25 )\n    v4 = v5;\n  if ( a3 != 17 )\n    v3 = v4;\n  v6 = CFSTR(\"NSQualityOfServiceDefault\");\n  v7 = CFSTR(\"NSQualityOfServiceBackground\");\n  if ( a3 != 9 )\n    v7 = 0LL;\n  if ( a3 != -1 )\n    v6 = v7;\n  if ( a3 <= 16 )\n    return (id)v6;\n  else\n    return (id)v3;\n}"
+}

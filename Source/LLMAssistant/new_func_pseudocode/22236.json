@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLGeneratorSetMaxGlobalWeight",
+    "function_argument_number": 0,
+    "function_signature": "__QLGeneratorSetMaxGlobalWeight()",
+    "pseudocode": "__int64 _QLGeneratorSetMaxGlobalWeight()\n{\n  return __QLGeneratorSetMaxGlobalWeight();\n}"
+}

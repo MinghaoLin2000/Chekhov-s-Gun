@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24ScrollGesturePreferencesC4KeysOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24ScrollGesturePreferencesC4KeysOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ScrollGesturePreferences.Keys()\n{\n  return &type metadata for ScrollGesturePreferences.Keys;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUReadChannelInputStreamAdapter initWithReadChannel:length:closeChannelOnClose:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUReadChannelInputStreamAdapter initWithReadChannel:length:closeChannelOnClose:](int a1, int a2, id a3)",
+    "pseudocode": "TSUReadChannelInputStreamAdapter *__cdecl -[TSUReadChannelInputStreamAdapter initWithReadChannel:length:closeChannelOnClose:](\n        TSUReadChannelInputStreamAdapter *self,\n        SEL a2,\n        id a3,\n        unsigned __int64 a4,\n        bool a5)\n{\n  id v9; // x21\n  TSUReadChannelInputStreamAdapter *v10; // x0\n  TSUReadChannelInputStreamAdapter *v11; // x23\n  objc_super v13; // [xsp+0h] [xbp-40h] BYREF\n\n  v9 = objc_retain(a3);\n  v13.receiver = self;\n  v13.super_class = (Class)&OBJC_CLASS___TSUReadChannelInputStreamAdapter;\n  v10 = -[TSUReadChannelInputStreamAdapter init](&v13, \"init\");\n  v11 = v10;\n  if ( v10 )\n  {\n    objc_storeStrong((id *)&v10->_readChannel, a3);\n    objc_storeStrong((id *)&v11->_leftoverData, &_dispatch_data_empty);\n    v11->_length = a4;\n    v11->_closeChannelOnClose = a5;\n  }\n  objc_release(v9);\n  return v11;\n}"
+}

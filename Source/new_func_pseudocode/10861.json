@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Descriptor34FindExtensionRangeContainingNumberEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf10Descriptor34FindExtensionRangeContainingNumberEi(google::protobuf::Descriptor * this, int a2)",
+    "pseudocode": "_DWORD *__fastcall google::protobuf::Descriptor::FindExtensionRangeContainingNumber(\n        google::protobuf::Descriptor *this,\n        int a2)\n{\n  __int64 v2; // x8\n  _DWORD *result; // x0\n\n  v2 = *((unsigned int *)this + 31);\n  if ( (int)v2 < 1 )\n    return 0LL;\n  for ( result = (_DWORD *)*((_QWORD *)this + 9); *result > a2 || result[1] <= a2; result += 4 )\n  {\n    if ( !--v2 )\n      return 0LL;\n  }\n  return result;\n}"
+}

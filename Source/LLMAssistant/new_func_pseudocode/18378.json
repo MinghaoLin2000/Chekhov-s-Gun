@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTAMDPMService setState:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[GTAMDPMService setState:withReply:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[GTAMDPMService setState:withReply:](GTAMDPMService *self, SEL a2, int a3, id a4)\n{\n  void (__fastcall **v6)(_QWORD); // x19\n  char v7; // w0\n  unsigned __int8 v8; // w1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = (void (__fastcall **)(_QWORD))objc_retain(a4);\n  if ( self->_canUpdateState )\n  {\n    v7 = objc_opt_respondsToSelector(self->amdDevice, \"setAMDMtlClk:\");\n    v8 = 0;\n    if ( (v7 & 1) != 0 && (unsigned int)a3 <= 2 )\n      v8 = (unsigned __int8)-[GTAMDCLKSPIPrivateDevice setAMDMtlClk:](\n                              self->amdDevice,\n                              \"setAMDMtlClk:\",\n                              (unsigned int)(3 - a3));\n  }\n  else\n  {\n    v8 = 0;\n  }\n  self->_nonDefaultStateSet = v8;\n  v6[2](v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

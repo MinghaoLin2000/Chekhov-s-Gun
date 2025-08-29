@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$originatingAssetIdentifierMetadataIdentifier",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$originatingAssetIdentifierMetadataIdentifier(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_originatingAssetIdentifierMetadataIdentifier(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"originatingAssetIdentifierMetadataIdentifier\");\n}"
+}

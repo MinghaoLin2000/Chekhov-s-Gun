@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_signpost_enabled",
+    "function_argument_number": 1,
+    "function_signature": "_os_signpost_enabled(os_log_t log)",
+    "pseudocode": "bool __cdecl os_signpost_enabled(os_log_t log)\n{\n  return _os_signpost_enabled(log);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController setDetailsModelDict:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsTVShowsViewController setDetailsModelDict:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsTVShowsViewController setDetailsModelDict:](\n        DeviceSettingsTVShowsViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_detailsModelDict, a3);\n}"
+}

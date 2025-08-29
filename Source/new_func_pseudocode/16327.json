@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory log:format:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LegacyAudioAccessory log:format:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[LegacyAudioAccessory log:format:](LegacyAudioAccessory *self, SEL a2, int a3, id a4)\n{\n  id v5; // x21\n  void *v6; // x19\n  OS_os_log *log; // x20\n  uint8_t buf[4]; // [xsp+10h] [xbp-40h] BYREF\n  void *v9; // [xsp+14h] [xbp-3Ch]\n  __int64 v10; // [xsp+60h] [xbp+10h] BYREF\n\n  v5 = objc_retain(a4);\n  v6 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithFormat:arguments:\", v5, &v10);\n  objc_release(v5);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_DWORD *)buf = 138412290;\n    v9 = v6;\n    _os_log_impl((void *)&_mh_execute_header, log, OS_LOG_TYPE_DEFAULT, \"%@\", buf, 0xCu);\n  }\n  objc_release(v6);\n}"
+}

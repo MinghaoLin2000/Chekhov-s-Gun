@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackage componentLocators]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPPackage componentLocators](TSPPackage * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSPPackage componentLocators](TSPPackage *self, SEL a2)\n{\n  TSUZipFileArchive *v2; // x19\n  NSMutableArray *v3; // x20\n  NSArray *v4; // x21\n  _QWORD v6[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v7; // [xsp+28h] [xbp-28h]\n  __int64 vars8; // [xsp+58h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[TSPPackage componentZipArchive](self, \"componentZipArchive\"));\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_10002F774;\n  v6[3] = &unk_1001D3120;\n  v3 = objc_retain(objc_opt_new(&OBJC_CLASS___NSMutableArray));\n  v7 = v3;\n  -[TSUZipArchive enumerateEntriesUsingBlock:](v2, \"enumerateEntriesUsingBlock:\", v6);\n  v4 = objc_retainAutoreleasedReturnValue(+[NSArray arrayWithArray:](&OBJC_CLASS___NSArray, \"arrayWithArray:\", v3));\n  objc_release(v7);\n  objc_release(v3);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

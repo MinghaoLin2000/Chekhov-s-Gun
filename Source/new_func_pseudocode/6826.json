@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$exportSession",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$exportSession(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_exportSession(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"exportSession\");\n}"
+}

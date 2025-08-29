@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP8IndexSetD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP8IndexSetD2Ev(TSP::IndexSet * this)",
+    "pseudocode": "void __fastcall TSP::IndexSet::~IndexSet(TSP::IndexSet *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100076AD0((char *)this + 16);\n}"
+}

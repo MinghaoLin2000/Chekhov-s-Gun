@@ -1,0 +1,6 @@
+{
+    "function_name": "_select",
+    "function_argument_number": 5,
+    "function_signature": "_select(int a1, fd_set * a2, fd_set * a3, fd_set * a4, timeval * a5)",
+    "pseudocode": "int __cdecl select(int a1, fd_set *a2, fd_set *a3, fd_set *a4, timeval *a5)\n{\n  return _select(a1, a2, a3, a4, a5);\n}"
+}

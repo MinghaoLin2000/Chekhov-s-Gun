@@ -1,0 +1,6 @@
+{
+    "function_name": "_IORegistryEntryIDMatching",
+    "function_argument_number": 1,
+    "function_signature": "_IORegistryEntryIDMatching(uint64_t entryID)",
+    "pseudocode": "CFMutableDictionaryRef __cdecl IORegistryEntryIDMatching(uint64_t entryID)\n{\n  return _IORegistryEntryIDMatching(entryID);\n}"
+}

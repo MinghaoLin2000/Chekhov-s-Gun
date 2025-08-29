@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPAVAssetResourceLoaderDelegate resourceLoader:shouldWaitForLoadingOfRequestedResource:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPAVAssetResourceLoaderDelegate resourceLoader:shouldWaitForLoadingOfRequestedResource:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "bool __cdecl -[TSPAVAssetResourceLoaderDelegate resourceLoader:shouldWaitForLoadingOfRequestedResource:](\n        TSPAVAssetResourceLoaderDelegate *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v5; // x19\n  void *v6; // x21\n  void *v7; // x21\n\n  v5 = objc_retain(a4);\n  if ( ((unsigned int)objc_msgSend(v5, \"isCancelled\") & 1) == 0 )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(v5, \"contentInformationRequest\"));\n    objc_release(v6);\n    if ( v6 )\n      -[TSPAVAssetResourceLoaderDelegate _provideContentInformationToLoadingRequest:](\n        self,\n        \"_provideContentInformationToLoadingRequest:\",\n        v5);\n    v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v5, \"dataRequest\"));\n    objc_release(v7);\n    if ( v7 )\n      -[TSPAVAssetResourceLoaderDelegate _provideDataToLoadingRequest:](self, \"_provideDataToLoadingRequest:\", v5);\n  }\n  objc_release(v5);\n  return 1;\n}"
+}

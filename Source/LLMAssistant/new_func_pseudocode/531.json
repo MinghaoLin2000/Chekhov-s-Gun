@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController playlistNodesLookup]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTVShowsViewController playlistNodesLookup](DeviceSettingsTVShowsViewController * self, SEL a2)",
+    "pseudocode": "NSMutableDictionary *__cdecl -[DeviceSettingsTVShowsViewController playlistNodesLookup](\n        DeviceSettingsTVShowsViewController *self,\n        SEL a2)\n{\n  return self->_playlistNodesLookup;\n}"
+}

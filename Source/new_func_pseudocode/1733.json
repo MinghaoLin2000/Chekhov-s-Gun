@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentViewController setCheckedItems:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsTabContentViewController setCheckedItems:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsTabContentViewController setCheckedItems:](\n        DeviceSettingsTabContentViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_checkedItems, a3);\n}"
+}

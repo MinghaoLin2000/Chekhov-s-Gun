@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf20FileDescriptorTables38FieldsByLowercaseNamesLazyInitInternalEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf20FileDescriptorTables38FieldsByLowercaseNamesLazyInitInternalEv(google::protobuf::FileDescriptorTables * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::FileDescriptorTables::FieldsByLowercaseNamesLazyInitInternal(__int64 this)\n{\n  _QWORD *v1; // x22\n  __int64 v2; // x20\n  __int64 v3; // x8\n  __int64 v4; // x9\n  __int64 *v5; // x9\n  char *v6; // x1\n  __int64 v7; // [xsp+8h] [xbp-38h] BYREF\n  __int64 v8; // [xsp+10h] [xbp-30h] BYREF\n\n  v1 = *(_QWORD **)(this + 168);\n  if ( v1 )\n  {\n    v2 = this + 40;\n    while ( 1 )\n    {\n      v3 = v1[4];\n      if ( !*(_BYTE *)(v3 + 67) )\n        break;\n      v4 = *(_QWORD *)(v3 + 96);\n      if ( !v4 )\n      {\n        v5 = (__int64 *)(v3 + 40);\nLABEL_7:\n        v4 = *v5;\n      }\n      v6 = *(char **)(v3 + 16);\n      if ( v6[23] < 0 )\n        v6 = *(char **)v6;\n      v7 = v4;\n      sub_1000965F4((int)&v8, v6);\n      this = sub_10007BBA8(v2, &v7, v1 + 4);\n      v1 = (_QWORD *)*v1;\n      if ( !v1 )\n        return this;\n    }\n    v5 = (__int64 *)(v3 + 80);\n    goto LABEL_7;\n  }\n  return this;\n}"
+}

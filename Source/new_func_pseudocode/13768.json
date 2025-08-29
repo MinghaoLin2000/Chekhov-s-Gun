@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZnwmRKSt9nothrow_t",
+    "function_argument_number": 2,
+    "function_signature": "__ZnwmRKSt9nothrow_t(unsigned __int64 a1, const std::nothrow_t * a2)",
+    "pseudocode": "void *__cdecl operator new(size_t __sz, const std::nothrow_t *a2)\n{\n  while ( 1 )\n    ;\n}"
+}

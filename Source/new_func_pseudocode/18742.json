@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper15BackgroundsGridVwca",
+    "function_argument_number": 2,
+    "function_signature": "$s27BackgroundReplacementHelper15BackgroundsGridVwca(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithCopy for BackgroundsGrid(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x0\n  char v5; // w8\n  __int64 v6; // x21\n  __int64 v7; // x21\n  __int64 v8; // x0\n\n  v4 = *a2;\n  v5 = *((_BYTE *)a2 + 8);\n  v6 = *a1;\n  *a1 = *a2;\n  *((_BYTE *)a1 + 8) = v5;\n  swift_retain(v4);\n  swift_release(v6);\n  *((_BYTE *)a1 + 16) = *((_BYTE *)a2 + 16);\n  v7 = a1[3];\n  v8 = a2[3];\n  a1[3] = v8;\n  swift_retain(v8);\n  swift_release(v7);\n  *((_BYTE *)a1 + 32) = *((_BYTE *)a2 + 32);\n  return a1;\n}"
+}

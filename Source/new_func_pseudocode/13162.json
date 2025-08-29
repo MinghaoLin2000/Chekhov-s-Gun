@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUWarning missingMediaWarningWithMessage:data:]",
+    "function_argument_number": 4,
+    "function_signature": "+[TSUWarning missingMediaWarningWithMessage:data:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "id __cdecl +[TSUWarning missingMediaWarningWithMessage:data:](id a1, SEL a2, id a3, id a4)\n{\n  id v6; // x19\n  id v7; // x22\n  void *v8; // x20\n  NSSet *v9; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(a4);\n  v7 = objc_retain(a3);\n  v8 = objc_msgSend(objc_alloc((Class)a1), \"initWithKind:message:\", 2LL, v7);\n  objc_release(v7);\n  if ( v6 )\n  {\n    v9 = objc_retainAutoreleasedReturnValue(+[NSSet setWithObject:](&OBJC_CLASS___NSSet, \"setWithObject:\", v6));\n    objc_msgSend(v8, \"setAffectedObjects:\", v9);\n    objc_release(v9);\n  }\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v8);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t _workAdded:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t _workAdded:](lite_job_t * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[lite_job_t _workAdded:](lite_job_t *self, SEL a2, unsigned __int64 a3)\n{\n  char *v4; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (char *)-[lite_job_t payloadSent](self, \"payloadSent\") + a3;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[lite_job_t setPayloadSent:](self, \"setPayloadSent:\", v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryBuildKeySetInt64",
+    "function_argument_number": 3,
+    "function_signature": "_CFDictionaryBuildKeySetInt64(__CFDictionary * a1, const void * a2, __int64 a3)",
+    "pseudocode": "void __fastcall CFDictionaryBuildKeySetInt64(__CFDictionary *a1, const void *a2, __int64 a3)\n{\n  CFNumberRef v5; // x21\n  __int64 valuePtr; // [xsp+8h] [xbp-28h] BYREF\n\n  valuePtr = a3;\n  v5 = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt64Type, &valuePtr);\n  CFDictionarySetValue(a1, a2, v5);\n  CFRelease(v5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_inflateEnd",
+    "function_argument_number": 1,
+    "function_signature": "_inflateEnd(z_streamp strm)",
+    "pseudocode": "int __cdecl inflateEnd(z_streamp strm)\n{\n  return _inflateEnd(strm);\n}"
+}

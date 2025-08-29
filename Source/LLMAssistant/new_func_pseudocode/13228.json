@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchive entryWithName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipArchive entryWithName:](SFUZipArchive * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[SFUZipArchive entryWithName:](SFUZipArchive *self, SEL a2, id a3)\n{\n  return -[NSMutableDictionary objectForKey:](self->mEntries, \"objectForKey:\", a3);\n}"
+}

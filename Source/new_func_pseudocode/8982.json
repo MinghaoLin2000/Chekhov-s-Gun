@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService11MediaClientV10CodingKeysOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService11MediaClientV10CodingKeysOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MediaClient.CodingKeys()\n{\n  return &type metadata for MediaClient.CodingKeys;\n}"
+}

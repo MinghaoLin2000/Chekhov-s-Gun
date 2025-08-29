@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker outputTypeIdentifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker outputTypeIdentifier](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[MediaConversionRequestTracker outputTypeIdentifier](MediaConversionRequestTracker *self, SEL a2)\n{\n  return (NSString *)objc_getProperty(self, a2, 72LL, 1);\n}"
+}

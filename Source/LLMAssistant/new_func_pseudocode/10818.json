@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf20FileDescriptorTablesD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf20FileDescriptorTablesD2Ev(google::protobuf::FileDescriptorTables * this)",
+    "pseudocode": "void __fastcall google::protobuf::FileDescriptorTables::~FileDescriptorTables(std::mutex *this)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  std::mutex::~mutex(this + 5);\n  sub_10009881C(&this[4].__m_.__opaque[16]);\n  sub_1000988A4(&this[3].__m_.__opaque[32]);\n  sub_1000988A4(&this[3]);\n  sub_1000988A4(&this[2].__m_.__opaque[16]);\n  sub_1000997DC(this[2].__m_.__opaque);\n  sub_1000988A4(&this[1].__m_.__opaque[24]);\n  sub_1000997DC(&this[1].__m_.__opaque[8]);\n  sub_1000988A4(&this->__m_.__opaque[32]);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  sub_1000988A4(this);\n}"
+}

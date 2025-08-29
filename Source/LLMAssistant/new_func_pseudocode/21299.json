@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition28ExperimentationTriggerLoggerCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition28ExperimentationTriggerLoggerCMa()",
+    "pseudocode": "__int64 type metadata accessor for ExperimentationTriggerLogger()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition28ExperimentationTriggerLogger);\n}"
+}

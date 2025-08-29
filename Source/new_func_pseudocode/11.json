@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BRCKShareSubitem initWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BRCKShareSubitem initWithCoder:](BRCKShareSubitem * self, SEL a2, id a3)",
+    "pseudocode": "BRCKShareSubitem *__cdecl -[BRCKShareSubitem initWithCoder:](BRCKShareSubitem *self, SEL a2, id a3)\n{\n  objc_release(self);\n  return 0LL;\n}"
+}

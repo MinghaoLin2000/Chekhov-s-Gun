@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAudiobooksViewController setTopViewEnabled:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsAudiobooksViewController setTopViewEnabled:](DeviceSettingsAudiobooksViewController * self, SEL a2, bool a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[DeviceSettingsAudiobooksViewController setTopViewEnabled:](\n        DeviceSettingsAudiobooksViewController *self,\n        SEL a2,\n        bool a3)\n{\n  _BOOL8 v3; // x19\n  NSButton *v5; // x21\n  NSButton *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = a3;\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsAudiobooksViewController allRadioButton](self, \"allRadioButton\"));\n  -[NSButton setEnabled:](v5, \"setEnabled:\", v3);\n  objc_release(v5);\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsAudiobooksViewController updateSelectedRadioButton](self, \"updateSelectedRadioButton\"));\n  -[NSButton setEnabled:](v6, \"setEnabled:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

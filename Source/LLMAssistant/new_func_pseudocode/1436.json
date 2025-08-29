@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController autoIncludeTrailingTextFieldLeadingIndentConstraint]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesViewController autoIncludeTrailingTextFieldLeadingIndentConstraint](DeviceSettingsMoviesViewController * self, SEL a2)",
+    "pseudocode": "NSLayoutConstraint *__cdecl -[DeviceSettingsMoviesViewController autoIncludeTrailingTextFieldLeadingIndentConstraint](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2)\n{\n  return self->_autoIncludeTrailingTextFieldLeadingIndentConstraint;\n}"
+}

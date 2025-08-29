@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN10applesauce2CF9ObjectRefIP14CGDataProviderED1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN10applesauce2CF9ObjectRefIP14CGDataProviderED1Ev(const void ** a1)",
+    "pseudocode": "const void **__fastcall applesauce::CF::ObjectRef<CGDataProvider *>::~ObjectRef(const void **a1)\n{\n  const void *v2; // x0\n\n  v2 = *a1;\n  if ( v2 )\n    CFRelease(v2);\n  return a1;\n}"
+}

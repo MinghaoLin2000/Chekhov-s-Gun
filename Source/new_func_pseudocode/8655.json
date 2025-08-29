@@ -1,0 +1,6 @@
+{
+    "function_name": "_fchdir",
+    "function_argument_number": 1,
+    "function_signature": "_fchdir(int a1)",
+    "pseudocode": "int __cdecl fchdir(int a1)\n{\n  return _fchdir(a1);\n}"
+}

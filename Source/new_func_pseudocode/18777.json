@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOServiceClose",
+    "function_argument_number": 1,
+    "function_signature": "_IOServiceClose(io_connect_t connect)",
+    "pseudocode": "kern_return_t __cdecl IOServiceClose(io_connect_t connect)\n{\n  return _IOServiceClose(connect);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_copy_uuid",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_copy_uuid()",
+    "pseudocode": "__int64 remote_device_copy_uuid()\n{\n  return _remote_device_copy_uuid();\n}"
+}

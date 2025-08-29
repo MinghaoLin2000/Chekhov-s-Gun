@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IKPTRecentsService init]",
+    "function_argument_number": 2,
+    "function_signature": "-[IKPTRecentsService init](IKPTRecentsService * self, SEL a2)",
+    "pseudocode": "IKPTRecentsService *__cdecl -[IKPTRecentsService init](IKPTRecentsService *self, SEL a2)\n{\n  IKPTRecentsService *v2; // x19\n  NSMutableArray *v3; // x0\n  NSMutableArray *recents; // x8\n  NSMutableDictionary *v5; // x0\n  NSMutableDictionary *thumbnailData; // x8\n  objc_super v8; // [xsp+0h] [xbp-20h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___IKPTRecentsService;\n  v2 = -[IKPTRecentsService init](&v8, \"init\");\n  if ( v2 )\n  {\n    v3 = (NSMutableArray *)objc_alloc_init((Class)&OBJC_CLASS___NSMutableArray);\n    recents = v2->_recents;\n    v2->_recents = v3;\n    objc_release(recents);\n    v5 = (NSMutableDictionary *)objc_alloc_init((Class)&OBJC_CLASS___NSMutableDictionary);\n    thumbnailData = v2->_thumbnailData;\n    v2->_thumbnailData = v5;\n    objc_release(thumbnailData);\n  }\n  return v2;\n}"
+}

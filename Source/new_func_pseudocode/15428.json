@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRemoteServiceDeviceCopyAuthInstallPreflightOptions",
+    "function_argument_number": 0,
+    "function_signature": "_AMRemoteServiceDeviceCopyAuthInstallPreflightOptions()",
+    "pseudocode": "__int64 AMRemoteServiceDeviceCopyAuthInstallPreflightOptions()\n{\n  return _AMRemoteServiceDeviceCopyAuthInstallPreflightOptions();\n}"
+}

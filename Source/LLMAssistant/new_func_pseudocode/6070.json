@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLReference .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceResourceURLReference .cxx_destruct](PAMediaConversionServiceResourceURLReference * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceResourceURLReference .cxx_destruct](\n        PAMediaConversionServiceResourceURLReference *self,\n        SEL a2)\n{\n  objc_storeStrong((id *)&self->_url, 0LL);\n}"
+}

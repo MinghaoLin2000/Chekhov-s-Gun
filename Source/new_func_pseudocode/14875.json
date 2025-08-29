@@ -1,0 +1,6 @@
+{
+    "function_name": "_FPDAppStoreServiceXPCInterface",
+    "function_argument_number": 0,
+    "function_signature": "_FPDAppStoreServiceXPCInterface()",
+    "pseudocode": "__int64 FPDAppStoreServiceXPCInterface()\n{\n  return _FPDAppStoreServiceXPCInterface();\n}"
+}

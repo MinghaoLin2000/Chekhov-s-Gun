@@ -1,0 +1,5 @@
+_AMRemoteServiceDeviceCopyAuthInstallPreflightOptions
+__int64 AMRemoteServiceDeviceCopyAuthInstallPreflightOptions()
+{
+  return _AMRemoteServiceDeviceCopyAuthInstallPreflightOptions();
+}

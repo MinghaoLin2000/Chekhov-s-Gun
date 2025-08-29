@@ -1,0 +1,6 @@
+{
+    "function_name": "_EnterSandbox.cold.2",
+    "function_argument_number": 0,
+    "function_signature": "_EnterSandbox.cold.2()",
+    "pseudocode": "void EnterSandbox_cold_2()\n{\n  __int64 v0; // x2\n  __int64 v1; // x4\n  __int64 v2; // x5\n  __int64 v3; // x6\n  __int64 v4; // x7\n  uint8_t v5; // [xsp+0h] [xbp-10h]\n\n  __error();\n  OUTLINED_FUNCTION_1();\n  OUTLINED_FUNCTION_0(\n    (void *)&_mh_execute_header,\n    (os_log_s *)&_os_log_default,\n    v0,\n    \"failed to resolve user's home directory: %{darwin.errno}d\",\n    v1,\n    v2,\n    v3,\n    v4,\n    v5);\n}"
+}

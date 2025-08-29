@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUCryptoUtils decodePassphraseHint:]",
+    "function_argument_number": 3,
+    "function_signature": "+[SFUCryptoUtils decodePassphraseHint:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[SFUCryptoUtils decodePassphraseHint:](id a1, SEL a2, id a3)\n{\n  id result; // x0\n  void *v5; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  result = objc_msgSend(a3, \"length\");\n  if ( result )\n  {\n    v5 = objc_msgSend(\n           objc_alloc((Class)&OBJC_CLASS___NSString),\n           \"initWithBytes:length:encoding:\",\n           objc_msgSend(a3, \"bytes\"),\n           result,\n           4LL);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return objc_autorelease(v5);\n  }\n  return result;\n}"
+}

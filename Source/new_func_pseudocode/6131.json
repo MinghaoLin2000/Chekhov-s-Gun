@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ClientRequest setWantsProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ClientRequest setWantsProgress:](ClientRequest * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[ClientRequest setWantsProgress:](ClientRequest *self, SEL a2, bool a3)\n{\n  self->_wantsProgress = a3;\n}"
+}

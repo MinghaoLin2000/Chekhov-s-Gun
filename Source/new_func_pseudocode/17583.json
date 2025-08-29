@@ -1,0 +1,6 @@
+{
+    "function_name": "___29-[CGPDFDocumentImpl getInfo:]_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___29-[CGPDFDocumentImpl getInfo:]_block_invoke(__int64 a1)",
+    "pseudocode": "void __fastcall __29__CGPDFDocumentImpl_getInfo___block_invoke(__int64 a1)\n{\n  void *v2; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = (void *)CGPDFDocumentCopyInfoDictionary(*(_QWORD *)(*(_QWORD *)(a1 + 32) + 24LL));\n  (*(void (**)(void))(*(_QWORD *)(a1 + 40) + 16LL))();\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

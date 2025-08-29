@@ -1,0 +1,11 @@
+{
+  "-[LoginUserService _authenticationAuthorityForUserWithUID:onNode:]": 4294975880,
+  "-[LoginUserService authAuthorityContainsDisabled:onNode:withReply:]": 4294978360,
+  "_objc_msgSend$_authenticationAuthorityForUserWithUID:onNode:": 4294980288,
+  "-[LoginUserService userCanLoginWithAuthAuthority:onNode:withReply:]": 4294977736,
+  "-[LoginUserService userHasAuthAuthority:onNode:withReply:]": 4294979280,
+  "-[LoginUserService _userRecordForUserWithUID:onNode:]": 4294976384,
+  "_objc_msgSend$_authenticationAuthorityForUserRecord:": 4294980256,
+  "-[LoginUserService authAuthorityContainsBasic:onNode:withReply:]": 4294977276,
+  "_objc_msgSend$_authenticationAuthority:contaians:": 4294980224
+}

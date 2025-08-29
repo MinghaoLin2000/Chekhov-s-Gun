@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryAddPayloadDataLarge",
+    "function_argument_number": 5,
+    "function_signature": "_UARPSuperBinaryAddPayloadDataLarge(__int64 a1, __int64 a2, __int64 a3, __int64 a4, unsigned int a5)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryAddPayloadDataLarge(__int64 a1, __int64 a2, __int64 a3, __int64 a4, unsigned int a5)\n{\n  unsigned int v10; // w25\n  __int64 v11; // x24\n  __int64 result; // x0\n\n  v10 = 0;\n  while ( a5 )\n  {\n    if ( a5 >= 0xFFFF )\n      v11 = 0xFFFFLL;\n    else\n      v11 = a5;\n    result = UARPSuperBinaryAddPayloadData(a1, a2, a3, a4 + v10, v11);\n    v10 += v11;\n    a5 -= v11;\n    if ( (_DWORD)result )\n      return result;\n  }\n  return 0LL;\n}"
+}

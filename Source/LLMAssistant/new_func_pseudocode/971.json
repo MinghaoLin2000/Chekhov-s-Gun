@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAudiobooksViewController setAudiobooksDetailsModelDict:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsAudiobooksViewController setAudiobooksDetailsModelDict:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsAudiobooksViewController setAudiobooksDetailsModelDict:](\n        DeviceSettingsAudiobooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_audiobooksDetailsModelDict, a3);\n}"
+}

@@ -1,0 +1,30 @@
+@protocol OS_dispatch_source <NSObject>
+@end
+@protocol OS_dispatch_source_timer <OS_dispatch_source>
+@end
+@protocol _TtP19ControlCenterHelper27ControlCenterHelperProtocol_ <_TtP19ControlCenterHelper36ControlCenterBluetoothHelperProtocol_, _TtP19ControlCenterHelper43ControlCenterUniversalControlHelperProtocol_, _TtP19ControlCenterHelper43ControlCenterMusicRecognitionHelperProtocol_, _TtP19ControlCenterHelper48ControlCenterBackgroundReplacementHelperProtocol_, _TtP19ControlCenterHelper42ControlCenterScreenMirroringHelperProtocol_, _TtP19ControlCenterHelper31ControlCenterWiFiHelperProtocol_>
+@end
+@protocol _TtP19ControlCenterHelper31ControlCenterWiFiHelperProtocol_
+- (void)joinOtherNetwork;
+- (void)joinNetworkError:(CWDisplayedScanResult *)arg1;
+- (void)createDiagnosticsReport;
+@end
+@protocol _TtP19ControlCenterHelper36ControlCenterBluetoothHelperProtocol_
+- (void)confirmTurnOffBluetoothWithRequest:(NSUUID *)arg1 response:(void (^)(NSUUID *, _Bool))arg2;
+@end
+@protocol _TtP19ControlCenterHelper42ControlCenterScreenMirroringHelperProtocol_
+- (void)dismissAlertWithDisplayID:(unsigned int)arg1;
+- (void)presentScreenMirroringAlertWithDisplayID:(unsigned int)arg1 displayName:(NSString *)arg2 displayIsSpatial:(_Bool)arg3 options:(NSSet *)arg4 response:(void (^)(long long))arg5;
+@end
+@protocol _TtP19ControlCenterHelper43ControlCenterMusicRecognitionHelperProtocol_
+- (void)confirmItemDeletionWithResponse:(void (^)(_Bool))arg1;
+@end
+@protocol _TtP19ControlCenterHelper43ControlCenterUniversalControlHelperProtocol_
+- (void)presentUniversalControlError:(NSError *)arg1;
+@end
+@protocol _TtP19ControlCenterHelper48ControlCenterBackgroundReplacementHelperProtocol_
+- (void)isShowingBackgroundReplacementPickerWithResponse:(void (^)(_Bool))arg1;
+- (void)useVerboseTitle:(_Bool)arg1;
+- (void)closeBackgroundReplacementPickerWithBundleID:(NSString *)arg1;
+- (void)presentBackgroundReplacementPickerWithBundleID:(NSString *)arg1 appName:(NSString *)arg2 cameraID:(NSString *)arg3 onDisplay:(unsigned int)arg4 useVerboseTitle:(_Bool)arg5;
+@end

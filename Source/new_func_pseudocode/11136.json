@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf19EnumDescriptorProto13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf19EnumDescriptorProto13IsInitializedEv(google::protobuf::EnumDescriptorProto * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EnumDescriptorProto::IsInitialized(google::protobuf::EnumDescriptorProto *this)\n{\n  __int64 v2; // x8\n  __int64 v3; // x20\n  char IsInitialized; // w0\n  __int64 result; // x0\n  __int64 v6; // x19\n\n  v2 = *((unsigned int *)this + 8);\n  while ( (int)v2 >= 1 )\n  {\n    v3 = v2 - 1;\n    IsInitialized = google::protobuf::EnumValueDescriptorProto::IsInitialized(*(google::protobuf::EnumValueDescriptorProto **)(*((_QWORD *)this + 5) + 8 * v2));\n    v2 = v3;\n    if ( (IsInitialized & 1) == 0 )\n      return 0LL;\n  }\n  if ( (*((_BYTE *)this + 16) & 2) == 0 )\n    return 1LL;\n  v6 = *((_QWORD *)this + 13);\n  result = google::protobuf::internal::ExtensionSet::IsInitialized((google::protobuf::internal::ExtensionSet *)(v6 + 16));\n  if ( (_DWORD)result )\n  {\n    result = sub_1000A7B4C(v6 + 48);\n    if ( (_DWORD)result )\n      return 1LL;\n  }\n  return result;\n}"
+}

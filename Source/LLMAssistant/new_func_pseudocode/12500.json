@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSPointerArray tsu_addPointersFromPointerArray:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSPointerArray tsu_addPointersFromPointerArray:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[NSPointerArray tsu_addPointersFromPointerArray:](NSPointerArray *self, SEL a2, id a3)\n{\n  id v4; // x20\n  NSUInteger v5; // x21\n  _QWORD v6[6]; // [xsp+0h] [xbp-50h] BYREF\n\n  v4 = objc_retain(a3);\n  v5 = -[NSPointerArray count](self, \"count\");\n  -[NSPointerArray setCount:](\n    self,\n    \"setCount:\",\n    (char *)objc_msgSend(v4, \"count\") + -[NSPointerArray count](self, \"count\"));\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_10012040C;\n  v6[3] = &unk_1001DC3E8;\n  v6[4] = self;\n  v6[5] = v5;\n  objc_msgSend(v4, \"tsu_enumerateNonNullPointersUsingBlock:\", v6);\n  objc_release(v4);\n}"
+}

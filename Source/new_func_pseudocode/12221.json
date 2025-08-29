@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf15UnknownFieldSet14ParseFromArrayEPKvi",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf15UnknownFieldSet14ParseFromArrayEPKvi(google::protobuf::UnknownFieldSet * this, const void * a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::UnknownFieldSet::ParseFromArray(\n        google::protobuf::UnknownFieldSet *this,\n        const void *a2,\n        int a3)\n{\n  _BYTE v5[32]; // [xsp+0h] [xbp-30h] BYREF\n\n  google::protobuf::io::ArrayInputStream::ArrayInputStream((google::protobuf::io::ArrayInputStream *)v5, a2, a3, -1);\n  return google::protobuf::UnknownFieldSet::ParseFromZeroCopyStream(this, (__int64)v5);\n}"
+}

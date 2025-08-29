@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromSize",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromSize(NSSize aSize)",
+    "pseudocode": "NSString *__cdecl NSStringFromSize(NSSize aSize)\n{\n  return _NSStringFromSize(aSize);\n}"
+}

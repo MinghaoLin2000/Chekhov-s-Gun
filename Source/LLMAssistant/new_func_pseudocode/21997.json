@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecCodeCopyGuestWithAttributes",
+    "function_argument_number": 4,
+    "function_signature": "_SecCodeCopyGuestWithAttributes(SecCodeRef host, CFDictionaryRef attributes, SecCSFlags flags, SecCodeRef * guest)",
+    "pseudocode": "OSStatus __cdecl SecCodeCopyGuestWithAttributes(\n        SecCodeRef host,\n        CFDictionaryRef attributes,\n        SecCSFlags flags,\n        SecCodeRef *guest)\n{\n  return _SecCodeCopyGuestWithAttributes(host, attributes, flags, guest);\n}"
+}

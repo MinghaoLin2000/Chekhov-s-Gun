@@ -1,0 +1,5 @@
+_xpc_connection_send_message_with_reply_sync
+xpc_object_t __cdecl xpc_connection_send_message_with_reply_sync(xpc_connection_t connection, xpc_object_t message)
+{
+  return _xpc_connection_send_message_with_reply_sync(connection, message);
+}

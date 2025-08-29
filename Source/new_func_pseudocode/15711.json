@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPDFUUpdater setUarpCaptureFileName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPDFUUpdater setUarpCaptureFileName:](UARPDFUUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[UARPDFUUpdater setUarpCaptureFileName:](UARPDFUUpdater *self, SEL a2, id a3)\n{\n  NSString *v4; // x0\n  NSString *uarpCaptureFileName; // x8\n  UARPController *uarpController; // x0\n  NSString *v7; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (NSString *)objc_msgSend(a3, \"copy\");\n  uarpCaptureFileName = self->_uarpCaptureFileName;\n  self->_uarpCaptureFileName = v4;\n  objc_release(uarpCaptureFileName);\n  if ( self->_uarpCaptureFileName )\n  {\n    -[UARPController stopPacketCapture](self->_uarpController, \"stopPacketCapture\");\n    v7 = self->_uarpCaptureFileName;\n    uarpController = self->_uarpController;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[UARPController startPacketCapture:](uarpController, \"startPacketCapture:\", v7);\n  }\n}"
+}

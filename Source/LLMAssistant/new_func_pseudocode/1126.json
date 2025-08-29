@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController clickAutoIncludePhotosFromCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController clickAutoIncludePhotosFromCheckBox:](DeviceSettingsPhotosViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController clickAutoIncludePhotosFromCheckBox:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        id a3)\n{\n  NSButton *v4; // x20\n  _BOOL8 v5; // x21\n  NSPopUpButton *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPhotosViewController autoIncludePhotosFromCheckBox](self, \"autoIncludePhotosFromCheckBox\", a3));\n  v5 = (void *)-[NSButton state](v4, \"state\") == (void *)1;\n  objc_release(v4);\n  v6 = objc_retainAutoreleasedReturnValue(\n         -[DeviceSettingsPhotosViewController autoIncludePhotosFromPopUpButton](\n           self,\n           \"autoIncludePhotosFromPopUpButton\"));\n  -[NSPopUpButton setEnabled:](v6, \"setEnabled:\", v5);\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceViewController postDeviceViewDirtinessChangeNotification](self, \"postDeviceViewDirtinessChangeNotification\");\n}"
+}

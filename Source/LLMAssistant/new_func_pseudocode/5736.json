@@ -1,0 +1,6 @@
+{
+    "function_name": "_NXKeyRepeatInterval",
+    "function_argument_number": 1,
+    "function_signature": "_NXKeyRepeatInterval(NXEventHandle handle)",
+    "pseudocode": "double __cdecl NXKeyRepeatInterval(NXEventHandle handle)\n{\n  return _NXKeyRepeatInterval(handle);\n}"
+}

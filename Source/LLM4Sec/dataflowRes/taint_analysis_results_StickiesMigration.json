@@ -1,0 +1,5 @@
+{
+    "/System/Applications/Stickies.app/Contents/XPCServices/StickiesMigration.xpc/Contents/MacOS/StickiesMigration": [
+        "-[StickiesMigration migrateStickiesColorDictRepArray:reply:]"
+    ]
+}

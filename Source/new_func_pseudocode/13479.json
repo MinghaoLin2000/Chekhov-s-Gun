@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringQuotedIfContainsCharacterSet:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSString tsu_stringQuotedIfContainsCharacterSet:](NSString * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringQuotedIfContainsCharacterSet:](NSString *self, SEL a2, id a3)\n{\n  NSString *v4; // x19\n  void *v5; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(self);\n  if ( -[NSString rangeOfCharacterFromSet:](v4, \"rangeOfCharacterFromSet:\", a3) != (void *)0x7FFFFFFFFFFFFFFFLL )\n  {\n    v5 = -[NSString mutableCopy](v4, \"mutableCopy\");\n    objc_msgSend(\n      v5,\n      \"replaceOccurrencesOfString:withString:options:range:\",\n      CFSTR(\"\\\"\"),\n      CFSTR(\"\\\"\\\"\"),\n      0LL,\n      0LL,\n      -[NSString length](v4, \"length\"));\n    objc_msgSend(v5, \"appendString:\", CFSTR(\"\\\"\"));\n    objc_msgSend(v5, \"insertString:atIndex:\", CFSTR(\"\\\"\"), 0LL);\n    objc_release(v4);\n    v4 = (NSString *)v5;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

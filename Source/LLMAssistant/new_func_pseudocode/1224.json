@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController setDeleteExistingPhotos:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController setDeleteExistingPhotos:](DeviceSettingsPhotosViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController setDeleteExistingPhotos:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_deleteExistingPhotos = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf23SourceCodeInfo_LocationD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf23SourceCodeInfo_LocationD1Ev(google::protobuf::SourceCodeInfo_Location * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::SourceCodeInfo_Location::~SourceCodeInfo_Location(\n        google::protobuf::SourceCodeInfo_Location *this)\n{\n  __ZN6google8protobuf23SourceCodeInfo_LocationD2Ev(this);\n}"
+}

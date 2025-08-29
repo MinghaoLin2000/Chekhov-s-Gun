@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SheetViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[SheetViewController .cxx_destruct](SheetViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SheetViewController .cxx_destruct](SheetViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_subviewController, 0LL);\n  objc_destroyWeak((id *)&self->_cancelButton);\n  objc_destroyWeak((id *)&self->_okButton);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_containerView, 0LL);\n}"
+}

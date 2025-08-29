@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryGetCount",
+    "function_argument_number": 1,
+    "function_signature": "_CFDictionaryGetCount(CFDictionaryRef theDict)",
+    "pseudocode": "CFIndex __cdecl CFDictionaryGetCount(CFDictionaryRef theDict)\n{\n  return _CFDictionaryGetCount(theDict);\n}"
+}

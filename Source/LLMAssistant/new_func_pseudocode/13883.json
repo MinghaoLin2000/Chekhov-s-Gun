@@ -1,0 +1,6 @@
+{
+    "function_name": "_xattr_name_without_flags",
+    "function_argument_number": 1,
+    "function_signature": "_xattr_name_without_flags(const char * a1)",
+    "pseudocode": "char *__cdecl xattr_name_without_flags(const char *a1)\n{\n  return _xattr_name_without_flags(a1);\n}"
+}

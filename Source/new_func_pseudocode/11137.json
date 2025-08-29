@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11EnumOptions13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf11EnumOptions13IsInitializedEv(google::protobuf::EnumOptions * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EnumOptions::IsInitialized(google::protobuf::EnumOptions *this)\n{\n  __int64 result; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = google::protobuf::internal::ExtensionSet::IsInitialized((google::protobuf::EnumOptions *)((char *)this + 16));\n  if ( (_DWORD)result )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_1000A7B4C((char *)this + 48);\n  }\n  return result;\n}"
+}

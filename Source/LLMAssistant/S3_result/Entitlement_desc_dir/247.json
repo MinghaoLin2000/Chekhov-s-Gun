@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.private.iokit.darkwake-control",
+  "capability": "Grants an application the ability to programmatically control, initiate, or modify the system's 'Darkwake' state. This involves low-level interaction with macOS power management via I/O Kit, allowing for management of the system's partial wake/sleep cycles, potentially influencing background tasks like Power Nap or Time Machine operations.",
+  "reasoning": "The 'com.apple.private' prefix indicates an internal Apple entitlement, not intended for third-party developers. 'iokit' refers to the I/O Kit framework, which is responsible for device drivers and hardware interaction, strongly suggesting low-level system control. 'darkwake-control' directly points to the ability to manage 'Darkwake', a specific low-power state in macOS where the system is partially active for background operations without a full display wake. Therefore, the entitlement likely provides granular control over this fundamental system power state.",
+  "similar_entitlements": [
+    "com.apple.developer.energykit"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'System & Kernel Level Control' (Type 4) because: \n1. **System-level configuration:** Controlling Darkwake directly modifies a fundamental system-level power management behavior. Manipulating system sleep/wake states is a core system function. \n2. **Low-level interaction:** The 'iokit' component indicates interaction at a very low level, potentially close to the kernel or involving kernel extensions responsible for power management. \n3. **Potential for abuse:** Misuse could disrupt system stability, power consumption, or be used to hide malicious activity by preventing or forcing certain power states, impacting the system's overall operational behavior.",
+  "self_reflection": "I am highly confident in this assessment. The combination of 'private', 'iokit', and 'darkwake-control' strongly points to a low-level, sensitive power management capability. The 'iokit' part is a definitive indicator of interaction at the hardware/kernel interface level. The primary uncertainty lies in the exact *granularity* of control (e.g., whether it allows arbitrary manipulation or just triggering predefined states), but even triggering predefined states at this level is a significant system-level privilege. The 'com.apple.developer.energykit' is listed as a similar entitlement, but it's important to note that EnergyKit is a higher-level framework for developers, whereas 'iokit.darkwake-control' appears to be a much more direct, private, and lower-level mechanism."
+}

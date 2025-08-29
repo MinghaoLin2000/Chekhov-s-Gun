@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlFreeParserCtxt",
+    "function_argument_number": 1,
+    "function_signature": "_xmlFreeParserCtxt(xmlParserCtxtPtr ctxt)",
+    "pseudocode": "void __cdecl xmlFreeParserCtxt(xmlParserCtxtPtr ctxt)\n{\n  _xmlFreeParserCtxt(ctxt);\n}"
+}

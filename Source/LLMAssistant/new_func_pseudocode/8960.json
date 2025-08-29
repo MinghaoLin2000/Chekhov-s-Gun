@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService13LocalizationsCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService13LocalizationsCMa()",
+    "pseudocode": "__int64 type metadata accessor for Localizations()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService13Localizations);\n}"
+}

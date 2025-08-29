@@ -1,0 +1,6 @@
+{
+    "function_name": "-[device_http_t dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[device_http_t dealloc](device_http_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[device_http_t dealloc](device_http_t *self, SEL a2)\n{\n  platform_http_t *streamedPrinterEndpoint; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  streamedPrinterEndpoint = self->_streamedPrinterEndpoint;\n  self->_streamedPrinterEndpoint = 0LL;\n  objc_release(streamedPrinterEndpoint);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___device_http_t;\n  -[device_http_t dealloc](&v4, \"dealloc\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointRemoveAssetPayloadWindow",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformEndpointRemoveAssetPayloadWindow(__int64 a2, _QWORD * a3, _DWORD * a4, __int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointRemoveAssetPayloadWindow(__int64 a1, __int64 a2, _QWORD *a3, _DWORD *a4)\n{\n  __int64 result; // x0\n\n  result = 30LL;\n  if ( a3 )\n  {\n    if ( a4 )\n    {\n      result = 0LL;\n      *a3 = *(_QWORD *)(a2 + 640);\n      *(_QWORD *)(a2 + 640) = 0LL;\n      *a4 = *(_DWORD *)(a2 + 648);\n      *(_DWORD *)(a2 + 648) = 0;\n    }\n  }\n  return result;\n}"
+}

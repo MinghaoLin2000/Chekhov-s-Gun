@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP11ArchiveInfo13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP11ArchiveInfo13IsInitializedEv(TSP::ArchiveInfo * this)",
+    "pseudocode": "__int64 __fastcall TSP::ArchiveInfo::IsInitialized(TSP::ArchiveInfo *this)\n{\n  return sub_10003CE44((char *)this + 24);\n}"
+}

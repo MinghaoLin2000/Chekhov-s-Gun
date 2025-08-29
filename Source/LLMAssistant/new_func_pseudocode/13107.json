@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation setFileType:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUFileDataRepresentation setFileType:](SFUFileDataRepresentation * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[SFUFileDataRepresentation setFileType:](SFUFileDataRepresentation *self, SEL a2, unsigned int a3)\n{\n  id v5; // x21\n  void *v6; // x22\n  void *v7; // x23\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v5 = -[SFUFileDataRepresentation path](self, \"path\");\n  objc_sync_enter(self);\n  if ( v5 )\n  {\n    v6 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSNumber), \"initWithUnsignedLong:\", a3);\n    v7 = objc_msgSend(\n           objc_alloc((Class)&OBJC_CLASS___NSMutableDictionary),\n           \"initWithObjectsAndKeys:\",\n           v6,\n           NSFileHFSTypeCode,\n           0LL);\n    -[NSFileManager setAttributes:ofItemAtPath:error:](\n      +[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"),\n      \"setAttributes:ofItemAtPath:error:\",\n      v7,\n      v5,\n      0LL);\n    objc_release(v7);\n    objc_release(v6);\n  }\n  self->mFileType = a3;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_sync_exit(self);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FirmwareBundle setProductIDCode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FirmwareBundle setProductIDCode:](FirmwareBundle * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[FirmwareBundle setProductIDCode:](FirmwareBundle *self, SEL a2, unsigned int a3)\n{\n  self->_productIDCode = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController itLibrary]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceViewController itLibrary](DeviceViewController * self, SEL a2)",
+    "pseudocode": "ITLibrary *__cdecl -[DeviceViewController itLibrary](DeviceViewController *self, SEL a2)\n{\n  ITLibrary *itLibrary; // x0\n  ITLibrary *v4; // x20\n  id v5; // x21\n  ITLibrary *v6; // x0\n  id v8; // [xsp+8h] [xbp-28h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  itLibrary = self->_itLibrary;\n  if ( !itLibrary )\n  {\n    v8 = 0LL;\n    v4 = objc_retainAutoreleasedReturnValue(\n           +[ITLibrary libraryWithMediaDomains:options:error:](\n             &OBJC_CLASS___ITLibrary,\n             \"libraryWithMediaDomains:options:error:\",\n             15LL,\n             0LL,\n             &v8));\n    v5 = objc_retain(v8);\n    v6 = self->_itLibrary;\n    self->_itLibrary = v4;\n    objc_release(v6);\n    objc_release(v5);\n    itLibrary = self->_itLibrary;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(itLibrary);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSFileHandle uarpSeekToEndReturningOffset:error:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSFileHandle uarpSeekToEndReturningOffset:error:](NSFileHandle * self, SEL a2, unsigned __int64 * a3, id * a4)",
+    "pseudocode": "// attributes: thunk\nbool __cdecl -[NSFileHandle uarpSeekToEndReturningOffset:error:](\n        NSFileHandle *self,\n        SEL a2,\n        unsigned __int64 *a3,\n        id *a4)\n{\n  return -[NSFileHandle seekToEndReturningOffset:error:](self, \"seekToEndReturningOffset:error:\", a3, a4);\n}"
+}

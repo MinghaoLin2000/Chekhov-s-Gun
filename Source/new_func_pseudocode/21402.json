@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition10ClientInfoV07LoggingC0V5asrID07requestF0022dictationUIInteractionF0AE10Foundation4UUIDV_AKSStcfC",
+    "function_argument_number": 5,
+    "function_signature": "_$s22localspeechrecognition10ClientInfoV07LoggingC0V5asrID07requestF0022dictationUIInteractionF0AE10Foundation4UUIDV_AKSStcfC(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)",
+    "pseudocode": "__int64 __usercall ClientInfo.LoggingInfo.init(asrID:requestID:dictationUIInteractionID:)@<X0>(\n        __int64 a1@<X0>,\n        __int64 a2@<X1>,\n        __int64 a3@<X2>,\n        __int64 a4@<X3>,\n        __int64 a5@<X8>)\n{\n  __int64 v10; // x24\n  __int64 v11; // x1\n  __int64 v12; // x16\n  void (__fastcall *v13)(__int64, __int64, __int64); // x25\n  __int64 v14; // x22\n  __int64 result; // x0\n  _QWORD *v16; // x8\n\n  v10 = sub_100040F10(0LL);\n  sub_100016A24(v10, v11);\n  v13 = *(void (__fastcall **)(__int64, __int64, __int64))(v12 + 32);\n  v13(a5, a1, v10);\n  v14 = type metadata accessor for ClientInfo.LoggingInfo(0LL);\n  result = ((__int64 (__fastcall *)(__int64, __int64, __int64))v13)(a5 + *(int *)(v14 + 20), a2, v10);\n  v16 = (_QWORD *)(a5 + *(int *)(v14 + 24));\n  *v16 = a3;\n  v16[1] = a4;\n  return result;\n}"
+}

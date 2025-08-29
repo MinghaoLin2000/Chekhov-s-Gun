@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFSetGetCount",
+    "function_argument_number": 1,
+    "function_signature": "_CFSetGetCount(CFSetRef theSet)",
+    "pseudocode": "CFIndex __cdecl CFSetGetCount(CFSetRef theSet)\n{\n  return _CFSetGetCount(theSet);\n}"
+}

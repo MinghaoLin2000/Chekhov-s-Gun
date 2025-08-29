@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULinkedPointerSetEnumerator nextObject]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSULinkedPointerSetEnumerator nextObject](TSULinkedPointerSetEnumerator * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSULinkedPointerSetEnumerator nextObject](TSULinkedPointerSetEnumerator *self, SEL a2)\n{\n  TSULinkedPointerSetEntry *mLastUsed; // x9\n  TSULinkedPointerSetEntry *mNext; // x9\n  id mObject; // x19\n  TSULinkedPointerSetEntry *mHead; // x10\n  id v6; // x0\n\n  mLastUsed = self->mLastUsed;\n  if ( mLastUsed )\n  {\n    mNext = mLastUsed->mNext;\n    self->mLastUsed = mNext;\n    if ( mNext )\n    {\n      mObject = mNext->mObject;\n      if ( !mObject )\n        return mObject;\nLABEL_7:\n      v6 = objc_autorelease(objc_retain(mObject));\n      return mObject;\n    }\n  }\n  mHead = self->mHead;\n  if ( !mHead )\n    return 0LL;\n  mObject = mHead->mObject;\n  self->mLastUsed = mHead;\n  self->mHead = 0LL;\n  if ( mObject )\n    goto LABEL_7;\n  return mObject;\n}"
+}

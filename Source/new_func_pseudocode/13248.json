@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipRecordInputStream initWithDataRepresentation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipRecordInputStream initWithDataRepresentation:](SFUZipRecordInputStream * self, SEL a2, id a3)",
+    "pseudocode": "SFUZipRecordInputStream *__cdecl -[SFUZipRecordInputStream initWithDataRepresentation:](\n        SFUZipRecordInputStream *self,\n        SEL a2,\n        id a3)\n{\n  self->mInput = (SFUBufferedInputStream *)objc_retain(objc_msgSend(a3, \"bufferedInputStream\"));\n  return self;\n}"
+}

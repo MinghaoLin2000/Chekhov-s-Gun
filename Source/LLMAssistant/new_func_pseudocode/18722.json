@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper16DebugPreferencesC4KeysOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper16DebugPreferencesC4KeysOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for DebugPreferences.Keys()\n{\n  return &type metadata for DebugPreferences.Keys;\n}"
+}

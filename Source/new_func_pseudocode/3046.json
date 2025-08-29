@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController activationFailedViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSetupViewController activationFailedViewController](DeviceSetupViewController * self, SEL a2)",
+    "pseudocode": "DeviceActivationFailedViewController *__cdecl -[DeviceSetupViewController activationFailedViewController](\n        DeviceSetupViewController *self,\n        SEL a2)\n{\n  DeviceSetupViewController *v2; // x19\n  __int64 v3; // x1\n  __int64 v4; // x0\n  DeviceActivationFailedViewController *activationFailedViewController; // x8\n  DeviceActivationFailedViewController *v6; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retain(self);\n  objc_sync_enter(v2);\n  if ( !v2->_activationFailedViewController )\n  {\n    v4 = objc_opt_new(&OBJC_CLASS___DeviceActivationFailedViewController, v3);\n    activationFailedViewController = v2->_activationFailedViewController;\n    v2->_activationFailedViewController = (DeviceActivationFailedViewController *)v4;\n    objc_release(activationFailedViewController);\n  }\n  objc_sync_exit(v2);\n  objc_release(v2);\n  v6 = v2->_activationFailedViewController;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v6);\n}"
+}

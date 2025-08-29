@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinLogInfo",
+    "function_argument_number": 9,
+    "function_signature": "_uarpPlatformDarwinLogInfo(__int64 a2, const char * a3, __int64 a1, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8, char a9)",
+    "pseudocode": "void __fastcall uarpPlatformDarwinLogInfo(\n        __int64 a1,\n        __int64 a2,\n        const char *a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        char a9)\n{\n  os_log_s *v10; // x20\n  uint8_t buf[4]; // [xsp+10h] [xbp-30h] BYREF\n  char *v12; // [xsp+14h] [xbp-2Ch]\n\n  vsnprintf(byte_10002B7A0, 0x200uLL, a3, &a9);\n  v10 = (os_log_s *)sub_100013DA0(a2);\n  if ( os_log_type_enabled(v10, OS_LOG_TYPE_INFO) )\n  {\n    *(_DWORD *)buf = 136315138;\n    v12 = byte_10002B7A0;\n    _os_log_impl((void *)&_mh_execute_header, v10, OS_LOG_TYPE_INFO, \"%s\\n\", buf, 0xCu);\n  }\n}"
+}

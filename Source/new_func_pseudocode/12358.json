@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io17CodedOutputStreamD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io17CodedOutputStreamD2Ev(google::protobuf::io::CodedOutputStream * this)",
+    "pseudocode": "void __fastcall google::protobuf::io::CodedOutputStream::~CodedOutputStream(\n        google::protobuf::io::CodedOutputStream *this)\n{\n  *((_QWORD *)this + 8) = google::protobuf::io::EpsCopyOutputStream::Trim(this, *((unsigned __int8 **)this + 8));\n}"
+}

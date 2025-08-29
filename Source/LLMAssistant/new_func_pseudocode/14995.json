@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _refreshAfterLocalNotification:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv _refreshAfterLocalNotification:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv _refreshAfterLocalNotification:](ATXHeuristicJSEnv *self, SEL a2, id a3)\n{\n  id v4; // x21\n  void *v5; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___ATXInformationHeuristicRefreshNotitifcationTrigger),\n         \"initWithNotification:type:\",\n         v4,\n         0LL);\n  objc_release(v4);\n  -[NSMutableSet addObject:](self->_currentRefreshTriggerBuffer, \"addObject:\", v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

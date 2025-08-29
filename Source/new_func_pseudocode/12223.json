@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal17UnknownFieldParseEyPNS0_15UnknownFieldSetEPKcPNS1_12ParseContextE",
+    "function_argument_number": 5,
+    "function_signature": "__ZN6google8protobuf8internal17UnknownFieldParseEyPNS0_15UnknownFieldSetEPKcPNS1_12ParseContextE(google::protobuf::internal * this, unsigned __int64 a2, google::protobuf::UnknownFieldSet * a3, const char * a4, google::protobuf::internal::ParseContext * a5)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::UnknownFieldParse(int a1, __int64 a2, google::protobuf::internal *a3)\n{\n  __int64 v4; // [xsp+8h] [xbp-8h] BYREF\n\n  v4 = a2;\n  return sub_100106590(a1, (int)&v4, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf7Message5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf7Message5ClearEv(google::protobuf::Message * this)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::Message::Clear(google::protobuf::Message *this, google::protobuf::Message *a2)\n{\n  return google::protobuf::internal::ReflectionOps::Clear(this, a2);\n}"
+}

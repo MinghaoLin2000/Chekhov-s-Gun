@@ -1,0 +1,172 @@
+Service Path:
+/System/Library/PrivateFrameworks/PrintKit.framework/Versions/A/XPCServices/com.apple.PrintKit.PrinterTool.xpc/Contents/MacOS/com.apple.PrintKit.PrinterTool
+
+Service Exported Protocols:
+@protocol JobLikeThingProtocol <NSObject>
+- (void)_withActivity:(void (^)(NSObject<OS_os_activity> *))arg1;
+- (void)updateProgressAndPostNotification:(int)arg1 logMsg:(NSString *)arg2;
+- (void)updateSheetsAndPostNotification:(int)arg1 logMsg:(NSString *)arg2;
+- (void)set_processing;
+- (void)updateThumbnail:(NSData *)arg1;
+- (void)make_progress:(long long)arg1;
+- (int)closeDriver:(struct lite_driver_s *)arg1;
+- (int)openDriver:(struct lite_driver_s *)arg1 format:(NSString *)arg2 orient:(int)arg3 num_sheets:(int)arg4 passthru:(int)arg5;
+- (void)postGlobalNotification:(unsigned int)arg1;
+- (void)postGlobalNotification:(unsigned int)arg1 logMsg:(NSString *)arg2;
+- (_Bool)has_job_stream_http;
+- (struct CGDataConsumer *)createDataConsumer;
+- (void)finishJob:(long long)arg1;
+- (void)resetJob;
+- (void)set_cancel_flag;
+@end
+@protocol NSURLSessionDataDelegate <NSURLSessionTaskDelegate>
+- (void)URLSession:(NSURLSession *)arg1 dataTask:(NSURLSessionDataTask *)arg2 willCacheResponse:(NSCachedURLResponse *)arg3 completionHandler:(void (^)(NSCachedURLResponse *))arg4;
+- (void)URLSession:(NSURLSession *)arg1 dataTask:(NSURLSessionDataTask *)arg2 didReceiveData:(NSData *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 dataTask:(NSURLSessionDataTask *)arg2 didBecomeStreamTask:(NSURLSessionStreamTask *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 dataTask:(NSURLSessionDataTask *)arg2 didBecomeDownloadTask:(NSURLSessionDownloadTask *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 dataTask:(NSURLSessionDataTask *)arg2 didReceiveResponse:(NSURLResponse *)arg3 completionHandler:(void (^)(long long))arg4;
+@end
+@protocol NSURLSessionDelegate <NSObject>
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)arg1;
+- (void)URLSession:(NSURLSession *)arg1 didReceiveChallenge:(NSURLAuthenticationChallenge *)arg2 completionHandler:(void (^)(long long, NSURLCredential *))arg3;
+- (void)URLSession:(NSURLSession *)arg1 didBecomeInvalidWithError:(NSError *)arg2;
+@end
+@protocol NSURLSessionTaskDelegate <NSURLSessionDelegate>
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 didCompleteWithError:(NSError *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 didFinishCollectingMetrics:(NSURLSessionTaskMetrics *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 didReceiveInformationalResponse:(NSHTTPURLResponse *)arg3;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 didSendBodyData:(long long)arg3 totalBytesSent:(long long)arg4 totalBytesExpectedToSend:(long long)arg5;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 needNewBodyStreamFromOffset:(long long)arg3 completionHandler:(void (^)(NSInputStream *))arg4;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 needNewBodyStream:(void (^)(NSInputStream *))arg3;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 didReceiveChallenge:(NSURLAuthenticationChallenge *)arg3 completionHandler:(void (^)(long long, NSURLCredential *))arg4;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 willPerformHTTPRedirection:(NSHTTPURLResponse *)arg3 newRequest:(NSURLRequest *)arg4 completionHandler:(void (^)(NSURLRequest *))arg5;
+- (void)URLSession:(NSURLSession *)arg1 taskIsWaitingForConnectivity:(NSURLSessionTask *)arg2;
+- (void)URLSession:(NSURLSession *)arg1 task:(NSURLSessionTask *)arg2 willBeginDelayedRequest:(NSURLRequest *)arg3 completionHandler:(void (^)(long long, NSURLRequest *))arg4;
+- (void)URLSession:(NSURLSession *)arg1 didCreateTask:(NSURLSessionTask *)arg2;
+@end
+@protocol PKPrintdRPC_BrowseClient_ClientProtocol <NSObject>
+- (void)browserAdded:(NSSet *)arg1 removed:(NSSet *)arg2;
+@end
+@protocol PrintJobRequestParamsProtocol
+@end
+@protocol PrintdRPCProtocol <NSObject>
+- (void)logiCloudPrintersReply:(void (^)(NSArray *))arg1;
+- (void)resetPKCloudData;
+- (void)updateiCloudPrinterLocation:(NSDictionary *)arg1 newLocation:(NSString *)arg2;
+- (void)updateiCloudPrinterDisplayName:(NSDictionary *)arg1 newDisplayName:(NSString *)arg2;
+- (void)removePrinterFromiCloudWithInfo:(NSDictionary *)arg1;
+- (void)addPrinterToiCloudWithInfo:(NSDictionary *)arg1;
+- (void)setiCloudPrinters:(NSArray *)arg1;
+- (void)getiCloudPrintersReply:(void (^)(NSArray *))arg1;
+- (void)setLastUsedPrintersForCurrentNetwork:(NSDictionary *)arg1;
+- (void)getLastUsedPrintersForCurrentNetworkReply:(void (^)(NSString *, NSArray *))arg1;
+- (void)_endpointResolve:(NWEndpoint *)arg1 timeout:(double)arg2 reply:(void (^)(NSURL *, NSDictionary *))arg3;
+- (void)browseInfoForPrinter:(PKPrinterBonjourEndpoint *)arg1 timeout:(double)arg2 reply:(void (^)(PKPrinterBrowseInfo *))arg3;
+- (void)startBrowsing:(NSDictionary *)arg1 provenance:(unsigned long long)arg2;
+- (void)cancelJob:(int)arg1;
+- (void)getJobUpdateStatus:(int)arg1 includeThumbnail:(_Bool)arg2 reply:(void (^)(PKMutableJobState *))arg3;
+- (void)getRecentJobsReply:(void (^)(NSArray *, NSArray *))arg1;
+- (void)finishRequestWithCancel:(_Bool)arg1 reply:(void (^)(NSNumber *))arg2;
+- (void)startStreamingRequest:(PKPrinterBonjourEndpoint *)arg1 printSettings:(PKPrintSettings *)arg2 reply:(void (^)(NSFileHandle *))arg3;
+- (void)_checkAccessState:(PKPrinterBonjourEndpoint *)arg1 reply:(void (^)(long long))arg2;
+- (void)_queryPrinter:(PKPrinterBonjourEndpoint *)arg1 attributes:(NSArray *)arg2 reply:(void (^)(NSData *))arg3;
+- (void)_getPrinterDescription:(PKPrinterBonjourEndpoint *)arg1 assertReachability:(_Bool)arg2 reply:(void (^)(PKPrinterDescription *, PKPrinterBrowseInfo *))arg3;
+- (void)_identifyPrinter:(PKPrinterBonjourEndpoint *)arg1 message:(NSString *)arg2 actions:(NSArray *)arg3;
+- (void)_removeKeychainItem:(PKPrinterBonjourEndpoint *)arg1;
+- (void)_realPathForTmpReply:(void (^)(NSURL *))arg1;
+@end
+@protocol WiFiAwareDataSessionDelegate <NSObject>
+- (void)dataSession:(WiFiAwareDataSession *)arg1 terminatedWithReason:(long long)arg2;
+- (void)dataSession:(WiFiAwareDataSession *)arg1 confirmedForPeerDataAddress:(WiFiMACAddress *)arg2 serviceSpecificInfo:(WiFiAwarePublishDatapathServiceSpecificInfo *)arg3;
+- (void)dataSession:(WiFiAwareDataSession *)arg1 failedToStartWithError:(long long)arg2;
+- (void)dataSessionRequestStarted:(WiFiAwareDataSession *)arg1;
+- (void)dataSession:(WiFiAwareDataSession *)arg1 updatedPeerRSSI:(int)arg2;
+- (void)dataSession:(WiFiAwareDataSession *)arg1 receivedControlDataAddress:(WiFiMACAddress *)arg2 serviceSpecificInfo:(WiFiAwarePublishDatapathServiceSpecificInfo *)arg3 onInterfaceIndex:(unsigned int)arg4;
+@end
+@protocol WiFiAwareSubscriberDelegate <NSObject>
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 lostDiscoveryResultForPublishID:(unsigned char)arg2 address:(WiFiMACAddress *)arg3;
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 terminatedWithReason:(long long)arg2;
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 failedToStartWithError:(long long)arg2;
+- (void)subscriberStarted:(WiFiAwareSubscriber *)arg1;
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 receivedMessage:(NSData *)arg2 fromPublishID:(unsigned char)arg3 address:(WiFiMACAddress *)arg4;
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 receivedDiscoveyResult:(WiFiAwareDiscoveryResult *)arg2;
+- (void)subscriber:(WiFiAwareSubscriber *)arg1 receivedDiscoveryResult:(WiFiAwareDiscoveryResult *)arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.developer.icloud-container-identifiers
+	[Value]
+		[Array]
+			[String] com.apple.PrintKit.PrinterTool
+	[Key] com.apple.developer.ubiquity-kvstore-identifier
+	[Value]
+		[String] com.apple.PrintKit.PrinterTool
+	[Key] com.apple.frontboard.launchapplications
+	[Value]
+		[Bool] true
+	[Key] com.apple.printing.bandservice
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.necp.match
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.network.socket-delegate
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.security.exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] Library/Caches/com.apple.PrintKit.PrinterTool/com.apple.metalfe
+	[Key] com.apple.security.exception.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] IOSurfaceRootUserClient
+			[String] AppleJPEGDriverUserClient
+			[String] IOSurfaceAcceleratorClient
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.wirelessproxd
+			[String] com.apple.springboard.services
+			[String] com.apple.SBUserNotification
+			[String] com.apple.fontservicesd
+			[String] com.apple.printbandservice
+			[String] com.apple.kvsd
+			[String] com.apple.printactivityservice
+			[String] com.apple.wifip2pd
+	[Key] com.apple.security.exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] com.apple.PrintKit.PrinterTool
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.power-assertions
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.tmpdir
+	[Value]
+		[String] com.apple.PrintKit.PrinterTool
+	[Key] com.apple.springboard.CFUserNotification
+	[Value]
+		[Bool] true
+	[Key] com.apple.springboard.switcherServiceRegistrar
+	[Value]
+		[Bool] true
+	[Key] com.apple.wifi.manager-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.wifip2pd
+	[Value]
+		[Bool] true
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] PrintKitAccessGroup
+	[Key] platform-application
+	[Value]
+		[Bool] true

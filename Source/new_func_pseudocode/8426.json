@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_KHSoftwareUpdateControllerContext tags]",
+    "function_argument_number": 2,
+    "function_signature": "-[_KHSoftwareUpdateControllerContext tags](_KHSoftwareUpdateControllerContext * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[_KHSoftwareUpdateControllerContext tags](_KHSoftwareUpdateControllerContext *self, SEL a2)\n{\n  return self->_tags;\n}"
+}

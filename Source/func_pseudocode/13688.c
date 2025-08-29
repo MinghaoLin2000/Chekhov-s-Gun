@@ -1,0 +1,5 @@
+_CFStringTokenizerAdvanceToNextToken
+CFStringTokenizerTokenType __cdecl CFStringTokenizerAdvanceToNextToken(CFStringTokenizerRef tokenizer)
+{
+  return _CFStringTokenizerAdvanceToNextToken(tokenizer);
+}

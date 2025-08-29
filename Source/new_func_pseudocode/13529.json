@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_isEqualToString:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSString tsu_isEqualToString:](NSString * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[NSString tsu_isEqualToString:](NSString *self, SEL a2, id a3)\n{\n  if ( a3 )\n    return -[NSString isEqualToString:](self, \"isEqualToString:\");\n  else\n    return 0;\n}"
+}

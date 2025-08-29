@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDPath countByEnumeratingWithState:objects:count:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUUUIDPath countByEnumeratingWithState:objects:count:](TSUUUIDPath * self, SEL a2, $655AB7B2D2422B1B18367FB7F2D120EF * a3, id * a4, unsigned __int64 a5)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUUUIDPath countByEnumeratingWithState:objects:count:](\n        TSUUUIDPath *self,\n        SEL a2,\n        $655AB7B2D2422B1B18367FB7F2D120EF *a3,\n        id *a4,\n        unsigned __int64 a5)\n{\n  return (unsigned __int64)-[NSArray countByEnumeratingWithState:objects:count:](\n                             self->_uuids,\n                             \"countByEnumeratingWithState:objects:count:\",\n                             a3,\n                             a4,\n                             a5);\n}"
+}

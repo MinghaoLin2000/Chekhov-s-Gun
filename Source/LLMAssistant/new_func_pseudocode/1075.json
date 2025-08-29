@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController photoSyncPrefs]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController photoSyncPrefs](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "AMPPhotoSyncPrefs *__cdecl -[DeviceSettingsPhotosViewController photoSyncPrefs](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2)\n{\n  AMPPhotoSyncPrefs *photoSyncPrefs; // x0\n  AMPDeviceSyncPrefs *v4; // x20\n  void *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  photoSyncPrefs = self->_photoSyncPrefs;\n  if ( !photoSyncPrefs )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n    v5 = objc_retainAutoreleasedReturnValue(-[AMPDeviceSyncPrefs photoSyncPrefs](v4, \"photoSyncPrefs\"));\n    -[DeviceSettingsPhotosViewController setPhotoSyncPrefs:](self, \"setPhotoSyncPrefs:\", v5);\n    objc_release(v5);\n    objc_release(v4);\n    photoSyncPrefs = self->_photoSyncPrefs;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(photoSyncPrefs);\n}"
+}

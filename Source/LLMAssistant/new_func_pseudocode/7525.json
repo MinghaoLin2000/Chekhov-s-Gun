@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceVMa",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CGSSpace()\n{\n  return &type metadata for CGSSpace;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SPCloudStorageHelper currentAcct]",
+    "function_argument_number": 2,
+    "function_signature": "-[SPCloudStorageHelper currentAcct](SPCloudStorageHelper * self, SEL a2)",
+    "pseudocode": "MM_Account *__cdecl -[SPCloudStorageHelper currentAcct](SPCloudStorageHelper *self, SEL a2)\n{\n  return (MM_Account *)objc_getProperty(self, a2, 24LL, 1);\n}"
+}

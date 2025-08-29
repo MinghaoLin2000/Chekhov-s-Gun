@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceGetType",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceGetType()",
+    "pseudocode": "__int64 CGSSpaceGetType()\n{\n  return _CGSSpaceGetType();\n}"
+}

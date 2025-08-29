@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup14MarkupDelegate .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC13DisplayMarkup14MarkupDelegate .cxx_destruct](_TtC13DisplayMarkup14MarkupDelegate * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MarkupDelegate .cxx_destruct](_TtC13DisplayMarkup14MarkupDelegate *self, SEL a2)\n{\n  objc_release(*(id *)((char *)&self->super.isa\n                     + OBJC_IVAR____TtC13DisplayMarkup14MarkupDelegate_screenAnnotationController));\n}"
+}

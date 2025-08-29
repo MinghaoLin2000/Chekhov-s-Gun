@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t .cxx_destruct](lite_job_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[lite_job_t .cxx_destruct](lite_job_t *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_spoolDocumentFormat, 0LL);\n  objc_storeStrong((id *)&self->_spoolDocumentFilename, 0LL);\n  objc_storeStrong((id *)&self->_jobHoldUntil, 0LL);\n  objc_storeStrong((id *)&self->_ippSession, 0LL);\n  objc_storeStrong((id *)&self->_printer, 0LL);\n  objc_storeStrong((id *)&self->_printSettings, 0LL);\n  objc_storeStrong((id *)&self->_jobPasswordEncryption, 0LL);\n  objc_storeStrong((id *)&self->_jobPassword, 0LL);\n  objc_storeStrong((id *)&self->_thumbnail, 0LL);\n  objc_storeStrong((id *)&self->_jobTransaction, 0LL);\n  objc_storeStrong((id *)&self->_jobActivity, 0LL);\n  objc_storeStrong(&self->zmake_progress, 0LL);\n  objc_storeStrong(&self->zclear_cancel_flag, 0LL);\n  objc_storeStrong(&self->zset_cancel_flag, 0LL);\n  objc_storeStrong(&self->zis_canceled, 0LL);\n  objc_storeStrong((id *)&self->_mutableJobState, 0LL);\n  objc_storeStrong((id *)&self->_cancel_source, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->job_stream_http, 0LL);\n}"
+}

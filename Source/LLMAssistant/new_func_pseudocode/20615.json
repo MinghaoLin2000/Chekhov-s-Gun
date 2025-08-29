@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_browse_result_copy_endpoint",
+    "function_argument_number": 1,
+    "function_signature": "_nw_browse_result_copy_endpoint(nw_browse_result_t result)",
+    "pseudocode": "nw_endpoint_t __cdecl nw_browse_result_copy_endpoint(nw_browse_result_t result)\n{\n  return _nw_browse_result_copy_endpoint(result);\n}"
+}

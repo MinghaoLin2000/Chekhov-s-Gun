@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11StringPiece6substrEmm",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf11StringPiece6substrEmm(google::protobuf::StringPiece * this, unsigned __int64 a2, unsigned __int64 a3)",
+    "pseudocode": "unsigned __int64 __fastcall google::protobuf::StringPiece::substr(\n        google::protobuf::StringPiece *this,\n        unsigned __int64 a2)\n{\n  unsigned __int64 v2; // x10\n\n  if ( *((_QWORD *)this + 1) >= a2 )\n    v2 = a2;\n  else\n    v2 = *((_QWORD *)this + 1);\n  return *(_QWORD *)this + v2;\n}"
+}

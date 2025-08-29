@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectGetWidth",
+    "function_argument_number": 1,
+    "function_signature": "_CGRectGetWidth(CGRect rect)",
+    "pseudocode": "CGFloat __cdecl CGRectGetWidth(CGRect rect)\n{\n  return _CGRectGetWidth(rect);\n}"
+}

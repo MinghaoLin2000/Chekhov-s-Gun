@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController hasErrorStateForIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderTabContainerViewController hasErrorStateForIdentifier:](DeviceFinderTabContainerViewController * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[DeviceFinderTabContainerViewController hasErrorStateForIdentifier:](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2,\n        id a3)\n{\n  unsigned __int64 v4; // x0\n  unsigned __int64 v5; // x20\n  ITLibrary *v6; // x21\n  unsigned int v7; // w19\n\n  v4 = -[DeviceFinderTabContainerViewController mediaDomainForIdentifier:](self, \"mediaDomainForIdentifier:\", a3);\n  if ( v4 )\n  {\n    v5 = v4;\n    v6 = objc_retainAutoreleasedReturnValue(-[DeviceViewController itLibrary](self, \"itLibrary\"));\n    v7 = !-[ITLibrary isMediaDomainLoaded:](v6, \"isMediaDomainLoaded:\", v5);\n    objc_release(v6);\n  }\n  else\n  {\n    LOBYTE(v7) = 0;\n  }\n  return v7;\n}"
+}

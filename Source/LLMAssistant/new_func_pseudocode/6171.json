@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry allRequestsHaveRequestPriority:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueueEntry allRequestsHaveRequestPriority:](MediaConversionQueueEntry * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "bool __cdecl -[MediaConversionQueueEntry allRequestsHaveRequestPriority:](\n        MediaConversionQueueEntry *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  char v3; // w19\n  _QWORD v5[6]; // [xsp+0h] [xbp-60h] BYREF\n  __int64 v6; // [xsp+30h] [xbp-30h] BYREF\n  __int64 *v7; // [xsp+38h] [xbp-28h]\n  __int64 v8; // [xsp+40h] [xbp-20h]\n  char v9; // [xsp+48h] [xbp-18h]\n\n  v6 = 0LL;\n  v7 = &v6;\n  v8 = 0x2020000000LL;\n  v9 = 1;\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_10000C8C8;\n  v5[3] = &unk_100041180;\n  v5[4] = &v6;\n  v5[5] = a3;\n  -[MediaConversionQueueEntry withLockEnumerateClientRequests:](self, \"withLockEnumerateClientRequests:\", v5);\n  v3 = *((_BYTE *)v7 + 24);\n  _Block_object_dispose(&v6, 8);\n  return v3;\n}"
+}

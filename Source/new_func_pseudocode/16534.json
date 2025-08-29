@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer dispatchQ]",
+    "function_argument_number": 2,
+    "function_signature": "-[iAUPServer dispatchQ](iAUPServer * self, SEL a2)",
+    "pseudocode": "OS_dispatch_queue *__cdecl -[iAUPServer dispatchQ](iAUPServer *self, SEL a2)\n{\n  return self->_dispatchQ;\n}"
+}

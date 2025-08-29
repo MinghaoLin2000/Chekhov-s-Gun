@@ -1,0 +1,6 @@
+{
+    "function_name": "_malloc",
+    "function_argument_number": 1,
+    "function_signature": "_malloc(size_t __size)",
+    "pseudocode": "void *__cdecl malloc(size_t __size)\n{\n  return _malloc(__size);\n}"
+}

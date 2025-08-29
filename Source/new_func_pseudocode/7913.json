@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectGetHeight",
+    "function_argument_number": 1,
+    "function_signature": "_CGRectGetHeight(CGRect rect)",
+    "pseudocode": "CGFloat __cdecl CGRectGetHeight(CGRect rect)\n{\n  return _CGRectGetHeight(rect);\n}"
+}

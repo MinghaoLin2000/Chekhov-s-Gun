@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setPrimaryProgressDisplayType:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setPrimaryProgressDisplayType:](DeviceFooterViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setPrimaryProgressDisplayType:](\n        DeviceFooterViewController *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  self->_primaryProgressDisplayType = a3;\n}"
+}

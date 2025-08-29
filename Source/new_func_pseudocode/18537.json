@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper13AuthorizationVwCP",
+    "function_argument_number": 3,
+    "function_signature": "$s19ControlCenterHelper13AuthorizationVwCP(__int64 a1, __int64 * a2, __int64 a3)",
+    "pseudocode": "_QWORD *__fastcall initializeBufferWithCopyOfBuffer for Authorization(__int64 a1, __int64 *a2, __int64 a3)\n{\n  _QWORD *v3; // x19\n  int v4; // w8\n  __int64 v5; // x20\n  __int64 v6; // x8\n  __int64 v7; // x21\n  __int64 v8; // x22\n  __int64 v9; // x23\n  void (__fastcall *v10)(__int64, __int64, __int64); // x24\n  __int64 v11; // x0\n\n  v3 = (_QWORD *)a1;\n  v4 = *(_DWORD *)(*(_QWORD *)(a3 - 8) + 80LL);\n  if ( (v4 & 0x20000) != 0 )\n  {\n    v11 = *a2;\n    *v3 = *a2;\n    v3 = (_QWORD *)(v11 + (((unsigned __int8)v4 + 16LL) & ~(unsigned __int64)(unsigned __int8)v4));\n    swift_retain(v11);\n  }\n  else\n  {\n    v5 = a2[1];\n    *(_QWORD *)a1 = *a2;\n    *(_QWORD *)(a1 + 8) = v5;\n    *(_DWORD *)(a1 + 16) = *((_DWORD *)a2 + 4);\n    v6 = *(int *)(a3 + 24);\n    v7 = a1 + v6;\n    v8 = (__int64)a2 + v6;\n    v9 = sub_10006EE70(0LL);\n    v10 = *(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)(v9 - 8) + 16LL);\n    swift_bridgeObjectRetain(v5);\n    v10(v7, v8, v9);\n  }\n  return v3;\n}"
+}

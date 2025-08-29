@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addRanges:name:values:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ipp_t _addRanges:name:values:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addRanges:name:values:](ipp_t *self, SEL a2, int a3, id a4, id a5)\n{\n  __int64 v6; // x21\n  id v8; // x19\n  id v9; // x0\n  void *v10; // x20\n  _QWORD v11[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v12; // [xsp+28h] [xbp-28h]\n\n  v6 = *(_QWORD *)&a3;\n  v8 = objc_retain(a4);\n  v9 = objc_retain(a5);\n  v10 = v9;\n  if ( v8 && (unsigned int)v6 <= 5 && (_DWORD)v6 != 3 && objc_msgSend(v9, \"count\") )\n  {\n    v11[0] = _NSConcreteStackBlock;\n    v11[1] = 3254779904LL;\n    v11[2] = sub_10003D12C;\n    v11[3] = &unk_10009E958;\n    v12 = objc_retain(v10);\n    -[ipp_t withNewAttr:groupTag:valueTag:apply:](self, \"withNewAttr:groupTag:valueTag:apply:\", v8, v6, 51LL, v11);\n    objc_release(v12);\n  }\n  objc_release(v10);\n  objc_release(v8);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_UnmountServerURL",
+    "function_argument_number": 1,
+    "function_signature": "_UnmountServerURL(const char * a1)",
+    "pseudocode": "__int64 __fastcall UnmountServerURL(const char *a1)\n{\n  return unmount(a1, 0);\n}"
+}

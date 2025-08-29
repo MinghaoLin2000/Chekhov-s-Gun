@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionEqualToRegion",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionEqualToRegion()",
+    "pseudocode": "__int64 CGRegionEqualToRegion()\n{\n  return _CGRegionEqualToRegion();\n}"
+}

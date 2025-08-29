@@ -1,0 +1,6 @@
+{
+    "function_name": "_UTTypeIsDynamic",
+    "function_argument_number": 1,
+    "function_signature": "_UTTypeIsDynamic(CFStringRef inUTI)",
+    "pseudocode": "Boolean __cdecl UTTypeIsDynamic(CFStringRef inUTI)\n{\n  return _UTTypeIsDynamic(inUTI);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy15ByteArraySource4PeekEPm",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6snappy15ByteArraySource4PeekEPm(snappy::ByteArraySource * this, unsigned __int64 * a2)",
+    "pseudocode": "__int64 __fastcall snappy::ByteArraySource::Peek(snappy::ByteArraySource *this, unsigned __int64 *a2)\n{\n  __int64 result; // x0\n  char *v3; // t2\n\n  v3 = (char *)this + 8;\n  result = *((_QWORD *)this + 1);\n  *a2 = *((_QWORD *)v3 + 1);\n  return result;\n}"
+}

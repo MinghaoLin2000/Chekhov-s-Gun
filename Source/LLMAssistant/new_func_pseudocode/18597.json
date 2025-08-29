@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierVwst",
+    "function_argument_number": 3,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierVwst(__int64 result, unsigned int a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for BundleIdentifier(__int64 result, unsigned int a2, unsigned int a3)\n{\n  if ( a2 >= 0x7FFFFFFB )\n  {\n    *(_QWORD *)result = a2 - 2147483643;\n    *(_QWORD *)(result + 8) = 0LL;\n    if ( a3 > 0x7FFFFFFA )\n      *(_BYTE *)(result + 16) = 1;\n  }\n  else\n  {\n    if ( a3 > 0x7FFFFFFA )\n      *(_BYTE *)(result + 16) = 0;\n    if ( a2 )\n      *(_QWORD *)(result + 8) = a2 + 4;\n  }\n  return result;\n}"
+}

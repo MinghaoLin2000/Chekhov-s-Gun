@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromSelector",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromSelector(SEL aSelector)",
+    "pseudocode": "NSString *__cdecl NSStringFromSelector(SEL aSelector)\n{\n  return _NSStringFromSelector(aSelector);\n}"
+}

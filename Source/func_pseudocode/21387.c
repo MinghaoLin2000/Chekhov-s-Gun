@@ -1,0 +1,5 @@
+$s22localspeechrecognition32TrialExperimentationAssetManagerCMa
+__int64 type metadata accessor for TrialExperimentationAssetManager()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition32TrialExperimentationAssetManager);
+}

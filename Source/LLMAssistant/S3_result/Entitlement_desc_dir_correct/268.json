@@ -1,0 +1,12 @@
+{
+  "entitlement": "com.apple.osanalytics.canusediagnosticmonitor",
+  "capability": "Allows an application to access and utilize a system-level diagnostic monitoring facility. This facility collects data about the operating system's health, performance, and potential issues, including monitoring processes, reading system logs, and gathering other system-wide telemetry.",
+  "reasoning": "The entitlement name 'osanalytics' clearly points to Operating System analytics, and 'canusediagnosticmonitor' indicates the ability to use a diagnostic monitor. Diagnostic monitors are inherently designed to collect data about system state and behavior.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    1,
+    3,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement belongs to multiple sensitive types due to the nature of diagnostic data collection:\n\n1.  **File and File System Operations:** A diagnostic monitor typically reads system logs, crash reports, and other system-level files to gather information. It may also write diagnostic bundles or reports, involving file system write operations.\n\n2.  **Process and Memory Management:** To monitor system health and performance, a diagnostic monitor needs to inspect running processes, their CPU and memory usage, and their states. This directly falls under 'Creating, terminating, debugging processes, or obtaining sensitive process information'.\n\n3.  **Access Transparency Consent and Control (TCC) related functions:** While not a direct TCC category, a system-wide diagnostic monitor can collect a broad range of data about system usage, network activity, and application behavior. This data, even if anonymized, can implicitly reveal sensitive information about the user's activities and system environment, aligning with the privacy concerns that TCC addresses. For instance, it might access logs or crash data located in user-specific file system directories (e.g., Library/Logs, potentially related to user applications), which are implicitly protected under TCC principles (similar to 'File system directories' access)."
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableArray tsu_trimObjectsFromIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSMutableArray tsu_trimObjectsFromIndex:](NSMutableArray * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[NSMutableArray tsu_trimObjectsFromIndex:](NSMutableArray *self, SEL a2, unsigned __int64 a3)\n{\n  char *v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = (char *)-[NSMutableArray count](self, \"count\");\n  if ( (unsigned __int64)v5 > a3 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[NSMutableArray removeObjectsInRange:](self, \"removeObjectsInRange:\", a3, &v5[-a3]);\n  }\n}"
+}

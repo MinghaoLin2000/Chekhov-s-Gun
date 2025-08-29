@@ -1,0 +1,152 @@
+Service Path:
+/System/Library/PrivateFrameworks/SiriSuggestionsSupport.framework/Versions/A/XPCServices/SiriSuggestionsBookkeepingService.xpc/Contents/MacOS/SiriSuggestionsBookkeepingService
+
+Service Exported Protocols:
+@protocol _TtP15SiriSuggestions41SiriSuggestionsBookkeepingServiceProtocol_
+- (void)getAccountDetailsWith:(void (^)(NSData *, NSError *))arg1;
+- (void)logEngagementFor:(NSData *)arg1 with:(NSUUID *)arg2 invocationType:(NSData *)arg3 featureRequirements:(NSData *)arg4 with:(void (^)(NSError *))arg5;
+- (void)logFrom:(NSData *)arg1 deliveryVehicle:(NSData *)arg2 generationId:(NSUUID *)arg3 featureRequirements:(NSData *)arg4 with:(void (^)(NSError *))arg5;
+- (void)buildAutoCompleteIndexSubsetWithSources:(NSArray *)arg1 with:(void (^)(long long))arg2;
+- (void)deletePhrasesForAppUnInstallsWithBundleIds:(NSArray *)arg1 with:(void (^)(_Bool))arg2;
+- (void)updateIndexForAppInstallWithBundleIds:(NSArray *)arg1 with:(void (^)(long long))arg2;
+- (void)buildAutoCompleteIndexOnStartUpEvent:(_Bool)arg1 with:(void (^)(long long))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.MobileAsset.SoftwareUpdate
+	[Value]
+		[Bool] true
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.assistant.settings
+	[Value]
+		[Bool] true
+	[Key] com.apple.authkit.client.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.intelligenceplatform.View
+	[Value]
+		[Bool] true
+	[Key] com.apple.internal.intelligenceplatform.use-cases
+	[Value]
+		[Dict]
+			[Key] SiriIntelligencePlatform
+			[Value]
+				[Dict]
+					[Key] Streams
+					[Value]
+						[Array]
+							[String] App.InFocus
+							[String] Device.ScreenLocked
+	[Key] com.apple.itunesstored.private
+	[Value]
+		[Bool] true
+	[Key] com.apple.linkd.registry
+	[Value]
+		[Bool] true
+	[Key] com.apple.linkd.transcript.privileged
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.biome.read-only
+	[Value]
+		[Array]
+			[String] AppIntent
+			[String] siriRemembers
+			[String] App.InFocus
+			[String] UserFocus.ComputedMode
+			[String] Media.NowPlaying
+			[String] Motion.Activity
+			[String] CarPlay.Connected
+			[String] Location.Semantic
+			[String] Device.ScreenLocked
+	[Key] com.apple.private.biome.read-write
+	[Value]
+		[Array]
+			[String] Siri.Remembers.MessageHistory
+			[String] Siri.Remembers.CallHistory
+			[String] Siri.Remembers.InteractionHistory
+			[String] Siri.Remembers.AudioHistory
+			[String] Siri.Remembers.AssistantSuggestions
+			[String] Siri.PostSiriEngagement
+			[String] Siri.Audio.CompanionContext
+	[Key] com.apple.private.biome.sync
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canmaplsdatabase
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.intelligenceplatform.views.read-only
+	[Value]
+		[Array]
+			[String] siriRemembers
+	[Key] com.apple.private.security.restricted-application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.siri.userfeedbacklearning
+	[Key] com.apple.private.security.storage.SiriInference
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sqlite.sqlite-encryption
+	[Value]
+		[Bool] true
+	[Key] com.apple.rootless.storage.shortcuts
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.siri.sirisuggestions
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.assistant.settings
+			[String] com.apple.suggestions
+	[Key] com.apple.security.exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] com.apple.siriinferenced
+			[String] com.apple.siri.PostSiriEngagement
+			[String] com.apple.siriinference-dodml-plugin
+			[String] com.apple.siri.DialogEngine
+			[String] com.apple.assistant
+			[String] com.apple.siri.sirisuggestions
+			[String] com.apple.uikitservices.userInterfaceStyleMode
+			[String] com.apple.siriinferenced.AppOrdering
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Caches/com.apple.HomeKit/com.apple.siriinferenced/
+			[String] /Library/Caches/com.apple.siriinferenced/
+			[String] /Library/com.apple.siri.inference/
+			[String] /Library/srtest/
+			[String] /Library/AddressBook/
+			[String] /Library/Preferences/com.apple.suggestions.plist
+			[String] /Library/IntelligencePlatform/
+			[String] /Library/Shortcuts/ToolKit/
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.assistant.settings
+			[String] com.apple.siri.VoiceShortcuts.xpc
+			[String] com.apple.linkd.registry
+			[String] com.apple.linkd.transcript
+			[String] com.apple.biome.access.user
+			[String] com.apple.intelligenceplatform.View
+			[String] com.apple.identityservicesd.embedded.auth
+			[String] com.apple.ak.auth.xpc
+			[String] com.apple.accountsd.accountmanager
+	[Key] com.apple.siri.VoiceShortcuts.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.siriinferenced
+	[Value]
+		[Bool] true
+	[Key] com.apple.trial.client
+	[Value]
+		[Array]
+			[String] 1343

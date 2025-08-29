@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_copy_product_type",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_copy_product_type()",
+    "pseudocode": "__int64 remote_device_copy_product_type()\n{\n  return _remote_device_copy_product_type();\n}"
+}

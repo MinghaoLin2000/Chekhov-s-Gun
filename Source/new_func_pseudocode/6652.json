@@ -1,0 +1,6 @@
+{
+    "function_name": "_pc_session_create",
+    "function_argument_number": 0,
+    "function_signature": "_pc_session_create()",
+    "pseudocode": "__int64 pc_session_create()\n{\n  return _pc_session_create();\n}"
+}

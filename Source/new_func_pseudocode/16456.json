@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUHelperInstance remoteObject]",
+    "function_argument_number": 2,
+    "function_signature": "-[AUHelperInstance remoteObject](AUHelperInstance * self, SEL a2)",
+    "pseudocode": "AUHelperServiceProtocol *__cdecl -[AUHelperInstance remoteObject](AUHelperInstance *self, SEL a2)\n{\n  NSXPCConnection *xpcConnection; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  xpcConnection = self->_xpcConnection;\n  if ( xpcConnection )\n    xpcConnection = (NSXPCConnection *)objc_retainAutoreleasedReturnValue(\n                                         -[NSXPCConnection synchronousRemoteObjectProxyWithErrorHandler:](\n                                           xpcConnection,\n                                           \"synchronousRemoteObjectProxyWithErrorHandler:\",\n                                           &stru_100031758));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (AUHelperServiceProtocol *)objc_autoreleaseReturnValue(xpcConnection);\n}"
+}

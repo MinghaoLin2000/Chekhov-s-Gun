@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper14ReferenceCountVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper14ReferenceCountVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ReferenceCount()\n{\n  return &type metadata for ReferenceCount;\n}"
+}

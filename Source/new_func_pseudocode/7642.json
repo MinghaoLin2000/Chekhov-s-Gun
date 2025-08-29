@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE22clearSystemWindowLevelyyAC9CGSWindowVF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE22clearSystemWindowLevelyyAC9CGSWindowVF(EyeCandyGraphics::CGSWindow a1)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall SLSTransactionRef.clearSystemWindowLevel(_:)(EyeCandyGraphics::CGSWindow a1)\n{\n  __int64 v1; // x20\n\n  _SLSTransactionClearWindowSystemLevel(v1, *(_QWORD *)&a1.wid);\n}"
+}

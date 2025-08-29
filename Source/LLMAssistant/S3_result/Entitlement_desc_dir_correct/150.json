@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.iokit-user-client-class:IOAccelSharedUserClient",
+  "capability": "Allows an application to create and interact with the IOAccelSharedUserClient IOKit user client. This user client provides user-space access to the kernel-level GPU driver (IOAcceleratorFamily), enabling hardware-accelerated graphics operations, memory management for GPU buffers, and direct communication with the graphics hardware.",
+  "reasoning": "The entitlement prefix `com.apple.security.iokit-user-client-class` explicitly indicates permission to instantiate and communicate with a specific IOKit user client. The class name `IOAccelSharedUserClient` is a well-known component of Apple's IOAcceleratorFamily, which is the kernel framework responsible for graphics acceleration and GPU interaction. Therefore, this entitlement grants an application the ability to leverage the GPU for rendering and computation by communicating with its kernel driver.",
+  "similar_entitlements": [
+    "com.apple.security.iokit-user-client-class:IOHIDUserClient",
+    "com.apple.security.iokit-user-client-class:IOAVAudioEngineUserClient"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement grants direct user-space access to a kernel-level driver (IOAcceleratorFamily) via the `IOAccelSharedUserClient` IOKit user client. While its primary purpose is legitimate graphics acceleration, any vulnerability in this kernel interface could be exploited by a malicious application to achieve Local Privilege Escalation (LPE), gaining kernel-level control over the entire system. Therefore, it falls under 'System & Kernel Level Control' due to its direct interaction with kernel components and the significant security risk associated with potential kernel exploits.",
+  "self_reflection": "I am highly confident in this analysis. The entitlement name clearly indicates an IOKit user client, and `IOAccelSharedUserClient` is a well-documented kernel interface for graphics. The security implications of direct kernel interaction via IOKit are a known vector for privilege escalation in macOS. There are no unclear aspects, and the prediction is based on established macOS security principles, making the likelihood of it being wrong very low."
+}

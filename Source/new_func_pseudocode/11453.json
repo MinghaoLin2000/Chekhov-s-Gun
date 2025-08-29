@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf25EncodedDescriptorDatabase16FindAllFileNamesEPNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf25EncodedDescriptorDatabase16FindAllFileNamesEPNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE(__int64 a1, _QWORD * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EncodedDescriptorDatabase::FindAllFileNames(__int64 a1, _QWORD *a2)\n{\n  google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FindAllFileNames(*(_QWORD **)(a1 + 8), a2);\n  return 1LL;\n}"
+}

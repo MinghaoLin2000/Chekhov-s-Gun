@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.private.skylight.unconditional-activation",
+  "capability": "Allows an application to unconditionally activate or control aspects of the macOS display and windowing system (Skylight). This could involve forcing display states, activating specific display modes, or manipulating display output without typical user consent or system checks.",
+  "reasoning": "The prefix 'com.apple.private' indicates an internal Apple entitlement, often granting elevated privileges. 'Skylight' is the internal codename for the macOS windowing and display system, responsible for rendering and managing graphical output. 'unconditional-activation' implies the ability to bypass standard conditions, user interaction, or system prompts for activating or controlling display-related features. This suggests direct, privileged control over the display environment.",
+  "similar_entitlements": [
+    "com.apple.private.tcc.allow-screen-capture",
+    "com.apple.private.tcc.allow-system-monitor"
+  ],
+  "sensitive_type": [
+    4,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under sensitive types 4 and 5 for the following reasons:\n\nType 4: System & Kernel Level Control\n- **Modify system-level configuration:** The ability to 'unconditionally activate' components of the core display system (Skylight) grants significant control over a fundamental system-level function. This could allow an application to alter display modes, force displays to wake/sleep, or manipulate how content is presented on screen without user intervention, directly affecting the system's operational state.\n\nType 5: Access Transparency Consent and Control (TCC) related functions\n- **Bypassing user consent:** The term 'unconditional' strongly suggests that this entitlement allows an application to perform display-related actions without requiring user consent that would typically be enforced by TCC. For instance, it could potentially be used to activate virtual displays, change display settings, or control screen content in a way that circumvents privacy protections related to screen recording, display changes, or even input monitoring if screen content is manipulated to solicit input. This could lead to privacy violations or unauthorized display manipulation without the user's knowledge.",
+  "self_reflection": "I am highly confident in the inferred capability and its classification as sensitive. The 'com.apple.private' prefix consistently denotes high privilege, and 'Skylight' is a well-known internal name for macOS's display system. The 'unconditional-activation' part clearly points to bypassing checks/consent. The main ambiguity is the precise scope of 'activation' (e.g., physical display, virtual display, specific display modes), but any interpretation within the realm of display control would still lead to the identified sensitive categories. My prediction could be wrong if 'Skylight' refers to something entirely different in this specific context (which is unlikely given its common usage), or if 'unconditional-activation' has a very narrow, non-sensitive meaning that is not immediately apparent from the name."
+}

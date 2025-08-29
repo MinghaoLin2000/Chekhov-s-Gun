@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPayloadTagUnpack",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPayloadTagUnpack(__int64 result, char * a2)",
+    "pseudocode": "__int64 __fastcall uarpPayloadTagUnpack(__int64 result, char *a2)\n{\n  unsigned int v2; // w9\n  unsigned int v3; // w10\n  char v4; // w12\n  char v5; // w8\n\n  v2 = (unsigned int)result >> 8;\n  v3 = WORD1(result);\n  if ( (_DWORD)result )\n    v4 = result;\n  else\n    v4 = 48;\n  if ( !(_DWORD)result )\n  {\n    LOBYTE(v2) = 48;\n    LOBYTE(v3) = 48;\n  }\n  *a2 = v4;\n  a2[1] = v2;\n  if ( (_DWORD)result )\n    v5 = BYTE3(result);\n  else\n    v5 = 48;\n  a2[2] = v3;\n  a2[3] = v5;\n  return result;\n}"
+}

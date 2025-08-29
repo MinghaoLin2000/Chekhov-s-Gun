@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP39LargeStringArraySegment_OptionalElementD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP39LargeStringArraySegment_OptionalElementD2Ev(TSP::LargeStringArraySegment_OptionalElement * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeStringArraySegment_OptionalElement::~LargeStringArraySegment_OptionalElement(\n        TSP::LargeStringArraySegment_OptionalElement *this)\n{\n  __ZN3TSP39LargeStringArraySegment_OptionalElementD2Ev(this);\n}"
+}

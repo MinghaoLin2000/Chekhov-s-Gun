@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode purchaseDate]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode purchaseDate](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSDate *__cdecl -[DeviceSettingsNode purchaseDate](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_purchaseDate;\n}"
+}

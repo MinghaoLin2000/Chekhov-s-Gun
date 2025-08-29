@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchive setCryptoKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipArchive setCryptoKey:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[SFUZipArchive setCryptoKey:](SFUZipArchive *self, SEL a2, id a3)\n{\n  id v5; // x0\n  void *v6; // x0\n  SFUCryptoKey *mCryptoKey; // x3\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  objc_release(self->mCryptoKey);\n  self->mCryptoKey = (SFUCryptoKey *)a3;\n  v6 = -[NSMutableDictionary allValues](self->mEntries, \"allValues\");\n  mCryptoKey = self->mCryptoKey;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  _objc_msgSend(v6, \"makeObjectsPerformSelector:withObject:\", \"setCryptoKey:\", mCryptoKey);\n}"
+}

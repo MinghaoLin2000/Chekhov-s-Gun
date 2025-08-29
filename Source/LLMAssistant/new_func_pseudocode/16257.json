@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPStringTempFilesFilepath",
+    "function_argument_number": 0,
+    "function_signature": "_UARPStringTempFilesFilepath()",
+    "pseudocode": "id UARPStringTempFilesFilepath()\n{\n  void *v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100041E18 != -1 )\n    dispatch_once(&qword_100041E18, &stru_100030EA0);\n  v0 = (void *)qword_100041E10;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v0);\n}"
+}

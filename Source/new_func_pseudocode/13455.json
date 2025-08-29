@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUStreamCompression initWithAlgorithm:operation:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUStreamCompression initWithAlgorithm:operation:](TSUStreamCompression * self, SEL a2, int a3, int a4)",
+    "pseudocode": "TSUStreamCompression *__cdecl -[TSUStreamCompression initWithAlgorithm:operation:](\n        TSUStreamCompression *self,\n        SEL a2,\n        int a3,\n        int a4)\n{\n  char *v6; // x0\n  TSUStreamCompression *v7; // x21\n  objc_super v9; // [xsp+0h] [xbp-30h] BYREF\n\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___TSUStreamCompression;\n  v6 = -[TSUStreamCompression init](&v9, \"init\");\n  v7 = (TSUStreamCompression *)v6;\n  if ( v6 )\n  {\n    compression_stream_init(\n      (compression_stream *)(v6 + 16),\n      (compression_stream_operation)a4,\n      (compression_algorithm)a3);\n    v7->_stream.dst_ptr = (char *)&unk_1001F7FFC;\n    v7->_stream.dst_size = 0LL;\n    v7->_stream.src_ptr = (char *)&unk_1001F7FFC;\n    v7->_stream.src_size = 0LL;\n    v7->_operation = a4;\n    v7->_status = 0;\n  }\n  return v7;\n}"
+}

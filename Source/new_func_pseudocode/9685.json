@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP26ComponentExternalReference11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP26ComponentExternalReference11GetMetadataEv(TSP::ComponentExternalReference * this)",
+    "pseudocode": "__int64 __fastcall TSP::ComponentExternalReference::GetMetadata(TSP::ComponentExternalReference *this)\n{\n  google::protobuf::internal::AssignDescriptors(&descriptor_table_TSPArchiveMessages_2eproto, 0LL);\n  return off_1001F5D08[10];\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__INVCIntentDefinitionManagerClass",
+    "function_argument_number": 0,
+    "function_signature": "__INVCIntentDefinitionManagerClass()",
+    "pseudocode": "__int64 _INVCIntentDefinitionManagerClass()\n{\n  return __INVCIntentDefinitionManagerClass();\n}"
+}

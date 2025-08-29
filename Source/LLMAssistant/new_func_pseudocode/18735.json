@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper21BackgroundStylePickerVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper21BackgroundStylePickerVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for BackgroundStylePicker()\n{\n  return &type metadata for BackgroundStylePicker;\n}"
+}

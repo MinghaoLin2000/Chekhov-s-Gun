@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf6Option5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf6Option5ClearEv(google::protobuf::Option * this)",
+    "pseudocode": "google::protobuf::Any *__fastcall google::protobuf::Option::Clear(google::protobuf::Option *this)\n{\n  google::protobuf::Any *result; // x0\n  __int64 v3; // x10\n  __int64 v4; // x8\n  _QWORD *v5; // x9\n  __int64 v6; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = (google::protobuf::Any *)google::protobuf::internal::ArenaStringPtr::ClearToEmpty((google::protobuf::Option *)((char *)this + 16));\n  v3 = *((_QWORD *)this + 1);\n  v4 = v3 & 1;\n  v5 = (_QWORD *)(v3 & 0xFFFFFFFFFFFFFFFELL);\n  if ( (v3 & 1) != 0 )\n  {\n    if ( *v5 )\n      goto LABEL_5;\n  }\n  else if ( v5 )\n  {\n    goto LABEL_5;\n  }\n  result = (google::protobuf::Any *)*((_QWORD *)this + 3);\n  if ( result )\n  {\n    google::protobuf::Any::~Any(result);\n    result = (google::protobuf::Any *)operator delete(v6, 0x10A1C400831BD41LL);\n    v4 = *((_QWORD *)this + 1) & 1LL;\n  }\nLABEL_5:\n  *((_QWORD *)this + 3) = 0LL;\n  if ( v4 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (google::protobuf::Any *)sub_10003A2A8((char *)this + 8);\n  }\n  return result;\n}"
+}

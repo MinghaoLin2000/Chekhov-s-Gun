@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__117bad_function_callD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__117bad_function_callD1Ev(std::bad_function_call * this)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl std::bad_function_call::~bad_function_call(std::bad_function_call *this)\n{\n  std::exception::~exception(this);\n}"
+}

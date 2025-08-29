@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy22UncheckedByteArraySink6AppendEPKcm",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6snappy22UncheckedByteArraySink6AppendEPKcm(snappy::UncheckedByteArraySink * this, const char * a2, size_t __n)",
+    "pseudocode": "char *__fastcall snappy::UncheckedByteArraySink::Append(snappy::UncheckedByteArraySink *this, char *a2, size_t __n)\n{\n  char *result; // x0\n\n  result = (char *)*((_QWORD *)this + 1);\n  if ( result != a2 )\n  {\n    result = (char *)memcpy(result, a2, __n);\n    a2 = (char *)*((_QWORD *)this + 1);\n  }\n  *((_QWORD *)this + 1) = &a2[__n];\n  return result;\n}"
+}

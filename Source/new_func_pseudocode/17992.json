@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PlugInLibraryService startUp:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[PlugInLibraryService startUp:withReply:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[PlugInLibraryService startUp:withReply:](PlugInLibraryService *self, SEL a2, id a3, id a4)\n{\n  void (__fastcall **v5)(id, _QWORD, NSArray *); // x20\n  NSArray *v6; // x0\n  NSArray *supportedSchemes; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = (void (__fastcall **)(id, _QWORD, NSArray *))objc_retain(a4);\n  v6 = (NSArray *)NetFSGetSupportedSchemes();\n  supportedSchemes = self->_supportedSchemes;\n  self->_supportedSchemes = v6;\n  objc_release(supportedSchemes);\n  v5[2](v5, 0LL, self->_supportedSchemes);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

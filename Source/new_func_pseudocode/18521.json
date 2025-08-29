@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper22JoinNetworkErrorDialogCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper22JoinNetworkErrorDialogCMa()",
+    "pseudocode": "__int64 type metadata accessor for JoinNetworkErrorDialog()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A022JoinNetworkErrorDialog);\n}"
+}

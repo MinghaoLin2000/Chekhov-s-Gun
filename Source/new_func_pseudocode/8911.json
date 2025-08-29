@@ -1,0 +1,6 @@
+{
+    "function_name": "j__$s34AppleMediaServicesUIDynamicService16JSServiceRequestV9makeValue2inSo7JSValueCSo9JSContextC_tF",
+    "function_argument_number": 1,
+    "function_signature": "j__$s34AppleMediaServicesUIDynamicService16JSServiceRequestV9makeValue2inSo7JSValueCSo9JSContextC_tF(JSContext in)",
+    "pseudocode": "// attributes: thunk\nJSValue __swiftcall j___s34AppleMediaServicesUIDynamicService16JSServiceRequestV9makeValue2inSo7JSValueCSo9JSContextC_tF(\n        JSContext in)\n{\n  return JSServiceRequest.makeValue(in:)(in);\n}"
+}

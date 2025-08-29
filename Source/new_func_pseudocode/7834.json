@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV30screenBoundsIgnoringTransformsSo6CGRectVvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV30screenBoundsIgnoringTransformsSo6CGRectVvg()",
+    "pseudocode": "__int64 CGSWindow.screenBoundsIgnoringTransforms.getter()\n{\n  __int64 v0; // x0\n  __int64 v1; // x0\n\n  CGSConnection.defaultConnection.unsafeMutableAddressor();\n  v0 = sub_1000120F4();\n  v1 = sub_10001B21C(v0);\n  return SLSGetWindowFrameBounds(v1);\n}"
+}

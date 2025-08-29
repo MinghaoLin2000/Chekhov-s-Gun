@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24ScrollGesturePreferencesC4KeysOwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24ScrollGesturePreferencesC4KeysOwCP()",
+    "pseudocode": "void initializeBufferWithCopyOfBuffer for ScrollGesturePreferences.Keys()\n{\n  ;\n}"
+}

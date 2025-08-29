@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition20OndeviceRecordHelperCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition20OndeviceRecordHelperCMa()",
+    "pseudocode": "__int64 type metadata accessor for OndeviceRecordHelper()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition20OndeviceRecordHelper);\n}"
+}

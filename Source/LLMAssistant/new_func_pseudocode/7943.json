@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyWindowProperty",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyWindowProperty()",
+    "pseudocode": "__int64 CGSCopyWindowProperty()\n{\n  return _CGSCopyWindowProperty();\n}"
+}

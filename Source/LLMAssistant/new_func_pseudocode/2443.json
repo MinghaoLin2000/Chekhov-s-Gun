@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesViewController setIsOSStringShowingBuild:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSoftwareUpdatesViewController setIsOSStringShowingBuild:](DeviceSoftwareUpdatesViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSoftwareUpdatesViewController setIsOSStringShowingBuild:](\n        DeviceSoftwareUpdatesViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_isOSStringShowingBuild = a3;\n}"
+}

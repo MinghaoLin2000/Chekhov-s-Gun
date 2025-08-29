@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTPMService clearOccupancyWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[GTPMService clearOccupancyWithReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[GTPMService clearOccupancyWithReply:](GTPMService *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, _QWORD); // x19\n  NSString *v5; // x21\n  _BOOL8 v6; // x1\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v4 = (void (__fastcall **)(id, _QWORD))objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(+[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"Clear Occupancy\")));\n  NSLog(&CFSTR(\"%@\").isa, v5);\n  objc_release(v5);\n  v6 = (self->_igpm.bConnectionValid || (v4[2](v4, 0LL), self->_igpm.bConnectionValid))\n    && (unsigned int)sub_100002498(self->_igpm.agpmPorts[self->_igpm.igPortIndex]) == 0;\n  v4[2](v4, v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOConnectCallScalarMethod",
+    "function_argument_number": 6,
+    "function_signature": "_IOConnectCallScalarMethod(mach_port_t connection, uint32_t selector, const uint64_t * input, uint32_t inputCnt, uint64_t * output, uint32_t * outputCnt)",
+    "pseudocode": "kern_return_t __cdecl IOConnectCallScalarMethod(\n        mach_port_t connection,\n        uint32_t selector,\n        const uint64_t *input,\n        uint32_t inputCnt,\n        uint64_t *output,\n        uint32_t *outputCnt)\n{\n  return _IOConnectCallScalarMethod(connection, selector, input, inputCnt, output, outputCnt);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s3__C7CGPointVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s3__C7CGPointVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for CGPoint(__int64 a1)\n{\n  return sub_100011B60(a1, &unk_100029CC0, &unk_100025D68);\n}"
+}

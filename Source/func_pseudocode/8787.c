@@ -1,0 +1,6 @@
+$s34AppleMediaServicesUIDynamicService22EngagementMessageEventVwCP
+// attributes: thunk
+__int64 initializeBufferWithCopyOfBuffer for EngagementMessageEvent()
+{
+  return _s34AppleMediaServicesUIDynamicService22EngagementMessageEventVwCP_0();
+}

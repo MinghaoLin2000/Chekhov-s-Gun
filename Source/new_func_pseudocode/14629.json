@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$tsu_initWithUIntegers:count:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$tsu_initWithUIntegers:count:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_tsu_initWithUIntegers_count_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"tsu_initWithUIntegers:count:\");\n}"
+}

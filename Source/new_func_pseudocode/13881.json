@@ -1,0 +1,6 @@
+{
+    "function_name": "_unlink",
+    "function_argument_number": 1,
+    "function_signature": "_unlink(const char * a1)",
+    "pseudocode": "int __cdecl unlink(const char *a1)\n{\n  return _unlink(a1);\n}"
+}

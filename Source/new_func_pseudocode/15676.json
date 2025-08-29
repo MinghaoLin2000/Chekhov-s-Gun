@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceDFU getDASActivityListWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUpdaterServiceDFU getDASActivityListWithReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[UARPUpdaterServiceDFU getDASActivityListWithReply:](UARPUpdaterServiceDFU *self, SEL a2, id a3)\n{\n  void (__fastcall **v4)(id, void *); // x19\n  OS_os_log *log; // x20\n  uint8_t v6[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  v4 = (void (__fastcall **)(id, void *))objc_retain(a3);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEBUG) )\n    sub_1000178A0(log);\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_INFO) )\n  {\n    *(_WORD *)v6 = 0;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_INFO,\n      \"UARPUpdaterService does not provide matching DAS Activity\",\n      v6,\n      2u);\n  }\n  v4[2](v4, &__NSArray0__struct);\n  objc_release(v4);\n}"
+}

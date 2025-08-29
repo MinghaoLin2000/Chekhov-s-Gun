@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.personal-information.calendars",
+  "capability": "Grants the application read-write access to the user's calendar data.",
+  "reasoning": "The capability is directly stated in the provided context for the entitlement 'com.apple.security.personal-information.calendars', which explicitly indicates it allows 'read-write access to the user’s calendar'.",
+  "similar_entitlements": [
+    "com.apple.security.personal-information.contacts",
+    "com.apple.security.personal-information.photos-library",
+    "com.apple.security.personal-information.location"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly provides access to user's calendar data. According to the definition of Sensitive Operation Type 5, 'Calendars / Reminders: Read or write user schedules' is explicitly listed as a TCC-protected resource. Therefore, this entitlement falls under Type 5 (Access Transparency Consent and Control related functions).",
+  "self_reflection": "Confidence in this analysis is very high. The capability is explicitly provided in the prompt's context. The mapping to sensitive type 5 is also direct and clear, as calendar access is specifically mentioned as a TCC-protected resource."
+}

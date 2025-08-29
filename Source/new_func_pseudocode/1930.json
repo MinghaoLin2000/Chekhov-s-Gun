@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAudiobooksErrorViewController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsAudiobooksErrorViewController init](DeviceSettingsAudiobooksErrorViewController * self, SEL a2)",
+    "pseudocode": "DeviceSettingsAudiobooksErrorViewController *__cdecl -[DeviceSettingsAudiobooksErrorViewController init](\n        DeviceSettingsAudiobooksErrorViewController *self,\n        SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsAudiobooksErrorViewController;\n  return -[DeviceSettingsErrorViewController initWithMediaDomain:](&v3, \"initWithMediaDomain:\", 8LL);\n}"
+}

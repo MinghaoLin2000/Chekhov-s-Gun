@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci(__int64 result, int a2, __int64 a3, int a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::LogMessage::LogMessage(__int64 result, int a2, __int64 a3, int a4)\n{\n  *(_DWORD *)result = a2;\n  *(_QWORD *)(result + 8) = a3;\n  *(_DWORD *)(result + 16) = a4;\n  *(_QWORD *)(result + 32) = 0LL;\n  *(_QWORD *)(result + 40) = 0LL;\n  *(_QWORD *)(result + 24) = 0LL;\n  return result;\n}"
+}

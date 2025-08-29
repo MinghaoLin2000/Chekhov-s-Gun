@@ -1,0 +1,5 @@
+{
+  "_objc_msgSend$_queue_getNextOSLogEntryWithReply:": 4294979456,
+  "-[OSLogService getNextOSLogEntryWithReply:]": 4294973484,
+  "-[OSLogService setUpWithPredicate:reply:]": 4294977192
+}

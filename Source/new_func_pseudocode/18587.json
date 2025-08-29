@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore8HostTimeVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore8HostTimeVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for HostTime()\n{\n  return &type metadata for HostTime;\n}"
+}

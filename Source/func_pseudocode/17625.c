@@ -1,0 +1,5 @@
+_CGPDFDocumentCreateWithProvider
+CGPDFDocumentRef __cdecl CGPDFDocumentCreateWithProvider(CGDataProviderRef provider)
+{
+  return _CGPDFDocumentCreateWithProvider(provider);
+}

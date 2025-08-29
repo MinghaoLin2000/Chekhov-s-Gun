@@ -1,0 +1,10 @@
+Service Path:
+/System/Library/CoreServices/SystemUIServer.app/Contents/XPCServices/com.apple.systemuiserver.scriptrunner.xpc/Contents/MacOS/com.apple.systemuiserver.scriptrunner
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.responsibility.set-to-self.at-launch
+	[Value]
+		[Bool] true

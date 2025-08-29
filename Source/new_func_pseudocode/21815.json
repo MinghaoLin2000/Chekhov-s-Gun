@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize10Serializer4syncEPKcRNS_8PrimTypeE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN9serialize10Serializer4syncEPKcRNS_8PrimTypeE(unsigned __int8 * a1, const char * a2, int * a3)",
+    "pseudocode": "void __fastcall serialize::Serializer::sync(unsigned __int8 *a1, const char *a2, int *a3)\n{\n  int v3; // w8\n  void *v4; // x0\n  int64_t v5; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = *a1;\n  v4 = (void *)*((_QWORD *)a1 + 1);\n  if ( v3 )\n  {\n    v5 = *a3;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    xpc_dictionary_set_int64(v4, a2, v5);\n  }\n  else\n  {\n    *a3 = xpc_dictionary_get_int64(v4, a2);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry addClientRequest:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueueEntry addClientRequest:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[MediaConversionQueueEntry addClientRequest:](MediaConversionQueueEntry *self, SEL a2, id a3)\n{\n  id v5; // x19\n  NSAssertionHandler *v6; // x22\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  if ( !v5 )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v6,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"PAMediaConversionServiceSharedUtilitiesServiceSide.m\"),\n      194LL,\n      CFSTR(\"Invalid parameter not satisfying: %@\"),\n      CFSTR(\"clientRequest\"));\n    objc_release(v6);\n  }\n  os_unfair_lock_lock(&self->_queueEntryStateLock);\n  -[NSMutableArray addObject:](self->_clientRequests, \"addObject:\", v5);\n  objc_msgSend(v5, \"setRequestQueueEntry:\", self);\n  os_unfair_lock_unlock(&self->_queueEntryStateLock);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

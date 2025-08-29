@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_task_alloc",
+    "function_argument_number": 0,
+    "function_signature": "_swift_task_alloc()",
+    "pseudocode": "__int64 swift_task_alloc()\n{\n  return _swift_task_alloc();\n}"
+}

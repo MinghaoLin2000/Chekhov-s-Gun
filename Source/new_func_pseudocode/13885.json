@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlCreatePushParserCtxt",
+    "function_argument_number": 5,
+    "function_signature": "_xmlCreatePushParserCtxt(xmlSAXHandlerPtr sax, void * user_data, const char * chunk, int size, const char * filename)",
+    "pseudocode": "xmlParserCtxtPtr __cdecl xmlCreatePushParserCtxt(\n        xmlSAXHandlerPtr sax,\n        void *user_data,\n        const char *chunk,\n        int size,\n        const char *filename)\n{\n  return _xmlCreatePushParserCtxt(sax, user_data, chunk, size, filename);\n}"
+}

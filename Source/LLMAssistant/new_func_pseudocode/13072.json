@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFUFileOpen",
+    "function_argument_number": 2,
+    "function_signature": "_SFUFileOpen(void * a1, const char * a2)",
+    "pseudocode": "FILE *__fastcall SFUFileOpen(void *a1, const char *a2)\n{\n  FILE *v3; // x20\n\n  v3 = fopen((const char *)objc_msgSend(a1, \"fileSystemRepresentation\"), a2);\n  if ( !v3 )\n    +[NSException sfu_errnoRaise:format:](\n      &OBJC_CLASS___NSException,\n      \"sfu_errnoRaise:format:\",\n      CFSTR(\"SFUFileOpenError\"),\n      CFSTR(\"Could not open %@\"),\n      a1);\n  return v3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_begin_catch",
+    "function_argument_number": 1,
+    "function_signature": "___cxa_begin_catch(void * a1)",
+    "pseudocode": "void *__fastcall __cxa_begin_catch(void *a1)\n{\n  return ___cxa_begin_catch(a1);\n}"
+}

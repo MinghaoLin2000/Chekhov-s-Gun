@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallApImg4CreateStitchTicket",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallApImg4CreateStitchTicket()",
+    "pseudocode": "__int64 AMAuthInstallApImg4CreateStitchTicket()\n{\n  return _AMAuthInstallApImg4CreateStitchTicket();\n}"
+}

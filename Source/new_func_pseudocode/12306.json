@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16ArrayInputStreamC1EPKvii",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf2io16ArrayInputStreamC1EPKvii(google::protobuf::io::ArrayInputStream * this, const void * a2, int a3, int a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::ArrayInputStream::ArrayInputStream(\n        __int64 this,\n        const void *a2,\n        int a3,\n        int a4)\n{\n  int v4; // w8\n\n  *(_QWORD *)this = off_1001DBEB8;\n  *(_QWORD *)(this + 8) = a2;\n  if ( a4 <= 0 )\n    v4 = a3;\n  else\n    v4 = a4;\n  *(_DWORD *)(this + 16) = a3;\n  *(_DWORD *)(this + 20) = v4;\n  *(_QWORD *)(this + 24) = 0LL;\n  return this;\n}"
+}

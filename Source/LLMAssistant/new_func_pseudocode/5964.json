@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate init](_TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate * self, SEL a2)",
+    "pseudocode": "_TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate *__cdecl __noreturn -[BookkeepingServiceDelegate init](\n        _TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate *self,\n        SEL a2)\n{\n  sub_10000D44C(self, a2);\n}"
+}

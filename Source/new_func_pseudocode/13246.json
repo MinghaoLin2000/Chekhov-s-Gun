@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchive readFilenameFromBuffer:size:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUZipArchive readFilenameFromBuffer:size:](SFUZipArchive * self, SEL a2, const char * a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl -[SFUZipArchive readFilenameFromBuffer:size:](\n        SFUZipArchive *self,\n        SEL a2,\n        const char *a3,\n        unsigned __int64 a4)\n{\n  id result; // x0\n  CFStringEncoding SystemEncoding; // w0\n\n  result = objc_autorelease(objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithBytes:length:encoding:\", a3, a4, 4LL));\n  if ( !result )\n  {\n    SystemEncoding = CFStringGetSystemEncoding();\n    result = objc_autorelease(\n               objc_msgSend(\n                 objc_alloc((Class)&OBJC_CLASS___NSString),\n                 \"initWithBytes:length:encoding:\",\n                 a3,\n                 a4,\n                 CFStringConvertEncodingToNSStringEncoding(SystemEncoding)));\n    if ( !result )\n    {\n      +[SFUZipException raise:format:](\n        &OBJC_CLASS___SFUZipException,\n        \"raise:format:\",\n        CFSTR(\"SFUZipFilenameError\"),\n        CFSTR(\"Could not read filename.\"));\n      return 0LL;\n    }\n  }\n  return result;\n}"
+}

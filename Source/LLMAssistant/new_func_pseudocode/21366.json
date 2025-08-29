@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer addAudioSampleData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer addAudioSampleData:](_TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EARSpeechRecognitionAudioBuffer addAudioSampleData:](\n        _TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer *self,\n        SEL a2,\n        id a3)\n{\n  id v3; // x19\n  _TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer *v5; // x0\n  id v6; // x22\n  unsigned __int64 v7; // x1\n  unsigned __int64 v8; // x21\n  _TtC22localspeechrecognition31EARSpeechRecognitionAudioBuffer *v9; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = a3;\n  if ( a3 )\n  {\n    v5 = objc_retain(self);\n    v6 = objc_retain(v3);\n    v3 = (id)sub_100040E90(v3);\n    v8 = v7;\n    objc_release(v6);\n  }\n  else\n  {\n    v9 = objc_retain(self);\n    v8 = 0xF000000000000000LL;\n  }\n  sub_100021784(v3, v8);\n  sub_100009E64(v3, v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(self);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[QLSatellite doneWithMessage:reply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[QLSatellite doneWithMessage:reply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[QLSatellite doneWithMessage:reply:](QLSatellite *self, SEL a2, id a3, id a4)\n{\n  id v6; // x21\n  id v7; // x0\n  OS_dispatch_queue *queue; // x19\n  id v9; // x20\n  id v10; // x21\n  _QWORD v11[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v12; // [xsp+20h] [xbp-30h]\n  id v13; // [xsp+28h] [xbp-28h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  queue = self->_queue;\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_100003874;\n  v11[3] = &unk_100008450;\n  v12 = v6;\n  v13 = v7;\n  v9 = objc_retain(v7);\n  v10 = objc_retain(v6);\n  ql_dispatch_async(queue, v11);\n  objc_release(v13);\n  objc_release(v12);\n  objc_release(v9);\n  objc_release(v10);\n}"
+}

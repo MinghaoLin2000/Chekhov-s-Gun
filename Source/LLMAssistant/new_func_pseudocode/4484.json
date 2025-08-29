@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$presentSheetToChangePasswordWithReply:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$presentSheetToChangePasswordWithReply:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_presentSheetToChangePasswordWithReply_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"presentSheetToChangePasswordWithReply:\");\n}"
+}

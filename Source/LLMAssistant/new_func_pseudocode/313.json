@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_getClass",
+    "function_argument_number": 1,
+    "function_signature": "_objc_getClass(const char * name)",
+    "pseudocode": "Class __cdecl objc_getClass(const char *name)\n{\n  return _objc_getClass(name);\n}"
+}

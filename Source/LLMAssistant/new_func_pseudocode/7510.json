@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV20getManagedSpacesInfo10connectionSaySDySSyXlGGAA13CGSConnectionV_tFZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV20getManagedSpacesInfo10connectionSaySDySSyXlGGAA13CGSConnectionV_tFZ()",
+    "pseudocode": "__int64 static CGSSpace.getManagedSpacesInfo(connection:)()\n{\n  __int64 v0; // x19\n  __int64 v1; // x0\n  __int64 v2; // x0\n\n  if ( !CGSCopyManagedDisplaySpaces() || (v1 = sub_10000E6E4(), sub_100012134(v1), !v0) )\n  {\n    v2 = sub_100002BF4(&unk_100029BF8);\n    v0 = swift_allocObject(v2, 40LL, 7LL);\n    *(_OWORD *)(v0 + 16) = xmmword_10001FC20;\n    *(_QWORD *)(v0 + 32) = sub_10001CA80(\n                             _swiftEmptyArrayStorage,\n                             &type metadata for String,\n                             (char *)&type metadata for Swift.AnyObject + 8,\n                             &protocol witness table for String);\n    swift_bridgeObjectRelease(0LL);\n  }\n  return v0;\n}"
+}

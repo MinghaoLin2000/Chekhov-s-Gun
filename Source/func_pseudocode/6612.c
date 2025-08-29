@@ -1,0 +1,5 @@
+_IPAOrientationTransformIntegralImageSize
+__int64 IPAOrientationTransformIntegralImageSize()
+{
+  return _IPAOrientationTransformIntegralImageSize();
+}

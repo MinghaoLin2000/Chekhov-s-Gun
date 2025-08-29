@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSMoveManagedSpaceToDisplayIndex",
+    "function_argument_number": 0,
+    "function_signature": "_CGSMoveManagedSpaceToDisplayIndex()",
+    "pseudocode": "__int64 CGSMoveManagedSpaceToDisplayIndex()\n{\n  return _CGSMoveManagedSpaceToDisplayIndex();\n}"
+}

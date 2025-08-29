@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipArchive readCentralDirectoryWithEntryCount:offset:size:channel:completion:]",
+    "function_argument_number": 7,
+    "function_signature": "-[TSUZipArchive readCentralDirectoryWithEntryCount:offset:size:channel:completion:](int a1, int a2, int a3, int a4, int a5, int a6, id a7)",
+    "pseudocode": "void __cdecl -[TSUZipArchive readCentralDirectoryWithEntryCount:offset:size:channel:completion:](\n        TSUZipArchive *self,\n        SEL a2,\n        unsigned __int64 a3,\n        signed __int64 a4,\n        unsigned __int64 a5,\n        id a6,\n        id a7)\n{\n  id v12; // x22\n  _QWORD v13[5]; // [xsp+8h] [xbp-68h] BYREF\n  id v14; // [xsp+30h] [xbp-40h]\n  unsigned __int64 v15; // [xsp+38h] [xbp-38h]\n\n  v13[0] = _NSConcreteStackBlock;\n  v13[1] = 3254779904LL;\n  v13[2] = sub_100130B74;\n  v13[3] = &unk_1001DD078;\n  v14 = objc_retain(a7);\n  v15 = a3;\n  v13[4] = self;\n  v12 = objc_retain(v14);\n  +[TSUIOUtils readAllFromChannel:offset:length:completion:](\n    &OBJC_CLASS___TSUIOUtils,\n    \"readAllFromChannel:offset:length:completion:\",\n    a6,\n    a4,\n    a5,\n    v13);\n  objc_release(v14);\n  objc_release(v12);\n}"
+}

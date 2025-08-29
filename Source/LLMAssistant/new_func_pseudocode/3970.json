@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$hasErrorStateForIdentifier:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$hasErrorStateForIdentifier:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_hasErrorStateForIdentifier_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"hasErrorStateForIdentifier:\");\n}"
+}

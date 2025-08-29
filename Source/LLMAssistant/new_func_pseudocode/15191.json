@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$dateByAddingUnit:value:toDate:options:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$dateByAddingUnit:value:toDate:options:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_dateByAddingUnit_value_toDate_options_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"dateByAddingUnit:value:toDate:options:\");\n}"
+}

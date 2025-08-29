@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ExportSessionVideoTranscodingTask .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[ExportSessionVideoTranscodingTask .cxx_destruct](ExportSessionVideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ExportSessionVideoTranscodingTask .cxx_destruct](ExportSessionVideoTranscodingTask *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_exportSession, 0LL);\n}"
+}

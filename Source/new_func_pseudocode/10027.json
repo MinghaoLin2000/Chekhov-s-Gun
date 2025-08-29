@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP18ObjectUUIDMapEntryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP18ObjectUUIDMapEntryD2Ev(TSP::ObjectUUIDMapEntry * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ObjectUUIDMapEntry::~ObjectUUIDMapEntry(TSP::ObjectUUIDMapEntry *this)\n{\n  __ZN3TSP18ObjectUUIDMapEntryD2Ev(this);\n}"
+}

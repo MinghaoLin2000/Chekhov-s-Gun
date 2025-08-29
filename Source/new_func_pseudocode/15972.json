@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpTransmitBuffer2",
+    "function_argument_number": 3,
+    "function_signature": "_uarpTransmitBuffer2(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpTransmitBuffer2(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v3; // x8\n  __int64 v4; // x9\n  __int64 v5; // x11\n  _QWORD *i; // x9\n\n  v3 = *(unsigned __int16 *)(a2 + 112);\n  if ( (unsigned int)v3 >= 2 )\n  {\n    v4 = 0LL;\n    do\n    {\n      v5 = *(_QWORD *)(a2 + 120);\n      if ( !*(_QWORD *)(v5 + v4) )\n      {\n        *(_QWORD *)(v5 + v4) = *(_QWORD *)(v5 + v4 + 8);\n        *(_QWORD *)(*(_QWORD *)(a2 + 120) + v4 + 8) = 0LL;\n      }\n      v4 += 8LL;\n    }\n    while ( 8LL * (unsigned int)(v3 - 1) != v4 );\n  }\n  if ( !(_DWORD)v3 )\n    return 11LL;\n  for ( i = *(_QWORD **)(a2 + 120); *i; ++i )\n  {\n    if ( !--v3 )\n      return 11LL;\n  }\n  *i = a3;\n  uarpTransmitQueueService(a1, a2);\n  return 0LL;\n}"
+}

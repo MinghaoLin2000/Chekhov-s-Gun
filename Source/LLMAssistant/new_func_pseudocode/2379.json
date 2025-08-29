@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController finderTabContainerViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeFinderViewController finderTabContainerViewController](DeviceModeFinderViewController * self, SEL a2)",
+    "pseudocode": "DeviceFinderTabContainerViewController *__cdecl -[DeviceModeFinderViewController finderTabContainerViewController](\n        DeviceModeFinderViewController *self,\n        SEL a2)\n{\n  return self->_finderTabContainerViewController;\n}"
+}

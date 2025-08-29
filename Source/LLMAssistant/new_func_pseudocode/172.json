@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper15CloudKitAppTypeOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper15CloudKitAppTypeOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CloudKitAppType()\n{\n  return &type metadata for CloudKitAppType;\n}"
+}

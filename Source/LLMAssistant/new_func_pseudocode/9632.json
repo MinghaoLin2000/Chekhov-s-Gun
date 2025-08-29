@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP11MessageInfo13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP11MessageInfo13IsInitializedEv(TSP::MessageInfo * this)",
+    "pseudocode": "bool __fastcall TSP::MessageInfo::IsInitialized(TSP::MessageInfo *this)\n{\n  __int64 v1; // x8\n  __int64 v2; // x9\n  _BOOL8 result; // x0\n  __int64 v4; // x10\n\n  if ( (~*((_DWORD *)this + 4) & 6) != 0 )\n    return 0LL;\n  v1 = *((unsigned int *)this + 14);\n  v2 = *((_QWORD *)this + 8);\n  do\n  {\n    result = (int)v1 < 1;\n    if ( (int)v1 < 1 )\n      break;\n    v4 = *(_QWORD *)(v2 + 8 * v1--);\n  }\n  while ( (*(_BYTE *)(v4 + 16) & 2) != 0 );\n  return result;\n}"
+}

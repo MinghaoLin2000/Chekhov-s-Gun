@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUContainedZipArchive newArchiveReadChannel]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUContainedZipArchive newArchiveReadChannel](TSUContainedZipArchive * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUContainedZipArchive newArchiveReadChannel](TSUContainedZipArchive *self, SEL a2)\n{\n  return objc_retainAutoreleasedReturnValue(\n           -[TSUZipArchive readChannelForEntry:validateCRC:](\n             self->_zipArchive,\n             \"readChannelForEntry:validateCRC:\",\n             self->_entry,\n             1LL));\n}"
+}

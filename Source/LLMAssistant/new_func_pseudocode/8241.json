@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$processLogArchiveWithPath:startDate:endDate:errorOut:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$processLogArchiveWithPath:startDate:endDate:errorOut:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_processLogArchiveWithPath_startDate_endDate_errorOut_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"processLogArchiveWithPath:startDate:endDate:errorOut:\");\n}"
+}

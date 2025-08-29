@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.developer.maps",
+  "capability": "Allows an application to integrate with and extend the Apple Maps framework to display and provide specialized direction types (e.g., public transit, hiking trails, bike paths) that are not natively supported by the core Apple Maps application. This enables apps to offer richer, custom mapping experiences within the Apple Maps ecosystem.",
+  "reasoning": "The entitlement name 'com.apple.developer.maps' clearly indicates a connection to Apple Maps. The description 'A Boolean value that indicates whether the app may provide directions beyond what Maps supports, such as subway routes, hiking trails, and bike paths' specifies that this entitlement enables an app to offer extended or specialized map routing capabilities beyond the standard turn-by-turn navigation provided by Apple Maps. This is a feature-enabling capability within the Maps framework.",
+  "similar_entitlements": [
+    "com.apple.developer.healthkit",
+    "com.apple.developer.homekit",
+    "com.apple.developer.wallet"
+  ],
+  "sensitive_type": [],
+  "sensitive_reasoning": "This entitlement primarily enables an application to provide specific types of map data or routes. It does not inherently grant direct access to user's real-time location (which is handled by TCC location services), nor does it involve modifying system files, privileged networking, process/memory management, or kernel-level control. While an app using this capability might also request location access, this specific entitlement itself is about enabling a feature within the Maps framework, not bypassing TCC or performing other sensitive operations.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement's description is very clear about its purpose: enabling extended map routing features. It is a capability-enabling entitlement for a specific framework, similar to other 'com.apple.developer.' entitlements for HealthKit or HomeKit. It does not directly grant access to sensitive user data or system resources, which would typically be governed by separate TCC prompts or more powerful entitlements. The potential for misinterpretation could arise if one assumes it implicitly grants location access, but that's a distinct TCC-protected capability separate from merely providing custom map directions."
+}

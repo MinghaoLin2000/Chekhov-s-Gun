@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV13leftMouseDownACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV13leftMouseDownACvau()",
+    "pseudocode": "int *SystemEventMask.leftMouseDown.unsafeMutableAddressor()\n{\n  if ( qword_10002A910 != -1 )\n    swift_once(&qword_10002A910, sub_100015630);\n  return &static SystemEventMask.leftMouseDown;\n}"
+}

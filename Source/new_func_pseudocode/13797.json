@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_get_specific",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_get_specific(const void * key)",
+    "pseudocode": "void *__cdecl dispatch_get_specific(const void *key)\n{\n  return _dispatch_get_specific(key);\n}"
+}

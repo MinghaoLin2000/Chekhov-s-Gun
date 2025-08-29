@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTabContentViewController .cxx_destruct](DeviceSettingsTabContentViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsTabContentViewController .cxx_destruct](\n        DeviceSettingsTabContentViewController *self,\n        SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_allCheckBoxString, 0LL);\n  objc_storeStrong((id *)&self->_folderImage, 0LL);\n  objc_storeStrong((id *)&self->_geniusPlaylistImage, 0LL);\n  objc_storeStrong((id *)&self->_smartPlaylistImage, 0LL);\n  objc_storeStrong((id *)&self->_playlistImage, 0LL);\n  objc_storeStrong((id *)&self->_disableAndCheckSelectedItems, 0LL);\n  objc_storeStrong(&self->_savedExpandedState, 0LL);\n  objc_storeStrong((id *)&self->_identifyingObjectToNodeMap, 0LL);\n  objc_storeStrong((id *)&self->_checkedItems, 0LL);\n  objc_storeStrong((id *)&self->_model, 0LL);\n  objc_destroyWeak((id *)&self->_tabViewItem);\n  objc_destroyWeak((id *)&self->_allCheckBoxOutlineView);\n  objc_destroyWeak((id *)&self->_outlineView);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_searchField);\n}"
+}

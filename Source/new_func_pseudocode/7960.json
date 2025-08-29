@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSManagedDisplaysCopyRoleWindows",
+    "function_argument_number": 0,
+    "function_signature": "_CGSManagedDisplaysCopyRoleWindows()",
+    "pseudocode": "__int64 CGSManagedDisplaysCopyRoleWindows()\n{\n  return _CGSManagedDisplaysCopyRoleWindows();\n}"
+}

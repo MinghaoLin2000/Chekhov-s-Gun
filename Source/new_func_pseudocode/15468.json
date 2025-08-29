@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_path_monitor_start",
+    "function_argument_number": 1,
+    "function_signature": "_nw_path_monitor_start(nw_path_monitor_t monitor)",
+    "pseudocode": "void __cdecl nw_path_monitor_start(nw_path_monitor_t monitor)\n{\n  _nw_path_monitor_start(monitor);\n}"
+}

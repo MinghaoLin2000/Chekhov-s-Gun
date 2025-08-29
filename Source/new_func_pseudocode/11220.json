@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf12FieldOptionsD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf12FieldOptionsD2Ev(google::protobuf::FieldOptions * this)",
+    "pseudocode": "void __fastcall google::protobuf::FieldOptions::~FieldOptions(google::protobuf::FieldOptions *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_1000B93A0((char *)this + 48);\n  google::protobuf::internal::ExtensionSet::~ExtensionSet((google::protobuf::FieldOptions *)((char *)this + 16));\n}"
+}

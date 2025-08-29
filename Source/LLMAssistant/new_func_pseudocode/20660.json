@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_activity_scope_leave",
+    "function_argument_number": 1,
+    "function_signature": "_os_activity_scope_leave(os_activity_scope_state_t state)",
+    "pseudocode": "void __cdecl os_activity_scope_leave(os_activity_scope_state_t state)\n{\n  _os_activity_scope_leave(state);\n}"
+}

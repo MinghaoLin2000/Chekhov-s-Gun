@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFArrayGetStream",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFArrayGetStream(CGPDFArrayRef array, size_t index, CGPDFStreamRef * value)",
+    "pseudocode": "bool __cdecl CGPDFArrayGetStream(CGPDFArrayRef array, size_t index, CGPDFStreamRef *value)\n{\n  return _CGPDFArrayGetStream(array, index, value);\n}"
+}

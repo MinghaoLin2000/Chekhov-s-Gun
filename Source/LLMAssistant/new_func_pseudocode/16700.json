@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCDigestFinal",
+    "function_argument_number": 0,
+    "function_signature": "_CCDigestFinal()",
+    "pseudocode": "__int64 CCDigestFinal()\n{\n  return _CCDigestFinal();\n}"
+}

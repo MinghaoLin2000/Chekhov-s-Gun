@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t makeAndModel]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t makeAndModel](lite_printer_t * self, SEL a2)",
+    "pseudocode": "id __cdecl -[lite_printer_t makeAndModel](lite_printer_t *self, SEL a2)\n{\n  return -[PKPrinterBrowseInfo makeAndModel](self->_browseInfo, \"makeAndModel\");\n}"
+}

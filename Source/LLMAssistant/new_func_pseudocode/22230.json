@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLServerCheckUsage",
+    "function_argument_number": 0,
+    "function_signature": "_QLServerCheckUsage()",
+    "pseudocode": "__int64 QLServerCheckUsage()\n{\n  return _QLServerCheckUsage();\n}"
+}

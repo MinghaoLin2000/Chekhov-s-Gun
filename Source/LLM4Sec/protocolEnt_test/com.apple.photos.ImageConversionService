@@ -1,0 +1,131 @@
+Service Path:
+/System/Library/PrivateFrameworks/MediaConversionService.framework/Versions/A/XPCServices/com.apple.photos.ImageConversionService.xpc/Contents/MacOS/com.apple.photos.ImageConversionService
+
+Service Exported Protocols:
+@protocol ImageConversionService <NSObject>
+- (void)requestStatusWithReply:(void (^)(NSDictionary *, NSError *))arg1;
+- (void)convertImageWithOptions:(NSDictionary *)arg1 reply:(void (^)(NSData *, NSDictionary *, NSError *))arg2;
+@end
+@protocol MediaConversionQueueDelegate <NSObject>
+- (void)conversionQueue:(MediaConversionQueue *)arg1 processNextEntry:(MediaConversionQueueEntry *)arg2;
+- (void)conversionQueueDidFinishProcessingEntry:(MediaConversionQueue *)arg1;
+- (void)conversionQueue:(MediaConversionQueue *)arg1 cancelCurrentlyProcessingEntry:(MediaConversionQueueEntry *)arg2;
+- (void)conversionQueue:(MediaConversionQueue *)arg1 didCancelQueuedEntry:(MediaConversionQueueEntry *)arg2 clientRequests:(NSArray *)arg3;
+@end
+@protocol PFCameraViewfinderSessionWatcherDelegate <NSObject>
+- (void)cameraWatcherDidChangeState:(PFCameraViewfinderSessionWatcher *)arg1;
+@end
+@protocol VideoConversionTaskProgressUpdateObserver
+- (void)videoConversionTask:(VideoConversionTask *)arg1 didUpdateFractionCompleted:(double)arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.aned.private.ANEAccess.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.coremedia.cameraviewfinder
+	[Value]
+		[Bool] true
+	[Key] com.apple.modelcatalog.full-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.UAF.Photos.MagicCleanup
+	[Key] com.apple.private.security.storage.AppDataContainers
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.MobileAssetGenerativeModels
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Photos
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.PhotosLibraries
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.os_eligibility.readonly
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/
+			[String] /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_Photos_MagicCleanup/purpose_auto/
+			[String] /private/var/mobile/Library/com.apple.modelcatalog/sideload/
+			[String] /private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_Photos_MagicCleanup/
+			[String] /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/
+			[String] /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/
+			[String] /private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/
+			[String] /private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/
+			[String] /private/var/db/os_eligibility/eligibility.plist
+	[Key] com.apple.security.exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/UnifiedAssetFramework/
+			[String] /Library/com.apple.modelcatalog/sideload/
+	[Key] com.apple.security.exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/UnifiedAssetFramework/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.modelcatalog.catalog
+			[String] com.apple.siri.uaf.service
+			[String] com.apple.mobileasset.autoasset
+			[String] com.apple.mobileassetd.v2
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.UnifiedAssetFramework
+			[String] com.apple.modelcatalog.ajax
+			[String] com.apple.gms.availability
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AppleVideoToolboxParavirtualizationUserClient
+			[String] AGXCommandQueue
+			[String] AGXDevice
+			[String] AGXDeviceUserClient
+			[String] AGXGLContext
+			[String] AGXSharedUserClient
+			[String] AppleJPEGDriverUserClient
+			[String] H11ANEInDirectPathClient
+			[String] IOAccelContext
+			[String] IOAccelContext2
+			[String] IOAccelDevice
+			[String] IOAccelDevice2
+			[String] IOAccelSharedUserClient
+			[String] IOAccelSharedUserClient2
+			[String] IOAccelSubmitter2
+			[String] IOGPUDeviceUserClient
+			[String] IOSurfaceAcceleratorClient
+			[String] IOSurfaceRootUserClient
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /private/var/db/com.apple.modelcatalog/sideload/
+			[String] /System/Library/AssetsV2/locks/com.apple.UnifiedAssetFramework/
+			[String] /System/Library/AssetsV2/com_apple_MobileAsset_UAF_Photos_MagicCleanup/purpose_auto/
+			[String] /System/Library/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/
+			[String] /System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_Photos_MagicCleanup/
+			[String] /System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/
+			[String] /private/var/db/os_eligibility/eligibility.plist
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.modelcatalog.catalog
+			[String] com.apple.siri.uaf.service
+			[String] com.apple.mobileasset.autoasset
+			[String] com.apple.mobileassetd.v2
+	[Key] com.apple.security.temporary-exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.UnifiedAssetFramework
+			[String] com.apple.modelcatalog.ajax

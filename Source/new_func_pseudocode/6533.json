@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker dequeueAndStartProcessingTime]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker dequeueAndStartProcessingTime](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "NSDate *__cdecl -[MediaConversionRequestTracker dequeueAndStartProcessingTime](\n        MediaConversionRequestTracker *self,\n        SEL a2)\n{\n  return (NSDate *)objc_getProperty(self, a2, 120LL, 1);\n}"
+}

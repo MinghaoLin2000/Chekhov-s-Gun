@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$buttonStack",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$buttonStack(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_buttonStack(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"buttonStack\");\n}"
+}

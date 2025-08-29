@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode sortUsingDescriptors:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode sortUsingDescriptors:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode sortUsingDescriptors:](DeviceSettingsNode *self, SEL a2, id a3)\n{\n  id v4; // x20\n  NSMutableArray *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsNode children](self, \"children\"));\n  -[NSMutableArray sortUsingDescriptors:](v5, \"sortUsingDescriptors:\", v4);\n  objc_release(v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceSettingsNode reloadFilteredChildren](self, \"reloadFilteredChildren\");\n}"
+}

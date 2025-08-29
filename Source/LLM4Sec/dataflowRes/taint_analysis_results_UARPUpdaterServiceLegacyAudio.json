@@ -1,0 +1,6 @@
+{
+    "/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceLegacyAudio.xpc/Contents/MacOS/UARPUpdaterServiceLegacyAudio": [
+        "_objc_msgSend$setDelegate:",
+        "-[EAAccessoryUpdater initWithDeviceClass:delegate:info:options:]"
+    ]
+}

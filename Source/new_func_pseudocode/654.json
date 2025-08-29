@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileSharingListItem isApp]",
+    "function_argument_number": 2,
+    "function_signature": "-[FileSharingListItem isApp](FileSharingListItem * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[FileSharingListItem isApp](FileSharingListItem *self, SEL a2)\n{\n  return self->_isApp;\n}"
+}

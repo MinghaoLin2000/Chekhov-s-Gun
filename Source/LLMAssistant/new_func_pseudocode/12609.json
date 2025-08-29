@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDPath isEqual:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUUUIDPath isEqual:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSUUUIDPath isEqual:](TSUUUIDPath *self, SEL a2, id a3)\n{\n  _QWORD *v4; // x19\n  __int64 v5; // x0\n  NSArray *uuids; // x20\n  __int64 v7; // x21\n  bool v9; // w20\n  objc_super v10; // [xsp+0h] [xbp-30h] BYREF\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_opt_class(&OBJC_CLASS___TSUUUIDPath);\n  if ( (objc_opt_isKindOfClass(v4, v5) & 1) != 0 )\n  {\n    uuids = self->_uuids;\n    v7 = v4[1];\n    objc_release(v4);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (unsigned __int8)-[NSArray isEqual:](uuids, \"isEqual:\", v7);\n  }\n  else\n  {\n    v10.receiver = self;\n    v10.super_class = (Class)&OBJC_CLASS___TSUUUIDPath;\n    v9 = -[TSUUUIDPath isEqual:](&v10, \"isEqual:\", v4);\n    objc_release(v4);\n    return v9;\n  }\n}"
+}

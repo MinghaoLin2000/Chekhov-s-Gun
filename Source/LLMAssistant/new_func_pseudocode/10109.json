@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP9Reference13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP9Reference13IsInitializedEv(TSP::Reference * this)",
+    "pseudocode": "__int64 __fastcall TSP::Reference::IsInitialized(TSP::Reference *this)\n{\n  return *((_DWORD *)this + 4) & 1;\n}"
+}

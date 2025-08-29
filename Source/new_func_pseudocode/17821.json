@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBDataWriterWriteSubmessage",
+    "function_argument_number": 0,
+    "function_signature": "_PBDataWriterWriteSubmessage()",
+    "pseudocode": "__int64 PBDataWriterWriteSubmessage()\n{\n  return _PBDataWriterWriteSubmessage();\n}"
+}

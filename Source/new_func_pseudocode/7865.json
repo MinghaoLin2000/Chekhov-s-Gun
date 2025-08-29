@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV23removeFromMovementGroup10withParent10connectionyAC_AA13CGSConnectionVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV23removeFromMovementGroup10withParent10connectionyAC_AA13CGSConnectionVtF(EyeCandyGraphics::CGSWindow withParent, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall CGSWindow.removeFromMovementGroup(withParent:connection:)(\n        EyeCandyGraphics::CGSWindow withParent,\n        EyeCandyGraphics::CGSConnection connection)\n{\n  _CGSRemoveWindowFromWindowMovementGroup(*(_QWORD *)&connection.cid, *(_QWORD *)&withParent.wid);\n}"
+}

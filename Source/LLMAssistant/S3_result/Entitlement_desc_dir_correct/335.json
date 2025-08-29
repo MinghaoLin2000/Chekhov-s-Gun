@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.wifi.priority.internal",
+  "capability": "Allows an application to programmatically set or modify the priority order of known Wi-Fi networks, or to influence the system's Wi-Fi network selection algorithm, potentially overriding user preferences or standard network discovery mechanisms. This is likely an internal Apple-only entitlement.",
+  "reasoning": "The 'wifi' component clearly indicates Wi-Fi functionality. 'priority' suggests control over the preference or ordering of Wi-Fi connections. The '.internal' suffix strongly implies that this is a highly privileged entitlement, reserved for Apple's own system processes or specific trusted applications, granting deep control over a system-level network setting.",
+  "similar_entitlements": [
+    "com.apple.developer.networking.HotspotConfiguration"
+  ],
+  "sensitive_type": [
+    2,
+    4
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'Privileged Networking' (2) because it grants control over how the system connects to Wi-Fi networks, potentially allowing an application to force connections to specific (even malicious) networks, bypass preferred networks, or disrupt connectivity. This impacts the fundamental mechanism of network access. It also falls under 'System & Kernel Level Control' (4) as modifying Wi-Fi network priority is a system-level configuration that affects the entire device's network behavior, not just a single application. The 'internal' nature reinforces its privileged and system-wide impact.",
+  "self_reflection": "I am confident in the inferred capability and its classification as sensitive. The 'wifi.priority' part is quite descriptive, and the '.internal' suffix is a strong indicator of high privilege and system-level impact. The main uncertainty is the exact granularity of 'priority' control (e.g., just order of known networks, or also QoS for traffic), but the core capability of influencing network selection remains. The classification into 'Privileged Networking' and 'System & Kernel Level Control' seems appropriate given the potential for network manipulation and system-wide configuration changes."
+}

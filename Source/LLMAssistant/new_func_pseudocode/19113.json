@@ -1,0 +1,6 @@
+{
+    "function_name": "_mach_port_get_refs",
+    "function_argument_number": 4,
+    "function_signature": "_mach_port_get_refs(ipc_space_t task, mach_port_name_t name, mach_port_right_t right, mach_port_urefs_t * refs)",
+    "pseudocode": "kern_return_t __cdecl mach_port_get_refs(\n        ipc_space_t task,\n        mach_port_name_t name,\n        mach_port_right_t right,\n        mach_port_urefs_t *refs)\n{\n  return _mach_port_get_refs(task, name, right, refs);\n}"
+}

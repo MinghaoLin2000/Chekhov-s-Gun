@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_attribute_t _copySettingGroup:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_attribute_t _copySettingGroup:](ipp_attribute_t * self, SEL a2, int a3)",
+    "pseudocode": "id __cdecl -[ipp_attribute_t _copySettingGroup:](ipp_attribute_t *self, SEL a2, int a3)\n{\n  id result; // x0\n\n  result = -[ipp_attribute_t copyWithZone:](self, \"copyWithZone:\", 0LL);\n  *((_DWORD *)result + 6) = a3;\n  return result;\n}"
+}

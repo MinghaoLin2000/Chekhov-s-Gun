@@ -1,0 +1,24 @@
+@protocol MDRemoteServiceSupportProtocol
+- (void)queryPreflightDictionaryForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSDictionary *))arg3;
+- (void)getApParameters:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSDictionary *))arg3;
+- (void)generateNoncesForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSData *, NSData *))arg3;
+- (void)retrieveNameForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSString *))arg3;
+- (void)retrieveStateForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(unsigned int))arg3;
+- (void)startService:(NSString *)arg1 forUUID:(NSString *)arg2 type:(unsigned int)arg3 withReply:(void (^)(NSFileHandle *))arg4;
+- (void)listServicesForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSArray *))arg3;
+- (void)restoreServicesReachableForUUID:(NSString *)arg1 type:(unsigned int)arg2 withResult:(void (^)(_Bool))arg3;
+- (void)rebootDeviceToRecoveryForUUID:(NSString *)arg1 type:(unsigned int)arg2;
+- (void)rebootDeviceForUUID:(NSString *)arg1 type:(unsigned int)arg2;
+- (void)retrievePropertiesForUUID:(NSString *)arg1 type:(unsigned int)arg2 withReply:(void (^)(NSDictionary *))arg3;
+- (void)retrieveProperty:(char *)arg1 forUUID:(NSString *)arg2 type:(unsigned int)arg3 withReply:(void (^)(NSObject *))arg4;
+- (void)retrieveNameForUUID:(NSString *)arg1 withReply:(void (^)(NSString *))arg2;
+- (void)retrieveStateForUUID:(NSString *)arg1 withReply:(void (^)(unsigned int))arg2;
+- (void)startService:(NSString *)arg1 forUUID:(NSString *)arg2 withReply:(void (^)(NSFileHandle *))arg3;
+- (void)listServicesForUUID:(NSString *)arg1 withReply:(void (^)(NSArray *))arg2;
+- (void)restoreServicesReachableForUUID:(NSString *)arg1 withResult:(void (^)(_Bool))arg2;
+- (void)rebootDeviceToRecoveryForUUID:(NSString *)arg1;
+- (void)rebootDeviceForUUID:(NSString *)arg1;
+- (void)retrievePropertiesForUUID:(NSString *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)retrieveProperty:(char *)arg1 forUUID:(NSString *)arg2 withReply:(void (^)(NSObject *))arg3;
+- (void)validateProjectVersion:(NSString *)arg1 crashInvalidService:(_Bool)arg2 withReply:(void (^)(_Bool, NSString *))arg3;
+@end

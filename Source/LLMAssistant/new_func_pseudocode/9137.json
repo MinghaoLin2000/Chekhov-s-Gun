@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPMemoryReadChannel readFromOffset:length:handler:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSPMemoryReadChannel readFromOffset:length:handler:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "void __cdecl -[TSPMemoryReadChannel readFromOffset:length:handler:](\n        TSPMemoryReadChannel *self,\n        SEL a2,\n        signed __int64 a3,\n        unsigned __int64 a4,\n        id a5)\n{\n  id v8; // x0\n  dispatch_queue_s *readQueue; // x22\n  id v10; // x19\n  _QWORD v11[5]; // [xsp+0h] [xbp-60h] BYREF\n  id v12; // [xsp+28h] [xbp-38h]\n  signed __int64 v13; // [xsp+30h] [xbp-30h]\n  unsigned __int64 v14; // [xsp+38h] [xbp-28h]\n\n  v8 = objc_retain(a5);\n  readQueue = (dispatch_queue_s *)self->_readQueue;\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_10001103C;\n  v11[3] = &unk_1001D19B0;\n  v13 = a3;\n  v14 = a4;\n  v11[4] = self;\n  v12 = v8;\n  v10 = objc_retain(v8);\n  dispatch_async(readQueue, v11);\n  objc_release(v12);\n  objc_release(v10);\n}"
+}

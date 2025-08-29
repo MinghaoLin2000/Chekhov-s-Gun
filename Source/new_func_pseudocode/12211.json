@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf15UnknownFieldSet19MergeFromAndDestroyEPS1_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf15UnknownFieldSet19MergeFromAndDestroyEPS1_(google::protobuf::UnknownFieldSet * this, google::protobuf::UnknownFieldSet * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::UnknownFieldSet::MergeFromAndDestroy(\n        google::protobuf::UnknownFieldSet *this,\n        google::protobuf::UnknownFieldSet *a2)\n{\n  void *v3; // x1\n  __int64 result; // x0\n\n  v3 = (void *)*((_QWORD *)this + 1);\n  if ( *(void **)this == v3 )\n    result = sub_1001067B0();\n  else\n    result = sub_100106804((int)this, v3);\n  *((_QWORD *)a2 + 1) = *(_QWORD *)a2;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions",
+    "function_argument_number": 0,
+    "function_signature": "_SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions()",
+    "pseudocode": "__int64 SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions()\n{\n  return _SLSCopyWindowsWithOptionsAndTagsAndSpaceOptions();\n}"
+}

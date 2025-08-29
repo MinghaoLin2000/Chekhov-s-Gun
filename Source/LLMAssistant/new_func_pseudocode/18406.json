@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper04WiFiC0C13currentDialog33_F14D4C22208E7A416F4CC2A655BC16A0LLSo18NSWindowControllerCSgvpfi",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper04WiFiC0C13currentDialog33_F14D4C22208E7A416F4CC2A655BC16A0LLSo18NSWindowControllerCSgvpfi()",
+    "pseudocode": "__int64 variable initialization expression of WiFiHelper.currentDialog()\n{\n  return 0LL;\n}"
+}

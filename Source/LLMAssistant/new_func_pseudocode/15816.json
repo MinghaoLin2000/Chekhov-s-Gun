@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2ManufacturerName",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2ManufacturerName(__int64 a1, __int64 a2, _DWORD * a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2ManufacturerName(__int64 a1, __int64 a2, _DWORD *a3)\n{\n  __int64 (__fastcall *v3)(__int64); // x3\n  __int64 v4; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = *(__int64 (__fastcall **)(__int64))(a1 + 152);\n  if ( v3 )\n  {\n    v4 = *(_QWORD *)(a1 + 544);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v3(v4);\n  }\n  else\n  {\n    *a3 = uarpCopyDefaultInfoString(a2, (unsigned int)*a3);\n    return 0LL;\n  }\n}"
+}

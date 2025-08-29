@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy22UncheckedByteArraySinkD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6snappy22UncheckedByteArraySinkD1Ev(snappy::UncheckedByteArraySink * this)",
+    "pseudocode": "void __fastcall snappy::UncheckedByteArraySink::~UncheckedByteArraySink(snappy::UncheckedByteArraySink *this)\n{\n  ;\n}"
+}

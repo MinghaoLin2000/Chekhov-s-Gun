@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE16willSwitchSpacesyySayAC8CGSSpaceVGSgF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE16willSwitchSpacesyySayAC8CGSSpaceVGSgF(__int64 a1)",
+    "pseudocode": "void __fastcall SLSTransactionRef.willSwitchSpaces(_:)(__int64 a1)\n{\n  __int64 v1; // x20\n  __int64 v2; // x19\n  __int64 v3; // x21\n  __int64 v4; // x0\n  void *v5; // x20\n\n  v2 = v1;\n  if ( a1 )\n  {\n    v3 = sub_100002BF4(&unk_100029CC8);\n    v4 = sub_100014D1C(&unk_100029CD0, &unk_100029CC8);\n    v5 = (void *)Collection<>.spaces.getter(v3, v4);\n  }\n  else\n  {\n    v5 = 0LL;\n  }\n  SLSTransactionWillSwitchSpaces(v2, v5);\n  objc_release(v5);\n}"
+}

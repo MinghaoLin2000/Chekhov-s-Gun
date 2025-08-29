@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.private.biome.read-only:App.InFocus",
+  "capability": "Allows an application to read specific user activity data collected by the Biome framework, specifically related to which applications are currently or have been in focus (foreground) on the device. This provides insights into user application usage patterns and context.",
+  "reasoning": "The 'com.apple.private' prefix indicates an internal Apple entitlement. 'biome' refers to Apple's Biome framework, which collects and processes user activity data for intelligent system features. 'read-only' specifies read access. 'App.InFocus' precisely defines the type of Biome data, indicating information about applications currently in the foreground or actively used by the user.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under sensitive operation type 5 (Access Transparency Consent and Control (TCC) related functions). While 'App.InFocus' data from Biome is not explicitly listed as a TCC-protected resource like Photos or Contacts, it represents highly private user activity data and behavior patterns. The 'com.apple.private' prefix implies that this entitlement grants access to sensitive data that, if exposed to third-party applications, would typically be protected by TCC or similar privacy mechanisms. For internal Apple processes, such private entitlements grant access to sensitive user data without explicit user consent prompts, which is precisely what this category describes.",
+  "self_reflection": "I am confident in the inferred capability and the sensitive type classification. The 'com.apple.private' prefix strongly indicates sensitivity and bypass of standard user consent. The 'biome' and 'App.InFocus' components clearly point to user activity data. The main point of potential unclarity is whether 'App.InFocus' data is *directly* a named TCC resource, but its nature as private user activity data aligns perfectly with the *spirit* and intent of TCC protection for sensitive user information. My prediction could be wrong if Biome data, particularly 'App.InFocus' information, is considered less sensitive by Apple's internal classification than typical TCC resources, or if it's strictly aggregate/anonymized data (though 'App.InFocus' implies specific app IDs and usage)."
+}

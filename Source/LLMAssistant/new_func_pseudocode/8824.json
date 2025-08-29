@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService15JSAccountObject bookStore]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService15JSAccountObject bookStore](_TtC34AppleMediaServicesUIDynamicService15JSAccountObject * self, SEL a2)",
+    "pseudocode": "JSValue *__cdecl -[JSAccountObject bookStore](_TtC34AppleMediaServicesUIDynamicService15JSAccountObject *self, SEL a2)\n{\n  _TtC34AppleMediaServicesUIDynamicService15JSAccountObject *v2; // x20\n  void *v3; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retain(self);\n  v3 = (void *)sub_10000F4AC();\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (JSValue *)objc_autoreleaseReturnValue(v3);\n}"
+}

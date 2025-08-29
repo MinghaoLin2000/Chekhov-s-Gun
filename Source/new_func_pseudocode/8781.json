@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwca",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwca(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithCopy for EngagementMessagePlacementInfo(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x0\n  __int64 v7; // x19\n\n  v4 = *a2;\n  v5 = *a1;\n  *a1 = *a2;\n  swift_bridgeObjectRetain(v4);\n  swift_bridgeObjectRelease(v5);\n  a1[1] = a2[1];\n  v6 = a2[2];\n  v7 = a1[2];\n  a1[2] = v6;\n  swift_bridgeObjectRetain(v6);\n  swift_bridgeObjectRelease(v7);\n  return a1;\n}"
+}

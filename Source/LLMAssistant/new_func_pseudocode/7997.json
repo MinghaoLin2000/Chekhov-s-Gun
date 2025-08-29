@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSDisplayGetTiming",
+    "function_argument_number": 0,
+    "function_signature": "_SLSDisplayGetTiming()",
+    "pseudocode": "__int64 SLSDisplayGetTiming()\n{\n  return _SLSDisplayGetTiming();\n}"
+}

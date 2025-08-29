@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN23CompilerPluginInterfaceC2Ei.cold.1",
+    "function_argument_number": 1,
+    "function_signature": "__ZN23CompilerPluginInterfaceC2Ei.cold.1(__int64 a1)",
+    "pseudocode": "void __fastcall CompilerPluginInterface::CompilerPluginInterface(__int64 a1)\n{\n  int v1; // [xsp+0h] [xbp-20h] BYREF\n  __int64 v2; // [xsp+4h] [xbp-1Ch]\n\n  v1 = 136315138;\n  v2 = a1;\n  _os_log_fault_impl(\n    (void *)&_mh_execute_header,\n    (os_log_t)&_os_log_default,\n    OS_LOG_TYPE_FAULT,\n    \"Failed to dlopen MTLCompiler framework with error: %s\",\n    (uint8_t *)&v1,\n    0xCu);\n}"
+}

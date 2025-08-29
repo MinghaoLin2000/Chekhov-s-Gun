@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetRGBFillColor",
+    "function_argument_number": 5,
+    "function_signature": "_CGContextSetRGBFillColor(CGContextRef c, CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha)",
+    "pseudocode": "void __cdecl CGContextSetRGBFillColor(CGContextRef c, CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha)\n{\n  _CGContextSetRGBFillColor(c, red, green, blue, alpha);\n}"
+}

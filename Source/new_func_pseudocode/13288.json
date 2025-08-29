@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUSafeSaveAssistant endSaveWithSuccess:addingAttributes:error:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUSafeSaveAssistant endSaveWithSuccess:addingAttributes:error:](TSUSafeSaveAssistant * self, SEL a2, bool a3, id a4, id * a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nbool __cdecl -[TSUSafeSaveAssistant endSaveWithSuccess:addingAttributes:error:](\n        TSUSafeSaveAssistant *self,\n        SEL a2,\n        bool a3,\n        id a4,\n        id *a5)\n{\n  return -[TSUSafeSaveAssistant endSaveWithSuccess:toURL:addingAttributes:error:](\n           self,\n           \"endSaveWithSuccess:toURL:addingAttributes:error:\",\n           a3,\n           self->_saveURL,\n           a4,\n           a5);\n}"
+}

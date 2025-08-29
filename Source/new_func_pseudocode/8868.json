@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService14JSDeviceObject init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService14JSDeviceObject init](_TtC34AppleMediaServicesUIDynamicService14JSDeviceObject * self, SEL a2)",
+    "pseudocode": "_TtC34AppleMediaServicesUIDynamicService14JSDeviceObject *__cdecl -[JSDeviceObject init](\n        _TtC34AppleMediaServicesUIDynamicService14JSDeviceObject *self,\n        SEL a2)\n{\n  return (_TtC34AppleMediaServicesUIDynamicService14JSDeviceObject *)sub_10001808C();\n}"
+}

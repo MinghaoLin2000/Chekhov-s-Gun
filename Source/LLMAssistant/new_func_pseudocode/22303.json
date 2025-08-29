@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlXPathRegisterNs",
+    "function_argument_number": 3,
+    "function_signature": "_xmlXPathRegisterNs(xmlXPathContextPtr ctxt, const xmlChar * prefix, const xmlChar * ns_uri)",
+    "pseudocode": "int __cdecl xmlXPathRegisterNs(xmlXPathContextPtr ctxt, const xmlChar *prefix, const xmlChar *ns_uri)\n{\n  return _xmlXPathRegisterNs(ctxt, prefix, ns_uri);\n}"
+}

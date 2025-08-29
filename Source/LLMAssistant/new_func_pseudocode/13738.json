@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt20bad_array_new_lengthC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt20bad_array_new_lengthC1Ev(std::bad_array_new_length * this)",
+    "pseudocode": "std::bad_array_new_length *__cdecl std::bad_array_new_length::bad_array_new_length(std::bad_array_new_length *this)\n{\n  return std::bad_array_new_length::bad_array_new_length(this);\n}"
+}

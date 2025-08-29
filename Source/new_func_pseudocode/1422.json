@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController reloadModel]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesViewController reloadModel](DeviceSettingsMoviesViewController * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsMoviesViewController reloadModel](DeviceSettingsMoviesViewController *self, SEL a2)\n{\n  -[DeviceSettingsMoviesViewController loadMoviesModel](self, \"loadMoviesModel\");\n}"
+}

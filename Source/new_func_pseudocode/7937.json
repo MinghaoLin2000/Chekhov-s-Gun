@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyDisplayUUID",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyDisplayUUID()",
+    "pseudocode": "__int64 CGSCopyDisplayUUID()\n{\n  return _CGSCopyDisplayUUID();\n}"
+}

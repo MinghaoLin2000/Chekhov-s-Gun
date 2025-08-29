@@ -1,0 +1,5 @@
+$s19ControlCenterHelper28ConfirmTurnOffBluetoothAlertCMa
+__int64 type metadata accessor for ConfirmTurnOffBluetoothAlert()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_957CFADE9D3041A4B3214FF76A466F8828ConfirmTurnOffBluetoothAlert);
+}

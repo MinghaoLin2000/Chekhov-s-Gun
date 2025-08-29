@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileOutputStream path]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileOutputStream path](SFUFileOutputStream * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SFUFileOutputStream path](SFUFileOutputStream *self, SEL a2)\n{\n  return self->mPath;\n}"
+}

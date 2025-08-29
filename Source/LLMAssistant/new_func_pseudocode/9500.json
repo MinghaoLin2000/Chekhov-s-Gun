@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties updateDocumentUUIDAndPreserveShareUUID:preserveStableDocumentUUID:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSPDocumentProperties updateDocumentUUIDAndPreserveShareUUID:preserveStableDocumentUUID:](TSPDocumentProperties * self, SEL a2, bool a3, bool a4)",
+    "pseudocode": "void __cdecl -[TSPDocumentProperties updateDocumentUUIDAndPreserveShareUUID:preserveStableDocumentUUID:](\n        TSPDocumentProperties *self,\n        SEL a2,\n        bool a3,\n        bool a4)\n{\n  NSUUID *documentUUID; // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  -[TSPDocumentProperties updateDocumentUUID](self, \"updateDocumentUUID\");\n  if ( !a3 )\n    objc_storeStrong((id *)&self->_shareUUID, self->_documentUUID);\n  if ( !a4 )\n  {\n    documentUUID = self->_documentUUID;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_storeStrong((id *)&self->_stableDocumentUUID, documentUUID);\n  }\n}"
+}

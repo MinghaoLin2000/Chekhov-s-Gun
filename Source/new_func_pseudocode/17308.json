@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionRunner isRunning]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMRemoteActionRunner isRunning](AMRemoteActionRunner * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[AMRemoteActionRunner isRunning](AMRemoteActionRunner *self, SEL a2)\n{\n  AMRemoteActionRunner *v2; // x19\n  os_unfair_lock_s *p_stateLock; // x20\n\n  v2 = self;\n  p_stateLock = &self->__stateLock;\n  os_unfair_lock_lock(&self->__stateLock);\n  LOBYTE(v2) = (void *)-[AMRemoteActionRunner _state](v2, \"_state\") == (void *)1;\n  os_unfair_lock_unlock(p_stateLock);\n  return (char)v2;\n}"
+}

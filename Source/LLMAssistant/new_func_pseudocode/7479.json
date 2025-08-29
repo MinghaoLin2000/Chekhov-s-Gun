@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV8addOwner_10connectionys5Int32V_AA13CGSConnectionVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV8addOwner_10connectionys5Int32V_AA13CGSConnectionVtF(Swift::Int32 _, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall CGSSpace.addOwner(_:connection:)(Swift::Int32 _, EyeCandyGraphics::CGSConnection connection)\n{\n  __int64 v2; // x2\n\n  _CGSSpaceAddOwner(*(_QWORD *)&connection.cid, v2, *(_QWORD *)&_);\n}"
+}

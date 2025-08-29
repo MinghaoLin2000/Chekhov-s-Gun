@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetTagStructSuperBinary",
+    "function_argument_number": 0,
+    "function_signature": "_uarpAssetTagStructSuperBinary()",
+    "pseudocode": "int *uarpAssetTagStructSuperBinary()\n{\n  int *result; // x0\n\n  result = &dword_10002AC98;\n  dword_10002AC98 = 0;\n  return result;\n}"
+}

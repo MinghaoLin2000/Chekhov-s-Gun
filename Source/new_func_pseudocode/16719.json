@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUserNotificationReceiveResponse",
+    "function_argument_number": 3,
+    "function_signature": "_CFUserNotificationReceiveResponse(CFUserNotificationRef userNotification, CFTimeInterval timeout, CFOptionFlags * responseFlags)",
+    "pseudocode": "SInt32 __cdecl CFUserNotificationReceiveResponse(\n        CFUserNotificationRef userNotification,\n        CFTimeInterval timeout,\n        CFOptionFlags *responseFlags)\n{\n  return _CFUserNotificationReceiveResponse(userNotification, timeout, responseFlags);\n}"
+}

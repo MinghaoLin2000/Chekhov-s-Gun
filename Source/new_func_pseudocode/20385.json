@@ -1,0 +1,6 @@
+{
+    "function_name": "-[device_http_t initWithSessionURL:displayNameForCertTrust:]",
+    "function_argument_number": 3,
+    "function_signature": "-[device_http_t initWithSessionURL:displayNameForCertTrust:](int a1, int a2, id a3)",
+    "pseudocode": "device_http_t *__cdecl -[device_http_t initWithSessionURL:displayNameForCertTrust:](\n        device_http_t *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x20\n  device_http_t *v8; // x22\n  IPPSession *v9; // x0\n  IPPSession *session; // x8\n  NSURL *v11; // x0\n  NSURL *printerURL; // x8\n  objc_super v14; // [xsp+0h] [xbp-40h] BYREF\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v14.receiver = self;\n  v14.super_class = (Class)&OBJC_CLASS___device_http_t;\n  v8 = -[device_http_t init](&v14, \"init\");\n  if ( v8 )\n  {\n    v9 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"session\"));\n    session = v8->_session;\n    v8->_session = v9;\n    objc_release(session);\n    v11 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"url\"));\n    printerURL = v8->_printerURL;\n    v8->_printerURL = v11;\n    objc_release(printerURL);\n    objc_storeStrong((id *)&v8->_printerDisplayName, a4);\n    -[device_http_t _setupCredentials](v8, \"_setupCredentials\");\n  }\n  objc_release(v7);\n  objc_release(v6);\n  return v8;\n}"
+}

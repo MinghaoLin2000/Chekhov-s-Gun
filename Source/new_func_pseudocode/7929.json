@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionIntersectsRegion",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionIntersectsRegion()",
+    "pseudocode": "__int64 CGRegionIntersectsRegion()\n{\n  return _CGRegionIntersectsRegion();\n}"
+}

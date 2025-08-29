@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf12StringPrintfEPKcz",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf12StringPrintfEPKcz(google::protobuf * this, const char * a2)",
+    "pseudocode": "__int64 *__usercall google::protobuf::StringPrintf@<X0>(\n        std::string *__return_ptr a1@<X8>,\n        google::protobuf *this@<X0>,\n        const char *a3@<X1>,\n        ...)\n{\n  va_list va; // [xsp+30h] [xbp+10h] BYREF\n\n  va_start(va, a3);\n  a1->__r_.__value_.__r.__words[0] = 0LL;\n  a1->__r_.__value_.__l.__size_ = 0LL;\n  a1->__r_.__value_.__r.__words[2] = 0LL;\n  return (__int64 *)google::protobuf::StringAppendV(a1, (char *)this, va);\n}"
+}

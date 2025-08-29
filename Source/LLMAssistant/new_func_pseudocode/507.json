@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController reloadModel]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTVShowsViewController reloadModel](DeviceSettingsTVShowsViewController * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsTVShowsViewController reloadModel](DeviceSettingsTVShowsViewController *self, SEL a2)\n{\n  -[DeviceSettingsTVShowsViewController loadTVShowsModel](self, \"loadTVShowsModel\");\n}"
+}

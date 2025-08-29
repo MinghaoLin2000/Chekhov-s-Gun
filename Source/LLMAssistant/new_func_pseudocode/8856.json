@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService14JSClientObject .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService14JSClientObject .cxx_destruct](_TtC34AppleMediaServicesUIDynamicService14JSClientObject * self, SEL a2)",
+    "pseudocode": "void __cdecl -[JSClientObject .cxx_destruct](_TtC34AppleMediaServicesUIDynamicService14JSClientObject *self, SEL a2)\n{\n  __int64 v3; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_release(*(id *)((char *)&self->super.isa\n                     + OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService14JSClientObject_clientInfo));\n  swift_bridgeObjectRelease(*(_QWORD *)&self->clientInfo[OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService14JSClientObject_mediaClient]);\n  v3 = *(_QWORD *)&self->clientInfo[OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService14JSClientObject_metricsContext];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_bridgeObjectRelease(v3);\n}"
+}

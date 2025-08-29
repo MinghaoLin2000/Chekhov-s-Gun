@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf13StringAppendFEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKcz",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf13StringAppendFEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKcz(char * a2, std::string * a1)",
+    "pseudocode": "__int64 google::protobuf::StringAppendF(std::string *a1, char *a2, ...)\n{\n  va_list va; // [xsp+20h] [xbp+10h] BYREF\n\n  va_start(va, a2);\n  return google::protobuf::StringAppendV(a1, a2, va);\n}"
+}

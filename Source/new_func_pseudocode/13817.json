@@ -1,0 +1,6 @@
+{
+    "function_name": "_fsync",
+    "function_argument_number": 1,
+    "function_signature": "_fsync(int a1)",
+    "pseudocode": "int __cdecl fsync(int a1)\n{\n  return _fsync(a1);\n}"
+}

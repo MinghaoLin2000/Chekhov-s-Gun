@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCopyAbsoluteURL",
+    "function_argument_number": 1,
+    "function_signature": "_CFURLCopyAbsoluteURL(CFURLRef relativeURL)",
+    "pseudocode": "CFURLRef __cdecl CFURLCopyAbsoluteURL(CFURLRef relativeURL)\n{\n  return _CFURLCopyAbsoluteURL(relativeURL);\n}"
+}

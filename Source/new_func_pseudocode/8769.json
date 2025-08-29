@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreCfd",
+    "function_argument_number": 0,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreCfd()",
+    "pseudocode": "__int64 DynamicAccountsStore.deinit()\n{\n  __int64 v0; // x20\n\n  objc_release(*(id *)(v0 + 16));\n  objc_release(*(id *)(v0 + 24));\n  swift_release(*(_QWORD *)(v0 + 32));\n  return v0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMActionLoaderServiceXPCInterface",
+    "function_argument_number": 0,
+    "function_signature": "_AMActionLoaderServiceXPCInterface()",
+    "pseudocode": "__int64 AMActionLoaderServiceXPCInterface()\n{\n  return _AMActionLoaderServiceXPCInterface();\n}"
+}

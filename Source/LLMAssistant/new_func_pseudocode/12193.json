@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io9TokenizerD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io9TokenizerD1Ev(google::protobuf::io::Tokenizer * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::io::Tokenizer::~Tokenizer(google::protobuf::io::Tokenizer *this)\n{\n  __ZN6google8protobuf2io9TokenizerD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateWithString",
+    "function_argument_number": 3,
+    "function_signature": "_CFURLCreateWithString(CFAllocatorRef allocator, CFStringRef URLString, CFURLRef baseURL)",
+    "pseudocode": "CFURLRef __cdecl CFURLCreateWithString(CFAllocatorRef allocator, CFStringRef URLString, CFURLRef baseURL)\n{\n  return _CFURLCreateWithString(allocator, URLString, baseURL);\n}"
+}

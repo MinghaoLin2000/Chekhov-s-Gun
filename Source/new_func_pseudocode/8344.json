@@ -1,0 +1,6 @@
+{
+    "function_name": "_ASDLogHandleForCategory",
+    "function_argument_number": 1,
+    "function_signature": "_ASDLogHandleForCategory(__int64 a1)",
+    "pseudocode": "id __fastcall ASDLogHandleForCategory(__int64 a1)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( qword_100015830 != -1 )\n    dispatch_once(&qword_100015830, &stru_100010AB8);\n  v2 = (void *)qword_1000156D8[a1];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v2);\n}"
+}

@@ -1,0 +1,5 @@
+$s19ControlCenterHelper24WiFiHelperClientDelegateCMa
+__int64 type metadata accessor for WiFiHelperClientDelegate()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_F14D4C22208E7A416F4CC2A655BC16A024WiFiHelperClientDelegate);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipEntry setCRC:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipEntry setCRC:](TSUZipEntry * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[TSUZipEntry setCRC:](TSUZipEntry *self, SEL a2, unsigned int a3)\n{\n  self->_CRC = a3;\n}"
+}

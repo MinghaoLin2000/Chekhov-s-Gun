@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageGetHeight",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageGetHeight(CGImageRef image)",
+    "pseudocode": "size_t __cdecl CGImageGetHeight(CGImageRef image)\n{\n  return _CGImageGetHeight(image);\n}"
+}

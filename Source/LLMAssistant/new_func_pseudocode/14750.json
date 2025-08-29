@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UINSSystemPreferencesSettingsManager .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[UINSSystemPreferencesSettingsManager .cxx_destruct](UINSSystemPreferencesSettingsManager * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UINSSystemPreferencesSettingsManager .cxx_destruct](UINSSystemPreferencesSettingsManager *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_settings, 0LL);\n}"
+}

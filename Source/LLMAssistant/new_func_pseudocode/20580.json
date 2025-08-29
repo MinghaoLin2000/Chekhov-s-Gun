@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentRelease(CGPDFDocumentRef document)",
+    "pseudocode": "void __cdecl CGPDFDocumentRelease(CGPDFDocumentRef document)\n{\n  _CGPDFDocumentRelease(document);\n}"
+}

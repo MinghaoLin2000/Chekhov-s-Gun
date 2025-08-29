@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf14DynamicMessage3NewEPNS0_5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf14DynamicMessage3NewEPNS0_5ArenaE(google::protobuf::DynamicMessage * this, google::protobuf::Arena * a2)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::DynamicMessage::New(\n        google::protobuf::DynamicMessage *this,\n        google::protobuf::Arena *a2)\n{\n  _QWORD *v4; // x19\n  int *v5; // x21\n\n  if ( a2 )\n  {\n    v4 = (_QWORD *)sub_10003B5B0(a2);\n    bzero(v4, **((int **)this + 2));\n    v5 = (int *)*((_QWORD *)this + 2);\n  }\n  else\n  {\n    v4 = operator new(**((int **)this + 2));\n    v5 = (int *)*((_QWORD *)this + 2);\n    bzero(v4, *v5);\n  }\n  *v4 = off_1001D96E8;\n  v4[1] = a2;\n  v4[2] = v5;\n  *((_DWORD *)v4 + 6) = 0;\n  google::protobuf::DynamicMessage::SharedCtor((google::protobuf::DynamicMessage *)v4, 1);\n  return v4;\n}"
+}

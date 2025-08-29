@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24MenuSelectionCoordinatorCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24MenuSelectionCoordinatorCMa()",
+    "pseudocode": "__int64 type metadata accessor for MenuSelectionCoordinator()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC17ControlCenterCore24MenuSelectionCoordinator);\n}"
+}

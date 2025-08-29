@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCHmac",
+    "function_argument_number": 6,
+    "function_signature": "_CCHmac(CCHmacAlgorithm algorithm, const void * key, size_t keyLength, const void * data, size_t dataLength, void * macOut)",
+    "pseudocode": "void __cdecl CCHmac(\n        CCHmacAlgorithm algorithm,\n        const void *key,\n        size_t keyLength,\n        const void *data,\n        size_t dataLength,\n        void *macOut)\n{\n  _CCHmac(algorithm, key, keyLength, data, dataLength, macOut);\n}"
+}

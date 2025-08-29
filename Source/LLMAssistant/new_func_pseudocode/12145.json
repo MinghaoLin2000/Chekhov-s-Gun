@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10TextFormat6ParserD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf10TextFormat6ParserD1Ev(google::protobuf::TextFormat::Parser * this)",
+    "pseudocode": "void __fastcall google::protobuf::TextFormat::Parser::~Parser(google::protobuf::TextFormat::Parser *this)\n{\n  ;\n}"
+}

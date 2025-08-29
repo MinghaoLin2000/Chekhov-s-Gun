@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12DatabaseDataD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12DatabaseDataD0Ev(TSP::DatabaseData * this)",
+    "pseudocode": "void __fastcall TSP::DatabaseData::~DatabaseData(TSP::DatabaseData *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::DatabaseData::~DatabaseData(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C40D4912B22LL);\n}"
+}

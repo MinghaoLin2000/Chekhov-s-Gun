@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/SandboxedServiceRunner.xpc/Contents/MacOS/SandboxedServiceRunner
+
+Service Exported Protocols:
+
+Service Entitlements:

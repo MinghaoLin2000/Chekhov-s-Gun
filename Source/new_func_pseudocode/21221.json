@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition17RequestEndMetricsC17cpuRealTimeFactorSfvpfi",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition17RequestEndMetricsC17cpuRealTimeFactorSfvpfi()",
+    "pseudocode": "double variable initialization expression of RequestEndMetrics.cpuRealTimeFactor()\n{\n  return 0.0;\n}"
+}

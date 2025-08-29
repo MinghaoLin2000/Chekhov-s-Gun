@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService13JetpackLoaderC9LoadErrorOwxx",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService13JetpackLoaderC9LoadErrorOwxx()",
+    "pseudocode": "void destroy for JetpackLoader.LoadError()\n{\n  ;\n}"
+}

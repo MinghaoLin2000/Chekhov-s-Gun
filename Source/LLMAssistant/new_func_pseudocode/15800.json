@@ -1,0 +1,6 @@
+{
+    "function_name": "j__uarpPlatformAssetPullAllMetaData",
+    "function_argument_number": 0,
+    "function_signature": "j__uarpPlatformAssetPullAllMetaData()",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall j__uarpPlatformAssetPullAllMetaData()\n{\n  return uarpPlatformAssetPullAllMetaData();\n}"
+}

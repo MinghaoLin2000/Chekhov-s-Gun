@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t deviceID]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t deviceID](lite_printer_t * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[lite_printer_t deviceID](lite_printer_t *self, SEL a2)\n{\n  return (NSString *)-[PKPrinterDescription deviceID](self->_printerDescription, \"deviceID\");\n}"
+}

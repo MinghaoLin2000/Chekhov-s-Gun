@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZZN6google8protobuf8internal16OnShutdownDeleteINSt3__13setINS3_12basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_4lessISA_EENS8_ISA_EEEEEEPT_SG_ENUlPKvE_8__invokeESI_",
+    "function_argument_number": 1,
+    "function_signature": "__ZZN6google8protobuf8internal16OnShutdownDeleteINSt3__13setINS3_12basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_4lessISA_EENS8_ISA_EEEEEEPT_SG_ENUlPKvE_8__invokeESI_(__int64 result)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::OnShutdownDelete<std::set<std::string>>(std::set<std::string> *)::{lambda(void const*)#1}::__invoke(\n        __int64 result)\n{\n  __int64 v1; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( result )\n  {\n    v1 = result;\n    sub_10009BDBC(result, *(_QWORD *)(result + 8));\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return operator delete(v1, 0x1020C4062D53EE8LL);\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_remote_connection_set_event_handler",
+    "function_argument_number": 0,
+    "function_signature": "_xpc_remote_connection_set_event_handler()",
+    "pseudocode": "__int64 xpc_remote_connection_set_event_handler()\n{\n  return _xpc_remote_connection_set_event_handler();\n}"
+}

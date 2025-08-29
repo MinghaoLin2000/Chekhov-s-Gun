@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController setIsSiriIdleAndQuiet:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController setIsSiriIdleAndQuiet:](SiriNCAlertViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController setIsSiriIdleAndQuiet:](SiriNCAlertViewController *self, SEL a2, bool a3)\n{\n  self->_isSiriIdleAndQuiet = a3;\n}"
+}

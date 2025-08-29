@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPFileManager linkOrCloneItemAtURL:toURL:canLink:error:]",
+    "function_argument_number": 4,
+    "function_signature": "+[TSPFileManager linkOrCloneItemAtURL:toURL:canLink:error:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nbool __cdecl +[TSPFileManager linkOrCloneItemAtURL:toURL:canLink:error:](id a1, SEL a2, id a3, id a4, bool a5, id *a6)\n{\n  _BOOL8 v7; // x20\n  id v10; // x24\n  id v11; // x21\n  NSFileManager *v12; // x23\n  _BOOL8 v13; // x25\n\n  v7 = a5;\n  v10 = objc_retain(a4);\n  v11 = objc_retain(a3);\n  v12 = objc_retainAutoreleasedReturnValue(+[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"));\n  v13 = -[NSFileManager tsu_canCloneItemAtURL:toURL:](v12, \"tsu_canCloneItemAtURL:toURL:\", v11, v10);\n  objc_release(v12);\n  LOBYTE(a6) = (unsigned __int8)objc_msgSend(\n                                  a1,\n                                  \"linkOrCloneItemAtURL:toURL:canLink:canClone:error:\",\n                                  v11,\n                                  v10,\n                                  v7,\n                                  v13,\n                                  a6);\n  objc_release(v10);\n  objc_release(v11);\n  return (char)a6;\n}"
+}

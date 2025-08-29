@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointQueryStagedFirmwareVersion",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointQueryStagedFirmwareVersion(_QWORD * a1, __int64 a2, _QWORD * a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointQueryStagedFirmwareVersion(_QWORD *a1, __int64 a2, _QWORD *a3)\n{\n  int v4; // [xsp+Ch] [xbp-4h] BYREF\n\n  v4 = 0;\n  if ( a2 )\n    v4 = *(_DWORD *)(a2 + 48);\n  return UARPLayer2StagedFirmwareVersion2(a1, (__int64)&v4, a3);\n}"
+}

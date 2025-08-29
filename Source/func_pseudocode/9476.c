@@ -1,0 +1,14 @@
+-[TSPSnappyComponentWriteChannel close]
+void __cdecl -[TSPSnappyComponentWriteChannel close](TSPSnappyComponentWriteChannel *self, SEL a2)
+{
+  dispatch_queue_s *writeQueue; // x8
+  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF
+
+  writeQueue = (dispatch_queue_s *)self->_writeQueue;
+  block[0] = _NSConcreteStackBlock;
+  block[1] = 3254779904LL;
+  block[2] = sub_1000342B8;
+  block[3] = &unk_1001D1698;
+  block[4] = self;
+  dispatch_sync(writeQueue, block);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t setReadyTime:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_job_t setReadyTime:](lite_job_t * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[lite_job_t setReadyTime:](lite_job_t *self, SEL a2, signed __int64 a3)\n{\n  self->_readyTime = a3;\n}"
+}

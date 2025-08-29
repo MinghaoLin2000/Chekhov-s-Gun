@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal17VarintParseSlow32EPKcj",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal17VarintParseSlow32EPKcj(google::protobuf::internal * this, const char * a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::VarintParseSlow32(google::protobuf::internal *this, const char *a2)\n{\n  __int64 result; // x0\n  __int64 v4; // x9\n\n  result = (__int64)this + 3;\n  v4 = -21LL;\n  while ( 1 )\n  {\n    LODWORD(a2) = ((*(unsigned __int8 *)(result - 1) - 1) << (v4 + 35)) + (_DWORD)a2;\n    if ( (*(char *)(result - 1) & 0x80000000) == 0 )\n      break;\n    ++result;\n    v4 += 7LL;\n    if ( !v4 )\n    {\n      while ( *((char *)this + v4 + 5) < 0 )\n      {\n        result = 0LL;\n        if ( ++v4 == 5 )\n          return result;\n      }\n      return (__int64)this + v4 + 6;\n    }\n  }\n  return result;\n}"
+}

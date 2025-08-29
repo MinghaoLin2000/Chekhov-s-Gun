@@ -1,0 +1,6 @@
+{
+    "function_name": "_CMPhotoReleaseHardwareResources",
+    "function_argument_number": 0,
+    "function_signature": "_CMPhotoReleaseHardwareResources()",
+    "pseudocode": "__int64 CMPhotoReleaseHardwareResources()\n{\n  return _CMPhotoReleaseHardwareResources();\n}"
+}

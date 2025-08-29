@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup23MarkupDisplayMessageKeyOwxx",
+    "function_argument_number": 0,
+    "function_signature": "$s13DisplayMarkup23MarkupDisplayMessageKeyOwxx()",
+    "pseudocode": "void destroy for MarkupDisplayMessageKey()\n{\n  ;\n}"
+}

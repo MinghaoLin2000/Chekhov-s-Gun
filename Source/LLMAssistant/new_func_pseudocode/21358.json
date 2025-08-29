@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition19EARSpeechRecognizer isSpeechProfileUsedWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC22localspeechrecognition19EARSpeechRecognizer isSpeechProfileUsedWithReply:](_TtC22localspeechrecognition19EARSpeechRecognizer * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EARSpeechRecognizer isSpeechProfileUsedWithReply:](\n        _TtC22localspeechrecognition19EARSpeechRecognizer *self,\n        SEL a2,\n        id a3)\n{\n  sub_100020408((int)self, (int)a2, a3);\n}"
+}

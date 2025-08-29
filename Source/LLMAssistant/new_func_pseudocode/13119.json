@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBacktrace dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUBacktrace dealloc](TSUBacktrace * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUBacktrace dealloc](TSUBacktrace *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  free(self->_callstack);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___TSUBacktrace;\n  -[TSUBacktrace dealloc](&v3, \"dealloc\");\n}"
+}

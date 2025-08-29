@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_data_get_length",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_data_get_length(xpc_object_t xdata)",
+    "pseudocode": "size_t __cdecl xpc_data_get_length(xpc_object_t xdata)\n{\n  return _xpc_data_get_length(xdata);\n}"
+}

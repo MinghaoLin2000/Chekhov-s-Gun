@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryQueryAssetLength",
+    "function_argument_number": 2,
+    "function_signature": "_UARPSuperBinaryQueryAssetLength(int a1, int a2)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryQueryAssetLength(int a1, int a2)\n{\n  __int64 result; // x0\n  _OWORD __dst[3]; // [xsp+10h] [xbp-40h] BYREF\n\n  memset(__dst, 0, 44);\n  result = uarpPlatformEndpointAssetGetBytesAtOffset(a1, 0, a2, __dst);\n  if ( !(_DWORD)result )\n    return 11LL;\n  return result;\n}"
+}

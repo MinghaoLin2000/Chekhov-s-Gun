@@ -1,0 +1,6 @@
+{
+    "function_name": "_notify_set_state",
+    "function_argument_number": 2,
+    "function_signature": "_notify_set_state(int token, uint64_t state64)",
+    "pseudocode": "uint32_t __cdecl notify_set_state(int token, uint64_t state64)\n{\n  return _notify_set_state(token, state64);\n}"
+}

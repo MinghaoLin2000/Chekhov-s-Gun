@@ -1,0 +1,6 @@
+{
+    "function_name": "_memcmp",
+    "function_argument_number": 3,
+    "function_signature": "_memcmp(const void * __s1, const void * __s2, size_t __n)",
+    "pseudocode": "int __cdecl memcmp(const void *__s1, const void *__s2, size_t __n)\n{\n  return _memcmp(__s1, __s2, __n);\n}"
+}

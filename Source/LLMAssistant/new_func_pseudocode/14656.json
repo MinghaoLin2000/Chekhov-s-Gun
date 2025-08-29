@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$tsu_stringByIncrementingCounterAfterDuplicateTitleModifierWithLocalizedCopyString:firstCopyFormatString:generalCopyFormatString:numberFormatter:uniquenessTest:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$tsu_stringByIncrementingCounterAfterDuplicateTitleModifierWithLocalizedCopyString:firstCopyFormatString:generalCopyFormatString:numberFormatter:uniquenessTest:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_tsu_stringByIncrementingCounterAfterDuplicateTitleModifierWithLocalizedCopyString_firstCopyFormatString_generalCopyFormatString_numberFormatter_uniquenessTest_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(\n           a1,\n           \"tsu_stringByIncrementingCounterAfterDuplicateTitleModifierWithLocalizedCopyString:firstCopyFormatString:gener\"\n           \"alCopyFormatString:numberFormatter:uniquenessTest:\");\n}"
+}

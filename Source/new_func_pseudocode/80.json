@@ -1,0 +1,6 @@
+{
+    "function_name": "j__swift_allocateGenericClassMetadata",
+    "function_argument_number": 0,
+    "function_signature": "j__swift_allocateGenericClassMetadata()",
+    "pseudocode": "// attributes: thunk\n__int64 j__swift_allocateGenericClassMetadata()\n{\n  return swift_allocateGenericClassMetadata();\n}"
+}

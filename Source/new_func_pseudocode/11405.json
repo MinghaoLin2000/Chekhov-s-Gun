@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Arena18CreateMaybeMessageINS0_12OneofOptionsEJEEEPT_PS1_DpOT0_",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf5Arena18CreateMaybeMessageINS0_12OneofOptionsEJEEEPT_PS1_DpOT0_(__int64 a1)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::Arena::CreateMaybeMessage<google::protobuf::OneofOptions>(__int64 a1)\n{\n  return sub_1000B80E0(a1);\n}"
+}

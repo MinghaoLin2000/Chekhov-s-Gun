@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextGetWidth",
+    "function_argument_number": 1,
+    "function_signature": "_CGBitmapContextGetWidth(CGContextRef context)",
+    "pseudocode": "size_t __cdecl CGBitmapContextGetWidth(CGContextRef context)\n{\n  return _CGBitmapContextGetWidth(context);\n}"
+}

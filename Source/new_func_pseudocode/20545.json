@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGColorSpaceRelease(CGColorSpaceRef space)",
+    "pseudocode": "void __cdecl CGColorSpaceRelease(CGColorSpaceRef space)\n{\n  _CGColorSpaceRelease(space);\n}"
+}

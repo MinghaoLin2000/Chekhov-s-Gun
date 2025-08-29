@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController setDeviceSyncPrefs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsViewController setDeviceSyncPrefs:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController setDeviceSyncPrefs:](DeviceSettingsViewController *self, SEL a2, id a3)\n{\n  id v4; // x20\n  AMPDeviceSyncPrefs *v5; // x21\n  objc_super v6; // [xsp+0h] [xbp-30h] BYREF\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  objc_release(v5);\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___DeviceSettingsViewController;\n  -[DeviceViewController setDeviceSyncPrefs:](&v6, \"setDeviceSyncPrefs:\", v4);\n  objc_release(v4);\n  if ( v5 )\n    -[DeviceViewController revert](self, \"revert\");\n  -[DeviceSettingsViewController setWarnedAutomaticUpdate:](self, \"setWarnedAutomaticUpdate:\", 0LL);\n}"
+}

@@ -1,0 +1,6 @@
+$s9SPIHelper25GlobalPermissionViewModelC24CanMakeChangesOrViewOnlyOwst
+// attributes: thunk
+__int64 storeEnumTagSinglePayload for GlobalPermissionViewModel.CanMakeChangesOrViewOnly()
+{
+  return _s9SPIHelper25GlobalPermissionViewModelC24CanMakeChangesOrViewOnlyOwst_0();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_kqueue",
+    "function_argument_number": 0,
+    "function_signature": "_kqueue()",
+    "pseudocode": "int kqueue(void)\n{\n  return _kqueue();\n}"
+}

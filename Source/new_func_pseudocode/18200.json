@@ -1,0 +1,6 @@
+{
+    "function_name": "_write",
+    "function_argument_number": 3,
+    "function_signature": "_write(int __fd, const void * __buf, size_t __nbyte)",
+    "pseudocode": "ssize_t __cdecl write(int __fd, const void *__buf, size_t __nbyte)\n{\n  return _write(__fd, __buf, __nbyte);\n}"
+}

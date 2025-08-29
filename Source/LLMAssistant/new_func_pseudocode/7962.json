@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSMoveWindow",
+    "function_argument_number": 0,
+    "function_signature": "_CGSMoveWindow()",
+    "pseudocode": "__int64 CGSMoveWindow()\n{\n  return _CGSMoveWindow();\n}"
+}

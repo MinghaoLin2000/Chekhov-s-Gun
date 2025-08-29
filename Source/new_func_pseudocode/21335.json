@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition32EARModelContextDelegateInterfaceCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s22localspeechrecognition32EARModelContextDelegateInterfaceCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for EARModelContextDelegateInterface(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100063F28;\n  if ( !qword_100063F28 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for EARModelContextDelegateInterface);\n  return result;\n}"
+}

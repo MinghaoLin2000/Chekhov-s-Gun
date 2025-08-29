@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN25SandboxExtensionContainer25CompilerSandboxExtensionsEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN25SandboxExtensionContainer25CompilerSandboxExtensionsEv(SandboxExtensionContainer * this)",
+    "pseudocode": "__int128 *__fastcall SandboxExtensionContainer::CompilerSandboxExtensions(SandboxExtensionContainer *this)\n{\n  if ( (atomic_load_explicit(\n          (atomic_uchar *volatile)&`guard variable for'SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton,\n          memory_order_acquire) & 1) == 0\n    && __cxa_guard_acquire(&`guard variable for'SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton) )\n  {\n    xmmword_100008010 = 0u;\n    unk_100008020 = 0u;\n    SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton = 0u;\n    __cxa_atexit(\n      (void (__fastcall *)(void *))SandboxExtensionContainer::~SandboxExtensionContainer,\n      &SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton,\n      (void *)&_mh_execute_header);\n    __cxa_guard_release(&`guard variable for'SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton);\n  }\n  return &SandboxExtensionContainer::CompilerSandboxExtensions(void)::singleton;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setOutputImageSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setOutputImageSize:](PAMediaConversionServiceImageConversionJob * self, SEL a2, CGSize a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setOutputImageSize:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        CGSize a3)\n{\n  CGSize v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3 = a3;\n  objc_copyStruct(&self->_outputImageSize, &v3, 16LL, 1, 0);\n}"
+}

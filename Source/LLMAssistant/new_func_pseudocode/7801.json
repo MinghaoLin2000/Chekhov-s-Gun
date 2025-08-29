@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV8isMirrorSbvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV8isMirrorSbvg(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGDisplay.isMirror.getter(__int64 a1)\n{\n  __int64 v1; // x0\n\n  v1 = CGSDisplayStatusQuery(a1, 9LL);\n  return sub_100019284(v1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGGetDisplaysWithRect",
+    "function_argument_number": 4,
+    "function_signature": "_CGGetDisplaysWithRect(uint32_t maxDisplays, CGDirectDisplayID * displays, uint32_t * matchingDisplayCount, CGRect rect)",
+    "pseudocode": "CGError __cdecl CGGetDisplaysWithRect(\n        CGRect rect,\n        uint32_t maxDisplays,\n        CGDirectDisplayID *displays,\n        uint32_t *matchingDisplayCount)\n{\n  return _CGGetDisplaysWithRect(rect, maxDisplays, displays, matchingDisplayCount);\n}"
+}

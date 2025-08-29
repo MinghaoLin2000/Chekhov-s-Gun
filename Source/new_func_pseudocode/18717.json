@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore8VibrancyOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore8VibrancyOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for Vibrancy()\n{\n  return &type metadata for Vibrancy;\n}"
+}

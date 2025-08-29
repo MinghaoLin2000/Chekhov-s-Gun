@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_KHSoftwareUpdateControllerContext setProgress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_KHSoftwareUpdateControllerContext setProgress:](_KHSoftwareUpdateControllerContext * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[_KHSoftwareUpdateControllerContext setProgress:](\n        _KHSoftwareUpdateControllerContext *self,\n        SEL a2,\n        double a3)\n{\n  self->_progress = a3;\n}"
+}

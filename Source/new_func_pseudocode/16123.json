@@ -1,0 +1,6 @@
+{
+    "function_name": "_createPowerAssertion",
+    "function_argument_number": 0,
+    "function_signature": "_createPowerAssertion()",
+    "pseudocode": "__int64 createPowerAssertion()\n{\n  return _createPowerAssertion();\n}"
+}

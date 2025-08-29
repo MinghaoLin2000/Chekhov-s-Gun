@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_dynamicCast",
+    "function_argument_number": 0,
+    "function_signature": "_swift_dynamicCast()",
+    "pseudocode": "__int64 swift_dynamicCast()\n{\n  return _swift_dynamicCast();\n}"
+}

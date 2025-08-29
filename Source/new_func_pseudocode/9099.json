@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPSnappyReadChannel dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPSnappyReadChannel dealloc](TSPSnappyReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPSnappyReadChannel dealloc](TSPSnappyReadChannel *self, SEL a2)\n{\n  objc_super v3; // [xsp+10h] [xbp-20h] BYREF\n\n  -[TSPSnappyReadChannel close](self, \"close\");\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___TSPSnappyReadChannel;\n  -[TSPSnappyReadChannel dealloc](&v3, \"dealloc\");\n}"
+}

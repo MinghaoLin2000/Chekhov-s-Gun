@@ -1,0 +1,6 @@
+{
+    "function_name": "-[preflightInfo setInternalBuild:]",
+    "function_argument_number": 3,
+    "function_signature": "-[preflightInfo setInternalBuild:](preflightInfo * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[preflightInfo setInternalBuild:](preflightInfo *self, SEL a2, bool a3)\n{\n  self->internalBuild = a3;\n}"
+}

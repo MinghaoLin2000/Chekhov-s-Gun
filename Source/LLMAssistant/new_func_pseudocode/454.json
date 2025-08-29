@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSImage glyphImageNamed:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSImage glyphImageNamed:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl +[NSImage glyphImageNamed:](id a1, SEL a2, id a3)\n{\n  id v3; // x19\n  NSImage *v4; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retain(a3);\n  v4 = objc_retainAutoreleasedReturnValue(+[NSImage _imageWithSystemSymbolName:](&OBJC_CLASS___NSImage, \"_imageWithSystemSymbolName:\", v3));\n  if ( !v4 )\n    v4 = objc_retainAutoreleasedReturnValue(+[NSImage imageNamed:](&OBJC_CLASS___NSImage, \"imageNamed:\", v3));\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

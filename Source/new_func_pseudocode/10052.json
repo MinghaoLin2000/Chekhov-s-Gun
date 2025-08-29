@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP21ObjectStateIdentifier12hasDataStateEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP21ObjectStateIdentifier12hasDataStateEv(TSP::ObjectStateIdentifier * this)",
+    "pseudocode": "__int64 __fastcall TSP::ObjectStateIdentifier::hasDataState(TSP::ObjectStateIdentifier *this)\n{\n  return *(unsigned __int8 *)this;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf4util6StatusC2ENS1_5error4CodeENS0_11StringPieceE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf4util6StatusC2ENS1_5error4CodeENS0_11StringPieceE(__int64 a1, int a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::util::Status::Status(__int64 a1, int a2, __int64 a3, __int64 a4)\n{\n  __int64 v5; // x21\n  __int128 v7; // [xsp+8h] [xbp-48h] BYREF\n  __int64 v8; // [xsp+18h] [xbp-38h]\n  _QWORD v9[2]; // [xsp+20h] [xbp-30h] BYREF\n\n  v9[0] = a3;\n  v9[1] = a4;\n  *(_DWORD *)a1 = a2;\n  *(_QWORD *)(a1 + 8) = 0LL;\n  v5 = a1 + 8;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  *(_QWORD *)(a1 + 24) = 0LL;\n  if ( a2 )\n  {\n    sub_1000967C4(&v7, v9);\n    if ( *(char *)(a1 + 31) < 0 )\n      operator delete(*(void **)v5);\n    *(_OWORD *)v5 = v7;\n    *(_QWORD *)(v5 + 16) = v8;\n  }\n  return a1;\n}"
+}

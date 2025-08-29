@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_value_t copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_value_t copyWithZone:](ipp_value_t * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[ipp_value_t copyWithZone:](ipp_value_t *self, SEL a2, _NSZone *a3)\n{\n  id *v4; // x20\n\n  v4 = (id *)objc_alloc_init((Class)objc_opt_class(self, a2));\n  objc_storeStrong(v4 + 1, self->x_payload);\n  return v4;\n}"
+}

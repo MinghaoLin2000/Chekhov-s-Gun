@@ -1,0 +1,4 @@
+@protocol SCNSceneLoaderProtocol
+- (void)loadSceneAtURL:(NSURL *)arg1 options:(NSDictionary *)arg2 withReply:(void (^)(NSData *, NSError *))arg3;
+- (void)consumeExtensions:(NSArray *)arg1;
+@end

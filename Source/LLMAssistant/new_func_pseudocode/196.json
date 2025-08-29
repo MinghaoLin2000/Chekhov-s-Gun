@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_enumerationMutation",
+    "function_argument_number": 1,
+    "function_signature": "_objc_enumerationMutation(id obj)",
+    "pseudocode": "void __cdecl objc_enumerationMutation(id obj)\n{\n  _objc_enumerationMutation(obj);\n}"
+}

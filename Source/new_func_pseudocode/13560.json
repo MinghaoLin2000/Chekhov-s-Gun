@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUMutableLinkedPointerSet init](TSUMutableLinkedPointerSet * self, SEL a2)",
+    "pseudocode": "TSUMutableLinkedPointerSet *__cdecl -[TSUMutableLinkedPointerSet init](TSUMutableLinkedPointerSet *self, SEL a2)\n{\n  TSUMutableLinkedPointerSet *v2; // x19\n  CFMutableDictionaryRef Mutable; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___TSUMutableLinkedPointerSet;\n  v2 = -[TSUMutableLinkedPointerSet init](&v5, \"init\");\n  if ( v2 )\n  {\n    Mutable = CFDictionaryCreateMutable(0LL, 0LL, 0LL, &kCFTypeDictionaryValueCallBacks);\n    v2->mHead = 0LL;\n    v2->mTail = 0LL;\n    v2->mDictionary = Mutable;\n  }\n  return v2;\n}"
+}

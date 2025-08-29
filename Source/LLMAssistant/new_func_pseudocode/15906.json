@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetRescind",
+    "function_argument_number": 3,
+    "function_signature": "_uarpAssetRescind(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpAssetRescind(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x0\n  __int64 v7; // x22\n  __int64 v8; // x23\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v6 = uarpAllocPrepareTransmitBuffer2(a1, a2, 12LL, 8LL, 1LL);\n  if ( !v6 )\n    return 11LL;\n  v7 = v6;\n  v8 = *(_QWORD *)(v6 + 16);\n  *(_WORD *)(v8 + 6) = uarpHtons(a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpTransmitBuffer2(a1, a2, v7);\n}"
+}

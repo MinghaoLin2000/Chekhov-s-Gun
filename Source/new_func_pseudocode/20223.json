@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_value_t setCollection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_value_t setCollection:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[ipp_value_t setCollection:](ipp_value_t *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->x_payload, a3);\n}"
+}

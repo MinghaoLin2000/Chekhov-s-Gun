@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULogHelper lastThrottleCheck]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSULogHelper lastThrottleCheck](TSULogHelper * self, SEL a2)",
+    "pseudocode": "NSDate *__cdecl -[TSULogHelper lastThrottleCheck](TSULogHelper *self, SEL a2)\n{\n  return (NSDate *)objc_getProperty(self, a2, 16LL, 1);\n}"
+}

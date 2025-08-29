@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionTransaction updateInitialPayloadUserName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IPPSessionTransaction updateInitialPayloadUserName:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[IPPSessionTransaction updateInitialPayloadUserName:](IPPSessionTransaction *self, SEL a2, id a3)\n{\n  id v5; // x19\n  ipp_request_t *initialRequest; // x20\n  NSString *v7; // x21\n  _BYTE v8[24]; // [xsp+8h] [xbp-38h] BYREF\n\n  v5 = objc_retain(a3);\n  if ( v5 )\n  {\n    initialRequest = self->_initialRequest;\n    v7 = objc_retainAutoreleasedReturnValue(NSStringFromSelector(a2));\n    sub_10000D940((int)v8, initialRequest);\n    objc_release(v7);\n    sub_100009AF0((int)v8, v5);\n    sub_10000DA08(v8);\n  }\n  objc_release(v5);\n}"
+}

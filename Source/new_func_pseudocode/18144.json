@@ -1,0 +1,6 @@
+{
+    "function_name": "_DADiskCreateFromVolumePath",
+    "function_argument_number": 3,
+    "function_signature": "_DADiskCreateFromVolumePath(CFAllocatorRef allocator, DASessionRef session, CFURLRef path)",
+    "pseudocode": "DADiskRef __cdecl DADiskCreateFromVolumePath(CFAllocatorRef allocator, DASessionRef session, CFURLRef path)\n{\n  return _DADiskCreateFromVolumePath(allocator, session, path);\n}"
+}

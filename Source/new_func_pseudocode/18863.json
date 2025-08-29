@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService _notificationCenterOpened]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService _notificationCenterOpened](SiriNCService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SiriNCService _notificationCenterOpened](SiriNCService *self, SEL a2)\n{\n  SiriUIDismissalOptions *v3; // x20\n  SiriNCAlertViewController *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  -[SiriNCService setNotificationCenterOpen:](self, \"setNotificationCenterOpen:\", 1LL);\n  v3 = objc_retainAutoreleasedReturnValue(\n         +[SiriUIDismissalOptions optionsWithDismissalReason:](\n           &OBJC_CLASS___SiriUIDismissalOptions,\n           \"optionsWithDismissalReason:\",\n           15LL));\n  if ( !-[SiriNCService breakoutState](self, \"breakoutState\") )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[SiriNCService alertViewController](self, \"alertViewController\"));\n    -[SiriNCAlertViewController dismissController:dismissalOptions:](\n      v4,\n      \"dismissController:dismissalOptions:\",\n      self,\n      v3);\n    objc_release(v4);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

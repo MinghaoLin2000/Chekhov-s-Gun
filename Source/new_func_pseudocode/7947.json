@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetConnectionPSN",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetConnectionPSN()",
+    "pseudocode": "__int64 CGSGetConnectionPSN()\n{\n  return _CGSGetConnectionPSN();\n}"
+}

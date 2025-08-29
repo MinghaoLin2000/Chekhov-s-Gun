@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAccessoryTransportToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAccessoryTransportToString()",
+    "pseudocode": "__int64 UARPAccessoryTransportToString()\n{\n  return _UARPAccessoryTransportToString();\n}"
+}

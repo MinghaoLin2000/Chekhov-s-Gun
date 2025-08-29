@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOServiceGetMatchingServices",
+    "function_argument_number": 3,
+    "function_signature": "_IOServiceGetMatchingServices(mach_port_t mainPort, CFDictionaryRef matching, io_iterator_t * existing)",
+    "pseudocode": "kern_return_t __cdecl IOServiceGetMatchingServices(\n        mach_port_t mainPort,\n        CFDictionaryRef matching,\n        io_iterator_t *existing)\n{\n  return _IOServiceGetMatchingServices(mainPort, matching, existing);\n}"
+}

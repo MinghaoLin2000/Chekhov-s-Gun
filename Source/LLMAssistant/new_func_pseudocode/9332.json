@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPFilePackageWriter componentZipArchiveWriter]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPFilePackageWriter componentZipArchiveWriter](TSPFilePackageWriter * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSPFilePackageWriter componentZipArchiveWriter](TSPFilePackageWriter *self, SEL a2)\n{\n  TSUZipFileWriter *delayedZipArchiveWriter; // x8\n  TSUZipFileWriter *v3; // x0\n  objc_super v5; // [xsp+0h] [xbp-10h] BYREF\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  delayedZipArchiveWriter = self->_delayedZipArchiveWriter;\n  if ( delayedZipArchiveWriter )\n  {\n    v3 = objc_retain(delayedZipArchiveWriter);\n  }\n  else\n  {\n    v5.receiver = self;\n    v5.super_class = (Class)&OBJC_CLASS___TSPFilePackageWriter;\n    v3 = (TSUZipFileWriter *)objc_retainAutoreleasedReturnValue(-[TSPPackageWriter componentZipArchiveWriter](&v5, \"componentZipArchiveWriter\"));\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

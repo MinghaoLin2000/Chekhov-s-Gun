@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTargetQueue .cxx_destruct](MXMTargetQueue * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MXMTargetQueue .cxx_destruct](MXMTargetQueue *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_queue, 0LL);\n}"
+}

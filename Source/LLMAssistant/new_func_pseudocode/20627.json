@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_connection_set_state_changed_handler",
+    "function_argument_number": 2,
+    "function_signature": "_nw_connection_set_state_changed_handler(nw_connection_t connection, nw_connection_state_changed_handler_t handler)",
+    "pseudocode": "void __cdecl nw_connection_set_state_changed_handler(\n        nw_connection_t connection,\n        nw_connection_state_changed_handler_t handler)\n{\n  _nw_connection_set_state_changed_handler(connection, handler);\n}"
+}

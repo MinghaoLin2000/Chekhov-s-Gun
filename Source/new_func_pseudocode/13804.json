@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_io_write",
+    "function_argument_number": 5,
+    "function_signature": "_dispatch_io_write(dispatch_io_t channel, off_t offset, dispatch_data_t data, dispatch_queue_t queue, dispatch_io_handler_t io_handler)",
+    "pseudocode": "void __cdecl dispatch_io_write(\n        dispatch_io_t channel,\n        off_t offset,\n        dispatch_data_t data,\n        dispatch_queue_t queue,\n        dispatch_io_handler_t io_handler)\n{\n  _dispatch_io_write(channel, offset, data, queue, io_handler);\n}"
+}

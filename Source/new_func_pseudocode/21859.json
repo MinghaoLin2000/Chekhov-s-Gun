@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12ObjConverter21checkLastSubMaterialsEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN12ObjConverter21checkLastSubMaterialsEv(ObjConverter * this)",
+    "pseudocode": "void __fastcall ObjConverter::checkLastSubMaterials(ObjConverter *this)\n{\n  char *v1; // x20\n  char *v2; // x19\n  ObjConverter::Group *v3; // x0\n  char *v4; // x9\n  char *v5; // x8\n  bool v6; // zf\n\n  v1 = (char *)*((_QWORD *)this + 13);\n  v2 = (char *)this + 112;\n  if ( v1 != (char *)this + 112 )\n  {\n    do\n    {\n      v3 = (ObjConverter::Group *)*((_QWORD *)v1 + 7);\n      if ( *((_QWORD *)v3 + 1) - *(_QWORD *)v3 >= 9uLL )\n        ObjConverter::Group::removeLastSubMaterialIfEmpty(v3);\n      v4 = (char *)*((_QWORD *)v1 + 1);\n      if ( v4 )\n      {\n        do\n        {\n          v5 = v4;\n          v4 = *(char **)v4;\n        }\n        while ( v4 );\n      }\n      else\n      {\n        do\n        {\n          v5 = (char *)*((_QWORD *)v1 + 2);\n          v6 = *(_QWORD *)v5 == (_QWORD)v1;\n          v1 = v5;\n        }\n        while ( !v6 );\n      }\n      v1 = v5;\n    }\n    while ( v5 != v2 );\n  }\n}"
+}

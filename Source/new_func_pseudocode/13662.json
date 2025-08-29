@@ -1,0 +1,6 @@
+{
+    "function_name": "_CC_SHA1_Final",
+    "function_argument_number": 2,
+    "function_signature": "_CC_SHA1_Final(unsigned __int8 * md, CC_SHA1_CTX * c)",
+    "pseudocode": "int __cdecl CC_SHA1_Final(unsigned __int8 *md, CC_SHA1_CTX *c)\n{\n  return _CC_SHA1_Final(md, c);\n}"
+}

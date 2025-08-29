@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundle closeChannel:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IFDBundle closeChannel:](IFDBundle * self, SEL a2, unsigned int a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[IFDBundle closeChannel:](IFDBundle *self, SEL a2, unsigned int a3)\n{\n  __int64 v3; // x19\n  os_log_s *v5; // x21\n  __int64 v6; // x20\n  os_log_s *v7; // x19\n\n  v3 = *(_QWORD *)&a3;\n  v5 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100003F08(self));\n  if ( os_log_type_enabled(v5, OS_LOG_TYPE_DEBUG) )\n    sub_1000062E8(v3, v5);\n  objc_release(v5);\n  v6 = ((__int64 (__fastcall *)(__int64))self->_ifdMethod.IFDHCloseChannel)(v3);\n  v7 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100003F08(v6));\n  if ( os_log_type_enabled(v7, OS_LOG_TYPE_DEBUG) )\n    sub_100006274(v6, v7);\n  objc_release(v7);\n}"
+}

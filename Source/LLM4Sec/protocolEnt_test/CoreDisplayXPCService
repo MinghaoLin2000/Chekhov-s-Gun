@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/Frameworks/CoreDisplay.framework/Versions/A/XPCServices/CoreDisplayXPCService.xpc/Contents/MacOS/CoreDisplayXPCService
+
+Service Exported Protocols:
+
+Service Entitlements:

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFRunLoopRun",
+    "function_argument_number": 0,
+    "function_signature": "_CFRunLoopRun()",
+    "pseudocode": "void CFRunLoopRun(void)\n{\n  _CFRunLoopRun();\n}"
+}

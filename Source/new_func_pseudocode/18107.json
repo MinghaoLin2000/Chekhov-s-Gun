@@ -1,0 +1,6 @@
+{
+    "function_name": "_smb2_add_credits_granted",
+    "function_argument_number": 2,
+    "function_signature": "_smb2_add_credits_granted(__int64 a1, int a2)",
+    "pseudocode": "__int64 __fastcall smb2_add_credits_granted(__int64 a1, int a2)\n{\n  pthread_mutex_t *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (pthread_mutex_t *)(a1 + 2496);\n  pthread_mutex_lock((pthread_mutex_t *)(a1 + 2496));\n  *(_DWORD *)(a1 + 256) += a2;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return pthread_mutex_unlock(v4);\n}"
+}

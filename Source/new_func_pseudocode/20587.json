@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFPageGetDrawingTransform",
+    "function_argument_number": 6,
+    "function_signature": "_CGPDFPageGetDrawingTransform(CGAffineTransform * retstr, CGPDFPageRef page, CGPDFBox box, int rotate, bool preserveAspectRatio, CGRect rect)",
+    "pseudocode": "CGAffineTransform *__cdecl CGPDFPageGetDrawingTransform(\n        CGAffineTransform *__return_ptr retstr,\n        CGPDFPageRef page,\n        CGPDFBox box,\n        CGRect rect,\n        int rotate,\n        bool preserveAspectRatio)\n{\n  return _CGPDFPageGetDrawingTransform(retstr, page, box, rect, rotate, preserveAspectRatio);\n}"
+}

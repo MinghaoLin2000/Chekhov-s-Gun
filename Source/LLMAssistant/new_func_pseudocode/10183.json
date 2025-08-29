@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP4Rect30RequiredFieldsByteSizeFallbackEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP4Rect30RequiredFieldsByteSizeFallbackEv(TSP::Rect * this)",
+    "pseudocode": "__int64 __fastcall TSP::Rect::RequiredFieldsByteSizeFallback(TSP::Rect *this)\n{\n  int v2; // w8\n  __int64 v3; // x20\n  __int64 v4; // x0\n  __int64 v5; // x0\n\n  v2 = *((_DWORD *)this + 4);\n  if ( (v2 & 1) == 0 )\n  {\n    v3 = 0LL;\n    if ( (v2 & 2) == 0 )\n      return v3;\n    goto LABEL_5;\n  }\n  v4 = TSP::Point::ByteSizeLong(*((TSP::Point **)this + 3));\n  v3 = v4 + ((9 * (__clz(v4 | 1) ^ 0x1F) + 73) >> 6) + 1;\n  if ( (*((_DWORD *)this + 4) & 2) != 0 )\n  {\nLABEL_5:\n    v5 = TSP::Size::ByteSizeLong(*((TSP::Size **)this + 4));\n    v3 += v5 + ((9 * (__clz(v5 | 1) ^ 0x1F) + 73) >> 6) + 1;\n  }\n  return v3;\n}"
+}

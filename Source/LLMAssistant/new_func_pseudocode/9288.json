@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentRevision compareSequenceFromRevision:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDocumentRevision compareSequenceFromRevision:](int a1, int a2, id a3)",
+    "pseudocode": "signed __int64 __cdecl -[TSPDocumentRevision compareSequenceFromRevision:](TSPDocumentRevision *self, SEL a2, id a3)\n{\n  id v4; // x19\n  int sequence; // w21\n  signed __int64 v6; // x20\n  int v7; // w20\n\n  v4 = objc_retain(a3);\n  sequence = self->_sequence;\n  if ( sequence <= (int)objc_msgSend(v4, \"sequence\") )\n  {\n    v7 = self->_sequence;\n    if ( v7 >= (int)objc_msgSend(v4, \"sequence\") )\n      v6 = 0LL;\n    else\n      v6 = -1LL;\n  }\n  else\n  {\n    v6 = 1LL;\n  }\n  objc_release(v4);\n  return v6;\n}"
+}

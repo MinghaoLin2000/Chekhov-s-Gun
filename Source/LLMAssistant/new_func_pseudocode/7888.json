@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV8contents10connection4rect7optionsSo10CGImageRefaSgAA13CGSConnectionV_So6CGRectVSo0D14CaptureOptionsVtF",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV8contents10connection4rect7optionsSo10CGImageRefaSgAA13CGSConnectionV_So6CGRectVSo0D14CaptureOptionsVtF(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall CGSWindow.contents(connection:rect:options:)(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // [xsp+0h] [xbp-10h] BYREF\n\n  v4 = 0LL;\n  if ( (sub_10001B03C(&v4, a1, a3, a2) & 1) != 0 )\n    return v4;\n  else\n    return 0LL;\n}"
+}

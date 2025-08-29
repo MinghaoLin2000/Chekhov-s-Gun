@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithObserver:target:keyPath:context:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithObserver:target:keyPath:context:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithObserver_target_keyPath_context_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"initWithObserver:target:keyPath:context:\");\n}"
+}

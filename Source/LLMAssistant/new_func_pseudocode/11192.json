@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf11FileOptionsD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf11FileOptionsD2Ev(google::protobuf::FileOptions * this)",
+    "pseudocode": "void __fastcall google::protobuf::FileOptions::~FileOptions(google::protobuf::FileOptions *this)\n{\n  sub_1000AE2A4();\n  sub_100037E58((char *)this + 8);\n  sub_1000B93A0((char *)this + 48);\n  google::protobuf::internal::ExtensionSet::~ExtensionSet((google::protobuf::FileOptions *)((char *)this + 16));\n}"
+}

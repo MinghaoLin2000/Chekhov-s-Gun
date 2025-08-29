@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP9FieldInfoC2EPN6google8protobuf5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP9FieldInfoC2EPN6google8protobuf5ArenaE(TSP::FieldInfo * this, google::protobuf::Arena * a2)",
+    "pseudocode": "__int64 __fastcall TSP::FieldInfo::FieldInfo(__int64 a1, __int64 a2)\n{\n  *(_QWORD *)a1 = off_1001D3E48;\n  *(_QWORD *)(a1 + 8) = a2;\n  *(_QWORD *)(a1 + 32) = a2;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  *(_QWORD *)(a1 + 24) = 0LL;\n  *(_QWORD *)(a1 + 48) = 0LL;\n  *(_QWORD *)(a1 + 56) = a2;\n  *(_QWORD *)(a1 + 72) = 0LL;\n  *(_QWORD *)(a1 + 80) = a2;\n  if ( atomic_load_explicit(scc_info_FieldInfo_TSPArchiveMessages_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_FieldInfo_TSPArchiveMessages_2eproto);\n  *(_QWORD *)(a1 + 104) = 0LL;\n  *(_QWORD *)(a1 + 112) = 0LL;\n  *(_QWORD *)(a1 + 96) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_DWORD *)(a1 + 120) = 0;\n  return a1;\n}"
+}

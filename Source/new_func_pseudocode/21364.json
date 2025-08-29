@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition19EARSpeechRecognizer init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC22localspeechrecognition19EARSpeechRecognizer init](_TtC22localspeechrecognition19EARSpeechRecognizer * self, SEL a2)",
+    "pseudocode": "_TtC22localspeechrecognition19EARSpeechRecognizer *__cdecl __noreturn -[EARSpeechRecognizer init](\n        _TtC22localspeechrecognition19EARSpeechRecognizer *self,\n        SEL a2)\n{\n  sub_10002140C(self, a2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[preflightInfo preflightDevice]",
+    "function_argument_number": 2,
+    "function_signature": "-[preflightInfo preflightDevice](preflightInfo * self, SEL a2)",
+    "pseudocode": "__AMRestorableDevice *__cdecl -[preflightInfo preflightDevice](preflightInfo *self, SEL a2)\n{\n  return self->preflightDevice;\n}"
+}

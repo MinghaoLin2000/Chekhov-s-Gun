@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t preferred_landscape]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t preferred_landscape](lite_printer_t * self, SEL a2)",
+    "pseudocode": "int __cdecl -[lite_printer_t preferred_landscape](lite_printer_t *self, SEL a2)\n{\n  return (unsigned int)-[PKPrinterDescription preferred_landscape](self->_printerDescription, \"preferred_landscape\");\n}"
+}

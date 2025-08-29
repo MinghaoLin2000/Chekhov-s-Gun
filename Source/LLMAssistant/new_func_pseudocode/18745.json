@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper15BackgroundsGridVwet",
+    "function_argument_number": 2,
+    "function_signature": "$s27BackgroundReplacementHelper15BackgroundsGridVwet(__int64 a1, unsigned int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for BackgroundsGrid(__int64 a1, unsigned int a2)\n{\n  int v2; // w8\n  unsigned __int64 v3; // x8\n\n  if ( a2 )\n  {\n    if ( a2 >= 0x7FFFFFFF && *(_BYTE *)(a1 + 33) )\n    {\n      v2 = *(_DWORD *)a1 + 2147483646;\n    }\n    else\n    {\n      v3 = *(_QWORD *)(a1 + 24);\n      if ( v3 >= 0xFFFFFFFF )\n        LODWORD(v3) = -1;\n      v2 = v3 - 1;\n      if ( v2 < 0 )\n        v2 = -1;\n    }\n  }\n  else\n  {\n    v2 = -1;\n  }\n  return (unsigned int)(v2 + 1);\n}"
+}

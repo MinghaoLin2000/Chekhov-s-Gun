@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSoftwareUpdatesViewController .cxx_destruct](DeviceSoftwareUpdatesViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSoftwareUpdatesViewController .cxx_destruct](DeviceSoftwareUpdatesViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_deviceSoftwareInfo, 0LL);\n  objc_destroyWeak((id *)&self->_statusValueTextField);\n  objc_destroyWeak((id *)&self->_statusLabelTextField);\n  objc_destroyWeak((id *)&self->_statusHorizontalLine);\n  objc_destroyWeak((id *)&self->_statusStackView);\n  objc_destroyWeak((id *)&self->_buttonsStackView);\n  objc_destroyWeak((id *)&self->_updateRestoreProgressBar);\n  objc_destroyWeak((id *)&self->_updateRestoreProgressMessage);\n  objc_destroyWeak((id *)&self->_restoreButton);\n  objc_destroyWeak((id *)&self->_updateButton);\n  objc_destroyWeak((id *)&self->_softwareStatusLabel);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_softwareVersionButton);\n}"
+}

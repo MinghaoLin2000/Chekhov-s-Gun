@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo31OS_dispatch_source_data_replaceP12EyeCandyCoreE10doubleDataSdvg",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo31OS_dispatch_source_data_replaceP12EyeCandyCoreE10doubleDataSdvg()",
+    "pseudocode": "double OS_dispatch_source_data_replace.doubleData.getter()\n{\n  return COERCE_DOUBLE(sub_10001CD30());\n}"
+}

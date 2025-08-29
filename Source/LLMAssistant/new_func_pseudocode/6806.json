@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$effectivePriority",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$effectivePriority(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_effectivePriority(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"effectivePriority\");\n}"
+}

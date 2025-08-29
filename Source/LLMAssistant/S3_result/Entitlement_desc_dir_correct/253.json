@@ -1,0 +1,16 @@
+{
+  "entitlement": "com.apple.private.necp.match",
+  "capability": "Allows an application to interact with or define matching rules within the Network Extension Control Protocol (NECP) framework. This capability provides low-level control over network traffic filtering, routing, and policy enforcement, similar to what firewalls, VPNs, and content blockers do at a system level.",
+  "reasoning": "The 'com.apple.private' prefix indicates an internal, highly privileged Apple entitlement. 'necp' stands for Network Extension Control Protocol, a core macOS framework responsible for network packet filtering and policy enforcement, used by Network Extensions (e.g., VPNs, content filters, firewalls). The 'match' suffix suggests the ability to define or interact with the rules used by NECP to match network traffic against defined policies. This implies deep control over how the system processes network communications.",
+  "similar_entitlements": [
+    "com.apple.developer.networking.networkextension",
+    "com.apple.developer.networking.filter-network-content",
+    "com.apple.developer.networking.vpn.api"
+  ],
+  "sensitive_type": [
+    2,
+    4
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'Privileged Networking' (Type 2) because it grants direct, low-level control over how network packets are matched and processed by the operating system, potentially allowing an app to inspect, modify, or block network traffic at a fundamental level, bypassing standard network controls. It also falls under 'System & Kernel Level Control' (Type 4) because the NECP framework operates at a system-wide level, close to the kernel, to enforce network policies. Modifying or interacting with these rules can significantly alter the entire system's network behavior, impacting all applications and users, which constitutes a form of system-level control.",
+  "self_reflection": "I am highly confident in this assessment. The components of the entitlement name ('com.apple.private', 'necp', 'match') strongly point to a private, low-level network control capability within macOS's Network Extension framework. The inferred capability aligns perfectly with the definitions of privileged networking and system-level control. The main uncertainty, if any, would be the *exact* scope of 'match' – whether it's solely for defining rules, querying existing ones, or both – but in any case, it implies significant access to a critical network control plane. A misinterpretation of 'necp' or 'match' could lead to a wrong conclusion, but given common Apple naming conventions and the known purpose of Network Extensions, this is unlikely."
+}

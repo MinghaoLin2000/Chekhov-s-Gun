@@ -1,0 +1,6 @@
+{
+    "function_name": "-[XPCSignpostReader generateMSSReportForRAPID:withReply:]",
+    "function_argument_number": 4,
+    "function_signature": "-[XPCSignpostReader generateMSSReportForRAPID:withReply:](XPCSignpostReader * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[XPCSignpostReader generateMSSReportForRAPID:withReply:](XPCSignpostReader *self, SEL a2, id a3, id a4)\n{\n  ;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV12mouseButtonsACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV12mouseButtonsACvau()",
+    "pseudocode": "int *SystemEventMask.mouseButtons.unsafeMutableAddressor()\n{\n  if ( qword_10002A9D8 != -1 )\n    swift_once(&qword_10002A9D8, sub_100016C6C);\n  return &static SystemEventMask.mouseButtons;\n}"
+}

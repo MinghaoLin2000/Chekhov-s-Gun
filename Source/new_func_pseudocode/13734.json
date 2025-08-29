@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm",
+    "function_argument_number": 2,
+    "function_signature": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm(const std::string * this, std::string::size_type __n)",
+    "pseudocode": "std::string::const_reference __cdecl std::string::at(const std::string *this, std::string::size_type __n)\n{\n  return std::string::at(this, __n);\n}"
+}

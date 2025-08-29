@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlXPathEvalExpression",
+    "function_argument_number": 2,
+    "function_signature": "_xmlXPathEvalExpression(const xmlChar * str, xmlXPathContextPtr ctxt)",
+    "pseudocode": "xmlXPathObjectPtr __cdecl xmlXPathEvalExpression(const xmlChar *str, xmlXPathContextPtr ctxt)\n{\n  return _xmlXPathEvalExpression(str, ctxt);\n}"
+}

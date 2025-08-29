@@ -1,0 +1,555 @@
+Service Path:
+/System/Library/CoreServices/Siri.app/Contents/XPCServices/SiriNCService.xpc/Contents/MacOS/SiriNCService
+
+Service Exported Protocols:
+@protocol AFMyriadDelegate <NSObject>
+- (void)myriadCoordinatorDidHandleEmergency:(AFMyriadCoordinator *)arg1;
+- (void)myriadCoordinatorWillHandleEmergency:(AFMyriadCoordinator *)arg1;
+- (void)listeningDidEnd:(AFMyriadCoordinator *)arg1;
+- (void)listeningDidBegin:(AFMyriadCoordinator *)arg1;
+- (void)advertisingDidEnd:(AFMyriadCoordinator *)arg1;
+- (void)advertisingDidBegin:(AFMyriadCoordinator *)arg1;
+- (void)advertisingWillBeginWithDelay:(float)arg1 advertisingInterval:(float)arg2;
+- (void)shouldHandleEmergency:(AFMyriadCoordinator *)arg1;
+- (void)shouldUnduck:(AFMyriadCoordinator *)arg1;
+- (void)shouldContinue:(AFMyriadCoordinator *)arg1;
+- (void)shouldAbortAnotherDeviceBetter:(AFMyriadCoordinator *)arg1;
+- (void)willEndSession:(AFMyriadSession *)arg1;
+- (void)willStartWithSession:(AFMyriadSession *)arg1;
+@end
+@protocol AFUISiriViewControllerDataSource <NSObject>
+- (NSArray *)contextAppInfosForSiriViewController:(AFUISiriViewController *)arg1;
+- (unsigned long long)lockStateForSiriViewController:(AFUISiriViewController *)arg1;
+- (AFBulletin *)siriViewController:(AFUISiriViewController *)arg1 bulletinWithIdentifier:(NSString *)arg2;
+- (NSArray *)bulletinsForSiriViewController:(AFUISiriViewController *)arg1;
+@end
+@protocol AFUISiriViewControllerDelegate <NSObject>
+- (_Bool)shouldDismissForNoValidMicrophone;
+- (double)maximumHeightForSiriViewController:(AFUISiriViewController *)arg1;
+- (void)endMyriadAdvertising;
+- (void)startMyriadAdvertisingWithRequestOptions:(SiriUIRequestOptions *)arg1;
+- (void)siriViewContollerDidChangeContentHeight:(AFUISiriViewController *)arg1;
+- (void)siriViewController:(AFUISiriViewController *)arg1 acousticIDRequestDidFinishWithSuccess:(_Bool)arg2;
+- (void)siriViewControllerWillStartAcousticIDRequest:(AFUISiriViewController *)arg1;
+- (void)siriViewController:(AFUISiriViewController *)arg1 stashSnippetControllerCard:(SiriUICard *)arg2 forAddViewsCommand:(SAUIAddViews *)arg3;
+- (void)siriViewController:(AFUISiriViewController *)arg1 showBugTemplateWithInformation:(NSDictionary *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 didHideStatusView:(_Bool)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 didChangeDialogPhase:(AFDialogPhase *)arg2;
+- (void)siriViewControllerDidChangeListeningState:(AFUISiriViewController *)arg1;
+- (_Bool)siriViewController:(AFUISiriViewController *)arg1 attemptUnlockWithPassword:(NSString *)arg2;
+- (_Bool)siriViewController:(AFUISiriViewController *)arg1 openURL:(NSURL *)arg2 appBundleID:(NSString *)arg3 allowSiriDismissal:(_Bool)arg4;
+- (void)siriViewController:(AFUISiriViewController *)arg1 openURL:(NSURL *)arg2 delaySessionEndForTTS:(_Bool)arg3 completion:(void (^)(_Bool))arg4;
+- (void)siriViewController:(AFUISiriViewController *)arg1 siriIdleAndQuietStatusDidChange:(_Bool)arg2;
+- (void)siriViewControllerDidChangeVisibility:(AFUISiriViewController *)arg1;
+- (_Bool)siriViewController:(AFUISiriViewController *)arg1 launchApplicationWithBundleIdentifier:(NSString *)arg2 withURL:(NSURL *)arg3;
+- (SiriUIRequestOptions *)siriViewController:(AFUISiriViewController *)arg1 willStartRequestWithOptions:(SiriUIRequestOptions *)arg2;
+- (void)releaseKeySiriViewController:(AFUISiriViewController *)arg1;
+- (void)siriViewController:(AFUISiriViewController *)arg1 makeKeyWithCompletion:(void (^)(void))arg2;
+- (void)dismissSiriViewController:(AFUISiriViewController *)arg1 dismissalOptions:(SiriUIDismissalOptions *)arg2 completion:(void (^)(void))arg3;
+- (void)dismissSiriViewController:(AFUISiriViewController *)arg1 dismissalOptions:(SiriUIDismissalOptions *)arg2 delayForTTS:(_Bool)arg3;
+- (_Bool)cancelInvocationForSiriViewController:(AFUISiriViewController *)arg1;
+- (void)siriViewControllerTextInputDidInsertAccentVariant:(AFUISiriViewController *)arg1;
+- (void)siriViewController:(AFUISiriViewController *)arg1 willStartListeningForSiriSession:(AFUISiriSession *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 recordingDidFailForSiriSession:(AFUISiriSession *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 recordingDidCancelForSiriSession:(AFUISiriSession *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 recordingDidEndForSiriSession:(AFUISiriSession *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 recordingWillBeginForSiriSession:(AFUISiriSession *)arg2;
+- (void)siriViewController:(AFUISiriViewController *)arg1 didEndSession:(AFUISiriSession *)arg2;
+@end
+@protocol NCCustomAlertDelegate <NSObject>
+- (void)customAlertDismissed:(NCCustomAlert *)arg1;
+- (void)setSwipeGestureOffset:(double)arg1 didComplete:(_Bool)arg2;
+@end
+@protocol RemoteViewBridgeHostContainerDelegate <NSObject>
+- (void)remoteContainerView:(RemoteViewBridgeHostContainer *)arg1 requestSizeChange:(struct CGSize)arg2 immediate:(_Bool)arg3 fenceRight:(RemoteViewBridgeSendRight *)arg4;
+@end
+@protocol RemoteViewBridgeHostProtocol <NSObject>
+- (void)hostPositionWindowForGlobalContentFrame:(struct CGRect)arg1;
+- (void)hostRequestSizeChange:(struct CGSize)arg1 fenceRight:(RemoteViewBridgeSendRight *)arg2;
+@end
+@protocol RemoteViewBridgeServiceContainerDelegate <NSObject>
+- (void)remoteContainerView:(RemoteViewBridgeServiceContainer *)arg1 requestSizeChange:(struct CGSize)arg2 fenceRight:(RemoteViewBridgeSendRight *)arg3;
+@end
+@protocol RemoteViewBridgeServiceDelegate <NSObject>
+- (void)remoteViewBridgeServiceRegistered:(RemoteViewBridgeServiceViewService *)arg1;
+@end
+@protocol RemoteViewBridgeServiceProtocol <NSObject>
+- (void)serviceRequestSizeChange:(struct CGSize)arg1 immediate:(_Bool)arg2 fenceRight:(RemoteViewBridgeSendRight *)arg3;
+@end
+@protocol SCDADelegate <NSObject>
+- (void)scdaCoordinatorDidHandleEmergency:(SCDACoordinator *)arg1;
+- (void)scdaCoordinatorWillHandleEmergency:(SCDACoordinator *)arg1;
+- (void)scdaListeningDidEnd:(SCDACoordinator *)arg1;
+- (void)scdaListeningDidBegin:(SCDACoordinator *)arg1;
+- (void)scdaAdvertisingDidEnd:(SCDACoordinator *)arg1;
+- (void)scdaAdvertisingDidBegin:(SCDACoordinator *)arg1;
+- (void)scdaAdvertisingWillBeginWithDelay:(float)arg1 advertisingInterval:(float)arg2;
+- (void)scdaShouldHandleEmergency:(SCDACoordinator *)arg1;
+- (void)scdaShouldUnduck:(SCDACoordinator *)arg1;
+- (void)scdaShouldContinue:(SCDACoordinator *)arg1;
+- (void)scdaShouldAbortAnotherDeviceBetter:(SCDACoordinator *)arg1;
+- (void)scdaWillEndSession:(SCDASession *)arg1;
+- (void)scdaWillStartWithSession:(SCDASession *)arg1;
+@end
+@protocol SiriNCClientProtocol
+- (void)hostAppActivate;
+- (void)hostDragStartedAtMouseDownPoint:(struct CGPoint)arg1;
+- (void)hostCompleteViewTransfer:(void (^)(void))arg1;
+- (void)hostPrepareViewTransferWithGlobalRect:(struct CGRect)arg1 completion:(void (^)(NSString *))arg2;
+- (void)hostPrepareForRemoteViewController;
+- (void)closeSiriInvokedViaEitherCmdTwiceDialog;
+- (void)dismissSiriNCAlertViewControllerWithCompletion:(void (^)(_Bool))arg1;
+- (void)presentSiriNCAlertViewController:(SiriNCAlertViewController *)arg1 launchOptions:(SiriUILaunchOptions *)arg2;
+- (void)serviceUIWasDismissedWithDismissalOptions:(SiriUIDismissalOptions *)arg1;
+- (void)serviceUIWillAppear;
+- (void)addViewsCommandStashed:(SAUIAddViews *)arg1 forCardWithTitle:(NSString *)arg2 imagePath:(NSString *)arg3 canBeShortened:(_Bool)arg4;
+@end
+@protocol SiriNCServiceProtocol
+- (void)didFinishDraggingWindow;
+- (void)siriApplicationFocusChanged:(_Bool)arg1;
+- (void)updateBridgeOSInterstitialsWithCompletion:(void (^)(void))arg1;
+- (void)isSiriListening:(void (^)(_Bool))arg1;
+- (void)setPluginDirectory:(NSString *)arg1;
+- (void)invokeService:(long long)arg1 fromEventSource:(long long)arg2 eventTime:(unsigned long long)arg3 requestInfo:(AFRequestInfo *)arg4 speechRequestOptions:(AFSpeechRequestOptions *)arg5 launchOptions:(SiriUILaunchOptions *)arg6 dismissalOptions:(SiriUIDismissalOptions *)arg7;
+@end
+@protocol SiriUIAudioDeviceDelegate <NSObject>
+- (void)siriAudioInputDeviceDidChange;
+@end
+@protocol SiriUIAutoDismissalControllerClickOutsideContentDelegate
+- (_Bool)autoDismissControllerShouldIgnoreDismissalForClickOutsideOfContent:(SiriUIAutoDismissalController *)arg1;
+@end
+@protocol SiriUIHeaterDelegate <NSObject>
+- (void)heaterSuggestsPreheating:(SiriUIHeater *)arg1;
+- (void)heaterSuggestsDefrosting:(SiriUIHeater *)arg1;
+@end
+@protocol SiriUINCBreakOutDelegate <NSObject>
+- (void)mouseDraggedInWindowedMode:(NSEvent *)arg1;
+- (void)breakOutWithEvent:(NSEvent *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.QuartzCore.global-capture
+	[Value]
+		[Bool] true
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.SiriNCService
+	[Key] com.apple.assistant.request-dispatcher.uibridge-service
+	[Value]
+		[Bool] true
+	[Key] com.apple.assistant.uibridge-service
+	[Value]
+		[Bool] true
+	[Key] com.apple.authkit.client.private
+	[Value]
+		[Bool] true
+	[Key] com.apple.bluetooth.system
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.maps
+	[Value]
+		[Bool] true
+	[Key] com.apple.feedbackd.remote-evaluation
+	[Value]
+		[Bool] true
+	[Key] com.apple.findmy.findmylocate.friendshipservice
+	[Value]
+		[Bool] true
+	[Key] com.apple.findmy.findmylocate.locationservice
+	[Value]
+		[Bool] true
+	[Key] com.apple.findmy.findmylocate.settings
+	[Value]
+		[Bool] true
+	[Key] com.apple.icloud.searchpartyd.securelocations.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.intents.uiextension.discovery
+	[Value]
+		[Bool] true
+	[Key] com.apple.locationd.effective_bundle
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.accounts.allaccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.appleevents.allowedtosend
+	[Value]
+		[Dict]
+			[Key] com.apple.private.appleevents.allowed.aevt.odoc
+			[Value]
+				[Bool] true
+			[Key] com.apple.private.appleevents.allowed.aevt.spot
+			[Value]
+				[Bool] true
+			[Key] com.apple.private.appleevents.allowed.fndr.ovir
+			[Value]
+				[Bool] true
+	[Key] com.apple.private.applemediaservices
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.applesmc.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.appstorecomponents
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.appstorecomponents.media-client-id
+	[Value]
+		[String] com.apple.siri
+	[Key] com.apple.private.appstorecomponents.media-client-version
+	[Value]
+		[String] 1
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.Trial.Siri.SiriTextToSpeech
+	[Key] com.apple.private.assistant.analytics
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assistant.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assistant.settings
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.audio.dark-wake-audio
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.audio.notification-wake-audio
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.calendar.allow-integrations
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.calendar.allow-suggestions
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corerecents
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.cangetcurrentactivityinfo
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canmaplsdatabase
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canopenactivity
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corespeech.corespeechservices
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corespeech.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corespeech.xpc.remote
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corespotlight.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.corespotlight.search.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.feedback.centralized-feedback
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.iaaccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.imcore.imagent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.iokit.darkwake-control
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.launchpad.list
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.mailservice.all
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.mobiletimerd
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.notificationcenter.menu
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.notificationcenter.siri
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.notificationcenterui.alerts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.notificationcenterui.nchostable
+	[Value]
+		[Array]
+			[String] com.apple.Siri
+	[Key] com.apple.private.parsec.default-client
+	[Value]
+		[String] com.apple.siri
+	[Key] com.apple.private.security.restricted-application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.notes
+	[Key] com.apple.private.security.storage.FindMy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Mail
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Messages
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.MessagesMetaData
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Notes
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.SiriInference
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.universalaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.siri.audiopowerupdate.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.speech.synthesis.custom.voices.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.spotlight.parsec
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceAddressBook
+			[String] kTCCServiceCalendar
+			[String] kTCCServiceReminders
+			[String] kTCCServicePhotosAdd
+			[String] kTCCServiceAccessibility
+			[String] kTCCServiceSystemPolicyDesktopFolder
+			[String] kTCCServiceSystemPolicyDocumentsFolder
+			[String] kTCCServiceSystemPolicyDownloadsFolder
+	[Key] com.apple.private.viewbridge.window.child.transparent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.viewbridge.window.level
+	[Value]
+		[Bool] true
+	[Key] com.apple.proactive.eventtracker
+	[Value]
+		[Bool] true
+	[Key] com.apple.runningboard.assertions.fuseboard
+	[Value]
+		[Bool] true
+	[Key] com.apple.runningboard.posterkit.host
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.notes
+			[String] group.com.apple.siri.sirisuggestions
+	[Key] com.apple.security.device.bluetooth
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.device.microphone
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Media/PhotoData/
+			[String] /Library/Messages/
+			[String] /Library/MessagesMetaData/NickNameCache/
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.addressbook
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.calendars
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.personal-information.location
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.scripting-targets
+	[Value]
+		[Dict]
+			[Key] com.apple.Notes
+			[Value]
+				[Array]
+					[String] com.apple.Notes.openlocation
+			[Key] com.apple.iTunes
+			[Value]
+				[Array]
+					[String] com.apple.iTunes.playback
+			[Key] com.apple.systempreferences
+			[Value]
+				[Array]
+					[String] preferencepane.reveal
+	[Key] com.apple.security.temporary-exception.apple-events
+	[Value]
+		[Array]
+			[String] com.apple.systempreferences
+			[String] com.apple.finder
+			[String] com.apple.mail
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /
+			[String] /AppleInternal/Library/Assistant/
+			[String] /AppleInternal/Library/Frameworks/
+			[String] /System/Library/SystemProfiler/SPStorageReporter.spreporter
+	[Key] com.apple.security.temporary-exception.files.absolute-path.read-write
+	[Value]
+		[Array]
+			[String] /dev/null
+			[String] /private/var/tmp/siriBC
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/Containers/com.apple.Notes/Data/
+			[String] /Library/VoiceTrigger/
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Mail/
+			[String] /Library/Caches/com.apple.speech.siri/
+			[String] /Library/Caches/GeoServices/
+			[String] /Library/Containers/com.apple.Notes/Data/Library/Notes/
+			[String] /Library/Assistant/
+			[String] /Library/Logs/Assistant/
+	[Key] com.apple.security.temporary-exception.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] IOMobileFramebufferUserClient
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.email.maild
+			[String] com.apple.feedbackd.centralized-feedback
+			[String] com.apple.siri.uaf.service
+			[String] com.apple.siri.audiopowerupdate.xpc
+			[String] com.apple.assistant.uibridge-service
+			[String] com.apple.assistant.request-dispatcher.uibridge-service
+			[String] com.apple.bluetooth.xpc
+			[String] com.apple.findmy.findmylocate.friendshipservice
+			[String] com.apple.findmy.findmylocate.settings
+			[String] com.apple.findmy.findmylocate.locationservice
+			[String] com.apple.sirittsd
+			[String] com.apple.remoted
+			[String] com.apple.corespeech.corespeechservices
+			[String] com.apple.parsecd
+			[String] com.apple.airportd
+			[String] com.apple.assistant.analytics
+			[String] com.apple.assistant.client
+			[String] com.apple.assistantd.managedstorage
+			[String] com.apple.assistant.settings
+			[String] com.apple.assistant.sync
+			[String] com.apple.backlightd
+			[String] com.apple.cache_delete
+			[String] com.apple.CoreDisplay.master
+			[String] com.apple.coreduetd.knowledge
+			[String] com.apple.corerecents.recentsd
+			[String] com.apple.diskmanagementd
+			[String] com.apple.dock.launchpad
+			[String] com.apple.familycontrols
+			[String] com.apple.GSSCred
+			[String] com.apple.iohideventsystem
+			[String] com.apple.mediaremoted.xpc
+			[String] com.apple.mobileasset.autoasset
+			[String] com.apple.notificationcenterui.alerts
+			[String] com.apple.notificationcenterui.customalerts
+			[String] com.apple.notificationcenterui.siri
+			[String] com.apple.remindd
+			[String] com.apple.remoted
+			[String] com.apple.siri.analytics.assistant
+			[String] com.apple.siriinferenced
+			[String] com.apple.siriinferenced.remembers
+			[String] com.apple.sirisuggestions
+			[String] com.apple.siri.running
+			[String] com.apple.siri.startup
+			[String] com.apple.sirittsd
+			[String] com.apple.soagent
+			[String] com.apple.speech.speechdatainstallerd
+			[String] com.apple.speech.speechdatainstallerd.isavailable
+			[String] com.apple.triald.namespace-management
+			[String] com.apple.systemprofiler
+			[String] com.apple.VoiceOver.running
+			[String] com.apple.VoiceOver.startup
+			[String] com.apple.wirelessproxd
+			[String] com.apple.server.bluetooth.classic.xpc
+			[String] com.apple.siri.UnifiedSiriTest.TestingEventService
+			[String] com.apple.icloud.searchparty.locationfetch.items
+			[String] com.apple.icloud.searchpartyd.securelocations
+			[String] com.apple.MobileTimer.timerserver
+			[String] com.apple.shazamd.ui
+			[String] com.apple.siri.encore_xpc_service
+			[String] com.apple.appstorecomponentsd.xpc
+	[Key] com.apple.security.temporary-exception.sbpl
+	[Value]
+		[Array]
+			[String] (allow iokit-open (iokit-user-client-class "AppleKeyStoreUserClient"))
+			[String] (allow hid-control)
+			[String] (allow iokit-set-properties (iokit-property "HIDClickSpace") (iokit-property "HIDClickTime") (iokit-property "HIDKeyRepeat") (iokit-property "HIDMouseAcceleration") (iokit-property "HIDMouseKeysOn") (iokit-property "HIDScrollZoomModifierMask") (iokit-property "HIDSlowKeysDelay") (iokit-property "HIDStickyKeysOn") (iokit-property "HIDTrackpadAcceleration"))
+			[String] (allow iokit-set-properties (iokit-property "FanMode") (iokit-property "RequestToken"))
+			[String] (read-write-and-issue-extensions (regex (string-append "^/Volumes/" (uuid-regex-string) "(/|$)")))
+			[String] (allow distributed-notification-post)
+			[String] (allow iokit-open-user-client  (iokit-user-client-class "AppleSMCClient"))
+	[Key] com.apple.security.temporary-exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.assistant
+			[String] com.apple.assistant.backedup
+			[String] com.apple.assistant.logging
+			[String] com.apple.assistant.support
+			[String] com.apple.assistant.token
+			[String] com.apple.Notes
+			[String] com.apple.speech.recognition.AppleSpeechRecognition.prefs
+			[String] com.apple.voicetrigger
+			[String] MobileMeAccounts
+	[Key] com.apple.security.temporary-exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] com.apple.assistant
+			[String] kCFPreferencesAnyApplication
+			[String] com.apple.CoreGraphics
+			[String] com.apple.universalaccess
+			[String] com.apple.Siri
+			[String] com.apple.speakerrecognition
+			[String] com.apple.speech.recognition.AppleSpeechRecognition.prefs
+			[String] com.apple.AppStoreComponents
+			[String] com.apple.siri.generativeassistantsettings
+	[Key] com.apple.sirisuggestions.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.sirisuggestions.application-id
+	[Value]
+		[String] com.apple.siri
+	[Key] com.apple.springboard.topButtonFrames
+	[Value]
+		[Bool] true
+	[Key] com.apple.symptom_diagnostics.report
+	[Value]
+		[Bool] true
+	[Key] com.apple.trial.client
+	[Value]
+		[Array]
+			[String] 406
+			[String] 1460
+	[Key] com.apple.wifi.events
+	[Value]
+		[Bool] true
+	[Key] com.apple.wifi.set_power
+	[Value]
+		[Bool] true

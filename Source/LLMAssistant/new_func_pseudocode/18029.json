@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSMountURLWithAuthenticationSync",
+    "function_argument_number": 7,
+    "function_signature": "_NetFSMountURLWithAuthenticationSync(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, _QWORD * a7)",
+    "pseudocode": "__int64 __fastcall NetFSMountURLWithAuthenticationSync(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        _QWORD *a7)\n{\n  __int64 v11; // x23\n  CFTypeRef v13; // [xsp+0h] [xbp-40h] BYREF\n  CFTypeRef cf; // [xsp+8h] [xbp-38h]\n\n  v13 = 0LL;\n  cf = 0LL;\n  if ( a2 | a3 )\n  {\n    v11 = sub_100008568();\n    if ( (_DWORD)v11 )\n      return v11;\n    v11 = NAConnectToServerSync(cf, a4, a5, a6, &v13);\n    CFRelease(cf);\n  }\n  else\n  {\n    v11 = NAConnectToServerSync(a1, a4, a5, a6, &v13);\n  }\n  if ( (_DWORD)v11 == 17 || !(_DWORD)v11 )\n  {\n    *a7 = sub_1000086C4(v13);\n    CFRelease(v13);\n    if ( *a7 )\n      return 0LL;\n    else\n      return 12LL;\n  }\n  return v11;\n}"
+}

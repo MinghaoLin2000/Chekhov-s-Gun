@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateExternalRepresentation",
+    "function_argument_number": 4,
+    "function_signature": "_CFStringCreateExternalRepresentation(CFAllocatorRef alloc, CFStringRef theString, CFStringEncoding encoding, UInt8 lossByte)",
+    "pseudocode": "CFDataRef __cdecl CFStringCreateExternalRepresentation(\n        CFAllocatorRef alloc,\n        CFStringRef theString,\n        CFStringEncoding encoding,\n        UInt8 lossByte)\n{\n  return _CFStringCreateExternalRepresentation(alloc, theString, encoding, lossByte);\n}"
+}

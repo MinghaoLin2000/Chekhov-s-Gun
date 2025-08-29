@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGDataConsumerCreateWithURL",
+    "function_argument_number": 1,
+    "function_signature": "_CGDataConsumerCreateWithURL(CFURLRef url)",
+    "pseudocode": "CGDataConsumerRef __cdecl CGDataConsumerCreateWithURL(CFURLRef url)\n{\n  return _CGDataConsumerCreateWithURL(url);\n}"
+}

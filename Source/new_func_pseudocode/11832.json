@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf11StringValueD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf11StringValueD1Ev(google::protobuf::StringValue * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::StringValue::~StringValue(google::protobuf::StringValue *this)\n{\n  __ZN6google8protobuf11StringValueD2Ev(this);\n}"
+}

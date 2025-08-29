@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_atexit",
+    "function_argument_number": 3,
+    "function_signature": "___cxa_atexit(void (__fastcall *)(void *) lpfunc, void * obj, void * lpdso_handle)",
+    "pseudocode": "int __fastcall __cxa_atexit(void (__fastcall *lpfunc)(void *), void *obj, void *lpdso_handle)\n{\n  return ___cxa_atexit(lpfunc, obj, lpdso_handle);\n}"
+}

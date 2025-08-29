@@ -1,0 +1,6 @@
+{
+    "function_name": "_ccdigest_init",
+    "function_argument_number": 0,
+    "function_signature": "_ccdigest_init()",
+    "pseudocode": "__int64 ccdigest_init()\n{\n  return _ccdigest_init();\n}"
+}

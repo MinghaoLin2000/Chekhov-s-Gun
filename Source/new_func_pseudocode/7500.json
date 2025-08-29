@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV8contains_7options7setTags05clearH0SbAA13CGSConnectionV_So29CGSWorkspaceWindowListOptionsVSo0lH0VAMtF",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV8contains_7options7setTags05clearH0SbAA13CGSConnectionV_So29CGSWorkspaceWindowListOptionsVSo0lH0VAMtF()",
+    "pseudocode": "__int64 CGSSpace.contains(_:options:setTags:clearTags:)()\n{\n  __int64 v0; // x19\n  __int64 v1; // x20\n  __int64 v2; // x21\n  __int64 v3; // x22\n  __int64 v4; // x23\n  __int64 v5; // x0\n  __int64 inited; // x24\n  char v7; // w19\n  _BYTE v9[40]; // [xsp+8h] [xbp-58h] BYREF\n\n  sub_1000122AC();\n  v5 = sub_100002BF4(&unk_100029A70);\n  inited = swift_initStackObject(v5, v9);\n  *(_OWORD *)(inited + 16) = xmmword_10001FC20;\n  *(_QWORD *)(inited + 32) = v0;\n  v7 = sub_10000FD24(v4, v3, v2, v1, inited);\n  swift_bridgeObjectRelease(inited);\n  return v7 & 1;\n}"
+}

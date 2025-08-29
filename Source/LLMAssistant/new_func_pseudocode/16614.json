@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent share3rdParty]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent share3rdParty](UARPActiveFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[UARPActiveFirmwareAnalyticsEvent share3rdParty](UARPActiveFirmwareAnalyticsEvent *self, SEL a2)\n{\n  return self->_share3rdParty;\n}"
+}

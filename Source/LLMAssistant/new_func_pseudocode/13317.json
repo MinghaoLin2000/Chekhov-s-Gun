@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUEncodedBlockInfoInternal initWithEncodedLength:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUEncodedBlockInfoInternal initWithEncodedLength:](TSUEncodedBlockInfoInternal * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "TSUEncodedBlockInfoInternal *__cdecl -[TSUEncodedBlockInfoInternal initWithEncodedLength:](\n        TSUEncodedBlockInfoInternal *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  TSUEncodedBlockInfoInternal *result; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___TSUEncodedBlockInfoInternal;\n  result = -[TSUEncodedBlockInfoInternal init](&v5, \"init\");\n  if ( result )\n    result->_encodedLength = a3;\n  return result;\n}"
+}

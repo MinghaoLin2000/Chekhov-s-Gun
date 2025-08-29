@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFNumberGetValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFNumberGetValue(CFNumberRef number, CFNumberType theType, void * valuePtr)",
+    "pseudocode": "Boolean __cdecl CFNumberGetValue(CFNumberRef number, CFNumberType theType, void *valuePtr)\n{\n  return _CFNumberGetValue(number, theType, valuePtr);\n}"
+}

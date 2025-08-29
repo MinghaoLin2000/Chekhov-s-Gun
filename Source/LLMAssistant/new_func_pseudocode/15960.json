@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpProcessingFlagsReasonToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpProcessingFlagsReasonToString(int a1)",
+    "pseudocode": "const char *__fastcall uarpProcessingFlagsReasonToString(int a1)\n{\n  unsigned int v1; // w8\n  unsigned __int64 v2; // t2\n\n  HIDWORD(v2) = a1;\n  LODWORD(v2) = a1 - 256;\n  v1 = v2 >> 8;\n  if ( v1 > 0xE )\n    return \"<unknown>\";\n  else\n    return (&off_1000246D8)[v1];\n}"
+}

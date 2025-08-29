@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIInvokeOnMainQueue",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIInvokeOnMainQueue()",
+    "pseudocode": "__int64 SiriUIInvokeOnMainQueue()\n{\n  return _SiriUIInvokeOnMainQueue();\n}"
+}

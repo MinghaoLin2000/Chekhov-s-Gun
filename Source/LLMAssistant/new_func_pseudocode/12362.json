@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci(google::protobuf::internal * this, const char * a2, int a3)",
+    "pseudocode": "bool __fastcall google::protobuf::internal::IsStructurallyValidUTF8(google::protobuf::internal *this, const char *a2)\n{\n  int v2; // w19\n  int v4; // [xsp+Ch] [xbp-14h] BYREF\n\n  v2 = (int)a2;\n  v4 = 0;\n  google::protobuf::internal::UTF8GenericScanFastAscii(dword_1001DBFC0, (char *)this, (int)a2, &v4);\n  return v4 == v2;\n}"
+}

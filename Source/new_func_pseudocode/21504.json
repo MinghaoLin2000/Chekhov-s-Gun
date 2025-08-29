@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection wakeUpWithCompletion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection wakeUpWithCompletion:](LSRConnection * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[LSRConnection wakeUpWithCompletion:](LSRConnection *self, SEL a2, id a3)\n{\n  if ( a3 )\n    (*((void (__fastcall **)(id))a3 + 2))(a3);\n}"
+}

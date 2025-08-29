@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceSendCommand",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceSendCommand()",
+    "pseudocode": "__int64 AMRestorableDeviceSendCommand()\n{\n  return _AMRestorableDeviceSendCommand();\n}"
+}

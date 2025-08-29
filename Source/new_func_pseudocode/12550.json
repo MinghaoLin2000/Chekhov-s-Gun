@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_indexOfSmallestObject]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSArray tsu_indexOfSmallestObject](NSArray * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSArray tsu_indexOfSmallestObject](NSArray *self, SEL a2)\n{\n  NSUInteger v3; // x0\n  NSUInteger v4; // x21\n  unsigned __int64 v5; // x22\n  id v6; // x23\n  unsigned __int64 v7; // x20\n  id v8; // x0\n  id v9; // x24\n\n  v3 = -[NSArray count](self, \"count\");\n  if ( !v3 )\n    return 0x7FFFFFFFFFFFFFFFLL;\n  v4 = v3;\n  v5 = 0LL;\n  v6 = 0LL;\n  v7 = 0x7FFFFFFFFFFFFFFFLL;\n  do\n  {\n    v8 = -[NSArray objectAtIndex:](self, \"objectAtIndex:\", v5);\n    v9 = v8;\n    if ( !v6 || objc_msgSend(v8, \"compare:\", v6) == (void *)-1LL )\n    {\n      v7 = v5;\n      v6 = v9;\n    }\n    ++v5;\n  }\n  while ( v4 != v5 );\n  return v7;\n}"
+}

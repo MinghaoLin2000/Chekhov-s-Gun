@@ -1,0 +1,6 @@
+{
+    "function_name": "_object_isClass",
+    "function_argument_number": 1,
+    "function_signature": "_object_isClass(id obj)",
+    "pseudocode": "BOOL __cdecl object_isClass(id obj)\n{\n  return _object_isClass(obj);\n}"
+}

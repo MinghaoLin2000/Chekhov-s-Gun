@@ -1,0 +1,6 @@
+{
+    "function_name": "+[DeviceSettingsNode nodeWithName:children:persistentID:]",
+    "function_argument_number": 5,
+    "function_signature": "+[DeviceSettingsNode nodeWithName:children:persistentID:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "DeviceSettingsNode *__cdecl +[DeviceSettingsNode nodeWithName:children:persistentID:](\n        id a1,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  id v8; // x22\n  id v9; // x19\n  id v10; // x20\n  void *v11; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v8 = objc_retain(a5);\n  v9 = objc_retain(a4);\n  v10 = objc_retain(a3);\n  v11 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"node\"));\n  objc_msgSend(v11, \"setName:\", v10);\n  objc_release(v10);\n  objc_msgSend(v11, \"setChildren:\", v9);\n  objc_release(v9);\n  objc_msgSend(v11, \"setPersistentID:\", v8);\n  objc_release(v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (DeviceSettingsNode *)objc_autoreleaseReturnValue(v11);\n}"
+}

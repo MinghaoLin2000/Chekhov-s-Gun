@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP13ComponentInfoD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP13ComponentInfoD0Ev(TSP::ComponentInfo * this)",
+    "pseudocode": "void __fastcall TSP::ComponentInfo::~ComponentInfo(TSP::ComponentInfo *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::ComponentInfo::~ComponentInfo(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C402CD0F650LL);\n}"
+}

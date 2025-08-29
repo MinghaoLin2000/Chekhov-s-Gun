@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper25GlobalPermissionViewModelC24CanMakeChangesOrViewOnlyOwet",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper25GlobalPermissionViewModelC24CanMakeChangesOrViewOnlyOwet()",
+    "pseudocode": "// attributes: thunk\n__int64 getEnumTagSinglePayload for GlobalPermissionViewModel.CanMakeChangesOrViewOnly()\n{\n  return getEnumTagSinglePayload for SharingMode();\n}"
+}

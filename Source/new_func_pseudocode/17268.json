@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionExecution allOperations]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMRemoteActionExecution allOperations](AMRemoteActionExecution * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[AMRemoteActionExecution allOperations](AMRemoteActionExecution *self, SEL a2)\n{\n  return self->_allOperations;\n}"
+}

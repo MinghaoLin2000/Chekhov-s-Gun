@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_init",
+    "function_argument_number": 0,
+    "function_signature": "_piston_init()",
+    "pseudocode": "__int64 piston_init()\n{\n  __int64 inited; // x19\n  unsigned int v1; // w0\n\n  pthread_mutex_lock(&stru_100018F90);\n  if ( (byte_100018FF8 & 1) != 0 )\n  {\n    inited = 0LL;\n  }\n  else\n  {\n    v1 = time(0LL);\n    srandom(v1);\n    inited = piston_init_negotiation();\n    if ( (_DWORD)inited )\n    {\n      if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n        sub_10000F124(inited);\n    }\n    else\n    {\n      byte_100018FF8 = 1;\n    }\n  }\n  pthread_mutex_unlock(&stru_100018F90);\n  return inited;\n}"
+}

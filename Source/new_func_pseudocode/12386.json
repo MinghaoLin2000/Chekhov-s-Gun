@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy22UncheckedByteArraySink22AppendAndTakeOwnershipEPcmPFvPvPKcmES2_",
+    "function_argument_number": 5,
+    "function_signature": "__ZN6snappy22UncheckedByteArraySink22AppendAndTakeOwnershipEPcmPFvPvPKcmES2_(snappy::UncheckedByteArraySink * this, char * __src, size_t __n, void (__fastcall *)(void *, const char *, unsigned __int64) a4, void * a5)",
+    "pseudocode": "char *__fastcall snappy::UncheckedByteArraySink::AppendAndTakeOwnership(\n        snappy::UncheckedByteArraySink *this,\n        char *__src,\n        size_t __n,\n        __int64 (__fastcall *a4)(void *, char *, size_t),\n        void *a5)\n{\n  char *v6; // x21\n  char *result; // x0\n\n  v6 = __src;\n  result = (char *)*((_QWORD *)this + 1);\n  if ( result != __src )\n  {\n    memcpy(result, __src, __n);\n    result = (char *)a4(a5, v6, __n);\n    v6 = (char *)*((_QWORD *)this + 1);\n  }\n  *((_QWORD *)this + 1) = &v6[__n];\n  return result;\n}"
+}

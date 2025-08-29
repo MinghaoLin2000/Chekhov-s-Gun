@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode adjustAncestorsState]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode adjustAncestorsState](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode adjustAncestorsState](DeviceSettingsNode *self, SEL a2)\n{\n  void *v3; // x19\n  DeviceSettingsNode *v4; // x0\n  DeviceSettingsNode *v5; // x20\n  DeviceSettingsNode *v6; // x21\n\n  v3 = -[DeviceSettingsNode state](self, \"state\");\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsNode parent](self, \"parent\"));\n  if ( v4 )\n  {\n    v5 = v4;\n    do\n    {\n      if ( v3 != (void *)-1LL )\n      {\n        if ( -[DeviceSettingsNode hasChildren](v5, \"hasChildren\") )\n          v3 = -[DeviceSettingsNode effectiveStateOfChildren](v5, \"effectiveStateOfChildren\");\n      }\n      -[DeviceSettingsNode setState:](v5, \"setState:\", v3);\n      v6 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsNode parent](v5, \"parent\"));\n      objc_release(v5);\n      v5 = v6;\n    }\n    while ( v6 );\n  }\n}"
+}

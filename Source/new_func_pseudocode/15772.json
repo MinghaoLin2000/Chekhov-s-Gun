@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset getNextCommandData:length:offset:]",
+    "function_argument_number": 5,
+    "function_signature": "-[USBAudioAsset getNextCommandData:length:offset:](USBAudioAsset * self, SEL a2, char * a3, unsigned int a4, unsigned int * a5)",
+    "pseudocode": "bool __cdecl -[USBAudioAsset getNextCommandData:length:offset:](\n        USBAudioAsset *self,\n        SEL a2,\n        char *a3,\n        unsigned int a4,\n        unsigned int *a5)\n{\n  NSUInteger v9; // x24\n  NSUInteger v10; // x22\n\n  v9 = self->_currentPayloadOffset + a4;\n  v10 = -[NSMutableData length](self->_payload, \"length\");\n  if ( v10 >= v9 )\n  {\n    *a5 = self->_currentPayloadOffset;\n    -[NSMutableData getBytes:range:](self->_payload, \"getBytes:range:\", a3, self->_currentPayloadOffset, a4);\n    self->_currentPayloadOffset += a4;\n  }\n  return v10 >= v9;\n}"
+}

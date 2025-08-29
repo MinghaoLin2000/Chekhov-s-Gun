@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10SimpleFtoaEf",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf10SimpleFtoaEf(google::protobuf * this, float a2)",
+    "pseudocode": "__int64 __usercall google::protobuf::SimpleFtoa@<X0>(float a1@<S0>, char *a2@<X1>, int a3@<W8>)\n{\n  char v6[24]; // [xsp+0h] [xbp-30h] BYREF\n\n  google::protobuf::FloatToBuffer((google::protobuf *)v6, a1, a2);\n  return sub_10007A754(a3, v6);\n}"
+}

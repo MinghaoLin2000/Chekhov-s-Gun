@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService9JSAccountVwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService9JSAccountVwxx(_QWORD * a1)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall destroy for JSAccount(_QWORD *a1)\n{\n  return _s34AppleMediaServicesUIDynamicService9JSAccountVwxx_0(a1);\n}"
+}

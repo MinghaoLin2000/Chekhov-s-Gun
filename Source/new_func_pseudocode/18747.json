@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper15BackgroundsGridVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper15BackgroundsGridVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for BackgroundsGrid()\n{\n  return &type metadata for BackgroundsGrid;\n}"
+}

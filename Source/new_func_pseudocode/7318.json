@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ImageConversionService setPendingRequestCount:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ImageConversionService setPendingRequestCount:](ImageConversionService * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[ImageConversionService setPendingRequestCount:](ImageConversionService *self, SEL a2, signed __int64 a3)\n{\n  self->_pendingRequestCount = a3;\n}"
+}

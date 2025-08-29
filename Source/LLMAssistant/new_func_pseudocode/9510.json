@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties fileFormatVersion]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentProperties fileFormatVersion](TSPDocumentProperties * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSPDocumentProperties fileFormatVersion](TSPDocumentProperties *self, SEL a2)\n{\n  return self->_fileFormatVersion;\n}"
+}

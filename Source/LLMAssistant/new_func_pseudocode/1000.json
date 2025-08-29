@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceManageBackupsViewController setupTableViewContextualMenu]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceManageBackupsViewController setupTableViewContextualMenu](DeviceManageBackupsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceManageBackupsViewController setupTableViewContextualMenu](\n        DeviceManageBackupsViewController *self,\n        SEL a2)\n{\n  id v3; // x20\n  NSTableView *v4; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_alloc_init((Class)&OBJC_CLASS___NSMenu);\n  objc_msgSend(v3, \"setDelegate:\", self);\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceManageBackupsViewController tableView](self, \"tableView\"));\n  -[NSTableView setMenu:](v4, \"setMenu:\", v3);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

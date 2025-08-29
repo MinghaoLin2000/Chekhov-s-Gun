@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV21moveAllWindowsToSpace_11transactionyAC_So17SLSTransactionRefatF",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV21moveAllWindowsToSpace_11transactionyAC_So17SLSTransactionRefatF(EyeCandyGraphics::CGSSpace a1, __int64 a3, __int64 a2)",
+    "pseudocode": "__int64 __fastcall CGSSpace.moveAllWindowsToSpace(_:transaction:)(\n        EyeCandyGraphics::CGSSpace a1,\n        __int64 a2,\n        __int64 a3)\n{\n  __int64 v5; // x22\n  __int64 v6; // x0\n  __int64 inited; // x23\n  Swift::OpaquePointer v8; // x19\n  _BYTE v10[40]; // [xsp+8h] [xbp-58h] BYREF\n\n  v5 = *(unsigned int *)CGSConnection.null.unsafeMutableAddressor(a1.spid);\n  v6 = sub_100002BF4(&unk_100029A70);\n  inited = swift_initStackObject(v6, v10);\n  *(_OWORD *)(inited + 16) = xmmword_10001FC20;\n  *(_QWORD *)(inited + 32) = a3;\n  v8._rawValue = (void *)sub_10000F97C(v5, 1LL, 0LL, 0x3000000000000LL, inited);\n  swift_bridgeObjectRelease(inited);\n  SLSTransactionRef.batchReassociateWindowsToSpace(_:space:)(v8, a1);\n  return swift_bridgeObjectRelease(v8._rawValue);\n}"
+}

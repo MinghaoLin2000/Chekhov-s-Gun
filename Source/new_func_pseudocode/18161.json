@@ -1,0 +1,6 @@
+{
+    "function_name": "___strncat_chk",
+    "function_argument_number": 0,
+    "function_signature": "___strncat_chk()",
+    "pseudocode": "__int64 __strncat_chk()\n{\n  return ___strncat_chk();\n}"
+}

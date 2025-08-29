@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE25moveWindowsToManagedSpace_5spaceySayAC9CGSWindowVG_AC8CGSSpaceVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE25moveWindowsToManagedSpace_5spaceySayAC9CGSWindowVG_AC8CGSSpaceVtF(Swift::OpaquePointer _, EyeCandyGraphics::CGSSpace space)",
+    "pseudocode": "Swift::Void __swiftcall SLSTransactionRef.moveWindowsToManagedSpace(_:space:)(\n        Swift::OpaquePointer _,\n        EyeCandyGraphics::CGSSpace space)\n{\n  __int64 v2; // x20\n  __int64 v3; // x19\n  __int64 v5; // x22\n  __int64 v6; // x0\n  void *v7; // x20\n\n  v3 = v2;\n  v5 = sub_100002BF4(&unk_100029BE0);\n  v6 = sub_100014D1C(&qword_100029BE8, &unk_100029BE0);\n  v7 = (void *)Collection<>.cfarray.getter(v5, v6);\n  SLSTransactionMoveWindowsToManagedSpace(v3, v7, space.spid);\n  objc_release(v7);\n}"
+}

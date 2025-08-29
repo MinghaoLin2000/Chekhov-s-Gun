@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal15DynamicMapField10MutableMapEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal15DynamicMapField10MutableMapEv(google::protobuf::internal::DynamicMapField * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::DynamicMapField::MutableMap(\n        google::protobuf::internal::DynamicMapField *this)\n{\n  google::protobuf::internal::MapFieldBase::SyncMapWithRepeatedField(this);\n  *((_DWORD *)this + 22) = 0;\n  return (__int64)this + 96;\n}"
+}

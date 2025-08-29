@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription addFieldWithFormat:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUDescription addFieldWithFormat:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUDescription addFieldWithFormat:](TSUDescription *self, SEL a2, id a3)\n{\n  id v4; // x21\n  void *v5; // x20\n  __int64 v6; // [xsp+40h] [xbp+10h] BYREF\n\n  v4 = objc_retain(a3);\n  v5 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"initWithFormat:arguments:\", v4, &v6);\n  objc_release(v4);\n  -[TSUDescription addField:value:](self, \"addField:value:\", 0LL, v5);\n  objc_release(v5);\n}"
+}

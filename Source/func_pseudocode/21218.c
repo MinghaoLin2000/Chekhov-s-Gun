@@ -1,0 +1,6 @@
+_$s22localspeechrecognition17RequestEndMetricsC33languageModelInterpolationWeightsSSSgvpfi
+// attributes: thunk
+__int64 variable initialization expression of RequestEndMetrics.languageModelInterpolationWeights()
+{
+  return _s22localspeechrecognition17RequestEndMetricsC33languageModelInterpolationWeightsSSSgvpfi_0();
+}

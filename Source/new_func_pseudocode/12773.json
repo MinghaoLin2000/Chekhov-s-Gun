@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipArchive sortedEntriesUsingComparator:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipArchive sortedEntriesUsingComparator:](TSUZipArchive * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[TSUZipArchive sortedEntriesUsingComparator:](TSUZipArchive *self, SEL a2, id a3)\n{\n  return -[NSMutableOrderedSet sortedArrayUsingComparator:](self->_entries, \"sortedArrayUsingComparator:\", a3);\n}"
+}

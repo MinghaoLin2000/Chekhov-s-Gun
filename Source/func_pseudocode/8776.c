@@ -1,0 +1,5 @@
+_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreCMa
+__int64 type metadata accessor for DynamicAccountsStore()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService20DynamicAccountsStore);
+}

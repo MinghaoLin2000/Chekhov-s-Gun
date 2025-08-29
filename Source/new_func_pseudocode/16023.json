@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryGetInternalSuperBinaryMetaData",
+    "function_argument_number": 3,
+    "function_signature": "_UARPSuperBinaryGetInternalSuperBinaryMetaData(int a1, int a2, void * __dst)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryGetInternalSuperBinaryMetaData(\n        int a1,\n        __int64 a2,\n        void *__dst,\n        unsigned int a4,\n        unsigned int a5,\n        unsigned __int16 *a6)\n{\n  int v7; // w9\n  unsigned int v8; // w8\n  unsigned int v9; // w10\n  bool v10; // cf\n  __int64 v11; // x8\n  bool v12; // cc\n  unsigned __int16 v13; // w20\n  __int64 result; // x0\n  unsigned __int16 v15; // w9\n\n  v7 = *(_DWORD *)(a2 + 32);\n  if ( v7\n    && ((v8 = *(_DWORD *)(a2 + 28), v9 = v7 + v8, v10 = a5 >= v8, v11 = a5 - v8, v10) ? (v12 = v9 > a5) : (v12 = 0), v12) )\n  {\n    v15 = v7 - v11;\n    if ( a4 >= v15 )\n      v13 = v15;\n    else\n      v13 = a4;\n    memcpy(__dst, (const void *)(*(_QWORD *)(a2 + 672) + v11), v13);\n    result = 0LL;\n  }\n  else\n  {\n    v13 = 0;\n    result = 40LL;\n  }\n  *a6 = v13;\n  return result;\n}"
+}

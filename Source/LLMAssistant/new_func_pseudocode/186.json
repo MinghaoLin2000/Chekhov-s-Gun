@@ -1,0 +1,6 @@
+{
+    "function_name": "__swift_stdlib_reportUnimplementedInitializer",
+    "function_argument_number": 0,
+    "function_signature": "__swift_stdlib_reportUnimplementedInitializer()",
+    "pseudocode": "__int64 _swift_stdlib_reportUnimplementedInitializer()\n{\n  return __swift_stdlib_reportUnimplementedInitializer();\n}"
+}

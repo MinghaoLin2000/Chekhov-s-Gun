@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP19UUIDMultiMapArchiveD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP19UUIDMultiMapArchiveD1Ev(TSP::UUIDMultiMapArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::UUIDMultiMapArchive::~UUIDMultiMapArchive(TSP::UUIDMultiMapArchive *this)\n{\n  __ZN3TSP19UUIDMultiMapArchiveD2Ev(this);\n}"
+}

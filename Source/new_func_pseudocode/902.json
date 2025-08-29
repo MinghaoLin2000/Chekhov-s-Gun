@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView setIsOverlay:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarView setIsOverlay:](AMPCapacityBarView * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView setIsOverlay:](AMPCapacityBarView *self, SEL a2, bool a3)\n{\n  self->_isOverlay = a3;\n}"
+}

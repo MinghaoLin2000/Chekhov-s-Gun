@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV9hashValueSivg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV9hashValueSivg(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGSConnection.hashValue.getter(__int64 a1)\n{\n  __int64 v2; // x0\n  _QWORD v4[9]; // [xsp+8h] [xbp-58h] BYREF\n\n  sub_1000707B0(v4, 0LL);\n  v2 = sub_1000707D0(a1);\n  return sub_1000707F0(v2);\n}"
+}

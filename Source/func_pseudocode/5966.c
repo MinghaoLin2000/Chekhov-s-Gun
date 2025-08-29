@@ -1,0 +1,5 @@
+$s33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegateCMa
+__int64 type metadata accessor for BookkeepingServiceDelegate()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC33SiriSuggestionsBookkeepingService26BookkeepingServiceDelegate);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabaseObjectWithDataState hasFileState]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDatabaseObjectWithDataState hasFileState](TSPDatabaseObjectWithDataState * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSPDatabaseObjectWithDataState hasFileState](TSPDatabaseObjectWithDataState *self, SEL a2)\n{\n  return 0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_firstKey]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_firstKey](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_firstKey](NSString *self, SEL a2)\n{\n  NSString *v2; // x19\n  void *v3; // x0\n  NSString *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retain(self);\n  v3 = -[NSString rangeOfString:options:](v2, \"rangeOfString:options:\", CFSTR(\".\"), 2LL);\n  if ( v3 != (void *)0x7FFFFFFFFFFFFFFFLL )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[NSString substringToIndex:](v2, \"substringToIndex:\", v3));\n    objc_release(v2);\n    v2 = v4;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

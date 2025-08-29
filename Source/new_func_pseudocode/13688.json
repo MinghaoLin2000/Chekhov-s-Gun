@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringTokenizerAdvanceToNextToken",
+    "function_argument_number": 1,
+    "function_signature": "_CFStringTokenizerAdvanceToNextToken(CFStringTokenizerRef tokenizer)",
+    "pseudocode": "CFStringTokenizerTokenType __cdecl CFStringTokenizerAdvanceToNextToken(CFStringTokenizerRef tokenizer)\n{\n  return _CFStringTokenizerAdvanceToNextToken(tokenizer);\n}"
+}

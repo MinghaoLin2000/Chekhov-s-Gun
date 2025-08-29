@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundleService transmit:protocol:data:reply:]",
+    "function_argument_number": 6,
+    "function_signature": "-[IFDBundleService transmit:protocol:data:reply:](int a1, int a2, int a3, int a4, int a5, id a6)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[IFDBundleService transmit:protocol:data:reply:](\n        IFDBundleService *self,\n        SEL a2,\n        unsigned int a3,\n        unsigned int a4,\n        id a5,\n        id a6)\n{\n  __int64 v8; // x21\n  __int64 v9; // x22\n  IFDBundle *bundle; // x23\n  NSMutableData *outputBuffer; // x24\n  id v12; // x25\n  id v13; // x20\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v8 = *(_QWORD *)&a4;\n  v9 = *(_QWORD *)&a3;\n  bundle = self->_bundle;\n  outputBuffer = self->_outputBuffer;\n  v12 = objc_retain(a6);\n  v13 = objc_retainAutoreleasedReturnValue(\n          -[IFDBundle transmit:protocol:data:buffer:](\n            bundle,\n            \"transmit:protocol:data:buffer:\",\n            v9,\n            v8,\n            a5,\n            outputBuffer));\n  (*((void (__fastcall **)(id, id))a6 + 2))(v12, v13);\n  objc_release(v12);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v13);\n}"
+}

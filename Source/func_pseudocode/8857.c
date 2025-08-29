@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService14JSClientObjectCMa
+__int64 type metadata accessor for JSClientObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService14JSClientObject);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter addData:queue:completion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipWriter addData:queue:completion:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUZipWriter addData:queue:completion:](TSUZipWriter *self, SEL a2, id a3, id a4, id a5)\n{\n  id v8; // x22\n  id v9; // x20\n  id v10; // x0\n  dispatch_queue_s *writeQueue; // x19\n  id v12; // x21\n  id v13; // x20\n  id v14; // x22\n  _QWORD v15[5]; // [xsp+0h] [xbp-60h] BYREF\n  id v16; // [xsp+28h] [xbp-38h]\n  id v17; // [xsp+30h] [xbp-30h]\n  id v18; // [xsp+38h] [xbp-28h]\n\n  v8 = objc_retain(a3);\n  v9 = objc_retain(a4);\n  v10 = objc_retain(a5);\n  writeQueue = (dispatch_queue_s *)self->_writeQueue;\n  v15[0] = _NSConcreteStackBlock;\n  v15[1] = 3254779904LL;\n  v15[2] = sub_100152AB4;\n  v15[3] = &unk_1001DEC08;\n  v15[4] = self;\n  v16 = v8;\n  v17 = v9;\n  v18 = v10;\n  v12 = objc_retain(v10);\n  v13 = objc_retain(v9);\n  v14 = objc_retain(v8);\n  dispatch_async(writeQueue, v15);\n  objc_release(v18);\n  objc_release(v17);\n  objc_release(v16);\n  objc_release(v12);\n  objc_release(v13);\n  objc_release(v14);\n}"
+}

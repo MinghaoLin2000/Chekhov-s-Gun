@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest setWait_sema:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMSysmonRequest setWait_sema:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[MXMSysmonRequest setWait_sema:](MXMSysmonRequest *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_wait_sema, a3);\n}"
+}

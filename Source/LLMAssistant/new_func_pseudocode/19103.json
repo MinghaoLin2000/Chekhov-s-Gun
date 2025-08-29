@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUICGDisplayIDForMouseLocation",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUICGDisplayIDForMouseLocation()",
+    "pseudocode": "__int64 SiriUICGDisplayIDForMouseLocation()\n{\n  return _SiriUICGDisplayIDForMouseLocation();\n}"
+}

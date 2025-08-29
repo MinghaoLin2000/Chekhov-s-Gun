@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo7CGPointV16EyeCandyGraphicsEyABSo6CGSizeVcfC",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo7CGPointV16EyeCandyGraphicsEyABSo6CGSizeVcfC(EyeCandyGraphics::SystemEventMask a1)",
+    "pseudocode": "// attributes: thunk\nSwift::UInt32 __swiftcall CGPoint.init(_:)(EyeCandyGraphics::SystemEventMask a1)\n{\n  return UInt32.init(_:)(a1);\n}"
+}

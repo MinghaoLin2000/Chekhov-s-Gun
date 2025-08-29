@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableData tsp_appendDispatchData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSMutableData tsp_appendDispatchData:](NSMutableData * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[NSMutableData tsp_appendDispatchData:](NSMutableData *self, SEL a2, id a3)\n{\n  -[NSMutableData appendData:](self, \"appendData:\", a3);\n}"
+}

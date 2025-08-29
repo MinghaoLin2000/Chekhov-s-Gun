@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetRelease2",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointAssetRelease2(__int64 a1, __int64 a3, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetRelease2(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = uarpPlatformAssetFindByAssetContext(a1, a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpPlatformAssetProcessingCompleteInternal(a1, 0LL, v4, 1u, 0, 1);\n}"
+}

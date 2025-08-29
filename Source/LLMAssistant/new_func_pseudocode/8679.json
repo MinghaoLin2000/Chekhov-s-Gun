@@ -1,0 +1,6 @@
+{
+    "function_name": "_sysmon_row_apply",
+    "function_argument_number": 0,
+    "function_signature": "_sysmon_row_apply()",
+    "pseudocode": "__int64 sysmon_row_apply()\n{\n  return _sysmon_row_apply();\n}"
+}

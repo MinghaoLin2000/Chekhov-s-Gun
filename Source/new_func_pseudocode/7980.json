@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceCopyTileSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceCopyTileSpaces()",
+    "pseudocode": "__int64 CGSSpaceCopyTileSpaces()\n{\n  return _CGSSpaceCopyTileSpaces();\n}"
+}

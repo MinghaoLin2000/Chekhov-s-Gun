@@ -1,0 +1,5 @@
+_AMRestorableDeviceGetRestoreOperationsQueue
+__int64 AMRestorableDeviceGetRestoreOperationsQueue()
+{
+  return _AMRestorableDeviceGetRestoreOperationsQueue();
+}

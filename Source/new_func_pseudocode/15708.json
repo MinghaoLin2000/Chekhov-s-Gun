@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPDFUUpdater addAccessory:enableNotification:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPDFUUpdater addAccessory:enableNotification:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[UARPDFUUpdater addAccessory:enableNotification:](UARPDFUUpdater *self, SEL a2, id a3, bool a4)\n{\n  _BOOL4 v4; // w21\n  id v6; // x0\n  void *v7; // x19\n  OS_dispatch_queue *accessoriesQueue; // x23\n  id v9; // x22\n  void **v11; // [xsp+0h] [xbp-60h] BYREF\n  __int64 v12; // [xsp+8h] [xbp-58h]\n  __int64 (__fastcall *v13)(); // [xsp+10h] [xbp-50h]\n  void *v14; // [xsp+18h] [xbp-48h]\n  UARPDFUUpdater *v15; // [xsp+20h] [xbp-40h]\n  id v16; // [xsp+28h] [xbp-38h]\n\n  v4 = a4;\n  v6 = objc_retain(a3);\n  v7 = v6;\n  if ( v6 )\n  {\n    accessoriesQueue = self->_accessoriesQueue;\n    v11 = _NSConcreteStackBlock;\n    v12 = 3254779904LL;\n    v13 = sub_1000069C8;\n    v14 = &unk_1000243F0;\n    v15 = self;\n    v9 = objc_retain(v6);\n    v16 = v9;\n    dispatch_sync((dispatch_queue_t)accessoriesQueue, &v11);\n    if ( v4 )\n      objc_msgSend(v9, \"enableDisconnectCallback:reference:\", sub_100006B10, self, v11, v12, v13, v14, v15);\n    objc_release(v16);\n  }\n  objc_release(v7);\n  return v7 != 0LL;\n}"
+}

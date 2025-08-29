@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr7DestroyEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS0_5ArenaE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr7DestroyEPKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS0_5ArenaE(__int64 * result, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 *__fastcall google::protobuf::internal::ArenaStringPtr::Destroy(__int64 *result, __int64 a2, __int64 a3)\n{\n  __int64 v3; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( !a3 )\n  {\n    v3 = *result;\n    if ( *result != a2 )\n    {\n      if ( *(char *)(v3 + 23) < 0 )\n        operator delete(*(void **)v3);\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return (__int64 *)operator delete(v3, 0x1012C40EC159624LL);\n    }\n  }\n  return result;\n}"
+}

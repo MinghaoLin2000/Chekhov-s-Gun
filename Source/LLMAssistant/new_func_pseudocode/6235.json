@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setImageSource:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setImageSource:](PAMediaConversionServiceImageConversionJob * self, SEL a2, CGImageSource * a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setImageSource:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        CGImageSource *a3)\n{\n  self->_imageSource = a3;\n}"
+}

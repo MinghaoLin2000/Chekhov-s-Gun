@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdateFirmwareAnalyticsEvent postedFirmwareVersion]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdateFirmwareAnalyticsEvent postedFirmwareVersion](UARPUpdateFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[UARPUpdateFirmwareAnalyticsEvent postedFirmwareVersion](\n        UARPUpdateFirmwareAnalyticsEvent *self,\n        SEL a2)\n{\n  return (NSString *)objc_getProperty(self, a2, 56LL, 1);\n}"
+}

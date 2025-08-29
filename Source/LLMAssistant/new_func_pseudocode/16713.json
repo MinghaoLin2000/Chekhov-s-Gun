@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringAppend",
+    "function_argument_number": 2,
+    "function_signature": "_CFStringAppend(CFMutableStringRef theString, CFStringRef appendedString)",
+    "pseudocode": "void __cdecl CFStringAppend(CFMutableStringRef theString, CFStringRef appendedString)\n{\n  _CFStringAppend(theString, appendedString);\n}"
+}

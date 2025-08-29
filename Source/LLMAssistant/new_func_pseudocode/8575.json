@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTerminateProcessConfiguration timeout]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTerminateProcessConfiguration timeout](MXMTerminateProcessConfiguration * self, SEL a2)",
+    "pseudocode": "double __cdecl -[MXMTerminateProcessConfiguration timeout](MXMTerminateProcessConfiguration *self, SEL a2)\n{\n  return self->_timeout;\n}"
+}

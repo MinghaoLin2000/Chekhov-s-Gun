@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUTemporaryDirectory initWithSignature:subdirectory:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUTemporaryDirectory initWithSignature:subdirectory:error:](int a1, int a2, id a3)",
+    "pseudocode": "TSUTemporaryDirectory *__cdecl -[TSUTemporaryDirectory initWithSignature:subdirectory:error:](\n        TSUTemporaryDirectory *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id *a5)\n{\n  id v8; // x19\n  id v9; // x20\n  TSUTemporaryDirectory *v10; // x0\n  TSUTemporaryDirectory *v11; // x22\n  objc_super v13; // [xsp+0h] [xbp-30h] BYREF\n\n  v8 = objc_retain(a3);\n  v9 = objc_retain(a4);\n  v13.receiver = self;\n  v13.super_class = (Class)&OBJC_CLASS___TSUTemporaryDirectory;\n  v10 = -[TSUTemporaryDirectory init](&v13, \"init\");\n  v11 = v10;\n  if ( v10\n    && !-[TSUTemporaryDirectory _createDirectoryWithSignature:subdirectory:error:](\n          v10,\n          \"_createDirectoryWithSignature:subdirectory:error:\",\n          v8,\n          v9,\n          a5) )\n  {\n    objc_release(v11);\n    v11 = 0LL;\n  }\n  objc_release(v9);\n  objc_release(v8);\n  return v11;\n}"
+}

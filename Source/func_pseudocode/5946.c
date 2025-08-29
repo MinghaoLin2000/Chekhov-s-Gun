@@ -1,0 +1,5 @@
+_$s33SiriSuggestionsBookkeepingService07DefaultB13LoggerFactoryCMa
+__int64 type metadata accessor for DefaultSuggestionsLoggerFactory()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC33SiriSuggestionsBookkeepingService31DefaultSuggestionsLoggerFactory);
+}

@@ -1,0 +1,5 @@
+_objc_msgSend$defaultGroupPopUpButton
+id objc_msgSend_defaultGroupPopUpButton(void *a1, const char *a2, ...)
+{
+  return objc_msgSend(a1, "defaultGroupPopUpButton");
+}

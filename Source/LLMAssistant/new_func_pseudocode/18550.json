@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper19ResourceBundleClassCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper19ResourceBundleClassCMa()",
+    "pseudocode": "__int64 type metadata accessor for ResourceBundleClass()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_5E6FB1DAF5A6812F47FFF73458E34B7919ResourceBundleClass);\n}"
+}

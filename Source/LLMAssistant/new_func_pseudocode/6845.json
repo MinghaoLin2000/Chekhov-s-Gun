@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$generateMoviePreviewForAttachmentWithFileURL:maxPixelDimension:minThumbnailPxSize:scale:resultHandler:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$generateMoviePreviewForAttachmentWithFileURL:maxPixelDimension:minThumbnailPxSize:scale:resultHandler:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_generateMoviePreviewForAttachmentWithFileURL_maxPixelDimension_minThumbnailPxSize_scale_resultHandler_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"generateMoviePreviewForAttachmentWithFileURL:maxPixelDimension:minThumbnailPxSize:scale:resultHandler:\");\n}"
+}

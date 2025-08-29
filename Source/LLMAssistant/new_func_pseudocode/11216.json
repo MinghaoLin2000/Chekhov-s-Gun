@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14MessageOptions8CopyFromERKS1_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf14MessageOptions8CopyFromERKS1_(google::protobuf::MessageOptions * this, const google::protobuf::MessageOptions * a2)",
+    "pseudocode": "google::protobuf::MessageOptions *__fastcall google::protobuf::MessageOptions::CopyFrom(\n        google::protobuf::MessageOptions *this,\n        const google::protobuf::MessageOptions *a2)\n{\n  __int64 v2; // x30\n  google::protobuf::MessageOptions *v4; // x20\n\n  if ( a2 != this )\n  {\n    v4 = this;\n    google::protobuf::MessageOptions::Clear(this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (google::protobuf::MessageOptions *)google::protobuf::MessageOptions::MergeFrom(v4, a2);\n  }\n  return this;\n}"
+}

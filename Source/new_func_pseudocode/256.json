@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_slowDealloc",
+    "function_argument_number": 0,
+    "function_signature": "_swift_slowDealloc()",
+    "pseudocode": "__int64 swift_slowDealloc()\n{\n  return _swift_slowDealloc();\n}"
+}

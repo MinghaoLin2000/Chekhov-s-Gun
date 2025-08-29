@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarCategory setHideLabel:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarCategory setHideLabel:](AMPCapacityBarCategory * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarCategory setHideLabel:](AMPCapacityBarCategory *self, SEL a2, bool a3)\n{\n  self->_hideLabel = a3;\n}"
+}

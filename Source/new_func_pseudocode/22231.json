@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLSetProcessVNodeRapidAging",
+    "function_argument_number": 0,
+    "function_signature": "_QLSetProcessVNodeRapidAging()",
+    "pseudocode": "__int64 QLSetProcessVNodeRapidAging()\n{\n  return _QLSetProcessVNodeRapidAging();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CoreMLModelSecurity init]",
+    "function_argument_number": 2,
+    "function_signature": "-[CoreMLModelSecurity init](CoreMLModelSecurity * self, SEL a2)",
+    "pseudocode": "CoreMLModelSecurity *__cdecl -[CoreMLModelSecurity init](CoreMLModelSecurity *self, SEL a2)\n{\n  CoreMLModelSecurity *v2; // x19\n  MLFairPlayDecryptSessionManager *v3; // x0\n  MLFairPlayDecryptSessionManager *decryptSessionManager; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___CoreMLModelSecurity;\n  v2 = -[CoreMLModelSecurity init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = (MLFairPlayDecryptSessionManager *)objc_alloc_init((Class)&OBJC_CLASS___MLFairPlayDecryptSessionManager);\n    decryptSessionManager = v2->_decryptSessionManager;\n    v2->_decryptSessionManager = v3;\n    objc_release(decryptSessionManager);\n  }\n  return v2;\n}"
+}

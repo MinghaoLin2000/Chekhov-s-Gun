@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController siriViewController:bulletinWithIdentifier:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController siriViewController:bulletinWithIdentifier:](SiriNCAlertViewController * self, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl -[SiriNCAlertViewController siriViewController:bulletinWithIdentifier:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void *v5; // x20\n  os_log_s *v6; // x20\n  int v8; // [xsp+0h] [xbp-30h] BYREF\n  const char *v9; // [xsp+4h] [xbp-2Ch]\n  __int16 v10; // [xsp+Ch] [xbp-24h]\n  const char *Name; // [xsp+Eh] [xbp-22h]\n\n  v5 = (void *)AFSiriLogContextConnection;\n  if ( os_log_type_enabled(AFSiriLogContextConnection, OS_LOG_TYPE_DEFAULT) )\n  {\n    v6 = objc_retain(v5);\n    v8 = 136315394;\n    v9 = \"-[SiriNCAlertViewController siriViewController:bulletinWithIdentifier:]\";\n    v10 = 2080;\n    Name = sel_getName(a2);\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v6,\n      OS_LOG_TYPE_DEFAULT,\n      \"%s %s - not yet implemented\",\n      (uint8_t *)&v8,\n      0x16u);\n    objc_release(v6);\n  }\n  return 0LL;\n}"
+}

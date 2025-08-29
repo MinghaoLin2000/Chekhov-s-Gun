@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSGetTVConnectDefaultPolicy",
+    "function_argument_number": 0,
+    "function_signature": "_SLSGetTVConnectDefaultPolicy()",
+    "pseudocode": "__int64 SLSGetTVConnectDefaultPolicy()\n{\n  return _SLSGetTVConnectDefaultPolicy();\n}"
+}

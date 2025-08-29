@@ -1,0 +1,6 @@
+{
+    "function_name": "_CopyDataAndBytesAndLengthFromDictionary",
+    "function_argument_number": 1,
+    "function_signature": "_CopyDataAndBytesAndLengthFromDictionary(CFPropertyListRef propertyList)",
+    "pseudocode": "const __CFData *__fastcall CopyDataAndBytesAndLengthFromDictionary(\n        CFPropertyListRef propertyList,\n        const UInt8 **a2,\n        CFIndex *a3)\n{\n  const __CFData *Data; // x0\n  const __CFData *v6; // x21\n  CFIndex Length; // x0\n  __int64 v8; // x1\n\n  if ( propertyList && a2 && a3 )\n  {\n    Data = CFPropertyListCreateData(kCFAllocatorDefault, propertyList, kCFPropertyListBinaryFormat_v1_0, 0LL, 0LL);\n    if ( Data )\n    {\n      v6 = Data;\n      *a2 = CFDataGetBytePtr(Data);\n      Length = CFDataGetLength(v6);\nLABEL_9:\n      *a3 = Length;\n      return v6;\n    }\n  }\n  else if ( !a2 )\n  {\n    goto LABEL_8;\n  }\n  *a2 = 0LL;\nLABEL_8:\n  Length = 0LL;\n  v6 = 0LL;\n  v8 = 0LL;\n  if ( a3 )\n    goto LABEL_9;\n  return (const __CFData *)v8;\n}"
+}

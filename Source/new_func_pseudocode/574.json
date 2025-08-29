@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsDetailsTabContentViewController disableAndCheckSelectedDetailItems]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsDetailsTabContentViewController disableAndCheckSelectedDetailItems](DeviceSettingsDetailsTabContentViewController * self, SEL a2)",
+    "pseudocode": "NSSet *__cdecl -[DeviceSettingsDetailsTabContentViewController disableAndCheckSelectedDetailItems](\n        DeviceSettingsDetailsTabContentViewController *self,\n        SEL a2)\n{\n  return self->_disableAndCheckSelectedDetailItems;\n}"
+}

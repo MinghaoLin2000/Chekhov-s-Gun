@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceCopyDefaultRestoreOptions",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceCopyDefaultRestoreOptions()",
+    "pseudocode": "__int64 AMRestorableDeviceCopyDefaultRestoreOptions()\n{\n  return _AMRestorableDeviceCopyDefaultRestoreOptions();\n}"
+}

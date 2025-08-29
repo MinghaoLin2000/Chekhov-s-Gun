@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP6Pose3DD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP6Pose3DD1Ev(TSP::Pose3D * this)",
+    "pseudocode": "void __fastcall TSP::Pose3D::~Pose3D(TSP::Pose3D *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

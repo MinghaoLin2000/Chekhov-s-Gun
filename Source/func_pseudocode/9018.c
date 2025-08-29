@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC14BootstrapErrorOMa
+ValueMetadata *type metadata accessor for ServiceConnectionExportedObject.BootstrapError()
+{
+  return &type metadata for ServiceConnectionExportedObject.BootstrapError;
+}

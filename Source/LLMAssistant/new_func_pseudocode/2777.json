@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setVideoSeason:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setVideoSeason:](DeviceSettingsNode * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setVideoSeason:](DeviceSettingsNode *self, SEL a2, unsigned __int64 a3)\n{\n  self->_videoSeason = a3;\n}"
+}

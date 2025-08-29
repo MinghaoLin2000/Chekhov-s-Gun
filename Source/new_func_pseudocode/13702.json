@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSUnionRange",
+    "function_argument_number": 2,
+    "function_signature": "_NSUnionRange(NSRange range1, NSRange range2)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nNSRange __cdecl NSUnionRange(NSRange range1, NSRange range2)\n{\n  NSUInteger location; // x0\n  NSUInteger length; // x1\n  NSRange v4; // kr00_16\n  NSRange result; // 0:x0.16\n\n  v4 = _NSUnionRange(range1, range2);\n  length = v4.length;\n  location = v4.location;\n  result.length = length;\n  result.location = location;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileEventObserverEventDetail setFlags:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileEventObserverEventDetail setFlags:](FileEventObserverEventDetail * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[FileEventObserverEventDetail setFlags:](FileEventObserverEventDetail *self, SEL a2, unsigned int a3)\n{\n  self->_flags = a3;\n}"
+}

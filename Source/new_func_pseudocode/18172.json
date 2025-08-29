@@ -1,0 +1,6 @@
+{
+    "function_name": "_getsockopt",
+    "function_argument_number": 5,
+    "function_signature": "_getsockopt(int a1, int a2, int a3, void * a4, socklen_t * a5)",
+    "pseudocode": "int __cdecl getsockopt(int a1, int a2, int a3, void *a4, socklen_t *a5)\n{\n  return _getsockopt(a1, a2, a3, a4, a5);\n}"
+}

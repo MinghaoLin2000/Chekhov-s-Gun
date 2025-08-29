@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUNoCopyDictionary initWithCFDictionary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUNoCopyDictionary initWithCFDictionary:](TSUNoCopyDictionary * self, SEL a2, __CFDictionary * a3)",
+    "pseudocode": "TSUNoCopyDictionary *__cdecl -[TSUNoCopyDictionary initWithCFDictionary:](\n        TSUNoCopyDictionary *self,\n        SEL a2,\n        __CFDictionary *a3)\n{\n  TSUNoCopyDictionary *v4; // x20\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___TSUNoCopyDictionary;\n  v4 = -[TSUNoCopyDictionary init](&v6, \"init\");\n  if ( v4 )\n    v4->mDictionary = CFDictionaryCreateMutableCopy(0LL, 0LL, a3);\n  return v4;\n}"
+}

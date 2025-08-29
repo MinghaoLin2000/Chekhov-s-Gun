@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction amAction]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction amAction](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "AMAction *__cdecl -[AMLoaderServiceAction amAction](AMLoaderServiceAction *self, SEL a2)\n{\n  NSAssertionHandler *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( !+[NSThread isMainThread](&OBJC_CLASS___NSThread, \"isMainThread\") )\n  {\n    v5 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v5,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"AMLoaderServiceAction.m\"),\n      933LL,\n      CFSTR(\"Should be on main thread!\"));\n    objc_release(v5);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[AMLoaderServiceAction _amAction](self, \"_amAction\");\n}"
+}

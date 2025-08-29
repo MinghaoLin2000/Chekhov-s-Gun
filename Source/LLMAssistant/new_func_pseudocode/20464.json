@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CUPSBrowse_Entity initWithBonjourName:txt:]",
+    "function_argument_number": 3,
+    "function_signature": "-[CUPSBrowse_Entity initWithBonjourName:txt:](int a1, int a2, id a3)",
+    "pseudocode": "CUPSBrowse_Entity *__cdecl -[CUPSBrowse_Entity initWithBonjourName:txt:](CUPSBrowse_Entity *self, SEL a2, id a3, id a4)\n{\n  id v7; // x19\n  id v8; // x21\n  CUPSBrowse_Entity *v9; // x0\n  CUPSBrowse_Entity *v10; // x23\n  objc_super v12; // [xsp+0h] [xbp-40h] BYREF\n\n  v7 = objc_retain(a3);\n  v8 = objc_retain(a4);\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___CUPSBrowse_Entity;\n  v9 = -[CUPSBrowse_Entity init](&v12, \"init\");\n  v10 = v9;\n  if ( v9 )\n  {\n    objc_storeStrong((id *)&v9->_bonjourName, a3);\n    objc_storeStrong((id *)&v10->_txt, a4);\n  }\n  objc_release(v8);\n  objc_release(v7);\n  return v10;\n}"
+}

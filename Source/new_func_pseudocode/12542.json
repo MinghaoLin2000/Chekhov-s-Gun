@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSArray tsu_arrayWithCGFloats:count:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSArray tsu_arrayWithCGFloats:count:](id a1, SEL a2, const double * a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl +[NSArray tsu_arrayWithCGFloats:count:](id a1, SEL a2, const double *a3, unsigned __int64 a4)\n{\n  void *v4; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_msgSend(objc_alloc((Class)a1), \"tsu_initWithCGFloats:count:\", a3, a4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autorelease(v4);\n}"
+}

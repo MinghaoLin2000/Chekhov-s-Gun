@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController reloadModelAndUpdateUIAsync]",
+    "function_argument_number": 1,
+    "function_signature": "-[DeviceSettingsViewController reloadModelAndUpdateUIAsync](id val)",
+    "pseudocode": "void __cdecl -[DeviceSettingsViewController reloadModelAndUpdateUIAsync](DeviceSettingsViewController *self, SEL a2)\n{\n  _QWORD v3[4]; // [xsp+0h] [xbp-40h] BYREF\n  id v4; // [xsp+20h] [xbp-20h] BYREF\n  id location; // [xsp+28h] [xbp-18h] BYREF\n\n  objc_initWeak(&location, self);\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3254779904LL;\n  v3[2] = sub_1000177E4;\n  v3[3] = &unk_1000B9040;\n  objc_copyWeak(&v4, &location);\n  -[DeviceSettingsViewController dispatchWithBlock:](self, \"dispatchWithBlock:\", v3);\n  objc_destroyWeak(&v4);\n  objc_destroyWeak(&location);\n}"
+}

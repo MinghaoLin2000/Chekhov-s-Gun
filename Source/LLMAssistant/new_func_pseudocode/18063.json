@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_setXPCPlugInState",
+    "function_argument_number": 1,
+    "function_signature": "_netfs_setXPCPlugInState(__int64 a1)",
+    "pseudocode": "__int64 __fastcall netfs_setXPCPlugInState(__int64 a1)\n{\n  bool v2; // zf\n  __int64 (__fastcall *v4)(__int64, __int64); // x2\n  __int64 v5; // x0\n  __int64 v6; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  pthread_mutex_lock(&stru_100018F48);\n  if ( !a1 || (*(_QWORD *)(a1 + 104) ? (v2 = qword_100018FF0 == 0) : (v2 = 1), v2) )\n  {\n    pthread_mutex_unlock(&stru_100018F48);\n    return 22LL;\n  }\n  else\n  {\n    pthread_mutex_unlock(&stru_100018F48);\n    v4 = *(__int64 (__fastcall **)(__int64, __int64))(**(_QWORD **)(a1 + 104) + 32LL);\n    v5 = qword_100018FF0;\n    v6 = *(_QWORD *)(a1 + 136);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v4(v5, v6);\n  }\n}"
+}

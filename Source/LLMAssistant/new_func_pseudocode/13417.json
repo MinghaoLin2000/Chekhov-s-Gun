@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUTemporaryDirectory .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUTemporaryDirectory .cxx_destruct](TSUTemporaryDirectory * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUTemporaryDirectory .cxx_destruct](TSUTemporaryDirectory *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_path, 0LL);\n}"
+}

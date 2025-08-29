@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AutofillNode setParent:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AutofillNode setParent:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[AutofillNode setParent:](AutofillNode *self, SEL a2, id a3)\n{\n  objc_storeWeak((id *)&self->_parent, a3);\n}"
+}

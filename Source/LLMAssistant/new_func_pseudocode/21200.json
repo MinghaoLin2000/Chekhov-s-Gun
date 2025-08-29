@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$withNewAttr:groupTag:valueTag:apply:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$withNewAttr:groupTag:valueTag:apply:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_withNewAttr_groupTag_valueTag_apply_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"withNewAttr:groupTag:valueTag:apply:\");\n}"
+}

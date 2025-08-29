@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceAddWindowsAndRemoveFromSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceAddWindowsAndRemoveFromSpaces()",
+    "pseudocode": "__int64 CGSSpaceAddWindowsAndRemoveFromSpaces()\n{\n  return _CGSSpaceAddWindowsAndRemoveFromSpaces();\n}"
+}

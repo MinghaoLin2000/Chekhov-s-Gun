@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoTranscodingTask .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoTranscodingTask .cxx_destruct](VideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[VideoTranscodingTask .cxx_destruct](VideoTranscodingTask *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_hangDetector, 0LL);\n}"
+}

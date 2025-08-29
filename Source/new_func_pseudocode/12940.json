@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipEntry setCompressionFlags:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipEntry setCompressionFlags:](SFUZipEntry * self, SEL a2, unsigned __int16 a3)",
+    "pseudocode": "void __cdecl -[SFUZipEntry setCompressionFlags:](SFUZipEntry *self, SEL a2, unsigned __int16 a3)\n{\n  if ( (int)a3 <= 25450 )\n  {\n    if ( a3 )\n    {\n      if ( a3 != 8 )\n        goto LABEL_9;\nLABEL_8:\n      self->mCompressionMethod = 1;\n      return;\n    }\n    goto LABEL_7;\n  }\n  if ( a3 == 25452 )\n    goto LABEL_8;\n  if ( a3 == 25451 )\n  {\nLABEL_7:\n    self->mCompressionMethod = 0;\n    return;\n  }\nLABEL_9:\n  +[SFUZipException raise:format:](\n    &OBJC_CLASS___SFUZipException,\n    \"raise:format:\",\n    CFSTR(\"SFUZipCentralFileHeaderError\"),\n    CFSTR(\"Unsupported compression method\"));\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP14UUIDSetArchiveD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP14UUIDSetArchiveD2Ev(TSP::UUIDSetArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::UUIDSetArchive::~UUIDSetArchive(TSP::UUIDSetArchive *this)\n{\n  __ZN3TSP14UUIDSetArchiveD2Ev(this);\n}"
+}

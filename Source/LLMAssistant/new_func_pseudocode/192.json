@@ -1,0 +1,6 @@
+{
+    "function_name": "_memmove",
+    "function_argument_number": 3,
+    "function_signature": "_memmove(void * __dst, const void * __src, size_t __len)",
+    "pseudocode": "void *__cdecl memmove(void *__dst, const void *__src, size_t __len)\n{\n  return _memmove(__dst, __src, __len);\n}"
+}

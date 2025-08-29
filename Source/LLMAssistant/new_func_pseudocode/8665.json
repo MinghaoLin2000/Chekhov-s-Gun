@@ -1,0 +1,6 @@
+{
+    "function_name": "_opendir",
+    "function_argument_number": 1,
+    "function_signature": "_opendir(const char * a1)",
+    "pseudocode": "DIR *__cdecl opendir(const char *a1)\n{\n  return _opendir(a1);\n}"
+}

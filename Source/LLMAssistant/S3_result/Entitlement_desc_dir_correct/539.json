@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.developer.icloud-services:CloudDocuments",
+  "capability": "Allows the application to store, retrieve, and synchronize user documents and data with iCloud Drive, specifically within the app's container in iCloud Documents. This enables cross-device access and backup of user-generated content managed by the app.",
+  "reasoning": "The entitlement name clearly combines 'com.apple.developer.icloud-services', indicating interaction with Apple's iCloud platform, with ':CloudDocuments', which directly points to the iCloud Documents service. This service is designed for applications to manage their own user-specific documents in iCloud Drive.",
+  "similar_entitlements": [
+    "com.apple.developer.icloud-services",
+    "com.apple.developer.ubiquity-container-identifiers"
+  ],
+  "sensitive_type": [
+    1
+  ],
+  "sensitive_reasoning": "This entitlement directly enables the application to perform read, write, and delete operations on user-generated documents and data stored in iCloud. Although these operations are confined to the app's specific container within iCloud Drive, they constitute direct manipulation of user files, which falls under 'File and File System Operations' (Type 1). It involves managing user data that could be sensitive.",
+  "self_reflection": "I am confident in the inferred capability, as the entitlement name is very descriptive and aligns with known Apple services. I am also confident in classifying it under 'File and File System Operations' because it directly involves the management (read/write/delete) of user documents. While the data is sensitive, it doesn't directly trigger TCC prompts for *local* resources in the same way as, for example, accessing Photos or Contacts. The access is to a cloud service for files the app itself manages. Therefore, Type 1 is the most direct and accurate classification for the capability granted by this entitlement."
+}

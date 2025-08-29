@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14MessageFactory17generated_factoryEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14MessageFactory17generated_factoryEv(google::protobuf::MessageFactory * this)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::MessageFactory::generated_factory(google::protobuf::MessageFactory *this)\n{\n  return sub_1000E6224(this);\n}"
+}

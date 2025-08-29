@@ -1,0 +1,6 @@
+{
+    "function_name": "_ql_dispatch_source_set_event_handler",
+    "function_argument_number": 0,
+    "function_signature": "_ql_dispatch_source_set_event_handler()",
+    "pseudocode": "__int64 ql_dispatch_source_set_event_handler()\n{\n  return _ql_dispatch_source_set_event_handler();\n}"
+}

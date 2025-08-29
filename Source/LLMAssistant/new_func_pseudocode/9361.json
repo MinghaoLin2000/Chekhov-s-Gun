@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabase initWithPath:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDatabase initWithPath:error:](int a1, int a2, id a3)",
+    "pseudocode": "TSPDatabase *__cdecl -[TSPDatabase initWithPath:error:](TSPDatabase *self, SEL a2, id a3, id *a4)\n{\n  id v6; // x19\n  void *v7; // x23\n  TSPDatabase *v8; // x20\n  NSURL *v9; // x0\n  NSURL *packageURL; // x8\n  objc_super v12; // [xsp+0h] [xbp-40h] BYREF\n\n  v6 = objc_retain(a3);\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"stringByAppendingPathComponent:\", CFSTR(\"index.db\")));\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSPDatabase;\n  v8 = -[TSUDatabase initWithPath:error:](&v12, \"initWithPath:error:\", v7, a4);\n  objc_release(v7);\n  if ( v8 )\n  {\n    v9 = (NSURL *)objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSURL), \"initFileURLWithPath:\", v6);\n    packageURL = v8->_packageURL;\n    v8->_packageURL = v9;\n    objc_release(packageURL);\n    v8->_incrementalVacuum = 1;\n  }\n  else\n  {\n    sub_100027CD4(a4);\n  }\n  objc_release(v6);\n  return v8;\n}"
+}

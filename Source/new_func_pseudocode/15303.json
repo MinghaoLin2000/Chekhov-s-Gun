@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MobileAssetUpdater downloadComplete:completion:]",
+    "function_argument_number": 4,
+    "function_signature": "-[MobileAssetUpdater downloadComplete:completion:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[MobileAssetUpdater downloadComplete:completion:](\n        MobileAssetUpdater *self,\n        SEL a2,\n        signed __int64 a3,\n        id a4)\n{\n  void (__fastcall **v6)(id, void *); // x19\n  MAAsset *v7; // x0\n  MAAsset *v8; // x21\n  OS_os_log *log; // x21\n\n  v6 = (void (__fastcall **)(id, void *))objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(-[MobileAssetUpdater asset](self, \"asset\"));\n  v8 = v7;\n  if ( a3 )\n  {\n    objc_release(v7);\n    log = self->_log;\n    if ( os_log_type_enabled(log, OS_LOG_TYPE_ERROR) )\n      sub_100013AEC(a3, log);\n    v8 = 0LL;\n    if ( v6 )\n      goto LABEL_3;\n  }\n  else if ( v6 )\n  {\nLABEL_3:\n    v6[2](v6, v8);\n  }\n  objc_release(v8);\n  objc_release(v6);\n}"
+}

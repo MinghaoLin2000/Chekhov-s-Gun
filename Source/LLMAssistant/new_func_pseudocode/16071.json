@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetSetBytesAtOffset",
+    "function_argument_number": 6,
+    "function_signature": "_uarpPlatformEndpointAssetSetBytesAtOffset(__int64 a1, __int64 a2, _QWORD * a3, __int64 a4, __int64 a5, __int64 a6)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetSetBytesAtOffset(\n        __int64 a1,\n        __int64 a2,\n        _QWORD *a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6)\n{\n  if ( a1 && a3 && a4 && (_DWORD)a5 )\n    return UARPLayer2AssetSetBytesAtOffset2(a1, a2, a3, a4, a5, a6);\n  else\n    return 30LL;\n}"
+}

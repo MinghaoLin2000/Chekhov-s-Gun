@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointRescindAsset",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointRescindAsset(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointRescindAsset(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v3; // x8\n\n  if ( !a1 )\n    return 30LL;\n  if ( !a2 )\n    return 30LL;\n  if ( !a3 )\n    return 30LL;\n  v3 = *(_QWORD *)(a1 + 568);\n  if ( !v3 )\n    return 30LL;\n  while ( *(_DWORD *)(v3 + 304) != 1 || *(_QWORD *)(v3 + 704) != a3 )\n  {\n    v3 = *(_QWORD *)(v3 + 712);\n    if ( !v3 )\n      return 30LL;\n  }\n  return uarpAssetRescind(a1, a2, *(unsigned __int16 *)(v3 + 44));\n}"
+}

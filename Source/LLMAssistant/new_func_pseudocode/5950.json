@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s33SiriSuggestionsBookkeepingService014DefaultFeatureD7FactoryCfd",
+    "function_argument_number": 0,
+    "function_signature": "_$s33SiriSuggestionsBookkeepingService014DefaultFeatureD7FactoryCfd()",
+    "pseudocode": "__int64 DefaultFeatureServiceFactory.deinit()\n{\n  __int64 v0; // x20\n\n  sub_1000050E4(v0 + 16);\n  return v0;\n}"
+}

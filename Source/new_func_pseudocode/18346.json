@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecItemCopyMatching",
+    "function_argument_number": 2,
+    "function_signature": "_SecItemCopyMatching(CFDictionaryRef query, CFTypeRef * result)",
+    "pseudocode": "OSStatus __cdecl SecItemCopyMatching(CFDictionaryRef query, CFTypeRef *result)\n{\n  return _SecItemCopyMatching(query, result);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataGetBytes",
+    "function_argument_number": 3,
+    "function_signature": "_CFDataGetBytes(CFDataRef theData, UInt8 * buffer, CFRange range)",
+    "pseudocode": "void __cdecl CFDataGetBytes(CFDataRef theData, CFRange range, UInt8 *buffer)\n{\n  _CFDataGetBytes(theData, range, buffer);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AuthorizationController _attemptInteractiveAuthorization]",
+    "function_argument_number": 1,
+    "function_signature": "-[AuthorizationController _attemptInteractiveAuthorization](AuthorizationRef * authorization)",
+    "pseudocode": "bool __cdecl -[AuthorizationController _attemptInteractiveAuthorization](AuthorizationController *self, SEL a2)\n{\n  AuthorizationOpaqueRef *authorization; // x0\n  AuthorizationOpaqueRef **p_authorization; // x19\n  OSStatus v4; // w8\n  AuthorizationRights rights; // [xsp+8h] [xbp-48h] BYREF\n  _QWORD v7[3]; // [xsp+18h] [xbp-38h] BYREF\n  int v8; // [xsp+30h] [xbp-20h]\n\n  p_authorization = &self->_authorization;\n  authorization = self->_authorization;\n  if ( !authorization )\n  {\n    v7[1] = 0LL;\n    v7[2] = 0LL;\n    v7[0] = \"system.install.software\";\n    v8 = 0;\n    AuthorizationCreate(0LL, 0LL, 0, p_authorization);\n    *(&rights.count + 1) = 0;\n    rights.items = (AuthorizationItem *)v7;\n    rights.count = 1;\n    v4 = AuthorizationCopyRights(*p_authorization, &rights, 0LL, 0, 0LL);\n    authorization = *p_authorization;\n    if ( v4 )\n    {\n      AuthorizationFree(authorization, 0);\n      authorization = 0LL;\n      *p_authorization = 0LL;\n    }\n  }\n  return authorization != 0LL;\n}"
+}

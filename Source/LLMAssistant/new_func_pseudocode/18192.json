@@ -1,0 +1,6 @@
+{
+    "function_name": "_strlcpy",
+    "function_argument_number": 3,
+    "function_signature": "_strlcpy(char * __dst, const char * __source, size_t __size)",
+    "pseudocode": "size_t __cdecl strlcpy(char *__dst, const char *__source, size_t __size)\n{\n  return _strlcpy(__dst, __source, __size);\n}"
+}

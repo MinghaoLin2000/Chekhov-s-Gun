@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$performAccessor:filePathCharacterIndex:fileURL:needsReadChannel:zipArchive:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$performAccessor:filePathCharacterIndex:fileURL:needsReadChannel:zipArchive:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_performAccessor_filePathCharacterIndex_fileURL_needsReadChannel_zipArchive_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"performAccessor:filePathCharacterIndex:fileURL:needsReadChannel:zipArchive:error:\");\n}"
+}

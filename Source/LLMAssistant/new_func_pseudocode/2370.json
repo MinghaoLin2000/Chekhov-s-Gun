@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController setDeviceInfoContainer:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeFinderViewController setDeviceInfoContainer:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceModeFinderViewController setDeviceInfoContainer:](\n        DeviceModeFinderViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeWeak((id *)&self->_deviceInfoContainer, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeMediaViewController setTrackListViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeMediaViewController setTrackListViewController:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceModeMediaViewController setTrackListViewController:](\n        DeviceModeMediaViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_trackListViewController, a3);\n}"
+}

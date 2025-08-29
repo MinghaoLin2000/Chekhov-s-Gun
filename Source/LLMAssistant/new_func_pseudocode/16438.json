@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceLegacyAudio init]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterServiceLegacyAudio init](UARPUpdaterServiceLegacyAudio * self, SEL a2)",
+    "pseudocode": "UARPUpdaterServiceLegacyAudio *__cdecl -[UARPUpdaterServiceLegacyAudio init](\n        UARPUpdaterServiceLegacyAudio *self,\n        SEL a2)\n{\n  UARPUpdaterServiceLegacyAudio *v2; // x19\n  LegacyAudioController *v3; // x0\n  LegacyAudioController *controller; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___UARPUpdaterServiceLegacyAudio;\n  v2 = -[UARPUpdaterServiceLegacyAudio init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(+[LegacyAudioController sharedInstance](&OBJC_CLASS___LegacyAudioController, \"sharedInstance\"));\n    controller = v2->_controller;\n    v2->_controller = v3;\n    objc_release(controller);\n  }\n  return v2;\n}"
+}

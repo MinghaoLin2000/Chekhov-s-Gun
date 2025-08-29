@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCryptorGetOutputLength",
+    "function_argument_number": 3,
+    "function_signature": "_CCCryptorGetOutputLength(CCCryptorRef cryptorRef, size_t inputLength, bool final)",
+    "pseudocode": "size_t __cdecl CCCryptorGetOutputLength(CCCryptorRef cryptorRef, size_t inputLength, bool final)\n{\n  return _CCCryptorGetOutputLength(cryptorRef, inputLength, final);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipArchive initWithOptions:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipArchive initWithOptions:](TSUZipArchive * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "TSUZipArchive *__cdecl -[TSUZipArchive initWithOptions:](TSUZipArchive *self, SEL a2, unsigned __int64 a3)\n{\n  TSUZipArchive *v4; // x0\n  TSUZipArchive *v5; // x19\n  NSMutableDictionary *v6; // x0\n  NSMutableDictionary *entriesMap; // x8\n  NSMutableOrderedSet *v8; // x0\n  NSMutableOrderedSet *entries; // x8\n  objc_super v11; // [xsp+0h] [xbp-20h] BYREF\n\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___TSUZipArchive;\n  v4 = -[TSUZipArchive init](&v11, \"init\");\n  v5 = v4;\n  if ( v4 )\n  {\n    v4->_options = a3;\n    v6 = (NSMutableDictionary *)objc_alloc_init((Class)&OBJC_CLASS___NSMutableDictionary);\n    entriesMap = v5->_entriesMap;\n    v5->_entriesMap = v6;\n    objc_release(entriesMap);\n    v8 = (NSMutableOrderedSet *)objc_alloc_init((Class)&OBJC_CLASS___NSMutableOrderedSet);\n    entries = v5->_entries;\n    v5->_entries = v8;\n    objc_release(entries);\n  }\n  return v5;\n}"
+}

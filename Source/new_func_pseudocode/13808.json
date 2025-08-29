@@ -1,0 +1,6 @@
+{
+    "function_name": "_dladdr",
+    "function_argument_number": 2,
+    "function_signature": "_dladdr(const void * a1, Dl_info * a2)",
+    "pseudocode": "int __cdecl dladdr(const void *a1, Dl_info *a2)\n{\n  return _dladdr(a1, a2);\n}"
+}

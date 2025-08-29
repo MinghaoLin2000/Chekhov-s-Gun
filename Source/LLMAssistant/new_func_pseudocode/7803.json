@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV16_boolStatusQuery6forKeySbSo010CGSDisplayfI0V_tF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV16_boolStatusQuery6forKeySbSo010CGSDisplayfI0V_tF(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall CGDisplay._boolStatusQuery(forKey:)(__int64 a1, __int64 a2)\n{\n  __int64 v2; // x0\n\n  v2 = CGSDisplayStatusQuery(a2, a1);\n  return sub_100019284(v2);\n}"
+}

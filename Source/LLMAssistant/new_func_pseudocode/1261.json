@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController device]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceViewController device](DeviceViewController * self, SEL a2)",
+    "pseudocode": "AMPDevice *__cdecl -[DeviceViewController device](DeviceViewController *self, SEL a2)\n{\n  return self->_device;\n}"
+}

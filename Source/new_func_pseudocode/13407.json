@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUTemporaryDirectory initWithError:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUTemporaryDirectory initWithError:](TSUTemporaryDirectory * self, SEL a2, id * a3)",
+    "pseudocode": "TSUTemporaryDirectory *__cdecl -[TSUTemporaryDirectory initWithError:](TSUTemporaryDirectory *self, SEL a2, id *a3)\n{\n  return -[TSUTemporaryDirectory initWithSignature:subdirectory:error:](\n           self,\n           \"initWithSignature:subdirectory:error:\",\n           &stru_1001DFAA0,\n           0LL,\n           a3);\n}"
+}

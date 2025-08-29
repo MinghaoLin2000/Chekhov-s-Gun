@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP28ObjectSerializationDirectoryD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP28ObjectSerializationDirectoryD1Ev(TSP::ObjectSerializationDirectory * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ObjectSerializationDirectory::~ObjectSerializationDirectory(\n        TSP::ObjectSerializationDirectory *this)\n{\n  __ZN3TSP28ObjectSerializationDirectoryD2Ev(this);\n}"
+}

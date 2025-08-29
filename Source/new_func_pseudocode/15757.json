@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory setStagedFW:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUSBDFUAccessory setStagedFW:](UARPUSBDFUAccessory * self, SEL a2, UARPVersion a3)",
+    "pseudocode": "void __cdecl -[UARPUSBDFUAccessory setStagedFW:](UARPUSBDFUAccessory *self, SEL a2, UARPVersion a3)\n{\n  unsigned __int64 v3; // x20\n  unsigned __int64 v4; // x21\n  USBDFUUpdater *usbDfuAccessory; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = *(_QWORD *)&a3.release;\n  v4 = *(_QWORD *)&a3.major;\n  self->_stagedFW = a3;\n  if ( -[USBDFUUpdater simulator](self->_usbDfuAccessory, \"simulator\")\n    && -[USBDFUUpdater dfuSetVersionCmdMajor:minor:release:build:](\n         self->_usbDfuAccessory,\n         \"dfuSetVersionCmdMajor:minor:release:build:\",\n         v4,\n         HIDWORD(v4),\n         v3,\n         HIDWORD(v3)) )\n  {\n    usbDfuAccessory = self->_usbDfuAccessory;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[USBDFUUpdater closeDfuDevice](usbDfuAccessory, \"closeDfuDevice\");\n  }\n}"
+}

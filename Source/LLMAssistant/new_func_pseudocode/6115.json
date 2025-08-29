@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAMediaConversionServiceResourceURLCollection filenameSummaryStringForDictionaryRepresentation:]",
+    "function_argument_number": 3,
+    "function_signature": "+[PAMediaConversionServiceResourceURLCollection filenameSummaryStringForDictionaryRepresentation:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[PAMediaConversionServiceResourceURLCollection filenameSummaryStringForDictionaryRepresentation:](\n        id a1,\n        SEL a2,\n        id a3)\n{\n  void *v3; // x19\n  void *v4; // x20\n  void *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(a3, \"allValues\"));\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(v3, \"valueForKey:\", CFSTR(\"lastPathComponent\")));\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"componentsJoinedByString:\", CFSTR(\"|\")));\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

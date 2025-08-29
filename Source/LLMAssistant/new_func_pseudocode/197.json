@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_getProperty",
+    "function_argument_number": 4,
+    "function_signature": "_objc_getProperty(id self, SEL _cmd, ptrdiff_t offset, bool atomic)",
+    "pseudocode": "id __cdecl objc_getProperty(id self, SEL _cmd, ptrdiff_t offset, bool atomic)\n{\n  return _objc_getProperty(self, _cmd, offset, atomic);\n}"
+}

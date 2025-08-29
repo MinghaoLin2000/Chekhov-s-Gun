@@ -1,0 +1,6 @@
+{
+    "function_name": "_metadataTLVGetNext",
+    "function_argument_number": 0,
+    "function_signature": "_metadataTLVGetNext()",
+    "pseudocode": "__int64 metadataTLVGetNext()\n{\n  return _metadataTLVGetNext();\n}"
+}

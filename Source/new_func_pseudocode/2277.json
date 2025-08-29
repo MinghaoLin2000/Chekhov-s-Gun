@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsViewController setDeviceDefaultCalendar:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsCalendarsViewController setDeviceDefaultCalendar:](DeviceSettingsCalendarsViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCalendarsViewController setDeviceDefaultCalendar:](\n        DeviceSettingsCalendarsViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_deviceDefaultCalendar = a3;\n}"
+}

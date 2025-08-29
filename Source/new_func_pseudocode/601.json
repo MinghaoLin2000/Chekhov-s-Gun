@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsBooksViewController saveToDeviceSyncPrefs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsBooksViewController saveToDeviceSyncPrefs:](DeviceSettingsBooksViewController * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsBooksViewController saveToDeviceSyncPrefs:](\n        DeviceSettingsBooksViewController *self,\n        SEL a2,\n        id a3)\n{\n  -[DeviceSettingsBooksViewController saveBooksAndPDFsToDeviceSyncPrefs:](\n    self,\n    \"saveBooksAndPDFsToDeviceSyncPrefs:\",\n    a3);\n}"
+}

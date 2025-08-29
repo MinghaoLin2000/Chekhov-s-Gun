@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUStreamDataCompression handleData:isDone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUStreamDataCompression handleData:isDone:](int a1, int a2, dispatch_data_t data2)",
+    "pseudocode": "bool __cdecl -[TSUStreamDataCompression handleData:isDone:](TSUStreamDataCompression *self, SEL a2, id a3, bool a4)\n{\n  OS_dispatch_data *concat; // x0\n  OS_dispatch_data *outputData; // x8\n\n  concat = (OS_dispatch_data *)dispatch_data_create_concat((dispatch_data_t)self->_outputData, (dispatch_data_t)a3);\n  outputData = self->_outputData;\n  self->_outputData = concat;\n  objc_release(outputData);\n  return 1;\n}"
+}

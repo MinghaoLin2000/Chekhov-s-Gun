@@ -1,0 +1,6 @@
+{
+    "function_name": "j__swift_endAccess",
+    "function_argument_number": 0,
+    "function_signature": "j__swift_endAccess()",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall j__swift_endAccess()\n{\n  return swift_endAccess();\n}"
+}

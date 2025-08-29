@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttributeCollection initWithPath:options:error:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUExtendedAttributeCollection initWithPath:options:error:](TSUExtendedAttributeCollection * self, SEL a2, id a3, int a4, id * a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nTSUExtendedAttributeCollection *__cdecl -[TSUExtendedAttributeCollection initWithPath:options:error:](\n        TSUExtendedAttributeCollection *self,\n        SEL a2,\n        id a3,\n        int a4,\n        id *a5)\n{\n  return -[TSUExtendedAttributeCollection initWithPath:forRemoval:options:error:](\n           self,\n           \"initWithPath:forRemoval:options:error:\",\n           a3,\n           0LL,\n           *(_QWORD *)&a4,\n           a5);\n}"
+}

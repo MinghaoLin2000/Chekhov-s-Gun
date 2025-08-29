@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate control:textView:doCommandBySelector:]",
+    "function_argument_number": 5,
+    "function_signature": "-[ECTIHelperDelegate control:textView:doCommandBySelector:](ECTIHelperDelegate * self, SEL a2, id a3, id a4, SEL a5)",
+    "pseudocode": "bool __cdecl -[ECTIHelperDelegate control:textView:doCommandBySelector:](\n        ECTIHelperDelegate *self,\n        SEL a2,\n        id a3,\n        id a4,\n        SEL a5)\n{\n  bool v6; // w19\n\n  if ( \"insertNewline:\" == a5 || \"cancelOperation:\" == a5 )\n  {\n    v6 = 1;\n    self->_editingComplete = 1;\n    -[ECTIHelperDelegate _controlTextDidChange](self, \"_controlTextDidChange\", a3, a4);\n  }\n  else\n  {\n    return !self->_hasFocus && (\"moveLeft:\" == a5 || \"moveRight:\" == a5 || \"moveUp:\" == a5 || \"moveDown:\" == a5);\n  }\n  return v6;\n}"
+}

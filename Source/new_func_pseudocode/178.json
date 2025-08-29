@@ -1,0 +1,6 @@
+{
+    "function_name": "_CKXPCSuitableError",
+    "function_argument_number": 0,
+    "function_signature": "_CKXPCSuitableError()",
+    "pseudocode": "__int64 CKXPCSuitableError()\n{\n  return _CKXPCSuitableError();\n}"
+}

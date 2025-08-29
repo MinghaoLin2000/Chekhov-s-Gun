@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2ApplyStagedAssetsResponse",
+    "function_argument_number": 2,
+    "function_signature": "_UARPLayer2ApplyStagedAssetsResponse(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall UARPLayer2ApplyStagedAssetsResponse(__int64 a1, __int64 a2)\n{\n  __int64 (__fastcall *v2)(_QWORD, _QWORD); // x4\n\n  v2 = *(__int64 (__fastcall **)(_QWORD, _QWORD))(a1 + 144);\n  if ( v2 )\n    return v2(*(_QWORD *)(a1 + 544), *(_QWORD *)(a2 + 40));\n  else\n    return 14LL;\n}"
+}

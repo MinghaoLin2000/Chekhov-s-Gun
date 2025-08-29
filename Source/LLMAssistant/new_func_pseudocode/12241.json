@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal24ComputeUnknownFieldsSizeERKNS1_16InternalMetadataEmPNS1_10CachedSizeE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal24ComputeUnknownFieldsSizeERKNS1_16InternalMetadataEmPNS1_10CachedSizeE(google::protobuf::UnknownFieldSet * a1, const google::protobuf::UnknownFieldSet * a2, _DWORD * a3)",
+    "pseudocode": "char *__fastcall google::protobuf::internal::ComputeUnknownFieldsSize(\n        google::protobuf::UnknownFieldSet *a1,\n        const google::protobuf::UnknownFieldSet *a2,\n        _DWORD *a3)\n{\n  google::protobuf::internal::WireFormat *v5; // x0\n  char *result; // x0\n\n  if ( (*(_QWORD *)a1 & 1) != 0 )\n    v5 = (google::protobuf::internal::WireFormat *)((*(_QWORD *)a1 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  else\n    v5 = (google::protobuf::internal::WireFormat *)google::protobuf::UnknownFieldSet::default_instance(a1);\n  result = (char *)a2 + google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(v5, a2);\n  *a3 = (_DWORD)result;\n  return result;\n}"
+}

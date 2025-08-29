@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController didChangeDevicesClientConnectionState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceHeaderViewController didChangeDevicesClientConnectionState:](DeviceHeaderViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceHeaderViewController didChangeDevicesClientConnectionState:](\n        DeviceHeaderViewController *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  __int64 v3; // x30\n\n  if ( (a3 & 0xFFFFFFFFFFFFFFFELL) == 2 )\n  {\n    -[DeviceHeaderViewController setDeviceTotalDataAvailable:](self, \"setDeviceTotalDataAvailable:\", 0LL);\n    if ( ((v3 ^ (2 * v3)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[DeviceHeaderViewController setDeviceBatteryInfo:](self, \"setDeviceBatteryInfo:\", 0LL);\n  }\n}"
+}

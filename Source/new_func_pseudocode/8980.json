@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService11MediaClientVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService11MediaClientVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MediaClient()\n{\n  return &type metadata for MediaClient;\n}"
+}

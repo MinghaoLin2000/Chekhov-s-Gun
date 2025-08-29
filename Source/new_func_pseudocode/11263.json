@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf16EnumValueOptionsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf16EnumValueOptionsD1Ev(google::protobuf::EnumValueOptions * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::EnumValueOptions::~EnumValueOptions(google::protobuf::EnumValueOptions *this)\n{\n  __ZN6google8protobuf16EnumValueOptionsD2Ev(this);\n}"
+}

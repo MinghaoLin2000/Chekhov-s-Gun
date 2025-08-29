@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetGetBytesAtOffset",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformEndpointAssetGetBytesAtOffset(int a1, int a2, int a3, void * __dst)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetGetBytesAtOffset(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        void *__dst,\n        __int64 a5,\n        __int64 a6,\n        unsigned __int16 *a7)\n{\n  __int64 result; // x0\n  __int16 v15; // w8\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  result = 30LL;\n  if ( a1 && a3 && __dst && (_DWORD)a5 )\n  {\n    v15 = *(_WORD *)(a3 + 46);\n    if ( (v15 & 0x80) != 0 )\n    {\n      result = UARPSuperBinaryGetInternalSuperBinaryMetaData(a1, a3, __dst, a5, a6, a7);\n      if ( (_DWORD)result != 40 )\n        return result;\n      v15 = *(_WORD *)(a3 + 46);\n    }\n    if ( (v15 & 8) == 0\n      || (result = UARPSuperBinaryGetInternalPayloadMetaData(a1, a3, __dst, a5, a6, a7), (_DWORD)result == 40) )\n    {\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return UARPLayer2AssetGetBytesAtOffset2(a1, a2, (_QWORD *)a3, (__int64)__dst, a5, a6, (__int64)a7);\n    }\n  }\n  return result;\n}"
+}

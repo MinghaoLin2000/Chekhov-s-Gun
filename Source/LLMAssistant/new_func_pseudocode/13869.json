@@ -1,0 +1,6 @@
+{
+    "function_name": "_sqlite3_sql",
+    "function_argument_number": 1,
+    "function_signature": "_sqlite3_sql(sqlite3_stmt * pStmt)",
+    "pseudocode": "const char *__cdecl sqlite3_sql(sqlite3_stmt *pStmt)\n{\n  return _sqlite3_sql(pStmt);\n}"
+}

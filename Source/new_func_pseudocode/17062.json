@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceAFUPreferences init]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterServiceAFUPreferences init](UARPUpdaterServiceAFUPreferences * self, SEL a2)",
+    "pseudocode": "UARPUpdaterServiceAFUPreferences *__cdecl -[UARPUpdaterServiceAFUPreferences init](\n        UARPUpdaterServiceAFUPreferences *self,\n        SEL a2)\n{\n  UARPUpdaterServiceAFUPreferences *v2; // x19\n  os_log_t v3; // x0\n  OS_os_log *log; // x8\n  NSUserDefaults *v5; // x0\n  NSUserDefaults *userPrefs; // x8\n  objc_super v8; // [xsp+0h] [xbp-20h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___UARPUpdaterServiceAFUPreferences;\n  v2 = -[UARPUpdaterServiceAFUPreferences init](&v8, \"init\");\n  if ( v2 )\n  {\n    v3 = os_log_create(\"com.apple.accessoryupdater.UARPUpdaterServiceAFU\", \"preferences\");\n    log = v2->_log;\n    v2->_log = v3;\n    objc_release(log);\n    v5 = (NSUserDefaults *)objc_msgSend(\n                             objc_alloc((Class)&OBJC_CLASS___NSUserDefaults),\n                             \"initWithSuiteName:\",\n                             CFSTR(\"com.apple.accessoryupdater.UARPUpdaterServiceAFU\"));\n    userPrefs = v2->_userPrefs;\n    v2->_userPrefs = v5;\n    objc_release(userPrefs);\n  }\n  return v2;\n}"
+}

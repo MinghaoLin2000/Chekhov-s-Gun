@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionExecution setRunningAysnchronously:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMRemoteActionExecution setRunningAysnchronously:](AMRemoteActionExecution * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMRemoteActionExecution setRunningAysnchronously:](AMRemoteActionExecution *self, SEL a2, bool a3)\n{\n  self->_runningAysnchronously = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUCryptoOutputStream encodedLengthForDataLength:key:]",
+    "function_argument_number": 4,
+    "function_signature": "+[SFUCryptoOutputStream encodedLengthForDataLength:key:](id a1, SEL a2, unsigned __int64 a3, id a4)",
+    "pseudocode": "unsigned __int64 __cdecl +[SFUCryptoOutputStream encodedLengthForDataLength:key:](\n        id a1,\n        SEL a2,\n        unsigned __int64 a3,\n        id a4)\n{\n  unsigned int v6; // w21\n  unsigned int v7; // w0\n  __int64 v8; // x8\n\n  v6 = 2 * +[SFUCryptoUtils ivLengthForKey:](&OBJC_CLASS___SFUCryptoUtils, \"ivLengthForKey:\", a4);\n  v7 = (unsigned int)objc_msgSend(a4, \"keyType\");\n  LODWORD(v8) = v6 - (a3 & 0xF) + 16;\n  if ( v7 )\n    v8 = v6;\n  else\n    v8 = (unsigned int)v8;\n  if ( __CFADD__(v8, a3) )\n    v8 = 0LL;\n  return v8 + a3;\n}"
+}

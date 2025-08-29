@@ -1,0 +1,6 @@
+{
+    "function_name": "-[job_spool_client_t AppleThumbnailPosition]",
+    "function_argument_number": 2,
+    "function_signature": "-[job_spool_client_t AppleThumbnailPosition](job_spool_client_t * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[job_spool_client_t AppleThumbnailPosition](job_spool_client_t *self, SEL a2)\n{\n  return (NSString *)-[PKPrintSettings thumbnailPosition](self->_printSettings, \"thumbnailPosition\");\n}"
+}

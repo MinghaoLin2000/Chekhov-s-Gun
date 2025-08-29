@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.sbpl:(allow iokit-set-properties (iokit-property \"FanMode\") (iokit-property \"RequestToken\"))",
+  "capability": "Grants a temporary exception to the application's sandbox policy, allowing it to directly interact with I/O Kit to set specific hardware properties such as \"FanMode\" (which controls system fans) and \"RequestToken\" (likely another hardware-related control or communication token). This provides low-level system and hardware control.",
+  "reasoning": "The entitlement name `com.apple.security.temporary-exception.sbpl` clearly indicates a temporary bypass of the sandbox policy (`sbpl` likely refers to Sandbox Policy Language). The value `(allow iokit-set-properties ...)` explicitly grants permission to call `IOKitSetProperties`, a low-level function for manipulating I/O Kit objects. The specific properties `\"FanMode\"` and `\"RequestToken\"` refer to direct control over hardware components (like cooling fans) and system-level communication, respectively. I/O Kit is Apple's framework for device drivers and hardware abstraction, making this a direct hardware control capability, bypassing typical security restrictions.",
+  "similar_entitlements": [
+    "com.apple.security.temporary-exception.sb",
+    "com.apple.security.temporary-exception.mach-lookup.global-name",
+    "com.apple.security.temporary-exception.mach-register.global-name"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'System & Kernel Level Control' (Type 4) because it allows direct manipulation of hardware components (e.g., system fans) via I/O Kit. I/O Kit interactions are low-level and typically restricted, operating close to the kernel space. Granting an application the ability to set hardware properties bypasses standard sandbox protections and provides a high degree of control over the physical system's behavior and state. Abuse of such an entitlement could lead to system instability, overheating, or other detrimental physical effects, and could potentially be leveraged for further system compromise.",
+  "self_reflection": "I am highly confident in the inferred capability due to the explicit nature of the entitlement's value, which directly references I/O Kit property setting and specific hardware controls like 'FanMode'. The classification under 'System & Kernel Level Control' is also robust, as direct hardware manipulation via I/O Kit is inherently a low-level, high-privilege operation affecting the entire system. The primary uncertainty is the exact function or implication of 'RequestToken', but its context within I/O Kit property setting strongly suggests a system-level control. The 'temporary-exception' aspect highlights its nature as a security bypass."
+}

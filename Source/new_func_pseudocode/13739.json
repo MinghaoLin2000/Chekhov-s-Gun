@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__111__call_onceERVmPvPFvS2_E",
+    "function_argument_number": 4,
+    "function_signature": "__ZNSt3__111__call_onceERVmPvPFvS2_E(std::__1 * this, volatile unsigned __int64 * a2, void * a3, void (__fastcall *)(void *) a4)",
+    "pseudocode": "void __cdecl std::__call_once(std::once_flag::_State_type *a1, void *a2, void (__cdecl *a3)(void *))\n{\n  std::__call_once(a1, a2, a3);\n}"
+}

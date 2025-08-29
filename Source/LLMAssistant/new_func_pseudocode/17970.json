@@ -1,0 +1,6 @@
+{
+    "function_name": "-[WACEAService accessoryDidUpdateReachability:]",
+    "function_argument_number": 3,
+    "function_signature": "-[WACEAService accessoryDidUpdateReachability:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[WACEAService accessoryDidUpdateReachability:](WACEAService *self, SEL a2, id a3)\n{\n  id location[3]; // [xsp+18h] [xbp-18h] BYREF\n\n  location[2] = self;\n  location[1] = (id)a2;\n  location[0] = 0LL;\n  objc_storeStrong(location, a3);\n  objc_storeStrong(location, 0LL);\n}"
+}

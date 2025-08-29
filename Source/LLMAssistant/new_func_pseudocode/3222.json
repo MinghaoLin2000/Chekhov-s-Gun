@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaPickerNode setImage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaPickerNode setImage:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[MediaPickerNode setImage:](MediaPickerNode *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_image, a3);\n}"
+}

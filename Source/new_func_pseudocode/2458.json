@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAdvancedViewController reloadUI]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsAdvancedViewController reloadUI](DeviceSettingsAdvancedViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsAdvancedViewController reloadUI](DeviceSettingsAdvancedViewController *self, SEL a2)\n{\n  ;\n}"
+}

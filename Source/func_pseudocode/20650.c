@@ -1,0 +1,5 @@
+_nw_parameters_set_required_interface_type
+void __cdecl nw_parameters_set_required_interface_type(nw_parameters_t parameters, nw_interface_type_t interface_type)
+{
+  _nw_parameters_set_required_interface_type(parameters, interface_type);
+}

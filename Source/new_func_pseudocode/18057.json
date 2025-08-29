@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSGetURLApprovalState",
+    "function_argument_number": 0,
+    "function_signature": "_NetFSGetURLApprovalState()",
+    "pseudocode": "__int64 NetFSGetURLApprovalState()\n{\n  __int64 v0; // x0\n  const __CFString *v1; // x19\n  const __CFBoolean *v2; // x0\n  const __CFBoolean *v3; // x20\n  CFTypeID v4; // x21\n  __int64 v5; // x21\n\n  v0 = NetFSCopyNormalizedURLString();\n  if ( !v0 )\n    return 0LL;\n  v1 = (const __CFString *)v0;\n  CFPreferencesSynchronize(CFSTR(\"com.apple.netfs.urlapprovals\"), kCFPreferencesCurrentUser, kCFPreferencesAnyHost);\n  v2 = (const __CFBoolean *)CFPreferencesCopyValue(\n                              v1,\n                              CFSTR(\"com.apple.netfs.urlapprovals\"),\n                              kCFPreferencesCurrentUser,\n                              kCFPreferencesAnyHost);\n  if ( v2 )\n  {\n    v3 = v2;\n    v4 = CFGetTypeID(v2);\n    if ( v4 == CFBooleanGetTypeID() )\n    {\n      if ( CFBooleanGetValue(v3) )\n        v5 = 1LL;\n      else\n        v5 = 2LL;\n    }\n    else\n    {\n      v5 = 0LL;\n    }\n    CFRelease(v3);\n  }\n  else\n  {\n    v5 = 0LL;\n  }\n  CFRelease(v1);\n  return v5;\n}"
+}

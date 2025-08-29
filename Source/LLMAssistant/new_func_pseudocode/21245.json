@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition17RequestEndMetricsC20totalITNDurationInNss6UInt64VSgvpfi_0",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition17RequestEndMetricsC20totalITNDurationInNss6UInt64VSgvpfi_0()",
+    "pseudocode": "__int64 _s22localspeechrecognition17RequestEndMetricsC20totalITNDurationInNss6UInt64VSgvpfi_0()\n{\n  return 0LL;\n}"
+}

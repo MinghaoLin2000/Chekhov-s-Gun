@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFIsInternalInstall",
+    "function_argument_number": 0,
+    "function_signature": "_SFIsInternalInstall()",
+    "pseudocode": "__int64 SFIsInternalInstall()\n{\n  return _SFIsInternalInstall();\n}"
+}

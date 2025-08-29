@@ -1,0 +1,6 @@
+{
+    "function_name": "_getfsstat",
+    "function_argument_number": 3,
+    "function_signature": "_getfsstat(statfs * a1, int a2, int a3)",
+    "pseudocode": "int __cdecl getfsstat(statfs *a1, int a2, int a3)\n{\n  return _getfsstat(a1, a2, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$rawOrientation",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$rawOrientation(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_rawOrientation(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"rawOrientation\");\n}"
+}

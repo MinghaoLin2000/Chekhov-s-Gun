@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController deviceViewDirtinessDidChange:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeFinderViewController deviceViewDirtinessDidChange:](DeviceModeFinderViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceModeFinderViewController deviceViewDirtinessDidChange:](\n        DeviceModeFinderViewController *self,\n        SEL a2,\n        id a3)\n{\n  void *v4; // x20\n  unsigned int v5; // w22\n  NSMutableSet *v6; // x0\n  NSMutableSet *v7; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(a3, \"object\"));\n  v5 = (unsigned int)objc_msgSend(v4, \"isDirty\");\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceModeFinderViewController dirtyViewControllers](self, \"dirtyViewControllers\"));\n  v7 = v6;\n  if ( v5 )\n    -[NSMutableSet addObject:](v6, \"addObject:\", v4);\n  else\n    -[NSMutableSet removeObject:](v6, \"removeObject:\", v4);\n  objc_release(v7);\n  -[DeviceModeFinderViewController updateHeaderState](self, \"updateHeaderState\");\n  -[DeviceModeFinderViewController updateFooterButtons](self, \"updateFooterButtons\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

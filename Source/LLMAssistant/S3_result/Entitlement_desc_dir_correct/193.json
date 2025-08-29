@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.CommCenter.fine-grained:cellular-plan",
+  "capability": "Grants an application the ability to programmatically manage, query, or modify cellular plans (e.g., eSIMs, physical SIMs, data plans, voice plans) on the device. This includes operations such as adding, removing, activating, deactivating, or switching between cellular plans, as well as retrieving detailed information about these plans (e.g., ICCID, phone number, carrier details, data usage status).",
+  "reasoning": "The entitlement name 'com.apple.CommCenter.fine-grained:cellular-plan' strongly suggests its capability. 'CommCenter' is Apple's daemon responsible for cellular communications. 'fine-grained' indicates specific, detailed control within that domain. The suffix ':cellular-plan' explicitly points to the management of cellular subscriptions or plans. This aligns with the parent entitlement 'com.apple.CommCenter.fine-grained' which is described as granting access to CoreTelephony services, the framework for interacting with cellular functionality.",
+  "similar_entitlements": [
+    "com.apple.CommCenter.fine-grained"
+  ],
+  "sensitive_type": [
+    2,
+    4
+  ],
+  "sensitive_reasoning": "This entitlement belongs to 'Privileged Networking' (Type 2) because managing cellular plans directly involves controlling the device's fundamental network connectivity via cellular networks. It allows for manipulation of how the device connects to and utilizes cellular services, potentially affecting data usage, roaming, and network access. It also belongs to 'System & Kernel Level Control' (Type 4) as modifying cellular plan settings is a system-level configuration change that impacts the entire device's ability to communicate over cellular networks. Such control could allow an application to incur charges, disrupt connectivity, or access sensitive network identifiers, making it a high-privilege operation.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement's naming convention is very clear and directly points to its function. The connection to 'CommCenter' and 'cellular-plan' leaves little room for alternative interpretations of its core capability. The classification into sensitive types 2 and 4 is based on the direct impact on system-level networking and configuration. There's no ambiguity that would cause this prediction to be wrong, given the provided context."
+}

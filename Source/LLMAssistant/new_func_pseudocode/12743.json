@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttributeCollection .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUExtendedAttributeCollection .cxx_destruct](TSUExtendedAttributeCollection * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUExtendedAttributeCollection .cxx_destruct](TSUExtendedAttributeCollection *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_attributes, 0LL);\n}"
+}

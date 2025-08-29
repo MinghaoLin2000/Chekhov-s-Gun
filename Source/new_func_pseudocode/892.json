@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView hidePopover]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPCapacityBarView hidePopover](AMPCapacityBarView * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView hidePopover](AMPCapacityBarView *self, SEL a2)\n{\n  AMPCapacityBarPopover *pop; // x3\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  +[NSObject cancelPreviousPerformRequestsWithTarget:selector:object:](\n    &OBJC_CLASS___NSObject,\n    \"cancelPreviousPerformRequestsWithTarget:selector:object:\",\n    self,\n    \"_hidePopover:\",\n    self->_pop);\n  pop = self->_pop;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[AMPCapacityBarView performSelector:withObject:afterDelay:](\n    self,\n    \"performSelector:withObject:afterDelay:\",\n    \"_hidePopover:\",\n    pop,\n    0.2);\n}"
+}

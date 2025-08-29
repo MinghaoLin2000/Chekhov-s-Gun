@@ -1,0 +1,6 @@
+{
+    "function_name": "$s39com_apple_AppStoreDaemon_StoreUIService19DummyViewControllerCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s39com_apple_AppStoreDaemon_StoreUIService19DummyViewControllerCMa()",
+    "pseudocode": "__int64 type metadata accessor for DummyViewController()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC39com_apple_AppStoreDaemon_StoreUIService19DummyViewController);\n}"
+}

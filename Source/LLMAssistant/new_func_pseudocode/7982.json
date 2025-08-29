@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceCreate",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceCreate()",
+    "pseudocode": "__int64 CGSSpaceCreate()\n{\n  return _CGSSpaceCreate();\n}"
+}

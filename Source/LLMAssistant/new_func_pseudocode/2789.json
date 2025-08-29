@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setTrackCount:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setTrackCount:](DeviceSettingsNode * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setTrackCount:](DeviceSettingsNode *self, SEL a2, unsigned __int64 a3)\n{\n  self->_trackCount = a3;\n}"
+}

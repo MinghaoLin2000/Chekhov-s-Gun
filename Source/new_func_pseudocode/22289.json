@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateStringByAddingPercentEscapes",
+    "function_argument_number": 5,
+    "function_signature": "_CFURLCreateStringByAddingPercentEscapes(CFAllocatorRef allocator, CFStringRef originalString, CFStringRef charactersToLeaveUnescaped, CFStringRef legalURLCharactersToBeEscaped, CFStringEncoding encoding)",
+    "pseudocode": "CFStringRef __cdecl CFURLCreateStringByAddingPercentEscapes(\n        CFAllocatorRef allocator,\n        CFStringRef originalString,\n        CFStringRef charactersToLeaveUnescaped,\n        CFStringRef legalURLCharactersToBeEscaped,\n        CFStringEncoding encoding)\n{\n  return _CFURLCreateStringByAddingPercentEscapes(\n           allocator,\n           originalString,\n           charactersToLeaveUnescaped,\n           legalURLCharactersToBeEscaped,\n           encoding);\n}"
+}

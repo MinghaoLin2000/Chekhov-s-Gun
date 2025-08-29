@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextRestoreGState",
+    "function_argument_number": 1,
+    "function_signature": "_CGContextRestoreGState(CGContextRef c)",
+    "pseudocode": "void __cdecl CGContextRestoreGState(CGContextRef c)\n{\n  _CGContextRestoreGState(c);\n}"
+}

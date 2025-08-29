@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService16JSAppQueryObjectCMa
+__int64 type metadata accessor for JSAppQueryObject()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService16JSAppQueryObject);
+}

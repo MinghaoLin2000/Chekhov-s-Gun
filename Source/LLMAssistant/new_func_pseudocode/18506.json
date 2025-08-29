@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper04WiFiC0Cfd",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper04WiFiC0Cfd()",
+    "pseudocode": "__int64 WiFiHelper.deinit()\n{\n  __int64 v0; // x20\n\n  objc_release(*(id *)(v0 + 16));\n  sub_100019710(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_authorization);\n  objc_release(*(id *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_wifiUIClient));\n  sub_100007F5C(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_currentAction);\n  objc_release(*(id *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_currentDialog));\n  objc_release(*(id *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_configuration));\n  objc_release(*(id *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_wifiClient));\n  objc_release(*(id *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper_wifiClientDelegate));\n  swift_release(*(_QWORD *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper__monitoringAssertions));\n  swift_release(*(_QWORD *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper__scanningAssertions));\n  swift_release(*(_QWORD *)(v0 + OBJC_IVAR____TtC19ControlCenterHelper10WiFiHelper___lock));\n  return v0;\n}"
+}

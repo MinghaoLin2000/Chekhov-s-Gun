@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[ATXHeuristicJSEnv dealloc](ATXHeuristicJSEnv * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv dealloc](ATXHeuristicJSEnv *self, SEL a2)\n{\n  os_log_s *v3; // x0\n  os_log_s *v4; // x20\n  os_signpost_id_t signpost; // x21\n  objc_super v6; // [xsp+0h] [xbp-40h] BYREF\n  uint8_t buf[16]; // [xsp+10h] [xbp-30h] BYREF\n\n  v3 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100004FA4(self, a2));\n  v4 = v3;\n  signpost = self->_signpost;\n  if ( signpost - 1 <= 0xFFFFFFFFFFFFFFFDLL && os_signpost_enabled(v3) )\n  {\n    *(_WORD *)buf = 0;\n    _os_signpost_emit_with_name_impl(\n      (void *)&_mh_execute_header,\n      v4,\n      OS_SIGNPOST_INTERVAL_END,\n      signpost,\n      \"ATXHeuristicJSEnv\",\n      \" enableTelemetry=YES \",\n      buf,\n      2u);\n  }\n  objc_release(v4);\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___ATXHeuristicJSEnv;\n  -[ATXHeuristicJSEnv dealloc](&v6, \"dealloc\");\n}"
+}

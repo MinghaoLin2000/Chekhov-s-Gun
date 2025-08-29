@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21MethodDescriptorProtoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf21MethodDescriptorProtoD2Ev(google::protobuf::MethodDescriptorProto * this)",
+    "pseudocode": "void __fastcall google::protobuf::MethodDescriptorProto::~MethodDescriptorProto(\n        google::protobuf::MethodDescriptorProto *this)\n{\n  sub_1000AD2C0();\n  sub_100037E58((char *)this + 8);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf13RepeatedFieldIyE7ReserveEi",
+    "function_argument_number": 2,
+    "function_signature": "j___ZN6google8protobuf13RepeatedFieldIyE7ReserveEi(unsigned int * a1, int a2)",
+    "pseudocode": "void __fastcall google::protobuf::RepeatedField<unsigned long long>::Reserve(unsigned int *a1, int a2)\n{\n  google::protobuf::RepeatedField<unsigned long long>::Reserve(a1, a2);\n}"
+}

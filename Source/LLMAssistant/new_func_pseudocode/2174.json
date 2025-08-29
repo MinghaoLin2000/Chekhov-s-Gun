@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TrackListTableView draggingExited:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TrackListTableView draggingExited:](TrackListTableView * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[TrackListTableView draggingExited:](TrackListTableView *self, SEL a2, id a3)\n{\n  -[TrackListTableView setDragHighlighted:](self, \"setDragHighlighted:\", 0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LoadingViewController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[LoadingViewController init](LoadingViewController * self, SEL a2)",
+    "pseudocode": "LoadingViewController *__cdecl -[LoadingViewController init](LoadingViewController *self, SEL a2)\n{\n  LoadingViewController *result; // x0\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___LoadingViewController;\n  result = -[LoadingViewController init](&v3, \"init\");\n  if ( result )\n    result->_autoShowDelay = 1.0;\n  return result;\n}"
+}

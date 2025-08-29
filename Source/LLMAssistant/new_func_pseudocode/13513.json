@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringByMakingFirstCharacterUppercase]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringByMakingFirstCharacterUppercase](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringByMakingFirstCharacterUppercase](NSString *self, SEL a2)\n{\n  void *v3; // x19\n  NSString *v4; // x20\n  NSString *v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = -[NSString mutableCopy](self, \"mutableCopy\");\n  if ( objc_msgSend(v3, \"length\") )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[NSString substringToIndex:](self, \"substringToIndex:\", 1LL));\n    v5 = objc_retainAutoreleasedReturnValue(-[NSString uppercaseString](v4, \"uppercaseString\"));\n    objc_msgSend(v3, \"replaceCharactersInRange:withString:\", 0LL, 1LL, v5);\n    objc_release(v5);\n    objc_release(v4);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

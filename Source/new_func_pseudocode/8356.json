@@ -1,0 +1,6 @@
+{
+    "function_name": "__set_user_dir_suffix",
+    "function_argument_number": 0,
+    "function_signature": "__set_user_dir_suffix()",
+    "pseudocode": "__int64 _set_user_dir_suffix()\n{\n  return __set_user_dir_suffix();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LegacyAudioAccessory copyWithZone:](LegacyAudioAccessory * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[LegacyAudioAccessory copyWithZone:](LegacyAudioAccessory *self, SEL a2, _NSZone *a3)\n{\n  LegacyAudioAccessory *v4; // x20\n\n  v4 = -[LegacyAudioAccessory initWithDelegate:](\n         objc_alloc(&OBJC_CLASS___LegacyAudioAccessory),\n         \"initWithDelegate:\",\n         self->_delegate);\n  objc_storeStrong((id *)&v4->_serialNumber, self->_serialNumber);\n  objc_storeStrong((id *)&v4->_activeFirmwareVersion, self->_activeFirmwareVersion);\n  objc_storeStrong((id *)&v4->_activeANCVersion, self->_activeANCVersion);\n  objc_storeStrong((id *)&v4->_modelName, self->_modelName);\n  return v4;\n}"
+}

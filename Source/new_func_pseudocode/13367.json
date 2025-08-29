@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter truncateToNumberOfEntries:completion:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUZipWriter truncateToNumberOfEntries:completion:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[TSUZipWriter truncateToNumberOfEntries:completion:](\n        TSUZipWriter *self,\n        SEL a2,\n        unsigned __int64 a3,\n        id a4)\n{\n  id v6; // x0\n  dispatch_queue_s *writeQueue; // x21\n  id v8; // x19\n  _QWORD block[5]; // [xsp+8h] [xbp-58h] BYREF\n  id v10; // [xsp+30h] [xbp-30h]\n  unsigned __int64 v11; // [xsp+38h] [xbp-28h]\n\n  v6 = objc_retain(a4);\n  writeQueue = (dispatch_queue_s *)self->_writeQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100156B10;\n  block[3] = &unk_1001DEAA8;\n  v10 = v6;\n  v11 = a3;\n  block[4] = self;\n  v8 = objc_retain(v6);\n  dispatch_async(writeQueue, block);\n  objc_release(v10);\n  objc_release(v8);\n}"
+}

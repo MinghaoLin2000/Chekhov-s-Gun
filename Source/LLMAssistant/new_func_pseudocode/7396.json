@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup23MarkupDisplayMessageKeyOwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s13DisplayMarkup23MarkupDisplayMessageKeyOwCP(_BYTE * result, _BYTE * a2)",
+    "pseudocode": "_BYTE *__fastcall initializeBufferWithCopyOfBuffer for MarkupDisplayMessageKey(_BYTE *result, _BYTE *a2)\n{\n  *result = *a2;\n  return result;\n}"
+}

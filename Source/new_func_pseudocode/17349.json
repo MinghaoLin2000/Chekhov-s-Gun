@@ -1,0 +1,6 @@
+{
+    "function_name": "__AMThirdPartyActionsAllowed",
+    "function_argument_number": 0,
+    "function_signature": "__AMThirdPartyActionsAllowed()",
+    "pseudocode": "__int64 _AMThirdPartyActionsAllowed()\n{\n  return __AMThirdPartyActionsAllowed();\n}"
+}

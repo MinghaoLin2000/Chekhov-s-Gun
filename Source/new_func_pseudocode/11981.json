@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal13ReflectionOps4CopyERKNS0_7MessageEPS3_",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal13ReflectionOps4CopyERKNS0_7MessageEPS3_(google::protobuf::internal::ReflectionOps * this, const google::protobuf::Message * a2, google::protobuf::Message * a3)",
+    "pseudocode": "const google::protobuf::Message *__fastcall google::protobuf::internal::ReflectionOps::Copy(\n        const google::protobuf::Message *this,\n        const google::protobuf::Message *a2,\n        google::protobuf::Message *a3)\n{\n  __int64 v3; // x30\n  google::protobuf::internal::ReflectionOps *v5; // x20\n  google::protobuf::Message *v6; // x2\n\n  if ( this != a2 )\n  {\n    v5 = this;\n    google::protobuf::internal::ReflectionOps::Clear(a2, a2);\n    if ( ((v3 ^ (2 * v3)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (const google::protobuf::Message *)google::protobuf::internal::ReflectionOps::Merge(v5, a2, v6);\n  }\n  return this;\n}"
+}

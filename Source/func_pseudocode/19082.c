@@ -1,0 +1,5 @@
+_AFDeviceSupportsSystemAssistantExperience
+__int64 AFDeviceSupportsSystemAssistantExperience()
+{
+  return _AFDeviceSupportsSystemAssistantExperience();
+}

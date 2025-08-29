@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoKey blockInfos]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUCryptoKey blockInfos](SFUCryptoKey * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[SFUCryptoKey blockInfos](SFUCryptoKey *self, SEL a2)\n{\n  return 0LL;\n}"
+}

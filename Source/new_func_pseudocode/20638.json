@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_endpoint_get_type",
+    "function_argument_number": 1,
+    "function_signature": "_nw_endpoint_get_type(nw_endpoint_t endpoint)",
+    "pseudocode": "nw_endpoint_type_t __cdecl nw_endpoint_get_type(nw_endpoint_t endpoint)\n{\n  return _nw_endpoint_get_type(endpoint);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBlueButton currentFillColor]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceBlueButton currentFillColor](DeviceBlueButton * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceBlueButton currentFillColor](DeviceBlueButton *self, SEL a2)\n{\n  unsigned int v3; // w20\n  NSColor *v4; // x0\n  NSColor *v5; // x19\n  NSColor *v6; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( ((unsigned int)-[DeviceBlueButton isEnabled](self, \"isEnabled\") & 1) != 0 )\n  {\n    v3 = (unsigned int)-[DeviceBlueButton isHighlighted](self, \"isHighlighted\");\n    v4 = objc_retainAutoreleasedReturnValue(+[NSColor systemBlueColor](&OBJC_CLASS___NSColor, \"systemBlueColor\"));\n    v5 = v4;\n    if ( v3 )\n    {\n      v6 = objc_retainAutoreleasedReturnValue(-[NSColor colorWithSystemEffect:](v4, \"colorWithSystemEffect:\", 1LL));\n      objc_release(v5);\n      v5 = v6;\n    }\n  }\n  else\n  {\n    v5 = objc_retainAutoreleasedReturnValue(+[NSColor lightGrayColor](&OBJC_CLASS___NSColor, \"lightGrayColor\"));\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

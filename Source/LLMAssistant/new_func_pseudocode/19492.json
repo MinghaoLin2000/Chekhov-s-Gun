@@ -1,0 +1,6 @@
+{
+    "function_name": "_uuid_parse",
+    "function_argument_number": 2,
+    "function_signature": "_uuid_parse(const char *__attribute__((__org_typedef(uuid_string_t))) in, unsigned __int8 *__attribute__((__org_typedef(uuid_t))) uu)",
+    "pseudocode": "int __cdecl uuid_parse(const uuid_string_t in, uuid_t uu)\n{\n  return _uuid_parse(in, uu);\n}"
+}

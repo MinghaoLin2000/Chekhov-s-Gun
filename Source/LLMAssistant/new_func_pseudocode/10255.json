@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12Path_ElementD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12Path_ElementD0Ev(TSP::Path_Element * this)",
+    "pseudocode": "void __fastcall TSP::Path_Element::~Path_Element(TSP::Path_Element *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::Path_Element::~Path_Element(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C40D5D207CCLL);\n}"
+}

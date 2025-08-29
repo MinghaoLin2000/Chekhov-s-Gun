@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPFilePackage zipArchiveOptions]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSPFilePackage zipArchiveOptions](id a1, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl +[TSPFilePackage zipArchiveOptions](id a1, SEL a2)\n{\n  return 1LL;\n}"
+}

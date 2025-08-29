@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP22ComponentDataReferenceD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP22ComponentDataReferenceD0Ev(TSP::ComponentDataReference * this)",
+    "pseudocode": "void __fastcall TSP::ComponentDataReference::~ComponentDataReference(TSP::ComponentDataReference *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  TSP::ComponentDataReference::~ComponentDataReference(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x10A1C40AE3C6AFDLL);\n}"
+}

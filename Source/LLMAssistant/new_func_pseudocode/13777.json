@@ -1,0 +1,6 @@
+{
+    "function_name": "___memcpy_chk",
+    "function_argument_number": 0,
+    "function_signature": "___memcpy_chk()",
+    "pseudocode": "__int64 __memcpy_chk()\n{\n  return ___memcpy_chk();\n}"
+}

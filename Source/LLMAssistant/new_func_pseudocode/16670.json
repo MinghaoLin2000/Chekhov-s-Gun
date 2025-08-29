@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater overrideUpdaterOptions]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAAccessoryUpdater overrideUpdaterOptions](EAAccessoryUpdater * self, SEL a2)",
+    "pseudocode": "void __cdecl -[EAAccessoryUpdater overrideUpdaterOptions](EAAccessoryUpdater *self, SEL a2)\n{\n  void *v3; // x0\n  void *v4; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater overrideUpdaterOptions]\",\n    1314LL);\n  v3 = copyPlistDeviceEntryFromDeviceClass(self->deviceClass);\n  v4 = v3;\n  if ( v3 )\n  {\n    if ( objc_msgSend(v3, \"objectForKey:\", CFSTR(\"closeEASession\")) )\n      -[EAFirmwareUpdater setCloseEASession:](\n        self->firmwareUpdater,\n        \"setCloseEASession:\",\n        objc_msgSend(objc_msgSend(v4, \"objectForKey:\", CFSTR(\"closeEASession\")), \"boolValue\"));\n    if ( objc_msgSend(v4, \"objectForKey:\", CFSTR(\"dropboxPath\")) )\n      self->localFilePath = (NSString *)objc_retain(objc_msgSend(v4, \"objectForKey:\", CFSTR(\"dropboxPath\")));\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

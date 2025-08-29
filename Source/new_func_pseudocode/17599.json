@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__120__throw_length_errorB8ne180100EPKc",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__120__throw_length_errorB8ne180100EPKc(__int64 a1)",
+    "pseudocode": "void __fastcall __noreturn std::__throw_length_error[abi:ne180100](__int64 a1)\n{\n  void *exception; // x19\n\n  exception = __cxa_allocate_exception(0x10uLL);\n  std::length_error::length_error[abi:ne180100](exception, a1);\n  __cxa_throw(\n    exception,\n    (struct type_info *)&`typeinfo for'std::length_error,\n    (void (__fastcall *)(void *))&std::length_error::~length_error);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackageWriterComponentWriteChannel close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPPackageWriterComponentWriteChannel close](TSPPackageWriterComponentWriteChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPPackageWriterComponentWriteChannel close](TSPPackageWriterComponentWriteChannel *self, SEL a2)\n{\n  atomic_store(1u, (unsigned __int8 *)&self->_isClosed);\n}"
+}

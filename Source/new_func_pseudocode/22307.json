@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate applicationDidFinishLaunching:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ECTIHelperDelegate applicationDidFinishLaunching:](ECTIHelperDelegate * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate applicationDidFinishLaunching:](ECTIHelperDelegate *self, SEL a2, id a3)\n{\n  void *v4; // x20\n  uint8_t v5[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_INFO) )\n  {\n    *(_WORD *)v5 = 0;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_INFO,\n      \"ECTI: applicationDidFinishLaunching\",\n      v5,\n      2u);\n  }\n  v4 = -[NSTextField cell](self->_textField, \"cell\");\n  objc_msgSend(v4, \"setWraps:\", 0LL);\n  objc_msgSend(v4, \"setBackgroundStyle:\", 3LL);\n  objc_msgSend(v4, \"setWantsNotificationForMarkedText:\", 1LL);\n  -[NSTextField setDelegate:](self->_textField, \"setDelegate:\", self);\n}"
+}

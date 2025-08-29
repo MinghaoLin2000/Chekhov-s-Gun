@@ -1,0 +1,20 @@
+__ZNK6google8protobuf10Descriptor17GetSourceLocationEPNS0_14SourceLocationE
+__int64 __fastcall google::protobuf::Descriptor::GetSourceLocation(__int64 a1, __int64 a2)
+{
+  __int64 SourceLocation; // x19
+  void *__p; // [xsp+8h] [xbp-28h] BYREF
+  void *v7; // [xsp+10h] [xbp-20h]
+  __int64 v8; // [xsp+18h] [xbp-18h]
+
+  __p = 0LL;
+  v7 = 0LL;
+  v8 = 0LL;
+  google::protobuf::Descriptor::GetLocationPath(a1, &__p);
+  SourceLocation = google::protobuf::FileDescriptor::GetSourceLocation(*(_QWORD *)(a1 + 16), (int)&__p, a2);
+  if ( __p )
+  {
+    v7 = __p;
+    operator delete(__p);
+  }
+  return SourceLocation;
+}

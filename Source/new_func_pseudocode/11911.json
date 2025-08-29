@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf7Message12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf7Message12ByteSizeLongEv(google::protobuf::Message * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Message::ByteSizeLong(\n        google::protobuf::Message *this,\n        const google::protobuf::Message *a2)\n{\n  __int64 v3; // x20\n\n  v3 = google::protobuf::internal::WireFormat::ByteSize(this, a2);\n  (*(void (__fastcall **)(google::protobuf::Message *, __int64))(*(_QWORD *)this + 144LL))(this, v3);\n  return v3;\n}"
+}

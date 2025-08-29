@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ScreenMirroringAlert.Response()\n{\n  return &type metadata for ScreenMirroringAlert.Response;\n}"
+}

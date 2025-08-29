@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18GenericTypeHandlerINSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEE5MergeERKS9_PS9_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal18GenericTypeHandlerINSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEE5MergeERKS9_PS9_(std::string * __str, std::string * this)",
+    "pseudocode": "std::string *__fastcall google::protobuf::internal::GenericTypeHandler<std::string>::Merge(\n        std::string *__str,\n        std::string *this)\n{\n  return std::string::operator=(this, __str);\n}"
+}

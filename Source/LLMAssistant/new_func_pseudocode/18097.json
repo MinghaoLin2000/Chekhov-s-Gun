@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_init_negotiation",
+    "function_argument_number": 0,
+    "function_signature": "_piston_init_negotiation()",
+    "pseudocode": "__int64 piston_init_negotiation()\n{\n  return 0LL;\n}"
+}

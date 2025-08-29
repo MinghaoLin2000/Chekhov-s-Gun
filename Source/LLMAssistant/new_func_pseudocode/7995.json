@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSConnectionGetPIDAndVersion",
+    "function_argument_number": 0,
+    "function_signature": "_SLSConnectionGetPIDAndVersion()",
+    "pseudocode": "__int64 SLSConnectionGetPIDAndVersion()\n{\n  return _SLSConnectionGetPIDAndVersion();\n}"
+}

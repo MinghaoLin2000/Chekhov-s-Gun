@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedVwet",
+    "function_argument_number": 2,
+    "function_signature": "$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedVwet(unsigned __int8 * a1, unsigned int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for VoiceCommandDebugInfoAggregated(unsigned __int8 *a1, unsigned int a2)\n{\n  int v2; // w8\n  unsigned int v3; // w8\n  bool v4; // cf\n\n  if ( a2 )\n  {\n    if ( a2 >= 0xFF && a1[5] )\n    {\n      v2 = *(_DWORD *)a1 + 254;\n    }\n    else\n    {\n      v3 = *a1;\n      v4 = v3 >= 2;\n      v2 = (v3 + 2147483646) & 0x7FFFFFFF;\n      if ( !v4 )\n        v2 = -1;\n    }\n  }\n  else\n  {\n    v2 = -1;\n  }\n  return (unsigned int)(v2 + 1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_FSEventStreamInvalidate",
+    "function_argument_number": 1,
+    "function_signature": "_FSEventStreamInvalidate(FSEventStreamRef streamRef)",
+    "pseudocode": "void __cdecl FSEventStreamInvalidate(FSEventStreamRef streamRef)\n{\n  _FSEventStreamInvalidate(streamRef);\n}"
+}

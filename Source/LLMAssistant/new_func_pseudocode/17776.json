@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIResultError hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIResultError hash](ModelKeyServerAPIResultError * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[ModelKeyServerAPIResultError hash](ModelKeyServerAPIResultError *self, SEL a2)\n{\n  return -[NSString hash](self->_message, \"hash\");\n}"
+}

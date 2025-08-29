@@ -1,0 +1,6 @@
+{
+    "function_name": "_getsegmentdata",
+    "function_argument_number": 3,
+    "function_signature": "_getsegmentdata(const mach_header_64 * mhp, const char * segname, unsigned __int64 * size)",
+    "pseudocode": "uint8_t *__cdecl getsegmentdata(const mach_header_64 *mhp, const char *segname, unsigned __int64 *size)\n{\n  return _getsegmentdata(mhp, segname, size);\n}"
+}

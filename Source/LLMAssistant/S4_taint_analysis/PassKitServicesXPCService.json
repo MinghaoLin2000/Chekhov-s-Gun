@@ -1,0 +1,7 @@
+{
+  "_objc_msgSend$resume": 4294982176,
+  "-[PassKitServicesXPCService imageDataForTransaction:size:completion:]": 4294981884,
+  "-[ServiceDelegate listener:shouldAcceptNewConnection:]": 4294981616,
+  "_objc_msgSend$setExportedInterface:": 4294982272,
+  "_objc_msgSend$setExportedObject:": 4294982304
+}

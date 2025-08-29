@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegate ignoreDocumentSupport]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPTemporaryObjectContextDelegate ignoreDocumentSupport](TSPTemporaryObjectContextDelegate * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSPTemporaryObjectContextDelegate ignoreDocumentSupport](\n        TSPTemporaryObjectContextDelegate *self,\n        SEL a2)\n{\n  return self->_ignoreDocumentSupport;\n}"
+}

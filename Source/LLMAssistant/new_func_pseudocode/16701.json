@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCDigestGetOutputSize",
+    "function_argument_number": 0,
+    "function_signature": "_CCDigestGetOutputSize()",
+    "pseudocode": "__int64 CCDigestGetOutputSize()\n{\n  return _CCDigestGetOutputSize();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_browse_result_get_changes",
+    "function_argument_number": 2,
+    "function_signature": "_nw_browse_result_get_changes(nw_browse_result_t old_result, nw_browse_result_t new_result)",
+    "pseudocode": "nw_browse_result_change_t __cdecl nw_browse_result_get_changes(\n        nw_browse_result_t old_result,\n        nw_browse_result_t new_result)\n{\n  return _nw_browse_result_get_changes(old_result, new_result);\n}"
+}

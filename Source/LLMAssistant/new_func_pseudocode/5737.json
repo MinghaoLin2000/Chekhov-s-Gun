@@ -1,0 +1,6 @@
+{
+    "function_name": "_NXKeyRepeatThreshold",
+    "function_argument_number": 1,
+    "function_signature": "_NXKeyRepeatThreshold(NXEventHandle handle)",
+    "pseudocode": "double __cdecl NXKeyRepeatThreshold(NXEventHandle handle)\n{\n  return _NXKeyRepeatThreshold(handle);\n}"
+}

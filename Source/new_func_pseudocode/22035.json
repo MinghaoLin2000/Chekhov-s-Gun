@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3mlc14xpc_dispatch_t15handle_xpc_callEPv.cold.1",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK3mlc14xpc_dispatch_t15handle_xpc_callEPv.cold.1(__int64 a1, os_log_s * a2)",
+    "pseudocode": "void __fastcall mlc::xpc_dispatch_t::handle_xpc_call(__int64 a1, os_log_s *a2)\n{\n  int v2; // [xsp+0h] [xbp-20h] BYREF\n  __int64 v3; // [xsp+4h] [xbp-1Ch]\n\n  v2 = 136315138;\n  v3 = a1;\n  _os_log_debug_impl((void *)&_mh_execute_header, a2, OS_LOG_TYPE_DEBUG, \"Request: %s\", (uint8_t *)&v2, 0xCu);\n}"
+}

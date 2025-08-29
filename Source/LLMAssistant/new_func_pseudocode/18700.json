@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore19_NavigationModifierVwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore19_NavigationModifierVwCP(__int64 * a1, __int64 * a2)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall initializeBufferWithCopyOfBuffer for _NavigationModifier(__int64 *a1, __int64 *a2)\n{\n  return initializeBufferWithCopyOfBuffer for ScreenMirroringAlertView(a1, a2);\n}"
+}

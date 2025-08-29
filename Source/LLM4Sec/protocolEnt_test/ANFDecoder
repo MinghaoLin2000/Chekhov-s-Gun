@@ -1,0 +1,14 @@
+Service Path:
+/System/Library/PrivateFrameworks/NewsDaemon.framework/Versions/A/XPCServices/ANFDecoder.xpc/Contents/MacOS/ANFDecoder
+
+Service Exported Protocols:
+@protocol FCANFHelper
+- (void)popInterest;
+- (void)pushInterest;
+- (FCANFDocumentManifest *)manifestFromANFDocumentData:(NSData *)arg1;
+@end
+@protocol NDANFDecodingServiceType
+- (void)decodeANFDocumentData:(NSData *)arg1 completion:(void (^)(FCANFDocumentManifest *, NSError *))arg2;
+@end
+
+Service Entitlements:

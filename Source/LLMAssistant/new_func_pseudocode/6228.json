@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob .cxx_destruct](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob .cxx_destruct](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_imageDestinationData, 0LL);\n  objc_storeStrong((id *)&self->_candidacy, 0LL);\n  objc_storeStrong((id *)&self->_metadataPolicy, 0LL);\n  objc_storeStrong((id *)&self->_outputFileType, 0LL);\n  objc_storeStrong((id *)&self->_inputFileType, 0LL);\n  objc_storeStrong((id *)&self->_error, 0LL);\n  objc_storeStrong((id *)&self->_adjustmentInformation, 0LL);\n  objc_storeStrong((id *)&self->_destinationData, 0LL);\n  objc_storeStrong((id *)&self->_destinationResourceURLCollection, 0LL);\n  objc_storeStrong((id *)&self->_sourceResourceURLCollection, 0LL);\n  objc_storeStrong((id *)&self->_requestIdentifier, 0LL);\n  objc_storeStrong((id *)&self->_destinationImageProperties, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_sourceImageProperties, 0LL);\n}"
+}

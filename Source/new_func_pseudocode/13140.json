@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipInflateReadChannel dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipInflateReadChannel dealloc](TSUZipInflateReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUZipInflateReadChannel dealloc](TSUZipInflateReadChannel *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  -[TSUZipInflateReadChannel close](self, \"close\");\n  inflateEnd(&self->_stream);\n  free(self->_outBuffer);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___TSUZipInflateReadChannel;\n  -[TSUZipInflateReadChannel dealloc](&v3, \"dealloc\");\n}"
+}

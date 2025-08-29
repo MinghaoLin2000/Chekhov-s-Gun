@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableArray tsu_insertObject:usingComparator:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSMutableArray tsu_insertObject:usingComparator:](NSMutableArray * self, SEL a2, id a3, id a4)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSMutableArray tsu_insertObject:usingComparator:](\n        NSMutableArray *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void *v6; // x19\n\n  v6 = -[NSMutableArray indexOfObject:inSortedRange:options:usingComparator:](\n         self,\n         \"indexOfObject:inSortedRange:options:usingComparator:\",\n         a3,\n         0LL,\n         -[NSMutableArray count](self, \"count\"),\n         1024LL,\n         a4);\n  -[NSMutableArray insertObject:atIndex:](self, \"insertObject:atIndex:\", a3, v6);\n  return (unsigned __int64)v6;\n}"
+}

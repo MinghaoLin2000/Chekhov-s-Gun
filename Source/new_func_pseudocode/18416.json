@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper22ClamshellStateObserverCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s19ControlCenterHelper22ClamshellStateObserverCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for ClamshellStateObserver(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100093B88;\n  if ( !qword_100093B88 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for ClamshellStateObserver);\n  return result;\n}"
+}

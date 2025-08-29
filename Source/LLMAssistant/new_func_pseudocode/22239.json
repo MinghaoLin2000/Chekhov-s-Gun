@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLPreviewRequestFillXPCRepresentation",
+    "function_argument_number": 0,
+    "function_signature": "__QLPreviewRequestFillXPCRepresentation()",
+    "pseudocode": "__int64 _QLPreviewRequestFillXPCRepresentation()\n{\n  return __QLPreviewRequestFillXPCRepresentation();\n}"
+}

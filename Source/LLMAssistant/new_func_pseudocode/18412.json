@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVwxx",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVwxx()",
+    "pseudocode": "void destroy for ScreenMirroringAlert.Response()\n{\n  ;\n}"
+}

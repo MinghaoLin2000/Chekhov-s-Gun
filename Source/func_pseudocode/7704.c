@@ -1,0 +1,5 @@
+$s16CGRegionIteratorCMa
+__int64 _s16CGRegionIteratorCMa()
+{
+  return objc_opt_self(&OBJC_CLASS____TtCE16EyeCandyGraphicsaSo11CGRegionRefP33_E25F4199FE41BDF67B45AA15EB701DE616CGRegionIterator);
+}

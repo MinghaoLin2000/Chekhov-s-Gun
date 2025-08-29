@@ -1,0 +1,65 @@
+Service Path:
+/System/Library/PrivateFrameworks/MetricMeasurement.framework/Versions/A/XPCServices/MetricMeasurementHelper.xpc/Contents/MacOS/MetricMeasurementHelper
+
+Service Exported Protocols:
+@protocol MXMSMachUtilitiesProtocol_Internal <NSObject>
+@end
+@protocol MXMSProxyPerformanceTrace_Internal <NSObject>
+- (void)_stopPerformanceTraceHelper:(void (^)(NSURL *, NSString *, NSError *, NSError *, NSError *, NSError *))arg1;
+- (void)_startPerformanceTraceHelper:(NSDictionary *)arg1 response:(void (^)(NSError *, NSError *, NSError *))arg2;
+@end
+@protocol MXMSProxyProbeProtocol_Internal <NSObject>
+- (void)_sampleWithProxyMetric:(MXMProxyMetric *)arg1 timeout:(double)arg2 response:(void (^)(MXMSampleData *, unsigned long long, NSError *))arg3;
+@end
+@protocol MXMSProxyQuiesceBeforeIteration_Internal <NSObject>
+- (void)_quiesceBeforeIterationHelper:(double)arg1 timeout:(double)arg2 response:(void (^)(_Bool, NSError *))arg3;
+@end
+@protocol MXMSProxyTerminateProcessesBeforeIteration_Internal <NSObject>
+- (void)_terminateProcessesBeforeIterationHelper:(NSArray *)arg1 response:(void (^)(_Bool, NSError *))arg2;
+@end
+@protocol MXMSProxyUncacheBeforeIteration_Internal <NSObject>
+- (void)_uncacheBeforeIterationHelper:(NSArray *)arg1 response:(void (^)(_Bool, NSError *))arg2;
+@end
+@protocol MetricMeasurementHelperProtocol_Internal <MXMSProxyProbeProtocol_Internal, MXMSMachUtilitiesProtocol_Internal, MXMSProxyPerformanceTrace_Internal, MXMSProxyQuiesceBeforeIteration_Internal, MXMSProxyUncacheBeforeIteration_Internal, MXMSProxyTerminateProcessesBeforeIteration_Internal>
+- (void)_wakeWithPhrase:(NSString *)arg1 response:(void (^)(NSString *))arg2;
+@end
+@protocol PTTraceSessionDelegate <NSObject>
+- (void)performanceTraceDidComplete:(NSURL *)arg1 withToken:(NSString *)arg2 withError:(NSError *)arg3;
+- (void)performanceTraceDidStop:(NSError *)arg1;
+- (void)performanceTraceDidStart:(NSError *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.PerformanceTrace.OverrideTimeout
+	[Value]
+		[Bool] true
+	[Key] com.apple.PerformanceTrace.SkipNotification
+	[Value]
+		[Bool] true
+	[Key] com.apple.PerformanceTrace.Tracing
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.logging.admin
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.logging.diagnostic
+	[Value]
+		[Bool] true
+	[Key] com.apple.runningboard.terminateprocess
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.sysmond
+	[Key] com.apple.sysmond.client
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] MetricMeasurementHelper

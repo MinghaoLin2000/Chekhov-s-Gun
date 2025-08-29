@@ -1,0 +1,6 @@
+{
+    "function_name": "_CreateEventWithCGEvent",
+    "function_argument_number": 4,
+    "function_signature": "_CreateEventWithCGEvent(CFAllocatorRef inAllocator, CGEventRef inEvent, EventAttributes inAttributes, EventRef * outEvent)",
+    "pseudocode": "OSStatus __cdecl CreateEventWithCGEvent(\n        CFAllocatorRef inAllocator,\n        CGEventRef inEvent,\n        EventAttributes inAttributes,\n        EventRef *outEvent)\n{\n  return _CreateEventWithCGEvent(inAllocator, inEvent, inAttributes, outEvent);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf14DescriptorPool19FindExtensionByNameERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf14DescriptorPool19FindExtensionByNameERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorPool::FindExtensionByName(__int64 a1, __int64 a2)\n{\n  __int64 v3; // x20\n  __int64 v4; // x1\n  __int64 result; // x0\n  __int64 v6[2]; // [xsp+0h] [xbp-20h] BYREF\n\n  v3 = *(_QWORD *)(a1 + 32);\n  sub_10007A644(v6, a2);\n  if ( (unsigned int)google::protobuf::DescriptorPool::Tables::FindByNameHelper(v3, a1, v6[0], v6[1]) != 2 )\n    return 0LL;\n  result = v4;\n  if ( !*(_BYTE *)(v4 + 67) )\n    return 0LL;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController isEnabledSecondaryButton]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController isEnabledSecondaryButton](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceFooterViewController isEnabledSecondaryButton](DeviceFooterViewController *self, SEL a2)\n{\n  return self->_enabledSecondaryButton;\n}"
+}

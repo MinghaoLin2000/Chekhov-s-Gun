@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSString tsu_stringWithUUID]",
+    "function_argument_number": 2,
+    "function_signature": "+[NSString tsu_stringWithUUID](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[NSString tsu_stringWithUUID](id a1, SEL a2)\n{\n  const __CFUUID *v2; // x0\n  const __CFUUID *v3; // x19\n  __CFString *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = CFUUIDCreate(0LL);\n  if ( v2 )\n  {\n    v3 = v2;\n    v4 = (__CFString *)CFUUIDCreateString(0LL, v2);\n    CFRelease(v3);\n  }\n  else\n  {\n    v4 = 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

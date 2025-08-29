@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringGetFileSystemRepresentation",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringGetFileSystemRepresentation(CFStringRef string, char * buffer, CFIndex maxBufLen)",
+    "pseudocode": "Boolean __cdecl CFStringGetFileSystemRepresentation(CFStringRef string, char *buffer, CFIndex maxBufLen)\n{\n  return _CFStringGetFileSystemRepresentation(string, buffer, maxBufLen);\n}"
+}

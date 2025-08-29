@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSString tsu_stringByBase64EncodingBytes:length:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSString tsu_stringByBase64EncodingBytes:length:](id a1, SEL a2, const char * a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl +[NSString tsu_stringByBase64EncodingBytes:length:](id a1, SEL a2, const char *a3, unsigned __int64 a4)\n{\n  return +[NSString tsu_stringByBase64EncodingBytes:length:breakLines:](\n           &OBJC_CLASS___NSString,\n           \"tsu_stringByBase64EncodingBytes:length:breakLines:\",\n           a3,\n           a4,\n           0LL);\n}"
+}

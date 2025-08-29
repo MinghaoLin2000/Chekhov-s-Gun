@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUMemoryInputStream seekToOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUMemoryInputStream seekToOffset:](SFUMemoryInputStream * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SFUMemoryInputStream seekToOffset:](SFUMemoryInputStream *self, SEL a2, signed __int64 a3)\n{\n  const char *mEnd; // x8\n  const char *mStart; // x9\n\n  mEnd = self->mEnd;\n  mStart = self->mStart;\n  if ( mEnd - mStart >= a3 )\n    mEnd = &mStart[a3];\n  self->mCurrent = mEnd;\n}"
+}

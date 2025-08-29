@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetTagChdr",
+    "function_argument_number": 0,
+    "function_signature": "_uarpAssetTagChdr()",
+    "pseudocode": "__int64 uarpAssetTagChdr()\n{\n  aChdr[4] = 0;\n  return uarpPayloadTagPack();\n}"
+}

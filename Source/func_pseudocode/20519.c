@@ -1,0 +1,21 @@
+-[BrowseService .cxx_destruct]
+void __cdecl -[BrowseService .cxx_destruct](BrowseService *self, SEL a2)
+{
+  __int64 vars8; // [xsp+18h] [xbp+8h]
+
+  objc_storeStrong((id *)&self->_nan, 0LL);
+  objc_storeStrong((id *)&self->_cups, 0LL);
+  objc_storeStrong((id *)&self->_extension, 0LL);
+  objc_storeStrong((id *)&self->_proximity, 0LL);
+  objc_storeStrong((id *)&self->_mdm, 0LL);
+  objc_storeStrong((id *)&self->_bonjour, 0LL);
+  objc_storeStrong((id *)&self->_syncTimer, 0LL);
+  objc_storeStrong((id *)&self->_queue, 0LL);
+  objc_storeStrong((id *)&self->_lastBrowseInfos, 0LL);
+  objc_storeStrong((id *)&self->_browseInfos, 0LL);
+  objc_storeStrong((id *)&self->_entities, 0LL);
+  objc_storeStrong((id *)&self->_session, 0LL);
+  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )
+    __break(0xC471u);
+  objc_storeStrong((id *)&self->_proxy, 0LL);
+}

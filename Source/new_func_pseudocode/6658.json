@@ -1,0 +1,6 @@
+{
+    "function_name": "_sleep",
+    "function_argument_number": 1,
+    "function_signature": "_sleep(unsigned int a1)",
+    "pseudocode": "unsigned int __cdecl sleep(unsigned int a1)\n{\n  return _sleep(a1);\n}"
+}

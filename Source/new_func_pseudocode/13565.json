@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet countByEnumeratingWithState:objects:count:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUMutableLinkedPointerSet countByEnumeratingWithState:objects:count:](TSUMutableLinkedPointerSet * self, SEL a2, $655AB7B2D2422B1B18367FB7F2D120EF * a3, id * a4, unsigned __int64 a5)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUMutableLinkedPointerSet countByEnumeratingWithState:objects:count:](\n        TSUMutableLinkedPointerSet *self,\n        SEL a2,\n        $655AB7B2D2422B1B18367FB7F2D120EF *a3,\n        id *a4,\n        unsigned __int64 a5)\n{\n  unsigned __int64 var0; // x8\n  TSULinkedPointerSetEntry **p_mHead; // x9\n  TSULinkedPointerSetEntry *v7; // x9\n  unsigned __int64 result; // x0\n  bool v9; // zf\n  bool v10; // cf\n\n  var0 = a3->var0;\n  p_mHead = &self->mHead;\n  if ( a3->var0 )\n    p_mHead = (TSULinkedPointerSetEntry **)(a3->var0 + 24);\n  v7 = *p_mHead;\n  result = 0LL;\n  if ( v7 )\n    v9 = a5 == 0;\n  else\n    v9 = 1;\n  if ( !v9 )\n  {\n    do\n    {\n      var0 = (unsigned __int64)v7;\n      a4[result++] = v7->mObject;\n      v7 = v7->mNext;\n      if ( v7 )\n        v10 = result >= a5;\n      else\n        v10 = 1;\n    }\n    while ( !v10 );\n  }\n  a3->var0 = var0;\n  a3->var1 = a4;\n  a3->var2 = (unsigned __int64 *)&a3->var2;\n  return result;\n}"
+}

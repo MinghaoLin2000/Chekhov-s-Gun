@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetAllowsAntialiasing",
+    "function_argument_number": 2,
+    "function_signature": "_CGContextSetAllowsAntialiasing(CGContextRef c, bool allowsAntialiasing)",
+    "pseudocode": "void __cdecl CGContextSetAllowsAntialiasing(CGContextRef c, bool allowsAntialiasing)\n{\n  _CGContextSetAllowsAntialiasing(c, allowsAntialiasing);\n}"
+}

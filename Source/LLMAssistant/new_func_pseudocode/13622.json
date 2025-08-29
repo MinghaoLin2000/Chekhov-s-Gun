@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSUSetCrashReporterInfov",
+    "function_argument_number": 2,
+    "function_signature": "_TSUSetCrashReporterInfov(__int64 a1, char * a2)",
+    "pseudocode": "void __fastcall TSUSetCrashReporterInfov(__int64 a1, char *a2)\n{\n  void *v2; // x19\n  const char *v3; // x0\n  const char *v4; // x8\n  char *v5[3]; // [xsp+8h] [xbp-28h] BYREF\n\n  v5[1] = a2;\n  v5[2] = a2;\n  v2 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___NSString),\n         \"tsu_initRedactedWithFormat:arguments:\",\n         +[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", a1),\n         a2);\n  v3 = (const char *)objc_msgSend(v2, \"UTF8String\");\n  v5[0] = 0LL;\n  if ( v3 )\n    asprintf(v5, \"%s\", v3);\n  objc_release(v2);\n  v4 = v5[0];\n  if ( !v5[0] )\n    v4 = \"TSUSetCrashReporterInfo: unknown reason\";\n  __crashreporter_info__ = (__int64)v4;\n}"
+}

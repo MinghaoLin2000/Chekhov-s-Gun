@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CFRelease(CFTypeRef cf)",
+    "pseudocode": "void __cdecl CFRelease(CFTypeRef cf)\n{\n  _CFRelease(cf);\n}"
+}

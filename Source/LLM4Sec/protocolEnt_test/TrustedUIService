@@ -1,0 +1,121 @@
+Service Path:
+/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/TrustedUIService.xpc/Contents/MacOS/TrustedUIService
+
+Service Exported Protocols:
+@protocol NSContextMenuClientProtocol <NSTrustedUITransactionProtocol>
+@end
+@protocol NSContextMenuLifecycleProtocol <NSObject, NSMenuLifecycleProtocol>
+- (_Bool)_highlightItemAtIndex:(long long)arg1 allowingDisabledItems:(_Bool)arg2;
+- (struct CGRect)frameForViewAtMenuIndex:(long long)arg1;
+- (_Bool)dismissSingleSubmenuAnimated:(_Bool)arg1;
+- (void)highlightItemAtIndex:(long long)arg1;
+- (void)presentSubmenuWindow:(NSObject<NSContextMenuLifecycleProtocol> *)arg1 fromView:(NSView *)arg2 parentFrame:(struct CGRect)arg3 highlightingFirstItem:(_Bool)arg4 withDelay:(_Bool)arg5;
+- (void)setupImplAsSubmenu:(NSObject<NSContextMenuLifecycleProtocol> *)arg1;
+- (void)windowDidChangeFrameTo:(struct CGRect)arg1 focusedItem:(struct CGRect)arg2;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+- (void)viewDidLayout;
+- (void)viewDidAppear;
+- (void)viewWillAppear;
+- (void)willMoveToWindow;
+- (void)viewDidLoad;
+- (void)loadView;
+- (void)forEachMenuItemDo:(void (^)(NSMenuItem *, long long, long long))arg1;
+- (void)prepareToOpenSubmenuAtIndex:(long long)arg1 options:(long long)arg2;
+@end
+@protocol NSContextMenuServerProtocol <NSTrustedUITransactionProtocol>
+@end
+@protocol NSContextMenuWindowProtocol <NSObject>
+- (void)closeAnimated:(_Bool)arg1 completion:(void (^)(void))arg2;
+- (void)repositionWithOffset:(struct CGPoint)arg1;
+- (struct CGRect)contentRectForFrameRect:(struct CGRect)arg1;
+- (void)updateWindowFrameTo:(struct CGRect)arg1 offset:(struct CGPoint)arg2 animated:(_Bool)arg3 completion:(void (^)(struct CGRect))arg4;
+@end
+@protocol NSMenuBarDisplayWindowProtocol <NSCoding, NSMenuBatchUpdateSupporting>
+@end
+@protocol NSMenuBarImplDelegate <NSObject>
+- (void)update;
+@end
+@protocol NSMenuBatchUpdateSupporting <NSObject>
+- (void)endUpdates;
+- (void)beginUpdates;
+@end
+@protocol NSMenuLifecycleDelegate <NSObject>
+- (NSMenu *)_getFullPlatformRootMenu:(NSMenu *)arg1;
+- (void)willDismissSubmenu:(NSMenu *)arg1 fromParent:(NSMenu *)arg2 coalescingSubmenus:(_Bool)arg3;
+- (void)presentSubmenuFromMenu:(NSMenu *)arg1 itemAtIndex:(long long)arg2 parent:(struct CGRect)arg3 highlightingFirstItem:(_Bool)arg4 delayed:(_Bool)arg5 animated:(_Bool)arg6;
+- (void)highlightItem:(NSMenuItem *)arg1 inMenu:(NSMenu *)arg2;
+- (void)performAction:(NSMenuItem *)arg1;
+@end
+@protocol NSMenuLifecycleProtocol <NSObject>
+@end
+@protocol NSMenuTrackingSessionDelegate <NSObject>
+- (void)forwardEventToApp:(NSEvent *)arg1;
+- (_Bool)trackingSessionCanForwardEvent:(NSEvent *)arg1 toCustomMenuItem:(NSMenuItem *)arg2;
+- (void)trackingSessionDidEnd:(NSEvent *)arg1;
+- (void)trackingSessionWillDismissAnimated;
+- (void)trackingSessionDidStart;
+@end
+@protocol NSPasteAlertClientProtocol <NSTrustedUITransactionProtocol>
+@end
+@protocol NSPasteAlertServerProtocol <NSTrustedUITransactionProtocol>
+@end
+@protocol NSTrustedPasteControlClientProtocol
+- (void)invokeTrustedActionWithToken:(NSData *)arg1;
+@end
+@protocol NSTrustedPasteControlServerProtocol
+- (void)applyConfiguration:(_NSPasteControlConfiguration *)arg1;
+@end
+@protocol NSTrustedUIAwaitableProtocol
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingDictionary:(void (^)(NSDictionary *))arg2;
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingBool:(void (^)(_Bool))arg2;
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingFloat:(void (^)(double))arg2;
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingPoint:(void (^)(struct CGPoint))arg2;
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingRect:(void (^)(struct CGRect))arg2;
+- (void)performAction:(NSObject<OS_xpc_object> *)arg1 awaitingInteger:(void (^)(long long))arg2;
+@end
+@protocol NSTrustedUIClientProtocol <NSTrustedUITransactionProtocol>
+@end
+@protocol NSTrustedUIServerProtocol <NSTrustedUITransactionProtocol, NSTrustedUIAwaitableProtocol>
+@end
+@protocol NSTrustedUITransactionProtocol
+- (void)performTransaction:(NSObject<OS_xpc_object> *)arg1;
+@end
+@protocol OS_tcc_authorization_record <OS_tcc_object>
+@end
+@protocol OS_tcc_identity <OS_tcc_object>
+@end
+@protocol OS_tcc_message_options <OS_tcc_object>
+@end
+@protocol OS_tcc_object <NSObject>
+@end
+@protocol OS_tcc_server <OS_tcc_object>
+@end
+@protocol OS_tcc_service <OS_tcc_object>
+@end
+@protocol OS_xpc_object <NSObject>
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.CFPasteboard.is-trusted-ui-service
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.skylight.menu-bar-manager
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.manager.access.modify
+	[Value]
+		[Array]
+			[String] kTCCServicePasteboard
+	[Key] com.apple.private.tcc.manager.access.read
+	[Value]
+		[Array]
+			[String] kTCCServiceAll
+	[Key] com.apple.private.tcc.manager.check-by-audit-token
+	[Value]
+		[Array]
+			[String] kTCCServiceAll
+	[Key] com.apple.private.tcc.manager.get-identity-for-credential
+	[Value]
+		[Bool] true

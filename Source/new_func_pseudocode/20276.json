@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addString:valueTag:name:lang:value:]",
+    "function_argument_number": 5,
+    "function_signature": "-[ipp_t _addString:valueTag:name:lang:value:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addString:valueTag:name:lang:value:](ipp_t *self, SEL a2, int a3, int a4, id a5, id a6, id a7)\n{\n  __int64 v9; // x22\n  __int64 v10; // x23\n  id v12; // x19\n  id v13; // x20\n  id v14; // x0\n  void *v15; // x21\n  NSArray *v16; // x25\n  id v17; // [xsp+0h] [xbp-50h] BYREF\n\n  v9 = *(_QWORD *)&a4;\n  v10 = *(_QWORD *)&a3;\n  v12 = objc_retain(a5);\n  v13 = objc_retain(a6);\n  v14 = objc_retain(a7);\n  v15 = v14;\n  if ( v14 && (unsigned int)v10 <= 5 && (_DWORD)v10 != 3 )\n  {\n    v17 = v14;\n    v16 = objc_retainAutoreleasedReturnValue(+[NSArray arrayWithObjects:count:](&OBJC_CLASS___NSArray, \"arrayWithObjects:count:\", &v17, 1LL));\n    -[ipp_t _addStrings:valueTag:name:lang:values:](\n      self,\n      \"_addStrings:valueTag:name:lang:values:\",\n      v10,\n      v9,\n      v12,\n      v13,\n      v16);\n    objc_release(v16);\n  }\n  objc_release(v15);\n  objc_release(v13);\n  objc_release(v12);\n}"
+}

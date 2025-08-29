@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject setIsVideo:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPHMediaObject setIsVideo:](AMPPHMediaObject * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject setIsVideo:](AMPPHMediaObject *self, SEL a2, bool a3)\n{\n  self->_isVideo = a3;\n}"
+}

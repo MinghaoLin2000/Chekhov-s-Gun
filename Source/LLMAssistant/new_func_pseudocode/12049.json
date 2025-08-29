@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf7strings8AlphaNumC1ENS1_3HexE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf7strings8AlphaNumC1ENS1_3HexE(_QWORD * result, unsigned __int64 a2, char a3)",
+    "pseudocode": "_QWORD *__fastcall google::protobuf::strings::AlphaNum::AlphaNum(_QWORD *result, unsigned __int64 a2, char a3)\n{\n  __int64 v3; // x8\n  unsigned __int64 v4; // x9\n  bool v5; // cc\n\n  v3 = 0LL;\n  v4 = (1LL << (4 * a3 - 4)) | a2;\n  do\n  {\n    *((_BYTE *)result + v3 + 47) = a0123456789abcd[a2 & 0xF];\n    a2 >>= 4;\n    --v3;\n    v5 = v4 > 0xF;\n    v4 >>= 4;\n  }\n  while ( v5 );\n  *result = (char *)result + v3 + 48;\n  result[1] = -v3;\n  return result;\n}"
+}

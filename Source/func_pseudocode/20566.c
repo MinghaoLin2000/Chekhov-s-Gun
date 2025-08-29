@@ -1,0 +1,5 @@
+_CGPDFContentStreamCreateWithPage
+CGPDFContentStreamRef __cdecl CGPDFContentStreamCreateWithPage(CGPDFPageRef page)
+{
+  return _CGPDFContentStreamCreateWithPage(page);
+}

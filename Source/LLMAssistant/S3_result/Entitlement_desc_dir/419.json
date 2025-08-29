@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.QuartzCore.global-capture",
+  "capability": "The ability to capture the entire graphical output of the macOS system (the global framebuffer or composed display content) at a low level, potentially bypassing standard user consent mechanisms for screen recording. This implies access to the raw pixels or rendered frames of the entire display, regardless of which application is active or in focus.",
+  "reasoning": "The `QuartzCore` framework is fundamental to macOS's graphics rendering and display composition. The term `global-capture` in this context strongly suggests the capability to capture the entire display output, rather than being limited to an application's specific window or content. This would be a highly privileged form of screen capture, operating at a level below typical application APIs and potentially affecting the entire system's visual output. It's more fundamental than specific screen capture options like `com.apple.developer.screen-capture.include-passthrough`.",
+  "similar_entitlements": [
+    "com.apple.developer.screen-capture.include-passthrough"
+  ],
+  "sensitive_type": [
+    4,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to two sensitive operation types:\n1.  **System & Kernel Level Control (Type 4)**: Capturing the global display output at the `QuartzCore` level is a very low-level system operation. It involves fundamental control over the system's display output, impacting the entire visual environment and potentially bypassing higher-level abstractions.\n2.  **Access Transparency Consent and Control (TCC) related functions (Type 5)**: 'Screen Recording' is explicitly listed as a TCC-protected resource. Granting an application the ability to perform a 'global-capture' of the screen directly relates to, and potentially bypasses or provides a highly privileged alternative to, the standard TCC screen recording prompt. This poses a significant privacy risk as it could allow an application to monitor all on-screen activity without explicit user consent via the standard TCC mechanism.",
+  "self_reflection": "I am confident in this assessment. The combination of `QuartzCore` (core graphics framework) and `global-capture` strongly points to a system-wide, low-level screen capture capability. This inherently makes it a powerful and sensitive operation, directly impacting user privacy and system integrity. The connection to TCC (specifically screen recording) and system-level control is direct and logical given the inferred capability. The only potential unknown is if 'global-capture' refers to something other than the visual display, but given 'QuartzCore', the display is the most probable target."
+}

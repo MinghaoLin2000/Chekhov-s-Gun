@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextDrawPDFPage",
+    "function_argument_number": 2,
+    "function_signature": "_CGContextDrawPDFPage(CGContextRef c, CGPDFPageRef page)",
+    "pseudocode": "void __cdecl CGContextDrawPDFPage(CGContextRef c, CGPDFPageRef page)\n{\n  _CGContextDrawPDFPage(c, page);\n}"
+}

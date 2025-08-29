@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService16JSServiceRequestV4kindSSvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService16JSServiceRequestV4kindSSvg()",
+    "pseudocode": "unsigned __int64 JSServiceRequest.kind.getter()\n{\n  return 0xD000000000000016LL;\n}"
+}

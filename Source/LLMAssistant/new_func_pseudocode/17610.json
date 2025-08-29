@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFService .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[CGPDFService .cxx_destruct](CGPDFService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[CGPDFService .cxx_destruct](CGPDFService *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_requestQueue, 0LL);\n}"
+}

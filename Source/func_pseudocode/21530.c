@@ -1,0 +1,22 @@
+-[LSRConnection initializeWithSandboxExtensions:]
+void __cdecl -[LSRConnection initializeWithSandboxExtensions:](LSRConnection *self, SEL a2, id a3)
+{
+  id v4; // x0
+  dispatch_queue_s *v5; // x20
+  id v6; // x19
+  _QWORD v7[5]; // [xsp+0h] [xbp-40h] BYREF
+  id v8; // [xsp+28h] [xbp-18h]
+
+  v4 = objc_retain(a3);
+  v5 = (dispatch_queue_s *)qword_100065418;
+  v7[0] = _NSConcreteStackBlock;
+  v7[1] = 3254779904LL;
+  v7[2] = sub_10003AF80;
+  v7[3] = &unk_100059CE8;
+  v7[4] = self;
+  v8 = v4;
+  v6 = objc_retain(v4);
+  dispatch_async(v5, v7);
+  objc_release(v8);
+  objc_release(v6);
+}

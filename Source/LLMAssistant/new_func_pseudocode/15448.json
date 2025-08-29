@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOObjectRelease",
+    "function_argument_number": 1,
+    "function_signature": "_IOObjectRelease(io_object_t object)",
+    "pseudocode": "kern_return_t __cdecl IOObjectRelease(io_object_t object)\n{\n  return _IOObjectRelease(object);\n}"
+}

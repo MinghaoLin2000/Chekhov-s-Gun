@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabaseObjectWithDataState dataState]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDatabaseObjectWithDataState dataState](TSPDatabaseObjectWithDataState * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[TSPDatabaseObjectWithDataState dataState](TSPDatabaseObjectWithDataState *self, SEL a2)\n{\n  return self->_dataState;\n}"
+}

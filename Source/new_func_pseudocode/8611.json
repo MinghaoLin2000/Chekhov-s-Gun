@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest convertToPercent:ncpus:]",
+    "function_argument_number": 4,
+    "function_signature": "-[MXMSysmonRequest convertToPercent:ncpus:](MXMSysmonRequest * self, SEL a2, double a3, int a4)",
+    "pseudocode": "double __cdecl -[MXMSysmonRequest convertToPercent:ncpus:](MXMSysmonRequest *self, SEL a2, double a3, int a4)\n{\n  return a3 / (double)(100 * a4) * 100.0;\n}"
+}

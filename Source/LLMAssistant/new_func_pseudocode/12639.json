@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsu_fileReadPOSIXErrorWithNumber:userInfo:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSError tsu_fileReadPOSIXErrorWithNumber:userInfo:](id a1, SEL a2, int a3, id a4)",
+    "pseudocode": "id __cdecl +[NSError tsu_fileReadPOSIXErrorWithNumber:userInfo:](id a1, SEL a2, int a3, id a4)\n{\n  __int64 v4; // x21\n  void *v5; // x22\n  NSError *v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = a3;\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"tsu_userInfoWithErrorType:userInfo:\", 1LL, a4));\n  v6 = objc_retainAutoreleasedReturnValue(\n         +[NSError errorWithDomain:code:userInfo:](\n           &OBJC_CLASS___NSError,\n           \"errorWithDomain:code:userInfo:\",\n           NSPOSIXErrorDomain,\n           v4,\n           v5));\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

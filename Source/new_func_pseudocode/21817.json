@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize10Serializer4syncEPKcRf",
+    "function_argument_number": 3,
+    "function_signature": "__ZN9serialize10Serializer4syncEPKcRf(serialize::Serializer * this, const char * a2, float * a3)",
+    "pseudocode": "float __fastcall serialize::Serializer::sync(serialize::Serializer *this, const char *a2, float *a3)\n{\n  int v4; // w8\n  void *v5; // x0\n  double v6; // d0\n  float result; // s0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = *(unsigned __int8 *)this;\n  v5 = (void *)*((_QWORD *)this + 1);\n  if ( v4 )\n  {\n    v6 = *a3;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    xpc_dictionary_set_double(v5, a2, v6);\n  }\n  else\n  {\n    result = xpc_dictionary_get_double(v5, a2);\n    *a3 = result;\n  }\n  return result;\n}"
+}

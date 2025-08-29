@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFServiceListener listener]",
+    "function_argument_number": 2,
+    "function_signature": "-[CGPDFServiceListener listener](CGPDFServiceListener * self, SEL a2)",
+    "pseudocode": "NSXPCListener *__cdecl -[CGPDFServiceListener listener](CGPDFServiceListener *self, SEL a2)\n{\n  return (NSXPCListener *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

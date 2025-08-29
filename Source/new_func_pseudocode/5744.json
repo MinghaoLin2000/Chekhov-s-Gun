@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSMSetTextInputGlobalProperty",
+    "function_argument_number": 0,
+    "function_signature": "_TSMSetTextInputGlobalProperty()",
+    "pseudocode": "__int64 TSMSetTextInputGlobalProperty()\n{\n  return _TSMSetTextInputGlobalProperty();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf6StructD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf6StructD2Ev(google::protobuf::Struct * this)",
+    "pseudocode": "void __fastcall google::protobuf::Struct::~Struct(google::protobuf::Struct *this)\n{\n  sub_100037E58((char *)this + 8);\n  *((_QWORD *)this + 2) = off_1001DBDA0;\n  sub_100113A40((char *)this + 112);\n  google::protobuf::internal::MapFieldBase::~MapFieldBase((google::protobuf::Struct *)((char *)this + 16));\n}"
+}

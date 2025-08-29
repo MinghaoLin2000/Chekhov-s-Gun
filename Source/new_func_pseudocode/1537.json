@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setPrimaryButtonAction:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setPrimaryButtonAction:](DeviceFooterViewController * self, SEL a2, SEL a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setPrimaryButtonAction:](DeviceFooterViewController *self, SEL a2, SEL a3)\n{\n  NSButton *v4; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceFooterViewController primaryButton](self, \"primaryButton\"));\n  -[NSButton setAction:](v4, \"setAction:\", a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

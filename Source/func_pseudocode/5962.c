@@ -1,0 +1,5 @@
+$s33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingServiceCMa
+__int64 type metadata accessor for SiriSuggestionsBookkeepingService()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSURL tsu_volumeRenameOpenFail]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSURL tsu_volumeRenameOpenFail](NSURL * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[NSURL tsu_volumeRenameOpenFail](NSURL *self, SEL a2)\n{\n  int v3; // w8\n  _BOOL4 v4; // w0\n  _OWORD v6[2]; // [xsp+0h] [xbp-8F0h] BYREF\n  int v7; // [xsp+20h] [xbp-8D0h]\n  __int128 v8; // [xsp+30h] [xbp-8C0h] BYREF\n  __int64 v9; // [xsp+40h] [xbp-8B0h]\n  statfs v10; // [xsp+50h] [xbp-8A0h] BYREF\n\n  if ( !-[NSURL isFileURL](self, \"isFileURL\") )\n    goto LABEL_4;\n  memset(&v10, 0, 512);\n  v3 = tsu_reachable_statfs(self, &v10);\n  LOBYTE(v4) = 0;\n  v8 = xmmword_10018F160;\n  v9 = 0LL;\n  v7 = 0;\n  memset(v6, 0, sizeof(v6));\n  if ( !v3 )\n  {\n    if ( getattrlist(v10.f_mntonname, &v8, v6, 0x24uLL, 0x21u) )\n    {\nLABEL_4:\n      LOBYTE(v4) = 0;\n      return v4;\n    }\n    return (BYTE10(v6[0]) >> 4) & 1;\n  }\n  return v4;\n}"
+}

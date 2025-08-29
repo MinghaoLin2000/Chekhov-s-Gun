@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController clickRestoreFromBackupRadioButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSetupViewController clickRestoreFromBackupRadioButton:](DeviceSetupViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSetupViewController clickRestoreFromBackupRadioButton:](\n        DeviceSetupViewController *self,\n        SEL a2,\n        id a3)\n{\n  NSPopUpButton *v4; // x20\n  NSButton *v5; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSetupViewController backupsListPopUpButton](self, \"backupsListPopUpButton\", a3));\n  -[NSPopUpButton setEnabled:](v4, \"setEnabled:\", 1LL);\n  objc_release(v4);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSetupViewController setupAsNewButton](self, \"setupAsNewButton\"));\n  -[NSButton setState:](v5, \"setState:\", 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

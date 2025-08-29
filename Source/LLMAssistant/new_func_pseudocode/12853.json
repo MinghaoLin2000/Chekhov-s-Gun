@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDatabase closeWithError:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUDatabase closeWithError:](TSUDatabase * self, SEL a2, id * a3)",
+    "pseudocode": "bool __cdecl -[TSUDatabase closeWithError:](TSUDatabase *self, SEL a2, id *a3)\n{\n  sqlite3_stmt *stmt; // x0\n  sqlite3_stmt *v6; // x21\n  __int64 v7; // x0\n  __int64 v8; // x4\n  __int64 v9; // x5\n  __int64 v10; // x0\n  __int64 v11; // x4\n  __int64 v12; // x5\n  bool result; // w0\n\n  if ( !self->_db )\n    return 1;\n  do\n  {\n    stmt = sqlite3_next_stmt(self->_db, 0LL);\n    v6 = stmt;\n    if ( !stmt )\n      break;\n    v7 = sqlite3_finalize(stmt);\n  }\n  while ( (TSUHandleSqlite(v7, a3, 1LL, self, v8, v9, CFSTR(\"Finalizing statement\")) & 1) != 0 );\n  v10 = sqlite3_close(self->_db);\n  result = TSUHandleSqlite(v10, a3, 1LL, self, v11, v12, CFSTR(\"Closing database\"));\n  if ( v6 )\n    result = 0;\n  self->_db = 0LL;\n  return result;\n}"
+}

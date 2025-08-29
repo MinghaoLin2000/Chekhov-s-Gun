@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory progress:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LegacyAudioAccessory progress:](LegacyAudioAccessory * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[LegacyAudioAccessory progress:](LegacyAudioAccessory *self, SEL a2, double a3)\n{\n  OS_os_log *log; // x19\n  NSString *activeDeviceClass; // x8\n  int v7; // [xsp+0h] [xbp-50h] BYREF\n  const char *v8; // [xsp+4h] [xbp-4Ch]\n  __int16 v9; // [xsp+Ch] [xbp-44h]\n  NSString *v10; // [xsp+Eh] [xbp-42h]\n  __int16 v11; // [xsp+16h] [xbp-3Ah]\n  double v12; // [xsp+18h] [xbp-38h]\n\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEFAULT) )\n  {\n    activeDeviceClass = self->_activeDeviceClass;\n    v7 = 136315650;\n    v8 = \"-[LegacyAudioAccessory progress:]\";\n    v9 = 2112;\n    v10 = activeDeviceClass;\n    v11 = 2048;\n    v12 = a3;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      log,\n      OS_LOG_TYPE_DEFAULT,\n      \"%s: deviceClass=%@, progress=%f\",\n      (uint8_t *)&v7,\n      0x20u);\n  }\n}"
+}

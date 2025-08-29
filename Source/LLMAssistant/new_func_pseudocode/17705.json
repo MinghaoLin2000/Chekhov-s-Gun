@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyRequest hasTeamId]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyRequest hasTeamId](ModelKeyServerAPIFetchKeyRequest * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[ModelKeyServerAPIFetchKeyRequest hasTeamId](ModelKeyServerAPIFetchKeyRequest *self, SEL a2)\n{\n  return self->_teamId != 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[_TtC22localspeechrecognition31AssistantAssetDelegateInterface sharedInstance]",
+    "function_argument_number": 2,
+    "function_signature": "+[_TtC22localspeechrecognition31AssistantAssetDelegateInterface sharedInstance](id a1, SEL a2)",
+    "pseudocode": "_TtC22localspeechrecognition31AssistantAssetDelegateInterface *__cdecl +[AssistantAssetDelegateInterface sharedInstance](\n        id a1,\n        SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v2 = (void *)sub_10002B33C(&unk_100062220, &unk_100064868, sub_10002B0A4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (_TtC22localspeechrecognition31AssistantAssetDelegateInterface *)objc_autoreleaseReturnValue(v2);\n}"
+}

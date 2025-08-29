@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal18GenericTypeHandlerINS0_7MessageEE8GetArenaEPS3_",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal18GenericTypeHandlerINS0_7MessageEE8GetArenaEPS3_(__int64 a1)",
+    "pseudocode": "unsigned __int64 __fastcall google::protobuf::internal::GenericTypeHandler<google::protobuf::Message>::GetArena(\n        __int64 a1)\n{\n  __int64 v1; // x8\n  unsigned __int64 result; // x0\n\n  v1 = *(_QWORD *)(a1 + 8);\n  result = v1 & 0xFFFFFFFFFFFFFFFELL;\n  if ( (v1 & 1) != 0 )\n    return *(_QWORD *)result;\n  return result;\n}"
+}

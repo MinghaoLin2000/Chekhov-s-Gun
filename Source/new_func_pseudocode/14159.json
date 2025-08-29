@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithEntry:archive:validateCRC:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithEntry:archive:validateCRC:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithEntry_archive_validateCRC_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"initWithEntry:archive:validateCRC:\");\n}"
+}

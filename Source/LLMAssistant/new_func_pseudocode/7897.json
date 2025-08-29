@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSp13EyeCandySwiftE4withyqd__Si_qd__SpyxGXEtlFZ",
+    "function_argument_number": 4,
+    "function_signature": "_$sSp13EyeCandySwiftE4withyqd__Si_qd__SpyxGXEtlFZ(__int64 a1, void (*)(void) a2, __int64 a4, __int64 a3)",
+    "pseudocode": "void __fastcall static UnsafeMutablePointer.with<A>(_:_:)(__int64 a1, void (*a2)(void), __int64 a3, __int64 a4)\n{\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  sub_10001CDE0(a1, a4);\n  a2();\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  UnsafeMutablePointer.deallocate()();\n}"
+}

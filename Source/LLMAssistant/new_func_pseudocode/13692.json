@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUUIDCreate",
+    "function_argument_number": 1,
+    "function_signature": "_CFUUIDCreate(CFAllocatorRef alloc)",
+    "pseudocode": "CFUUIDRef __cdecl CFUUIDCreate(CFAllocatorRef alloc)\n{\n  return _CFUUIDCreate(alloc);\n}"
+}

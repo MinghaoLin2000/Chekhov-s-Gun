@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSSetUseSplitCursor",
+    "function_argument_number": 0,
+    "function_signature": "_NSSetUseSplitCursor()",
+    "pseudocode": "__int64 NSSetUseSplitCursor()\n{\n  return _NSSetUseSplitCursor();\n}"
+}

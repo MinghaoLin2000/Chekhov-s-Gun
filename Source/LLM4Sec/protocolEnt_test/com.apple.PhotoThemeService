@@ -1,0 +1,46 @@
+Service Path:
+/System/Library/PrivateFrameworks/PhotoPrintProduct.framework/Versions/A/XPCServices/com.apple.PhotoThemeService.xpc/Contents/MacOS/com.apple.PhotoThemeService
+
+Service Exported Protocols:
+@protocol PhotoThemeService <NSObject>
+- (void)requestStatusForSession:(NSString *)arg1 statusHandler:(void (^)(_Bool, long long, double))arg2;
+- (void)cancelUpdateWithSession:(NSString *)arg1;
+- (void)queryCacheWithTags:(NSArray *)arg1 metadata:(NSDictionary *)arg2 completionHandler:(void (^)(NSArray *, _Bool))arg3;
+- (void)startUpdateWithTags:(NSArray *)arg1 metadata:(NSDictionary *)arg2 completionHandler:(void (^)(NSError *))arg3;
+@end
+@protocol SUSoftwareUpdateControllerDelegate <NSObject>
+- (void)softwareUpdateAvailableUpdatesChanged:(SUSoftwareUpdateController *)arg1;
+- (void)softwareUpdateWasCancelled:(SUSoftwareUpdateController *)arg1;
+- (void)softwareUpdate:(SUSoftwareUpdateController *)arg1 didFailWithError:(NSError *)arg2;
+- (void)softwareUpdateDidFinish:(SUSoftwareUpdateController *)arg1;
+- (_Bool)softwareUpdate:(SUSoftwareUpdateController *)arg1 shouldContinueWithNonProductionCatalogAtURL:(NSURL *)arg2;
+- (void)softwareUpdate:(SUSoftwareUpdateController *)arg1 didChangeProgress:(double)arg2 currentState:(long long)arg3 estimatedTimeForState:(double)arg4;
+- (void)softwareUpdateDidBegin:(SUSoftwareUpdateController *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.AuthorizationServices
+	[Value]
+		[Array]
+			[String] system.install.apple-software.standard-user
+			[String] system.install.apple-software
+			[String] com.apple.SoftwareUpdate.scan
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.softwareupdate
+			[String] com.apple.softwareupdated
+	[Key] com.apple.security.temporary-exception.sbpl
+	[Value]
+		[Array]
+			[String] 
+                (allow authorization-right-obtain
+                    (right-name "system.install.apple-software.standard-user")
+                    (right-name "system.install.apple-software")
+                    (right-name "com.apple.SoftwareUpdate.scan")
+                )
+            

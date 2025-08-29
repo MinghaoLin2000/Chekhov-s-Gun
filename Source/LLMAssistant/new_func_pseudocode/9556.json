@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP19DatabaseDataArchiveC2EPN6google8protobuf5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP19DatabaseDataArchiveC2EPN6google8protobuf5ArenaE(TSP::DatabaseDataArchive * this, google::protobuf::Arena * a2)",
+    "pseudocode": "__int64 __fastcall TSP::DatabaseDataArchive::DatabaseDataArchive(__int64 a1, __int64 a2)\n{\n  *(_QWORD *)a1 = off_1001D37E0;\n  *(_QWORD *)(a1 + 8) = a2;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  if ( atomic_load_explicit(scc_info_DatabaseDataArchive_TSPDatabaseMessages_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_DatabaseDataArchive_TSPDatabaseMessages_2eproto);\n  *(_QWORD *)(a1 + 24) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_QWORD *)(a1 + 32) = &google::protobuf::internal::fixed_address_empty_string;\n  *(_QWORD *)(a1 + 40) = 0LL;\n  *(_QWORD *)(a1 + 48) = 0LL;\n  *(_DWORD *)(a1 + 56) = 0;\n  *(_BYTE *)(a1 + 60) = 1;\n  return a1;\n}"
+}

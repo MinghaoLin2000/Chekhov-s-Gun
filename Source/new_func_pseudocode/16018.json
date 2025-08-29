@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPSuperBinaryAddPayload2",
+    "function_argument_number": 9,
+    "function_signature": "_UARPSuperBinaryAddPayload2(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, char a9)",
+    "pseudocode": "__int64 __fastcall UARPSuperBinaryAddPayload2(\n        __int64 a1,\n        __int64 a2,\n        int a3,\n        int a4,\n        __int64 a5,\n        __int64 a6,\n        const void *a7,\n        unsigned int a8,\n        char a9)\n{\n  _DWORD *v16; // x22\n  void *v17; // x0\n  void *v20; // [xsp+10h] [xbp-60h] BYREF\n  void *v21; // [xsp+18h] [xbp-58h] BYREF\n\n  v21 = 0LL;\n  UARPLayer2RequestBuffer(a1, (__int64 *)&v21, 0xB8u);\n  v16 = v21;\n  *((_QWORD *)v21 + 22) = *(_QWORD *)(a2 + 632);\n  *(_QWORD *)(a2 + 632) = v16;\n  uarpZero(v16, 0x28uLL);\n  *v16 = 40;\n  v16[1] = a4;\n  *((_QWORD *)v16 + 1) = a5;\n  *((_QWORD *)v16 + 2) = a6;\n  v16[9] = a8;\n  v16[7] = 0;\n  v16[31] = a3;\n  if ( !a9 )\n  {\n    v20 = 0LL;\n    UARPLayer2RequestBuffer(a1, (__int64 *)&v20, a8);\n    v17 = v20;\n    *((_QWORD *)v16 + 17) = v20;\n    memcpy(v17, a7, a8);\n  }\n  *((_BYTE *)v16 + 148) = a9;\n  v16[36] = a8;\n  *((_QWORD *)v16 + 21) = 0LL;\n  *(_DWORD *)(a2 + 8) += a8 + 40;\n  *(_DWORD *)(a2 + 40) += 40;\n  *(_DWORD *)(a2 + 28) += 40;\n  ++*(_DWORD *)(a2 + 448);\n  return 0LL;\n}"
+}

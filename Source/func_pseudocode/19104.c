@@ -1,0 +1,5 @@
+_SiriUIDismissalReasonToSISchemaDismissalReason
+__int64 SiriUIDismissalReasonToSISchemaDismissalReason()
+{
+  return _SiriUIDismissalReasonToSISchemaDismissalReason();
+}

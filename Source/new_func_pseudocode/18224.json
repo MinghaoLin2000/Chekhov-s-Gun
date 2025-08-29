@@ -1,0 +1,6 @@
+{
+    "function_name": "-[OSLogService invalidate]",
+    "function_argument_number": 2,
+    "function_signature": "-[OSLogService invalidate](OSLogService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[OSLogService invalidate](OSLogService *self, SEL a2)\n{\n  OS_dispatch_queue *serial_queue; // x8\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  serial_queue = self->_serial_queue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100001AD8;\n  block[3] = &unk_100004290;\n  block[4] = self;\n  dispatch_sync((dispatch_queue_t)serial_queue, block);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_pread",
+    "function_argument_number": 4,
+    "function_signature": "_pread(int __fd, void * __buf, size_t __nbyte, off_t a4)",
+    "pseudocode": "ssize_t __cdecl pread(int __fd, void *__buf, size_t __nbyte, off_t a4)\n{\n  return _pread(__fd, __buf, __nbyte, a4);\n}"
+}

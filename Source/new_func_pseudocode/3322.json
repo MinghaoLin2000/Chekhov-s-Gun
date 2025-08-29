@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_begin_catch",
+    "function_argument_number": 1,
+    "function_signature": "_objc_begin_catch(void * exc_buf)",
+    "pseudocode": "id __cdecl objc_begin_catch(void *exc_buf)\n{\n  return _objc_begin_catch(exc_buf);\n}"
+}

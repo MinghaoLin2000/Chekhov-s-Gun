@@ -1,0 +1,6 @@
+{
+    "function_name": "_FindPluginByScheme",
+    "function_argument_number": 1,
+    "function_signature": "_FindPluginByScheme(const __CFString * a1)",
+    "pseudocode": "__int64 __fastcall FindPluginByScheme(const __CFString *a1)\n{\n  __int64 result; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = sub_100004A3C(a1);\n  if ( !result )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_100004A3C(a1);\n  }\n  return result;\n}"
+}

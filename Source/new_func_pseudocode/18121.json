@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPlugInInstanceCreate",
+    "function_argument_number": 3,
+    "function_signature": "_CFPlugInInstanceCreate(CFAllocatorRef allocator, CFUUIDRef factoryUUID, CFUUIDRef typeUUID)",
+    "pseudocode": "void *__cdecl CFPlugInInstanceCreate(CFAllocatorRef allocator, CFUUIDRef factoryUUID, CFUUIDRef typeUUID)\n{\n  return _CFPlugInInstanceCreate(allocator, factoryUUID, typeUUID);\n}"
+}

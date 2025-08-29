@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV4nullACvgZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV4nullACvgZ()",
+    "pseudocode": "// attributes: thunk\n__int64 static CGSWindow.null.getter()\n{\n  return static CGSConnection.null.getter();\n}"
+}

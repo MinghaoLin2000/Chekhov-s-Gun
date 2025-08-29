@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$queryWithNode:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$queryWithNode:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_queryWithNode_forRecordTypes_attribute_matchType_queryValues_returnAttributes_maximumResults_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"queryWithNode:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:error:\");\n}"
+}

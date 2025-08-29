@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC13DisplayMarkup25AnnotationsViewController undoManagerForAnnotationController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC13DisplayMarkup25AnnotationsViewController undoManagerForAnnotationController:](_TtC13DisplayMarkup25AnnotationsViewController * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[AnnotationsViewController undoManagerForAnnotationController:](\n        _TtC13DisplayMarkup25AnnotationsViewController *self,\n        SEL a2,\n        id a3)\n{\n  return objc_autoreleaseReturnValue(0LL);\n}"
+}

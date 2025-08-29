@@ -1,0 +1,200 @@
+Service Path:
+/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/Versions/A/XPCServices/com.apple.Photos.Migration.Reader.xpc/Contents/MacOS/com.apple.Photos.Migration.Reader
+
+Service Exported Protocols:
+@protocol LiClientContext <NSObject>
+@end
+@protocol LiDiskDelegate <NSObject>
+- (NSObject<OS_dispatch_queue> *)diskDelegateQueue;
+- (void)diskChanged:(NSDictionary *)arg1 forKeys:(NSArray *)arg2;
+- (_Bool)diskWillEject:(NSDictionary *)arg1 reasonString:(out id *)arg2;
+- (_Bool)diskWillUnmount:(NSDictionary *)arg1 reasonString:(out id *)arg2;
+- (void)diskWillMount:(NSDictionary *)arg1;
+- (void)diskDisappeared:(NSDictionary *)arg1;
+- (void)diskAppeared:(NSDictionary *)arg1;
+@end
+@protocol LiEncoding <NSObject>
+- (void)encodeWithTransportEncoder:(LiTransportEncoder *)arg1 forLibrary:(id <LiLibrary>)arg2;
+- (id)initWithTransportDecoder:(LiTransportDecoder *)arg1 forLibrary:(id <LiLibrary>)arg2;
+@end
+@protocol LiHash <NSObject>
+- (unsigned int)liSmallHash;
+- (unsigned long long)liHash;
+@end
+@protocol LiJournalCoalesce <NSObject>
+- (_Bool)coalesceCompleteForRecoveryJournal:(LiJournalRecovery *)arg1 coalesceError:(NSError *)arg2 error:(id *)arg3;
+- (_Bool)coalesce:(NSMutableArray *)arg1 forTable:(NSString *)arg2 progress:(_Bool (^)(long long, long long))arg3 error:(id *)arg4;
+- (_Bool)prepareCoalescenceOfJournal:(LiJournalRecovery *)arg1 error:(id *)arg2;
+- (NSArray *)fileURLsToProcessForTableURL:(NSURL *)arg1 withJournalSuffix:(NSString *)arg2 forLibrary:(LiServiceLibrary *)arg3 tableName:(NSString *)arg4;
+@end
+@protocol LiJournalWriter <NSObject>
+- (_Bool)writeEntry:(NSDictionary *)arg1 outError:(id *)arg2;
+@end
+@protocol LiJournalingFile <NSObject>
+- (void)cancel;
+- (_Bool)close;
+@end
+@protocol LiLibrary <NSObject>
+- (Class)tableClassForTableName:(NSString *)arg1;
+- (LiTable *)tableForTableId:(unsigned long long)arg1;
+- (LiTable *)tableForTableName:(NSString *)arg1;
+- (NSArray *)normalTables;
+- (NSArray *)tables;
+- (NSArray *)tableNames;
+- (LiConnection *)connection;
+- (_Bool)isClosedOrClosing;
+- (_Bool)isOpen;
+- (id <LiLibrarySchema>)schema;
+@end
+@protocol LiLibraryPing <NSObject>
+- (void)pingForLibraryKey:(NSString *)arg1 forWellKnownClientIdentifier:(unsigned char)arg2;
+@end
+@protocol LiLibrarySchema <NSObject>
+- (NSString *)schemaDigest;
+- (long long)libraryCompatibleBackToVersion;
+- (long long)libraryVersion;
+- (NSString *)tableClassNameForTableName:(NSString *)arg1;
+@end
+@protocol LiMaintenanceServiceProtocol <LiXPCListenerEndpointService>
+- (void)performMaintenanceForLibraryWithURL:(NSURL *)arg1 withReply:(void (^)(NSError *))arg2;
+@end
+@protocol LiModelCore <NSObject, NSCopying, NSMutableCopying>
+- (void)saveWithModelId:(unsigned long long)arg1 completionHandler:(void (^)(_Bool, NSError *))arg2;
+- (void (^)(void))prepareForTransactionContextSave;
+- (void)waitForPersist;
+- (void)completePersistWithProperties:(NSDictionary *)arg1;
+- (NSDictionary *)preparePropertiesForPersist;
+- (_Bool)makeReadOnlyCheck;
+- (void)detach;
+- (NSArray *)debugInflightProperties;
+- (NSArray *)dirtyPropertiesKeyIndexes;
+- (void)setDirtyProperties:(NSMutableDictionary *)arg1;
+- (NSDictionary *)dirtyProperties;
+- (void)setLocalProperty:(id)arg1 forKeyPath:(LiKeyPath *)arg2;
+- (_Bool)setProperty:(id)arg1 forKeyPath:(LiKeyPath *)arg2 options:(unsigned int)arg3 propertyChanged:(_Bool *)arg4;
+- (_Bool)close;
+- (void)openWithReason:(unsigned short)arg1;
+- (void)open;
+- (void)setSearchTokensToInvalidateOnSave:(unsigned long long)arg1;
+- (unsigned long long)searchTokensToInvalidateOnSave;
+- (void)setIsUpdating:(_Bool)arg1;
+- (unsigned long long)openCount;
+- (unsigned short)modelChangeReason;
+- (void)setIsInTransaction:(_Bool)arg1;
+- (_Bool)isInTransaction;
+- (_Bool)isDirty;
+- (_Bool)isDetached;
+- (_Bool)isUpdating;
+- (void)setLocalProperty:(id)arg1 forPropertyIndex:(NSNumber *)arg2;
+- (NSMutableDictionary *)localProperties;
+- (NSArray *)keyPathsMissingFromLocalProperties:(NSArray *)arg1 uuid:(NSString *)arg2;
+- (_Bool)localPropertiesContainKeyPaths:(NSArray *)arg1 uuid:(NSString *)arg2;
+- (void *)sortPropertyForPropertyIndex:(struct __CFNumber *)arg1;
+- (id)localRawPropertyForKeyPath:(LiKeyPath *)arg1;
+- (id)propertyForKeyPath:(LiKeyPath *)arg1;
+- (id)copyCoreWithCapacity:(unsigned long long)arg1 modelId:(unsigned long long)arg2;
+- (LiTable *)table;
+- (_Bool)hasLocalProperties;
+- (_Bool)isReadOnly;
+@end
+@protocol LiSchemaAddTable
+- (void)addTableDeclaration:(LiTableDeclaration *)arg1;
+@end
+@protocol LiServiceConnection <NSObject, LiClientContext>
+- (void)notifyChanges:(LiModelChangeGroup *)arg1 lastHistoryRowId:(long long)arg2 tableIds:(LiImmutableRidList *)arg3 changeGroupType:(unsigned char)arg4 alertFlags:(unsigned char)arg5;
+- (void)disconnectConnectionForTermination:(_Bool)arg1;
+- (void)disconnectForTermination:(_Bool)arg1;
+- (void)disconnect;
+- (void)detachLibraryAndDisconnect;
+@end
+@protocol LiSnapshotProcessor <NSObject>
+- (void)close;
+- (_Bool)processChangeDictionary:(NSDictionary *)arg1 forModelId:(unsigned long long)arg2 error:(id *)arg3;
+@end
+@protocol LiSqliteBindBuffer <NSObject>
+- (id <LiSqliteBindBuffer>)nextMultiBindBuffer;
+- (unsigned long long)bindToSql:(LiSqliteSql *)arg1 atBindIndex:(int)arg2;
+@end
+@protocol LiSqliteBindBufferReader <NSObject>
+- (_Bool)hasMoreMultiBindValues;
+- (const void *)nextBytesWithlength:(int *)arg1;
+- (const char *)nextCharsWithlength:(int *)arg1;
+- (double)nextDouble;
+- (long long)nextInteger;
+- (_Bool)nextIsNull;
+@end
+@protocol LiSqliteBufferReaderRequest <NSObject>
+@end
+@protocol LiTransport <NSObject>
+- (LiStringAtomCoder *)stringAtomCoder;
+- (void)stopNoLock;
+- (void)stop;
+- (void)start;
+- (void)setConnection:(LiConnection *)arg1;
+- (void)setMessageReceivedHandler:(void (^)(LiMessage *, id <LiTransport>))arg1;
+- (void)setTerminateHandler:(void (^)(void))arg1;
+- (void)setCloseHandler:(void (^)(void))arg1;
+- (_Bool)dispatchMessage:(LiMessage *)arg1 forLibrary:(id <LiLibrary>)arg2;
+@end
+@protocol LiXPCListenerEndpointService
+@end
+@protocol NSFastEnumeration
+- (unsigned long long)countByEnumeratingWithState:(CDStruct_70511ce9 *)arg1 objects:(id *)arg2 count:(unsigned long long)arg3;
+@end
+@protocol NSFileManagerDelegate <NSObject>
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 removingItemAtURL:(NSURL *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 removingItemAtPath:(NSString *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldRemoveItemAtURL:(NSURL *)arg2;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldRemoveItemAtPath:(NSString *)arg2;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 linkingItemAtURL:(NSURL *)arg3 toURL:(NSURL *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 linkingItemAtPath:(NSString *)arg3 toPath:(NSString *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldLinkItemAtURL:(NSURL *)arg2 toURL:(NSURL *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldLinkItemAtPath:(NSString *)arg2 toPath:(NSString *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 movingItemAtURL:(NSURL *)arg3 toURL:(NSURL *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 movingItemAtPath:(NSString *)arg3 toPath:(NSString *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldMoveItemAtURL:(NSURL *)arg2 toURL:(NSURL *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldMoveItemAtPath:(NSString *)arg2 toPath:(NSString *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 copyingItemAtURL:(NSURL *)arg3 toURL:(NSURL *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldProceedAfterError:(NSError *)arg2 copyingItemAtPath:(NSString *)arg3 toPath:(NSString *)arg4;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldCopyItemAtURL:(NSURL *)arg2 toURL:(NSURL *)arg3;
+- (_Bool)fileManager:(NSFileManager *)arg1 shouldCopyItemAtPath:(NSString *)arg2 toPath:(NSString *)arg3;
+@end
+@protocol NSFilePresenter <NSObject>
+- (void)presentedSubitemAtURL:(NSURL *)arg1 didResolveConflictVersion:(NSFileVersion *)arg2;
+- (void)presentedSubitemAtURL:(NSURL *)arg1 didLoseVersion:(NSFileVersion *)arg2;
+- (void)presentedSubitemAtURL:(NSURL *)arg1 didGainVersion:(NSFileVersion *)arg2;
+- (void)presentedSubitemDidChangeAtURL:(NSURL *)arg1;
+- (void)presentedSubitemAtURL:(NSURL *)arg1 didMoveToURL:(NSURL *)arg2;
+- (void)presentedSubitemDidAppearAtURL:(NSURL *)arg1;
+- (void)accommodatePresentedSubitemDeletionAtURL:(NSURL *)arg1 completionHandler:(void (^)(NSError *))arg2;
+- (void)presentedItemDidResolveConflictVersion:(NSFileVersion *)arg1;
+- (void)presentedItemDidLoseVersion:(NSFileVersion *)arg1;
+- (void)presentedItemDidGainVersion:(NSFileVersion *)arg1;
+- (void)presentedItemDidChangeUbiquityAttributes:(NSSet *)arg1;
+- (void)presentedItemDidChange;
+- (void)presentedItemDidMoveToURL:(NSURL *)arg1;
+- (void)accommodatePresentedItemEvictionWithCompletionHandler:(void (^)(NSError *))arg1;
+- (void)accommodatePresentedItemDeletionWithCompletionHandler:(void (^)(NSError *))arg1;
+- (void)savePresentedItemChangesWithCompletionHandler:(void (^)(NSError *))arg1;
+- (void)relinquishPresentedItemToWriter:(void (^)(void (^)(void)))arg1;
+- (void)relinquishPresentedItemToReader:(void (^)(void (^)(void)))arg1;
+@end
+@protocol NSMutableCopying
+- (id)mutableCopyWithZone:(struct _NSZone *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.Photos.Migration.Reader
+	[Key] com.apple.private.tcc.manager.check-by-audit-token
+	[Value]
+		[Array]
+			[String] kTCCServicePhotos
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.files.bookmarks.app-scope
+	[Value]
+		[Bool] true

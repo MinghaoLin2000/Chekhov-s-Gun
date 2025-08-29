@@ -1,0 +1,6 @@
+{
+    "function_name": "_random",
+    "function_argument_number": 0,
+    "function_signature": "_random()",
+    "pseudocode": "__int64 random(void)\n{\n  return _random();\n}"
+}

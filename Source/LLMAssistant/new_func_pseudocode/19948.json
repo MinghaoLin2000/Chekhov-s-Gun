@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t payloadSent]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t payloadSent](lite_job_t * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[lite_job_t payloadSent](lite_job_t *self, SEL a2)\n{\n  return self->_payloadSent;\n}"
+}

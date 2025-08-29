@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_CreateURL",
+    "function_argument_number": 2,
+    "function_signature": "_netfs_CreateURL(const __CFDictionary * a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall netfs_CreateURL(const __CFDictionary *a1, __int64 a2)\n{\n  const __CFString *Value; // x0\n  __int64 PluginByScheme; // x0\n  __int64 v6; // x0\n  __int64 (__fastcall *v7)(const __CFDictionary *, __int64); // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  Value = (const __CFString *)CFDictionaryGetValue(a1, CFSTR(\"Scheme\"));\n  if ( !Value )\n    return 22LL;\n  PluginByScheme = FindPluginByScheme(Value);\n  if ( !PluginByScheme )\n    return 45LL;\n  v6 = sub_100007BE8(PluginByScheme);\n  if ( !v6 )\n    return 45LL;\n  v7 = *(__int64 (__fastcall **)(const __CFDictionary *, __int64))(*(_QWORD *)v6 + 56LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return v7(a1, a2);\n}"
+}

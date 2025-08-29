@@ -1,0 +1,31 @@
+Service Path:
+/System/Library/Frameworks/ImageIO.framework/Versions/A/XPCServices/ImageIOXPCService.xpc/Contents/MacOS/ImageIOXPCService
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.pac.shared_region_id
+	[Value]
+		[String] OOPCocoa
+	[Key] com.apple.private.memory.ownership_transfer
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.pac.exception
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Caches/com.apple.ImageIOXPCService/
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] H11ANEInDirectPathClient
+			[String] AppleJPEGDriverUserClient
+			[String] IOSurfaceRootUserClient
+			[String] IOSurfaceAcceleratorClient
+			[String] IOGPUDeviceUserClient
+	[Key] com.apple.videotoolbox.hardwarevideodecoder
+	[Value]
+		[Bool] true

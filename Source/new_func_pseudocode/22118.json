@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZL16idle_timer_resetv",
+    "function_argument_number": 0,
+    "function_signature": "__ZL16idle_timer_resetv()",
+    "pseudocode": "void idle_timer_reset(void)\n{\n  dispatch_time_t v0; // x0\n  dispatch_object_s *v1; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( g_idle_timer )\n  {\n    v0 = dispatch_time(0LL, 1000000000 * g_idle_timer_seconds);\n    dispatch_source_set_timer((dispatch_source_t)g_idle_timer, v0, 0xFFFFFFFFFFFFFFFFLL, 0LL);\n    v1 = (dispatch_object_s *)g_idle_timer;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    dispatch_resume(v1);\n  }\n}"
+}

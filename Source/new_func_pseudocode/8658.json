@@ -1,0 +1,6 @@
+{
+    "function_name": "_getxattr",
+    "function_argument_number": 6,
+    "function_signature": "_getxattr(const char * path, const char * name, void * value, size_t size, u_int32_t position, int options)",
+    "pseudocode": "ssize_t __cdecl getxattr(const char *path, const char *name, void *value, size_t size, u_int32_t position, int options)\n{\n  return _getxattr(path, name, value, size, position, options);\n}"
+}

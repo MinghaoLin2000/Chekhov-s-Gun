@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet removeObject:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUMutableLinkedPointerSet removeObject:](int a1, int a2, void * key)",
+    "pseudocode": "void __cdecl -[TSUMutableLinkedPointerSet removeObject:](TSUMutableLinkedPointerSet *self, SEL a2, id a3)\n{\n  TSULinkedPointerSetEntry *Value; // x0\n  TSULinkedPointerSetEntry *mPrevious; // x8\n  TSULinkedPointerSetEntry *mNext; // x8\n  __CFDictionary *mDictionary; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  Value = (TSULinkedPointerSetEntry *)CFDictionaryGetValue(self->mDictionary, a3);\n  if ( Value )\n  {\n    if ( Value == self->mHead )\n      self->mHead = Value->mNext;\n    if ( Value == self->mTail )\n      self->mTail = Value->mPrevious;\n    mPrevious = Value->mPrevious;\n    if ( mPrevious )\n      mPrevious->mNext = Value->mNext;\n    mNext = Value->mNext;\n    if ( mNext )\n      mNext->mPrevious = Value->mPrevious;\n    mDictionary = self->mDictionary;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    CFDictionaryRemoveValue(mDictionary, a3);\n  }\n}"
+}

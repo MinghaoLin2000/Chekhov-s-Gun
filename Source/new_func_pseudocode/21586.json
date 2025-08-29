@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_isUniquelyReferenced_nonNull_bridgeObject",
+    "function_argument_number": 0,
+    "function_signature": "_swift_isUniquelyReferenced_nonNull_bridgeObject()",
+    "pseudocode": "__int64 swift_isUniquelyReferenced_nonNull_bridgeObject()\n{\n  return _swift_isUniquelyReferenced_nonNull_bridgeObject();\n}"
+}

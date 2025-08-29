@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCDigestUpdate",
+    "function_argument_number": 0,
+    "function_signature": "_CCDigestUpdate()",
+    "pseudocode": "__int64 CCDigestUpdate()\n{\n  return _CCDigestUpdate();\n}"
+}

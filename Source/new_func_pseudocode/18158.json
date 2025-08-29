@@ -1,0 +1,6 @@
+{
+    "function_name": "___darwin_check_fd_set_overflow",
+    "function_argument_number": 3,
+    "function_signature": "___darwin_check_fd_set_overflow(int a1, const void * a2, int a3)",
+    "pseudocode": "int __cdecl __darwin_check_fd_set_overflow(int a1, const void *a2, int a3)\n{\n  return ___darwin_check_fd_set_overflow(a1, a2, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSGetSizeAndAlignment",
+    "function_argument_number": 3,
+    "function_signature": "_NSGetSizeAndAlignment(const char * typePtr, NSUInteger * sizep, NSUInteger * alignp)",
+    "pseudocode": "const char *__cdecl NSGetSizeAndAlignment(const char *typePtr, NSUInteger *sizep, NSUInteger *alignp)\n{\n  return _NSGetSizeAndAlignment(typePtr, sizep, alignp);\n}"
+}

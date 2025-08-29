@@ -1,0 +1,6 @@
+{
+    "function_name": "_IsUserCancelEventRef",
+    "function_argument_number": 1,
+    "function_signature": "_IsUserCancelEventRef(EventRef event)",
+    "pseudocode": "Boolean __cdecl IsUserCancelEventRef(EventRef event)\n{\n  return _IsUserCancelEventRef(event);\n}"
+}

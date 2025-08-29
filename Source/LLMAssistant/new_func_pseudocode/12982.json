@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription initWithObject:format:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUDescription initWithObject:format:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "TSUDescription *__cdecl -[TSUDescription initWithObject:format:](TSUDescription *self, SEL a2, id a3, id a4)\n{\n  id v6; // x21\n  id v7; // x19\n  TSUDescription *v8; // x20\n  __int64 v10; // [xsp+40h] [xbp+10h] BYREF\n\n  v6 = objc_retain(a4);\n  v7 = objc_retain(a3);\n  v8 = -[TSUDescription initWithObject:class:format:arguments:](\n         self,\n         \"initWithObject:class:format:arguments:\",\n         v7,\n         object_getClass(v7),\n         v6,\n         &v10);\n  objc_release(v6);\n  objc_release(v7);\n  return v8;\n}"
+}

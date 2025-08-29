@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarCategory setHidePopover:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarCategory setHidePopover:](AMPCapacityBarCategory * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarCategory setHidePopover:](AMPCapacityBarCategory *self, SEL a2, bool a3)\n{\n  self->_hidePopover = a3;\n}"
+}

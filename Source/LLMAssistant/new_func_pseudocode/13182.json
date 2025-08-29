@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoKey dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUCryptoKey dealloc](SFUCryptoKey * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUCryptoKey dealloc](SFUCryptoKey *self, SEL a2)\n{\n  char *mKey; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  mKey = self->mKey;\n  if ( mKey )\n  {\n    free(mKey);\n    self->mKey = 0LL;\n  }\n  objc_release(self->_passphrase);\n  objc_release(self->mSaltData);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___SFUCryptoKey;\n  -[SFUCryptoKey dealloc](&v4, \"dealloc\");\n}"
+}

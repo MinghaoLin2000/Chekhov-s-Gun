@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFUDup",
+    "function_argument_number": 1,
+    "function_signature": "_SFUDup(__int64 a1)",
+    "pseudocode": "__int64 __fastcall SFUDup(__int64 a1)\n{\n  __int64 v2; // x19\n\n  v2 = dup(a1);\n  if ( (_DWORD)v2 == -1 )\n    +[NSException sfu_errnoRaise:format:](\n      &OBJC_CLASS___NSException,\n      \"sfu_errnoRaise:format:\",\n      CFSTR(\"SFUDupError\"),\n      CFSTR(\"Could not dup %d\"),\n      a1);\n  return v2;\n}"
+}

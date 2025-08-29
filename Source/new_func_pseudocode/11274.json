@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14ServiceOptionsC2EPNS0_5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf14ServiceOptionsC2EPNS0_5ArenaE(google::protobuf::ServiceOptions * this, google::protobuf::Arena * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::ServiceOptions::ServiceOptions(__int64 a1, google::protobuf::Arena *a2)\n{\n  *(_QWORD *)a1 = off_1001D8E70;\n  *(_QWORD *)(a1 + 8) = a2;\n  google::protobuf::internal::ExtensionSet::ExtensionSet((google::protobuf::internal::ExtensionSet *)(a1 + 16), a2);\n  *(_QWORD *)(a1 + 48) = a2;\n  *(_QWORD *)(a1 + 40) = 0LL;\n  *(_QWORD *)(a1 + 56) = 0LL;\n  *(_QWORD *)(a1 + 64) = 0LL;\n  if ( atomic_load_explicit(scc_info_ServiceOptions_google_2fprotobuf_2fdescriptor_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_ServiceOptions_google_2fprotobuf_2fdescriptor_2eproto);\n  *(_BYTE *)(a1 + 72) = 0;\n  return a1;\n}"
+}

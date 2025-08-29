@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeViewController setPreferredContentSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeViewController setPreferredContentSize:](RemoteViewBridgeViewController * self, SEL a2, CGSize a3)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeViewController setPreferredContentSize:](\n        RemoteViewBridgeViewController *self,\n        SEL a2,\n        CGSize a3)\n{\n  ;\n}"
+}

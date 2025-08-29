@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$sendOnConnection:queue:reply:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$sendOnConnection:queue:reply:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_sendOnConnection_queue_reply_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"sendOnConnection:queue:reply:\");\n}"
+}

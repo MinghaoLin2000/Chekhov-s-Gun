@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUDeveloperSettingsDatabase seedParticipationDictionary]",
+    "function_argument_number": 2,
+    "function_signature": "-[AUDeveloperSettingsDatabase seedParticipationDictionary](AUDeveloperSettingsDatabase * self, SEL a2)",
+    "pseudocode": "id __cdecl -[AUDeveloperSettingsDatabase seedParticipationDictionary](AUDeveloperSettingsDatabase *self, SEL a2)\n{\n  id v3; // x19\n  OS_os_log *log; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(\n         +[NSUserDefaults AUDeveloperSettingsObjectWithKey:](\n           &OBJC_CLASS___NSUserDefaults,\n           \"AUDeveloperSettingsObjectWithKey:\",\n           CFSTR(\"seedParticipation\")));\n  if ( !v3 )\n    v3 = objc_alloc_init((Class)&OBJC_CLASS___NSDictionary);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEBUG) )\n    sub_10001AF3C(v3, log);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

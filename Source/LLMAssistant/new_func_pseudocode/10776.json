@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP16UUIDCoordArchiveD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP16UUIDCoordArchiveD2Ev(TSP::UUIDCoordArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::UUIDCoordArchive::~UUIDCoordArchive(TSP::UUIDCoordArchive *this)\n{\n  __ZN3TSP16UUIDCoordArchiveD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipArchive streamReadChannelForEntry:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipArchive streamReadChannelForEntry:](TSUZipArchive * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[TSUZipArchive streamReadChannelForEntry:](TSUZipArchive *self, SEL a2, id a3)\n{\n  return -[TSUZipArchive streamReadChannelForEntry:validateCRC:](\n           self,\n           \"streamReadChannelForEntry:validateCRC:\",\n           a3,\n           1LL);\n}"
+}

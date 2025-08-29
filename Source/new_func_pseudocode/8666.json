@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_variant_allows_internal_security_policies",
+    "function_argument_number": 0,
+    "function_signature": "_os_variant_allows_internal_security_policies()",
+    "pseudocode": "__int64 os_variant_allows_internal_security_policies()\n{\n  return _os_variant_allows_internal_security_policies();\n}"
+}

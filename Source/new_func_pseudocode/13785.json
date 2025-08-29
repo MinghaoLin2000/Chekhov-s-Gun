@@ -1,0 +1,6 @@
+{
+    "function_name": "_compression_stream_destroy",
+    "function_argument_number": 1,
+    "function_signature": "_compression_stream_destroy(compression_stream * stream)",
+    "pseudocode": "compression_status __cdecl compression_stream_destroy(compression_stream *stream)\n{\n  return _compression_stream_destroy(stream);\n}"
+}

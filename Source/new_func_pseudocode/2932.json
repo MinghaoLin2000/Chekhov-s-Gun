@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPProgressBarViewController viewWillDisappear]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPProgressBarViewController viewWillDisappear](AMPProgressBarViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMPProgressBarViewController viewWillDisappear](AMPProgressBarViewController *self, SEL a2)\n{\n  AMPProgressBarView *v3; // x20\n  NSTimer *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[AMPProgressBarViewController progressBarView](self, \"progressBarView\"));\n  -[AMPProgressBarView stopIndeterminateAnimation](v3, \"stopIndeterminateAnimation\");\n  objc_release(v3);\n  v4 = objc_retainAutoreleasedReturnValue(-[AMPProgressBarViewController indeterminateTimer](self, \"indeterminateTimer\"));\n  -[NSTimer invalidate](v4, \"invalidate\");\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[AMPProgressBarViewController setIndeterminateTimer:](self, \"setIndeterminateTimer:\", 0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_request_t init]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_request_t init](ipp_request_t * self, SEL a2)",
+    "pseudocode": "ipp_request_t *__cdecl -[ipp_request_t init](ipp_request_t *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-10h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___ipp_request_t;\n  return -[ipp_t init](&v3, \"init\");\n}"
+}

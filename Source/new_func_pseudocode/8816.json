@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService9JSAccountVwtk",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService9JSAccountVwtk(__int64 a1, __int64 a2)",
+    "pseudocode": "__n128 __fastcall initializeWithTake for JSAccount(__int64 a1, __int64 a2)\n{\n  __n128 result; // q0\n  __int128 v3; // q1\n\n  result = *(__n128 *)a2;\n  v3 = *(_OWORD *)(a2 + 16);\n  *(_QWORD *)(a1 + 32) = *(_QWORD *)(a2 + 32);\n  *(__n128 *)a1 = result;\n  *(_OWORD *)(a1 + 16) = v3;\n  return result;\n}"
+}

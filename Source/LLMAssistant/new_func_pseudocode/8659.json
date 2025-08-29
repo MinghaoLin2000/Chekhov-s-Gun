@@ -1,0 +1,6 @@
+{
+    "function_name": "_malloc_type_malloc",
+    "function_argument_number": 2,
+    "function_signature": "_malloc_type_malloc(size_t size, malloc_type_id_t type_id)",
+    "pseudocode": "void *__cdecl malloc_type_malloc(size_t size, malloc_type_id_t type_id)\n{\n  return _malloc_type_malloc(size, type_id);\n}"
+}

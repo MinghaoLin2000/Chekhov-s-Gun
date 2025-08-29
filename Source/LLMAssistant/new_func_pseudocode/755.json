@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBlueButton focusRingMaskBounds]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceBlueButton focusRingMaskBounds](DeviceBlueButton * self, SEL a2)",
+    "pseudocode": "CGRect __cdecl -[DeviceBlueButton focusRingMaskBounds](DeviceBlueButton *self, SEL a2)\n{\n  double x; // d0\n  double y; // d1\n  double width; // d2\n  double height; // d3\n  CGRect result; // 0:d0.8,8:d1.8,16:d2.8,24:d3.8\n\n  if ( -[DeviceBlueButton focusRingType](self, \"focusRingType\") == (void *)1 )\n  {\n    x = NSZeroRect.origin.x;\n    y = NSZeroRect.origin.y;\n    width = NSZeroRect.size.width;\n    height = NSZeroRect.size.height;\n  }\n  else\n  {\n    -[DeviceBlueButton bounds](self, \"bounds\");\n  }\n  result.size.height = height;\n  result.size.width = width;\n  result.origin.y = y;\n  result.origin.x = x;\n  return result;\n}"
+}

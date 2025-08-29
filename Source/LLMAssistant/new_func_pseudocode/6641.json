@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_exception_rethrow",
+    "function_argument_number": 0,
+    "function_signature": "_objc_exception_rethrow()",
+    "pseudocode": "void __noreturn objc_exception_rethrow(void)\n{\n  _objc_exception_rethrow();\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.coremedia.cameraviewfinder",
+  "capability": "Allows an application to access and display the live video feed from the device's camera, typically for real-time preview purposes (like a camera viewfinder). This involves receiving raw video frames from the system camera.",
+  "reasoning": "The 'com.apple.coremedia' prefix indicates a relationship with Apple's Core Media framework, which is responsible for handling time-based audiovisual media, including camera input. The 'cameraviewfinder' suffix directly implies functionality related to displaying what the camera sees in real-time. This is a common pattern for entitlements granting access to specific hardware or system services.",
+  "similar_entitlements": [
+    "com.apple.developer.arkit.main-camera-access.allow"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "Accessing the live camera feed directly falls under 'Access Transparency Consent and Control (TCC) related functions', specifically 'Camera: Collect videos or images through the system camera.' On macOS and iOS, camera access is a privacy-sensitive operation that requires explicit user consent via TCC. Even displaying the viewfinder allows the application to 'collect' or at least view what the camera sees, which is a significant privacy concern.",
+  "self_reflection": "I am highly confident in this assessment. The entitlement name is very descriptive, clearly pointing to camera access and the Core Media framework. Camera access is a well-established TCC-protected resource on Apple platforms, making the classification into sensitive type 5 straightforward. The only potential nuance could be if 'viewfinder' implies only display versus full capture, but from a TCC perspective, both are covered under general camera access."
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTPMService tearDown]",
+    "function_argument_number": 2,
+    "function_signature": "-[GTPMService tearDown](GTPMService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[GTPMService tearDown](GTPMService *self, SEL a2)\n{\n  NSString *v2; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( self->_igpm.bConnectionValid && (unsigned int)sub_100003040(&self->_igpm, 0LL) )\n  {\n    v2 = objc_retainAutoreleasedReturnValue(+[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"Tear Down Completed\")));\n    NSLog(&CFSTR(\"%@\").isa, v2);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v2);\n  }\n}"
+}

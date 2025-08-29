@@ -1,0 +1,6 @@
+{
+    "function_name": "_AtLoginWindow",
+    "function_argument_number": 0,
+    "function_signature": "_AtLoginWindow()",
+    "pseudocode": "__int64 AtLoginWindow()\n{\n  const __CFString *v0; // x0\n  const __CFString *v1; // x19\n  _BOOL8 v2; // x20\n\n  v0 = SCDynamicStoreCopyConsoleUser(0LL, 0LL, 0LL);\n  if ( !v0 )\n    return 1LL;\n  v1 = v0;\n  v2 = CFStringCompare(v0, CFSTR(\"loginwindow\"), 0LL) == kCFCompareEqualTo;\n  CFRelease(v1);\n  return v2;\n}"
+}

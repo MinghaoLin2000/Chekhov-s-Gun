@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetChipID",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetChipID()",
+    "pseudocode": "__int64 AMRestorableDeviceGetChipID()\n{\n  return _AMRestorableDeviceGetChipID();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__CFPrefsSetDirectModeEnabled",
+    "function_argument_number": 0,
+    "function_signature": "__CFPrefsSetDirectModeEnabled()",
+    "pseudocode": "__int64 _CFPrefsSetDirectModeEnabled()\n{\n  return __CFPrefsSetDirectModeEnabled();\n}"
+}

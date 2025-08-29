@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t setRequest_id:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_t setRequest_id:](ipp_t * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[ipp_t setRequest_id:](ipp_t *self, SEL a2, unsigned int a3)\n{\n  self->_request_id = a3;\n}"
+}

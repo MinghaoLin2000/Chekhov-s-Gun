@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceRegisterForNotificationsForDevices",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceRegisterForNotificationsForDevices()",
+    "pseudocode": "__int64 AMRestorableDeviceRegisterForNotificationsForDevices()\n{\n  return _AMRestorableDeviceRegisterForNotificationsForDevices();\n}"
+}

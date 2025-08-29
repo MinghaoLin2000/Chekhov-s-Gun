@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetBackgroundEventMask",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetBackgroundEventMask()",
+    "pseudocode": "__int64 CGSGetBackgroundEventMask()\n{\n  return _CGSGetBackgroundEventMask();\n}"
+}

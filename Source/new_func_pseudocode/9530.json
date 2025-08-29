@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPMutableCryptoInfoInternal incrementDecodedLengthBy:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPMutableCryptoInfoInternal incrementDecodedLengthBy:](TSPMutableCryptoInfoInternal * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSPMutableCryptoInfoInternal incrementDecodedLengthBy:](\n        TSPMutableCryptoInfoInternal *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  char *v4; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (char *)-[TSPCryptoInfoInternal decodedLength](self, \"decodedLength\") + a3;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[TSPCryptoInfoInternal setDecodedLength:](self, \"setDecodedLength:\", v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$loadAlbumGroups:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$loadAlbumGroups:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_loadAlbumGroups_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"loadAlbumGroups:\");\n}"
+}

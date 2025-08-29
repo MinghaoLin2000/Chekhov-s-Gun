@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKSecTrustWrapper description]",
+    "function_argument_number": 2,
+    "function_signature": "-[PKSecTrustWrapper description](PKSecTrustWrapper * self, SEL a2)",
+    "pseudocode": "id __cdecl -[PKSecTrustWrapper description](PKSecTrustWrapper *self, SEL a2)\n{\n  __int64 v3; // x21\n\n  v3 = objc_opt_class(self, a2);\n  return +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"<%@@%p> { unretained trust %p (%d) }\"),\n           v3,\n           self,\n           -[PKSecTrustWrapper trustRef](self, \"trustRef\"),\n           CFGetRetainCount(-[PKSecTrustWrapper trustRef](self, \"trustRef\")));\n}"
+}

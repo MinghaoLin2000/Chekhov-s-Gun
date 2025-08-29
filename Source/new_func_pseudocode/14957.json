@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicDataSourcesClient unreadMessagesWithLimit:callback:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ATXHeuristicDataSourcesClient unreadMessagesWithLimit:callback:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[ATXHeuristicDataSourcesClient unreadMessagesWithLimit:callback:](\n        ATXHeuristicDataSourcesClient *self,\n        SEL a2,\n        signed __int64 a3,\n        id a4)\n{\n  id v6; // x0\n  NSXPCConnection *xpcConnection; // x20\n  id v8; // x21\n  id v9; // x20\n  _QWORD v10[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v11; // [xsp+28h] [xbp-28h]\n\n  v6 = objc_retain(a4);\n  xpcConnection = self->_xpcConnection;\n  v10[0] = _NSConcreteStackBlock;\n  v10[1] = 3254779904LL;\n  v10[2] = sub_10000A08C;\n  v10[3] = &unk_100028B90;\n  v11 = v6;\n  v8 = objc_retain(v6);\n  v9 = objc_retainAutoreleasedReturnValue(\n         -[NSXPCConnection synchronousRemoteObjectProxyWithErrorHandler:](\n           xpcConnection,\n           \"synchronousRemoteObjectProxyWithErrorHandler:\",\n           v10));\n  objc_msgSend(v9, \"unreadMessagesWithLimit:callback:\", a3, v8);\n  objc_release(v9);\n  objc_release(v11);\n  objc_release(v8);\n}"
+}

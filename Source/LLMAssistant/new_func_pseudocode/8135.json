@@ -1,0 +1,6 @@
+{
+    "function_name": "-[XPCSignpostReader setExtendedLaunches:]",
+    "function_argument_number": 3,
+    "function_signature": "-[XPCSignpostReader setExtendedLaunches:](XPCSignpostReader * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[XPCSignpostReader setExtendedLaunches:](XPCSignpostReader *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 16LL);\n}"
+}

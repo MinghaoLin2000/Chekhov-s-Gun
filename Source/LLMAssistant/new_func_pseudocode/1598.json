@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setLastPrimaryProgressFractionCompleted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setLastPrimaryProgressFractionCompleted:](DeviceFooterViewController * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setLastPrimaryProgressFractionCompleted:](\n        DeviceFooterViewController *self,\n        SEL a2,\n        double a3)\n{\n  self->_lastPrimaryProgressFractionCompleted = a3;\n}"
+}

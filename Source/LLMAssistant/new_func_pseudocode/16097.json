@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformSetMaxRxPayloadLength",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformSetMaxRxPayloadLength(__int64 a1, __int64 a2, int a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformSetMaxRxPayloadLength(__int64 a1, __int64 a2, int a3)\n{\n  __int64 result; // x0\n\n  result = 30LL;\n  if ( a1 )\n  {\n    if ( a2 )\n    {\n      result = 0LL;\n      *(_DWORD *)(a2 + 4) = a3;\n    }\n  }\n  return result;\n}"
+}

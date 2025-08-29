@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_service_create_connected_socket",
+    "function_argument_number": 0,
+    "function_signature": "_remote_service_create_connected_socket()",
+    "pseudocode": "__int64 remote_service_create_connected_socket()\n{\n  return _remote_service_create_connected_socket();\n}"
+}

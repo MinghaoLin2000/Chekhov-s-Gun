@@ -1,0 +1,6 @@
+{
+    "function_name": "__os_activity_create",
+    "function_argument_number": 4,
+    "function_signature": "__os_activity_create(void * dso, const char * description, os_activity_t activity, os_activity_flag_t flags)",
+    "pseudocode": "os_activity_t __cdecl _os_activity_create(\n        void *dso,\n        const char *description,\n        os_activity_t activity,\n        os_activity_flag_t flags)\n{\n  return __os_activity_create(dso, description, activity, flags);\n}"
+}

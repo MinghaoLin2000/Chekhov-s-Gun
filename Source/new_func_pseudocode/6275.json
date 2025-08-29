@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob setStatus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob setStatus:](PAMediaConversionServiceImageConversionJob * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceImageConversionJob setStatus:](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  self->_status = a3;\n}"
+}

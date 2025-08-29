@@ -1,0 +1,6 @@
+{
+    "function_name": "-[HSModel .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[HSModel .cxx_destruct](HSModel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[HSModel .cxx_destruct](HSModel *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_queue, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->delegate, 0LL);\n}"
+}

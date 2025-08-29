@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceMediaPickerViewController setItLibrary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceMediaPickerViewController setItLibrary:](DeviceMediaPickerViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceMediaPickerViewController setItLibrary:](DeviceMediaPickerViewController *self, SEL a2, id a3)\n{\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___DeviceMediaPickerViewController;\n  -[DeviceViewController setItLibrary:](&v4, \"setItLibrary:\", a3);\n  -[DeviceMediaPickerViewController setMediaPickerNodes:](self, \"setMediaPickerNodes:\", 0LL);\n}"
+}

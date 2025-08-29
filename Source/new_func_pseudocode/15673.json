@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceDFU matchingService:identifier:]",
+    "function_argument_number": 4,
+    "function_signature": "-[UARPUpdaterServiceDFU matchingService:identifier:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[UARPUpdaterServiceDFU matchingService:identifier:](\n        UARPUpdaterServiceDFU *self,\n        SEL a2,\n        unsigned int a3,\n        id a4)\n{\n  __int64 v4; // x19\n  id v6; // x20\n  OS_os_log *log; // x22\n  OS_os_log *v8; // x22\n  CFMutableDictionaryRef properties; // [xsp+8h] [xbp-38h] BYREF\n\n  v4 = *(_QWORD *)&a3;\n  v6 = objc_retain(a4);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEBUG) )\n    sub_100017738(log);\n  properties = 0LL;\n  IORegistryEntryCreateCFProperties(v4, &properties, kCFAllocatorDefault, 0);\n  if ( properties )\n  {\n    v8 = self->_log;\n    if ( os_log_type_enabled(v8, OS_LOG_TYPE_DEBUG) )\n      sub_1000176AC((int)v6, (int)&properties, v8);\n    CFRelease(properties);\n  }\n  -[UARPDFUUpdater matchingService:identifier:](self->_dfuOtpUpdater, \"matchingService:identifier:\", v4, v6);\n  objc_release(v6);\n}"
+}

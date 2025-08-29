@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP14EncryptionInfo13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP14EncryptionInfo13IsInitializedEv(TSP::EncryptionInfo * this)",
+    "pseudocode": "bool __fastcall TSP::EncryptionInfo::IsInitialized(TSP::EncryptionInfo *this)\n{\n  __int64 v1; // x8\n  int v2; // w10\n  __int64 v3; // x11\n\n  v1 = *((unsigned int *)this + 8);\n  do\n  {\n    v2 = v1;\n    if ( (int)v1 < 1 )\n      break;\n    v3 = *(_QWORD *)(*((_QWORD *)this + 5) + 8 * v1--);\n  }\n  while ( (*(_BYTE *)(v3 + 16) & 1) != 0 );\n  return v2 < 1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP15DataMetadataMapD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP15DataMetadataMapD2Ev(TSP::DataMetadataMap * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataMetadataMap::~DataMetadataMap(TSP::DataMetadataMap *this)\n{\n  __ZN3TSP15DataMetadataMapD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeViewController _proxyCreateIfNecessary]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewBridgeViewController _proxyCreateIfNecessary](RemoteViewBridgeViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[RemoteViewBridgeViewController _proxyCreateIfNecessary](RemoteViewBridgeViewController *self, SEL a2)\n{\n  _RemoteViewBridgeViewControllerProxy *v3; // x20\n  _RemoteViewBridgeViewControllerProxy *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[RemoteViewBridgeViewController proxy](self, \"proxy\"));\n  objc_release(v3);\n  if ( !v3 )\n  {\n    v4 = objc_opt_new(&OBJC_CLASS____RemoteViewBridgeViewControllerProxy);\n    -[RemoteViewBridgeViewController setProxy:](self, \"setProxy:\", v4);\n    objc_release(v4);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[RemoteViewBridgeViewController proxy](self, \"proxy\");\n}"
+}

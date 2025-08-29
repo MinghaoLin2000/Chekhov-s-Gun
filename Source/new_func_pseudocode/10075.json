@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPDatabaseObject databaseObjectWithIdentifier:classType:fileState:packageURL:]",
+    "function_argument_number": 5,
+    "function_signature": "+[TSPDatabaseObject databaseObjectWithIdentifier:classType:fileState:packageURL:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nid __cdecl +[TSPDatabaseObject databaseObjectWithIdentifier:classType:fileState:packageURL:](\n        id a1,\n        SEL a2,\n        signed __int64 a3,\n        int a4,\n        id a5,\n        id a6)\n{\n  __int64 v7; // x21\n  id v9; // x19\n  id v10; // x20\n  TSPDatabaseObjectWithFileState *v11; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v7 = *(_QWORD *)&a4;\n  v9 = objc_retain(a5);\n  v10 = objc_retain(a6);\n  v11 = -[TSPDatabaseObjectWithFileState initWithIdentifier:classType:fileState:packageURL:](\n          objc_alloc(&OBJC_CLASS___TSPDatabaseObjectWithFileState),\n          \"initWithIdentifier:classType:fileState:packageURL:\",\n          a3,\n          v7,\n          v9,\n          v10);\n  objc_release(v10);\n  objc_release(v9);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v11);\n}"
+}

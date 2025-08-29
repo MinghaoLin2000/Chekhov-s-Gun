@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService alertStateLock]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService alertStateLock](SiriNCService * self, SEL a2)",
+    "pseudocode": "NSLock *__cdecl -[SiriNCService alertStateLock](SiriNCService *self, SEL a2)\n{\n  return (NSLock *)objc_getProperty(self, a2, 96LL, 1);\n}"
+}

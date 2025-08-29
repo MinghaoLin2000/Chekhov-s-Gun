@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformCancelPendingTxMessages",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformCancelPendingTxMessages()",
+    "pseudocode": "void uarpPlatformCancelPendingTxMessages()\n{\n  ;\n}"
+}

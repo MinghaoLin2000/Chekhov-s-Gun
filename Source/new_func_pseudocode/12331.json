@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf14FatalException4whatEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf14FatalException4whatEv(google::protobuf::FatalException * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::FatalException::what(google::protobuf::FatalException *this)\n{\n  __int64 result; // x0\n\n  result = (__int64)this + 24;\n  if ( *((char *)this + 47) < 0 )\n    return *(_QWORD *)result;\n  return result;\n}"
+}

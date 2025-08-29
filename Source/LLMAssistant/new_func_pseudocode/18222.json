@@ -1,0 +1,6 @@
+{
+    "function_name": "-[OSLogService _queue_getNextOSLogEntryWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[OSLogService _queue_getNextOSLogEntryWithReply:](OSLogService * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[OSLogService _queue_getNextOSLogEntryWithReply:](OSLogService *self, SEL a2, id a3)\n{\n  void *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  dispatch_assert_queue_V2((dispatch_queue_t)self->_serial_queue);\n  if ( self->_done || !-[NSMutableArray count](self->_events, \"count\") )\n  {\n    v4 = 0LL;\n  }\n  else\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[NSMutableArray objectAtIndexedSubscript:](self->_events, \"objectAtIndexedSubscript:\", 0LL));\n    -[NSMutableArray removeObjectAtIndex:](self->_events, \"removeObjectAtIndex:\", 0LL);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

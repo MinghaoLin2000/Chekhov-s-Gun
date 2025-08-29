@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSData tsu_getMD5Hash:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSData tsu_getMD5Hash:](NSData * self, SEL a2, char * a3)",
+    "pseudocode": "void __cdecl -[NSData tsu_getMD5Hash:](NSData *self, SEL a2, char *a3)\n{\n  NSUInteger v5; // x20\n  char *v6; // x0\n  char *v7; // x21\n  __int64 v8; // x22\n  CC_MD5_CTX v9; // [xsp+0h] [xbp-90h] BYREF\n\n  memset(&v9, 0, sizeof(v9));\n  CC_MD5_Init(&v9);\n  v5 = -[NSData length](self, \"length\");\n  v6 = -[NSData bytes](objc_retainAutorelease(self), \"bytes\");\n  if ( v5 )\n  {\n    v7 = v6;\n    do\n    {\n      if ( v5 >= 0xFFFFFFFF )\n        v8 = 0xFFFFFFFFLL;\n      else\n        v8 = v5;\n      CC_MD5_Update(&v9, v7, v8);\n      v7 += v8;\n      v5 -= v8;\n    }\n    while ( v5 );\n  }\n  CC_MD5_Final((unsigned __int8 *)a3, &v9);\n}"
+}

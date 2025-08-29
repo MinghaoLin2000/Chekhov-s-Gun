@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceGetNumberOfComponents",
+    "function_argument_number": 1,
+    "function_signature": "_CGColorSpaceGetNumberOfComponents(CGColorSpaceRef space)",
+    "pseudocode": "size_t __cdecl CGColorSpaceGetNumberOfComponents(CGColorSpaceRef space)\n{\n  return _CGColorSpaceGetNumberOfComponents(space);\n}"
+}

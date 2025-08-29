@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange8CopyFromERKNS0_7MessageE(google::protobuf::EnumDescriptorProto_EnumReservedRange * this, const google::protobuf::Message * a2)",
+    "pseudocode": "google::protobuf::EnumDescriptorProto_EnumReservedRange *__fastcall google::protobuf::EnumDescriptorProto_EnumReservedRange::CopyFrom(\n        google::protobuf::EnumDescriptorProto_EnumReservedRange *this,\n        const google::protobuf::Message *a2)\n{\n  __int64 v2; // x30\n  google::protobuf::EnumDescriptorProto_EnumReservedRange *v4; // x20\n\n  if ( a2 != this )\n  {\n    v4 = this;\n    google::protobuf::EnumDescriptorProto_EnumReservedRange::Clear(this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (google::protobuf::EnumDescriptorProto_EnumReservedRange *)google::protobuf::EnumDescriptorProto_EnumReservedRange::MergeFrom(\n                                                                        v4,\n                                                                        a2);\n  }\n  return this;\n}"
+}

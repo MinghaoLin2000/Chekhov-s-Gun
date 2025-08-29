@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z17validateComponent25AudioComponentDescriptionjPK14__CFDictionaryU13block_pointerFv30AudioComponentValidationResultS2_E",
+    "function_argument_number": 0,
+    "function_signature": "__Z17validateComponent25AudioComponentDescriptionjPK14__CFDictionaryU13block_pointerFv30AudioComponentValidationResultS2_E()",
+    "pseudocode": "__int64 validateComponent()\n{\n  return validateComponent();\n}"
+}

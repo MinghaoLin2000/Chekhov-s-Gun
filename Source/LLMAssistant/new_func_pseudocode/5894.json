@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MouseCloudSettingsMediator setScrollMode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MouseCloudSettingsMediator setScrollMode:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[MouseCloudSettingsMediator setScrollMode:](MouseCloudSettingsMediator *self, SEL a2, id a3)\n{\n  id v4; // x20\n  MTMouseGesturesBackEnd *v5; // x19\n  void *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[MouseCloudSettingsMediator gestureEngine](self, \"gestureEngine\"));\n  -[MTMouseGesturesBackEnd setShouldSyncChangesToCloud:](v5, \"setShouldSyncChangesToCloud:\", 0LL);\n  v6 = objc_msgSend(v4, \"integerValue\");\n  objc_release(v4);\n  -[MTMouseGesturesBackEnd setScrollMode:](v5, \"setScrollMode:\", v6);\n  -[MTMouseGesturesBackEnd setShouldSyncChangesToCloud:](v5, \"setShouldSyncChangesToCloud:\", 1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

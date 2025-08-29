@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFPLLogRegisteredEvent",
+    "function_argument_number": 0,
+    "function_signature": "_SFPLLogRegisteredEvent()",
+    "pseudocode": "// attributes: thunk\n__int64 SFPLLogRegisteredEvent()\n{\n  return _PLLogRegisteredEvent();\n}"
+}

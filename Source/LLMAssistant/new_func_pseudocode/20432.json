@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintdRPCService _endpointResolve:timeout:reply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PrintdRPCService _endpointResolve:timeout:reply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PrintdRPCService _endpointResolve:timeout:reply:](\n        PrintdRPCService *self,\n        SEL a2,\n        id a3,\n        double a4,\n        id a5)\n{\n  id v7; // x19\n  id v8; // x20\n  os_log_s *v9; // x21\n  int v10; // [xsp+0h] [xbp-50h] BYREF\n  id v11; // [xsp+4h] [xbp-4Ch]\n\n  v7 = objc_retain(a3);\n  v8 = objc_retain(a5);\n  v9 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v9, OS_LOG_TYPE_DEFAULT) )\n  {\n    v10 = 138543362;\n    v11 = v7;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v9,\n      OS_LOG_TYPE_DEFAULT,\n      \"_endpointResolve: %{public}@\",\n      (uint8_t *)&v10,\n      0xCu);\n  }\n  objc_release(v9);\n  +[PKPrinterBonjourEndpoint resolveEndpoint:timeout:completionHandler:](\n    &OBJC_CLASS___PKPrinterBonjourEndpoint,\n    \"resolveEndpoint:timeout:completionHandler:\",\n    v7,\n    v8,\n    a4);\n  objc_release(v8);\n  objc_release(v7);\n}"
+}

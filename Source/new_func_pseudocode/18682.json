@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24_NavigationHoverModifierVwst",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24_NavigationHoverModifierVwst()",
+    "pseudocode": "// attributes: thunk\n__int64 storeEnumTagSinglePayload for _NavigationHoverModifier()\n{\n  return sub_100047FF0();\n}"
+}

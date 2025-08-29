@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsShuffleViewController selectedVoiceOverLanguageCode]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceOptionsShuffleViewController selectedVoiceOverLanguageCode](DeviceOptionsShuffleViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceOptionsShuffleViewController selectedVoiceOverLanguageCode](\n        DeviceOptionsShuffleViewController *self,\n        SEL a2)\n{\n  AMPDeviceSyncPrefs *v3; // x20\n  void *v4; // x21\n  NSPopUpButton *v5; // x19\n  void *v6; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceViewController deviceSyncPrefs](self, \"deviceSyncPrefs\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[AMPDeviceSyncPrefs voiceOverSupportedLanguageCodes](v3, \"voiceOverSupportedLanguageCodes\"));\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceOptionsShuffleViewController voiceOverLanguagePopUpButton](self, \"voiceOverLanguagePopUpButton\"));\n  v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"objectAtIndexedSubscript:\", -[NSPopUpButton indexOfSelectedItem](v5, \"indexOfSelectedItem\")));\n  objc_release(v5);\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

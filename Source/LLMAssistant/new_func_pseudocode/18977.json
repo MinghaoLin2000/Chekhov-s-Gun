@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController loadView]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController loadView](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController loadView](SiriNCAlertViewController *self, SEL a2)\n{\n  id v3; // x20\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( (unsigned int)_os_feature_enabled_impl(\"SiriUI\", \"compact_siri\") )\n  {\n    v3 = objc_alloc_init((Class)&OBJC_CLASS___NSView);\n    objc_msgSend(v3, \"setWantsLayer:\", 1LL);\n    -[SiriNCAlertViewController setView:](self, \"setView:\", v3);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v3);\n  }\n  else\n  {\n    v4.receiver = self;\n    v4.super_class = (Class)&OBJC_CLASS___SiriNCAlertViewController;\n    -[SiriNCAlertViewController loadView](&v4, \"loadView\");\n  }\n}"
+}

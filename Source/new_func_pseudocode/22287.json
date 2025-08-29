@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateCopyAppendingPathExtension",
+    "function_argument_number": 3,
+    "function_signature": "_CFURLCreateCopyAppendingPathExtension(CFAllocatorRef allocator, CFURLRef url, CFStringRef extension)",
+    "pseudocode": "CFURLRef __cdecl CFURLCreateCopyAppendingPathExtension(CFAllocatorRef allocator, CFURLRef url, CFStringRef extension)\n{\n  return _CFURLCreateCopyAppendingPathExtension(allocator, url, extension);\n}"
+}

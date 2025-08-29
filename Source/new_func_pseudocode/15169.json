@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$atx_startAudioCallActionWithTitle:subtitle:recipientName:recipientHandle:callService:contactIdentifier:eventIdentifier:heuristicName:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$atx_startAudioCallActionWithTitle:subtitle:recipientName:recipientHandle:callService:contactIdentifier:eventIdentifier:heuristicName:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_atx_startAudioCallActionWithTitle_subtitle_recipientName_recipientHandle_callService_contactIdentifier_eventIdentifier_heuristicName_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"atx_startAudioCallActionWithTitle:subtitle:recipientName:recipientHandle:callService:contactIdentifier:eventI\"\n           \"dentifier:heuristicName:\");\n}"
+}

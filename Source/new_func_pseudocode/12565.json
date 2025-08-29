@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_arrayByTransformingWithBlock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSArray tsu_arrayByTransformingWithBlock:](NSArray * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[NSArray tsu_arrayByTransformingWithBlock:](NSArray *self, SEL a2, id a3)\n{\n  NSMutableArray *v5; // x21\n  _QWORD v7[6]; // [xsp+0h] [xbp-50h] BYREF\n\n  v5 = +[NSMutableArray arrayWithCapacity:](\n         &OBJC_CLASS___NSMutableArray,\n         \"arrayWithCapacity:\",\n         -[NSArray count](self, \"count\"));\n  v7[0] = _NSConcreteStackBlock;\n  v7[1] = 3254779904LL;\n  v7[2] = sub_100124660;\n  v7[3] = &unk_1001DC648;\n  v7[4] = v5;\n  v7[5] = a3;\n  -[NSArray enumerateObjectsUsingBlock:](self, \"enumerateObjectsUsingBlock:\", v7);\n  return v5;\n}"
+}

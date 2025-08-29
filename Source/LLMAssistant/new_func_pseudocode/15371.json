@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate releaseTransactions]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate releaseTransactions](UARPUpdaterDisplayControllerDelegate * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPUpdaterDisplayControllerDelegate releaseTransactions](\n        UARPUpdaterDisplayControllerDelegate *self,\n        SEL a2)\n{\n  OS_os_transaction *transaction; // x8\n\n  transaction = self->_transaction;\n  self->_transaction = 0LL;\n  objc_release(transaction);\n}"
+}

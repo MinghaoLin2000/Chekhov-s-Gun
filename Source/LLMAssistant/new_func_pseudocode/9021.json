@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService14ServiceOptionsVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService14ServiceOptionsVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for ServiceOptions(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005E058;\n  if ( !qword_10005E058 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for ServiceOptions);\n  return result;\n}"
+}

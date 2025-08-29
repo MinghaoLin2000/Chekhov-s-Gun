@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueue nextRequestNumber]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionQueue nextRequestNumber](MediaConversionQueue * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[MediaConversionQueue nextRequestNumber](MediaConversionQueue *self, SEL a2)\n{\n  os_unfair_lock_s *p_queueStateLock; // x20\n  unsigned __int64 v4; // x21\n\n  p_queueStateLock = &self->_queueStateLock;\n  os_unfair_lock_lock(&self->_queueStateLock);\n  v4 = self->_requestCounter + 1;\n  self->_requestCounter = v4;\n  os_unfair_lock_unlock(p_queueStateLock);\n  return v4;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBackupChangePasswordViewController setPasswordEntrySecondary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceBackupChangePasswordViewController setPasswordEntrySecondary:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceBackupChangePasswordViewController setPasswordEntrySecondary:](\n        DeviceBackupChangePasswordViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeWeak((id *)&self->_passwordEntrySecondary, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_arc4random_uniform",
+    "function_argument_number": 1,
+    "function_signature": "_arc4random_uniform(uint32_t __upper_bound)",
+    "pseudocode": "uint32_t __cdecl arc4random_uniform(uint32_t __upper_bound)\n{\n  return _arc4random_uniform(__upper_bound);\n}"
+}

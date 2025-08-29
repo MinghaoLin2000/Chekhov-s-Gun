@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21quantized_notify_post16PostableMessagesPKc",
+    "function_argument_number": 1,
+    "function_signature": "__Z21quantized_notify_post16PostableMessagesPKc(unsigned int a1)",
+    "pseudocode": "void __fastcall quantized_notify_post(unsigned int a1)\n{\n  os_log_s *v2; // x20\n  _DWORD v3[2]; // [xsp+0h] [xbp-20h] BYREF\n\n  if ( qword_1000C3F70 != -1 )\n    dispatch_once(&qword_1000C3F70, &stru_10009F018);\n  v2 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v2, OS_LOG_TYPE_DEFAULT) )\n  {\n    v3[0] = 67109120;\n    v3[1] = a1;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v2,\n      OS_LOG_TYPE_DEFAULT,\n      \"quantized_notify issue: 0x%x\",\n      (uint8_t *)v3,\n      8u);\n  }\n  objc_release(v2);\n  dispatch_source_merge_data((dispatch_source_t)qword_1000C3F68, a1);\n}"
+}

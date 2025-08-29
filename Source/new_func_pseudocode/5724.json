@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPreferencesCopyAppValue",
+    "function_argument_number": 2,
+    "function_signature": "_CFPreferencesCopyAppValue(CFStringRef key, CFStringRef applicationID)",
+    "pseudocode": "CFPropertyListRef __cdecl CFPreferencesCopyAppValue(CFStringRef key, CFStringRef applicationID)\n{\n  return _CFPreferencesCopyAppValue(key, applicationID);\n}"
+}

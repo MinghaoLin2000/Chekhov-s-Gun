@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDictionaryGetObject",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFDictionaryGetObject(CGPDFDictionaryRef dict, const char * key, CGPDFObjectRef * value)",
+    "pseudocode": "bool __cdecl CGPDFDictionaryGetObject(CGPDFDictionaryRef dict, const char *key, CGPDFObjectRef *value)\n{\n  return _CGPDFDictionaryGetObject(dict, key, value);\n}"
+}

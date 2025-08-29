@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition12EARInterface listener:shouldAcceptNewConnection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC22localspeechrecognition12EARInterface listener:shouldAcceptNewConnection:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[EARInterface listener:shouldAcceptNewConnection:](\n        _TtC22localspeechrecognition12EARInterface *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x21\n  id v7; // x19\n  _TtC22localspeechrecognition12EARInterface *v8; // x20\n  char v9; // w22\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = objc_retain(self);\n  v9 = sub_100011660(v6, v7);\n  objc_release(v6);\n  objc_release(v7);\n  objc_release(v8);\n  return v9 & 1;\n}"
+}

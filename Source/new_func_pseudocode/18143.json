@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLGetPortNumber",
+    "function_argument_number": 1,
+    "function_signature": "_CFURLGetPortNumber(CFURLRef anURL)",
+    "pseudocode": "SInt32 __cdecl CFURLGetPortNumber(CFURLRef anURL)\n{\n  return _CFURLGetPortNumber(anURL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__128__exception_guard_exceptionsINS_29_AllocatorDestroyRangeReverseINS_9allocatorINS_12basic_stringIcNS_11char_traitsIcEENS2_IcEEEEEENS_16reverse_iteratorIPS7_EEEEED2B8ne180100Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__128__exception_guard_exceptionsINS_29_AllocatorDestroyRangeReverseINS_9allocatorINS_12basic_stringIcNS_11char_traitsIcEENS2_IcEEEEEENS_16reverse_iteratorIPS7_EEEEED2B8ne180100Ev(__int64 a1)",
+    "pseudocode": "__int64 __fastcall std::__exception_guard_exceptions<std::_AllocatorDestroyRangeReverse<std::allocator<std::string>,std::reverse_iterator<std::string*>>>::~__exception_guard_exceptions[abi:ne180100](\n        __int64 a1)\n{\n  if ( !*(_BYTE *)(a1 + 24) )\n    std::_AllocatorDestroyRangeReverse<std::allocator<std::string>,std::reverse_iterator<std::string*>>::operator()[abi:ne180100](a1);\n  return a1;\n}"
+}

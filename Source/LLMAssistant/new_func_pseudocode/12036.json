@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17FastInt32ToBufferEiPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf17FastInt32ToBufferEiPc(google::protobuf * this, int a2, char * a3)",
+    "pseudocode": "_BYTE *__fastcall google::protobuf::FastInt32ToBuffer(google::protobuf *this, _BYTE *a2, char *a3)\n{\n  unsigned int v3; // w8\n  _BYTE *result; // x0\n  bool v5; // cf\n  char v6; // w8\n  unsigned int v7; // w10\n  unsigned int v8; // w11\n  unsigned int v9; // w10\n  bool v10; // cc\n\n  v3 = (unsigned int)this;\n  a2[11] = 0;\n  if ( ((unsigned int)this & 0x80000000) != 0 )\n  {\n    if ( (unsigned int)this < 0xFFFFFFF7 )\n    {\n      v7 = -10 - (_DWORD)this;\n      v8 = (-10 - (int)this) / 0xAu;\n      result = a2 + 9;\n      a2[10] = (v7 % 0xA) | 0x30;\n      v9 = v8 + 1;\n      do\n      {\n        *result-- = (v9 % 0xA) | 0x30;\n        v10 = v9 > 9;\n        v9 /= 0xAu;\n      }\n      while ( v10 );\n    }\n    else\n    {\n      v6 = 48 - (_BYTE)this;\n      result = a2 + 9;\n      a2[10] = v6;\n    }\n    *result = 45;\n  }\n  else\n  {\n    result = a2 + 11;\n    do\n    {\n      *--result = (v3 % 0xA) | 0x30;\n      v5 = v3 >= 0xA;\n      v3 /= 0xAu;\n    }\n    while ( v5 );\n  }\n  return result;\n}"
+}

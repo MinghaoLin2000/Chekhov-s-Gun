@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV12versionedPid0aB4Core09VersionedF0Vvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV12versionedPid0aB4Core09VersionedF0Vvg(__int64 a1)",
+    "pseudocode": "unsigned __int64 __fastcall CGSConnection.versionedPid.getter(__int64 a1)\n{\n  int PIDAndVersion; // w0\n  int v2; // w20\n  __int64 v3; // x0\n  _DWORD *v4; // x1\n  __int64 v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6 = 0LL;\n  PIDAndVersion = SLSConnectionGetPIDAndVersion(a1, (char *)&v6 + 4, &v6);\n  if ( !PIDAndVersion )\n    return HIDWORD(v6) | ((unsigned __int64)(unsigned int)v6 << 32);\n  v2 = PIDAndVersion;\n  type metadata accessor for CGError(0LL);\n  v3 = sub_100012E6C();\n  sub_100012FE0(v3);\n  *v4 = v2;\n  return swift_willThrow();\n}"
+}

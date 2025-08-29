@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PKNANSubscriber setChangeFlags:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PKNANSubscriber setChangeFlags:](PKNANSubscriber * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[PKNANSubscriber setChangeFlags:](PKNANSubscriber *self, SEL a2, int a3)\n{\n  self->_changeFlags = a3;\n}"
+}

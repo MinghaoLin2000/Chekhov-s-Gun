@@ -1,0 +1,17 @@
+{
+  "entitlement": "com.apple.security.assets.movies.read-only",
+  "capability": "Grants read-only access to the user's 'Movies' folder.",
+  "reasoning": "The provided entitlement description explicitly states: 'A Boolean value that indicates whether the app may have read-only access to the Movies folder.' This directly defines the capability.",
+  "similar_entitlements": [
+    "com.apple.security.assets.pictures.read-only",
+    "com.apple.security.assets.music.read-only",
+    "com.apple.security.assets.downloads.read-only",
+    "com.apple.security.files.user-selected.read-only"
+  ],
+  "sensitive_type": [
+    1,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement belongs to:\n- **Type 1 (File and File System Operations)**: It explicitly grants the ability to perform 'read' operations on a specific user directory ('Movies'), which falls under 'Performing read, write/delete operations on system or other users' files'.\n- **Type 5 (Access Transparency Consent and Control (TCC) related functions)**: The 'Movies' folder is a user private directory. Access to such directories is often managed or protected by TCC. This entitlement grants permission to access such a private directory, aligning with the description 'Access user private directories through the SystemPolicy* series entitlement' (even if this specific entitlement isn't a SystemPolicy* one, it serves a similar purpose in granting access to TCC-protected user data).",
+  "self_reflection": "I am highly confident in this analysis. The capability is explicitly stated in the provided context, making the inference straightforward. The mapping to sensitive types is clear based on the definition of file system operations and access to user private directories, which are often TCC-protected resources. There are no ambiguities, and the prediction is unlikely to be wrong given the clear description."
+}

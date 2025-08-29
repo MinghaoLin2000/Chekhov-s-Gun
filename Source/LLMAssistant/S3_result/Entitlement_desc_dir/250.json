@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.private.biome.read-only:Location.Semantic",
+  "capability": "Allows an application to read semantic (contextual, interpreted) location data inferred and processed by Apple's Biome framework. This data would describe the user's location in a meaningful way (e.g., 'at home', 'at work', 'commuting') rather than just raw coordinates. The access is strictly read-only, meaning the application cannot modify or inject data into Biome.",
+  "reasoning": "The 'com.apple.private' prefix indicates it's an internal Apple entitlement. 'biome' refers to Apple's Biome framework, which processes and understands user activity and context. 'read-only' specifies the access type. 'Location.Semantic' clearly points to interpreted, contextual location information, differentiating it from raw GPS coordinates. Combining these, the entitlement grants read-only access to high-level, inferred location context from the Biome system.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "Accessing any form of location information, whether raw GPS coordinates or derived semantic context, falls under TCC-protected resources. The description for sensitive type 5 explicitly lists 'Location: Get GPS or WiFi location information'. While this entitlement provides semantic location, it is still fundamentally about the user's location and is highly sensitive private data that would typically require user consent via TCC. The 'read-only' nature does not negate the sensitivity of accessing such personal data.",
+  "self_reflection": "I am highly confident in this answer. The entitlement name is very descriptive. The 'com.apple.private' indicates internal use, 'biome' points to the framework, 'read-only' specifies the operation, and 'Location.Semantic' precisely defines the data type. The connection to TCC is clear because any form of location data is privacy-sensitive. The only potential ambiguity might be if 'Semantic' location is considered distinct enough from 'GPS or WiFi location information' to be excluded from TCC, but given the spirit of TCC protecting user privacy, it should definitely be included. My prediction would only be wrong if Apple's internal classification of 'Location.Semantic' somehow bypasses the privacy implications of general location data, which is highly unlikely."
+}

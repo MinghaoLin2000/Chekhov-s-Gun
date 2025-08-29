@@ -1,0 +1,7 @@
+@protocol SPCloudStorageHelper
+- (void)optimizeServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSError *))arg2;
+- (void)enableServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSError *))arg2;
+- (void)preflightEnableServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)fetchStatesForServicesWithIdentifiers:(NSArray *)arg1 completionHandler:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)fetchCloudStoragePlanDetailsWithCompletionHandler:(void (^)(NSDictionary *, NSError *))arg1;
+@end

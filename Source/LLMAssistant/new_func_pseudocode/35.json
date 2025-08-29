@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s7Combine10PublishersO9SPIHelperE16CSCombineLatest7V1axvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s7Combine10PublishersO9SPIHelperE16CSCombineLatest7V1axvg()",
+    "pseudocode": "// attributes: thunk\n__int64 Publishers.CSCombineLatest7.a.getter()\n{\n  return _s7Combine10PublishersO9SPIHelperE16CSCombineLatest7V1axvg_0();\n}"
+}

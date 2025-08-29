@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ImageConversionService run]",
+    "function_argument_number": 2,
+    "function_signature": "-[ImageConversionService run](ImageConversionService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ImageConversionService run](ImageConversionService *self, SEL a2)\n{\n  NSXPCListener *v3; // x20\n  NSXPCListener *v4; // x20\n  NSXPCListener *v5; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSXPCListener serviceListener](&OBJC_CLASS___NSXPCListener, \"serviceListener\"));\n  -[ImageConversionService setListener:](self, \"setListener:\", v3);\n  objc_release(v3);\n  v4 = objc_retainAutoreleasedReturnValue(-[ImageConversionService listener](self, \"listener\"));\n  -[NSXPCListener setDelegate:](v4, \"setDelegate:\", self);\n  objc_release(v4);\n  v5 = objc_retainAutoreleasedReturnValue(-[ImageConversionService listener](self, \"listener\"));\n  -[NSXPCListener resume](v5, \"resume\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

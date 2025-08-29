@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest addAttributes:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMSysmonRequest addAttributes:](MXMSysmonRequest * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[MXMSysmonRequest addAttributes:](MXMSysmonRequest *self, SEL a2, unsigned int a3)\n{\n  OS_sysmon_request *v4; // x21\n  __int64 *v5; // x8\n  __int64 *v6; // [xsp+8h] [xbp-28h]\n  __int64 v7; // [xsp+40h] [xbp+10h] BYREF\n\n  v6 = &v7;\n  if ( a3 )\n  {\n    do\n    {\n      v4 = objc_retainAutoreleasedReturnValue(-[MXMSysmonRequest request](self, \"request\"));\n      sysmon_request_add_attribute();\n      objc_release(v4);\n      v5 = v6++;\n    }\n    while ( *(_DWORD *)v5 );\n  }\n}"
+}

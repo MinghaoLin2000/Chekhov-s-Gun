@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP24DatabaseImageDataArchiveD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP24DatabaseImageDataArchiveD1Ev(TSP::DatabaseImageDataArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DatabaseImageDataArchive::~DatabaseImageDataArchive(TSP::DatabaseImageDataArchive *this)\n{\n  __ZN3TSP24DatabaseImageDataArchiveD2Ev(this);\n}"
+}

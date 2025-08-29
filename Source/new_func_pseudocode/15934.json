@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointCallbackAppleSpecific",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformEndpointCallbackAppleSpecific()",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall uarpPlatformEndpointCallbackAppleSpecific()\n{\n  return uarpApplePlatformEndpointRecvMessage();\n}"
+}

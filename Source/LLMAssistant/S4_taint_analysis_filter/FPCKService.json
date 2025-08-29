@@ -1,0 +1,11 @@
+{
+  "_objc_msgSend$fp_realpath": 4294994784,
+  "_objc_msgSend$runFPCKForDomain:domainUserInfo:domainRootURL:databaseBackupPath:urls:volumeRole:options:reason:fpfs:iCDPackageDetection:shouldPause:sendDiagnostics:saveCheckpoint:isInvalidated:completionHandler:": 4294995040,
+  "_objc_msgSend$stringWithFileSystemRepresentation:length:": 4294995392,
+  "_objc_msgSend$stopAccessingSecurityScopedResource": 4294995360,
+  "-[FPCKService prepareFPCKForDomain:domainUserInfo:domainRootURL:databaseBackupPath:accessingPaths:urls:volumeRole:options:reason:fpfs:iCDPackageDetection:completionHandler:]": 4294987952,
+  "_objc_msgSend$startAccessingSecurityScopedResource": 4294995328,
+  "_objc_msgSend$fp_homeDirectory": 4294994688,
+  "-[FPCKService runFPCKWithPauseHandler:completionHandler:]": 4294988480,
+  "_objc_msgSend$fileSystemRepresentation": 4294994656
+}

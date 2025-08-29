@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPISignedKey setData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPISignedKey setData:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPISignedKey setData:](ModelKeyServerAPISignedKey *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_data, a3);\n}"
+}

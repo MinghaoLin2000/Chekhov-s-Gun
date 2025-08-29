@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf19FileDescriptorProtoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf19FileDescriptorProtoD1Ev(google::protobuf::FileDescriptorProto * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::FileDescriptorProto::~FileDescriptorProto(\n        google::protobuf::FileDescriptorProto *this)\n{\n  __ZN6google8protobuf19FileDescriptorProtoD2Ev(this);\n}"
+}

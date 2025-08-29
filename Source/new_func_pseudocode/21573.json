@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFEntitledAssetTypeForTaskName",
+    "function_argument_number": 0,
+    "function_signature": "_SFEntitledAssetTypeForTaskName()",
+    "pseudocode": "__int64 SFEntitledAssetTypeForTaskName()\n{\n  return _SFEntitledAssetTypeForTaskName();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionIsEmpty",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionIsEmpty()",
+    "pseudocode": "__int64 CGRegionIsEmpty()\n{\n  return _CGRegionIsEmpty();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFPageImpl initWithCGPDFPage:requestQueue:]",
+    "function_argument_number": 4,
+    "function_signature": "-[CGPDFPageImpl initWithCGPDFPage:requestQueue:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "CGPDFPageImpl *__cdecl -[CGPDFPageImpl initWithCGPDFPage:requestQueue:](\n        CGPDFPageImpl *self,\n        SEL a2,\n        CGPDFPage *a3,\n        id a4)\n{\n  id v7; // x19\n  CGPDFPageImpl *v8; // x0\n  CGPDFPageImpl *v9; // x21\n  NSUUID *v10; // x0\n  NSUUID *uuid; // x8\n  objc_super v13; // [xsp+0h] [xbp-40h] BYREF\n\n  v7 = objc_retain(a4);\n  v13.receiver = self;\n  v13.super_class = (Class)&OBJC_CLASS___CGPDFPageImpl;\n  v8 = -[CGPDFPageImpl init](&v13, \"init\");\n  v9 = v8;\n  if ( v8 )\n  {\n    objc_storeStrong((id *)&v8->_requestQueue, a4);\n    v10 = objc_retainAutoreleasedReturnValue(+[NSUUID UUID](&OBJC_CLASS___NSUUID, \"UUID\"));\n    uuid = v9->_uuid;\n    v9->_uuid = v10;\n    objc_release(uuid);\n    v9->_cgPage = CGPDFPageRetain(a3);\n  }\n  objc_release(v7);\n  return v9;\n}"
+}

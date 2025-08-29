@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController dealloc](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController dealloc](DeviceSettingsPhotosViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  sub_10004D4D8(self, a2);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsPhotosViewController;\n  -[DeviceSettingsViewController dealloc](&v3, \"dealloc\");\n}"
+}

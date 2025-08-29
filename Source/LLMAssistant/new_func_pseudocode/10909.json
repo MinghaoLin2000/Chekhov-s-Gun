@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilder26FindSymbolNotEnforcingDepsERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEb",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilder26FindSymbolNotEnforcingDepsERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEb(__int64 * a1, __int64 a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorBuilder::FindSymbolNotEnforcingDeps(__int64 *a1, __int64 a2, int a3)\n{\n  __int64 v4; // x1\n  unsigned __int64 v5; // x0\n  _QWORD *i; // x8\n  unsigned __int64 v7; // x9\n  unsigned __int64 v9; // [xsp+8h] [xbp-28h] BYREF\n  _QWORD v10[2]; // [xsp+10h] [xbp-20h] BYREF\n\n  v10[0] = google::protobuf::DescriptorBuilder::FindSymbolNotEnforcingDepsHelper(a1, *a1, a2, a3);\n  v10[1] = v4;\n  v5 = sub_10007D95C(v10);\n  v9 = v5;\n  if ( v5 == a1[10] )\n  {\nLABEL_8:\n    sub_10009CBA8(a1 + 15, &v9);\n  }\n  else\n  {\n    for ( i = (_QWORD *)a1[13]; i; i = (_QWORD *)*i )\n    {\n      v7 = i[4];\n      if ( v5 >= v7 )\n      {\n        if ( v7 >= v5 )\n          goto LABEL_8;\n        ++i;\n      }\n    }\n  }\n  return v10[0];\n}"
+}

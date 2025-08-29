@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV4tagsSo10WindowTagsVvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV4tagsSo10WindowTagsVvg()",
+    "pseudocode": "__C::WindowTags CGSWindow.tags.getter()\n{\n  __int64 v0; // x0\n  EyeCandyGraphics::CGSConnection v1; // w0\n  EyeCandyGraphics::CGSWindow v2; // w1\n\n  CGSConnection.defaultConnection.unsafeMutableAddressor();\n  v0 = sub_1000120F4();\n  v1.cid = sub_10001B21C(v0);\n  return WindowTags.init(connection:window:)(v1, v2);\n}"
+}

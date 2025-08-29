@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE12intersectionyA2BF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE12intersectionyA2BF(__int64 a1)",
+    "pseudocode": "__int64 __fastcall CGRegionRef.intersection(_:)(__int64 a1)\n{\n  __int64 v1; // x20\n\n  return _CGRegionCreateIntersectionWithRegion(v1, a1);\n}"
+}

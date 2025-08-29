@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLXPCSetURLForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLXPCSetURLForKey()",
+    "pseudocode": "__int64 _QLXPCSetURLForKey()\n{\n  return __QLXPCSetURLForKey();\n}"
+}

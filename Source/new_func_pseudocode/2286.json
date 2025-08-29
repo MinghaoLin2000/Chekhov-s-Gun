@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CalenderLimitFormatter attributedStringForObjectValue:withDefaultAttributes:]",
+    "function_argument_number": 4,
+    "function_signature": "-[CalenderLimitFormatter attributedStringForObjectValue:withDefaultAttributes:](CalenderLimitFormatter * self, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl -[CalenderLimitFormatter attributedStringForObjectValue:withDefaultAttributes:](\n        CalenderLimitFormatter *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  return 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20CapsuleSliderMetricsVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore20CapsuleSliderMetricsVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CapsuleSliderMetrics()\n{\n  return &type metadata for CapsuleSliderMetrics;\n}"
+}

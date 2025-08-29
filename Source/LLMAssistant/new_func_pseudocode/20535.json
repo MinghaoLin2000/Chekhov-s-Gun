@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGAffineTransformMakeTranslation",
+    "function_argument_number": 3,
+    "function_signature": "_CGAffineTransformMakeTranslation(CGAffineTransform * retstr, CGFloat tx, CGFloat ty)",
+    "pseudocode": "CGAffineTransform *__cdecl CGAffineTransformMakeTranslation(\n        CGAffineTransform *__return_ptr retstr,\n        CGFloat tx,\n        CGFloat ty)\n{\n  return _CGAffineTransformMakeTranslation(retstr, tx, ty);\n}"
+}

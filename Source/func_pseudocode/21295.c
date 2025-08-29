@@ -1,0 +1,5 @@
+_$s22localspeechrecognition36SelfLoggingPreheatWithPowerContainerCMa
+__int64 type metadata accessor for SelfLoggingPreheatWithPowerContainer()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition36SelfLoggingPreheatWithPowerContainer);
+}

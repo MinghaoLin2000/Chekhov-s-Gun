@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV19trackingAreaDefaultACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV19trackingAreaDefaultACvau()",
+    "pseudocode": "int *SystemEventMask.trackingAreaDefault.unsafeMutableAddressor()\n{\n  if ( qword_10002A680 != -1 )\n    swift_once(&qword_10002A680, sub_1000170B8);\n  return &static SystemEventMask.trackingAreaDefault;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResponse copyTo:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResponse copyTo:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyResponse copyTo:](ModelKeyServerAPIFetchKeyResponse *self, SEL a2, id a3)\n{\n  id v4; // x0\n  void *v5; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = v4;\n  if ( (*(_BYTE *)&self->_has & 1) != 0 )\n  {\n    *((_DWORD *)v4 + 4) = self->_result;\n    *((_BYTE *)v4 + 32) |= 1u;\n  }\n  if ( self->_success )\n    objc_msgSend(v4, \"setSuccess:\");\n  if ( self->_error )\n    objc_msgSend(v5, \"setError:\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

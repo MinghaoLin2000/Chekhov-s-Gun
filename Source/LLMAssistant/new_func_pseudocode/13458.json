@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUStreamCompression didFinishProcessing]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUStreamCompression didFinishProcessing](TSUStreamCompression * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSUStreamCompression didFinishProcessing](TSUStreamCompression *self, SEL a2)\n{\n  return -[TSUStreamCompression processBytes:size:flags:](self, \"processBytes:size:flags:\", &unk_1001F7FFC, 0LL, 1LL);\n}"
+}

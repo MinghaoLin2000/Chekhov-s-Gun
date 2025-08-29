@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t _updateDescPrinterDescription:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_printer_t _updateDescPrinterDescription:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[lite_printer_t _updateDescPrinterDescription:](lite_printer_t *self, SEL a2, id a3)\n{\n  id v5; // x19\n  NSDate *v6; // x0\n  NSDate *printerDescriptionTime; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  if ( v5 )\n    objc_storeStrong((id *)&self->_printerDescription, a3);\n  v6 = objc_retainAutoreleasedReturnValue(+[NSDate date](&OBJC_CLASS___NSDate, \"date\"));\n  printerDescriptionTime = self->_printerDescriptionTime;\n  self->_printerDescriptionTime = v6;\n  objc_release(printerDescriptionTime);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

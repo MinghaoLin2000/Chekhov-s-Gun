@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceGetType",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageSourceGetType(CGImageSourceRef isrc)",
+    "pseudocode": "CFStringRef __cdecl CGImageSourceGetType(CGImageSourceRef isrc)\n{\n  return _CGImageSourceGetType(isrc);\n}"
+}

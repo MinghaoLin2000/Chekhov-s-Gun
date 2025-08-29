@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper13AuthorizationVwtk",
+    "function_argument_number": 3,
+    "function_signature": "$s19ControlCenterHelper13AuthorizationVwtk(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall initializeWithTake for Authorization(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // x8\n  __int64 v5; // x20\n  __int64 v6; // x21\n  __int64 v7; // x0\n\n  *(_OWORD *)a1 = *(_OWORD *)a2;\n  *(_DWORD *)(a1 + 16) = *(_DWORD *)(a2 + 16);\n  v4 = *(int *)(a3 + 24);\n  v5 = a1 + v4;\n  v6 = a2 + v4;\n  v7 = sub_10006EE70(0LL);\n  (*(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)(v7 - 8) + 32LL))(v5, v6, v7);\n  return a1;\n}"
+}

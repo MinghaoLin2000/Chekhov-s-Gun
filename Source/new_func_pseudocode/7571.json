@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo6CGRectV16EyeCandyGraphicsE25rectByCenteringAndScalingyA2BF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo6CGRectV16EyeCandyGraphicsE25rectByCenteringAndScalingyA2BF()",
+    "pseudocode": "double CGRect.rectByCenteringAndScaling(_:)()\n{\n  double v0; // d9\n  __int64 v1; // x0\n  double v2; // d3\n  double v3; // d7\n  double v4; // d2\n  double v5; // d6\n  double v6; // d0\n  double v7; // d14\n  double v8; // d14\n\n  v1 = sub_100014144();\n  v6 = v4 / v5;\n  if ( v2 / v3 < v4 / v5 )\n    v6 = v2 / v3;\n  if ( v6 >= 1.0 )\n  {\n    v8 = sub_100014180(v1);\n    sub_100014104();\n    return v8 + v0 * -0.5;\n  }\n  else\n  {\n    v7 = sub_100014180(v1) + v6 * v0 * -0.5;\n    sub_100014104();\n  }\n  return v7;\n}"
+}

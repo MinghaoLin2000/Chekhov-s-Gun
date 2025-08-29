@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextCreateImage",
+    "function_argument_number": 1,
+    "function_signature": "_CGBitmapContextCreateImage(CGContextRef context)",
+    "pseudocode": "CGImageRef __cdecl CGBitmapContextCreateImage(CGContextRef context)\n{\n  return _CGBitmapContextCreateImage(context);\n}"
+}

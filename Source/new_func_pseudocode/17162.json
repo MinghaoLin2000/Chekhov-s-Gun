@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceVariableController remoteActionVariablesUpdated:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceVariableController remoteActionVariablesUpdated:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceVariableController remoteActionVariablesUpdated:](\n        AMLoaderServiceVariableController *self,\n        SEL a2,\n        id a3)\n{\n  id v3; // x19\n  _QWORD v4[5]; // [xsp+0h] [xbp-40h] BYREF\n  id v5; // [xsp+28h] [xbp-18h]\n\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_100009574;\n  v4[3] = &unk_10001C5C8;\n  v4[4] = self;\n  v5 = objc_retain(a3);\n  v3 = objc_retain(v5);\n  dispatch_async(&_dispatch_main_q, v4);\n  objc_release(v5);\n  objc_release(v3);\n}"
+}

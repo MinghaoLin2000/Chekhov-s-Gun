@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsInfoViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsInfoViewController .cxx_destruct](DeviceSettingsInfoViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsInfoViewController .cxx_destruct](DeviceSettingsInfoViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_advancedViewController, 0LL);\n  objc_storeStrong((id *)&self->_calendarsViewController, 0LL);\n  objc_storeStrong((id *)&self->_contactsViewController, 0LL);\n  objc_destroyWeak((id *)&self->_calendarsHorizontalLine);\n  objc_destroyWeak((id *)&self->_advancedHorizontalLine);\n  objc_destroyWeak((id *)&self->_calendarsContainerView);\n  objc_destroyWeak((id *)&self->_contactsContainerView);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_advancedContainerView);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP21DataPropertiesEntryV1D2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP21DataPropertiesEntryV1D2Ev(TSP::DataPropertiesEntryV1 * this)",
+    "pseudocode": "void __fastcall TSP::DataPropertiesEntryV1::~DataPropertiesEntryV1(TSP::DataPropertiesEntryV1 *this)\n{\n  __int64 v2; // x20\n  __int64 v3; // x20\n  __int64 v4; // x0\n  void *v5; // x0\n  __int64 v6; // t1\n\n  v2 = *((_QWORD *)this + 6);\n  if ( (__int64 *)v2 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v2 + 23) < 0 )\n      operator delete(*(void **)v2);\n    operator delete(v2, 0x1012C40EC159624LL);\n  }\n  v3 = *((_QWORD *)this + 7);\n  if ( (__int64 *)v3 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v3 + 23) < 0 )\n      operator delete(*(void **)v3);\n    operator delete(v3, 0x1012C40EC159624LL);\n  }\n  sub_100037E58((char *)this + 8);\n  if ( *((int *)this + 7) >= 1 )\n  {\n    v4 = *((_QWORD *)this + 4);\n    v6 = *(_QWORD *)(v4 - 8);\n    v5 = (void *)(v4 - 8);\n    if ( !v6 )\n      operator delete(v5);\n  }\n}"
+}

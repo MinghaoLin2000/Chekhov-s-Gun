@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper19ControlCenterHelper confirmItemDeletionWithResponse:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC19ControlCenterHelper19ControlCenterHelper confirmItemDeletionWithResponse:](int a1, int a2, void * aBlock)",
+    "pseudocode": "void __cdecl -[ControlCenterHelper confirmItemDeletionWithResponse:](\n        _TtC19ControlCenterHelper19ControlCenterHelper *self,\n        SEL a2,\n        id a3)\n{\n  void *v4; // x20\n  __int64 v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = _Block_copy(a3);\n  v5 = swift_allocObject(&unk_10008B420, 24LL, 7LL);\n  *(_QWORD *)(v5 + 16) = v4;\n  swift_retain(self);\n  ControlCenterHelper.confirmItemDeletion(response:)((__int64)sub_100014E00, v5);\n  swift_release(self);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_release(v5);\n}"
+}

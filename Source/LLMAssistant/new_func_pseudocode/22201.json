@@ -1,0 +1,6 @@
+{
+    "function_name": "_fileno",
+    "function_argument_number": 1,
+    "function_signature": "_fileno(FILE * a1)",
+    "pseudocode": "int __cdecl fileno(FILE *a1)\n{\n  return _fileno(a1);\n}"
+}

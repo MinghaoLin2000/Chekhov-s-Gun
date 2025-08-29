@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointPauseAssetTransfers",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformEndpointPauseAssetTransfers(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointPauseAssetTransfers(__int64 a1, __int64 a2)\n{\n  if ( a1 && a2 )\n    return uarpSendDataTransferNotificationPause(a1, a2);\n  else\n    return 30LL;\n}"
+}

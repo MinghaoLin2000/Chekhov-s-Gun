@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList initWithRangeVector:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSURangeList initWithRangeVector:](TSURangeList * self, SEL a2, const void * a3)",
+    "pseudocode": "TSURangeList *__cdecl -[TSURangeList initWithRangeVector:](TSURangeList *self, SEL a2, const void *a3)\n{\n  TSURangeList *v4; // x0\n  TSURangeList *v5; // x19\n  int v6; // w0\n\n  v4 = -[TSURangeList init](self, \"init\");\n  v5 = v4;\n  if ( v4 )\n  {\n    v6 = (_DWORD)v4 + 8;\n    if ( &v5->mRangeList != a3 )\n      sub_100151AC0(v6, *(void **)a3);\n  }\n  return v5;\n}"
+}

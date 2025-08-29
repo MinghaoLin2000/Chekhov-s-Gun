@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleGetFunctionPointersForNames",
+    "function_argument_number": 3,
+    "function_signature": "_CFBundleGetFunctionPointersForNames(CFBundleRef bundle, CFArrayRef functionNames, void **__attribute__((__org_arrdim(0,0))) ftbl)",
+    "pseudocode": "void __cdecl CFBundleGetFunctionPointersForNames(CFBundleRef bundle, CFArrayRef functionNames, void *ftbl[])\n{\n  _CFBundleGetFunctionPointersForNames(bundle, functionNames, ftbl);\n}"
+}

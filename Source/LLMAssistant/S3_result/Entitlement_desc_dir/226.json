@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.intents.uiextension.discovery",
+  "capability": "Allows an app's UI Extension, specifically designed for Siri Intents, to be discovered by the system (e.g., Siri, Shortcuts, Spotlight) and made available for user interaction when resolving an intent. It enables the system to find and present the appropriate user interface for a given intent.",
+  "reasoning": "The 'intents' prefix clearly indicates a relation to Apple's SiriKit and Intents framework. 'uiextension' specifies that it pertains to a User Interface Extension. The term 'discovery' suggests the ability for this extension to be found by the system or to find other relevant intent-related UI components. This pattern is consistent with other 'discovery' entitlements which facilitate system-level integration and visibility of components or services.",
+  "similar_entitlements": [
+    "com.apple.developer.accessory-setup-discovery-extension"
+  ],
+  "sensitive_type": [],
+  "sensitive_reasoning": "This entitlement primarily facilitates the system's ability to locate and present a UI Extension associated with a specific intent. It does not inherently grant direct access to file systems, privileged network operations, process memory, kernel-level controls, or bypass TCC prompts for sensitive user data. While the underlying intent *might* involve sensitive data (e.g., contacts, location), the 'discovery' of the UI extension itself is a mechanism for system integration and routing, not a permission to access those sensitive resources. Any actual access to sensitive data would be governed by separate TCC permissions or other entitlements required for the intent's execution, not for its UI extension's discoverability.",
+  "self_reflection": "I am confident in the inferred capability based on the clear naming convention ('intents', 'uiextension', 'discovery') and comparison with the provided 'accessory-setup-discovery-extension' which follows a similar pattern for system integration. My confidence in the sensitive type assessment is high because the 'discovery' aspect is about making a component visible to the system, not about granting direct access to sensitive resources. Any sensitive operations would typically require additional, more specific entitlements or user consent via TCC, which are separate from merely making an extension discoverable."
+}

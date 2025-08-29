@@ -1,0 +1,67 @@
+Service Path:
+/System/Library/PrivateFrameworks/FileProviderDaemon.framework/XPCServices/FPCKService.xpc/Contents/MacOS/FPCKService
+
+Service Exported Protocols:
+@protocol FPCKServiceProtocol
+- (void)runFPCKWithPauseHandler:(id <FPCKUpdateReceiving>)arg1 completionHandler:(void (^)(NSString *, FPCKStats *, NSDictionary *, NSError *))arg2;
+- (void)prepareFPCKForDomain:(NSString *)arg1 domainUserInfo:(NSDictionary *)arg2 domainRootURL:(FPSandboxingURLWrapper *)arg3 databaseBackupPath:(FPSandboxingURLWrapper *)arg4 accessingPaths:(NSArray *)arg5 urls:(NSArray *)arg6 volumeRole:(unsigned int)arg7 options:(unsigned long long)arg8 reason:(unsigned long long)arg9 fpfs:(_Bool)arg10 iCDPackageDetection:(_Bool)arg11 completionHandler:(void (^)(NSError *))arg12;
+@end
+@protocol FPCKUpdateReceiving
+- (void)sendDiagnosticsForItemIDs:(NSData *)arg1;
+- (void)shouldPauseWithCompletion:(void (^)(_Bool, NSError *))arg1;
+- (void)saveCheckpointWithReport:(FPCKTelemetryUpdate *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.FileProviderDaemon.FPCKService
+	[Key] com.apple.apfs.spec_telemetry
+	[Value]
+		[Bool] true
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.FileProviderDaemon.FPCKService
+	[Key] com.apple.private.rtcreportingd
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.private.security.storage.FileProvider
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyDesktopFolder
+			[String] kTCCServiceSystemPolicyDocumentsFolder
+			[String] kTCCServiceFileProviderDomain
+	[Key] com.apple.private.vfs.authorized-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.vfs.dataless-manipulation
+	[Value]
+		[Bool] true
+	[Key] com.apple.proactive.eventtracker
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.revisiond
+			[String] com.apple.FileCoordination
+			[String] com.apple.rtcreportingd
+	[Key] com.apple.security.exception.sysctl.read-write
+	[Value]
+		[Array]
+			[String] kern.rage_vnode
+			[String] kern.vfsnspace
+	[Key] com.apple.trial.client
+	[Value]
+		[Array]
+			[String] 254
+	[Key] platform-application
+	[Value]
+		[Bool] true

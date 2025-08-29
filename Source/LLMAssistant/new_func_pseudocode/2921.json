@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSummaryViewController optionsViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSummaryViewController optionsViewController](DeviceSummaryViewController * self, SEL a2)",
+    "pseudocode": "DeviceSummaryAreaViewController *__cdecl -[DeviceSummaryViewController optionsViewController](\n        DeviceSummaryViewController *self,\n        SEL a2)\n{\n  return self->_optionsViewController;\n}"
+}

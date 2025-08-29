@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition26CoreAnalyticsLoggingHelperCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition26CoreAnalyticsLoggingHelperCMa()",
+    "pseudocode": "__int64 type metadata accessor for CoreAnalyticsLoggingHelper()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition26CoreAnalyticsLoggingHelper);\n}"
+}

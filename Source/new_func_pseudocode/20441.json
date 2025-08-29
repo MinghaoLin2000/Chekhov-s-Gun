@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintdRPCService resetPKCloudData]",
+    "function_argument_number": 2,
+    "function_signature": "-[PrintdRPCService resetPKCloudData](PrintdRPCService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[PrintdRPCService resetPKCloudData](PrintdRPCService *self, SEL a2)\n{\n  os_log_s *v2; // x19\n  uint8_t v3[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  v2 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v2, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_WORD *)v3 = 0;\n    _os_log_impl((void *)&_mh_execute_header, v2, OS_LOG_TYPE_DEFAULT, \"resetPKCloudData\", v3, 2u);\n  }\n  objc_release(v2);\n  liteResetPKCloudData();\n}"
+}

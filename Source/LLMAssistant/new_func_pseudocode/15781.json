@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBAudioAsset payloaLength]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBAudioAsset payloaLength](USBAudioAsset * self, SEL a2)",
+    "pseudocode": "unsigned int __cdecl -[USBAudioAsset payloaLength](USBAudioAsset *self, SEL a2)\n{\n  return self->_payloaLength;\n}"
+}

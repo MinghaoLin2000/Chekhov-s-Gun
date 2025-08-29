@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsRentalsTabContentViewController outlineView:isItemExpandable:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceSettingsRentalsTabContentViewController outlineView:isItemExpandable:](DeviceSettingsRentalsTabContentViewController * self, SEL a2, id a3, id a4)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsRentalsTabContentViewController outlineView:isItemExpandable:](\n        DeviceSettingsRentalsTabContentViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  return 0;\n}"
+}

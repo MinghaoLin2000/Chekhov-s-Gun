@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s19ControlCenterHelper20ScreenMirroringAlertC8ResponseVwCP(__int64 result, __int64 * a2)",
+    "pseudocode": "__int64 __fastcall initializeBufferWithCopyOfBuffer for ScreenMirroringAlert.Response(__int64 result, __int64 *a2)\n{\n  __int64 v2; // x8\n\n  v2 = *a2;\n  *(_BYTE *)(result + 8) = *((_BYTE *)a2 + 8);\n  *(_QWORD *)result = v2;\n  return result;\n}"
+}

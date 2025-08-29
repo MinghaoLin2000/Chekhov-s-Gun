@@ -1,0 +1,6 @@
+{
+    "function_name": "_vsnprintf",
+    "function_argument_number": 4,
+    "function_signature": "_vsnprintf(char * __str, size_t __size, const char * __format, va_list a4)",
+    "pseudocode": "int __cdecl vsnprintf(char *__str, size_t __size, const char *__format, va_list a4)\n{\n  return _vsnprintf(__str, __size, __format, a4);\n}"
+}

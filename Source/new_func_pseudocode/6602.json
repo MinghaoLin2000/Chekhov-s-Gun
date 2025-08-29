@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceCopyPropertiesAtIndex",
+    "function_argument_number": 3,
+    "function_signature": "_CGImageSourceCopyPropertiesAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options)",
+    "pseudocode": "CFDictionaryRef __cdecl CGImageSourceCopyPropertiesAtIndex(\n        CGImageSourceRef isrc,\n        size_t index,\n        CFDictionaryRef options)\n{\n  return _CGImageSourceCopyPropertiesAtIndex(isrc, index, options);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_fsctl",
+    "function_argument_number": 4,
+    "function_signature": "_fsctl(const char * a1, unsigned __int64 a2, void * a3, unsigned int a4)",
+    "pseudocode": "int __cdecl fsctl(const char *a1, unsigned __int64 a2, void *a3, unsigned int a4)\n{\n  return _fsctl(a1, a2, a3, a4);\n}"
+}

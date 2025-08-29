@@ -1,0 +1,6 @@
+{
+  "_objc_msgSend$setAMDMtlClk:": 4294981312,
+  "-[GTAMDPMService initGPU:withReply:]": 4294978860,
+  "-[GTAMDPMService setState:withReply:]": 4294978588,
+  "-[GTAMDPMService setControlMode:withReply:]": 4294978752
+}

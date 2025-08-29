@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20ControlCenterFeatureOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore20ControlCenterFeatureOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ControlCenterFeature()\n{\n  return &type metadata for ControlCenterFeature;\n}"
+}

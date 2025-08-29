@@ -1,0 +1,6 @@
+{
+    "function_name": "_realpath$DARWIN_EXTSN",
+    "function_argument_number": 2,
+    "function_signature": "_realpath$DARWIN_EXTSN(const char * a1, char * a2)",
+    "pseudocode": "char *__cdecl realpath_DARWIN_EXTSN(const char *a1, char *a2)\n{\n  return _realpath_DARWIN_EXTSN(a1, a2);\n}"
+}

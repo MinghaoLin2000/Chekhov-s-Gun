@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry didDequeueAndStartProcessingQueueEntry]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionQueueEntry didDequeueAndStartProcessingQueueEntry](MediaConversionQueueEntry * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MediaConversionQueueEntry didDequeueAndStartProcessingQueueEntry](\n        MediaConversionQueueEntry *self,\n        SEL a2)\n{\n  -[MediaConversionQueueEntry withLockEnumerateClientRequests:](\n    self,\n    \"withLockEnumerateClientRequests:\",\n    &stru_100041090);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchive initWithData:collapseCommonRootDirectory:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUZipArchive initWithData:collapseCommonRootDirectory:](SFUZipArchive * self, SEL a2, id a3, bool a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSFUZipArchive *__cdecl -[SFUZipArchive initWithData:collapseCommonRootDirectory:](\n        SFUZipArchive *self,\n        SEL a2,\n        id a3,\n        bool a4)\n{\n  return -[SFUZipArchive initWithData:collapseCommonRootDirectory:ignoreCase:](\n           self,\n           \"initWithData:collapseCommonRootDirectory:ignoreCase:\",\n           a3,\n           a4,\n           0LL);\n}"
+}

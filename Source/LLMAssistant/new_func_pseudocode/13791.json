@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_data_copy_region",
+    "function_argument_number": 3,
+    "function_signature": "_dispatch_data_copy_region(dispatch_data_t data, size_t location, size_t * offset_ptr)",
+    "pseudocode": "dispatch_data_t __cdecl dispatch_data_copy_region(dispatch_data_t data, size_t location, size_t *offset_ptr)\n{\n  return _dispatch_data_copy_region(data, location, offset_ptr);\n}"
+}

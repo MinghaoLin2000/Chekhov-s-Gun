@@ -1,0 +1,6 @@
+{
+    "function_name": "_INSupportedIntentsByExtensions",
+    "function_argument_number": 0,
+    "function_signature": "_INSupportedIntentsByExtensions()",
+    "pseudocode": "__int64 INSupportedIntentsByExtensions()\n{\n  return _INSupportedIntentsByExtensions();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBlueButton commonSetup]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceBlueButton commonSetup](DeviceBlueButton * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceBlueButton commonSetup](DeviceBlueButton *self, SEL a2)\n{\n  NSFont *v3; // x20\n  void *v4; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[DeviceBlueButton setBezelStyle:](self, \"setBezelStyle:\", 2LL);\n  -[DeviceBlueButton setBordered:](self, \"setBordered:\", 0LL);\n  -[DeviceBlueButton setAlignment:](self, \"setAlignment:\", 1LL);\n  -[DeviceBlueButton setImageHugsTitle:](self, \"setImageHugsTitle:\", 1LL);\n  -[DeviceBlueButton setImagePosition:](self, \"setImagePosition:\", 7LL);\n  v3 = objc_retainAutoreleasedReturnValue(+[NSFont boldSystemFontOfSize:](&OBJC_CLASS___NSFont, \"boldSystemFontOfSize:\", 13.0));\n  -[DeviceBlueButton setFont:](self, \"setFont:\", v3);\n  objc_release(v3);\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceBlueButton cell](self, \"cell\"));\n  objc_msgSend(v4, \"setBackgroundStyle:\", 1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

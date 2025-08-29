@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUWarning warningWithKind:message:]",
+    "function_argument_number": 4,
+    "function_signature": "+[TSUWarning warningWithKind:message:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "id __cdecl +[TSUWarning warningWithKind:message:](id a1, SEL a2, signed __int64 a3, id a4)\n{\n  id v6; // x21\n  void *v7; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = objc_retain(a4);\n  v7 = objc_msgSend(objc_alloc((Class)a1), \"initWithKind:message:\", a3, v6);\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v7);\n}"
+}

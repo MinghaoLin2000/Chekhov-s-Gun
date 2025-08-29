@@ -1,0 +1,6 @@
+j____clang_call_terminate_1
+// attributes: thunk
+void __fastcall __noreturn j____clang_call_terminate_1(void *a1)
+{
+  __clang_call_terminate(a1);
+}

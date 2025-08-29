@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFScannerRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFScannerRelease(CGPDFScannerRef scanner)",
+    "pseudocode": "void __cdecl CGPDFScannerRelease(CGPDFScannerRef scanner)\n{\n  _CGPDFScannerRelease(scanner);\n}"
+}

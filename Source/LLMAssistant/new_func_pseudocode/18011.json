@@ -1,0 +1,6 @@
+{
+    "function_name": "_Set3rdPartyLibraryLoadToBeInProcess",
+    "function_argument_number": 0,
+    "function_signature": "_Set3rdPartyLibraryLoadToBeInProcess()",
+    "pseudocode": "void Set3rdPartyLibraryLoadToBeInProcess()\n{\n  qword_100018DB8 &= ~1uLL;\n}"
+}

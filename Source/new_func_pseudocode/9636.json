@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP9FieldInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP9FieldInfoD1Ev(TSP::FieldInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::FieldInfo::~FieldInfo(TSP::FieldInfo *this)\n{\n  __ZN3TSP9FieldInfoD2Ev(this);\n}"
+}

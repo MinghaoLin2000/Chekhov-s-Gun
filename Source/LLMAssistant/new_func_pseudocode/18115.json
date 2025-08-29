@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryCreate",
+    "function_argument_number": 6,
+    "function_signature": "_CFDictionaryCreate(CFAllocatorRef allocator, const void ** keys, const void ** values, CFIndex numValues, const CFDictionaryKeyCallBacks * keyCallBacks, const CFDictionaryValueCallBacks * valueCallBacks)",
+    "pseudocode": "CFDictionaryRef __cdecl CFDictionaryCreate(\n        CFAllocatorRef allocator,\n        const void **keys,\n        const void **values,\n        CFIndex numValues,\n        const CFDictionaryKeyCallBacks *keyCallBacks,\n        const CFDictionaryValueCallBacks *valueCallBacks)\n{\n  return _CFDictionaryCreate(allocator, keys, values, numValues, keyCallBacks, valueCallBacks);\n}"
+}

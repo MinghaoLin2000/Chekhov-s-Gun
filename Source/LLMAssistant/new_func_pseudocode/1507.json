@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController init]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController init](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "DeviceFooterViewController *__cdecl -[DeviceFooterViewController init](DeviceFooterViewController *self, SEL a2)\n{\n  DeviceFooterViewController *v2; // x0\n  DeviceFooterViewController *v3; // x19\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceFooterViewController;\n  v2 = -[DeviceFooterViewController init](&v5, \"init\");\n  v3 = v2;\n  if ( v2 )\n  {\n    -[DeviceFooterViewController setLastPrimaryProgressDescriptionString:](\n      v2,\n      \"setLastPrimaryProgressDescriptionString:\",\n      &stru_1000BA220);\n    -[DeviceFooterViewController setLastSecondaryProgressDescriptionString:](\n      v3,\n      \"setLastSecondaryProgressDescriptionString:\",\n      &stru_1000BA220);\n  }\n  return v3;\n}"
+}

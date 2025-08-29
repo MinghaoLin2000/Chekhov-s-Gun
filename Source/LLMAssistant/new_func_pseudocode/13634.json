@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUDataRepresentation xmlReaderWithReadCallback:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUDataRepresentation xmlReaderWithReadCallback:](SFUDataRepresentation * self, SEL a2, void * a3)",
+    "pseudocode": "_xmlTextReader *__cdecl -[SFUDataRepresentation xmlReaderWithReadCallback:](\n        SFUDataRepresentation *self,\n        SEL a2,\n        void *a3)\n{\n  id v4; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(-[SFUDataRepresentation inputStream](self, \"inputStream\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return xmlReaderForIO((xmlInputReadCallback)a3, (xmlInputCloseCallback)sub_10016680C, v4, 0LL, 0LL, 0);\n}"
+}

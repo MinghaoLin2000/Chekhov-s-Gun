@@ -1,0 +1,6 @@
+{
+    "function_name": "_deviceIsRunningInternalBuild",
+    "function_argument_number": 0,
+    "function_signature": "_deviceIsRunningInternalBuild()",
+    "pseudocode": "__int64 deviceIsRunningInternalBuild()\n{\n  return _os_variant_has_internal_content(\"com.apple.AppleMediaServicesUIDynamic\");\n}"
+}

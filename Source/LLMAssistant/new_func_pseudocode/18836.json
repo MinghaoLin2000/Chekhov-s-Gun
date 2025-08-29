@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewController hostPositionWindowForGlobalContentFrame:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewController hostPositionWindowForGlobalContentFrame:](RemoteViewController * self, SEL a2, CGRect a3)",
+    "pseudocode": "void __cdecl -[RemoteViewController hostPositionWindowForGlobalContentFrame:](\n        RemoteViewController *self,\n        SEL a2,\n        CGRect a3)\n{\n  _QWORD v3[5]; // [xsp+8h] [xbp-48h] BYREF\n  CGRect v4; // [xsp+30h] [xbp-20h]\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3254779904LL;\n  v3[2] = sub_100004750;\n  v3[3] = &unk_1000206D0;\n  v3[4] = self;\n  v4 = a3;\n  +[NSAnimationContext runAnimationGroup:completionHandler:](\n    &OBJC_CLASS___NSAnimationContext,\n    \"runAnimationGroup:completionHandler:\",\n    v3,\n    0LL);\n}"
+}

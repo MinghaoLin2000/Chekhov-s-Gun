@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUAssertionHandler setDelegate:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUAssertionHandler setDelegate:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl +[TSUAssertionHandler setDelegate:](id a1, SEL a2, id a3)\n{\n  id v4; // x0\n\n  if ( qword_1001F80C0 )\n  {\n    v4 = objc_autorelease((id)qword_1001F80C0);\n    qword_1001F80C0 = 0LL;\n  }\n  if ( a3 )\n    qword_1001F80C0 = (__int64)objc_retain(a3);\n}"
+}

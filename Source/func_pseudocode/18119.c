@@ -1,0 +1,5 @@
+_CFPlugInFindFactoriesForPlugInTypeInPlugIn
+CFArrayRef __cdecl CFPlugInFindFactoriesForPlugInTypeInPlugIn(CFUUIDRef typeUUID, CFPlugInRef plugIn)
+{
+  return _CFPlugInFindFactoriesForPlugInTypeInPlugIn(typeUUID, plugIn);
+}

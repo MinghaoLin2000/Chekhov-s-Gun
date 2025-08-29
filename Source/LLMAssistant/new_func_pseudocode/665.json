@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileSharingListItem setDate:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileSharingListItem setDate:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[FileSharingListItem setDate:](FileSharingListItem *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_date, a3);\n}"
+}

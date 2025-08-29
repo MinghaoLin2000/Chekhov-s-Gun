@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$voiceTriggerRTModelForVersion:minorVersion:downloadedModels:preinstalledModels:completion:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$voiceTriggerRTModelForVersion:minorVersion:downloadedModels:preinstalledModels:completion:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_voiceTriggerRTModelForVersion_minorVersion_downloadedModels_preinstalledModels_completion_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(a1, \"voiceTriggerRTModelForVersion:minorVersion:downloadedModels:preinstalledModels:completion:\");\n}"
+}

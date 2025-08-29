@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf6StructD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf6StructD1Ev(google::protobuf::Struct * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::Struct::~Struct(google::protobuf::Struct *this)\n{\n  __ZN6google8protobuf6StructD2Ev(this);\n}"
+}

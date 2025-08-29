@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.afu.userclientaccess",
+  "capability": "Allows the application to create and communicate with specific I/O Kit user clients, enabling interaction with kernel-level drivers and potentially low-level hardware or system services.",
+  "reasoning": "In macOS, 'User Client' refers to the user-space interface for interacting with I/O Kit kernel extensions (KEXTs). This entitlement would grant a process the ability to instantiate and communicate with these kernel interfaces. The 'afu' prefix, while not explicitly defined, often hints at 'Apple Firmware Update' or 'Apple Function Unit', suggesting a highly privileged operation related to system firmware or core hardware components.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement directly enables user-space applications to interact with kernel-space drivers (KEXTs) via I/O Kit user clients. This capability falls under 'System & Kernel Level Control' (Type 4) because it provides a mechanism to influence or directly control kernel behavior, access hardware at a low level, and perform highly privileged operations that could affect the entire system's integrity or lead to local privilege escalation if abused or if vulnerabilities exist in the exposed user clients.",
+  "self_reflection": "I am highly confident in the inferred capability and its classification as a sensitive operation. The term 'userclient' is a well-established concept in macOS for kernel interaction. The 'afu' prefix further suggests a critical system component. The primary uncertainty lies in the exact scope of 'afu' and which specific user clients it grants access to, but the general nature of kernel interaction remains clear. My prediction could be wrong only if 'userclientaccess' refers to a highly sandboxed or restricted set of user clients that do not expose any truly privileged operations, which is unlikely given the typical design of such entitlements and the inherent power of direct kernel interaction."
+}

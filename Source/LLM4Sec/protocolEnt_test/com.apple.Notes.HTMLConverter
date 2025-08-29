@@ -1,0 +1,16 @@
+Service Path:
+/System/Library/PrivateFrameworks/NotesUI.framework/Versions/A/XPCServices/com.apple.Notes.HTMLConverter.xpc/Contents/MacOS/com.apple.Notes.HTMLConverter
+
+Service Exported Protocols:
+@protocol HTMLConverterProtocol
+- (void)attributedStringFromHTMLString:(NSString *)arg1 baseURL:(NSURL *)arg2 completionBlock:(void (^)(NSData *, NSError *))arg3;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true

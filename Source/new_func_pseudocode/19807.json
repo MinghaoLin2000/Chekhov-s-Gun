@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t checkAccessWithSession:completionHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_printer_t checkAccessWithSession:completionHandler:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[lite_printer_t checkAccessWithSession:completionHandler:](lite_printer_t *self, SEL a2, id a3, id a4)\n{\n  id v6; // x21\n  id v7; // x22\n  NSOperationQueue *printerOperationQueue; // x23\n  id v9; // x21\n  id v10; // x20\n  _QWORD v11[5]; // [xsp+8h] [xbp-78h] BYREF\n  id v12; // [xsp+30h] [xbp-50h]\n  id v13; // [xsp+38h] [xbp-48h]\n  id v14; // [xsp+40h] [xbp-40h] BYREF\n  id location; // [xsp+48h] [xbp-38h] BYREF\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  objc_initWeak(&location, self);\n  printerOperationQueue = self->_printerOperationQueue;\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_1000125A8;\n  v11[3] = &unk_100091730;\n  objc_copyWeak(&v14, &location);\n  v12 = v6;\n  v13 = v7;\n  v11[4] = self;\n  v9 = objc_retain(v6);\n  v10 = objc_retain(v7);\n  -[NSOperationQueue addOperationWithBlock:](printerOperationQueue, \"addOperationWithBlock:\", v11);\n  objc_release(v12);\n  objc_release(v13);\n  objc_release(v9);\n  objc_release(v10);\n  objc_destroyWeak(&v14);\n  objc_destroyWeak(&location);\n}"
+}

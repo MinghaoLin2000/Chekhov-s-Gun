@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ErrorMessageVwet_0",
+    "function_argument_number": 2,
+    "function_signature": "$s9SPIHelper12ErrorMessageVwet_0(__int64 a1, int a2)",
+    "pseudocode": "__int64 __fastcall _s9SPIHelper12ErrorMessageVwet_0(__int64 a1, int a2)\n{\n  unsigned __int64 v2; // x8\n\n  if ( !a2 )\n    return 0LL;\n  if ( a2 < 0 && *(_BYTE *)(a1 + 40) )\n    return *(_DWORD *)a1 + 0x80000000;\n  v2 = *(_QWORD *)(a1 + 8);\n  if ( v2 >= 0xFFFFFFFF )\n    LODWORD(v2) = -1;\n  return (unsigned int)(v2 + 1);\n}"
+}

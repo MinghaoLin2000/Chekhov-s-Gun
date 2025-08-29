@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP19SparseUUIDPathArrayD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP19SparseUUIDPathArrayD2Ev(TSP::SparseUUIDPathArray * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::SparseUUIDPathArray::~SparseUUIDPathArray(TSP::SparseUUIDPathArray *this)\n{\n  __ZN3TSP19SparseUUIDPathArrayD2Ev(this);\n}"
+}

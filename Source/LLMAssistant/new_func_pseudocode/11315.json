@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf28UninterpretedOption_NamePart13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf28UninterpretedOption_NamePart13IsInitializedEv(google::protobuf::UninterpretedOption_NamePart * this)",
+    "pseudocode": "bool __fastcall google::protobuf::UninterpretedOption_NamePart::IsInitialized(\n        google::protobuf::UninterpretedOption_NamePart *this)\n{\n  return (~*((_DWORD *)this + 4) & 3) == 0;\n}"
+}

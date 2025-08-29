@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentRevision hash]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDocumentRevision hash](TSPDocumentRevision * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSPDocumentRevision hash](TSPDocumentRevision *self, SEL a2)\n{\n  __int64 sequence; // x19\n\n  sequence = self->_sequence;\n  return (unsigned __int64)-[NSUUID hash](self->_identifier, \"hash\") ^ sequence;\n}"
+}

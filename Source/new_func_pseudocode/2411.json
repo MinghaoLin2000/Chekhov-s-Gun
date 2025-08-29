@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSoftwareUpdatesViewController refreshView]",
+    "function_argument_number": 1,
+    "function_signature": "-[DeviceSoftwareUpdatesViewController refreshView](id val)",
+    "pseudocode": "void __cdecl -[DeviceSoftwareUpdatesViewController refreshView](DeviceSoftwareUpdatesViewController *self, SEL a2)\n{\n  _QWORD block[5]; // [xsp+8h] [xbp-48h] BYREF\n  id v4; // [xsp+30h] [xbp-20h] BYREF\n  id location; // [xsp+38h] [xbp-18h] BYREF\n\n  objc_initWeak(&location, self);\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_100058900;\n  block[3] = &unk_1000B8EA8;\n  objc_copyWeak(&v4, &location);\n  block[4] = self;\n  dispatch_async(&_dispatch_main_q, block);\n  objc_destroyWeak(&v4);\n  objc_destroyWeak(&location);\n}"
+}

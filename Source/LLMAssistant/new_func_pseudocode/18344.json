@@ -1,0 +1,6 @@
+{
+    "function_name": "+[ATEnforcementService reasonCodeFromNumberValue:]",
+    "function_argument_number": 3,
+    "function_signature": "+[ATEnforcementService reasonCodeFromNumberValue:](id a1, SEL a2, id a3)",
+    "pseudocode": "signed __int64 __cdecl +[ATEnforcementService reasonCodeFromNumberValue:](id a1, SEL a2, id a3)\n{\n  signed __int64 result; // x0\n  signed __int64 v4; // x8\n\n  result = (signed __int64)objc_msgSend(a3, \"integerValue\");\n  if ( result == 1001 )\n    v4 = 1001LL;\n  else\n    v4 = 0LL;\n  if ( result != 1002 )\n    return v4;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelperAAC23confirmTurnOffBluetooth7request8responsey10Foundation4UUIDV_yAH_SbtctF",
+    "function_argument_number": 3,
+    "function_signature": "_$s19ControlCenterHelperAAC23confirmTurnOffBluetooth7request8responsey10Foundation4UUIDV_yAH_SbtctF(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall ControlCenterHelper.confirmTurnOffBluetooth(request:response:)(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x0\n\n  v6 = type metadata accessor for BluetoothHelper();\n  swift_initStaticObject(v6, &unk_100093A00);\n  return sub_100008A28(a1, a2, a3);\n}"
+}

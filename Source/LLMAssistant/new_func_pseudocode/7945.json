@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSDisplayStatusQuery",
+    "function_argument_number": 0,
+    "function_signature": "_CGSDisplayStatusQuery()",
+    "pseudocode": "__int64 CGSDisplayStatusQuery()\n{\n  return _CGSDisplayStatusQuery();\n}"
+}

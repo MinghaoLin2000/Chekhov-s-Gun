@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveMemoryDataRepresentation bufferedInputStreamWithOffset:length:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUZipArchiveMemoryDataRepresentation bufferedInputStreamWithOffset:length:](SFUZipArchiveMemoryDataRepresentation * self, SEL a2, signed __int64 a3, signed __int64 a4)",
+    "pseudocode": "id __cdecl -[SFUZipArchiveMemoryDataRepresentation bufferedInputStreamWithOffset:length:](\n        SFUZipArchiveMemoryDataRepresentation *self,\n        SEL a2,\n        signed __int64 a3,\n        signed __int64 a4)\n{\n  signed __int64 v7; // x0\n  bool v8; // cc\n  SFUMemoryInputStream *v9; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v7 = -[NSData length](self->mData, \"length\");\n  if ( (a4 | a3) < 0 || (v7 >= a4 ? (v8 = v7 - a4 < a3) : (v8 = 1), v8) )\n    +[NSException raise:format:](\n      &OBJC_CLASS___NSException,\n      \"raise:format:\",\n      NSInvalidArgumentException,\n      CFSTR(\"Bad input stream range.\"));\n  v9 = -[SFUMemoryInputStream initWithData:offset:length:](\n         objc_alloc(&OBJC_CLASS___SFUMemoryInputStream),\n         \"initWithData:offset:length:\",\n         self->mData,\n         a3,\n         a4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autorelease(v9);\n}"
+}

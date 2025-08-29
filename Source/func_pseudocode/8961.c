@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService21LocalJavascriptLoaderCMa
+__int64 type metadata accessor for LocalJavascriptLoader()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService21LocalJavascriptLoader);
+}

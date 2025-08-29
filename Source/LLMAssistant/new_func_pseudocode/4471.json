@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$postDeviceViewPhotoSyncDeferredErrorNotificationWithOSStatus:andMessage:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$postDeviceViewPhotoSyncDeferredErrorNotificationWithOSStatus:andMessage:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_postDeviceViewPhotoSyncDeferredErrorNotificationWithOSStatus_andMessage_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"postDeviceViewPhotoSyncDeferredErrorNotificationWithOSStatus:andMessage:\");\n}"
+}

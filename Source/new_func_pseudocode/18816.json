@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeServiceWindow _shouldAutoFlattenLayerTree]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewBridgeServiceWindow _shouldAutoFlattenLayerTree](RemoteViewBridgeServiceWindow * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[RemoteViewBridgeServiceWindow _shouldAutoFlattenLayerTree](RemoteViewBridgeServiceWindow *self, SEL a2)\n{\n  return 0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZZN6google8protobuf8internal16OnShutdownDeleteINS0_15UnknownFieldSetEEEPT_S5_ENUlPKvE_8__invokeES7_",
+    "function_argument_number": 1,
+    "function_signature": "__ZZN6google8protobuf8internal16OnShutdownDeleteINS0_15UnknownFieldSetEEEPT_S5_ENUlPKvE_8__invokeES7_(google::protobuf::UnknownFieldSet * this)",
+    "pseudocode": "void **__fastcall google::protobuf::internal::OnShutdownDelete<google::protobuf::UnknownFieldSet>(google::protobuf::UnknownFieldSet *)::{lambda(void const*)#1}::__invoke(\n        void **this)\n{\n  void **v1; // x19\n  void *v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( this )\n  {\n    v1 = this;\n    v2 = *this;\n    if ( v2 != v1[1] )\n    {\n      google::protobuf::UnknownFieldSet::ClearFallback((google::protobuf::UnknownFieldSet *)v1);\n      v2 = *v1;\n    }\n    if ( v2 )\n    {\n      v1[1] = v2;\n      operator delete(v2);\n    }\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (void **)operator delete(v1, 0x20C40960023A9LL);\n  }\n  return this;\n}"
+}

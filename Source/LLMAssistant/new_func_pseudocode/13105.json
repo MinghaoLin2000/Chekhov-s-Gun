@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation path]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileDataRepresentation path](SFUFileDataRepresentation * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SFUFileDataRepresentation path](SFUFileDataRepresentation *self, SEL a2)\n{\n  return self->mPath;\n}"
+}

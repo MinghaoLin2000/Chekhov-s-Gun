@@ -1,0 +1,45 @@
+Service Path:
+/System/Library/PrivateFrameworks/StreamingZip.framework/Versions/A/XPCServices/com.apple.StreamingUnzipService.xpc/Contents/MacOS/com.apple.StreamingUnzipService
+
+Service Exported Protocols:
+@protocol STExtractor <NSObject, NSSecureCoding>
+- (void)terminateStreamWithError:(NSError *)arg1 completionBlock:(void (^)(NSError *))arg2;
+- (void)finishStreamWithCompletionBlock:(void (^)(NSError *))arg1;
+- (void)suspendStreamWithCompletionBlock:(void (^)(unsigned long long, NSError *))arg1;
+- (void)supplyBytes:(NSData *)arg1 withCompletionBlock:(void (^)(NSError *, _Bool))arg2;
+- (void)prepareForExtractionToPath:(NSString *)arg1 completionBlock:(void (^)(unsigned long long, NSError *))arg2;
+@end
+@protocol SZExtractor <NSObject, NSSecureCoding, STExtractor>
+- (void)terminateStreamWithError:(NSError *)arg1 completionBlock:(void (^)(NSError *))arg2;
+- (void)finishStreamWithCompletionBlock:(void (^)(NSError *))arg1;
+- (void)suspendStreamWithCompletionBlock:(void (^)(unsigned long long, NSError *))arg1;
+- (void)supplyBytes:(NSData *)arg1 withCompletionBlock:(void (^)(NSError *, _Bool))arg2;
+- (void)prepareForExtractionToPath:(NSString *)arg1 completionBlock:(void (^)(unsigned long long, NSError *))arg2;
+- (void)prepareForExtraction:(void (^)(unsigned long long, NSError *))arg1;
+@end
+@protocol StreamingFileWriterErrorDelegate <NSObject>
+- (void)streamingFileWriter:(StreamingFileWriter *)arg1 didEncounterError:(NSError *)arg2;
+@end
+@protocol StreamingFileWriterQueueAsyncOperation <NSObject>
+- (void)executeAsyncOperation;
+@end
+@protocol StreamingUnzipDelegateProtocol
+- (void)extractionEnteredPassThroughMode;
+- (void)extractionCompleteAtArchivePath:(NSString *)arg1;
+- (void)setExtractionProgress:(double)arg1;
+@end
+@protocol StreamingUnzipProtocol
+- (void)getPidForTestingWithReply:(void (^)(int, NSError *))arg1;
+- (void)setActiveDelegateMethods:(int)arg1;
+- (void)terminateStreamWithReply:(void (^)(NSError *))arg1;
+- (void)finishStreamWithReply:(void (^)(NSError *))arg1;
+- (void)suspendStreamWithReply:(void (^)(unsigned long long, NSError *))arg1;
+- (void)supplyBytes:(NSData *)arg1 withReply:(void (^)(NSError *, _Bool))arg2;
+- (void)setupUnzipperWithOutputPath:(NSString *)arg1 sandboxExtensionToken:(char *)arg2 options:(NSDictionary *)arg3 withReply:(void (^)(NSError *, unsigned long long))arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] StreamingUnzipService

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGAffineTransformMakeScale",
+    "function_argument_number": 3,
+    "function_signature": "_CGAffineTransformMakeScale(CGAffineTransform * retstr, CGFloat sx, CGFloat sy)",
+    "pseudocode": "CGAffineTransform *__cdecl CGAffineTransformMakeScale(CGAffineTransform *__return_ptr retstr, CGFloat sx, CGFloat sy)\n{\n  return _CGAffineTransformMakeScale(retstr, sx, sy);\n}"
+}

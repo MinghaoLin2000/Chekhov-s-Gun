@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition17RequestEndMetricsCfd",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition17RequestEndMetricsCfd()",
+    "pseudocode": "_QWORD *RequestEndMetrics.deinit()\n{\n  _QWORD *v0; // x20\n\n  swift_bridgeObjectRelease(v0[3]);\n  swift_bridgeObjectRelease(v0[6]);\n  swift_bridgeObjectRelease(v0[13]);\n  swift_bridgeObjectRelease(v0[14]);\n  swift_bridgeObjectRelease(v0[15]);\n  swift_bridgeObjectRelease(v0[21]);\n  swift_bridgeObjectRelease(v0[24]);\n  swift_bridgeObjectRelease(v0[26]);\n  swift_bridgeObjectRelease(v0[29]);\n  swift_bridgeObjectRelease(v0[39]);\n  swift_bridgeObjectRelease(v0[41]);\n  swift_bridgeObjectRelease(v0[43]);\n  return v0;\n}"
+}

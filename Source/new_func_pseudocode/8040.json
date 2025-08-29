@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_after",
+    "function_argument_number": 3,
+    "function_signature": "_dispatch_after(dispatch_time_t when, dispatch_queue_t queue, dispatch_block_t block)",
+    "pseudocode": "void __cdecl dispatch_after(dispatch_time_t when, dispatch_queue_t queue, dispatch_block_t block)\n{\n  _dispatch_after(when, queue, block);\n}"
+}

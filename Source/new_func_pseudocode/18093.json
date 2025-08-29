@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_sndmsgd",
+    "function_argument_number": 2,
+    "function_signature": "_piston_sndmsgd(int a1, __int64 * a2)",
+    "pseudocode": "__int64 __fastcall piston_sndmsgd(int a1, __int64 *a2)\n{\n  __int64 v2; // x8\n  __int64 v3; // x9\n  __int64 v4; // x10\n  __int64 v5; // x11\n  __int64 v6; // x19\n  iovec v8; // [xsp+8h] [xbp-48h] BYREF\n  __int64 v9; // [xsp+18h] [xbp-38h]\n  __int64 v10; // [xsp+20h] [xbp-30h]\n  __int64 v11; // [xsp+28h] [xbp-28h]\n  __int64 v12; // [xsp+30h] [xbp-20h]\n\n  v3 = *a2;\n  v2 = a2[1];\n  v5 = a2[2];\n  v4 = a2[3];\n  *((_BYTE *)a2 + 33) = (unsigned int)(v4 + v2) >> 16;\n  *((_BYTE *)a2 + 34) = (unsigned __int16)(v4 + v2) >> 8;\n  *((_BYTE *)a2 + 35) = v4 + v2;\n  *((_BYTE *)a2 + 32) = 0;\n  v8.iov_base = a2 + 4;\n  v8.iov_len = 4LL;\n  v9 = v3;\n  v10 = v2;\n  v11 = v5;\n  v12 = v4;\n  v6 = piston_write_v(a1 + 8, &v8, 3);\n  if ( (_DWORD)v6 && os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n    sub_10000F640(v6);\n  return v6;\n}"
+}

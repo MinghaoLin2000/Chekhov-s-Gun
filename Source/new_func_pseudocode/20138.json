@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters11_find_SidesEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters11_find_SidesEv(Printd_Parameters * this)",
+    "pseudocode": "void *__fastcall Printd_Parameters::_find_Sides(id *this)\n{\n  return objc_msgSend(*this, \"_findAttribute0:valueTag:\", CFSTR(\"sides\"), 68LL);\n}"
+}

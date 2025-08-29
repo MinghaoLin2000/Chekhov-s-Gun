@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$writeToURL:options:originalContentsURL:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$writeToURL:options:originalContentsURL:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_writeToURL_options_originalContentsURL_error_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"writeToURL:options:originalContentsURL:error:\");\n}"
+}

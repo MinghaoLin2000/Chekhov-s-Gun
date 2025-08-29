@@ -1,0 +1,6 @@
+{
+    "function_name": "_connect",
+    "function_argument_number": 3,
+    "function_signature": "_connect(int a1, const sockaddr * a2, socklen_t a3)",
+    "pseudocode": "int __cdecl connect(int a1, const sockaddr *a2, socklen_t a3)\n{\n  return _connect(a1, a2, a3);\n}"
+}

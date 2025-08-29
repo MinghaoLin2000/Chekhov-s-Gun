@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipEntry setOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipEntry setOffset:](TSUZipEntry * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSUZipEntry setOffset:](TSUZipEntry *self, SEL a2, unsigned __int64 a3)\n{\n  self->_offset = a3;\n}"
+}

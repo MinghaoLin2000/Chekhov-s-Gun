@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CoreMLModelSecurity extractTeamIdentifierWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[CoreMLModelSecurity extractTeamIdentifierWithReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[CoreMLModelSecurity extractTeamIdentifierWithReply:](CoreMLModelSecurity *self, SEL a2, id a3)\n{\n  void (__fastcall **v3)(id, id, _QWORD); // x19\n  id v4; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = (void (__fastcall **)(id, id, _QWORD))objc_retain(a3);\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[CoreMLModelSecurity teamIdentifierFromXPCConnection](\n           &OBJC_CLASS___CoreMLModelSecurity,\n           \"teamIdentifierFromXPCConnection\"));\n  v3[2](v3, v4, 0LL);\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

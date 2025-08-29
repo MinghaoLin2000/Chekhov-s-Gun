@@ -1,0 +1,16 @@
+{
+  "entitlement": "com.apple.security.exception.shared-preference.read-only:com.apple.gms.availability",
+  "capability": "This entitlement grants an application read-only access to a specific shared system preference or configuration value identified by 'com.apple.gms.availability'. The 'exception' prefix indicates that this access is normally restricted and requires explicit permission. 'Shared-preference' implies a system-wide or cross-process preference, typically stored in a plist file, and 'read-only' limits the operation to reading only.",
+  "reasoning": "The entitlement name breaks down as follows: 'com.apple.security.exception' signifies a security bypass or an elevated privilege to access something normally protected. 'shared-preference' points to the macOS system's shared preference domains (e.g., `CFPreferences` or `NSUserDefaults` for system-wide settings). 'read-only' specifies the type of access. ':com.apple.gms.availability' is the specific identifier for the preference or domain being accessed. While 'gms' is ambiguous, given the 'com.apple' prefix, it refers to an internal Apple component, service, or system state related to 'availability'. Therefore, the entitlement allows reading the availability status of this specific Apple component or service.",
+  "similar_entitlements": [
+    "com.apple.security.files.downloads.read-only",
+    "com.apple.security.exception.mach-lookup.global-name",
+    "com.apple.security.exception.apple-internal-api"
+  ],
+  "sensitive_type": [
+    1,
+    4
+  ],
+  "sensitive_reasoning": "This entitlement belongs to sensitive operation types for the following reasons:\n\n1.  **File and File System Operations**: Shared preferences are typically stored as configuration files (e.g., plists) on the file system, often in system-level directories like `/Library/Preferences` or `/var/db/`. Granting an 'exception' to read such system files, especially those not intended for general application access, constitutes a sensitive file system operation. It allows an app to read system-level configuration or status data that is normally protected.\n\n2.  **System & Kernel Level Control**: Accessing 'com.apple.gms.availability' implies gaining insight into the operational status or configuration of a specific Apple system component or service. Even read-only access to such system-level state information is sensitive, as it can reveal internal system workings, dependencies, or potential vulnerabilities. While not direct modification, monitoring critical system availability is a form of interacting with system-level control, as it pertains to the behavior and status of core system elements.",
+  "self_reflection": "I am confident in the interpretation of 'exception', 'shared-preference', and 'read-only'. The most ambiguous part is 'gms.availability' itself, as its exact meaning within Apple's internal systems is unknown without further documentation. My interpretation assumes it refers to a system component's status. If 'gms.availability' were instead a user-specific preference or a less critical system preference, the sensitivity level, particularly for Type 4, might be lower. However, the 'exception' prefix strongly implies a protected, sensitive resource. The listed similar entitlements are primarily based on structural patterns ('read-only' and 'exception')."
+}

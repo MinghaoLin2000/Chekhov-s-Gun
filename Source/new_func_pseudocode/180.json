@@ -1,0 +1,6 @@
+{
+    "function_name": "__Block_copy",
+    "function_argument_number": 1,
+    "function_signature": "__Block_copy(const void * aBlock)",
+    "pseudocode": "void *__cdecl _Block_copy(const void *aBlock)\n{\n  return __Block_copy(aBlock);\n}"
+}

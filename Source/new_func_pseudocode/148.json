@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper17CreateOrLoadStageOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper17CreateOrLoadStageOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CreateOrLoadStage()\n{\n  return &type metadata for CreateOrLoadStage;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[AMActionLoaderServiceListener sharedServiceListener]",
+    "function_argument_number": 2,
+    "function_signature": "+[AMActionLoaderServiceListener sharedServiceListener](id a1, SEL a2)",
+    "pseudocode": "AMActionLoaderServiceListener *__cdecl +[AMActionLoaderServiceListener sharedServiceListener](id a1, SEL a2)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100024278 != -1 )\n    dispatch_once(&qword_100024278, &stru_10001C3B8);\n  v2 = (void *)qword_100024270;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (AMActionLoaderServiceListener *)objc_retainAutoreleaseReturnValue(v2);\n}"
+}

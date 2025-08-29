@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LocalSocketProxy initWithLocalSocketPath:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LocalSocketProxy initWithLocalSocketPath:](int a1, int a2, id a3)",
+    "pseudocode": "LocalSocketProxy *__cdecl -[LocalSocketProxy initWithLocalSocketPath:](LocalSocketProxy *self, SEL a2, id a3)\n{\n  id v5; // x19\n  LocalSocketProxy *v6; // x20\n  dispatch_queue_attr_s *v7; // x22\n  dispatch_queue_t v8; // x0\n  OS_dispatch_queue *queue; // x8\n  NSMutableSet *v10; // x0\n  NSMutableSet *connections; // x8\n  objc_super v13; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v13.receiver = self;\n  v13.super_class = (Class)&OBJC_CLASS___LocalSocketProxy;\n  v6 = -[LocalSocketProxy init](&v13, \"init\");\n  if ( v6 )\n  {\n    v7 = objc_retainAutoreleasedReturnValue(dispatch_queue_attr_make_with_autorelease_frequency(0LL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM));\n    v8 = dispatch_queue_create(\"LocalSocketProxy\", v7);\n    queue = v6->_queue;\n    v6->_queue = (OS_dispatch_queue *)v8;\n    objc_release(queue);\n    objc_release(v7);\n    objc_storeStrong((id *)&v6->_path, a3);\n    v10 = objc_opt_new(&OBJC_CLASS___NSMutableSet);\n    connections = v6->_connections;\n    v6->_connections = v10;\n    objc_release(connections);\n  }\n  objc_release(v5);\n  return v6;\n}"
+}

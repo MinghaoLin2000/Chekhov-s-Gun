@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_create_reply",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_dictionary_create_reply(xpc_object_t original)",
+    "pseudocode": "xpc_object_t __cdecl xpc_dictionary_create_reply(xpc_object_t original)\n{\n  return _xpc_dictionary_create_reply(original);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP27LargeLazyObjectArraySegmentD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP27LargeLazyObjectArraySegmentD2Ev(TSP::LargeLazyObjectArraySegment * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeLazyObjectArraySegment::~LargeLazyObjectArraySegment(TSP::LargeLazyObjectArraySegment *this)\n{\n  __ZN3TSP27LargeLazyObjectArraySegmentD2Ev(this);\n}"
+}

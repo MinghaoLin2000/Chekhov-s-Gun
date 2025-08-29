@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointPayloadRequestData",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformEndpointPayloadRequestData(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointPayloadRequestData(__int64 a1, __int64 a2)\n{\n  __int64 v2; // x8\n  unsigned int v3; // w8\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v2 = 30LL;\n  if ( !a1 || !a2 )\n    return v2;\n  v3 = *(_DWORD *)(a2 + 500);\n  if ( v3 )\n    v3 -= *(_DWORD *)(a2 + 508);\n  if ( v3 >= *(_DWORD *)(a2 + 648) )\n    v3 = *(_DWORD *)(a2 + 648);\n  if ( !v3 )\n  {\n    UARPLayer2PayloadDataComplete2(a1, (_QWORD *)a2);\n    return 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return uarpPlatformAssetPayloadPullData(a1, a2);\n}"
+}

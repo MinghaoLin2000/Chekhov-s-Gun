@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileSharingListItem placeholders]",
+    "function_argument_number": 2,
+    "function_signature": "-[FileSharingListItem placeholders](FileSharingListItem * self, SEL a2)",
+    "pseudocode": "NSMutableArray *__cdecl -[FileSharingListItem placeholders](FileSharingListItem *self, SEL a2)\n{\n  return self->_placeholders;\n}"
+}

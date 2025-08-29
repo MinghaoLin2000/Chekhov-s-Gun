@@ -1,0 +1,6 @@
+{
+    "function_name": "_ether_ntoa",
+    "function_argument_number": 1,
+    "function_signature": "_ether_ntoa(const ether_addr * a1)",
+    "pseudocode": "char *__cdecl ether_ntoa(const ether_addr *a1)\n{\n  return _ether_ntoa(a1);\n}"
+}

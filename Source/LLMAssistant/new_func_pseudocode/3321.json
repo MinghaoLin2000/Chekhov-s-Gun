@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_autoreleasePoolPush",
+    "function_argument_number": 0,
+    "function_signature": "_objc_autoreleasePoolPush()",
+    "pseudocode": "void *objc_autoreleasePoolPush(void)\n{\n  return _objc_autoreleasePoolPush();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv mockMidnightAndGetHolidayEventsToday:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv mockMidnightAndGetHolidayEventsToday:](ATXHeuristicJSEnv * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv mockMidnightAndGetHolidayEventsToday:](ATXHeuristicJSEnv *self, SEL a2, double a3)\n{\n  _QWORD *v4; // x20\n  _QWORD v5[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3221225472LL;\n  v5[2] = sub_10001B3FC;\n  v5[3] = &unk_100029BA0;\n  *(double *)&v5[4] = a3;\n  v4 = objc_retainBlock(v5);\n  -[JSContext setObject:forKeyedSubscript:](\n    self->_jsContext,\n    \"setObject:forKeyedSubscript:\",\n    v4,\n    CFSTR(\"getHolidayEvents\"));\n  objc_release(v4);\n}"
+}

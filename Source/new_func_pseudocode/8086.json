@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SignpostCounter init]",
+    "function_argument_number": 2,
+    "function_signature": "-[SignpostCounter init](SignpostCounter * self, SEL a2)",
+    "pseudocode": "SignpostCounter *__cdecl -[SignpostCounter init](SignpostCounter *self, SEL a2)\n{\n  SignpostCounter *result; // x0\n  objc_super v8; // [xsp+0h] [xbp-10h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___SignpostCounter;\n  result = -[SignpostCounter init](&v8, \"init\");\n  if ( result )\n  {\n    result->count = 0LL;\n    result->mxSignpostIntervalCounts = 0LL;\n    result->mxSignpostIntervalOverlaps = 0LL;\n    __asm { FMOV            V0.2D, #-1.0 }\n    *(_OWORD *)&result->prevMxSignpostStartMs = _Q0;\n  }\n  return result;\n}"
+}

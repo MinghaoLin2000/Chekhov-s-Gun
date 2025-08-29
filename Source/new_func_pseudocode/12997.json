@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription addSuperDescription]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUDescription addSuperDescription](TSUDescription * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUDescription addSuperDescription](TSUDescription *self, SEL a2)\n{\n  id v3; // x20\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  v4.receiver = objc_loadWeakRetained((id *)&self->_object);\n  v4.super_class = class_getSuperclass(self->_class);\n  objc_release(v4.receiver);\n  v3 = objc_retainAutoreleasedReturnValue(-[TSUDescription description](&v4, \"description\"));\n  -[TSUDescription addFieldValue:](self, \"addFieldValue:\", v3, v4.receiver, v4.super_class);\n  objc_release(v3);\n}"
+}

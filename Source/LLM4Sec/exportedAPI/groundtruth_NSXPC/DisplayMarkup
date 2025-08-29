@@ -1,0 +1,11 @@
+@protocol OS_dispatch_source <NSObject>
+@end
+@protocol OS_dispatch_source_timer <OS_dispatch_source>
+@end
+@protocol _TtP13DisplayMarkup24DisplayMarkupAppProtocol_
+- (void)complete;
+- (void)setupWith:(SidecarStream *)arg1 appStream:(SidecarStream *)arg2 complete:(void (^)(void))arg3;
+- (void)start:(void (^)(unsigned long long))arg1;
+@end
+@protocol _TtP13DisplayMarkup28DisplayMarkupServiceProtocol_
+@end

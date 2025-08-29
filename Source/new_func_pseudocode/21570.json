@@ -1,0 +1,6 @@
+{
+    "function_name": "_QuasarC_setLogLevel",
+    "function_argument_number": 0,
+    "function_signature": "_QuasarC_setLogLevel()",
+    "pseudocode": "__int64 QuasarC_setLogLevel()\n{\n  return _QuasarC_setLogLevel();\n}"
+}

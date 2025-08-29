@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyBestManagedDisplayForRect",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyBestManagedDisplayForRect()",
+    "pseudocode": "__int64 CGSCopyBestManagedDisplayForRect()\n{\n  return _CGSCopyBestManagedDisplayForRect();\n}"
+}

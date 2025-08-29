@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsDetailsTabContentViewController setLeadingCellsAreTextFields:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsDetailsTabContentViewController setLeadingCellsAreTextFields:](DeviceSettingsDetailsTabContentViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsDetailsTabContentViewController setLeadingCellsAreTextFields:](\n        DeviceSettingsDetailsTabContentViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_leadingCellsAreTextFields = a3;\n}"
+}

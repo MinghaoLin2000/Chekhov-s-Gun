@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallCreate",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallCreate()",
+    "pseudocode": "__int64 AMAuthInstallCreate()\n{\n  return _AMAuthInstallCreate();\n}"
+}

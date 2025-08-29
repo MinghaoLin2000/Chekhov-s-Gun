@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12SharingErrorOwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper12SharingErrorOwxx(__int64 a1)",
+    "pseudocode": "__int64 __fastcall destroy for SharingError(__int64 a1)\n{\n  return sub_10000E6D8(\n           *(_QWORD *)a1,\n           *(_QWORD *)(a1 + 8),\n           *(_QWORD *)(a1 + 16),\n           *(_QWORD *)(a1 + 24),\n           *(_QWORD *)(a1 + 32),\n           *(unsigned __int8 *)(a1 + 40));\n}"
+}

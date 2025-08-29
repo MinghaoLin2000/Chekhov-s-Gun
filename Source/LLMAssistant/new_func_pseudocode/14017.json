@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$databaseObjectWithIdentifier:classType:dataState:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$databaseObjectWithIdentifier:classType:dataState:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_databaseObjectWithIdentifier_classType_dataState_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"databaseObjectWithIdentifier:classType:dataState:\");\n}"
+}

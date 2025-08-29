@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionBatchReassociateWindowsToSpace",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionBatchReassociateWindowsToSpace()",
+    "pseudocode": "__int64 SLSTransactionBatchReassociateWindowsToSpace()\n{\n  return _SLSTransactionBatchReassociateWindowsToSpace();\n}"
+}

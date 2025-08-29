@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUZipFileArchive isZipArchiveAtFD:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUZipFileArchive isZipArchiveAtFD:](int a1, int a2, int a3)",
+    "pseudocode": "bool __cdecl +[TSUZipFileArchive isZipArchiveAtFD:](id a1, SEL a2, int a3)\n{\n  off_t v4; // x0\n  off_t v5; // x20\n  bool v7; // w21\n  int v9; // [xsp+Ch] [xbp-24h] BYREF\n\n  v4 = lseek(a3, 0LL, 1);\n  v5 = v4;\n  if ( (unsigned __int64)(v4 - 1) > 0xFFFFFFFFFFFFFFFDLL )\n  {\n    if ( v4 == -1 )\n      return 0;\n  }\n  else if ( lseek(a3, 0LL, 0) == -1 )\n  {\n    goto LABEL_12;\n  }\n  if ( read(a3, &v9, 4uLL) == 4 )\n  {\n    v7 = v9 == 67324752 || v9 == 101010256;\n    return lseek(a3, v5, 0) != -1 && v7;\n  }\nLABEL_12:\n  v7 = 0;\n  return lseek(a3, v5, 0) != -1 && v7;\n}"
+}

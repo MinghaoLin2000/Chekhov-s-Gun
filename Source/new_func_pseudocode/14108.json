@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$handleFailureInFunction:file:lineNumber:isFatal:format:message:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$handleFailureInFunction:file:lineNumber:isFatal:format:message:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_handleFailureInFunction_file_lineNumber_isFatal_format_message_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"handleFailureInFunction:file:lineNumber:isFatal:format:message:\");\n}"
+}

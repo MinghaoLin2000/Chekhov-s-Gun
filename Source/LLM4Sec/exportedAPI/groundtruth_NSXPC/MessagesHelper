@@ -1,0 +1,4 @@
+@protocol SPMessagesHelper
+- (void)enableCloudKitMessagesWithCompletionHandler:(void (^)(NSError *))arg1;
+- (void)fetchCloudKitMessagesStateWithCompletionHandler:(void (^)(long long, NSError *))arg1;
+@end

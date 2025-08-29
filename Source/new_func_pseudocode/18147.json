@@ -1,0 +1,6 @@
+{
+    "function_name": "_NACancelConnectToServerAsync",
+    "function_argument_number": 0,
+    "function_signature": "_NACancelConnectToServerAsync()",
+    "pseudocode": "__int64 NACancelConnectToServerAsync()\n{\n  return _NACancelConnectToServerAsync();\n}"
+}

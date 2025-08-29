@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSManagedDisplaySetCurrentSpace",
+    "function_argument_number": 0,
+    "function_signature": "_CGSManagedDisplaySetCurrentSpace()",
+    "pseudocode": "__int64 CGSManagedDisplaySetCurrentSpace()\n{\n  return _CGSManagedDisplaySetCurrentSpace();\n}"
+}

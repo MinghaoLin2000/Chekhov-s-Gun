@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP16UUIDCoordArchive13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP16UUIDCoordArchive13IsInitializedEv(TSP::UUIDCoordArchive * this)",
+    "pseudocode": "bool __fastcall TSP::UUIDCoordArchive::IsInitialized(TSP::UUIDCoordArchive *this)\n{\n  int v1; // w8\n\n  v1 = *((_DWORD *)this + 4);\n  return (~v1 & 3) == 0\n      && ((v1 & 1) == 0 || (~*(_DWORD *)(*((_QWORD *)this + 3) + 16LL) & 3) == 0)\n      && ((v1 & 2) == 0 || (~*(_DWORD *)(*((_QWORD *)this + 4) + 16LL) & 3) == 0);\n}"
+}

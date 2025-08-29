@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP26ComponentExternalReferenceD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP26ComponentExternalReferenceD0Ev(TSP::ComponentExternalReference * this)",
+    "pseudocode": "void __fastcall TSP::ComponentExternalReference::~ComponentExternalReference(TSP::ComponentExternalReference *this)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  sub_100037E58((char *)this + 8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(this, 0x1081C40648F7380LL);\n}"
+}

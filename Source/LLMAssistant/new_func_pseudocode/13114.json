@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation hasSameLocationAs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUFileDataRepresentation hasSameLocationAs:](SFUFileDataRepresentation * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[SFUFileDataRepresentation hasSameLocationAs:](SFUFileDataRepresentation *self, SEL a2, id a3)\n{\n  __int64 v5; // x0\n  id v6; // x20\n  void *v7; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v5 = objc_opt_class(&OBJC_CLASS___SFUFileDataRepresentation);\n  if ( (objc_opt_isKindOfClass(a3, v5) & 1) == 0 )\n    return 0;\n  v6 = -[SFUFileDataRepresentation path](self, \"path\");\n  v7 = objc_msgSend(a3, \"path\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (unsigned __int8)objc_msgSend(v6, \"isEqualToString:\", v7);\n}"
+}

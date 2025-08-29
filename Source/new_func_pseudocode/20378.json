@@ -1,0 +1,6 @@
+{
+    "function_name": "-[http_ipp_response_t initWithResponse:transportStatus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[http_ipp_response_t initWithResponse:transportStatus:](int a1, int a2, id a3)",
+    "pseudocode": "http_ipp_response_t *__cdecl -[http_ipp_response_t initWithResponse:transportStatus:](\n        http_ipp_response_t *self,\n        SEL a2,\n        id a3,\n        int a4)\n{\n  id v7; // x19\n  http_ipp_response_t *v8; // x0\n  http_ipp_response_t *v9; // x22\n  objc_super v11; // [xsp+0h] [xbp-30h] BYREF\n\n  v7 = objc_retain(a3);\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___http_ipp_response_t;\n  v8 = -[http_ipp_response_t init](&v11, \"init\");\n  v9 = v8;\n  if ( v8 )\n  {\n    objc_storeStrong((id *)&v8->_ippResponse, a3);\n    v9->ivar_transportStatus = a4;\n  }\n  objc_release(v7);\n  return v9;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15AppQueryRequestVwCP()",
+    "pseudocode": "// attributes: thunk\n__int64 initializeBufferWithCopyOfBuffer for AppQueryRequest()\n{\n  return _s34AppleMediaServicesUIDynamicService15AppQueryRequestVwCP_0();\n}"
+}

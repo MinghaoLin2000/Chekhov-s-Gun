@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformCompareHash",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformCompareHash(int a1, void * __s1, size_t __n, void * __s2)",
+    "pseudocode": "bool __fastcall uarpPlatformCompareHash(__int64 a1, void *__s1, size_t __n, void *__s2, int a5)\n{\n  if ( !*(_QWORD *)(a1 + 376) )\n    return 1LL;\n  if ( (_DWORD)__n == a5 )\n    return memcmp(__s1, __s2, (unsigned int)__n) == 0;\n  return 0LL;\n}"
+}

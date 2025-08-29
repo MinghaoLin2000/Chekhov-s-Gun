@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$readEndOfCentralDirectoryFromInputStream:",
+    "function_argument_number": 1,
+    "function_signature": "_objc_msgSend$readEndOfCentralDirectoryFromInputStream:(void * a1)",
+    "pseudocode": "id objc_msgSend_readEndOfCentralDirectoryFromInputStream_(void *a1, ...)\n{\n  return _objc_msgSend(a1, \"readEndOfCentralDirectoryFromInputStream:\");\n}"
+}

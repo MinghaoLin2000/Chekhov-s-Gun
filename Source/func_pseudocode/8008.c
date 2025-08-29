@@ -1,0 +1,5 @@
+_SLSTransactionSetManagedDisplayIsAnimating
+__int64 SLSTransactionSetManagedDisplayIsAnimating()
+{
+  return _SLSTransactionSetManagedDisplayIsAnimating();
+}

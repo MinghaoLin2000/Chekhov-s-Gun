@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveMemoryDataRepresentation hasSameLocationAs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUZipArchiveMemoryDataRepresentation hasSameLocationAs:](SFUZipArchiveMemoryDataRepresentation * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[SFUZipArchiveMemoryDataRepresentation hasSameLocationAs:](\n        SFUZipArchiveMemoryDataRepresentation *self,\n        SEL a2,\n        id a3)\n{\n  __int64 v5; // x0\n  id v6; // x20\n\n  v5 = objc_opt_class(&OBJC_CLASS___SFUZipArchiveMemoryDataRepresentation);\n  if ( (objc_opt_isKindOfClass(a3, v5) & 1) == 0 )\n    return 0;\n  v6 = -[SFUZipArchiveMemoryDataRepresentation data](self, \"data\");\n  return v6 == objc_msgSend(a3, \"data\");\n}"
+}

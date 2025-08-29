@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZdlPv",
+    "function_argument_number": 1,
+    "function_signature": "__ZdlPv(void * a1)",
+    "pseudocode": "void __cdecl operator delete(void *__p)\n{\n  while ( 1 )\n    ;\n}"
+}

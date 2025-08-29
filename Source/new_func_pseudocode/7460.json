@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV7getType10connectionSo020CGSPackagesWorkspaceF0VAA13CGSConnectionV_tF",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV7getType10connectionSo020CGSPackagesWorkspaceF0VAA13CGSConnectionV_tF()",
+    "pseudocode": "// attributes: thunk\n__int64 CGSSpace.getType(connection:)()\n{\n  return CGSSpaceGetType();\n}"
+}

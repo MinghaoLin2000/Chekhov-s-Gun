@@ -1,0 +1,6 @@
+{
+    "function_name": "_abort_report_np",
+    "function_argument_number": 0,
+    "function_signature": "_abort_report_np()",
+    "pseudocode": "__int64 abort_report_np()\n{\n  return _abort_report_np();\n}"
+}

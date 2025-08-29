@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentViewController setShouldPresentExtraImage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsTabContentViewController setShouldPresentExtraImage:](DeviceSettingsTabContentViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsTabContentViewController setShouldPresentExtraImage:](\n        DeviceSettingsTabContentViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_shouldPresentExtraImage = a3;\n}"
+}

@@ -1,0 +1,5 @@
+{
+    "/System/Library/PrivateFrameworks/PowerlogCore.framework/Versions/A/XPCServices/PerfPowerServicesSignpostReader.xpc/Contents/MacOS/PerfPowerServicesSignpostReader": [
+        "-[XPCSignpostReader submitSignpostDataWithConfig:withReply:]"
+    ]
+}

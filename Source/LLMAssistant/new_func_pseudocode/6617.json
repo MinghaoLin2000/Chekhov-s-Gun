@@ -1,0 +1,6 @@
+{
+    "function_name": "_PFFigGetImageSourceImageIndexForContainerItemID",
+    "function_argument_number": 0,
+    "function_signature": "_PFFigGetImageSourceImageIndexForContainerItemID()",
+    "pseudocode": "__int64 PFFigGetImageSourceImageIndexForContainerItemID()\n{\n  return _PFFigGetImageSourceImageIndexForContainerItemID();\n}"
+}

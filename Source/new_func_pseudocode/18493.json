@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC19ControlCenterHelper27ControlCenterHelperDelegate init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC19ControlCenterHelper27ControlCenterHelperDelegate init](_TtC19ControlCenterHelper27ControlCenterHelperDelegate * self, SEL a2)",
+    "pseudocode": "_TtC19ControlCenterHelper27ControlCenterHelperDelegate *__cdecl -[ControlCenterHelperDelegate init](\n        _TtC19ControlCenterHelper27ControlCenterHelperDelegate *self,\n        SEL a2)\n{\n  return (_TtC19ControlCenterHelper27ControlCenterHelperDelegate *)ControlCenterHelperDelegate.init()();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringGetCString",
+    "function_argument_number": 4,
+    "function_signature": "_CFStringGetCString(CFStringRef theString, char * buffer, CFIndex bufferSize, CFStringEncoding encoding)",
+    "pseudocode": "Boolean __cdecl CFStringGetCString(CFStringRef theString, char *buffer, CFIndex bufferSize, CFStringEncoding encoding)\n{\n  return _CFStringGetCString(theString, buffer, bufferSize, encoding);\n}"
+}

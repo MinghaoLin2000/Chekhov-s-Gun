@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.coreduetd.people",
+  "capability": "Allows the associated daemon or process to access and process highly sensitive user interaction data related to contacts, communication patterns, and the user's social graph, which CoreDuet uses for its predictive and contextual services.",
+  "reasoning": "The entitlement name `com.apple.coreduetd.people` is composed of `com.apple` (standard Apple prefix), `coreduetd` (strongly indicating the CoreDuet framework, which is responsible for collecting and processing user activity data for contextual intelligence), and `people` (suggesting data related to user contacts, communication partners, and social interactions). Combined, it implies privileged access to the insights and data CoreDuet derives about a user's relationships and communication patterns.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under 'Access Transparency Consent and Control (TCC) related functions' (Type 5) because it grants access to highly private user data, specifically information related to contacts and communication patterns. This type of data (e.g., who a user communicates with, how often, and through which apps) is typically protected by TCC, requiring explicit user consent for applications to access. An entitlement granting direct access to CoreDuet's 'people' data effectively bypasses or manages these privacy controls, making it a sensitive operation akin to accessing TCC-protected resources like Contacts.",
+  "self_reflection": "I am highly confident in this assessment. The naming convention `coreduetd.people` is very indicative of its purpose, aligning with Apple's known CoreDuet framework and its focus on user context and relationships. The 'people' component directly points to sensitive contact and communication data. The primary uncertainty is the exact scope (e.g., read-only vs. read/write to CoreDuet's internal models), but the core capability of accessing sensitive social graph data remains clear. A wrong prediction would only occur if `coreduetd` or `people` had an entirely obscure, non-intuitive meaning within Apple's internal systems, which is unlikely for an entitlement name."
+}

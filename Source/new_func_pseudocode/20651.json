@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_resolver_cancel",
+    "function_argument_number": 0,
+    "function_signature": "_nw_resolver_cancel()",
+    "pseudocode": "__int64 nw_resolver_cancel()\n{\n  return _nw_resolver_cancel();\n}"
+}

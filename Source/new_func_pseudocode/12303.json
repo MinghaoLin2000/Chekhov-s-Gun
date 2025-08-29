@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf13StringAppendVEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKcPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf13StringAppendVEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKcPc(int a1, char * __format, va_list a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::StringAppendV(std::string *a1, char *__format, va_list a3)\n{\n  __int64 result; // x0\n  int v6; // w21\n  char *v7; // x22\n  int v8; // w0\n  char __str[1024]; // [xsp+18h] [xbp-438h] BYREF\n\n  result = vsnprintf(__str, 0x400uLL, __format, a3);\n  v6 = result;\n  if ( (int)result > 1023 )\n  {\n    v7 = (char *)operator new[]((unsigned int)(result + 1), 0x1000C8077774924LL);\n    v8 = vsnprintf(v7, (unsigned int)(v6 + 1), __format, a3);\n    if ( (v8 & 0x80000000) == 0 && v8 <= v6 )\n      std::string::append(a1, v7, (unsigned int)v8);\n    return operator delete[](v7, 0x1000C8077774924LL);\n  }\n  else if ( (result & 0x80000000) == 0 )\n  {\n    return (__int64)std::string::append(a1, __str, (unsigned int)result);\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLGetFileSystemRepresentation",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLGetFileSystemRepresentation(CFURLRef url, Boolean resolveAgainstBase, UInt8 * buffer, CFIndex maxBufLen)",
+    "pseudocode": "Boolean __cdecl CFURLGetFileSystemRepresentation(\n        CFURLRef url,\n        Boolean resolveAgainstBase,\n        UInt8 *buffer,\n        CFIndex maxBufLen)\n{\n  return _CFURLGetFileSystemRepresentation(url, resolveAgainstBase, buffer, maxBufLen);\n}"
+}

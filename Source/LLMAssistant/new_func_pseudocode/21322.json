@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition12EARInterfaceCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition12EARInterfaceCMa()",
+    "pseudocode": "__int64 type metadata accessor for EARInterface()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition12EARInterface);\n}"
+}

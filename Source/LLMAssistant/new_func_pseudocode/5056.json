@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$setPhotosAppSyncAllAlbums:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$setPhotosAppSyncAllAlbums:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_setPhotosAppSyncAllAlbums_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"setPhotosAppSyncAllAlbums:\");\n}"
+}

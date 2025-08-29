@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue checkQuiesced:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMTargetQueue checkQuiesced:](MXMTargetQueue * self, SEL a2, double a3)",
+    "pseudocode": "bool __cdecl -[MXMTargetQueue checkQuiesced:](MXMTargetQueue *self, SEL a2, double a3)\n{\n  _BOOL4 v5; // w20\n  double v6; // d0\n  double v7; // d9\n  double v8; // d0\n  double v9; // d9\n  unsigned int v10; // w8\n\n  if ( -[MXMTargetQueue majorityHalfTargetsHit](self, \"majorityHalfTargetsHit\") )\n  {\n    if ( -[MXMTargetQueue majorityTargetsHit](self, \"majorityTargetsHit\") )\n    {\n      v5 = 1;\n    }\n    else\n    {\n      -[MXMTargetQueue average](self, \"average\");\n      v7 = v6;\n      -[MXMTargetQueue target](self, \"target\");\n      v5 = v7 <= v8;\n    }\n  }\n  else\n  {\n    v5 = 0;\n  }\n  v9 = (double)-[MXMTargetQueue size](self, \"size\");\n  v10 = -[MXMTargetQueue full](self, \"full\") && v5;\n  if ( v9 <= a3 )\n    return v10;\n  else\n    return 0;\n}"
+}

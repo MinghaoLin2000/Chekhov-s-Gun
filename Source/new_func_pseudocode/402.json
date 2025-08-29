@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController setDevice:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceUIServiceViewController setDevice:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceUIServiceViewController setDevice:](DeviceUIServiceViewController *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_device, a3);\n}"
+}

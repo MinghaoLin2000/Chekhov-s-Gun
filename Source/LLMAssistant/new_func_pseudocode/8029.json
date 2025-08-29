@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SPCloudStorageHelper acAccount]",
+    "function_argument_number": 2,
+    "function_signature": "-[SPCloudStorageHelper acAccount](SPCloudStorageHelper * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SPCloudStorageHelper acAccount](SPCloudStorageHelper *self, SEL a2)\n{\n  return -[ACAccountStore aa_primaryAppleAccount](self->_acStore, \"aa_primaryAppleAccount\");\n}"
+}

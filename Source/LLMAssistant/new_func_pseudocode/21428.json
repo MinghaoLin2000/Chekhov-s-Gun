@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition31AssistantAssetDelegateInterface dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC22localspeechrecognition31AssistantAssetDelegateInterface dealloc](_TtC22localspeechrecognition31AssistantAssetDelegateInterface * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AssistantAssetDelegateInterface dealloc](\n        _TtC22localspeechrecognition31AssistantAssetDelegateInterface *self,\n        SEL a2)\n{\n  _TtC22localspeechrecognition31AssistantAssetDelegateInterface *v2; // x0\n\n  v2 = objc_retain(self);\n  sub_10002B22C();\n}"
+}

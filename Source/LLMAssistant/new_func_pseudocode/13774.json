@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_throw",
+    "function_argument_number": 3,
+    "function_signature": "___cxa_throw(void * a1, struct type_info * lptinfo, void (__fastcall *)(void *) a3)",
+    "pseudocode": "void __fastcall __noreturn __cxa_throw(void *a1, struct type_info *lptinfo, void (__fastcall *a3)(void *))\n{\n  ___cxa_throw(a1, (std::type_info *)lptinfo, (void (__cdecl *)(void *))a3);\n}"
+}

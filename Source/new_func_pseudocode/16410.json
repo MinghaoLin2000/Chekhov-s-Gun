@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setCloseEASession:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setCloseEASession:](EAFirmwareUpdater * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setCloseEASession:](EAFirmwareUpdater *self, SEL a2, bool a3)\n{\n  self->_closeEASession = a3;\n}"
+}

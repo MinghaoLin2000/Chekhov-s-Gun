@@ -1,0 +1,6 @@
+{
+    "function_name": "_seteuid",
+    "function_argument_number": 1,
+    "function_signature": "_seteuid(uid_t a1)",
+    "pseudocode": "int __cdecl seteuid(uid_t a1)\n{\n  return _seteuid(a1);\n}"
+}

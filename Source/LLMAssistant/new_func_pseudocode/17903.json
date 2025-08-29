@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCompare",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringCompare(CFStringRef theString1, CFStringRef theString2, CFStringCompareFlags compareOptions)",
+    "pseudocode": "CFComparisonResult __cdecl CFStringCompare(\n        CFStringRef theString1,\n        CFStringRef theString2,\n        CFStringCompareFlags compareOptions)\n{\n  return _CFStringCompare(theString1, theString2, compareOptions);\n}"
+}

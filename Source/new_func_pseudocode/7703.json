@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE12makeIterators03AnyG0VySo6CGRectVGyF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE12makeIterators03AnyG0VySo6CGRectVGyF()",
+    "pseudocode": "__int64 CGRegionRef.makeIterator()()\n{\n  __int64 v0; // x20\n  __int64 v1; // x0\n  __int64 v2; // x19\n  __int64 v3; // x0\n  __int64 result; // x0\n\n  v1 = _s16CGRegionIteratorCMa();\n  v2 = swift_allocObject(v1, 24LL, 7LL);\n  *(_QWORD *)(v2 + 16) = CGRegionEnumeratorCreate(v0);\n  v3 = sub_100002BF4(&unk_100029CD8);\n  result = swift_allocObject(v3, 32LL, 7LL);\n  *(_QWORD *)(result + 16) = sub_100015164;\n  *(_QWORD *)(result + 24) = v2;\n  return result;\n}"
+}

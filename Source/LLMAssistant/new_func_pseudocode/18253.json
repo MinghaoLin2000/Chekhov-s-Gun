@@ -1,0 +1,6 @@
+{
+    "function_name": "-[INHService retrieveImageWithIdentifier:completion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[INHService retrieveImageWithIdentifier:completion:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[INHService retrieveImageWithIdentifier:completion:](INHService *self, SEL a2, id a3, id a4)\n{\n  id v6; // x19\n  id v7; // x21\n  os_log_s *v8; // x22\n  int v9; // [xsp+0h] [xbp-40h] BYREF\n  const char *v10; // [xsp+4h] [xbp-3Ch]\n  __int16 v11; // [xsp+Ch] [xbp-34h]\n  id v12; // [xsp+Eh] [xbp-32h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = (os_log_s *)INSiriLogContextIntents;\n  if ( os_log_type_enabled(INSiriLogContextIntents, OS_LOG_TYPE_INFO) )\n  {\n    v9 = 136315394;\n    v10 = \"-[INHService retrieveImageWithIdentifier:completion:]\";\n    v11 = 2112;\n    v12 = v6;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v8,\n      OS_LOG_TYPE_INFO,\n      \"%s Retrieving image with identifier %@ with INImageFilePersistence\",\n      (uint8_t *)&v9,\n      0x16u);\n  }\n  -[INImageFilePersistence retrieveImageWithIdentifier:completion:](\n    self->_filePersistence,\n    \"retrieveImageWithIdentifier:completion:\",\n    v6,\n    v7);\n  objc_release(v7);\n  objc_release(v6);\n}"
+}

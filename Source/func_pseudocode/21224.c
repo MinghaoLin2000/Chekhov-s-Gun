@@ -1,0 +1,6 @@
+_$s22localspeechrecognition17RequestEndMetricsC20totalITNDurationInNss6UInt64VSgvpfi
+// attributes: thunk
+__int64 variable initialization expression of RequestEndMetrics.totalITNDurationInNs()
+{
+  return _s22localspeechrecognition17RequestEndMetricsC20totalITNDurationInNss6UInt64VSgvpfi_0();
+}

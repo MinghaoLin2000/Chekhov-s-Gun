@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$reloadItem:reloadChildren:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$reloadItem:reloadChildren:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_reloadItem_reloadChildren_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"reloadItem:reloadChildren:\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_apply",
+    "function_argument_number": 3,
+    "function_signature": "_dispatch_apply(size_t iterations, dispatch_queue_t queue, void * block)",
+    "pseudocode": "void __cdecl dispatch_apply(size_t iterations, dispatch_queue_t queue, void *block)\n{\n  _dispatch_apply(iterations, queue, block);\n}"
+}

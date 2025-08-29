@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMusicViewController removeMesssageTextFormat]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMusicViewController removeMesssageTextFormat](DeviceSettingsMusicViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsMusicViewController removeMesssageTextFormat](\n        DeviceSettingsMusicViewController *self,\n        SEL a2)\n{\n  return -[DeviceViewController deviceStringForStringParameterizedKey:](\n           self,\n           \"deviceStringForStringParameterizedKey:\",\n           CFSTR(\"ConfirmDisableSyncMusic %@\"));\n}"
+}

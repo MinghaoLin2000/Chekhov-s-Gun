@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetFindByAssetID",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformAssetFindByAssetID(__int64 a1, __int64 a2, int a3, int a4)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetFindByAssetID(__int64 a1, __int64 a2, int a3, int a4)\n{\n  __int64 result; // x0\n\n  for ( result = *(_QWORD *)(a1 + 568); result; result = *(_QWORD *)(result + 712) )\n  {\n    if ( *(_DWORD *)(result + 304) == a3 && *(_QWORD *)(result + 696) == a2 && *(unsigned __int16 *)(result + 44) == a4 )\n      break;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPDirectoryPackage isValidPackageAtURL:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSPDirectoryPackage isValidPackageAtURL:](id a1, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl +[TSPDirectoryPackage isValidPackageAtURL:](id a1, SEL a2, id a3)\n{\n  void *v3; // x19\n  unsigned __int8 v4; // w20\n\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"objectArchiveURLForPackageURL:\", a3));\n  v4 = (unsigned __int8)objc_msgSend(v3, \"checkResourceIsReachableAndReturnError:\", 0LL);\n  objc_release(v3);\n  return v4;\n}"
+}

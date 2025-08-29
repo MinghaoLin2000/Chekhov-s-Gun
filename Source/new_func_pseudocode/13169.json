@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUWarning userInfo]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUWarning userInfo](TSUWarning * self, SEL a2)",
+    "pseudocode": "NSDictionary *__cdecl -[TSUWarning userInfo](TSUWarning *self, SEL a2)\n{\n  return self->_userInfo;\n}"
+}

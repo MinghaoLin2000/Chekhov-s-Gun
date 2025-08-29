@@ -1,0 +1,151 @@
+@protocol OS_os_transaction <NSObject>
+@end
+@protocol SFLSRProtocol <_SFXPCEARInterface>
+- (void)synchronousComputeEuclidEmbeddingsForSources:(NSArray *)arg1 completion:(void (^)(NSArray *))arg2;
+- (oneway void)synchronousCreateEuclidInstanceForLanguageStr:(NSString *)arg1 clientID:(NSString *)arg2 inputFormat:(long long)arg3 loadingOption:(long long)arg4 completion:(void (^)(NSError *))arg5;
+- (oneway void)appLmNeedsRebuild:(NSURL *)arg1 language:(NSString *)arg2 sandboxExtensions:(NSArray *)arg3 completion:(void (^)(_Bool, NSError *))arg4;
+- (oneway void)trainAppLmFromNgramCountsArtifact:(NSURL *)arg1 forApp:(NSString *)arg2 language:(NSString *)arg3 writeToDirectory:(NSURL *)arg4 sandboxExtensions:(NSArray *)arg5 completion:(void (^)(NSURL *, NSURL *))arg6;
+- (oneway void)createNgramCountsArtifactFromPhraseCountArtifact:(NSURL *)arg1 writeToDirectory:(NSURL *)arg2 sandboxExtensions:(NSArray *)arg3 completion:(void (^)(NSURL *))arg4;
+- (oneway void)createPhraseCountsArtifactWithIdentifier:(NSString *)arg1 rawPhraseCountsPath:(NSURL *)arg2 customPronunciationsPath:(NSURL *)arg3 writeToDirectory:(NSURL *)arg4 sandboxExtensions:(NSArray *)arg5 completion:(void (^)(NSURL *))arg6;
+- (oneway void)trainAppLmFromNgramsSerializedData:(NSData *)arg1 customPronsData:(NSData *)arg2 language:(NSString *)arg3 writeToDirectory:(NSURL *)arg4 sandboxExtension:(NSString *)arg5 completion:(void (^)(NSURL *, NSURL *))arg6;
+- (oneway void)wakeUpWithCompletion:(void (^)(void))arg1;
+- (oneway void)metricsWithCompletion:(void (^)(NSDictionary *))arg1;
+- (oneway void)lmeThresholdWithCompletion:(void (^)(long long))arg1;
+- (oneway void)deserializeNgramCountsData:(NSData *)arg1 completion:(void (^)(NSDictionary *))arg2;
+- (oneway void)generateNgramCountsSerializeDataWithCompletion:(void (^)(NSData *))arg1;
+- (oneway void)trainFromPlainTextAndWriteToDirectory:(NSURL *)arg1 sandboxExtension:(NSString *)arg2 completion:(void (^)(NSURL *, NSURL *))arg3;
+- (oneway void)oovWordsAndFrequenciesWithCompletion:(void (^)(NSDictionary *))arg1;
+- (oneway void)addProns:(NSSet *)arg1 forWord:(NSString *)arg2 completion:(void (^)(_Bool))arg3;
+- (oneway void)addSentenceToNgramCounts:(NSString *)arg1 completion:(void (^)(NSArray *))arg2;
+- (oneway void)addSentenceToNgramCounts:(NSString *)arg1;
+- (oneway void)initializeLmWithAssetPath:(NSString *)arg1 completion:(void (^)(NSError *))arg2;
+- (oneway void)initializeLmWithLocale:(NSLocale *)arg1 clientID:(NSString *)arg2 completion:(void (^)(NSError *))arg3;
+- (oneway void)setPurgeabilityForAssetWithConfig:(SFEntitledAssetConfig *)arg1 purgeable:(_Bool)arg2 clientID:(NSString *)arg3 completion:(void (^)(NSError *))arg4;
+- (oneway void)subscriptionsForClientId:(NSString *)arg1 completion:(void (^)(NSArray *))arg2;
+- (oneway void)unsubscribeFromAssetWithConfig:(SFEntitledAssetConfig *)arg1 clientID:(NSString *)arg2 completion:(void (^)(NSError *))arg3;
+- (oneway void)configParametersForVoicemailWithLanguage:(NSString *)arg1 clientID:(NSString *)arg2 completion:(void (^)(NSDictionary *))arg3;
+- (oneway void)fetchAssetsForLanguage:(NSString *)arg1 clientID:(NSString *)arg2 completion:(void (^)(NSString *, NSError *))arg3;
+- (oneway void)pathToAssetWithConfig:(SFEntitledAssetConfig *)arg1 clientID:(NSString *)arg2 completion:(void (^)(NSString *))arg3;
+- (oneway void)downloadAssetsForConfig:(SFEntitledAssetConfig *)arg1 clientID:(NSString *)arg2 detailedProgress:(_Bool)arg3;
+- (oneway void)cleanupCacheWithCompletion:(void (^)(void))arg1;
+- (oneway void)logCoreAnalyticsEvent:(NSString *)arg1 withAnalytics:(NSDictionary *)arg2;
+- (oneway void)initializeWithSandboxExtensions:(NSArray *)arg1;
+- (oneway void)installedLanguagesForAssetType:(unsigned long long)arg1 completion:(void (^)(NSSet *))arg2;
+- (oneway void)supportedLanguagesForAssetType:(unsigned long long)arg1 completion:(void (^)(NSArray *))arg2;
+- (oneway void)preloadRecognizerForLanguage:(NSString *)arg1 task:(NSString *)arg2 clientID:(NSString *)arg3 recognitionOverrides:(NSDictionary *)arg4 modelOverrideURL:(NSURL *)arg5 completion:(void (^)(NSError *))arg6;
+- (oneway void)addAudioPacket:(NSData *)arg1;
+- (oneway void)cancelSpeech;
+- (oneway void)stopSpeech;
+- (oneway void)startRecordedAudioDictationWithParameters:(SFRequestParameters *)arg1;
+@end
+@protocol SiriAnalyticsMessageStream <NSObject>
+- (void)barrierWithCompletion:(void (^)(void))arg1;
+- (void)enqueueLargeMessageObjectFromPath:(NSString *)arg1 assetIdentifier:(NSUUID *)arg2 messageMetadata:(SISchemaInstrumentationMessage *)arg3 completion:(void (^)(_Bool, NSError *))arg4;
+- (void)resolvePartialMessage:(SISchemaTopLevelUnionType *)arg1 timestamp:(unsigned long long)arg2;
+- (void)resolvePartialMessage:(SISchemaTopLevelUnionType *)arg1;
+- (void)emitMessage:(SISchemaTopLevelUnionType *)arg1 timestamp:(unsigned long long)arg2;
+- (void)emitMessage:(SISchemaTopLevelUnionType *)arg1;
+@end
+@protocol _EARSpeechRecognitionResultStream <NSObject>
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeFinalResults:(NSArray *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didFinishRecognitionWithError:(NSError *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizePartialResult:(_EARSpeechRecognitionResult *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizePartialResultPackage:(_EARSpeechRecognitionResultPackage *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didReportStatus:(unsigned long long)arg2 statusContext:(NSDictionary *)arg3;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeVoiceCommandCandidatePackage:(_EARSpeechRecognitionResultPackage *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeFinalResultCandidatePackage:(_EARSpeechRecognitionResultPackage *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didProduceLoggablePackage:(_EARSpeechRecognitionResultPackage *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizePartialResultNbest:(NSArray *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didProduceEndpointFeaturesWithWordCount:(long long)arg2 trailingSilenceDuration:(long long)arg3 eosLikelihood:(double)arg4 pauseCounts:(NSArray *)arg5 silencePosterior:(double)arg6 processedAudioDurationInMilliseconds:(long long)arg7 acousticEndpointerScore:(double)arg8;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didProduceEndpointFeaturesWithWordCount:(long long)arg2 trailingSilenceDuration:(long long)arg3 eosLikelihood:(double)arg4 pauseCounts:(NSArray *)arg5 silencePosterior:(double)arg6 processedAudioDurationInMilliseconds:(long long)arg7;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeRawEagerRecognitionCandidate:(_EARSpeechRecognition *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didProcessAudioDuration:(double)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeFinalResultPackage:(_EARSpeechRecognitionResultPackage *)arg2;
+- (void)speechRecognizer:(_EARSpeechRecognizer *)arg1 didRecognizeFinalResults:(NSArray *)arg2 tokenSausage:(NSArray *)arg3 nBestChoices:(NSArray *)arg4;
+@end
+@protocol _SFXPCEAREuclid
+- (oneway void)patchVersionWithReply:(void (^)(NSString *))arg1;
+- (oneway void)minorVersionWithReply:(void (^)(NSString *))arg1;
+- (oneway void)majorVersionWithReply:(void (^)(NSString *))arg1;
+- (oneway void)fullVersionWithReply:(void (^)(NSString *))arg1;
+- (oneway void)embeddingDimWithReply:(void (^)(NSNumber *))arg1;
+- (oneway void)maxInputLengthWithReply:(void (^)(NSNumber *))arg1;
+- (oneway void)computeEmbeddings:(NSArray *)arg1 reply:(void (^)(NSArray *))arg2;
+- (oneway void)distanceBetweenSource:(NSString *)arg1 target:(NSString *)arg2 reply:(void (^)(NSNumber *))arg3;
+- (oneway void)findNearestNeighbors:(NSString *)arg1 numberOfNeighbors:(long long)arg2 reply:(void (^)(NSArray *))arg3;
+- (oneway void)hello;
+@end
+@protocol _SFXPCEARInterface
+- (oneway void)makeEARLanguageDetectorWithDetectorOptions:(_SFLanguageDetectorOptions *)arg1 clientInfo:(_SFAnalyzerClientInfo *)arg2 analysisOptions:(_SFAnalysisOptions *)arg3 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg4;
+- (oneway void)makeEuclidInstanceWithLocale:(NSLocale *)arg1 clientID:(NSString *)arg2 encoderType:(long long)arg3 initFlag:(long long)arg4 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg5;
+- (oneway void)processStartTimeOnceWithReply:(void (^)(NSNumber *, NSError *))arg1;
+- (oneway void)getJitProfileData:(NSString *)arg1 contextualStrings:(NSArray *)arg2 clientID:(NSString *)arg3 reply:(void (^)(NSData *, NSError *))arg4;
+- (oneway void)makeLSRAssetsForLocale:(NSLocale *)arg1 taskName:(NSString *)arg2 clientID:(NSString *)arg3 modelOverrideURL:(NSURL *)arg4 isSpelling:(_Bool)arg5 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg6;
+- (oneway void)makeEARSpeechRecognizerWithSupportedFeatures:(_SFSpeechRecognizerSupportedFeatures *)arg1 clientInfo:(_SFAnalyzerClientInfo *)arg2 analysisContext:(_SFAnalysisContextCodingObject *)arg3 analysisOptions:(_SFAnalysisOptions *)arg4 sandboxExtensions:(NSArray *)arg5 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg6;
+@end
+@protocol _SFXPCEARLanguageDetector
+- (oneway void)runLanguageDetectionWithResultStream:(NSXPCListenerEndpoint *)arg1 samplingRate:(unsigned long long)arg2 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg3;
+- (oneway void)modelInfoWithReply:(void (^)(EARSpeechModelInfo *))arg1;
+- (oneway void)supportedLocalesWithReply:(void (^)(NSArray *))arg1;
+- (oneway void)hello;
+@end
+@protocol _SFXPCEARLanguageDetectorAudioBuffer
+- (oneway void)endAudio;
+- (oneway void)addAudioSampleData:(NSData *)arg1;
+- (oneway void)hello;
+@end
+@protocol _SFXPCEARLanguageDetectorResultStream
+- (void)languageDetectorDidRecognizeResult:(EARLanguageDetectorV2Result *)arg1 processedAudioDuration:(double)arg2;
+- (void)languageDetectorDidFinishWithError:(NSError *)arg1;
+@end
+@protocol _SFXPCEARSpeechRecognitionAudioBuffer
+- (oneway void)packetArrivalTimestampFromAudioTimestamp:(float)arg1 reply:(void (^)(unsigned long long))arg2;
+- (oneway void)cancelRecognition;
+- (oneway void)endAudio;
+- (oneway void)addAudioSampleData:(NSData *)arg1;
+- (oneway void)hello;
+@end
+@protocol _SFXPCEARSpeechRecognitionResultStream
+- (void)speechRecognizerDidReportStatus:(unsigned long long)arg1;
+- (void)speechRecognizerDidProcessAudioDuration:(double)arg1;
+- (void)speechRecognizerDidProduceEndpointFeaturesWithWordCount:(long long)arg1 trailingSilenceDuration:(long long)arg2 eosLikelihood:(double)arg3 pauseCounts:(NSArray *)arg4 silencePosterior:(double)arg5 processedAudioDurationInMilliseconds:(long long)arg6 acousticEndpointerScore:(double)arg7;
+- (void)speechRecognizerDidProduceLoggablePackage:(EARSpeechRecognitionResultPackage *)arg1;
+- (void)speechRecognizerDidRecognizeVoiceCommandCandidatePackage:(EARSpeechRecognitionResultPackage *)arg1;
+- (void)speechRecognizerDidRecognizeFinalResultCandidatePackage:(EARSpeechRecognitionResultPackage *)arg1;
+- (void)speechRecognizerDidRecognizePartialResult:(EARSpeechRecognitionResult *)arg1;
+- (void)speechRecognizerDidRecognizeFinalResultMultiUserPackages:(NSDictionary *)arg1;
+- (void)speechRecognizerDidRecognizeFinalResultPackage:(EARSpeechRecognitionResultPackage *)arg1;
+- (void)speechRecognizerDidFinishRecognitionWithError:(NSError *)arg1;
+@end
+@protocol _SFXPCEARSpeechRecognizer
+- (oneway void)setSelectedText:(NSString *)arg1;
+- (oneway void)setRightContext:(NSString *)arg1;
+- (oneway void)setLeftContextText:(NSString *)arg1;
+- (oneway void)setClientInfo:(_SFAnalyzerClientInfo *)arg1;
+- (oneway void)speechProfileCodepathIdsWithReply:(void (^)(NSSet *))arg1;
+- (oneway void)modelLoadTimeWithReply:(void (^)(double))arg1;
+- (oneway void)isSpeechProfileUsedWithReply:(void (^)(_Bool))arg1;
+- (oneway void)requestEagerResult:(NSArray *)arg1;
+- (oneway void)updateVoiceCommandContextWithPrefixText:(NSString *)arg1 postfixText:(NSString *)arg2 selectedText:(NSString *)arg3 disambiguationActive:(NSNumber *)arg4 cursorInVisibleText:(NSNumber *)arg5 favorCommandSuppression:(NSNumber *)arg6 abortCommandSuppression:(NSNumber *)arg7 undoEvent:(NSNumber *)arg8;
+- (oneway void)resumeRecognitionWithLeftContext:(NSString *)arg1 rightContext:(NSString *)arg2 selectedText:(NSString *)arg3;
+- (oneway void)pauseRecognition;
+- (oneway void)recognitionMetricsWithReply:(void (^)(EARRecognitionMetrics *))arg1;
+- (oneway void)recognitionUtterenceStatisticsWithReply:(void (^)(NSDictionary *))arg1;
+- (oneway void)recognitionStatisticsWithReply:(void (^)(NSDictionary *))arg1;
+- (oneway void)modelInfoWithReply:(void (^)(EARSpeechModelInfo *))arg1;
+- (oneway void)rightContextWithReply:(void (^)(NSString *))arg1;
+- (oneway void)updateJitProfileData:(NSData *)arg1;
+- (oneway void)updateUserProfileData:(NSData *)arg1;
+- (oneway void)setUserProfileData:(NSData *)arg1;
+- (oneway void)setExtraLmList:(NSArray *)arg1 sandboxExtensions:(NSArray *)arg2;
+- (oneway void)runRecognitionWithResultStream:(NSXPCListenerEndpoint *)arg1 language:(NSString *)arg2 task:(NSString *)arg3 samplingRate:(unsigned long long)arg4 reply:(void (^)(NSXPCListenerEndpoint *, NSError *))arg5;
+- (oneway void)prepareForReuseWithNewSupportedFeatures:(_SFSpeechRecognizerSupportedFeatures *)arg1 clientInfo:(_SFAnalyzerClientInfo *)arg2 analysisContext:(_SFAnalysisContextCodingObject *)arg3 analysisOptions:(_SFAnalysisOptions *)arg4;
+- (oneway void)hello;
+@end
+@protocol _SFXPCLSRAssets
+- (oneway void)getGeoLMRegionIDForLatitude:(double)arg1 longitude:(double)arg2 reply:(void (^)(NSString *))arg3;
+- (oneway void)getContextualRankedContactSourcesForApplication:(NSString *)arg1 taskName:(NSString *)arg2 reply:(void (^)(NSArray *))arg3;
+- (oneway void)getContextualNamedEntitySourcesForApplication:(NSString *)arg1 taskName:(NSString *)arg2 reply:(void (^)(NSArray *))arg3;
+- (oneway void)getModelPropertiesWithReply:(void (^)(_SFModelProperties *))arg1;
+- (oneway void)hello;
+@end

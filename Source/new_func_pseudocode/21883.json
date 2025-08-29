@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize4Prim7releaseEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN9serialize4Prim7releaseEv(serialize::Prim * this)",
+    "pseudocode": "__int64 __fastcall serialize::Prim::release(serialize::Prim *this)\n{\n  __int64 *v2; // x20\n  __int64 *v3; // x21\n  __int64 v4; // t1\n  __int64 result; // x0\n  __int64 (__fastcall *v6)(serialize::Prim *); // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = (__int64 *)*((_QWORD *)this + 5);\n  v3 = (__int64 *)*((_QWORD *)this + 6);\n  if ( v2 == v3 )\n    goto LABEL_4;\n  do\n  {\n    v4 = *v2++;\n    result = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v4 + 16LL))(v4);\n  }\n  while ( v2 != v3 );\n  if ( this )\n  {\nLABEL_4:\n    v6 = *(__int64 (__fastcall **)(serialize::Prim *))(*(_QWORD *)this + 8LL);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v6(this);\n  }\n  return result;\n}"
+}

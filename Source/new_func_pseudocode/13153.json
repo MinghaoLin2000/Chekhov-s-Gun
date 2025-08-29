@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUWarning initWithKind:message:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSUWarning initWithKind:message:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "TSUWarning *__cdecl -[TSUWarning initWithKind:message:](TSUWarning *self, SEL a2, signed __int64 a3, id a4)\n{\n  id v6; // x19\n  TSUWarning *v7; // x0\n  TSUWarning *v8; // x21\n  NSString *v9; // x0\n  NSString *message; // x8\n  objc_super v12; // [xsp+0h] [xbp-30h] BYREF\n\n  v6 = objc_retain(a4);\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___TSUWarning;\n  v7 = -[TSUWarning init](&v12, \"init\");\n  v8 = v7;\n  if ( v7 )\n  {\n    v7->_kind = a3;\n    v9 = (NSString *)objc_msgSend(v6, \"copy\");\n    message = v8->_message;\n    v8->_message = v9;\n    objc_release(message);\n  }\n  objc_release(v6);\n  return v8;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper14ReferenceCountVwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s19ControlCenterHelper14ReferenceCountVwCP(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall initializeBufferWithCopyOfBuffer for ReferenceCount(__int64 *a1, __int64 *a2)\n{\n  __int64 v3; // x0\n  __int64 v4; // x8\n\n  v3 = *a2;\n  v4 = a2[1];\n  *a1 = *a2;\n  a1[1] = v4;\n  swift_retain(v3);\n  return a1;\n}"
+}

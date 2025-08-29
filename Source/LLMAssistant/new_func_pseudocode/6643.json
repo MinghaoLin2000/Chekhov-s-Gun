@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_terminate",
+    "function_argument_number": 0,
+    "function_signature": "_objc_terminate()",
+    "pseudocode": "void __noreturn objc_terminate(void)\n{\n  _objc_terminate();\n}"
+}

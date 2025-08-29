@@ -1,0 +1,6 @@
+{
+    "function_name": "_SCDynamicStoreCopyConsoleUser",
+    "function_argument_number": 3,
+    "function_signature": "_SCDynamicStoreCopyConsoleUser(SCDynamicStoreRef store, uid_t * uid, gid_t * gid)",
+    "pseudocode": "CFStringRef __cdecl SCDynamicStoreCopyConsoleUser(SCDynamicStoreRef store, uid_t *uid, gid_t *gid)\n{\n  return _SCDynamicStoreCopyConsoleUser(store, uid, gid);\n}"
+}

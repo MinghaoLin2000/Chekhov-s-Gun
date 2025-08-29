@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition10ClientInfoV07LoggingC0V24dictationUIInteractionIDSSvg",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition10ClientInfoV07LoggingC0V24dictationUIInteractionIDSSvg()",
+    "pseudocode": "__int64 ClientInfo.LoggingInfo.dictationUIInteractionID.getter()\n{\n  __int64 v0; // x20\n  __int64 v1; // x0\n  __int64 v2; // x0\n\n  v1 = type metadata accessor for ClientInfo.LoggingInfo(0LL);\n  v2 = swift_bridgeObjectRetain(*(_QWORD *)(v0 + *(int *)(v1 + 24) + 8));\n  return sub_100028220(v2);\n}"
+}

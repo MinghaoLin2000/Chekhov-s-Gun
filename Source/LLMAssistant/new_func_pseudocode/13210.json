@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipInflateInputStream setupInflateStream]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipInflateInputStream setupInflateStream](SFUZipInflateInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUZipInflateInputStream setupInflateStream](SFUZipInflateInputStream *self, SEL a2)\n{\n  z_stream_s *p_mStream; // x0\n  __int64 v3; // x0\n\n  self->mStream.next_in = 0LL;\n  p_mStream = &self->mStream;\n  p_mStream->avail_in = 0;\n  p_mStream->zfree = 0LL;\n  p_mStream->opaque = 0LL;\n  p_mStream->zalloc = 0LL;\n  v3 = inflateInit2_(p_mStream, -15, \"1.2.12\", 112);\n  if ( (_DWORD)v3 )\n    +[SFUZipException raise:format:](\n      &OBJC_CLASS___SFUZipException,\n      \"raise:format:\",\n      CFSTR(\"SFUZipInflateError\"),\n      CFSTR(\"inflateInit2() failed: %d\"),\n      v3);\n}"
+}

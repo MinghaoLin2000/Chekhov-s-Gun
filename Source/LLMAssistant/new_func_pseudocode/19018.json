@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController siriViewControllerDidChangeListeningState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController siriViewControllerDidChangeListeningState:](SiriNCAlertViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController siriViewControllerDidChangeListeningState:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3)\n{\n  void *v4; // x20\n  os_log_s *v5; // x20\n  int v6; // [xsp+0h] [xbp-30h] BYREF\n  const char *v7; // [xsp+4h] [xbp-2Ch]\n  __int16 v8; // [xsp+Ch] [xbp-24h]\n  const char *Name; // [xsp+Eh] [xbp-22h]\n\n  v4 = (void *)AFSiriLogContextConnection;\n  if ( os_log_type_enabled(AFSiriLogContextConnection, OS_LOG_TYPE_DEFAULT) )\n  {\n    v5 = objc_retain(v4);\n    v6 = 136315394;\n    v7 = \"-[SiriNCAlertViewController siriViewControllerDidChangeListeningState:]\";\n    v8 = 2080;\n    Name = sel_getName(a2);\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      v5,\n      OS_LOG_TYPE_DEFAULT,\n      \"%s %s - not yet implemented\",\n      (uint8_t *)&v6,\n      0x16u);\n    objc_release(v5);\n  }\n}"
+}

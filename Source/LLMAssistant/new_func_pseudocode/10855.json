@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Descriptor7map_keyEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf10Descriptor7map_keyEv(google::protobuf::Descriptor * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Descriptor::map_key(google::protobuf::Descriptor *this)\n{\n  if ( *(_BYTE *)(*((_QWORD *)this + 4) + 75LL) )\n    return *((_QWORD *)this + 5);\n  else\n    return 0LL;\n}"
+}

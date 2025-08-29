@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_endAccess",
+    "function_argument_number": 0,
+    "function_signature": "_swift_endAccess()",
+    "pseudocode": "__int64 swift_endAccess()\n{\n  return _swift_endAccess();\n}"
+}

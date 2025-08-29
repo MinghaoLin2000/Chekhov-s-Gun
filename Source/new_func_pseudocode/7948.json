@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetCurrentDisplayMode",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetCurrentDisplayMode()",
+    "pseudocode": "__int64 CGSGetCurrentDisplayMode()\n{\n  return _CGSGetCurrentDisplayMode();\n}"
+}

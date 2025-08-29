@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper14ReferenceCountVwst",
+    "function_argument_number": 3,
+    "function_signature": "$s19ControlCenterHelper14ReferenceCountVwst(__int64 result, int a2, int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for ReferenceCount(__int64 result, int a2, int a3)\n{\n  if ( a2 < 0 )\n  {\n    *(_QWORD *)result = a2 ^ 0x80000000;\n    *(_QWORD *)(result + 8) = 0LL;\n    if ( a3 < 0 )\n      *(_BYTE *)(result + 16) = 1;\n  }\n  else\n  {\n    if ( (a3 & 0x80000000) == 0 )\n    {\n      if ( !a2 )\n        return result;\nLABEL_8:\n      *(_QWORD *)result = (unsigned int)(a2 - 1);\n      return result;\n    }\n    *(_BYTE *)(result + 16) = 0;\n    if ( a2 )\n      goto LABEL_8;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore23_NavigationPathModifierVwet",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore23_NavigationPathModifierVwet()",
+    "pseudocode": "// attributes: thunk\n__int64 getEnumTagSinglePayload for _NavigationPathModifier()\n{\n  return _s17ControlCenterCore23_NavigationPathModifierVwet_0();\n}"
+}

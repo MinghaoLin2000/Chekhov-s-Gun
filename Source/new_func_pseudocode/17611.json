@@ -1,0 +1,6 @@
+{
+    "function_name": "_EnterSandbox.cold.1",
+    "function_argument_number": 0,
+    "function_signature": "_EnterSandbox.cold.1()",
+    "pseudocode": "void EnterSandbox_cold_1()\n{\n  __int64 v0; // x2\n  __int64 v1; // x4\n  __int64 v2; // x5\n  __int64 v3; // x6\n  __int64 v4; // x7\n\n  getuid();\n  OUTLINED_FUNCTION_0(\n    (void *)&_mh_execute_header,\n    (os_log_s *)&_os_log_default,\n    v0,\n    \"failed to get passwd entry for uid %u\",\n    v1,\n    v2,\n    v3,\n    v4,\n    0);\n}"
+}

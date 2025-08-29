@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController endMyriadAdvertising]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController endMyriadAdvertising](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController endMyriadAdvertising](SiriNCAlertViewController *self, SEL a2)\n{\n  SiriNCService *v2; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[SiriNCAlertViewController service](self, \"service\"));\n  -[SiriNCService endMyriadAdvertising](v2, \"endMyriadAdvertising\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

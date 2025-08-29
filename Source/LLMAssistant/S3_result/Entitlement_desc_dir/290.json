@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.CoreLocation.agent",
+  "capability": "Allows an application to perform a privileged Mach lookup for the `com.apple.CoreLocation.agent` system service by its global name. This grants a temporary exception to standard sandbox restrictions, enabling direct inter-process communication (IPC) with the CoreLocation agent, which is responsible for managing location services.",
+  "reasoning": "The entitlement name breaks down as follows: `com.apple.security.temporary-exception` indicates a bypass of a security mechanism. `mach-lookup` refers to the ability to find and connect to Mach services, which are fundamental for inter-process communication on macOS. `global-name` specifies that the lookup is for a service registered globally, implying a broader scope than typical sandboxed IPC. Finally, `com.apple.CoreLocation.agent` identifies the specific target service, which is the system daemon handling all location-related requests. Combined, this means the entitlement grants a privileged, temporary bypass to directly connect to the CoreLocation system agent via Mach IPC.",
+  "similar_entitlements": [
+    "com.apple.security.temporary-exception.files.absolute-path.read-write",
+    "com.apple.security.temporary-exception.sb-release-network",
+    "com.apple.security.temporary-exception.mach-register.global-name"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to Type 5 (Access Transparency Consent and Control (TCC) related functions), specifically 'Location: Get GPS or WiFi location information'. The `com.apple.CoreLocation.agent` is the system process responsible for providing all location data, which is a TCC-protected resource. By granting a 'temporary exception' for a 'mach-lookup' to this agent, the entitlement provides a privileged pathway for an application to interact with the core location service. This bypasses standard security restrictions that would normally mediate such interactions, potentially allowing an app to operate outside or circumvent the typical TCC permission flow for location access.",
+  "self_reflection": "I am highly confident in this analysis. The components of the entitlement name clearly indicate a security exception related to inter-process communication with a specific system agent. The `temporary-exception` prefix consistently points to a security bypass. The `mach-lookup.global-name` specifies the mechanism and scope of the bypass, and `com.apple.CoreLocation.agent` unambiguously identifies the target. Since CoreLocation manages TCC-protected location data, the link to sensitive type 5 is direct and strong. The only potential ambiguity is whether the lookup *itself* is the sensitive operation, or if it merely enables subsequent sensitive operations; however, granting a privileged path to a TCC-protected service is inherently sensitive."
+}

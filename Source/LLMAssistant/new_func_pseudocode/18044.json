@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_GetServerInfo",
+    "function_argument_number": 1,
+    "function_signature": "_netfs_GetServerInfo(CFURLRef anURL)",
+    "pseudocode": "__int64 __fastcall netfs_GetServerInfo(CFURLRef anURL, _QWORD *a2, __int64 a3, __int64 a4)\n{\n  __int64 result; // x0\n  __int64 v9; // x0\n  __int64 (__fastcall *v10)(CFURLRef, __int64, __int64, __int64); // x4\n  __int64 v11; // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  result = sub_100008A3C(*a2, anURL);\n  if ( !(_DWORD)result )\n  {\n    v9 = sub_100007BE8(*a2);\n    if ( v9 )\n    {\n      v10 = *(__int64 (__fastcall **)(CFURLRef, __int64, __int64, __int64))(*(_QWORD *)v9 + 40LL);\n      v11 = a2[1];\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return v10(anURL, v11, a3, a4);\n    }\n    else\n    {\n      return 45LL;\n    }\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSIndexSet tsu_indexAtPosition:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSIndexSet tsu_indexAtPosition:](NSIndexSet * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSIndexSet tsu_indexAtPosition:](NSIndexSet *self, SEL a2, unsigned __int64 a3)\n{\n  unsigned __int64 v5; // x19\n  _QWORD v7[7]; // [xsp+8h] [xbp-98h] BYREF\n  _QWORD v8[4]; // [xsp+40h] [xbp-60h] BYREF\n  __int64 v9; // [xsp+60h] [xbp-40h] BYREF\n  __int64 *v10; // [xsp+68h] [xbp-38h]\n  __int64 v11; // [xsp+70h] [xbp-30h]\n  __int64 v12; // [xsp+78h] [xbp-28h]\n\n  v9 = 0LL;\n  v10 = &v9;\n  v11 = 0x2020000000LL;\n  v12 = 0x7FFFFFFFFFFFFFFFLL;\n  if ( -[NSIndexSet count](self, \"count\") > a3 )\n  {\n    v8[0] = 0LL;\n    v8[1] = v8;\n    v8[2] = 0x2020000000LL;\n    v8[3] = 0LL;\n    v7[0] = _NSConcreteStackBlock;\n    v7[1] = 3254779904LL;\n    v7[2] = sub_1001449A4;\n    v7[3] = &unk_1001DE0E8;\n    v7[4] = v8;\n    v7[5] = &v9;\n    v7[6] = a3;\n    -[NSIndexSet enumerateIndexesUsingBlock:](self, \"enumerateIndexesUsingBlock:\", v7);\n    _Block_object_dispose(v8, 8);\n  }\n  v5 = v10[3];\n  _Block_object_dispose(&v9, 8);\n  return v5;\n}"
+}

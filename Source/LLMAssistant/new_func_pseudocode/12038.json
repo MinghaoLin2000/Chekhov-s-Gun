@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21FastInt32ToBufferLeftEiPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf21FastInt32ToBufferLeftEiPc(google::protobuf * this, int a2, char * a3)",
+    "pseudocode": "_BYTE *__fastcall google::protobuf::FastInt32ToBufferLeft(google::protobuf *this, _BYTE *a2, char *a3)\n{\n  if ( ((unsigned int)this & 0x80000000) != 0 )\n  {\n    *a2++ = 45;\n    this = (google::protobuf *)(unsigned int)-(int)this;\n  }\n  return google::protobuf::FastUInt32ToBufferLeft(this, a2, a3);\n}"
+}

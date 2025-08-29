@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithIdentifier:title:icon:preferencePaneIdentifier:preferencePaneRevealKey:usageKeys:instructionsFormat:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithIdentifier:title:icon:preferencePaneIdentifier:preferencePaneRevealKey:usageKeys:instructionsFormat:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithIdentifier_title_icon_preferencePaneIdentifier_preferencePaneRevealKey_usageKeys_instructionsFormat_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"initWithIdentifier:title:icon:preferencePaneIdentifier:preferencePaneRevealKey:usageKeys:instructionsFormat:\");\n}"
+}

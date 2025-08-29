@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetWindowTags",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetWindowTags()",
+    "pseudocode": "__int64 CGSSetWindowTags()\n{\n  return _CGSSetWindowTags();\n}"
+}

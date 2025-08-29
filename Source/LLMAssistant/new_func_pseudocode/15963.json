@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpEndpointRoleToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpEndpointRoleToString(unsigned int a1)",
+    "pseudocode": "const char *__fastcall uarpEndpointRoleToString(unsigned int a1)\n{\n  if ( a1 > 2 )\n    return \"<unknown>\";\n  else\n    return (&off_1000247C0)[a1];\n}"
+}

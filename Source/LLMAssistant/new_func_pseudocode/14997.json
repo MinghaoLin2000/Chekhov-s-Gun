@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _refreshAfterUserWakeUp]",
+    "function_argument_number": 2,
+    "function_signature": "-[ATXHeuristicJSEnv _refreshAfterUserWakeUp](ATXHeuristicJSEnv * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv _refreshAfterUserWakeUp](ATXHeuristicJSEnv *self, SEL a2)\n{\n  id v3; // x20\n  void *v4; // x21\n  void *v5; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_alloc((Class)&OBJC_CLASS___ATXInformationHeuristicRefreshContextChangeTrigger);\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[_CDContextQueries keyPathForFirstWakeupStatus](\n           &OBJC_CLASS____CDContextQueries,\n           \"keyPathForFirstWakeupStatus\"));\n  v5 = objc_msgSend(\n         v3,\n         \"initWithCDContextualKeyPath:equalToValue:withMinimumDurationInPreviousState:\",\n         v4,\n         &off_10002C190,\n         14400.0);\n  objc_release(v4);\n  -[NSMutableSet addObject:](self->_currentRefreshTriggerBuffer, \"addObject:\", v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

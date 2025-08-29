@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$queryProperties:accessoryID:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$queryProperties:accessoryID:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_queryProperties_accessoryID_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"queryProperties:accessoryID:\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Reflection7GetEnumERKNS0_7MessageEPKNS0_15FieldDescriptorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf10Reflection7GetEnumERKNS0_7MessageEPKNS0_15FieldDescriptorE(google::protobuf::Reflection * this, const google::protobuf::Message * a2, const google::protobuf::FieldDescriptor * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Reflection::GetEnum(\n        google::protobuf::Reflection *this,\n        const google::protobuf::Message *a2,\n        const google::protobuf::FieldDescriptor *a3)\n{\n  __int64 EnumValue; // x20\n  google::protobuf::EnumDescriptor *v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  EnumValue = google::protobuf::Reflection::GetEnumValue(this, a2, a3);\n  v5 = (google::protobuf::EnumDescriptor *)google::protobuf::FieldDescriptor::enum_type(a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return google::protobuf::EnumDescriptor::FindValueByNumberCreatingIfUnknown(v5, EnumValue);\n}"
+}

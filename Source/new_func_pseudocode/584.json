@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCloudViewController setDeviceInfo:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsCloudViewController setDeviceInfo:](DeviceSettingsCloudViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCloudViewController setDeviceInfo:](\n        DeviceSettingsCloudViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___DeviceSettingsCloudViewController;\n  -[DeviceViewController setDeviceInfo:](&v4, \"setDeviceInfo:\", a3);\n  -[DeviceSettingsCloudViewController updateMessage](self, \"updateMessage\");\n}"
+}

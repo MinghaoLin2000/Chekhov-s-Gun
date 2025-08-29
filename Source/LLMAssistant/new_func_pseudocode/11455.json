@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf25EncodedDescriptorDatabaseC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf25EncodedDescriptorDatabaseC1Ev(google::protobuf::EncodedDescriptorDatabase * this)",
+    "pseudocode": "// attributes: thunk\ngoogle::protobuf::EncodedDescriptorDatabase *__fastcall google::protobuf::EncodedDescriptorDatabase::EncodedDescriptorDatabase(\n        google::protobuf::EncodedDescriptorDatabase *this)\n{\n  return __ZN6google8protobuf25EncodedDescriptorDatabaseC2Ev(this);\n}"
+}

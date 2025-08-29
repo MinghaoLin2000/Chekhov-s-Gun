@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper13AuthorizationVwcp",
+    "function_argument_number": 3,
+    "function_signature": "$s19ControlCenterHelper13AuthorizationVwcp(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall initializeWithCopy for Authorization(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // x20\n  __int64 v5; // x8\n  __int64 v6; // x21\n  __int64 v7; // x22\n  __int64 v8; // x23\n  void (__fastcall *v9)(__int64, __int64, __int64); // x24\n\n  v4 = *(_QWORD *)(a2 + 8);\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  *(_QWORD *)(a1 + 8) = v4;\n  *(_DWORD *)(a1 + 16) = *(_DWORD *)(a2 + 16);\n  v5 = *(int *)(a3 + 24);\n  v6 = a1 + v5;\n  v7 = a2 + v5;\n  v8 = sub_10006EE70(0LL);\n  v9 = *(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)(v8 - 8) + 16LL);\n  swift_bridgeObjectRetain(v4);\n  v9(v6, v7, v8);\n  return a1;\n}"
+}

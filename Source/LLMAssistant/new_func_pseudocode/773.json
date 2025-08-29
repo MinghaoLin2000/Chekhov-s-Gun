@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsInfoViewController advancedContainerView]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsInfoViewController advancedContainerView](DeviceSettingsInfoViewController * self, SEL a2)",
+    "pseudocode": "NSView *__cdecl -[DeviceSettingsInfoViewController advancedContainerView](\n        DeviceSettingsInfoViewController *self,\n        SEL a2)\n{\n  id WeakRetained; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  WeakRetained = objc_loadWeakRetained((id *)&self->_advancedContainerView);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSView *)objc_autoreleaseReturnValue(WeakRetained);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$_replyToSetUbiquityRequest:withError:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$_replyToSetUbiquityRequest:withError:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend__replyToSetUbiquityRequest_withError_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"_replyToSetUbiquityRequest:withError:\");\n}"
+}

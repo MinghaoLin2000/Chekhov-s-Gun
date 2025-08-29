@@ -1,0 +1,6 @@
+{
+    "function_name": "_uncache_regular_file",
+    "function_argument_number": 1,
+    "function_signature": "_uncache_regular_file(int a1)",
+    "pseudocode": "__int64 __fastcall uncache_regular_file(int a1, size_t a2)\n{\n  void *v3; // x0\n  void *v4; // x20\n  os_log_s *v6; // x21\n  uint8_t v7[16]; // [xsp+0h] [xbp-30h] BYREF\n\n  if ( !a2 )\n    return 0LL;\n  v3 = mmap(0LL, a2, 1, 1, a1, 0LL);\n  if ( v3 == (void *)-1LL )\n  {\n    sub_1000086E4();\n  }\n  else\n  {\n    v4 = v3;\n    if ( msync(v3, a2, 18) != -1 )\n    {\n      munmap(v4, a2);\n      return 0LL;\n    }\n    v6 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)_MXMGetLog());\n    if ( os_log_type_enabled(v6, OS_LOG_TYPE_ERROR) )\n    {\n      *(_WORD *)v7 = 0;\n      _os_log_impl((void *)&_mh_execute_header, v6, OS_LOG_TYPE_ERROR, \"Error while trying to uncache: msync\", v7, 2u);\n    }\n    objc_release(v6);\n    munmap(v4, a2);\n  }\n  return 1LL;\n}"
+}

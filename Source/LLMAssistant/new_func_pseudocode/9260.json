@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPPackageWriterComponentWriteChannel initWithArchiveWriter:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPPackageWriterComponentWriteChannel initWithArchiveWriter:](int a1, int a2, id a3)",
+    "pseudocode": "TSPPackageWriterComponentWriteChannel *__cdecl -[TSPPackageWriterComponentWriteChannel initWithArchiveWriter:](\n        TSPPackageWriterComponentWriteChannel *self,\n        SEL a2,\n        id a3)\n{\n  id v5; // x19\n  TSPPackageWriterComponentWriteChannel *v6; // x0\n  TSPPackageWriterComponentWriteChannel *v7; // x21\n  objc_super v9; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___TSPPackageWriterComponentWriteChannel;\n  v6 = -[TSPPackageWriterComponentWriteChannel init](&v9, \"init\");\n  v7 = v6;\n  if ( v6 )\n    objc_storeStrong((id *)&v6->_archiveWriter, a3);\n  objc_release(v5);\n  return v7;\n}"
+}

@@ -1,0 +1,6 @@
+_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV05hasNobC17AfterRespeakCheckSbvpfi
+// attributes: thunk
+__int64 variable initialization expression of VoiceCommandDebugInfoAggregated.hasNoVoiceCommandAfterRespeakCheck()
+{
+  return _s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV05hasNobC17AfterRespeakCheckSbvpfi_0();
+}

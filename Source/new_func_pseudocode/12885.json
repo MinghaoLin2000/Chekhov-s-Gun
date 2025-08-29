@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSULogCreateCategory",
+    "function_argument_number": 1,
+    "function_signature": "_TSULogCreateCategory(char * category)",
+    "pseudocode": "os_log_t __fastcall TSULogCreateCategory(char *category)\n{\n  os_log_t v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v1 = os_log_create(\"com.apple.iwork\", category);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v1);\n}"
+}

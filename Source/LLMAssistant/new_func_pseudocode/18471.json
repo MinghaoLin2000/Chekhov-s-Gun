@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper5AlertCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper5AlertCMa()",
+    "pseudocode": "__int64 type metadata accessor for Alert()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelper5Alert);\n}"
+}

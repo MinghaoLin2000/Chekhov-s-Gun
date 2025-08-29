@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker setPc_session:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionRequestTracker setPc_session:](MediaConversionRequestTracker * self, SEL a2, pc_session * a3)",
+    "pseudocode": "void __cdecl -[MediaConversionRequestTracker setPc_session:](\n        MediaConversionRequestTracker *self,\n        SEL a2,\n        pc_session *a3)\n{\n  self->_pc_session = a3;\n}"
+}

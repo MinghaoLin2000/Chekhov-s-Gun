@@ -1,0 +1,6 @@
+{
+    "function_name": "_audit_token_to_pid",
+    "function_argument_number": 1,
+    "function_signature": "_audit_token_to_pid(audit_token_t * atoken)",
+    "pseudocode": "pid_t __cdecl audit_token_to_pid(audit_token_t *atoken)\n{\n  return _audit_token_to_pid(atoken);\n}"
+}

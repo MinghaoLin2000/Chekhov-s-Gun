@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Int64Value12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf10Int64Value12ByteSizeLongEv(google::protobuf::Int64Value * this)",
+    "pseudocode": "unsigned __int64 __fastcall google::protobuf::Int64Value::ByteSizeLong(google::protobuf::Int64Value *this)\n{\n  __int64 v1; // x8\n  unsigned __int64 v2; // x9\n  unsigned __int64 v3; // x1\n\n  v1 = *((_QWORD *)this + 2);\n  v2 = (9 * (__clz(v1 | 1) ^ 0x3F) + 73) >> 6;\n  if ( v1 )\n    v3 = v2 + 1;\n  else\n    v3 = 0LL;\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v3, (char *)this + 24);\n  *((_DWORD *)this + 6) = v3;\n  return v3;\n}"
+}

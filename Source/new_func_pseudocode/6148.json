@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionQueueEntry .cxx_destruct](MediaConversionQueueEntry * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MediaConversionQueueEntry .cxx_destruct](MediaConversionQueueEntry *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_transaction, 0LL);\n  objc_storeStrong((id *)&self->_temporaryDestinationURLCollection, 0LL);\n  objc_storeStrong((id *)&self->_sourceURLCollection, 0LL);\n  objc_storeStrong((id *)&self->_videoConversionTask, 0LL);\n  objc_storeStrong((id *)&self->_temporaryFilesParentDirectoryURL, 0LL);\n  objc_storeStrong((id *)&self->_initialRequestConversionOptions, 0LL);\n  objc_storeStrong((id *)&self->_initialRequestIdentifier, 0LL);\n  objc_storeStrong((id *)&self->_identifier, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_clientRequests, 0LL);\n}"
+}

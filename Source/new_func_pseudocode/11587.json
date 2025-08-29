@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf5Mixin8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf5Mixin8CopyFromERKNS0_7MessageE(google::protobuf::Mixin * this, const google::protobuf::Message * a2)",
+    "pseudocode": "google::protobuf::Mixin *__fastcall google::protobuf::Mixin::CopyFrom(\n        google::protobuf::Mixin *this,\n        const google::protobuf::Message *a2)\n{\n  __int64 v2; // x30\n  google::protobuf::Mixin *v4; // x20\n\n  if ( a2 != this )\n  {\n    v4 = this;\n    google::protobuf::Mixin::Clear(this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (google::protobuf::Mixin *)google::protobuf::Mixin::MergeFrom(v4, a2);\n  }\n  return this;\n}"
+}

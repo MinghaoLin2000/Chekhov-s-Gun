@@ -1,0 +1,6 @@
+{
+    "function_name": "_kevent",
+    "function_argument_number": 6,
+    "function_signature": "_kevent(int kq, const kevent * changelist, int nchanges, kevent * eventlist, int nevents, const timespec * timeout)",
+    "pseudocode": "int __cdecl kevent(\n        int kq,\n        const kevent *changelist,\n        int nchanges,\n        kevent *eventlist,\n        int nevents,\n        const timespec *timeout)\n{\n  return _kevent(kq, changelist, nchanges, eventlist, nevents, timeout);\n}"
+}

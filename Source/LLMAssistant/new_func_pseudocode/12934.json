@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipEntry isEncrypted]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipEntry isEncrypted](SFUZipEntry * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SFUZipEntry isEncrypted](SFUZipEntry *self, SEL a2)\n{\n  return self->mCryptoKey != 0LL;\n}"
+}

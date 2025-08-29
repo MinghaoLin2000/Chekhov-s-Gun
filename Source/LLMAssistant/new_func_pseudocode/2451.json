@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsAdvancedViewController viewDidLoad]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsAdvancedViewController viewDidLoad](DeviceSettingsAdvancedViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsAdvancedViewController viewDidLoad](DeviceSettingsAdvancedViewController *self, SEL a2)\n{\n  id v3; // x20\n  NSTextField *v4; // x21\n  objc_super v5; // [xsp+0h] [xbp-30h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceSettingsAdvancedViewController;\n  -[DeviceSettingsViewController viewDidLoad](&v5, \"viewDidLoad\");\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[DeviceViewController deviceStringForStringParameterizedKey:](\n           self,\n           \"deviceStringForStringParameterizedKey:\",\n           CFSTR(\"Advanced explanation %@\")));\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsAdvancedViewController advancedSubtitleTextField](self, \"advancedSubtitleTextField\"));\n  -[NSTextField setStringValue:](v4, \"setStringValue:\", v3);\n  objc_release(v4);\n  objc_release(v3);\n  -[DeviceSettingsAdvancedViewController loadUIFromPrefs](self, \"loadUIFromPrefs\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileOutputStream closeLocalStream]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileOutputStream closeLocalStream](SFUFileOutputStream * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SFUFileOutputStream closeLocalStream](SFUFileOutputStream *self, SEL a2)\n{\n  -[SFUFileOutputStream close](self, \"close\");\n  return 0LL;\n}"
+}

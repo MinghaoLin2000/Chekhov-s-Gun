@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSURangeList stringValueForRangeVector:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSURangeList stringValueForRangeVector:](id a1, SEL a2, const void * a3)",
+    "pseudocode": "id __cdecl +[TSURangeList stringValueForRangeVector:](id a1, SEL a2, const void *a3)\n{\n  NSMutableString *v4; // x20\n  __int64 v5; // x8\n  __int64 v6; // x22\n  unsigned __int64 v7; // x23\n\n  v4 = +[NSMutableString stringWithString:](&OBJC_CLASS___NSMutableString, \"stringWithString:\", CFSTR(\"[\"));\n  v5 = *(_QWORD *)a3;\n  if ( *((_QWORD *)a3 + 1) != *(_QWORD *)a3 )\n  {\n    v6 = 0LL;\n    v7 = 0LL;\n    do\n    {\n      if ( v7 )\n      {\n        -[NSMutableString appendString:](v4, \"appendString:\", CFSTR(\",\"));\n        v5 = *(_QWORD *)a3;\n      }\n      -[NSMutableString appendString:](v4, \"appendString:\", NSStringFromRange(*(NSRange *)(v5 + v6)));\n      ++v7;\n      v5 = *(_QWORD *)a3;\n      v6 += 16LL;\n    }\n    while ( v7 < (__int64)(*((_QWORD *)a3 + 1) - *(_QWORD *)a3) >> 4 );\n  }\n  -[NSMutableString appendString:](v4, \"appendString:\", CFSTR(\"]\"));\n  return v4;\n}"
+}

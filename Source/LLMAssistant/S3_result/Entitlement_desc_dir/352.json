@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.locationd.status",
+  "capability": "Allows an application to query or monitor the operational status of the `locationd` daemon or the overall state of system location services. This may include determining if location services are enabled system-wide, the availability or activity of specific location providers (e.g., GPS, Wi-Fi), or the general health/status of the location subsystem.",
+  "reasoning": "The entitlement name `com.apple.locationd.status` clearly indicates interaction with `locationd`, which is the core daemon responsible for managing all location services on Apple platforms. The suffix `.status` implies the ability to retrieve information about the state or configuration of this daemon or the services it manages, rather than directly requesting location coordinates.",
+  "similar_entitlements": [
+    "com.apple.developer.location.push"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement falls under Type 5 (Access Transparency Consent and Control (TCC) related functions) because accessing information about the status of system-wide location services directly relates to user privacy and the TCC framework. While it may not grant direct access to a user's precise location, knowing the operational status of `locationd` or whether system-wide location services are enabled reveals sensitive information about the user's privacy settings and the system's ability to track location. This information is intrinsically linked to the 'Location' category protected by TCC.",
+  "self_reflection": "I am confident in this assessment. The name `locationd.status` strongly points to querying the state of the location daemon. Given that location is a highly sensitive user privacy domain managed by TCC, any entitlement interacting with its core daemon's status is almost certainly sensitive and falls under TCC-related functions. The main ambiguity might be the exact granularity of 'status' information accessible, but even basic status (e.g., 'location services enabled globally?') would be sensitive. The prediction could be wrong if 'status' implies only non-sensitive, low-level daemon uptime, but this is unlikely for a dedicated Apple entitlement."
+}

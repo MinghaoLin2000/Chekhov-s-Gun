@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController incrementDeviceStringMode]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceHeaderViewController incrementDeviceStringMode](DeviceHeaderViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceHeaderViewController incrementDeviceStringMode](DeviceHeaderViewController *self, SEL a2)\n{\n  __int64 v3; // x20\n  id v4; // x21\n  void *v5; // x22\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v3 = -[DeviceHeaderViewController deviceDetailsStringMode](self, \"deviceDetailsStringMode\");\n  v4 = 0LL;\n  do\n  {\n    v5 = v4;\n    v3 = (v3 + 1) % 5;\n    v4 = objc_retainAutoreleasedReturnValue(-[DeviceHeaderViewController deviceDetailsStringForMode:](self, \"deviceDetailsStringForMode:\", v3));\n    objc_release(v5);\n  }\n  while ( v3 != -[DeviceHeaderViewController deviceDetailsStringMode](self, \"deviceDetailsStringMode\")\n       && !objc_msgSend(v4, \"length\") );\n  -[DeviceHeaderViewController setDeviceDetailsStringMode:](self, \"setDeviceDetailsStringMode:\", v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

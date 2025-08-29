@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLReference setMustStopAccessingURL:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceResourceURLReference setMustStopAccessingURL:](PAMediaConversionServiceResourceURLReference * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[PAMediaConversionServiceResourceURLReference setMustStopAccessingURL:](\n        PAMediaConversionServiceResourceURLReference *self,\n        SEL a2,\n        bool a3)\n{\n  self->_mustStopAccessingURL = a3;\n}"
+}

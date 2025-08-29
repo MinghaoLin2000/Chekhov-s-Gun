@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _allHeuristicNames]",
+    "function_argument_number": 2,
+    "function_signature": "-[ATXHeuristicJSEnv _allHeuristicNames](ATXHeuristicJSEnv * self, SEL a2)",
+    "pseudocode": "id __cdecl -[ATXHeuristicJSEnv _allHeuristicNames](ATXHeuristicJSEnv *self, SEL a2)\n{\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_1000117B0;\n  block[3] = &unk_100029690;\n  block[4] = self;\n  if ( qword_100032380 != -1 )\n    dispatch_once(&qword_100032380, block);\n  return objc_retainAutoreleaseReturnValue((id)qword_100032378);\n}"
+}

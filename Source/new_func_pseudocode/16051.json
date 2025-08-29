@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetPayloadTag",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointAssetPayloadTag(__int64 a1, __int64 a2, _DWORD * a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetPayloadTag(__int64 a1, __int64 a2, _DWORD *a3)\n{\n  __int64 result; // x0\n\n  result = 30LL;\n  if ( a1 && a2 && a3 )\n  {\n    if ( *(_DWORD *)(a2 + 452) == -1 )\n    {\n      return 32LL;\n    }\n    else\n    {\n      result = 0LL;\n      *a3 = *(_DWORD *)(a2 + 468);\n    }\n  }\n  return result;\n}"
+}

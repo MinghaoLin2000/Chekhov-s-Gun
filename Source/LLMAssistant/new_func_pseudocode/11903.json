@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf7Message11GetTypeNameEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf7Message11GetTypeNameEv(google::protobuf::Message * this)",
+    "pseudocode": "__int64 __usercall google::protobuf::Message::GetTypeName@<X0>(google::protobuf::Message *this@<X0>, _QWORD *a2@<X8>)\n{\n  __int64 result; // x0\n  __int128 *v4; // x8\n  __int128 v5; // q0\n  void *v6; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  result = (*(__int64 (__fastcall **)(google::protobuf::Message *))(*(_QWORD *)this + 152LL))(this);\n  v4 = *(__int128 **)(result + 8);\n  if ( *((char *)v4 + 23) < 0 )\n  {\n    v6 = *(void **)v4;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10007A474(a2, v6);\n  }\n  else\n  {\n    v5 = *v4;\n    a2[2] = *((_QWORD *)v4 + 2);\n    *(_OWORD *)a2 = v5;\n  }\n  return result;\n}"
+}

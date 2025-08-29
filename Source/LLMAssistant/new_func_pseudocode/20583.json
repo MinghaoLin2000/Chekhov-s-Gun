@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFObjectGetValue",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFObjectGetValue(CGPDFObjectRef object, CGPDFObjectType type, void * value)",
+    "pseudocode": "bool __cdecl CGPDFObjectGetValue(CGPDFObjectRef object, CGPDFObjectType type, void *value)\n{\n  return _CGPDFObjectGetValue(object, type, value);\n}"
+}

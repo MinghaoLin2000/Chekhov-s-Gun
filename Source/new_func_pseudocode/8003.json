@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionCommit",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionCommit()",
+    "pseudocode": "__int64 __fastcall SLSTransactionCommit()\n{\n  return _SLSTransactionCommit();\n}"
+}

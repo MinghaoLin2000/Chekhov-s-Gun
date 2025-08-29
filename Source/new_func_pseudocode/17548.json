@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CGPDFPageImpl getIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[CGPDFPageImpl getIdentifier:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[CGPDFPageImpl getIdentifier:](CGPDFPageImpl *self, SEL a2, id a3)\n{\n  id v4; // x0\n  NSOperationQueue *requestQueue; // x20\n  id v6; // x19\n  _QWORD v7[5]; // [xsp+0h] [xbp-40h] BYREF\n  id v8; // [xsp+28h] [xbp-18h]\n\n  v4 = objc_retain(a3);\n  requestQueue = self->_requestQueue;\n  v7[0] = _NSConcreteStackBlock;\n  v7[1] = 3254779904LL;\n  v7[2] = __31__CGPDFPageImpl_getIdentifier___block_invoke;\n  v7[3] = &__block_descriptor_48_ea8_32s40bs_e5_v8__0l;\n  v7[4] = self;\n  v8 = v4;\n  v6 = objc_retain(v4);\n  -[NSOperationQueue addOperationWithBlock:](requestQueue, \"addOperationWithBlock:\", v7);\n  objc_release(v8);\n  objc_release(v6);\n}"
+}

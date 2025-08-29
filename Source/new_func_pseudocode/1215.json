@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController fromSecurityScopedBookmarkURL]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController fromSecurityScopedBookmarkURL](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "NSURL *__cdecl -[DeviceSettingsPhotosViewController fromSecurityScopedBookmarkURL](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2)\n{\n  return self->_fromSecurityScopedBookmarkURL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate _handleSetFont:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ECTIHelperDelegate _handleSetFont:](int a1, int a2, xpc_object_t xdict)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate _handleSetFont:](ECTIHelperDelegate *self, SEL a2, id a3)\n{\n  const UInt8 *data; // x0\n  const __CFData *v5; // x0\n  __int64 v6; // x0\n  const void *v7; // x20\n  size_t length; // [xsp+8h] [xbp-18h] BYREF\n\n  length = 0LL;\n  data = (const UInt8 *)xpc_dictionary_get_data(a3, \"font\", &length);\n  if ( data )\n  {\n    v5 = CFDataCreate(0LL, data, length);\n    if ( v5 )\n    {\n      v6 = sub_100004538(v5);\n      if ( v6 )\n      {\n        v7 = (const void *)v6;\n        -[NSTextField setFont:](self->_textField, \"setFont:\", v6);\n        CFRelease(v7);\n      }\n    }\n  }\n}"
+}

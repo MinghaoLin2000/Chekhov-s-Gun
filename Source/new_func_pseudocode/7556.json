@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV4hash4intoys6HasherVz_tF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV4hash4intoys6HasherVz_tF(__int64 a2, __int64 a1)",
+    "pseudocode": "__int64 __fastcall CGSWindow.hash(into:)(__int64 a1, __int64 a2)\n{\n  return sub_10001D170(a2);\n}"
+}

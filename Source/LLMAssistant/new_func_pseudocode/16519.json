@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer assetTypeString:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer assetTypeString:](iAUPServer * self, SEL a2, int a3)",
+    "pseudocode": "char *__cdecl -[iAUPServer assetTypeString:](iAUPServer *self, SEL a2, int a3)\n{\n  if ( (unsigned int)a3 > 2 )\n    return \"unknown\";\n  else\n    return off_1000318C8[a3];\n}"
+}

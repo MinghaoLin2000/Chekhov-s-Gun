@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_rethrow",
+    "function_argument_number": 0,
+    "function_signature": "___cxa_rethrow()",
+    "pseudocode": "void __noreturn __cxa_rethrow(void)\n{\n  ___cxa_rethrow();\n}"
+}

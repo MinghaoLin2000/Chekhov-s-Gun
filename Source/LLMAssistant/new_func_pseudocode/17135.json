@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceListener _xpcServicesByConnection]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMActionLoaderServiceListener _xpcServicesByConnection](AMActionLoaderServiceListener * self, SEL a2)",
+    "pseudocode": "NSMapTable *__cdecl -[AMActionLoaderServiceListener _xpcServicesByConnection](\n        AMActionLoaderServiceListener *self,\n        SEL a2)\n{\n  NSMapTable *xpcServicesByConnection; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  os_unfair_lock_assert_owner(&self->__xpcServicesLock);\n  xpcServicesByConnection = self->__xpcServicesByConnection;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(xpcServicesByConnection);\n}"
+}

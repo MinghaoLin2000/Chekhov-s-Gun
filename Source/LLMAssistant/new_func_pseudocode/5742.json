@@ -1,0 +1,6 @@
+{
+    "function_name": "_TISUpdateFnUsageType",
+    "function_argument_number": 0,
+    "function_signature": "_TISUpdateFnUsageType()",
+    "pseudocode": "__int64 TISUpdateFnUsageType()\n{\n  return _TISUpdateFnUsageType();\n}"
+}

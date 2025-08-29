@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection makeEARSpeechRecognizerWithSupportedFeatures:clientInfo:analysisContext:analysisOptions:sandboxExtensions:reply:]",
+    "function_argument_number": 8,
+    "function_signature": "-[LSRConnection makeEARSpeechRecognizerWithSupportedFeatures:clientInfo:analysisContext:analysisOptions:sandboxExtensions:reply:](LSRConnection * self, SEL a2, id a3, id a4, id a5, id a6, id a7, id a8)",
+    "pseudocode": "void __cdecl -[LSRConnection makeEARSpeechRecognizerWithSupportedFeatures:clientInfo:analysisContext:analysisOptions:sandboxExtensions:reply:](\n        LSRConnection *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5,\n        id a6,\n        id a7,\n        id a8)\n{\n  -[EARInterface makeEARSpeechRecognizerWithSupportedFeatures:clientInfo:analysisContext:analysisOptions:sandboxExtensions:reply:](\n    self->_earInterface,\n    \"makeEARSpeechRecognizerWithSupportedFeatures:clientInfo:analysisContext:analysisOptions:sandboxExtensions:reply:\",\n    a3,\n    a4,\n    a5,\n    a6,\n    a7,\n    a8);\n}"
+}

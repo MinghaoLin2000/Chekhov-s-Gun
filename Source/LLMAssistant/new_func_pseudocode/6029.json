@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceSetCreationDateImageMetadataPolicy creationDate]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceSetCreationDateImageMetadataPolicy creationDate](PAMediaConversionServiceSetCreationDateImageMetadataPolicy * self, SEL a2)",
+    "pseudocode": "NSDate *__cdecl -[PAMediaConversionServiceSetCreationDateImageMetadataPolicy creationDate](\n        PAMediaConversionServiceSetCreationDateImageMetadataPolicy *self,\n        SEL a2)\n{\n  return (NSDate *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

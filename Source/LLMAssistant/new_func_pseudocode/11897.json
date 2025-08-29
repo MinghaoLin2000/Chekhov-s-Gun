@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal24InitProtobufDefaultsSlowEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal24InitProtobufDefaultsSlowEv(google::protobuf::internal * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::InitProtobufDefaultsSlow(google::protobuf::internal *this)\n{\n  const void *v1; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( (atomic_load_explicit((atomic_uchar *volatile)&qword_1001F7D48, memory_order_acquire) & 1) == 0\n    && __cxa_guard_acquire(&qword_1001F7D48) )\n  {\n    google::protobuf::internal::fixed_address_empty_string = 0LL;\n    qword_1001F9EE8 = 0LL;\n    unk_1001F9EF0 = 0LL;\n    google::protobuf::internal::OnShutdownRun(\n      (google::protobuf::internal *)google::protobuf::internal::DestroyString,\n      (void (__fastcall *)(const void *))&google::protobuf::internal::fixed_address_empty_string,\n      v1);\n    atomic_store(1u, (unsigned __int8 *)google::protobuf::internal::init_protobuf_defaults_state);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    __cxa_guard_release(&qword_1001F7D48);\n  }\n}"
+}

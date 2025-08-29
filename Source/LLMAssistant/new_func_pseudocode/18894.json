@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService _handleSpace]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCService _handleSpace](SiriNCService * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SiriNCService _handleSpace](SiriNCService *self, SEL a2)\n{\n  QLPreviewPanel *v2; // x20\n  unsigned int v3; // w19\n\n  if ( +[QLPreviewPanel sharedPreviewPanelExists](&OBJC_CLASS___QLPreviewPanel, \"sharedPreviewPanelExists\") )\n  {\n    v2 = objc_retainAutoreleasedReturnValue(+[QLPreviewPanel sharedPreviewPanel](&OBJC_CLASS___QLPreviewPanel, \"sharedPreviewPanel\"));\n    v3 = (unsigned int)-[QLPreviewPanel isVisible](v2, \"isVisible\");\n    if ( v3 )\n      -[QLPreviewPanel close](v2, \"close\");\n    objc_release(v2);\n  }\n  else\n  {\n    LOBYTE(v3) = 0;\n  }\n  return v3;\n}"
+}

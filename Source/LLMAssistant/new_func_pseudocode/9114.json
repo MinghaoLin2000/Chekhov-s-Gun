@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPAVAssetResourceLoaderDelegate _provideContentInformationToLoadingRequest:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPAVAssetResourceLoaderDelegate _provideContentInformationToLoadingRequest:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSPAVAssetResourceLoaderDelegate _provideContentInformationToLoadingRequest:](\n        TSPAVAssetResourceLoaderDelegate *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x0\n  dispatch_queue_s *requestHandlingQueue; // x20\n  id v6; // x19\n  _QWORD v7[4]; // [xsp+0h] [xbp-40h] BYREF\n  id v8; // [xsp+20h] [xbp-20h]\n  TSPAVAssetResourceLoaderDelegate *v9; // [xsp+28h] [xbp-18h]\n\n  v4 = objc_retain(a3);\n  requestHandlingQueue = (dispatch_queue_s *)self->_requestHandlingQueue;\n  v7[0] = _NSConcreteStackBlock;\n  v7[1] = 3254779904LL;\n  v7[2] = sub_10000CFE4;\n  v7[3] = &unk_1001D1228;\n  v8 = v4;\n  v9 = self;\n  v6 = objc_retain(v4);\n  dispatch_async(requestHandlingQueue, v7);\n  objc_release(v8);\n  objc_release(v6);\n}"
+}

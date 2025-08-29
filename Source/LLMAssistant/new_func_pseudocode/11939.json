@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11MessageLite14AppendToStringEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf11MessageLite14AppendToStringEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE(__int64 a1, __int64 a2)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::MessageLite::AppendToString(__int64 a1, __int64 a2)\n{\n  return google::protobuf::MessageLite::AppendPartialToString(a1, a2);\n}"
+}

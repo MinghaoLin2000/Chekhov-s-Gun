@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetTagIsValid",
+    "function_argument_number": 1,
+    "function_signature": "_uarpAssetTagIsValid(_BYTE * a1)",
+    "pseudocode": "bool __fastcall uarpAssetTagIsValid(_BYTE *a1)\n{\n  return *a1 || a1[1] || a1[2] || a1[3];\n}"
+}

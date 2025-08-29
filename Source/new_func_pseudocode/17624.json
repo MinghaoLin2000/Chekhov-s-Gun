@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentCopyInfoDictionary",
+    "function_argument_number": 0,
+    "function_signature": "_CGPDFDocumentCopyInfoDictionary()",
+    "pseudocode": "__int64 CGPDFDocumentCopyInfoDictionary()\n{\n  return _CGPDFDocumentCopyInfoDictionary();\n}"
+}

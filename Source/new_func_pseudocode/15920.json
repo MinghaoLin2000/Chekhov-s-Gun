@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpSendVersionDiscoveryRequest",
+    "function_argument_number": 3,
+    "function_signature": "_uarpSendVersionDiscoveryRequest(__int64 a1, __int64 a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall uarpSendVersionDiscoveryRequest(__int64 a1, __int64 a2, unsigned int a3)\n{\n  __int64 result; // x0\n  __int64 v7; // x0\n  __int64 v8; // x22\n  __int64 v9; // x23\n  __int64 v10; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  result = 30LL;\n  if ( a1 && a2 )\n  {\n    v7 = uarpAllocPrepareTransmitBuffer2(a1, a2, 1LL, 8LL, 1LL);\n    if ( v7 )\n    {\n      v8 = v7;\n      v9 = *(_QWORD *)(v7 + 16);\n      if ( a3 >= 4 )\n        v10 = 4LL;\n      else\n        v10 = a3;\n      *(_WORD *)(a2 + 48) = v10;\n      *(_WORD *)(v9 + 6) = uarpHtons(v10);\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return uarpTransmitBuffer2(a1, a2, v8);\n    }\n    else\n    {\n      return 11LL;\n    }\n  }\n  return result;\n}"
+}

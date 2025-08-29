@@ -1,0 +1,5 @@
+_BRSharingCopyCurrentUserNameAndDisplayHandleForURL
+__int64 BRSharingCopyCurrentUserNameAndDisplayHandleForURL()
+{
+  return _BRSharingCopyCurrentUserNameAndDisplayHandleForURL();
+}

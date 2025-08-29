@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGGetActiveDisplayList",
+    "function_argument_number": 3,
+    "function_signature": "_CGGetActiveDisplayList(uint32_t maxDisplays, CGDirectDisplayID * activeDisplays, uint32_t * displayCount)",
+    "pseudocode": "CGError __cdecl CGGetActiveDisplayList(uint32_t maxDisplays, CGDirectDisplayID *activeDisplays, uint32_t *displayCount)\n{\n  return _CGGetActiveDisplayList(maxDisplays, activeDisplays, displayCount);\n}"
+}

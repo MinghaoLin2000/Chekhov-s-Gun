@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController eventCountFromTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController eventCountFromTag:](DeviceSettingsPhotosViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "int __cdecl -[DeviceSettingsPhotosViewController eventCountFromTag:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  return a3;\n}"
+}

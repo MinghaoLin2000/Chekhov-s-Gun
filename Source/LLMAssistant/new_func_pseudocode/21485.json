@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection speechRecognizer:didRecognizeFinalResults:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LSRConnection speechRecognizer:didRecognizeFinalResults:](LSRConnection * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[LSRConnection speechRecognizer:didRecognizeFinalResults:](LSRConnection *self, SEL a2, id a3, id a4)\n{\n  dispatch_async((dispatch_queue_t)qword_100065418, &stru_10005A258);\n}"
+}

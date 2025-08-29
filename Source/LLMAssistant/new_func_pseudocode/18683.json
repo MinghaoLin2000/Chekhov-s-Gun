@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24_NavigationHoverModifierVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24_NavigationHoverModifierVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for _NavigationHoverModifier()\n{\n  return &type metadata for _NavigationHoverModifier;\n}"
+}

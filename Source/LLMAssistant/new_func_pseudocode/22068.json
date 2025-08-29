@@ -1,0 +1,6 @@
+{
+    "function_name": "_CopyNVRAMKeys",
+    "function_argument_number": 0,
+    "function_signature": "_CopyNVRAMKeys()",
+    "pseudocode": "CFMutableDictionaryRef CopyNVRAMKeys()\n{\n  io_registry_entry_t v0; // w0\n  io_object_t v1; // w19\n  os_log_s *v2; // x20\n  uint8_t v4[8]; // [xsp+0h] [xbp-20h] BYREF\n  CFMutableDictionaryRef properties; // [xsp+8h] [xbp-18h] BYREF\n\n  properties = 0LL;\n  v0 = sub_10000420C();\n  if ( !v0 )\n    return 0LL;\n  v1 = v0;\n  if ( IORegistryEntryCreateCFProperties(v0, &properties, kCFAllocatorDefault, 0) )\n  {\n    v2 = (os_log_s *)LogCategory_Unspecified();\n    if ( os_log_type_enabled(v2, OS_LOG_TYPE_DEFAULT) )\n    {\n      *(_WORD *)v4 = 0;\n      _os_log_impl((void *)&_mh_execute_header, v2, OS_LOG_TYPE_DEFAULT, \"Unable to Find any NVRAM Keys\", v4, 2u);\n    }\n  }\n  IOObjectRelease(v1);\n  return properties;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17GeneratedCodeInfoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf17GeneratedCodeInfoD2Ev(google::protobuf::GeneratedCodeInfo * this)",
+    "pseudocode": "void __fastcall google::protobuf::GeneratedCodeInfo::~GeneratedCodeInfo(google::protobuf::GeneratedCodeInfo *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_1000B9A70((char *)this + 16);\n}"
+}

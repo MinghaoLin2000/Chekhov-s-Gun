@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceConfigureAccessibilityViewController returnCode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceConfigureAccessibilityViewController returnCode:](DeviceConfigureAccessibilityViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceConfigureAccessibilityViewController returnCode:](\n        DeviceConfigureAccessibilityViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  void *v4; // x21\n  void *v5; // x19\n  void *v6; // x0\n  void *v7; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceConfigureAccessibilityViewController view](self, \"view\"));\n  v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"window\"));\n  objc_release(v4);\n  v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(v5, \"sheetParent\"));\n  v7 = v6;\n  if ( v6 )\n  {\n    objc_msgSend(v6, \"endSheet:returnCode:\", v5, a3);\n  }\n  else\n  {\n    objc_msgSend(v5, \"close\");\n    objc_msgSend(NSApp, \"stopModalWithCode:\", a3);\n  }\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

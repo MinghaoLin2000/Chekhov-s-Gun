@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController statusViewHidden]",
+    "function_argument_number": 2,
+    "function_signature": "-[SiriNCAlertViewController statusViewHidden](SiriNCAlertViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[SiriNCAlertViewController statusViewHidden](SiriNCAlertViewController *self, SEL a2)\n{\n  return self->_statusViewHidden;\n}"
+}

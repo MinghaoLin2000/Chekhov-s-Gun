@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange9MergeFromERKS1_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange9MergeFromERKS1_(google::protobuf::EnumDescriptorProto_EnumReservedRange * this, const google::protobuf::EnumDescriptorProto_EnumReservedRange * a2)",
+    "pseudocode": "_DWORD *__fastcall google::protobuf::EnumDescriptorProto_EnumReservedRange::MergeFrom(\n        _DWORD *this,\n        const google::protobuf::EnumDescriptorProto_EnumReservedRange *a2)\n{\n  _DWORD *v3; // x19\n  __int64 v4; // x8\n  int v5; // w8\n\n  v3 = this;\n  v4 = *((_QWORD *)a2 + 1);\n  if ( (v4 & 1) != 0 )\n    this = (_DWORD *)sub_10003A25C(this + 2, (v4 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  v5 = *((_DWORD *)a2 + 4);\n  if ( (v5 & 3) != 0 )\n  {\n    if ( (v5 & 1) != 0 )\n      v3[6] = *((_DWORD *)a2 + 6);\n    if ( (v5 & 2) != 0 )\n      v3[7] = *((_DWORD *)a2 + 7);\n    v3[4] |= v5;\n  }\n  return this;\n}"
+}

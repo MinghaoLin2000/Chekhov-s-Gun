@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup16AnnotationWindowCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s13DisplayMarkup16AnnotationWindowCMa()",
+    "pseudocode": "__int64 type metadata accessor for AnnotationWindow()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC13DisplayMarkup16AnnotationWindow);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyManagedDisplayForWindow",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyManagedDisplayForWindow()",
+    "pseudocode": "__int64 CGSCopyManagedDisplayForWindow()\n{\n  return _CGSCopyManagedDisplayForWindow();\n}"
+}

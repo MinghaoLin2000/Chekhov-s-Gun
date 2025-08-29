@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z16liteLockPrintersv",
+    "function_argument_number": 0,
+    "function_signature": "__Z16liteLockPrintersv()",
+    "pseudocode": "void liteLockPrinters(void)\n{\n  NSMutableDictionary *v0; // x0\n  void *v1; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  pthread_mutex_lock(&stru_1000C0FD0);\n  if ( !qword_1000C3EA0 )\n  {\n    v0 = objc_opt_new(&OBJC_CLASS___NSMutableDictionary);\n    v1 = (void *)qword_1000C3EA0;\n    qword_1000C3EA0 = (__int64)v0;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    objc_release(v1);\n  }\n}"
+}

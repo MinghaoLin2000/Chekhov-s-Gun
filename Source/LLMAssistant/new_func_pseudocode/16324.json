@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory reportAnalytics:info:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LegacyAudioAccessory reportAnalytics:info:](LegacyAudioAccessory * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[LegacyAudioAccessory reportAnalytics:info:](LegacyAudioAccessory *self, SEL a2, id a3, id a4)\n{\n  ;\n}"
+}

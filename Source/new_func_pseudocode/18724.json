@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC27BackgroundReplacementHelper10MainWindow frameAutosaveName]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC27BackgroundReplacementHelper10MainWindow frameAutosaveName](_TtC27BackgroundReplacementHelper10MainWindow * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[MainWindow frameAutosaveName](_TtC27BackgroundReplacementHelper10MainWindow *self, SEL a2)\n{\n  __int64 v2; // x1\n  __int64 v3; // x19\n  void *v4; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  sub_1000512E8(self, a2);\n  v3 = v2;\n  v4 = (void *)sub_1000700A0(0xD00000000000001BLL);\n  swift_bridgeObjectRelease(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSString *)objc_autoreleaseReturnValue(v4);\n}"
+}

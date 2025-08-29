@@ -1,0 +1,6 @@
+{
+    "function_name": "-[WiFi3BarsResponse initWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[WiFi3BarsResponse initWithCoder:](int a1, int a2, id a3)",
+    "pseudocode": "WiFi3BarsResponse *__cdecl -[WiFi3BarsResponse initWithCoder:](WiFi3BarsResponse *self, SEL a2, id a3)\n{\n  id v3; // x20\n  WiFi3BarsResponse *v4; // x19\n  __int64 v5; // x22\n  __int64 v6; // x23\n  NSSet *v7; // x21\n  NSDictionary *v8; // x22\n  NSDictionary *results; // x0\n  objc_super v11; // [xsp+20h] [xbp-40h] BYREF\n\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___WiFi3BarsResponse;\n  v3 = objc_retain(a3);\n  v4 = -[WiFi3BarsResponse init](&v11, \"init\");\n  v5 = objc_opt_class(&OBJC_CLASS___NSString);\n  v6 = objc_opt_class(&OBJC_CLASS___NSDictionary);\n  v7 = objc_retainAutoreleasedReturnValue(\n         +[NSSet setWithObjects:](\n           &OBJC_CLASS___NSSet,\n           \"setWithObjects:\",\n           v5,\n           v6,\n           objc_opt_class(&OBJC_CLASS___WiFi3BarsNetwork),\n           0LL));\n  v8 = objc_retainAutoreleasedReturnValue(objc_msgSend(v3, \"decodeObjectOfClasses:forKey:\", v7, CFSTR(\"results\")));\n  objc_release(v3);\n  results = v4->_results;\n  v4->_results = v8;\n  objc_release(results);\n  objc_release(v7);\n  return v4;\n}"
+}

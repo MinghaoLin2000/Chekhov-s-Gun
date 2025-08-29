@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_UTIMimeType]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_UTIMimeType](NSString * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[NSString tsu_UTIMimeType](NSString *self, SEL a2)\n{\n  return (NSString *)-[NSString tsu_UTTypeCopyPreferredTagWithClass:](\n                       self,\n                       \"tsu_UTTypeCopyPreferredTagWithClass:\",\n                       UTTagClassMIMEType);\n}"
+}

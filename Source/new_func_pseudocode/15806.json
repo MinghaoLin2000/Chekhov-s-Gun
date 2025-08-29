@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2ReturnTransmitMsgBuffer",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2ReturnTransmitMsgBuffer(int a1, int a2, void * a3)",
+    "pseudocode": "void __fastcall UARPLayer2ReturnTransmitMsgBuffer(__int64 a1, int a2, void *a3)\n{\n  void (__fastcall *v3)(_QWORD, void *); // x3\n\n  v3 = *(void (__fastcall **)(_QWORD, void *))(a1 + 56);\n  if ( v3 )\n    v3(*(_QWORD *)(a1 + 544), a3);\n  else\n    uarpFree(a3);\n}"
+}

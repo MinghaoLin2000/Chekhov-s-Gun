@@ -1,0 +1,19 @@
+Service Path:
+/System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.Installation.xpc/Contents/MacOS/com.apple.Virtualization.Installation
+
+Service Exported Protocols:
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.diskimages.attach
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.DeviceSupportUpdater.requestor
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.message-filter
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true

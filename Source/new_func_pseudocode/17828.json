@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecTaskCopyTeamIdentifier",
+    "function_argument_number": 0,
+    "function_signature": "_SecTaskCopyTeamIdentifier()",
+    "pseudocode": "__int64 SecTaskCopyTeamIdentifier()\n{\n  return _SecTaskCopyTeamIdentifier();\n}"
+}

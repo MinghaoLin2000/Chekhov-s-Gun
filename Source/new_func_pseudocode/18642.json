@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16HoverCoordinatorC5EntryVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore16HoverCoordinatorC5EntryVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for HoverCoordinator.Entry()\n{\n  return &type metadata for HoverCoordinator.Entry;\n}"
+}

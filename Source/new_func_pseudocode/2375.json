@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController setupViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeFinderViewController setupViewController](DeviceModeFinderViewController * self, SEL a2)",
+    "pseudocode": "DeviceSetupViewController *__cdecl -[DeviceModeFinderViewController setupViewController](\n        DeviceModeFinderViewController *self,\n        SEL a2)\n{\n  return self->_setupViewController;\n}"
+}

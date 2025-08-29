@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Document windowFrame]",
+    "function_argument_number": 2,
+    "function_signature": "-[Document windowFrame](Document * self, SEL a2)",
+    "pseudocode": "CGRect __cdecl -[Document windowFrame](Document *self, SEL a2)\n{\n  double x; // d0\n  double y; // d1\n  double width; // d2\n  double height; // d3\n  CGRect result; // 0:d0.8,8:d1.8,16:d2.8,24:d3.8\n\n  x = self->mWindowFrame.origin.x;\n  y = self->mWindowFrame.origin.y;\n  width = self->mWindowFrame.size.width;\n  height = self->mWindowFrame.size.height;\n  result.size.height = height;\n  result.size.width = width;\n  result.origin.y = y;\n  result.origin.x = x;\n  return result;\n}"
+}

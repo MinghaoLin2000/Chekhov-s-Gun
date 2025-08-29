@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater transportType]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater transportType](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[EAFirmwareUpdater transportType](EAFirmwareUpdater *self, SEL a2)\n{\n  return self->_transportType;\n}"
+}

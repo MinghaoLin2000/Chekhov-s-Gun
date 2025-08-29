@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for EngagementMessagePlacementInfo()\n{\n  return &type metadata for EngagementMessagePlacementInfo;\n}"
+}

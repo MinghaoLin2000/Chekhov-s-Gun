@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$initWithAppBundleIdentifier:widgetBundleIdentifier:widgetKind:criterion:applicableLayouts:suggestionIdentifier:startDate:endDate:intentDescription:metadata:relevanceScore:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$initWithAppBundleIdentifier:widgetBundleIdentifier:widgetKind:criterion:applicableLayouts:suggestionIdentifier:startDate:endDate:intentDescription:metadata:relevanceScore:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_initWithAppBundleIdentifier_widgetBundleIdentifier_widgetKind_criterion_applicableLayouts_suggestionIdentifier_startDate_endDate_intentDescription_metadata_relevanceScore_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return objc_msgSend(\n           a1,\n           \"initWithAppBundleIdentifier:widgetBundleIdentifier:widgetKind:criterion:applicableLayouts:suggestionIdentifie\"\n           \"r:startDate:endDate:intentDescription:metadata:relevanceScore:\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t updateSheetsAndPostNotification:logMsg:]",
+    "function_argument_number": 4,
+    "function_signature": "-[lite_job_t updateSheetsAndPostNotification:logMsg:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[lite_job_t updateSheetsAndPostNotification:logMsg:](lite_job_t *self, SEL a2, int a3, id a4)\n{\n  __int64 v4; // x21\n  id v6; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = *(_QWORD *)&a3;\n  v6 = objc_retain(a4);\n  -[lite_job_t setSheetsCompleted:](self, \"setSheetsCompleted:\", v4);\n  self->_mediaProgress = 0;\n  -[lite_job_t postGlobalNotification:logMsg:](self, \"postGlobalNotification:logMsg:\", 0x10000LL, v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

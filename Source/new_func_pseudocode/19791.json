@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t attrs_printer_native_formats]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_printer_t attrs_printer_native_formats](lite_printer_t * self, SEL a2)",
+    "pseudocode": "NSSet *__cdecl -[lite_printer_t attrs_printer_native_formats](lite_printer_t *self, SEL a2)\n{\n  return (NSSet *)-[PKPrinterDescription attrs_printer_native_formats](\n                    self->_printerDescription,\n                    \"attrs_printer_native_formats\");\n}"
+}

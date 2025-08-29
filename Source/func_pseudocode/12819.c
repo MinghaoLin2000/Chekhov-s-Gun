@@ -1,0 +1,14 @@
++[TSUSystemInfo processorName]
+id __cdecl +[TSUSystemInfo processorName](id a1, SEL a2)
+{
+  size_t v3; // [xsp+10h] [xbp-130h] BYREF
+  int v4[3]; // [xsp+18h] [xbp-128h] BYREF
+  _BYTE v5[257]; // [xsp+27h] [xbp-119h] BYREF
+
+  *(_QWORD *)v4 = 0xC00000006LL;
+  v3 = 257LL;
+  if ( sysctl(v4, 2u, v5, &v3, 0LL, 0LL) < 0 )
+    return 0LL;
+  else
+    return +[NSString stringWithFormat:](&OBJC_CLASS___NSString, "stringWithFormat:", CFSTR("%s"), v5);
+}

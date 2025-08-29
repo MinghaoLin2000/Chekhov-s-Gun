@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService setBreakoutState:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService setBreakoutState:](SiriNCService * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SiriNCService setBreakoutState:](SiriNCService *self, SEL a2, signed __int64 a3)\n{\n  self->_breakoutState = a3;\n}"
+}

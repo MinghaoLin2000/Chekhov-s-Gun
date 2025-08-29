@@ -1,0 +1,4 @@
+@protocol UINSSystemPreferencesService
+- (void)refreshSettingsWithAdditionalSettings:(unsigned long long)arg1;
+- (void)refreshSettingsWithAdditionalSettings:(unsigned long long)arg1 completionHandler:(void (^)(_Bool))arg2;
+@end

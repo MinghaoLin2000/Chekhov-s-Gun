@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController saveToDeviceSyncPrefs:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceViewController saveToDeviceSyncPrefs:](DeviceViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceViewController saveToDeviceSyncPrefs:](DeviceViewController *self, SEL a2, id a3)\n{\n  ;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_pathConformsToUTI:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSString tsu_pathConformsToUTI:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[NSString tsu_pathConformsToUTI:](NSString *self, SEL a2, id a3)\n{\n  id v4; // x20\n  NSString *v5; // x19\n  unsigned __int8 v6; // w21\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[NSString pathExtension](self, \"pathExtension\"));\n  v6 = -[NSString tsu_pathExtensionConformsToUTI:](v5, \"tsu_pathExtensionConformsToUTI:\", v4);\n  objc_release(v4);\n  objc_release(v5);\n  return v6;\n}"
+}

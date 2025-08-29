@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController cloudIdentifierForIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderTabContainerViewController cloudIdentifierForIdentifier:](DeviceFinderTabContainerViewController * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[DeviceFinderTabContainerViewController cloudIdentifierForIdentifier:](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2,\n        id a3)\n{\n  return +[NSString stringWithFormat:](&OBJC_CLASS___NSString, \"stringWithFormat:\", CFSTR(\"%@Cloud\"), a3);\n}"
+}

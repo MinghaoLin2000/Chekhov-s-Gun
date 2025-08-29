@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$updateCheckedItems:withNode:updateChildren:updateAncestors:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$updateCheckedItems:withNode:updateChildren:updateAncestors:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_updateCheckedItems_withNode_updateChildren_updateAncestors_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"updateCheckedItems:withNode:updateChildren:updateAncestors:\");\n}"
+}

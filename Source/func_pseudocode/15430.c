@@ -1,0 +1,5 @@
+_AMRestorableDeviceCopyMDRemoteServiceDevice
+__int64 AMRestorableDeviceCopyMDRemoteServiceDevice()
+{
+  return _AMRestorableDeviceCopyMDRemoteServiceDevice();
+}

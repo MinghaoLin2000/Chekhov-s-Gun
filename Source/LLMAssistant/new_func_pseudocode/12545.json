@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSArray tsu_arrayByUnioningArray:withArray:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSArray tsu_arrayByUnioningArray:withArray:](id a1, SEL a2, id a3, id a4)",
+    "pseudocode": "id __cdecl +[NSArray tsu_arrayByUnioningArray:withArray:](id a1, SEL a2, id a3, id a4)\n{\n  if ( a3 )\n    return _objc_msgSend(a3, \"tsu_arrayByAddingNonContainedObjectsFromArray:\", a4);\n  else\n    return a4;\n}"
+}

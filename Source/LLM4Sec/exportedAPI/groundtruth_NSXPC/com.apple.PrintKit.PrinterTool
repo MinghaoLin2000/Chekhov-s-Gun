@@ -1,0 +1,51 @@
+@protocol JobLikeThingProtocol <NSObject>
+- (void)_withActivity:(void (^)(NSObject<OS_os_activity> *))arg1;
+- (void)updateProgressAndPostNotification:(int)arg1 logMsg:(NSString *)arg2;
+- (void)updateSheetsAndPostNotification:(int)arg1 logMsg:(NSString *)arg2;
+- (void)set_processing;
+- (void)updateThumbnail:(NSData *)arg1;
+- (void)make_progress:(long long)arg1;
+- (int)closeDriver:(struct lite_driver_s *)arg1;
+- (int)openDriver:(struct lite_driver_s *)arg1 format:(NSString *)arg2 orient:(int)arg3 num_sheets:(int)arg4 passthru:(int)arg5;
+- (void)postGlobalNotification:(unsigned int)arg1;
+- (void)postGlobalNotification:(unsigned int)arg1 logMsg:(NSString *)arg2;
+- (_Bool)has_job_stream_http;
+- (struct CGDataConsumer *)createDataConsumer;
+- (void)finishJob:(long long)arg1;
+- (void)resetJob;
+- (void)set_cancel_flag;
+@end
+@protocol NSCopying
+- (id)copyWithZone:(struct _NSZone *)arg1;
+@end
+@protocol PKPrintdRPC_BrowseClient_ClientProtocol <NSObject>
+- (void)browserAdded:(NSSet *)arg1 removed:(NSSet *)arg2;
+@end
+@protocol PrintJobRequestParamsProtocol
+@end
+@protocol PrintdRPCProtocol <NSObject>
+- (void)logiCloudPrintersReply:(void (^)(NSArray *))arg1;
+- (void)resetPKCloudData;
+- (void)updateiCloudPrinterLocation:(NSDictionary *)arg1 newLocation:(NSString *)arg2;
+- (void)updateiCloudPrinterDisplayName:(NSDictionary *)arg1 newDisplayName:(NSString *)arg2;
+- (void)removePrinterFromiCloudWithInfo:(NSDictionary *)arg1;
+- (void)addPrinterToiCloudWithInfo:(NSDictionary *)arg1;
+- (void)setiCloudPrinters:(NSArray *)arg1;
+- (void)getiCloudPrintersReply:(void (^)(NSArray *))arg1;
+- (void)setLastUsedPrintersForCurrentNetwork:(NSDictionary *)arg1;
+- (void)getLastUsedPrintersForCurrentNetworkReply:(void (^)(NSString *, NSArray *))arg1;
+- (void)_endpointResolve:(NWEndpoint *)arg1 timeout:(double)arg2 reply:(void (^)(NSURL *, NSDictionary *))arg3;
+- (void)browseInfoForPrinter:(PKPrinterBonjourEndpoint *)arg1 timeout:(double)arg2 reply:(void (^)(PKPrinterBrowseInfo *))arg3;
+- (void)startBrowsing:(NSDictionary *)arg1 provenance:(unsigned long long)arg2;
+- (void)cancelJob:(int)arg1;
+- (void)getJobUpdateStatus:(int)arg1 includeThumbnail:(_Bool)arg2 reply:(void (^)(PKMutableJobState *))arg3;
+- (void)getRecentJobsReply:(void (^)(NSArray *, NSArray *))arg1;
+- (void)finishRequestWithCancel:(_Bool)arg1 reply:(void (^)(NSNumber *))arg2;
+- (void)startStreamingRequest:(PKPrinterBonjourEndpoint *)arg1 printSettings:(PKPrintSettings *)arg2 reply:(void (^)(NSFileHandle *))arg3;
+- (void)_checkAccessState:(PKPrinterBonjourEndpoint *)arg1 reply:(void (^)(long long))arg2;
+- (void)_queryPrinter:(PKPrinterBonjourEndpoint *)arg1 attributes:(NSArray *)arg2 reply:(void (^)(NSData *))arg3;
+- (void)_getPrinterDescription:(PKPrinterBonjourEndpoint *)arg1 assertReachability:(_Bool)arg2 reply:(void (^)(PKPrinterDescription *, PKPrinterBrowseInfo *))arg3;
+- (void)_identifyPrinter:(PKPrinterBonjourEndpoint *)arg1 message:(NSString *)arg2 actions:(NSArray *)arg3;
+- (void)_removeKeychainItem:(PKPrinterBonjourEndpoint *)arg1;
+- (void)_realPathForTmpReply:(void (^)(NSURL *))arg1;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestVwtk",
+    "function_argument_number": 3,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestVwtk(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall initializeWithTake for JSServiceRequest(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // x8\n  void *v5; // x20\n  const void *v6; // x21\n  __int64 v7; // x22\n  __int64 v8; // x0\n\n  *(_OWORD *)a1 = *(_OWORD *)a2;\n  *(_QWORD *)(a1 + 16) = *(_QWORD *)(a2 + 16);\n  v4 = *(int *)(a3 + 24);\n  v5 = (void *)(a1 + v4);\n  v6 = (const void *)(a2 + v4);\n  v7 = sub_100045608(0LL);\n  if ( (unsigned int)sub_100004D58(v6, 1LL, v7) )\n  {\n    v8 = sub_100003D44(&unk_10005C648);\n    memcpy(v5, v6, *(_QWORD *)(*(_QWORD *)(v8 - 8) + 64LL));\n  }\n  else\n  {\n    (*(void (__fastcall **)(void *, const void *, __int64))(*(_QWORD *)(v7 - 8) + 32LL))(v5, v6, v7);\n    sub_100004CC8(v5, 0LL, 1LL, v7);\n  }\n  return a1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUZipArchive isZipArchiveAtPath:]",
+    "function_argument_number": 3,
+    "function_signature": "+[SFUZipArchive isZipArchiveAtPath:](id a1, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl +[SFUZipArchive isZipArchiveAtPath:](id a1, SEL a2, id a3)\n{\n  SFUZipArchiveFileDataRepresentation *v3; // x19\n  id v4; // x20\n  bool v6; // w21\n  _DWORD v8[6]; // [xsp+0h] [xbp-40h] BYREF\n\n  v3 = -[SFUZipArchiveFileDataRepresentation initWithPath:](\n         objc_alloc(&OBJC_CLASS___SFUZipArchiveFileDataRepresentation),\n         \"initWithPath:\",\n         a3);\n  v4 = -[SFUZipArchiveFileDataRepresentation inputStream](v3, \"inputStream\");\n  v6 = objc_msgSend(v4, \"readToBuffer:size:\", v8, 4LL) == (void *)4 && v8[0] == 67324752;\n  objc_msgSend(v4, \"close\");\n  objc_release(v3);\n  return v6;\n}"
+}

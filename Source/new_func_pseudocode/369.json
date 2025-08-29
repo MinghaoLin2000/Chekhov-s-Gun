@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceView initWithFrame:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceUIServiceView initWithFrame:](DeviceUIServiceView * self, SEL a2, CGRect a3)",
+    "pseudocode": "DeviceUIServiceView *__cdecl -[DeviceUIServiceView initWithFrame:](DeviceUIServiceView *self, SEL a2, CGRect a3)\n{\n  DeviceUIServiceView *v3; // x0\n  DeviceUIServiceView *v4; // x19\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___DeviceUIServiceView;\n  v3 = -[DeviceUIServiceView initWithFrame:](\n         &v6,\n         \"initWithFrame:\",\n         a3.origin.x,\n         a3.origin.y,\n         a3.size.width,\n         a3.size.height);\n  v4 = v3;\n  if ( v3 )\n    -[DeviceUIServiceView setTranslatesAutoresizingMaskIntoConstraints:](\n      v3,\n      \"setTranslatesAutoresizingMaskIntoConstraints:\",\n      0LL);\n  return v4;\n}"
+}

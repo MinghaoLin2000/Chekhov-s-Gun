@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_sync_enter",
+    "function_argument_number": 1,
+    "function_signature": "_objc_sync_enter(id obj)",
+    "pseudocode": "int __cdecl objc_sync_enter(id obj)\n{\n  return _objc_sync_enter(obj);\n}"
+}

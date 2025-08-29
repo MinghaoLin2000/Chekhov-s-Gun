@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPURL initWithSession:url:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IPPURL initWithSession:url:](int a1, int a2, id a3)",
+    "pseudocode": "IPPURL *__cdecl -[IPPURL initWithSession:url:](IPPURL *self, SEL a2, id a3, id a4)\n{\n  id v7; // x19\n  id v8; // x21\n  IPPURL *v9; // x0\n  IPPURL *v10; // x23\n  objc_super v12; // [xsp+0h] [xbp-40h] BYREF\n\n  v7 = objc_retain(a3);\n  v8 = objc_retain(a4);\n  v12.receiver = self;\n  v12.super_class = (Class)&OBJC_CLASS___IPPURL;\n  v9 = -[IPPURL init](&v12, \"init\");\n  v10 = v9;\n  if ( v9 )\n  {\n    objc_storeStrong((id *)&v9->_session, a3);\n    objc_storeStrong((id *)&v10->_url, a4);\n  }\n  objc_release(v8);\n  objc_release(v7);\n  return v10;\n}"
+}

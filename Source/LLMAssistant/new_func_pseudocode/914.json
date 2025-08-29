@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView setIsCalculating:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarView setIsCalculating:](AMPCapacityBarView * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView setIsCalculating:](AMPCapacityBarView *self, SEL a2, bool a3)\n{\n  self->_isCalculating = a3;\n}"
+}

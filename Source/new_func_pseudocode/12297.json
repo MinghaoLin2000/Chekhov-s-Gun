@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14WireFormatLite9Int32SizeERKNS0_13RepeatedFieldIiEE",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal14WireFormatLite9Int32SizeERKNS0_13RepeatedFieldIiEE(unsigned int * a1)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::WireFormatLite::Int32Size(unsigned int *a1)\n{\n  __int64 v1; // x9\n  __int64 result; // x0\n  int *v4; // x8\n  int v5; // w10\n  int v6; // t1\n  __int64 v7; // x10\n\n  v1 = *a1;\n  if ( (int)v1 < 1 )\n    return 0LL;\n  result = 0LL;\n  v4 = (int *)*((_QWORD *)a1 + 1);\n  do\n  {\n    v6 = *v4++;\n    v5 = v6;\n    if ( v6 < 0 )\n      v7 = 10LL;\n    else\n      v7 = (9 * (__clz(v5 | 1) ^ 0x1F) + 73) >> 6;\n    result += v7;\n    --v1;\n  }\n  while ( v1 );\n  return result;\n}"
+}

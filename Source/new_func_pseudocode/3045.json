@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController canPresentDevicesClientEventsUI]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSetupViewController canPresentDevicesClientEventsUI](DeviceSetupViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSetupViewController canPresentDevicesClientEventsUI](DeviceSetupViewController *self, SEL a2)\n{\n  return self->_allowDevicesClientEventsUI;\n}"
+}

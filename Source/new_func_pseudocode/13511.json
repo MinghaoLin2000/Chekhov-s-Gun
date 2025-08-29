@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_encodeStringBase64]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_encodeStringBase64](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_encodeStringBase64](NSString *self, SEL a2)\n{\n  const char *v2; // x19\n  size_t v3; // x3\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = -[NSString UTF8String](objc_retainAutorelease(self), \"UTF8String\");\n  v3 = strlen(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return +[NSString tsu_stringByBase64EncodingBytes:length:](\n           &OBJC_CLASS___NSString,\n           \"tsu_stringByBase64EncodingBytes:length:\",\n           v2,\n           v3);\n}"
+}

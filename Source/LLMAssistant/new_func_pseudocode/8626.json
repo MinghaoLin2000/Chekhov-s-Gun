@@ -1,0 +1,6 @@
+{
+    "function_name": "_MachAbsoluteTimeToTimeInterval",
+    "function_argument_number": 1,
+    "function_signature": "_MachAbsoluteTimeToTimeInterval(__int64 a1)",
+    "pseudocode": "double __fastcall MachAbsoluteTimeToTimeInterval(__int64 a1)\n{\n  unsigned int v2; // w8\n\n  v2 = dword_100011C34;\n  if ( !dword_100011C34 )\n  {\n    mach_timebase_info((mach_timebase_info_t)&dword_100011C30);\n    v2 = dword_100011C34;\n  }\n  return (double)((unsigned __int64)(unsigned int)dword_100011C30 * a1 / v2) / 1000000000.0;\n}"
+}

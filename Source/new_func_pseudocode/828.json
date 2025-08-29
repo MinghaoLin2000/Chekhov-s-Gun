@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsViewController checkedItems]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsViewController checkedItems](DeviceSettingsViewController * self, SEL a2)",
+    "pseudocode": "NSMutableDictionary *__cdecl -[DeviceSettingsViewController checkedItems](DeviceSettingsViewController *self, SEL a2)\n{\n  NSMutableDictionary *checkedItems; // x0\n  NSMutableDictionary *v4; // x0\n  NSMutableDictionary *v5; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  checkedItems = self->_checkedItems;\n  if ( !checkedItems )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(+[NSMutableDictionary dictionary](&OBJC_CLASS___NSMutableDictionary, \"dictionary\"));\n    v5 = self->_checkedItems;\n    self->_checkedItems = v4;\n    objc_release(v5);\n    checkedItems = self->_checkedItems;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(checkedItems);\n}"
+}

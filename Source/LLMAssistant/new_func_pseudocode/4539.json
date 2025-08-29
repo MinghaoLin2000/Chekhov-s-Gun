@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$refreshDetailCheckBoxStatesWithDimNodes:updateMode:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$refreshDetailCheckBoxStatesWithDimNodes:updateMode:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_refreshDetailCheckBoxStatesWithDimNodes_updateMode_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"refreshDetailCheckBoxStatesWithDimNodes:updateMode:\");\n}"
+}

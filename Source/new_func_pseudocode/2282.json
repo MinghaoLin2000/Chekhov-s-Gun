@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCalendarsViewController .cxx_destruct](DeviceSettingsCalendarsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCalendarsViewController .cxx_destruct](\n        DeviceSettingsCalendarsViewController *self,\n        SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_destroyWeak((id *)&self->_syncDaysLimitTrailingTextField);\n  objc_destroyWeak((id *)&self->_syncDaysLimitTextField);\n  objc_destroyWeak((id *)&self->_syncDaysLimitCheckBox);\n  objc_destroyWeak((id *)&self->_defaultCalendarPopUpButton);\n  objc_destroyWeak((id *)&self->_defaultCalendarCheckBox);\n  objc_destroyWeak((id *)&self->_defaultCalendarStackView);\n  objc_destroyWeak((id *)&self->_tabView);\n  objc_destroyWeak((id *)&self->_updateSelectedRadioButton);\n  objc_destroyWeak((id *)&self->_allRadioButton);\n  objc_destroyWeak((id *)&self->_syncOntoCheckBox);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_syncOntoTextField);\n}"
+}

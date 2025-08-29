@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOwet",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOwet(unsigned int * a1, int a2)",
+    "pseudocode": "__int64 __fastcall getEnumTagSinglePayload for JetpackMetadata.CodingKeys(unsigned int *a1, int a2)\n{\n  int v2; // w9\n  int v3; // w8\n\n  if ( !a2 )\n    return 0LL;\n  if ( (unsigned int)(a2 + 1) >= 0x10000 )\n    v2 = 4;\n  else\n    v2 = 2;\n  if ( (unsigned int)(a2 + 1) < 0x100 )\n    v3 = 1;\n  else\n    v3 = v2;\n  if ( v3 == 4 )\n    return *a1;\n  if ( v3 == 2 )\n    return *(unsigned __int16 *)a1;\n  return *(unsigned __int8 *)a1;\n}"
+}

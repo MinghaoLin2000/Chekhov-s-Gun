@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf14DescriptorPool35InternalFindExtensionByNumberNoLockEPKNS0_10DescriptorEi",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf14DescriptorPool35InternalFindExtensionByNumberNoLockEPKNS0_10DescriptorEi(google::protobuf::DescriptorPool * this, const google::protobuf::Descriptor * a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::DescriptorPool::InternalFindExtensionByNumberNoLock(\n        google::protobuf::DescriptorPool *this,\n        const google::protobuf::Descriptor *a2,\n        unsigned int a3)\n{\n  __int64 v6; // x22\n  __int64 v7; // x0\n  __int64 result; // x0\n  google::protobuf::DescriptorPool *v9; // x0\n  _QWORD v10[2]; // [xsp+0h] [xbp-30h] BYREF\n\n  if ( !*((_DWORD *)a2 + 31) )\n    return 0LL;\n  v6 = *((_QWORD *)this + 4);\n  v10[0] = a2;\n  v10[1] = a3;\n  v7 = sub_100096848(v6 + 384, v10);\n  if ( v6 + 392 == v7 || (result = *(_QWORD *)(v7 + 48)) == 0 )\n  {\n    v9 = (google::protobuf::DescriptorPool *)*((_QWORD *)this + 3);\n    if ( !v9 )\n      return 0LL;\n    result = google::protobuf::DescriptorPool::InternalFindExtensionByNumberNoLock(v9, a2, a3);\n    if ( !result )\n      return 0LL;\n  }\n  return result;\n}"
+}

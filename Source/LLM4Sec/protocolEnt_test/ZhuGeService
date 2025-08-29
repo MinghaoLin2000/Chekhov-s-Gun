@@ -1,0 +1,230 @@
+Service Path:
+/System/Library/PrivateFrameworks/ZhuGeSupport.framework/Versions/A/XPCServices/ZhuGeService.xpc/Contents/MacOS/ZhuGeService
+
+Service Exported Protocols:
+@protocol ZhuGeInternalServiceProtocol
+- (void)setBulkMGKeys:(NSDictionary *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setMGKey:(NSString *)arg1 getValueAndError:(void (^)(id, NSError *))arg2;
+- (void)setBulkKeys:(NSDictionary *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setKey:(NSString *)arg1 andOptions:(NSDictionary *)arg2 andPreferences:(NSDictionary *)arg3 getValueAndError:(void (^)(id, NSError *))arg4;
+@end
+@protocol ZhuGeRestoreLogProtocol
+- (void)printRemoteLog:(NSString *)arg1;
+@end
+@protocol ZhuGeServiceProtocol
+- (void)setBulkInternalMGKeys:(NSArray *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setInternalMGKey:(NSString *)arg1 getValueAndError:(void (^)(id, NSError *))arg2;
+- (void)setBulkMGKeys:(NSArray *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setMGKey:(NSString *)arg1 getValueAndError:(void (^)(id, NSError *))arg2;
+- (void)setBulkInternalKeys:(NSDictionary *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setInternalKey:(NSString *)arg1 andOptions:(NSDictionary *)arg2 andPreferences:(NSDictionary *)arg3 getValueAndError:(void (^)(id, NSError *))arg4;
+- (void)setBulkKeys:(NSDictionary *)arg1 getValuesAndError:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)setKey:(NSString *)arg1 andOptions:(NSDictionary *)arg2 andPreferences:(NSDictionary *)arg3 getValueAndError:(void (^)(id, NSError *))arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.AppleNVMeEAN.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.CommCenter.fine-grained
+	[Value]
+		[Array]
+			[String] identity
+			[String] spi
+	[Key] com.apple.ULLAConcierge.xpc
+	[Value]
+		[Bool] true
+	[Key] com.apple.afk.user
+	[Value]
+		[Bool] true
+	[Key] com.apple.camera.iokit-user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.coretelephony.Identity.get
+	[Value]
+		[Bool] true
+	[Key] com.apple.driver.AppleBasebandPCI.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.driver.AppleBasebandPCIControl.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.driver.AppleConvergedIPCICEBB.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.driver.AppleConvergedIPCICEBBControl.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.keystore.fdr-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.keystore.sik.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.nfcd.hwmanager
+	[Value]
+		[Bool] true
+	[Key] com.apple.nfcd.info
+	[Value]
+		[Bool] true
+	[Key] com.apple.nvmetunnel.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.pearl.iokit-user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.AppleKMPEndpoint.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.AppleSSMAEndpoint.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.AppleSSMAService.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.IOAESAccelerator.fdr-key-handle
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.IOPortTransportAIDBusUserClient.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.MobileGestalt.AllowedProtectedKeys
+	[Value]
+		[Array]
+			[String] AmbientLightSensorSerialNumber
+			[String] ArcModuleSerialNumber
+			[String] ArrowChipID
+			[String] ArrowUniqueChipID
+			[String] AttestationUniqueDeviceID
+			[String] AWDID
+			[String] BasebandBoardSnum
+			[String] BasebandChipId
+			[String] BasebandSerialNumber
+			[String] BasebandUniqueId
+			[String] BluetoothAddress
+			[String] BluetoothAddressData
+			[String] BootManifestHash
+			[String] CarrierBundleInfoArray
+			[String] CompassCalibration
+			[String] CompassCalibrationDictionary
+			[String] ConfigNumber
+			[String] CoverglassSerialNumber
+			[String] DiagData
+			[String] DieId
+			[String] DisplayDriverICChipID
+			[String] EthernetMacAddress
+			[String] EthernetMacAddressData
+			[String] EUICCChipID
+			[String] FrontFacingCameraModuleSerialNumber
+			[String] FrontFacingIRCameraModuleSerialNumber
+			[String] FrontFacingIRStructuredLightProjectorModuleSerialNumber
+			[String] IceFallID
+			[String] IntegratedCircuitCardIdentifier
+			[String] IntegratedCircuitCardIdentifier2
+			[String] InternationalMobileEquipmentIdentity
+			[String] InternationalMobileEquipmentIdentity2
+			[String] InverseDeviceID
+			[String] JasperSerialNumber
+			[String] LunaFlexSerialNumber
+			[String] LynxIdentifier
+			[String] LynxPublicKey
+			[String] LynxSerialNumber
+			[String] MesaSerialNumber
+			[String] MLBSerialNumber
+			[String] MobileEquipmentIdentifier
+			[String] MobileEquipmentInfoBaseId
+			[String] MobileEquipmentInfoBaseProfile
+			[String] MobileEquipmentInfoBaseVersion
+			[String] MobileEquipmentInfoCSN
+			[String] MobileEquipmentInfoDisplayCSN
+			[String] MultiLynxPublicKeyArray
+			[String] MultiLynxSerialNumberArray
+			[String] NandControllerUID
+			[String] PanelSerialNumber
+			[String] PhoneNumber
+			[String] PhoneNumber2
+			[String] PintoMacAddress
+			[String] PintoMacAddressData
+			[String] ProvisioningUniqueDeviceID
+			[String] ProximitySensorCalibration
+			[String] ProximitySensorCalibrationDictionary
+			[String] RawPanelSerialNumber
+			[String] RearFacingCameraModuleSerialNumber
+			[String] RearFacingSuperWideCameraModuleSerialNumber
+			[String] RearFacingTelephotoCameraModuleSerialNumber
+			[String] RemoteBluetoothAddress
+			[String] RemoteBluetoothAddressData
+			[String] RosalineSerialNumber
+			[String] RoswellChipID
+			[String] SavageChipID
+			[String] SavageInfo
+			[String] SavageSerialNumber
+			[String] SavageUID
+			[String] ScreenSerialNumber
+			[String] SecondaryBluetoothMacAddress
+			[String] SecondaryBluetoothMacAddressData
+			[String] SecondaryEthernetMacAddress
+			[String] SecondaryEthernetMacAddressData
+			[String] SecondaryWifiMacAddress
+			[String] SecondaryWifiMacAddressData
+			[String] SecureElementID
+			[String] SerialNumber
+			[String] SysCfg
+			[String] SysCfgDict
+			[String] ThreadRadioMacAddress
+			[String] ThreadRadioMacAddress64Bit
+			[String] ThreadRadioMacAddress64BitData
+			[String] ThreadRadioMacAddressData
+			[String] TopModuleAuthChipID
+			[String] TristarID
+			[String] UniqueChipID
+			[String] UniqueDeviceID
+			[String] UniqueDeviceIDData
+			[String] WifiAddress
+			[String] WifiAddressData
+			[String] WirelessBoardSnum
+			[String] YonkersChipID
+			[String] YonkersSerialNumber
+			[String] YonkersUID
+	[Key] com.apple.private.ZhuGeInternalSupport.CopyValue
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.ZhuGeSupport.CopyValue
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.applesepmanager.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.applesmc.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.domain-extension
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.bootpolicy
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.xpc.domain-extension
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AFKEndpointInterfaceUserClient
+			[String] AppleBasebandPCIUserClient
+			[String] AppleBasebandUserClient
+			[String] AppleBiometricServicesUserClient
+			[String] AppleKMPEndpointUserClient
+			[String] AppleNVMeEANUC
+			[String] AppleSEPUserClient
+			[String] AppleSMCClient
+			[String] AppleSPUDurantDriverUserClient
+			[String] AppleSSMAEndpointUserClient
+			[String] AppleSSMAServicesUserClient
+			[String] AppleStockholmControlUserClient
+			[String] IOAppleConvergedIPCBBUserClient
+			[String] IOPortTransportAIDBusUserClient
+	[Key] com.apple.stockholm.kext.entitlement
+	[Value]
+		[Bool] true

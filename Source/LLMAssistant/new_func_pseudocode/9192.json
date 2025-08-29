@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDataCopyProviderConcrete cleanUp]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPDataCopyProviderConcrete cleanUp](TSPDataCopyProviderConcrete * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPDataCopyProviderConcrete cleanUp](TSPDataCopyProviderConcrete *self, SEL a2)\n{\n  NSFileManager *v3; // x20\n  NSURL *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSFileManager defaultManager](&OBJC_CLASS___NSFileManager, \"defaultManager\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[TSPDataCopyProviderConcrete directory](self, \"directory\"));\n  -[NSFileManager removeItemAtURL:error:](v3, \"removeItemAtURL:error:\", v4, 0LL);\n  objc_release(v4);\n  objc_release(v3);\n  -[TSPDataCopyProviderConcrete setURLInternal:](self, \"setURLInternal:\", 0LL);\n  -[TSPDataCopyProviderConcrete setReadChannelInternal:](self, \"setReadChannelInternal:\", 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[TSPDataCopyProviderConcrete setInputStreamInternal:](self, \"setInputStreamInternal:\", 0LL);\n}"
+}

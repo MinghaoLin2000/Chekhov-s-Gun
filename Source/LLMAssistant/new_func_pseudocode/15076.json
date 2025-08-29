@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDResultGetType",
+    "function_argument_number": 0,
+    "function_signature": "_DDResultGetType()",
+    "pseudocode": "__int64 DDResultGetType()\n{\n  return _DDResultGetType();\n}"
+}

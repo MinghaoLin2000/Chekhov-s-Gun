@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundle maxInputSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IFDBundle maxInputSize:](IFDBundle * self, SEL a2, unsigned int a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nunsigned int __cdecl -[IFDBundle maxInputSize:](IFDBundle *self, SEL a2, unsigned int a3)\n{\n  __int64 v3; // x19\n  os_log_s *v5; // x21\n  __int64 v6; // x19\n  os_log_s *v7; // x20\n  int v10; // [xsp+8h] [xbp-28h] BYREF\n  unsigned int v11; // [xsp+Ch] [xbp-24h] BYREF\n\n  v3 = *(_QWORD *)&a3;\n  v10 = 4;\n  v11 = 0;\n  v5 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100003F08(self));\n  if ( os_log_type_enabled(v5, OS_LOG_TYPE_DEBUG) )\n    sub_100005F34(v3, v5);\n  objc_release(v5);\n  v6 = ((__int64 (__fastcall *)(__int64, __int64, int *, unsigned int *))self->_ifdMethod.IFDHGetCapabilities)(\n         v3,\n         499719LL,\n         &v10,\n         &v11);\n  v7 = (os_log_s *)objc_retainAutoreleasedReturnValue((id)sub_100003F08(v6));\n  if ( os_log_type_enabled(v7, OS_LOG_TYPE_DEBUG) )\n    sub_100005EC8(&v11, v6, v7);\n  objc_release(v7);\n  if ( v10 == 4 && v6 == 0 )\n    return v11;\n  else\n    return 261;\n}"
+}

@@ -1,0 +1,59 @@
+Service Path:
+/System/Library/PrivateFrameworks/MediaMLServices.framework/Versions/A/XPCServices/mediamlxpc.xpc/Contents/MacOS/mediamlxpc
+
+Service Exported Protocols:
+@protocol _TtP10mediamlxpc16MLServerProtocol_
+- (void)getModelStatsWith:(void (^)(NSDictionary *))arg1;
+- (void)wakeRemoteServiceWith:(void (^)(_Bool))arg1;
+- (void)writeWithData:(NSDictionary *)arg1 with:(void (^)(NSString *))arg2;
+- (void)getPredictionDictionaryWithInputFeatures:(NSDictionary *)arg1 with:(void (^)(NSDictionary *))arg2;
+- (void)getPredictionWithInputFeatures:(NSDictionary *)arg1 with:(void (^)(double))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.mediamlxpc
+	[Key] com.apple.coreduetd.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.intents.extension.discovery
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.rtcreportingd
+	[Value]
+		[Bool] true
+	[Key] com.apple.proactive.eventtracker
+	[Value]
+		[Bool] true
+	[Key] com.apple.runningboard.launchprocess
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.absolute-path.read-write
+	[Value]
+		[Array]
+			[String] /private/var/tmp/com.apple.coremedia/
+			[String] /private/var/mobile/Library/Trial/Treatments/314/
+			[String] /private/var/mobile/Library/Trial/Treatments/311/
+	[Key] com.apple.security.exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/MediaML/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.rtcreportingd
+			[String] com.apple.triald.namespace-management
+			[String] com.apple.siri.analytics.assistant
+	[Key] com.apple.security.exception.process-info
+	[Value]
+		[Bool] true
+	[Key] com.apple.trial.client
+	[Value]
+		[Array]
+			[String] 311
+			[String] 314

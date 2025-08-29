@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP5Range12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP5Range12ByteSizeLongEv(TSP::Range * this)",
+    "pseudocode": "__int64 __fastcall TSP::Range::ByteSizeLong(TSP::Range *this)\n{\n  __int64 v2; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( (~*((_DWORD *)this + 4) & 3) != 0 )\n    v2 = TSP::Range::RequiredFieldsByteSizeFallback(this);\n  else\n    v2 = ((9 * (__clz(*((_DWORD *)this + 6) | 1) ^ 0x1F) + 73) >> 6)\n       + ((9 * (__clz(*((_DWORD *)this + 7) | 1) ^ 0x1F) + 73) >> 6)\n       + 2;\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v2, (char *)this + 20);\n  }\n  else\n  {\n    *((_DWORD *)this + 5) = v2;\n    return v2;\n  }\n}"
+}

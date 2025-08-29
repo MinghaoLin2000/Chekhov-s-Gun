@@ -1,0 +1,5 @@
+_swift_isUniquelyReferenced_nonNull_native
+__int64 swift_isUniquelyReferenced_nonNull_native()
+{
+  return _swift_isUniquelyReferenced_nonNull_native();
+}

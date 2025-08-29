@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController setLibraryRentals:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsMoviesViewController setLibraryRentals:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSettingsMoviesViewController setLibraryRentals:](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_libraryRentals, a3);\n}"
+}

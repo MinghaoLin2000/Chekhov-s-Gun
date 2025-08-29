@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$preferredTransform",
+    "function_argument_number": 1,
+    "function_signature": "_objc_msgSend$preferredTransform(void * a1)",
+    "pseudocode": "id objc_msgSend_preferredTransform(void *a1, ...)\n{\n  return objc_msgSend(a1, \"preferredTransform\");\n}"
+}

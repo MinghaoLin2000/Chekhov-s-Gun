@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSDate dateFormatterFromTemplate12Hour:template24Hour:withDateFormatter:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSDate dateFormatterFromTemplate12Hour:template24Hour:withDateFormatter:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[NSDate dateFormatterFromTemplate12Hour:template24Hour:withDateFormatter:](\n        NSDate *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  id v8; // x19\n  id v9; // x20\n  id v10; // x0\n  void *v11; // x22\n  id v12; // x0\n  void *v13; // x23\n  id v14; // x2\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v8 = objc_retain(a3);\n  v9 = objc_retain(a4);\n  v10 = objc_retain(a5);\n  v11 = v10;\n  if ( v10 )\n    v12 = objc_retain(v10);\n  else\n    v12 = objc_alloc_init((Class)&OBJC_CLASS___NSDateFormatter);\n  v13 = v12;\n  if ( -[NSDate p_localeUses24HourTimeCycle](self, \"p_localeUses24HourTimeCycle\") )\n    v14 = v9;\n  else\n    v14 = v8;\n  objc_msgSend(v13, \"setLocalizedDateFormatFromTemplate:\", v14);\n  objc_release(v11);\n  objc_release(v9);\n  objc_release(v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v13);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_AESendMessage",
+    "function_argument_number": 4,
+    "function_signature": "_AESendMessage(const AppleEvent * event, AppleEvent * reply, AESendMode sendMode, __int64 timeOutInTicks)",
+    "pseudocode": "OSStatus __cdecl AESendMessage(const AppleEvent *event, AppleEvent *reply, AESendMode sendMode, __int64 timeOutInTicks)\n{\n  return _AESendMessage(event, reply, sendMode, timeOutInTicks);\n}"
+}

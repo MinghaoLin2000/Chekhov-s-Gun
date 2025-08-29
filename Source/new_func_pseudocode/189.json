@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_group_notify",
+    "function_argument_number": 3,
+    "function_signature": "_dispatch_group_notify(dispatch_group_t group, dispatch_queue_t queue, dispatch_block_t block)",
+    "pseudocode": "void __cdecl dispatch_group_notify(dispatch_group_t group, dispatch_queue_t queue, dispatch_block_t block)\n{\n  _dispatch_group_notify(group, queue, block);\n}"
+}

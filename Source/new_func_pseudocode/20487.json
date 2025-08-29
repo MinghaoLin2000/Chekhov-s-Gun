@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Browse_Implementation session]",
+    "function_argument_number": 2,
+    "function_signature": "-[Browse_Implementation session](Browse_Implementation * self, SEL a2)",
+    "pseudocode": "IPPSession *__cdecl -[Browse_Implementation session](Browse_Implementation *self, SEL a2)\n{\n  return (IPPSession *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_arc4random",
+    "function_argument_number": 0,
+    "function_signature": "_arc4random()",
+    "pseudocode": "uint32_t arc4random(void)\n{\n  return _arc4random();\n}"
+}

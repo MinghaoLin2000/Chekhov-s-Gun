@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableIndexSet tsu_intersectionWithIndexSet:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSMutableIndexSet tsu_intersectionWithIndexSet:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[NSMutableIndexSet tsu_intersectionWithIndexSet:](NSMutableIndexSet *self, SEL a2, id a3)\n{\n  id v4; // x19\n  void *v5; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  if ( -[NSMutableIndexSet count](self, \"count\") )\n  {\n    v5 = objc_msgSend(\n           objc_alloc((Class)&OBJC_CLASS___NSMutableIndexSet),\n           \"initWithIndexesInRange:\",\n           -[NSMutableIndexSet firstIndex](self, \"firstIndex\"),\n           (_BYTE *)-[NSMutableIndexSet lastIndex](self, \"lastIndex\")\n         - (_BYTE *)-[NSMutableIndexSet firstIndex](self, \"firstIndex\")\n         + 1);\n    objc_msgSend(v5, \"removeIndexes:\", v4);\n    -[NSMutableIndexSet removeIndexes:](self, \"removeIndexes:\", v5);\n    objc_release(v5);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

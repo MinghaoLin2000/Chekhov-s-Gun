@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFileSharingViewController outlineView:draggingSession:willBeginAtPoint:forItems:]",
+    "function_argument_number": 6,
+    "function_signature": "-[DeviceFileSharingViewController outlineView:draggingSession:willBeginAtPoint:forItems:](DeviceFileSharingViewController * self, SEL a2, id a3, id a4, id a6, CGPoint a5)",
+    "pseudocode": "void __cdecl -[DeviceFileSharingViewController outlineView:draggingSession:willBeginAtPoint:forItems:](\n        DeviceFileSharingViewController *self,\n        SEL a2,\n        id a3,\n        id a4,\n        CGPoint a5,\n        id a6)\n{\n  -[DeviceFileSharingViewController setDraggedItems:](self, \"setDraggedItems:\", a6, a4, a5.x, a5.y);\n}"
+}

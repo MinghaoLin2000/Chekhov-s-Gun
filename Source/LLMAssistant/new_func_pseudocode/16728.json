@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAnalyticsAssetDownloadStatusToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAnalyticsAssetDownloadStatusToString()",
+    "pseudocode": "__int64 UARPAnalyticsAssetDownloadStatusToString()\n{\n  return _UARPAnalyticsAssetDownloadStatusToString();\n}"
+}

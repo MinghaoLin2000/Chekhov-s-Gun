@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageRelease",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageRelease(CGImageRef image)",
+    "pseudocode": "void __cdecl CGImageRelease(CGImageRef image)\n{\n  _CGImageRelease(image);\n}"
+}

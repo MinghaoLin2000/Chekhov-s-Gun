@@ -1,0 +1,6 @@
+{
+    "function_name": "_fseeko",
+    "function_argument_number": 3,
+    "function_signature": "_fseeko(FILE * __stream, off_t a2, int __whence)",
+    "pseudocode": "int __cdecl fseeko(FILE *__stream, off_t a2, int __whence)\n{\n  return _fseeko(__stream, a2, __whence);\n}"
+}

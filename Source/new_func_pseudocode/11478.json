@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal15ExtensionFinderD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal15ExtensionFinderD2Ev(google::protobuf::internal::ExtensionFinder * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::ExtensionFinder::~ExtensionFinder(\n        google::protobuf::internal::ExtensionFinder *this)\n{\n  ;\n}"
+}

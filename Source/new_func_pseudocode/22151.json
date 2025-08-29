@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN16MTLConnectionCtxC2EiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN16MTLConnectionCtxC2EiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE(__int64 a1, int a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall MTLConnectionCtx::MTLConnectionCtx(__int64 a1, int a2, __int64 a3)\n{\n  CompilerPluginInterface *v6; // x21\n\n  *(_QWORD *)a1 = 0LL;\n  *(_QWORD *)(a1 + 8) = 0LL;\n  *(_DWORD *)(a1 + 16) = a2;\n  v6 = (CompilerPluginInterface *)operator new(48LL, 0x1080C407D05813FLL);\n  CompilerPluginInterface::CompilerPluginInterface(v6, a2);\n  *(_QWORD *)a1 = v6;\n  *(_QWORD *)(a1 + 8) = (*((__int64 (__fastcall **)(__int64))v6 + 1))(a3);\n  return a1;\n}"
+}

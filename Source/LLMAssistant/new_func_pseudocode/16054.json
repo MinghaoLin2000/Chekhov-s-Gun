@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetSetPayloadOffset",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointAssetSetPayloadOffset(__int64 a2, unsigned int a3, __int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointAssetSetPayloadOffset(__int64 a1, __int64 a2, unsigned int a3)\n{\n  __int64 result; // x0\n\n  if ( !a2 )\n    return 30LL;\n  if ( *(_DWORD *)(a2 + 452) == -1 )\n    return 44LL;\n  if ( *(_DWORD *)(a2 + 500) <= a3 )\n    return 43LL;\n  if ( *(_BYTE *)(a2 + 392) == 1 )\n    return 16LL;\n  result = 0LL;\n  *(_DWORD *)(a2 + 508) = a3;\n  return result;\n}"
+}

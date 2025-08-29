@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSError tsu_isFeatureUnsupportedError]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSError tsu_isFeatureUnsupportedError](NSError * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[NSError tsu_isFeatureUnsupportedError](NSError *self, SEL a2)\n{\n  return -[NSError tsu_isErrorPassingTest:](self, \"tsu_isErrorPassingTest:\", &stru_1001DD480);\n}"
+}

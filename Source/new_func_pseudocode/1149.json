@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController albumIDWithIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController albumIDWithIdentifier:](int a1, int a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceSettingsPhotosViewController albumIDWithIdentifier:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  unsigned int v5; // w21\n  id v6; // x20\n  const char *v7; // x19\n  CC_LONG v8; // w0\n  unsigned __int64 v9; // x8\n  unsigned __int8 md[16]; // [xsp+8h] [xbp-38h] BYREF\n\n  v4 = objc_retain(a3);\n  v5 = -[DeviceSettingsPhotosViewController isEnglishUUIDText:](self, \"isEnglishUUIDText:\", v4);\n  v6 = objc_retainAutorelease(v4);\n  v7 = (const char *)objc_msgSend(v6, \"UTF8String\");\n  objc_release(v6);\n  if ( v5 )\n  {\n    v8 = strlen(v7);\n    CC_MD5(v7, v8, md);\n    v9 = *(_QWORD *)md;\n  }\n  else\n  {\n    v9 = *(_QWORD *)v7;\n  }\n  return bswap64(v9);\n}"
+}

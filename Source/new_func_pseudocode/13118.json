@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBacktrace init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUBacktrace init](TSUBacktrace * self, SEL a2)",
+    "pseudocode": "TSUBacktrace *__cdecl -[TSUBacktrace init](TSUBacktrace *self, SEL a2)\n{\n  return -[TSUBacktrace initWithAdjustment:](self, \"initWithAdjustment:\", 2LL);\n}"
+}

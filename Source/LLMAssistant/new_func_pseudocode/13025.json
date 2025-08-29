@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSIndexSet tsu_initWithIndices:count:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSIndexSet tsu_initWithIndices:count:](NSIndexSet * self, SEL a2, unsigned __int64 * a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl -[NSIndexSet tsu_initWithIndices:count:](\n        NSIndexSet *self,\n        SEL a2,\n        unsigned __int64 *a3,\n        unsigned __int64 a4)\n{\n  void *i; // x20\n  __int64 v8; // t1\n  NSIndexSet *v9; // x21\n  NSIndexSet *v10; // x22\n\n  for ( i = objc_retainAutoreleasedReturnValue(+[NSMutableIndexSet indexSet](&OBJC_CLASS___NSMutableIndexSet, \"indexSet\"));\n        a4;\n        --a4 )\n  {\n    v8 = *a3++;\n    objc_msgSend(i, \"addIndex:\", v8);\n  }\n  v9 = objc_retain(self);\n  v10 = -[NSIndexSet initWithIndexSet:](v9, \"initWithIndexSet:\", i);\n  objc_release(i);\n  objc_release(v9);\n  return v10;\n}"
+}

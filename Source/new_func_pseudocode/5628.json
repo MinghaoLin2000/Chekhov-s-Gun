@@ -1,0 +1,6 @@
+{
+    "function_name": "_SOKeyMenuEntriesFromDictationHotKey",
+    "function_argument_number": 1,
+    "function_signature": "_SOKeyMenuEntriesFromDictationHotKey(void * a1)",
+    "pseudocode": "__int64 __fastcall SOKeyMenuEntriesFromDictationHotKey(void *a1)\n{\n  id v1; // x19\n  __int64 v2; // x20\n\n  v1 = objc_retain(a1);\n  if ( (unsigned int)objc_msgSend(v1, \"isDoubleTap\") )\n  {\n    if ( ((unsigned int)objc_msgSend(v1, \"modifiers\") & 0x40000) != 0 )\n    {\n      v2 = 2LL;\n    }\n    else if ( ((unsigned int)objc_msgSend(v1, \"modifiers\") & 0x10) != 0 )\n    {\n      v2 = 4LL;\n    }\n    else if ( ((unsigned int)objc_msgSend(v1, \"modifiers\") & 8) != 0 )\n    {\n      v2 = 5LL;\n    }\n    else if ( ((unsigned int)objc_msgSend(v1, \"modifiers\") & 0x100000) != 0 )\n    {\n      v2 = 6LL;\n    }\n    else if ( ((unsigned __int64)objc_msgSend(v1, \"modifiers\") & 0x800000) != 0 )\n    {\n      v2 = 3LL;\n    }\n    else\n    {\n      v2 = 10LL;\n    }\n  }\n  else\n  {\n    v2 = 9LL;\n    if ( objc_msgSend(v1, \"keyChar\") == (void *)0xFFFF )\n    {\n      if ( objc_msgSend(v1, \"virtualKey\") == (void *)0xFFFF )\n        v2 = 0LL;\n      else\n        v2 = 9LL;\n    }\n  }\n  objc_release(v1);\n  return v2;\n}"
+}

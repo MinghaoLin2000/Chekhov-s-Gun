@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCheckBoxTableCellView checkBox]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCheckBoxTableCellView checkBox](DeviceSettingsCheckBoxTableCellView * self, SEL a2)",
+    "pseudocode": "DeviceSettingsCheckBox *__cdecl -[DeviceSettingsCheckBoxTableCellView checkBox](\n        DeviceSettingsCheckBoxTableCellView *self,\n        SEL a2)\n{\n  id WeakRetained; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  WeakRetained = objc_loadWeakRetained((id *)&self->_checkBox);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (DeviceSettingsCheckBox *)objc_autoreleaseReturnValue(WeakRetained);\n}"
+}

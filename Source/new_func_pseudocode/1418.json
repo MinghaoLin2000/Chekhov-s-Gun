@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController libraryRentals]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesViewController libraryRentals](DeviceSettingsMoviesViewController * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[DeviceSettingsMoviesViewController libraryRentals](DeviceSettingsMoviesViewController *self, SEL a2)\n{\n  NSArray *libraryRentals; // x0\n  ITLibrary *v4; // x20\n  NSArray *v5; // x0\n  NSArray *v6; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  libraryRentals = self->_libraryRentals;\n  if ( !libraryRentals )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController itLibrary](self, \"itLibrary\"));\n    v5 = (NSArray *)objc_retainAutoreleasedReturnValue(-[DeviceSettingsMoviesViewController rentalsForLibrary:](self, \"rentalsForLibrary:\", v4));\n    v6 = self->_libraryRentals;\n    self->_libraryRentals = v5;\n    objc_release(v6);\n    objc_release(v4);\n    libraryRentals = self->_libraryRentals;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(libraryRentals);\n}"
+}

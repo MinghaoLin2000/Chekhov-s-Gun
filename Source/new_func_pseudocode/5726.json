@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPreferencesSetAppValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFPreferencesSetAppValue(CFStringRef key, CFPropertyListRef value, CFStringRef applicationID)",
+    "pseudocode": "void __cdecl CFPreferencesSetAppValue(CFStringRef key, CFPropertyListRef value, CFStringRef applicationID)\n{\n  _CFPreferencesSetAppValue(key, value, applicationID);\n}"
+}

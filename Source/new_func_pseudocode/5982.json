@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceDefaultImageMetadataPolicy initWithLossyCompressionQuality:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PAMediaConversionServiceDefaultImageMetadataPolicy initWithLossyCompressionQuality:](PAMediaConversionServiceDefaultImageMetadataPolicy * self, SEL a2, float a3)",
+    "pseudocode": "PAMediaConversionServiceDefaultImageMetadataPolicy *__cdecl -[PAMediaConversionServiceDefaultImageMetadataPolicy initWithLossyCompressionQuality:](\n        PAMediaConversionServiceDefaultImageMetadataPolicy *self,\n        SEL a2,\n        float a3)\n{\n  PAMediaConversionServiceDefaultImageMetadataPolicy *v4; // x0\n  double v5; // d0\n  PAMediaConversionServiceDefaultImageMetadataPolicy *v6; // x19\n  objc_super v8; // [xsp+0h] [xbp-30h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___PAMediaConversionServiceDefaultImageMetadataPolicy;\n  v4 = -[PAMediaConversionServiceDefaultImageMetadataPolicy init](&v8, \"init\");\n  v6 = v4;\n  if ( v4 )\n  {\n    *(float *)&v5 = a3;\n    -[PAMediaConversionServiceDefaultImageMetadataPolicy setLossyCompressionQuality:](\n      v4,\n      \"setLossyCompressionQuality:\",\n      v5);\n  }\n  return v6;\n}"
+}

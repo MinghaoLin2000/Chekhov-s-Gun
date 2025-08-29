@@ -1,0 +1,6 @@
+{
+    "function_name": "_memset",
+    "function_argument_number": 3,
+    "function_signature": "_memset(void * __b, int __c, size_t __len)",
+    "pseudocode": "void *__cdecl memset(void *__b, int __c, size_t __len)\n{\n  return _memset(__b, __c, __len);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPMemoryReadChannel close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPMemoryReadChannel close](TSPMemoryReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPMemoryReadChannel close](TSPMemoryReadChannel *self, SEL a2)\n{\n  void *v3; // x20\n  dispatch_queue_s *readQueue; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-38h] BYREF\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v3 = off_1001F5320;\n  if ( dispatch_get_specific(off_1001F5320) == v3 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    -[TSPMemoryReadChannel _close](self, \"_close\");\n  }\n  else\n  {\n    readQueue = (dispatch_queue_s *)self->_readQueue;\n    block[0] = _NSConcreteStackBlock;\n    block[1] = 3254779904LL;\n    block[2] = sub_100011438;\n    block[3] = &unk_1001D1A40;\n    block[4] = self;\n    dispatch_sync(readQueue, block);\n  }\n}"
+}

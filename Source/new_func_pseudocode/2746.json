@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode sortName]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode sortName](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[DeviceSettingsNode sortName](DeviceSettingsNode *self, SEL a2)\n{\n  NSString *sortName; // x0\n  NSString **p_sortName; // x20\n  NSString *v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  p_sortName = &self->_sortName;\n  sortName = self->_sortName;\n  if ( !sortName || -[NSString isEqualToString:](sortName, \"isEqualToString:\", &stru_1000BA220) )\n    p_sortName = &self->_name;\n  v5 = *p_sortName;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_getGCSLogger",
+    "function_argument_number": 0,
+    "function_signature": "_getGCSLogger()",
+    "pseudocode": "__int64 getGCSLogger()\n{\n  return _getGCSLogger();\n}"
+}

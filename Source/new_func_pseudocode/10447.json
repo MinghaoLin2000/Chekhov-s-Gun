@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP25SparseUUIDPathArray_EntryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP25SparseUUIDPathArray_EntryD2Ev(TSP::SparseUUIDPathArray_Entry * this)",
+    "pseudocode": "void __fastcall TSP::SparseUUIDPathArray_Entry::~SparseUUIDPathArray_Entry(TSP::SparseUUIDPathArray_Entry *this)\n{\n  TSP::UUIDPath *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (TSP::SparseUUIDPathArray_Entry *)&TSP::_SparseUUIDPathArray_Entry_default_instance_ )\n  {\n    v2 = (TSP::UUIDPath *)*((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      TSP::UUIDPath::~UUIDPath(v2);\n      operator delete(v3, 0x10A1C40290C9B23LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

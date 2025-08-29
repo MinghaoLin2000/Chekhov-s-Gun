@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC07accountH00I0AC9JetEngine8UnstableO0G0C_So9ACAccountCSgtcfc",
+    "function_argument_number": 2,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC07accountH00I0AC9JetEngine8UnstableO0G0C_So9ACAccountCSgtcfc(__int64 a1, __int64 a2)",
+    "pseudocode": "_QWORD *__fastcall DynamicAccountsStore.init(accountStore:account:)(__int64 a1, __int64 a2)\n{\n  _QWORD *v2; // x20\n\n  v2[2] = objc_msgSend(objc_allocWithZone((Class)&OBJC_CLASS___NSLock), \"init\");\n  v2[3] = a2;\n  v2[4] = a1;\n  return v2;\n}"
+}

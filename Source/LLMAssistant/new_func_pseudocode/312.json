@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_alloc_init",
+    "function_argument_number": 0,
+    "function_signature": "_objc_alloc_init()",
+    "pseudocode": "__int64 objc_alloc_init()\n{\n  return _objc_alloc_init();\n}"
+}

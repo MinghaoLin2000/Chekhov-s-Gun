@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo10WindowTagsV16EyeCandyGraphicsE20descriptionKeyValuesSayAB_s12StaticStringVtGvau",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo10WindowTagsV16EyeCandyGraphicsE20descriptionKeyValuesSayAB_s12StaticStringVtGvau()",
+    "pseudocode": "__int64 *WindowTags.descriptionKeyValues.unsafeMutableAddressor()\n{\n  if ( qword_10002AE70 != -1 )\n    swift_once(&qword_10002AE70, sub_10001B558);\n  return &static WindowTags.descriptionKeyValues;\n}"
+}

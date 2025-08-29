@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12PlyConverterC1ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN12PlyConverterC1ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEE(__int64 a1, __int64 a2, __int128 * a3)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall PlyConverter::PlyConverter(__int64 a1, __int64 a2, __int128 *a3)\n{\n  return __ZN12PlyConverterC2ERNSt3__113basic_istreamIcNS0_11char_traitsIcEEEERKNS0_12basic_stringIcS3_NS0_9allocatorIcEEEE(\n           a1,\n           a2,\n           a3);\n}"
+}

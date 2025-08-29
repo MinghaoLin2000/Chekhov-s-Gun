@@ -1,0 +1,5 @@
+{
+  "-[SCNSceneLoader loadSceneAtURL:options:withReply:]": 4294981176,
+  "_objc_msgSend$sceneSourceWithURL:options:": 4294981920,
+  "-[SCNSceneLoader consumeExtensions:]": 4294980824
+}

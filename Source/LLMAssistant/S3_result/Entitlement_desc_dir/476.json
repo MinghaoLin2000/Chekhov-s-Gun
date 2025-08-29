@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.private.cmcapture.frame-receiver",
+  "capability": "Grants an application the ability to directly receive and process raw video frames from a camera or other CoreMedia Capture source, potentially bypassing standard APIs or accessing low-level data streams.",
+  "reasoning": "The 'com.apple.private' prefix indicates an internal Apple entitlement, suggesting privileged access. 'cmcapture' strongly points to CoreMedia Capture, Apple's framework for camera and microphone input. 'frame-receiver' implies the ability to obtain individual frames, likely raw pixel data, from a capture source. Combined, this suggests deep access to camera input.",
+  "similar_entitlements": [
+    "com.apple.developer.camera.access",
+    "com.apple.developer.screen-capture.include-passthrough"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to 'Camera: Collect videos or images through the system camera,' which is a protected resource under Transparency, Consent, and Control (TCC). Granting an application the ability to receive raw video frames from the camera falls under accessing TCC-protected resources. Such an entitlement, especially being 'private,' would likely be used by system components to access camera data, potentially without explicit user consent via standard TCC prompts, or to provide a privileged pathway for camera data processing.",
+  "self_reflection": "I am highly confident in this assessment. The components of the entitlement name (private, cmcapture, frame-receiver) strongly indicate its purpose related to privileged camera access and frame processing. The mapping to TCC's camera access category is a direct fit. The only minor ambiguity is the exact 'raw' level of access versus processed frames, but 'frame-receiver' suggests a direct data stream. A potential misinterpretation could arise if 'cmcapture' or 'frame-receiver' had a highly abstract or non-visual meaning within Apple's internal systems, which is unlikely given standard naming conventions."
+}

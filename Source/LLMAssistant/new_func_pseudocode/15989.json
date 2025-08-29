@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinDecompressBuffer",
+    "function_argument_number": 5,
+    "function_signature": "_uarpPlatformDarwinDecompressBuffer(int a1, void * __src, size_t src_size, void * __dst, size_t __n)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDarwinDecompressBuffer(int a1, void *__src, size_t src_size, void *__dst, size_t __n)\n{\n  compression_algorithm v5; // w5\n  __int64 result; // x0\n\n  v5 = 1538;\n  switch ( a1 )\n  {\n    case 0:\n      if ( (_DWORD)src_size != (_DWORD)__n )\n        return 51LL;\n      memcpy(__dst, __src, (unsigned int)__n);\n      return 0LL;\n    case 1:\n      goto LABEL_6;\n    case 2:\n      v5 = COMPRESSION_LZBITMAP;\n      goto LABEL_6;\n    case 3:\n      v5 = COMPRESSION_LZ4;\nLABEL_6:\n      if ( compression_decode_buffer(\n             (uint8_t *)__dst,\n             (unsigned int)__n,\n             (const uint8_t *)__src,\n             (unsigned int)src_size,\n             0LL,\n             v5) == (unsigned int)__n )\n        result = 0LL;\n      else\n        result = 51LL;\n      break;\n    default:\n      result = 50LL;\n      break;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ClientRequest setRequiresDeduplicationAgainstOriginalWithIdenticalOutput:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ClientRequest setRequiresDeduplicationAgainstOriginalWithIdenticalOutput:](ClientRequest * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[ClientRequest setRequiresDeduplicationAgainstOriginalWithIdenticalOutput:](\n        ClientRequest *self,\n        SEL a2,\n        bool a3)\n{\n  self->_requiresDeduplicationAgainstOriginalWithIdenticalOutput = a3;\n}"
+}

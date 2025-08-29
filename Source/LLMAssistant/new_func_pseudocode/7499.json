@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV7windows_7setTags05clearG0SayAA9CGSWindowVGSo29CGSWorkspaceWindowListOptionsV_So0kG0VAMtF",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV7windows_7setTags05clearG0SayAA9CGSWindowVGSo29CGSWorkspaceWindowListOptionsV_So0kG0VAMtF()",
+    "pseudocode": "__int64 CGSSpace.windows(_:setTags:clearTags:)()\n{\n  __int64 v0; // x0\n  __int64 inited; // x24\n  __int64 v2; // x19\n  _BYTE v4[40]; // [xsp+8h] [xbp-58h] BYREF\n\n  CGSConnection.null.unsafeMutableAddressor();\n  v0 = sub_100002BF4(&unk_100029A70);\n  inited = swift_initStackObject(v0, v4);\n  v2 = sub_100012244((__n128)xmmword_10001FC20);\n  swift_bridgeObjectRelease(inited);\n  return v2;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpLogInfo",
+    "function_argument_number": 2,
+    "function_signature": "_uarpLogInfo(int a1, char * __format)",
+    "pseudocode": "void uarpLogInfo(__int64 a1, char *__format, ...)\n{\n  os_log_s *v3; // x20\n  uint8_t buf[4]; // [xsp+10h] [xbp-30h] BYREF\n  char *v5; // [xsp+14h] [xbp-2Ch]\n  va_list va; // [xsp+50h] [xbp+10h] BYREF\n\n  va_start(va, __format);\n  vsnprintf(byte_10002B1A0, 0x200uLL, __format, va);\n  v3 = (os_log_s *)sub_100013DA0(a1);\n  if ( os_log_type_enabled(v3, OS_LOG_TYPE_INFO) )\n  {\n    *(_DWORD *)buf = 136315138;\n    v5 = byte_10002B1A0;\n    _os_log_impl((void *)&_mh_execute_header, v3, OS_LOG_TYPE_INFO, \"%s\\n\", buf, 0xCu);\n  }\n}"
+}

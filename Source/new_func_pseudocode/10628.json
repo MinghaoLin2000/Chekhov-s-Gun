@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP10LargeArrayD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP10LargeArrayD2Ev(TSP::LargeArray * this)",
+    "pseudocode": "void __fastcall TSP::LargeArray::~LargeArray(TSP::LargeArray *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_10007729C((char *)this + 48);\n  sub_100076AD0((char *)this + 24);\n}"
+}

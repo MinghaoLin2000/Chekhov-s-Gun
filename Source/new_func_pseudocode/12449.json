@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_preferredIdentifierForTagClass:conformingToUTI:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSString tsu_preferredIdentifierForTagClass:conformingToUTI:](CFStringRef inTag, int a2, CFStringRef inTagClass, CFStringRef inConformingToUTI)",
+    "pseudocode": "id __cdecl -[NSString tsu_preferredIdentifierForTagClass:conformingToUTI:](NSString *self, SEL a2, id a3, id a4)\n{\n  __CFString *PreferredIdentifierForTag; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  PreferredIdentifierForTag = (__CFString *)UTTypeCreatePreferredIdentifierForTag(\n                                              (CFStringRef)a3,\n                                              (CFStringRef)self,\n                                              (CFStringRef)a4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(PreferredIdentifierForTag);\n}"
+}

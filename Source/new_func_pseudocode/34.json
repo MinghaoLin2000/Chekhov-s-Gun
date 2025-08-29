@@ -1,0 +1,6 @@
+{
+    "function_name": "j__swift_getEnumCaseMultiPayload",
+    "function_argument_number": 0,
+    "function_signature": "j__swift_getEnumCaseMultiPayload()",
+    "pseudocode": "// attributes: thunk\n__int64 j__swift_getEnumCaseMultiPayload()\n{\n  return swift_getEnumCaseMultiPayload();\n}"
+}

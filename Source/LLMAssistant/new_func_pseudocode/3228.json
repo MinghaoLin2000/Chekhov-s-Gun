@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceMediaPickerViewController tableView:shouldEditTableColumn:row:]",
+    "function_argument_number": 5,
+    "function_signature": "-[DeviceMediaPickerViewController tableView:shouldEditTableColumn:row:](DeviceMediaPickerViewController * self, SEL a2, id a3, id a4, signed __int64 a5)",
+    "pseudocode": "bool __cdecl -[DeviceMediaPickerViewController tableView:shouldEditTableColumn:row:](\n        DeviceMediaPickerViewController *self,\n        SEL a2,\n        id a3,\n        id a4,\n        signed __int64 a5)\n{\n  return 0;\n}"
+}

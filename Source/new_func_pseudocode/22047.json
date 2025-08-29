@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_release",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_release(xpc_object_t object)",
+    "pseudocode": "void __cdecl xpc_release(xpc_object_t object)\n{\n  _xpc_release(object);\n}"
+}

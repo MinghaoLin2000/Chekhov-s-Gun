@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction remoteActionWillFinishRunning]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction remoteActionWillFinishRunning](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction remoteActionWillFinishRunning](AMLoaderServiceAction *self, SEL a2)\n{\n  NSAssertionHandler *v4; // x21\n  _QWORD v5[5]; // [xsp+8h] [xbp-48h] BYREF\n\n  if ( +[NSThread isMainThread](&OBJC_CLASS___NSThread, \"isMainThread\") )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v4,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"AMLoaderServiceAction.m\"),\n      350LL,\n      CFSTR(\"Should not be called on main thread!\"));\n    objc_release(v4);\n  }\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_10000BAAC;\n  v5[3] = &unk_10001C758;\n  v5[4] = self;\n  -[AMLoaderServiceAction _executeSynchronouslyWithLoadedActionOnMainThread:](\n    self,\n    \"_executeSynchronouslyWithLoadedActionOnMainThread:\",\n    v5);\n}"
+}

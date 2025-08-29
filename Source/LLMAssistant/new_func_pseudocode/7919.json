@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionContainsPoint",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionContainsPoint()",
+    "pseudocode": "__int64 CGRegionContainsPoint()\n{\n  return _CGRegionContainsPoint();\n}"
+}

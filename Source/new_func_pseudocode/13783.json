@@ -1,0 +1,6 @@
+{
+    "function_name": "_class_getName",
+    "function_argument_number": 1,
+    "function_signature": "_class_getName(Class cls)",
+    "pseudocode": "const char *__cdecl class_getName(Class cls)\n{\n  return _class_getName(cls);\n}"
+}

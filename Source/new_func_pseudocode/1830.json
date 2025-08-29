@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController setDeviceDetailsLabel:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceHeaderViewController setDeviceDetailsLabel:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceHeaderViewController setDeviceDetailsLabel:](DeviceHeaderViewController *self, SEL a2, id a3)\n{\n  objc_storeWeak((id *)&self->_deviceDetailsLabel, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_inet_ntop",
+    "function_argument_number": 4,
+    "function_signature": "_inet_ntop(int a1, const void * a2, char * a3, socklen_t a4)",
+    "pseudocode": "const char *__cdecl inet_ntop(int a1, const void *a2, char *a3, socklen_t a4)\n{\n  return _inet_ntop(a1, a2, a3, a4);\n}"
+}

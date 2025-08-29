@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.files.home-relative-path.read-write:/Documents/",
+  "capability": "Grants the application temporary read-write access to the user's 'Documents' folder (located at `~/Documents/`), bypassing standard sandbox restrictions for this specific path.",
+  "reasoning": "The entitlement name `com.apple.security.temporary-exception` suggests a specific, non-standard bypass of security mechanisms. `files.home-relative-path.read-write` indicates the ability to perform read and write operations on files within a path relative to the user's home directory. The specific path `:/Documents/` clearly identifies the target as the user's 'Documents' folder. This structure is analogous to `com.apple.security.files.downloads.read-write`, which grants access to the Downloads folder, but with the added `temporary-exception` modifier and the explicit `home-relative-path` for a specific directory, implying a targeted, possibly more granular, exception to the sandbox for that particular location.",
+  "similar_entitlements": [
+    "com.apple.security.files.downloads.read-write"
+  ],
+  "sensitive_type": [
+    1,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly allows an application to perform read, write, and delete operations within the user's 'Documents' folder, which is a private user directory. This clearly falls under '1. File and File System Operations' as it involves direct manipulation of user files. Furthermore, access to user private directories like 'Documents' is typically mediated by macOS's sandbox and Transparency, Consent, and Control (TCC) mechanisms. Granting explicit read-write access via a 'temporary-exception' entitlement provides a means to access a resource that would otherwise be TCC-protected or restricted by the sandbox, thus relating to '5. Access Transparency Consent and Control (TCC) related functions' by providing a specific bypass.",
+  "self_reflection": "I am confident in the inferred capability based on the clear, descriptive naming convention of the entitlement and its direct resemblance to known file access entitlements. The 'temporary-exception' aspect suggests a specific, perhaps limited-duration or condition-based, bypass, but the core capability of file read-write access to `~/Documents/` is unambiguous. The classification into sensitive types 1 (File Operations) and 5 (TCC related) is also highly confident, as it directly involves file manipulation in a user's private directory that is typically under TCC/sandbox control."
+}

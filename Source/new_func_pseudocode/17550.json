@@ -1,0 +1,6 @@
+{
+    "function_name": "___copy_helper_block_ea8_32s40b",
+    "function_argument_number": 2,
+    "function_signature": "___copy_helper_block_ea8_32s40b(__int64 a1, __int64 a2)",
+    "pseudocode": "void __fastcall __copy_helper_block_ea8_32s40b(__int64 a1, __int64 a2)\n{\n  id v4; // x0\n  const void *v5; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(*(id *)(a2 + 32));\n  v5 = *(const void **)(a2 + 40);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  _Block_object_assign((void *)(a1 + 40), v5, 7);\n}"
+}

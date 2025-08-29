@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSIndexSet tsu_enumerateSkippedIndexesWithOptions:usingBlock:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSIndexSet tsu_enumerateSkippedIndexesWithOptions:usingBlock:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[NSIndexSet tsu_enumerateSkippedIndexesWithOptions:usingBlock:](\n        NSIndexSet *self,\n        SEL a2,\n        unsigned __int64 a3,\n        id a4)\n{\n  id v5; // x19\n  _QWORD v6[4]; // [xsp+0h] [xbp-50h] BYREF\n  NSIndexSet *v7; // [xsp+20h] [xbp-30h]\n  id v8; // [xsp+28h] [xbp-28h]\n\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_100146068;\n  v6[3] = &unk_1001DE238;\n  v7 = self;\n  v8 = objc_retain(a4);\n  v5 = objc_retain(v8);\n  -[NSIndexSet enumerateRangesWithOptions:usingBlock:](v7, \"enumerateRangesWithOptions:usingBlock:\", a3, v6);\n  objc_release(v8);\n  objc_release(v5);\n}"
+}

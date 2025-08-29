@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSession controlLogging]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSession controlLogging](IPPSession * self, SEL a2)",
+    "pseudocode": "IPPControlLogging *__cdecl -[IPPSession controlLogging](IPPSession *self, SEL a2)\n{\n  return (IPPControlLogging *)objc_getProperty(self, a2, 48LL, 1);\n}"
+}

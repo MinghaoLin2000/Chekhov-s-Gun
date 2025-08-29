@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize8MapInput9serializeERNS_10SerializerE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN9serialize8MapInput9serializeERNS_10SerializerE(serialize::MapInput * this, serialize::Serializer * a2)",
+    "pseudocode": "void __fastcall serialize::MapInput::serialize(serialize::MapInput *this, serialize::Serializer *a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  serialize::Prim::serialize(this, a2);\n  serialize::Serializer::sync((unsigned __int8 *)a2, \"inputName\", (int *)this + 16);\n  serialize::Serializer::sync(a2, \"value\", (float *)this + 17);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  serialize::Serializer::sync((unsigned __int8 *)a2, \"channels\", (std::string *)((char *)this + 80));\n}"
+}

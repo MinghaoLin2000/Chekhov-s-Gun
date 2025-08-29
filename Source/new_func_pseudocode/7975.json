@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSShowSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSShowSpaces()",
+    "pseudocode": "__int64 CGSShowSpaces()\n{\n  return _CGSShowSpaces();\n}"
+}

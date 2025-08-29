@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter10PrintInt32EiPNS1_17BaseTextGeneratorE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter10PrintInt32EiPNS1_17BaseTextGeneratorE(int a1, google::protobuf * this)",
+    "pseudocode": "void __fastcall google::protobuf::TextFormat::FastFieldValuePrinter::PrintInt32(\n        int a1,\n        google::protobuf *this,\n        char *a3)\n{\n  void **v4; // x1\n  unsigned __int64 v5; // x2\n  void *__p[2]; // [xsp+0h] [xbp-70h] BYREF\n  unsigned __int8 v7; // [xsp+17h] [xbp-59h]\n  void *__src; // [xsp+18h] [xbp-58h]\n  size_t v9; // [xsp+20h] [xbp-50h]\n  _BYTE v10[32]; // [xsp+28h] [xbp-48h] BYREF\n\n  __src = v10;\n  v9 = google::protobuf::FastInt32ToBufferLeft(this, v10, a3) - v10;\n  sub_10007A6A8(__p, v10, v9);\n  if ( (v7 & 0x80u) == 0 )\n    v4 = __p;\n  else\n    v4 = (void **)__p[0];\n  if ( (v7 & 0x80u) == 0 )\n    v5 = v7;\n  else\n    v5 = (unsigned __int64)__p[1];\n  (*(void (__fastcall **)(char *, void **, unsigned __int64))(*(_QWORD *)a3 + 40LL))(a3, v4, v5);\n  if ( (char)v7 < 0 )\n    operator delete(__p[0]);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_IPAOrientationTransformIntegralImageSize",
+    "function_argument_number": 0,
+    "function_signature": "_IPAOrientationTransformIntegralImageSize()",
+    "pseudocode": "__int64 IPAOrientationTransformIntegralImageSize()\n{\n  return _IPAOrientationTransformIntegralImageSize();\n}"
+}

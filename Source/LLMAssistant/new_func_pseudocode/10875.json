@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf15FieldDescriptor9enum_typeEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf15FieldDescriptor9enum_typeEv(google::protobuf::FieldDescriptor * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::FieldDescriptor::enum_type(google::protobuf::FieldDescriptor *this)\n{\n  std::once_flag::_State_type *v2; // x0\n  google::protobuf::FieldDescriptor *v4; // [xsp+0h] [xbp-30h] BYREF\n  _QWORD *v5; // [xsp+8h] [xbp-28h] BYREF\n  _QWORD v6[2]; // [xsp+10h] [xbp-20h] BYREF\n\n  v2 = (std::once_flag::_State_type *)*((_QWORD *)this + 6);\n  if ( v2 )\n  {\n    v4 = this;\n    if ( atomic_load_explicit((atomic_ullong *volatile)v2, memory_order_acquire) != -1LL )\n    {\n      v6[0] = google::protobuf::FieldDescriptor::TypeOnceInit;\n      v6[1] = &v4;\n      v5 = v6;\n      std::__call_once(v2, &v5, (void (__cdecl *)(void *))sub_10009FE30);\n    }\n  }\n  return *((_QWORD *)this + 14);\n}"
+}

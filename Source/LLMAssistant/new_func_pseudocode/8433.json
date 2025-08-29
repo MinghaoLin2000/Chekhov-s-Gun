@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_KHSoftwareUpdateControllerContext setCancelled:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_KHSoftwareUpdateControllerContext setCancelled:](_KHSoftwareUpdateControllerContext * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[_KHSoftwareUpdateControllerContext setCancelled:](\n        _KHSoftwareUpdateControllerContext *self,\n        SEL a2,\n        bool a3)\n{\n  self->_cancelled = a3;\n}"
+}

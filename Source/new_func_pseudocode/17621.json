@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextClear",
+    "function_argument_number": 0,
+    "function_signature": "_CGContextClear()",
+    "pseudocode": "__int64 CGContextClear()\n{\n  return _CGContextClear();\n}"
+}

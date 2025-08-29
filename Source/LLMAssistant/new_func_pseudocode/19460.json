@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:type:]",
+    "function_argument_number": 4,
+    "function_signature": "-[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:type:](MDRemoteServiceSupport * self, SEL a2, id a3, unsigned int a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:type:](\n        MDRemoteServiceSupport *self,\n        SEL a2,\n        id a3,\n        unsigned int a4)\n{\n  -[MDRemoteServiceSupport _sendRestoreServiceCommand:toRemoteDeviceWithUUID:type:](\n    self,\n    \"_sendRestoreServiceCommand:toRemoteDeviceWithUUID:type:\",\n    \"recovery\",\n    a3,\n    *(_QWORD *)&a4);\n}"
+}

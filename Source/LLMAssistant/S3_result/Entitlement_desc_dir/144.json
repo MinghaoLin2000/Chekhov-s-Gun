@@ -1,0 +1,13 @@
+{
+  "entitlement": "com.apple.private.biome.read-only:Motion.Activity",
+  "capability": "Allows an application to read historical or real-time motion and activity data processed and stored by Apple's Biome framework. This data includes information about a user's physical activities (e.g., walking, running, standing, in vehicle) derived from various motion sensors. The access is read-only, meaning the application can only retrieve this data and not modify or inject it.",
+  "reasoning": "The entitlement name `com.apple.private.biome.read-only:Motion.Activity` clearly indicates its purpose. `com.apple.private` signifies an internal Apple entitlement. `biome` refers to Apple's Biome framework, which is designed to aggregate, process, and store user activity and event data. `read-only` specifies the type of access, and `Motion.Activity` pinpoints the specific data type (motion sensor data and derived activity recognition). This aligns with how Apple names entitlements for specific data access.",
+  "similar_entitlements": [
+    "com.apple.developer.sensorkit.reader.allow"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "Accessing user motion and activity data is a highly sensitive operation as it reveals personal behavior patterns, daily routines, and can potentially infer location or health status. This type of data is considered private user information and is typically protected by Apple's Transparency, Consent, and Control (TCC) system, requiring explicit user permission. While 'Motion.Activity' is not explicitly listed in the TCC examples, it falls under the general category of sensitive user data derived from sensors and user behavior that TCC aims to protect, similar to location data or health data.",
+  "self_reflection": "I am confident in the interpretation of the entitlement's capability based on its clear naming convention and general understanding of Apple's frameworks (Biome, SensorKit) and security architecture (TCC). The `read-only` aspect is crucial for defining the scope. The prediction of TCC protection is strong given the highly sensitive nature of user activity data. The only potential ambiguity could be the exact granularity of 'Motion.Activity' data exposed by Biome (e.g., raw sensor data vs. high-level activity classifications), but the core capability of reading user motion and activity remains."
+}

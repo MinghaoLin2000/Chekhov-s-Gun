@@ -1,0 +1,6 @@
+{
+    "function_name": "_QLSandboxTokenConsume",
+    "function_argument_number": 0,
+    "function_signature": "_QLSandboxTokenConsume()",
+    "pseudocode": "__int64 QLSandboxTokenConsume()\n{\n  return _QLSandboxTokenConsume();\n}"
+}

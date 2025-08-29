@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer processDataFromAccessory:]",
+    "function_argument_number": 3,
+    "function_signature": "-[iAUPServer processDataFromAccessory:](iAUPServer * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[iAUPServer processDataFromAccessory:](iAUPServer *self, SEL a2, id a3)\n{\n  unsigned __int8 *v5; // x21\n  __int64 v6; // x22\n\n  v5 = (unsigned __int8 *)objc_msgSend(a3, \"bytes\");\n  if ( objc_msgSend(a3, \"length\") )\n  {\n    v6 = 0LL;\n    do\n      -[iAUPServer processInByte:](self, \"processInByte:\", v5[v6++]);\n    while ( (unsigned __int64)objc_msgSend(a3, \"length\") > (unsigned int)v6 );\n  }\n}"
+}

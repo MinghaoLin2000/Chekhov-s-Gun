@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabase needsUpgradeFromSchemaVersion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDatabase needsUpgradeFromSchemaVersion:](TSPDatabase * self, SEL a2, int a3)",
+    "pseudocode": "bool __cdecl -[TSPDatabase needsUpgradeFromSchemaVersion:](TSPDatabase *self, SEL a2, int a3)\n{\n  return a3 < 5;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipArchiveMemoryDataRepresentation dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipArchiveMemoryDataRepresentation dealloc](SFUZipArchiveMemoryDataRepresentation * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUZipArchiveMemoryDataRepresentation dealloc](SFUZipArchiveMemoryDataRepresentation *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  objc_release(self->mData);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___SFUZipArchiveMemoryDataRepresentation;\n  -[SFUZipArchiveMemoryDataRepresentation dealloc](&v3, \"dealloc\");\n}"
+}

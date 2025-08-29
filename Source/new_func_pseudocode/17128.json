@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceInstance _previouslyActiveApplicationProcessIdentifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMActionLoaderServiceInstance _previouslyActiveApplicationProcessIdentifier](AMActionLoaderServiceInstance * self, SEL a2)",
+    "pseudocode": "NSNumber *__cdecl -[AMActionLoaderServiceInstance _previouslyActiveApplicationProcessIdentifier](\n        AMActionLoaderServiceInstance *self,\n        SEL a2)\n{\n  return self->__previouslyActiveApplicationProcessIdentifier;\n}"
+}

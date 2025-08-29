@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetQueryPayloadMetaData",
+    "function_argument_number": 3,
+    "function_signature": "_uarpAssetQueryPayloadMetaData(__int64 a1, __int64 a2, int a3)",
+    "pseudocode": "__int64 __fastcall uarpAssetQueryPayloadMetaData(__int64 a1, __int64 a2, int a3)\n{\n  __int64 result; // x0\n  __int64 v5; // x8\n\n  result = 0LL;\n  if ( a1 && a2 )\n  {\n    if ( *(_BYTE *)(a2 + 460) && (v5 = *(_QWORD *)(a2 + 632)) != 0 )\n    {\n      while ( *(_DWORD *)(v5 + 124) != a3 )\n      {\n        v5 = *(_QWORD *)(v5 + 176);\n        if ( !v5 )\n          return 0LL;\n      }\n      return *(_QWORD *)(v5 + 168);\n    }\n    else\n    {\n      return 0LL;\n    }\n  }\n  return result;\n}"
+}

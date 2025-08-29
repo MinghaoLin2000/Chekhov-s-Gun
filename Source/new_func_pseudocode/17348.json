@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSEqualSizes",
+    "function_argument_number": 2,
+    "function_signature": "_NSEqualSizes(NSSize aSize, NSSize bSize)",
+    "pseudocode": "BOOL __cdecl NSEqualSizes(NSSize aSize, NSSize bSize)\n{\n  return _NSEqualSizes(aSize, bSize);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TBXPCService prune3BarsNetworks:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TBXPCService prune3BarsNetworks:](TBXPCService * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TBXPCService prune3BarsNetworks:](TBXPCService *self, SEL a2, unsigned __int64 a3)\n{\n  OS_dispatch_queue *processingQueue; // x0\n  _QWORD block[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  NSLog(&CFSTR(\"%s:\").isa, a2, \"-[TBXPCService prune3BarsNetworks:]\");\n  processingQueue = self->_processingQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3221225472LL;\n  block[2] = sub_100002A60;\n  block[3] = &unk_100004158;\n  block[4] = a3;\n  dispatch_async((dispatch_queue_t)processingQueue, block);\n}"
+}

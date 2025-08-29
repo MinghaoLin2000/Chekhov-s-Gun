@@ -1,0 +1,5 @@
+$s22localspeechrecognition31EARLanguageDetectorResultStreamCMa
+__int64 type metadata accessor for EARLanguageDetectorResultStream()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition31EARLanguageDetectorResultStream);
+}

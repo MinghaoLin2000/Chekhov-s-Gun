@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$featureNames",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$featureNames(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_featureNames(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"featureNames\");\n}"
+}

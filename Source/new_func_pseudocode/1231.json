@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController setPhotosIsLoading:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController setPhotosIsLoading:](DeviceSettingsPhotosViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController setPhotosIsLoading:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_photosIsLoading = a3;\n}"
+}

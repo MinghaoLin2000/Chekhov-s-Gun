@@ -1,0 +1,6 @@
+{
+    "function_name": "__sl_dlopen",
+    "function_argument_number": 0,
+    "function_signature": "__sl_dlopen()",
+    "pseudocode": "__int64 _sl_dlopen()\n{\n  return __sl_dlopen();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf9BoolValue9MergeFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf9BoolValue9MergeFromERKNS0_7MessageE(google::protobuf::BoolValue * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "_BYTE *__fastcall google::protobuf::BoolValue::MergeFrom(\n        google::protobuf::BoolValue *this,\n        const google::protobuf::Message *lpsrc)\n{\n  _BYTE *result; // x0\n  google::protobuf::Message *v5; // x2\n  _BYTE *v6; // x21\n  __int64 v7; // x8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  result = __dynamic_cast(\n             lpsrc,\n             (const struct __class_type_info *)&`typeinfo for'google::protobuf::Message,\n             (const struct __class_type_info *)&`typeinfo for'google::protobuf::BoolValue,\n             0LL);\n  if ( result )\n  {\n    v6 = result;\n    v7 = *((_QWORD *)result + 1);\n    if ( (v7 & 1) != 0 )\n      result = (_BYTE *)sub_10003A25C((char *)this + 8, (v7 & 0xFFFFFFFFFFFFFFFELL) + 8);\n    if ( v6[16] )\n      *((_BYTE *)this + 16) = 1;\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (_BYTE *)google::protobuf::internal::ReflectionOps::Merge(lpsrc, this, v5);\n  }\n  return result;\n}"
+}

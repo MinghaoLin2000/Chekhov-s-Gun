@@ -1,0 +1,6 @@
+$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC14BootstrapErrorOwst
+// attributes: thunk
+__int64 storeEnumTagSinglePayload for ServiceConnectionExportedObject.BootstrapError()
+{
+  return _s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectC14BootstrapErrorOwst_0();
+}

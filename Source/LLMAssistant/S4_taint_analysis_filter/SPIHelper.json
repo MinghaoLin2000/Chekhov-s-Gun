@@ -1,0 +1,19 @@
+{
+  "-[_TtC9SPIHelper9SPIHelper addParticipantsToShare:containerSetupInfo:emailAddresses:phoneNumbers:withReply:]": 4295478676,
+  "-[_TtC9SPIHelper9SPIHelper addParticipantsToShare:containerSetupInfo:emailAddresses:phoneNumbers:permissionType:allowOthersToInvite:withReply:]": 4295479788,
+  "-[_TtC9SPIHelper9SPIHelper currentUserSharingStatusFor:withReply:]": 4295464344,
+  "-[_TtC9SPIHelper9SPIHelper existingShareForFile:withReply:]": 4295505636,
+  "-[_TtC9SPIHelper9SPIHelper sharingStatusFor:withReply:]": 4295368652,
+  "-[_TtC9SPIHelper9SPIHelper addToShareFromSharingURL:containerSetupInfo:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]": 4295413204,
+  "-[_TtC9SPIHelper9SPIHelper addParticipantsToShareWithURLWrapper:share:emailAddresses:phoneNumbers:permissionType:allowOthersToInvite:withReply:]": 4295479456,
+  "-[_TtC9SPIHelper9SPIHelper userNameAndEmail:containerSetupInfo:withReply:]": 4295508900,
+  "-[_TtC9SPIHelper9SPIHelper removeFromShare:containerSetupInfo:withReply:]": 4295428148,
+  "-[_TtC9SPIHelper9SPIHelper startFileSharing:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]": 4295384588,
+  "-[_TtC9SPIHelper9SPIHelper removeFromShareFromSharingURL:containerSetupInfo:withReply:]": 4295421160,
+  "-[_TtC9SPIHelper9SPIHelper addToCloudKitSharing:containerSetupInfo:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]": 4295400048,
+  "-[_TtC9SPIHelper9SPIHelper updateShare:containerSetupInfo:withReply:]": 4295460060,
+  "-[_TtC9SPIHelper9SPIHelper removeFromShareForFileURL:withReply:]": 4295436812,
+  "-[_TtC9SPIHelper9SPIHelper getMetadataFromShareFromSharingURL:containerSetupInfo:withReply:]": 4295450284,
+  "-[_TtC9SPIHelper9SPIHelper mailContentFromSharingURL:share:fileURL:appName:appIconData:withReply:]": 4295443584,
+  "-[_TtC9SPIHelper9SPIHelper forciblyShareFolder:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]": 4295524252
+}

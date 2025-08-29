@@ -1,0 +1,6 @@
+{
+    "function_name": "_FPDFPCKServiceXPCInterface",
+    "function_argument_number": 0,
+    "function_signature": "_FPDFPCKServiceXPCInterface()",
+    "pseudocode": "__int64 FPDFPCKServiceXPCInterface()\n{\n  return _FPDFPCKServiceXPCInterface();\n}"
+}

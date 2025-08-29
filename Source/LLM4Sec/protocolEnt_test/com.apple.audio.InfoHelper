@@ -1,0 +1,17 @@
+Service Path:
+/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.InfoHelper.xpc/Contents/MacOS/com.apple.audio.InfoHelper
+
+Service Exported Protocols:
+@protocol AudioInfoHelperProtocol
+- (void)validateComponent:(NSDictionary *)arg1 parameters:(NSDictionary *)arg2 reply:(void (^)(NSError *, unsigned int, NSDictionary *))arg3;
+- (void)getConfigurationInfo:(NSDictionary *)arg1 reply:(void (^)(NSError *, NSDictionary *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.security.cs.allow-unsigned-executable-memory
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.cs.disable-library-validation
+	[Value]
+		[Bool] true

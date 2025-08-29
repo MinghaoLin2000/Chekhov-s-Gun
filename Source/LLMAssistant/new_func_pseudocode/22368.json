@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECAPHelperDelegate cancelButton]",
+    "function_argument_number": 2,
+    "function_signature": "-[ECAPHelperDelegate cancelButton](ECAPHelperDelegate * self, SEL a2)",
+    "pseudocode": "NSButton *__cdecl -[ECAPHelperDelegate cancelButton](ECAPHelperDelegate *self, SEL a2)\n{\n  return self->_cancelButton;\n}"
+}

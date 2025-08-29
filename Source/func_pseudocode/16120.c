@@ -1,0 +1,5 @@
+_UARPFirmwareStagingCompletionStatusToString
+__int64 UARPFirmwareStagingCompletionStatusToString()
+{
+  return _UARPFirmwareStagingCompletionStatusToString();
+}

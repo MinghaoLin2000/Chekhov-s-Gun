@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24_NavigationHoverModifierVwca",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore24_NavigationHoverModifierVwca()",
+    "pseudocode": "// attributes: thunk\n__int64 assignWithCopy for _NavigationHoverModifier()\n{\n  return _s17ControlCenterCore24_NavigationHoverModifierVwca_0();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition15InstrumentationC15CompletionStateOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition15InstrumentationC15CompletionStateOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for Instrumentation.CompletionState()\n{\n  return &type metadata for Instrumentation.CompletionState;\n}"
+}

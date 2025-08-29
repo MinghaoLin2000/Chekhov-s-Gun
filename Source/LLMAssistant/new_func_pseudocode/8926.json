@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestV10CodingKeysOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService16JSServiceRequestV10CodingKeysOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JSServiceRequest.CodingKeys()\n{\n  return &type metadata for JSServiceRequest.CodingKeys;\n}"
+}

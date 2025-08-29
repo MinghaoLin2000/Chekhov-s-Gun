@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTabContentOutlineView haveFolders]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTabContentOutlineView haveFolders](DeviceSettingsTabContentOutlineView * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsTabContentOutlineView haveFolders](DeviceSettingsTabContentOutlineView *self, SEL a2)\n{\n  __int64 v3; // x0\n  __int64 v4; // x20\n  __int64 v5; // x21\n  bool v6; // w25\n  void *v7; // x23\n  void *v8; // x24\n\n  v3 = (__int64)-[DeviceSettingsTabContentOutlineView numberOfRows](self, \"numberOfRows\");\n  if ( v3 < 1 )\n  {\n    return 0;\n  }\n  else\n  {\n    v4 = v3;\n    v5 = 0LL;\n    v6 = 1;\n    do\n    {\n      v7 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsTabContentOutlineView itemAtRow:](self, \"itemAtRow:\", v5));\n      if ( (objc_opt_respondsToSelector() & 1) != 0 )\n      {\n        v8 = objc_retainAutoreleasedReturnValue(objc_msgSend(v7, \"children\"));\n        objc_release(v8);\n        objc_release(v7);\n        if ( v8 )\n          return v6;\n      }\n      else\n      {\n        objc_release(v7);\n      }\n      v6 = ++v5 < v4;\n    }\n    while ( v4 != v5 );\n  }\n  return v6;\n}"
+}

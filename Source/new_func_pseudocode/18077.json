@@ -1,0 +1,6 @@
+{
+    "function_name": "_piston_set_realm",
+    "function_argument_number": 2,
+    "function_signature": "_piston_set_realm(int a1, char * __s1)",
+    "pseudocode": "__int64 __fastcall piston_set_realm(__int64 a1, char *__s1)\n{\n  void *v4; // x0\n  size_t v5; // x21\n  void *v6; // x0\n  __int64 result; // x0\n\n  v4 = *(void **)(a1 + 400);\n  if ( v4 )\n  {\n    free(v4);\n    *(_QWORD *)(a1 + 400) = 0LL;\n  }\n  if ( !__s1 )\n    return 0LL;\n  v5 = strnlen(__s1, 0x400uLL);\n  v6 = malloc_type_malloc(v5 + 1, 0xB82271B3uLL);\n  *(_QWORD *)(a1 + 400) = v6;\n  if ( v6 )\n  {\n    memcpy(v6, __s1, v5);\n    result = 0LL;\n    *(_BYTE *)(*(_QWORD *)(a1 + 400) + v5) = 0;\n  }\n  else\n  {\n    if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n      sub_10000F450(v5);\n    return 12LL;\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_deflateEnd",
+    "function_argument_number": 1,
+    "function_signature": "_deflateEnd(z_streamp strm)",
+    "pseudocode": "int __cdecl deflateEnd(z_streamp strm)\n{\n  return _deflateEnd(strm);\n}"
+}

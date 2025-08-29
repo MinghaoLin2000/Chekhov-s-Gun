@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet array]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUMutableLinkedPointerSet array](TSUMutableLinkedPointerSet * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUMutableLinkedPointerSet array](TSUMutableLinkedPointerSet *self, SEL a2)\n{\n  CFIndex Count; // x19\n  id result; // x0\n  id v5; // x20\n  NSArray *v6; // x19\n\n  Count = CFDictionaryGetCount(self->mDictionary);\n  result = malloc_type_malloc(8 * Count, 0x80040B8603338uLL);\n  if ( result )\n  {\n    v5 = result;\n    CFDictionaryGetKeysAndValues(self->mDictionary, (const void **)result, 0LL);\n    v6 = +[NSArray arrayWithObjects:count:](&OBJC_CLASS___NSArray, \"arrayWithObjects:count:\", v5, Count);\n    free(v5);\n    return v6;\n  }\n  return result;\n}"
+}

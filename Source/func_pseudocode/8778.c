@@ -1,0 +1,6 @@
+$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwCP
+// attributes: thunk
+__int64 initializeBufferWithCopyOfBuffer for EngagementMessagePlacementInfo()
+{
+  return _s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwCP_0();
+}

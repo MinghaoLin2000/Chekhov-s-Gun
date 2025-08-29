@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12ExtensionSet13MutableStringEihPKNS0_15FieldDescriptorE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal12ExtensionSet13MutableStringEihPKNS0_15FieldDescriptorE(google::protobuf::internal::ExtensionSet * this, int a2, unsigned __int8 a3, const google::protobuf::FieldDescriptor * a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::ExtensionSet::MutableString(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2,\n        char a3,\n        const google::protobuf::FieldDescriptor *a4)\n{\n  __int64 v7; // x0\n  __int64 v8; // x19\n  char v9; // w1\n  __int64 result; // x0\n\n  v7 = google::protobuf::internal::ExtensionSet::Insert(this, a2);\n  v8 = v7;\n  *(_QWORD *)(v7 + 16) = a4;\n  if ( v9 )\n  {\n    *(_BYTE *)(v7 + 8) = a3;\n    *(_BYTE *)(v7 + 9) = 0;\n    result = sub_10007A808(*(_QWORD *)this);\n    *(_QWORD *)v8 = result;\n  }\n  else\n  {\n    result = *(_QWORD *)v7;\n  }\n  *(_BYTE *)(v8 + 10) &= 0xF0u;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController removeMesssageTextFormat]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesViewController removeMesssageTextFormat](DeviceSettingsMoviesViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsMoviesViewController removeMesssageTextFormat](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2)\n{\n  return -[DeviceViewController deviceStringForStringParameterizedKey:](\n           self,\n           \"deviceStringForStringParameterizedKey:\",\n           CFSTR(\"ConfirmDisableSyncMovies %@\"));\n}"
+}

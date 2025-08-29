@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSString tsu_stringWithXMLString:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSString tsu_stringWithXMLString:](id a1, SEL a2, const char * a3)",
+    "pseudocode": "id __cdecl +[NSString tsu_stringWithXMLString:](id a1, SEL a2, const char *a3)\n{\n  return +[NSString stringWithCString:encoding:](&OBJC_CLASS___NSString, \"stringWithCString:encoding:\", a3, 4LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_compression_decode_buffer",
+    "function_argument_number": 6,
+    "function_signature": "_compression_decode_buffer(uint8_t * dst_buffer, size_t dst_size, const uint8_t * src_buffer, size_t src_size, void * scratch_buffer, compression_algorithm algorithm)",
+    "pseudocode": "size_t __cdecl compression_decode_buffer(\n        uint8_t *dst_buffer,\n        size_t dst_size,\n        const uint8_t *src_buffer,\n        size_t src_size,\n        void *scratch_buffer,\n        compression_algorithm algorithm)\n{\n  return _compression_decode_buffer(dst_buffer, dst_size, src_buffer, src_size, scratch_buffer, algorithm);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s13DisplayMarkup27ScreenAnnotationsControllerCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s13DisplayMarkup27ScreenAnnotationsControllerCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for ScreenAnnotationsController(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000299C0;\n  if ( !qword_1000299C0 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for ScreenAnnotationsController);\n  return result;\n}"
+}

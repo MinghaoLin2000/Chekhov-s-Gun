@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUExtendedAttributeCollection isEqual:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUExtendedAttributeCollection isEqual:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSUExtendedAttributeCollection isEqual:](TSUExtendedAttributeCollection *self, SEL a2, id a3)\n{\n  id v4; // x21\n  __int64 v5; // x0\n  _QWORD *v6; // x19\n  NSMutableDictionary *attributes; // x0\n  unsigned __int8 v8; // w20\n\n  v4 = objc_retain(a3);\n  v5 = objc_opt_class(&OBJC_CLASS___TSUExtendedAttributeCollection);\n  v6 = objc_retainAutoreleasedReturnValue((id)TSUDynamicCast(v5, v4));\n  objc_release(v4);\n  if ( v6 )\n  {\n    attributes = self->_attributes;\n    if ( (unsigned __int64)attributes | v6[1] )\n      v8 = (unsigned __int8)-[NSMutableDictionary isEqual:](attributes, \"isEqual:\");\n    else\n      v8 = 1;\n  }\n  else\n  {\n    v8 = 0;\n  }\n  objc_release(v6);\n  return v8;\n}"
+}

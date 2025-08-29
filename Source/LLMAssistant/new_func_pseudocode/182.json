@@ -1,0 +1,6 @@
+{
+    "function_name": "__Block_release",
+    "function_argument_number": 1,
+    "function_signature": "__Block_release(const void * aBlock)",
+    "pseudocode": "void __cdecl _Block_release(const void *aBlock)\n{\n  __Block_release(aBlock);\n}"
+}

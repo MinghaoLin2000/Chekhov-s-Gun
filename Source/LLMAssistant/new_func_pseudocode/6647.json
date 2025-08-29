@@ -1,0 +1,6 @@
+{
+    "function_name": "_os_unfair_lock_assert_not_owner",
+    "function_argument_number": 1,
+    "function_signature": "_os_unfair_lock_assert_not_owner(const os_unfair_lock * lock)",
+    "pseudocode": "void __cdecl os_unfair_lock_assert_not_owner(const os_unfair_lock *lock)\n{\n  _os_unfair_lock_assert_not_owner(lock);\n}"
+}

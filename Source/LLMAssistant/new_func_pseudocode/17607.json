@@ -1,0 +1,6 @@
+{
+    "function_name": "___49-[CGPDFService newPDFDocumentWithData:withReply:]_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___49-[CGPDFService newPDFDocumentWithData:withReply:]_block_invoke(_QWORD * a1)",
+    "pseudocode": "void __fastcall __49__CGPDFService_newPDFDocumentWithData_withReply___block_invoke(_QWORD *a1)\n{\n  CGPDFDocumentImpl *v2; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = -[CGPDFDocumentImpl initWithData:requestQueue:](\n         objc_alloc(&OBJC_CLASS___CGPDFDocumentImpl),\n         \"initWithData:requestQueue:\",\n         a1[4],\n         *(_QWORD *)(a1[5] + 8LL));\n  (*(void (**)(void))(a1[6] + 16LL))();\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlReaderForIO",
+    "function_argument_number": 6,
+    "function_signature": "_xmlReaderForIO(xmlInputReadCallback ioread, xmlInputCloseCallback ioclose, void * ioctx, const char * URL, const char * encoding, int options)",
+    "pseudocode": "xmlTextReaderPtr __cdecl xmlReaderForIO(\n        xmlInputReadCallback ioread,\n        xmlInputCloseCallback ioclose,\n        void *ioctx,\n        const char *URL,\n        const char *encoding,\n        int options)\n{\n  return _xmlReaderForIO(ioread, ioclose, ioctx, URL, encoding, options);\n}"
+}

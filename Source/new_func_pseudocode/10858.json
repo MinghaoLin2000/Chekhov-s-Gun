@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf14EnumDescriptor17FindValueByNumberEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf14EnumDescriptor17FindValueByNumberEi(google::protobuf::EnumDescriptor * this, int a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::EnumDescriptor::FindValueByNumber(\n        google::protobuf::EnumDescriptor *this,\n        unsigned int a2)\n{\n  __int64 v2; // x8\n  _QWORD v4[2]; // [xsp+0h] [xbp-10h] BYREF\n\n  v2 = *(_QWORD *)(*((_QWORD *)this + 2) + 144LL) + 192LL;\n  v4[0] = this;\n  v4[1] = a2;\n  return sub_100096954(v2, v4);\n}"
+}

@@ -1,0 +1,54 @@
+Service Path:
+/System/Library/PrivateFrameworks/AppPredictionFoundation.framework/Versions/A/XPCServices/AppPredictionIntentsHelperService.xpc/Contents/MacOS/AppPredictionIntentsHelperService
+
+Service Exported Protocols:
+@protocol AppPredictionIntentsHelperServiceProtocol
+- (void)localizedStringForLinkString:(LNStaticDeferredLocalizedString *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)createEventIntentWithStartDate:(NSDate *)arg1 endDate:(NSDate *)arg2 withReply:(void (^)(INIntent *, NSError *))arg3;
+- (void)createIntentWithIntentType:(NSString *)arg1 intentData:(NSData *)arg2 withReply:(void (^)(INIntent *, NSError *))arg3;
+- (void)supportsBackgroundExecutionForIntent:(INIntent *)arg1 withReply:(void (^)(_Bool, NSError *))arg2;
+- (void)eligibleForWidgetsForIntent:(INIntent *)arg1 withReply:(void (^)(_Bool, NSError *))arg2;
+- (void)indexingHashForIntent:(INIntent *)arg1 withReply:(void (^)(long long, NSError *))arg2;
+- (void)subtitleForIntent:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)titleForIntentNoLocalization:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)titleForIntent:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.intents.extension.discovery
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canmaplsdatabase
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /private/var/containers/Bundle/Application/
+			[String] /Applications/
+	[Key] com.apple.security.exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/Caches/GeoServices/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.remindd
+			[String] com.apple.calaccessd
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.GEO
+			[String] com.apple.AppSupport
+			[String] com.apple.coremedia
+	[Key] com.apple.security.ts.geoservices
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] temporary-sandbox

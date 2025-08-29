@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUUUIDPath tokenizeUUIDPathString:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSUUUIDPath tokenizeUUIDPathString:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[TSUUUIDPath tokenizeUUIDPathString:](id a1, SEL a2, id a3)\n{\n  return objc_msgSend(a3, \"componentsSeparatedByString:\", CFSTR(\"/\"));\n}"
+}

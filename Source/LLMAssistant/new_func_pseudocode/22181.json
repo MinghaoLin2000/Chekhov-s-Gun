@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringLowercase",
+    "function_argument_number": 2,
+    "function_signature": "_CFStringLowercase(CFMutableStringRef theString, CFLocaleRef locale)",
+    "pseudocode": "void __cdecl CFStringLowercase(CFMutableStringRef theString, CFLocaleRef locale)\n{\n  _CFStringLowercase(theString, locale);\n}"
+}

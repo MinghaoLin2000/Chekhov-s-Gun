@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUMemoryOutputStream initWithData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUMemoryOutputStream initWithData:](SFUMemoryOutputStream * self, SEL a2, id a3)",
+    "pseudocode": "SFUMemoryOutputStream *__cdecl -[SFUMemoryOutputStream initWithData:](SFUMemoryOutputStream *self, SEL a2, id a3)\n{\n  SFUMemoryOutputStream *v4; // x19\n\n  v4 = -[SFUMemoryOutputStream init](self, \"init\");\n  if ( v4 )\n    v4->mData = (NSMutableData *)objc_retain(a3);\n  return v4;\n}"
+}

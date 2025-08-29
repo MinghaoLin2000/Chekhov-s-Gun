@@ -1,0 +1,6 @@
+{
+    "function_name": "_isOTAUpdateDisabledForAccessoryID",
+    "function_argument_number": 1,
+    "function_signature": "_isOTAUpdateDisabledForAccessoryID(void * a1)",
+    "pseudocode": "void *__fastcall isOTAUpdateDisabledForAccessoryID(void *a1)\n{\n  id v1; // x19\n  id v2; // x20\n  void *v3; // x21\n  void *v4; // x22\n  void *v5; // x23\n  void *v6; // x21\n\n  v1 = objc_retainAutoreleasedReturnValue(getAccessoryDatabaseKeyForAccessoryID(a1));\n  if ( v1 )\n  {\n    v2 = objc_retainAutoreleasedReturnValue(+[AUDeveloperSettingsDatabase sharedDatabase](&OBJC_CLASS___AUDeveloperSettingsDatabase, \"sharedDatabase\"));\n    v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(v2, \"accessoriesDictionary\"));\n    v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(v3, \"objectForKey:\", v1));\n    objc_release(v3);\n    if ( v4 )\n    {\n      v5 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"objectForKeyedSubscript:\", CFSTR(\"isOTADisabled\")));\n      v6 = objc_msgSend(v5, \"boolValue\");\n      objc_release(v5);\n      objc_release(v4);\n    }\n    else\n    {\n      v6 = 0LL;\n    }\n    objc_release(v2);\n  }\n  else\n  {\n    v6 = 0LL;\n  }\n  objc_release(v1);\n  return v6;\n}"
+}

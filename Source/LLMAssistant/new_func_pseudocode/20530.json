@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUserNotificationGetResponseValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFUserNotificationGetResponseValue(CFUserNotificationRef userNotification, CFStringRef key, CFIndex idx)",
+    "pseudocode": "CFStringRef __cdecl CFUserNotificationGetResponseValue(\n        CFUserNotificationRef userNotification,\n        CFStringRef key,\n        CFIndex idx)\n{\n  return _CFUserNotificationGetResponseValue(userNotification, key, idx);\n}"
+}

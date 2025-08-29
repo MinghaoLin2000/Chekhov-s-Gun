@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskCACycfc",
+    "function_argument_number": 0,
+    "function_signature": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskCACycfc()",
+    "pseudocode": "void __noreturn ViewPresentationTask.init()()\n{\n  _swift_stdlib_reportUnimplementedInitializer(\n    \"com_apple_AppStoreDaemon_StoreUIService.ViewPresentationTask\",\n    60LL,\n    \"init()\",\n    6LL,\n    0LL);\n  __break(1u);\n}"
+}

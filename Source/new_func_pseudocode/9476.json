@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPSnappyComponentWriteChannel close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPSnappyComponentWriteChannel close](TSPSnappyComponentWriteChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPSnappyComponentWriteChannel close](TSPSnappyComponentWriteChannel *self, SEL a2)\n{\n  dispatch_queue_s *writeQueue; // x8\n  _QWORD block[5]; // [xsp+8h] [xbp-28h] BYREF\n\n  writeQueue = (dispatch_queue_s *)self->_writeQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_1000342B8;\n  block[3] = &unk_1001D1698;\n  block[4] = self;\n  dispatch_sync(writeQueue, block);\n}"
+}

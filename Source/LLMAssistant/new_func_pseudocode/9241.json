@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPTemporaryObjectContextDelegate suspendAutosaveWithReason:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPTemporaryObjectContextDelegate suspendAutosaveWithReason:](TSPTemporaryObjectContextDelegate * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[TSPTemporaryObjectContextDelegate suspendAutosaveWithReason:](\n        TSPTemporaryObjectContextDelegate *self,\n        SEL a2,\n        id a3)\n{\n  ;\n}"
+}

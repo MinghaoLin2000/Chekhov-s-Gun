@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceAutofillSettingsViewController clickOKButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceAutofillSettingsViewController clickOKButton:](DeviceAutofillSettingsViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceAutofillSettingsViewController clickOKButton:](\n        DeviceAutofillSettingsViewController *self,\n        SEL a2,\n        id a3)\n{\n  -[DeviceAutofillSettingsViewController returnCode:](self, \"returnCode:\", 1LL);\n}"
+}

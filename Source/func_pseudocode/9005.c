@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService17ServiceConnectionCMa
+__int64 type metadata accessor for ServiceConnection()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService17ServiceConnection);
+}

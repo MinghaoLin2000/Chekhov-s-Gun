@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12StlConverterD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN12StlConverterD2Ev(StlConverter * this)",
+    "pseudocode": "void __fastcall StlConverter::~StlConverter(StlConverter *this)\n{\n  __int64 *v2; // x21\n  __int64 *v3; // x22\n  __int64 v4; // x20\n  void *v5; // x0\n  void *v6; // x0\n  void *v7; // x0\n  void *v8; // x0\n\n  *(_QWORD *)this = off_100018598;\n  v2 = (__int64 *)*((_QWORD *)this + 1);\n  v3 = (__int64 *)*((_QWORD *)this + 2);\n  while ( v2 != v3 )\n  {\n    v4 = *v2;\n    if ( *v2 )\n    {\n      v5 = *(void **)(v4 + 72);\n      if ( v5 )\n      {\n        *(_QWORD *)(v4 + 80) = v5;\n        operator delete(v5);\n      }\n      v6 = *(void **)(v4 + 48);\n      if ( v6 )\n      {\n        *(_QWORD *)(v4 + 56) = v6;\n        operator delete(v6);\n      }\n      v7 = *(void **)(v4 + 24);\n      if ( v7 )\n      {\n        *(_QWORD *)(v4 + 32) = v7;\n        operator delete(v7);\n      }\n      if ( *(char *)(v4 + 23) < 0 )\n        operator delete(*(void **)v4);\n      operator delete((void *)v4);\n    }\n    ++v2;\n  }\n  if ( *((char *)this + 63) < 0 )\n    operator delete(*((void **)this + 5));\n  v8 = (void *)*((_QWORD *)this + 1);\n  if ( v8 )\n  {\n    *((_QWORD *)this + 2) = v8;\n    operator delete(v8);\n  }\n}"
+}

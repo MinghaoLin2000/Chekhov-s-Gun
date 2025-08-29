@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV15isOnMangedSpaceSbvg",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV15isOnMangedSpaceSbvg(int a1)",
+    "pseudocode": "bool __fastcall CGSWindow.isOnMangedSpace.getter(int a1)\n{\n  __int64 v2; // x0\n  __int64 v3; // x20\n  __int64 v4; // x19\n  __int64 v5; // x20\n\n  v2 = sub_100002BF4(&unk_100029A78);\n  v3 = swift_allocObject(v2, 36LL, 7LL);\n  *(_OWORD *)(v3 + 16) = xmmword_10001FC20;\n  *(_DWORD *)(v3 + 32) = a1;\n  sub_1000120A4();\n  v4 = static CGSSpace.spaces(_:options:connection:)(v3, 7LL);\n  swift_bridgeObjectRelease(v3);\n  v5 = *(_QWORD *)(v4 + 16);\n  swift_bridgeObjectRelease(v4);\n  return v5 != 0;\n}"
+}

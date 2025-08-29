@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16LargeNumberArrayD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16LargeNumberArrayD1Ev(TSP::LargeNumberArray * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeNumberArray::~LargeNumberArray(TSP::LargeNumberArray *this)\n{\n  __ZN3TSP16LargeNumberArrayD2Ev(this);\n}"
+}

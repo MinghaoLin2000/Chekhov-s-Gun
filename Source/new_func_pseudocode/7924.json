@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionCreateWithRect",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionCreateWithRect()",
+    "pseudocode": "__int64 CGRegionCreateWithRect()\n{\n  return _CGRegionCreateWithRect();\n}"
+}

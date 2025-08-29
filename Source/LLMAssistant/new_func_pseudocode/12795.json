@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSError tsu_localizedAlertMessage]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSError tsu_localizedAlertMessage](NSError * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSError tsu_localizedAlertMessage](NSError *self, SEL a2)\n{\n  NSDictionary *v2; // x19\n  id v3; // x0\n  void *v4; // x20\n  id v5; // x0\n  void *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[NSError userInfo](self, \"userInfo\"));\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[NSDictionary objectForKeyedSubscript:](\n           v2,\n           \"objectForKeyedSubscript:\",\n           CFSTR(\"TSULocalizedErrorAlertMessage\")));\n  v4 = v3;\n  if ( v3 )\n    v5 = objc_retain(v3);\n  else\n    v5 = objc_retainAutoreleasedReturnValue(\n           -[NSDictionary objectForKeyedSubscript:](\n             v2,\n             \"objectForKeyedSubscript:\",\n             NSLocalizedRecoverySuggestionErrorKey));\n  v6 = v5;\n  objc_release(v4);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

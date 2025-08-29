@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetConnectionProperty",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetConnectionProperty()",
+    "pseudocode": "__int64 CGSSetConnectionProperty()\n{\n  return _CGSSetConnectionProperty();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNKSt3__16locale9use_facetERNS0_2idE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNKSt3__16locale9use_facetERNS0_2idE(std::locale * this, std::locale::id * a2)",
+    "pseudocode": "const std::locale::facet *__cdecl std::locale::use_facet(const std::locale *this, std::locale::id *a2)\n{\n  return std::locale::use_facet(this, a2);\n}"
+}

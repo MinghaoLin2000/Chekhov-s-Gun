@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService11ObjectGraphCfD",
+    "function_argument_number": 0,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService11ObjectGraphCfD()",
+    "pseudocode": "__int64 ObjectGraph.__deallocating_deinit()\n{\n  __int64 v0; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v0 = sub_100045C38();\n  objc_release(*(id *)(v0 + qword_10005DA80));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return _swift_deallocClassInstance(v0, 24LL, 7LL);\n}"
+}

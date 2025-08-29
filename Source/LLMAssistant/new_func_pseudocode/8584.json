@@ -1,0 +1,6 @@
+{
+    "function_name": "__MXMGetLog",
+    "function_argument_number": 0,
+    "function_signature": "__MXMGetLog()",
+    "pseudocode": "__int64 _MXMGetLog()\n{\n  if ( qword_100011C18 != -1 )\n    dispatch_once(&qword_100011C18, &stru_10000C408);\n  return qword_100011C10;\n}"
+}

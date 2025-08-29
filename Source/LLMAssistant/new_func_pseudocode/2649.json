@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceAutofillPlacardViewController viewDidLoad]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceAutofillPlacardViewController viewDidLoad](DeviceAutofillPlacardViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceAutofillPlacardViewController viewDidLoad](DeviceAutofillPlacardViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceAutofillPlacardViewController;\n  -[DeviceAutofillPlacardViewController viewDidLoad](&v3, \"viewDidLoad\");\n  -[DeviceAutofillPlacardViewController loadAutofillPopUpButton](self, \"loadAutofillPopUpButton\");\n}"
+}

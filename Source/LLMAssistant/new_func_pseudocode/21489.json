@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection speechRecognizer:didRecognizePartialResult:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LSRConnection speechRecognizer:didRecognizePartialResult:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[LSRConnection speechRecognizer:didRecognizePartialResult:](LSRConnection *self, SEL a2, id a3, id a4)\n{\n  id v5; // x0\n  dispatch_queue_s *v6; // x20\n  id v7; // x19\n  _QWORD v8[5]; // [xsp+0h] [xbp-40h] BYREF\n  id v9; // [xsp+28h] [xbp-18h]\n\n  v5 = objc_retain(a4);\n  v6 = (dispatch_queue_s *)qword_100065418;\n  v8[0] = _NSConcreteStackBlock;\n  v8[1] = 3254779904LL;\n  v8[2] = sub_100035800;\n  v8[3] = &unk_100059CE8;\n  v8[4] = self;\n  v9 = v5;\n  v7 = objc_retain(v5);\n  dispatch_async(v6, v8);\n  objc_release(v9);\n  objc_release(v7);\n}"
+}

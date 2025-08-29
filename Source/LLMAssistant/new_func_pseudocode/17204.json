@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction remoteActionResume]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction remoteActionResume](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction remoteActionResume](AMLoaderServiceAction *self, SEL a2)\n{\n  _QWORD v3[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  if ( -[AMLoaderServiceAction _supportsPauseResume](self, \"_supportsPauseResume\") )\n  {\n    v3[0] = _NSConcreteStackBlock;\n    v3[1] = 3254779904LL;\n    v3[2] = sub_10000BE44;\n    v3[3] = &unk_10001C758;\n    v3[4] = self;\n    -[AMLoaderServiceAction _executeSynchronouslyWithLoadedActionOnMainThread:](\n      self,\n      \"_executeSynchronouslyWithLoadedActionOnMainThread:\",\n      v3);\n  }\n  else if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_ERROR) )\n  {\n    sub_100012264(self);\n  }\n}"
+}

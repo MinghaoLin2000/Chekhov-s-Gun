@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyRequest setHasRawRequest:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyRequest setHasRawRequest:](ModelKeyServerAPIFetchKeyRequest * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyRequest setHasRawRequest:](\n        ModelKeyServerAPIFetchKeyRequest *self,\n        SEL a2,\n        bool a3)\n{\n  *(_BYTE *)&self->_has = *(_BYTE *)&self->_has & 0xFE | a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo10WindowTagsV16EyeCandyGraphicsE15asUnsafePointeryxxSpys6UInt32VGKXEKlF",
+    "function_argument_number": 4,
+    "function_signature": "_$sSo10WindowTagsV16EyeCandyGraphicsE15asUnsafePointeryxxSpys6UInt32VGKXEKlF(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall WindowTags.asUnsafePointer<A>(_:)(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v5; // x0\n  __int64 v7; // [xsp+0h] [xbp-60h] BYREF\n  __int64 v8; // [xsp+8h] [xbp-58h] BYREF\n  _BYTE v9[16]; // [xsp+10h] [xbp-50h] BYREF\n  __int64 v10; // [xsp+20h] [xbp-40h]\n  __int64 v11; // [xsp+28h] [xbp-38h]\n  __int64 v12; // [xsp+30h] [xbp-30h]\n\n  v8 = a3;\n  v10 = a4;\n  v11 = a1;\n  v12 = a2;\n  v5 = sub_100002BF4(&unk_100029E00);\n  return sub_10001B3B4(\n           &v8,\n           sub_10001B7A4,\n           v9,\n           &type metadata for UInt64,\n           v5,\n           a4,\n           &protocol self-conformance witness table for Error,\n           &v7);\n}"
+}

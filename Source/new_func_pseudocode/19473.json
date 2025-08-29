@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUUIDGetTypeID",
+    "function_argument_number": 0,
+    "function_signature": "_CFUUIDGetTypeID()",
+    "pseudocode": "CFTypeID CFUUIDGetTypeID(void)\n{\n  return _CFUUIDGetTypeID();\n}"
+}

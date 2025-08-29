@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setPlayCount:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setPlayCount:](DeviceSettingsNode * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setPlayCount:](DeviceSettingsNode *self, SEL a2, unsigned __int64 a3)\n{\n  self->_playCount = a3;\n}"
+}

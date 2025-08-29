@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetDisplayModeDescriptionOfLength",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetDisplayModeDescriptionOfLength()",
+    "pseudocode": "__int64 CGSGetDisplayModeDescriptionOfLength()\n{\n  return _CGSGetDisplayModeDescriptionOfLength();\n}"
+}

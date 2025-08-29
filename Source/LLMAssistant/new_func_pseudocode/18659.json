@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore23_NavigationPathModifierVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore23_NavigationPathModifierVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for _NavigationPathModifier()\n{\n  return &type metadata for _NavigationPathModifier;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10LogMessagelsEm",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf8internal10LogMessagelsEm(std::string * a1, __int64 a2)",
+    "pseudocode": "std::string *__fastcall google::protobuf::internal::LogMessage::operator<<(std::string *a1, __int64 a2)\n{\n  char __str[128]; // [xsp+8h] [xbp-98h] BYREF\n\n  snprintf(__str, 0x80uLL, \"%lu\", a2);\n  __str[127] = 0;\n  std::string::append(a1 + 1, __str);\n  return a1;\n}"
+}

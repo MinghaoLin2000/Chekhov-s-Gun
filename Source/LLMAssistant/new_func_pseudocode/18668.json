@@ -1,0 +1,6 @@
+{
+    "function_name": "$s23ModuleNavigationPathKeyVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s23ModuleNavigationPathKeyVMa()",
+    "pseudocode": "ValueMetadata *_s23ModuleNavigationPathKeyVMa()\n{\n  return &_s23ModuleNavigationPathKeyVN;\n}"
+}

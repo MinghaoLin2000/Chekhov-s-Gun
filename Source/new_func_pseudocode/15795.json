@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetSuperBinaryPullProposedPayloadHeader",
+    "function_argument_number": 2,
+    "function_signature": "_uarpPlatformAssetSuperBinaryPullProposedPayloadHeader(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetSuperBinaryPullProposedPayloadHeader(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  result = 30LL;\n  if ( a1 && a2 && *(_DWORD *)(a2 + 456) <= *(_DWORD *)(a2 + 448) )\n  {\n    if ( *(_BYTE *)(a2 + 392) == 1 )\n    {\n      return 16LL;\n    }\n    else\n    {\n      uarpZero((void *)(a2 + 312), 0x88uLL);\n      *(_DWORD *)(a2 + 312) = 40 * *(_DWORD *)(a2 + 456) + 44;\n      *(_DWORD *)(a2 + 316) = 40;\n      *(_QWORD *)(a2 + 328) = *(_QWORD *)(a2 + 640);\n      *(_DWORD *)(a2 + 336) = *(_DWORD *)(a2 + 648);\n      *(_QWORD *)(a2 + 376) = sub_10000CF64;\n      *(_QWORD *)(a2 + 384) = sub_10000CFE8;\n      if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return uarpPlatformAssetRequestData(a1, a2, a2 + 312);\n    }\n  }\n  return result;\n}"
+}

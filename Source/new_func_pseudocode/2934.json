@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPProgressBarViewController fractionCompleted]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPProgressBarViewController fractionCompleted](AMPProgressBarViewController * self, SEL a2)",
+    "pseudocode": "double __cdecl -[AMPProgressBarViewController fractionCompleted](AMPProgressBarViewController *self, SEL a2)\n{\n  AMPProgressBarView *v2; // x19\n  double v3; // d0\n  double v4; // d8\n\n  v2 = objc_retainAutoreleasedReturnValue(-[AMPProgressBarViewController progressBarView](self, \"progressBarView\"));\n  -[AMPProgressBarView fractionCompleted](v2, \"fractionCompleted\");\n  v4 = v3;\n  objc_release(v2);\n  return v4;\n}"
+}

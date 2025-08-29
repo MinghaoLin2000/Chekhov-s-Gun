@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeMediaViewController setLoadingViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeMediaViewController setLoadingViewController:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceModeMediaViewController setLoadingViewController:](\n        DeviceModeMediaViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_loadingViewController, a3);\n}"
+}

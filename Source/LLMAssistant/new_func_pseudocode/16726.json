@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAnalyticsApplyStatusToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAnalyticsApplyStatusToString()",
+    "pseudocode": "__int64 UARPAnalyticsApplyStatusToString()\n{\n  return _UARPAnalyticsApplyStatusToString();\n}"
+}

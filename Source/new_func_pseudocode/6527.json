@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker coreImageGraphDumpPaths]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker coreImageGraphDumpPaths](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "NSMutableArray *__cdecl -[MediaConversionRequestTracker coreImageGraphDumpPaths](\n        MediaConversionRequestTracker *self,\n        SEL a2)\n{\n  return (NSMutableArray *)objc_getProperty(self, a2, 144LL, 1);\n}"
+}

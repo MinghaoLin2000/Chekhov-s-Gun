@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4UUID9MergeFromERKS0_",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP4UUID9MergeFromERKS0_(TSP::UUID * this, const TSP::UUID * a2)",
+    "pseudocode": "__int64 __fastcall TSP::UUID::MergeFrom(__int64 this, const TSP::UUID *a2)\n{\n  __int64 v3; // x19\n  __int64 v4; // x8\n  int v5; // w8\n\n  v3 = this;\n  v4 = *((_QWORD *)a2 + 1);\n  if ( (v4 & 1) != 0 )\n    this = sub_10003A25C(this + 8, (v4 & 0xFFFFFFFFFFFFFFFELL) + 8);\n  v5 = *((_DWORD *)a2 + 4);\n  if ( (v5 & 3) != 0 )\n  {\n    if ( (v5 & 1) != 0 )\n      *(_QWORD *)(v3 + 24) = *((_QWORD *)a2 + 3);\n    if ( (v5 & 2) != 0 )\n      *(_QWORD *)(v3 + 32) = *((_QWORD *)a2 + 4);\n    *(_DWORD *)(v3 + 16) |= v5;\n  }\n  return this;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo12CGSEventTypeV16EyeCandyGraphicsE9maskValueAC15SystemEventMaskVvg",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo12CGSEventTypeV16EyeCandyGraphicsE9maskValueAC15SystemEventMaskVvg(unsigned int a1)",
+    "pseudocode": "__int64 __fastcall CGSEventType.maskValue.getter(unsigned int a1)\n{\n  if ( a1 >= 0x20 )\n    return 0LL;\n  else\n    return (unsigned int)(1 << a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpRemoteEndpointIDForAsset",
+    "function_argument_number": 1,
+    "function_signature": "_uarpRemoteEndpointIDForAsset(__int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpRemoteEndpointIDForAsset(__int64 a1)\n{\n  __int64 v1; // x8\n\n  if ( a1 && (v1 = *(_QWORD *)(a1 + 696)) != 0 )\n    return *(unsigned int *)(v1 + 52);\n  else\n    return 0xFFFFFFFFLL;\n}"
+}

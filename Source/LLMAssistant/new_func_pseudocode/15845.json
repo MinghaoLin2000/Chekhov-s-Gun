@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2HashLog",
+    "function_argument_number": 3,
+    "function_signature": "_UARPLayer2HashLog(__int64 result, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall UARPLayer2HashLog(__int64 result, __int64 a2, __int64 a3)\n{\n  __int64 (__fastcall *v3)(__int64, __int64); // x3\n\n  v3 = *(__int64 (__fastcall **)(__int64, __int64))(result + 384);\n  if ( v3 )\n    return v3(a2, a3);\n  return result;\n}"
+}

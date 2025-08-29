@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.apple.ColorSyncXPCAgent.xpc/Contents/MacOS/com.apple.ColorSyncXPCAgent
+
+Service Exported Protocols:
+
+Service Entitlements:

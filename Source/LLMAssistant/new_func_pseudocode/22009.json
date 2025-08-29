@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZL17conection_handlerP17_xpc_connection_s",
+    "function_argument_number": 1,
+    "function_signature": "__ZL17conection_handlerP17_xpc_connection_s(_xpc_connection_s * a1)",
+    "pseudocode": "void __fastcall conection_handler(_xpc_connection_s *a1)\n{\n  char *v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = xpc_copy_description(a1);\n  free(v2);\n  xpc_connection_set_event_handler(a1, &__block_literal_global);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  xpc_connection_activate(a1);\n}"
+}

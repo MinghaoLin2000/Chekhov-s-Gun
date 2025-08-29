@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPFilePackageWriter closeWithQueue:completion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPFilePackageWriter closeWithQueue:completion:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSPFilePackageWriter closeWithQueue:completion:](TSPFilePackageWriter *self, SEL a2, id a3, id a4)\n{\n  id v6; // x21\n  id v7; // x22\n  dispatch_queue_global_s *v8; // x19\n  id v9; // x21\n  id v10; // x20\n  objc_super v11; // [xsp+8h] [xbp-78h] BYREF\n  _QWORD v12[5]; // [xsp+18h] [xbp-68h] BYREF\n  id v13; // [xsp+40h] [xbp-40h]\n  id v14; // [xsp+48h] [xbp-38h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = objc_retainAutoreleasedReturnValue(dispatch_get_global_queue(0LL, 0LL));\n  v12[0] = _NSConcreteStackBlock;\n  v12[1] = 3254779904LL;\n  v12[2] = sub_100024568;\n  v12[3] = &unk_1001D2978;\n  v13 = v6;\n  v14 = v7;\n  v12[4] = self;\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___TSPFilePackageWriter;\n  v9 = objc_retain(v6);\n  v10 = objc_retain(v7);\n  -[TSPPackageWriter closeWithQueue:completion:](&v11, \"closeWithQueue:completion:\", v8, v12);\n  objc_release(v8);\n  objc_release(v13);\n  objc_release(v14);\n  objc_release(v9);\n  objc_release(v10);\n}"
+}

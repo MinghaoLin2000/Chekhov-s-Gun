@@ -1,0 +1,6 @@
+{
+    "function_name": "-[KeyboardSettingsMediator KeyboardCheckSpelling]",
+    "function_argument_number": 2,
+    "function_signature": "-[KeyboardSettingsMediator KeyboardCheckSpelling](KeyboardSettingsMediator * self, SEL a2)",
+    "pseudocode": "id __cdecl -[KeyboardSettingsMediator KeyboardCheckSpelling](KeyboardSettingsMediator *self, SEL a2)\n{\n  return 0LL;\n}"
+}

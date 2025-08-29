@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC18InExhaustiveParsesSbvs",
+    "function_argument_number": 1,
+    "function_signature": "_$s22localspeechrecognition31VoiceCommandDebugInfoAggregatedV03hasbC18InExhaustiveParsesSbvs(__int64 result)",
+    "pseudocode": "__int64 __fastcall VoiceCommandDebugInfoAggregated.hasVoiceCommandInExhaustiveParses.setter(__int64 result)\n{\n  _BYTE *v1; // x20\n\n  *v1 = result;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+Service Path:
+/System/Library/PrivateFrameworks/ScreenReader.framework/Versions/A/Frameworks/BrailleTranslation.framework/Versions/A/XPCServices/BrailleTranslationService.xpc/Contents/MacOS/BrailleTranslationService
+
+Service Exported Protocols:
+
+Service Entitlements:

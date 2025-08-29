@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_continuation_throwingResume",
+    "function_argument_number": 0,
+    "function_signature": "_swift_continuation_throwingResume()",
+    "pseudocode": "__int64 swift_continuation_throwingResume()\n{\n  return _swift_continuation_throwingResume();\n}"
+}

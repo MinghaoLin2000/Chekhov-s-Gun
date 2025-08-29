@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataAppendBytes",
+    "function_argument_number": 3,
+    "function_signature": "_CFDataAppendBytes(CFMutableDataRef theData, const UInt8 * bytes, CFIndex length)",
+    "pseudocode": "void __cdecl CFDataAppendBytes(CFMutableDataRef theData, const UInt8 *bytes, CFIndex length)\n{\n  _CFDataAppendBytes(theData, bytes, length);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUOffsetInputStream enableSystemCaching]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUOffsetInputStream enableSystemCaching](SFUOffsetInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUOffsetInputStream enableSystemCaching](SFUOffsetInputStream *self, SEL a2)\n{\n  -[SFUInputStream enableSystemCaching](self->mInputStream, \"enableSystemCaching\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP16DocumentMetadataD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP16DocumentMetadataD2Ev(TSP::DocumentMetadata * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DocumentMetadata::~DocumentMetadata(TSP::DocumentMetadata *this)\n{\n  __ZN3TSP16DocumentMetadataD2Ev(this);\n}"
+}

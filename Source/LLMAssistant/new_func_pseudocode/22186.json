@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLEnumeratorCreateForDirectoryURL",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLEnumeratorCreateForDirectoryURL(CFAllocatorRef alloc, CFURLRef directoryURL, CFURLEnumeratorOptions option, CFArrayRef propertyKeys)",
+    "pseudocode": "CFURLEnumeratorRef __cdecl CFURLEnumeratorCreateForDirectoryURL(\n        CFAllocatorRef alloc,\n        CFURLRef directoryURL,\n        CFURLEnumeratorOptions option,\n        CFArrayRef propertyKeys)\n{\n  return _CFURLEnumeratorCreateForDirectoryURL(alloc, directoryURL, option, propertyKeys);\n}"
+}

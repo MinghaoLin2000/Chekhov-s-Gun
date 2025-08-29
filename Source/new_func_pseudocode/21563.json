@@ -1,0 +1,6 @@
+{
+    "function_name": "_AudioFileClose",
+    "function_argument_number": 1,
+    "function_signature": "_AudioFileClose(AudioFileID inAudioFile)",
+    "pseudocode": "OSStatus __cdecl AudioFileClose(AudioFileID inAudioFile)\n{\n  return _AudioFileClose(inAudioFile);\n}"
+}

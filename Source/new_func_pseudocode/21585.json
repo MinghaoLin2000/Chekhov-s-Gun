@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_dynamicCastClass",
+    "function_argument_number": 0,
+    "function_signature": "_swift_dynamicCastClass()",
+    "pseudocode": "__int64 swift_dynamicCastClass()\n{\n  return _swift_dynamicCastClass();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore25_NavigationHiddenModifierVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore25_NavigationHiddenModifierVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for _NavigationHiddenModifier()\n{\n  return &type metadata for _NavigationHiddenModifier;\n}"
+}

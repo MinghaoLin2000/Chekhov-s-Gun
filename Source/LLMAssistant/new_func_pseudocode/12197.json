@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io9Tokenizer18ConsumeLineCommentEPNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io9Tokenizer18ConsumeLineCommentEPNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE(google::protobuf::io::Tokenizer * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::Tokenizer::ConsumeLineComment(__int64 this, __int64 a2)\n{\n  __int64 v3; // x19\n  int v4; // w8\n  __int64 v5; // x9\n\n  v3 = this;\n  if ( a2 )\n  {\n    *(_QWORD *)(this + 152) = a2;\n    *(_DWORD *)(this + 160) = *(_DWORD *)(this + 132);\n  }\n  while ( *(_BYTE *)(v3 + 112) )\n  {\n    if ( *(_BYTE *)(v3 + 112) == 10 )\n    {\n      this = google::protobuf::io::Tokenizer::NextChar(v3);\n      break;\n    }\n    this = google::protobuf::io::Tokenizer::NextChar(v3);\n  }\n  if ( a2 )\n  {\n    v4 = *(_DWORD *)(v3 + 132);\n    v5 = *(int *)(v3 + 160);\n    if ( v4 != (_DWORD)v5 )\n      this = (__int64)std::string::append(\n                        *(std::string **)(v3 + 152),\n                        (const std::string::value_type *)(*(_QWORD *)(v3 + 120) + v5),\n                        v4 - (int)v5);\n    *(_QWORD *)(v3 + 152) = 0LL;\n    *(_DWORD *)(v3 + 160) = -1;\n  }\n  return this;\n}"
+}

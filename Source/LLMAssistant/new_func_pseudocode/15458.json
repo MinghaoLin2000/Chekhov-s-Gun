@@ -1,0 +1,6 @@
+{
+    "function_name": "_MAPurgeCatalogs",
+    "function_argument_number": 0,
+    "function_signature": "_MAPurgeCatalogs()",
+    "pseudocode": "__int64 MAPurgeCatalogs()\n{\n  return _MAPurgeCatalogs();\n}"
+}

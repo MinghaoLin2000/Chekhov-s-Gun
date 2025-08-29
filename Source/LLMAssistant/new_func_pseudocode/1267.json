@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController deviceName]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceViewController deviceName](DeviceViewController * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[DeviceViewController deviceName](DeviceViewController *self, SEL a2)\n{\n  return self->_deviceName;\n}"
+}

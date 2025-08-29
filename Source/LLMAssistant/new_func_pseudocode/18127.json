@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateMutableCopy",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringCreateMutableCopy(CFAllocatorRef alloc, CFIndex maxLength, CFStringRef theString)",
+    "pseudocode": "CFMutableStringRef __cdecl CFStringCreateMutableCopy(CFAllocatorRef alloc, CFIndex maxLength, CFStringRef theString)\n{\n  return _CFStringCreateMutableCopy(alloc, maxLength, theString);\n}"
+}

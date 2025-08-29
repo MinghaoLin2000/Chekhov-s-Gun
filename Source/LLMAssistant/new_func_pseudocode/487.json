@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController tagWithEpisodeCount:unwatched:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceSettingsTVShowsViewController tagWithEpisodeCount:unwatched:](DeviceSettingsTVShowsViewController * self, SEL a2, signed __int64 a3, bool a4)",
+    "pseudocode": "signed __int64 __cdecl -[DeviceSettingsTVShowsViewController tagWithEpisodeCount:unwatched:](\n        DeviceSettingsTVShowsViewController *self,\n        SEL a2,\n        signed __int64 a3,\n        bool a4)\n{\n  __int64 v4; // x8\n\n  v4 = -100LL;\n  if ( a3 >= 0 )\n    v4 = 100LL;\n  if ( !a4 )\n    v4 = 0LL;\n  return v4 + a3;\n}"
+}

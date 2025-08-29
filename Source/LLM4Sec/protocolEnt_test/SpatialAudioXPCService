@@ -1,0 +1,28 @@
+Service Path:
+/System/Library/PrivateFrameworks/SpatialAudioServices.framework/Versions/A/XPCServices/SpatialAudioXPCService.xpc/Contents/MacOS/SpatialAudioXPCService
+
+Service Exported Protocols:
+@protocol SpatialAudioXPCClientInterface
+@end
+@protocol SpatialAudioXPCServiceInterface
+- (void)fetchSpatialSoundProfileRecordForClient:(SpatialAudioClient *)arg1 WithCompletion:(void (^)(SpatialSoundProfileRecord *, NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.BluetoothServices
+	[Value]
+		[Bool] true
+	[Key] com.apple.BluetoothServices.cloud
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.BluetoothCloudServices
+	[Key] platform-application
+	[Value]
+		[Bool] true

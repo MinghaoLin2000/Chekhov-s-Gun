@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__110unique_ptrINS_11__hash_nodeINS_17__hash_value_typeIN3mlc15function_kind_tENS_8functionIFbONS3_16xpc_auto_reply_tEPvEEEEES8_EENS_22__hash_node_destructorINS_9allocatorISC_EEEEED1B8ne180100Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__110unique_ptrINS_11__hash_nodeINS_17__hash_value_typeIN3mlc15function_kind_tENS_8functionIFbONS3_16xpc_auto_reply_tEPvEEEEES8_EENS_22__hash_node_destructorINS_9allocatorISC_EEEEED1B8ne180100Ev(__int64 a1)",
+    "pseudocode": "__int64 __fastcall std::unique_ptr<std::__hash_node<std::__hash_value_type<mlc::function_kind_t,std::function<bool ()(mlc::xpc_auto_reply_t &&,void *)>>,mlc::xpc_auto_reply_t &&>,std::__hash_node_destructor<std::allocator<std::__hash_value_type<mlc::function_kind_t,std::function<bool ()(mlc::xpc_auto_reply_t &&,void *)>>>>>::~unique_ptr[abi:ne180100](\n        __int64 a1)\n{\n  _QWORD *v2; // x20\n  _QWORD *v3; // x0\n\n  v2 = *(_QWORD **)a1;\n  *(_QWORD *)a1 = 0LL;\n  if ( v2 )\n  {\n    if ( *(_BYTE *)(a1 + 16) )\n    {\n      v3 = (_QWORD *)v2[6];\n      if ( v3 == v2 + 3 )\n      {\n        (*(void (__fastcall **)(_QWORD *))(v2[3] + 32LL))(v2 + 3);\n      }\n      else if ( v3 )\n      {\n        (*(void (__fastcall **)(_QWORD *))(*v3 + 40LL))(v3);\n      }\n    }\n    operator delete(v2);\n  }\n  return a1;\n}"
+}

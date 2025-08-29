@@ -1,0 +1,6 @@
+{
+    "function_name": "-[preflightInfo dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[preflightInfo dealloc](preflightInfo * self, SEL a2)",
+    "pseudocode": "void __cdecl -[preflightInfo dealloc](preflightInfo *self, SEL a2)\n{\n  __AMRestorableDevice *preflightDevice; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  preflightDevice = self->preflightDevice;\n  if ( preflightDevice )\n    CFRelease(preflightDevice);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___preflightInfo;\n  -[preflightInfo dealloc](&v4, \"dealloc\");\n}"
+}

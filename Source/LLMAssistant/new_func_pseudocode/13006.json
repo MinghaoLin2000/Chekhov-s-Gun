@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUCompressionReadChannel readWithHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUCompressionReadChannel readWithHandler:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUCompressionReadChannel readWithHandler:](TSUCompressionReadChannel *self, SEL a2, id a3)\n{\n  id v4; // x21\n  TSUStreamCompression *v5; // x0\n  TSUStreamReadChannel *readChannel; // x22\n  TSUStreamCompression *v7; // x20\n  id v8; // x19\n  _QWORD v9[4]; // [xsp+8h] [xbp-78h] BYREF\n  id v10; // [xsp+28h] [xbp-58h]\n  id v11; // [xsp+30h] [xbp-50h]\n  _QWORD *v12; // [xsp+38h] [xbp-48h]\n  _QWORD v13[3]; // [xsp+40h] [xbp-40h] BYREF\n  char v14; // [xsp+58h] [xbp-28h]\n\n  v4 = objc_retain(a3);\n  v13[0] = 0LL;\n  v13[1] = v13;\n  v13[2] = 0x2020000000LL;\n  v14 = 1;\n  v5 = objc_retain(self->_compressor);\n  readChannel = self->_readChannel;\n  v9[0] = _NSConcreteStackBlock;\n  v9[1] = 3254779904LL;\n  v9[2] = sub_100141984;\n  v9[3] = &unk_1001DDE48;\n  v12 = v13;\n  v7 = objc_retain(v5);\n  v10 = v7;\n  v8 = objc_retain(v4);\n  v11 = v8;\n  -[TSUStreamReadChannel readWithHandler:](readChannel, \"readWithHandler:\", v9);\n  objc_release(v11);\n  objc_release(v10);\n  objc_release(v7);\n  _Block_object_dispose(v13, 8);\n  objc_release(v8);\n}"
+}

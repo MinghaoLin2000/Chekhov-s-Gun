@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CalenderLimitFormatter getObjectValue:forString:errorDescription:]",
+    "function_argument_number": 4,
+    "function_signature": "-[CalenderLimitFormatter getObjectValue:forString:errorDescription:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "bool __cdecl -[CalenderLimitFormatter getObjectValue:forString:errorDescription:](\n        CalenderLimitFormatter *self,\n        SEL a2,\n        id *a3,\n        id a4,\n        id *a5)\n{\n  *a3 = objc_retainAutorelease(a4);\n  return 1;\n}"
+}

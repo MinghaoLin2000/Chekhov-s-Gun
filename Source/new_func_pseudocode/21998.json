@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_connection_cancel",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_connection_cancel(xpc_connection_t connection)",
+    "pseudocode": "void __cdecl xpc_connection_cancel(xpc_connection_t connection)\n{\n  _xpc_connection_cancel(connection);\n}"
+}

@@ -1,0 +1,77 @@
+Service Path:
+/System/Library/PrivateFrameworks/UIKitMacHelper.framework/Versions/A/XPCServices/UIKitMacHelperSystemPreferencesViewService.xpc/Contents/MacOS/UIKitMacHelperSystemPreferencesViewService
+
+Service Exported Protocols:
+@protocol NSControlTextEditingDelegate <NSObject>
+- (NSArray *)control:(NSControl *)arg1 textView:(NSTextView *)arg2 completions:(NSArray *)arg3 forPartialWordRange:(struct _NSRange)arg4 indexOfSelectedItem:(long long *)arg5;
+- (_Bool)control:(NSControl *)arg1 textView:(NSTextView *)arg2 doCommandBySelector:(SEL)arg3;
+- (_Bool)control:(NSControl *)arg1 isValidObject:(id)arg2;
+- (void)control:(NSControl *)arg1 didFailToValidatePartialString:(NSString *)arg2 errorDescription:(NSString *)arg3;
+- (_Bool)control:(NSControl *)arg1 didFailToFormatString:(NSString *)arg2 errorDescription:(NSString *)arg3;
+- (_Bool)control:(NSControl *)arg1 textShouldEndEditing:(NSText *)arg2;
+- (_Bool)control:(NSControl *)arg1 textShouldBeginEditing:(NSText *)arg2;
+- (void)controlTextDidChange:(NSNotification *)arg1;
+- (void)controlTextDidEndEditing:(NSNotification *)arg1;
+- (void)controlTextDidBeginEditing:(NSNotification *)arg1;
+@end
+@protocol NSTableViewDataSource <NSObject>
+- (NSArray *)tableView:(NSTableView *)arg1 namesOfPromisedFilesDroppedAtDestination:(NSURL *)arg2 forDraggedRowsWithIndexes:(NSIndexSet *)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 acceptDrop:(id <NSDraggingInfo>)arg2 row:(long long)arg3 dropOperation:(unsigned long long)arg4;
+- (unsigned long long)tableView:(NSTableView *)arg1 validateDrop:(id <NSDraggingInfo>)arg2 proposedRow:(long long)arg3 proposedDropOperation:(unsigned long long)arg4;
+- (_Bool)tableView:(NSTableView *)arg1 writeRowsWithIndexes:(NSIndexSet *)arg2 toPasteboard:(NSPasteboard *)arg3;
+- (void)tableView:(NSTableView *)arg1 updateDraggingItemsForDrag:(id <NSDraggingInfo>)arg2;
+- (void)tableView:(NSTableView *)arg1 draggingSession:(NSDraggingSession *)arg2 endedAtPoint:(struct CGPoint)arg3 operation:(unsigned long long)arg4;
+- (void)tableView:(NSTableView *)arg1 draggingSession:(NSDraggingSession *)arg2 willBeginAtPoint:(struct CGPoint)arg3 forRowIndexes:(NSIndexSet *)arg4;
+- (id <NSPasteboardWriting>)tableView:(NSTableView *)arg1 pasteboardWriterForRow:(long long)arg2;
+- (void)tableView:(NSTableView *)arg1 sortDescriptorsDidChange:(NSArray *)arg2;
+- (void)tableView:(NSTableView *)arg1 setObjectValue:(id)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (id)tableView:(NSTableView *)arg1 objectValueForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (long long)numberOfRowsInTableView:(NSTableView *)arg1;
+@end
+@protocol NSTableViewDelegate <NSControlTextEditingDelegate>
+- (void)tableViewSelectionIsChanging:(NSNotification *)arg1;
+- (void)tableViewColumnDidResize:(NSNotification *)arg1;
+- (void)tableViewColumnDidMove:(NSNotification *)arg1;
+- (void)tableViewSelectionDidChange:(NSNotification *)arg1;
+- (void)tableView:(NSTableView *)arg1 userDidChangeVisibilityOfTableColumns:(NSArray *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 userCanChangeVisibilityOfTableColumn:(NSTableColumn *)arg2;
+- (NSArray *)tableView:(NSTableView *)arg1 rowActionsForRow:(long long)arg2 edge:(long long)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 shouldReorderColumn:(long long)arg2 toColumn:(long long)arg3;
+- (double)tableView:(NSTableView *)arg1 sizeToFitWidthOfColumn:(long long)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 isGroupRow:(long long)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldTypeSelectForEvent:(NSEvent *)arg2 withCurrentSearchString:(NSString *)arg3;
+- (long long)tableView:(NSTableView *)arg1 nextTypeSelectMatchFromRow:(long long)arg2 toRow:(long long)arg3 forString:(NSString *)arg4;
+- (NSString *)tableView:(NSTableView *)arg1 typeSelectStringForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (double)tableView:(NSTableView *)arg1 heightOfRow:(long long)arg2;
+- (void)tableView:(NSTableView *)arg1 didDragTableColumn:(NSTableColumn *)arg2;
+- (void)tableView:(NSTableView *)arg1 didClickTableColumn:(NSTableColumn *)arg2;
+- (void)tableView:(NSTableView *)arg1 mouseDownInHeaderOfTableColumn:(NSTableColumn *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldSelectTableColumn:(NSTableColumn *)arg2;
+- (NSIndexSet *)tableView:(NSTableView *)arg1 selectionIndexesForProposedSelection:(NSIndexSet *)arg2;
+- (_Bool)tableView:(NSTableView *)arg1 shouldSelectRow:(long long)arg2;
+- (_Bool)selectionShouldChangeInTableView:(NSTableView *)arg1;
+- (NSCell *)tableView:(NSTableView *)arg1 dataCellForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (_Bool)tableView:(NSTableView *)arg1 shouldTrackCell:(NSCell *)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (_Bool)tableView:(NSTableView *)arg1 shouldShowCellExpansionForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (NSString *)tableView:(NSTableView *)arg1 toolTipForCell:(NSCell *)arg2 rect:(struct CGRect *)arg3 tableColumn:(NSTableColumn *)arg4 row:(long long)arg5 mouseLocation:(struct CGPoint)arg6;
+- (_Bool)tableView:(NSTableView *)arg1 shouldEditTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+- (void)tableView:(NSTableView *)arg1 willDisplayCell:(id)arg2 forTableColumn:(NSTableColumn *)arg3 row:(long long)arg4;
+- (void)tableView:(NSTableView *)arg1 didRemoveRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (void)tableView:(NSTableView *)arg1 didAddRowView:(NSTableRowView *)arg2 forRow:(long long)arg3;
+- (NSTableRowView *)tableView:(NSTableView *)arg1 rowViewForRow:(long long)arg2;
+- (NSView *)tableView:(NSTableView *)arg1 viewForTableColumn:(NSTableColumn *)arg2 row:(long long)arg3;
+@end
+@protocol UINSSystemPreferencesService
+- (void)refreshSettingsWithAdditionalSettings:(unsigned long long)arg1;
+- (void)refreshSettingsWithAdditionalSettings:(unsigned long long)arg1 completionHandler:(void (^)(_Bool))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.locationd.status
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.manager.access.read
+	[Value]
+		[Array]
+			[String] kTCCServiceAll

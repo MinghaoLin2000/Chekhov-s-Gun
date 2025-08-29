@@ -1,0 +1,6 @@
+{
+    "function_name": "_mach_continuous_time",
+    "function_argument_number": 0,
+    "function_signature": "_mach_continuous_time()",
+    "pseudocode": "uint64_t mach_continuous_time(void)\n{\n  return _mach_continuous_time();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageSourceCreateImageAtIndex",
+    "function_argument_number": 3,
+    "function_signature": "_CGImageSourceCreateImageAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options)",
+    "pseudocode": "CGImageRef __cdecl CGImageSourceCreateImageAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options)\n{\n  return _CGImageSourceCreateImageAtIndex(isrc, index, options);\n}"
+}

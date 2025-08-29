@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDLogContext init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUUUIDLogContext init](TSUUUIDLogContext * self, SEL a2)",
+    "pseudocode": "TSUUUIDLogContext *__cdecl -[TSUUUIDLogContext init](TSUUUIDLogContext *self, SEL a2)\n{\n  TSUUUIDLogContext *v2; // x19\n  NSUUID *v3; // x20\n  NSString *v4; // x0\n  NSString *publicString; // x8\n  NSString *privateString; // x0\n  objc_super v8; // [xsp+0h] [xbp-20h] BYREF\n\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___TSUUUIDLogContext;\n  v2 = -[TSUUUIDLogContext init](&v8, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(+[NSUUID UUID](&OBJC_CLASS___NSUUID, \"UUID\"));\n    v4 = objc_retainAutoreleasedReturnValue(-[NSUUID UUIDString](v3, \"UUIDString\"));\n    publicString = v2->_publicString;\n    v2->_publicString = v4;\n    objc_release(publicString);\n    objc_release(v3);\n    privateString = v2->_privateString;\n    v2->_privateString = (NSString *)&stru_1001DFAA0;\n    objc_release(privateString);\n  }\n  return v2;\n}"
+}

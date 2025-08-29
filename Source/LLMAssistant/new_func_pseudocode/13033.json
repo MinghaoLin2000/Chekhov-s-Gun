@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSIndexSet tsu_indexSetByExcludingIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSIndexSet tsu_indexSetByExcludingIndex:](NSIndexSet * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "id __cdecl -[NSIndexSet tsu_indexSetByExcludingIndex:](NSIndexSet *self, SEL a2, unsigned __int64 a3)\n{\n  NSIndexSet *v4; // x19\n  id v5; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(+[NSIndexSet indexSetWithIndex:](&OBJC_CLASS___NSIndexSet, \"indexSetWithIndex:\", a3));\n  v5 = objc_retainAutoreleasedReturnValue(-[NSIndexSet tsu_indexSetByExcludingIndexes:](self, \"tsu_indexSetByExcludingIndexes:\", v4));\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

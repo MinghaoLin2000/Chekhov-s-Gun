@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSIndexSet tsu_indexSetByInsertingIndexes:inRange:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSIndexSet tsu_indexSetByInsertingIndexes:inRange:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[NSIndexSet tsu_indexSetByInsertingIndexes:inRange:](NSIndexSet *self, SEL a2, id a3, _NSRange a4)\n{\n  NSUInteger length; // x22\n  NSUInteger location; // x21\n  id v7; // x19\n  void *v8; // x20\n  void *v9; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  length = a4.length;\n  location = a4.location;\n  v7 = objc_retain(a3);\n  if ( v7 && length )\n  {\n    v8 = -[NSIndexSet mutableCopy](self, \"mutableCopy\");\n    objc_msgSend(v8, \"shiftIndexesStartingAtIndex:by:\", location, length);\n    v9 = objc_msgSend(v7, \"mutableCopy\");\n    objc_msgSend(v9, \"shiftIndexesStartingAtIndex:by:\", 0LL, location);\n    objc_msgSend(v8, \"addIndexes:\", v9);\n    objc_release(v9);\n  }\n  else\n  {\n    v8 = -[NSIndexSet copy](self, \"copy\");\n  }\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v8);\n}"
+}

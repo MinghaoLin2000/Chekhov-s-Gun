@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSRemoveWindowsFromSpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSRemoveWindowsFromSpaces()",
+    "pseudocode": "__int64 CGSRemoveWindowsFromSpaces()\n{\n  return _CGSRemoveWindowsFromSpaces();\n}"
+}

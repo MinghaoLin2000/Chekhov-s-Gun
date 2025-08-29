@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderTabContainerViewController hasErrorIdentifierForIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderTabContainerViewController hasErrorIdentifierForIdentifier:](DeviceFinderTabContainerViewController * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[DeviceFinderTabContainerViewController hasErrorIdentifierForIdentifier:](\n        DeviceFinderTabContainerViewController *self,\n        SEL a2,\n        id a3)\n{\n  return -[DeviceFinderTabContainerViewController mediaDomainForIdentifier:](self, \"mediaDomainForIdentifier:\", a3) != 0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ShareAddressOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper12ShareAddressOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ShareAddress()\n{\n  return &type metadata for ShareAddress;\n}"
+}

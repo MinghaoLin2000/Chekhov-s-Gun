@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_getTypeByMangledNameInContext2",
+    "function_argument_number": 0,
+    "function_signature": "_swift_getTypeByMangledNameInContext2()",
+    "pseudocode": "__int64 swift_getTypeByMangledNameInContext2()\n{\n  return _swift_getTypeByMangledNameInContext2();\n}"
+}

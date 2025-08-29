@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceWarrantyViewController clickAgreeToCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceWarrantyViewController clickAgreeToCheckBox:](DeviceWarrantyViewController * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceWarrantyViewController clickAgreeToCheckBox:](DeviceWarrantyViewController *self, SEL a2, id a3)\n{\n  _BOOL8 v4; // x20\n  NSButton *v5; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_msgSend(a3, \"integerValue\") == (void *)1;\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceWarrantyViewController continueButton](self, \"continueButton\"));\n  -[NSButton setEnabled:](v5, \"setEnabled:\", v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

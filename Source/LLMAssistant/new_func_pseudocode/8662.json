@@ -1,0 +1,6 @@
+{
+    "function_name": "_msync",
+    "function_argument_number": 3,
+    "function_signature": "_msync(void * a1, size_t a2, int a3)",
+    "pseudocode": "int __cdecl msync(void *a1, size_t a2, int a3)\n{\n  return _msync(a1, a2, a3);\n}"
+}

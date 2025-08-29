@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection cancelSpeech]",
+    "function_argument_number": 2,
+    "function_signature": "-[LSRConnection cancelSpeech](LSRConnection * self, SEL a2)",
+    "pseudocode": "void __cdecl -[LSRConnection cancelSpeech](LSRConnection *self, SEL a2)\n{\n  os_log_s *v3; // x20\n  _QWORD block[5]; // [xsp+8h] [xbp-58h] BYREF\n  uint8_t buf[4]; // [xsp+30h] [xbp-30h] BYREF\n  const char *v6; // [xsp+34h] [xbp-2Ch]\n  __int16 v7; // [xsp+3Ch] [xbp-24h]\n  LSRConnection *v8; // [xsp+3Eh] [xbp-22h]\n\n  v3 = (os_log_s *)SFLogConnection;\n  if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_INFO) )\n  {\n    *(_DWORD *)buf = 136315394;\n    v6 = \"-[LSRConnection cancelSpeech]\";\n    v7 = 2048;\n    v8 = self;\n    _os_log_impl((void *)&_mh_execute_header, v3, OS_LOG_TYPE_INFO, \"%s cancelSpeech - %p\", buf, 0x16u);\n  }\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_10003B1CC;\n  block[3] = &unk_100059D18;\n  block[4] = self;\n  dispatch_async((dispatch_queue_t)qword_100065418, block);\n}"
+}

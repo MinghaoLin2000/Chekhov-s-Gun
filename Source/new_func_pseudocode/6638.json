@@ -1,0 +1,6 @@
+{
+    "function_name": "_getprogname",
+    "function_argument_number": 0,
+    "function_signature": "_getprogname()",
+    "pseudocode": "const char *getprogname(void)\n{\n  return _getprogname();\n}"
+}

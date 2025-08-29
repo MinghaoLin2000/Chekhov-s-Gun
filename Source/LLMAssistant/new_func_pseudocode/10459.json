@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP25SparseUUIDPathArray_Entry13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP25SparseUUIDPathArray_Entry13IsInitializedEv(TSP::SparseUUIDPathArray_Entry * this)",
+    "pseudocode": "bool __fastcall TSP::SparseUUIDPathArray_Entry::IsInitialized(TSP::SparseUUIDPathArray_Entry *this)\n{\n  int v1; // w8\n  _BOOL8 result; // x0\n  __int64 v3; // x8\n  __int64 v4; // x9\n  __int64 v5; // x8\n  __int64 v6; // x11\n\n  v1 = *((_DWORD *)this + 4);\n  if ( (~v1 & 3) != 0 )\n    return 0LL;\n  if ( (v1 & 1) == 0 )\n    return 1LL;\n  v3 = *((_QWORD *)this + 3);\n  v4 = *(unsigned int *)(v3 + 24);\n  v5 = *(_QWORD *)(v3 + 32);\n  do\n  {\n    result = (int)v4 < 1;\n    if ( (int)v4 < 1 )\n      break;\n    v6 = *(_QWORD *)(v5 + 8 * v4--);\n  }\n  while ( (~*(_DWORD *)(v6 + 16) & 3) == 0 );\n  return result;\n}"
+}

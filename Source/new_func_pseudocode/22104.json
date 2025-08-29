@@ -1,0 +1,6 @@
+{
+    "function_name": "_IORegistryEntryFromPath",
+    "function_argument_number": 2,
+    "function_signature": "_IORegistryEntryFromPath(mach_port_t mainPort, const char *__attribute__((__org_typedef(io_string_t))) path)",
+    "pseudocode": "io_registry_entry_t __cdecl IORegistryEntryFromPath(mach_port_t mainPort, const io_string_t path)\n{\n  return _IORegistryEntryFromPath(mainPort, path);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "___clang_call_terminate",
+    "function_argument_number": 1,
+    "function_signature": "___clang_call_terminate(void * a1)",
+    "pseudocode": "void __fastcall __noreturn __clang_call_terminate(void *a1)\n{\n  __cxa_begin_catch(a1);\n  std::terminate();\n}"
+}

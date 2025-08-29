@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFObjectGetType",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFObjectGetType(CGPDFObjectRef object)",
+    "pseudocode": "CGPDFObjectType __cdecl CGPDFObjectGetType(CGPDFObjectRef object)\n{\n  return _CGPDFObjectGetType(object);\n}"
+}

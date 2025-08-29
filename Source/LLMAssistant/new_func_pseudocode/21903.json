@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgENS_4fposI11__mbstate_tEE",
+    "function_argument_number": 0,
+    "function_signature": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgENS_4fposI11__mbstate_tEE()",
+    "pseudocode": "__int64 std::istream::seekg()\n{\n  return std::istream::seekg();\n}"
+}

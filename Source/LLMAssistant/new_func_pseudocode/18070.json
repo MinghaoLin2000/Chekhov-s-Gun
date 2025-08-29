@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSCFStringtoCString",
+    "function_argument_number": 1,
+    "function_signature": "_NetFSCFStringtoCString(CFStringRef a1)",
+    "pseudocode": "char *__cdecl NetFSCFStringtoCString(CFStringRef a1)\n{\n  CFIndex Length; // x0\n  CFIndex v3; // x21\n  void *v4; // x20\n\n  Length = CFStringGetLength(a1);\n  v3 = CFStringGetMaximumSizeForEncoding(Length, 0x8000100u) + 1;\n  v4 = malloc_type_malloc(v3, 0x995BB0ABuLL);\n  if ( v4 && !CFStringGetCString(a1, (char *)v4, v3, 0x8000100u) )\n  {\n    free(v4);\n    return 0LL;\n  }\n  return (char *)v4;\n}"
+}

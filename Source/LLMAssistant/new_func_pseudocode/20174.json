@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK17Printd_Parameters16_get_PrinterUUIDEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK17Printd_Parameters16_get_PrinterUUIDEv(Printd_Parameters * this)",
+    "pseudocode": "NSURL *__fastcall Printd_Parameters::_get_PrinterUUID(Printd_Parameters *this)\n{\n  NSURL *v1; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v1 = objc_retainAutoreleasedReturnValue(getNamedAttr<NSURL * {__strong}>(*(_QWORD *)this, (int)CFSTR(\"printer-uuid\")));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v1);\n}"
+}

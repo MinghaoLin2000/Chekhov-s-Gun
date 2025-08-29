@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService15JSAccountObject .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService15JSAccountObject .cxx_destruct](_TtC34AppleMediaServicesUIDynamicService15JSAccountObject * self, SEL a2)",
+    "pseudocode": "void __cdecl -[JSAccountObject .cxx_destruct](_TtC34AppleMediaServicesUIDynamicService15JSAccountObject *self, SEL a2)\n{\n  void *v3; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  swift_release(*(Class *)((char *)&self->super.isa\n                         + OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService15JSAccountObject_dynamicAccountsStore));\n  v3 = *(Class *)((char *)&self->super.isa\n                + OBJC_IVAR____TtC34AppleMediaServicesUIDynamicService15JSAccountObject_clientInfo);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

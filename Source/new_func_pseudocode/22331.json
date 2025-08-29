@@ -1,0 +1,6 @@
+{
+    "function_name": "__CPSGetCurrentProcess",
+    "function_argument_number": 0,
+    "function_signature": "__CPSGetCurrentProcess()",
+    "pseudocode": "__int64 _CPSGetCurrentProcess()\n{\n  return __CPSGetCurrentProcess();\n}"
+}

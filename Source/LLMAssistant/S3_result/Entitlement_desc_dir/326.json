@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.wifip2pd",
+  "capability": "Allows an application to interact with the system's Wi-Fi Peer-to-Peer daemon or services, enabling direct device-to-device Wi-Fi communication and discovery, potentially bypassing traditional Wi-Fi access point infrastructure.",
+  "reasoning": "The entitlement name `wifi` clearly indicates Wi-Fi functionality, and `p2pd` strongly suggests 'peer-to-peer daemon' or 'peer-to-peer discovery/services'. This implies access to Apple's internal framework for direct Wi-Fi device communication, similar to technologies like AirDrop or AirPlay which rely on Wi-Fi P2P capabilities.",
+  "similar_entitlements": [
+    "com.apple.developer.networking.HotspotConfiguration"
+  ],
+  "sensitive_type": [
+    2,
+    5
+  ],
+  "sensitive_reasoning": "This entitlement grants privileged networking capabilities (Type 2) by allowing direct peer-to-peer Wi-Fi connections and potentially managing ad-hoc network interfaces, which goes beyond standard client-AP communication and could involve lower-level network operations or daemon interaction. Furthermore, Wi-Fi P2P discovery inherently allows an application to determine the proximity of other devices and can be used for location tracking or inference (Type 5 - TCC Location) without necessarily requesting explicit Location Services permission, thus touching on TCC-protected location data.",
+  "self_reflection": "Confident in the interpretation of 'wifi' and 'p2pd' as relating to Wi-Fi Peer-to-Peer services. The capability inference aligns with common Apple frameworks that utilize such direct communication. The classification into 'Privileged Networking' is based on the non-standard nature of P2P Wi-Fi and potential low-level access, while 'TCC (Location)' is a direct consequence of Wi-Fi discovery being a method for location inference. The main uncertainty lies in the precise level of control granted by interacting with the 'p2pd' daemon, but the security implications are considered based on the most impactful potential uses."
+}

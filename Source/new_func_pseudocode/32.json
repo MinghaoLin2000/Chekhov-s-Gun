@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12CKShareModelCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper12CKShareModelCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for CKShareModel(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CA530;\n  if ( !qword_1000CA530 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for CKShareModel);\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[StoreUIService presentAuthenticateRequest:withResultHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[StoreUIService presentAuthenticateRequest:withResultHandler:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[StoreUIService presentAuthenticateRequest:withResultHandler:](\n        StoreUIService *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x21\n  id v7; // x0\n  dispatch_queue_s *dispatchQueue; // x19\n  id v9; // x20\n  id v10; // x21\n  _QWORD block[4]; // [xsp+8h] [xbp-58h] BYREF\n  id v12; // [xsp+28h] [xbp-38h]\n  StoreUIService *v13; // [xsp+30h] [xbp-30h]\n  id v14; // [xsp+38h] [xbp-28h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  dispatchQueue = (dispatch_queue_s *)self->_dispatchQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_10000A65C;\n  block[3] = &unk_1000109B8;\n  v12 = v6;\n  v13 = self;\n  v14 = v7;\n  v9 = objc_retain(v7);\n  v10 = objc_retain(v6);\n  dispatch_async(dispatchQueue, block);\n  objc_release(v14);\n  objc_release(v12);\n  objc_release(v9);\n  objc_release(v10);\n}"
+}

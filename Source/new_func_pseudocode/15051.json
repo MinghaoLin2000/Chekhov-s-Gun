@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv mockDataSource:returning:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ATXHeuristicJSEnv mockDataSource:returning:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[ATXHeuristicJSEnv mockDataSource:returning:](ATXHeuristicJSEnv *self, SEL a2, id a3, id a4)\n{\n  id v6; // x21\n  id v7; // x19\n  _QWORD *v8; // x22\n  _QWORD v9[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v10; // [xsp+28h] [xbp-28h]\n\n  v9[0] = _NSConcreteStackBlock;\n  v9[1] = 3254779904LL;\n  v9[2] = sub_10001B744;\n  v9[3] = &unk_100029BC0;\n  v10 = objc_retain(a4);\n  v6 = objc_retain(v10);\n  v7 = objc_retain(a3);\n  v8 = objc_retainBlock(v9);\n  -[ATXHeuristicJSEnv mockDataSource:block:](self, \"mockDataSource:block:\", v7, v8);\n  objc_release(v7);\n  objc_release(v8);\n  objc_release(v10);\n  objc_release(v6);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionContainsRegion",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionContainsRegion()",
+    "pseudocode": "__int64 CGRegionContainsRegion()\n{\n  return _CGRegionContainsRegion();\n}"
+}

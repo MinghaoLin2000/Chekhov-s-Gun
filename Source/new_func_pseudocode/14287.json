@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$linkOrCopyItemAtURL:decryptionInfo:toURL:encryptionInfo:canLink:encodedLength:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$linkOrCopyItemAtURL:decryptionInfo:toURL:encryptionInfo:canLink:encodedLength:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_linkOrCopyItemAtURL_decryptionInfo_toURL_encryptionInfo_canLink_encodedLength_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"linkOrCopyItemAtURL:decryptionInfo:toURL:encryptionInfo:canLink:encodedLength:error:\");\n}"
+}

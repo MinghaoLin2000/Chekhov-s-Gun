@@ -1,0 +1,5 @@
+_UARPAnalyticsAssetDownloadStatusToString
+__int64 UARPAnalyticsAssetDownloadStatusToString()
+{
+  return _UARPAnalyticsAssetDownloadStatusToString();
+}

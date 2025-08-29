@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_sha256HexHashString]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_sha256HexHashString](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_sha256HexHashString](NSString *self, SEL a2)\n{\n  id v2; // x19\n  char *v3; // x20\n  __int64 v4; // x24\n  char *v5; // x22\n  NSString *v6; // x21\n  _BYTE v8[32]; // [xsp+8h] [xbp-58h] BYREF\n  __int64 vars8; // [xsp+68h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(+[SFUCryptoUtils sha256HashFromString:](&OBJC_CLASS___SFUCryptoUtils, \"sha256HashFromString:\", self));\n  objc_msgSend(v2, \"getBytes:length:\", v8, 32LL);\n  v3 = (char *)malloc_type_malloc(0x41uLL, 0x769D2E00uLL);\n  v4 = 0LL;\n  v5 = v3;\n  do\n  {\n    snprintf(v5, 3uLL, \"%02x\", (unsigned __int8)v8[v4++]);\n    v5 += 2;\n  }\n  while ( v4 != 32 );\n  v3[64] = 0;\n  v6 = objc_retainAutoreleasedReturnValue(+[NSString stringWithUTF8String:](&OBJC_CLASS___NSString, \"stringWithUTF8String:\", v3));\n  free(v3);\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

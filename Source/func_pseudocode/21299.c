@@ -1,0 +1,5 @@
+$s22localspeechrecognition28ExperimentationTriggerLoggerCMa
+__int64 type metadata accessor for ExperimentationTriggerLogger()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition28ExperimentationTriggerLogger);
+}

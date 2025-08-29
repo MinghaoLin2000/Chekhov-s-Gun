@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize5Stage9serializeERNS_10SerializerE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN9serialize5Stage9serializeERNS_10SerializerE(serialize::Stage * this, serialize::Serializer * a2)",
+    "pseudocode": "void __fastcall serialize::Stage::serialize(serialize::Stage *this, serialize::Serializer *a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  serialize::Prim::serialize(this, a2);\n  serialize::Serializer::sync((unsigned __int8 *)a2, \"defaultPrim\", (std::string *)((char *)this + 64));\n  serialize::Serializer::sync(a2, \"metersPerUnit\", (float *)this + 22);\n  serialize::Serializer::sync(a2, \"startTimeCode\", (int *)this + 23);\n  serialize::Serializer::sync(a2, \"endTimeCode\", (int *)this + 24);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  serialize::Serializer::sync(a2, \"timeCodesPerSecond\", (int *)this + 25);\n}"
+}

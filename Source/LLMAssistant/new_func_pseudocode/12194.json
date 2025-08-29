@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io9Tokenizer8NextCharEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io9Tokenizer8NextCharEv(google::protobuf::io::Tokenizer * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::io::Tokenizer::NextChar(__int64 this)\n{\n  int v1; // w8\n  int v2; // w8\n  int v3; // w9\n  int v4; // w8\n  int v5; // w9\n  __int64 v6; // x8\n\n  v1 = *(unsigned __int8 *)(this + 112);\n  if ( v1 == 9 )\n  {\n    v2 = *(_DWORD *)(this + 144);\n    if ( v2 <= 0 )\n      v3 = -(-v2 & 7);\n    else\n      v3 = *(_DWORD *)(this + 144) & 7;\n    v4 = v2 - v3 + 8;\n  }\n  else\n  {\n    if ( v1 == 10 )\n    {\n      *(_QWORD *)(this + 140) = (unsigned int)(*(_DWORD *)(this + 140) + 1);\n      goto LABEL_10;\n    }\n    v4 = *(_DWORD *)(this + 144) + 1;\n  }\n  *(_DWORD *)(this + 144) = v4;\nLABEL_10:\n  v5 = *(_DWORD *)(this + 128);\n  v6 = *(int *)(this + 132) + 1LL;\n  *(_DWORD *)(this + 132) = v6;\n  if ( (int)v6 >= v5 )\n    return google::protobuf::io::Tokenizer::Refresh(this);\n  *(_BYTE *)(this + 112) = *(_BYTE *)(*(_QWORD *)(this + 120) + v6);\n  return this;\n}"
+}

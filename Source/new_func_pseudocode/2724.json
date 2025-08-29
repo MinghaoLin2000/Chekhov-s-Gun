@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString comparePlaylistString:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSString comparePlaylistString:](int a1, int a2, id a3)",
+    "pseudocode": "signed __int64 __cdecl -[NSString comparePlaylistString:](NSString *self, SEL a2, id a3)\n{\n  id v4; // x20\n  id v5; // x19\n  void *v6; // x21\n  void *v7; // x20\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[NSString stringByTrimmingLeadingSpaces](self, \"stringByTrimmingLeadingSpaces\"));\n  v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"stringByTrimmingLeadingSpaces\"));\n  objc_release(v4);\n  v7 = objc_msgSend(v5, \"compare:options:\", v6, 193LL);\n  objc_release(v6);\n  objc_release(v5);\n  return (signed __int64)v7;\n}"
+}

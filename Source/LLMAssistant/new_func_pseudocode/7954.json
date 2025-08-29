@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetWindowResolution",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetWindowResolution()",
+    "pseudocode": "__int64 CGSGetWindowResolution()\n{\n  return _CGSGetWindowResolution();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUDescription initWithObject:class:format:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSUDescription initWithObject:class:format:](TSUDescription * self, SEL a2, id a3, Class a4, id a5)",
+    "pseudocode": "TSUDescription *__cdecl -[TSUDescription initWithObject:class:format:](\n        TSUDescription *self,\n        SEL a2,\n        id a3,\n        Class a4,\n        id a5)\n{\n  __int64 v6; // [xsp+20h] [xbp+10h] BYREF\n\n  return -[TSUDescription initWithObject:class:format:arguments:](\n           self,\n           \"initWithObject:class:format:arguments:\",\n           a3,\n           a4,\n           a5,\n           &v6);\n}"
+}

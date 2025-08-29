@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopySpaces",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopySpaces()",
+    "pseudocode": "__int64 CGSCopySpaces()\n{\n  return _CGSCopySpaces();\n}"
+}

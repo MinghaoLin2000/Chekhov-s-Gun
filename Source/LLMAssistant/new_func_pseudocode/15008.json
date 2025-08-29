@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _localizedFormatStringForKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ATXHeuristicJSEnv _localizedFormatStringForKey:](ATXHeuristicJSEnv * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[ATXHeuristicJSEnv _localizedFormatStringForKey:](ATXHeuristicJSEnv *self, SEL a2, id a3)\n{\n  return -[NSBundle localizedStringForKey:value:table:](\n           self->_heuristicsBundle,\n           \"localizedStringForKey:value:table:\",\n           a3,\n           0LL,\n           0LL);\n}"
+}

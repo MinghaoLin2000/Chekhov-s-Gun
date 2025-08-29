@@ -1,0 +1,26 @@
+Service Path:
+/System/Applications/Stickies.app/Contents/XPCServices/StickiesMigration.xpc/Contents/MacOS/StickiesMigration
+
+Service Exported Protocols:
+@protocol StickiesMigrationProtocol
+- (oneway void)migrateStickiesColorDictRepArray:(NSArray *)arg1 reply:(void (^)(NSError *))arg2;
+@end
+@protocol StickiesProtocol <NSObject>
+- (oneway void)updateProgress:(long long)arg1;
+- (oneway void)totalNumberOfDocumentsToImport:(long long)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/StickiesDatabase
+			[String] /Library/.StickiesDatabase
+	[Key] com.apple.security.temporary-exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Containers/com.apple.Stickies/Data/Library/Stickies/

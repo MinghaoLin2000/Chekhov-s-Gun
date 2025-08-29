@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP20LargeLazyObjectArrayD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP20LargeLazyObjectArrayD2Ev(TSP::LargeLazyObjectArray * this)",
+    "pseudocode": "void __fastcall TSP::LargeLazyObjectArray::~LargeLazyObjectArray(TSP::LargeLazyObjectArray *this)\n{\n  TSP::LargeArray *v2; // x0\n  __int64 v3; // x0\n\n  if ( this != (TSP::LargeLazyObjectArray *)&TSP::_LargeLazyObjectArray_default_instance_ )\n  {\n    v2 = (TSP::LargeArray *)*((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      TSP::LargeArray::~LargeArray(v2);\n      operator delete(v3, 0x10A1C40B3F725BALL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

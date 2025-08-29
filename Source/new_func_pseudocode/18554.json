@@ -1,0 +1,6 @@
+{
+    "function_name": "$s3__C22NSDeviceDescriptionKeyVMa",
+    "function_argument_number": 1,
+    "function_signature": "$s3__C22NSDeviceDescriptionKeyVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for NSDeviceDescriptionKey(__int64 a1)\n{\n  return sub_100006C68(a1, &unk_100095298, &unk_10008BD48);\n}"
+}

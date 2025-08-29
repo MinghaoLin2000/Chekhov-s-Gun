@@ -1,0 +1,6 @@
+{
+    "function_name": "__Znam",
+    "function_argument_number": 1,
+    "function_signature": "__Znam(unsigned __int64 a1)",
+    "pseudocode": "void *__cdecl operator new[](size_t __sz)\n{\n  while ( 1 )\n    ;\n}"
+}

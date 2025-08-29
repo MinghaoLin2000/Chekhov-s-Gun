@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUBacktrace callee]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUBacktrace callee](TSUBacktrace * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUBacktrace callee](TSUBacktrace *self, SEL a2)\n{\n  return -[TSUBacktrace callerAtIndex:](self, \"callerAtIndex:\", 0LL);\n}"
+}

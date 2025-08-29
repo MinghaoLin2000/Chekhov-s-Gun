@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__18ios_base5clearEj",
+    "function_argument_number": 2,
+    "function_signature": "__ZNSt3__18ios_base5clearEj(std::ios_base * this, unsigned int a2)",
+    "pseudocode": "void __cdecl std::ios_base::clear(std::ios_base *this, std::ios_base::iostate __state)\n{\n  std::ios_base::clear(this, __state);\n}"
+}

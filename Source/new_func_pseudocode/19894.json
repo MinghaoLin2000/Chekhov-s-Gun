@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t allowThisJobToProceedNoLock]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t allowThisJobToProceedNoLock](lite_job_t * self, SEL a2)",
+    "pseudocode": "id __cdecl -[lite_job_t allowThisJobToProceedNoLock](lite_job_t *self, SEL a2)\n{\n  id result; // x0\n\n  if ( (void *)-[lite_job_t localJobState](self, \"localJobState\") != (void *)4 )\n    return CFSTR(\"Job is in the wrong state to start\");\n  -[lite_job_t setLocalJobState:](self, \"setLocalJobState:\", 3LL);\n  -[lite_job_t setJobHoldUntil:](self, \"setJobHoldUntil:\", 0LL);\n  -[lite_job_t postGlobalNotification:logMsg:](self, \"postGlobalNotification:logMsg:\", 2048LL, CFSTR(\"Job released.\"));\n  -[lite_job_t postGlobalNotification:logMsg:](self, \"postGlobalNotification:logMsg:\", 0x8000LL, CFSTR(\"Job released.\"));\n  result = (id)qword_1000C3F00;\n  if ( qword_1000C3F00 )\n  {\n    dispatch_source_set_timer((dispatch_source_t)qword_1000C3F00, 0LL, 0xFFFFFFFFFFFFFFFFLL, 0LL);\n    return 0LL;\n  }\n  return result;\n}"
+}

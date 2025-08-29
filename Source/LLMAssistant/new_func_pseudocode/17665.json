@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResult writeTo:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResult writeTo:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyResult writeTo:](ModelKeyServerAPIFetchKeyResult *self, SEL a2, id a3)\n{\n  id v4; // x0\n  void *v5; // x19\n  NSString *keyId; // x1\n  NSString *modelName; // x1\n  NSString *teamId; // x1\n  ModelKeyServerAPISignedKey *signedKey; // x1\n  ModelKeyServerAPIRawKey *rawKey; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  v5 = v4;\n  keyId = self->_keyId;\n  if ( keyId )\n    PBDataWriterWriteStringField(v4, keyId, 1LL);\n  modelName = self->_modelName;\n  if ( modelName )\n    PBDataWriterWriteStringField(v5, modelName, 2LL);\n  teamId = self->_teamId;\n  if ( teamId )\n    PBDataWriterWriteStringField(v5, teamId, 3LL);\n  signedKey = self->_signedKey;\n  if ( signedKey )\n    PBDataWriterWriteSubmessage(v5, signedKey, 4LL);\n  rawKey = self->_rawKey;\n  if ( rawKey )\n    PBDataWriterWriteSubmessage(v5, rawKey, 5LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

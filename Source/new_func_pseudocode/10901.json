@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilderD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilderD2Ev(google::protobuf::DescriptorBuilder * this)",
+    "pseudocode": "void __fastcall google::protobuf::DescriptorBuilder::~DescriptorBuilder(void **this)\n{\n  if ( *((char *)this + 199) < 0 )\n    operator delete(this[22]);\n  if ( *((char *)this + 175) < 0 )\n    operator delete(this[19]);\n  sub_10002AC6C(this + 15, this[16]);\n  sub_10002AC6C(this + 12, this[13]);\n  if ( *((char *)this + 79) < 0 )\n    operator delete(this[7]);\n  sub_1000857E8(this + 3);\n}"
+}

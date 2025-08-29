@@ -1,0 +1,6 @@
+{
+    "function_name": "-[WACEAService homeManager]",
+    "function_argument_number": 2,
+    "function_signature": "-[WACEAService homeManager](WACEAService * self, SEL a2)",
+    "pseudocode": "HMHomeManager *__cdecl -[WACEAService homeManager](WACEAService *self, SEL a2)\n{\n  return self->_homeManager;\n}"
+}

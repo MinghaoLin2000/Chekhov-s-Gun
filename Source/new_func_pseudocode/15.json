@@ -1,0 +1,6 @@
+{
+    "function_name": "_main",
+    "function_argument_number": 3,
+    "function_signature": "_main(int argc, const char ** argv, const char ** envp)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nint __fastcall main(int argc, const char **argv, const char **envp)\n{\n  id v3; // x19\n\n  qword_1000CC1B0 = (__int64)objc_msgSend(\n                               objc_allocWithZone((Class)type metadata accessor for ServiceDelegate(\n                                                           *(_QWORD *)&argc,\n                                                           argv,\n                                                           envp)),\n                               \"init\");\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend((id)objc_opt_self(&OBJC_CLASS___NSXPCListener), \"serviceListener\"));\n  qword_1000CC1B8 = (__int64)v3;\n  objc_msgSend(v3, \"setDelegate:\", qword_1000CC1B0);\n  objc_msgSend(v3, \"resume\");\n  return 0;\n}"
+}

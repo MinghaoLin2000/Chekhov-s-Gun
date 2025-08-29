@@ -1,0 +1,6 @@
+{
+    "function_name": "__DAmkdir",
+    "function_argument_number": 0,
+    "function_signature": "__DAmkdir()",
+    "pseudocode": "__int64 _DAmkdir()\n{\n  return __DAmkdir();\n}"
+}

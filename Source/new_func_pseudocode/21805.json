@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZdlPv_1",
+    "function_argument_number": 1,
+    "function_signature": "j___ZdlPv_1(void * __p)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl operator delete(void *__p)\n{\n  __ZdlPv(__p);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver .cxx_destruct](_TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver * self, SEL a2)",
+    "pseudocode": "void __cdecl -[CaptureFrameReceiverObserver .cxx_destruct](\n        _TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver *self,\n        SEL a2)\n{\n  swift_release(*(_QWORD *)&self->captureFrameReceiverDidChange[OBJC_IVAR____TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver_captureFrameReceiverDidChange]);\n}"
+}

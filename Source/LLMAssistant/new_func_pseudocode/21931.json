@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_set_data",
+    "function_argument_number": 4,
+    "function_signature": "_xpc_dictionary_set_data(xpc_object_t xdict, const char * key, const void * bytes, size_t length)",
+    "pseudocode": "void __cdecl xpc_dictionary_set_data(xpc_object_t xdict, const char *key, const void *bytes, size_t length)\n{\n  _xpc_dictionary_set_data(xdict, key, bytes, length);\n}"
+}

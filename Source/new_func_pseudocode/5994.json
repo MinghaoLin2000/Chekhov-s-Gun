@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceCompositeImageMetadataPolicy policies]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceCompositeImageMetadataPolicy policies](PAMediaConversionServiceCompositeImageMetadataPolicy * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[PAMediaConversionServiceCompositeImageMetadataPolicy policies](\n        PAMediaConversionServiceCompositeImageMetadataPolicy *self,\n        SEL a2)\n{\n  return (NSArray *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

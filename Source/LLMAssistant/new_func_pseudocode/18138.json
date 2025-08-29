@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCopyScheme",
+    "function_argument_number": 1,
+    "function_signature": "_CFURLCopyScheme(CFURLRef anURL)",
+    "pseudocode": "CFStringRef __cdecl CFURLCopyScheme(CFURLRef anURL)\n{\n  return _CFURLCopyScheme(anURL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsErrorViewController initWithMediaDomain:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsErrorViewController initWithMediaDomain:](DeviceSettingsErrorViewController * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "DeviceSettingsErrorViewController *__cdecl -[DeviceSettingsErrorViewController initWithMediaDomain:](\n        DeviceSettingsErrorViewController *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  DeviceSettingsErrorViewController *result; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceSettingsErrorViewController;\n  result = -[DeviceSettingsErrorViewController init](&v5, \"init\");\n  if ( result )\n    result->_mediaDomain = a3;\n  return result;\n}"
+}

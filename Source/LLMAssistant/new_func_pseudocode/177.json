@@ -1,0 +1,6 @@
+{
+    "function_name": "_CKErrorCodeForUnderlyingErrorCode",
+    "function_argument_number": 0,
+    "function_signature": "_CKErrorCodeForUnderlyingErrorCode()",
+    "pseudocode": "__int64 CKErrorCodeForUnderlyingErrorCode()\n{\n  return _CKErrorCodeForUnderlyingErrorCode();\n}"
+}

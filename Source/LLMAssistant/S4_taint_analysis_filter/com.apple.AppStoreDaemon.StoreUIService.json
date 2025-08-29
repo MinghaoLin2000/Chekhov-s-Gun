@@ -1,0 +1,10 @@
+{
+  "_objc_msgSend$presentConsentSheet": 4295020768,
+  "_objc_msgSend$dismissConsentSheet": 4295019744,
+  "_objc_msgSend$close": 4295019520,
+  "_objc_msgSend$requestConsentWithCompletion:": 4295020960,
+  "_objc_msgSend$performAuthentication": 4295020640,
+  "-[StoreUIService presentAuthenticateRequest:withResultHandler:]": 4295009668,
+  "-[StoreUIService authenticateTask:handleDialogRequest:completion:]": 4295014244,
+  "_objc_msgSend$logKey": 4295020416
+}

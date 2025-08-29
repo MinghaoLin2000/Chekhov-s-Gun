@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction set_executionLock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceAction set_executionLock:](AMLoaderServiceAction * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceAction set_executionLock:](AMLoaderServiceAction *self, SEL a2, os_unfair_lock_s a3)\n{\n  self->__executionLock = a3;\n}"
+}

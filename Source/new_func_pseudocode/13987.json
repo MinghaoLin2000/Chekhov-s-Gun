@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$copyData:withReadChannel:decryptionInfo:size:calculateCRC:preferredFilename:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$copyData:withReadChannel:decryptionInfo:size:calculateCRC:preferredFilename:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_copyData_withReadChannel_decryptionInfo_size_calculateCRC_preferredFilename_error_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(a1, \"copyData:withReadChannel:decryptionInfo:size:calculateCRC:preferredFilename:error:\");\n}"
+}

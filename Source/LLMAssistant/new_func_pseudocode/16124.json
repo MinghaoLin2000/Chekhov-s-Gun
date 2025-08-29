@@ -1,0 +1,6 @@
+{
+    "function_name": "_releasePowerAssertion",
+    "function_argument_number": 0,
+    "function_signature": "_releasePowerAssertion()",
+    "pseudocode": "__int64 releasePowerAssertion()\n{\n  return _releasePowerAssertion();\n}"
+}

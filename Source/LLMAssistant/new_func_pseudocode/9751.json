@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15PackageMetadata9MergeFromERKN6google8protobuf7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP15PackageMetadata9MergeFromERKN6google8protobuf7MessageE(TSP::PackageMetadata * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "__int64 __fastcall TSP::PackageMetadata::MergeFrom(TSP::PackageMetadata *this, const google::protobuf::Message *lpsrc)\n{\n  const TSP::PackageMetadata *v4; // x0\n  google::protobuf::Message *v5; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = (const TSP::PackageMetadata *)__dynamic_cast(\n                                       lpsrc,\n                                       (const struct __class_type_info *)&`typeinfo for'google::protobuf::Message,\n                                       (const struct __class_type_info *)&`typeinfo for'TSP::PackageMetadata,\n                                       0LL);\n  if ( v4 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return TSP::PackageMetadata::MergeFrom(this, v4);\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::ReflectionOps::Merge(lpsrc, this, v5);\n  }\n}"
+}

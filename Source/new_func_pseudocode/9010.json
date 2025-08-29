@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObjectCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for ServiceConnectionExportedObject(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005DEA0;\n  if ( !qword_10005DEA0 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for ServiceConnectionExportedObject);\n  return result;\n}"
+}

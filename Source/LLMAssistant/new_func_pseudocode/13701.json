@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromRange",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromRange(NSRange range)",
+    "pseudocode": "NSString *__cdecl NSStringFromRange(NSRange range)\n{\n  return _NSStringFromRange(range);\n}"
+}

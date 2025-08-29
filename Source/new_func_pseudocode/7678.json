@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE16postNotification2to4type4data6lengthyAC13CGSConnectionV_So19CGSNotificationTypeVSVSitF",
+    "function_argument_number": 4,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE16postNotification2to4type4data6lengthyAC13CGSConnectionV_So19CGSNotificationTypeVSVSitF(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall SLSTransactionRef.postNotification(to:type:data:length:)(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4)\n{\n  __int64 v4; // x20\n\n  return _SLSTransactionPostNotificationToConnection(v4, a1, a2, a3, a4);\n}"
+}

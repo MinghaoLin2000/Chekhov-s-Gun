@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition9EAREuclidCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s22localspeechrecognition9EAREuclidCMa()",
+    "pseudocode": "__int64 type metadata accessor for EAREuclid()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition9EAREuclid);\n}"
+}

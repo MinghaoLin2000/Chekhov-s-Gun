@@ -1,0 +1,6 @@
+{
+    "function_name": "_malloc_type_realloc",
+    "function_argument_number": 3,
+    "function_signature": "_malloc_type_realloc(void * ptr, size_t size, malloc_type_id_t type_id)",
+    "pseudocode": "void *__cdecl malloc_type_realloc(void *ptr, size_t size, malloc_type_id_t type_id)\n{\n  return _malloc_type_realloc(ptr, size, type_id);\n}"
+}

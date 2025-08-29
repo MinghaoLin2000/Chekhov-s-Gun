@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundleService deallocateLun:name:reply:]",
+    "function_argument_number": 5,
+    "function_signature": "-[IFDBundleService deallocateLun:name:reply:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "void __cdecl -[IFDBundleService deallocateLun:name:reply:](IFDBundleService *self, SEL a2, id a3, id a4, id a5)\n{\n  IFDBundle *bundle; // x21\n  void (__fastcall **v8)(_QWORD); // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  bundle = self->_bundle;\n  v8 = (void (__fastcall **)(_QWORD))objc_retain(a5);\n  -[IFDBundle deallocateLun:name:](bundle, \"deallocateLun:name:\", a3, a4);\n  v8[2](v8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

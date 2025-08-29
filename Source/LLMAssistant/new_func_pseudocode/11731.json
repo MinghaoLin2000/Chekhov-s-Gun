@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Reflection8HasOneofERKNS0_7MessageEPKNS0_15OneofDescriptorE",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf10Reflection8HasOneofERKNS0_7MessageEPKNS0_15OneofDescriptorE(google::protobuf::Reflection * this, const google::protobuf::Message * a2, const google::protobuf::OneofDescriptor * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Reflection::HasOneof(\n        google::protobuf::Reflection *a1,\n        const google::protobuf::Message *a2,\n        __int64 a3)\n{\n  if ( *(_DWORD *)(a3 + 24) == 1 && *(_BYTE *)(**(_QWORD **)(a3 + 32) + 65LL) )\n    return google::protobuf::Reflection::HasField(a1, a2, **(const google::protobuf::FieldDescriptor ***)(a3 + 32));\n  else\n    return *(_DWORD *)((char *)a2\n                     + *((_DWORD *)a1 + 11)\n                     - 1431655764\n                     * (unsigned int)((unsigned __int64)(a3 - *(_QWORD *)(*(_QWORD *)(a3 + 16) + 48LL)) >> 4)) != 0;\n}"
+}

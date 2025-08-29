@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection speechRecognizer:didProcessAudioDuration:]",
+    "function_argument_number": 4,
+    "function_signature": "-[LSRConnection speechRecognizer:didProcessAudioDuration:](LSRConnection * self, SEL a2, id a3, double a4)",
+    "pseudocode": "void __cdecl -[LSRConnection speechRecognizer:didProcessAudioDuration:](LSRConnection *self, SEL a2, id a3, double a4)\n{\n  _QWORD v4[6]; // [xsp+0h] [xbp-30h] BYREF\n\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_100034370;\n  v4[3] = &unk_10005A228;\n  v4[4] = self;\n  *(double *)&v4[5] = a4;\n  dispatch_async((dispatch_queue_t)qword_100065418, v4);\n}"
+}

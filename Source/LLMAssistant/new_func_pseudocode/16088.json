@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformRemoteDelegateForAssetDelegate",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformRemoteDelegateForAssetDelegate(__int64 result)",
+    "pseudocode": "__int64 __fastcall uarpPlatformRemoteDelegateForAssetDelegate(__int64 result)\n{\n  __int64 v1; // x8\n\n  if ( result )\n  {\n    v1 = *(_QWORD *)(result + 696);\n    if ( v1 )\n      return *(_QWORD *)(v1 + 40);\n    else\n      return 0LL;\n  }\n  return result;\n}"
+}

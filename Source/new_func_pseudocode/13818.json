@@ -1,0 +1,6 @@
+{
+    "function_name": "_ftello",
+    "function_argument_number": 1,
+    "function_signature": "_ftello(FILE * __stream)",
+    "pseudocode": "off_t __cdecl ftello(FILE *__stream)\n{\n  return _ftello(__stream);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z35liteRemovePrinterFromiCloudWithInfoP12NSDictionary",
+    "function_argument_number": 1,
+    "function_signature": "__Z35liteRemovePrinterFromiCloudWithInfoP12NSDictionary(NSDictionary * a1)",
+    "pseudocode": "id __fastcall liteRemovePrinterFromiCloudWithInfo(NSDictionary *a1)\n{\n  return objc_msgSend((id)iCloudDataController, \"removePrinterFromiCloudWithInfo:\", a1);\n}"
+}

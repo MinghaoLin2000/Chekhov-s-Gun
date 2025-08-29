@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject setIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPHMediaObject setIdentifier:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject setIdentifier:](AMPPHMediaObject *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_identifier, a3);\n}"
+}

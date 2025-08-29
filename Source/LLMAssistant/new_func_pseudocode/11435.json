@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf28UninterpretedOption_NamePartD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN6google8protobuf28UninterpretedOption_NamePartD2Ev(google::protobuf::UninterpretedOption_NamePart * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::UninterpretedOption_NamePart::~UninterpretedOption_NamePart(\n        google::protobuf::UninterpretedOption_NamePart *this)\n{\n  __ZN6google8protobuf28UninterpretedOption_NamePartD2Ev(this);\n}"
+}

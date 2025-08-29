@@ -1,0 +1,5 @@
+_nw_browse_result_copy_txt_record_object
+nw_txt_record_t __cdecl nw_browse_result_copy_txt_record_object(nw_browse_result_t result)
+{
+  return _nw_browse_result_copy_txt_record_object(result);
+}

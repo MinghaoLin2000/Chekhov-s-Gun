@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZdaPvSt19__type_descriptor_t",
+    "function_argument_number": 0,
+    "function_signature": "__ZdaPvSt19__type_descriptor_t()",
+    "pseudocode": "void __noreturn operator delete[]()\n{\n  while ( 1 )\n    ;\n}"
+}

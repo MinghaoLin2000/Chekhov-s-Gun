@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController setDeviceWarrantyViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSetupViewController setDeviceWarrantyViewController:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceSetupViewController setDeviceWarrantyViewController:](\n        DeviceSetupViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_deviceWarrantyViewController, a3);\n}"
+}

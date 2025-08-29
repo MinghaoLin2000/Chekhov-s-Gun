@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV11moveToIndex_10forDisplay10connectionySi_SSAA13CGSConnectionVtF",
+    "function_argument_number": 3,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV11moveToIndex_10forDisplay10connectionySi_SSAA13CGSConnectionVtF(Swift::Int _, Swift::String forDisplay, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nSwift::Void __swiftcall CGSSpace.moveToIndex(_:forDisplay:connection:)(\n        Swift::Int _,\n        Swift::String forDisplay,\n        EyeCandyGraphics::CGSConnection connection)\n{\n  __int64 v3; // x4\n  __int64 v4; // x19\n  __int64 v5; // x21\n  __int64 v7; // x0\n  void *v8; // x22\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = v3;\n  v5 = *(_QWORD *)&connection.cid;\n  v7 = sub_10001CAC0(forDisplay._countAndFlagsBits, forDisplay._object);\n  if ( _ < 0 )\n  {\n    __break(1u);\n    goto LABEL_7;\n  }\n  if ( HIDWORD(_) )\n  {\nLABEL_7:\n    __break(1u);\n    return;\n  }\n  v8 = (void *)v7;\n  CGSMoveManagedSpaceToDisplayIndex(v5, v4, v7, _);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

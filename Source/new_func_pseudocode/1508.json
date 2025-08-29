@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceFooterViewController dealloc](DeviceFooterViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController dealloc](DeviceFooterViewController *self, SEL a2)\n{\n  NSProgress *v3; // x20\n  NSProgress *v4; // x20\n  objc_super v5; // [xsp+10h] [xbp-20h] BYREF\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceFooterViewController primaryProgress](self, \"primaryProgress\"));\n  -[DeviceFooterViewController removeProgressObservers:](self, \"removeProgressObservers:\", v3);\n  objc_release(v3);\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceFooterViewController secondaryProgress](self, \"secondaryProgress\"));\n  -[DeviceFooterViewController removeProgressObservers:](self, \"removeProgressObservers:\", v4);\n  objc_release(v4);\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___DeviceFooterViewController;\n  -[DeviceFooterViewController dealloc](&v5, \"dealloc\");\n}"
+}

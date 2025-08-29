@@ -1,0 +1,5 @@
+__QLThumbnailRequestCleanupAfterException
+__int64 _QLThumbnailRequestCleanupAfterException()
+{
+  return __QLThumbnailRequestCleanupAfterException();
+}

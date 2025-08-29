@@ -1,0 +1,6 @@
+{
+    "function_name": "-[WACEAService startSearchForAccessoriesNeedingReprovisioning]",
+    "function_argument_number": 2,
+    "function_signature": "-[WACEAService startSearchForAccessoriesNeedingReprovisioning](WACEAService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[WACEAService startSearchForAccessoriesNeedingReprovisioning](WACEAService *self, SEL a2)\n{\n  id v2; // [xsp+10h] [xbp-20h]\n  HMHomeManager *v3; // [xsp+18h] [xbp-18h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[WACEAService homeManager](self, \"homeManager\"));\n  v2 = objc_retainAutoreleasedReturnValue(-[HMHomeManager currentHome](v3, \"currentHome\"));\n  objc_msgSend(v2, \"startSearchForAccessoriesNeedingReprovisioning\");\n  objc_release(v2);\n  objc_release(v3);\n}"
+}

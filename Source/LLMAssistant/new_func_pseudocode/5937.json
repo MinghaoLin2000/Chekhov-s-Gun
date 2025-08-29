@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s18SiriSuggestionsKit6LoggerO0aB18BookkeepingServiceE29bookkeepingXPCServiceCategory2osABVvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s18SiriSuggestionsKit6LoggerO0aB18BookkeepingServiceE29bookkeepingXPCServiceCategory2osABVvau()",
+    "pseudocode": "__int64 Logger.bookkeepingXPCServiceCategory.unsafeMutableAddressor()\n{\n  __int64 v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100014A30 != -1 )\n    swift_once(&qword_100014A30, sub_1000053A8);\n  v0 = sub_10000D9B8(0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_100005098(v0, &static Logger.bookkeepingXPCServiceCategory);\n}"
+}

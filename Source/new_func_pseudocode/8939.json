@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService12JSSourceFileV6FormatOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService12JSSourceFileV6FormatOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JSSourceFile.Format()\n{\n  return &type metadata for JSSourceFile.Format;\n}"
+}

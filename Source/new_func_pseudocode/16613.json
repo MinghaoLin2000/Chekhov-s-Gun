@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent setChannelType:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent setChannelType:](UARPActiveFirmwareAnalyticsEvent * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[UARPActiveFirmwareAnalyticsEvent setChannelType:](\n        UARPActiveFirmwareAnalyticsEvent *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_channelType = a3;\n}"
+}

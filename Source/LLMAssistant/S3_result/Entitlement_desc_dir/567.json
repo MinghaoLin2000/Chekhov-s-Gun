@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.temporary-exception.mach-lookup.global-name:com.apple.backlightd",
+  "capability": "Allows an application to perform a Mach service lookup for the 'com.apple.backlightd' global service. This capability grants the application the ability to communicate with the system's display backlight daemon, bypassing standard sandbox restrictions. This interaction can enable the application to control display brightness and potentially other display-related settings managed by 'backlightd'.",
+  "reasoning": "The entitlement name is highly descriptive: 'com.apple.security' indicates a security-related entitlement. 'temporary-exception' signifies a specific, often limited, bypass of a security policy (likely sandbox restrictions). 'mach-lookup' refers to the ability to find and connect to a Mach service, which is a fundamental inter-process communication (IPC) mechanism in macOS. Finally, 'global-name:com.apple.backlightd' identifies the specific target service, 'backlightd', which is known to be the daemon responsible for managing display backlight and brightness on macOS.",
+  "similar_entitlements": [
+    "com.apple.security.temporary-exception.mach-lookup.global-name:<other_system_daemon>",
+    "com.apple.security.app-sandbox.mach-lookup.global-name"
+  ],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "This entitlement grants an application the ability to interact directly with 'backlightd', a system daemon that controls display brightness – a core system-level configuration. Modifying display brightness affects the entire system's visual behavior. Therefore, this capability falls under 'System & Kernel Level Control' (Type 4), specifically by allowing the modification of 'system-level configuration'. While 'backlightd' is a user-space daemon and not directly part of the kernel, the ability to control such a fundamental and system-wide aspect of the user interface is considered a system-level operation, typically restricted by the sandbox and thus requiring an explicit entitlement.",
+  "self_reflection": "I am confident in the inferred capability, as the entitlement name clearly segments into a security context, a type of exception, the IPC mechanism, and the specific target daemon. My confidence in classifying it under 'System & Kernel Level Control' (Type 4) is medium-high. While the direct security risk (e.g., data exfiltration, arbitrary code execution) isn't as high as some other sensitive operations, controlling display brightness is a direct manipulation of a system-wide setting managed by a system daemon, which fits the 'modify system-level configuration' aspect of Type 4. The 'temporary-exception' prefix further suggests that this is an operation normally restricted and thus considered sensitive enough to require an explicit bypass entitlement."
+}

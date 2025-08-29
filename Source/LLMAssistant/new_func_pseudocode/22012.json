@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3mlc18xpc_auto_message_t7set_retEb",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3mlc18xpc_auto_message_t7set_retEb(mlc::xpc_auto_message_t * this, bool value)",
+    "pseudocode": "xpc_object_t *__fastcall mlc::xpc_auto_message_t::set_ret(xpc_object_t *this, bool value)\n{\n  xpc_object_t v3; // x20\n  void *__p; // [xsp+0h] [xbp-30h] BYREF\n  char v6; // [xsp+17h] [xbp-19h]\n  xpc_object_t v7; // [xsp+18h] [xbp-18h]\n\n  v6 = 1;\n  LOWORD(__p) = 114;\n  v3 = xpc_bool_create(value);\n  v7 = v3;\n  xpc_dictionary_set_value(*this, (const char *)&__p, v3);\n  if ( v3 )\n    xpc_release(v3);\n  if ( v6 < 0 )\n    operator delete(__p);\n  return this;\n}"
+}

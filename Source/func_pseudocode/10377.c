@@ -1,0 +1,23 @@
+__ZN3TSP16UUIDCoordArchiveD2Ev
+void __fastcall TSP::UUIDCoordArchive::~UUIDCoordArchive(TSP::UUIDCoordArchive *this)
+{
+  __int64 v2; // x20
+  __int64 v3; // x20
+
+  if ( this != (TSP::UUIDCoordArchive *)&TSP::_UUIDCoordArchive_default_instance_ )
+  {
+    v2 = *((_QWORD *)this + 3);
+    if ( v2 )
+    {
+      sub_100037E58(v2 + 8);
+      operator delete(v2, 0x1081C40825B58B5LL);
+    }
+    v3 = *((_QWORD *)this + 4);
+    if ( v3 )
+    {
+      sub_100037E58(v3 + 8);
+      operator delete(v3, 0x1081C40825B58B5LL);
+    }
+  }
+  sub_100037E58((char *)this + 8);
+}

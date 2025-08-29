@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater dfuMode]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBDFUUpdater dfuMode](USBDFUUpdater * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[USBDFUUpdater dfuMode](USBDFUUpdater *self, SEL a2)\n{\n  return self->_dfuMode;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsu_errorWithWarning:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSError tsu_errorWithWarning:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[NSError tsu_errorWithWarning:](id a1, SEL a2, id a3)\n{\n  void *v3; // x20\n  NSDictionary *v4; // x21\n  NSError *v5; // x19\n  NSErrorUserInfoKey v7; // [xsp+8h] [xbp-38h] BYREF\n  void *v8; // [xsp+10h] [xbp-30h] BYREF\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v7 = NSLocalizedDescriptionKey;\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(a3, \"message\"));\n  v8 = v3;\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[NSDictionary dictionaryWithObjects:forKeys:count:](\n           &OBJC_CLASS___NSDictionary,\n           \"dictionaryWithObjects:forKeys:count:\",\n           &v8,\n           &v7,\n           1LL));\n  v5 = objc_retainAutoreleasedReturnValue(\n         +[NSError errorWithDomain:code:userInfo:](\n           &OBJC_CLASS___NSError,\n           \"errorWithDomain:code:userInfo:\",\n           CFSTR(\"com.apple.iWork.TSUWarningErrorDomain\"),\n           0LL,\n           v4));\n  objc_release(v4);\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP14DataAttributesD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP14DataAttributesD2Ev(TSP::DataAttributes * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DataAttributes::~DataAttributes(TSP::DataAttributes *this)\n{\n  __ZN3TSP14DataAttributesD2Ev(this);\n}"
+}

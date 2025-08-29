@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$prunePlaylistNodes:withPlaylistLookup:forMediaKind:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$prunePlaylistNodes:withPlaylistLookup:forMediaKind:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_prunePlaylistNodes_withPlaylistLookup_forMediaKind_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"prunePlaylistNodes:withPlaylistLookup:forMediaKind:\");\n}"
+}

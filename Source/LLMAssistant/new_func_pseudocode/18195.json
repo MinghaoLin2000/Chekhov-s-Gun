@@ -1,0 +1,6 @@
+{
+    "function_name": "_strnlen",
+    "function_argument_number": 2,
+    "function_signature": "_strnlen(const char * __s1, size_t __n)",
+    "pseudocode": "size_t __cdecl strnlen(const char *__s1, size_t __n)\n{\n  return _strnlen(__s1, __n);\n}"
+}

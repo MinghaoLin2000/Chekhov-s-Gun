@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_arrayByAddingNonContainedObjectsFromArray:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSArray tsu_arrayByAddingNonContainedObjectsFromArray:](NSArray * self, SEL a2, id a3)",
+    "pseudocode": "id __cdecl -[NSArray tsu_arrayByAddingNonContainedObjectsFromArray:](NSArray *self, SEL a2, id a3)\n{\n  char *v5; // x0\n  char *v6; // x21\n  __int64 v7; // x22\n  NSMutableArray *v8; // x23\n  void *v9; // x24\n\n  if ( a3 && (v5 = (char *)objc_msgSend(a3, \"count\")) != 0LL )\n  {\n    v6 = v5;\n    v7 = 0LL;\n    v8 = 0LL;\n    do\n    {\n      v9 = objc_msgSend(a3, \"objectAtIndex:\", v7);\n      if ( !-[NSArray containsObject:](self, \"containsObject:\", v9) )\n      {\n        if ( !v8 )\n        {\n          v8 = +[NSMutableArray arrayWithCapacity:](\n                 &OBJC_CLASS___NSMutableArray,\n                 \"arrayWithCapacity:\",\n                 &v6[-[NSArray count](self, \"count\")]);\n          -[NSMutableArray addObjectsFromArray:](v8, \"addObjectsFromArray:\", self);\n        }\n        -[NSMutableArray addObject:](v8, \"addObject:\", v9);\n      }\n      ++v7;\n      --v6;\n    }\n    while ( v6 );\n  }\n  else\n  {\n    v8 = 0LL;\n  }\n  if ( v8 )\n    return v8;\n  else\n    return self;\n}"
+}

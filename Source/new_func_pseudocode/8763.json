@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s34AppleMediaServicesUIDynamicService15AccountsWrapperC7accountSo9ACAccountCSgvM",
+    "function_argument_number": 1,
+    "function_signature": "_$s34AppleMediaServicesUIDynamicService15AccountsWrapperC7accountSo9ACAccountCSgvM(void ** a1)",
+    "pseudocode": "__int64 (__fastcall *__fastcall AccountsWrapper.account.modify(void **a1))()\n{\n  void *v1; // x20\n\n  a1[1] = v1;\n  *a1 = AccountsWrapper.account.getter();\n  return sub_1000058BC;\n}"
+}

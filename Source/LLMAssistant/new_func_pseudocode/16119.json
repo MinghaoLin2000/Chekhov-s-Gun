@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPAccessoryPropertyToString",
+    "function_argument_number": 0,
+    "function_signature": "_UARPAccessoryPropertyToString()",
+    "pseudocode": "__int64 UARPAccessoryPropertyToString()\n{\n  return _UARPAccessoryPropertyToString();\n}"
+}

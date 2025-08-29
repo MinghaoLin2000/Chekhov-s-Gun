@@ -1,0 +1,6 @@
+{
+    "function_name": "__Unwind_Resume",
+    "function_argument_number": 1,
+    "function_signature": "__Unwind_Resume(_Unwind_Exception * exception_object)",
+    "pseudocode": "void __cdecl __noreturn _Unwind_Resume(_Unwind_Exception *exception_object)\n{\n  __Unwind_Resume(exception_object);\n}"
+}

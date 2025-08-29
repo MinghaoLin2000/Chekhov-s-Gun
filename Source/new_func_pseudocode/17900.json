@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBooleanGetTypeID",
+    "function_argument_number": 0,
+    "function_signature": "_CFBooleanGetTypeID()",
+    "pseudocode": "CFTypeID CFBooleanGetTypeID(void)\n{\n  return _CFBooleanGetTypeID();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoTranscodingTask cancelTranscode]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoTranscodingTask cancelTranscode](int a1, SEL aSelector)",
+    "pseudocode": "void __cdecl -[VideoTranscodingTask cancelTranscode](VideoTranscodingTask *self, SEL a2)\n{\n  NSString *v2; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(NSStringFromSelector(a2));\n  +[NSException raise:format:](\n    &OBJC_CLASS___NSException,\n    \"raise:format:\",\n    NSInternalInconsistencyException,\n    CFSTR(\"Subclasses must override %@\"),\n    v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

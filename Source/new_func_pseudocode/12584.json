@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoOutputStream close]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUCryptoOutputStream close](SFUCryptoOutputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUCryptoOutputStream close](SFUCryptoOutputStream *self, SEL a2)\n{\n  SFUOutputStream *mBaseStream; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[SFUCryptoOutputStream closeLocalStream](self, \"closeLocalStream\");\n  mBaseStream = self->mBaseStream;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[SFUOutputStream close](mBaseStream, \"close\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TrackListViewController deleteKeyHitAction]",
+    "function_argument_number": 2,
+    "function_signature": "-[TrackListViewController deleteKeyHitAction](TrackListViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TrackListViewController deleteKeyHitAction](TrackListViewController *self, SEL a2)\n{\n  return self->_deleteKeyHitAction;\n}"
+}

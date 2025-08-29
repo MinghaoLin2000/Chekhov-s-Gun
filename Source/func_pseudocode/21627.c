@@ -1,0 +1,5 @@
+_objc_msgSend$confidence
+id objc_msgSend_confidence(void *a1, const char *a2, ...)
+{
+  return _objc_msgSend(a1, "confidence");
+}

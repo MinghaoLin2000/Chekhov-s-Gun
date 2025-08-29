@@ -1,0 +1,6 @@
+{
+    "function_name": "__os_log_internal",
+    "function_argument_number": 4,
+    "function_signature": "__os_log_internal(void * dso, os_log_t log, os_log_type_t type, const char * message)",
+    "pseudocode": "void _os_log_internal(void *dso, os_log_t log, os_log_type_t type, const char *message, ...)\n{\n  __os_log_internal(dso, log, type, message);\n}"
+}

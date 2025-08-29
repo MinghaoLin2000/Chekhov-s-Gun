@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointInit2",
+    "function_argument_number": 1,
+    "function_signature": "_uarpPlatformEndpointInit2(void * a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointInit2(void *a1)\n{\n  return uarpPlatformEndpointInit(a1);\n}"
+}

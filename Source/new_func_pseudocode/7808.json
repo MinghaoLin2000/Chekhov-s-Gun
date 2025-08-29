@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV17_machSecondsScaleSdvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV17_machSecondsScaleSdvau()",
+    "pseudocode": "__int64 *CGDisplay._machSecondsScale.unsafeMutableAddressor()\n{\n  if ( qword_10002AC60 != -1 )\n    swift_once(&qword_10002AC60, sub_10001816C);\n  return &static CGDisplay._machSecondsScale;\n}"
+}

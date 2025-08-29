@@ -1,0 +1,6 @@
+{
+    "function_name": "_PKLogFacilityTypeGetObject",
+    "function_argument_number": 0,
+    "function_signature": "_PKLogFacilityTypeGetObject()",
+    "pseudocode": "__int64 PKLogFacilityTypeGetObject()\n{\n  return _PKLogFacilityTypeGetObject();\n}"
+}

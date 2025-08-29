@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderC9LoadErrorOwst",
+    "function_argument_number": 3,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderC9LoadErrorOwst(_BYTE * result, int a2, int a3)",
+    "pseudocode": "_BYTE *__fastcall storeEnumTagSinglePayload for RemoteJavaScriptLoader.LoadError(_BYTE *result, int a2, int a3)\n{\n  int v3; // w9\n  unsigned int v4; // w8\n  __int64 v5; // x16\n\n  if ( (unsigned int)(a3 + 1) >= 0x10000 )\n    v3 = 4;\n  else\n    v3 = 2;\n  if ( (unsigned int)(a3 + 1) < 0x100 )\n    v4 = 1;\n  else\n    v4 = v3;\n  if ( a3 )\n    v5 = v4;\n  else\n    v5 = 0LL;\n  if ( a2 )\n  {\n    switch ( v5 )\n    {\n      case 1LL:\n        *result = a2;\n        return result;\n      case 2LL:\n        *(_WORD *)result = a2;\n        return result;\n      case 3LL:\n        goto LABEL_19;\n      case 4LL:\n        *(_DWORD *)result = a2;\n        return result;\n      default:\n        return result;\n    }\n  }\n  switch ( v5 )\n  {\n    case 1LL:\n      *result = 0;\n      break;\n    case 2LL:\n      *(_WORD *)result = 0;\n      break;\n    case 3LL:\nLABEL_19:\n      __break(1u);\n      JUMPOUT(0x1000398B0LL);\n    case 4LL:\n      *(_DWORD *)result = 0;\n      break;\n    default:\n      return result;\n  }\n  return result;\n}"
+}

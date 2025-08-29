@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_parameters_set_account_id",
+    "function_argument_number": 0,
+    "function_signature": "_nw_parameters_set_account_id()",
+    "pseudocode": "__int64 nw_parameters_set_account_id()\n{\n  return _nw_parameters_set_account_id();\n}"
+}

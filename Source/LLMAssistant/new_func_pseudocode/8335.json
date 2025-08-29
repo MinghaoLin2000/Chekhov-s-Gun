@@ -1,0 +1,6 @@
+{
+    "function_name": "-[StoreUIService presentAlertRequest:withResultHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[StoreUIService presentAlertRequest:withResultHandler:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[StoreUIService presentAlertRequest:withResultHandler:](StoreUIService *self, SEL a2, id a3, id a4)\n{\n  id v5; // x19\n  id v6; // x20\n  _QWORD v7[4]; // [xsp+0h] [xbp-40h] BYREF\n  id v8; // [xsp+20h] [xbp-20h]\n  id v9; // [xsp+28h] [xbp-18h]\n\n  v7[0] = _NSConcreteStackBlock;\n  v7[1] = 3254779904LL;\n  v7[2] = sub_100009E28;\n  v7[3] = &unk_100010958;\n  v8 = objc_retain(a3);\n  v9 = objc_retain(a4);\n  v5 = objc_retain(v9);\n  v6 = objc_retain(v8);\n  dispatch_async(&_dispatch_main_q, v7);\n  objc_release(v9);\n  objc_release(v8);\n  objc_release(v5);\n  objc_release(v6);\n}"
+}

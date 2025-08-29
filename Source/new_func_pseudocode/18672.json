@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore27_NavigationTrackingModifierVwcp",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore27_NavigationTrackingModifierVwcp(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall initializeWithCopy for _NavigationTrackingModifier(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x0\n  __int64 v6; // x21\n  __int64 v7; // x22\n  __int64 v8; // x23\n  __int64 v9; // x20\n\n  if ( *(_QWORD *)a2 )\n  {\n    v4 = *(_QWORD *)(a2 + 8);\n    *(_QWORD *)a1 = *(_QWORD *)a2;\n    *(_QWORD *)(a1 + 8) = v4;\n    swift_retain(v4);\n  }\n  else\n  {\n    *(_OWORD *)a1 = *(_OWORD *)a2;\n  }\n  v5 = *(_QWORD *)(a2 + 24);\n  *(_QWORD *)(a1 + 16) = *(_QWORD *)(a2 + 16);\n  *(_QWORD *)(a1 + 24) = v5;\n  v6 = *(_QWORD *)(a2 + 40);\n  *(_QWORD *)(a1 + 32) = *(_QWORD *)(a2 + 32);\n  v7 = *(_QWORD *)(a2 + 48);\n  v8 = *(_QWORD *)(a2 + 56);\n  v9 = *(unsigned __int8 *)(a2 + 64);\n  swift_retain(v5);\n  sub_10004680C(v6, v7, v8, v9);\n  *(_QWORD *)(a1 + 40) = v6;\n  *(_QWORD *)(a1 + 48) = v7;\n  *(_QWORD *)(a1 + 56) = v8;\n  *(_BYTE *)(a1 + 64) = v9;\n  return a1;\n}"
+}

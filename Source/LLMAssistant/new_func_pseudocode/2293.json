@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFinderOverallView draggingEntered:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFinderOverallView draggingEntered:](int a1, int a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceFinderOverallView draggingEntered:](DeviceFinderOverallView *self, SEL a2, id a3)\n{\n  id v4; // x19\n  DeviceDragHandler *v5; // x21\n  unsigned __int8 v6; // w22\n  __int64 v7; // x2\n  unsigned __int64 v8; // x21\n\n  v4 = objc_retain(a3);\n  if ( -[DeviceFinderOverallView dragDisabled](self, \"dragDisabled\")\n    || (v5 = objc_retainAutoreleasedReturnValue(-[DeviceFinderOverallView deviceDragHandler](self, \"deviceDragHandler\")),\n        v6 = -[DeviceDragHandler canAcceptDrag:](v5, \"canAcceptDrag:\", v4),\n        objc_release(v5),\n        (v6 & 1) == 0) )\n  {\n    v7 = 0LL;\n    v8 = 0LL;\n  }\n  else\n  {\n    v7 = 1LL;\n    v8 = 1LL;\n  }\n  -[DeviceFinderOverallView setDragHighlighted:](self, \"setDragHighlighted:\", v7);\n  objc_release(v4);\n  return v8;\n}"
+}

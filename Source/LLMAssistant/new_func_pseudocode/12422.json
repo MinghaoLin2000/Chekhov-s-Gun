@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableArray tsu_pop]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSMutableArray tsu_pop](NSMutableArray * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSMutableArray tsu_pop](NSMutableArray *self, SEL a2)\n{\n  void *v3; // x20\n\n  v3 = objc_autorelease(objc_retain(-[NSMutableArray lastObject](self, \"lastObject\")));\n  if ( v3 )\n    -[NSMutableArray removeLastObject](self, \"removeLastObject\");\n  return v3;\n}"
+}

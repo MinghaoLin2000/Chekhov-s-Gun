@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMDGetBundleVersion",
+    "function_argument_number": 0,
+    "function_signature": "_AMDGetBundleVersion()",
+    "pseudocode": "__int64 AMDGetBundleVersion()\n{\n  return _AMDGetBundleVersion();\n}"
+}

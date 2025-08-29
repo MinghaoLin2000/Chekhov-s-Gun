@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_task_create",
+    "function_argument_number": 0,
+    "function_signature": "_swift_task_create()",
+    "pseudocode": "__int64 swift_task_create()\n{\n  return _swift_task_create();\n}"
+}

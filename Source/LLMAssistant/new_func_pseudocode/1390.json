@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController tagWithMovieUpdateMode:movieCount:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceSettingsMoviesViewController tagWithMovieUpdateMode:movieCount:](DeviceSettingsMoviesViewController * self, SEL a2, unsigned __int64 a3, signed __int64 a4)",
+    "pseudocode": "signed __int64 __cdecl -[DeviceSettingsMoviesViewController tagWithMovieUpdateMode:movieCount:](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2,\n        unsigned __int64 a3,\n        signed __int64 a4)\n{\n  if ( a3 != 3 )\n  {\n    if ( a3 == 4 )\n      return -[DeviceSettingsMoviesViewController tagWithMovieUpdateCount:unwatched:](\n               self,\n               \"tagWithMovieUpdateCount:unwatched:\",\n               a4,\n               1LL);\n    return 0LL;\n  }\n  return a4;\n}"
+}

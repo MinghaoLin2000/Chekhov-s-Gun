@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode .cxx_destruct](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode .cxx_destruct](DeviceSettingsNode *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_searchTerm, 0LL);\n  objc_storeStrong((id *)&self->_filteredChildren, 0LL);\n  objc_storeStrong((id *)&self->_parentID, 0LL);\n  objc_storeStrong((id *)&self->_persistentID, 0LL);\n  objc_storeStrong((id *)&self->_identifier, 0LL);\n  objc_storeStrong((id *)&self->_children, 0LL);\n  objc_destroyWeak((id *)&self->_parent);\n  objc_storeStrong((id *)&self->_totalTime, 0LL);\n  objc_storeStrong((id *)&self->_expirationDate, 0LL);\n  objc_storeStrong((id *)&self->_fileSize, 0LL);\n  objc_storeStrong((id *)&self->_image, 0LL);\n  objc_storeStrong((id *)&self->_addedDate, 0LL);\n  objc_storeStrong((id *)&self->_purchaseDate, 0LL);\n  objc_storeStrong((id *)&self->_releaseDate, 0LL);\n  objc_storeStrong((id *)&self->_sortArtistName, 0LL);\n  objc_storeStrong((id *)&self->_artistName, 0LL);\n  objc_storeStrong((id *)&self->_sortName, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_name, 0LL);\n}"
+}

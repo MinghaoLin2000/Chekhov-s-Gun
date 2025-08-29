@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentIsUnlocked",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentIsUnlocked(CGPDFDocumentRef document)",
+    "pseudocode": "bool __cdecl CGPDFDocumentIsUnlocked(CGPDFDocumentRef document)\n{\n  return _CGPDFDocumentIsUnlocked(document);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService14JSClientObject init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService14JSClientObject init](_TtC34AppleMediaServicesUIDynamicService14JSClientObject * self, SEL a2)",
+    "pseudocode": "_TtC34AppleMediaServicesUIDynamicService14JSClientObject *__cdecl __noreturn -[JSClientObject init](\n        _TtC34AppleMediaServicesUIDynamicService14JSClientObject *self,\n        SEL a2)\n{\n  sub_100014758(self, a2);\n}"
+}

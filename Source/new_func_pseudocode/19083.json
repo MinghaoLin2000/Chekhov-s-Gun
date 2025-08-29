@@ -1,0 +1,6 @@
+{
+    "function_name": "_AXIsProcessTrusted",
+    "function_argument_number": 0,
+    "function_signature": "_AXIsProcessTrusted()",
+    "pseudocode": "Boolean AXIsProcessTrusted(void)\n{\n  return _AXIsProcessTrusted();\n}"
+}

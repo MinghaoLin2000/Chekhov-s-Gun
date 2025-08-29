@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject setUpWithCompletion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject setUpWithCompletion:](_TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[ServiceConnectionExportedObject setUpWithCompletion:](\n        _TtC34AppleMediaServicesUIDynamicService31ServiceConnectionExportedObject *self,\n        SEL a2,\n        id a3)\n{\n  sub_1000412C8((int)self, (int)a2, a3);\n}"
+}

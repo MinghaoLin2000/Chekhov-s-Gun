@@ -1,0 +1,6 @@
+{
+    "function_name": "_sandbox_check_by_audit_token",
+    "function_argument_number": 0,
+    "function_signature": "_sandbox_check_by_audit_token()",
+    "pseudocode": "__int64 sandbox_check_by_audit_token()\n{\n  return _sandbox_check_by_audit_token();\n}"
+}

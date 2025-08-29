@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_attribute_t group_tag]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_attribute_t group_tag](ipp_attribute_t * self, SEL a2)",
+    "pseudocode": "int __cdecl -[ipp_attribute_t group_tag](ipp_attribute_t *self, SEL a2)\n{\n  return self->_group_tag;\n}"
+}

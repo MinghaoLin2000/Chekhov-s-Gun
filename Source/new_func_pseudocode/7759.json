@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV4zoomACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV4zoomACvau()",
+    "pseudocode": "int *SystemEventMask.zoom.unsafeMutableAddressor()\n{\n  if ( qword_10002A990 != -1 )\n    swift_once(&qword_10002A990, sub_100016344);\n  return &static SystemEventMask.zoom;\n}"
+}

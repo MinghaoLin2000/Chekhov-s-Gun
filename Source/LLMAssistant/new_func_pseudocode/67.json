@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12SharingModelCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper12SharingModelCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for SharingModel(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_1000CB0C8;\n  if ( !qword_1000CB0C8 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for SharingModel);\n  return result;\n}"
+}

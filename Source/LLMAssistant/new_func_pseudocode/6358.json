@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask setStatus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionTask setStatus:](VideoConversionTask * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[VideoConversionTask setStatus:](VideoConversionTask *self, SEL a2, signed __int64 a3)\n{\n  self->_status = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10ReflectionC1EPKNS0_10DescriptorERKNS0_8internal16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE",
+    "function_argument_number": 5,
+    "function_signature": "__ZN6google8protobuf10ReflectionC1EPKNS0_10DescriptorERKNS0_8internal16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE(__int64 * a1, __int64 a2, __int128 * a3, __int64 a4, __int64 a5)",
+    "pseudocode": "__int64 *__fastcall google::protobuf::Reflection::Reflection(\n        __int64 *a1,\n        __int64 a2,\n        __int128 *a3,\n        __int64 a4,\n        __int64 a5)\n{\n  __int128 v7; // q0\n  __int128 v8; // q1\n\n  *a1 = a2;\n  v7 = *a3;\n  v8 = a3[1];\n  *(_OWORD *)(a1 + 5) = a3[2];\n  *(_OWORD *)(a1 + 3) = v8;\n  *(_OWORD *)(a1 + 1) = v7;\n  if ( !a4 )\n  {\n    a4 = google::protobuf::DescriptorPool::internal_generated_pool((google::protobuf::DescriptorPool *)a1);\n    a2 = *a1;\n  }\n  a1[7] = a4;\n  a1[8] = a5;\n  *((_DWORD *)a1 + 18) = *(_DWORD *)(a2 + 104) - 1;\n  return a1;\n}"
+}

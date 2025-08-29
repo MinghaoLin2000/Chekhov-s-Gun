@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP13DataReference12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP13DataReference12ByteSizeLongEv(TSP::DataReference * this)",
+    "pseudocode": "unsigned __int64 __fastcall TSP::DataReference::ByteSizeLong(TSP::DataReference *this)\n{\n  unsigned __int64 v1; // x1\n\n  if ( (*((_BYTE *)this + 16) & 1) != 0 )\n    v1 = ((9 * (__clz(*((_QWORD *)this + 3) | 1LL) ^ 0x3F) + 73) >> 6) + 1;\n  else\n    v1 = 0LL;\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v1, (char *)this + 20);\n  *((_DWORD *)this + 5) = v1;\n  return v1;\n}"
+}

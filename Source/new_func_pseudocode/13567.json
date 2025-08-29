@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet isEqual:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUMutableLinkedPointerSet isEqual:](TSUMutableLinkedPointerSet * self, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSUMutableLinkedPointerSet isEqual:](TSUMutableLinkedPointerSet *self, SEL a2, id a3)\n{\n  __int64 v5; // x21\n  unsigned int v6; // w0\n  __int64 v7; // x20\n  TSULinkedPointerSetEntry *mHead; // x19\n  id mObject; // x0\n\n  if ( a3 == self )\n  {\n    LOBYTE(v6) = 1;\n  }\n  else\n  {\n    v5 = objc_opt_class(a3);\n    if ( v5 == objc_opt_class(self) )\n    {\n      v7 = *((_QWORD *)a3 + 2);\n      mHead = self->mHead;\n      if ( !mHead )\n      {\nLABEL_10:\n        LOBYTE(v6) = v7 == 0;\n        return v6;\n      }\n      while ( v7 )\n      {\n        mObject = mHead->mObject;\n        if ( mObject != *(id *)(v7 + 8) )\n        {\n          v6 = (unsigned int)objc_msgSend(mObject, \"isEqual:\");\n          if ( !v6 )\n            return v6;\n        }\n        v7 = *(_QWORD *)(v7 + 24);\n        mHead = mHead->mNext;\n        if ( !mHead )\n          goto LABEL_10;\n      }\n    }\n    LOBYTE(v6) = 0;\n  }\n  return v6;\n}"
+}

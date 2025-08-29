@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService13JetpackLoaderCMa
+__int64 type metadata accessor for JetpackLoader()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService13JetpackLoader);
+}

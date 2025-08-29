@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob canAccessSourceImageProperties]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob canAccessSourceImageProperties](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[PAMediaConversionServiceImageConversionJob canAccessSourceImageProperties](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  return !-[PAMediaConversionServiceImageConversionJob sourceRequiresRasterization](self, \"sourceRequiresRasterization\");\n}"
+}

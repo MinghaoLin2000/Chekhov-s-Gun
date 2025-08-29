@@ -1,0 +1,6 @@
+{
+    "function_name": "_calloc",
+    "function_argument_number": 2,
+    "function_signature": "_calloc(size_t __count, size_t __size)",
+    "pseudocode": "void *__cdecl calloc(size_t __count, size_t __size)\n{\n  return _calloc(__count, __size);\n}"
+}

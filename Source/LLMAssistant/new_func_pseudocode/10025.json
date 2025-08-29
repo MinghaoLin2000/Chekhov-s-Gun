@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP13ComponentInfoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP13ComponentInfoD2Ev(TSP::ComponentInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::ComponentInfo::~ComponentInfo(TSP::ComponentInfo *this)\n{\n  __ZN3TSP13ComponentInfoD2Ev(this);\n}"
+}

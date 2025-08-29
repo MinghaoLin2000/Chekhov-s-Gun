@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicDataSourcesClient fetchWidgetMetadataForAppBundleIds:callback:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ATXHeuristicDataSourcesClient fetchWidgetMetadataForAppBundleIds:callback:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[ATXHeuristicDataSourcesClient fetchWidgetMetadataForAppBundleIds:callback:](\n        ATXHeuristicDataSourcesClient *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x0\n  NSXPCConnection *xpcConnection; // x20\n  id v8; // x21\n  id v9; // x19\n  id v10; // x20\n  _QWORD v11[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v12; // [xsp+28h] [xbp-28h]\n\n  v6 = objc_retain(a4);\n  xpcConnection = self->_xpcConnection;\n  v11[0] = _NSConcreteStackBlock;\n  v11[1] = 3254779904LL;\n  v11[2] = sub_10000A4F8;\n  v11[3] = &unk_100028B90;\n  v12 = v6;\n  v8 = objc_retain(v6);\n  v9 = objc_retain(a3);\n  v10 = objc_retainAutoreleasedReturnValue(\n          -[NSXPCConnection synchronousRemoteObjectProxyWithErrorHandler:](\n            xpcConnection,\n            \"synchronousRemoteObjectProxyWithErrorHandler:\",\n            v11));\n  objc_msgSend(v10, \"fetchWidgetMetadataForAppBundleIds:callback:\", v9, v8);\n  objc_release(v9);\n  objc_release(v10);\n  objc_release(v12);\n  objc_release(v8);\n}"
+}

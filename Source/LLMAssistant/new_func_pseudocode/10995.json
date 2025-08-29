@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf17FileDescriptorSet13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf17FileDescriptorSet13IsInitializedEv(google::protobuf::FileDescriptorSet * this)",
+    "pseudocode": "bool __fastcall google::protobuf::FileDescriptorSet::IsInitialized(google::protobuf::FileDescriptorSet *this)\n{\n  __int64 v2; // x8\n  int v3; // w20\n  __int64 v4; // x21\n  char IsInitialized; // w0\n\n  v2 = *((unsigned int *)this + 6);\n  do\n  {\n    v3 = v2;\n    if ( (int)v2 < 1 )\n      break;\n    v4 = v2 - 1;\n    IsInitialized = google::protobuf::FileDescriptorProto::IsInitialized(*(google::protobuf::FileDescriptorProto **)(*((_QWORD *)this + 4) + 8 * v2));\n    v2 = v4;\n  }\n  while ( (IsInitialized & 1) != 0 );\n  return v3 < 1;\n}"
+}

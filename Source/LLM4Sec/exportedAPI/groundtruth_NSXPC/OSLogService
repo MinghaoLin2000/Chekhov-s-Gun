@@ -1,0 +1,4 @@
+@protocol OSLogServiceProtocol
+- (void)getNextOSLogEntryWithReply:(void (^)(OSLogEntry *))arg1;
+- (void)setUpWithPredicate:(NSPredicate *)arg1 reply:(void (^)(NSError *))arg2;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIShowSiriInWindow",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIShowSiriInWindow()",
+    "pseudocode": "__int64 SiriUIShowSiriInWindow()\n{\n  return _SiriUIShowSiriInWindow();\n}"
+}

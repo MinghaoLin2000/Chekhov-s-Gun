@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPDirectoryPackage objectArchiveURLForPackageURL:]",
+    "function_argument_number": 3,
+    "function_signature": "+[TSPDirectoryPackage objectArchiveURLForPackageURL:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[TSPDirectoryPackage objectArchiveURLForPackageURL:](id a1, SEL a2, id a3)\n{\n  void *v3; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(objc_msgSend(a3, \"URLByAppendingPathComponent:isDirectory:\", CFSTR(\"Index.zip\"), 0LL));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

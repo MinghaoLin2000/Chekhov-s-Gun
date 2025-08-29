@@ -1,0 +1,6 @@
+{
+    "function_name": "-[XPCSignpostReader setResumes:]",
+    "function_argument_number": 3,
+    "function_signature": "-[XPCSignpostReader setResumes:](XPCSignpostReader * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[XPCSignpostReader setResumes:](XPCSignpostReader *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 24LL);\n}"
+}

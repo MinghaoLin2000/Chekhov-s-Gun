@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpRemoteEndpointID",
+    "function_argument_number": 1,
+    "function_signature": "_uarpRemoteEndpointID(__int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpRemoteEndpointID(__int64 a1)\n{\n  if ( a1 )\n    return *(unsigned int *)(a1 + 52);\n  else\n    return 0xFFFFFFFFLL;\n}"
+}

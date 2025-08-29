@@ -1,0 +1,6 @@
+{
+    "function_name": "_lseek",
+    "function_argument_number": 3,
+    "function_signature": "_lseek(int a1, off_t a2, int a3)",
+    "pseudocode": "off_t __cdecl lseek(int a1, off_t a2, int a3)\n{\n  return _lseek(a1, a2, a3);\n}"
+}

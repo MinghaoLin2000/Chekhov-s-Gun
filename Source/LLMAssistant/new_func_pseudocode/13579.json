@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULinkedPointerSetEnumerator initWithFirstEntry:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSULinkedPointerSetEnumerator initWithFirstEntry:](TSULinkedPointerSetEnumerator * self, SEL a2, id a3)",
+    "pseudocode": "TSULinkedPointerSetEnumerator *__cdecl -[TSULinkedPointerSetEnumerator initWithFirstEntry:](\n        TSULinkedPointerSetEnumerator *self,\n        SEL a2,\n        id a3)\n{\n  TSULinkedPointerSetEnumerator *result; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___TSULinkedPointerSetEnumerator;\n  result = -[TSULinkedPointerSetEnumerator init](&v5, \"init\");\n  if ( result )\n  {\n    result->mHead = (TSULinkedPointerSetEntry *)a3;\n    result->mLastUsed = 0LL;\n  }\n  return result;\n}"
+}

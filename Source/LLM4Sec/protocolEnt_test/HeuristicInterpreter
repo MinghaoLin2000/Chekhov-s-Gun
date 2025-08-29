@@ -1,0 +1,82 @@
+Service Path:
+/System/Library/PrivateFrameworks/ActionPredictionHeuristics.framework/Versions/A/XPCServices/HeuristicInterpreter.xpc/Contents/MacOS/HeuristicInterpreter
+
+Service Exported Protocols:
+@protocol ATXHeuristicDataSources
+- (void)predictedBedTimeWithCallback:(void (^)(NSNumber *, NSError *))arg1;
+- (void)scheduledBedTimeWithCallback:(void (^)(NSNumber *, NSError *))arg1;
+- (void)modeCorrelatedAppsInCurrentModeWithCallback:(void (^)(NSArray *, NSDate *, NSError *))arg1;
+- (void)getLocationForMostRelevantTripInRangeFrom:(NSDate *)arg1 to:(NSDate *)arg2 callback:(void (^)(NSDictionary *, NSError *))arg3;
+- (void)fetchWidgetMetadataForAppBundleIds:(NSArray *)arg1 callback:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)batteryInformationWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)timeIntervalSinceUserWakeupWithCallback:(void (^)(NSNumber *, NSError *))arg1;
+- (void)hourOfDayInteractionProbabilitiesWithContact:(CNContact *)arg1 callback:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)peopleSuggestionsWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)unreadMessagesWithLimit:(long long)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)obtainOneTimeLocationWithCallback:(void (^)(NSDictionary *, NSError *))arg1;
+- (void)duetInteractionCountForHandles:(NSSet *)arg1 sinceDate:(NSDate *)arg2 callback:(void (^)(NSNumber *, NSError *))arg3;
+- (void)isFocusModeActive:(void (^)(_Bool, NSError *))arg1;
+- (void)alarmTimeOfDay:(void (^)(NSNumber *, NSError *))arg1;
+- (void)alarmsFromDate:(NSDate *)arg1 toDate:(NSDate *)arg2 completionHandler:(void (^)(NSArray *, NSError *))arg3;
+- (void)contactsWithPhone:(NSString *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)contactsWithEmail:(NSString *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)contactsWithName:(NSString *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)contactsWithIdentifiers:(NSArray *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)favoritesWithContacts:(NSArray *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)bestHandleForContact:(CNContact *)arg1 service:(NSString *)arg2 callback:(void (^)(NSString *, NSError *))arg3;
+- (void)allHandlesForContact:(CNContact *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)nlEventsWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)callNewerThan:(double)arg1 showIncoming:(_Bool)arg2 showOutgoing:(_Bool)arg3 missedOnly:(_Bool)arg4 callback:(void (^)(NSArray *, NSError *))arg5;
+- (void)vipsWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)contentsWithCallback:(void (^)(NSString *, NSDate *, NSString *, NSError *))arg1;
+- (void)preferredAppForIntentName:(NSString *)arg1 andParameterCombination:(NSArray *)arg2 callback:(void (^)(NSString *, NSError *))arg3;
+- (void)travelTimeInfoForEventID:(NSString *)arg1 location:(CLLocation *)arg2 expectedArrivalDate:(NSDate *)arg3 transportType:(NSString *)arg4 localOnlyAfterFirstUpdate:(_Bool)arg5 callback:(void (^)(NSDictionary *, NSError *))arg6;
+- (void)bestAppSuggestionWithCallback:(void (^)(UABestAppSuggestion *, NSError *))arg1;
+- (void)passesWithStyle:(NSString *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+- (void)holidaysFromStartDate:(NSDate *)arg1 toEndDate:(NSDate *)arg2 callback:(void (^)(NSArray *, NSError *))arg3;
+- (void)birthdaysWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)flightStatusForFlight:(NSDictionary *)arg1 callback:(void (^)(NSDictionary *, NSError *))arg2;
+- (void)visibleCalendarsWithCallback:(void (^)(NSArray *, NSError *))arg1;
+- (void)calendarEventsFromStartDate:(NSDate *)arg1 toEndDate:(NSDate *)arg2 callback:(void (^)(NSArray *, NSError *))arg3;
+- (void)getEventsWithProminentFeature:(NSNumber *)arg1 callback:(void (^)(NSArray *, NSError *))arg2;
+@end
+@protocol ATXHeuristicEnv <NSObject>
+- (void)mockDataSource:(NSString *)arg1 returning:(id)arg2;
+- (void)mockClipboardContent:(NSString *)arg1 createdAt:(NSDate *)arg2 fromBundleId:(NSString *)arg3;
+- (void)mockClipboardContent:(NSString *)arg1 createdAt:(NSDate *)arg2;
+- (NSArray *)resultsForInformationHeuristics:(NSSet *)arg1;
+- (NSDictionary *)actionsAndExpirersForHeuristics:(NSArray *)arg1;
+- (NSDictionary *)actionsAndExpirersForHeuristicsExcept:(NSSet *)arg1;
+- (NSArray *)executeHeuristics:(NSArray *)arg1;
+- (NSArray *)heuristicResults;
+- (id)initWithHeuristicBundle:(NSBundle *)arg1 dataProvider:(id <ATXHeuristicDataSources>)arg2;
+- (id)init;
+@end
+@protocol HeuristicInterpreterProtocol
+- (void)resultsForInformationHeuristics:(NSSet *)arg1 bundlePath:(NSString *)arg2 now:(NSDate *)arg3 dataSourcesEndpoint:(NSXPCListenerEndpoint *)arg4 reply:(void (^)(NSArray *, NSError *))arg5;
+- (void)actionsAndExpirersForHeuristicsExcept:(NSSet *)arg1 bundlePath:(NSString *)arg2 now:(NSDate *)arg3 dataSourcesEndpoint:(NSXPCListenerEndpoint *)arg4 reply:(void (^)(NSDictionary *, NSError *))arg5;
+- (void)ping:(void (^)(NSError *))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.developer.device-information.user-assigned-device-name
+	[Value]
+		[Bool] true
+	[Key] com.apple.intents.extension.discovery
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.DuetExpertCenterAsset
+	[Key] com.apple.rootless.storage.com.apple.MobileAsset.DuetExpertCenterAsset
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] HeuristicInterpreter

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN10XpcSandbox7consumeEPKc",
+    "function_argument_number": 2,
+    "function_signature": "__ZN10XpcSandbox7consumeEPKc(XpcSandbox * this, const char * a2)",
+    "pseudocode": "void __fastcall XpcSandbox::consume(xpc_connection_t *this, const char *a2)\n{\n  xpc_object_t v4; // x21\n  xpc_object_t v5; // x0\n  const char *string; // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = xpc_dictionary_create(0LL, 0LL, 0LL);\n  xpc_dictionary_set_string(v4, \"consume\", a2);\n  v5 = xpc_connection_send_message_with_reply_sync(*this, v4);\n  if ( v5 )\n  {\n    string = xpc_dictionary_get_string(v5, \"consumeToken\");\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    XpcSandbox::consumeExtension((XpcSandbox *)this, string);\n  }\n}"
+}

@@ -1,0 +1,17 @@
+Service Path:
+/System/Library/Frameworks/FinderSync.framework/Versions/A/XPCServices/IsExtensionEnabled.xpc/Contents/MacOS/IsExtensionEnabled
+
+Service Exported Protocols:
+@protocol IsExtensionEnabledProtocol
+- (void)askUserForPermissionAndEnableFinderExtensionsWithReply:(void (^)(_Bool))arg1;
+- (void)isExtensionEnabledWithReply:(void (^)(_Bool))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.fileprovider.enumerate
+	[Value]
+		[Bool] true
+	[Key] com.apple.fileprovider.extension-host
+	[Value]
+		[Bool] true

@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSSizeFromString",
+    "function_argument_number": 1,
+    "function_signature": "_NSSizeFromString(NSString * aString)",
+    "pseudocode": "NSSize __cdecl NSSizeFromString(NSString *aString)\n{\n  double width; // d0\n  double height; // d1\n  NSSize v3; // kr00_16\n  NSSize result; // 0:d0.8,8:d1.8\n\n  v3 = _NSSizeFromString(aString);\n  height = v3.height;\n  width = v3.width;\n  result.height = height;\n  result.width = width;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN12ObjConverter9addNormalERNSt3__119basic_istringstreamIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN12ObjConverter9addNormalERNSt3__119basic_istringstreamIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall ObjConverter::addNormal(__int64 a1, __int64 a2)\n{\n  float Float; // s8\n  float v5; // s9\n  float v6; // s0\n  float *v7; // x8\n  __int64 result; // x0\n  _DWORD v9[3]; // [xsp+4h] [xbp-2Ch] BYREF\n\n  Float = fileFormatUtils::getFloat(a2);\n  v5 = fileFormatUtils::getFloat(a2);\n  v6 = fileFormatUtils::getFloat(a2);\n  *(float *)v9 = Float;\n  *(float *)&v9[1] = v5;\n  *(float *)&v9[2] = v6;\n  v7 = *(float **)(a1 + 88);\n  if ( (unsigned __int64)v7 >= *(_QWORD *)(a1 + 96) )\n  {\n    result = sub_100007DF0(a1 + 80, v9);\n  }\n  else\n  {\n    *v7 = Float;\n    v7[1] = v5;\n    result = (__int64)(v7 + 3);\n    v7[2] = v6;\n  }\n  *(_QWORD *)(a1 + 88) = result;\n  return result;\n}"
+}

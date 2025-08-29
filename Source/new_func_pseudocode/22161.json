@@ -1,0 +1,6 @@
+{
+    "function_name": "_abort_with_reason",
+    "function_argument_number": 0,
+    "function_signature": "_abort_with_reason()",
+    "pseudocode": "__int64 abort_with_reason()\n{\n  return _abort_with_reason();\n}"
+}

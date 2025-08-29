@@ -1,0 +1,6 @@
+{
+    "function_name": "_SetApplicationIsDaemon",
+    "function_argument_number": 0,
+    "function_signature": "_SetApplicationIsDaemon()",
+    "pseudocode": "__int64 SetApplicationIsDaemon()\n{\n  return _SetApplicationIsDaemon();\n}"
+}

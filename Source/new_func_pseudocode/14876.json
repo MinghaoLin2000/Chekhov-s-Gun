@@ -1,0 +1,6 @@
+{
+    "function_name": "_fp_current_or_default_log",
+    "function_argument_number": 0,
+    "function_signature": "_fp_current_or_default_log()",
+    "pseudocode": "__int64 fp_current_or_default_log()\n{\n  return _fp_current_or_default_log();\n}"
+}

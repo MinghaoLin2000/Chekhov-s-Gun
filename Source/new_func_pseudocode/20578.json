@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFDocumentAllowsPrinting",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFDocumentAllowsPrinting(CGPDFDocumentRef document)",
+    "pseudocode": "bool __cdecl CGPDFDocumentAllowsPrinting(CGPDFDocumentRef document)\n{\n  return _CGPDFDocumentAllowsPrinting(document);\n}"
+}

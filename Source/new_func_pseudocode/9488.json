@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDocumentProperties writeToPackageWriter:error:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPDocumentProperties writeToPackageWriter:error:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[TSPDocumentProperties writeToPackageWriter:error:](TSPDocumentProperties *self, SEL a2, id a3, id *a4)\n{\n  id v6; // x19\n  void *v7; // x20\n  id v8; // x23\n  _QWORD v10[4]; // [xsp+0h] [xbp-60h] BYREF\n  id v11; // [xsp+20h] [xbp-40h]\n  id *v12; // [xsp+28h] [xbp-38h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"URL\"));\n  v10[0] = _NSConcreteStackBlock;\n  v10[1] = 3254779904LL;\n  v10[2] = sub_1000353A4;\n  v10[3] = &unk_1001D3558;\n  v8 = objc_retain(v6);\n  v11 = v8;\n  v12 = a4;\n  LOBYTE(a4) = -[TSPDocumentProperties writeToDocumentURL:writerBlock:error:](\n                 self,\n                 \"writeToDocumentURL:writerBlock:error:\",\n                 v7,\n                 v10,\n                 a4);\n  objc_release(v11);\n  objc_release(v7);\n  objc_release(v8);\n  return (char)a4;\n}"
+}

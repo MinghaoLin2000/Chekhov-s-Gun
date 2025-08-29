@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsViewController didChangeSyncOnCheckBox]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsContactsViewController didChangeSyncOnCheckBox](DeviceSettingsContactsViewController * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsContactsViewController didChangeSyncOnCheckBox](\n        DeviceSettingsContactsViewController *self,\n        SEL a2)\n{\n  -[DeviceViewController postDeviceViewDirtinessChangeNotification](self, \"postDeviceViewDirtinessChangeNotification\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceHeaderViewController setDeviceDetailsStringMode:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceHeaderViewController setDeviceDetailsStringMode:](DeviceHeaderViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceHeaderViewController setDeviceDetailsStringMode:](\n        DeviceHeaderViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_deviceDetailsStringMode = a3;\n}"
+}

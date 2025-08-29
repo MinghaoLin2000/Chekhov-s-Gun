@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionExecution executionAfterResuming]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMRemoteActionExecution executionAfterResuming](AMRemoteActionExecution * self, SEL a2)",
+    "pseudocode": "id __cdecl -[AMRemoteActionExecution executionAfterResuming](AMRemoteActionExecution *self, SEL a2)\n{\n  void *v2; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = -[AMRemoteActionExecution copy](self, \"copy\");\n  objc_msgSend(v2, \"setPaused:\", 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

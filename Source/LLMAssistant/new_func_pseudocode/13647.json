@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IWXPCPackageConverter releaseInputSandboxExtensionToken:outputSandBoxToken:]",
+    "function_argument_number": 4,
+    "function_signature": "-[IWXPCPackageConverter releaseInputSandboxExtensionToken:outputSandBoxToken:](IWXPCPackageConverter * self, SEL a2, signed __int64 a3, signed __int64 a4)",
+    "pseudocode": "void __cdecl -[IWXPCPackageConverter releaseInputSandboxExtensionToken:outputSandBoxToken:](\n        IWXPCPackageConverter *self,\n        SEL a2,\n        signed __int64 a3,\n        signed __int64 a4)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( (a3 & 0x8000000000000000LL) == 0 )\n    sandbox_extension_release(a3, a2);\n  if ( (a4 & 0x8000000000000000LL) == 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    sandbox_extension_release(a4, a2);\n  }\n}"
+}

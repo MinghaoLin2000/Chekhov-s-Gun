@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView setOtherData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarView setOtherData:](AMPCapacityBarView * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView setOtherData:](AMPCapacityBarView *self, SEL a2, unsigned __int64 a3)\n{\n  self->_otherData = a3;\n}"
+}

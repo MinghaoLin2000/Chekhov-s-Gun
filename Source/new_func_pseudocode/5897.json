@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MouseCloudSettingsMediator scrollSpeedRaw]",
+    "function_argument_number": 2,
+    "function_signature": "-[MouseCloudSettingsMediator scrollSpeedRaw](MouseCloudSettingsMediator * self, SEL a2)",
+    "pseudocode": "id __cdecl -[MouseCloudSettingsMediator scrollSpeedRaw](MouseCloudSettingsMediator *self, SEL a2)\n{\n  MTMouseGesturesBackEnd *v2; // x19\n  double v3; // d0\n  double v4; // d8\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[MouseCloudSettingsMediator gestureEngine](self, \"gestureEngine\"));\n  -[MTMouseGesturesBackEnd scrollSpeedRaw](v2, \"scrollSpeedRaw\");\n  v4 = v3;\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return +[NSNumber numberWithDouble:](&OBJC_CLASS___NSNumber, \"numberWithDouble:\", v4);\n}"
+}

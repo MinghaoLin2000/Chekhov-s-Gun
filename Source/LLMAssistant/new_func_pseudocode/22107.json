@@ -1,0 +1,6 @@
+{
+    "function_name": "_mach_error_string",
+    "function_argument_number": 1,
+    "function_signature": "_mach_error_string(mach_error_t error_value)",
+    "pseudocode": "char *__cdecl mach_error_string(mach_error_t error_value)\n{\n  return _mach_error_string(error_value);\n}"
+}

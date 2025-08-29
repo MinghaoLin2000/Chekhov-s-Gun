@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController setAutoIncludeLayoutOrientation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPodcastsViewController setAutoIncludeLayoutOrientation:](DeviceSettingsPodcastsViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPodcastsViewController setAutoIncludeLayoutOrientation:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  _BOOL8 v5; // x21\n  NSLayoutConstraint *v6; // x22\n  NSStackView *v7; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = a3 == 1;\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController episodesOfIndentConstraint](self, \"episodesOfIndentConstraint\"));\n  -[NSLayoutConstraint setActive:](v6, \"setActive:\", v5);\n  objc_release(v6);\n  v7 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController autoIncludeStackView](self, \"autoIncludeStackView\"));\n  -[NSStackView setOrientation:](v7, \"setOrientation:\", a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

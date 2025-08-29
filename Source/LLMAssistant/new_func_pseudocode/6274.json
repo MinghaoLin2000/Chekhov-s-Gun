@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceImageConversionJob sourceResourceURLCollection]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceImageConversionJob sourceResourceURLCollection](PAMediaConversionServiceImageConversionJob * self, SEL a2)",
+    "pseudocode": "PAMediaConversionServiceResourceURLCollection *__cdecl -[PAMediaConversionServiceImageConversionJob sourceResourceURLCollection](\n        PAMediaConversionServiceImageConversionJob *self,\n        SEL a2)\n{\n  return (PAMediaConversionServiceResourceURLCollection *)objc_getProperty(self, a2, 72LL, 1);\n}"
+}

@@ -1,0 +1,5 @@
+{
+    "/System/Library/PrivateFrameworks/SiriSuggestionsSupport.framework/Versions/A/XPCServices/SiriSuggestionsBookkeepingService.xpc/Contents/MacOS/SiriSuggestionsBookkeepingService": [
+        "-[_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService getAccountDetailsWith:]"
+    ]
+}

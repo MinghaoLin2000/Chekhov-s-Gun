@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_io_read",
+    "function_argument_number": 5,
+    "function_signature": "_dispatch_io_read(dispatch_io_t channel, off_t offset, size_t length, dispatch_queue_t queue, dispatch_io_handler_t io_handler)",
+    "pseudocode": "void __cdecl dispatch_io_read(\n        dispatch_io_t channel,\n        off_t offset,\n        size_t length,\n        dispatch_queue_t queue,\n        dispatch_io_handler_t io_handler)\n{\n  _dispatch_io_read(channel, offset, length, queue, io_handler);\n}"
+}

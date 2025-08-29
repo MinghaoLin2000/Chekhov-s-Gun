@@ -1,0 +1,6 @@
+{
+    "function_name": "_configure_xpc_interface",
+    "function_argument_number": 1,
+    "function_signature": "_configure_xpc_interface(void * a1)",
+    "pseudocode": "void __fastcall configure_xpc_interface(void *a1)\n{\n  id v1; // x19\n  id v2; // x20\n  NSArray *v3; // x21\n  void *v4; // x20\n  _QWORD v5[4]; // [xsp+8h] [xbp-48h] BYREF\n\n  v1 = objc_retain(a1);\n  v2 = objc_alloc((Class)&OBJC_CLASS___NSSet);\n  v5[0] = +[NSDictionary class](&OBJC_CLASS___NSDictionary, \"class\");\n  v5[1] = +[NSString class](&OBJC_CLASS___NSString, \"class\");\n  v5[2] = +[NSNumber class](&OBJC_CLASS___NSNumber, \"class\");\n  v5[3] = +[NSArray class](&OBJC_CLASS___NSArray, \"class\");\n  v3 = objc_retainAutoreleasedReturnValue(+[NSArray arrayWithObjects:count:](&OBJC_CLASS___NSArray, \"arrayWithObjects:count:\", v5, 4LL));\n  v4 = objc_msgSend(v2, \"initWithArray:\", v3);\n  objc_release(v3);\n  objc_msgSend(\n    v1,\n    \"setClasses:forSelector:argumentIndex:ofReply:\",\n    v4,\n    \"retrieveProperty:forUUID:type:withReply:\",\n    0LL,\n    1LL);\n  objc_msgSend(\n    v1,\n    \"setClasses:forSelector:argumentIndex:ofReply:\",\n    v4,\n    \"retrievePropertiesForUUID:type:withReply:\",\n    0LL,\n    1LL);\n  objc_release(v1);\n  objc_release(v4);\n}"
+}

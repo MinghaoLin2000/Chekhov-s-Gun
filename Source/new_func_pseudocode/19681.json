@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionForStreaming dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPPSessionForStreaming dealloc](IPPSessionForStreaming * self, SEL a2)",
+    "pseudocode": "void __cdecl -[IPPSessionForStreaming dealloc](IPPSessionForStreaming *self, SEL a2)\n{\n  OS_os_transaction *transaction; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  transaction = self->_transaction;\n  self->_transaction = 0LL;\n  objc_release(transaction);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___IPPSessionForStreaming;\n  -[IPPSession dealloc](&v4, \"dealloc\");\n}"
+}

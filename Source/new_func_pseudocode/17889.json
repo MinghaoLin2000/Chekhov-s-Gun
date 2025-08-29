@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21FileProvidersByIDSyncv",
+    "function_argument_number": 0,
+    "function_signature": "__Z21FileProvidersByIDSyncv()",
+    "pseudocode": "id FileProvidersByIDSync(void)\n{\n  dispatch_semaphore_s *v0; // x19\n  void *v1; // x20\n  id v2; // x21\n  _QWORD v4[5]; // [xsp+8h] [xbp-58h] BYREF\n  id v5; // [xsp+30h] [xbp-30h]\n  id v6; // [xsp+38h] [xbp-28h] BYREF\n  __int64 vars8; // [xsp+68h] [xbp+8h]\n\n  v6 = 0LL;\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3321888768LL;\n  v4[2] = sub_100001290;\n  v4[3] = &unk_100004160;\n  v0 = objc_retain(dispatch_semaphore_create(0LL));\n  v4[4] = &v6;\n  v5 = v0;\n  v1 = objc_retainAutoreleasedReturnValue(\n         +[FPProviderDomain beginMonitoringProviderDomainChangesWithHandler:](\n           &OBJC_CLASS___FPProviderDomain,\n           \"beginMonitoringProviderDomainChangesWithHandler:\",\n           v4));\n  dispatch_semaphore_wait(v0, 0xFFFFFFFFFFFFFFFFLL);\n  +[FPProviderDomain endMonitoringProviderDomainChanges:](\n    &OBJC_CLASS___FPProviderDomain,\n    \"endMonitoringProviderDomainChanges:\",\n    v1);\n  v2 = objc_retain(v6);\n  objc_release(v1);\n  objc_release(v5);\n  objc_release(v0);\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__uncacheFilepath",
+    "function_argument_number": 1,
+    "function_signature": "__uncacheFilepath(void * a1)",
+    "pseudocode": "__int64 __fastcall _uncacheFilepath(void *a1)\n{\n  id v1; // x19\n\n  v1 = objc_retainAutorelease(objc_retain(a1));\n  uncache_filename((const char *)objc_msgSend(v1, \"UTF8String\"), 0LL);\n  objc_release(v1);\n  return 0LL;\n}"
+}

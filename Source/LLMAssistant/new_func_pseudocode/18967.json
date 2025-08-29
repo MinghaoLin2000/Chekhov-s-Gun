@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_RemoteViewBridgeViewControllerProxy hostRequestSizeChange:fenceRight:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_RemoteViewBridgeViewControllerProxy hostRequestSizeChange:fenceRight:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[_RemoteViewBridgeViewControllerProxy hostRequestSizeChange:fenceRight:](\n        _RemoteViewBridgeViewControllerProxy *self,\n        SEL a2,\n        CGSize a3,\n        id a4)\n{\n  double height; // d8\n  double width; // d9\n  id v7; // x20\n  RemoteViewBridgeHostProtocol *v8; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  height = a3.height;\n  width = a3.width;\n  v7 = objc_retain(a4);\n  v8 = objc_retainAutoreleasedReturnValue(-[_RemoteViewBridgeViewControllerProxy delegate](self, \"delegate\"));\n  -[RemoteViewBridgeHostProtocol hostRequestSizeChange:fenceRight:](\n    v8,\n    \"hostRequestSizeChange:fenceRight:\",\n    v7,\n    width,\n    height);\n  objc_release(v7);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v8);\n}"
+}

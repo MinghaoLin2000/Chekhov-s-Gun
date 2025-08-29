@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceWarrantyViewController checkBoxTitleText]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceWarrantyViewController checkBoxTitleText](DeviceWarrantyViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceWarrantyViewController checkBoxTitleText](DeviceWarrantyViewController *self, SEL a2)\n{\n  void *v3; // x20\n  unsigned __int64 v4; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = (void *)objc_opt_class(self);\n  v4 = -[DeviceWarrantyViewController deviceType](self, \"deviceType\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(\n           v3,\n           \"deviceStringForDeviceType:forStringParameterizedKey:\",\n           v4,\n           CFSTR(\"I have read and agree to the %@ Warranty Information.\"));\n}"
+}

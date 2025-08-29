@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCCryptorFinal",
+    "function_argument_number": 4,
+    "function_signature": "_CCCryptorFinal(CCCryptorRef cryptorRef, void * dataOut, size_t dataOutAvailable, size_t * dataOutMoved)",
+    "pseudocode": "CCCryptorStatus __cdecl CCCryptorFinal(\n        CCCryptorRef cryptorRef,\n        void *dataOut,\n        size_t dataOutAvailable,\n        size_t *dataOutMoved)\n{\n  return _CCCryptorFinal(cryptorRef, dataOut, dataOutAvailable, dataOutMoved);\n}"
+}

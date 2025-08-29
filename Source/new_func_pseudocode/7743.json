@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV6resumeACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV6resumeACvau()",
+    "pseudocode": "int *SystemEventMask.resume.unsafeMutableAddressor()\n{\n  if ( qword_10002A660 != -1 )\n    swift_once(&qword_10002A660, sub_100015F44);\n  return &static SystemEventMask.resume;\n}"
+}

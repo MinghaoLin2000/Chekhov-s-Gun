@@ -1,0 +1,6 @@
+__ZN6google8protobuf5Arena18CreateMaybeMessageINS0_14MessageOptionsEJEEEPT_PS1_DpOT0_
+// attributes: thunk
+__int64 __fastcall google::protobuf::Arena::CreateMaybeMessage<google::protobuf::MessageOptions>(__int64 a1)
+{
+  return sub_1000B7FC8(a1);
+}

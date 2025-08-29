@@ -1,0 +1,5 @@
+_xpc_remote_connection_create_with_remote_service
+__int64 xpc_remote_connection_create_with_remote_service()
+{
+  return _xpc_remote_connection_create_with_remote_service();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addIntegers:valueTag:name:count:adder:]",
+    "function_argument_number": 5,
+    "function_signature": "-[ipp_t _addIntegers:valueTag:name:count:adder:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addIntegers:valueTag:name:count:adder:](\n        ipp_t *self,\n        SEL a2,\n        int a3,\n        int a4,\n        id a5,\n        unsigned __int64 a6,\n        id a7)\n{\n  __int64 v9; // x20\n  __int64 v10; // x22\n  id v12; // x19\n  id v13; // x0\n  void *v14; // x21\n  _QWORD v15[4]; // [xsp+0h] [xbp-70h] BYREF\n  id v16; // [xsp+20h] [xbp-50h]\n  unsigned __int64 v17; // [xsp+28h] [xbp-48h]\n\n  v9 = *(_QWORD *)&a4;\n  v10 = *(_QWORD *)&a3;\n  v12 = objc_retain(a5);\n  v13 = objc_retain(a7);\n  v14 = v13;\n  if ( v12 && (unsigned int)v10 <= 5 && (_DWORD)v10 != 3 && a6 )\n  {\n    v15[0] = _NSConcreteStackBlock;\n    v15[1] = 3254779904LL;\n    v15[2] = sub_10003E348;\n    v15[3] = &unk_10009EB08;\n    v16 = objc_retain(v13);\n    v17 = a6;\n    -[ipp_t withNewAttr:groupTag:valueTag:apply:](self, \"withNewAttr:groupTag:valueTag:apply:\", v12, v10, v9, v15);\n    objc_release(v16);\n  }\n  objc_release(v14);\n  objc_release(v12);\n}"
+}

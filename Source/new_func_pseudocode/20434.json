@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PrintdRPCService setLastUsedPrintersForCurrentNetwork:]",
+    "function_argument_number": 3,
+    "function_signature": "-[PrintdRPCService setLastUsedPrintersForCurrentNetwork:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[PrintdRPCService setLastUsedPrintersForCurrentNetwork:](PrintdRPCService *self, SEL a2, id a3)\n{\n  NSDictionary *v3; // x19\n  os_log_s *v4; // x20\n  uint8_t v5[16]; // [xsp+0h] [xbp-20h] BYREF\n\n  v3 = (NSDictionary *)objc_retain(a3);\n  v4 = (os_log_s *)objc_retainAutoreleasedReturnValue(_PKLogCategory(PKLogCategoryDefault[0]));\n  if ( os_log_type_enabled(v4, OS_LOG_TYPE_DEFAULT) )\n  {\n    *(_WORD *)v5 = 0;\n    _os_log_impl((void *)&_mh_execute_header, v4, OS_LOG_TYPE_DEFAULT, \"setLastUsedPrintersForCurrentNetwork\", v5, 2u);\n  }\n  objc_release(v4);\n  liteAddPrinterForCurrentNetwork(v3);\n  objc_release(v3);\n}"
+}

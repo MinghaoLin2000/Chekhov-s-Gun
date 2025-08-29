@@ -1,0 +1,6 @@
+{
+    "function_name": "_mktime",
+    "function_argument_number": 1,
+    "function_signature": "_mktime(tm * a1)",
+    "pseudocode": "time_t __cdecl mktime(tm *a1)\n{\n  return _mktime(a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_setAssociatedObject",
+    "function_argument_number": 4,
+    "function_signature": "_objc_setAssociatedObject(id object, const void * key, id value, void * policy)",
+    "pseudocode": "void __cdecl objc_setAssociatedObject(id object, const void *key, id value, void *policy)\n{\n  _objc_setAssociatedObject(object, key, value, policy);\n}"
+}

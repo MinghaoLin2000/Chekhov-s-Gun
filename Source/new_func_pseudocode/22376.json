@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECAPHelperApp _stealKeyFocusWithOptions:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ECAPHelperApp _stealKeyFocusWithOptions:](ECAPHelperApp * self, SEL a2, unsigned int a3)",
+    "pseudocode": "int __cdecl -[ECAPHelperApp _stealKeyFocusWithOptions:](ECAPHelperApp *self, SEL a2, unsigned int a3)\n{\n  return 0;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z13validate_enumI9ipp_res_ehET_T0_",
+    "function_argument_number": 1,
+    "function_signature": "__Z13validate_enumI9ipp_res_ehET_T0_(int a1)",
+    "pseudocode": "__int64 __fastcall validate_enum<ipp_res_e,unsigned char>(int a1)\n{\n  if ( a1 == 3 )\n    return 3LL;\n  else\n    return 4LL;\n}"
+}

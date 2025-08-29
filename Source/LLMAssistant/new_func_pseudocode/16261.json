@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPStringTmapDatabaseFilePath",
+    "function_argument_number": 0,
+    "function_signature": "_UARPStringTmapDatabaseFilePath()",
+    "pseudocode": "id UARPStringTmapDatabaseFilePath()\n{\n  void *v0; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  if ( qword_100041E48 != -1 )\n    dispatch_once(&qword_100041E48, &stru_100031060);\n  v0 = (void *)qword_100041E40;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_retainAutoreleaseReturnValue(v0);\n}"
+}

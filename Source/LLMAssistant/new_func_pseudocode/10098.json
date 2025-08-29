@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP24DataUploadStatus_IsValidEi",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP24DataUploadStatus_IsValidEi(TSP * this, int a2)",
+    "pseudocode": "bool __fastcall TSP::DataUploadStatus_IsValid(TSP *this)\n{\n  return (unsigned int)this < 6;\n}"
+}

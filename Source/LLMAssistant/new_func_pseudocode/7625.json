@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE3newyAbC13CGSConnectionVFZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE3newyAbC13CGSConnectionVFZ()",
+    "pseudocode": "// attributes: thunk\n__int64 static SLSTransactionRef.new(_:)()\n{\n  return _SLSTransactionCreate();\n}"
+}

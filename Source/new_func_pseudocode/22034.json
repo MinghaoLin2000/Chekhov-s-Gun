@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__117bad_function_callD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__117bad_function_callD0Ev(std::bad_function_call * this)",
+    "pseudocode": "void __cdecl std::bad_function_call::~bad_function_call(std::bad_function_call *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  std::exception::~exception(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x81C40B8603338LL);\n}"
+}

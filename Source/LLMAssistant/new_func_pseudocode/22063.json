@@ -1,0 +1,6 @@
+{
+    "function_name": "_CopyPropertyAsData",
+    "function_argument_number": 2,
+    "function_signature": "_CopyPropertyAsData(const __CFString * a1, CFDataRef * a2)",
+    "pseudocode": "__int64 __fastcall CopyPropertyAsData(const __CFString *a1, CFDataRef *a2)\n{\n  io_registry_entry_t v4; // w0\n  io_object_t v5; // w19\n  const __CFData *CFProperty; // x0\n  const __CFData *v7; // x22\n  CFTypeID v8; // x23\n  __int64 v9; // x20\n  os_log_s *v10; // x19\n\n  if ( a1 && a2 )\n  {\n    v4 = sub_10000420C();\n    if ( v4 )\n    {\n      v5 = v4;\n      CFProperty = (const __CFData *)IORegistryEntryCreateCFProperty(v4, a1, kCFAllocatorDefault, 0);\n      if ( CFProperty )\n      {\n        v7 = CFProperty;\n        v8 = CFGetTypeID(CFProperty);\n        if ( v8 == CFDataGetTypeID() )\n          *a2 = CFDataCreateCopy(kCFAllocatorDefault, v7);\n        CFRelease(v7);\n        v9 = 0LL;\n      }\n      else\n      {\n        v9 = 4294967294LL;\n      }\n      IOObjectRelease(v5);\n    }\n    else\n    {\n      return 0LL;\n    }\n  }\n  else\n  {\n    v10 = (os_log_s *)LogCategory_Unspecified();\n    if ( os_log_type_enabled(v10, OS_LOG_TYPE_ERROR) )\n      sub_100006634(v10);\n    return 4LL;\n  }\n  return v9;\n}"
+}

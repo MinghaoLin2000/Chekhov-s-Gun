@@ -1,0 +1,6 @@
+{
+    "function_name": "___36-[CGPDFDocumentImpl getIsEncrypted:]_block_invoke",
+    "function_argument_number": 1,
+    "function_signature": "___36-[CGPDFDocumentImpl getIsEncrypted:]_block_invoke(__int64 a1)",
+    "pseudocode": "__int64 __fastcall __36__CGPDFDocumentImpl_getIsEncrypted___block_invoke(__int64 a1)\n{\n  __int64 v1; // x19\n  _BOOL8 IsEncrypted; // x1\n  __int64 (__fastcall *v3)(__int64, _BOOL8); // x3\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = *(_QWORD *)(a1 + 40);\n  IsEncrypted = CGPDFDocumentIsEncrypted(*(CGPDFDocumentRef *)(*(_QWORD *)(a1 + 32) + 24LL));\n  v3 = *(__int64 (__fastcall **)(__int64, _BOOL8))(v1 + 16);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return v3(v1, IsEncrypted);\n}"
+}

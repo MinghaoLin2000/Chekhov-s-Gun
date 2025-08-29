@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLXPCCopyCFObjectForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLXPCCopyCFObjectForKey()",
+    "pseudocode": "__int64 _QLXPCCopyCFObjectForKey()\n{\n  return __QLXPCCopyCFObjectForKey();\n}"
+}

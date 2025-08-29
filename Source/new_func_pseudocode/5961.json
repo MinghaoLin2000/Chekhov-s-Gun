@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService .cxx_destruct](_TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SiriSuggestionsBookkeepingService .cxx_destruct](\n        _TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService *self,\n        SEL a2)\n{\n  sub_1000050E4(\n    (char *)self\n  + OBJC_IVAR____TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService_suggestionsLoggerFactory);\n  sub_1000050E4(\n    (char *)self\n  + OBJC_IVAR____TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService_featureServiceFactory);\n  sub_1000050E4(\n    (char *)self\n  + OBJC_IVAR____TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService_featureFlagProvider);\n  sub_1000050E4((char *)self + OBJC_IVAR____TtC33SiriSuggestionsBookkeepingService33SiriSuggestionsBookkeepingService_accountService);\n}"
+}

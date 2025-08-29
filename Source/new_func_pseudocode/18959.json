@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeViewController setView:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeViewController setView:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeViewController setView:](RemoteViewBridgeViewController *self, SEL a2, id a3)\n{\n  id v4; // x20\n  id v5; // x19\n  double v6; // d0\n  double v7; // d0\n  objc_super v8; // [xsp+0h] [xbp-30h] BYREF\n\n  v4 = objc_retain(a3);\n  v8.receiver = self;\n  v8.super_class = (Class)&OBJC_CLASS___RemoteViewBridgeViewController;\n  -[RemoteViewBridgeViewController setView:](&v8, \"setView:\", v4);\n  v5 = objc_retain(v4);\n  LODWORD(v6) = 1132068864;\n  objc_msgSend(v5, \"setContentCompressionResistancePriority:forOrientation:\", 0LL, v6);\n  LODWORD(v7) = 1132068864;\n  objc_msgSend(v5, \"setContentCompressionResistancePriority:forOrientation:\", 1LL, v7);\n  objc_release(v5);\n  objc_release(v5);\n}"
+}

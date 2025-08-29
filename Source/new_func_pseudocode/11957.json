@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10VerifyUTF8ENS0_11StringPieceEPKc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal10VerifyUTF8ENS0_11StringPieceEPKc(google::protobuf::internal * a1, const char * a2, google::protobuf::internal * a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::VerifyUTF8(\n        google::protobuf::internal *a1,\n        const char *a2,\n        google::protobuf::internal *a3)\n{\n  bool v4; // w3\n  __int64 IsStructurallyValidUTF8; // x20\n\n  IsStructurallyValidUTF8 = google::protobuf::internal::IsStructurallyValidUTF8(a1, a2, (int)a3);\n  if ( (IsStructurallyValidUTF8 & 1) == 0 )\n    google::protobuf::internal::PrintUTF8ErrorLog(a3, \"parsing\", 0LL, v4);\n  return IsStructurallyValidUTF8;\n}"
+}

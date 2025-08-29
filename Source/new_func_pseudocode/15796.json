@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetPayloadHeaderProcess",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformAssetPayloadHeaderProcess(unsigned int * a1, __int64 a2, unsigned int a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetPayloadHeaderProcess(unsigned int *a1, __int64 a2, unsigned int a3)\n{\n  int v6; // w0\n  __int64 v7; // x8\n\n  *(_DWORD *)a2 = uarpNtohl(*a1);\n  *(_DWORD *)(a2 + 4) = a1[1];\n  uarpVersionEndianSwap(a1 + 2, a2 + 8);\n  *(_DWORD *)(a2 + 24) = uarpNtohl(a1[6]);\n  *(_DWORD *)(a2 + 28) = uarpNtohl(a1[7]);\n  *(_DWORD *)(a2 + 32) = uarpNtohl(a1[8]);\n  v6 = uarpNtohl(a1[9]);\n  *(_DWORD *)(a2 + 36) = v6;\n  *(_BYTE *)(a2 + 52) = 0;\n  *(_DWORD *)(a2 + 56) = 0;\n  *(_DWORD *)(a2 + 76) = 0;\n  *(_DWORD *)(a2 + 128) = v6;\n  v7 = 48LL;\n  if ( *(_DWORD *)(a2 + 28) + *(_DWORD *)(a2 + 24) <= a3 )\n  {\n    if ( *(_DWORD *)(a2 + 32) + v6 <= a3 )\n      return 0LL;\n    else\n      return 48LL;\n  }\n  return v7;\n}"
+}

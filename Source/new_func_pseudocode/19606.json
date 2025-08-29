@@ -1,0 +1,6 @@
+{
+    "function_name": "_sigaction",
+    "function_argument_number": 3,
+    "function_signature": "_sigaction(int a1, const sigaction * a2, sigaction * a3)",
+    "pseudocode": "int __cdecl sigaction(int a1, const sigaction *a2, sigaction *a3)\n{\n  return _sigaction(a1, a2, a3);\n}"
+}

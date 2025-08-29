@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSMainConnectionID",
+    "function_argument_number": 0,
+    "function_signature": "_CGSMainConnectionID()",
+    "pseudocode": "__int64 CGSMainConnectionID()\n{\n  return _CGSMainConnectionID();\n}"
+}

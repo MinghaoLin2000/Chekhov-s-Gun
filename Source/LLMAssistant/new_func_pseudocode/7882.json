@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV7addTags_10connectionySo06WindowF0V_AA13CGSConnectionVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV7addTags_10connectionySo06WindowF0V_AA13CGSConnectionVtF(__C::WindowTags _, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "Swift::Void __swiftcall CGSWindow.addTags(_:connection:)(__C::WindowTags _, EyeCandyGraphics::CGSConnection connection)\n{\n  int v2; // w2\n  _DWORD v3[5]; // [xsp+0h] [xbp-30h] BYREF\n  int v4; // [xsp+14h] [xbp-1Ch]\n\n  v3[4] = connection.cid;\n  v4 = v2;\n  WindowTags.asUnsafePointer<A>(_:)((_QWORD *)_.rawValue, sub_10001B18C, v3, _.rawValue, &type metadata for () + 1);\n}"
+}

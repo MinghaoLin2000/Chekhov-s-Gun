@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResult setKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResult setKey:](ModelKeyServerAPIFetchKeyResult * self, SEL a2, int a3)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyResult setKey:](ModelKeyServerAPIFetchKeyResult *self, SEL a2, int a3)\n{\n  *(_BYTE *)&self->_has |= 1u;\n  self->_key = a3;\n}"
+}

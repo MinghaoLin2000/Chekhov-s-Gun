@@ -1,0 +1,6 @@
+{
+    "function_name": "_SFUDeriveAes128Key",
+    "function_argument_number": 7,
+    "function_signature": "_SFUDeriveAes128Key(__int64 a1, unsigned __int64 a2, unsigned int a3, char * a4, __int64 a5, void * a6, size_t a7)",
+    "pseudocode": "__int64 __fastcall SFUDeriveAes128Key(\n        __int64 a1,\n        unsigned __int64 a2,\n        unsigned int a3,\n        char *a4,\n        __int64 a5,\n        void *a6,\n        size_t a7)\n{\n  bool v7; // zf\n  bool v10; // zf\n  int v11; // w27\n  unsigned int v14; // w25\n  int v17; // w23\n  int v18; // w24\n  __int64 v19; // x8\n  void *v20; // x26\n\n  if ( a4 )\n    v7 = a5 == 16;\n  else\n    v7 = 0;\n  v10 = v7 && a1 != 0 && a3 >= 0x3E8 && HIDWORD(a2) == 0;\n  v11 = !v10;\n  if ( v10 )\n  {\n    v14 = a5;\n    v17 = a2;\n    v18 = a1;\n    v19 = a7 + 4;\n    if ( a7 + 4 <= 0x14 )\n      v19 = 20LL;\n    v20 = malloc_type_calloc(1uLL, v19 + 40, 0xA2988ADBuLL);\n    sfu_pbkdf2(sub_100164F2C, 20LL, v18, v17, a6, a7, a3, a4, v14, v20);\n    free(v20);\n  }\n  return v11 ^ 1u;\n}"
+}

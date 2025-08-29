@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_setProperty_nonatomic",
+    "function_argument_number": 4,
+    "function_signature": "_objc_setProperty_nonatomic(id self, SEL _cmd, id newValue, ptrdiff_t offset)",
+    "pseudocode": "void __cdecl objc_setProperty_nonatomic(id self, SEL _cmd, id newValue, ptrdiff_t offset)\n{\n  _objc_setProperty_nonatomic(self, _cmd, newValue, offset);\n}"
+}

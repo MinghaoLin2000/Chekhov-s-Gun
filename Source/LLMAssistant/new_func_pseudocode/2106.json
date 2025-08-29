@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject setLatitude:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPHMediaObject setLatitude:](AMPPHMediaObject * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject setLatitude:](AMPPHMediaObject *self, SEL a2, double a3)\n{\n  self->_latitude = a3;\n}"
+}

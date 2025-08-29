@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceAction _supportsPauseResume]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMLoaderServiceAction _supportsPauseResume](AMLoaderServiceAction * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[AMLoaderServiceAction _supportsPauseResume](AMLoaderServiceAction *self, SEL a2)\n{\n  AMAction *v3; // x19\n  AMAction *v4; // x21\n  unsigned __int8 v5; // w20\n\n  v3 = objc_retainAutoreleasedReturnValue(-[AMLoaderServiceAction _amAction](self, \"_amAction\"));\n  if ( (unsigned int)-[AMAction am_hasOverrideForSelector:](v3, \"am_hasOverrideForSelector:\", \"pause\") )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(-[AMLoaderServiceAction _amAction](self, \"_amAction\"));\n    v5 = (unsigned __int8)-[AMAction am_hasOverrideForSelector:](v4, \"am_hasOverrideForSelector:\", \"resume\");\n    objc_release(v4);\n  }\n  else\n  {\n    v5 = 0;\n  }\n  objc_release(v3);\n  return v5;\n}"
+}

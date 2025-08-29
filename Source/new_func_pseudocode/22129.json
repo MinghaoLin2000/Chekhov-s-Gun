@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN25SandboxExtensionContainerD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN25SandboxExtensionContainerD1Ev(SandboxExtensionContainer * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall SandboxExtensionContainer::~SandboxExtensionContainer(SandboxExtensionContainer *this)\n{\n  __ZN25SandboxExtensionContainerD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_array_get_count",
+    "function_argument_number": 0,
+    "function_signature": "_nw_array_get_count()",
+    "pseudocode": "__int64 nw_array_get_count()\n{\n  return _nw_array_get_count();\n}"
+}

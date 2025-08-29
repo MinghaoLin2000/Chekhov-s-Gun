@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPActiveFirmwareAnalyticsEvent setTransport:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPActiveFirmwareAnalyticsEvent setTransport:](UARPActiveFirmwareAnalyticsEvent * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[UARPActiveFirmwareAnalyticsEvent setTransport:](\n        UARPActiveFirmwareAnalyticsEvent *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_transport = a3;\n}"
+}

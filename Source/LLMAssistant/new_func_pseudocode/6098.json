@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PAMediaConversionServiceResourceURLCollection logMessageSummary]",
+    "function_argument_number": 2,
+    "function_signature": "-[PAMediaConversionServiceResourceURLCollection logMessageSummary](PAMediaConversionServiceResourceURLCollection * self, SEL a2)",
+    "pseudocode": "id __cdecl -[PAMediaConversionServiceResourceURLCollection logMessageSummary](\n        PAMediaConversionServiceResourceURLCollection *self,\n        SEL a2)\n{\n  return -[PAMediaConversionServiceResourceURLCollection logMessageSummaryWithFullPath:](\n           self,\n           \"logMessageSummaryWithFullPath:\",\n           0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFScannerGetContentStream",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFScannerGetContentStream(CGPDFScannerRef scanner)",
+    "pseudocode": "CGPDFContentStreamRef __cdecl CGPDFScannerGetContentStream(CGPDFScannerRef scanner)\n{\n  return _CGPDFScannerGetContentStream(scanner);\n}"
+}

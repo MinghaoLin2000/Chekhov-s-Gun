@@ -1,0 +1,15 @@
+{
+  "entitlement": "com.apple.security.exception.process-info",
+  "capability": "Grants an application the ability to access sensitive information about other running processes on the system, potentially bypassing standard sandbox restrictions or privacy controls that would otherwise restrict such access. This information could include process IDs (PIDs), names, paths, arguments, environment variables, memory usage, and other runtime details.",
+  "reasoning": "The entitlement name 'process-info' directly indicates access to process-related information. The 'exception' prefix suggests that this capability is granted as an override to typical security restrictions, implying that accessing such information is normally restricted. In macOS security architecture, applications are typically sandboxed and restricted from introspecting other processes without explicit permissions or system-level privileges.",
+  "similar_entitlements": [
+    "com.apple.security.cs.debugger",
+    "com.apple.security.get-task-allow",
+    "com.apple.security.sysinfo.app-info"
+  ],
+  "sensitive_type": [
+    3
+  ],
+  "sensitive_reasoning": "This entitlement directly falls under 'Process and Memory Management' (Type 3) because its core capability is 'obtaining sensitive process information'. Accessing such information can be used for reconnaissance, identifying potential vulnerabilities, or preparing for more advanced attacks like process injection or privilege escalation. While it might indirectly touch upon privacy concerns often handled by TCC, its primary function is related to the management and observation of system processes.",
+  "self_reflection": "I am highly confident in the inferred capability, as 'process-info' is quite explicit. The 'exception' part strongly suggests a bypass of standard security measures. I am also confident in classifying it under 'Process and Memory Management' due to the direct match with 'obtaining sensitive process information'. The similar entitlements reinforce this understanding, as they are all related to deep interaction with or observation of other processes. The main potential area for nuance could be whether it also implies TCC bypass (Type 5), but the primary sensitive operation it enables is process introspection, which fits best under Type 3."
+}

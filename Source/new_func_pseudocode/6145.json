@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ClientRequest identifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[ClientRequest identifier](ClientRequest * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[ClientRequest identifier](ClientRequest *self, SEL a2)\n{\n  MediaConversionRequestTracker *requestTracker; // x0\n  NSAssertionHandler *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  requestTracker = self->_requestTracker;\n  if ( !requestTracker )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:](\n      v6,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"PAMediaConversionServiceSharedUtilitiesServiceSide.m\"),\n      143LL,\n      CFSTR(\"Unexpected nil request tracker\"));\n    objc_release(v6);\n    requestTracker = self->_requestTracker;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[MediaConversionRequestTracker requestIdentifier](requestTracker, \"requestIdentifier\");\n}"
+}

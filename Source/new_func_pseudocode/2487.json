@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBackUpSettingsViewController clickManageBackupsButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceBackUpSettingsViewController clickManageBackupsButton:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[DeviceBackUpSettingsViewController clickManageBackupsButton:](\n        DeviceBackUpSettingsViewController *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x19\n  AMPDevicesClient *v5; // x20\n  _QWORD v6[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v7; // [xsp+20h] [xbp-30h] BYREF\n  id location; // [xsp+28h] [xbp-28h] BYREF\n\n  v4 = objc_retain(a3);\n  objc_initWeak(&location, self);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceViewController devicesClient](self, \"devicesClient\"));\n  v6[0] = _NSConcreteStackBlock;\n  v6[1] = 3254779904LL;\n  v6[2] = sub_10005C040;\n  v6[3] = &unk_1000B8DC8;\n  objc_copyWeak(&v7, &location);\n  -[AMPDevicesClient fetchAllBackupsWithReply:](v5, \"fetchAllBackupsWithReply:\", v6);\n  objc_release(v5);\n  objc_destroyWeak(&v7);\n  objc_destroyWeak(&location);\n  objc_release(v4);\n}"
+}

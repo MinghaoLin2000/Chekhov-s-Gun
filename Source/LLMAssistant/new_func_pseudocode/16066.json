@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformAssetFindByAssetContextAndList",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformAssetFindByAssetContextAndList(__int64 result, __int64 a2, int a3)",
+    "pseudocode": "__int64 __fastcall uarpPlatformAssetFindByAssetContextAndList(__int64 result, __int64 a2, int a3)\n{\n  if ( result )\n  {\n    for ( result = *(_QWORD *)(result + 568); result; result = *(_QWORD *)(result + 712) )\n    {\n      if ( *(_DWORD *)(result + 304) == a3 && *(_QWORD *)(result + 704) == a2 )\n        break;\n    }\n  }\n  return result;\n}"
+}

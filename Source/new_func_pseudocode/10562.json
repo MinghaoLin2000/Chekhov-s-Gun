@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP39LargeStringArraySegment_OptionalElement5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP39LargeStringArraySegment_OptionalElement5ClearEv(TSP::LargeStringArraySegment_OptionalElement * this)",
+    "pseudocode": "__int64 __fastcall TSP::LargeStringArraySegment_OptionalElement::Clear(\n        TSP::LargeStringArraySegment_OptionalElement *this)\n{\n  unsigned __int64 v1; // x8\n  __int64 result; // x0\n  char v3; // t1\n\n  if ( (*((_BYTE *)this + 16) & 1) != 0 )\n  {\n    v1 = *((_QWORD *)this + 3) & 0xFFFFFFFFFFFFFFFELL;\n    if ( *(char *)(v1 + 23) < 0 )\n    {\n      **(_BYTE **)v1 = 0;\n      *(_QWORD *)(v1 + 8) = 0LL;\n    }\n    else\n    {\n      *(_BYTE *)v1 = 0;\n      *(_BYTE *)(v1 + 23) = 0;\n    }\n  }\n  v3 = *((_BYTE *)this + 8);\n  result = (__int64)this + 8;\n  *(_DWORD *)(result + 8) = 0;\n  if ( (v3 & 1) != 0 )\n    return sub_10003A2A8(result);\n  return result;\n}"
+}

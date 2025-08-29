@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateWithCStringNoCopy",
+    "function_argument_number": 4,
+    "function_signature": "_CFStringCreateWithCStringNoCopy(CFAllocatorRef alloc, const char * cStr, CFStringEncoding encoding, CFAllocatorRef contentsDeallocator)",
+    "pseudocode": "CFStringRef __cdecl CFStringCreateWithCStringNoCopy(\n        CFAllocatorRef alloc,\n        const char *cStr,\n        CFStringEncoding encoding,\n        CFAllocatorRef contentsDeallocator)\n{\n  return _CFStringCreateWithCStringNoCopy(alloc, cStr, encoding, contentsDeallocator);\n}"
+}

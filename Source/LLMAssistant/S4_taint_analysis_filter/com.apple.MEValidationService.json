@@ -1,0 +1,12 @@
+{
+  "_CFURLEnumeratorCreateForDirectoryURL": 4294981584,
+  "_CFStringCreateWithFileSystemRepresentation": 4294981408,
+  "_open": 4294981856,
+  "_close": 4294981760,
+  "_CFURLEnumeratorGetNextURL": 4294981600,
+  "_realpath$DARWIN_EXTSN": 4294981888,
+  "_setenv": 4294981936,
+  "_fcntl": 4294981808,
+  "_CFURLCreateFromFileSystemRepresentation": 4294981568,
+  "_CFURLCopyFileSystemPath": 4294981488
+}

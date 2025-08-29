@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPCryptoComponentWriteChannel _writeData:isDecryptedData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPCryptoComponentWriteChannel _writeData:isDecryptedData:](int a1, int a2, dispatch_data_t data)",
+    "pseudocode": "void __cdecl -[TSPCryptoComponentWriteChannel _writeData:isDecryptedData:](\n        TSPCryptoComponentWriteChannel *self,\n        SEL a2,\n        id a3,\n        bool a4)\n{\n  _QWORD v4[5]; // [xsp+0h] [xbp-30h] BYREF\n  bool v5; // [xsp+28h] [xbp-8h]\n\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_100019BB8;\n  v4[3] = &unk_1001D2130;\n  v4[4] = self;\n  v5 = a4;\n  dispatch_data_apply((dispatch_data_t)a3, v4);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPreferencesGetAppIntegerValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFPreferencesGetAppIntegerValue(CFStringRef key, CFStringRef applicationID, Boolean * keyExistsAndHasValidFormat)",
+    "pseudocode": "CFIndex __cdecl CFPreferencesGetAppIntegerValue(\n        CFStringRef key,\n        CFStringRef applicationID,\n        Boolean *keyExistsAndHasValidFormat)\n{\n  return _CFPreferencesGetAppIntegerValue(key, applicationID, keyExistsAndHasValidFormat);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSPointerArray tsu_indexOfPointer:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSPointerArray tsu_indexOfPointer:](NSPointerArray * self, SEL a2, void * a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSPointerArray tsu_indexOfPointer:](NSPointerArray *self, SEL a2, void *a3)\n{\n  unsigned __int64 v3; // x19\n  _QWORD v5[6]; // [xsp+0h] [xbp-60h] BYREF\n  __int64 v6; // [xsp+30h] [xbp-30h] BYREF\n  __int64 *v7; // [xsp+38h] [xbp-28h]\n  __int64 v8; // [xsp+40h] [xbp-20h]\n  __int64 v9; // [xsp+48h] [xbp-18h]\n\n  v6 = 0LL;\n  v7 = &v6;\n  v8 = 0x2020000000LL;\n  v9 = 0x7FFFFFFFFFFFFFFFLL;\n  v5[0] = _NSConcreteStackBlock;\n  v5[1] = 3254779904LL;\n  v5[2] = sub_100120320;\n  v5[3] = &unk_1001DC3B8;\n  v5[4] = &v6;\n  v5[5] = a3;\n  -[NSPointerArray tsu_enumerateNonNullPointersUsingBlock:](self, \"tsu_enumerateNonNullPointersUsingBlock:\", v5);\n  v3 = v7[3];\n  _Block_object_dispose(&v6, 8);\n  return v3;\n}"
+}

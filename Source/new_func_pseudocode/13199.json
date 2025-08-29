@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipInflateInputStream dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipInflateInputStream dealloc](SFUZipInflateInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUZipInflateInputStream dealloc](SFUZipInflateInputStream *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  inflateEnd(&self->mStream);\n  objc_release(self->mInput);\n  free(self->mOutBuffer);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___SFUZipInflateInputStream;\n  -[SFUZipInflateInputStream dealloc](&v3, \"dealloc\");\n}"
+}

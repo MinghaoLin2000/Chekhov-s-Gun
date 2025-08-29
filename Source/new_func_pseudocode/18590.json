@@ -1,0 +1,6 @@
+{
+    "function_name": "$s14OrientationKeyVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s14OrientationKeyVMa()",
+    "pseudocode": "ValueMetadata *_s14OrientationKeyVMa()\n{\n  return &_s14OrientationKeyVN;\n}"
+}

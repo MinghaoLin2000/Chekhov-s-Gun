@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController episodeActionFromTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsTVShowsViewController episodeActionFromTag:](DeviceSettingsTVShowsViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceSettingsTVShowsViewController episodeActionFromTag:](\n        DeviceSettingsTVShowsViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  return -[DeviceSettingsTVShowsViewController isUnwatchedTag:](self, \"isUnwatchedTag:\", a3);\n}"
+}

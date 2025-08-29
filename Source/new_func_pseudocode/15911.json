@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpAssetQueueSolicitation",
+    "function_argument_number": 3,
+    "function_signature": "_uarpAssetQueueSolicitation(__int64 a2, _DWORD * a3, __int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpAssetQueueSolicitation(__int64 a1, __int64 a2, _DWORD *a3)\n{\n  __int64 v5; // x22\n  unsigned __int64 v6; // x21\n\n  if ( !*(_QWORD *)(a2 + 80) )\n    return 1LL;\n  if ( !*(_WORD *)(a2 + 28) )\n    return 2LL;\n  v5 = 0LL;\n  v6 = 0LL;\n  while ( (unsigned int)uarpAssetTagIsValid(*(_QWORD *)(a2 + 80) + v5) == 1 )\n  {\n    ++v6;\n    v5 += 4LL;\n    if ( v6 >= *(unsigned __int16 *)(a2 + 28) )\n      return 2LL;\n  }\n  *(_DWORD *)(*(_QWORD *)(a2 + 80) + 4 * v6) = *a3;\n  return v6 == 0;\n}"
+}

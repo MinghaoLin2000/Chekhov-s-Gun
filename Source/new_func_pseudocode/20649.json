@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_parameters_set_attributed_bundle_identifier",
+    "function_argument_number": 0,
+    "function_signature": "_nw_parameters_set_attributed_bundle_identifier()",
+    "pseudocode": "__int64 nw_parameters_set_attributed_bundle_identifier()\n{\n  return _nw_parameters_set_attributed_bundle_identifier();\n}"
+}

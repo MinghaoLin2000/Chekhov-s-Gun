@@ -1,0 +1,6 @@
+{
+    "function_name": "_AuthorizationFree",
+    "function_argument_number": 2,
+    "function_signature": "_AuthorizationFree(AuthorizationRef authorization, AuthorizationFlags flags)",
+    "pseudocode": "OSStatus __cdecl AuthorizationFree(AuthorizationRef authorization, AuthorizationFlags flags)\n{\n  return _AuthorizationFree(authorization, flags);\n}"
+}

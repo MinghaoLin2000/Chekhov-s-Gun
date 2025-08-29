@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__114__split_bufferIU8__strongP13CGPDFPageImplRNS_9allocatorIS3_EEED2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__114__split_bufferIU8__strongP13CGPDFPageImplRNS_9allocatorIS3_EEED2Ev(__int64 a1)",
+    "pseudocode": "__int64 __fastcall std::__split_buffer<CGPDFPageImpl * {__strong}>::~__split_buffer(__int64 a1)\n{\n  __int64 i; // x8\n  __int64 v3; // x20\n\n  v3 = *(_QWORD *)(a1 + 8);\n  for ( i = *(_QWORD *)(a1 + 16); i != v3; i = *(_QWORD *)(a1 + 16) )\n  {\n    *(_QWORD *)(a1 + 16) = i - 8;\n    objc_release(*(id *)(i - 8));\n  }\n  if ( *(_QWORD *)a1 )\n    operator delete(*(void **)a1);\n  return a1;\n}"
+}

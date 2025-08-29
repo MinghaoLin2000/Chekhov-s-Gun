@@ -1,0 +1,6 @@
+{
+    "function_name": "_IOServiceAddMatchingNotification",
+    "function_argument_number": 6,
+    "function_signature": "_IOServiceAddMatchingNotification(IONotificationPortRef notifyPort, const char *__attribute__((__org_typedef(io_name_t))) notificationType, CFDictionaryRef matching, IOServiceMatchingCallback callback, void * refCon, io_iterator_t * notification)",
+    "pseudocode": "kern_return_t __cdecl IOServiceAddMatchingNotification(\n        IONotificationPortRef notifyPort,\n        const io_name_t notificationType,\n        CFDictionaryRef matching,\n        IOServiceMatchingCallback callback,\n        void *refCon,\n        io_iterator_t *notification)\n{\n  return _IOServiceAddMatchingNotification(notifyPort, notificationType, matching, callback, refCon, notification);\n}"
+}

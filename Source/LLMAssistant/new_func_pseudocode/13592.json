@@ -1,0 +1,6 @@
+{
+    "function_name": "+[SFUCryptoUtils isEncryptionVersionAndFormatSupportedInPassphraseVerifier:]",
+    "function_argument_number": 3,
+    "function_signature": "+[SFUCryptoUtils isEncryptionVersionAndFormatSupportedInPassphraseVerifier:](id a1, SEL a2, id a3)",
+    "pseudocode": "bool __cdecl +[SFUCryptoUtils isEncryptionVersionAndFormatSupportedInPassphraseVerifier:](id a1, SEL a2, id a3)\n{\n  unsigned __int16 *v4; // x19\n\n  v4 = (unsigned __int16 *)objc_msgSend(a3, \"bytes\");\n  return (unsigned __int64)objc_msgSend(a3, \"length\") >= 4 && (unsigned int)*v4 - 1 <= 1 && v4[1] == 1;\n}"
+}

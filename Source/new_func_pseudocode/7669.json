@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE27spaceTileMoveToSpaceAtIndex_06parentJ05indexyAC8CGSSpaceV_AHs6UInt64VtF",
+    "function_argument_number": 3,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE27spaceTileMoveToSpaceAtIndex_06parentJ05indexyAC8CGSSpaceV_AHs6UInt64VtF(EyeCandyGraphics::CGSSpace _, EyeCandyGraphics::CGSSpace parentSpace, Swift::UInt64 index)",
+    "pseudocode": "Swift::Void __swiftcall SLSTransactionRef.spaceTileMoveToSpaceAtIndex(_:parentSpace:index:)(\n        EyeCandyGraphics::CGSSpace _,\n        EyeCandyGraphics::CGSSpace parentSpace,\n        Swift::UInt64 index)\n{\n  __int64 v3; // x20\n\n  _SLSTransactionSpaceTileMoveToSpaceAtIndex(v3, _.spid, parentSpace.spid, index);\n}"
+}

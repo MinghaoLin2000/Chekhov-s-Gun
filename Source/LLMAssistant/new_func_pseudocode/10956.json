@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilder17OptionInterpreterD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilder17OptionInterpreterD2Ev(google::protobuf::DescriptorBuilder::OptionInterpreter * this)",
+    "pseudocode": "void __fastcall google::protobuf::DescriptorBuilder::OptionInterpreter::~OptionInterpreter(\n        google::protobuf::DescriptorBuilder::OptionInterpreter *this)\n{\n  google::protobuf::DynamicMessageFactory::~DynamicMessageFactory((google::protobuf::DescriptorBuilder::OptionInterpreter *)((char *)this + 72));\n  sub_10009F644((char *)this + 48, *((_QWORD *)this + 7));\n  sub_10009F590((char *)this + 24, *((_QWORD *)this + 4));\n}"
+}

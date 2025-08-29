@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceOptionsIPodViewController setUseSystemVoiceCheckBox:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceOptionsIPodViewController setUseSystemVoiceCheckBox:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceOptionsIPodViewController setUseSystemVoiceCheckBox:](\n        DeviceOptionsIPodViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeWeak((id *)&self->_useSystemVoiceCheckBox, a3);\n}"
+}

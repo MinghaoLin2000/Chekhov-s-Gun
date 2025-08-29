@@ -1,0 +1,30 @@
+Service Path:
+/System/Library/PrivateFrameworks/NotesUI.framework/Versions/A/XPCServices/com.apple.Notes.NotesImporter.xpc/Contents/MacOS/com.apple.Notes.NotesImporter
+
+Service Exported Protocols:
+@protocol NotesImporterProtocol
+- (void)cleanupArchiveId:(NSString *)arg1 completionBlock:(void (^)(void))arg2;
+- (void)unarchiveEvernoteResourceFromArchiveId:(NSString *)arg1 resourceArchiveId:(NSString *)arg2 completionBlock:(void (^)(ICEvernoteResource *))arg3;
+- (void)unarchiveEvernoteNoteFromArchiveId:(NSString *)arg1 noteArchiveId:(NSString *)arg2 completionBlock:(void (^)(ICEvernoteNote *))arg3;
+- (void)archiveEvernoteNotesFromBookmarkData:(NSData *)arg1 completionBlock:(void (^)(NSArray *, NSError *))arg2;
+- (void)parseTitleFromHTMLString:(NSString *)arg1 completionBlock:(void (^)(NSString *))arg2;
+- (void)countEvernoteNotesFromBookmarkData:(NSData *)arg1 completionBlock:(void (^)(unsigned long long))arg2;
+- (void)parseHTMLStringFromEvernoteContentString:(NSString *)arg1 completionBlock:(void (^)(NSString *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.security.restricted-application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.notes.import
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.application-groups
+	[Value]
+		[Array]
+			[String] group.com.apple.notes.import
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true

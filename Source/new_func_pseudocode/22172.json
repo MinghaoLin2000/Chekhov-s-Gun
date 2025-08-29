@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFArrayCreateMutable",
+    "function_argument_number": 3,
+    "function_signature": "_CFArrayCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFArrayCallBacks * callBacks)",
+    "pseudocode": "CFMutableArrayRef __cdecl CFArrayCreateMutable(\n        CFAllocatorRef allocator,\n        CFIndex capacity,\n        const CFArrayCallBacks *callBacks)\n{\n  return _CFArrayCreateMutable(allocator, capacity, callBacks);\n}"
+}

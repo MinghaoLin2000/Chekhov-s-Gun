@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14EncryptionInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP14EncryptionInfoD1Ev(TSP::EncryptionInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::EncryptionInfo::~EncryptionInfo(TSP::EncryptionInfo *this)\n{\n  __ZN3TSP14EncryptionInfoD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFPageGetRotationAngle",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFPageGetRotationAngle(CGPDFPageRef page)",
+    "pseudocode": "int __cdecl CGPDFPageGetRotationAngle(CGPDFPageRef page)\n{\n  return _CGPDFPageGetRotationAngle(page);\n}"
+}

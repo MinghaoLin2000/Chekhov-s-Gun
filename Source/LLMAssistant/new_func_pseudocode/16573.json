@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdateFirmwareAnalyticsEvent downloadStatus]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdateFirmwareAnalyticsEvent downloadStatus](UARPUpdateFirmwareAnalyticsEvent * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[UARPUpdateFirmwareAnalyticsEvent downloadStatus](\n        UARPUpdateFirmwareAnalyticsEvent *self,\n        SEL a2)\n{\n  return self->_downloadStatus;\n}"
+}

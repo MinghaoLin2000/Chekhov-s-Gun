@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsTVShowsViewController removeMesssageTextFormat]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsTVShowsViewController removeMesssageTextFormat](DeviceSettingsTVShowsViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsTVShowsViewController removeMesssageTextFormat](\n        DeviceSettingsTVShowsViewController *self,\n        SEL a2)\n{\n  return -[DeviceViewController deviceStringForStringParameterizedKey:](\n           self,\n           \"deviceStringForStringParameterizedKey:\",\n           CFSTR(\"ConfirmDisableSyncTVShows %@\"));\n}"
+}

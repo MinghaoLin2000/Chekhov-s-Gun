@@ -1,0 +1,6 @@
+{
+    "function_name": "_PBReaderPlaceMark",
+    "function_argument_number": 0,
+    "function_signature": "_PBReaderPlaceMark()",
+    "pseudocode": "__int64 PBReaderPlaceMark()\n{\n  return _PBReaderPlaceMark();\n}"
+}

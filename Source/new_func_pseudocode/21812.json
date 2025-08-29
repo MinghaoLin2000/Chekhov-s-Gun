@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize10SerializerC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN9serialize10SerializerC1Ev(serialize::Serializer * this)",
+    "pseudocode": "_BYTE *__fastcall serialize::Serializer::Serializer(_BYTE *this)\n{\n  *this = 1;\n  return this;\n}"
+}

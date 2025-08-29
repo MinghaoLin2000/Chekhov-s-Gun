@@ -1,0 +1,6 @@
+{
+    "function_name": "_MAPurgeAllExceptGivenIds",
+    "function_argument_number": 0,
+    "function_signature": "_MAPurgeAllExceptGivenIds()",
+    "pseudocode": "__int64 MAPurgeAllExceptGivenIds()\n{\n  return _MAPurgeAllExceptGivenIds();\n}"
+}

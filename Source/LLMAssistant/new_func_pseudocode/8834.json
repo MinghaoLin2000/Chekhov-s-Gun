@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService19AccountObjectHelperVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService19AccountObjectHelperVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for AccountObjectHelper()\n{\n  return &type metadata for AccountObjectHelper;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsu_userInfoWithErrorType:userInfo:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSError tsu_userInfoWithErrorType:userInfo:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "id __cdecl +[NSError tsu_userInfoWithErrorType:userInfo:](id a1, SEL a2, signed __int64 a3, id a4)\n{\n  id v5; // x19\n  void *v6; // x0\n  void *v7; // x21\n  NSNumber *v8; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retain(a4);\n  v6 = objc_msgSend(\n         objc_alloc((Class)&OBJC_CLASS___NSMutableDictionary),\n         \"initWithCapacity:\",\n         (char *)objc_msgSend(v5, \"count\") + 1);\n  v7 = v6;\n  if ( v5 )\n    objc_msgSend(v6, \"addEntriesFromDictionary:\", v5);\n  v8 = objc_retainAutoreleasedReturnValue(+[NSNumber numberWithInteger:](&OBJC_CLASS___NSNumber, \"numberWithInteger:\", a3));\n  objc_msgSend(v7, \"setObject:forKeyedSubscript:\", v8, CFSTR(\"TSUIOErrorType\"));\n  objc_release(v8);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v7);\n}"
+}

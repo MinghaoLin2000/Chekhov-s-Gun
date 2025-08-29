@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSFileTypeForHFSTypeCode",
+    "function_argument_number": 1,
+    "function_signature": "_NSFileTypeForHFSTypeCode(OSType hfsFileTypeCode)",
+    "pseudocode": "NSString *__cdecl NSFileTypeForHFSTypeCode(OSType hfsFileTypeCode)\n{\n  return _NSFileTypeForHFSTypeCode(hfsFileTypeCode);\n}"
+}

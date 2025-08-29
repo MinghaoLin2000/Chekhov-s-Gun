@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetEventTapTimeout",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetEventTapTimeout()",
+    "pseudocode": "__int64 CGSSetEventTapTimeout()\n{\n  return _CGSSetEventTapTimeout();\n}"
+}

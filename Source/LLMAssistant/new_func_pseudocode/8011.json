@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSTransactionSetWindowTransform",
+    "function_argument_number": 0,
+    "function_signature": "_SLSTransactionSetWindowTransform()",
+    "pseudocode": "__int64 SLSTransactionSetWindowTransform()\n{\n  return _SLSTransactionSetWindowTransform();\n}"
+}

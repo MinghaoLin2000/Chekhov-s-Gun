@@ -1,0 +1,6 @@
+{
+    "function_name": "_CTFontCreateWithFontDescriptor",
+    "function_argument_number": 3,
+    "function_signature": "_CTFontCreateWithFontDescriptor(CTFontDescriptorRef descriptor, CGFloat size, const CGAffineTransform * matrix)",
+    "pseudocode": "CTFontRef __cdecl CTFontCreateWithFontDescriptor(\n        CTFontDescriptorRef descriptor,\n        CGFloat size,\n        const CGAffineTransform *matrix)\n{\n  return _CTFontCreateWithFontDescriptor(descriptor, size, matrix);\n}"
+}

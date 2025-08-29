@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode ancestors]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode ancestors](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[DeviceSettingsNode ancestors](DeviceSettingsNode *self, SEL a2)\n{\n  void *v3; // x19\n  DeviceSettingsNode *v4; // x0\n  DeviceSettingsNode *v5; // x20\n  DeviceSettingsNode *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSMutableArray array](&OBJC_CLASS___NSMutableArray, \"array\"));\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsNode parent](self, \"parent\"));\n  if ( v4 )\n  {\n    v5 = v4;\n    do\n    {\n      objc_msgSend(v3, \"addObject:\", v5);\n      v6 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsNode parent](v5, \"parent\"));\n      objc_release(v5);\n      v5 = v6;\n    }\n    while ( v6 );\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return (NSArray *)objc_autoreleaseReturnValue(v3);\n}"
+}

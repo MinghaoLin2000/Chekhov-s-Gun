@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContentStreamCreateWithStream",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFContentStreamCreateWithStream(CGPDFStreamRef stream, CGPDFDictionaryRef streamResources, CGPDFContentStreamRef parent)",
+    "pseudocode": "CGPDFContentStreamRef __cdecl CGPDFContentStreamCreateWithStream(\n        CGPDFStreamRef stream,\n        CGPDFDictionaryRef streamResources,\n        CGPDFContentStreamRef parent)\n{\n  return _CGPDFContentStreamCreateWithStream(stream, streamResources, parent);\n}"
+}

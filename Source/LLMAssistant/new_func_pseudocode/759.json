@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsInfoViewController viewDidLoad]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsInfoViewController viewDidLoad](DeviceSettingsInfoViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsInfoViewController viewDidLoad](DeviceSettingsInfoViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceSettingsInfoViewController;\n  -[DeviceSettingsViewController viewDidLoad](&v3, \"viewDidLoad\");\n  -[DeviceSettingsInfoViewController loadContactsViewController](self, \"loadContactsViewController\");\n  -[DeviceSettingsInfoViewController loadCalendarViewController](self, \"loadCalendarViewController\");\n  -[DeviceSettingsInfoViewController loadAdvancedViewController](self, \"loadAdvancedViewController\");\n}"
+}

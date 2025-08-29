@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceLocalServiceViewController remoteViewSizeChanged:transaction:]",
+    "function_argument_number": 4,
+    "function_signature": "-[DeviceLocalServiceViewController remoteViewSizeChanged:transaction:](DeviceLocalServiceViewController * self, SEL a2, id a4, CGSize a3)",
+    "pseudocode": "bool __cdecl -[DeviceLocalServiceViewController remoteViewSizeChanged:transaction:](\n        DeviceLocalServiceViewController *self,\n        SEL a2,\n        CGSize a3,\n        id a4)\n{\n  return 1;\n}"
+}

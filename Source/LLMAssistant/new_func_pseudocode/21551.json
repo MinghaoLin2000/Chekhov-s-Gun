@@ -1,0 +1,6 @@
+{
+    "function_name": "+[LSRConnection _cancelCooldownTimer]",
+    "function_argument_number": 2,
+    "function_signature": "+[LSRConnection _cancelCooldownTimer](id a1, SEL a2)",
+    "pseudocode": "void __cdecl +[LSRConnection _cancelCooldownTimer](id a1, SEL a2)\n{\n  dispatch_source_s *v2; // x20\n  os_log_s *v3; // x19\n  void *v4; // x0\n  int v5; // [xsp+0h] [xbp-40h] BYREF\n  const char *v6; // [xsp+4h] [xbp-3Ch]\n\n  dispatch_assert_queue_V2((dispatch_queue_t)qword_100065418);\n  v2 = (dispatch_source_s *)qword_100065478;\n  if ( qword_100065478 )\n  {\n    v3 = (os_log_s *)SFLogConnection;\n    if ( os_log_type_enabled(SFLogConnection, OS_LOG_TYPE_DEBUG) )\n    {\n      v5 = 136315138;\n      v6 = \"+[LSRConnection _cancelCooldownTimer]\";\n      _os_log_debug_impl(\n        (void *)&_mh_execute_header,\n        v3,\n        OS_LOG_TYPE_DEBUG,\n        \"%s _cancelCooldownTimer\",\n        (uint8_t *)&v5,\n        0xCu);\n      v2 = (dispatch_source_s *)qword_100065478;\n    }\n    dispatch_source_cancel(v2);\n    v4 = (void *)qword_100065478;\n    qword_100065478 = 0LL;\n    objc_release(v4);\n  }\n}"
+}

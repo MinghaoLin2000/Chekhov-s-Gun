@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_main",
+    "function_argument_number": 1,
+    "function_signature": "_xpc_main(xpc_connection_handler_t handler)",
+    "pseudocode": "void __cdecl __noreturn xpc_main(xpc_connection_handler_t handler)\n{\n  _xpc_main(handler);\n}"
+}

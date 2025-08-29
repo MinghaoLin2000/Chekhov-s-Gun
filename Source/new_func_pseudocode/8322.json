@@ -1,0 +1,6 @@
+{
+    "function_name": "$s39com_apple_AppStoreDaemon_StoreUIService19ResourceBundleClassCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s39com_apple_AppStoreDaemon_StoreUIService19ResourceBundleClassCMa()",
+    "pseudocode": "__int64 type metadata accessor for ResourceBundleClass()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC39com_apple_AppStoreDaemon_StoreUIServiceP33_6EC768303E3E243A8A361EC68627521619ResourceBundleClass);\n}"
+}

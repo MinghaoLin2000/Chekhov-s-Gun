@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper9SaveStageOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper9SaveStageOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for SaveStage()\n{\n  return &type metadata for SaveStage;\n}"
+}

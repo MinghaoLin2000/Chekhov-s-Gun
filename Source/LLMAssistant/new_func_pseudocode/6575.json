@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker shouldDump]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionRequestTracker shouldDump](MediaConversionRequestTracker * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[MediaConversionRequestTracker shouldDump](MediaConversionRequestTracker *self, SEL a2)\n{\n  NSUserDefaults *v2; // x19\n  unsigned __int8 v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(+[NSUserDefaults standardUserDefaults](&OBJC_CLASS___NSUserDefaults, \"standardUserDefaults\"));\n  v3 = -[NSUserDefaults boolForKey:](v2, \"boolForKey:\", CFSTR(\"MediaConversionServiceKeepTemporaryFiles\"));\n  objc_release(v2);\n  return v3;\n}"
+}

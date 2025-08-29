@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSLocalizedFileSizeDescription",
+    "function_argument_number": 0,
+    "function_signature": "_NSLocalizedFileSizeDescription()",
+    "pseudocode": "__int64 NSLocalizedFileSizeDescription()\n{\n  return _NSLocalizedFileSizeDescription();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf11DoubleValue8CopyFromERKNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf11DoubleValue8CopyFromERKNS0_7MessageE(google::protobuf::DoubleValue * this, const google::protobuf::Message * lpsrc)",
+    "pseudocode": "double *__fastcall google::protobuf::DoubleValue::CopyFrom(double *this, const google::protobuf::Message *lpsrc)\n{\n  __int64 v2; // x30\n  google::protobuf::DoubleValue *v4; // x20\n  double *v5; // x0\n  char v6; // t1\n\n  if ( lpsrc != (const google::protobuf::Message *)this )\n  {\n    v4 = (google::protobuf::DoubleValue *)this;\n    v6 = *((_BYTE *)this + 8);\n    v5 = this + 1;\n    v5[1] = 0.0;\n    if ( (v6 & 1) != 0 )\n      sub_10003A2A8(v5);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::DoubleValue::MergeFrom(v4, lpsrc);\n  }\n  return this;\n}"
+}

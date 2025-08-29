@@ -1,0 +1,5 @@
+@protocol _TtP14DendriteIngest21IngestServiceProtocol_
+- (void)fetchWithId:(long long)arg1 completionHandler:(void (^)(_TtC8Dendrite14DEStagingEntry *, NSError *))arg2;
+- (void)saveWithEvent:(NSData *)arg1 completionHandler:(void (^)(long long, NSError *))arg2;
+- (void)ingestWithCompletionHandler:(void (^)(NSError *))arg1;
+@end

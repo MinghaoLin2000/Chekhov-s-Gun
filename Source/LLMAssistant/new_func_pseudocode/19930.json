@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t set_cancel_flag]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t set_cancel_flag](lite_job_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[lite_job_t set_cancel_flag](lite_job_t *self, SEL a2)\n{\n  lite_job_t *v2; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retain(self);\n  objc_sync_enter(v2);\n  (*((void (**)(void))v2->zset_cancel_flag + 2))();\n  objc_sync_exit(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

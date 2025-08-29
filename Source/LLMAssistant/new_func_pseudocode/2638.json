@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsViewController deleteExistingContacts]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsContactsViewController deleteExistingContacts](DeviceSettingsContactsViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsContactsViewController deleteExistingContacts](\n        DeviceSettingsContactsViewController *self,\n        SEL a2)\n{\n  return self->_deleteExistingContacts;\n}"
+}

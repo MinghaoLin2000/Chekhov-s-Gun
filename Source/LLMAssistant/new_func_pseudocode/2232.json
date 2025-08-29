@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsViewController reloadModel]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsCalendarsViewController reloadModel](DeviceSettingsCalendarsViewController * self, SEL a2)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceSettingsCalendarsViewController reloadModel](DeviceSettingsCalendarsViewController *self, SEL a2)\n{\n  -[DeviceSettingsCalendarsViewController loadModel](self, \"loadModel\");\n}"
+}

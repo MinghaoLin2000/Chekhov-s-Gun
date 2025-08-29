@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUNoCopyDictionary classForKeyedUnarchiver]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSUNoCopyDictionary classForKeyedUnarchiver](id a1, SEL a2)",
+    "pseudocode": "Class __cdecl +[TSUNoCopyDictionary classForKeyedUnarchiver](id a1, SEL a2)\n{\n  return (Class)objc_opt_class(&OBJC_CLASS___NSMutableDictionary);\n}"
+}

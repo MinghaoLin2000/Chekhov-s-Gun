@@ -1,0 +1,6 @@
+{
+    "function_name": "-[platform_http_t documentCompression]",
+    "function_argument_number": 2,
+    "function_signature": "-[platform_http_t documentCompression](platform_http_t * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[platform_http_t documentCompression](platform_http_t *self, SEL a2)\n{\n  return (NSString *)objc_getProperty(self, a2, 80LL, 1);\n}"
+}

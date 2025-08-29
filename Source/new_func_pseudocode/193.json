@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_alloc",
+    "function_argument_number": 1,
+    "function_signature": "_objc_alloc(Class a1)",
+    "pseudocode": "id __cdecl objc_alloc(Class a1)\n{\n  return _objc_alloc(a1);\n}"
+}

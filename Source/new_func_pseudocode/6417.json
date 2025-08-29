@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoTranscodingTask didDetectHang]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoTranscodingTask didDetectHang](VideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[VideoTranscodingTask didDetectHang](VideoTranscodingTask *self, SEL a2)\n{\n  VideoConversionHangDetector *v2; // x19\n  unsigned __int8 v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[VideoTranscodingTask hangDetector](self, \"hangDetector\"));\n  v3 = -[VideoConversionHangDetector didDetectHang](v2, \"didDetectHang\");\n  objc_release(v2);\n  return v3;\n}"
+}

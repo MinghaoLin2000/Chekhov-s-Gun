@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataV10CodingKeysOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JetpackMetadata.CodingKeys()\n{\n  return &type metadata for JetpackMetadata.CodingKeys;\n}"
+}

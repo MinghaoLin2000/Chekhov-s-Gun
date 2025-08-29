@@ -1,0 +1,5 @@
+__QLThumbnailRequestFillXPCRepresentation
+__int64 _QLThumbnailRequestFillXPCRepresentation()
+{
+  return __QLThumbnailRequestFillXPCRepresentation();
+}

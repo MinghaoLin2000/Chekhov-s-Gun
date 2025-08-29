@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP19DatabaseDataArchiveD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP19DatabaseDataArchiveD1Ev(TSP::DatabaseDataArchive * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::DatabaseDataArchive::~DatabaseDataArchive(TSP::DatabaseDataArchive *this)\n{\n  __ZN3TSP19DatabaseDataArchiveD2Ev(this);\n}"
+}

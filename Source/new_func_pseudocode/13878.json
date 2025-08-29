@@ -1,0 +1,6 @@
+{
+    "function_name": "_strtoul",
+    "function_argument_number": 3,
+    "function_signature": "_strtoul(const char * __str, char ** __endptr, int __base)",
+    "pseudocode": "unsigned __int64 __cdecl strtoul(const char *__str, char **__endptr, int __base)\n{\n  return _strtoul(__str, __endptr, __base);\n}"
+}

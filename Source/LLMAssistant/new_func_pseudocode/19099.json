@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromPoint",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromPoint(NSPoint aPoint)",
+    "pseudocode": "NSString *__cdecl NSStringFromPoint(NSPoint aPoint)\n{\n  return _NSStringFromPoint(aPoint);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[deviceInfo setProdFused:]",
+    "function_argument_number": 3,
+    "function_signature": "-[deviceInfo setProdFused:](deviceInfo * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[deviceInfo setProdFused:](deviceInfo *self, SEL a2, bool a3)\n{\n  self->prodFused = a3;\n}"
+}

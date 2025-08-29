@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_opt_new",
+    "function_argument_number": 0,
+    "function_signature": "_objc_opt_new()",
+    "pseudocode": "__int64 objc_opt_new()\n{\n  return _objc_opt_new();\n}"
+}

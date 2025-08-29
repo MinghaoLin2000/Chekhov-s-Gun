@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition19EARSpeechRecognizer setExtraLmList:sandboxExtensions:]",
+    "function_argument_number": 4,
+    "function_signature": "-[_TtC22localspeechrecognition19EARSpeechRecognizer setExtraLmList:sandboxExtensions:](_TtC22localspeechrecognition19EARSpeechRecognizer * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[EARSpeechRecognizer setExtraLmList:sandboxExtensions:](\n        _TtC22localspeechrecognition19EARSpeechRecognizer *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  __int64 v6; // x22\n  __int64 v7; // x19\n  _TtC22localspeechrecognition19EARSpeechRecognizer *v8; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = sub_100041260(a3, &type metadata for String);\n  v7 = sub_100041260(a4, &type metadata for String);\n  v8 = objc_retain(self);\n  sub_10001E93C(v6, v7);\n  objc_release(v8);\n  swift_bridgeObjectRelease(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_bridgeObjectRelease(v7);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[GTPMService .cxx_construct]",
+    "function_argument_number": 2,
+    "function_signature": "-[GTPMService .cxx_construct](id self, SEL a2)",
+    "pseudocode": "id __cdecl -[GTPMService .cxx_construct](id self, SEL a2)\n{\n  *((_DWORD *)self + 12) = -1;\n  *((_QWORD *)self + 7) = 0LL;\n  *((_QWORD *)self + 8) = 0LL;\n  *((_BYTE *)self + 72) = 0;\n  return self;\n}"
+}

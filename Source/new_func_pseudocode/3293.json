@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSInsetRect",
+    "function_argument_number": 3,
+    "function_signature": "_NSInsetRect(CGFloat dX, CGFloat dY, NSRect aRect)",
+    "pseudocode": "NSRect __cdecl NSInsetRect(NSRect aRect, CGFloat dX, CGFloat dY)\n{\n  return _NSInsetRect(aRect, dX, dY);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_pthread_self",
+    "function_argument_number": 0,
+    "function_signature": "_pthread_self()",
+    "pseudocode": "pthread_t pthread_self(void)\n{\n  return _pthread_self();\n}"
+}

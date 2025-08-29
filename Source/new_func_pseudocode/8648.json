@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue setHalfTargetHits:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MXMTargetQueue setHalfTargetHits:](MXMTargetQueue * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[MXMTargetQueue setHalfTargetHits:](MXMTargetQueue *self, SEL a2, signed __int64 a3)\n{\n  self->_halfTargetHits = a3;\n}"
+}

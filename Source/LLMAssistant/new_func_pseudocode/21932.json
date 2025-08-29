@@ -1,0 +1,6 @@
+{
+    "function_name": "_xpc_dictionary_set_double",
+    "function_argument_number": 3,
+    "function_signature": "_xpc_dictionary_set_double(xpc_object_t xdict, const char * key, double value)",
+    "pseudocode": "void __cdecl xpc_dictionary_set_double(xpc_object_t xdict, const char *key, double value)\n{\n  _xpc_dictionary_set_double(xdict, key, value);\n}"
+}

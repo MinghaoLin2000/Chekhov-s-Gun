@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12MapFieldBase11SetMapDirtyEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal12MapFieldBase11SetMapDirtyEv(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::MapFieldBase::SetMapDirty(__int64 this)\n{\n  *(_DWORD *)(this + 88) = 0;\n  return this;\n}"
+}

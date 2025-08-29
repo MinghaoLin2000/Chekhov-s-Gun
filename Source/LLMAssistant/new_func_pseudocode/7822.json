@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGSWindowV10connection4type5shape11opaqueShape5flags4tagsAcA13CGSConnectionV_So14CGSBackingTypeVSo11CGRegionRefaAOs5Int32VSo10WindowTagsVtcfC",
+    "function_argument_number": 4,
+    "function_signature": "_$s16EyeCandyGraphics9CGSWindowV10connection4type5shape11opaqueShape5flags4tagsAcA13CGSConnectionV_So14CGSBackingTypeVSo11CGRegionRefaAOs5Int32VSo10WindowTagsVtcfC(void * a3, void * a4, __int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall CGSWindow.init(connection:type:shape:opaqueShape:flags:tags:)(\n        __int64 a1,\n        __int64 a2,\n        void *a3,\n        void *a4)\n{\n  __int64 v6; // x8\n  __int64 v7; // x5\n  unsigned int v9; // [xsp+Ch] [xbp-64h]\n  _BYTE v10[48]; // [xsp+10h] [xbp-60h] BYREF\n  __int64 v11; // [xsp+40h] [xbp-30h]\n\n  sub_10001B228();\n  v11 = v6;\n  WindowTags.asUnsafePointer<A>(_:)(&type metadata for (), sub_10001937C, v10, v7, &type metadata for () + 1);\n  objc_release(a3);\n  objc_release(a4);\n  return v9;\n}"
+}

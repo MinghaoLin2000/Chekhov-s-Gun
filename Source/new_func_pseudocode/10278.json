@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP4Path13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP4Path13IsInitializedEv(TSP::Path * this)",
+    "pseudocode": "__int64 __fastcall TSP::Path::IsInitialized(TSP::Path *this)\n{\n  return sub_10004283C((char *)this + 16);\n}"
+}

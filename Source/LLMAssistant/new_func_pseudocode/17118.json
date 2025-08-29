@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceInstance enqueueOperation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMActionLoaderServiceInstance enqueueOperation:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[AMActionLoaderServiceInstance enqueueOperation:](AMActionLoaderServiceInstance *self, SEL a2, id a3)\n{\n  id v5; // x19\n  NSOperationQueue *v6; // x20\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  if ( v5 )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(-[AMActionLoaderServiceInstance _operationQueue](self, \"_operationQueue\"));\n    -[NSOperationQueue addOperation:](v6, \"addOperation:\", v5);\n  }\n  else\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSAssertionHandler currentHandler](&OBJC_CLASS___NSAssertionHandler, \"currentHandler\"));\n    -[NSOperationQueue handleFailureInMethod:object:file:lineNumber:description:](\n      v6,\n      \"handleFailureInMethod:object:file:lineNumber:description:\",\n      a2,\n      self,\n      CFSTR(\"AMActionLoaderServiceInstance.m\"),\n      215LL,\n      CFSTR(\"Invalid parameter not satisfying: %@\"),\n      CFSTR(\"operation\"));\n  }\n  objc_release(v6);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

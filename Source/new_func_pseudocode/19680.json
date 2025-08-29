@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPPSessionForStreaming initWithBundleIdentifier:clientID:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IPPSessionForStreaming initWithBundleIdentifier:clientID:](int a1, int a2, id a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nIPPSessionForStreaming *__cdecl -[IPPSessionForStreaming initWithBundleIdentifier:clientID:](\n        IPPSessionForStreaming *self,\n        SEL a2,\n        id a3,\n        int a4)\n{\n  __int64 v4; // x20\n  id v6; // x19\n  IPPSessionForStreaming *v7; // x20\n  __int64 v8; // x0\n  OS_os_transaction *transaction; // x8\n  objc_super v11; // [xsp+0h] [xbp-30h] BYREF\n\n  v4 = *(_QWORD *)&a4;\n  v6 = objc_retain(a3);\n  v11.receiver = self;\n  v11.super_class = (Class)&OBJC_CLASS___IPPSessionForStreaming;\n  v7 = -[IPPSession _initWithBundleIdentifier:clientID:completeConfiguraton:](\n         &v11,\n         \"_initWithBundleIdentifier:clientID:completeConfiguraton:\",\n         v6,\n         v4,\n         &stru_100091028);\n  if ( v7 )\n  {\n    v8 = os_transaction_create(\"com.apple.PrintKit.PrinterTool.Spooling\");\n    transaction = v7->_transaction;\n    v7->_transaction = (OS_os_transaction *)v8;\n    objc_release(transaction);\n  }\n  objc_release(v6);\n  return v7;\n}"
+}

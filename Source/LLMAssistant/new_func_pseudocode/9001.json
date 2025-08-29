@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderCMa()",
+    "pseudocode": "__int64 type metadata accessor for RemoteJavaScriptLoader()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoader);\n}"
+}

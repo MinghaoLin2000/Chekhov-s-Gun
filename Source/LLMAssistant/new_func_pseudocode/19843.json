@@ -1,0 +1,6 @@
+{
+    "function_name": "-[job_spool_client_t AttributeFidelity]",
+    "function_argument_number": 2,
+    "function_signature": "-[job_spool_client_t AttributeFidelity](job_spool_client_t * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[job_spool_client_t AttributeFidelity](job_spool_client_t *self, SEL a2)\n{\n  void *v2; // x0\n  void *v3; // x19\n  bool v4; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[PKPrintSettings pageScale](self->_printSettings, \"pageScale\"));\n  v3 = v2;\n  v4 = v2\n    && (((unsigned int)objc_msgSend(v2, \"isEqualToString:\", PKPageScaleUpAndDown) & 1) != 0\n     || (unsigned int)objc_msgSend(v3, \"isEqualToString:\", PKPageScaleOff));\n  objc_release(v3);\n  return v4;\n}"
+}

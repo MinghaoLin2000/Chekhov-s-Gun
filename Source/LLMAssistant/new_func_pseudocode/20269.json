@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t mutableCopy]",
+    "function_argument_number": 2,
+    "function_signature": "-[ipp_t mutableCopy](ipp_t * self, SEL a2)",
+    "pseudocode": "id __cdecl -[ipp_t mutableCopy](ipp_t *self, SEL a2)\n{\n  return -[ipp_t copyWithZone:](self, \"copyWithZone:\", 0LL);\n}"
+}

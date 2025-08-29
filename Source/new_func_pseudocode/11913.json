@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf7Message13SpaceUsedLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf7Message13SpaceUsedLongEv(google::protobuf::Message * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Message::SpaceUsedLong(google::protobuf::Message *this)\n{\n  __int64 v2; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  (*(void (__fastcall **)(google::protobuf::Message *))(*(_QWORD *)this + 152LL))(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return google::protobuf::Reflection::SpaceUsedLong(v2, (__int64)this);\n}"
+}

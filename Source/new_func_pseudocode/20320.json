@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z23liteNotifyClearPasswordP14lite_printer_t",
+    "function_argument_number": 1,
+    "function_signature": "__Z23liteNotifyClearPasswordP14lite_printer_t(lite_printer_t * a1)",
+    "pseudocode": "void __fastcall liteNotifyClearPassword(lite_printer_t *a1)\n{\n  NSURL *v1; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v1 = objc_retainAutoreleasedReturnValue(-[lite_printer_t device_uri](a1, \"device_uri\"));\n  PKStoreAuthInfo(v1, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v1);\n}"
+}

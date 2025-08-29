@@ -1,0 +1,6 @@
+{
+    "function_name": "_generateSHA256HashForDataAtLocationAsData",
+    "function_argument_number": 2,
+    "function_signature": "_generateSHA256HashForDataAtLocationAsData(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall generateSHA256HashForDataAtLocationAsData(__int64 a1, __int64 a2)\n{\n  return generateHashForDataAtLocationAsData(a1, 10LL, a2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE8offsetByyABSo7CGPointVF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE8offsetByyABSo7CGPointVF()",
+    "pseudocode": "id CGRegionRef.offsetBy(_:)()\n{\n  void *v0; // x20\n  id result; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  result = (id)CGRegionCreateWithOffset(v0);\n  if ( !result )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return objc_retain(v0);\n  }\n  return result;\n}"
+}

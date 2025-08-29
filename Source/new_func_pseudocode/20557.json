@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetGrayFillColor",
+    "function_argument_number": 3,
+    "function_signature": "_CGContextSetGrayFillColor(CGContextRef c, CGFloat gray, CGFloat alpha)",
+    "pseudocode": "void __cdecl CGContextSetGrayFillColor(CGContextRef c, CGFloat gray, CGFloat alpha)\n{\n  _CGContextSetGrayFillColor(c, gray, alpha);\n}"
+}

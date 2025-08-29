@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFArrayGetObject",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFArrayGetObject(CGPDFArrayRef array, size_t index, CGPDFObjectRef * value)",
+    "pseudocode": "bool __cdecl CGPDFArrayGetObject(CGPDFArrayRef array, size_t index, CGPDFObjectRef *value)\n{\n  return _CGPDFArrayGetObject(array, index, value);\n}"
+}

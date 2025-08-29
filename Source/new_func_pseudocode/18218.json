@@ -1,0 +1,6 @@
+{
+    "function_name": "-[OSLogService setCallingProcessIdentifierVersion:]",
+    "function_argument_number": 3,
+    "function_signature": "-[OSLogService setCallingProcessIdentifierVersion:](OSLogService * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[OSLogService setCallingProcessIdentifierVersion:](OSLogService *self, SEL a2, unsigned int a3)\n{\n  self->_callingProcessIdentifierVersion = a3;\n}"
+}

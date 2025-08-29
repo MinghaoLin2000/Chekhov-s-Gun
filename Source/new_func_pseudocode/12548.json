@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_rangeCheckedObjectAtIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSArray tsu_rangeCheckedObjectAtIndex:](NSArray * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "id __cdecl -[NSArray tsu_rangeCheckedObjectAtIndex:](NSArray *self, SEL a2, unsigned __int64 a3)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  if ( -[NSArray count](self, \"count\") <= a3 )\n    return 0LL;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[NSArray objectAtIndex:](self, \"objectAtIndex:\", a3);\n}"
+}

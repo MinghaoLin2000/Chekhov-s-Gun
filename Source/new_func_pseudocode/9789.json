@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14EncryptionInfo5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP14EncryptionInfo5ClearEv(TSP::EncryptionInfo * this)",
+    "pseudocode": "__int64 __fastcall TSP::EncryptionInfo::Clear(__int64 this)\n{\n  __int64 v1; // x19\n  __int64 v2; // x20\n  TSP::EncryptionBlockInfo **v3; // x21\n  TSP::EncryptionBlockInfo *v4; // t1\n  __int64 v5; // x19\n  char v6; // t1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v1 = this;\n  v2 = *(unsigned int *)(this + 32);\n  if ( (int)v2 >= 1 )\n  {\n    v3 = (TSP::EncryptionBlockInfo **)(*(_QWORD *)(this + 40) + 8LL);\n    do\n    {\n      v4 = *v3++;\n      this = TSP::EncryptionBlockInfo::Clear(v4);\n      --v2;\n    }\n    while ( v2 );\n    *(_DWORD *)(v1 + 32) = 0;\n  }\n  if ( (*(_BYTE *)(v1 + 16) & 3) != 0 )\n  {\n    *(_QWORD *)(v1 + 48) = 0LL;\n    *(_QWORD *)(v1 + 56) = 0LL;\n  }\n  v6 = *(_BYTE *)(v1 + 8);\n  v5 = v1 + 8;\n  *(_DWORD *)(v5 + 8) = 0;\n  if ( (v6 & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_10003A2A8(v5);\n  }\n  return this;\n}"
+}

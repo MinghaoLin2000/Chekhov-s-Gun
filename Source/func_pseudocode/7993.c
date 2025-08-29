@@ -1,0 +1,5 @@
+_CGSizeCreateDictionaryRepresentation
+CFDictionaryRef __cdecl CGSizeCreateDictionaryRepresentation(CGSize size)
+{
+  return _CGSizeCreateDictionaryRepresentation(size);
+}

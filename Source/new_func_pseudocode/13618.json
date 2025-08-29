@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUAssertionHandler handleFailureInFunction:file:lineNumber:isFatal:format:args:]",
+    "function_argument_number": 8,
+    "function_signature": "+[TSUAssertionHandler handleFailureInFunction:file:lineNumber:isFatal:format:args:](id a1, SEL a2, id a3, id a4, signed __int64 a5, bool a6, id a7, char * a8)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl +[TSUAssertionHandler handleFailureInFunction:file:lineNumber:isFatal:format:args:](\n        id a1,\n        SEL a2,\n        id a3,\n        id a4,\n        signed __int64 a5,\n        bool a6,\n        id a7,\n        char *a8)\n{\n  _BOOL8 v9; // x19\n  void *v13; // x21\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v9 = a6;\n  v13 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSString), \"tsu_initUnRedactedWithFormat:arguments:\", a7, a8);\n  if ( qword_1001F8088 )\n  {\n    (*(void (**)(void))(qword_1001F8088 + 16))();\n  }\n  else if ( qword_1001F80C0 )\n  {\n    objc_msgSend(\n      (id)qword_1001F80C0,\n      \"handleFailureInFunction:file:lineNumber:isFatal:format:message:\",\n      a3,\n      a4,\n      a5,\n      v9,\n      a7,\n      v13);\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v13);\n}"
+}

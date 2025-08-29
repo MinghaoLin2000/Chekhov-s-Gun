@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NDANFHelper popInterest]",
+    "function_argument_number": 2,
+    "function_signature": "-[NDANFHelper popInterest](NDANFHelper * self, SEL a2)",
+    "pseudocode": "void __cdecl -[NDANFHelper popInterest](NDANFHelper *self, SEL a2)\n{\n  ;\n}"
+}

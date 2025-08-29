@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSWindowSetShadowProperties",
+    "function_argument_number": 0,
+    "function_signature": "_CGSWindowSetShadowProperties()",
+    "pseudocode": "__int64 CGSWindowSetShadowProperties()\n{\n  return _CGSWindowSetShadowProperties();\n}"
+}

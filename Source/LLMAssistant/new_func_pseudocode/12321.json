@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal10LogMessageD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal10LogMessageD1Ev(google::protobuf::internal::LogMessage * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::LogMessage::~LogMessage(void **this)\n{\n  if ( *((char *)this + 47) < 0 )\n    operator delete(this[3]);\n}"
+}

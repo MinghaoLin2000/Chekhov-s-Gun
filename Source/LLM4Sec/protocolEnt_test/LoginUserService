@@ -1,0 +1,20 @@
+Service Path:
+/System/Library/PrivateFrameworks/login.framework/Versions/A/XPCServices/LoginUserService.xpc/Contents/MacOS/LoginUserService
+
+Service Exported Protocols:
+@protocol LoginUserServiceProtocol
+- (void)userHasAuthAuthority:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)userCanLoginWithAuthAuthority:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsShadowHash:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsDisabled:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+- (void)authAuthorityContainsBasic:(unsigned int)arg1 onNode:(NSString *)arg2 withReply:(void (^)(_Bool))arg3;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.private.opendirectoryd.identity
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true

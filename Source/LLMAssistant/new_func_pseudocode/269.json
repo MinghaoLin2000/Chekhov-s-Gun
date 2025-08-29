@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_weakAssign",
+    "function_argument_number": 0,
+    "function_signature": "_swift_weakAssign()",
+    "pseudocode": "__int64 swift_weakAssign()\n{\n  return _swift_weakAssign();\n}"
+}

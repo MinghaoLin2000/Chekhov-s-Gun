@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AskUserAlert dismiss:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AskUserAlert dismiss:](AskUserAlert * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[AskUserAlert dismiss:](AskUserAlert *self, SEL a2, signed __int64 a3)\n{\n  __int64 v4; // x8\n  __int64 v5; // x2\n  id v6; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = 1000LL;\n  if ( a3 == 2 )\n    v4 = 1001LL;\n  if ( a3 == 3 )\n    v5 = 1002LL;\n  else\n    v5 = v4;\n  v6 = objc_retainAutoreleasedReturnValue(-[AskUserAlert buttonWithTag:](self, \"buttonWithTag:\", v5));\n  objc_msgSend(v6, \"performClick:\", self);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

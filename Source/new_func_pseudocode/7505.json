@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV10addWindows_12removingFrom10connectionySayAA9CGSWindowVG_So0D11ListOptionsVAA13CGSConnectionVtF",
+    "function_argument_number": 4,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV10addWindows_12removingFrom10connectionySayAA9CGSWindowVG_So0D11ListOptionsVAA13CGSConnectionVtF(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "void __fastcall CGSSpace.addWindows(_:removingFrom:connection:)(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v7; // x23\n  __int64 v8; // x0\n  void *v9; // x20\n\n  if ( *(_QWORD *)(a1 + 16) )\n  {\n    v7 = sub_100002BF4(&unk_100029BE0);\n    v8 = sub_100011A98(v7);\n    v9 = (void *)Collection<>.cfarray.getter(v7, v8);\n    CGSSpaceAddWindowsAndRemoveFromSpaces(a3, a4, v9, a2);\n    objc_release(v9);\n  }\n}"
+}

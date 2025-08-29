@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC9SPIHelper15ServiceDelegate listener:shouldAcceptNewConnection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[_TtC9SPIHelper15ServiceDelegate listener:shouldAcceptNewConnection:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[ServiceDelegate listener:shouldAcceptNewConnection:](\n        _TtC9SPIHelper15ServiceDelegate *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x21\n  _TtC9SPIHelper15ServiceDelegate *v8; // x22\n  id v9; // x20\n  id v10; // x0\n  void *v11; // x20\n  id v12; // x23\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = objc_retain(self);\n  v9 = objc_msgSend(v7, \"processIdentifier\");\n  v10 = objc_allocWithZone((Class)type metadata accessor for SPIHelper(0LL));\n  v11 = (void *)sub_10005E910(v9);\n  v12 = objc_retainAutoreleasedReturnValue(\n          objc_msgSend(\n            (id)objc_opt_self(&OBJC_CLASS___NSXPCInterface),\n            \"interfaceWithProtocol:\",\n            &OBJC_PROTOCOL____TtP9SPIHelper17SPIHelperProtocol_));\n  objc_msgSend(v7, \"setExportedInterface:\", v12);\n  objc_release(v12);\n  objc_msgSend(v7, \"setExportedObject:\", v11);\n  objc_msgSend(v7, \"resume\");\n  objc_release(v6);\n  objc_release(v7);\n  objc_release(v8);\n  objc_release(v11);\n  return 1;\n}"
+}

@@ -1,0 +1,5 @@
+_$s22localspeechrecognition17RequestEndMetricsC33languageModelInterpolationWeightsSSSgvpfi_0
+__int64 _s22localspeechrecognition17RequestEndMetricsC33languageModelInterpolationWeightsSSSgvpfi_0()
+{
+  return 0LL;
+}

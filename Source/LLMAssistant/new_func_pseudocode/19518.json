@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundleService setProtocol:protocol:reply:]",
+    "function_argument_number": 5,
+    "function_signature": "-[IFDBundleService setProtocol:protocol:reply:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[IFDBundleService setProtocol:protocol:reply:](\n        IFDBundleService *self,\n        SEL a2,\n        unsigned int a3,\n        unsigned int a4,\n        id a5)\n{\n  __int64 v6; // x20\n  __int64 v7; // x21\n  IFDBundle *bundle; // x22\n  id v9; // x23\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v6 = *(_QWORD *)&a4;\n  v7 = *(_QWORD *)&a3;\n  bundle = self->_bundle;\n  v9 = objc_retain(a5);\n  (*((void (__fastcall **)(id, void *))a5 + 2))(\n    v9,\n    (void *)-[IFDBundle setProtocol:protocol:](bundle, \"setProtocol:protocol:\", v7, v6));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v9);\n}"
+}

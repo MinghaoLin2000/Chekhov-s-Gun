@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionRunner _state]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMRemoteActionRunner _state](AMRemoteActionRunner * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[AMRemoteActionRunner _state](AMRemoteActionRunner *self, SEL a2)\n{\n  os_unfair_lock_assert_owner(&self->__stateLock);\n  return self->__state;\n}"
+}

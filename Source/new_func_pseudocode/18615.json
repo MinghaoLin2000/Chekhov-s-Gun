@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore13ModuleDividerVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore13ModuleDividerVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ModuleDivider()\n{\n  return &type metadata for ModuleDivider;\n}"
+}

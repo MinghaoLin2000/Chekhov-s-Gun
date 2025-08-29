@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv init]",
+    "function_argument_number": 2,
+    "function_signature": "-[ATXHeuristicJSEnv init](ATXHeuristicJSEnv * self, SEL a2)",
+    "pseudocode": "ATXHeuristicJSEnv *__cdecl -[ATXHeuristicJSEnv init](ATXHeuristicJSEnv *self, SEL a2)\n{\n  NSBundle *v3; // x0\n  NSBundle *v4; // x20\n  NSBundle *v5; // x21\n  ATXHeuristicJSEnv *v6; // x22\n\n  v3 = (NSBundle *)objc_retainAutoreleasedReturnValue(\n                     +[ATXHeuristicJSEnv defaultHeuristicBundlePath](\n                       &OBJC_CLASS___ATXHeuristicJSEnv,\n                       \"defaultHeuristicBundlePath\"));\n  v4 = v3;\n  if ( v3 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(+[NSBundle bundleWithPath:](&OBJC_CLASS___NSBundle, \"bundleWithPath:\", v3));\n    v5 = v3;\n    if ( v3 )\n    {\n      v3 = -[ATXHeuristicJSEnv initWithHeuristicBundle:dataProvider:](\n             self,\n             \"initWithHeuristicBundle:dataProvider:\",\n             v3,\n             0LL);\n      self = (ATXHeuristicJSEnv *)v3;\n    }\n  }\n  else\n  {\n    v5 = 0LL;\n  }\n  v6 = objc_retain(v3);\n  objc_release(v5);\n  objc_release(v4);\n  objc_release(self);\n  return v6;\n}"
+}

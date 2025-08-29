@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLXPCSetCFObjectForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLXPCSetCFObjectForKey()",
+    "pseudocode": "__int64 _QLXPCSetCFObjectForKey()\n{\n  return __QLXPCSetCFObjectForKey();\n}"
+}

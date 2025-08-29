@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MDRemoteServiceSupport retrieveProperty:forUUID:withReply:]",
+    "function_argument_number": 5,
+    "function_signature": "-[MDRemoteServiceSupport retrieveProperty:forUUID:withReply:](MDRemoteServiceSupport * self, SEL a2, char * a3, id a4, id a5)",
+    "pseudocode": "void __cdecl -[MDRemoteServiceSupport retrieveProperty:forUUID:withReply:](\n        MDRemoteServiceSupport *self,\n        SEL a2,\n        char *a3,\n        id a4,\n        id a5)\n{\n  -[MDRemoteServiceSupport retrieveProperty:forUUID:type:withReply:](\n    self,\n    \"retrieveProperty:forUUID:type:withReply:\",\n    a3,\n    a4,\n    0LL,\n    a5);\n}"
+}

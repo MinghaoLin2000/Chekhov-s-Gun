@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDResultGetSubResults",
+    "function_argument_number": 0,
+    "function_signature": "_DDResultGetSubResults()",
+    "pseudocode": "__int64 DDResultGetSubResults()\n{\n  return _DDResultGetSubResults();\n}"
+}

@@ -1,0 +1,44 @@
+Service Path:
+/System/Library/PrivateFrameworks/AppStoreDaemonUI.framework/Versions/A/XPCServices/com.apple.AppStoreDaemon.StoreUIService.xpc/Contents/MacOS/com.apple.AppStoreDaemon.StoreUIService
+
+Service Exported Protocols:
+@protocol AMSAuthenticateTaskDelegate <NSObject>
+- (void)authenticateTask:(AMSAuthenticateTask *)arg1 handleDialogRequest:(AMSDialogRequest *)arg2 completion:(void (^)(AMSDialogResult *, NSError *))arg3;
+@end
+@protocol BackgroundAssetConsentViewControllerDelegate
+- (void)consentSheetConfirmed;
+@end
+@protocol StoreUIServiceProtocol
+- (void)presentViewRequest:(ASDViewPresentationRequest *)arg1 withResultHandler:(void (^)(ASDViewPresentationResult *, NSError *))arg2;
+- (void)presentBackgroundAssetsTransparencyWithLogKey:(LogKey *)arg1 completion:(void (^)(NSError *))arg2;
+- (void)presentEngagementRequest:(AMSEngagementRequest *)arg1 withResultHandler:(void (^)(AMSEngagementResult *, NSError *))arg2;
+- (void)presentDialogRequest:(AMSDialogRequest *)arg1 withResultHandler:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)presentAuthenticateRequest:(AMSAuthenticateRequest *)arg1 withResultHandler:(void (^)(AMSAuthenticateResult *, NSError *))arg2;
+- (void)presentAlertStyledDialogRequest:(AMSDialogRequest *)arg1 withResultHandler:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)presentAlertRequest:(ASDAlertPresentationRequest *)arg1 withResultHandler:(void (^)(ASDAlertPresentationResult *, NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] adi-client
+	[Value]
+		[String] 409835401
+	[Key] com.apple.authkit.client.internal
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.accounts.allaccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.applemediaservices
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.skylight.unconditional-activation
+	[Value]
+		[Bool] true
+	[Key] fairplay-client
+	[Value]
+		[String] 1445028844
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] apple

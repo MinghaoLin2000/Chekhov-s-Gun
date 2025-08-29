@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUCrashHandlerService notifyCrash:withCrashInfo:]",
+    "function_argument_number": 4,
+    "function_signature": "-[AUCrashHandlerService notifyCrash:withCrashInfo:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[AUCrashHandlerService notifyCrash:withCrashInfo:](\n        AUCrashHandlerService *self,\n        SEL a2,\n        $115C4C562B26FF47E01F9F4EA65B5887 *a3,\n        id a4)\n{\n  id v6; // x19\n  id v7; // x20\n  __int128 v8; // q1\n  _OWORD v9[2]; // [xsp+0h] [xbp-40h] BYREF\n\n  v6 = objc_retain(a4);\n  v7 = objc_retainAutoreleasedReturnValue(-[NSXPCConnection remoteObjectProxy](self->mConnection, \"remoteObjectProxy\"));\n  v8 = *(_OWORD *)&a3->var0[4];\n  v9[0] = *(_OWORD *)a3->var0;\n  v9[1] = v8;\n  objc_msgSend(v7, \"notifyCrash:withCrashInfo:\", v9, v6);\n  objc_release(v7);\n  objc_release(v6);\n}"
+}

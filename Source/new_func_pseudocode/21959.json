@@ -1,0 +1,6 @@
+{
+    "function_name": "_PKCloudKitPassSyncEnabled",
+    "function_argument_number": 0,
+    "function_signature": "_PKCloudKitPassSyncEnabled()",
+    "pseudocode": "__int64 PKCloudKitPassSyncEnabled()\n{\n  return _PKCloudKitPassSyncEnabled();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSError tsu_errorWithDomain:code:description:underlyingError:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSError tsu_errorWithDomain:code:description:underlyingError:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl +[NSError tsu_errorWithDomain:code:description:underlyingError:](\n        id a1,\n        SEL a2,\n        id a3,\n        signed __int64 a4,\n        id a5,\n        id a6)\n{\n  id v10; // x19\n  id v11; // x21\n  id v12; // x25\n  void *v13; // x23\n  void *v14; // x20\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v10 = objc_retain(a3);\n  v11 = objc_retain(a6);\n  v12 = objc_retain(a5);\n  v13 = objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSMutableDictionary), \"initWithCapacity:\", 2LL);\n  objc_msgSend(v13, \"setObject:forKeyedSubscript:\", v12, NSLocalizedDescriptionKey);\n  objc_release(v12);\n  if ( v11 )\n    objc_msgSend(v13, \"setObject:forKeyedSubscript:\", v11, NSUnderlyingErrorKey);\n  v14 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"errorWithDomain:code:userInfo:\", v10, a4, v13));\n  objc_release(v13);\n  objc_release(v11);\n  objc_release(v10);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v14);\n}"
+}

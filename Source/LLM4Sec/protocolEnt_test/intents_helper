@@ -1,0 +1,62 @@
+Service Path:
+/System/Library/Frameworks/Intents.framework/XPCServices/intents_helper.xpc/Contents/MacOS/intents_helper
+
+Service Exported Protocols:
+@protocol INHServing
+- (oneway void)storeUserContext:(INUserContext *)arg1 forBundleIdentifier:(NSString *)arg2;
+- (oneway void)fetchShareExtensionIntentForExtensionContextUUID:(NSUUID *)arg1 completion:(void (^)(INIntent *))arg2;
+- (oneway void)loadBundleURLsForBundleIdentifiers:(NSSet *)arg1 completion:(void (^)(NSDictionary *, NSError *))arg2;
+- (oneway void)loadSchemaURLsWithCompletion:(void (^)(NSDictionary *, NSError *))arg1;
+- (oneway void)loadSchemaURLsForBundleIdentifiers:(NSSet *)arg1 completion:(void (^)(NSDictionary *, NSError *))arg2;
+- (oneway void)purgeExpiredImagesInEphemeralStore;
+- (oneway void)purgeImageWithIdentifier:(NSString *)arg1 completion:(void (^)(NSError *))arg2;
+- (oneway void)retrieveImageWithIdentifier:(NSString *)arg1 completion:(void (^)(INImage *, NSError *))arg2;
+- (oneway void)storeImage:(INImage *)arg1 scaled:(_Bool)arg2 qualityOfService:(unsigned int)arg3 storeType:(unsigned long long)arg4 completion:(void (^)(NSString *, NSError *))arg5;
+- (oneway void)filePathForImage:(INImage *)arg1 usingPortableImageLoader:(INPortableImageLoader *)arg2 completion:(void (^)(NSURL *, NSError *))arg3;
+- (oneway void)loadDataImageForImage:(INImage *)arg1 scaledWidth:(double)arg2 scaledHeight:(double)arg3 usingPortableImageLoader:(INPortableImageLoader *)arg4 completion:(void (^)(INImage *, NSError *))arg5;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.appprotectiond.read.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.coreduetd.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.coreduetd.context
+	[Value]
+		[Bool] true
+	[Key] com.apple.intents.extension.discovery
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.coreservices.canmaplsdatabase
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.absolute-path.read-only
+	[Value]
+		[Array]
+			[String] /Applications/
+			[String] /private/var/containers/Bundle/
+	[Key] com.apple.security.exception.files.home-relative-path.read-only
+	[Value]
+		[Array]
+			[String] /Library/SyncedIntentDefinitions/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.siriknowledged
+			[String] com.apple.appprotectiond.read
+	[Key] com.apple.security.exception.process-info
+	[Value]
+		[Bool] true
+	[Key] com.apple.siriknowledged
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] intents-helper

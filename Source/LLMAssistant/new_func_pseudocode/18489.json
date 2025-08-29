@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper0abC8DelegateC8listener_25shouldAcceptNewConnectionSbSo13NSXPCListenerC_So15NSXPCConnectionCtF",
+    "function_argument_number": 2,
+    "function_signature": "_$s19ControlCenterHelper0abC8DelegateC8listener_25shouldAcceptNewConnectionSbSo13NSXPCListenerC_So15NSXPCConnectionCtF(NSXPCListener _, NSXPCConnection shouldAcceptNewConnection)",
+    "pseudocode": "Swift::Bool __swiftcall ControlCenterHelperDelegate.listener(_:shouldAcceptNewConnection:)(\n        NSXPCListener _,\n        NSXPCConnection shouldAcceptNewConnection)\n{\n  __int64 v3; // x0\n  __int64 v4; // x20\n  id v5; // x21\n\n  v3 = type metadata accessor for ControlCenterHelper();\n  v4 = swift_allocObject(v3, 16LL, 7LL);\n  v5 = objc_retainAutoreleasedReturnValue(\n         objc_msgSend(\n           (id)objc_opt_self(&OBJC_CLASS___NSXPCInterface),\n           \"interfaceWithProtocol:\",\n           &OBJC_PROTOCOL____TtP19ControlCenterHelper27ControlCenterHelperProtocol_));\n  -[objc_class setExportedInterface:](shouldAcceptNewConnection.super.isa, \"setExportedInterface:\", v5);\n  objc_release(v5);\n  -[objc_class setExportedObject:](shouldAcceptNewConnection.super.isa, \"setExportedObject:\", v4);\n  -[objc_class resume](shouldAcceptNewConnection.super.isa, \"resume\");\n  swift_release(v4);\n  return 1;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s17ControlCenterCore20NavigationControllerC14NavigationModeOwxx(id * a1)",
+    "pseudocode": "void __fastcall destroy for NavigationController.NavigationMode(id *a1)\n{\n  objc_release(*a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SignpostCounter updateMxSignpostOverlapStatistics:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SignpostCounter updateMxSignpostOverlapStatistics:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[SignpostCounter updateMxSignpostOverlapStatistics:](SignpostCounter *self, SEL a2, id a3)\n{\n  id v4; // x20\n  double prevMxSignpostStartMs; // d8\n  double v6; // d0\n  double v7; // d0\n  double prevMxSignpostEndMs; // d8\n  double v9; // d0\n  double v10; // d8\n  double v11; // d0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  ++self->mxSignpostIntervalCounts;\n  prevMxSignpostStartMs = self->prevMxSignpostStartMs;\n  objc_msgSend(v4, \"startMs\");\n  if ( prevMxSignpostStartMs <= v6 )\n  {\n    prevMxSignpostEndMs = self->prevMxSignpostEndMs;\n    objc_msgSend(v4, \"startMs\");\n    if ( prevMxSignpostEndMs > v9 )\n      ++self->mxSignpostIntervalOverlaps;\n    v10 = self->prevMxSignpostEndMs;\n    objc_msgSend(v4, \"endMs\");\n    if ( v10 >= v7 )\n      v7 = v10;\n  }\n  else\n  {\n    objc_msgSend(v4, \"endMs\");\n  }\n  self->prevMxSignpostEndMs = v7;\n  objc_msgSend(v4, \"startMs\");\n  self->prevMxSignpostStartMs = v11;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

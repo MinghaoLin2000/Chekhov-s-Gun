@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12SnappySourceD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12SnappySourceD1Ev(TSP::SnappySource * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::SnappySource::~SnappySource(id *this)\n{\n  __ZN3TSP12SnappySourceD2Ev(this);\n}"
+}

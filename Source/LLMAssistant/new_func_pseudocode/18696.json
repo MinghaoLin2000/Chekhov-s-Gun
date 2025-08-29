@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVwst",
+    "function_argument_number": 3,
+    "function_signature": "$s17ControlCenterCore19NavigationAnchorKeyV5EntryVwst(__int64 result, int a2, int a3)",
+    "pseudocode": "__int64 __fastcall storeEnumTagSinglePayload for NavigationAnchorKey.Entry(__int64 result, int a2, int a3)\n{\n  if ( a2 < 0 )\n  {\n    *(_QWORD *)(result + 8) = 0LL;\n    *(_QWORD *)(result + 16) = 0LL;\n    *(_BYTE *)(result + 24) = 0;\n    *(_QWORD *)result = a2 ^ 0x80000000;\n    if ( a3 < 0 )\n      *(_BYTE *)(result + 25) = 1;\n  }\n  else\n  {\n    if ( (a3 & 0x80000000) == 0 )\n    {\n      if ( !a2 )\n        return result;\nLABEL_8:\n      *(_QWORD *)(result + 16) = (unsigned int)(a2 - 1);\n      return result;\n    }\n    *(_BYTE *)(result + 25) = 0;\n    if ( a2 )\n      goto LABEL_8;\n  }\n  return result;\n}"
+}

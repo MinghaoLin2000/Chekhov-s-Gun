@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4PathD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP4PathD2Ev(TSP::Path * this)",
+    "pseudocode": "void __fastcall TSP::Path::~Path(TSP::Path *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100076CDC((char *)this + 16);\n}"
+}

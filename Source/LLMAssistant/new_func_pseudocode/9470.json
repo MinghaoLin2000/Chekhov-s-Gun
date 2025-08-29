@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPIOHandlerWriteChannelAdapter close]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPIOHandlerWriteChannelAdapter close](TSPIOHandlerWriteChannelAdapter * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSPIOHandlerWriteChannelAdapter close](TSPIOHandlerWriteChannelAdapter *self, SEL a2)\n{\n  (*((void (__fastcall **)(id, __int64, _QWORD, NSError *))self->_handler + 2))(self->_handler, 1LL, 0LL, self->_error);\n}"
+}

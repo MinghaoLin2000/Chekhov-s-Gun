@@ -1,0 +1,6 @@
+{
+    "function_name": "_asprintf_l",
+    "function_argument_number": 3,
+    "function_signature": "_asprintf_l(char ** a1, locale_t a2, const char * a3)",
+    "pseudocode": "int asprintf_l(char **a1, locale_t a2, const char *a3, ...)\n{\n  return _asprintf_l(a1, a2, a3);\n}"
+}

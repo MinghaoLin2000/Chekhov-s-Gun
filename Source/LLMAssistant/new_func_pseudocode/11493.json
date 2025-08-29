@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12ExtensionSet17MaybeNewExtensionEiPKNS0_15FieldDescriptorEPPNS2_9ExtensionE",
+    "function_argument_number": 4,
+    "function_signature": "__ZN6google8protobuf8internal12ExtensionSet17MaybeNewExtensionEiPKNS0_15FieldDescriptorEPPNS2_9ExtensionE(google::protobuf::internal::ExtensionSet * this, int a2, const google::protobuf::FieldDescriptor * a3, google::protobuf::internal::ExtensionSet::Extension ** a4)",
+    "pseudocode": "bool __fastcall google::protobuf::internal::ExtensionSet::MaybeNewExtension(\n        google::protobuf::internal::ExtensionSet *this,\n        int a2,\n        const google::protobuf::FieldDescriptor *a3,\n        google::protobuf::internal::ExtensionSet::Extension **a4)\n{\n  google::protobuf::internal::ExtensionSet::Extension *v6; // x0\n  char v7; // w1\n\n  v6 = (google::protobuf::internal::ExtensionSet::Extension *)google::protobuf::internal::ExtensionSet::Insert(this, a2);\n  *a4 = v6;\n  *((_QWORD *)v6 + 2) = a3;\n  return v7 != 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService9JSAccountVwca",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService9JSAccountVwca(__int64 a1)",
+    "pseudocode": "__int64 __fastcall assignWithCopy for JSAccount(__int64 a1)\n{\n  sub_10000EE60();\n  return a1;\n}"
+}

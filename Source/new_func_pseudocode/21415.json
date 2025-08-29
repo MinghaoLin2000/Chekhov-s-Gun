@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwCP",
+    "function_argument_number": 3,
+    "function_signature": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwCP(__int64 * a1, __int64 * a2, __int64 a3)",
+    "pseudocode": "__int64 *__fastcall initializeBufferWithCopyOfBuffer for ClientInfo.LoggingInfo(__int64 *a1, __int64 *a2, __int64 a3)\n{\n  int v5; // w8\n  __int64 v7; // x22\n  void (__fastcall *v8)(__int64 *, __int64 *, __int64); // x23\n  __int64 v9; // x8\n  _QWORD *v10; // x9\n  _QWORD *v11; // x8\n  __int64 v12; // x0\n  __int64 v13; // x0\n\n  v5 = *(_DWORD *)(*(_QWORD *)(a3 - 8) + 80LL);\n  if ( (v5 & 0x20000) != 0 )\n  {\n    v13 = *a2;\n    *a1 = *a2;\n    a1 = (__int64 *)(v13 + (((unsigned __int8)v5 + 16LL) & ~(unsigned __int64)(unsigned __int8)v5));\n    swift_retain();\n  }\n  else\n  {\n    v7 = sub_100040F10(0LL);\n    v8 = *(void (__fastcall **)(__int64 *, __int64 *, __int64))(*(_QWORD *)(v7 - 8) + 16LL);\n    v8(a1, a2, v7);\n    v8((__int64 *)((char *)a1 + *(int *)(a3 + 20)), (__int64 *)((char *)a2 + *(int *)(a3 + 20)), v7);\n    v9 = *(int *)(a3 + 24);\n    v10 = (__int64 *)((char *)a1 + v9);\n    v11 = (__int64 *)((char *)a2 + v9);\n    v12 = v11[1];\n    *v10 = *v11;\n    v10[1] = v12;\n    swift_bridgeObjectRetain(v12);\n  }\n  return a1;\n}"
+}

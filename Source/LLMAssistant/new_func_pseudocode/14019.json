@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$dateFormatFromTemplate:options:locale:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$dateFormatFromTemplate:options:locale:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_dateFormatFromTemplate_options_locale_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"dateFormatFromTemplate:options:locale:\");\n}"
+}

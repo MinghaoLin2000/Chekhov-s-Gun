@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode filteredChildren]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode filteredChildren](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSMutableArray *__cdecl -[DeviceSettingsNode filteredChildren](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_filteredChildren;\n}"
+}

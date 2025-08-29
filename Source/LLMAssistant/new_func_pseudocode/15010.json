@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ATXHeuristicJSEnv _isEventAtOneWithTimeIntervelOrDate:usesTwelveHourClock:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ATXHeuristicJSEnv _isEventAtOneWithTimeIntervelOrDate:usesTwelveHourClock:](ATXHeuristicJSEnv * self, SEL a2, id a3, bool a4)",
+    "pseudocode": "bool __cdecl -[ATXHeuristicJSEnv _isEventAtOneWithTimeIntervelOrDate:usesTwelveHourClock:](\n        ATXHeuristicJSEnv *self,\n        SEL a2,\n        id a3,\n        bool a4)\n{\n  _BOOL4 v4; // w20\n  id v5; // x19\n  NSCalendar *v6; // x21\n  NSDateComponents *v7; // x22\n  void *v8; // x0\n  bool v10; // w9\n  bool v11; // w20\n\n  v4 = a4;\n  v5 = objc_retainAutoreleasedReturnValue(-[ATXHeuristicJSEnv _dateFromTimeIntervalOrDate:](self, \"_dateFromTimeIntervalOrDate:\", a3));\n  if ( v5 )\n  {\n    v6 = objc_retainAutoreleasedReturnValue(+[NSCalendar currentCalendar](&OBJC_CLASS___NSCalendar, \"currentCalendar\"));\n    v7 = objc_retainAutoreleasedReturnValue(-[NSCalendar components:fromDate:](v6, \"components:fromDate:\", 32LL, v5));\n    objc_release(v6);\n    v8 = -[NSDateComponents hour](v7, \"hour\");\n    v10 = v8 == (void *)13 || v8 == (void *)1;\n    if ( v4 )\n      v11 = v10;\n    else\n      v11 = v8 == (void *)1;\n    objc_release(v7);\n  }\n  else\n  {\n    v11 = 0;\n  }\n  objc_release(v5);\n  return v11;\n}"
+}

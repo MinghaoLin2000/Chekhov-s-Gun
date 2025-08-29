@@ -1,0 +1,5 @@
+_xpc_dictionary_get_remote_connection
+xpc_connection_t __cdecl xpc_dictionary_get_remote_connection(xpc_object_t xdict)
+{
+  return _xpc_dictionary_get_remote_connection(xdict);
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter addData:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipWriter addData:](TSUZipWriter * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[TSUZipWriter addData:](TSUZipWriter *self, SEL a2, id a3)\n{\n  -[TSUZipWriter addData:queue:completion:](self, \"addData:queue:completion:\", a3, 0LL, 0LL);\n}"
+}

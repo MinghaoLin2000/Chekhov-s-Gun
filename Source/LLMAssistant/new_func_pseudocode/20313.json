@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z13validate_enumI10PKJobStatehET_T0_",
+    "function_argument_number": 1,
+    "function_signature": "__Z13validate_enumI10PKJobStatehET_T0_(int a1)",
+    "pseudocode": "__int64 __fastcall validate_enum<PKJobState,unsigned char>(int a1)\n{\n  if ( (unsigned int)(a1 - 3) >= 6 )\n    return 9LL;\n  else\n    return (unsigned __int8)(a1 - 3) + 3LL;\n}"
+}

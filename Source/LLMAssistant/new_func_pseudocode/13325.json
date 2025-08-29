@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUEncodedBlockInfoWithDecodedLengthInternal decodedLength]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUEncodedBlockInfoWithDecodedLengthInternal decodedLength](TSUEncodedBlockInfoWithDecodedLengthInternal * self, SEL a2)",
+    "pseudocode": "unsigned __int64 __cdecl -[TSUEncodedBlockInfoWithDecodedLengthInternal decodedLength](\n        TSUEncodedBlockInfoWithDecodedLengthInternal *self,\n        SEL a2)\n{\n  return self->_decodedLength;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode isPDFBookMediaKind]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode isPDFBookMediaKind](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsNode isPDFBookMediaKind](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_isPDFBookMediaKind;\n}"
+}

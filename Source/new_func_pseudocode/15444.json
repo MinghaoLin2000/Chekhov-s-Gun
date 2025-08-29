@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFPreferencesGetAppBooleanValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFPreferencesGetAppBooleanValue(CFStringRef key, CFStringRef applicationID, Boolean * keyExistsAndHasValidFormat)",
+    "pseudocode": "Boolean __cdecl CFPreferencesGetAppBooleanValue(\n        CFStringRef key,\n        CFStringRef applicationID,\n        Boolean *keyExistsAndHasValidFormat)\n{\n  return _CFPreferencesGetAppBooleanValue(key, applicationID, keyExistsAndHasValidFormat);\n}"
+}

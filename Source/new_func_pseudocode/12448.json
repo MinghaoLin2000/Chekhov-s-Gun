@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_isDynamic]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_isDynamic](NSString * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[NSString tsu_isDynamic](NSString *self, SEL a2)\n{\n  return UTTypeIsDynamic((CFStringRef)self) != 0;\n}"
+}

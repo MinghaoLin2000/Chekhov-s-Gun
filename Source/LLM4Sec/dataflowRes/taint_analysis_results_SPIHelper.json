@@ -1,0 +1,9 @@
+{
+    "/System/Library/PrivateFrameworks/CloudSharing.framework/Versions/A/XPCServices/SPIHelper.xpc/Contents/MacOS/SPIHelper": [
+        "-[_TtC9SPIHelper9SPIHelper sharingStatusFor:withReply:]",
+        "-[_TtC9SPIHelper9SPIHelper startFileSharing:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]",
+        "-[_TtC9SPIHelper9SPIHelper addToCloudKitSharing:containerSetupInfo:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]",
+        "-[_TtC9SPIHelper9SPIHelper addParticipantsToShare:containerSetupInfo:emailAddresses:phoneNumbers:withReply:]",
+        "-[_TtC9SPIHelper9SPIHelper forciblyShareFolder:emailAddresses:phoneNumbers:accessType:permissionType:allowOthersToInvite:withReply:]"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$_speechRecognizerWithLanguage:overrides:anyConfiguration:taskConfiguration:modelRoot:error:modelLoadTime:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$_speechRecognizerWithLanguage:overrides:anyConfiguration:taskConfiguration:modelRoot:error:modelLoadTime:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend__speechRecognizerWithLanguage_overrides_anyConfiguration_taskConfiguration_modelRoot_error_modelLoadTime_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(\n           a1,\n           \"_speechRecognizerWithLanguage:overrides:anyConfiguration:taskConfiguration:modelRoot:error:modelLoadTime:\");\n}"
+}

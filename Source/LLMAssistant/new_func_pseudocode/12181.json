@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZNK6google8protobuf10TextFormat21FastFieldValuePrinter11PrintStringERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_17BaseTextGeneratorE",
+    "function_argument_number": 3,
+    "function_signature": "j___ZNK6google8protobuf10TextFormat21FastFieldValuePrinter11PrintStringERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_17BaseTextGeneratorE(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall google::protobuf::TextFormat::FastFieldValuePrinter::PrintString(__int64 a1, __int64 a2, __int64 a3)\n{\n  return __ZNK6google8protobuf10TextFormat21FastFieldValuePrinter11PrintStringERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_17BaseTextGeneratorE(\n           a1,\n           a2,\n           a3);\n}"
+}

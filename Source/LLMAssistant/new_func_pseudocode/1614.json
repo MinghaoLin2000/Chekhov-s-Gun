@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSButton scopedButtonWithTitle:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSButton scopedButtonWithTitle:](id a1, SEL a2, id a3)",
+    "pseudocode": "id __cdecl +[NSButton scopedButtonWithTitle:](id a1, SEL a2, id a3)\n{\n  NSButton *v3; // x19\n  NSFont *v4; // x20\n  double v5; // d0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(\n         +[NSButton buttonWithTitle:target:action:](\n           &OBJC_CLASS___NSButton,\n           \"buttonWithTitle:target:action:\",\n           a3,\n           0LL,\n           0LL));\n  -[NSButton setBezelStyle:](v3, \"setBezelStyle:\", 13LL);\n  -[NSButton setButtonType:](v3, \"setButtonType:\", 6LL);\n  -[NSButton setShowsBorderOnlyWhileMouseInside:](v3, \"setShowsBorderOnlyWhileMouseInside:\", 1LL);\n  v4 = objc_retainAutoreleasedReturnValue(+[NSFont boldSystemFontOfSize:](&OBJC_CLASS___NSFont, \"boldSystemFontOfSize:\", 12.0));\n  -[NSButton setFont:](v3, \"setFont:\", v4);\n  objc_release(v4);\n  LODWORD(v5) = 1144750080;\n  -[NSButton setContentHuggingPriority:forOrientation:](v3, \"setContentHuggingPriority:forOrientation:\", 0LL, v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

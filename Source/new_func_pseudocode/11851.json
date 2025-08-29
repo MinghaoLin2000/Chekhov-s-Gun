@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10BytesValue12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf10BytesValue12ByteSizeLongEv(google::protobuf::BytesValue * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::BytesValue::ByteSizeLong(google::protobuf::BytesValue *this)\n{\n  unsigned __int64 v1; // x8\n  __int64 v2; // x9\n  __int64 v3; // x8\n  __int64 v4; // x1\n\n  v1 = *((_QWORD *)this + 2) & 0xFFFFFFFFFFFFFFFELL;\n  v2 = *(unsigned __int8 *)(v1 + 23);\n  if ( *(char *)(v1 + 23) < 0 )\n  {\n    if ( *(_QWORD *)(v1 + 8) )\n      goto LABEL_3;\nLABEL_7:\n    v4 = 0LL;\n    goto LABEL_8;\n  }\n  if ( !*(_BYTE *)(v1 + 23) )\n    goto LABEL_7;\nLABEL_3:\n  v3 = *(_QWORD *)(v1 + 8);\n  if ( (v2 & 0x80u) == 0LL )\n    v3 = v2;\n  v4 = v3 + ((9 * (__clz(v3 | 1) ^ 0x1F) + 73) >> 6) + 1;\nLABEL_8:\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v4, (char *)this + 24);\n  *((_DWORD *)this + 6) = v4;\n  return v4;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService17JSMarketingObjectCMa",
+    "function_argument_number": 1,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService17JSMarketingObjectCMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for JSMarketingObject(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_10005CD38;\n  if ( !qword_10005CD38 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for JSMarketingObject);\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_value_t setString:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ipp_value_t setString:](int a1, int a2, int a3, id a4)",
+    "pseudocode": "void __cdecl -[ipp_value_t setString:](ipp_value_t *self, SEL a2, ipp_value_string_t a3)\n{\n  id var0; // x19\n  id v5; // x0\n  void *v6; // x20\n  NSObject *v7; // x22\n  NSArray *v8; // x0\n  NSObject *x_payload; // x8\n  NSArray *v10; // x0\n  _QWORD v11[2]; // [xsp+0h] [xbp-40h] BYREF\n  id v12; // [xsp+10h] [xbp-30h] BYREF\n\n  var0 = a3.var0;\n  v5 = objc_retain(a3.var1);\n  v6 = v5;\n  if ( var0 )\n  {\n    v7 = (NSObject *)objc_retain(var0);\n    v11[0] = v6;\n    v11[1] = v7;\n    v8 = objc_retainAutoreleasedReturnValue(+[NSArray arrayWithObjects:count:](&OBJC_CLASS___NSArray, \"arrayWithObjects:count:\", v11, 2LL));\n    x_payload = self->x_payload;\n    self->x_payload = &v8->super;\n    objc_release(x_payload);\n  }\n  else\n  {\n    v12 = v5;\n    v10 = objc_retainAutoreleasedReturnValue(+[NSArray arrayWithObjects:count:](&OBJC_CLASS___NSArray, \"arrayWithObjects:count:\", &v12, 1LL));\n    v7 = self->x_payload;\n    self->x_payload = &v10->super;\n  }\n  objc_release(v7);\n  objc_release(v6);\n  objc_release(v6);\n  objc_release(var0);\n}"
+}

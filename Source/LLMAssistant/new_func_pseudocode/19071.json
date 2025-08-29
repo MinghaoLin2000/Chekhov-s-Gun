@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController setDelaySessionForTTS:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController setDelaySessionForTTS:](SiriNCAlertViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController setDelaySessionForTTS:](SiriNCAlertViewController *self, SEL a2, bool a3)\n{\n  self->_delaySessionForTTS = a3;\n}"
+}

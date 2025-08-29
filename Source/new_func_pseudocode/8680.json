@@ -1,0 +1,6 @@
+{
+    "function_name": "_sysmon_table_apply",
+    "function_argument_number": 0,
+    "function_signature": "_sysmon_table_apply()",
+    "pseudocode": "__int64 sysmon_table_apply()\n{\n  return _sysmon_table_apply();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallSsoSetToken",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallSsoSetToken()",
+    "pseudocode": "__int64 AMAuthInstallSsoSetToken()\n{\n  return _AMAuthInstallSsoSetToken();\n}"
+}

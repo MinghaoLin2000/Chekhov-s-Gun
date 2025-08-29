@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskCACycfC",
+    "function_argument_number": 0,
+    "function_signature": "_$s025com_apple_AppStoreDaemon_D9UIService20ViewPresentationTaskCACycfC()",
+    "pseudocode": "id ViewPresentationTask.__allocating_init()()\n{\n  objc_class *v0; // x20\n  id v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v1 = objc_allocWithZone(v0);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(v1, \"init\");\n}"
+}

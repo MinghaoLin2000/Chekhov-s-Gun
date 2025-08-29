@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallSsoEnable",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallSsoEnable()",
+    "pseudocode": "__int64 AMAuthInstallSsoEnable()\n{\n  return _AMAuthInstallSsoEnable();\n}"
+}

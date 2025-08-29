@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService15JetpackMetadataVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for JetpackMetadata()\n{\n  return &type metadata for JetpackMetadata;\n}"
+}

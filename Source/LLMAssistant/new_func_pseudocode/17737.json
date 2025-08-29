@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIRawKey isEqual:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIRawKey isEqual:](int a1, int a2, id a3)",
+    "pseudocode": "bool __cdecl -[ModelKeyServerAPIRawKey isEqual:](ModelKeyServerAPIRawKey *self, SEL a2, id a3)\n{\n  _QWORD *v4; // x19\n  __int64 v5; // x1\n  NSData *encryptionKey; // x0\n  NSData *encryptionIv; // x0\n  unsigned __int8 v8; // w20\n\n  v4 = objc_retain(objc_retain(a3));\n  if ( (unsigned int)objc_msgSend(v4, \"isMemberOfClass:\", objc_opt_class(self, v5))\n    && ((encryptionKey = self->_encryptionKey, !((unsigned __int64)encryptionKey | v4[2]))\n     || (unsigned int)-[NSData isEqual:](encryptionKey, \"isEqual:\")) )\n  {\n    encryptionIv = self->_encryptionIv;\n    if ( (unsigned __int64)encryptionIv | v4[1] )\n      v8 = (unsigned __int8)-[NSData isEqual:](encryptionIv, \"isEqual:\");\n    else\n      v8 = 1;\n  }\n  else\n  {\n    v8 = 0;\n  }\n  objc_release(v4);\n  objc_release(v4);\n  return v8;\n}"
+}

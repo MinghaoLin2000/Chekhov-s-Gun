@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectGetMaxX",
+    "function_argument_number": 1,
+    "function_signature": "_CGRectGetMaxX(CGRect rect)",
+    "pseudocode": "CGFloat __cdecl CGRectGetMaxX(CGRect rect)\n{\n  return _CGRectGetMaxX(rect);\n}"
+}

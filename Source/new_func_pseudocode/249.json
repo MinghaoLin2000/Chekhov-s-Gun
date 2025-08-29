@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_once",
+    "function_argument_number": 0,
+    "function_signature": "_swift_once()",
+    "pseudocode": "__int64 swift_once()\n{\n  return _swift_once();\n}"
+}

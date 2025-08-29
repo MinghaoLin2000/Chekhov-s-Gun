@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP8IndexSet12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP8IndexSet12ByteSizeLongEv(TSP::IndexSet * this)",
+    "pseudocode": "__int64 __fastcall TSP::IndexSet::ByteSizeLong(TSP::IndexSet *this)\n{\n  __int64 v2; // x20\n  __int64 v3; // x8\n  TSP::Range **v4; // x21\n  __int64 v5; // x22\n  TSP::Range *v6; // t1\n  __int64 v7; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = *((int *)this + 6);\n  v3 = *((_QWORD *)this + 4);\n  if ( v3 )\n    v4 = (TSP::Range **)(v3 + 8);\n  else\n    v4 = 0LL;\n  if ( (_DWORD)v2 )\n  {\n    v5 = 8 * v2;\n    do\n    {\n      v6 = *v4++;\n      v7 = TSP::Range::ByteSizeLong(v6);\n      v2 += v7 + ((9 * (__clz(v7 | 1) ^ 0x1F) + 73) >> 6);\n      v5 -= 8LL;\n    }\n    while ( v5 );\n  }\n  else\n  {\n    v2 = 0LL;\n  }\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v2, (char *)this + 40);\n  }\n  else\n  {\n    *((_DWORD *)this + 10) = v2;\n    return v2;\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceWarrantyViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceWarrantyViewController .cxx_destruct](DeviceWarrantyViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceWarrantyViewController .cxx_destruct](DeviceWarrantyViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_destroyWeak((id *)&self->_saveButton);\n  objc_destroyWeak((id *)&self->_cancelButton);\n  objc_destroyWeak((id *)&self->_continueButton);\n  objc_destroyWeak((id *)&self->_miniDividerLine);\n  objc_destroyWeak((id *)&self->_agreeToCheckBox);\n  objc_destroyWeak((id *)&self->_bottomDividerLine);\n  objc_destroyWeak((id *)&self->_webKitView);\n  objc_destroyWeak((id *)&self->_topDividerLine);\n  objc_destroyWeak((id *)&self->_descriptionTextField);\n  objc_destroyWeak((id *)&self->_titleTextField);\n  objc_storeStrong(&self->_cancelButtonAction, 0LL);\n  objc_storeStrong(&self->_continueButtonAction, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_warrantyInfoText, 0LL);\n}"
+}

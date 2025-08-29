@@ -1,0 +1,6 @@
+{
+    "function_name": "_getpwuid_r",
+    "function_argument_number": 5,
+    "function_signature": "_getpwuid_r(uid_t a1, passwd * a2, char * a3, size_t a4, passwd ** a5)",
+    "pseudocode": "int __cdecl getpwuid_r(uid_t a1, passwd *a2, char *a3, size_t a4, passwd **a5)\n{\n  return _getpwuid_r(a1, a2, a3, a4, a5);\n}"
+}

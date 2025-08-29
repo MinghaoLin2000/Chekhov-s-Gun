@@ -1,0 +1,6 @@
+{
+    "function_name": "_remote_device_get_state",
+    "function_argument_number": 0,
+    "function_signature": "_remote_device_get_state()",
+    "pseudocode": "__int64 remote_device_get_state()\n{\n  return _remote_device_get_state();\n}"
+}

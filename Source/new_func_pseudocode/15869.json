@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2AssetGetBytesAtOffset2",
+    "function_argument_number": 7,
+    "function_signature": "_UARPLayer2AssetGetBytesAtOffset2(__int64 a1, __int64 a2, _QWORD * a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7)",
+    "pseudocode": "__int64 __fastcall UARPLayer2AssetGetBytesAtOffset2(\n        __int64 a1,\n        __int64 a2,\n        _QWORD *a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7)\n{\n  __int64 (__fastcall *v7)(_QWORD, __int64, _QWORD); // x7\n  __int64 (__fastcall *v9)(_QWORD, _QWORD, __int64, __int64, __int64, __int64); // x7\n\n  if ( a2 )\n    a2 = *(_QWORD *)(a2 + 40);\n  v7 = (__int64 (__fastcall *)(_QWORD, __int64, _QWORD))a3[21];\n  if ( v7 )\n    return v7(*(_QWORD *)(a1 + 544), a2, a3[88]);\n  v9 = (__int64 (__fastcall *)(_QWORD, _QWORD, __int64, __int64, __int64, __int64))a3[34];\n  if ( v9 )\n    return v9(*(_QWORD *)(a1 + 544), a3[88], a4, a5, a6, a7);\n  else\n    return 14LL;\n}"
+}

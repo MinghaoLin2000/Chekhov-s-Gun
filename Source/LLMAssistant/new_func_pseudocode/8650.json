@@ -1,0 +1,6 @@
+{
+    "function_name": "_basename",
+    "function_argument_number": 1,
+    "function_signature": "_basename(char * a1)",
+    "pseudocode": "char *__cdecl basename(char *a1)\n{\n  return _basename(a1);\n}"
+}

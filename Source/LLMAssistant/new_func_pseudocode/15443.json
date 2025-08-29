@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFNumberCreate",
+    "function_argument_number": 3,
+    "function_signature": "_CFNumberCreate(CFAllocatorRef allocator, CFNumberType theType, const void * valuePtr)",
+    "pseudocode": "CFNumberRef __cdecl CFNumberCreate(CFAllocatorRef allocator, CFNumberType theType, const void *valuePtr)\n{\n  return _CFNumberCreate(allocator, theType, valuePtr);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpHtons",
+    "function_argument_number": 1,
+    "function_signature": "_uarpHtons(unsigned int a1)",
+    "pseudocode": "__int64 __fastcall uarpHtons(unsigned int a1)\n{\n  return __rev16(a1);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[restoreInfo dealloc](restoreInfo * self, SEL a2)",
+    "pseudocode": "void __cdecl -[restoreInfo dealloc](restoreInfo *self, SEL a2)\n{\n  __AMRestorableDevice *restoreDevice; // x0\n  objc_super v4; // [xsp+0h] [xbp-20h] BYREF\n\n  restoreDevice = self->restoreDevice;\n  if ( restoreDevice )\n    CFRelease(restoreDevice);\n  v4.receiver = self;\n  v4.super_class = (Class)&OBJC_CLASS___restoreInfo;\n  -[restoreInfo dealloc](&v4, \"dealloc\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCService setPresentAfterDismiss:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCService setPresentAfterDismiss:](SiriNCService * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[SiriNCService setPresentAfterDismiss:](SiriNCService *self, SEL a2, bool a3)\n{\n  self->_presentAfterDismiss = a3;\n}"
+}

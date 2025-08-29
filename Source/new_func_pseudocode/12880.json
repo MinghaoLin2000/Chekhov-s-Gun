@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSUUID tsu_UUIDWithNamespaceUUID:unsignedIntegerValue:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSUUID tsu_UUIDWithNamespaceUUID:unsignedIntegerValue:](id a1, SEL a2, id a3, unsigned __int64 a4)",
+    "pseudocode": "id __cdecl +[NSUUID tsu_UUIDWithNamespaceUUID:unsignedIntegerValue:](id a1, SEL a2, id a3, unsigned __int64 a4)\n{\n  void *v4; // x0\n  unsigned __int64 v6; // [xsp+8h] [xbp-8h] BYREF\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v6 = a4;\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(a1, \"tsu_UUIDWithNamespaceUUID:bytes:size:\", a3, &v6, 8LL));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

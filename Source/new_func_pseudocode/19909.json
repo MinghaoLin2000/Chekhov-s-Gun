@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z14jobStateString10PKJobState",
+    "function_argument_number": 1,
+    "function_signature": "__Z14jobStateString10PKJobState(__int64 a1)",
+    "pseudocode": "__int64 __fastcall jobStateString(__int64 a1)\n{\n  if ( (unsigned __int64)(a1 - 3) >= 8 )\n    sub_1000634C0();\n  return *((_QWORD *)&off_10009C688 + a1 - 3);\n}"
+}

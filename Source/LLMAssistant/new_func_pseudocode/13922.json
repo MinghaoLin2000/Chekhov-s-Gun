@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$addDataImpl:queue:completion:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$addDataImpl:queue:completion:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_addDataImpl_queue_completion_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"addDataImpl:queue:completion:\");\n}"
+}

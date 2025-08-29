@@ -1,0 +1,6 @@
+{
+    "function_name": "___destroy_helper_block_e8_32s40s48s",
+    "function_argument_number": 1,
+    "function_signature": "___destroy_helper_block_e8_32s40s48s(__int64 a1)",
+    "pseudocode": "void __fastcall __destroy_helper_block_e8_32s40s48s(__int64 a1)\n{\n  void *v2; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_release(*(id *)(a1 + 48));\n  objc_release(*(id *)(a1 + 40));\n  v2 = *(void **)(a1 + 32);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

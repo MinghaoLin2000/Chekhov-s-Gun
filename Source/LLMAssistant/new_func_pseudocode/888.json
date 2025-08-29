@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView awakeFromNib]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPCapacityBarView awakeFromNib](AMPCapacityBarView * self, SEL a2)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView awakeFromNib](AMPCapacityBarView *self, SEL a2)\n{\n  NSMutableArray *v3; // x0\n  NSMutableArray *categories; // x8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = (NSMutableArray *)objc_msgSend(objc_alloc((Class)&OBJC_CLASS___NSMutableArray), \"initWithCapacity:\", 16LL);\n  categories = self->_categories;\n  self->_categories = v3;\n  objc_release(categories);\n  self->_isCalculating = 1;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[AMPCapacityBarView createPopover](self, \"createPopover\");\n}"
+}

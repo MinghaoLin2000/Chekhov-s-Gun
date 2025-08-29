@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Browse_Bonjour isOKToAdd:]",
+    "function_argument_number": 3,
+    "function_signature": "-[Browse_Bonjour isOKToAdd:](int a1, int a2, nw_browse_result_t result)",
+    "pseudocode": "bool __cdecl -[Browse_Bonjour isOKToAdd:](Browse_Bonjour *self, SEL a2, id a3)\n{\n  nw_txt_record *v3; // x19\n  void *v4; // x0\n  void *v5; // x20\n  bool v6; // w21\n  _QWORD access_value[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v9; // [xsp+28h] [xbp-28h]\n\n  v3 = nw_browse_result_copy_txt_record_object((nw_browse_result_t)a3);\n  if ( v3\n    && (((unsigned int)+[PKDefaults urfIsOptional](&OBJC_CLASS___PKDefaults, \"urfIsOptional\") & 1) != 0\n     || nw_txt_record_find_key(v3, \"URF\")) )\n  {\n    v4 = objc_retainAutoreleasedReturnValue(+[PKDefaults requiredPDL](&OBJC_CLASS___PKDefaults, \"requiredPDL\"));\n    v5 = v4;\n    if ( v4 )\n    {\n      access_value[0] = _NSConcreteStackBlock;\n      access_value[1] = 3254779904LL;\n      access_value[2] = sub_10002ED64;\n      access_value[3] = &unk_10009E2F8;\n      v9 = objc_retain(v4);\n      v6 = nw_txt_record_access_key(v3, \"pdl\", access_value);\n      objc_release(v9);\n    }\n    else\n    {\n      v6 = 1;\n    }\n    objc_release(v5);\n  }\n  else\n  {\n    v6 = 0;\n  }\n  objc_release(v3);\n  return v6;\n}"
+}

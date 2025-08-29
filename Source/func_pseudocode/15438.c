@@ -1,0 +1,5 @@
+_AMRestorableDeviceRegisterForNotificationsForDevices
+__int64 AMRestorableDeviceRegisterForNotificationsForDevices()
+{
+  return _AMRestorableDeviceRegisterForNotificationsForDevices();
+}

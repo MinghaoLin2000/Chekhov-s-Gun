@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipWriter setEntryInsertionOffsetImpl:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipWriter setEntryInsertionOffsetImpl:](TSUZipWriter * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[TSUZipWriter setEntryInsertionOffsetImpl:](TSUZipWriter *self, SEL a2, signed __int64 a3)\n{\n  self->_currentOffset = a3;\n  self->_writtenOffset = a3;\n}"
+}

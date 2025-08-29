@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpStageStatusToString",
+    "function_argument_number": 1,
+    "function_signature": "_uarpStageStatusToString(unsigned __int16 a1)",
+    "pseudocode": "__int128 *__fastcall uarpStageStatusToString(unsigned __int16 a1)\n{\n  const char *v1; // x19\n  const char *v2; // x0\n\n  v1 = \"Upload Denied\";\n  switch ( (char)a1 )\n  {\n    case 1:\n      strcpy((char *)xmmword_10002AC9C, \"Upload Complete\");\n      return xmmword_10002AC9C;\n    case 2:\n      goto LABEL_7;\n    case 3:\n      v1 = \"Upload Abandoned\";\n      goto LABEL_7;\n    case 4:\n      v1 = \"Asset Corrupt\";\n      goto LABEL_7;\n    case 5:\n      v1 = \"Asset Not Found\";\n      goto LABEL_7;\n    default:\n      v1 = \"<unknown>\";\nLABEL_7:\n      v2 = uarpProcessingFlagsReasonToString(a1 & 0xFF00);\n      snprintf((char *)xmmword_10002AC9C, 0x100uLL, \"%s (%s)\", v1, v2);\n      return xmmword_10002AC9C;\n  }\n}"
+}

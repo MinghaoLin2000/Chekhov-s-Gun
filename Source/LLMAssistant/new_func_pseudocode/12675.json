@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSDate tsu_DOSTime]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSDate tsu_DOSTime](NSDate * self, SEL a2)",
+    "pseudocode": "$201E9A47BE70A2B12CCA2F48B75AA2F7 __cdecl -[NSDate tsu_DOSTime](NSDate *self, SEL a2)\n{\n  double v2; // d0\n  tm *v3; // x0\n  __int16 tm_year; // w8\n  time_t v6; // [xsp+8h] [xbp-8h] BYREF\n\n  -[NSDate timeIntervalSince1970](self, \"timeIntervalSince1970\");\n  v6 = (__int64)v2;\n  v3 = localtime(&v6);\n  if ( v3->tm_year <= 81 )\n    tm_year = 81;\n  else\n    tm_year = v3->tm_year;\n  return ($201E9A47BE70A2B12CCA2F48B75AA2F7)((unsigned __int16)((32 * v3->tm_mon + 32) | v3->tm_mday | ((tm_year << 9) + 24576)) | ((unsigned __int16)((32 * LOWORD(v3->tm_min)) | ((unsigned __int16)v3->tm_hour << 11) | ((unsigned __int16)v3->tm_sec >> 1)) << 16));\n}"
+}

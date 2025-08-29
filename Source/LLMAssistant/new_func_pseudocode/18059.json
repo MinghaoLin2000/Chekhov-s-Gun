@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSClearAllURLApprovals",
+    "function_argument_number": 0,
+    "function_signature": "_NetFSClearAllURLApprovals()",
+    "pseudocode": "const __CFArray *NetFSClearAllURLApprovals()\n{\n  const __CFArray *result; // x0\n  const __CFArray *v1; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n  CFRange v3; // 0:x1.16\n\n  CFPreferencesSynchronize(CFSTR(\"com.apple.netfs.urlapprovals\"), kCFPreferencesCurrentUser, kCFPreferencesAnyHost);\n  result = CFPreferencesCopyKeyList(\n             CFSTR(\"com.apple.netfs.urlapprovals\"),\n             kCFPreferencesCurrentUser,\n             kCFPreferencesAnyHost);\n  if ( result )\n  {\n    v1 = result;\n    v3.length = CFArrayGetCount(result);\n    v3.location = 0LL;\n    CFArrayApplyFunction(v1, v3, (CFArrayApplierFunction)sub_10000A440, 0LL);\n    CFRelease(v1);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (const __CFArray *)CFPreferencesSynchronize(\n                                CFSTR(\"com.apple.netfs.urlapprovals\"),\n                                kCFPreferencesCurrentUser,\n                                kCFPreferencesAnyHost);\n  }\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z13validate_enumI12ipp_orient_ehET_T0_",
+    "function_argument_number": 1,
+    "function_signature": "__Z13validate_enumI12ipp_orient_ehET_T0_(char a1)",
+    "pseudocode": "__int64 __fastcall validate_enum<ipp_orient_e,unsigned char>(char a1)\n{\n  if ( ((a1 - 4) & 0xFC) != 0 )\n    return 3LL;\n  else\n    return (unsigned int)(unsigned __int8)(a1 - 4) + 4;\n}"
+}

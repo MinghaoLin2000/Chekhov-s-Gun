@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TrackListTableView dragHighlighted]",
+    "function_argument_number": 2,
+    "function_signature": "-[TrackListTableView dragHighlighted](TrackListTableView * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TrackListTableView dragHighlighted](TrackListTableView *self, SEL a2)\n{\n  return self->_dragHighlighted;\n}"
+}

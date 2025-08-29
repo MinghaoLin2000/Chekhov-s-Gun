@@ -1,0 +1,6 @@
+{
+    "function_name": "_qsort",
+    "function_argument_number": 4,
+    "function_signature": "_qsort(void * __base, size_t __nel, size_t __width, int (__cdecl *)(const void *, const void *) __compar)",
+    "pseudocode": "void __cdecl qsort(void *__base, size_t __nel, size_t __width, int (__cdecl *__compar)(const void *, const void *))\n{\n  _qsort(__base, __nel, __width, __compar);\n}"
+}

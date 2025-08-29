@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSURL tsu_volumeSupportsCloning]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSURL tsu_volumeSupportsCloning](NSURL * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[NSURL tsu_volumeSupportsCloning](NSURL *self, SEL a2)\n{\n  _BOOL4 v3; // w0\n  int v4; // w8\n  _OWORD v6[2]; // [xsp+0h] [xbp-8F0h] BYREF\n  int v7; // [xsp+20h] [xbp-8D0h]\n  __int128 v8; // [xsp+30h] [xbp-8C0h] BYREF\n  __int64 v9; // [xsp+40h] [xbp-8B0h]\n  statfs v10; // [xsp+50h] [xbp-8A0h] BYREF\n\n  v8 = xmmword_10018F160;\n  v9 = 0LL;\n  v3 = -[NSURL isFileURL](self, \"isFileURL\");\n  if ( v3 )\n  {\n    memset(&v10, 0, 512);\n    v7 = 0;\n    memset(v6, 0, sizeof(v6));\n    v4 = tsu_reachable_statfs(self, &v10);\n    LOBYTE(v3) = 0;\n    if ( !v4 )\n    {\n      if ( getattrlist(v10.f_mntonname, &v8, v6, 0x24uLL, 0x21u) )\n        LOBYTE(v3) = 0;\n      else\n        LOBYTE(v3) = BYTE10(v6[0]) & 1;\n    }\n  }\n  return v3;\n}"
+}

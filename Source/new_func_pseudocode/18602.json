@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwca",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwca(_QWORD * a1, _QWORD * a2)",
+    "pseudocode": "_QWORD *__fastcall assignWithCopy for BundleIdentifier.Symbol(_QWORD *a1, _QWORD *a2)\n{\n  unsigned __int64 v4; // x21\n  unsigned __int64 v5; // x8\n  __int64 v6; // x0\n  __int64 v7; // x0\n\n  v4 = a1[1];\n  v5 = a2[1];\n  if ( v4 < 0xFFFFFFFF )\n  {\n    if ( v5 >= 0xFFFFFFFF )\n    {\n      *a1 = *a2;\n      v7 = a2[1];\n      a1[1] = v7;\n      swift_bridgeObjectRetain(v7);\n      return a1;\n    }\nLABEL_7:\n    *(_OWORD *)a1 = *(_OWORD *)a2;\n    return a1;\n  }\n  if ( v5 < 0xFFFFFFFF )\n  {\n    swift_bridgeObjectRelease(a1[1]);\n    goto LABEL_7;\n  }\n  *a1 = *a2;\n  v6 = a2[1];\n  a1[1] = v6;\n  swift_bridgeObjectRetain(v6);\n  swift_bridgeObjectRelease(v4);\n  return a1;\n}"
+}

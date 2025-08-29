@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV24rectIntersectsOneDisplayySbSo6CGRectVFZ",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV24rectIntersectsOneDisplayySbSo6CGRectVFZ()",
+    "pseudocode": "__int64 static CGDisplay.rectIntersectsOneDisplay(_:)()\n{\n  __int64 v0; // x19\n  CGDirectDisplayID *v1; // x0\n  uint32_t *v2; // x1\n  unsigned __int8 v4; // [xsp+3h] [xbp-3Dh]\n  uint32_t matchingDisplayCount; // [xsp+4h] [xbp-3Ch] BYREF\n  CGRect v6; // 0:d0.8,8:d1.8,16:d2.8,24:d3.8\n\n  v6.origin.x = sub_1000140C8();\n  matchingDisplayCount = 0;\n  CGGetDisplaysWithRect(v6, 0, 0LL, &matchingDisplayCount);\n  if ( !matchingDisplayCount )\n    return 0LL;\n  v0 = swift_slowAlloc(4LL * matchingDisplayCount, -1LL);\n  v1 = (CGDirectDisplayID *)sub_1000140F0(v0);\n  sub_100018E50(v1, v2);\n  swift_slowDealloc(v0, -1LL, -1LL);\n  return v4;\n}"
+}

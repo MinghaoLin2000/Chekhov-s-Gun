@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSValue CGAffineTransformValue]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSValue CGAffineTransformValue](CGAffineTransform * retstr, NSValue * self, SEL a3)",
+    "pseudocode": "CGAffineTransform *__cdecl -[NSValue CGAffineTransformValue](\n        CGAffineTransform *__return_ptr retstr,\n        NSValue *self,\n        SEL a3)\n{\n  *(_OWORD *)&retstr->c = 0u;\n  *(_OWORD *)&retstr->tx = 0u;\n  *(_OWORD *)&retstr->a = 0u;\n  return (CGAffineTransform *)-[NSValue getValue:](self, \"getValue:\", retstr);\n}"
+}

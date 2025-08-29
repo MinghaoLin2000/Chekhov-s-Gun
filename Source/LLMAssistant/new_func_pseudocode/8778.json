@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwCP()",
+    "pseudocode": "// attributes: thunk\n__int64 initializeBufferWithCopyOfBuffer for EngagementMessagePlacementInfo()\n{\n  return _s34AppleMediaServicesUIDynamicService30EngagementMessagePlacementInfoVwCP_0();\n}"
+}

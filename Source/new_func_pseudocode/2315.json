@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeFinderViewController clickManageStorageButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceModeFinderViewController clickManageStorageButton:](DeviceModeFinderViewController * self, SEL a2, id a3)",
+    "pseudocode": "// attributes: thunk\nvoid __cdecl -[DeviceModeFinderViewController clickManageStorageButton:](\n        DeviceModeFinderViewController *self,\n        SEL a2,\n        id a3)\n{\n  -[DeviceModeFinderViewController presentStorageManagementUI](self, \"presentStorageManagementUI\", a3);\n}"
+}

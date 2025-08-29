@@ -1,0 +1,6 @@
+{
+    "function_name": "_InternalStorageDirectoryPath",
+    "function_argument_number": 0,
+    "function_signature": "_InternalStorageDirectoryPath()",
+    "pseudocode": "__int64 InternalStorageDirectoryPath()\n{\n  return _InternalStorageDirectoryPath();\n}"
+}

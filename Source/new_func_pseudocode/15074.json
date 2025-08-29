@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDResultGetRange",
+    "function_argument_number": 0,
+    "function_signature": "_DDResultGetRange()",
+    "pseudocode": "__int64 DDResultGetRange()\n{\n  return _DDResultGetRange();\n}"
+}

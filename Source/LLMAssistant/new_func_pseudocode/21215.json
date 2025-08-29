@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s22localspeechrecognition15InstrumentationC20ondeviceRecordLoggerAA08OndeviceD6HelperCvpfi",
+    "function_argument_number": 0,
+    "function_signature": "_$s22localspeechrecognition15InstrumentationC20ondeviceRecordLoggerAA08OndeviceD6HelperCvpfi()",
+    "pseudocode": "__int64 variable initialization expression of Instrumentation.ondeviceRecordLogger()\n{\n  __int64 v0; // x0\n\n  v0 = type metadata accessor for OndeviceRecordHelper(0LL);\n  sub_100005520(v0);\n  return sub_10000DC3C();\n}"
+}

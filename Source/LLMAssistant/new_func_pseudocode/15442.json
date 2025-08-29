@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryAddValue",
+    "function_argument_number": 3,
+    "function_signature": "_CFDictionaryAddValue(CFMutableDictionaryRef theDict, const void * key, const void * value)",
+    "pseudocode": "void __cdecl CFDictionaryAddValue(CFMutableDictionaryRef theDict, const void *key, const void *value)\n{\n  _CFDictionaryAddValue(theDict, key, value);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMParametersObserver set_lock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMParametersObserver set_lock:](AMParametersObserver * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[AMParametersObserver set_lock:](AMParametersObserver *self, SEL a2, os_unfair_lock_s a3)\n{\n  self->__lock = a3;\n}"
+}

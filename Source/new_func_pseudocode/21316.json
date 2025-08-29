@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition12EARInterface makeEARLanguageDetectorWithDetectorOptions:clientInfo:analysisOptions:reply:]",
+    "function_argument_number": 6,
+    "function_signature": "-[_TtC22localspeechrecognition12EARInterface makeEARLanguageDetectorWithDetectorOptions:clientInfo:analysisOptions:reply:](int a1, int a2, int a3, int a4, int a5, void * aBlock)",
+    "pseudocode": "void __cdecl -[EARInterface makeEARLanguageDetectorWithDetectorOptions:clientInfo:analysisOptions:reply:](\n        _TtC22localspeechrecognition12EARInterface *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5,\n        id a6)\n{\n  void *v10; // x23\n  __int64 v11; // x24\n  id v12; // x21\n  id v13; // x23\n  id v14; // x25\n  _TtC22localspeechrecognition12EARInterface *v15; // x20\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v10 = _Block_copy(a6);\n  v11 = swift_allocObject(&unk_100059760, 24LL, 7LL);\n  *(_QWORD *)(v11 + 16) = v10;\n  v12 = objc_retain(a3);\n  v13 = objc_retain(a4);\n  v14 = objc_retain(a5);\n  v15 = objc_retain(self);\n  sub_100010D4C(v12, v13, a5, sub_1000126E0, v11);\n  objc_release(v12);\n  objc_release(v13);\n  objc_release(v14);\n  objc_release(v15);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_release(v11);\n}"
+}

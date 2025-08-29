@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject description]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPPHMediaObject description](AMPPHMediaObject * self, SEL a2)",
+    "pseudocode": "id __cdecl -[AMPPHMediaObject description](AMPPHMediaObject *self, SEL a2)\n{\n  return +[NSString stringWithFormat:](\n           &OBJC_CLASS___NSString,\n           \"stringWithFormat:\",\n           CFSTR(\"URL: %@, irisURL: %@\"),\n           self->_currentVersionURL,\n           self->_videoComplementURL);\n}"
+}

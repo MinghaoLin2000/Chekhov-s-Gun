@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSetupViewController imageForDeviceType]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSetupViewController imageForDeviceType](DeviceSetupViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSetupViewController imageForDeviceType](DeviceSetupViewController *self, SEL a2)\n{\n  NSBundle *v3; // x19\n  AMPDevice *v4; // x20\n  char *v5; // x21\n  NSImage *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSBundle bundleForClass:](&OBJC_CLASS___NSBundle, \"bundleForClass:\", objc_opt_class(self)));\n  v4 = objc_retainAutoreleasedReturnValue(-[DeviceViewController device](self, \"device\"));\n  v5 = (char *)-[AMPDevice deviceType](v4, \"deviceType\");\n  objc_release(v4);\n  if ( (unsigned __int64)(v5 - 1) > 3 )\n    v6 = 0LL;\n  else\n    v6 = objc_retainAutoreleasedReturnValue(-[NSBundle imageForResource:](v3, \"imageForResource:\", *(&off_1000BA1C0 + (_QWORD)(v5 - 1))));\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

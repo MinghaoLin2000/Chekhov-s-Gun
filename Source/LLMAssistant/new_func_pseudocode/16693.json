@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMAuthInstallApSetParameters",
+    "function_argument_number": 0,
+    "function_signature": "_AMAuthInstallApSetParameters()",
+    "pseudocode": "__int64 AMAuthInstallApSetParameters()\n{\n  return _AMAuthInstallApSetParameters();\n}"
+}

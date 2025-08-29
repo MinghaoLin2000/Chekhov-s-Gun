@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BrowseService removeEntity:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BrowseService removeEntity:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[BrowseService removeEntity:](BrowseService *self, SEL a2, id a3)\n{\n  id v4; // x19\n  PrintInfoSet *browseInfos; // x22\n  void *v6; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = objc_retain(a3);\n  if ( (unsigned int)-[NSMutableSet containsObject:](self->_entities, \"containsObject:\", v4) )\n  {\n    -[NSMutableSet removeObject:](self->_entities, \"removeObject:\", v4);\n    browseInfos = self->_browseInfos;\n    if ( browseInfos )\n    {\n      v6 = objc_retainAutoreleasedReturnValue(objc_msgSend(v4, \"browseInfo\"));\n      -[PrintInfoSet removeInfo:](browseInfos, \"removeInfo:\", v6);\n      objc_release(v6);\n    }\n    -[BrowseService _checkSync](self, \"_checkSync\");\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

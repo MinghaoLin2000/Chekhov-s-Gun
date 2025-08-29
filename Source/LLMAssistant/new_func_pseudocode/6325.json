@@ -1,0 +1,6 @@
+{
+    "function_name": "+[PAMediaConversionServiceSharedUtilitiesServiceSide registerPhotosAdjustmentsSubsystems]",
+    "function_argument_number": 2,
+    "function_signature": "+[PAMediaConversionServiceSharedUtilitiesServiceSide registerPhotosAdjustmentsSubsystems](id a1, SEL a2)",
+    "pseudocode": "void __cdecl +[PAMediaConversionServiceSharedUtilitiesServiceSide registerPhotosAdjustmentsSubsystems](id a1, SEL a2)\n{\n  id v2; // x0\n\n  v2 = objc_unsafeClaimAutoreleasedReturnValue(+[PISchema registeredPhotosSchemaIdentifier](&OBJC_CLASS___PISchema, \"registeredPhotosSchemaIdentifier\"));\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN6google8protobuf4EnumD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN6google8protobuf4EnumD2Ev(google::protobuf::Enum * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::Enum::~Enum(google::protobuf::Enum *this)\n{\n  __ZN6google8protobuf4EnumD2Ev(this);\n}"
+}

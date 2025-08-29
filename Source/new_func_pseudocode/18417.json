@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO8rawValueACSgSi_tcfC",
+    "function_argument_number": 1,
+    "function_signature": "_$s19ControlCenterHelper26ScreenMirroringAlertOptionO8rawValueACSgSi_tcfC(unsigned __int64 result)",
+    "pseudocode": "unsigned __int64 __fastcall ScreenMirroringAlertOption.init(rawValue:)(unsigned __int64 result)\n{\n  if ( result > 4 )\n    return 0LL;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService11MediaClientVwta",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService11MediaClientVwta(_QWORD * a1, _QWORD * a2)",
+    "pseudocode": "_QWORD *__fastcall assignWithTake for MediaClient(_QWORD *a1, _QWORD *a2)\n{\n  __int64 v3; // x9\n  __int64 v4; // x0\n\n  v3 = a2[1];\n  v4 = a1[1];\n  *a1 = *a2;\n  a1[1] = v3;\n  swift_bridgeObjectRelease(v4);\n  return a1;\n}"
+}

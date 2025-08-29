@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TrackListTableView setDragHighlighted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TrackListTableView setDragHighlighted:](TrackListTableView * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[TrackListTableView setDragHighlighted:](TrackListTableView *self, SEL a2, bool a3)\n{\n  if ( self->_dragHighlighted != a3 )\n  {\n    self->_dragHighlighted = a3;\n    -[TrackListTableView setNeedsDisplay:](self, \"setNeedsDisplay:\", 1LL);\n  }\n}"
+}

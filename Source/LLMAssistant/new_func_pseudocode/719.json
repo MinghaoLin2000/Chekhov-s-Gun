@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeUnpairedViewController dealloc]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeUnpairedViewController dealloc](DeviceModeUnpairedViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceModeUnpairedViewController dealloc](DeviceModeUnpairedViewController *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  -[DeviceModeUnpairedViewController hideProgress:](self, \"hideProgress:\", 0LL);\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___DeviceModeUnpairedViewController;\n  -[DeviceModeUnpairedViewController dealloc](&v3, \"dealloc\");\n}"
+}

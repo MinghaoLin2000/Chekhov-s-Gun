@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_allocate_exception",
+    "function_argument_number": 1,
+    "function_signature": "___cxa_allocate_exception(size_t thrown_size)",
+    "pseudocode": "void *__fastcall __cxa_allocate_exception(size_t thrown_size)\n{\n  return ___cxa_allocate_exception(thrown_size);\n}"
+}

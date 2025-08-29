@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__110unique_ptrIN3mlc14xpc_dispatch_tENS_14default_deleteIS2_EEE5resetB8ne180100EPS2_",
+    "function_argument_number": 2,
+    "function_signature": "__ZNSt3__110unique_ptrIN3mlc14xpc_dispatch_tENS_14default_deleteIS2_EEE5resetB8ne180100EPS2_(__int64 * result, __int64 a2)",
+    "pseudocode": "__int64 *__fastcall std::unique_ptr<mlc::xpc_dispatch_t>::reset[abi:ne180100](__int64 *result, __int64 a2)\n{\n  __int64 v2; // x19\n  _QWORD *v3; // x21\n  void *v4; // x0\n  _QWORD *v5; // x20\n  _QWORD *v6; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v2 = *result;\n  *result = a2;\n  if ( v2 )\n  {\n    v3 = *(_QWORD **)(v2 + 24);\n    while ( v3 )\n    {\n      v5 = v3;\n      v3 = (_QWORD *)*v3;\n      v6 = (_QWORD *)v5[6];\n      if ( v6 == v5 + 3 )\n      {\n        (*(void (__fastcall **)(_QWORD *))(v5[3] + 32LL))(v5 + 3);\n      }\n      else if ( v6 )\n      {\n        (*(void (__fastcall **)(_QWORD *))(*v6 + 40LL))(v6);\n      }\n      operator delete(v5);\n    }\n    v4 = *(void **)(v2 + 8);\n    *(_QWORD *)(v2 + 8) = 0LL;\n    if ( v4 )\n      operator delete(v4);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (__int64 *)operator delete(v2, 0x10A0C402A8DDD12LL);\n  }\n  return result;\n}"
+}

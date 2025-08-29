@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_initClassMetadata2",
+    "function_argument_number": 0,
+    "function_signature": "_swift_initClassMetadata2()",
+    "pseudocode": "__int64 swift_initClassMetadata2()\n{\n  return _swift_initClassMetadata2();\n}"
+}

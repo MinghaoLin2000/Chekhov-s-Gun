@@ -1,0 +1,6 @@
+{
+    "function_name": "-[USBDFUUpdater setDfuMode]",
+    "function_argument_number": 2,
+    "function_signature": "-[USBDFUUpdater setDfuMode](USBDFUUpdater * self, SEL a2)",
+    "pseudocode": "int __cdecl -[USBDFUUpdater setDfuMode](USBDFUUpdater *self, SEL a2)\n{\n  OS_os_log *log; // x20\n  int v4; // w20\n  OS_os_log *v5; // x19\n  int v7; // [xsp+0h] [xbp-30h] BYREF\n  const char *v8; // [xsp+4h] [xbp-2Ch]\n\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_INFO) )\n  {\n    v7 = 136315138;\n    v8 = \"-[USBDFUUpdater setDfuMode]\";\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      log,\n      OS_LOG_TYPE_INFO,\n      \"%s: Change to kDFU_IDLE through HVCI_APP_DETACH_TO_DFU\",\n      (uint8_t *)&v7,\n      0xCu);\n  }\n  v4 = -[USBDFUUpdater hvciAppDetachToDfuCmd](self, \"hvciAppDetachToDfuCmd\");\n  if ( v4 )\n  {\n    v5 = self->_log;\n    if ( os_log_type_enabled(v5, OS_LOG_TYPE_ERROR) )\n      sub_100017220(v5);\n  }\n  return v4;\n}"
+}

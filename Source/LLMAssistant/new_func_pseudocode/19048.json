@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController setSwipeGestureOffset:didComplete:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController setSwipeGestureOffset:didComplete:](SiriNCAlertViewController * self, SEL a2, double a3, bool a4)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[SiriNCAlertViewController setSwipeGestureOffset:didComplete:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        double a3,\n        bool a4)\n{\n  _BOOL8 v4; // x19\n  AFUISiriViewController *v6; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = a4;\n  v6 = objc_retainAutoreleasedReturnValue(-[SiriNCAlertViewController siriViewController](self, \"siriViewController\"));\n  -[AFUISiriViewController setSwipeGestureOffset:didComplete:](v6, \"setSwipeGestureOffset:didComplete:\", v4, a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v6);\n}"
+}

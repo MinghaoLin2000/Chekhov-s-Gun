@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceBackupEnterPasswordViewController setCheckBoxValue:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceBackupEnterPasswordViewController setCheckBoxValue:](DeviceBackupEnterPasswordViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceBackupEnterPasswordViewController setCheckBoxValue:](\n        DeviceBackupEnterPasswordViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_checkBoxValue = a3;\n}"
+}

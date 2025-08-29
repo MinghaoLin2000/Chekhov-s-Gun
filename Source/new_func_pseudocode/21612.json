@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$addWordWithParts:templateName:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$addWordWithParts:templateName:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_addWordWithParts_templateName_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"addWordWithParts:templateName:\");\n}"
+}

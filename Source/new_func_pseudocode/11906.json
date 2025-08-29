@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf7Message24FindInitializationErrorsEPNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf7Message24FindInitializationErrorsEPNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE(__int64 a1, __int64 a2)",
+    "pseudocode": "void __fastcall google::protobuf::Message::FindInitializationErrors(__int64 a1, __int64 a2)\n{\n  void *__p[2]; // [xsp+8h] [xbp-28h] BYREF\n  char v5; // [xsp+1Fh] [xbp-11h]\n\n  sub_10007A754((int)__p, \"\");\n  google::protobuf::internal::ReflectionOps::FindInitializationErrors(a1, __p, a2);\n  if ( v5 < 0 )\n    operator delete(__p[0]);\n}"
+}

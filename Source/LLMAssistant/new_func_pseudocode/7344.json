@@ -1,0 +1,6 @@
+{
+    "function_name": "_IPAOrientationFromClockwiseRotation",
+    "function_argument_number": 0,
+    "function_signature": "_IPAOrientationFromClockwiseRotation()",
+    "pseudocode": "__int64 IPAOrientationFromClockwiseRotation()\n{\n  return _IPAOrientationFromClockwiseRotation();\n}"
+}

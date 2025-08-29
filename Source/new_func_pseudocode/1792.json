@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceNSImageCell accessibilityValueDescription]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceNSImageCell accessibilityValueDescription](DeviceNSImageCell * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceNSImageCell accessibilityValueDescription](DeviceNSImageCell *self, SEL a2)\n{\n  NSBundle *v2; // x19\n  NSString *v3; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(+[NSBundle mainBundle](&OBJC_CLASS___NSBundle, \"mainBundle\"));\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[NSBundle localizedStringForKey:value:table:](\n           v2,\n           \"localizedStringForKey:value:table:\",\n           CFSTR(\"device image\"),\n           &stru_1000BA220,\n           0LL));\n  objc_release(v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

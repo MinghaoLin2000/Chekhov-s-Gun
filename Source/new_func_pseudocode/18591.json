@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierVwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierVwCP()",
+    "pseudocode": "// attributes: thunk\n__int64 initializeBufferWithCopyOfBuffer for BundleIdentifier()\n{\n  return _s17ControlCenterCore16BundleIdentifierVwCP_0();\n}"
+}

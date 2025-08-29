@@ -1,0 +1,8 @@
+-[BackgroundAssetConsentViewController setDelegate:]
+void __cdecl -[BackgroundAssetConsentViewController setDelegate:](
+        BackgroundAssetConsentViewController *self,
+        SEL a2,
+        id a3)
+{
+  objc_storeWeak((id *)&self->_delegate, a3);
+}

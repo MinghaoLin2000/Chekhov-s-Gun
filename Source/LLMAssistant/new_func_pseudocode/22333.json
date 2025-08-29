@@ -1,0 +1,6 @@
+{
+    "function_name": "__TSMSetRemoteViewActivation",
+    "function_argument_number": 0,
+    "function_signature": "__TSMSetRemoteViewActivation()",
+    "pseudocode": "__int64 _TSMSetRemoteViewActivation()\n{\n  return __TSMSetRemoteViewActivation();\n}"
+}

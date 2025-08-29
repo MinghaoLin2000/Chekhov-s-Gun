@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMActionLoaderServiceListener init]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMActionLoaderServiceListener init](AMActionLoaderServiceListener * self, SEL a2)",
+    "pseudocode": "AMActionLoaderServiceListener *__cdecl -[AMActionLoaderServiceListener init](\n        AMActionLoaderServiceListener *self,\n        SEL a2)\n{\n  AMActionLoaderServiceListener *v2; // x19\n  NSMapTable *v3; // x0\n  NSMapTable *xpcServicesByConnection; // x8\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___AMActionLoaderServiceListener;\n  v2 = -[AMActionLoaderServiceListener init](&v6, \"init\");\n  if ( v2 )\n  {\n    v3 = objc_retainAutoreleasedReturnValue(+[NSMapTable weakToWeakObjectsMapTable](&OBJC_CLASS___NSMapTable, \"weakToWeakObjectsMapTable\"));\n    xpcServicesByConnection = v2->__xpcServicesByConnection;\n    v2->__xpcServicesByConnection = v3;\n    objc_release(xpcServicesByConnection);\n    v2->__xpcServicesLock._os_unfair_lock_opaque = 0;\n  }\n  return v2;\n}"
+}

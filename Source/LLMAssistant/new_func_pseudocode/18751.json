@@ -1,0 +1,6 @@
+{
+    "function_name": "$s27BackgroundReplacementHelper8GridItemV27RemoveBackgroundButtonStyleVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s27BackgroundReplacementHelper8GridItemV27RemoveBackgroundButtonStyleVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for GridItem.RemoveBackgroundButtonStyle()\n{\n  return &type metadata for GridItem.RemoveBackgroundButtonStyle;\n}"
+}

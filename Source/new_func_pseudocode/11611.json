@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf8internal12MapFieldBase16GetRepeatedFieldEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf8internal12MapFieldBase16GetRepeatedFieldEv(google::protobuf::internal::MapFieldBase * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::internal::MapFieldBase::GetRepeatedField(\n        google::protobuf::internal::MapFieldBase *this)\n{\n  google::protobuf::internal::MapFieldBase::SyncRepeatedFieldWithMap(this);\n  return *((_QWORD *)this + 2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uuid_compare",
+    "function_argument_number": 2,
+    "function_signature": "_uuid_compare(const unsigned __int8 *__attribute__((__org_typedef(uuid_t))) uu1, const unsigned __int8 *__attribute__((__org_typedef(uuid_t))) uu2)",
+    "pseudocode": "int __cdecl uuid_compare(const uuid_t uu1, const uuid_t uu2)\n{\n  return _uuid_compare(uu1, uu2);\n}"
+}

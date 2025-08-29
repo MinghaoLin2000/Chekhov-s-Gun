@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper15SharePermissionOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper15SharePermissionOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for SharePermission()\n{\n  return &type metadata for SharePermission;\n}"
+}

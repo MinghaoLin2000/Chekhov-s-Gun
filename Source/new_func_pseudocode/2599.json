@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsViewController revert]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsContactsViewController revert](DeviceSettingsContactsViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsContactsViewController revert](DeviceSettingsContactsViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  -[DeviceSettingsContactsViewController revertCheckedItemsModel](self, \"revertCheckedItemsModel\");\n  -[DeviceSettingsViewController revertCheckBoxesForTabView](self, \"revertCheckBoxesForTabView\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceSettingsContactsViewController loadUIFromPrefs](self, \"loadUIFromPrefs\");\n}"
+}

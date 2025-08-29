@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_getAssociatedTypeWitness",
+    "function_argument_number": 0,
+    "function_signature": "_swift_getAssociatedTypeWitness()",
+    "pseudocode": "__int64 swift_getAssociatedTypeWitness()\n{\n  return _swift_getAssociatedTypeWitness();\n}"
+}

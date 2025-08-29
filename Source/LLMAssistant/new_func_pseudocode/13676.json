@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDictionaryRemoveAllValues",
+    "function_argument_number": 1,
+    "function_signature": "_CFDictionaryRemoveAllValues(CFMutableDictionaryRef theDict)",
+    "pseudocode": "void __cdecl CFDictionaryRemoveAllValues(CFMutableDictionaryRef theDict)\n{\n  _CFDictionaryRemoveAllValues(theDict);\n}"
+}

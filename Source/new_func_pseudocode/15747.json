@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUSBDFUAccessory recvMessage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUSBDFUAccessory recvMessage:](int a1, int a2, id a3)",
+    "pseudocode": "unsigned int __cdecl -[UARPUSBDFUAccessory recvMessage:](UARPUSBDFUAccessory *self, SEL a2, id a3)\n{\n  id v4; // x20\n  OS_os_log *log; // x21\n  id v6; // x20\n  unsigned int v7; // w21\n  OS_os_log *v8; // x19\n\n  v4 = objc_retain(a3);\n  log = self->_log;\n  if ( os_log_type_enabled(log, OS_LOG_TYPE_DEBUG) )\n    sub_1000190D4(log);\n  v6 = objc_retainAutorelease(v4);\n  v7 = uarpPlatformEndpointRecvMessage(\n         &self->_localEP,\n         &self->_remoteEP,\n         objc_msgSend(v6, \"bytes\"),\n         objc_msgSend(v6, \"length\"));\n  if ( v7 )\n  {\n    v8 = self->_log;\n    if ( os_log_type_enabled(v8, OS_LOG_TYPE_ERROR) )\n      sub_10001904C((int)v6, v7, v8);\n  }\n  objc_release(v6);\n  return v7;\n}"
+}

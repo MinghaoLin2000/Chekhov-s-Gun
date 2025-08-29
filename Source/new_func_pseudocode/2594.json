@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsContactsTopLevelView updateLayer]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsContactsTopLevelView updateLayer](DeviceSettingsContactsTopLevelView * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsContactsTopLevelView updateLayer](DeviceSettingsContactsTopLevelView *self, SEL a2)\n{\n  NSColor *v3; // x20\n  CGColor *v4; // x21\n  void *v5; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v3 = objc_retainAutorelease(objc_retainAutoreleasedReturnValue(+[NSColor windowBackgroundColor](&OBJC_CLASS___NSColor, \"windowBackgroundColor\")));\n  v4 = -[NSColor CGColor](v3, \"CGColor\");\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsContactsTopLevelView layer](self, \"layer\"));\n  objc_msgSend(v5, \"setBackgroundColor:\", v4);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v3);\n}"
+}

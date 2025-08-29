@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BarChoice initWithTitle:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BarChoice initWithTitle:](int a1, int a2, id a3)",
+    "pseudocode": "BarChoice *__cdecl -[BarChoice initWithTitle:](BarChoice *self, SEL a2, id a3)\n{\n  id v4; // x19\n  BarChoice *v5; // x0\n  BarChoice *v6; // x20\n  id v7; // x21\n  void *v8; // x21\n  objc_super v10; // [xsp+0h] [xbp-30h] BYREF\n\n  v4 = objc_retain(a3);\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___BarChoice;\n  v5 = -[BarChoice init](&v10, \"init\");\n  v6 = v5;\n  if ( v5 )\n  {\n    -[BarChoice setTitle:](v5, \"setTitle:\", v4);\n    v7 = objc_retainAutoreleasedReturnValue(+[NSButton scopedButtonWithTitle:](&OBJC_CLASS___NSButton, \"scopedButtonWithTitle:\", v4));\n    -[BarChoice setButtonRepresentation:](v6, \"setButtonRepresentation:\", v7);\n    objc_release(v7);\n    v8 = objc_msgSend(\n           objc_alloc((Class)&OBJC_CLASS___NSMenuItem),\n           \"initWithTitle:action:keyEquivalent:\",\n           v4,\n           0LL,\n           &stru_1000BA220);\n    -[BarChoice setMenuRepresentation:](v6, \"setMenuRepresentation:\", v8);\n    objc_release(v8);\n  }\n  objc_release(v4);\n  return v6;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPSnappyReadChannel initWithReadChannel:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSPSnappyReadChannel initWithReadChannel:](int a1, int a2, id a3)",
+    "pseudocode": "TSPSnappyReadChannel *__cdecl -[TSPSnappyReadChannel initWithReadChannel:](TSPSnappyReadChannel *self, SEL a2, id a3)\n{\n  id v5; // x19\n  TSPSnappyReadChannel *v6; // x0\n  TSPSnappyReadChannel *v7; // x21\n  TSPSnappyReadChannel *v8; // x0\n  objc_super v10; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___TSPSnappyReadChannel;\n  v6 = -[TSPSnappyReadChannel init](&v10, \"init\");\n  v7 = v6;\n  if ( v6 )\n  {\n    objc_storeStrong((id *)&v6->_readChannel, a3);\n    v8 = objc_retain(v7);\n  }\n  objc_release(v5);\n  objc_release(v7);\n  return v7;\n}"
+}

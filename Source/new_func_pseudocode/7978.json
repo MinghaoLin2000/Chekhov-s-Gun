@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSpaceCopyName",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSpaceCopyName()",
+    "pseudocode": "__int64 CGSSpaceCopyName()\n{\n  return _CGSSpaceCopyName();\n}"
+}

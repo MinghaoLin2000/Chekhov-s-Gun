@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_uncommentedAddressRespectingGroups]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_uncommentedAddressRespectingGroups](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_uncommentedAddressRespectingGroups](NSString *self, SEL a2)\n{\n  void *v3; // x20\n  void *v4; // x0\n  NSString *v6; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = -[NSString rangeOfString:](self, \"rangeOfString:\", CFSTR(\"@\"));\n  v4 = -[NSString rangeOfString:](self, \"rangeOfString:\", CFSTR(\"<\"));\n  if ( v3 == (void *)0x7FFFFFFFFFFFFFFFLL && v4 == (void *)0x7FFFFFFFFFFFFFFFLL )\n    v6 = objc_retain(self);\n  else\n    v6 = (NSString *)objc_retainAutoreleasedReturnValue(-[NSString tsu_uncommentedAddress](self, \"tsu_uncommentedAddress\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v6);\n}"
+}

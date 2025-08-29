@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AutofillNode isGeniusPlaylist]",
+    "function_argument_number": 2,
+    "function_signature": "-[AutofillNode isGeniusPlaylist](AutofillNode * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[AutofillNode isGeniusPlaylist](AutofillNode *self, SEL a2)\n{\n  return (void *)-[AutofillNode kind](self, \"kind\") == (void *)2\n      || (void *)-[AutofillNode kind](self, \"kind\") == (void *)4;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_NetFSInterface_Release",
+    "function_argument_number": 1,
+    "function_signature": "_NetFSInterface_Release(void * a1)",
+    "pseudocode": "ULONG __cdecl NetFSInterface_Release(void *a1)\n{\n  int v1; // w8\n  ULONG v2; // w19\n  const __CFUUID *v3; // x20\n\n  v1 = *((_DWORD *)a1 + 4);\n  v2 = v1 - 1;\n  *((_DWORD *)a1 + 4) = v1 - 1;\n  if ( v1 == 1 )\n  {\n    v3 = (const __CFUUID *)*((_QWORD *)a1 + 1);\n    free(a1);\n    if ( v3 )\n    {\n      CFPlugInRemoveInstanceForFactory(v3);\n      CFRelease(v3);\n    }\n  }\n  return v2;\n}"
+}

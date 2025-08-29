@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$setFrameOrigin:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$setFrameOrigin:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_setFrameOrigin_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"setFrameOrigin:\");\n}"
+}

@@ -1,0 +1,8 @@
+-[DeviceSettingsPodcastsViewController setTabView:]
+void __cdecl -[DeviceSettingsPodcastsViewController setTabView:](
+        DeviceSettingsPodcastsViewController *self,
+        SEL a2,
+        id a3)
+{
+  objc_storeWeak((id *)&self->_tabView, a3);
+}

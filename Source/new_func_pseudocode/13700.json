@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSRangeFromString",
+    "function_argument_number": 1,
+    "function_signature": "_NSRangeFromString(NSString * aString)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nNSRange __cdecl NSRangeFromString(NSString *aString)\n{\n  NSUInteger location; // x0\n  NSUInteger length; // x1\n  NSRange v3; // kr00_16\n  NSRange result; // 0:x0.16\n\n  v3 = _NSRangeFromString(aString);\n  length = v3.length;\n  location = v3.location;\n  result.length = length;\n  result.location = location;\n  return result;\n}"
+}

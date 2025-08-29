@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore20ModuleNavigationPathVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore20ModuleNavigationPathVMa()",
+    "pseudocode": "__int64 type metadata accessor for ModuleNavigationPath()\n{\n  return sub_100048F34(&unk_10008C950);\n}"
+}

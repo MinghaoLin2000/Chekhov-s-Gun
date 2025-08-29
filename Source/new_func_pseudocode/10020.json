@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io19EpsCopyOutputStream8Encode64Ey",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf2io19EpsCopyOutputStream8Encode64Ey(google::protobuf::io::EpsCopyOutputStream * this, unsigned __int64 a2)",
+    "pseudocode": "void __fastcall google::protobuf::io::EpsCopyOutputStream::Encode64(google::protobuf::io::EpsCopyOutputStream *this)\n{\n  ;\n}"
+}

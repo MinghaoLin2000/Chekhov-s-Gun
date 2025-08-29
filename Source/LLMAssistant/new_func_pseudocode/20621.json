@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_browser_set_queue",
+    "function_argument_number": 2,
+    "function_signature": "_nw_browser_set_queue(nw_browser_t browser, dispatch_queue_t queue)",
+    "pseudocode": "void __cdecl nw_browser_set_queue(nw_browser_t browser, dispatch_queue_t queue)\n{\n  _nw_browser_set_queue(browser, queue);\n}"
+}

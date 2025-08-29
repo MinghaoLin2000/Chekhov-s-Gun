@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t cancelThisJob]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t cancelThisJob](lite_job_t * self, SEL a2)",
+    "pseudocode": "void __cdecl -[lite_job_t cancelThisJob](lite_job_t *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  pthread_mutex_lock(&stru_1000C3AA0);\n  -[lite_job_t cancelNoLock](self, \"cancelNoLock\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  pthread_mutex_unlock(&stru_1000C3AA0);\n}"
+}

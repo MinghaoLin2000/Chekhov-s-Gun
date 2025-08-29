@@ -1,0 +1,6 @@
+{
+    "function_name": "$s24ModuleNavigationFocusKeyVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s24ModuleNavigationFocusKeyVMa()",
+    "pseudocode": "ValueMetadata *_s24ModuleNavigationFocusKeyVMa()\n{\n  return &_s24ModuleNavigationFocusKeyVN;\n}"
+}

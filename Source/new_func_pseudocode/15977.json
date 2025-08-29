@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointIsMessageTypePending",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointIsMessageTypePending(__int64 a2, int a3, __int64 a1)",
+    "pseudocode": "__int64 __fastcall uarpPlatformEndpointIsMessageTypePending(__int64 a1, __int64 a2, int a3)\n{\n  __int64 v5; // x21\n  __int64 v6; // x8\n\n  if ( !*(_WORD *)(a2 + 112) )\n    return 0LL;\n  v5 = 0LL;\n  while ( 1 )\n  {\n    v6 = *(_QWORD *)(*(_QWORD *)(a2 + 120) + 8 * v5);\n    if ( v6 )\n    {\n      if ( (unsigned int)uarpNtohs(**(unsigned __int16 **)(v6 + 16)) == a3\n        && *(_BYTE *)(*(_QWORD *)(*(_QWORD *)(a2 + 120) + 8 * v5) + 33LL) != 1 )\n      {\n        break;\n      }\n    }\n    if ( ++v5 >= (unsigned __int64)*(unsigned __int16 *)(a2 + 112) )\n      return 0LL;\n  }\n  return 1LL;\n}"
+}

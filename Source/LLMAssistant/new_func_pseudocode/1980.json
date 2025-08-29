@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController shouldTabViewBeEnabled]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPodcastsViewController shouldTabViewBeEnabled](DeviceSettingsPodcastsViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsPodcastsViewController shouldTabViewBeEnabled](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2)\n{\n  NSButton *v3; // x20\n  void *v4; // x21\n  NSPopUpButton *v5; // x20\n  NSInteger v6; // x22\n  NSPopUpButton *v7; // x19\n  void *v8; // x20\n\n  v3 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController autoIncludeCheckBox](self, \"autoIncludeCheckBox\"));\n  v4 = -[NSButton state](v3, \"state\");\n  objc_release(v3);\n  v5 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController autoIncludePopUpButton](self, \"autoIncludePopUpButton\"));\n  v6 = -[NSPopUpButton selectedTag](v5, \"selectedTag\");\n  objc_release(v5);\n  v7 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsPodcastsViewController autoIncludeTrailingPopUpButton](self, \"autoIncludeTrailingPopUpButton\"));\n  v8 = -[NSPopUpButton selectedTag](v7, \"selectedTag\");\n  objc_release(v7);\n  return v4 != (void *)1 || v6 != 0 || v8 != (void *)1000;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSObject tsu_overridesSelector:ofBaseClass:]",
+    "function_argument_number": 3,
+    "function_signature": "+[NSObject tsu_overridesSelector:ofBaseClass:](int a1, int a2, SEL name)",
+    "pseudocode": "bool __cdecl +[NSObject tsu_overridesSelector:ofBaseClass:](id a1, SEL a2, SEL a3, Class a4)\n{\n  Method InstanceMethod; // x21\n\n  InstanceMethod = class_getInstanceMethod((Class)a1, a3);\n  return InstanceMethod != class_getInstanceMethod(a4, a3);\n}"
+}

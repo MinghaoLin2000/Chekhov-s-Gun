@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore24_NavigationHoverModifierVwca_0",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore24_NavigationHoverModifierVwca_0(__int64 a1, __int64 a2)",
+    "pseudocode": "__int64 __fastcall _s17ControlCenterCore24_NavigationHoverModifierVwca_0(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x21\n  __int64 v7; // x22\n  __int64 v8; // x23\n  __int64 v9; // x19\n  __int64 v10; // x0\n  __int64 v11; // x1\n  __int64 v12; // x2\n  __int64 v13; // x3\n\n  *(_QWORD *)a1 = *(_QWORD *)a2;\n  v4 = *(_QWORD *)(a2 + 8);\n  v5 = *(_QWORD *)(a1 + 8);\n  *(_QWORD *)(a1 + 8) = v4;\n  swift_retain(v4);\n  swift_release(v5);\n  *(_QWORD *)(a1 + 16) = *(_QWORD *)(a2 + 16);\n  v6 = *(_QWORD *)(a2 + 24);\n  v7 = *(_QWORD *)(a2 + 32);\n  v8 = *(_QWORD *)(a2 + 40);\n  v9 = *(unsigned __int8 *)(a2 + 48);\n  sub_10004680C(v6, v7, v8, v9);\n  v10 = *(_QWORD *)(a1 + 24);\n  v11 = *(_QWORD *)(a1 + 32);\n  v12 = *(_QWORD *)(a1 + 40);\n  v13 = *(unsigned __int8 *)(a1 + 48);\n  *(_QWORD *)(a1 + 24) = v6;\n  *(_QWORD *)(a1 + 32) = v7;\n  *(_QWORD *)(a1 + 40) = v8;\n  *(_BYTE *)(a1 + 48) = v9;\n  sub_1000451E0(v10, v11, v12, v13);\n  return a1;\n}"
+}

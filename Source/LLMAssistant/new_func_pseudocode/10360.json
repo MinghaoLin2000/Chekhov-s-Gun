@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP14UUIDMapArchive8CopyFromERKN6google8protobuf7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP14UUIDMapArchive8CopyFromERKN6google8protobuf7MessageE(TSP::UUIDMapArchive * this, const google::protobuf::Message * a2)",
+    "pseudocode": "const google::protobuf::Message *__fastcall TSP::UUIDMapArchive::CopyFrom(\n        const google::protobuf::Message *this,\n        const google::protobuf::Message *a2)\n{\n  __int64 v2; // x30\n  TSP::UUIDMapArchive *v4; // x20\n\n  if ( a2 != this )\n  {\n    v4 = this;\n    TSP::UUIDMapArchive::Clear((__int64)this);\n    if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return (const google::protobuf::Message *)TSP::UUIDMapArchive::MergeFrom(v4, a2);\n  }\n  return this;\n}"
+}

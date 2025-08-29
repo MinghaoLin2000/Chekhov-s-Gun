@@ -1,0 +1,5 @@
+$s27BackgroundReplacementHelper27BackgroundReplacementHelperCMa
+__int64 type metadata accessor for BackgroundReplacementHelper()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC27BackgroundReplacementHelper27BackgroundReplacementHelper);
+}

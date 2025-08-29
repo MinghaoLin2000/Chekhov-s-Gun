@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetWindowLevel",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetWindowLevel()",
+    "pseudocode": "__int64 CGSSetWindowLevel()\n{\n  return _CGSSetWindowLevel();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t printer_preferred_landscape]",
+    "function_argument_number": 2,
+    "function_signature": "-[lite_job_t printer_preferred_landscape](lite_job_t * self, SEL a2)",
+    "pseudocode": "int __cdecl -[lite_job_t printer_preferred_landscape](lite_job_t *self, SEL a2)\n{\n  lite_printer_t *v2; // x19\n  int v3; // w20\n\n  v2 = objc_retainAutoreleasedReturnValue(-[lite_job_t printer](self, \"printer\"));\n  v3 = -[lite_printer_t preferred_landscape](v2, \"preferred_landscape\");\n  objc_release(v2);\n  return v3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z20liteResetPKCloudDatav",
+    "function_argument_number": 0,
+    "function_signature": "__Z20liteResetPKCloudDatav()",
+    "pseudocode": "id liteResetPKCloudData(void)\n{\n  return objc_msgSend((id)iCloudDataController, \"resetiCloudData\");\n}"
+}

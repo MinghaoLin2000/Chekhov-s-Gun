@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE12updateRegionyySo08CGRegionB0aF",
+    "function_argument_number": 1,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE12updateRegionyySo08CGRegionB0aF(__int64 a1)",
+    "pseudocode": "__int64 __fastcall SLSTransactionRef.updateRegion(_:)(__int64 a1)\n{\n  __int64 v1; // x20\n\n  return _SLSTransactionUpdateRegion(v1, a1);\n}"
+}

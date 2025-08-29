@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringInsert",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringInsert(CFMutableStringRef str, CFIndex idx, CFStringRef insertedStr)",
+    "pseudocode": "void __cdecl CFStringInsert(CFMutableStringRef str, CFIndex idx, CFStringRef insertedStr)\n{\n  _CFStringInsert(str, idx, insertedStr);\n}"
+}

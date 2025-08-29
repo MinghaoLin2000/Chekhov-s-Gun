@@ -1,0 +1,6 @@
+{
+    "function_name": "_malloc_size",
+    "function_argument_number": 1,
+    "function_signature": "_malloc_size(const void * ptr)",
+    "pseudocode": "size_t __cdecl malloc_size(const void *ptr)\n{\n  return _malloc_size(ptr);\n}"
+}

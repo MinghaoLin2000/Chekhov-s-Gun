@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController tagWithEpisodeCount:unplayed:newer:]",
+    "function_argument_number": 5,
+    "function_signature": "-[DeviceSettingsPodcastsViewController tagWithEpisodeCount:unplayed:newer:](DeviceSettingsPodcastsViewController * self, SEL a2, signed __int64 a3, bool a4, bool a5)",
+    "pseudocode": "signed __int64 __cdecl -[DeviceSettingsPodcastsViewController tagWithEpisodeCount:unplayed:newer:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        signed __int64 a3,\n        bool a4,\n        bool a5)\n{\n  __int64 v5; // x8\n  __int64 v6; // x9\n\n  v5 = -200LL;\n  if ( a3 >= 0 )\n    v5 = 200LL;\n  if ( !a5 )\n    v5 = 0LL;\n  v6 = -100LL;\n  if ( a3 >= 0 )\n    v6 = 100LL;\n  if ( a4 )\n    v5 = v6;\n  return v5 + a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo init]",
+    "function_argument_number": 2,
+    "function_signature": "-[restoreInfo init](restoreInfo * self, SEL a2)",
+    "pseudocode": "restoreInfo *__cdecl -[restoreInfo init](restoreInfo *self, SEL a2)\n{\n  restoreInfo *v2; // x0\n  restoreInfo *v3; // x19\n  MAAsset *asset; // x0\n  dispatch_semaphore_t v5; // x0\n  OS_dispatch_semaphore *deviceMutex; // x8\n  dispatch_semaphore_t v7; // x0\n  OS_dispatch_semaphore *restoreMutex; // x8\n  objc_super v10; // [xsp+0h] [xbp-20h] BYREF\n\n  v10.receiver = self;\n  v10.super_class = (Class)&OBJC_CLASS___restoreInfo;\n  v2 = -[restoreInfo init](&v10, \"init\");\n  v3 = v2;\n  if ( v2 )\n  {\n    asset = v2->asset;\n    v3->asset = 0LL;\n    objc_release(asset);\n    v3->restoreDevice = 0LL;\n    v5 = dispatch_semaphore_create(0LL);\n    deviceMutex = v3->deviceMutex;\n    v3->deviceMutex = (OS_dispatch_semaphore *)v5;\n    objc_release(deviceMutex);\n    v7 = dispatch_semaphore_create(0LL);\n    restoreMutex = v3->restoreMutex;\n    v3->restoreMutex = (OS_dispatch_semaphore *)v7;\n    objc_release(restoreMutex);\n    v3->restoreWasSuccessful = 0;\n  }\n  return v3;\n}"
+}

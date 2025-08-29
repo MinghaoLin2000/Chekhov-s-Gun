@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN17Printd_Parameters23_del_RequestingUserNameEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN17Printd_Parameters23_del_RequestingUserNameEv(Printd_Parameters * this)",
+    "pseudocode": "void __fastcall Printd_Parameters::_del_RequestingUserName(id *this)\n{\n  void *v2; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(objc_msgSend(*this, \"_findAttribute0:valueTag:\", CFSTR(\"requesting-user-name\"), 66LL));\n  if ( v2 )\n    objc_msgSend(*this, \"_deleteAttribute:\", v2);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

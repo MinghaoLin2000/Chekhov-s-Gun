@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode image]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode image](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSImage *__cdecl -[DeviceSettingsNode image](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_image;\n}"
+}

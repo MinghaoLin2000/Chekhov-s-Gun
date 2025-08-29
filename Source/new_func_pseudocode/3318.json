@@ -1,0 +1,6 @@
+{
+    "function_name": "_notify_cancel",
+    "function_argument_number": 1,
+    "function_signature": "_notify_cancel(int token)",
+    "pseudocode": "uint32_t __cdecl notify_cancel(int token)\n{\n  return _notify_cancel(token);\n}"
+}

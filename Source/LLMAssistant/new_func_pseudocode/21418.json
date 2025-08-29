@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwca",
+    "function_argument_number": 3,
+    "function_signature": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwca(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall assignWithCopy for ClientInfo.LoggingInfo(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // x22\n  void (__fastcall *v7)(__int64, __int64, __int64); // x23\n  __int64 v8; // x8\n  _QWORD *v9; // x9\n  _QWORD *v10; // x8\n  __int64 v11; // x0\n  _TtC22localspeechrecognition19EARSpeechRecognizer *v12; // x19\n  SEL v13; // x1\n  id v14; // x2\n  id v15; // x3\n  id v16; // x4\n  id v17; // x5\n  id v18; // x6\n  id v19; // x7\n\n  v6 = sub_100040F10(0LL);\n  v7 = *(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)(v6 - 8) + 24LL);\n  v7(a1, a2, v6);\n  v7(a1 + *(int *)(a3 + 20), a2 + *(int *)(a3 + 20), v6);\n  v8 = *(int *)(a3 + 24);\n  v9 = (_QWORD *)(a1 + v8);\n  v10 = (_QWORD *)(a2 + v8);\n  *v9 = *v10;\n  v11 = v10[1];\n  v12 = (_TtC22localspeechrecognition19EARSpeechRecognizer *)v9[1];\n  v9[1] = v11;\n  swift_bridgeObjectRetain(v11);\n  swift_bridgeObjectRelease(v12, v13, v14, v15, v16, v17, v18, v19);\n  return a1;\n}"
+}

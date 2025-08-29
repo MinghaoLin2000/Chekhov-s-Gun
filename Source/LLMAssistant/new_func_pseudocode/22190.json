@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecCodeCreateWithAuditToken",
+    "function_argument_number": 0,
+    "function_signature": "_SecCodeCreateWithAuditToken()",
+    "pseudocode": "__int64 SecCodeCreateWithAuditToken()\n{\n  return _SecCodeCreateWithAuditToken();\n}"
+}

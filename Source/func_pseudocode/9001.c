@@ -1,0 +1,5 @@
+$s34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoaderCMa
+__int64 type metadata accessor for RemoteJavaScriptLoader()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC34AppleMediaServicesUIDynamicService22RemoteJavaScriptLoader);
+}

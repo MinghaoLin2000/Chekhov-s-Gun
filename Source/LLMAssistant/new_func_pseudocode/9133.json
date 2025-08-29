@@ -1,0 +1,6 @@
+{
+    "function_name": "_TSPBundle",
+    "function_argument_number": 0,
+    "function_signature": "_TSPBundle()",
+    "pseudocode": "id UnsafePointer()\n{\n  return +[NSBundle tsu_resourcesBundle](&OBJC_CLASS___NSBundle, \"tsu_resourcesBundle\");\n}"
+}

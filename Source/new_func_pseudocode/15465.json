@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_path_monitor_create",
+    "function_argument_number": 0,
+    "function_signature": "_nw_path_monitor_create()",
+    "pseudocode": "nw_path_monitor_t nw_path_monitor_create(void)\n{\n  return _nw_path_monitor_create();\n}"
+}

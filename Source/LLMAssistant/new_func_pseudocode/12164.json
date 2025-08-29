@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter14PrintFieldNameERKNS0_7MessageEiiPKNS0_10ReflectionEPKNS0_15FieldDescriptorEPNS1_17BaseTextGeneratorE",
+    "function_argument_number": 7,
+    "function_signature": "__ZNK6google8protobuf10TextFormat21FastFieldValuePrinter14PrintFieldNameERKNS0_7MessageEiiPKNS0_10ReflectionEPKNS0_15FieldDescriptorEPNS1_17BaseTextGeneratorE(__int64 a1, __int64 a2, __int64 a5, __int64 a6, __int64 a7, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall google::protobuf::TextFormat::FastFieldValuePrinter::PrintFieldName(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7)\n{\n  return (*(__int64 (__fastcall **)(__int64, __int64, __int64, __int64, __int64))(*(_QWORD *)a1 + 104LL))(\n           a1,\n           a2,\n           a5,\n           a6,\n           a7);\n}"
+}

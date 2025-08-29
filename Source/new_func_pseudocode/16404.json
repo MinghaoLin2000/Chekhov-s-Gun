@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setForceSilentUpdate:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setForceSilentUpdate:](EAFirmwareUpdater * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setForceSilentUpdate:](EAFirmwareUpdater *self, SEL a2, bool a3)\n{\n  self->_forceSilentUpdate = a3;\n}"
+}

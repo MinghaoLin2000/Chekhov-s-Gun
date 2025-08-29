@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPPlatformDownstreamEndpointByDelegate",
+    "function_argument_number": 3,
+    "function_signature": "_UARPPlatformDownstreamEndpointByDelegate(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall UARPPlatformDownstreamEndpointByDelegate(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 result; // x0\n  __int64 v5; // x9\n  __int64 *i; // x8\n\n  result = 0LL;\n  if ( a1 && a2 && a3 )\n  {\n    v5 = *(unsigned int *)(a1 + 556);\n    if ( (_DWORD)v5 )\n    {\n      for ( i = *(__int64 **)(a1 + 560); ; ++i )\n      {\n        result = *i;\n        if ( *(_QWORD *)(*i + 176) == a2 && *(_QWORD *)(result + 40) == a3 )\n          break;\n        if ( !--v5 )\n          return 0LL;\n      }\n    }\n    else\n    {\n      return 0LL;\n    }\n  }\n  return result;\n}"
+}

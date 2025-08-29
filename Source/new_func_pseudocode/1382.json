@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsMoviesViewController areAnyPlaylistsChecked]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsMoviesViewController areAnyPlaylistsChecked](DeviceSettingsMoviesViewController * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsMoviesViewController areAnyPlaylistsChecked](\n        DeviceSettingsMoviesViewController *self,\n        SEL a2)\n{\n  NSMutableDictionary *v2; // x19\n  void *v3; // x20\n  bool v4; // w21\n\n  v2 = objc_retainAutoreleasedReturnValue(-[DeviceSettingsViewController checkedItems](self, \"checkedItems\"));\n  v3 = objc_retainAutoreleasedReturnValue(-[NSMutableDictionary objectForKeyedSubscript:](v2, \"objectForKeyedSubscript:\", CFSTR(\"Playlists\")));\n  v4 = objc_msgSend(v3, \"count\") != 0LL;\n  objc_release(v3);\n  objc_release(v2);\n  return v4;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV4nullACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV4nullACvau()",
+    "pseudocode": "void *CGSConnection.null.unsafeMutableAddressor()\n{\n  return &static CGSConnection.null;\n}"
+}

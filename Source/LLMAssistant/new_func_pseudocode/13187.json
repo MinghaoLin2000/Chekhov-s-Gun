@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUCryptoKey saltData]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUCryptoKey saltData](SFUCryptoKey * self, SEL a2)",
+    "pseudocode": "id __cdecl -[SFUCryptoKey saltData](SFUCryptoKey *self, SEL a2)\n{\n  return self->mSaltData;\n}"
+}

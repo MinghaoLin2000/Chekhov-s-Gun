@@ -1,0 +1,6 @@
+{
+    "function_name": "j___ZN3TSP8UUIDPathD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "j___ZN3TSP8UUIDPathD2Ev(TSP::UUIDPath * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::UUIDPath::~UUIDPath(TSP::UUIDPath *this)\n{\n  __ZN3TSP8UUIDPathD2Ev(this);\n}"
+}

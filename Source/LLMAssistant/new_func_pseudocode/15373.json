@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterDisplayControllerDelegate getIsBusy]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterDisplayControllerDelegate getIsBusy](UARPUpdaterDisplayControllerDelegate * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[UARPUpdaterDisplayControllerDelegate getIsBusy](UARPUpdaterDisplayControllerDelegate *self, SEL a2)\n{\n  return self->_numProcess > 0\n      || -[NSMutableSet count](self->_checkInfo, \"count\")\n      || -[NSMutableDictionary count](self->_restoreInfo, \"count\") != 0LL;\n}"
+}

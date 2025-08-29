@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode isPlaylist]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode isPlaylist](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[DeviceSettingsNode isPlaylist](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_isPlaylist;\n}"
+}

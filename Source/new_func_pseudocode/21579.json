@@ -1,0 +1,6 @@
+{
+    "function_name": "__AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode",
+    "function_argument_number": 0,
+    "function_signature": "__AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode()",
+    "pseudocode": "__int64 _AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode()\n{\n  return __AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode();\n}"
+}

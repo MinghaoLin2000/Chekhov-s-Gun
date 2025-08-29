@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AUDeveloperSettingsDatabase urlLocationTypeForAccessory:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AUDeveloperSettingsDatabase urlLocationTypeForAccessory:](int a1, int a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[AUDeveloperSettingsDatabase urlLocationTypeForAccessory:](\n        AUDeveloperSettingsDatabase *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x20\n  NSDictionary *v5; // x19\n  id v6; // x21\n  void *v7; // x20\n  unsigned __int64 v8; // x22\n\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(-[AUDeveloperSettingsDatabase accessoriesDictionary](self, \"accessoriesDictionary\"));\n  v6 = objc_retainAutoreleasedReturnValue(-[NSDictionary objectForKeyedSubscript:](v5, \"objectForKeyedSubscript:\", v4));\n  objc_release(v4);\n  v7 = objc_retainAutoreleasedReturnValue(objc_msgSend(v6, \"objectForKeyedSubscript:\", CFSTR(\"assetLocation\")));\n  v8 = AUDeveloperSettingsURLStringToType();\n  objc_release(v7);\n  objc_release(v6);\n  objc_release(v5);\n  return v8;\n}"
+}

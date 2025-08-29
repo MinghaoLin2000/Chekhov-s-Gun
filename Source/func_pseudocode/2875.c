@@ -1,0 +1,8 @@
+-[DeviceOptionsViewController setDeviceAccessibilityPrefs:]
+void __cdecl -[DeviceOptionsViewController setDeviceAccessibilityPrefs:](
+        DeviceOptionsViewController *self,
+        SEL a2,
+        id a3)
+{
+  objc_storeStrong((id *)&self->_deviceAccessibilityPrefs, a3);
+}

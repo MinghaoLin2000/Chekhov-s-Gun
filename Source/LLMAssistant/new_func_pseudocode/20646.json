@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_listener_start",
+    "function_argument_number": 1,
+    "function_signature": "_nw_listener_start(nw_listener_t listener)",
+    "pseudocode": "void __cdecl nw_listener_start(nw_listener_t listener)\n{\n  _nw_listener_start(listener);\n}"
+}

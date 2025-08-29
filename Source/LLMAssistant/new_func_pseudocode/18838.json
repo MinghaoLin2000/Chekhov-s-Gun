@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewController remoteViewController]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewController remoteViewController](RemoteViewController * self, SEL a2)",
+    "pseudocode": "RemoteViewBridgeViewController *__cdecl -[RemoteViewController remoteViewController](\n        RemoteViewController *self,\n        SEL a2)\n{\n  return self->_remoteViewController;\n}"
+}

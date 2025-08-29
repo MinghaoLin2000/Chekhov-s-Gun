@@ -1,0 +1,13 @@
+{
+  "+[UINSSystemPreferencesLocationSetting settingForApplicationWithBundleIdentifier:]": 4294988800,
+  "-[UINSSystemPreferencesSettingsManager refreshSettingsWithAdditionalSettings:]": 4294990676,
+  "+[UINSSystemPreferencesTCCSetting settingsForApplicationWithBundleIdentifier:]": 4294988264,
+  "_objc_msgSend$_settingsForApplicationWithBundleIdentifier:additionalSettings:": 4294998208,
+  "+[UINSSystemPreferencesSetting settingWithIdentifier:title:icon:preferencePaneIdentifier:preferencePaneRevealKey:usageKeys:instructionsFormat:]": 4294983904,
+  "_objc_msgSend$settingsForApplicationWithBundleIdentifier:": 4295000896,
+  "_objc_msgSend$settingForApplicationWithBundleIdentifier:": 4295000800,
+  "+[UINSSystemPreferencesSettingsManager _settingsForApplicationWithBundleIdentifier:additionalSettings:]": 4294991116,
+  "_objc_msgSend$_updateSettingsIfNeededForApplicationWithBundleIdentifier:additionalSettings:": 4294998304,
+  "-[UINSSystemPreferencesSettingsManager _updatedSettingsForApplicationWithBundleIdentifier:additionalSettings:]": 4294991376,
+  "_objc_msgSend$appsUsingLocationWithInfo": 4294998624
+}

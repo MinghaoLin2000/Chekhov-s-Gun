@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.security.iokit-user-client-class:AppleHPMUserClient",
+  "capability": "Allows the application to open a connection to and interact with a specific IOKit User Client class named 'AppleHPMUserClient'. This user client is exposed by a kernel extension (KEXT) and likely provides an interface for hardware performance monitoring or management functions at a kernel level.",
+  "reasoning": "The entitlement name `com.apple.security.iokit-user-client-class` clearly indicates that it grants permission to connect to a specific IOKit User Client. IOKit is Apple's framework for interacting with hardware and kernel extensions. A 'User Client' is a user-space interface to kernel-space functionality provided by a KEXT. The suffix `AppleHPMUserClient` suggests a specific class, with 'HPM' commonly referring to Hardware Performance Monitoring or Management, implying low-level hardware interaction.",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    4
+  ],
+  "sensitive_reasoning": "Interacting with IOKit User Clients directly involves communication with kernel extensions. This is a highly privileged operation that bridges user space and kernel space. Any such interaction falls under 'System & Kernel Level Control' (Type 4) because it allows an application to directly influence or query system behavior at the lowest level. Abuse or vulnerabilities in such an interface could lead to local privilege escalation (LPE), system instability, or the ability to read/write sensitive hardware registers, thus gaining control over core system functions.",
+  "self_reflection": "I am highly confident in the interpretation of 'iokit-user-client-class' as granting access to a specific kernel-level interface. The classification under 'System & Kernel Level Control' is also very confident, as IOKit communication is inherently a privileged, low-level operation with direct implications for system integrity and behavior. The exact functionality of 'AppleHPMUserClient' (e.g., precisely what hardware it manages) is an educated guess based on common abbreviations, but the *type* of capability (kernel interaction for hardware management) and its sensitivity remain consistent regardless of the exact hardware details."
+}

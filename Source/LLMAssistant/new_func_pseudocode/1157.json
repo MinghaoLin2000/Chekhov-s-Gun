@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController loadPhotoKit]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController loadPhotoKit](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceSettingsPhotosViewController loadPhotoKit](DeviceSettingsPhotosViewController *self, SEL a2)\n{\n  void *v3; // x20\n  _QWORD v4[5]; // [xsp+8h] [xbp-38h] BYREF\n\n  v4[0] = _NSConcreteStackBlock;\n  v4[1] = 3254779904LL;\n  v4[2] = sub_100027C30;\n  v4[3] = &unk_1000B9010;\n  v4[4] = self;\n  v3 = (void *)sub_10004D51C(0, v4);\n  if ( v3 )\n  {\n    -[DeviceSettingsPhotosViewController setRootMediaGroup:](self, \"setRootMediaGroup:\", v3);\n    -[DeviceSettingsPhotosViewController loadRootMediaGroup](self, \"loadRootMediaGroup\");\n  }\n  objc_release(v3);\n}"
+}

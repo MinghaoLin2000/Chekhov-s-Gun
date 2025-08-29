@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10BytesValueD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf10BytesValueD2Ev(google::protobuf::BytesValue * this)",
+    "pseudocode": "void __fastcall google::protobuf::BytesValue::~BytesValue(google::protobuf::BytesValue *this)\n{\n  __int64 v2; // x20\n\n  v2 = *((_QWORD *)this + 2);\n  if ( (__int64 *)v2 != &google::protobuf::internal::fixed_address_empty_string )\n  {\n    if ( *(char *)(v2 + 23) < 0 )\n      operator delete(*(void **)v2);\n    operator delete(v2, 0x1012C40EC159624LL);\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

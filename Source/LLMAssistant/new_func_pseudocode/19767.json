@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t setReasonsBits:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_printer_t setReasonsBits:](lite_printer_t * self, SEL a2, unsigned int a3)",
+    "pseudocode": "void __cdecl -[lite_printer_t setReasonsBits:](lite_printer_t *self, SEL a2, unsigned int a3)\n{\n  if ( self->_reasons != a3 )\n  {\n    self->_reasons = a3;\n    self->_reasons_changed = time(0LL);\n  }\n}"
+}

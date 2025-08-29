@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_t _addInteger:valueTag:name:value:]",
+    "function_argument_number": 5,
+    "function_signature": "-[ipp_t _addInteger:valueTag:name:value:](int a1, int a2, int a3, int a4, id a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __cdecl -[ipp_t _addInteger:valueTag:name:value:](ipp_t *self, SEL a2, int a3, int a4, id a5, int a6)\n{\n  __int64 v7; // x20\n  __int64 v8; // x21\n  id v10; // x19\n  _QWORD v11[4]; // [xsp+8h] [xbp-58h] BYREF\n  int v12; // [xsp+28h] [xbp-38h]\n\n  v7 = *(_QWORD *)&a4;\n  v8 = *(_QWORD *)&a3;\n  v10 = objc_retain(a5);\n  if ( v10 && (unsigned int)v8 <= 5 && (_DWORD)v8 != 3 )\n  {\n    v11[0] = _NSConcreteStackBlock;\n    v11[1] = 3221225472LL;\n    v11[2] = sub_10003D500;\n    v11[3] = &unk_10009E9E8;\n    v12 = a6;\n    -[ipp_t withNewAttr:groupTag:valueTag:apply:](self, \"withNewAttr:groupTag:valueTag:apply:\", v10, v8, v7, v11);\n  }\n  objc_release(v10);\n}"
+}

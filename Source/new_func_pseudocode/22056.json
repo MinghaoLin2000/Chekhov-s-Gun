@@ -1,0 +1,6 @@
+{
+    "function_name": "_RunningInRecoveryOS",
+    "function_argument_number": 0,
+    "function_signature": "_RunningInRecoveryOS()",
+    "pseudocode": "bool RunningInRecoveryOS()\n{\n  stat v1; // [xsp+0h] [xbp-90h] BYREF\n\n  memset(&v1, 0, sizeof(v1));\n  return stat(\"/etc/rc.cdrom\", &v1) == 0;\n}"
+}

@@ -1,0 +1,150 @@
+Service Path:
+/System/Library/Frameworks/ExternalAccessory.framework/Versions/A/XPCServices/WACEAService.xpc/Contents/MacOS/WACEAService
+
+Service Exported Protocols:
+@protocol HMAccessoryDelegate <NSObject>
+- (void)accessory:(HMAccessory *)arg1 didUpdateFirmwareVersion:(NSString *)arg2;
+- (void)accessory:(HMAccessory *)arg1 service:(HMService *)arg2 didUpdateValueForCharacteristic:(HMCharacteristic *)arg3;
+- (void)accessoryDidUpdateReachability:(HMAccessory *)arg1;
+- (void)accessory:(HMAccessory *)arg1 didRemoveProfile:(HMAccessoryProfile *)arg2;
+- (void)accessory:(HMAccessory *)arg1 didAddProfile:(HMAccessoryProfile *)arg2;
+- (void)accessoryDidUpdateServices:(HMAccessory *)arg1;
+- (void)accessory:(HMAccessory *)arg1 didUpdateAssociatedServiceTypeForService:(HMService *)arg2;
+- (void)accessory:(HMAccessory *)arg1 didUpdateNameForService:(HMService *)arg2;
+- (void)accessoryDidUpdateName:(HMAccessory *)arg1;
+@end
+@protocol HMHomeDelegate <NSObject>
+- (void)homeDidUpdateSupportedFeatures:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateHomeHubState:(unsigned long long)arg2;
+- (void)home:(HMHome *)arg1 didEncounterError:(NSError *)arg2 forAccessory:(HMAccessory *)arg3;
+- (void)home:(HMHome *)arg1 didUnblockAccessory:(HMAccessory *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateTrigger:(HMTrigger *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateNameForTrigger:(HMTrigger *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveTrigger:(HMTrigger *)arg2;
+- (void)home:(HMHome *)arg1 didAddTrigger:(HMTrigger *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateActionsForActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateNameForActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didAddActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveService:(HMService *)arg2 fromServiceGroup:(HMServiceGroup *)arg3;
+- (void)home:(HMHome *)arg1 didAddService:(HMService *)arg2 toServiceGroup:(HMServiceGroup *)arg3;
+- (void)home:(HMHome *)arg1 didUpdateNameForServiceGroup:(HMServiceGroup *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveServiceGroup:(HMServiceGroup *)arg2;
+- (void)home:(HMHome *)arg1 didAddServiceGroup:(HMServiceGroup *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveRoom:(HMRoom *)arg2 fromZone:(HMZone *)arg3;
+- (void)home:(HMHome *)arg1 didAddRoom:(HMRoom *)arg2 toZone:(HMZone *)arg3;
+- (void)home:(HMHome *)arg1 didUpdateNameForZone:(HMZone *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveZone:(HMZone *)arg2;
+- (void)home:(HMHome *)arg1 didAddZone:(HMZone *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateNameForRoom:(HMRoom *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveRoom:(HMRoom *)arg2;
+- (void)home:(HMHome *)arg1 didAddRoom:(HMRoom *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateRoom:(HMRoom *)arg2 forAccessory:(HMAccessory *)arg3;
+- (void)home:(HMHome *)arg1 didRemoveUser:(HMUser *)arg2;
+- (void)home:(HMHome *)arg1 didAddUser:(HMUser *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveAccessory:(HMAccessory *)arg2;
+- (void)home:(HMHome *)arg1 didAddAccessory:(HMAccessory *)arg2;
+- (void)homeDidUpdateAccessControlForCurrentUser:(HMHome *)arg1;
+- (void)homeDidUpdateName:(HMHome *)arg1;
+@end
+@protocol HMHomeDelegatePrivate <HMHomeDelegate>
+- (void)homeDidUpdateAutoSelectedPreferredResident:(HMHome *)arg1;
+- (void)homeDidUpdateUserSelectedPreferredResident:(HMHome *)arg1;
+- (void)homeDidUpdateSupportsResidentSelection:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateTimeZone:(NSTimeZone *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateEventLogDuration:(unsigned long long)arg2;
+- (void)homeDidUpdateOnboardedEventLog:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateEventLogEnabled:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateSupportsResidentActionSetStateEvaluation:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateAreBulletinNotificationsSupported:(_Bool)arg2;
+- (void)homeDidUpdateToROAR:(HMHome *)arg1;
+- (void)homeDidUpdateAssistantIdentifiers:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateDismissedWalletKeyUWBUnlockOnboarding:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateHasOnboardedForWalletKey:(_Bool)arg2;
+- (void)homeDidRemoveWalletKey:(HMHome *)arg1;
+- (void)homeDidAddWalletKey:(HMHome *)arg1;
+- (void)homeDidSetHasOnboardedForAccessCode:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didFailAccessorySetupWithError:(NSError *)arg2;
+- (void)home:(HMHome *)arg1 didUpdatePersonManagerSettings:(HMHomePersonManagerSettings *)arg2;
+- (void)homeDidSetEnableDoorbellChime:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateAccessoryNetworkProtectionGroup:(HMAccessoryNetworkProtectionGroup *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveAccessoryNetworkProtectionGroup:(HMAccessoryNetworkProtectionGroup *)arg2;
+- (void)home:(HMHome *)arg1 didAddAccessoryNetworkProtectionGroup:(HMAccessoryNetworkProtectionGroup *)arg2;
+- (void)homeDidSetHasAnyUserAcknowledgedCameraRecordingOnboarding:(HMHome *)arg1;
+- (void)homeDidOnboardLocationServices:(HMHome *)arg1;
+- (void)homeDidEnableLocationServices:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateSiriPhraseOptions:(unsigned long long)arg2;
+- (void)home:(HMHome *)arg1 didUpdateOnboardAudioAnalysis:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateAudioAnalysisClassifierOptions:(unsigned long long)arg2;
+- (void)homeDidUpdateSoundCheck:(HMHome *)arg1;
+- (void)homeDidEnableMultiUser:(HMHome *)arg1;
+- (void)homeDidUpdateHomeLocationStatus:(HMHome *)arg1;
+- (void)homeDidUpdateNetworkRouterSupport:(HMHome *)arg1;
+- (void)homeDidUpdateProtectionMode:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateReprovisionStateForAccessory:(HMAccessory *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveMediaSystem:(HMMediaSystem *)arg2;
+- (void)home:(HMHome *)arg1 didAddMediaSystem:(HMMediaSystem *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateMediaPassword:(NSString *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateMediaPeerToPeerEnabled:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateMinimumMediaUserPrivilege:(long long)arg2;
+- (void)home:(HMHome *)arg1 didUpdateAutomaticThirdPartyAccessorySoftwareUpdateEnabled:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateAutomaticSoftwareUpdateEnabled:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didEnableNotifications:(_Bool)arg2;
+- (void)home:(HMHome *)arg1 didUpdateAccessControlForUser:(HMUser *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateLastExecutionDateForActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateApplicationDataForActionSet:(HMActionSet *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateApplicationDataForServiceGroup:(HMServiceGroup *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateApplicationDataForRoom:(HMRoom *)arg2;
+- (void)homeDidUpdateApplicationData:(HMHome *)arg1;
+- (void)home:(HMHome *)arg1 didUpdateAccesoryInvitationsForUser:(HMUser *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateStateForOutgoingInvitations:(NSArray *)arg2;
+- (void)home:(HMHome *)arg1 didUpdateLocation:(CLLocation *)arg2;
+- (void)home:(HMHome *)arg1 didRemoveResidentDevice:(HMResidentDevice *)arg2;
+- (void)home:(HMHome *)arg1 didAddResidentDevice:(HMResidentDevice *)arg2;
+@end
+@protocol HMHomeManagerDelegate <NSObject>
+- (void)homeManager:(HMHomeManager *)arg1 didReceiveAddAccessoryRequest:(HMAddAccessoryRequest *)arg2;
+- (void)homeManager:(HMHomeManager *)arg1 didRemoveHome:(HMHome *)arg2;
+- (void)homeManager:(HMHomeManager *)arg1 didAddHome:(HMHome *)arg2;
+- (void)homeManagerDidUpdatePrimaryHome:(HMHomeManager *)arg1;
+- (void)homeManagerDidUpdateHomes:(HMHomeManager *)arg1;
+- (void)homeManager:(HMHomeManager *)arg1 didUpdateAuthorizationStatus:(unsigned long long)arg2;
+@end
+@protocol WACEAServiceProtocol
+- (void)reconfigureAccessory:(NSString *)arg1 withReply:(void (^)(int, NSError *))arg2;
+- (void)startSearchForAccessoriesNeedingReprovisioning;
+- (void)setup;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.developer.homekit
+	[Value]
+		[Bool] true
+	[Key] com.apple.homekit.private-spi-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.homekit
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceWillow
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.homed.xpc
+	[Key] com.apple.security.network.server
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.ts.location-services
+	[Value]
+		[Bool] true
+	[Key] platform-application
+	[Value]
+		[Bool] true
+	[Key] seatbelt-profiles
+	[Value]
+		[Array]
+			[String] temporary-sandbox

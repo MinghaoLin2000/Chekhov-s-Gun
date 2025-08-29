@@ -1,0 +1,5 @@
+_xpc_remote_connection_send_message_with_reply_sync
+__int64 xpc_remote_connection_send_message_with_reply_sync()
+{
+  return _xpc_remote_connection_send_message_with_reply_sync();
+}

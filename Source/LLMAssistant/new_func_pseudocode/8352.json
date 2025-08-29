@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BackgroundAssetConsentViewController setDelegate:]",
+    "function_argument_number": 3,
+    "function_signature": "-[BackgroundAssetConsentViewController setDelegate:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[BackgroundAssetConsentViewController setDelegate:](\n        BackgroundAssetConsentViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeWeak((id *)&self->_delegate, a3);\n}"
+}

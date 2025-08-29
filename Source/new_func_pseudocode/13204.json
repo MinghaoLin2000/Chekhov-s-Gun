@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipInflateInputStream offset]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUZipInflateInputStream offset](SFUZipInflateInputStream * self, SEL a2)",
+    "pseudocode": "signed __int64 __cdecl -[SFUZipInflateInputStream offset](SFUZipInflateInputStream *self, SEL a2)\n{\n  return self->mStream.total_out;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_netfs_MountURLWithAuthenticationSync",
+    "function_argument_number": 6,
+    "function_signature": "_netfs_MountURLWithAuthenticationSync(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6)",
+    "pseudocode": "__int64 __fastcall netfs_MountURLWithAuthenticationSync(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6)\n{\n  __int64 v12; // x0\n  const void *v13; // x19\n  __int64 v14; // x0\n  const void *v15; // x25\n  __int64 v16; // x20\n\n  v12 = sub_100008340(a5, &unk_100018DE8, 2LL);\n  if ( !v12 )\n    return 12LL;\n  v13 = (const void *)v12;\n  v14 = sub_100008340(a5, &unk_100018E08, 7LL);\n  if ( v14 )\n  {\n    v15 = (const void *)v14;\n    v16 = NetFSMountURLWithAuthenticationSync(a1, a2, a3, a4, v13, v14, a6);\n    CFRelease(v15);\n  }\n  else\n  {\n    v16 = 12LL;\n  }\n  CFRelease(v13);\n  return v16;\n}"
+}

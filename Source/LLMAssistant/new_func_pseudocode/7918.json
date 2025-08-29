@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectUnion",
+    "function_argument_number": 2,
+    "function_signature": "_CGRectUnion(CGRect r1, CGRect r2)",
+    "pseudocode": "CGRect __cdecl CGRectUnion(CGRect r1, CGRect r2)\n{\n  return _CGRectUnion(r1, r2);\n}"
+}

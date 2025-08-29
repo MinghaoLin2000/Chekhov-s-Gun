@@ -1,0 +1,6 @@
+{
+    "function_name": "_UARPLayer2SendMessage",
+    "function_argument_number": 4,
+    "function_signature": "_UARPLayer2SendMessage(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+    "pseudocode": "__int64 __fastcall UARPLayer2SendMessage(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 (__fastcall *v4)(__int64, __int64, __int64, __int64, __int64); // x5\n  __int64 v9; // x0\n  __int64 v10; // x1\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = *(__int64 (__fastcall **)(__int64, __int64, __int64, __int64, __int64))(a1 + 80);\n  if ( !v4 )\n    return 14LL;\n  if ( *(_WORD *)(a2 + 136) )\n  {\n    uarpPlatformDownstreamEndpointSendMessageInternal(a1, *(_QWORD *)(a2 + 176), a2, a3, a4);\n    uarpPlatformEndpointSendMessageComplete(a1, a2, a3);\n    return 0LL;\n  }\n  else\n  {\n    v9 = *(_QWORD *)(a1 + 544);\n    v10 = *(_QWORD *)(a2 + 40);\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return v4(v9, v10, a3, a4, a4);\n  }\n}"
+}

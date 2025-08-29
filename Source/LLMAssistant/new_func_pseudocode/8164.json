@@ -1,0 +1,6 @@
+{
+    "function_name": "_deflateInit2_",
+    "function_argument_number": 8,
+    "function_signature": "_deflateInit2_(z_streamp strm, int level, int method, int windowBits, int memLevel, int strategy, const char * version, int stream_size)",
+    "pseudocode": "int __cdecl deflateInit2_(\n        z_streamp strm,\n        int level,\n        int method,\n        int windowBits,\n        int memLevel,\n        int strategy,\n        const char *version,\n        int stream_size)\n{\n  return _deflateInit2_(strm, level, method, windowBits, memLevel, strategy, version, stream_size);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_request_t initWithOp:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_request_t initWithOp:](ipp_request_t * self, SEL a2, unsigned __int16 a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nipp_request_t *__cdecl -[ipp_request_t initWithOp:](ipp_request_t *self, SEL a2, unsigned __int16 a3)\n{\n  __int64 v3; // x19\n  ipp_request_t *v4; // x0\n  ipp_request_t *v5; // x20\n  objc_super v7; // [xsp+0h] [xbp-30h] BYREF\n\n  v3 = a3;\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___ipp_request_t;\n  v4 = -[ipp_t init](&v7, \"init\");\n  v5 = v4;\n  if ( v4 )\n  {\n    -[ipp_t setOp_or_status:](v4, \"setOp_or_status:\", v3);\n    -[ipp_request_t _setupNewRequest](v5, \"_setupNewRequest\");\n  }\n  return v5;\n}"
+}

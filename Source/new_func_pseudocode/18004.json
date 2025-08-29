@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PlugInLibraryService supportedSchemes]",
+    "function_argument_number": 2,
+    "function_signature": "-[PlugInLibraryService supportedSchemes](PlugInLibraryService * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[PlugInLibraryService supportedSchemes](PlugInLibraryService *self, SEL a2)\n{\n  return (NSArray *)objc_getProperty(self, a2, 8LL, 1);\n}"
+}

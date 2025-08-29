@@ -1,0 +1,24 @@
+__ZN6google8protobuf23SourceCodeInfo_LocationC2EPNS0_5ArenaE
+__int64 __fastcall google::protobuf::SourceCodeInfo_Location::SourceCodeInfo_Location(__int64 a1, __int64 a2)
+{
+  *(_QWORD *)(a1 + 32) = a2;
+  *(_QWORD *)a1 = off_1001D9130;
+  *(_QWORD *)(a1 + 8) = a2;
+  *(_QWORD *)(a1 + 16) = 0LL;
+  *(_QWORD *)(a1 + 24) = 0LL;
+  *(_DWORD *)(a1 + 52) = 0;
+  *(_QWORD *)(a1 + 56) = a2;
+  *(_QWORD *)(a1 + 72) = a2;
+  *(_DWORD *)(a1 + 48) = 0;
+  *(_QWORD *)(a1 + 80) = 0LL;
+  *(_QWORD *)(a1 + 88) = 0LL;
+  if ( atomic_load_explicit(
+         scc_info_SourceCodeInfo_Location_google_2fprotobuf_2fdescriptor_2eproto,
+         memory_order_acquire) )
+  {
+    google::protobuf::internal::InitSCCImpl(scc_info_SourceCodeInfo_Location_google_2fprotobuf_2fdescriptor_2eproto);
+  }
+  *(_QWORD *)(a1 + 96) = &google::protobuf::internal::fixed_address_empty_string;
+  *(_QWORD *)(a1 + 104) = &google::protobuf::internal::fixed_address_empty_string;
+  return a1;
+}

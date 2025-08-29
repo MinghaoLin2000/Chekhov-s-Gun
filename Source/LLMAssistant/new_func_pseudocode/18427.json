@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper10UnfairLockCMa",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper10UnfairLockCMa()",
+    "pseudocode": "__int64 type metadata accessor for UnfairLock()\n{\n  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelper10UnfairLock);\n}"
+}

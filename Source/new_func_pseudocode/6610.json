@@ -1,0 +1,6 @@
+{
+    "function_name": "_IPAOrientationIsValid",
+    "function_argument_number": 0,
+    "function_signature": "_IPAOrientationIsValid()",
+    "pseudocode": "__int64 IPAOrientationIsValid()\n{\n  return _IPAOrientationIsValid();\n}"
+}

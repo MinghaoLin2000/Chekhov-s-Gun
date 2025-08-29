@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUStreamDataCompression outputData]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUStreamDataCompression outputData](TSUStreamDataCompression * self, SEL a2)",
+    "pseudocode": "OS_dispatch_data *__cdecl -[TSUStreamDataCompression outputData](TSUStreamDataCompression *self, SEL a2)\n{\n  return objc_retainAutoreleaseReturnValue(self->_outputData);\n}"
+}

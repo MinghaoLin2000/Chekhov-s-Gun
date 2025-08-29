@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP8DataInfoD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP8DataInfoD2Ev(TSP::DataInfo * this)",
+    "pseudocode": "void __fastcall TSP::DataInfo::~DataInfo(TSP::DataInfo *this)\n{\n  sub_100048600();\n  sub_100037E58((char *)this + 8);\n}"
+}

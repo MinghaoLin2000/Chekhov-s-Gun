@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask setCompletionHandler:]",
+    "function_argument_number": 3,
+    "function_signature": "-[VideoConversionTask setCompletionHandler:](VideoConversionTask * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[VideoConversionTask setCompletionHandler:](VideoConversionTask *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic_copy(self, a2, a3, 88LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionRequestTracker setInitialProcessMemoryPeak:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionRequestTracker setInitialProcessMemoryPeak:](MediaConversionRequestTracker * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[MediaConversionRequestTracker setInitialProcessMemoryPeak:](\n        MediaConversionRequestTracker *self,\n        SEL a2,\n        double a3)\n{\n  self->_initialProcessMemoryPeak = a3;\n}"
+}

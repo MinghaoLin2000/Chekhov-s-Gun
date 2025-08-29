@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP15SparseUUIDArrayC2EPN6google8protobuf5ArenaE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN3TSP15SparseUUIDArrayC2EPN6google8protobuf5ArenaE(TSP::SparseUUIDArray * this, google::protobuf::Arena * a2)",
+    "pseudocode": "__int64 __fastcall TSP::SparseUUIDArray::SparseUUIDArray(__int64 a1, __int64 a2)\n{\n  *(_QWORD *)a1 = off_1001D69B0;\n  *(_QWORD *)(a1 + 8) = a2;\n  *(_QWORD *)(a1 + 24) = a2;\n  *(_QWORD *)(a1 + 16) = 0LL;\n  *(_QWORD *)(a1 + 32) = 0LL;\n  *(_QWORD *)(a1 + 40) = 0LL;\n  if ( atomic_load_explicit(scc_info_SparseUUIDArray_TSPMessages_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_SparseUUIDArray_TSPMessages_2eproto);\n  *(_DWORD *)(a1 + 48) = 0;\n  return a1;\n}"
+}

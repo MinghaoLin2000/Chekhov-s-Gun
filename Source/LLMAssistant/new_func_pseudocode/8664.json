@@ -1,0 +1,6 @@
+{
+    "function_name": "_open",
+    "function_argument_number": 2,
+    "function_signature": "_open(const char * a1, int a2)",
+    "pseudocode": "int open(const char *a1, int a2, ...)\n{\n  return _open(a1, a2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController optimizeStorageExplanationFormatString]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsPhotosViewController optimizeStorageExplanationFormatString](DeviceSettingsPhotosViewController * self, SEL a2)",
+    "pseudocode": "id __cdecl -[DeviceSettingsPhotosViewController optimizeStorageExplanationFormatString](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2)\n{\n  return -[DeviceViewController deviceStringForStringParameterizedKey:](\n           self,\n           \"deviceStringForStringParameterizedKey:\",\n           CFSTR(\"Optimize Storage Explanation %@\"));\n}"
+}

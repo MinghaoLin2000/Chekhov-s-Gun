@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$atx_timestampWithHour:minute:atDayOfTimestamp:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$atx_timestampWithHour:minute:atDayOfTimestamp:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_atx_timestampWithHour_minute_atDayOfTimestamp_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"atx_timestampWithHour:minute:atDayOfTimestamp:\");\n}"
+}

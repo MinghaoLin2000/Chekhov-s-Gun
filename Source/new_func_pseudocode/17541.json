@@ -1,0 +1,6 @@
+{
+    "function_name": "_OUTLINED_FUNCTION_0",
+    "function_argument_number": 9,
+    "function_signature": "_OUTLINED_FUNCTION_0(void * a1, os_log_s * a2, const char * a4, __int64 a3, __int64 a5, __int64 a6, __int64 a7, __int64 a8, uint8_t a9)",
+    "pseudocode": "void __fastcall OUTLINED_FUNCTION_0(\n        void *a1,\n        os_log_s *a2,\n        __int64 a3,\n        const char *a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        uint8_t a9)\n{\n  __int64 v9; // x30\n\n  if ( ((v9 ^ (2 * v9)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  _os_log_error_impl(a1, a2, OS_LOG_TYPE_ERROR, a4, &a9, 8u);\n}"
+}

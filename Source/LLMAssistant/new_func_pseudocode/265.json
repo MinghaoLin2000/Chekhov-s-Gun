@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_unknownObjectWeakDestroy",
+    "function_argument_number": 0,
+    "function_signature": "_swift_unknownObjectWeakDestroy()",
+    "pseudocode": "__int64 swift_unknownObjectWeakDestroy()\n{\n  return _swift_unknownObjectWeakDestroy();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14LazyDescriptor4OnceEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf8internal14LazyDescriptor4OnceEv(google::protobuf::internal::LazyDescriptor * this)",
+    "pseudocode": "void __fastcall google::protobuf::internal::LazyDescriptor::Once(google::protobuf::internal::LazyDescriptor *this)\n{\n  std::once_flag::_State_type *v2; // x0\n  google::protobuf::internal::LazyDescriptor *v3; // [xsp+0h] [xbp-20h] BYREF\n  _QWORD *v4; // [xsp+8h] [xbp-18h] BYREF\n  _QWORD v5[2]; // [xsp+10h] [xbp-10h] BYREF\n\n  v2 = (std::once_flag::_State_type *)*((_QWORD *)this + 2);\n  if ( v2 )\n  {\n    v3 = this;\n    if ( atomic_load_explicit((atomic_ullong *volatile)v2, memory_order_acquire) != -1LL )\n    {\n      v5[0] = google::protobuf::internal::LazyDescriptor::OnceStatic;\n      v5[1] = &v3;\n      v4 = v5;\n      std::__call_once(v2, &v4, (void (__cdecl *)(void *))sub_10009FE50);\n    }\n  }\n}"
+}

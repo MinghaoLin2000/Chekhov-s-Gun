@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDResultGetMatchedString",
+    "function_argument_number": 0,
+    "function_signature": "_DDResultGetMatchedString()",
+    "pseudocode": "__int64 DDResultGetMatchedString()\n{\n  return _DDResultGetMatchedString();\n}"
+}

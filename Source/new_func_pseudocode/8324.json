@@ -1,0 +1,6 @@
+{
+    "function_name": "-[BackgroundAssetConsentTask consentSheetConfirmed]",
+    "function_argument_number": 2,
+    "function_signature": "-[BackgroundAssetConsentTask consentSheetConfirmed](BackgroundAssetConsentTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[BackgroundAssetConsentTask consentSheetConfirmed](BackgroundAssetConsentTask *self, SEL a2)\n{\n  BackgroundAssetConsentViewController *v3; // x20\n  NSWindow *v4; // x20\n  void (__fastcall **v5)(id, void *); // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(-[BackgroundAssetConsentTask consentViewController](self, \"consentViewController\"));\n  -[BackgroundAssetConsentViewController dismissConsentSheet](v3, \"dismissConsentSheet\");\n  objc_release(v3);\n  v4 = objc_retainAutoreleasedReturnValue(-[BackgroundAssetConsentTask window](self, \"window\"));\n  -[NSWindow close](v4, \"close\");\n  objc_release(v4);\n  v5 = (void (__fastcall **)(id, void *))objc_retainAutoreleasedReturnValue(-[BackgroundAssetConsentTask completionBlock](self, \"completionBlock\"));\n  v5[2](v5, &__kCFBooleanTrue);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[BackgroundAssetConsentTask setCompletionBlock:](self, \"setCompletionBlock:\", 0LL);\n}"
+}

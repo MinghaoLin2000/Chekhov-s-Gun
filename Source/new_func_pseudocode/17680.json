@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyResponse hasSuccess]",
+    "function_argument_number": 2,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyResponse hasSuccess](ModelKeyServerAPIFetchKeyResponse * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[ModelKeyServerAPIFetchKeyResponse hasSuccess](ModelKeyServerAPIFetchKeyResponse *self, SEL a2)\n{\n  return self->_success != 0LL;\n}"
+}

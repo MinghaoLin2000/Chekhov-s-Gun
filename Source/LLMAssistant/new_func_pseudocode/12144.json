@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf10TextFormat6ParserC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf10TextFormat6ParserC1Ev(google::protobuf::TextFormat::Parser * this)",
+    "pseudocode": "double __fastcall google::protobuf::TextFormat::Parser::Parser(google::protobuf::TextFormat::Parser *this)\n{\n  double result; // d0\n\n  result = 0.0;\n  *(_OWORD *)this = 0u;\n  *((_OWORD *)this + 1) = 0u;\n  *((_DWORD *)this + 8) = 0x7FFFFFFF;\n  return result;\n}"
+}

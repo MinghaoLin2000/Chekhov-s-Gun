@@ -1,0 +1,123 @@
+Service Path:
+/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceDisplay.xpc/Contents/MacOS/UARPUpdaterServiceDisplay
+
+Service Exported Protocols:
+@protocol SKManagerListener <NSObject>
+- (NSSet *)visibleDiskRoles;
+- (void)disksDisappeared:(NSArray *)arg1;
+- (void)disksChanged:(NSArray *)arg1;
+- (void)disksAppeared:(NSArray *)arg1;
+- (void)initialPopulateComplete;
+- (void)managerResumed;
+- (void)managerStalled;
+@end
+@protocol UARPControllerDelegateProtocol <NSObject>
+- (_Bool)sendMessageToAccessory:(UARPAccessory *)arg1 uarpMsg:(NSData *)arg2 error:(id *)arg3;
+- (void)assetAvailablityUpdateForAccessoryID:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsDownloaded:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hsmodelsPreInstalled:(NSArray *)arg2 error:(NSError *)arg3;
+- (void)firmwareUpdateComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareUpdateProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)assetStagingResume:(UARPAccessory *)arg1;
+- (void)assetStagingPause:(UARPAccessory *)arg1;
+- (void)assetAvailablityUpdateForAccessory:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2;
+- (void)accessoryTransportNeeded:(UARPAccessory *)arg1 isNeeded:(_Bool)arg2;
+- (void)attestationCertificates:(NSDictionary *)arg1 forSubjectKeyIdentifier:(NSString *)arg2;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2 isComplete:(_Bool)arg3;
+- (void)supportedAccessories:(NSSet *)arg1 forProductGroup:(UARPProductGroup *)arg2;
+- (UARPUploader *)newUploader;
+- (void)assetSolicitationComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)assetSolicitationProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesReceived:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)stagedFirmwareRescindComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)stagedFirmwareApplicationComplete:(UARPAccessory *)arg1 withStatus:(unsigned long long)arg2;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 friendlyName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hwFusingType:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 appleModelNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 serialNumber:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 hardwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stats:(UARPStats *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 stagedFirmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 firmwareVersion:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 modelName:(NSString *)arg2 error:(NSError *)arg3;
+- (void)queryCompleteForAccessory:(UARPAccessory *)arg1 manufacturer:(NSString *)arg2 error:(NSError *)arg3;
+- (void)firmwareStagingComplete:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 withStatus:(unsigned long long)arg3;
+- (void)firmwareStagingProgress:(UARPAccessory *)arg1 assetID:(UARPAssetID *)arg2 bytesSent:(unsigned long long)arg3 bytesTotal:(unsigned long long)arg4;
+- (void)firmwareUpdateResult:(UARPAccessory *)arg1 vendorSpecificStatus:(unsigned int)arg2 error:(NSError *)arg3;
+@end
+@protocol UARPUpdaterService
+- (void)tssResponse:(NSDictionary *)arg1;
+- (void)queryPendingTssRequests:(void (^)(NSArray *))arg1;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumbers:(NSArray *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)standaloneDynamicAssetSolicitation:(UARPAssetTag *)arg1 modelNumber:(NSString *)arg2 notifyService:(NSXPCListenerEndpoint *)arg3 reply:(void (^)(_Bool))arg4;
+- (void)disabledProductIdentifiers:(NSDictionary *)arg1;
+- (void)consentReceivedPostLogoutMode:(UARPConsent *)arg1;
+- (void)consentReceived:(UARPConsent *)arg1;
+- (void)dasActivityReceived:(UARPServiceUpdaterDASMatchingRule *)arg1;
+- (void)bsdNotificationReceived:(NSString *)arg1;
+- (void)eaRuleMatched:(UARPServiceUpdaterMatchedEARule *)arg1;
+- (void)ioKitRuleMatched:(UARPServiceUpdaterMatchedIOKitRule *)arg1;
+- (void)getDASActivityListWithReply:(void (^)(NSArray *))arg1;
+- (void)getBSDNotificationsListWithReply:(void (^)(NSArray *))arg1;
+- (void)getMatchingServicesListWithReply:(void (^)(NSArray *))arg1;
+- (void)getIsBusyStatusWithReply:(void (^)(_Bool))arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.OSUpdate.SUOSUUpdateController
+	[Value]
+		[Bool] true
+	[Key] com.apple.accessoryupdater.uarp
+	[Value]
+		[Bool] true
+	[Key] com.apple.iokit.IOPort.TRM.user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.iokit.IOPort.user-access 
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.AuthorizationServices
+	[Value]
+		[Array]
+			[String] com.apple.DiskManagement.SKRequest
+	[Key] com.apple.private.DeviceSupportUpdater.requestor
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.IASInstallerAuthAgent
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.RemoteServiceDiscovery.allow-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.RemoteServiceDiscovery.device-admin
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.RestoreRemoteServices.restoreservice.remote
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.assets.accessible-asset-types
+	[Value]
+		[Array]
+			[String] com.apple.MobileAsset.DarwinAccessoryUpdate.A2525
+	[Key] com.apple.private.assets.change-daemon-config
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.softwareupdate.preferences
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.softwareupdated.OSUpdate
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.storagekitd.statuschange
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.tcc.allow
+	[Value]
+		[Array]
+			[String] kTCCServiceSystemPolicyRemovableVolumes
+	[Key] com.apple.private.xpc.launchd.per-user-lookup
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Bool] true

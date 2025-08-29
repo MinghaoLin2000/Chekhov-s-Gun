@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSByteCountFormatter tsu_stringWithNonBreakingSpacesFromByteCount:countStyle:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSByteCountFormatter tsu_stringWithNonBreakingSpacesFromByteCount:countStyle:](id a1, SEL a2, signed __int64 a3, signed __int64 a4)",
+    "pseudocode": "id __cdecl +[NSByteCountFormatter tsu_stringWithNonBreakingSpacesFromByteCount:countStyle:](\n        id a1,\n        SEL a2,\n        signed __int64 a3,\n        signed __int64 a4)\n{\n  NSString *v4; // x19\n  NSString *v5; // x20\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_retainAutoreleasedReturnValue(\n         +[NSByteCountFormatter stringFromByteCount:countStyle:](\n           &OBJC_CLASS___NSByteCountFormatter,\n           \"stringFromByteCount:countStyle:\",\n           a3,\n           a4));\n  v5 = objc_retainAutoreleasedReturnValue(\n         -[NSString stringByReplacingOccurrencesOfString:withString:](\n           v4,\n           \"stringByReplacingOccurrencesOfString:withString:\",\n           CFSTR(\" \"),\n           CFSTR(\"\u00a0\")));\n  objc_release(v4);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v5);\n}"
+}

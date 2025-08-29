@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE29setManagedDisplayCurrentSpace_5spaceySS_AC8CGSSpaceVtF",
+    "function_argument_number": 2,
+    "function_signature": "_$sSo17SLSTransactionRefa16EyeCandyGraphicsE29setManagedDisplayCurrentSpace_5spaceySS_AC8CGSSpaceVtF(Swift::String _, EyeCandyGraphics::CGSSpace space)",
+    "pseudocode": "Swift::Void __swiftcall SLSTransactionRef.setManagedDisplayCurrentSpace(_:space:)(\n        Swift::String _,\n        EyeCandyGraphics::CGSSpace space)\n{\n  __int64 v2; // x20\n  void *v4; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v4 = (void *)sub_10001CAC0(_._countAndFlagsBits, _._object);\n  SLSTransactionSetManagedDisplayCurrentSpace(v2, v4, space.spid);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v4);\n}"
+}

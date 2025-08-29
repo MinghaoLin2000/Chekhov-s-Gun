@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUUIDGetUUIDBytes",
+    "function_argument_number": 1,
+    "function_signature": "_CFUUIDGetUUIDBytes(CFUUIDRef uuid)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nCFUUIDBytes __cdecl CFUUIDGetUUIDBytes(CFUUIDRef uuid)\n{\n  __int64 v1; // x0\n  __int64 v2; // x1\n  CFUUIDBytes v3; // kr00_16\n  CFUUIDBytes result; // 0:x0.16\n\n  v3 = _CFUUIDGetUUIDBytes(uuid);\n  v2 = *(_QWORD *)&v3.byte8;\n  v1 = *(_QWORD *)&v3.byte0;\n  result.byte8 = v2;\n  result.byte9 = BYTE1(v2);\n  result.byte10 = BYTE2(v2);\n  result.byte11 = BYTE3(v2);\n  result.byte12 = BYTE4(v2);\n  result.byte13 = BYTE5(v2);\n  result.byte14 = BYTE6(v2);\n  result.byte15 = HIBYTE(v2);\n  result.byte0 = v1;\n  result.byte1 = BYTE1(v1);\n  result.byte2 = BYTE2(v1);\n  result.byte3 = BYTE3(v1);\n  result.byte4 = BYTE4(v1);\n  result.byte5 = BYTE5(v1);\n  result.byte6 = BYTE6(v1);\n  result.byte7 = HIBYTE(v1);\n  return result;\n}"
+}

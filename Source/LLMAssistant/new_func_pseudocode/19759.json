@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ColorInfo .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[ColorInfo .cxx_destruct](ColorInfo * self, SEL a2)",
+    "pseudocode": "void __cdecl -[ColorInfo .cxx_destruct](ColorInfo *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->nonStrokeColorspace, 0LL);\n  objc_storeStrong((id *)&self->strokeColorspace, 0LL);\n  objc_storeStrong((id *)&self->gstateStack, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->colorReason, 0LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_class_getSuperclass",
+    "function_argument_number": 1,
+    "function_signature": "_class_getSuperclass(Class cls)",
+    "pseudocode": "Class __cdecl class_getSuperclass(Class cls)\n{\n  return _class_getSuperclass(cls);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_unknownObjectWeakInit",
+    "function_argument_number": 0,
+    "function_signature": "_swift_unknownObjectWeakInit()",
+    "pseudocode": "__int64 swift_unknownObjectWeakInit()\n{\n  return _swift_unknownObjectWeakInit();\n}"
+}

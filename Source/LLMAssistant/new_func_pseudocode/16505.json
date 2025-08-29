@@ -1,0 +1,6 @@
+{
+    "function_name": "-[iAUPServer appendByteWithEscaping:toObject:]",
+    "function_argument_number": 4,
+    "function_signature": "-[iAUPServer appendByteWithEscaping:toObject:](iAUPServer * self, SEL a2, unsigned __int8 a3, id * a4)",
+    "pseudocode": "unsigned __int8 __cdecl -[iAUPServer appendByteWithEscaping:toObject:](\n        iAUPServer *self,\n        SEL a2,\n        unsigned __int8 a3,\n        id *a4)\n{\n  unsigned __int8 v5; // w19\n  _BYTE v7[2]; // [xsp+Dh] [xbp-13h] BYREF\n  unsigned __int8 v8; // [xsp+Fh] [xbp-11h] BYREF\n\n  v8 = a3;\n  if ( (unsigned int)(a3 - 125) > 1 || !self->_byteEscape )\n  {\n    objc_msgSend(*a4, \"appendBytes:length:\", &v8, 1LL);\n    return v8;\n  }\n  else\n  {\n    v5 = a3;\n    v7[0] = 125;\n    v7[1] = a3 ^ 0x20;\n    objc_msgSend(*a4, \"appendBytes:length:\", v7, 2LL);\n  }\n  return v5;\n}"
+}

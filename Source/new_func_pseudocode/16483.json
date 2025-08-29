@@ -1,0 +1,6 @@
+{
+    "function_name": "_configuredToDefaultAssetLocationForAccessory",
+    "function_argument_number": 1,
+    "function_signature": "_configuredToDefaultAssetLocationForAccessory(void * a1)",
+    "pseudocode": "bool __fastcall configuredToDefaultAssetLocationForAccessory(void *a1)\n{\n  id v1; // x20\n  void *v2; // x19\n  _BOOL4 v3; // w22\n  void *v4; // x21\n  __int64 v5; // x20\n\n  v1 = objc_retain(a1);\n  v2 = objc_retainAutoreleasedReturnValue(objc_msgSend(v1, \"objectForKeyedSubscript:\", CFSTR(\"fusing\")));\n  v3 = (AUDeveloperSettingsAccessoryFusingStringToType(v2) & 5) != 0;\n  v4 = objc_retainAutoreleasedReturnValue(objc_msgSend(v1, \"objectForKeyedSubscript:\", CFSTR(\"assetLocation\")));\n  objc_release(v1);\n  v5 = AUDeveloperSettingsURLStringToType(v4);\n  objc_release(v4);\n  objc_release(v2);\n  return v5 == 2LL * v3;\n}"
+}

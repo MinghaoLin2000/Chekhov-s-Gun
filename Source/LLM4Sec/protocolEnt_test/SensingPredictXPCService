@@ -1,0 +1,67 @@
+Service Path:
+/System/Library/PrivateFrameworks/SensingPredictServices.framework/Versions/A/XPCServices/SensingPredictXPCService.xpc/Contents/MacOS/SensingPredictXPCService
+
+Service Exported Protocols:
+@protocol CLLocationManagerDelegate <NSObject>
+- (void)locationManager:(CLLocationManager *)arg1 didVisit:(CLVisit *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didFinishDeferredUpdatesWithError:(NSError *)arg2;
+- (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)arg1;
+- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)arg1;
+- (void)locationManager:(CLLocationManager *)arg1 didStartMonitoringForRegion:(CLRegion *)arg2;
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager *)arg1;
+- (void)locationManager:(CLLocationManager *)arg1 didChangeAuthorizationStatus:(int)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 monitoringDidFailForRegion:(CLRegion *)arg2 withError:(NSError *)arg3;
+- (void)locationManager:(CLLocationManager *)arg1 didFailWithError:(NSError *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didExitRegion:(CLRegion *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didEnterRegion:(CLRegion *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didFailRangingBeaconsForConstraint:(CLBeaconIdentityConstraint *)arg2 error:(NSError *)arg3;
+- (void)locationManager:(CLLocationManager *)arg1 didRangeBeacons:(NSArray *)arg2 satisfyingConstraint:(CLBeaconIdentityConstraint *)arg3;
+- (void)locationManager:(CLLocationManager *)arg1 rangingBeaconsDidFailForRegion:(CLBeaconRegion *)arg2 withError:(NSError *)arg3;
+- (void)locationManager:(CLLocationManager *)arg1 didRangeBeacons:(NSArray *)arg2 inRegion:(CLBeaconRegion *)arg3;
+- (void)locationManager:(CLLocationManager *)arg1 didDetermineState:(long long)arg2 forRegion:(CLRegion *)arg3;
+- (_Bool)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)arg1;
+- (void)locationManager:(CLLocationManager *)arg1 didUpdateHeading:(CLHeading *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didUpdateLocations:(NSArray *)arg2;
+- (void)locationManager:(CLLocationManager *)arg1 didUpdateToLocation:(CLLocation *)arg2 fromLocation:(CLLocation *)arg3;
+@end
+@protocol SPXPCClientInterface
+- (void)contextSignalUpdated:(SPContext *)arg1 fusedState:(unsigned int)arg2;
+- (void)contextMonitorContextChanged:(SPContext *)arg1;
+@end
+@protocol SPXPCServiceInterface
+- (void)contextMonitorUpdate:(SPContextMonitor *)arg1;
+- (void)contextMonitorActivate:(SPContextMonitor *)arg1 completion:(void (^)(NSError *))arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.CoreRoutine.LocationOfInterest
+	[Value]
+		[Bool] true
+	[Key] com.apple.hid.system.user-access-service
+	[Value]
+		[Bool] true
+	[Key] com.apple.locationd.effective_bundle
+	[Value]
+		[Bool] true
+	[Key] com.apple.locationd.place_inference
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.sandbox.profile:embedded
+	[Value]
+		[String] temporary-sandbox
+	[Key] com.apple.security.exception.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] IOHIDLibUserClient
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.locationd.registration
+	[Key] com.apple.security.exception.shared-preference.read-write
+	[Value]
+		[Array]
+			[String] com.apple.SensingPredict
+	[Key] platform-application
+	[Value]
+		[Bool] true

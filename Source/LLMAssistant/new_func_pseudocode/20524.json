@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFGetRetainCount",
+    "function_argument_number": 1,
+    "function_signature": "_CFGetRetainCount(CFTypeRef cf)",
+    "pseudocode": "CFIndex __cdecl CFGetRetainCount(CFTypeRef cf)\n{\n  return _CFGetRetainCount(cf);\n}"
+}

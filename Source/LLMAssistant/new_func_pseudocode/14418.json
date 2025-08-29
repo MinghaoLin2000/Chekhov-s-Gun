@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$readFilenameFromBuffer:nameLength:entry:dataSize:error:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$readFilenameFromBuffer:nameLength:entry:dataSize:error:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_readFilenameFromBuffer_nameLength_entry_dataSize_error_(void *a1, const char *a2, ...)\n{\n  return _objc_msgSend(a1, \"readFilenameFromBuffer:nameLength:entry:dataSize:error:\");\n}"
+}

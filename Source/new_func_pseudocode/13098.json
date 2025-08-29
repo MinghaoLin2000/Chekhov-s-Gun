@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileDataRepresentation initWithPath:cryptoKey:dataLength:]",
+    "function_argument_number": 5,
+    "function_signature": "-[SFUFileDataRepresentation initWithPath:cryptoKey:dataLength:](SFUFileDataRepresentation * self, SEL a2, id a3, id a4, signed __int64 a5)",
+    "pseudocode": "SFUFileDataRepresentation *__cdecl -[SFUFileDataRepresentation initWithPath:cryptoKey:dataLength:](\n        SFUFileDataRepresentation *self,\n        SEL a2,\n        id a3,\n        id a4,\n        signed __int64 a5)\n{\n  return -[SFUFileDataRepresentation initWithPath:sharedFileDescriptor:cryptoKey:dataLength:](\n           self,\n           \"initWithPath:sharedFileDescriptor:cryptoKey:dataLength:\",\n           a3,\n           0xFFFFFFFFLL,\n           a4,\n           a5);\n}"
+}

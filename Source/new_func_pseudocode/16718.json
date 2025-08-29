@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFUserNotificationCreate",
+    "function_argument_number": 5,
+    "function_signature": "_CFUserNotificationCreate(CFAllocatorRef allocator, CFTimeInterval timeout, CFOptionFlags flags, SInt32 * error, CFDictionaryRef dictionary)",
+    "pseudocode": "CFUserNotificationRef __cdecl CFUserNotificationCreate(\n        CFAllocatorRef allocator,\n        CFTimeInterval timeout,\n        CFOptionFlags flags,\n        SInt32 *error,\n        CFDictionaryRef dictionary)\n{\n  return _CFUserNotificationCreate(allocator, timeout, flags, error, dictionary);\n}"
+}

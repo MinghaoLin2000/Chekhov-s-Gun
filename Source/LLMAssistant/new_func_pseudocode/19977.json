@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK38JobRequestAttributes_FromRequestParams12getMediaNameEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK38JobRequestAttributes_FromRequestParams12getMediaNameEv(JobRequestAttributes_FromRequestParams * this)",
+    "pseudocode": "void *__fastcall JobRequestAttributes_FromRequestParams::getMediaName(id *this)\n{\n  return objc_msgSend(this[21], \"Media\");\n}"
+}

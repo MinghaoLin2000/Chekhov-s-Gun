@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__15mutexD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__15mutexD1Ev(std::mutex * this)",
+    "pseudocode": "void __cdecl std::mutex::~mutex(std::mutex *this)\n{\n  std::mutex::~mutex(this);\n}"
+}

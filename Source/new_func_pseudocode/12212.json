@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf15UnknownFieldSet26SpaceUsedExcludingSelfLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf15UnknownFieldSet26SpaceUsedExcludingSelfLongEv(google::protobuf::UnknownFieldSet * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::UnknownFieldSet::SpaceUsedExcludingSelfLong(\n        google::protobuf::UnknownFieldSet *this)\n{\n  __int64 v1; // x20\n  __int64 v2; // x21\n  __int64 v3; // x19\n  int v4; // w8\n  __int64 v5; // x8\n\n  v1 = *(_QWORD *)this;\n  v2 = *((_QWORD *)this + 1);\n  if ( *(_QWORD *)this != v2 )\n  {\n    v3 = v2 - v1 + 24;\n    while ( 1 )\n    {\n      v4 = *(_DWORD *)(v1 + 4);\n      if ( v4 == 4 )\n        break;\n      if ( v4 == 3 )\n      {\n        v5 = v3 + google::protobuf::internal::StringSpaceUsedExcludingSelfLong(*(_QWORD *)(v1 + 8));\nLABEL_7:\n        v3 = v5 + 24;\n      }\n      v1 += 16LL;\n      if ( v1 == v2 )\n        return v3;\n    }\n    v5 = v3\n       + (int)google::protobuf::UnknownFieldSet::SpaceUsedExcludingSelfLong(*(google::protobuf::UnknownFieldSet **)(v1 + 8));\n    goto LABEL_7;\n  }\n  return 0LL;\n}"
+}

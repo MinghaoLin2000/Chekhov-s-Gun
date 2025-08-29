@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_group_enter",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_group_enter(dispatch_group_t group)",
+    "pseudocode": "void __cdecl dispatch_group_enter(dispatch_group_t group)\n{\n  _dispatch_group_enter(group);\n}"
+}

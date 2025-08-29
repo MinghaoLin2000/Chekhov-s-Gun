@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z21liteLogiCloudPrintersv",
+    "function_argument_number": 0,
+    "function_signature": "__Z21liteLogiCloudPrintersv()",
+    "pseudocode": "id liteLogiCloudPrinters(void)\n{\n  return objc_msgSend((id)iCloudDataController, \"log_iCloudPrinters\");\n}"
+}

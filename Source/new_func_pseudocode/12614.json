@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUUUIDPath uuids]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUUUIDPath uuids](TSUUUIDPath * self, SEL a2)",
+    "pseudocode": "NSArray *__cdecl -[TSUUUIDPath uuids](TSUUUIDPath *self, SEL a2)\n{\n  return self->_uuids;\n}"
+}

@@ -1,0 +1,16 @@
+@protocol VideoConversionService <NSObject>
+- (void)requestStatusWithReply:(void (^)(NSDictionary *, NSError *))arg1;
+- (void)modifyJobWithIdentifier:(NSString *)arg1 modifications:(NSDictionary *)arg2;
+- (void)cancelJobWithIdentifier:(NSString *)arg1;
+- (void)extractStillImageFromVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)generateGIFForVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)singlePassConvertVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)convertVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)echo:(NSString *)arg1 reply:(void (^)(NSString *))arg2;
+@end
+@protocol VideoConversionServiceClient <NSObject>
+- (void)updateProgress:(NSDictionary *)arg1;
+@end
+@protocol VideoConversionTaskProgressUpdateObserver
+- (void)videoConversionTask:(VideoConversionTask *)arg1 didUpdateFractionCompleted:(double)arg2;
+@end

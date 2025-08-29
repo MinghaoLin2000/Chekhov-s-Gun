@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setShowingProgressBar:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setShowingProgressBar:](DeviceFooterViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setShowingProgressBar:](DeviceFooterViewController *self, SEL a2, bool a3)\n{\n  self->_showingProgressBar = a3;\n}"
+}

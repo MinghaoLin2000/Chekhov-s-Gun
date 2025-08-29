@@ -1,0 +1,6 @@
+{
+    "function_name": "-[http_ipp_response_t ippStatus]",
+    "function_argument_number": 2,
+    "function_signature": "-[http_ipp_response_t ippStatus](http_ipp_response_t * self, SEL a2)",
+    "pseudocode": "ipp_status_t __cdecl -[http_ipp_response_t ippStatus](http_ipp_response_t *self, SEL a2)\n{\n  ipp_response_t *ippResponse; // x0\n  __int64 ivar_transportStatus; // x8\n\n  ippResponse = self->_ippResponse;\n  if ( ippResponse )\n    return -[ipp_response_t status](ippResponse, \"status\");\n  ivar_transportStatus = self->ivar_transportStatus;\n  if ( (unsigned int)ivar_transportStatus > 6 )\n    return 1280;\n  else\n    return dword_10006D4DC[ivar_transportStatus];\n}"
+}

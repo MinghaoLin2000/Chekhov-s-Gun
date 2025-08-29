@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceVariableController set_variablesLock:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceVariableController set_variablesLock:](AMLoaderServiceVariableController * self, SEL a2, os_unfair_lock_s a3)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceVariableController set_variablesLock:](\n        AMLoaderServiceVariableController *self,\n        SEL a2,\n        os_unfair_lock_s a3)\n{\n  self->__variablesLock = a3;\n}"
+}

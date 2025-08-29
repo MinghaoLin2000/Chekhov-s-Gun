@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ColorInfo init]",
+    "function_argument_number": 2,
+    "function_signature": "-[ColorInfo init](ColorInfo * self, SEL a2)",
+    "pseudocode": "ColorInfo *__cdecl -[ColorInfo init](ColorInfo *self, SEL a2)\n{\n  ColorInfo *v2; // x0\n  ColorInfo *v3; // x19\n  NSString *strokeColorspace; // x0\n  NSString *nonStrokeColorspace; // x0\n  NSMutableArray *v6; // x0\n  NSMutableArray *gstateStack; // x8\n  objc_super v9; // [xsp+0h] [xbp-20h] BYREF\n\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___ColorInfo;\n  v2 = -[ColorInfo init](&v9, \"init\");\n  v3 = v2;\n  if ( v2 )\n  {\n    strokeColorspace = v2->strokeColorspace;\n    v3->strokeColorspace = (NSString *)CFSTR(\"DeviceGray\");\n    objc_release(strokeColorspace);\n    nonStrokeColorspace = v3->nonStrokeColorspace;\n    v3->nonStrokeColorspace = (NSString *)CFSTR(\"DeviceGray\");\n    objc_release(nonStrokeColorspace);\n    v6 = objc_retainAutoreleasedReturnValue(+[NSMutableArray arrayWithCapacity:](&OBJC_CLASS___NSMutableArray, \"arrayWithCapacity:\", 5LL));\n    gstateStack = v3->gstateStack;\n    v3->gstateStack = v6;\n    objc_release(gstateStack);\n  }\n  return v3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper13AuthorizationV6logger2os6LoggerVvpfi_0",
+    "function_argument_number": 0,
+    "function_signature": "_$s19ControlCenterHelper13AuthorizationV6logger2os6LoggerVvpfi_0()",
+    "pseudocode": "__int64 _s19ControlCenterHelper13AuthorizationV6logger2os6LoggerVvpfi_0()\n{\n  return Logger.init()();\n}"
+}

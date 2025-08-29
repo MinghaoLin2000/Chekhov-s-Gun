@@ -1,0 +1,6 @@
+{
+    "function_name": "$s3__C10WindowTagsVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s3__C10WindowTagsVMa()",
+    "pseudocode": "void type metadata accessor for WindowTags()\n{\n  unsigned __int64 ForeignTypeMetadata; // x0\n  __int64 v1; // x1\n\n  if ( !qword_100029E18 )\n  {\n    ForeignTypeMetadata = swift_getForeignTypeMetadata(0LL, &unk_100026570);\n    if ( !v1 )\n      atomic_store(ForeignTypeMetadata, (unsigned __int64 *)&qword_100029E18);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFURLCreateWithFileSystemPath",
+    "function_argument_number": 4,
+    "function_signature": "_CFURLCreateWithFileSystemPath(CFAllocatorRef allocator, CFStringRef filePath, CFURLPathStyle pathStyle, Boolean isDirectory)",
+    "pseudocode": "CFURLRef __cdecl CFURLCreateWithFileSystemPath(\n        CFAllocatorRef allocator,\n        CFStringRef filePath,\n        CFURLPathStyle pathStyle,\n        Boolean isDirectory)\n{\n  return _CFURLCreateWithFileSystemPath(allocator, filePath, pathStyle, isDirectory);\n}"
+}

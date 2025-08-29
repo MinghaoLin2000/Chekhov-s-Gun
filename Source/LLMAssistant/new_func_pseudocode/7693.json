@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE10differenceyABSo6CGRectVF",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE10differenceyABSo6CGRectVF()",
+    "pseudocode": "__int64 CGRegionRef.difference(_:)()\n{\n  __int64 v0; // x20\n  __int64 result; // x0\n  void *v2; // x19\n  __int64 DifferenceWithRegion; // x20\n\n  result = CGRegionCreateWithRect();\n  if ( result )\n  {\n    v2 = (void *)result;\n    DifferenceWithRegion = CGRegionCreateDifferenceWithRegion(v0, result);\n    objc_release(v2);\n    return DifferenceWithRegion;\n  }\n  else\n  {\n    __break(1u);\n  }\n  return result;\n}"
+}

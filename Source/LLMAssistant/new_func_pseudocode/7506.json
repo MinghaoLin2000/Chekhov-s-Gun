@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV13removeWindowsyySayAA9CGSWindowVGF",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV13removeWindowsyySayAA9CGSWindowVGF(Swift::OpaquePointer a1)",
+    "pseudocode": "Swift::Void __swiftcall CGSSpace.removeWindows(_:)(Swift::OpaquePointer a1)\n{\n  __int64 v2; // x0\n  __int64 inited; // x21\n  __int64 v4; // x0\n  unsigned int *v5; // x20\n  __int64 v6; // [xsp+0h] [xbp-60h] BYREF\n  _BYTE v7[40]; // [xsp+18h] [xbp-48h] BYREF\n\n  if ( *((_QWORD *)a1._rawValue + 2) )\n  {\n    v2 = sub_100002BF4(&unk_100029A70);\n    inited = swift_initStackObject(v2, v7);\n    v4 = sub_100012334((__n128)xmmword_10001FC20);\n    v5 = (unsigned int *)CGSConnection.defaultConnection.unsafeMutableAddressor(v4);\n    swift_beginAccess(v5, &v6, 0LL, 0LL);\n    sub_100010190(a1._rawValue, *v5, inited);\n    swift_setDeallocating(inited);\n  }\n}"
+}

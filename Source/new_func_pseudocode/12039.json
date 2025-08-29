@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf22FastUInt64ToBufferLeftEyPc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf22FastUInt64ToBufferLeftEyPc(google::protobuf * this, unsigned __int64 a2, char * a3)",
+    "pseudocode": "_BYTE *__fastcall google::protobuf::FastUInt64ToBufferLeft(google::protobuf *this, _BYTE *a2, char *a3)\n{\n  int v3; // w19\n  unsigned __int64 v5; // x20\n  _WORD *v6; // x0\n  unsigned int v7; // w8\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = (int)this;\n  if ( (unsigned __int64)this >> 32 )\n  {\n    v5 = (unsigned __int64)this / 0x3B9ACA00;\n    v6 = (_WORD *)google::protobuf::FastUInt64ToBufferLeft(\n                    (google::protobuf *)((unsigned __int64)this / 0x3B9ACA00),\n                    (unsigned __int64)a2,\n                    a3);\n    v7 = v3 - 1000000000 * v5;\n    *v6 = word_10018CD9D[v7 / 0x989680uLL];\n    v7 %= 0x989680u;\n    v6[1] = word_10018CD9D[v7 / 0x186A0uLL];\n    v7 %= 0x186A0u;\n    v6[2] = word_10018CD9D[v7 / 0x3E8uLL];\n    v7 %= 0x3E8u;\n    v6[3] = word_10018CD9D[v7 / 0xAuLL];\n    v6[4] = (unsigned __int8)(v7 % 0xA + 48);\n    return (char *)v6 + 9;\n  }\n  else\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::FastUInt32ToBufferLeft(this, a2, a3);\n  }\n}"
+}

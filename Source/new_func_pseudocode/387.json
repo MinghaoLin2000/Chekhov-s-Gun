@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceUIServiceViewController setDeviceName:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceUIServiceViewController setDeviceName:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceUIServiceViewController setDeviceName:](DeviceUIServiceViewController *self, SEL a2, id a3)\n{\n  id v5; // x19\n  AMPDevice *v6; // x21\n  DeviceViewController *v7; // x20\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_deviceName, a3);\n  v5 = objc_retain(a3);\n  v6 = objc_retainAutoreleasedReturnValue(-[DeviceUIServiceViewController device](self, \"device\"));\n  -[AMPDevice setDeviceName:](v6, \"setDeviceName:\", v5);\n  objc_release(v6);\n  v7 = objc_retainAutoreleasedReturnValue(-[DeviceUIServiceViewController currentController](self, \"currentController\"));\n  -[DeviceViewController setDeviceName:](v7, \"setDeviceName:\", v5);\n  objc_release(v5);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

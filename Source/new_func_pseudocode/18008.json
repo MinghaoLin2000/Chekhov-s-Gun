@@ -1,0 +1,6 @@
+{
+    "function_name": "-[PlugInLibraryService xpcConnectionAuditToken]",
+    "function_argument_number": 3,
+    "function_signature": "-[PlugInLibraryService xpcConnectionAuditToken]($115C4C562B26FF47E01F9F4EA65B5887 * retstr, PlugInLibraryService * self, SEL a3)",
+    "pseudocode": "$115C4C562B26FF47E01F9F4EA65B5887 *__cdecl -[PlugInLibraryService xpcConnectionAuditToken](\n        $115C4C562B26FF47E01F9F4EA65B5887 *__return_ptr retstr,\n        PlugInLibraryService *self,\n        SEL a3)\n{\n  $115C4C562B26FF47E01F9F4EA65B5887 *result; // x0\n\n  objc_copyStruct(retstr, &self->_xpcConnectionAuditToken, 32LL, 1, 0);\n  return result;\n}"
+}

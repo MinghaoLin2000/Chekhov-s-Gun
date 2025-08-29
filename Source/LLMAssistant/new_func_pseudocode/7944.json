@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyWindowsWithOptionsAndTags",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyWindowsWithOptionsAndTags()",
+    "pseudocode": "__int64 CGSCopyWindowsWithOptionsAndTags()\n{\n  return _CGSCopyWindowsWithOptionsAndTags();\n}"
+}

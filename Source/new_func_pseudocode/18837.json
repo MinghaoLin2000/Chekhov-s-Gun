@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewController remoteViewIdentifier]",
+    "function_argument_number": 2,
+    "function_signature": "-[RemoteViewController remoteViewIdentifier](RemoteViewController * self, SEL a2)",
+    "pseudocode": "NSString *__cdecl -[RemoteViewController remoteViewIdentifier](RemoteViewController *self, SEL a2)\n{\n  return self->_remoteViewIdentifier;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIIsButtonDownRequest",
+    "function_argument_number": 0,
+    "function_signature": "_SiriUIIsButtonDownRequest()",
+    "pseudocode": "__int64 SiriUIIsButtonDownRequest()\n{\n  return _SiriUIIsButtonDownRequest();\n}"
+}

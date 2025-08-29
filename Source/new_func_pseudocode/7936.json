@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCopyConnectionProperty",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCopyConnectionProperty()",
+    "pseudocode": "__int64 CGSCopyConnectionProperty()\n{\n  return _CGSCopyConnectionProperty();\n}"
+}

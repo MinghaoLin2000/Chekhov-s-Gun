@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf13SourceContext11GetMetadataEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf13SourceContext11GetMetadataEv(google::protobuf::SourceContext * this)",
+    "pseudocode": "__int64 __fastcall google::protobuf::SourceContext::GetMetadata(google::protobuf::SourceContext *this)\n{\n  google::protobuf::internal::AssignDescriptors(\n    (__int64)&descriptor_table_google_2fprotobuf_2fsource_5fcontext_2eproto,\n    0);\n  return *off_1001F6F98;\n}"
+}

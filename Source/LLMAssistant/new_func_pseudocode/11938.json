@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf11MessageLite14ParseFromArrayEPKvi",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf11MessageLite14ParseFromArrayEPKvi(google::protobuf::MessageLite * this, const void * a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::MessageLite::ParseFromArray(\n        google::protobuf::MessageLite *this,\n        const void *a2,\n        int a3)\n{\n  __int64 v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = a3;\n  (*(void (__fastcall **)(google::protobuf::MessageLite *))(*(_QWORD *)this + 40LL))(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return google::protobuf::internal::MergeFromImpl<false>(a2, v5, this, 1LL);\n}"
+}

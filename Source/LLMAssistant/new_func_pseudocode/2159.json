@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPProgressBarView setFractionCompleted:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPProgressBarView setFractionCompleted:](AMPProgressBarView * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[AMPProgressBarView setFractionCompleted:](AMPProgressBarView *self, SEL a2, double a3)\n{\n  self->_fractionCompleted = a3;\n  -[AMPProgressBarView setNeedsDisplay:](self, \"setNeedsDisplay:\", 1LL);\n}"
+}

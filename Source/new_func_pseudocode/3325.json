@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_end_catch",
+    "function_argument_number": 0,
+    "function_signature": "_objc_end_catch()",
+    "pseudocode": "void objc_end_catch(void)\n{\n  _objc_end_catch();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSPFileManager copyDataFromReadChannel:decryptionInfo:toWriteChannel:encryptionInfo:completion:]",
+    "function_argument_number": 7,
+    "function_signature": "+[TSPFileManager copyDataFromReadChannel:decryptionInfo:toWriteChannel:encryptionInfo:completion:](id a1, SEL a2, id a3, id a4, id a5, id a6, id a7)",
+    "pseudocode": "void __cdecl +[TSPFileManager copyDataFromReadChannel:decryptionInfo:toWriteChannel:encryptionInfo:completion:](\n        id a1,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5,\n        id a6,\n        id a7)\n{\n  objc_msgSend(\n    a1,\n    \"copyDataFromReadChannel:decryptionInfo:size:toWriteChannel:encryptionInfo:synchronous:completion:\",\n    a3,\n    a4,\n    0LL,\n    a5,\n    a6,\n    0LL,\n    a7);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSizeCreateDictionaryRepresentation",
+    "function_argument_number": 1,
+    "function_signature": "_CGSizeCreateDictionaryRepresentation(CGSize size)",
+    "pseudocode": "CFDictionaryRef __cdecl CGSizeCreateDictionaryRepresentation(CGSize size)\n{\n  return _CGSizeCreateDictionaryRepresentation(size);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21DynamicMessageFactoryC1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf21DynamicMessageFactoryC1Ev(google::protobuf::DynamicMessageFactory * this)",
+    "pseudocode": "// attributes: thunk\ngoogle::protobuf::DynamicMessageFactory *__fastcall google::protobuf::DynamicMessageFactory::DynamicMessageFactory(\n        google::protobuf::DynamicMessageFactory *this)\n{\n  return __ZN6google8protobuf21DynamicMessageFactoryC2Ev(this);\n}"
+}

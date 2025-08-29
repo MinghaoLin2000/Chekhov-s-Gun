@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpLogError",
+    "function_argument_number": 2,
+    "function_signature": "_uarpLogError(int a1, char * __format)",
+    "pseudocode": "__int64 uarpLogError(__int64 a1, char *__format, ...)\n{\n  os_log_s *v3; // x19\n  __int64 result; // x0\n  va_list va; // [xsp+30h] [xbp+10h] BYREF\n\n  va_start(va, __format);\n  vsnprintf(byte_10002ADA0, 0x200uLL, __format, va);\n  v3 = (os_log_s *)sub_100013DA0(a1);\n  result = os_log_type_enabled(v3, OS_LOG_TYPE_ERROR);\n  if ( (_DWORD)result )\n    return sub_1000194EC(v3);\n  return result;\n}"
+}

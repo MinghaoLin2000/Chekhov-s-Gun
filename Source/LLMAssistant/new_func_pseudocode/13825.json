@@ -1,0 +1,6 @@
+{
+    "function_name": "_inflateInit2_",
+    "function_argument_number": 4,
+    "function_signature": "_inflateInit2_(z_streamp strm, int windowBits, const char * version, int stream_size)",
+    "pseudocode": "int __cdecl inflateInit2_(z_streamp strm, int windowBits, const char *version, int stream_size)\n{\n  return _inflateInit2_(strm, windowBits, version, stream_size);\n}"
+}

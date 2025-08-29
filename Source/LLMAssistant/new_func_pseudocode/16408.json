@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setIsMultiAssetSession:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setIsMultiAssetSession:](EAFirmwareUpdater * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setIsMultiAssetSession:](EAFirmwareUpdater *self, SEL a2, bool a3)\n{\n  self->_isMultiAssetSession = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "j__malloc_size",
+    "function_argument_number": 1,
+    "function_signature": "j__malloc_size(const void * ptr)",
+    "pseudocode": "// attributes: thunk\nsize_t __cdecl j__malloc_size(const void *ptr)\n{\n  return malloc_size(ptr);\n}"
+}

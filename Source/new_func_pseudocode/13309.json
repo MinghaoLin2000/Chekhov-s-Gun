@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList replaceWithRange:atIndex:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSURangeList replaceWithRange:atIndex:](TSURangeList * self, SEL a2, unsigned __int64 a4, _NSRange a3)",
+    "pseudocode": "void __cdecl -[TSURangeList replaceWithRange:atIndex:](TSURangeList *self, SEL a2, _NSRange a3, unsigned __int64 a4)\n{\n  _NSRange *begin; // x9\n  unsigned __int64 v5; // x8\n\n  begin = self->mRangeList.__begin_;\n  v5 = self->mRangeList.__end_ - begin;\n  if ( v5 <= a4 )\n    objc_exception_throw(\n      +[NSException exceptionWithName:reason:userInfo:](\n        &OBJC_CLASS___NSException,\n        \"exceptionWithName:reason:userInfo:\",\n        CFSTR(\"IndexOutOfBound\"),\n        +[NSString stringWithFormat:](\n          &OBJC_CLASS___NSString,\n          \"stringWithFormat:\",\n          CFSTR(\"Getting object at %lu from an array with size %lu\"),\n          a3.length,\n          a4,\n          v5),\n        0LL));\n  begin[a4] = a3;\n}"
+}

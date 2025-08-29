@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_stringWithoutBidiControls]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSString tsu_stringWithoutBidiControls](NSString * self, SEL a2)",
+    "pseudocode": "id __cdecl -[NSString tsu_stringWithoutBidiControls](NSString *self, SEL a2)\n{\n  NSCharacterSet *v3; // x20\n  id v4; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v3 = objc_retainAutoreleasedReturnValue(\n         +[NSCharacterSet characterSetWithCharactersInString:](\n           &OBJC_CLASS___NSCharacterSet,\n           \"characterSetWithCharactersInString:\",\n           CFSTR(\"\\u200E\\u200F\\u202A\\u202B\\u202C\\u202D\\u202E\u2066\u2067\u2068\u2069\")));\n  v4 = objc_retainAutoreleasedReturnValue(\n         -[NSString tsu_stringByReplacingInstancesOfCharactersInSet:withString:](\n           self,\n           \"tsu_stringByReplacingInstancesOfCharactersInSet:withString:\",\n           v3,\n           &stru_1001DFAA0));\n  objc_release(v3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v4);\n}"
+}

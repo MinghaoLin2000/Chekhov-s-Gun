@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_listener_cancel",
+    "function_argument_number": 1,
+    "function_signature": "_nw_listener_cancel(nw_listener_t listener)",
+    "pseudocode": "void __cdecl nw_listener_cancel(nw_listener_t listener)\n{\n  _nw_listener_cancel(listener);\n}"
+}

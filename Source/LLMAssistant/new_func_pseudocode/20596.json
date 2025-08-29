@@ -1,0 +1,6 @@
+{
+    "function_name": "_SockAddrGetPort",
+    "function_argument_number": 0,
+    "function_signature": "_SockAddrGetPort()",
+    "pseudocode": "__int64 SockAddrGetPort()\n{\n  return _SockAddrGetPort();\n}"
+}

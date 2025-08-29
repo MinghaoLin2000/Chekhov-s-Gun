@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject longitude]",
+    "function_argument_number": 2,
+    "function_signature": "-[AMPPHMediaObject longitude](AMPPHMediaObject * self, SEL a2)",
+    "pseudocode": "double __cdecl -[AMPPHMediaObject longitude](AMPPHMediaObject *self, SEL a2)\n{\n  return self->_longitude;\n}"
+}

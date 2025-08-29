@@ -1,0 +1,6 @@
+{
+    "function_name": "_CreateTokenKeyForAccount",
+    "function_argument_number": 1,
+    "function_signature": "_CreateTokenKeyForAccount(CFStringRef result)",
+    "pseudocode": "CFStringRef __fastcall CreateTokenKeyForAccount(CFStringRef result)\n{\n  if ( result )\n    return CFStringCreateWithFormat(\n             kCFAllocatorDefault,\n             0LL,\n             CFSTR(\"%@-%@\"),\n             CFSTR(\"40A0DDD2-77F8-4392-B4A3-1E7304206516:fmm-mobileme-token\"),\n             result);\n  return result;\n}"
+}

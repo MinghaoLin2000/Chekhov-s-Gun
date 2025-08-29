@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setDefaultSecondaryButton:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setDefaultSecondaryButton:](DeviceFooterViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setDefaultSecondaryButton:](\n        DeviceFooterViewController *self,\n        SEL a2,\n        bool a3)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  self->_defaultSecondaryButton = a3;\n  -[DeviceFooterViewController setSecondaryButtonKeyEquivalent:](self, \"setSecondaryButtonKeyEquivalent:\", CFSTR(\"\\r\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[DeviceFooterViewController updateButtonsState](self, \"updateButtonsState\");\n}"
+}

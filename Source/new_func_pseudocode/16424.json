@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater setCumulativeProgressPercent:]",
+    "function_argument_number": 3,
+    "function_signature": "-[EAFirmwareUpdater setCumulativeProgressPercent:](EAFirmwareUpdater * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[EAFirmwareUpdater setCumulativeProgressPercent:](EAFirmwareUpdater *self, SEL a2, id a3)\n{\n  objc_setProperty_nonatomic(self, a2, a3, 200LL);\n}"
+}

@@ -1,0 +1,6 @@
+_$s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC8_account33_1170E4F383B7D8D94FF5572A95601FACLLSo9ACAccountCSgvpfi
+// attributes: thunk
+__int64 variable initialization expression of DynamicAccountsStore._account()
+{
+  return _s34AppleMediaServicesUIDynamicService20DynamicAccountsStoreC8_account33_1170E4F383B7D8D94FF5572A95601FACLLSo9ACAccountCSgvpfi_0();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPPHMediaObject setIsHighEfficiency:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPPHMediaObject setIsHighEfficiency:](AMPPHMediaObject * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMPPHMediaObject setIsHighEfficiency:](AMPPHMediaObject *self, SEL a2, bool a3)\n{\n  self->_isHighEfficiency = a3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IFDBundle hasCard:]",
+    "function_argument_number": 3,
+    "function_signature": "-[IFDBundle hasCard:](IFDBundle * self, SEL a2, unsigned int a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nbool __cdecl -[IFDBundle hasCard:](IFDBundle *self, SEL a2, unsigned int a3)\n{\n  __int64 v3; // x0\n\n  v3 = ((__int64 (__fastcall *)(_QWORD, SEL))self->_ifdMethod.IFDHICCPresence)(*(_QWORD *)&a3, a2);\n  return !v3 || v3 == 615;\n}"
+}

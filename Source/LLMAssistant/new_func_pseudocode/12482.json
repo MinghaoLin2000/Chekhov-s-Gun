@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSObject tsu_object:isEqualToObject:]",
+    "function_argument_number": 4,
+    "function_signature": "+[NSObject tsu_object:isEqualToObject:](id a1, SEL a2, id a3, id a4)",
+    "pseudocode": "bool __cdecl +[NSObject tsu_object:isEqualToObject:](id a1, SEL a2, id a3, id a4)\n{\n  id v4; // x0\n  id v5; // x2\n\n  if ( a3 == a4 )\n    return 1;\n  if ( a3 )\n  {\n    v4 = a3;\n    v5 = a4;\n    return (unsigned __int8)objc_msgSend(v4, \"isEqual:\", v5);\n  }\n  if ( a4 )\n  {\n    v4 = a4;\n    v5 = 0LL;\n    return (unsigned __int8)objc_msgSend(v4, \"isEqual:\", v5);\n  }\n  return 0;\n}"
+}

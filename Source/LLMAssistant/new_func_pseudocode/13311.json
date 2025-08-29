@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList rangeAtIndex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSURangeList rangeAtIndex:](TSURangeList * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\n_NSRange __cdecl -[TSURangeList rangeAtIndex:](TSURangeList *self, SEL a2, unsigned __int64 a3)\n{\n  _NSRange *begin; // x9\n  unsigned __int64 v4; // x8\n  NSUInteger *p_location; // x8\n  NSUInteger v6; // x0\n  NSUInteger v7; // x1\n  _NSRange result; // 0:x0.16\n\n  begin = self->mRangeList.__begin_;\n  v4 = self->mRangeList.__end_ - begin;\n  if ( v4 <= a3 )\n    objc_exception_throw(\n      +[NSException exceptionWithName:reason:userInfo:](\n        &OBJC_CLASS___NSException,\n        \"exceptionWithName:reason:userInfo:\",\n        CFSTR(\"IndexOutOfBound\"),\n        +[NSString stringWithFormat:](\n          &OBJC_CLASS___NSString,\n          \"stringWithFormat:\",\n          CFSTR(\"Getting object at %lu from an array with size %lu\"),\n          a3,\n          v4),\n        0LL));\n  p_location = &begin[a3].location;\n  v6 = *p_location;\n  v7 = p_location[1];\n  result.length = v7;\n  result.location = v6;\n  return result;\n}"
+}

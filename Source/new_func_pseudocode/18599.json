@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwCP",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore16BundleIdentifierV6SymbolOwCP()",
+    "pseudocode": "// attributes: thunk\n__int64 initializeBufferWithCopyOfBuffer for BundleIdentifier.Symbol()\n{\n  return _s17ControlCenterCore16BundleIdentifierV6SymbolOwCP_0();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformEndpointAssetQueryAssetVersion",
+    "function_argument_number": 3,
+    "function_signature": "_uarpPlatformEndpointAssetQueryAssetVersion(__int64 a1, __int64 a2, __n128 * a3)",
+    "pseudocode": "__n128 __fastcall uarpPlatformEndpointAssetQueryAssetVersion(__int64 a1, __int64 a2, __n128 *a3)\n{\n  __n128 result; // q0\n\n  if ( a1 && a2 )\n  {\n    if ( a3 )\n    {\n      result = *(__n128 *)(a2 + 12);\n      *a3 = result;\n    }\n  }\n  return result;\n}"
+}

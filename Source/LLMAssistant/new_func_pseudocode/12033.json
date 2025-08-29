@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf7CEscapeERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "function_argument_number": 2,
+    "function_signature": "__ZN6google8protobuf7CEscapeERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(__int64 a1, std::string * a2)",
+    "pseudocode": "void __usercall google::protobuf::CEscape(__int64 a1@<X0>, std::string *a2@<X8>)\n{\n  std::string::value_type *v3[2]; // [xsp+0h] [xbp-20h] BYREF\n\n  a2->__r_.__value_.__r.__words[0] = 0LL;\n  a2->__r_.__value_.__l.__size_ = 0LL;\n  a2->__r_.__value_.__r.__words[2] = 0LL;\n  sub_10007A644(v3, a1);\n  google::protobuf::CEscapeAndAppend(v3[0], (signed __int64)v3[1], a2);\n}"
+}

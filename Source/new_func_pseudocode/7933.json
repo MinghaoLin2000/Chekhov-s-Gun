@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSConnectionGetPID",
+    "function_argument_number": 0,
+    "function_signature": "_CGSConnectionGetPID()",
+    "pseudocode": "__int64 CGSConnectionGetPID()\n{\n  return _CGSConnectionGetPID();\n}"
+}

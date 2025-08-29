@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TBXPCService fetch3BarsNetworksForLocation:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TBXPCService fetch3BarsNetworksForLocation:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[TBXPCService fetch3BarsNetworksForLocation:](TBXPCService *self, SEL a2, id a3)\n{\n  id v4; // x20\n  OS_dispatch_queue *processingQueue; // x19\n  id v6; // x20\n  _QWORD block[4]; // [xsp+8h] [xbp-38h] BYREF\n  id v8; // [xsp+28h] [xbp-18h]\n\n  v4 = objc_retain(a3);\n  NSLog(&CFSTR(\"%s:\").isa, \"-[TBXPCService fetch3BarsNetworksForLocation:]\");\n  processingQueue = self->_processingQueue;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_10000293C;\n  block[3] = &unk_100004128;\n  v8 = v4;\n  v6 = objc_retain(v4);\n  dispatch_async((dispatch_queue_t)processingQueue, block);\n  objc_release(v8);\n  objc_release(v6);\n}"
+}

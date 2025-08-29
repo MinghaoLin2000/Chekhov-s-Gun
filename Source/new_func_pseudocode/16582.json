@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdateFirmwareAnalyticsEvent setStagingStatus:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UARPUpdateFirmwareAnalyticsEvent setStagingStatus:](UARPUpdateFirmwareAnalyticsEvent * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[UARPUpdateFirmwareAnalyticsEvent setStagingStatus:](\n        UARPUpdateFirmwareAnalyticsEvent *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  self->_stagingStatus = a3;\n}"
+}

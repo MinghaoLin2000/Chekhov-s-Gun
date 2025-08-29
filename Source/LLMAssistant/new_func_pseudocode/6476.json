@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoStillImageExtractionTask performConversion]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoStillImageExtractionTask performConversion](VideoStillImageExtractionTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[VideoStillImageExtractionTask performConversion](VideoStillImageExtractionTask *self, SEL a2)\n{\n  objc_super v3; // [xsp+0h] [xbp-20h] BYREF\n\n  v3.receiver = self;\n  v3.super_class = (Class)&OBJC_CLASS___VideoStillImageExtractionTask;\n  -[VideoConversionTask performConversion](&v3, \"performConversion\");\n  -[VideoConversionTask loadAsset](self, \"loadAsset\");\n  -[VideoStillImageExtractionTask extractStillImage](self, \"extractStillImage\");\n  -[VideoStillImageExtractionTask storeImage](self, \"storeImage\");\n  -[VideoConversionTask callCompletionHandler](self, \"callCompletionHandler\");\n}"
+}

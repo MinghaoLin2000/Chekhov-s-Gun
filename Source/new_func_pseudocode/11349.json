@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14SourceCodeInfoD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14SourceCodeInfoD1Ev(google::protobuf::SourceCodeInfo * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::SourceCodeInfo::~SourceCodeInfo(google::protobuf::SourceCodeInfo *this)\n{\n  __ZN6google8protobuf14SourceCodeInfoD2Ev(this);\n}"
+}

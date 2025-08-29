@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf21DynamicMessageFactoryC2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf21DynamicMessageFactoryC2Ev(google::protobuf::DynamicMessageFactory * this)",
+    "pseudocode": "google::protobuf::DynamicMessageFactory *__fastcall google::protobuf::DynamicMessageFactory::DynamicMessageFactory(\n        google::protobuf::DynamicMessageFactory *this)\n{\n  __int64 v2; // x0\n\n  *(_QWORD *)this = off_1001D9798;\n  *((_QWORD *)this + 1) = 0LL;\n  *((_BYTE *)this + 16) = 0;\n  v2 = operator new(40LL, 0x10A0C408EF24B1CLL);\n  *(_OWORD *)v2 = 0u;\n  *(_OWORD *)(v2 + 16) = 0u;\n  *(_DWORD *)(v2 + 32) = 1065353216;\n  *((_QWORD *)this + 3) = v2;\n  *((_QWORD *)this + 4) = 850045863LL;\n  *(_OWORD *)((char *)this + 40) = 0u;\n  *(_OWORD *)((char *)this + 56) = 0u;\n  *(_OWORD *)((char *)this + 72) = 0u;\n  *((_QWORD *)this + 11) = 0LL;\n  return this;\n}"
+}

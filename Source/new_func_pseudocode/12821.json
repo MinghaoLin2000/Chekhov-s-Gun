@@ -1,0 +1,6 @@
+{
+    "function_name": "+[TSUSystemInfo systemVersion]",
+    "function_argument_number": 2,
+    "function_signature": "+[TSUSystemInfo systemVersion](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[TSUSystemInfo systemVersion](id a1, SEL a2)\n{\n  NSProcessInfo *v2; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  v2 = +[NSProcessInfo processInfo](&OBJC_CLASS___NSProcessInfo, \"processInfo\");\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[NSProcessInfo operatingSystemVersionString](v2, \"operatingSystemVersionString\");\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSThread tsu_qualityOfServiceClass]",
+    "function_argument_number": 2,
+    "function_signature": "-[NSThread tsu_qualityOfServiceClass](NSThread * self, SEL a2)",
+    "pseudocode": "unsigned int __cdecl -[NSThread tsu_qualityOfServiceClass](NSThread *self, SEL a2)\n{\n  NSQualityOfService v2; // x0\n  int v3; // w10\n  int v4; // w9\n  unsigned int v5; // w8\n  int v6; // w10\n  unsigned int v7; // w9\n\n  v2 = -[NSThread qualityOfService](self, \"qualityOfService\");\n  if ( v2 == NSQualityOfServiceUserInteractive )\n    v3 = 33;\n  else\n    v3 = 0;\n  if ( v2 == NSQualityOfServiceUserInitiated )\n    v4 = 25;\n  else\n    v4 = v3;\n  if ( v2 == NSQualityOfServiceUtility )\n    v5 = 17;\n  else\n    v5 = v4;\n  if ( v2 == NSQualityOfServiceBackground )\n    v6 = 9;\n  else\n    v6 = 0;\n  if ( v2 == NSQualityOfServiceDefault )\n    v7 = 21;\n  else\n    v7 = v6;\n  if ( v2 <= 16 )\n    return v7;\n  else\n    return v5;\n}"
+}

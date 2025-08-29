@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue init]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTargetQueue init](MXMTargetQueue * self, SEL a2)",
+    "pseudocode": "MXMTargetQueue *__cdecl -[MXMTargetQueue init](MXMTargetQueue *self, SEL a2)\n{\n  MXMTargetQueue *v2; // x0\n  MXMTargetQueue *v3; // x19\n  NSMutableArray *v4; // x20\n  objc_super v6; // [xsp+0h] [xbp-20h] BYREF\n\n  v6.receiver = self;\n  v6.super_class = (Class)&OBJC_CLASS___MXMTargetQueue;\n  v2 = -[MXMTargetQueue init](&v6, \"init\");\n  v3 = v2;\n  if ( v2 )\n  {\n    -[MXMTargetQueue setSize:](v2, \"setSize:\", 8LL);\n    v4 = objc_retainAutoreleasedReturnValue(\n           +[NSMutableArray arrayWithCapacity:](\n             &OBJC_CLASS___NSMutableArray,\n             \"arrayWithCapacity:\",\n             -[MXMTargetQueue size](v3, \"size\")));\n    -[MXMTargetQueue setQueue:](v3, \"setQueue:\", v4);\n    objc_release(v4);\n    -[MXMTargetQueue setTotal:](v3, \"setTotal:\", 0LL);\n    -[MXMTargetQueue setTarget:](v3, \"setTarget:\", 0.0);\n    -[MXMTargetQueue setTargetHits:](v3, \"setTargetHits:\", 0LL);\n    -[MXMTargetQueue setHalfTargetHits:](v3, \"setHalfTargetHits:\", 0LL);\n  }\n  return v3;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$sSo11CGRegionRefa16EyeCandyGraphicsE3newAByFZ",
+    "function_argument_number": 0,
+    "function_signature": "_$sSo11CGRegionRefa16EyeCandyGraphicsE3newAByFZ()",
+    "pseudocode": "// attributes: thunk\n__int64 static CGRegionRef.new()()\n{\n  return CGRegionCreateEmptyRegion();\n}"
+}

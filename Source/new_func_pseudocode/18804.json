@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeServiceViewService setServiceWindow:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeServiceViewService setServiceWindow:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeServiceViewService setServiceWindow:](\n        RemoteViewBridgeServiceViewService *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_serviceWindow, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6snappy21GetUncompressedLengthEPNS_6SourceEPj",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6snappy21GetUncompressedLengthEPNS_6SourceEPj(snappy * this, snappy::Source * a2, unsigned int * a3)",
+    "pseudocode": "__int64 __fastcall snappy::GetUncompressedLength(snappy *this, snappy::Source *a2, unsigned int *a3)\n{\n  __int64 v3; // x19\n  _QWORD v5[4]; // [xsp+0h] [xbp-40h] BYREF\n  unsigned int v6; // [xsp+20h] [xbp-20h]\n  char v7; // [xsp+24h] [xbp-1Ch]\n\n  v6 = 0;\n  v7 = 0;\n  v5[1] = 0LL;\n  v5[2] = 0LL;\n  v5[0] = this;\n  v3 = sub_10011BB5C(v5, a2, a3);\n  (*(void (__fastcall **)(_QWORD, _QWORD))(*(_QWORD *)v5[0] + 32LL))(v5[0], v6);\n  return v3;\n}"
+}

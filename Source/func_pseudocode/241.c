@@ -1,0 +1,5 @@
+_swift_getTypeByMangledNameInContextInMetadataState2
+__int64 swift_getTypeByMangledNameInContextInMetadataState2()
+{
+  return _swift_getTypeByMangledNameInContextInMetadataState2();
+}

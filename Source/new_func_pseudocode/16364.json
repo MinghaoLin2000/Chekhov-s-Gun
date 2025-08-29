@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater isUrgentUpdate]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater isUrgentUpdate](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[EAFirmwareUpdater isUrgentUpdate](EAFirmwareUpdater *self, SEL a2)\n{\n  if ( self->_firmwareUpdateIsUrgent )\n    return 1;\n  else\n    return -[iAUPServer urgentUpdate](self->_iAUPServer, \"urgentUpdate\");\n}"
+}

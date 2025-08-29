@@ -1,0 +1,6 @@
+{
+    "function_name": "_PFScaleFactorForMaximumPixelCount",
+    "function_argument_number": 0,
+    "function_signature": "_PFScaleFactorForMaximumPixelCount()",
+    "pseudocode": "__int64 PFScaleFactorForMaximumPixelCount()\n{\n  return _PFScaleFactorForMaximumPixelCount();\n}"
+}

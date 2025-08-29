@@ -1,0 +1,6 @@
+{
+    "function_name": "_listxattr",
+    "function_argument_number": 4,
+    "function_signature": "_listxattr(const char * path, char * namebuff, size_t size, int options)",
+    "pseudocode": "ssize_t __cdecl listxattr(const char *path, char *namebuff, size_t size, int options)\n{\n  return _listxattr(path, namebuff, size, options);\n}"
+}

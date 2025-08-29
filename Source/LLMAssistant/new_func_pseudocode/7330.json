@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ImageConversionService decrementPendingRequestCountWithRequestIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ImageConversionService decrementPendingRequestCountWithRequestIdentifier:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ImageConversionService decrementPendingRequestCountWithRequestIdentifier:](\n        ImageConversionService *self,\n        SEL a2,\n        id a3)\n{\n  id v4; // x19\n  ImageConversionService *v5; // x20\n  __int64 v6; // x21\n  int v7; // [xsp+0h] [xbp-40h] BYREF\n  id v8; // [xsp+4h] [xbp-3Ch]\n  __int16 v9; // [xsp+Ch] [xbp-34h]\n  __int64 v10; // [xsp+Eh] [xbp-32h]\n\n  v4 = objc_retain(a3);\n  v5 = objc_retain(self);\n  objc_sync_enter(v5);\n  v6 = v5->_pendingRequestCount - 1;\n  v5->_pendingRequestCount = v6;\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_INFO) )\n  {\n    v7 = 138543618;\n    v8 = v4;\n    v9 = 2048;\n    v10 = v6;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_INFO,\n      \"Sent reply for image conversion request %{public}@, pending request count now %ld\",\n      (uint8_t *)&v7,\n      0x16u);\n  }\n  objc_sync_exit(v5);\n  objc_release(v5);\n  objc_release(v4);\n}"
+}

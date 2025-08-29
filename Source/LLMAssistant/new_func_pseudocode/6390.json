@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoConversionTask cancel]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoConversionTask cancel](VideoConversionTask * self, SEL a2)",
+    "pseudocode": "void __cdecl -[VideoConversionTask cancel](VideoConversionTask *self, SEL a2)\n{\n  ;\n}"
+}

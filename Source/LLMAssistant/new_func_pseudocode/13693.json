@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceCopyPropertyList",
+    "function_argument_number": 1,
+    "function_signature": "_CGColorSpaceCopyPropertyList(CGColorSpaceRef space)",
+    "pseudocode": "CFPropertyListRef __cdecl CGColorSpaceCopyPropertyList(CGColorSpaceRef space)\n{\n  return _CGColorSpaceCopyPropertyList(space);\n}"
+}

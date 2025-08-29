@@ -1,0 +1,6 @@
+{
+    "function_name": "j__$s34AppleMediaServicesUIDynamicService16JSServiceRequestV11descriptionSSvg",
+    "function_argument_number": 0,
+    "function_signature": "j__$s34AppleMediaServicesUIDynamicService16JSServiceRequestV11descriptionSSvg()",
+    "pseudocode": "// attributes: thunk\n__int64 j___s34AppleMediaServicesUIDynamicService16JSServiceRequestV11descriptionSSvg()\n{\n  return JSServiceRequest.description.getter();\n}"
+}

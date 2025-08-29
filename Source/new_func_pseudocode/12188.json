@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io14ErrorCollectorD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io14ErrorCollectorD2Ev(google::protobuf::io::ErrorCollector * this)",
+    "pseudocode": "void __fastcall google::protobuf::io::ErrorCollector::~ErrorCollector(google::protobuf::io::ErrorCollector *this)\n{\n  ;\n}"
+}

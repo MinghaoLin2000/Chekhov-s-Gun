@@ -1,0 +1,6 @@
+{
+    "function_name": "_unsetenv",
+    "function_argument_number": 1,
+    "function_signature": "_unsetenv(const char * a1)",
+    "pseudocode": "int __cdecl unsetenv(const char *a1)\n{\n  return _unsetenv(a1);\n}"
+}

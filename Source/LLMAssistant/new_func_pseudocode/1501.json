@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LoadingViewController setAutoShowDelay:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LoadingViewController setAutoShowDelay:](LoadingViewController * self, SEL a2, double a3)",
+    "pseudocode": "void __cdecl -[LoadingViewController setAutoShowDelay:](LoadingViewController *self, SEL a2, double a3)\n{\n  self->_autoShowDelay = a3;\n}"
+}

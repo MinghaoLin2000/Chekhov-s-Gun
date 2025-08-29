@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP4PathD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP4PathD1Ev(TSP::Path * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::Path::~Path(TSP::Path *this)\n{\n  __ZN3TSP4PathD2Ev(this);\n}"
+}

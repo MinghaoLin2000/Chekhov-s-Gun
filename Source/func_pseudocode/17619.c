@@ -1,0 +1,5 @@
+_CGBitmapContextCreateWithShareableMappedData
+__int64 CGBitmapContextCreateWithShareableMappedData()
+{
+  return _CGBitmapContextCreateWithShareableMappedData();
+}

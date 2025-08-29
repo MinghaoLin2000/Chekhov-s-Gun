@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP5Color5ClearEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP5Color5ClearEv(TSP::Color * this)",
+    "pseudocode": "__int64 __fastcall TSP::Color::Clear(TSP::Color *this)\n{\n  int v1; // w8\n  __int64 result; // x0\n  char v3; // t1\n\n  v1 = *((_DWORD *)this + 4);\n  if ( (_BYTE)v1 )\n  {\n    *(_OWORD *)((char *)this + 40) = 0u;\n    *(_OWORD *)((char *)this + 24) = 0u;\n  }\n  if ( (v1 & 0x700) != 0 )\n  {\n    *((_QWORD *)this + 7) = 0x100000001LL;\n    *((_DWORD *)this + 16) = 1065353216;\n  }\n  v3 = *((_BYTE *)this + 8);\n  result = (__int64)this + 8;\n  *(_DWORD *)(result + 8) = 0;\n  if ( (v3 & 1) != 0 )\n    return sub_10003A2A8(result);\n  return result;\n}"
+}

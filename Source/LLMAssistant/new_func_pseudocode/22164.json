@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_source_set_event_handler_f",
+    "function_argument_number": 2,
+    "function_signature": "_dispatch_source_set_event_handler_f(dispatch_source_t source, dispatch_function_t handler)",
+    "pseudocode": "void __cdecl dispatch_source_set_event_handler_f(dispatch_source_t source, dispatch_function_t handler)\n{\n  _dispatch_source_set_event_handler_f(source, handler);\n}"
+}

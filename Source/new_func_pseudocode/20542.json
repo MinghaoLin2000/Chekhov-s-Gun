@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGColorSpaceEqualToColorSpace",
+    "function_argument_number": 0,
+    "function_signature": "_CGColorSpaceEqualToColorSpace()",
+    "pseudocode": "__int64 CGColorSpaceEqualToColorSpace()\n{\n  return _CGColorSpaceEqualToColorSpace();\n}"
+}

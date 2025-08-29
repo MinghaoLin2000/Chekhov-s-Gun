@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper12ShareAddressOwxx",
+    "function_argument_number": 1,
+    "function_signature": "$s9SPIHelper12ShareAddressOwxx(__int64 a1)",
+    "pseudocode": "__int64 __fastcall destroy for ShareAddress(__int64 a1)\n{\n  return sub_10004EA58(*(_QWORD *)a1, *(_QWORD *)(a1 + 8), *(unsigned __int8 *)(a1 + 16));\n}"
+}

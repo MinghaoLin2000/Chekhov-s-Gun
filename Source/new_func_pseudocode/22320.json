@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ECTIHelperDelegate _handleSynchronizeWindowLocation:forPeer:]",
+    "function_argument_number": 4,
+    "function_signature": "-[ECTIHelperDelegate _handleSynchronizeWindowLocation:forPeer:](ECTIHelperDelegate * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[ECTIHelperDelegate _handleSynchronizeWindowLocation:forPeer:](\n        ECTIHelperDelegate *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void *v6; // x20\n  double v7; // d2\n  double v8; // d8\n  double v9; // d3\n  double v10; // d9\n  double v11; // d10\n  double v12; // d0\n  uint8_t v13[16]; // [xsp+0h] [xbp-40h] BYREF\n\n  if ( os_log_type_enabled((os_log_t)&_os_log_default, OS_LOG_TYPE_INFO) )\n  {\n    *(_WORD *)v13 = 0;\n    _os_log_impl(\n      (void *)&_mh_execute_header,\n      (os_log_t)&_os_log_default,\n      OS_LOG_TYPE_INFO,\n      \"ECTI: _handleSynchronizeWindowLocation\",\n      v13,\n      2u);\n  }\n  v6 = -[NSTextField window](self->_textField, \"window\");\n  objc_msgSend(v6, \"frame\");\n  v8 = v7;\n  v10 = v9;\n  v11 = xpc_dictionary_get_double(a3, \"locx\");\n  +[NSScreen _zeroScreenHeight](&OBJC_CLASS___NSScreen, \"_zeroScreenHeight\");\n  objc_msgSend(v6, \"_setFrame:\", v11, v12 - (v10 + xpc_dictionary_get_double(a3, \"locy\")), v8, v10);\n}"
+}

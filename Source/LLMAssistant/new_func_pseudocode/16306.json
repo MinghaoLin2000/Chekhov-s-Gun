@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LegacyAudioAccessory encodeWithCoder:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LegacyAudioAccessory encodeWithCoder:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LegacyAudioAccessory encodeWithCoder:](LegacyAudioAccessory *self, SEL a2, id a3)\n{\n  NSString *serialNumber; // x20\n  id v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  serialNumber = self->_serialNumber;\n  v5 = objc_retain(a3);\n  objc_msgSend(v5, \"encodeObject:forKey:\", serialNumber, CFSTR(\"serialNumber\"));\n  objc_msgSend(v5, \"encodeObject:forKey:\", self->_activeFirmwareVersion, CFSTR(\"activeFirmwareVersion\"));\n  objc_msgSend(v5, \"encodeObject:forKey:\", self->_activeANCVersion, CFSTR(\"activeANCVersion\"));\n  objc_msgSend(v5, \"encodeObject:forKey:\", self->_modelName, CFSTR(\"modelName\"));\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

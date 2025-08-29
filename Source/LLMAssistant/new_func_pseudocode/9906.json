@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP34ObjectSerializationDirectory_Entry13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP34ObjectSerializationDirectory_Entry13IsInitializedEv(TSP::ObjectSerializationDirectory_Entry * this)",
+    "pseudocode": "bool __fastcall TSP::ObjectSerializationDirectory_Entry::IsInitialized(TSP::ObjectSerializationDirectory_Entry *this)\n{\n  return (~*((_DWORD *)this + 4) & 7) == 0;\n}"
+}

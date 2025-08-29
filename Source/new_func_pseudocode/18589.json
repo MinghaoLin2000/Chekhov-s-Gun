@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore11OrientationOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore11OrientationOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for Orientation()\n{\n  return &type metadata for Orientation;\n}"
+}

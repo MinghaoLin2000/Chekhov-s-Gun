@@ -1,0 +1,6 @@
+{
+    "function_name": "-[_TtC22localspeechrecognition32EARModelContextDelegateInterface init]",
+    "function_argument_number": 2,
+    "function_signature": "-[_TtC22localspeechrecognition32EARModelContextDelegateInterface init](_TtC22localspeechrecognition32EARModelContextDelegateInterface * self, SEL a2)",
+    "pseudocode": "_TtC22localspeechrecognition32EARModelContextDelegateInterface *__cdecl __noreturn -[EARModelContextDelegateInterface init](\n        _TtC22localspeechrecognition32EARModelContextDelegateInterface *self,\n        SEL a2)\n{\n  sub_100016FF4(self, a2);\n}"
+}

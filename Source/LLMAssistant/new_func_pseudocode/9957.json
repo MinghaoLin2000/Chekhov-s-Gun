@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP16DocumentMetadata12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP16DocumentMetadata12ByteSizeLongEv(TSP::DocumentMetadata * this)",
+    "pseudocode": "__int64 __fastcall TSP::DocumentMetadata::ByteSizeLong(TSP::DocumentMetadata *this)\n{\n  int v2; // w20\n  __int64 v3; // x8\n  __int64 v4; // x1\n  __int64 v5; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = *((_DWORD *)this + 4);\n  if ( (v2 & 3) != 0 )\n  {\n    if ( (v2 & 1) != 0 )\n    {\n      v5 = TSP::DataPropertiesV1::ByteSizeLong(*((TSP::DataPropertiesV1 **)this + 3));\n      v3 = v5 + ((9 * (__clz(v5 | 1) ^ 0x1F) + 73) >> 6) + 1;\n    }\n    else\n    {\n      v3 = 0LL;\n    }\n    if ( (v2 & 2) != 0 )\n      v4 = v3 + 2;\n    else\n      v4 = v3;\n  }\n  else\n  {\n    v4 = 0LL;\n  }\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v4, (char *)this + 20);\n  }\n  else\n  {\n    *((_DWORD *)this + 5) = v4;\n    return v4;\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s19ControlCenterHelper13AuthorizationVMa",
+    "function_argument_number": 1,
+    "function_signature": "_$s19ControlCenterHelper13AuthorizationVMa(__int64 a1)",
+    "pseudocode": "__int64 __fastcall type metadata accessor for Authorization(__int64 a1)\n{\n  __int64 result; // x0\n\n  result = qword_100095018;\n  if ( !qword_100095018 )\n    return swift_getSingletonMetadata(a1, &nominal type descriptor for Authorization);\n  return result;\n}"
+}

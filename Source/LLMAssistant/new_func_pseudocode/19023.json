@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController siriViewController:recordingWillBeginForSiriSession:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SiriNCAlertViewController siriViewController:recordingWillBeginForSiriSession:](SiriNCAlertViewController * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[SiriNCAlertViewController siriViewController:recordingWillBeginForSiriSession:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  void *v5; // x20\n  unsigned int v6; // w21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retainAutoreleasedReturnValue(\n         +[SRFUserDefaultsController sharedUserDefaultsController](\n           &OBJC_CLASS___SRFUserDefaultsController,\n           \"sharedUserDefaultsController\",\n           a3,\n           a4));\n  v6 = (unsigned int)objc_msgSend(v5, \"isEffectiveMicrophoneInternal\");\n  objc_release(v5);\n  if ( v6 )\n    +[SiriUIMediaPauser setFanDuckingEnabled:](&OBJC_CLASS___SiriUIMediaPauser, \"setFanDuckingEnabled:\", 1LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[SiriNCAlertViewController _endDelayingSessionEndForTTS](self, \"_endDelayingSessionEndForTTS\");\n}"
+}

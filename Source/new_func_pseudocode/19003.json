@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SiriNCAlertViewController lockStateForSiriViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SiriNCAlertViewController lockStateForSiriViewController:](SiriNCAlertViewController * self, SEL a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[SiriNCAlertViewController lockStateForSiriViewController:](\n        SiriNCAlertViewController *self,\n        SEL a2,\n        id a3)\n{\n  if ( (unsigned int)-[SRFLockStateNotifier isLocked](self->_lockStateNotifier, \"isLocked\", a3) )\n    return 2LL;\n  else\n    return 0LL;\n}"
+}

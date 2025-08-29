@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceViewController .cxx_destruct](DeviceViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceViewController .cxx_destruct](DeviceViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_itDeviceLibrary, 0LL);\n  objc_storeStrong((id *)&self->_itLibrary, 0LL);\n  objc_storeStrong((id *)&self->_viewMode, 0LL);\n  objc_storeStrong((id *)&self->_deviceName, 0LL);\n  objc_storeStrong((id *)&self->_deviceSyncPrefs, 0LL);\n  objc_storeStrong((id *)&self->_deviceInfo, 0LL);\n  objc_storeStrong((id *)&self->_device, 0LL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_storeStrong((id *)&self->_devicesClient, 0LL);\n}"
+}

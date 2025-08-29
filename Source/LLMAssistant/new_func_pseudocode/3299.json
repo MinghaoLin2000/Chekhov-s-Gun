@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSTemporaryDirectory",
+    "function_argument_number": 0,
+    "function_signature": "_NSTemporaryDirectory()",
+    "pseudocode": "NSString *NSTemporaryDirectory(void)\n{\n  return _NSTemporaryDirectory();\n}"
+}

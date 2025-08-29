@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAAccessoryUpdater personalizationResponse:response:status:]",
+    "function_argument_number": 5,
+    "function_signature": "-[EAAccessoryUpdater personalizationResponse:response:status:](EAAccessoryUpdater * self, SEL a2, id a3, id a4, id a5)",
+    "pseudocode": "void __cdecl -[EAAccessoryUpdater personalizationResponse:response:status:](\n        EAAccessoryUpdater *self,\n        SEL a2,\n        id a3,\n        id a4,\n        id a5)\n{\n  EAFirmwareUpdater *firmwareUpdater; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  -[FudPluginDelegate log:format:](\n    self->delegate,\n    \"log:format:\",\n    5LL,\n    CFSTR(\"Entering: %s:%d\"),\n    \"-[EAAccessoryUpdater personalizationResponse:response:status:]\",\n    1163LL);\n  firmwareUpdater = self->firmwareUpdater;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  -[EAFirmwareUpdater personalizationResponse:error:](firmwareUpdater, \"personalizationResponse:error:\", a4, a5);\n}"
+}

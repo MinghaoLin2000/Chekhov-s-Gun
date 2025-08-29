@@ -1,0 +1,5 @@
+@protocol WACEAServiceProtocol
+- (void)reconfigureAccessory:(NSString *)arg1 withReply:(void (^)(int, NSError *))arg2;
+- (void)startSearchForAccessoriesNeedingReprovisioning;
+- (void)setup;
+@end

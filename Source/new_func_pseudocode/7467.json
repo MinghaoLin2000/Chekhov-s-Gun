@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics8CGSSpaceV12getTransform10connectionSo08CGAffineF0VAA13CGSConnectionV_tF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics8CGSSpaceV12getTransform10connectionSo08CGAffineF0VAA13CGSConnectionV_tF(CGAffineTransform * retstr, EyeCandyGraphics::CGSConnection connection)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nvoid __swiftcall CGSSpace.getTransform(connection:)(\n        CGAffineTransform *__return_ptr retstr,\n        EyeCandyGraphics::CGSConnection connection)\n{\n  __int128 v3; // q1\n  __int128 v4; // q2\n  _OWORD v5[3]; // [xsp+0h] [xbp-50h] BYREF\n  int v6; // [xsp+34h] [xbp-1Ch]\n\n  v6 = 0;\n  CGSSpaceGetTransform(v5, *(_QWORD *)&connection.cid);\n  v3 = v5[1];\n  v4 = v5[2];\n  *(_OWORD *)&retstr->a = v5[0];\n  *(_OWORD *)&retstr->c = v3;\n  *(_OWORD *)&retstr->tx = v4;\n}"
+}

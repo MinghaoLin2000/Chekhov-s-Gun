@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSSetWindowProperty",
+    "function_argument_number": 0,
+    "function_signature": "_CGSSetWindowProperty()",
+    "pseudocode": "__int64 CGSSetWindowProperty()\n{\n  return _CGSSetWindowProperty();\n}"
+}

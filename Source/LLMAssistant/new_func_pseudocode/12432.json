@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSMutableString tsu_appendSeparator:format:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSMutableString tsu_appendSeparator:format:](NSMutableString * self, SEL a2, id a3, id a4)",
+    "pseudocode": "void __cdecl -[NSMutableString tsu_appendSeparator:format:](NSMutableString *self, SEL a2, id a3, id a4)\n{\n  __int64 v7; // [xsp+40h] [xbp+10h] BYREF\n\n  if ( -[NSMutableString length](self, \"length\") )\n    -[NSMutableString appendString:](self, \"appendString:\", a3);\n  -[NSMutableString appendString:](\n    self,\n    \"appendString:\",\n    +[NSString tsu_stringWithFormat:arguments:](&OBJC_CLASS___NSString, \"tsu_stringWithFormat:arguments:\", a4, &v7));\n}"
+}

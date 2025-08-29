@@ -1,0 +1,6 @@
+{
+    "function_name": "__LSCopyLSASNForAuditToken",
+    "function_argument_number": 0,
+    "function_signature": "__LSCopyLSASNForAuditToken()",
+    "pseudocode": "__int64 _LSCopyLSASNForAuditToken()\n{\n  return __LSCopyLSASNForAuditToken();\n}"
+}

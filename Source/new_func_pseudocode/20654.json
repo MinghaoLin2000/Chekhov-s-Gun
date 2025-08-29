@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_txt_record_access_key",
+    "function_argument_number": 3,
+    "function_signature": "_nw_txt_record_access_key(nw_txt_record_t txt_record, const char * key, nw_txt_record_access_key_t access_value)",
+    "pseudocode": "bool __cdecl nw_txt_record_access_key(\n        nw_txt_record_t txt_record,\n        const char *key,\n        nw_txt_record_access_key_t access_value)\n{\n  return _nw_txt_record_access_key(txt_record, key, access_value);\n}"
+}

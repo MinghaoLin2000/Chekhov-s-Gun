@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSArray tsu_initWithUIntegers:count:]",
+    "function_argument_number": 4,
+    "function_signature": "-[NSArray tsu_initWithUIntegers:count:](int a1, int a2, int a3, size_t count)",
+    "pseudocode": "id __cdecl -[NSArray tsu_initWithUIntegers:count:](\n        NSArray *self,\n        SEL a2,\n        const unsigned __int64 *a3,\n        unsigned __int64 a4)\n{\n  _BYTE *v7; // x22\n  __int64 v8; // x23\n  NSArray *v9; // x19\n  _BYTE v11[128]; // [xsp+8h] [xbp-B8h] BYREF\n  __int64 vars8; // [xsp+C8h] [xbp+8h]\n\n  if ( a4 < 0x11 )\n  {\n    if ( !a4 )\n      return -[NSArray initWithObjects:count:](self, \"initWithObjects:count:\", v11, 0LL);\n    v7 = v11;\nLABEL_5:\n    v8 = 0LL;\n    do\n    {\n      *(_QWORD *)&v7[8 * v8] = +[NSNumber numberWithInteger:](&OBJC_CLASS___NSNumber, \"numberWithInteger:\", a3[v8]);\n      ++v8;\n    }\n    while ( a4 != v8 );\n    v9 = -[NSArray initWithObjects:count:](self, \"initWithObjects:count:\", v7, a4);\n    if ( v7 != v11 )\n      free(v7);\n    return v9;\n  }\n  v7 = malloc_type_calloc(a4, 8uLL, 0x80040B8603338uLL);\n  if ( v7 )\n    goto LABEL_5;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return -[NSArray initWithObjects:count:](self, \"initWithObjects:count:\", 0LL, a4);\n}"
+}

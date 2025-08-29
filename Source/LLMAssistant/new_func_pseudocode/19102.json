@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriLanguageIsRTL",
+    "function_argument_number": 0,
+    "function_signature": "_SiriLanguageIsRTL()",
+    "pseudocode": "__int64 SiriLanguageIsRTL()\n{\n  return _SiriLanguageIsRTL();\n}"
+}

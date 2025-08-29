@@ -1,0 +1,17 @@
+Service Path:
+/System/Library/Frameworks/SceneKit.framework/Versions/A/XPCServices/SCNSceneLoader.xpc/Contents/MacOS/SCNSceneLoader
+
+Service Exported Protocols:
+@protocol SCNSceneLoaderProtocol
+- (void)loadSceneAtURL:(NSURL *)arg1 options:(NSDictionary *)arg2 withReply:(void (^)(NSData *, NSError *))arg3;
+- (void)consumeExtensions:(NSArray *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.files.user-selected.read-only
+	[Value]
+		[Bool] true

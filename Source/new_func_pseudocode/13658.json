@@ -1,0 +1,6 @@
+{
+    "function_name": "_CCHmacUpdate",
+    "function_argument_number": 3,
+    "function_signature": "_CCHmacUpdate(CCHmacContext * ctx, const void * data, size_t dataLength)",
+    "pseudocode": "void __cdecl CCHmacUpdate(CCHmacContext *ctx, const void *data, size_t dataLength)\n{\n  _CCHmacUpdate(ctx, data, dataLength);\n}"
+}

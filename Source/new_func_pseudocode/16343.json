@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater findAccessory]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater findAccessory](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[EAFirmwareUpdater findAccessory](EAFirmwareUpdater *self, SEL a2)\n{\n  if ( !-[EAFirmwareUpdater accessory](self, \"accessory\") )\n    -[EAFirmwareUpdater setAccessory:](\n      self,\n      \"setAccessory:\",\n      objc_msgSend(\n        (id)objc_opt_class(self),\n        \"findAccessoryWithProtocolString:serialNum:\",\n        -[EAFirmwareUpdater protocolString](self, \"protocolString\"),\n        self->_serialNumber));\n  return -[EAFirmwareUpdater accessory](self, \"accessory\") != 0LL;\n}"
+}

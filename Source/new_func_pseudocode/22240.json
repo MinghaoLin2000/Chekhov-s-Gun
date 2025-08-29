@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLRequestGetObject",
+    "function_argument_number": 0,
+    "function_signature": "__QLRequestGetObject()",
+    "pseudocode": "__int64 _QLRequestGetObject()\n{\n  return __QLRequestGetObject();\n}"
+}

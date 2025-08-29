@@ -1,0 +1,6 @@
+{
+    "function_name": "_JSGarbageCollect",
+    "function_argument_number": 1,
+    "function_signature": "_JSGarbageCollect(JSContextRef ctx)",
+    "pseudocode": "void __cdecl JSGarbageCollect(JSContextRef ctx)\n{\n  _JSGarbageCollect(ctx);\n}"
+}

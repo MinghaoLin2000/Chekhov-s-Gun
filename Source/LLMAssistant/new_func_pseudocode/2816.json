@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode setIsInDeviceLibrary:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsNode setIsInDeviceLibrary:](DeviceSettingsNode * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsNode setIsInDeviceLibrary:](DeviceSettingsNode *self, SEL a2, bool a3)\n{\n  self->_isInDeviceLibrary = a3;\n}"
+}

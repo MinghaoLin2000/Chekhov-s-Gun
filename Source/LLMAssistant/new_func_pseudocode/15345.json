@@ -1,0 +1,6 @@
+{
+    "function_name": "-[restoreInfo setDeviceMutex:]",
+    "function_argument_number": 3,
+    "function_signature": "-[restoreInfo setDeviceMutex:](restoreInfo * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[restoreInfo setDeviceMutex:](restoreInfo *self, SEL a2, id a3)\n{\n  objc_setProperty_atomic(self, a2, a3, 32LL);\n}"
+}

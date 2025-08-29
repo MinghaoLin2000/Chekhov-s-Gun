@@ -1,0 +1,6 @@
+{
+    "function_name": "-[KeyboardSettingsMediator setKeyboardAutocorrection:]",
+    "function_argument_number": 3,
+    "function_signature": "-[KeyboardSettingsMediator setKeyboardAutocorrection:](KeyboardSettingsMediator * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[KeyboardSettingsMediator setKeyboardAutocorrection:](KeyboardSettingsMediator *self, SEL a2, id a3)\n{\n  ;\n}"
+}

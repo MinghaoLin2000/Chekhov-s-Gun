@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ipp_collection_t copyWithZone:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ipp_collection_t copyWithZone:](ipp_collection_t * self, SEL a2, _NSZone * a3)",
+    "pseudocode": "id __cdecl -[ipp_collection_t copyWithZone:](ipp_collection_t *self, SEL a2, _NSZone *a3)\n{\n  id v4; // x0\n  NSMutableArray *attrs; // x2\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v4 = objc_alloc((Class)objc_opt_class(self, a2));\n  attrs = self->super._attrs;\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_msgSend(v4, \"_initWithAttrs:\", attrs);\n}"
+}

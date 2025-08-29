@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore25MockSampleBufferPublisherVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s17ControlCenterCore25MockSampleBufferPublisherVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for MockSampleBufferPublisher()\n{\n  return &type metadata for MockSampleBufferPublisher;\n}"
+}

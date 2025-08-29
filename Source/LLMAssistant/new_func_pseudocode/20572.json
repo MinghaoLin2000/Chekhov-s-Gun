@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContextCreate",
+    "function_argument_number": 3,
+    "function_signature": "_CGPDFContextCreate(CGDataConsumerRef consumer, const CGRect * mediaBox, CFDictionaryRef auxiliaryInfo)",
+    "pseudocode": "CGContextRef __cdecl CGPDFContextCreate(\n        CGDataConsumerRef consumer,\n        const CGRect *mediaBox,\n        CFDictionaryRef auxiliaryInfo)\n{\n  return _CGPDFContextCreate(consumer, mediaBox, auxiliaryInfo);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[EAFirmwareUpdater resumeCount]",
+    "function_argument_number": 2,
+    "function_signature": "-[EAFirmwareUpdater resumeCount](EAFirmwareUpdater * self, SEL a2)",
+    "pseudocode": "NSNumber *__cdecl -[EAFirmwareUpdater resumeCount](EAFirmwareUpdater *self, SEL a2)\n{\n  return self->_resumeCount;\n}"
+}

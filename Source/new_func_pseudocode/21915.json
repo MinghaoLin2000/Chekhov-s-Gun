@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__16localeD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__16localeD1Ev(std::locale * this)",
+    "pseudocode": "void __cdecl std::locale::~locale(std::locale *this)\n{\n  std::locale::~locale(this);\n}"
+}

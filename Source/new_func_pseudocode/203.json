@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_retainAutoreleasedReturnValue",
+    "function_argument_number": 1,
+    "function_signature": "_objc_retainAutoreleasedReturnValue(id a1)",
+    "pseudocode": "id __cdecl objc_retainAutoreleasedReturnValue(id a1)\n{\n  return _objc_retainAutoreleasedReturnValue(a1);\n}"
+}

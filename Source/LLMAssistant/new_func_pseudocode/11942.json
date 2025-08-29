@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf11MessageLite17SerializeAsStringEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK6google8protobuf11MessageLite17SerializeAsStringEv(google::protobuf::MessageLite * this)",
+    "pseudocode": "bool __usercall google::protobuf::MessageLite::SerializeAsString@<W0>(\n        std::string *__return_ptr a1@<X8>,\n        google::protobuf::MessageLite *this@<X0>)\n{\n  _BOOL8 result; // x0\n\n  a1->__r_.__value_.__r.__words[0] = 0LL;\n  a1->__r_.__value_.__l.__size_ = 0LL;\n  a1->__r_.__value_.__r.__words[2] = 0LL;\n  result = google::protobuf::MessageLite::AppendPartialToString((__int64)this, a1);\n  if ( !result )\n  {\n    if ( SHIBYTE(a1->__r_.__value_.__r.__words[2]) < 0 )\n    {\n      *a1->__r_.__value_.__l.__data_ = 0;\n      a1->__r_.__value_.__l.__size_ = 0LL;\n    }\n    else\n    {\n      a1->__r_.__value_.__s.__data_[0] = 0;\n      *((_BYTE *)&a1->__r_.__value_.__s + 23) = 0;\n    }\n  }\n  return result;\n}"
+}

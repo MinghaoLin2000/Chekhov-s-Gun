@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_job_t openDriver:format:orient:num_sheets:passthru:]",
+    "function_argument_number": 7,
+    "function_signature": "-[lite_job_t openDriver:format:orient:num_sheets:passthru:](int a1, int a2, lite_driver_s * a3, NSString * a4, ipp_orient_e a5, int a6, int a7)",
+    "pseudocode": "int __cdecl -[lite_job_t openDriver:format:orient:num_sheets:passthru:](\n        lite_job_t *self,\n        SEL a2,\n        lite_driver_s *a3,\n        id a4,\n        int a5,\n        int a6,\n        int a7)\n{\n  return liteOpenDriver(self, a3, (NSString *)a4, (ipp_orient_e)a5, a6, a7);\n}"
+}

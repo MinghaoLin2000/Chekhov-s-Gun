@@ -1,0 +1,6 @@
+{
+    "function_name": "_PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround",
+    "function_argument_number": 0,
+    "function_signature": "_PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround()",
+    "pseudocode": "__int64 PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround()\n{\n  return _PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround();\n}"
+}

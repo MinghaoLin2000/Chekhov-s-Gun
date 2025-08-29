@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper13ExecutionModeOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper13ExecutionModeOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ExecutionMode()\n{\n  return &type metadata for ExecutionMode;\n}"
+}

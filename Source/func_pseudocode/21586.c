@@ -1,0 +1,5 @@
+_swift_isUniquelyReferenced_nonNull_bridgeObject
+__int64 swift_isUniquelyReferenced_nonNull_bridgeObject()
+{
+  return _swift_isUniquelyReferenced_nonNull_bridgeObject();
+}

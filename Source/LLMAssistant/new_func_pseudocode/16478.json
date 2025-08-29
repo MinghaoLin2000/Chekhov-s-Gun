@@ -1,0 +1,6 @@
+{
+    "function_name": "_AUDeveloperSettingsAccessoryFusingTypeToString",
+    "function_argument_number": 1,
+    "function_signature": "_AUDeveloperSettingsAccessoryFusingTypeToString(unsigned __int64 a1)",
+    "pseudocode": "const char *__fastcall AUDeveloperSettingsAccessoryFusingTypeToString(unsigned __int64 a1)\n{\n  if ( a1 > 3 )\n    return \"unrecognized\";\n  else\n    return off_100031808[a1];\n}"
+}

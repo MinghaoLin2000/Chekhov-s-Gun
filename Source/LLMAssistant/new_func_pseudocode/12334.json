@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf2io16CodedInputStreamD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf2io16CodedInputStreamD1Ev(google::protobuf::io::CodedInputStream * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::io::CodedInputStream::~CodedInputStream(google::protobuf::io::CodedInputStream *this)\n{\n  __ZN6google8protobuf2io16CodedInputStreamD2Ev(this);\n}"
+}

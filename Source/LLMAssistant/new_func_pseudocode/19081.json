@@ -1,0 +1,6 @@
+{
+    "function_name": "_SiriUIRequestSourceFromNCEventSource",
+    "function_argument_number": 3,
+    "function_signature": "_SiriUIRequestSourceFromNCEventSource(__int64 a1, __int64 a2, __int64 a3)",
+    "pseudocode": "__int64 __fastcall SiriUIRequestSourceFromNCEventSource(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 result; // x0\n  __int64 v5; // x9\n  __int64 v6; // x10\n  bool v7; // zf\n\n  result = 0LL;\n  switch ( a2 )\n  {\n    case 0LL:\n      if ( a1 == 1 )\n        result = 3LL;\n      else\n        result = 0LL;\n      break;\n    case 1LL:\n      v5 = 6LL;\n      v6 = 25LL;\n      v7 = a1 == 15;\n      goto LABEL_8;\n    case 2LL:\n      v5 = 4LL;\n      v6 = 26LL;\n      v7 = a1 == 17;\nLABEL_8:\n      if ( v7 )\n        result = v6;\n      else\n        result = v5;\n      break;\n    case 3LL:\n      result = 9LL;\n      break;\n    case 4LL:\n      result = 8LL;\n      break;\n    case 5LL:\n      result = 23LL;\n      break;\n    case 6LL:\n      result = 5LL;\n      break;\n    case 7LL:\n    case 10LL:\n      result = 12LL;\n      break;\n    case 8LL:\n      if ( a3 == 8 )\n        result = 19LL;\n      else\n        result = 22LL;\n      break;\n    case 9LL:\n      result = 7LL;\n      break;\n    case 12LL:\n      result = 28LL;\n      break;\n    default:\n      return result;\n  }\n  return result;\n}"
+}

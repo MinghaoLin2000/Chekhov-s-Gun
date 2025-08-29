@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_release",
+    "function_argument_number": 0,
+    "function_signature": "_swift_release()",
+    "pseudocode": "__int64 swift_release()\n{\n  return _swift_release();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry requestIdentifiersForConnectionIdentifier:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueueEntry requestIdentifiersForConnectionIdentifier:](int a1, int a2, id a3)",
+    "pseudocode": "id __cdecl -[MediaConversionQueueEntry requestIdentifiersForConnectionIdentifier:](\n        MediaConversionQueueEntry *self,\n        SEL a2,\n        id a3)\n{\n  void *v4; // x21\n  id v5; // x20\n  void *v6; // x19\n  id v7; // x21\n  _QWORD v9[4]; // [xsp+0h] [xbp-50h] BYREF\n  id v10; // [xsp+20h] [xbp-30h]\n  void *v11; // [xsp+28h] [xbp-28h]\n\n  v9[0] = _NSConcreteStackBlock;\n  v9[1] = 3254779904LL;\n  v9[2] = sub_10000CDEC;\n  v9[3] = &unk_100041110;\n  v10 = objc_retain(a3);\n  v4 = objc_retain(objc_retainAutoreleasedReturnValue(+[NSMutableArray array](&OBJC_CLASS___NSMutableArray, \"array\")));\n  v11 = v4;\n  v5 = objc_retain(v10);\n  -[MediaConversionQueueEntry withLockEnumerateClientRequests:](self, \"withLockEnumerateClientRequests:\", v9);\n  v6 = v11;\n  v7 = objc_retainAutoreleaseReturnValue(v4);\n  objc_release(v6);\n  objc_release(v10);\n  objc_release(v7);\n  objc_release(v5);\n  return v7;\n}"
+}

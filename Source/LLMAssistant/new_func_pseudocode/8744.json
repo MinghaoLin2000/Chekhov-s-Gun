@@ -1,0 +1,6 @@
+{
+    "function_name": "_deviceIsRunningSeedBuild",
+    "function_argument_number": 0,
+    "function_signature": "_deviceIsRunningSeedBuild()",
+    "pseudocode": "__int64 deviceIsRunningSeedBuild()\n{\n  return 0LL;\n}"
+}

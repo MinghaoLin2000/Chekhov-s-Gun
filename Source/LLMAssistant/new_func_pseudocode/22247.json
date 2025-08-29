@@ -1,0 +1,6 @@
+{
+    "function_name": "__QLXPCSetIntValueForKey",
+    "function_argument_number": 0,
+    "function_signature": "__QLXPCSetIntValueForKey()",
+    "pseudocode": "__int64 _QLXPCSetIntValueForKey()\n{\n  return __QLXPCSetIntValueForKey();\n}"
+}

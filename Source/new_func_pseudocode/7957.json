@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSMainDisplayID",
+    "function_argument_number": 0,
+    "function_signature": "_CGSMainDisplayID()",
+    "pseudocode": "__int64 CGSMainDisplayID()\n{\n  return _CGSMainDisplayID();\n}"
+}

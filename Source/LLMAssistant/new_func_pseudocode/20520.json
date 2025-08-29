@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFBundleCopyLocalizedString",
+    "function_argument_number": 4,
+    "function_signature": "_CFBundleCopyLocalizedString(CFBundleRef bundle, CFStringRef key, CFStringRef value, CFStringRef tableName)",
+    "pseudocode": "CFStringRef __cdecl CFBundleCopyLocalizedString(\n        CFBundleRef bundle,\n        CFStringRef key,\n        CFStringRef value,\n        CFStringRef tableName)\n{\n  return _CFBundleCopyLocalizedString(bundle, key, value, tableName);\n}"
+}

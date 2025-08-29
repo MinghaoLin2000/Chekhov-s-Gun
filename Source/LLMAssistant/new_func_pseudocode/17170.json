@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMLoaderServiceVariableController set_clickedPointValue:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMLoaderServiceVariableController set_clickedPointValue:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[AMLoaderServiceVariableController set_clickedPointValue:](\n        AMLoaderServiceVariableController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->__clickedPointValue, a3);\n}"
+}

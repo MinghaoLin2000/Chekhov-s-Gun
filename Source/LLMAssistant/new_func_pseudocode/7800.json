@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics9CGDisplayV12_statusQuery6forKeys6UInt32VSgSo016CGSDisplayStatusH0V_tF",
+    "function_argument_number": 2,
+    "function_signature": "_$s16EyeCandyGraphics9CGDisplayV12_statusQuery6forKeys6UInt32VSgSo016CGSDisplayStatusH0V_tF(__int64 a1, __int64 a2)",
+    "pseudocode": "unsigned __int64 __fastcall CGDisplay._statusQuery(forKey:)(__int64 a1, __int64 a2)\n{\n  unsigned int v2; // w0\n  __int64 v3; // x9\n\n  v2 = CGSDisplayStatusQuery(a2, a1);\n  if ( v2 == -1 )\n    v3 = 0LL;\n  else\n    v3 = v2;\n  return v3 | ((unsigned __int64)(v2 == -1) << 32);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_fread",
+    "function_argument_number": 4,
+    "function_signature": "_fread(void * __ptr, size_t __size, size_t __nitems, FILE * __stream)",
+    "pseudocode": "size_t __cdecl fread(void *__ptr, size_t __size, size_t __nitems, FILE *__stream)\n{\n  return _fread(__ptr, __size, __nitems, __stream);\n}"
+}

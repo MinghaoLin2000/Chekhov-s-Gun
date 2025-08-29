@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataGetLength",
+    "function_argument_number": 1,
+    "function_signature": "_CFDataGetLength(CFDataRef theData)",
+    "pseudocode": "CFIndex __cdecl CFDataGetLength(CFDataRef theData)\n{\n  return _CFDataGetLength(theData);\n}"
+}

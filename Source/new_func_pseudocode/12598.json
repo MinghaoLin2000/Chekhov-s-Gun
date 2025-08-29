@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUReadChannelNSInputStreamAdaptor read:maxLength:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUReadChannelNSInputStreamAdaptor read:maxLength:](SFUReadChannelNSInputStreamAdaptor * self, SEL a2, char * a3, unsigned __int64 a4)",
+    "pseudocode": "signed __int64 __cdecl -[SFUReadChannelNSInputStreamAdaptor read:maxLength:](\n        SFUReadChannelNSInputStreamAdaptor *self,\n        SEL a2,\n        char *a3,\n        unsigned __int64 a4)\n{\n  unsigned __int64 v4; // x9\n  signed __int64 result; // x0\n  unsigned __int64 v7; // x9\n\n  v4 = atomic_load(&self->_status);\n  if ( v4 != 2 )\n    return -1LL;\n  atomic_store(3uLL, &self->_status);\n  result = (signed __int64)-[SFUInputStream readToBuffer:size:](self->_inputStream, \"readToBuffer:size:\", a3, a4);\n  if ( result )\n    v7 = 2LL;\n  else\n    v7 = 5LL;\n  atomic_store(v7, &self->_status);\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView setPurgeable:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarView setPurgeable:](AMPCapacityBarView * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView setPurgeable:](AMPCapacityBarView *self, SEL a2, unsigned __int64 a3)\n{\n  self->_purgeable = a3;\n}"
+}

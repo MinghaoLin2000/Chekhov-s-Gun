@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_resolver_set_update_handler",
+    "function_argument_number": 0,
+    "function_signature": "_nw_resolver_set_update_handler()",
+    "pseudocode": "__int64 nw_resolver_set_update_handler()\n{\n  return _nw_resolver_set_update_handler();\n}"
+}

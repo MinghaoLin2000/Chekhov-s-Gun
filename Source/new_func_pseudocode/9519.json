@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPCryptoInfoInternal hasDecodedLength]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSPCryptoInfoInternal hasDecodedLength](TSPCryptoInfoInternal * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[TSPCryptoInfoInternal hasDecodedLength](TSPCryptoInfoInternal *self, SEL a2)\n{\n  return -[TSPCryptoInfoInternal decodedLength](self, \"decodedLength\")\n      || -[TSPCryptoInfoInternal preferredBlockSize](self, \"preferredBlockSize\") != -1LL;\n}"
+}

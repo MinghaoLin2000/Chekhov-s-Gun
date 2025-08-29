@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringCreateWithCString",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringCreateWithCString(CFAllocatorRef alloc, const char * cStr, CFStringEncoding encoding)",
+    "pseudocode": "CFStringRef __cdecl CFStringCreateWithCString(CFAllocatorRef alloc, const char *cStr, CFStringEncoding encoding)\n{\n  return _CFStringCreateWithCString(alloc, cStr, encoding);\n}"
+}

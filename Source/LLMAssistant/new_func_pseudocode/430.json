@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileEventObserver setEventStreamRef:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileEventObserver setEventStreamRef:](FileEventObserver * self, SEL a2, __FSEventStream * a3)",
+    "pseudocode": "void __cdecl -[FileEventObserver setEventStreamRef:](FileEventObserver *self, SEL a2, __FSEventStream *a3)\n{\n  self->_eventStreamRef = a3;\n}"
+}

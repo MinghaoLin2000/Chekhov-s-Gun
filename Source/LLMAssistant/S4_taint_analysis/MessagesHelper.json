@@ -1,0 +1,5 @@
+{
+  "-[SPMessagesHelper enableCloudKitMessagesWithCompletionHandler:]": 4294981540,
+  "_objc_msgSend$setupIMCloudKitHooks": 4294982304,
+  "-[SPMessagesHelper fetchCloudKitMessagesStateWithCompletionHandler:]": 4294981096
+}

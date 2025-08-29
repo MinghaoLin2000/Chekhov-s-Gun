@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSURangeList insertRange:atIndex:]",
+    "function_argument_number": 4,
+    "function_signature": "-[TSURangeList insertRange:atIndex:](TSURangeList * self, SEL a2, unsigned __int64 a4, _NSRange a3)",
+    "pseudocode": "void __cdecl -[TSURangeList insertRange:atIndex:](TSURangeList *self, SEL a2, _NSRange a3, unsigned __int64 a4)\n{\n  sub_1001514D0((_DWORD)self + 8, &self->mRangeList.__begin_[a4]);\n}"
+}

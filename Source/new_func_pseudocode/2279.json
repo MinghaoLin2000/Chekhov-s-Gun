@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsCalendarsViewController setDeleteExistingCalendars:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsCalendarsViewController setDeleteExistingCalendars:](DeviceSettingsCalendarsViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsCalendarsViewController setDeleteExistingCalendars:](\n        DeviceSettingsCalendarsViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_deleteExistingCalendars = a3;\n}"
+}

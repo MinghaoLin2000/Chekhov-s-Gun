@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFDataGetMutableBytePtr",
+    "function_argument_number": 1,
+    "function_signature": "_CFDataGetMutableBytePtr(CFMutableDataRef theData)",
+    "pseudocode": "UInt8 *__cdecl CFDataGetMutableBytePtr(CFMutableDataRef theData)\n{\n  return _CFDataGetMutableBytePtr(theData);\n}"
+}

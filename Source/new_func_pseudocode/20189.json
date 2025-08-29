@@ -1,0 +1,6 @@
+{
+    "function_name": "-[Browse_NAN initWithQueue:]",
+    "function_argument_number": 3,
+    "function_signature": "-[Browse_NAN initWithQueue:](int a1, int a2, id a3)",
+    "pseudocode": "Browse_NAN *__cdecl -[Browse_NAN initWithQueue:](Browse_NAN *self, SEL a2, id a3)\n{\n  id v5; // x19\n  Browse_NAN *v6; // x0\n  Browse_NAN *v7; // x21\n  objc_super v9; // [xsp+0h] [xbp-30h] BYREF\n\n  v5 = objc_retain(a3);\n  v9.receiver = self;\n  v9.super_class = (Class)&OBJC_CLASS___Browse_NAN;\n  v6 = -[Browse_NAN init](&v9, \"init\");\n  v7 = v6;\n  if ( v6 )\n    objc_storeStrong((id *)&v6->_queue, a3);\n  objc_release(v5);\n  return v7;\n}"
+}

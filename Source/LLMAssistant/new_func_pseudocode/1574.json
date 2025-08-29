@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceFooterViewController setProgressBarViewController:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceFooterViewController setProgressBarViewController:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[DeviceFooterViewController setProgressBarViewController:](\n        DeviceFooterViewController *self,\n        SEL a2,\n        id a3)\n{\n  objc_storeStrong((id *)&self->_progressBarViewController, a3);\n}"
+}

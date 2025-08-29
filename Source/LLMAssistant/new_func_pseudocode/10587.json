@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP21LargeUUIDArraySegmentD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP21LargeUUIDArraySegmentD1Ev(TSP::LargeUUIDArraySegment * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::LargeUUIDArraySegment::~LargeUUIDArraySegment(TSP::LargeUUIDArraySegment *this)\n{\n  __ZN3TSP21LargeUUIDArraySegmentD2Ev(this);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_queue_get_label",
+    "function_argument_number": 1,
+    "function_signature": "_dispatch_queue_get_label(dispatch_queue_t queue)",
+    "pseudocode": "const char *__cdecl dispatch_queue_get_label(dispatch_queue_t queue)\n{\n  return _dispatch_queue_get_label(queue);\n}"
+}

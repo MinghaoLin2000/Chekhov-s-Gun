@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVwta",
+    "function_argument_number": 2,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService20MarketingItemRequestVwta(__int64 * a1, __int64 * a2)",
+    "pseudocode": "__int64 *__fastcall assignWithTake for MarketingItemRequest(__int64 *a1, __int64 *a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x9\n  __int64 v6; // x0\n  __int64 v7; // x9\n  __int64 v8; // x0\n  __int64 v9; // x9\n  __int64 v10; // x0\n  __int64 v11; // x9\n  __int64 v12; // x0\n\n  v4 = *a1;\n  *a1 = *a2;\n  swift_bridgeObjectRelease(v4);\n  v5 = a2[2];\n  v6 = a1[2];\n  a1[1] = a2[1];\n  a1[2] = v5;\n  swift_bridgeObjectRelease(v6);\n  v7 = a2[4];\n  v8 = a1[4];\n  a1[3] = a2[3];\n  a1[4] = v7;\n  swift_bridgeObjectRelease(v8);\n  v9 = a2[6];\n  v10 = a1[6];\n  a1[5] = a2[5];\n  a1[6] = v9;\n  swift_bridgeObjectRelease(v10);\n  v11 = a2[8];\n  v12 = a1[8];\n  a1[7] = a2[7];\n  a1[8] = v11;\n  swift_bridgeObjectRelease(v12);\n  return a1;\n}"
+}

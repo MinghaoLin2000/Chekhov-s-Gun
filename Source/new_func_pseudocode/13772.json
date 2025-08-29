@@ -1,0 +1,6 @@
+{
+    "function_name": "___cxa_free_exception",
+    "function_argument_number": 1,
+    "function_signature": "___cxa_free_exception(void * a1)",
+    "pseudocode": "void __fastcall __cxa_free_exception(void *a1)\n{\n  ___cxa_free_exception(a1);\n}"
+}

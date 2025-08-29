@@ -1,0 +1,6 @@
+{
+    "function_name": "_ReleaseEvent",
+    "function_argument_number": 1,
+    "function_signature": "_ReleaseEvent(EventRef inEvent)",
+    "pseudocode": "void __cdecl ReleaseEvent(EventRef inEvent)\n{\n  _ReleaseEvent(inEvent);\n}"
+}

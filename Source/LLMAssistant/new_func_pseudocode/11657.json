@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10Reflection23MutableInternalMetadataEPNS0_7MessageE",
+    "function_argument_number": 2,
+    "function_signature": "__ZNK6google8protobuf10Reflection23MutableInternalMetadataEPNS0_7MessageE(google::protobuf::Reflection * this, google::protobuf::Message * a2)",
+    "pseudocode": "__int64 __fastcall google::protobuf::Reflection::MutableInternalMetadata(__int64 a1, __int64 a2)\n{\n  return a2 + *(unsigned int *)(a1 + 36);\n}"
+}

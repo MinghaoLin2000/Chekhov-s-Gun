@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSNewWindowWithOpaqueShape",
+    "function_argument_number": 0,
+    "function_signature": "_CGSNewWindowWithOpaqueShape()",
+    "pseudocode": "__int64 CGSNewWindowWithOpaqueShape()\n{\n  return _CGSNewWindowWithOpaqueShape();\n}"
+}

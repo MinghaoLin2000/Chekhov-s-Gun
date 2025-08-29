@@ -1,0 +1,6 @@
+{
+    "function_name": "_DDScannerCopyResultsWithOptions",
+    "function_argument_number": 0,
+    "function_signature": "_DDScannerCopyResultsWithOptions()",
+    "pseudocode": "__int64 DDScannerCopyResultsWithOptions()\n{\n  return _DDScannerCopyResultsWithOptions();\n}"
+}

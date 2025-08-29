@@ -1,0 +1,6 @@
+{
+    "function_name": "_EtiquetteConfidenceSubtraction",
+    "function_argument_number": 1,
+    "function_signature": "_EtiquetteConfidenceSubtraction(void * a1)",
+    "pseudocode": "id __fastcall EtiquetteConfidenceSubtraction(void *a1)\n{\n  id v1; // x20\n  id v2; // x21\n  void *v3; // x19\n  _QWORD v5[4]; // [xsp+8h] [xbp-48h] BYREF\n  id v6; // [xsp+28h] [xbp-28h]\n  __int64 vars8; // [xsp+58h] [xbp+8h]\n\n  if ( a1 )\n  {\n    v1 = objc_retain(a1);\n    v5[0] = _NSConcreteStackBlock;\n    v5[1] = 3254779904LL;\n    v5[2] = sub_10003DB98;\n    v5[3] = &unk_100059C58;\n    v6 = objc_alloc_init((Class)&OBJC_CLASS___NSMutableDictionary);\n    v2 = objc_retain(v6);\n    objc_msgSend(v1, \"enumerateKeysAndObjectsUsingBlock:\", v5);\n    objc_release(v1);\n    v3 = objc_msgSend(v2, \"copy\");\n    objc_release(v6);\n    objc_release(v2);\n  }\n  else\n  {\n    v3 = 0LL;\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return objc_autoreleaseReturnValue(v3);\n}"
+}

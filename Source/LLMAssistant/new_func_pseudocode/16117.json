@@ -1,0 +1,6 @@
+{
+    "function_name": "_IORegistryEntryCreateCFProperties",
+    "function_argument_number": 4,
+    "function_signature": "_IORegistryEntryCreateCFProperties(io_registry_entry_t entry, CFMutableDictionaryRef * properties, CFAllocatorRef allocator, IOOptionBits options)",
+    "pseudocode": "kern_return_t __cdecl IORegistryEntryCreateCFProperties(\n        io_registry_entry_t entry,\n        CFMutableDictionaryRef *properties,\n        CFAllocatorRef allocator,\n        IOOptionBits options)\n{\n  return _IORegistryEntryCreateCFProperties(entry, properties, allocator, options);\n}"
+}

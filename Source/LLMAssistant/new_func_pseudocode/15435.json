@@ -1,0 +1,6 @@
+{
+    "function_name": "_AMRestorableDeviceGetFusingInfo",
+    "function_argument_number": 0,
+    "function_signature": "_AMRestorableDeviceGetFusingInfo()",
+    "pseudocode": "__int64 AMRestorableDeviceGetFusingInfo()\n{\n  return _AMRestorableDeviceGetFusingInfo();\n}"
+}

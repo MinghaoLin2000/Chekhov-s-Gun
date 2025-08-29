@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ModelKeyServerAPIFetchKeyRequest setTeamId:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ModelKeyServerAPIFetchKeyRequest setTeamId:](int a1, int a2, id obj)",
+    "pseudocode": "void __cdecl -[ModelKeyServerAPIFetchKeyRequest setTeamId:](ModelKeyServerAPIFetchKeyRequest *self, SEL a2, id a3)\n{\n  objc_storeStrong((id *)&self->_teamId, a3);\n}"
+}

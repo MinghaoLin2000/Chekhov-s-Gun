@@ -1,0 +1,6 @@
+{
+    "function_name": "+[DeviceSettingsPhotosViewController englishUUIDTextPossibilities]",
+    "function_argument_number": 2,
+    "function_signature": "+[DeviceSettingsPhotosViewController englishUUIDTextPossibilities](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[DeviceSettingsPhotosViewController englishUUIDTextPossibilities](id a1, SEL a2)\n{\n  return +[NSSet setWithArray:](&OBJC_CLASS___NSSet, \"setWithArray:\", &off_1000BEE68);\n}"
+}

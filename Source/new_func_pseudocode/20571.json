@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGPDFContextClose",
+    "function_argument_number": 1,
+    "function_signature": "_CGPDFContextClose(CGContextRef context)",
+    "pseudocode": "void __cdecl CGPDFContextClose(CGContextRef context)\n{\n  _CGPDFContextClose(context);\n}"
+}

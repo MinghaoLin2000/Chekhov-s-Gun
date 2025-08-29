@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueue setQueueEntryCounter:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MediaConversionQueue setQueueEntryCounter:](MediaConversionQueue * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[MediaConversionQueue setQueueEntryCounter:](MediaConversionQueue *self, SEL a2, unsigned __int64 a3)\n{\n  self->_queueEntryCounter = a3;\n}"
+}

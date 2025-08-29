@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_group_create",
+    "function_argument_number": 0,
+    "function_signature": "_dispatch_group_create()",
+    "pseudocode": "dispatch_group_t dispatch_group_create(void)\n{\n  return _dispatch_group_create();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "+[NSURL tsu_privacyContactsURL]",
+    "function_argument_number": 2,
+    "function_signature": "+[NSURL tsu_privacyContactsURL](id a1, SEL a2)",
+    "pseudocode": "id __cdecl +[NSURL tsu_privacyContactsURL](id a1, SEL a2)\n{\n  return +[NSURL URLWithString:](\n           &OBJC_CLASS___NSURL,\n           \"URLWithString:\",\n           CFSTR(\"x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts\"));\n}"
+}

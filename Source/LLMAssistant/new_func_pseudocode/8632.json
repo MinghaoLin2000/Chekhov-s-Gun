@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMTargetQueue full]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMTargetQueue full](MXMTargetQueue * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[MXMTargetQueue full](MXMTargetQueue *self, SEL a2)\n{\n  MXMTargetQueue *v2; // x19\n  NSMutableArray *v3; // x20\n  void *v4; // x21\n\n  v2 = self;\n  v3 = objc_retainAutoreleasedReturnValue(-[MXMTargetQueue queue](self, \"queue\"));\n  v4 = -[NSMutableArray count](v3, \"count\");\n  LOBYTE(v2) = v4 == (void *)-[MXMTargetQueue size](v2, \"size\");\n  objc_release(v3);\n  return (char)v2;\n}"
+}

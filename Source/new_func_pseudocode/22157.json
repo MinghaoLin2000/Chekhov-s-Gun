@@ -1,0 +1,6 @@
+{
+    "function_name": "_main.cold.3",
+    "function_argument_number": 1,
+    "function_signature": "_main.cold.3(__int64 * a1)",
+    "pseudocode": "void __fastcall main_cold_3(__int64 *a1)\n{\n  __int64 v1; // x8\n  int v2; // [xsp+0h] [xbp-20h] BYREF\n  __int64 v3; // [xsp+4h] [xbp-1Ch]\n\n  v1 = *a1;\n  v2 = 136446210;\n  v3 = v1;\n  _os_log_error_impl(\n    (void *)&_mh_execute_header,\n    (os_log_t)&_os_log_default,\n    OS_LOG_TYPE_ERROR,\n    \"Failed to enter MTLCompilerService sandbox: %{public}s\",\n    (uint8_t *)&v2,\n    0xCu);\n}"
+}

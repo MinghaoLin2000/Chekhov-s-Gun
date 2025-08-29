@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:]",
+    "function_argument_number": 3,
+    "function_signature": "-[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:](MDRemoteServiceSupport * self, SEL a2, id a3)",
+    "pseudocode": "void __cdecl -[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:](MDRemoteServiceSupport *self, SEL a2, id a3)\n{\n  -[MDRemoteServiceSupport rebootDeviceToRecoveryForUUID:type:](self, \"rebootDeviceToRecoveryForUUID:type:\", a3, 0LL);\n}"
+}

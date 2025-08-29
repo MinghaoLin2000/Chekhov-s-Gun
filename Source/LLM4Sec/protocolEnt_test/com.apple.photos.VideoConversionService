@@ -1,0 +1,71 @@
+Service Path:
+/System/Library/PrivateFrameworks/MediaConversionService.framework/Versions/A/XPCServices/com.apple.photos.VideoConversionService.xpc/Contents/MacOS/com.apple.photos.VideoConversionService
+
+Service Exported Protocols:
+@protocol MediaConversionQueueDelegate <NSObject>
+- (void)conversionQueue:(MediaConversionQueue *)arg1 processNextEntry:(MediaConversionQueueEntry *)arg2;
+- (void)conversionQueueDidFinishProcessingEntry:(MediaConversionQueue *)arg1;
+- (void)conversionQueue:(MediaConversionQueue *)arg1 cancelCurrentlyProcessingEntry:(MediaConversionQueueEntry *)arg2;
+- (void)conversionQueue:(MediaConversionQueue *)arg1 didCancelQueuedEntry:(MediaConversionQueueEntry *)arg2 clientRequests:(NSArray *)arg3;
+@end
+@protocol PFCameraViewfinderSessionWatcherDelegate <NSObject>
+- (void)cameraWatcherDidChangeState:(PFCameraViewfinderSessionWatcher *)arg1;
+@end
+@protocol VideoConversionService <NSObject>
+- (void)requestStatusWithReply:(void (^)(NSDictionary *, NSError *))arg1;
+- (void)modifyJobWithIdentifier:(NSString *)arg1 modifications:(NSDictionary *)arg2;
+- (void)cancelJobWithIdentifier:(NSString *)arg1;
+- (void)extractStillImageFromVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)generateGIFForVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)singlePassConvertVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)convertVideoAtSourceBookmarkDictionary:(NSDictionary *)arg1 toDestinationBookmarkDictionary:(NSDictionary *)arg2 options:(NSDictionary *)arg3 replyHandler:(void (^)(long long, NSDictionary *, NSError *))arg4;
+- (void)echo:(NSString *)arg1 reply:(void (^)(NSString *))arg2;
+@end
+@protocol VideoConversionServiceClient <NSObject>
+- (void)updateProgress:(NSDictionary *)arg1;
+@end
+@protocol VideoConversionTaskProgressUpdateObserver
+- (void)videoConversionTask:(VideoConversionTask *)arg1 didUpdateFractionCompleted:(double)arg2;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.coreaudio.allow-apac-codec
+	[Value]
+		[Bool] true
+	[Key] com.apple.coremedia.cameraviewfinder
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.AppDataContainers
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.Photos
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.storage.PhotosLibraries
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.app-sandbox
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.iokit-user-client-class
+	[Value]
+		[Array]
+			[String] AppleVideoToolboxParavirtualizationUserClient
+			[String] AGXCommandQueue
+			[String] AGXDevice
+			[String] AGXDeviceUserClient
+			[String] AGXGLContext
+			[String] AGXSharedUserClient
+			[String] AppleJPEGDriverUserClient
+			[String] H11ANEInDirectPathClient
+			[String] IOAccelContext
+			[String] IOAccelContext2
+			[String] IOAccelDevice
+			[String] IOAccelDevice2
+			[String] IOAccelSharedUserClient
+			[String] IOAccelSharedUserClient2
+			[String] IOAccelSubmitter2
+			[String] IOGPUDeviceUserClient
+			[String] IOSurfaceAcceleratorClient
+			[String] IOSurfaceRootUserClient

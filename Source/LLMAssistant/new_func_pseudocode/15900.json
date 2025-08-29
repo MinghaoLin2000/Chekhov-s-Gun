@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformGarbageCollection",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformGarbageCollection()",
+    "pseudocode": "// attributes: thunk\n__int64 uarpPlatformGarbageCollection()\n{\n  return uarpPlatformEndpointCleanupAssets2();\n}"
+}

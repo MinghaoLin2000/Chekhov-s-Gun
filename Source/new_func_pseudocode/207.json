@@ -1,0 +1,6 @@
+{
+    "function_name": "_swift_allocBox",
+    "function_argument_number": 0,
+    "function_signature": "_swift_allocBox()",
+    "pseudocode": "__int64 swift_allocBox()\n{\n  return _swift_allocBox();\n}"
+}

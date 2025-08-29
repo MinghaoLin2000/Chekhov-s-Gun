@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGImageGetWidth",
+    "function_argument_number": 1,
+    "function_signature": "_CGImageGetWidth(CGImageRef image)",
+    "pseudocode": "size_t __cdecl CGImageGetWidth(CGImageRef image)\n{\n  return _CGImageGetWidth(image);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_printf",
+    "function_argument_number": 1,
+    "function_signature": "_printf(const char * a1)",
+    "pseudocode": "int printf(const char *a1, ...)\n{\n  return _printf(a1);\n}"
+}

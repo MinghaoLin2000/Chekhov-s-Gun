@@ -1,0 +1,179 @@
+Service Path:
+/System/Library/PrivateFrameworks/AppleMediaServicesUIDynamic.framework/Versions/A/XPCServices/AppleMediaServicesUIDynamicService.xpc/Contents/MacOS/AppleMediaServicesUIDynamicService
+
+Service Exported Protocols:
+@protocol AMSBagProtocol <NSObject>
+- (AMSBagValue *)dictionaryForKey:(NSString *)arg1;
+- (AMSBagValue *)URLForKey:(NSString *)arg1;
+- (AMSBagValue *)stringForKey:(NSString *)arg1;
+- (AMSBagValue *)integerForKey:(NSString *)arg1;
+- (AMSBagValue *)doubleForKey:(NSString *)arg1;
+- (void)createSnapshotWithCompletion:(void (^)(AMSSnapshotBag *, NSError *))arg1;
+- (AMSBagValue *)boolForKey:(NSString *)arg1;
+- (AMSBagValue *)arrayForKey:(NSString *)arg1;
+- (AMSBagValue *)URLForKey:(NSString *)arg1 account:(ACAccount *)arg2;
+@end
+@protocol AMSURLProtocolDelegate <NSObject>
+- (_Bool)AMSURLSession:(AMSURLSession *)arg1 shouldHandleDialogDictionary:(NSDictionary *)arg2;
+- (_Bool)AMSURLSession:(AMSURLSession *)arg1 shouldHandleAuthenticationForAccount:(ACAccount *)arg2 dialogDictionary:(NSDictionary *)arg3;
+- (_Bool)AMSURLSession:(AMSURLSession *)arg1 shouldFailWithServerError:(NSError *)arg2;
+- (void)AMSURLSession:(AMSURLSession *)arg1 handleDialogRequest:(AMSDialogRequest *)arg2 completion:(void (^)(AMSDialogResult *, NSError *))arg3;
+- (void)AMSURLSession:(AMSURLSession *)arg1 handleAuthenticateRequest:(AMSAuthenticateRequest *)arg2 completion:(void (^)(AMSAuthenticateResult *, NSError *))arg3;
+- (void)reportMetricsForContext:(AMSMetricsLoadURLContext *)arg1;
+- (id)presentingWindow;
+- (NSString *)presentingSceneIdentifier;
+- (NSString *)presentingSceneBundleIdentifier;
+- (_Bool)AMSURLSession:(AMSURLSession *)arg1 task:(NSURLSessionTask *)arg2 shouldFailWithServerError:(NSError *)arg3;
+- (void)AMSURLSession:(AMSURLSession *)arg1 task:(NSURLSessionTask *)arg2 handleEngagementRequest:(AMSEngagementRequest *)arg3 completion:(void (^)(AMSEngagementResult *, NSError *))arg4;
+- (void)AMSURLSession:(AMSURLSession *)arg1 task:(NSURLSessionTask *)arg2 handleDialogRequest:(AMSDialogRequest *)arg3 completion:(void (^)(AMSDialogResult *, NSError *))arg4;
+- (void)AMSURLSession:(AMSURLSession *)arg1 task:(NSURLSessionTask *)arg2 handleAuthenticateRequest:(AMSAuthenticateRequest *)arg3 completion:(void (^)(AMSAuthenticateResult *, NSError *))arg4;
+@end
+@protocol ASDAppQueryResultsObserver <NSObject>
+- (void)appQuery:(ASDAppQuery *)arg1 resultsDidChange:(NSArray *)arg2;
+@end
+@protocol JSExport
+@end
+@protocol NSURLSessionDelegate <NSObject>
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)arg1;
+- (void)URLSession:(NSURLSession *)arg1 didReceiveChallenge:(NSURLAuthenticationChallenge *)arg2 completionHandler:(void (^)(long long, NSURLCredential *))arg3;
+- (void)URLSession:(NSURLSession *)arg1 didBecomeInvalidWithError:(NSError *)arg2;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicService24ClientConnectionProtocol_
+- (void)handleWithEngagementRequest:(AMSEngagementRequest *)arg1 completion:(void (^)(AMSEngagementResult *, NSError *))arg2;
+- (void)handleWithDialogRequest:(AMSDialogRequest *)arg1 completion:(void (^)(AMSDialogResult *, NSError *))arg2;
+- (void)handleWithAuthenticateRequest:(AMSAuthenticateRequest *)arg1 completion:(void (^)(AMSAuthenticateResult *, NSError *))arg2;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicService25ServiceConnectionProtocol_
+- (void)updateWithAccount:(ACAccount *)arg1 completion:(void (^)(NSError *))arg2;
+- (void)tearDownWithCompletion:(void (^)(NSError *))arg1;
+- (void)setUpWithCompletion:(void (^)(NSError *))arg1;
+- (void)performWithRequestData:(NSData *)arg1 completion:(void (^)(NSData *, NSError *))arg2;
+- (void)bootstrapWithAccount:(ACAccount *)arg1 bagData:(NSData *)arg2 clientInfo:(AMSProcessInfo *)arg3 mediaClientData:(NSData *)arg4 metricsContextData:(NSData *)arg5 url:(NSURL *)arg6 completion:(void (^)(NSError *))arg7;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_2FE4707874E0CC39DC0BBBA2829C687735JSSessionAuthenticatorObjectExports_ <JSExport>
+- (JSValue *)startSignInSession:(JSValue *)arg1;
+- (JSValue *)signOut;
+- (JSValue *)getCredentials;
+- (JSValue *)refreshBillingPlan;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_4C68A2BFBAA40A5B846F30139E6401A521JSDeviceObjectExports_ <JSExport>
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_4F319E9CC2EC82C3AE2812045406BAAE28JSLocalizationsObjectExports_ <JSExport>
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_54E1D5D11BA1CAF28E184D302C6C41CB23JSAppQueryObjectExports_ <JSExport>
+- (JSValue *)queryStoreIds:(JSValue *)arg1;
+- (JSValue *)queryBundleIds:(JSValue *)arg1;
+- (JSValue *)queryAlmondApps;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_5D7BC9D815D07E86F823E2B38AEF222325JSEngagementObjectExports_ <JSExport>
+- (JSValue *)fetchMessages:(JSValue *)arg1;
+- (JSValue *)enqueueEvent:(JSValue *)arg1;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_674A571F1CD47238225D7938DB251D2422JSAccountObjectExports_ <JSExport>
+- (JSValue *)privacyAcknowledgementState:(JSValue *)arg1:(JSValue *)arg2;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_89DB25BEB16652564EF8E0FE1B20CED822JSNetworkObjectExports_ <JSExport>
+- (JSValue *)fetch:(JSValue *)arg1;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_8A3F9B0ED0F8C406207E7486D10E869021JSClientObjectExports_ <JSExport>
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_8B965AE26716B42C7A4AB6D0BA983F6D18JSLogObjectExports_ <JSExport>
+- (void)info:(JSValue *)arg1;
+- (void)fault:(JSValue *)arg1;
+- (void)error:(JSValue *)arg1;
+- (void)default:(JSValue *)arg1;
+- (void)debug:(JSValue *)arg1;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_B51A65C435A55CBA06EACF9CC4C1C5C423JSMediaAPIObjectExports_ <JSExport>
+- (JSValue *)lookup:(JSValue *)arg1;
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_EA344AB0C07CF47FF9D5E6D6483CC85E22JSServiceObjectExports_ <JSExport>
+@end
+@protocol _TtP34AppleMediaServicesUIDynamicServiceP33_FF47DF796A259C22BEF58C83FAAA18FD24JSMarketingObjectExports_ <JSExport>
+- (JSValue *)fetchItem:(JSValue *)arg1;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] adi-client
+	[Value]
+		[String] 409835401
+	[Key] application-identifier
+	[Value]
+		[String] com.apple.AppleMediaServicesUIDynamicService
+	[Key] com.apple.accounts.appleaccount.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.accounts.appleidauthentication.defaultaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.accounts.idms.fullaccess
+	[Value]
+		[Bool] true
+	[Key] com.apple.application-identifier
+	[Value]
+		[String] com.apple.AppleMediaServicesUIDynamicService
+	[Key] com.apple.authkit.client.private
+	[Value]
+		[Bool] true
+	[Key] com.apple.mobileactivationd.spi
+	[Value]
+		[Bool] true
+	[Key] com.apple.multitasking.systemappassertions
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.accounts.allaccounts
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.applemediaservices
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.appstored
+	[Value]
+		[Array]
+			[String] Library
+			[String] Queue
+			[String] Install
+	[Key] com.apple.private.network.socket-delegate
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.container-required
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.exception.files.home-relative-path.read-write
+	[Value]
+		[Array]
+			[String] /Library/Caches/com.apple.AppleMediaServices/
+	[Key] com.apple.security.exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.appstored.xpc
+			[String] com.apple.ak.anisette.xpc
+			[String] com.apple.mobileactivationd
+			[String] com.apple.xpc.amsaccountsd
+	[Key] com.apple.security.exception.shared-preference.read-only
+	[Value]
+		[Array]
+			[String] com.apple.AppleMediaServices
+			[String] com.apple.storeservices.itfe
+	[Key] com.apple.security.network.client
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.temporary-exception.mach-lookup.global-name
+	[Value]
+		[Array]
+			[String] com.apple.appstored.xpc
+			[String] com.apple.ak.anisette.xpc
+	[Key] com.apple.symptom_analytics.query
+	[Value]
+		[Bool] true
+	[Key] com.apple.symptoms.NetworkOfInterest
+	[Value]
+		[Bool] true
+	[Key] fairplay-client
+	[Value]
+		[String] 1445028844
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] apple

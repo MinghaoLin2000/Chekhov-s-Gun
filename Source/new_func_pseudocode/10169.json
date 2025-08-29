@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP6Pose3D12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP6Pose3D12ByteSizeLongEv(TSP::Pose3D * this)",
+    "pseudocode": "__int64 __fastcall TSP::Pose3D::ByteSizeLong(TSP::Pose3D *this)\n{\n  int v1; // w8\n  __int64 v2; // x10\n  __int64 v3; // x1\n\n  v1 = *((_DWORD *)this + 4);\n  v2 = 5LL;\n  if ( (v1 & 1) == 0 )\n    v2 = 0LL;\n  if ( (v1 & 2) != 0 )\n    v2 += 5LL;\n  if ( (v1 & 4) != 0 )\n    v2 += 5LL;\n  if ( (~v1 & 7) != 0 )\n    v3 = v2;\n  else\n    v3 = 15LL;\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v3, (char *)this + 20);\n  *((_DWORD *)this + 5) = v3;\n  return v3;\n}"
+}

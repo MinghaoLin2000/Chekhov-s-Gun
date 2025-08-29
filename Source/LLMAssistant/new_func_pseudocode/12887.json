@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULogCatThreadSafeMutableSet init]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSULogCatThreadSafeMutableSet init](TSULogCatThreadSafeMutableSet * self, SEL a2)",
+    "pseudocode": "TSULogCatThreadSafeMutableSet *__cdecl -[TSULogCatThreadSafeMutableSet init](\n        TSULogCatThreadSafeMutableSet *self,\n        SEL a2)\n{\n  NSArray *v3; // x20\n  TSULogCatThreadSafeMutableSet *v4; // x19\n\n  v3 = objc_retainAutoreleasedReturnValue(+[NSArray array](&OBJC_CLASS___NSArray, \"array\"));\n  v4 = -[TSULogCatThreadSafeMutableSet initWithArray:](self, \"initWithArray:\", v3);\n  objc_release(v3);\n  return v4;\n}"
+}

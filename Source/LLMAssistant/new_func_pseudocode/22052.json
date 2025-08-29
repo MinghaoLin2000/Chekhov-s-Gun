@@ -1,0 +1,6 @@
+{
+    "function_name": "_AEDisposeDesc",
+    "function_argument_number": 1,
+    "function_signature": "_AEDisposeDesc(AEDesc * theAEDesc)",
+    "pseudocode": "OSErr __cdecl AEDisposeDesc(AEDesc *theAEDesc)\n{\n  return _AEDisposeDesc(theAEDesc);\n}"
+}

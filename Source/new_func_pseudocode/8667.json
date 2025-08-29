@@ -1,0 +1,6 @@
+{
+    "function_name": "_perror",
+    "function_argument_number": 1,
+    "function_signature": "_perror(const char * a1)",
+    "pseudocode": "void __cdecl perror(const char *a1)\n{\n  _perror(a1);\n}"
+}

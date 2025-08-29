@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinHashUpdate",
+    "function_argument_number": 4,
+    "function_signature": "_uarpPlatformDarwinHashUpdate(int a1, CC_SHA512_CTX * c, void * data, CC_LONG len)",
+    "pseudocode": "__int64 __fastcall uarpPlatformDarwinHashUpdate(__int64 result, CC_SHA512_CTX *c, void *data, CC_LONG len)\n{\n  switch ( (_DWORD)result )\n  {\n    case 3:\n      return CC_SHA512_Update(c, data, len);\n    case 2:\n      return CC_SHA384_Update(c, data, len);\n    case 1:\n      return CC_SHA256_Update((CC_SHA256_CTX *)c, data, len);\n  }\n  return result;\n}"
+}

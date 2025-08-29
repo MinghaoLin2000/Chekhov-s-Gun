@@ -1,0 +1,83 @@
+Service Path:
+/System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine
+
+Service Exported Protocols:
+@protocol VZVirtualMachineDelegate <NSObject>
+- (void)virtualMachine:(VZVirtualMachine *)arg1 networkDevice:(VZNetworkDevice *)arg2 attachmentWasDisconnectedWithError:(NSError *)arg3;
+- (void)virtualMachine:(VZVirtualMachine *)arg1 didStopWithError:(NSError *)arg2;
+- (void)guestDidStopVirtualMachine:(VZVirtualMachine *)arg1;
+@end
+@protocol _VZCustomMMIODeviceHost
+- (void)pulseIRQ:(unsigned long long)arg1;
+- (void)setIRQ:(unsigned long long)arg1 value:(_Bool)arg2;
+@end
+@protocol _VZCustomMMIODeviceInterface
+- (void)resetDevice:(void (^)(void))arg1;
+- (void)resumeDevice:(void (^)(void))arg1;
+- (void)pauseDevice:(void (^)(void))arg1;
+- (void)stopDevice:(void (^)(void))arg1;
+- (void)startDevice:(void (^)(void))arg1;
+- (void)mmioWrite:(unsigned long long)arg1 accessLength:(unsigned long long)arg2 data:(unsigned long long)arg3 reply:(void (^)(void))arg4;
+- (void)mmioWrite:(unsigned long long)arg1 accessLength:(unsigned long long)arg2 data:(unsigned long long)arg3;
+- (void)mmioRead:(unsigned long long)arg1 accessLength:(unsigned long long)arg2 reply:(void (^)(unsigned long long))arg3;
+- (void)updateRAMRegions:(NSObject<OS_xpc_object> *)arg1 reply:(void (^)(void))arg2;
+- (void)initDevice:(unsigned long long)arg1 mmioLength:(unsigned long long)arg2 writeSynchronously:(_Bool)arg3 RAMRegions:(NSObject<OS_xpc_object> *)arg4;
+@end
+
+Service Entitlements:
+[Dict]
+	[Key] com.apple.ane.iokit-user-access
+	[Value]
+		[Bool] true
+	[Key] com.apple.aned.private.allow
+	[Value]
+		[Bool] true
+	[Key] com.apple.developer.kernel.increased-memory-limit
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.AppleVirtualPlatformIdentity
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.FairPlayIOKitUserClient.Virtual.access
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.ane.privileged-vm-client
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.biometrickit.allow-match
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.hid.client.event-monitor
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.hypervisor
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.proreshw
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.security.message-filter
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.vfs.open-by-id
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.virtualization
+	[Value]
+		[Bool] true
+	[Key] com.apple.private.virtualization.plugin-loader
+	[Value]
+		[Bool] true
+	[Key] com.apple.security.hypervisor
+	[Value]
+		[Bool] true
+	[Key] com.apple.usb.hostcontrollerinterface
+	[Value]
+		[Bool] true
+	[Key] com.apple.vm.networking
+	[Value]
+		[Bool] true
+	[Key] keychain-access-groups
+	[Value]
+		[Array]
+			[String] com.apple.Virtualization.snapshot.encryption.keychain-access-group

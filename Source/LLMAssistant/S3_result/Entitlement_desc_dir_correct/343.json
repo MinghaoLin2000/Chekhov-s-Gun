@@ -1,0 +1,14 @@
+{
+  "entitlement": "com.apple.security.exception.mach-lookup.global-name:com.apple.iohideventsystem",
+  "capability": "Grants the application an exception to perform a Mach lookup for the 'com.apple.iohideventsystem' global Mach service. This allows the application to establish a direct connection to the system's Human Interface Device (HID) event processing system. With this access, the application can monitor, intercept, or inject low-level input events (such as keyboard presses, mouse clicks, trackpad gestures, and other HID events) without requiring explicit user consent via Transparency, Consent, and Control (TCC) prompts.",
+  "reasoning": "The entitlement structure 'com.apple.security.exception.mach-lookup.global-name:' indicates an exception to the sandbox's Mach service lookup restrictions for a globally named service. The specific service name 'com.apple.iohideventsystem' refers to the IOHIDEventSystem, which is a core macOS system service responsible for receiving and dispatching all human interface device input events. Bypassing standard Mach lookup restrictions for this service grants powerful capabilities to interact directly with the input event stream, enabling actions like keylogging, input spoofing, or advanced input device control.",
+  "similar_entitlements": [
+    "com.apple.security.mach-lookup.global-name.<service-name>",
+    "com.apple.security.temporary-exception.mach-lookup.global-name.<service-name>"
+  ],
+  "sensitive_type": [
+    5
+  ],
+  "sensitive_reasoning": "This entitlement directly relates to and bypasses TCC (Transparency, Consent, and Control) mechanisms. Specifically, the ability to monitor and potentially inject input events falls under the 'Input Monitoring' category within TCC. Access to 'com.apple.iohideventsystem' is a prerequisite for many forms of input monitoring, including keyboard logging, which is explicitly listed as a TCC-protected resource. Granting this entitlement allows an application to perform such sensitive operations without the user's explicit approval through TCC prompts.",
+  "self_reflection": "High confidence. The entitlement name is highly descriptive, clearly indicating a Mach lookup exception for a specific, well-known system service (`IOHIDEventSystem`). The function of `IOHIDEventSystem` as the central hub for input events in macOS is a fundamental aspect of system security and directly corresponds to the 'Input Monitoring' category within TCC. The primary risk is clear: unauthorized access to user input. No significant ambiguities or alternative interpretations were found that would change the core assessment."
+}

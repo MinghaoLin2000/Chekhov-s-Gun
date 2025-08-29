@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP16DataPropertiesV1D2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP16DataPropertiesV1D2Ev(TSP::DataPropertiesV1 * this)",
+    "pseudocode": "void __fastcall TSP::DataPropertiesV1::~DataPropertiesV1(TSP::DataPropertiesV1 *this)\n{\n  sub_100037E58((char *)this + 8);\n  sub_100055634((char *)this + 16);\n}"
+}

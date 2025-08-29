@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_release_x26",
+    "function_argument_number": 0,
+    "function_signature": "_objc_release_x26()",
+    "pseudocode": "__int64 objc_release_x26()\n{\n  return _objc_release_x26();\n}"
+}

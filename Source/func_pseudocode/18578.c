@@ -1,0 +1,5 @@
+$s17ControlCenterCore28CaptureFrameReceiverObserverCMa
+__int64 type metadata accessor for CaptureFrameReceiverObserver()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC17ControlCenterCoreP33_05528DDA50FE2858EF67F40CA99DB9B228CaptureFrameReceiverObserver);
+}

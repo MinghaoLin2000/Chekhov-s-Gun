@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics15SystemEventMaskV18applicationDefinedACvau",
+    "function_argument_number": 0,
+    "function_signature": "_$s16EyeCandyGraphics15SystemEventMaskV18applicationDefinedACvau()",
+    "pseudocode": "int *SystemEventMask.applicationDefined.unsafeMutableAddressor()\n{\n  if ( qword_10002A640 != -1 )\n    swift_once(&qword_10002A640, sub_100015D44);\n  return &static SystemEventMask.applicationDefined;\n}"
+}

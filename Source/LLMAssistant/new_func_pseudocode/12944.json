@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUZipEntry calculateEncodedLength]",
+    "function_argument_number": 1,
+    "function_signature": "-[SFUZipEntry calculateEncodedLength](id obj)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUZipEntry calculateEncodedLength](SFUZipEntry *self, SEL a2)\n{\n  unsigned __int64 mUncompressedSize; // x0\n\n  if ( !self->mHasEncodedLength )\n  {\n    objc_sync_enter(self);\n    if ( !self->mHasEncodedLength )\n    {\n      if ( self->mCryptoKey )\n        mUncompressedSize = +[SFUCryptoOutputStream encodedLengthForDataLength:key:](\n                              &OBJC_CLASS___SFUCryptoOutputStream,\n                              \"encodedLengthForDataLength:key:\",\n                              self->mUncompressedSize);\n      else\n        mUncompressedSize = self->mUncompressedSize;\n      self->mEncodedLength = mUncompressedSize;\n      __dmb(0xBu);\n      self->mHasEncodedLength = 1;\n    }\n    objc_sync_exit(self);\n  }\n  return self->mEncodedLength;\n}"
+}

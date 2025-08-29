@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP26SparseReferenceArray_EntryD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP26SparseReferenceArray_EntryD2Ev(TSP::SparseReferenceArray_Entry * this)",
+    "pseudocode": "void __fastcall TSP::SparseReferenceArray_Entry::~SparseReferenceArray_Entry(TSP::SparseReferenceArray_Entry *this)\n{\n  __int64 v2; // x20\n\n  if ( this != (TSP::SparseReferenceArray_Entry *)&TSP::_SparseReferenceArray_Entry_default_instance_ )\n  {\n    v2 = *((_QWORD *)this + 3);\n    if ( v2 )\n    {\n      sub_100037E58(v2 + 8);\n      operator delete(v2, 0x1081C407D3F2757LL);\n    }\n  }\n  sub_100037E58((char *)this + 8);\n}"
+}

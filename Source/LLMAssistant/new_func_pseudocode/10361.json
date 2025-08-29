@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP14UUIDMapArchive13IsInitializedEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP14UUIDMapArchive13IsInitializedEv(TSP::UUIDMapArchive * this)",
+    "pseudocode": "bool __fastcall TSP::UUIDMapArchive::IsInitialized(TSP::UUIDMapArchive *this)\n{\n  __int64 v1; // x9\n  __int64 v2; // x11\n  _BOOL8 result; // x0\n  __int64 v4; // x9\n  __int64 v5; // x8\n  __int64 v6; // x11\n\n  v1 = *((unsigned int *)this + 6);\n  while ( (int)v1 >= 1 )\n  {\n    v2 = *(_QWORD *)(*((_QWORD *)this + 4) + 8 * v1--);\n    if ( (~*(_DWORD *)(v2 + 16) & 3) != 0 )\n      return 0LL;\n  }\n  v4 = *((unsigned int *)this + 12);\n  v5 = *((_QWORD *)this + 7);\n  do\n  {\n    result = (int)v4 < 1;\n    if ( (int)v4 < 1 )\n      break;\n    v6 = *(_QWORD *)(v5 + 8 * v4--);\n  }\n  while ( (~*(_DWORD *)(v6 + 16) & 3) == 0 );\n  return result;\n}"
+}

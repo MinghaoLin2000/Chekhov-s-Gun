@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$copyDataFromReadChannel:decryptionInfo:size:toWriteChannel:encryptionInfo:synchronous:completion:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$copyDataFromReadChannel:decryptionInfo:size:toWriteChannel:encryptionInfo:synchronous:completion:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_copyDataFromReadChannel_decryptionInfo_size_toWriteChannel_encryptionInfo_synchronous_completion_(\n        void *a1,\n        const char *a2,\n        ...)\n{\n  return _objc_msgSend(\n           a1,\n           \"copyDataFromReadChannel:decryptionInfo:size:toWriteChannel:encryptionInfo:synchronous:completion:\");\n}"
+}

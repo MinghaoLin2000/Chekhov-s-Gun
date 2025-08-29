@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPodcastsViewController updateModeWithTag:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPodcastsViewController updateModeWithTag:](DeviceSettingsPodcastsViewController * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[DeviceSettingsPodcastsViewController updateModeWithTag:](\n        DeviceSettingsPodcastsViewController *self,\n        SEL a2,\n        signed __int64 a3)\n{\n  if ( a3 == 2000 )\n    return 2LL;\n  else\n    return 1LL;\n}"
+}

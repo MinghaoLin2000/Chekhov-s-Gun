@@ -1,0 +1,6 @@
+{
+    "function_name": "__Z32liteSetupDriverInfoFromDeviceIDsP13lite_driver_sP12NSDictionary",
+    "function_argument_number": 2,
+    "function_signature": "__Z32liteSetupDriverInfoFromDeviceIDsP13lite_driver_sP12NSDictionary(lite_driver_s * a1, id a2)",
+    "pseudocode": "void __fastcall liteSetupDriverInfoFromDeviceIDs(lite_driver_s *a1, id a2)\n{\n  id v2; // x0\n  id v3[2]; // [xsp+0h] [xbp-40h] BYREF\n  id v4[2]; // [xsp+10h] [xbp-30h]\n  id v5; // [xsp+20h] [xbp-20h]\n  __int64 vars8; // [xsp+48h] [xbp+8h]\n\n  v5 = 0LL;\n  *(_OWORD *)v3 = 0u;\n  *(_OWORD *)v4 = 0u;\n  liteFigureOutDriverSetupInfo((__int64)v3, (__int64)a1, a2);\n  objc_release(v5);\n  objc_release(v4[1]);\n  objc_release(v4[0]);\n  v2 = v3[1];\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

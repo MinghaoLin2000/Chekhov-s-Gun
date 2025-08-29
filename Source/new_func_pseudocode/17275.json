@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMRemoteActionExecution setPaused:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMRemoteActionExecution setPaused:](AMRemoteActionExecution * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[AMRemoteActionExecution setPaused:](AMRemoteActionExecution *self, SEL a2, bool a3)\n{\n  self->_paused = a3;\n}"
+}

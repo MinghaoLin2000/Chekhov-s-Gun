@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFArrayCreate",
+    "function_argument_number": 4,
+    "function_signature": "_CFArrayCreate(CFAllocatorRef allocator, const void ** values, CFIndex numValues, const CFArrayCallBacks * callBacks)",
+    "pseudocode": "CFArrayRef __cdecl CFArrayCreate(\n        CFAllocatorRef allocator,\n        const void **values,\n        CFIndex numValues,\n        const CFArrayCallBacks *callBacks)\n{\n  return _CFArrayCreate(allocator, values, numValues, callBacks);\n}"
+}

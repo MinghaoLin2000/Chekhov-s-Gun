@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUMemoryInputStream readToOwnBuffer:size:]",
+    "function_argument_number": 4,
+    "function_signature": "-[SFUMemoryInputStream readToOwnBuffer:size:](SFUMemoryInputStream * self, SEL a2, const char ** a3, unsigned __int64 a4)",
+    "pseudocode": "unsigned __int64 __cdecl -[SFUMemoryInputStream readToOwnBuffer:size:](\n        SFUMemoryInputStream *self,\n        SEL a2,\n        const char **a3,\n        unsigned __int64 a4)\n{\n  const char *mCurrent; // x9\n  unsigned __int64 v5; // x8\n\n  mCurrent = self->mCurrent;\n  v5 = self->mEnd - mCurrent;\n  if ( v5 >= a4 )\n    v5 = a4;\n  *a3 = mCurrent;\n  self->mCurrent += v5;\n  return v5;\n}"
+}

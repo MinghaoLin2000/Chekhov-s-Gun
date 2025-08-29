@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__destroy_vectorclB8ne180100Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__destroy_vectorclB8ne180100Ev(void *** a1)",
+    "pseudocode": "void __fastcall std::vector<std::string>::__destroy_vector::operator()[abi:ne180100](void ***a1)\n{\n  void **v2; // x0\n  void *v3; // x0\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = *a1;\n  if ( *v2 )\n  {\n    std::vector<std::string>::__clear[abi:ne180100]((__int64 *)v2);\n    v3 = **a1;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    operator delete(v3);\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUMutableLinkedPointerSet firstObject]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUMutableLinkedPointerSet firstObject](TSUMutableLinkedPointerSet * self, SEL a2)",
+    "pseudocode": "id __cdecl -[TSUMutableLinkedPointerSet firstObject](TSUMutableLinkedPointerSet *self, SEL a2)\n{\n  TSULinkedPointerSetEntry *mHead; // x8\n\n  mHead = self->mHead;\n  if ( mHead )\n    return mHead->mObject;\n  else\n    return 0LL;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_uarpPlatformDarwinHashLog",
+    "function_argument_number": 0,
+    "function_signature": "_uarpPlatformDarwinHashLog()",
+    "pseudocode": "void uarpPlatformDarwinHashLog()\n{\n  ;\n}"
+}

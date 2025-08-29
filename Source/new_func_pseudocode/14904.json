@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FPCKService hasBeenPrepared]",
+    "function_argument_number": 2,
+    "function_signature": "-[FPCKService hasBeenPrepared](FPCKService * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[FPCKService hasBeenPrepared](FPCKService *self, SEL a2)\n{\n  return self->_hasBeenPrepared;\n}"
+}

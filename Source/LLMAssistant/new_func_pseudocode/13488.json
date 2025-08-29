@@ -1,0 +1,6 @@
+{
+    "function_name": "-[NSString tsu_countInstancesOfString:options:]",
+    "function_argument_number": 3,
+    "function_signature": "-[NSString tsu_countInstancesOfString:options:](int a1, int a2, id a3)",
+    "pseudocode": "unsigned __int64 __cdecl -[NSString tsu_countInstancesOfString:options:](\n        NSString *self,\n        SEL a2,\n        id a3,\n        unsigned __int64 a4)\n{\n  id v6; // x21\n  NSUInteger v7; // x22\n  char *v8; // x23\n  void *v9; // x0\n  unsigned __int64 v10; // x24\n  char *v11; // x8\n  char *v12; // x25\n\n  v6 = objc_retain(a3);\n  v7 = -[NSString length](self, \"length\");\n  v8 = (char *)objc_msgSend(v6, \"length\");\n  v9 = -[NSString rangeOfString:options:range:](self, \"rangeOfString:options:range:\", v6, a4, 0LL, v7);\n  v10 = 0LL;\n  if ( v9 != (void *)0x7FFFFFFFFFFFFFFFLL )\n  {\n    v11 = 0LL;\n    v10 = 0LL;\n    do\n    {\n      ++v10;\n      v12 = &v8[(_QWORD)v9];\n      v7 = (NSUInteger)&v11[v7 - (unsigned __int64)&v8[(_QWORD)v9]];\n      v9 = -[NSString rangeOfString:options:range:](self, \"rangeOfString:options:range:\", v6, a4, &v8[(_QWORD)v9], v7);\n      v11 = v12;\n    }\n    while ( v9 != (void *)0x7FFFFFFFFFFFFFFFLL );\n  }\n  objc_release(v6);\n  return v10;\n}"
+}

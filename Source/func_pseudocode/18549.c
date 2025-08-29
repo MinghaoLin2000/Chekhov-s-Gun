@@ -1,0 +1,5 @@
+$s19ControlCenterHelper21ScreenMirroringHelperCMa
+__int64 type metadata accessor for ScreenMirroringHelper()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC19ControlCenterHelperP33_CC8ADCDBFC37C36DA9E4202D6E1B509C21ScreenMirroringHelper);
+}

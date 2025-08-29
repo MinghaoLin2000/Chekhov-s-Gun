@@ -1,0 +1,8 @@
+@protocol XPCSignpostReaderProtocol
+- (void)generateMSSReportForTasking:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)generateMSSReportForRAPID:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)readRawSignpostData:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)submitSignpostDataWithConfig:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)aggregateSignpostData:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+- (void)summarizeSignpostMetrics:(NSDictionary *)arg1 withReply:(void (^)(NSDictionary *))arg2;
+@end

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14MessageOptionsD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14MessageOptionsD1Ev(google::protobuf::MessageOptions * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall google::protobuf::MessageOptions::~MessageOptions(google::protobuf::MessageOptions *this)\n{\n  __ZN6google8protobuf14MessageOptionsD2Ev(this);\n}"
+}

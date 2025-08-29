@@ -1,0 +1,6 @@
+{
+    "function_name": "-[VideoTranscodingTask hasSlowMotionAdjustments]",
+    "function_argument_number": 2,
+    "function_signature": "-[VideoTranscodingTask hasSlowMotionAdjustments](VideoTranscodingTask * self, SEL a2)",
+    "pseudocode": "bool __cdecl -[VideoTranscodingTask hasSlowMotionAdjustments](VideoTranscodingTask *self, SEL a2)\n{\n  NSMutableDictionary *v2; // x19\n  void *v3; // x20\n  bool v4; // w21\n\n  v2 = objc_retainAutoreleasedReturnValue(-[VideoConversionTask options](self, \"options\"));\n  v3 = objc_retainAutoreleasedReturnValue(\n         -[NSMutableDictionary objectForKey:](\n           v2,\n           \"objectForKey:\",\n           CFSTR(\"PAMediaConversionServiceOptionVideoAdjustmentsPropertyListKey\")));\n  v4 = objc_msgSend(v3, \"count\") != 0LL;\n  objc_release(v3);\n  objc_release(v2);\n  return v4;\n}"
+}

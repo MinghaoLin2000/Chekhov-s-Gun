@@ -1,0 +1,6 @@
+{
+    "function_name": "_xmlParseChunk",
+    "function_argument_number": 4,
+    "function_signature": "_xmlParseChunk(xmlParserCtxtPtr ctxt, const char * chunk, int size, int terminate)",
+    "pseudocode": "int __cdecl xmlParseChunk(xmlParserCtxtPtr ctxt, const char *chunk, int size, int terminate)\n{\n  return _xmlParseChunk(ctxt, chunk, size, terminate);\n}"
+}

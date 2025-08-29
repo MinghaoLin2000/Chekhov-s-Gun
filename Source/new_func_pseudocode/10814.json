@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf14FileDescriptor10SyntaxNameENS1_6SyntaxE",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf14FileDescriptor10SyntaxNameENS1_6SyntaxE(int a1)",
+    "pseudocode": "const char *__fastcall google::protobuf::FileDescriptor::SyntaxName(int a1)\n{\n  google::protobuf::internal::LogMessage *v2; // x0\n  char v3; // [xsp+Fh] [xbp-41h] BYREF\n  _BYTE v4[48]; // [xsp+10h] [xbp-40h] BYREF\n\n  switch ( a1 )\n  {\n    case 0:\n      return \"unknown\";\n    case 2:\n      return \"proto2\";\n    case 3:\n      return \"proto3\";\n  }\n  google::protobuf::internal::LogMessage::LogMessage(\n    v4,\n    3LL,\n    \"/AppleInternal/Library/BuildRoots/b11baf73-9ee0-11ef-b7b4-7aebe1f78c73/Library/Caches/com.apple.xbs/Sources/iWorkXPC\"\n    \"/shared/persistence/google/protobuf/descriptor.cc\",\n    230LL);\n  v2 = (google::protobuf::internal::LogMessage *)google::protobuf::internal::LogMessage::operator<<(\n                                                   v4,\n                                                   \"can't reach here.\");\n  google::protobuf::internal::LogFinisher::operator=((int)&v3, v2);\n  google::protobuf::internal::LogMessage::~LogMessage((google::protobuf::internal::LogMessage *)v4);\n  return 0LL;\n}"
+}

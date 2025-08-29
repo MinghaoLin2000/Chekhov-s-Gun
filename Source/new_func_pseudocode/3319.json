@@ -1,0 +1,6 @@
+{
+    "function_name": "_notify_register_dispatch",
+    "function_argument_number": 4,
+    "function_signature": "_notify_register_dispatch(const char * name, int * out_token, dispatch_queue_t queue, notify_handler_t handler)",
+    "pseudocode": "uint32_t __cdecl notify_register_dispatch(\n        const char *name,\n        int *out_token,\n        dispatch_queue_t queue,\n        notify_handler_t handler)\n{\n  return _notify_register_dispatch(name, out_token, queue, handler);\n}"
+}

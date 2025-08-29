@@ -1,0 +1,6 @@
+{
+    "function_name": "$s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa_0",
+    "function_argument_number": 0,
+    "function_signature": "$s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa_0()",
+    "pseudocode": "__int64 _s19ControlCenterHelper10WiFiHelperC17ScanningAssertionCMa_0()\n{\n  return objc_opt_self(&OBJC_CLASS____TtCFC19ControlCenterHelper10WiFiHelper14enableScanningFT_P_L_17ScanningAssertion);\n}"
+}

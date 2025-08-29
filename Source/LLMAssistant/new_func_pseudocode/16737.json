@@ -1,0 +1,6 @@
+{
+    "function_name": "_parseSuperBinaryAndPayloadHeaders",
+    "function_argument_number": 0,
+    "function_signature": "_parseSuperBinaryAndPayloadHeaders()",
+    "pseudocode": "__int64 parseSuperBinaryAndPayloadHeaders()\n{\n  return _parseSuperBinaryAndPayloadHeaders();\n}"
+}

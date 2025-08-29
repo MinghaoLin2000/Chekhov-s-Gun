@@ -1,0 +1,11 @@
+{
+  "entitlement": "com.apple.security.files.user-selected.read-write",
+  "capability": "Allows an application to have read-write access to files that the user has explicitly selected through standard macOS Open or Save dialogs.",
+  "reasoning": "The entitlement name 'com.apple.security.files.user-selected.read-write' clearly indicates file operations ('files'), specifically on items chosen by the user ('user-selected'), with both read and write permissions ('read-write'). The provided description in the context explicitly confirms this capability: 'A Boolean value that indicates whether the app may have read-write access to files the user has selected using an Open or Save dialog.'",
+  "similar_entitlements": [],
+  "sensitive_type": [
+    1
+  ],
+  "sensitive_reasoning": "This entitlement directly grants read and write capabilities to files. This falls under '1. File and File System Operations' because it involves 'Performing read, write/delete operations on system or other users' files.' Even though access is limited to user-selected files, the fundamental operation is still a file system write or read, which can impact data integrity or privacy if misused. It does not fall under TCC as it's not about bypassing consent for broad categories or protected directories, but rather enabling access via explicit user interaction for specific files.",
+  "self_reflection": "I am highly confident in this answer. The entitlement name and its provided description are very clear about its capability. The classification under 'File and File System Operations' is direct, as it explicitly grants file read/write access. The distinction from TCC is based on the 'user-selected' nature, implying explicit user consent for each file, rather than broad, category-based access without per-file selection. The only potential ambiguity could be if one were to consider 'user-selected' as inherently non-sensitive, but the act of reading/writing itself is a sensitive file operation regardless of how permission was granted."
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRectContainsRect",
+    "function_argument_number": 2,
+    "function_signature": "_CGRectContainsRect(CGRect rect1, CGRect rect2)",
+    "pseudocode": "bool __cdecl CGRectContainsRect(CGRect rect1, CGRect rect2)\n{\n  return _CGRectContainsRect(rect1, rect2);\n}"
+}

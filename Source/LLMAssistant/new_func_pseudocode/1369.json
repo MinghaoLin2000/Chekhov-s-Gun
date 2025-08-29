@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceModeMediaViewController .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceModeMediaViewController .cxx_destruct](DeviceModeMediaViewController * self, SEL a2)",
+    "pseudocode": "void __cdecl -[DeviceModeMediaViewController .cxx_destruct](DeviceModeMediaViewController *self, SEL a2)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_storeStrong((id *)&self->_trackListViewController, 0LL);\n  objc_storeStrong((id *)&self->_originalSyncPrefs, 0LL);\n  objc_storeStrong((id *)&self->_autofillPlacardViewController, 0LL);\n  objc_storeStrong((id *)&self->_settingsController, 0LL);\n  objc_storeStrong((id *)&self->_headerViewController, 0LL);\n  objc_storeStrong((id *)&self->_footerViewController, 0LL);\n  objc_storeStrong((id *)&self->_contentController, 0LL);\n  objc_storeStrong((id *)&self->_deviceNotConfiguredViewController, 0LL);\n  objc_storeStrong((id *)&self->_loadingViewController, 0LL);\n  objc_storeStrong((id *)&self->_contentView, 0LL);\n  objc_destroyWeak((id *)&self->_autofillPlacardViewContainer);\n  objc_destroyWeak((id *)&self->_footerViewContainer);\n  objc_destroyWeak((id *)&self->_headerViewContainer);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_destroyWeak((id *)&self->_contentViewContainer);\n}"
+}

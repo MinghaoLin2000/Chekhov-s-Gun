@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest ncpus]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMSysmonRequest ncpus](MXMSysmonRequest * self, SEL a2)",
+    "pseudocode": "double __cdecl -[MXMSysmonRequest ncpus](MXMSysmonRequest *self, SEL a2)\n{\n  return self->_ncpus;\n}"
+}

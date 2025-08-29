@@ -1,0 +1,6 @@
+{
+    "function_name": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwxx",
+    "function_argument_number": 2,
+    "function_signature": "$s22localspeechrecognition10ClientInfoV11LoggingInfoVwxx(__int64 a1, __int64 a2)",
+    "pseudocode": "void __fastcall destroy for ClientInfo.LoggingInfo(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x21\n  void (__fastcall *v5)(__int64, __int64); // x22\n  const char *v6; // x1\n  void *v7; // x2\n  void *v8; // x3\n  void *v9; // x4\n  void *v10; // x5\n  void *v11; // x6\n  void *v12; // x7\n  _TtC22localspeechrecognition19EARSpeechRecognizer *v13; // x0\n  __int64 vars8; // [xsp+38h] [xbp+8h]\n\n  v4 = sub_100040F10(0LL);\n  v5 = *(void (__fastcall **)(__int64, __int64))(*(_QWORD *)(v4 - 8) + 8LL);\n  v5(a1, v4);\n  v5(a1 + *(int *)(a2 + 20), v4);\n  v13 = *(_TtC22localspeechrecognition19EARSpeechRecognizer **)(a1 + *(int *)(a2 + 24) + 8);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  swift_bridgeObjectRelease(v13, v6, v7, v8, v9, v10, v11, v12);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__MXMGetInstrumentsLog",
+    "function_argument_number": 0,
+    "function_signature": "__MXMGetInstrumentsLog()",
+    "pseudocode": "__int64 _MXMGetInstrumentsLog()\n{\n  if ( qword_100011C28 != -1 )\n    dispatch_once(&qword_100011C28, &stru_10000C428);\n  return qword_100011C20;\n}"
+}

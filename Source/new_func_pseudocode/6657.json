@@ -1,0 +1,6 @@
+{
+    "function_name": "_setenv",
+    "function_argument_number": 3,
+    "function_signature": "_setenv(const char * __name, const char * __value, int __overwrite)",
+    "pseudocode": "int __cdecl setenv(const char *__name, const char *__value, int __overwrite)\n{\n  return _setenv(__name, __value, __overwrite);\n}"
+}

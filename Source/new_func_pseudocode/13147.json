@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipInflateReadChannel .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[TSUZipInflateReadChannel .cxx_destruct](TSUZipInflateReadChannel * self, SEL a2)",
+    "pseudocode": "void __cdecl -[TSUZipInflateReadChannel .cxx_destruct](TSUZipInflateReadChannel *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_readChannel, 0LL);\n}"
+}

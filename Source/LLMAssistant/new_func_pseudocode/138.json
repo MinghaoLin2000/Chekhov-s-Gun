@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper15ShareSaveStatusOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper15ShareSaveStatusOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for ShareSaveStatus()\n{\n  return &type metadata for ShareSaveStatus;\n}"
+}

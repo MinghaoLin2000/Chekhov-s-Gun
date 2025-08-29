@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSULinkedPointerSetReverseEnumerator initWithLastEntry:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSULinkedPointerSetReverseEnumerator initWithLastEntry:](TSULinkedPointerSetReverseEnumerator * self, SEL a2, id a3)",
+    "pseudocode": "TSULinkedPointerSetReverseEnumerator *__cdecl -[TSULinkedPointerSetReverseEnumerator initWithLastEntry:](\n        TSULinkedPointerSetReverseEnumerator *self,\n        SEL a2,\n        id a3)\n{\n  TSULinkedPointerSetReverseEnumerator *result; // x0\n  objc_super v5; // [xsp+0h] [xbp-20h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___TSULinkedPointerSetReverseEnumerator;\n  result = -[TSULinkedPointerSetReverseEnumerator init](&v5, \"init\");\n  if ( result )\n  {\n    result->mTail = (TSULinkedPointerSetEntry *)a3;\n    result->mLastUsed = 0LL;\n  }\n  return result;\n}"
+}

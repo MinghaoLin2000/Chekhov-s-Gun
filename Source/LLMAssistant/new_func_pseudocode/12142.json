@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK6google8protobuf10TextFormat6Finder21FindExtensionByNumberEPKNS0_10DescriptorEi",
+    "function_argument_number": 3,
+    "function_signature": "__ZNK6google8protobuf10TextFormat6Finder21FindExtensionByNumberEPKNS0_10DescriptorEi(google::protobuf::TextFormat::Finder * this, const google::protobuf::Descriptor * a2, int a3)",
+    "pseudocode": "__int64 __fastcall google::protobuf::TextFormat::Finder::FindExtensionByNumber(\n        google::protobuf::TextFormat::Finder *this,\n        const google::protobuf::Descriptor *a2,\n        unsigned int a3)\n{\n  return google::protobuf::DescriptorPool::FindExtensionByNumber(*(std::mutex ***)(*((_QWORD *)a2 + 2) + 16LL), a2, a3);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGRegionCreateWithOffset",
+    "function_argument_number": 0,
+    "function_signature": "_CGRegionCreateWithOffset()",
+    "pseudocode": "__int64 CGRegionCreateWithOffset()\n{\n  return _CGRegionCreateWithOffset();\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN9serialize10Serializer4syncEPKcRNSt3__16vectorIfNS3_9allocatorIfEEEE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN9serialize10Serializer4syncEPKcRNSt3__16vectorIfNS3_9allocatorIfEEEE(__int64 a1, const char * a2, __int64 a3)",
+    "pseudocode": "void __fastcall serialize::Serializer::sync(__int64 a1, const char *a2, __int64 a3)\n{\n  void *v4; // x0\n  const void *v5; // x2\n  size_t v6; // x3\n  void *data; // x0\n  size_t length; // [xsp+8h] [xbp-18h] BYREF\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  if ( *(_BYTE *)a1 )\n  {\n    v4 = *(void **)(a1 + 8);\n    v5 = *(const void **)a3;\n    v6 = *(_QWORD *)(a3 + 8) - *(_QWORD *)a3;\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    xpc_dictionary_set_data(v4, a2, v5, v6);\n  }\n  else\n  {\n    length = 0LL;\n    data = (void *)xpc_dictionary_get_data(*(xpc_object_t *)(a1 + 8), a2, &length);\n    sub_100008230(a3, data);\n  }\n}"
+}

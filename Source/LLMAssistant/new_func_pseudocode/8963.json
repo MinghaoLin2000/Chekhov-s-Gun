@@ -1,0 +1,6 @@
+{
+    "function_name": "$s34AppleMediaServicesUIDynamicService21LocalJavascriptLoaderC9LoadErrorOMa",
+    "function_argument_number": 0,
+    "function_signature": "$s34AppleMediaServicesUIDynamicService21LocalJavascriptLoaderC9LoadErrorOMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for LocalJavascriptLoader.LoadError()\n{\n  return &type metadata for LocalJavascriptLoader.LoadError;\n}"
+}

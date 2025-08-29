@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGBitmapContextGetHeight",
+    "function_argument_number": 1,
+    "function_signature": "_CGBitmapContextGetHeight(CGContextRef context)",
+    "pseudocode": "size_t __cdecl CGBitmapContextGetHeight(CGContextRef context)\n{\n  return _CGBitmapContextGetHeight(context);\n}"
+}

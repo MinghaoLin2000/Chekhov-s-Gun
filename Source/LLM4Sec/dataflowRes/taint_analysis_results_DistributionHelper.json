@@ -1,0 +1,5 @@
+{
+    "/System/Library/PrivateFrameworks/Install.framework/Frameworks/DistributionKit.framework/Versions/A/XPCServices/DistributionHelper.xpc/Contents/MacOS/DistributionHelper": [
+        "-[DistributionHelperService fileAtPathExistsOnGraft:reply:]"
+    ]
+}

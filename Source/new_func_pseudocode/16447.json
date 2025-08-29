@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UARPUpdaterServiceLegacyAudio .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[UARPUpdaterServiceLegacyAudio .cxx_destruct](UARPUpdaterServiceLegacyAudio * self, SEL a2)",
+    "pseudocode": "void __cdecl -[UARPUpdaterServiceLegacyAudio .cxx_destruct](UARPUpdaterServiceLegacyAudio *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_controller, 0LL);\n}"
+}

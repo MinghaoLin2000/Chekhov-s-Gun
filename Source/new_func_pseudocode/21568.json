@@ -1,0 +1,6 @@
+{
+    "function_name": "_ExtAudioFileWrapAudioFileID",
+    "function_argument_number": 3,
+    "function_signature": "_ExtAudioFileWrapAudioFileID(AudioFileID inFileID, Boolean inForWriting, ExtAudioFileRef * outExtAudioFile)",
+    "pseudocode": "OSStatus __cdecl ExtAudioFileWrapAudioFileID(\n        AudioFileID inFileID,\n        Boolean inForWriting,\n        ExtAudioFileRef *outExtAudioFile)\n{\n  return _ExtAudioFileWrapAudioFileID(inFileID, inForWriting, outExtAudioFile);\n}"
+}

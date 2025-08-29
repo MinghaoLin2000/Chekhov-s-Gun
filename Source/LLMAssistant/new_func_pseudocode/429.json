@@ -1,0 +1,6 @@
+{
+    "function_name": "-[FileEventObserver setPath:]",
+    "function_argument_number": 3,
+    "function_signature": "-[FileEventObserver setPath:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[FileEventObserver setPath:](FileEventObserver *self, SEL a2, id a3)\n{\n  id v5; // x19\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retain(a3);\n  if ( ((unsigned int)objc_msgSend(v5, \"isEqualToString:\", self->_path) & 1) == 0 )\n  {\n    objc_storeStrong((id *)&self->_path, a3);\n    if ( self->_path )\n      -[FileEventObserver startObserving](self, \"startObserving\");\n    else\n      -[FileEventObserver stopObserving](self, \"stopObserving\");\n  }\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

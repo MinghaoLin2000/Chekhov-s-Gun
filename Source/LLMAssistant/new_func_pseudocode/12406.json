@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal14ArenaStringPtr3SetENS2_12EmptyDefaultEONSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEEPNS0_5ArenaE",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal14ArenaStringPtr3SetENS2_12EmptyDefaultEONSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEEPNS0_5ArenaE(__int64 * a1, __int128 * a2, __int64 a3)",
+    "pseudocode": "void __fastcall google::protobuf::internal::ArenaStringPtr::Set(__int64 *a1, __int128 *a2, __int64 a3)\n{\n  google::protobuf::internal::ArenaStringPtr::Set(\n    a1,\n    (__int64)&google::protobuf::internal::fixed_address_empty_string,\n    a2,\n    a3);\n}"
+}

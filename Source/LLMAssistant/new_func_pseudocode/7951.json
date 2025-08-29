@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSGetEventPort",
+    "function_argument_number": 0,
+    "function_signature": "_CGSGetEventPort()",
+    "pseudocode": "__int64 CGSGetEventPort()\n{\n  return _CGSGetEventPort();\n}"
+}

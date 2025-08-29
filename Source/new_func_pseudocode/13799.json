@@ -1,0 +1,6 @@
+{
+    "function_name": "_dispatch_io_close",
+    "function_argument_number": 2,
+    "function_signature": "_dispatch_io_close(dispatch_io_t channel, dispatch_io_close_flags_t flags)",
+    "pseudocode": "void __cdecl dispatch_io_close(dispatch_io_t channel, dispatch_io_close_flags_t flags)\n{\n  _dispatch_io_close(channel, flags);\n}"
+}

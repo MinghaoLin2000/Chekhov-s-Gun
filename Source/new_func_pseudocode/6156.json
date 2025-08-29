@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MediaConversionQueueEntry temporaryDestinationURLCollection]",
+    "function_argument_number": 2,
+    "function_signature": "-[MediaConversionQueueEntry temporaryDestinationURLCollection](MediaConversionQueueEntry * self, SEL a2)",
+    "pseudocode": "PAMediaConversionServiceResourceURLCollection *__cdecl -[MediaConversionQueueEntry temporaryDestinationURLCollection](\n        MediaConversionQueueEntry *self,\n        SEL a2)\n{\n  return (PAMediaConversionServiceResourceURLCollection *)objc_getProperty(self, a2, 72LL, 1);\n}"
+}

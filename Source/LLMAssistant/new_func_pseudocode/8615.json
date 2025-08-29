@@ -1,0 +1,6 @@
+{
+    "function_name": "-[MXMSysmonRequest wait]",
+    "function_argument_number": 2,
+    "function_signature": "-[MXMSysmonRequest wait](MXMSysmonRequest * self, SEL a2)",
+    "pseudocode": "void __cdecl -[MXMSysmonRequest wait](MXMSysmonRequest *self, SEL a2)\n{\n  OS_dispatch_semaphore *v2; // x19\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = objc_retainAutoreleasedReturnValue(-[MXMSysmonRequest wait_sema](self, \"wait_sema\"));\n  dispatch_semaphore_wait((dispatch_semaphore_t)v2, 0xFFFFFFFFFFFFFFFFLL);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v2);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[lite_printer_t updatePrinterState:message:]",
+    "function_argument_number": 3,
+    "function_signature": "-[lite_printer_t updatePrinterState:message:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[lite_printer_t updatePrinterState:message:](lite_printer_t *self, SEL a2, id a3, id a4)\n{\n  NSArray *v6; // x21\n  id v7; // x19\n  NSArray *printerStateReasons; // x0\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v6 = (NSArray *)objc_retain(a3);\n  objc_storeStrong((id *)&self->_printerStateMessage, a4);\n  v7 = objc_retain(a4);\n  printerStateReasons = self->_printerStateReasons;\n  self->_printerStateReasons = v6;\n  objc_release(printerStateReasons);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v7);\n}"
+}

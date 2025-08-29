@@ -1,0 +1,8 @@
+@protocol FCANFHelper
+- (void)popInterest;
+- (void)pushInterest;
+- (FCANFDocumentManifest *)manifestFromANFDocumentData:(NSData *)arg1;
+@end
+@protocol NDANFDecodingServiceType
+- (void)decodeANFDocumentData:(NSData *)arg1 completion:(void (^)(FCANFDocumentManifest *, NSError *))arg2;
+@end

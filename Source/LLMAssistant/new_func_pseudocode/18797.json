@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeServiceViewService synchronizeHostContainerFrame:]",
+    "function_argument_number": 3,
+    "function_signature": "-[RemoteViewBridgeServiceViewService synchronizeHostContainerFrame:](RemoteViewBridgeServiceViewService * self, SEL a2, CGRect a3)",
+    "pseudocode": "void __cdecl -[RemoteViewBridgeServiceViewService synchronizeHostContainerFrame:](\n        RemoteViewBridgeServiceViewService *self,\n        SEL a2,\n        CGRect a3)\n{\n  _QWORD v3[4]; // [xsp+0h] [xbp-40h] BYREF\n  CGRect v4; // [xsp+20h] [xbp-20h]\n\n  v3[0] = _NSConcreteStackBlock;\n  v3[1] = 3221225472LL;\n  v3[2] = sub_1000029D8;\n  v3[3] = &unk_100020620;\n  v4 = a3;\n  -[RemoteViewBridgeServiceViewService remoteViewControllerProxy:](self, \"remoteViewControllerProxy:\", v3);\n}"
+}

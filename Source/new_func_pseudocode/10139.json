@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP20SparseReferenceArrayD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP20SparseReferenceArrayD1Ev(TSP::SparseReferenceArray * this)",
+    "pseudocode": "// attributes: thunk\nvoid __fastcall TSP::SparseReferenceArray::~SparseReferenceArray(TSP::SparseReferenceArray *this)\n{\n  __ZN3TSP20SparseReferenceArrayD2Ev(this);\n}"
+}

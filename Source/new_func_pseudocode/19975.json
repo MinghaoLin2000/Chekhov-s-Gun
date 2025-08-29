@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN38JobRequestAttributes_FromRequestParamsD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN38JobRequestAttributes_FromRequestParamsD0Ev(JobRequestAttributes_FromRequestParams * this)",
+    "pseudocode": "void __fastcall JobRequestAttributes_FromRequestParams::~JobRequestAttributes_FromRequestParams(\n        JobRequestAttributes_FromRequestParams *this)\n{\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  JobRequestAttributes_FromRequestParams::~JobRequestAttributes_FromRequestParams(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete();\n}"
+}

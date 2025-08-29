@@ -1,0 +1,6 @@
+{
+    "function_name": "$s17ControlCenterCore16MenuFlashStepperVwCP",
+    "function_argument_number": 2,
+    "function_signature": "$s17ControlCenterCore16MenuFlashStepperVwCP(__n128 * a1, __n128 * a2)",
+    "pseudocode": "__n128 __fastcall initializeBufferWithCopyOfBuffer for MenuFlashStepper(__n128 *a1, __n128 *a2)\n{\n  __n128 result; // q0\n\n  result = *a2;\n  a1[1].n128_u8[0] = a2[1].n128_u8[0];\n  *a1 = result;\n  return result;\n}"
+}

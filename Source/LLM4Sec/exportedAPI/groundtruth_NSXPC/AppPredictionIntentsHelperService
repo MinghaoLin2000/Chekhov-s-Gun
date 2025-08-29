@@ -1,0 +1,11 @@
+@protocol AppPredictionIntentsHelperServiceProtocol
+- (void)localizedStringForLinkString:(LNStaticDeferredLocalizedString *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)createEventIntentWithStartDate:(NSDate *)arg1 endDate:(NSDate *)arg2 withReply:(void (^)(INIntent *, NSError *))arg3;
+- (void)createIntentWithIntentType:(NSString *)arg1 intentData:(NSData *)arg2 withReply:(void (^)(INIntent *, NSError *))arg3;
+- (void)supportsBackgroundExecutionForIntent:(INIntent *)arg1 withReply:(void (^)(_Bool, NSError *))arg2;
+- (void)eligibleForWidgetsForIntent:(INIntent *)arg1 withReply:(void (^)(_Bool, NSError *))arg2;
+- (void)indexingHashForIntent:(INIntent *)arg1 withReply:(void (^)(long long, NSError *))arg2;
+- (void)subtitleForIntent:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)titleForIntentNoLocalization:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+- (void)titleForIntent:(INIntent *)arg1 withReply:(void (^)(NSString *, NSError *))arg2;
+@end

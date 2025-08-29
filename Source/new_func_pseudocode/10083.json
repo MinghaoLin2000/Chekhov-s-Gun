@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSPDatabaseObjectWithDataState initWithIdentifier:classType:dataState:]",
+    "function_argument_number": 5,
+    "function_signature": "-[TSPDatabaseObjectWithDataState initWithIdentifier:classType:dataState:](TSPDatabaseObjectWithDataState * self, SEL a2, signed __int64 a3, int a4, signed __int64 a5)",
+    "pseudocode": "// local variable allocation has failed, the output may be wrong!\nTSPDatabaseObjectWithDataState *__cdecl -[TSPDatabaseObjectWithDataState initWithIdentifier:classType:dataState:](\n        TSPDatabaseObjectWithDataState *self,\n        SEL a2,\n        signed __int64 a3,\n        int a4,\n        signed __int64 a5)\n{\n  TSPDatabaseObjectWithDataState *result; // x0\n  objc_super v7; // [xsp+0h] [xbp-20h] BYREF\n\n  v7.receiver = self;\n  v7.super_class = (Class)&OBJC_CLASS___TSPDatabaseObjectWithDataState;\n  result = -[TSPDatabaseObject initWithIdentifier:classType:](&v7, \"initWithIdentifier:classType:\", a3, *(_QWORD *)&a4);\n  if ( result )\n    result->_dataState = a5;\n  return result;\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "_SecStaticCodeCreateWithPath",
+    "function_argument_number": 3,
+    "function_signature": "_SecStaticCodeCreateWithPath(CFURLRef path, SecCSFlags flags, SecStaticCodeRef * staticCode)",
+    "pseudocode": "OSStatus __cdecl SecStaticCodeCreateWithPath(CFURLRef path, SecCSFlags flags, SecStaticCodeRef *staticCode)\n{\n  return _SecStaticCodeCreateWithPath(path, flags, staticCode);\n}"
+}

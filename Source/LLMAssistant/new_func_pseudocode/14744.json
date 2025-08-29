@@ -1,0 +1,6 @@
+{
+    "function_name": "-[UINSSystemPreferencesSettingsManager refreshSettingsWithAdditionalSettings:]",
+    "function_argument_number": 3,
+    "function_signature": "-[UINSSystemPreferencesSettingsManager refreshSettingsWithAdditionalSettings:](UINSSystemPreferencesSettingsManager * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[UINSSystemPreferencesSettingsManager refreshSettingsWithAdditionalSettings:](\n        UINSSystemPreferencesSettingsManager *self,\n        SEL a2,\n        unsigned __int64 a3)\n{\n  id v5; // x21\n  __int64 vars8; // [xsp+28h] [xbp+8h]\n\n  v5 = objc_retainAutoreleasedReturnValue(-[UINSSystemPreferencesSettingsManager _bundleIDForCurrentConnection](self, \"_bundleIDForCurrentConnection\"));\n  -[UINSSystemPreferencesSettingsManager _updateSettingsIfNeededForApplicationWithBundleIdentifier:additionalSettings:](\n    self,\n    \"_updateSettingsIfNeededForApplicationWithBundleIdentifier:additionalSettings:\",\n    v5,\n    a3);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  objc_release(v5);\n}"
+}

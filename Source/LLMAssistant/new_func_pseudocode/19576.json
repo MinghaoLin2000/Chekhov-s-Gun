@@ -1,0 +1,6 @@
+{
+    "function_name": "_NSStringFromRect",
+    "function_argument_number": 1,
+    "function_signature": "_NSStringFromRect(NSRect aRect)",
+    "pseudocode": "NSString *__cdecl NSStringFromRect(NSRect aRect)\n{\n  return _NSStringFromRect(aRect);\n}"
+}

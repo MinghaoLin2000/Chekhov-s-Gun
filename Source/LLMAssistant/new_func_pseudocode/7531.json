@@ -1,0 +1,6 @@
+{
+    "function_name": "_$s16EyeCandyGraphics13CGSConnectionV17defaultConnectionACvMZ",
+    "function_argument_number": 1,
+    "function_signature": "_$s16EyeCandyGraphics13CGSConnectionV17defaultConnectionACvMZ(__int64 a1)",
+    "pseudocode": "__int64 (__fastcall *__fastcall static CGSConnection.defaultConnection.modify(__int64 a1))()\n{\n  if ( qword_10002A388 != -1 )\n    swift_once(&qword_10002A388, sub_1000123F8);\n  swift_beginAccess(&static CGSConnection.defaultConnection, a1, 33LL, 0LL);\n  return j__swift_endAccess;\n}"
+}

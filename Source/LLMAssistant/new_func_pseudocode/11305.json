@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf28UninterpretedOption_NamePartD0Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf28UninterpretedOption_NamePartD0Ev(google::protobuf::UninterpretedOption_NamePart * this)",
+    "pseudocode": "void __fastcall google::protobuf::UninterpretedOption_NamePart::~UninterpretedOption_NamePart(\n        google::protobuf::UninterpretedOption_NamePart *this)\n{\n  __int64 v1; // x0\n  __int64 vars8; // [xsp+8h] [xbp+8h]\n\n  google::protobuf::UninterpretedOption_NamePart::~UninterpretedOption_NamePart(this);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  operator delete(v1, 0x1081C40FD51F717LL);\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "-[IPLocaleCoder .cxx_destruct]",
+    "function_argument_number": 2,
+    "function_signature": "-[IPLocaleCoder .cxx_destruct](IPLocaleCoder * self, SEL a2)",
+    "pseudocode": "void __cdecl -[IPLocaleCoder .cxx_destruct](IPLocaleCoder *self, SEL a2)\n{\n  objc_storeStrong((id *)&self->_mutablePreferences, 0LL);\n}"
+}

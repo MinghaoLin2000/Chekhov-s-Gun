@@ -1,0 +1,6 @@
+{
+    "function_name": "-[TSUZipEntry setCompressedSize:]",
+    "function_argument_number": 3,
+    "function_signature": "-[TSUZipEntry setCompressedSize:](TSUZipEntry * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[TSUZipEntry setCompressedSize:](TSUZipEntry *self, SEL a2, unsigned __int64 a3)\n{\n  self->_compressedSize = a3;\n}"
+}

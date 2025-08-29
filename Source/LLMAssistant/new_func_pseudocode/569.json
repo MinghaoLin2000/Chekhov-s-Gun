@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsDetailsTabContentViewController setUsePersistentIDForDetailsModelKey:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsDetailsTabContentViewController setUsePersistentIDForDetailsModelKey:](DeviceSettingsDetailsTabContentViewController * self, SEL a2, bool a3)",
+    "pseudocode": "void __cdecl -[DeviceSettingsDetailsTabContentViewController setUsePersistentIDForDetailsModelKey:](\n        DeviceSettingsDetailsTabContentViewController *self,\n        SEL a2,\n        bool a3)\n{\n  self->_usePersistentIDForDetailsModelKey = a3;\n}"
+}

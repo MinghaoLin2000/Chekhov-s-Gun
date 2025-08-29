@@ -1,0 +1,6 @@
+{
+    "function_name": "_SLSSetCursorDragLock",
+    "function_argument_number": 0,
+    "function_signature": "_SLSSetCursorDragLock()",
+    "pseudocode": "__int64 SLSSetCursorDragLock()\n{\n  return _SLSSetCursorDragLock();\n}"
+}

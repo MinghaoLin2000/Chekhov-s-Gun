@@ -1,0 +1,6 @@
+{
+    "function_name": "-[LSRConnection speechRecognizer:didRecognizeFinalResultPackage:]",
+    "function_argument_number": 3,
+    "function_signature": "-[LSRConnection speechRecognizer:didRecognizeFinalResultPackage:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[LSRConnection speechRecognizer:didRecognizeFinalResultPackage:](\n        LSRConnection *self,\n        SEL a2,\n        id a3,\n        id a4)\n{\n  id v6; // x21\n  id v7; // x19\n  dispatch_queue_s *v8; // x22\n  id v9; // x20\n  id v10; // x19\n  _QWORD block[5]; // [xsp+8h] [xbp-58h] BYREF\n  id v12; // [xsp+30h] [xbp-30h]\n  id v13; // [xsp+38h] [xbp-28h]\n\n  v6 = objc_retain(a3);\n  v7 = objc_retain(a4);\n  v8 = (dispatch_queue_s *)qword_100065418;\n  block[0] = _NSConcreteStackBlock;\n  block[1] = 3254779904LL;\n  block[2] = sub_10003523C;\n  block[3] = &unk_10005A1C8;\n  block[4] = self;\n  v12 = v7;\n  v13 = v6;\n  v9 = objc_retain(v6);\n  v10 = objc_retain(v7);\n  dispatch_async(v8, block);\n  objc_release(v13);\n  objc_release(v12);\n  objc_release(v9);\n  objc_release(v10);\n}"
+}

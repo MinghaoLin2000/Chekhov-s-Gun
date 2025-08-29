@@ -1,0 +1,6 @@
+{
+    "function_name": "-[ImageConversionService requestStatusWithReply:]",
+    "function_argument_number": 3,
+    "function_signature": "-[ImageConversionService requestStatusWithReply:](int a1, int a2, id a3)",
+    "pseudocode": "void __cdecl -[ImageConversionService requestStatusWithReply:](ImageConversionService *self, SEL a2, id a3)\n{\n  id v4; // x21\n  NSNumber *v5; // x20\n  NSDictionary *v6; // x22\n  const __CFString *v7; // [xsp+8h] [xbp-38h] BYREF\n  NSNumber *v8; // [xsp+10h] [xbp-30h] BYREF\n\n  v7 = CFSTR(\"PAMediaConversionServiceProcessIdentifierKey\");\n  v4 = objc_retain(a3);\n  v5 = objc_retainAutoreleasedReturnValue(+[NSNumber numberWithInt:](&OBJC_CLASS___NSNumber, \"numberWithInt:\", getpid()));\n  v8 = v5;\n  v6 = objc_retainAutoreleasedReturnValue(\n         +[NSDictionary dictionaryWithObjects:forKeys:count:](\n           &OBJC_CLASS___NSDictionary,\n           \"dictionaryWithObjects:forKeys:count:\",\n           &v8,\n           &v7,\n           1LL));\n  (*((void (__fastcall **)(id, NSDictionary *, _QWORD))a3 + 2))(v4, v6, 0LL);\n  objc_release(v4);\n  objc_release(v6);\n  objc_release(v5);\n}"
+}

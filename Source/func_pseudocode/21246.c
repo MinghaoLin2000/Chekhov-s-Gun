@@ -1,0 +1,5 @@
+$s22localspeechrecognition26CoreAnalyticsLoggingHelperCMa
+__int64 type metadata accessor for CoreAnalyticsLoggingHelper()
+{
+  return objc_opt_self(&OBJC_CLASS____TtC22localspeechrecognition26CoreAnalyticsLoggingHelper);
+}

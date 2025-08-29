@@ -1,0 +1,6 @@
+{
+    "function_name": "_objc_msgSend$promptToReplaceItem:applyToAll:",
+    "function_argument_number": 2,
+    "function_signature": "_objc_msgSend$promptToReplaceItem:applyToAll:(void * a1, const char * a2)",
+    "pseudocode": "id objc_msgSend_promptToReplaceItem_applyToAll_(void *a1, const char *a2, ...)\n{\n  return objc_msgSend(a1, \"promptToReplaceItem:applyToAll:\");\n}"
+}

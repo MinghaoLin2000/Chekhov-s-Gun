@@ -1,0 +1,5 @@
+_PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround
+__int64 PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround()
+{
+  return _PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround();
+}

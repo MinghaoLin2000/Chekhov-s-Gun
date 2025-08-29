@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP5PointD1Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP5PointD1Ev(TSP::Point * this)",
+    "pseudocode": "void __fastcall TSP::Point::~Point(TSP::Point *this)\n{\n  sub_100037E58((char *)this + 8);\n}"
+}

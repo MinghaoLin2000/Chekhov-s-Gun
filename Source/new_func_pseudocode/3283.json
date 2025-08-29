@@ -1,0 +1,6 @@
+{
+    "function_name": "_CC_MD5",
+    "function_argument_number": 3,
+    "function_signature": "_CC_MD5(const void * data, CC_LONG len, unsigned __int8 * md)",
+    "pseudocode": "unsigned __int8 *__cdecl CC_MD5(const void *data, CC_LONG len, unsigned __int8 *md)\n{\n  return _CC_MD5(data, len, md);\n}"
+}

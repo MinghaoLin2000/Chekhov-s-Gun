@@ -1,0 +1,6 @@
+{
+    "function_name": "_writev",
+    "function_argument_number": 3,
+    "function_signature": "_writev(int a1, const iovec * a2, int a3)",
+    "pseudocode": "ssize_t __cdecl writev(int a1, const iovec *a2, int a3)\n{\n  return _writev(a1, a2, a3);\n}"
+}

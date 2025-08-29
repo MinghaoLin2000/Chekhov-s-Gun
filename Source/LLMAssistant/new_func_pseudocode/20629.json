@@ -1,0 +1,6 @@
+{
+    "function_name": "_nw_content_context_create",
+    "function_argument_number": 1,
+    "function_signature": "_nw_content_context_create(const char * context_identifier)",
+    "pseudocode": "nw_content_context_t __cdecl nw_content_context_create(const char *context_identifier)\n{\n  return _nw_content_context_create(context_identifier);\n}"
+}

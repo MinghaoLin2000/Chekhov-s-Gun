@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGContextSetCMYKFillColor",
+    "function_argument_number": 6,
+    "function_signature": "_CGContextSetCMYKFillColor(CGContextRef c, CGFloat cyan, CGFloat magenta, CGFloat yellow, CGFloat black, CGFloat alpha)",
+    "pseudocode": "void __cdecl CGContextSetCMYKFillColor(\n        CGContextRef c,\n        CGFloat cyan,\n        CGFloat magenta,\n        CGFloat yellow,\n        CGFloat black,\n        CGFloat alpha)\n{\n  _CGContextSetCMYKFillColor(c, cyan, magenta, yellow, black, alpha);\n}"
+}

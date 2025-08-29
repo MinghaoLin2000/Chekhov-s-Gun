@@ -1,0 +1,6 @@
+{
+    "function_name": "_CGSCaptureWindowsContentsToRectWithOptions",
+    "function_argument_number": 0,
+    "function_signature": "_CGSCaptureWindowsContentsToRectWithOptions()",
+    "pseudocode": "__int64 CGSCaptureWindowsContentsToRectWithOptions()\n{\n  return _CGSCaptureWindowsContentsToRectWithOptions();\n}"
+}

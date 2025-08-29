@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf12FieldOptions16default_instanceEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZN6google8protobuf12FieldOptions16default_instanceEv(google::protobuf::FieldOptions * this)",
+    "pseudocode": "void *__fastcall google::protobuf::FieldOptions::default_instance(google::protobuf::FieldOptions *this)\n{\n  if ( atomic_load_explicit(scc_info_FieldOptions_google_2fprotobuf_2fdescriptor_2eproto, memory_order_acquire) )\n    google::protobuf::internal::InitSCCImpl(scc_info_FieldOptions_google_2fprotobuf_2fdescriptor_2eproto);\n  return &google::protobuf::_FieldOptions_default_instance_;\n}"
+}

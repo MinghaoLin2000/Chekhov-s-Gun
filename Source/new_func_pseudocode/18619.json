@@ -1,0 +1,6 @@
+{
+    "function_name": "j__swift_release",
+    "function_argument_number": 1,
+    "function_signature": "j__swift_release(_QWORD a1)",
+    "pseudocode": "// attributes: thunk\n__int64 __fastcall j__swift_release(__int64 a1)\n{\n  return swift_release(a1);\n}"
+}

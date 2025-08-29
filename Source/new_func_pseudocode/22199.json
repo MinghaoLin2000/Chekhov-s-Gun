@@ -1,0 +1,6 @@
+{
+    "function_name": "_logEventType",
+    "function_argument_number": 0,
+    "function_signature": "_logEventType()",
+    "pseudocode": "__int64 logEventType()\n{\n  return _logEventType();\n}"
+}

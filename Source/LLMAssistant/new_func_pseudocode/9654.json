@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZNK3TSP9FieldPath12ByteSizeLongEv",
+    "function_argument_number": 1,
+    "function_signature": "__ZNK3TSP9FieldPath12ByteSizeLongEv(TSP::FieldPath * this)",
+    "pseudocode": "__int64 __fastcall TSP::FieldPath::ByteSizeLong(TSP::FieldPath *this)\n{\n  __int64 v2; // x0\n  int v3; // w8\n  __int64 v4; // x9\n  __int64 v5; // x1\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  v2 = google::protobuf::internal::WireFormatLite::UInt32Size((char *)this + 16);\n  if ( v2 )\n  {\n    v3 = v2;\n    if ( (v2 & 0x80000000) != 0 )\n      v4 = 11LL;\n    else\n      v4 = ((9 * (__clz(v2 | 1) ^ 0x1F) + 73) >> 6) + 1;\n  }\n  else\n  {\n    v3 = 0;\n    v4 = 0LL;\n  }\n  *((_DWORD *)this + 8) = v3;\n  v5 = v4 + v2;\n  if ( (*((_BYTE *)this + 8) & 1) != 0 )\n  {\n    if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return google::protobuf::internal::ComputeUnknownFieldsSize((char *)this + 8, v5, (char *)this + 36);\n  }\n  else\n  {\n    *((_DWORD *)this + 9) = v5;\n    return v4 + v2;\n  }\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "$s9SPIHelper19CloudDocsOperationsVMa",
+    "function_argument_number": 0,
+    "function_signature": "$s9SPIHelper19CloudDocsOperationsVMa()",
+    "pseudocode": "ValueMetadata *type metadata accessor for CloudDocsOperations()\n{\n  return &type metadata for CloudDocsOperations;\n}"
+}

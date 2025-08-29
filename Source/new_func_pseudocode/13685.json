@@ -1,0 +1,6 @@
+{
+    "function_name": "_CFStringGetCharacters",
+    "function_argument_number": 3,
+    "function_signature": "_CFStringGetCharacters(CFStringRef theString, UniChar * buffer, CFRange range)",
+    "pseudocode": "void __cdecl CFStringGetCharacters(CFStringRef theString, CFRange range, UniChar *buffer)\n{\n  _CFStringGetCharacters(theString, range, buffer);\n}"
+}

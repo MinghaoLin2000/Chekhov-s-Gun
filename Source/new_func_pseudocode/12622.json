@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUOffsetInputStream seekToOffset:]",
+    "function_argument_number": 3,
+    "function_signature": "-[SFUOffsetInputStream seekToOffset:](SFUOffsetInputStream * self, SEL a2, signed __int64 a3)",
+    "pseudocode": "void __cdecl -[SFUOffsetInputStream seekToOffset:](SFUOffsetInputStream *self, SEL a2, signed __int64 a3)\n{\n  -[SFUInputStream seekToOffset:](self->mInputStream, \"seekToOffset:\", self->mInitialOffset + a3);\n}"
+}

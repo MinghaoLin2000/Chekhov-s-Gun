@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf17DescriptorBuilder12LookupSymbolERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_NS0_14DescriptorPool15PlaceholderTypeENS1_11ResolveModeEb",
+    "function_argument_number": 6,
+    "function_signature": "__ZN6google8protobuf17DescriptorBuilder12LookupSymbolERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_NS0_14DescriptorPool15PlaceholderTypeENS1_11ResolveModeEb(__int64 * a1, std::string * a2, __int64 a3, __int64 a4, int a5, int a6)",
+    "pseudocode": "unsigned __int64 __fastcall google::protobuf::DescriptorBuilder::LookupSymbol(\n        __int64 *a1,\n        std::string *a2,\n        __int64 a3,\n        __int64 a4,\n        int a5,\n        int a6)\n{\n  unsigned __int64 v9; // x0\n  __int64 v10; // x21\n  unsigned int v11; // w8\n  _QWORD v13[2]; // [xsp+0h] [xbp-30h] BYREF\n\n  v9 = google::protobuf::DescriptorBuilder::LookupSymbolNoPlaceholder((__int64)a1, a2, a3, a5, a6);\n  if ( !(_DWORD)v9 )\n  {\n    v10 = *a1;\n    if ( !*(_BYTE *)(v10 + 42) )\n    {\n      v11 = 0;\n      return v9 & 0xFFFFFFFF00000000LL | v11;\n    }\n    sub_10007A644(v13, a2);\n    v9 = google::protobuf::DescriptorPool::NewPlaceholderWithMutexHeld(v10, v13[0], v13[1], a4);\n  }\n  v11 = v9;\n  return v9 & 0xFFFFFFFF00000000LL | v11;\n}"
+}

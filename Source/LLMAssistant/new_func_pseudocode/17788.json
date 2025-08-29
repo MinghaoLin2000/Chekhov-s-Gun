@@ -1,0 +1,6 @@
+{
+    "function_name": "-[CoreMLModelSecurityXPCFeatureProvider resolvedFeaturesDict]",
+    "function_argument_number": 2,
+    "function_signature": "-[CoreMLModelSecurityXPCFeatureProvider resolvedFeaturesDict](CoreMLModelSecurityXPCFeatureProvider * self, SEL a2)",
+    "pseudocode": "NSMutableDictionary *__cdecl -[CoreMLModelSecurityXPCFeatureProvider resolvedFeaturesDict](\n        CoreMLModelSecurityXPCFeatureProvider *self,\n        SEL a2)\n{\n  return self->_resolvedFeaturesDict;\n}"
+}

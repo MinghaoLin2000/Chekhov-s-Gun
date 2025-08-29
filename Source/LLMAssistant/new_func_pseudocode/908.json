@@ -1,0 +1,6 @@
+{
+    "function_name": "-[AMPCapacityBarView setBytesUsed:]",
+    "function_argument_number": 3,
+    "function_signature": "-[AMPCapacityBarView setBytesUsed:](AMPCapacityBarView * self, SEL a2, unsigned __int64 a3)",
+    "pseudocode": "void __cdecl -[AMPCapacityBarView setBytesUsed:](AMPCapacityBarView *self, SEL a2, unsigned __int64 a3)\n{\n  self->_bytesUsed = a3;\n}"
+}

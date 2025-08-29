@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsPhotosViewController tagWithSource:]",
+    "function_argument_number": 3,
+    "function_signature": "-[DeviceSettingsPhotosViewController tagWithSource:](DeviceSettingsPhotosViewController * self, SEL a2, int a3)",
+    "pseudocode": "signed __int64 __cdecl -[DeviceSettingsPhotosViewController tagWithSource:](\n        DeviceSettingsPhotosViewController *self,\n        SEL a2,\n        int a3)\n{\n  if ( a3 == 2 )\n    return 3LL;\n  else\n    return 1LL;\n}"
+}

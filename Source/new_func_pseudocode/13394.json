@@ -1,0 +1,6 @@
+{
+    "function_name": "-[SFUFileInputStream disableSystemCaching]",
+    "function_argument_number": 2,
+    "function_signature": "-[SFUFileInputStream disableSystemCaching](SFUFileInputStream * self, SEL a2)",
+    "pseudocode": "void __cdecl -[SFUFileInputStream disableSystemCaching](SFUFileInputStream *self, SEL a2)\n{\n  int mFd; // w0\n\n  mFd = self->mFd;\n  if ( mFd != -1 )\n  {\n    if ( fcntl(mFd, 48, 1LL) == -1 )\n      +[NSException sfu_errnoRaise:format:](\n        &OBJC_CLASS___NSException,\n        \"sfu_errnoRaise:format:\",\n        CFSTR(\"SFUFcntlError\"),\n        CFSTR(\"Could not set F_NOCACHE on read stream.\"));\n    self->mIsCachingDisabled = 1;\n  }\n}"
+}

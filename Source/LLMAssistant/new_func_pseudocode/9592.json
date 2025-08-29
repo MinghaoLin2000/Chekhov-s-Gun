@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN3TSP12SnappySourceD2Ev",
+    "function_argument_number": 1,
+    "function_signature": "__ZN3TSP12SnappySourceD2Ev(TSP::SnappySource * this)",
+    "pseudocode": "void __fastcall TSP::SnappySource::~SnappySource(id *this)\n{\n  __int64 vars8; // [xsp+18h] [xbp+8h]\n\n  objc_release(this[4]);\n  objc_release(this[1]);\n  if ( ((vars8 ^ (2 * vars8)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  snappy::Source::~Source((snappy::Source *)this);\n}"
+}

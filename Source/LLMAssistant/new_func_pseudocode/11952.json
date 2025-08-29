@@ -1,0 +1,6 @@
+{
+    "function_name": "__ZN6google8protobuf8internal12ParseContext12ParseMessageEPNS0_7MessageEPKc",
+    "function_argument_number": 3,
+    "function_signature": "__ZN6google8protobuf8internal12ParseContext12ParseMessageEPNS0_7MessageEPKc(google::protobuf::internal::ParseContext * this, google::protobuf::Message * a2, google::protobuf::internal * a3)",
+    "pseudocode": "// attributes: thunk\nchar *__fastcall google::protobuf::internal::ParseContext::ParseMessage(\n        __int64 a1,\n        __int64 a2,\n        google::protobuf::internal *this)\n{\n  return __ZN6google8protobuf8internal12ParseContext12ParseMessageEPNS0_7MessageEPKc_0(a1, a2, this);\n}"
+}

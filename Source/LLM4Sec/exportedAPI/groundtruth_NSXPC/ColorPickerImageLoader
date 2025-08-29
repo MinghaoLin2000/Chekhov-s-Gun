@@ -1,0 +1,3 @@
+@protocol ColorPickerImageLoaderProtocol
+- (void)loadImagesWithReply:(void (^)(NSDictionary *))arg1;
+@end

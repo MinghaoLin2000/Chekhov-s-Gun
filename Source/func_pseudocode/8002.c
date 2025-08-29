@@ -1,0 +1,5 @@
+_SLSTransactionBatchReassociateWindowsToSpace
+__int64 SLSTransactionBatchReassociateWindowsToSpace()
+{
+  return _SLSTransactionBatchReassociateWindowsToSpace();
+}

@@ -1,0 +1,6 @@
+{
+    "function_name": "__CFXPCCreateCFObjectFromXPCObject",
+    "function_argument_number": 0,
+    "function_signature": "__CFXPCCreateCFObjectFromXPCObject()",
+    "pseudocode": "__int64 _CFXPCCreateCFObjectFromXPCObject()\n{\n  return __CFXPCCreateCFObjectFromXPCObject();\n}"
+}

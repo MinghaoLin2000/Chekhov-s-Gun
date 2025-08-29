@@ -1,0 +1,6 @@
+{
+    "function_name": "-[RemoteViewBridgeServiceViewService remoteViewSizeChanged:transaction:]",
+    "function_argument_number": 4,
+    "function_signature": "-[RemoteViewBridgeServiceViewService remoteViewSizeChanged:transaction:](RemoteViewBridgeServiceViewService * self, SEL a2, id a4, CGSize a3)",
+    "pseudocode": "bool __cdecl -[RemoteViewBridgeServiceViewService remoteViewSizeChanged:transaction:](\n        RemoteViewBridgeServiceViewService *self,\n        SEL a2,\n        CGSize a3,\n        id a4)\n{\n  objc_super v5; // [xsp+0h] [xbp-10h] BYREF\n\n  v5.receiver = self;\n  v5.super_class = (Class)&OBJC_CLASS___RemoteViewBridgeServiceViewService;\n  -[RemoteViewBridgeServiceViewService remoteViewSizeChanged:transaction:](\n    &v5,\n    \"remoteViewSizeChanged:transaction:\",\n    a4,\n    a3.width,\n    a3.height);\n  return 0;\n}"
+}

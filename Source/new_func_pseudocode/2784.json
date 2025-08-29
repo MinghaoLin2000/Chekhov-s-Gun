@@ -1,0 +1,6 @@
+{
+    "function_name": "-[DeviceSettingsNode fileSize]",
+    "function_argument_number": 2,
+    "function_signature": "-[DeviceSettingsNode fileSize](DeviceSettingsNode * self, SEL a2)",
+    "pseudocode": "NSNumber *__cdecl -[DeviceSettingsNode fileSize](DeviceSettingsNode *self, SEL a2)\n{\n  return self->_fileSize;\n}"
+}
