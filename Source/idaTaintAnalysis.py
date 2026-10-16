@@ -244,7 +244,7 @@ def dump_exported_apis_all():
                 
                 dump_exported_apis_single(line)
 def has_dst_opcode(insn):
-    """ 根据 `opcode` 判断 `minsn_t` 是否有 `dst` """
+    """Determine whether a `minsn_t` has a `dst` based on its `opcode`."""
     return insn.opcode not in NO_DST_OPCODES
 
 def new_init_env(binary_path):
@@ -392,11 +392,11 @@ def extract_entitlements(binary_path):
         return None
 def lipo_binary_info(input_file):
     """
-    使用 lipo 提取 Fat Binary 的特定架构。
+    Use lipo to extract a specific architecture from a Fat Binary.
 
-    :param input_file: 原始二进制文件路径
-    :param arch: 要提取的架构（如 arm64e）
-    :param output_file: 输出文件路径
+    :param input_file: Path to the original binary file
+    :param arch: Architecture to extract (e.g., arm64e)
+    :param output_file: Output file path
     """
     try:
         
@@ -655,11 +655,11 @@ def mba_handle(mba,taint_source,cur_call_func,next_call_func):
                 
                 '''
                 struct Block_literal {
-                    void *isa;                  // 1️⃣ 指向 `NSConcreteStackBlock` 或 `NSConcreteGlobalBlock`
-                    int flags;                  // 2️⃣ Block 标志位（如 GLOBAL、HAS_COPY_DISPOSE）
-                    int reserved;               // 3️⃣ 保留字段（未使用）
-                    void (*invoke)(void *);     // 4️⃣ 调用 Block 的函数指针
-                    struct Block_descriptor *descriptor;  // 5️⃣ Block 描述符
+                    void *isa;                  // Points to `NSConcreteStackBlock` or `NSConcreteGlobalBlock`
+                    int flags;                  // Block flags (e.g., GLOBAL, HAS_COPY_DISPOSE)
+                    int reserved;               // Reserved field (unused)
+                    void (*invoke)(void *);     // Function pointer used to invoke the Block
+                    struct Block_descriptor *descriptor;  // Block descriptor
                 };
                 NSConcreteStackBlock
                 NSConcreteGlobalBlock

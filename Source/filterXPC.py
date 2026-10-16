@@ -75,9 +75,9 @@ def checkfileExist(program_path):
 
 def is_fat_binary(file_path):
     """
-    判断文件是否是 Fat Binary
-    :param file_path: 文件路径
-    :return: True 如果是 Fat Binary，否则 False
+    Determine whether a file is a Fat Binary.
+    :param file_path: File path
+    :return: True if the file is a Fat Binary; otherwise, False
     """
     try:
         with open(file_path, "rb") as f:
@@ -99,11 +99,11 @@ def is_fat_binary(file_path):
         return False
 def lipo_binary_info(input_file):
     """
-    使用 lipo 提取 Fat Binary 的特定架构。
+    Use lipo to extract a specific architecture from a Fat Binary.
 
-    :param input_file: 原始二进制文件路径
-    :param arch: 要提取的架构（如 arm64e）
-    :param output_file: 输出文件路径
+    :param input_file: Path to the original binary file
+    :param arch: Architecture to extract (e.g., arm64e)
+    :param output_file: Output file path
     """
     try:
         

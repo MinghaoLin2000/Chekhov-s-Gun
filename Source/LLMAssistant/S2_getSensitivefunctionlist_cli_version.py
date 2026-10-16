@@ -35,7 +35,7 @@ def get_filter_index():
 
 def file_exists_in_dir(filename, directory):
     """
-    判断文件是否存在于指定目录中（不递归子目录）
+    Check whether a file exists in the specified directory (without searching subdirectories).
     """
     os.makedirs(directory, exist_ok=True)
     

@@ -1,10 +1,10 @@
 import json
 
-# 打开 JSON 文件
+# Open the JSON file.
 with open('final_entitlements_result.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-# 计算字典的元素个数
+# Count the entries in the dictionary.
 if isinstance(data, dict):
     count = len(data)
     print(f"字典中有 {count} 个元素。")
