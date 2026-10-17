@@ -1,6 +1,10 @@
-# Chekhov’s Gun: Uncovering Hidden Risks in macOS Application-Sandboxed PID-Domain Services
+# Chekhov’s Gun: Uncovering Hidden Risks in macOS Application-Sandboxed PID-Domain Services — CCS 2025 Artifacts
 
-This repository provides an LLM-assisted static analysis framework for automatically discovering logical vulnerabilities in macOS PID-domain services.   
+This repository provides the code and supporting data for an LLM-assisted static analysis framework that discovers logical vulnerabilities in macOS PID-domain services.
+
+The diagram below shows the framework's inputs, analysis stages, and outputs:
+
+[![Chekhov's Gun framework architecture](docs/architecture-overview.png)](docs/architecture-overview.png)
 
 The end-to-end pipeline consists of:
 
@@ -10,7 +14,7 @@ The end-to-end pipeline consists of:
 
 - Constructing sensitive sinks with LLM assistance
 
-- Map entitlement to sensitive sinks with LLM assistance
+- Mapping entitlements to sensitive sinks with LLM assistance
 
 - Performing taint analysis on PID-domain services
 
